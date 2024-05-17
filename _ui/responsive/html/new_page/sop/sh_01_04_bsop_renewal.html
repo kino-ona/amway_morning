@@ -220,9 +220,17 @@
 		<div class="box_sop-wrap smart-order-tabs">  <!-- 2020-07 ACliks SOP : [box_sop-wrap] div tag add -->
 			<div class="box_sop-tab-wrap">
 				<ul class="box_sop-tab">
-                    <li class="tabs on">
-                        <button>장스오 혜택안내</button><!-- 20240409 장스오 홈 개선 -->
-                    </li>
+					<li class="tabs on">
+							<button>장스오 혜택안내</button><!-- 20240409 장스오 홈 개선 -->
+					</li>
+					<!-- 20240520 -->
+					<li class="tabs">
+						<button>것모닝 프로모션</button>
+					</li>
+					<li class="tabs">
+						<button>것모닝 제품 구성 도우미</button>
+					</li>
+					<!-- // 20240520 -->
 					<li class="tabs">
 						<button>장스오 Best 제품 (3월)</button><!-- 20240328 운영 현행화 -->
 					</li>
@@ -405,6 +413,128 @@
 
 				<!-- E : 20240409 장스오 홈 개선 -->
 			</div>
+			
+			<!-- 20240520 것모닝 프로모션 -->
+			<div class="cont box_sop-promotion" style="display: none;">
+				
+				<div class="promotion_banner_container">
+					<div class="promotion_banner_top">
+						<h2>
+							것모닝<br>
+							<span>[장</span>바구니 <span>스</span>마트 <span>오</span>더<span>]</span><br>
+							프로모션
+						</h2>
+
+						<p>
+							3개월간 제공되는 프로모션으로, 프로틴과 프로바이오틱스가 포함된<br>
+							것모닝 식단을 구성하고 10% PV UP 혜택을 받으세요!
+						</p>
+
+						<p>프로모션 기간<span>2024.09.01 ~ 2025.11.31</span></p>
+					</div>
+
+					<div class="promotion_detail_container">
+						<div class="promotion_detail_contents">
+							<div class="promotion_contents_detail">
+								<span>필수 제품 구성 방법 1</span>
+								
+								<h3>프로틴 + 프로바이오틱스 단품 구성</h3>
+								<p>단백질 보충과 면역기능 증진을 동시에</p>
+							</div>
+
+							<div class="promotion_contents_detail">
+								<span>필수 제품 구성 방법 2</span>
+
+								<h3>뉴트리라이트 번들팩 구성</h3>
+								<p>건강 증진 및 균형있는 영양 공급</p>
+							</div>
+						</div>
+
+						<div class="promotion_detail_contents">
+							<span>선택구성</span>
+
+							<h3>취향에 따른<br>뉴트리라이트 제품 선택</h3>
+						</div>
+
+						<div class="promotion_detail_contents">
+							<span>구성에 포함된 제품 전체</span>
+
+							<h3>10% PV 추가 제공</h3>
+						</div>
+					</div>
+				</div>
+				<div class="promotion_button_wrap">
+					<button type="button">것모닝 제품 구성 시작하기</button>
+					<button type="button">것모닝 제품 구성 변경하기</button>
+				</div>
+			</div>
+			<!-- // 20240520 것모닝 프로모션 -->
+
+			<!-- 20240520 것모닝 제품 구성 도우미 -->
+			<div class="cont box_sop-product-helper" style="display: none;">
+				<div class="product_helper_banner">
+					<p>것모닝 장스오 프로모션</p>
+
+					<p>장바구니 스마트 오더에 것모닝 프로모션 제품을 구성해 10% PV UP 혜택 받아가세요.</p>
+					
+					<span>프로모션 기간<span>2024.09.01 ~ 2025.11.31</span></span>
+
+					<button type="button">자세히보기</button>
+				</div>
+
+				<div class="product_helper_title">
+					<h2>것모닝 제품 구성 도우미<span>장스오에 이미 것모닝 제품을 구성하신 상태라면 주문서 내에서 제품변경이 가능합니다.</span></h2>
+
+					<p>프로모션 혜택과 함께 제품구성을 시작하실 수 있도록 도와 드립니다.<a href="#">제품 수정 바로가기</a></p>
+				</div>
+
+				<!-- 아코디언 영역 -->
+				<ul class="accordion_wrap">
+					<li class="accordion_list">
+						<p class="accordion_title">Step 01.구성 방법을 고르세요.</p>
+
+						<button type="button" class="accordion_button">토글버튼</button>
+					</li>
+
+					<!-- 아코디언 Step01 조건 01 -->
+					<li class="accordion_list accordion_list--first">
+						<p class="accordion_title">Step 02.프로틴을 선택하세요.</p>
+
+						<button type="button" class="accordion_button">토글버튼</button>
+					</li>
+
+					<li class="accordion_list accordion_list--first">
+						<p class="accordion_title">Step 03.프로바이오틱스를 선택하세요.</p>
+
+						<button type="button" class="accordion_button">토글버튼</button>
+					</li>
+
+					<li class="accordion_list accordion_list--first">
+						<p class="accordion_title">Step 04.추가 구성을 선택하세요. (선택)</p>
+
+						<button type="button" class="accordion_button">토글버튼</button>
+					</li>
+					<!-- // 아코디언 Step01 조건 01 -->
+				</ul>
+				<!-- // 아코디언 영역 -->
+
+				<!-- 맨밑 플로팅 -->
+				<div class="promotion_total_wrap">
+					<p>합계</p>
+
+					<p><span>0</span>개</p>
+					<p><span>0</span>원</p>
+					<p><span>0</span>PV</p>
+					<p><span>0</span>BV</p>
+
+					<span class="promotion_totle_flag">프로모션 미적용</span>
+
+					<button type="button" class="promotion_button_confirm">장스오 제품 담기</button>
+				</div>
+				<!-- //맨밑 플로팅 -->
+			</div>
+			<!-- // 20240520 것모닝 제품 구성 도우미 -->
+
 			<div class="cont box_sop-basket" style="display: none;">
 				<div class="box_product-fixed_wrap">
 					<div class="box_product-fixed">
