@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>Amway Korea</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="keywords">
+  <link rel="stylesheet" type="text/css" media="all" href="../assets/css/self_login.css"><!-- login css -->
+  <script type="text/javascript" src="../assets/js/jquery-3.4.1.min.js"></script>  <!-- 191204 : 최신버전 jquery 로 변경 -->
+</head>
+<body>
+  <div class="wrap">
+    <div class="bundle">
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+    <div class="item">
+      <div id="scan_container" class="scan_login">
+        <header class="scan_header">
+          <div class="scan_btns">
+            <button type="button" class="btn_cancel"><span>전체취소</span></button>
+            <button type="button" class="btn_call"><span>직원호출</span></button>
+          </div>
+        </header>
+        <div class="scan_list_prd">
+          <div class="login_notify">
+            <strong><span class="txt_amway">Amway</span>회원만</strong><br>구매가 가능합니다
+          </div>
+          <input type="tel" class="inp_member" placeholder="회원번호 입력" title="회원번호">
+          <ol class="box_pad">
+            <li><button type="button" class="btn_pad one" value="1">1</button></li>
+            <li><button type="button" class="btn_pad two" value="2">2</button></li>
+            <li><button type="button" class="btn_pad" value="3">3</button></li>
+            <li><button type="button" class="btn_pad" value="4">4</button></li>
+            <li><button type="button" class="btn_pad" value="5">5</button></li>
+            <li><button type="button" class="btn_pad" value="6">6</button></li>
+            <li><button type="button" class="btn_pad" value="7">7</button></li>
+            <li><button type="button" class="btn_pad" value="8">8</button></li>
+            <li><button type="button" class="btn_pad" value="9">9</button></li>
+            <li><button type="button" class="btn_pad pad_0" value="0">0</button></li>
+            <li><button type="button" class="btn_pad pad_delete">정정</button></li>
+            <li><button type="button" class="btn_pad pad_confirm">확인</button></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    $(function() {
+      // 191204 : 버튼 눌렀을 때 이벤트 click -> touchend 로 변경 
+      $('.box_pad button').on('touchend', function() {
+        var newValue = $(this).val();
+        var $inval = $(".inp_member");
+        var oldval = $inval.val();
+        var result = oldval + newValue;
+        
+        $inval.val(result);
+      });
+    });
+  </script>
+</body>
+</html>

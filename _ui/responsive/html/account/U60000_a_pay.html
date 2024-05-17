@@ -1,0 +1,749 @@
+<!-- S : [디파이 수정2] 신규 파일 : CAP2 A Pay 마이페이지 A pay 메뉴 추가 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>마이페이지 | ABN Korea</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords">
+	<meta name="description" content="NY Fee Bundle">
+	<meta name="robots" content="index,follow">
+
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-lib.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/base.css">
+	
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/sprint.css">
+	
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-customer.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-shop.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-sop.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-account.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-business.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-product.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-brand.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common-new.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common-v2.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common-new-v2.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/content_res_all.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-cap2.css"> <!-- [디파이 수정2] A Pay 아이콘 추가 -->
+
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.datepicker.js"></script><!-- datepicker : 2018.03.19 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/owl.carousel.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/isotope.pkgd.js"></script><!-- gnb 플러그인 : 2018.03.23 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/select2.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/new.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.raty.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_contents.js"></script><!-- brand 통합 : 2018.08.24 추가  -->
+</head>
+<body class="akl new-v2">
+	<!-- skipToContent -->
+	<div id="skipToContent">
+		<a href="#contents">콘텐츠 바로가기 </a>
+	</div>
+	<!-- //skipToContent -->
+
+	<main>
+		<div id="header"></div>
+
+		<!-- 2019-11-21 : 마크업 시작 //  breadcrumb, locationBox 에서 현재 페이지 일 때 : active 클래스 추가 -->
+		<div class="sub-nav-section mb0">
+			<div class="container">
+				<ol class="breadcrumb">
+					<li><a href="homepage-logged-in.html">홈</a></li>
+					<li class="active">마이페이지</li>
+				</ol>
+				<div class="locationBox">
+					<ul>
+						<li class="active"><a href="#;">마이페이지 홈</a></li>
+						<li><a href="#;">회원정보 관리</a></li>
+						<li><a href="#;">나의 신청 및 예약 현황</a></li>
+						<li><a href="#;">마이쇼핑</a></li>
+						<li><a href="#;">결제관리</a></li>
+						<li><a href="#;">기타</a></li>
+						<li><a href="#;">소비자관리</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--// 2019-11-21 : 끝 -->
+
+		<!-- container-fluid -->
+		<div class="container-fluid main-container">
+			<div class="row amway-theme mypage-main-wrapper">
+				<h1 class="hidden">마이페이지 </h1>
+
+				<div class="always-show">
+					<div class="mypage-block-list top-info">
+						<ul>
+							<li>
+								<div class="abo-icon-01">
+									<a href="#">
+										<strong>제품주문 시 사용 또는 환불 가능한 금액</strong>
+										<p>적립금 12,500원</p>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="abo-icon-03">
+									<a href="#">
+										<strong>포인트 관리</strong>
+										<p><span>사용가능 290,500</span><span>적립예정 120,000</span></p>
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="mypage-block-list">
+						<ul>
+							<!-- S : 2020-04-27 add -->
+							<li>
+								<div class="abo-icon-07">
+									<a href="#">
+										<strong>소비자 관리</strong>
+										<p>카카오 구매링크로 주문한 소비자 매출현황</p>
+									</a>
+								</div>
+							</li>
+							<!-- E : 2020-04-27 add -->
+							<li>
+								<div class="abo-icon-04">
+									<a href="#">
+										<strong>간편가입</strong>
+										<p>쉽고 빠른 회원가입을 위해 링크 전달</p>
+									</a>
+								</div>
+							</li>
+							<!--<li>
+								<div class="abo-icon-05">
+									<a href="#">
+										<strong>간편 확인 회원가입 ABO 본인인증</strong>
+										<p>간편 확인 회원가입자의 ABO 본인인증</p>
+									</a>
+								</div>
+							</li>-->
+							<li>
+								<div class="abo-icon-06">
+									<a href="#">
+										<strong>ABO 갱신</strong>
+										<p>ABO 자격 갱신</p>
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- akl-toggle-wrap -->
+				<div class="akl-toggle-wrap">
+
+					<!-- 190429_수정 Mypage 변경 (회원정보 관리 순서 변경, 추가 등) -->
+					<div class="panel-group accordion-custom" aria-multiselectable="true">
+
+						<!-- 회원정보 관리 -->
+						<div class="panel">
+							<div class="panel-heading" role="tab">
+								<a href="#mypageToggle_01" data-toggle="collapse" class="collapsed">
+									<div class="panel-title">
+										<p class="accordion-header-text">
+											<strong>회원정보 관리</strong>
+											<span>개인정보수정, 맞춤메시지, 맞춤쪽지, ABO자녀정보등록, ABO등록증/수첩 재발송 신청, 메뉴 잠금 설정</span>
+										</p>
+										<span class="pull-right icon-minus"></span>
+									</div>
+								</a>
+							</div>
+							<div id="mypageToggle_01" class="panel-collapse collapse" role="tabpanel">
+								<div class="panel-body">
+									<!-- list -->
+									<div class="mypage-block-list type-abo-manage">
+										<ul>
+											<li>
+												<div class="abo-icon-01">
+													<a href="#">
+														<strong>개인정보 수정</strong>
+														<p>기본 정보, 부가정보, 수신 동의여부 조회 및 수정</p>
+													</a>
+												</div>
+											</li>
+											<li>
+												<div class="abo-icon-09">
+													<a href="#">
+														<strong>맞춤메시지</strong>
+														<p>맞춤메시지 확인</p>
+													</a>
+												</div>
+											</li>
+											<li>
+												<div class="abo-icon-08">
+													<a href="#">
+														<strong>맞춤쪽지</strong>
+														<p>맞춤쪽지 확인</p>
+													</a>
+												</div>
+											</li>
+											<li>
+												<div class="abo-icon-02">
+													<a href="#">
+														<strong>ABO 자녀정보등록</strong>
+														<p>ABO 자녀정보 등록</p>
+													</a>
+												</div>
+											</li>
+											<li>
+												<div class="abo-icon-03">
+													<a href="#">
+														<strong>ABO 등록증/수첩 재발송 신청</strong>
+														<p>ABO등록증과 ABO수첩의 재발송 신청</p>
+													</a>
+												</div>
+											</li>
+											<li>
+												<div class="abo-icon-10"> 
+													<a href="#">
+														<strong>메뉴 잠금 설정</strong>
+														<p>중요 메뉴에 대한 잠금 설정 서비스</p>
+													</a>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<!-- //list -->
+
+									<div class="panel-title mgt15">
+										<p class="accordion-header-text">
+											나의 신청 및 예약 현황
+										</p>
+									</div>
+
+									<div class="mypage-block-list type-abo-manage">
+										<ul>
+											<li>
+												<div class="abo-icon-04">
+													<a href="#">
+														<strong>통합교육 신청현황</strong>
+														<p>정규과정, 오프라인강의, 라이브교육 신청현황 확인</p>
+													</a>
+												</div>
+											</li>
+											<li>
+												<div class="abo-icon-05">
+													<a href="#">
+														<strong>시설예약 현황</strong>
+														<p>시설예약 현황 확인</p>
+													</a>
+												</div>
+											</li>
+											<li>
+												<div class="abo-icon-06">
+													<a href="#">
+														<strong>체험예약 현황</strong>
+														<p>체험예약 현황 확인</p>
+													</a>
+												</div>
+											</li>
+											<li>
+												<div class="abo-icon-07">
+													<a href="#">
+														<strong>사랑의 우수리</strong>
+														<p>한국암웨이의 사회공헌활동</p>
+													</a>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- 마이쇼핑정보 -->
+						<div class="panel">
+							<div class="panel-heading" role="tab">
+								<a href="#mypageToggle_02" data-toggle="collapse" class="collapsed">
+									<div class="panel-title">
+										<p class="accordion-header-text">
+											<strong>마이쇼핑정보</strong>
+											<span>마이쇼핑, 반품내역, 위시리스트, 제품구매 예약, 중개판매 관리, 구매권한 양도/양수, 정기주문&스마트오더 내역, 장바구니 스마트 오더 내역, 배송지 및 주문알림 관리</span>
+										</p>
+										<span class="pull-right icon-minus"></span>
+									</div>
+								</a>
+							</div>
+							<div id="mypageToggle_02" class="panel-collapse collapse" role="tabpanel">
+								<div class="panel-body">
+									<!-- list -->
+									<div class="mypage-block-list type-shopping-manage">
+										<ul>
+											<li>
+												<div class="abo-icon-01">
+													<a href="/my-account/orders/recent">
+														<strong>마이쇼핑</strong>
+														<p>나의 주문내역 확인</p>
+													</a>
+												</div>
+											</li>
+											<li>
+												<div class="abo-icon-02">
+													<a href="/my-shopping/my-return">
+														<strong>반품내역</strong>
+														<p>반품내역 확인</p>
+													</a>
+												</div>
+											</li>
+											<!--20201112 마아팩메뉴 삭제 -->
+											<!--li>
+												<div class="abo-icon-10">
+													<a href="/myrecommend-lists/all">
+														<strong>마이팩</strong>
+														<p>마이팩 생성, 관리 및 공유</p>
+													</a>
+												</div>
+											</li-->
+											<li>
+												<div class="abo-icon-03">
+													<a href="/shopping-lists/all">
+														<strong>위시리스트</strong>
+														<p><span>위시리스트 관리</span><span>총 3,511개</span></p>
+													</a>
+												</div>
+											</li>
+											<li>
+												<div class="abo-icon-04">
+													<a href="/my-shopping/pre-reservation">
+														<strong>제품구매 예약</strong>
+														<p>제품구매 예약 및 제품구매 예약내역 확인</p>
+													</a>
+												</div>
+											</li>
+											<li>
+												<div class="abo-icon-05">
+													<a href="/my-shopping/arrangement-sales-quotation">
+														<strong>중개판매 관리</strong>
+														<p>견적서 작성 및 사업자등록증 관리</p>
+													</a>
+												</div>
+											</li>
+											<li>
+												<div class="abo-icon-06">
+													<a href="/my-shopping/coupon-rewards">
+														<strong>구매권한 양도/양수</strong>
+														<p>양도/양수,사용내역 확인</p>
+													</a>
+												</div>
+											</li>
+											<li>
+												<div class="abo-icon-09">
+													<a href="/sop/list-profiles">
+														<strong>정기주문&amp;스마트오더 내역</strong>
+														<p>정기주문 &amp; 스마트 오더 주문서 내역 확인</p>
+													</a>
+												</div>
+											</li>
+											<li>
+												<div class="abo-icon-11">
+													<a href="/sop/list-profiles">
+														<strong>장바구니 스마트 오더 내역</strong>
+														<p>A Cliks 장바구니 스마트 오더 내역 확인</p>
+													</a>
+												</div>
+											</li>
+											<li>
+												<div class="abo-icon-07">
+													<a href="/my-account/address-book">
+														<strong>배송지 및 주문알림 관리</strong>
+														<p>배송지 추가, 삭제 및 관리</p>
+													</a>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<!-- //list -->
+								</div>
+							</div>
+						</div>
+
+						<!-- 결제관리 -->
+						<div class="panel">
+							<div class="panel-heading" role="tab">
+								<a href="#mypageToggle_03" data-toggle="collapse">
+									<div class="panel-title">
+										<p class="accordion-header-text">
+											<strong>결제관리</strong>
+											<span>계좌관리, 포인트 관리, 쿠폰관리, 암웨이-현대 제휴카드, A-Pay 결제수단 관리 </span> <!-- [디파이 수정2] 210827 A-Pay 결제수단 관리 탭 추가 -->
+										</p>
+										<span class="pull-right icon-minus"></span>
+									</div>
+								</a>
+							</div>
+							<div id="mypageToggle_03" class="panel-collapse collapse in" role="tabpanel">
+								<div class="panel-body">
+									<!-- list -->
+									<div class="mypage-block-list type-payment-manage">
+										<ul>
+											<li>
+												<div class="abo-icon-01">
+													<a href="#">
+														<strong>계좌관리</strong>
+														<p>보너스계좌 정보 및 자동이체계좌 통합 관리</p>
+													</a>
+												</div>
+											</li>
+											<li>
+												<div class="abo-icon-02">
+													<a href="#">
+														<strong>포인트 관리</strong>
+														<p><span>사용가능 290,500</span><span>적립예정 120,000</span></p>
+													</a>
+												</div>
+											</li>
+											<li>
+												<div class="abo-icon-03">
+													<a href="#">
+														<strong>쿠폰관리</strong>
+														<p>
+															<span>사용가능한 쿠폰 조회</span>
+															<span>총 00개</span>
+														</p>
+													</a>
+												</div>
+											</li>
+											<li>
+												<div class="abo-icon-12">
+													<a href="#">
+														<strong>암웨이-현대 제휴카드</strong>
+														<p>
+															<span>암웨이-현대 제휴카드 신청</span>
+														</p>
+													</a>
+												</div>
+											</li>
+                                            <!-- S : [디파이 수정2] 210827 A-Pay 결제수단 관리 탭 추가 -->
+											<li>
+												<div class="abo-icon-13">
+													<a href="./U60001_a_pay-02.html">
+														<strong>A-Pay 결제수단 관리</strong>
+														<p>
+															<span>결제수단 등록/삭제 및 비밀번호 설정</span>
+														</p>
+													</a>
+												</div>
+											</li>
+                                            <!-- E : [디파이 수정2] 210827 A-Pay 결제수단 관리 탭 추가 -->
+										</ul>
+									</div>
+									<!-- //list -->
+								</div>
+							</div>
+						</div>
+
+						<!-- 기타 -->
+						<div class="panel">
+							<div class="panel-heading" role="tab">
+								<a href="#mypageToggle_04" data-toggle="collapse" class="collapsed">
+									<div class="panel-title">
+										<p class="accordion-header-text">
+											<strong>기타</strong>
+											<span>간편가입, 개인정보 활용동의 관리, 회원탈퇴</span>
+										</p>
+										<span class="pull-right icon-minus"></span>
+									</div>
+								</a>
+							</div>
+							<div id="mypageToggle_04" class="panel-collapse collapse" role="tabpanel">
+								<div class="panel-body">
+									<!-- list -->
+									<div class="mypage-block-list type-membership-manage">
+										<ul>
+											<li>
+												<div class="abo-icon-01">
+													<a href="#">
+														<strong>간편가입</strong>
+														<p>쉽고 빠른 회원가입을 위해 링크 전달</p>
+													</a>
+												</div>
+											</li>
+											<li>
+												<div class="abo-icon-02">
+													<a href="#">
+														<strong>개인정보 활용동의 관리</strong>
+														<p>개인정보 활용 범위 확인 및 동의여부를 결정</p>
+													</a>
+												</div>
+											</li>
+											<!-- 2021-03-12 추가 - 외국인 회원가입 -->
+											<!-- <li>
+												<div class="abo-icon-manage">
+													<a href="#">
+														<strong>외국인 가입 증빙자료 관리</strong>
+														<p>
+															<span>외국인 가입 증빙자료 업데이트를 위한 서비스</span>
+														</p>
+													</a>
+												</div>
+											</li> -->
+											<!-- // 2021-03-12 추가 - 외국인 회원가입 -->
+											<!-- S : 2020-10-19 추가-->
+											<!-- <li>
+												<div class="abo-icon-5">
+													<a href="#">
+														<strong>ABO 확인원 발급</strong>
+														<p>
+															<span>ABO 등록 확인원 발급</span>
+														</p>
+													</a>
+												</div>
+											</li> -->
+											<!-- E : 2020-10-19 추가-->
+											<li>
+												<div class="abo-icon-03">
+													<a href="#">
+														<strong>회원탈퇴</strong>
+														<p>
+															<span>한국암웨이 회원 탈퇴</span>
+														</p>
+													</a>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<!-- //list -->
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- //190429_수정 Mypage 변경 (회원정보 관리 순서 변경, 추가 등) -->
+
+				</div>
+				<!-- //akl-toggle-wrap -->
+			</div>
+		</div>
+		<!-- //container-fluid -->
+
+		<div id="quick"></div>
+		<div id="footer"></div>
+	</main>
+
+
+
+	<!-- (팝업) 전자(세금)계산서 수신정보 -->
+	<div class="layerWrapper U60000a_lp1">
+		<div class="cbox layerBox popWidM">
+			<div class="cart-popup__dialog">
+				<div class="cart-popup__header">
+					<span class="cart-popup__header-text">
+						전자(세금)계산서 수신정보
+						<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close"><img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기"></a>
+					</span>
+				</div>
+				<div class="cart-popup__content height-auto">
+					<div class="cart-popup__item-info">
+						<div class="tax-bill-sms">
+							<p>개정세법에 의거하여 한국암웨이는 매출(세금)계산서 이메일을 통해 발송 합니다. <br>(수신여부 체크시 SMS 발송)</p>
+
+							<div class="form-group basic">
+								<label class="control-label" for="mainOperatorEmail">이메일 주소</label>
+								<div class="form-block-box">
+									<div class="form-set-email">
+										<span>
+											<input type="text" class="email-input1" id="mainOperatorEmail" title="이메일 아이디 "><em class="email-input-txt">@</em><input type="text" class="email-input2" title="직접 이메일 주소 입력">
+										</span>
+										<select class="email-select form-control" title="이메일 주소 선택">
+											<option value="" selected="selected">직접입력</option>
+											<option value="">naver.com</option>
+											<option value="">gmail.com</option>
+										</select>
+									</div>
+								</div>
+							</div>
+
+							<div class="form-group basic">
+								<label class="control-label" for="mainOperatorMobile">수신 SMS</label>
+								<div class="form-block-box">
+									<div class="form-set-mobile">
+										<span class="form-phone-select">
+											<select class="form-control" id="mainOperatorMobile">
+												<option>010</option>
+												<option>012</option>
+											</select>
+										</span>
+										<span class="form-phone-input">
+											<input type="text" class="form-control" placeholder="‘-’없이 입력" title="주사업자 휴대폰번호 뒷자리 입력">
+										</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="form-group basic">
+								<label class="control-label">SMS 수신 여부 체크</label>
+								<div class="form-block-box">
+									<div class="form-sms-receive">
+										<span><input type="radio" name="smsReceive" class="amwa-radio" id="smsReceive_yes"><label for="smsReceive_yes">수신</label></span>
+										<span><input type="radio" name="smsReceive" class="amwa-radio" id="smsReceive_no"><label for="smsReceive_no">미수신</label></span>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cart-popup__item-link">
+					<button type="button" class="bt-akl-blue">저장</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //(팝업) 전자(세금)계산서 수신정보 -->
+
+
+	<!-- (팝업) 프로필 사진 관리 2018.07.31 수정-->
+	<div class="layerWrapper U60000a_lp2">
+		<div class="cbox layerBox popWidM">
+			<div class="cart-popup__dialog">
+				<div class="cart-popup__header">
+					<span class="cart-popup__header-text">
+						프로필 사진 관리
+						<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close"><img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기"></a>
+					</span>
+				</div>
+				<div class="cart-popup__content height-auto">
+					<!-- 내용전체 -->
+					<div class="manage-profile-photo">
+						<!-- 사진보정 툴 영역 (코어 사용 예정) -->
+						<div class="photo-managing-terms">
+							<!-- 수정 : 2018.07.20 (제목 수정, 약관내용 추가, 동의하기 변경) -->
+							<ul id="terms">
+								<li>
+									<h3>[선택] 프로필 사진 등록을 위한 약관</h3><!-- 수정 : 2018.07.20 (띄어쓰기) -->
+									<div class="conditions">
+										<div class="text">
+											<div class="termsWrapper onFocus" tabindex="0">
+												<ul class="list-left-depth">
+													<li>1. 수집항목 : 본인의 사진</li>
+													<li>2. 수집목적 : ABO 본인의 프로필 사진을 www.amway.co.kr에 게시 (본인만 볼 수 있으며, 제3자는 볼 수 없습니다.)</li><!-- 수정: 2018.08.20 (약관내용) -->
+													<li>3. 수집 및 이용기간 : 사진 삭제 시 즉시 파기
+														<ul class="list-type5">
+															<li>선택항목이므로, 사진의 수집 및 이용동의를 거부할 수 있습니다. 거부하더라도, 불이익은 없으며, 언제든 동의를 철회할 수 있습니다.</li>
+															<li>본인의 프로필 사진으로 노출되므로, 타인의 사진을 등록하실 수 없습니다.</li>
+															<li>주사업자의 사진을 제출하면 주사업자가, 부사업자의 사진을 제출하면 부사업자가 동의하셔야 하고, 주사업자와 부사업자가 함께 찍은 사진을 제출하시는 경우, 두분 모두의 동의가 필요합니다.</li>
+														</ul>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<button class="text-btn view-all">
+											더보기
+											<i class="icon icon-arrow-downs"></i>
+											<i class="icon icon-arrow-ups"></i>
+										</button>
+									</div>
+
+									<div class="action amway-theme">
+										<!-- 수정 2018.08.20 (주/부 사업자 통합) -->
+										<div class="agreement-row">
+											<div class="radio-wrapper">
+												<label class="amw-radio-wrap radio-label">
+													<input type="radio" name="business_main" checked="checked" class="amw-global-radio">
+													<span class="amw-radio-overlay"></span>
+													<span class="amw-label-radio-text">동의함</span>
+												</label>
+											</div>
+											<div class="radio-wrapper">
+												<label class="amw-radio-wrap radio-label">
+													<input type="radio" name="business_main" class="amw-global-radio">
+													<span class="amw-radio-overlay"></span>
+													<span class="amw-label-radio-text">동의안함</span>
+												</label>
+											</div>
+										</div>
+										<!-- //수정 2018.08.20 (주/부 사업자 통합) -->
+
+										<!-- 수정 2018.08.20 : (주/부 사업자 분리 사용안함)
+										<div class="agreement-row">
+											<span class="color-blue f-medim">주사업자</span>
+											<div class="radio-wrapper">
+												<label class="amw-radio-wrap radio-label">
+													<input type="radio" name="business_main" checked="checked" class="amw-global-radio">
+													<span class="amw-radio-overlay"></span>
+													<span class="amw-label-radio-text">동의함</span>
+												</label>
+											</div>
+											<div class="radio-wrapper">
+												<label class="amw-radio-wrap radio-label">
+													<input type="radio" name="business_main" class="amw-global-radio">
+													<span class="amw-radio-overlay"></span>
+													<span class="amw-label-radio-text">동의안함</span>
+												</label>
+											</div>
+										</div>
+										<div class="agreement-row">
+											<span class="color-blue f-medim">부사업자</span>
+											<div class="radio-wrapper">
+												<label class="amw-radio-wrap radio-label">
+													<input type="radio" name="business_sub" checked="checked" class="amw-global-radio">
+													<span class="amw-radio-overlay"></span>
+													<span class="amw-label-radio-text">동의함</span>
+												</label>
+											</div>
+											<div class="radio-wrapper">
+												<label class="amw-radio-wrap radio-label">
+													<input type="radio" name="business_sub" class="amw-global-radio">
+													<span class="amw-radio-overlay"></span>
+													<span class="amw-label-radio-text">동의안함</span>
+												</label>
+											</div>
+										</div>
+										-->
+									</div>
+								</li>
+								<li class="imgupload">
+									<h3>사진 등록하기</h3>
+									<div class="form-group">
+										<div class="form-file">
+											<div class="bouns-btn-w">
+												<button type="button" class="bt-akl-white">파일선택</button>
+
+												<!-- 수정 : 2018.12.05 (문구전체) -->
+												<ul class="list-type2 text-guide">
+													<li>파일 사이즈는 500KB~10MB이며, 확장자가 jpg, jpeg, gif, png, bmp, tiff만 가능합니다.</li>
+													<li>가로, 세로 동일한 크기의 사진을 등록하세요.</li>
+												</ul>
+												<!-- //수정 : 2018.12.05 (문구전체) -->
+											</div>
+											<div class="bouns-file-list">
+												<p>
+													<span>Screenshot 2017-11-20 24:40:34 PM.jpg</span>
+													<button type="button" class="bt-akl-txt">삭제</button>
+												</p>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<!-- //수정 : 2018.07.20 (제목 수정, 약관내용 추가, 동의하기 변경) -->
+						</div>
+
+					</div>
+				</div>
+				<div class="cart-popup__item-link">
+					<button type="button" class="bt-akl-blue">사진 등록</button>
+					<button type="button" class="bt-akl-txt">취소</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //(팝업) 프로필 사진 관리 -->
+
+<!-- <script type="text/javascript">
+$(function() {
+	layerPopOver('','.U60000a_lp1');
+});
+</script> -->
+
+</body>
+</html>
+<!-- E : [디파이 수정2] 신규 파일 : CAP2 A Pay 마이페이지 A pay 메뉴 추가 -->

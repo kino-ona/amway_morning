@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/_ui/desktop/common/fonts/NotoSansKR-Regular.eot);
+  src: local(※),
+    url(/_ui/desktop/common/fonts/NotoSansKR-Regular.woff) format("woff"),
+    url(/_ui/desktop/common/fonts/NotoSansKR-Regular.otf) format("otf"); 
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 700;
+  src: url(/_ui/desktop/common/fonts/NotoSansKR-Medium.eot);
+  src: local(※),
+    url(/_ui/desktop/common/fonts/NotoSansKR-Medium.woff) format("woff"),
+    url(/_ui/desktop/common/fonts/NotoSansKR-Medium.otf) format("opentype"); 
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 900;
+  src: url(/_ui/desktop/common/fonts/NotoSansKR-Bold.eot);
+  src: local(※),
+    url(/_ui/desktop/common/fonts/NotoSansKR-Bold.woff) format("woff"),
+    url(/_ui/desktop/common/fonts/NotoSansKR-Bold.otf) format("opentype"); 
+}

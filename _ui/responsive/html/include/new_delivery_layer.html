@@ -1,0 +1,102 @@
+<div id="new-delivery-layer" class="layer_section type-wide-a">
+    <div class="layer_section-container">
+        <div class="layer-header">
+            <h1 class="header-title">새 배송지</h1>
+        </div>
+        <form id="shippingAddressNewForm" name="shippingAddressNewForm" data-url-update="/my-account/ajax/edit-address" data-url-new="/my-account/ajax/add-address" action="/my-account/ajax/add-address" method="post" novalidate="novalidate">
+            <div class="layer-content">
+                <div class="cart-popup__item-info">
+                    <p class="address-tit">배송지 정보</p>
+                        <div class="detail-content">
+                            <div class="new-cart">
+                                <div class="delv-shopbox">
+                                    <div class="form-group">
+                                        <label for="fullName" class="col-md-3 control-label">받는분 <strong class="pot">*</strong></label>
+                                        <div class="col-md-9 col-xs-12 receiver">
+                                            <input type="text" id="fullName" name="fullName" class="form-control" value="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cellphone1" class="col-md-3 control-label">휴대폰 번호 <strong class="pot">*</strong></label>
+                                        <div class="phone-group col-md-9 col-xs-12">
+                                            <div class="control-group">
+                                                <select id="cellphone1" name="cellphone1" class="form-control " title="전화번호 앞자리 선택">
+                                                    <option value="010">010</option>
+                                                    <option value="011">011</option>
+                                                    <option value="016">016</option>
+                                                    <option value="017">017</option>
+                                                    <option value="018">018</option>
+                                                    <option value="019">019</option>
+                                                    <option value="0130">0130</option>
+                                                    <option value="02">02</option>
+                                                    <option value="031">031</option>
+                                                    <option value="032">032</option>
+                                                    <option value="033">033</option>
+                                                    <option value="041">041</option>
+                                                    <option value="042">042</option>
+                                                    <option value="043">043</option>
+                                                    <option value="044">044</option>
+                                                    <option value="050">050</option>
+                                                    <option value="051">051</option>
+                                                    <option value="052">052</option>
+                                                    <option value="053">053</option>
+                                                    <option value="054">054</option>
+                                                    <option value="055">055</option>
+                                                    <option value="061">061</option>
+                                                    <option value="062">062</option>
+                                                    <option value="063">063</option>
+                                                    <option value="064">064</option>
+                                                    <option value="070">070</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" id="cellphone2" name="cellphone2" class="text form-control" minlength="1" maxlength="8" value="" placeholder="12345678" title="휴대전화번호 입력">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="postcode" class="col-md-3 control-label">주소 <strong class="pot">*</strong></label>
+                                        <div class="col-md-9 col-xs-12 address">
+                                            <p><input type="text" id="postcode" name="postcode" class="form-control" readonly="readonly"></p>
+                                            <button type="button" class="bt-akl-white" id="newSearchAddress">주소찾기</button>
+                                            <input type="text" id="createdAddress" name="createdAddress" class="form-control" title="나머지 주소 1" readonly="readonly">
+                                            <input type="text" id="userDetail" name="userDetail" class="form-control" title="나머지 주소 2" readonly="readonly">
+                                            <input id="detail" type="text" style="display:none;" name="detail">
+                                            <input id="roadReference" type="text" style="display:none;" name="roadReference">
+                                            <input id="city" type="text" style="display:none;" name="city">
+                                            <input id="district" type="text" style="display:none;" name="district">
+                                            <input id="town" type="text" style="display:none;" name="town">
+                                            <input id="streetName" type="text" style="display:none;" name="streetName">
+                                            <input id="appartment" type="text" style="display:none;" name="appartment">
+                                            <input id="dongCode" type="text" style="display:none;" name="dongCode">
+                                            <input id="buildingNumber" type="text" style="display:none;" name="buildingNumber">
+                                            <input id="addressType" type="text" style="display:none;" name="addressType">
+                                            <input id="addressId" type="text" style="display:none;" name="addressId">
+                                            <div class="clearfix Defaul-taddr">
+                                                <input type="hidden" name="_defaultAddress" value="on"><input id="defaultAddress" name="defaultAddress" type="checkbox" value="true">
+                                                <label for="defaultAddress" class="normal inline-label checklabel focus">기본 배송지</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="new-shipping-agree">
+                                    <p>본인은 정보주체(배송 받는 사람)로부터 개인정보가 제3자인 한국 암웨이에 배송 목적으로 제공된다는 사실을 안내하고, 동의를 받으셨습니까?</p>
+                                    <div class="form-group">
+                                        <input class="amwa-radio" type="radio" name="shippingAgree" id="shippingAgreeY" value="Y">
+                                        <label for="shippingAgreeY" class="focus">예</label>
+                                        <input class="amwa-radio" type="radio" name="shippingAgree" id="shippingAgreeN" value="N">
+                                        <label for="shippingAgreeN" class="focus">아니오</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="align-box size-auto">
+                <button type="button" class="btn-modal_close v2">닫기</button>
+                <button type="button" class="btn-modal_close" id="shipping-address-save">확인</button>
+            </div>
+            <div><input type="hidden" name="CSRFToken" value="bb84101f-0852-48e5-ab78-60b18b83dd89"></div>
+        </form>
+    </div>
+</div>

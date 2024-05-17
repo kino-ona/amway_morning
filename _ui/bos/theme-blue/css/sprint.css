@@ -1,0 +1,416 @@
+/** ---------------------------------
+ * @register.css
+ * ----------------------------------
+ */
+
+.page .center {text-align: center;}
+.page .normal {text-transform: none;}
+.page .normal-btn,
+.page .upload-box {background: none;outline: none;font-weight: normal;padding: 8px 25px;height: auto;line-height: normal;border: 1px solid #002F5F;color: #002F5F;text-transform: uppercase;cursor: pointer;position: relative;z-index: 11;}
+.page .normal-btn:hover,
+.page .upload-box:hover {background: #002F5F;color: #fff;}
+.page .radio-label {padding-top: 0;margin-bottom: 0;}
+.page .radio-wrapper {margin-bottom: 17px;}
+.page .inline-label {padding-top: 0;}
+.uppercase {text-transform: uppercase;}
+
+.popup {position: fixed;top: 0;left: 0; height: 100%; width: 100%; background-color: rgba(0, 0, 0, 0.7);z-index: 9001;display: none;}
+.popup .scroll-text {height: 325px;overflow-y: auto;border: 1px solid #e3e3e3;padding: 25px 15px;margin-bottom: 25px;}
+.popup #agree-label {margin-bottom: 0;}
+.pop-box { width: 100%;max-width: 750px;position: fixed;left: 50%;top: 50%;-moz-transform: translate(-50%, -50%);-webkit-transform: translate(-50%, -50%);transform: translate(-50%, -50%);background: #fff;}
+.pop-header {font-size: 30px;height: 80px;line-height: 80px;position: relative;background: #002F5F;color: #fff;padding-left: 40px;padding-right: 40px;}
+.pop-close { position: absolute; top: 15px; right: 15px; height: 22px;width: 22px; cursor: pointer;}
+.pop-content {padding-left: 40px;padding-right: 40px;border-left: 1px solid #bbbbbb;border-right: 1px solid #bbbbbb;padding-top: 42px;padding-bottom: 34px;}
+.pop-content .col-xs-12 {padding: 0;}
+.pop-content .div-table {min-height: 350px;max-height: 350px;display: block;overflow-y: auto; margin-bottom: 10px;}
+.pop-footer {padding: 20px 40px;border: 1px solid #bbbbbb;}
+
+#register-landing-page .page-title {margin-bottom: 9px;padding-top: 30px;}
+#register-landing-page .notice {font-size: 20px;margin-bottom: 50px;}
+#register-landing-page .involved-way {margin-bottom: 0;padding: 0 155px;min-height: 290px;}
+#register-landing-page .involved-way dt {font-size: 30px;color: #002F5F;margin-bottom: 20px;}
+#register-landing-page .involved-way dd {font-size: 16px;margin-bottom: 25px;position: relative; padding-left: 16px;}
+#register-landing-page .involved-way dd:last-child { margin-bottom: 0;}
+#register-landing-page .involved-way .icon-gray-dot {height: 4px;width: 4px; position: absolute;left: 1px;top: 10px;}
+#register-landing-page .show-terms { margin-left: 157px;width: 190px;}
+#register-landing-page .footer-notice { position: relative;margin-left: 18%;min-height: 24px;line-height: 24px;display: block;}
+#register-landing-page .upTips { display: inline-block;vertical-align: middle;}
+#register-landing-page .icon-infos {height: 18px;width: 18px;top: 3px;margin-right: 5px;position: relative;}
+#involved-ways {position: relative; margin-bottom: 87px;}
+#involved-ways .line {position: absolute; height: 95%;border-right: 1px solid #e3e3e3;left: 50%;bottom: 0;}
+
+#terms h3 {font-size: 18px;position: relative;margin: 30px 0 15px;}
+#terms h3 .icon-exports {position: absolute;right: 0;top: 0;width: 16px;height: 15px;cursor: pointer;}
+#terms .conditions {font-size: 16px;border: 1px solid #e3e3e3;margin-bottom:30px;}
+#terms .text {padding: 18px 15px 0;overflow-y: auto;max-height: 160px;}
+#terms .simple .text {max-height: 500px;}
+#terms .text-btn {display: none;}
+#terms .action {border-bottom: 1px solid #e3e3e3;padding-bottom: 30px;margin-bottom: 40px;}
+#terms li:last-of-type .agreement-box + .action { margin-bottom:0;}
+#terms .action label {padding-top: 0;}
+#terms p {font-size: 16px;}
+#terms .row {margin: 0;overflow-y: auto;max-height: 160px;}
+#terms .col {padding: 0; position: relative;display: table-cell;float: none;}
+#terms .col .line {position: absolute;height: 100%;top: 45px;right: 0; border-right: 1px solid #e3e3e3;}
+#terms h4 {padding: 15px 18px;margin: 0;background: #f4f4f4;font-size: 14px;}
+#terms .col-text {padding: 15px 18px 0;}
+#terms .agreement-box p {margin-bottom: 20px;}
+#terms .col-md-1 { width: 12.33333333%;}
+#terms .col-md-2 {width: 15.66666667%;}
+
+#register-terms-page .next-control { padding-bottom: 20px;}
+#market-validation-box { min-height: 380px; overflow-y: auto; margin-bottom: 30px;}
+
+.amwa-radio + label[data-parent="#yes"]:after { background: #0075a4;}
+.amwa-radio + label[data-parent="#yes"].collapsed:after { background: white;}
+
+#register-step-page .error-message {font-size: 16px;color: #e90033;}
+#register-step-page .error-message img {vertical-align: top; margin-right: 10px;}
+#register-step-page .new-ibo-reg { padding-left: 35px; padding-right: 35px;}
+#register-step-page .new-ibo-reg .radio-wrapper { margin-bottom: 20px;}
+#register-step-page .new-ibo-reg .radio-wrapper .amw-label-radio-text { line-height: 1.7;}
+#register-step-page .new-ibo-reg .payment-sub-box {padding-top: 20px; margin-left: 35px;}
+#register-step-page .new-ibo-reg .tips { font-size: 16px;font-style: italic; color: #56565a;}
+#register-step-page .new-ibo-reg .panel-body { padding-bottom: 30px; padding-left: 20px; padding-right: 20px;}
+#register-step-page .new-ibo-reg .h3-title { margin-bottom: 25px;}
+#register-step-page .new-ibo-reg .next-control {display: block;}
+#register-step-page .new-ibo-reg .next-control a { margin: 20px 0; padding: 10px 40px;}
+#register-step-page .checkout-steps { margin: 0 auto 60px;}
+#register-step-page .checkout-step { width: 25%;}
+#register-step-page .checkout-step:after { border-left: 13px solid #F4F4F4;}
+#register-step-page .checkout-step:before {border-left: 13px solid #dadada;}
+#register-step-page .checkout-steps-circle { left: 60px;}
+#register-step-page .checkout-steps-text { left: 100px;}
+#register-step-page .checkout-steps-circleactive { left: 60px;}
+#register-step-page .checkout-steps-active:after { border-left-color: #fff;}
+#register-step-page .form-group {margin-bottom: 10px;clear: both;display: block;}
+#register-step-page .form-group .col-md-12 {margin-top: 15px;}
+#register-step-page .form-group .action { padding-top: 20px; padding-bottom: 30px;}
+#register-step-page .form-group .action label { padding-top: 0; margin-bottom: 0;}
+#register-step-page .control-label {font-size: 15px; text-align: left; padding-top: 11px; line-height: 16px;}
+#register-step-page .center-line { font-size: 32px;line-height: 1;font-weight: 100;color: #999999;}
+#register-step-page .form-control {width: 283px;min-width: 1px;margin-bottom: 0;color: #002F5F;text-transform: initial;}
+#register-step-page .form-control:focus { box-shadow: none;border-color: #002F5F;}
+#register-step-page .form-control.verify-error {border: 1px solid #e90033;color: #e90033;}
+#register-step-page .form-control.verify-error + p.error-tip {color: #e90033;}
+#register-step-page .btn-blue-white { color: #fff; margin-right: 8px;}
+#register-step-page .btn-blue-white:hover { color: #002F5F;}
+#register-step-page .btn-blue-white.btn-xl { width: 300px;}
+#register-step-page .form-item-row { width: 283px; margin: 0; position: relative;}
+#register-step-page .form-item-row .form-control { width: 100%;}
+#register-step-page .form-item-row .col { padding-left: 0; padding-right: 10px;}
+#register-step-page .form-item-row .last-col {  padding-right: 0;}
+#register-step-page .form-sub-title {  color: #55565a; display: table;  width: 100%;}
+#register-step-page .form-tips {  font-size: 14px;  font-style: italic;}
+#register-step-page #resend-tips {  padding-top: 10px;}
+#register-step-page #resend {  cursor: pointer;}
+#register-step-page .form-text .control-label {  padding-top: 0;}
+#register-step-page .divider {  border-bottom: 1px solid #e3e3e3;  margin-bottom:40px;  margin-top:38px}
+#register-step-page #confirm {  margin-bottom: 24px;}
+#register-step-page .icon-infos {  height: 18px;  width: 18px;  position: relative;  top: 3px;}
+#register-step-page .next-control button {  margin-right: 8px;}
+#register-step-page .auto-renewal-box { position: relative;  border: 1px solid #dadada; padding: 0 32px 19px 97px; font-size: 16px;  margin-top: 20px;}
+#register-step-page .auto-renewal-box h4 {  margin: 0 0 5px;  color: #002F5F;  font-size: 16px;}
+#register-step-page .auto-renewal-box p {  margin-bottom: 2px;}
+#register-step-page #auto-renewal-pic {  position: absolute;  left: 19px;  top: 50%;  -moz-transform: translateY(-50%);  -webkit-transform: translateY(-50%);  transform: translateY(-50%);width: 60px;}
+#register-step-page .security-code {  width: 131px;}
+#register-step-page .payment-sub-box .control-label {  width: 150px;}
+#register-step-page .card-img {  padding-left: 5px;  cursor: pointer;}
+#register-step-page .forgot-box .control-label {  padding-top: 0;  line-height: 1;  display: table-cell;  vertical-align: middle;}
+#register-step-page .select2-container .select2-selection__rendered {width: 257px;}
+
+.upload-box {  display: inline-block;  position: relative;  overflow: hidden;}
+.upload-box .input-file {  position: absolute;  top: 0;  left: 0;  font-size: 20px;  z-index: 1;  opacity: 0;}
+
+#reg-confirm-info { padding-left: 25px;}
+#abo-sponsor-confirmed {color: #20883e; font-weight: bold; margin-bottom: 7px; position: relative;}
+#abo-sponsor-confirmed .icon-green-hook { width: 14px; height: 11px; position: absolute; top: 7px;left: -23px;}
+
+.reg-ques-box { margin-bottom: 40px; border-bottom: 1px solid #e3e3e3; padding-bottom: 20px;}
+.reg-ques-box .panel { border: 0; box-shadow: none;}
+.reg-ques-box h3 { font-size: 18px; text-transform: uppercase; margin-top: 0; margin-bottom: 25px; position: relative;}
+.reg-ques-box h3 .icon { width: 16px; height: 17px;}
+.reg-ques-box h3.has-icon { padding-left: 22px;}
+.reg-ques-box h3.warning { color: #e11e45;}
+.reg-ques-box h3.success { color: #20883e; text-align:center; padding-top:16px}
+.reg-ques-box .content { margin-bottom: 16px;}
+.reg-ques-box .content p { font-size: 16px;  color: #999999;}
+.reg-ques-box .btn-blue-white { margin-bottom: 10px;}
+.reg-ques-box .content p.mainColor { color: #55565a;}
+.reg-ques-box.marginBottom20 { margin-bottom: 20px;}
+
+.reg-side-info { border: 1px solid #dadada; margin-bottom: 40px;}
+.reg-side-info h3 { font-size: 14px; color: #002F5F; padding: 15px 20px 14px; background: #f4f4f4; margin: 0; border-bottom: 1px solid #dadada;text-transform: uppercase;}
+.reg-side-info .content {padding: 15px 20px 5px;}
+.reg-side-info .content li { font-size: 16px; padding: 8px 0;position: relative;}
+.reg-side-info .content li i { display: block; font-weight: 100; font-style: inherit; color: #999999;font-size: 14px;}
+.reg-side-info .content li span { position: absolute; right: 0; top: 8px;}
+.reg-side-info .content li.line { border-bottom: 1px solid #dadada; padding-bottom: 0; margin-bottom: 4px;}
+.reg-side-info .content li.stress { font-weight: bold; color: #002F5F;}
+.reg-side-info-tips { font-style: italic; padding: 15px 20px 5px; border-top: 1px solid #dadada;}
+
+.reg-items-box {border: 1px solid #e3e3e3;border-top: 0;padding: 20px;display: block;width: 100%; margin-bottom: 50px;}
+.reg-items-box .select-box label:before { top: 5px;}
+.reg-items-box .select-box label:after { top: 4px;}
+.reg-items {margin: 0;padding-top: 20px;padding-bottom: 20px; position: relative;}
+.reg-items .select-box {padding-left: 23px;}
+.reg-items h5 { font-size: 16px;line-height: normal;}
+.reg-items .des {font-size: 16px; max-width: 84%;}
+.reg-items .des p {color: #55565a;}
+.reg-items h6 {font-size: 24px;text-transform: uppercase;font-weight: bold;}
+.reg-items h6 span {font-size: 16px;text-transform: capitalize; font-weight: normal;}
+.reg-items .total {font-size: 16px; margin-bottom: 0; padding-top: 8px;}
+.reg-items .total-des { font-size: 16px;}
+.reg-items.active { color: #00305e;}
+
+#expiration-date .col { position: relative; width: 307px;}
+#expiration-date .form-control {width: 131px;}
+#expiration-date .slash {position: absolute;left: 50%;top: 4px;-moz-transform: translateX(-50%);-webkit-transform: translateX(-50%);transform: translateX(-50%);color: #F4F4F4; font-size: 20px;}
+
+.img-col img { max-width: 100%;}
+.js-international-business-options {float: left;margin-top: 20px; width: 100%;}
+.shipping-delivery.register-option-div { margin-top: 0;}
+.text-upper { text-transform: uppercase!important;}
+.paddingLeft15 { padding-left: 15px;}
+.label-paddingLeft15 label { padding-left: 15px;}
+
+.form-group label.fontSize18 { font-size: 18px!important;}
+.form-group .paddingTop7 { padding-top: 7px;}
+.form-group .remember span { position: relative; top: -4px;}
+.form-group .fontSize16 { font-size: 16px;}
+
+#register-step-page .new-ibo-reg .payment-sub-box.marginLeft0 { margin-left: 0;}
+#register-step-page .new-ibo-reg .payment-sub-box.mainColor .form-control { color: #55565a;}
+#register-step-page .divider.marginBottom20 { margin-bottom: 20px;}
+
+.login-module .product-list-page-title { margin-bottom: 0;}
+.login-module .form-sub-title-gray {font-size: 16px;color: #56565a;}
+.login-module .next-control { margin-top: 50px;}
+
+.register-option-div .panel-collapse { margin-left: 12px }
+.register-option-div .amwa-radio:checked + label:after { background: #0075a4;}
+.register-option-div .amwa-radio + label {margin-left: 12px;vertical-align: top;margin-bottom: 30px;text-transform: inherit;}
+.register-option-div .amwa-radio + label:before {top: 6px;}
+.register-option-div .amwa-radio + label:after { top: 10px;}
+.register-option-div .form-group .btn-line {background: #fff;outline: none;font-weight: normal;padding: 8px 25px; height: auto;line-height: normal;border: 1px solid #002F5F!important;color: #002F5F;text-transform: uppercase;cursor: pointer;position: relative;z-index: 11;margin-left: 10px;margin-top: 10px;}
+.register-option-div .form-group .btn-line:hover {background: #002F5F;color: #fff;}
+.register-option-div .form-group label { width: 16.66666667%;}
+.register-option-div .form-group .col-md-10 {padding-left: 0;}
+
+.result-tip { font-size: 18px; text-transform: uppercase;}
+.result-tip img { margin-right: 5px;}
+
+.total-tip {color: #56565a; font-size: 16px;}
+.input-edit { display: none;}
+.input-text { display: block;}
+.saveBtn { display: none;}
+.editBtn { display: block;}
+.editing .input-edit { display: block; position: relative; top: -8px;}
+.editing .input-text { display: none;}
+.editing .saveBtn {display: block;}
+.editing .editBtn {display: none;}
+
+/** ---------------------------------
+ * @sprint.css
+ * ----------------------------------
+ */
+/*온라인 팩스 주문*/
+.cartlist-detail-desktop {display: inline-block;vertical-align: middle;}
+.shipping-delivery-ship {margin-bottom: 0;}
+.shipping-delivery-ship .form-group input {vertical-align: top;}
+.shipping-delivery-ship .form-group input + button {margin-left: 10px;}
+.shipping-delivery-ship .form-group textarea { width: 300px; min-height: 100px;border: 1px solid #dadada;}
+
+/*쇼핑*/
+.shipping-delivery-summary .cartlist-instock {color: #20883e;text-align: left;font-weight: 600;display: block;margin: 0px 0 20px 20px;font-size: 16px;}
+.shipping-delivery-summary .cartlist-instock .icon { font-size: 14px;margin-right: 5px;}
+.shipping-delivery-summary .summary-des { margin: 0 20px 20px;}
+.shipping-delivery .form-group .form-right-wrapper {line-height: 35px;display: inline-block; margin-left: 10px;vertical-align: top;}
+.shipping-delivery .form-group .form-right-wrapper span {font-size: 16px;}
+.shipping-delivery .form-group .form-right-wrapper label {font-size: 16px;font-weight: 100;line-height: 1;color: #55565a;margin-bottom: 20px;text-transform: none;}
+.shipping-delivery .form-group .form-right-wrapper input[type="text"] {margin-left: 0;border: 1px solid #dadada;border-radius: 0;box-shadow: none;-webkit-appearance: none;}
+.shipping-delivery .form-group .form-right-wrapper > a { margin-left: 10px;}
+.shipping-delivery .form-group .form-right-wrapper .collapse label {font-size: 16px;font-weight: 600;color: #002F5F;width: auto!important;display: inline-block;}
+.shipping-delivery .form-group .form-right-wrapper .collapse input[type="text"] { width: auto;display: inline-block; margin-left: 10px;}
+.shipping-delivery .form-group .form-right-wrapper .collapse button {display: inline-block;}
+
+/*ABO 회원가입*/
+#BusinessCollapseTwo h6.toggle-text {text-align: center;}
+
+/*카테고리*/
+.simpleimagecomponent a img {width: 100%;}
+
+/*ABO 회원가입*/
+#business-page-accordion .panel-title .glyphicon {color: #0075a4;font-size: 18px;margin-right: 5px;}
+
+/*개인정보 활용동의 관리*/
+.terms-and-conditions-management .bonus-payment-content .bonus-payment-wrapper .bonus-payment__title img {top: 33px;}
+.terms-and-conditions-management #terms {padding: 0 45px;}
+.terms-and-conditions-management #terms .terms-title {margin: 0;background-color: #F4F4F4;padding: 12px 15px;border: 1px solid #e3e3e3; border-bottom: none;}
+.terms-and-conditions-management #terms .terms-title .icon-exports {right: 15px;top: 16px;}
+.terms-and-conditions-management .next-control {padding: 0 45px 20px 45px;margin-bottom: 60px;}
+
+/*ABO TAX*/
+.point-management .bonus-payment-content .bonus-payment-wrapper .bonus-payment__title img {top: 36px;left: -33px;width: 25px;}
+.point-management .point-title .col-md-2 { margin-top: 25px;}
+.point-management .point-title .col-md-2:first-child {font-size: 16px;font-weight: 600;color: #002F5F; text-transform: uppercase;width: 168px;}
+.point-management .product-competitive__summary {text-align: left;margin-top: 30px;}
+.point-management .point-amway-theme {padding: 0 45px;}
+.point-management .point-amway-theme .show-more-orders { text-transform: none;}
+.point-management .point-amway-theme .ditto-nav-tabs-wrap {margin-bottom: 40px;}
+.point-management .form-group {margin-bottom: 0;}
+.point-management .form-group .date-range-select {width: 200px;margin-top: 15px;}
+.point-management .form-group .date-range-select select {width: 216px;}
+.point-management .form-group.date-form-group {display: inline-flex;}
+.point-management .form-group.date-form-group .box-date-select input {cursor: pointer;height: 40px;}
+.point-management .form-group.date-form-group .date-range-icon {border-top: 2px solid #ddd;width: 25px;position: relative;top: 20px;margin: 0 20px;}
+.point-management .form-group.date-form-group .point-search-btn {color: #fff;height: 40px;margin-left: 12px;}
+.point-management .form-group.date-form-group .point-search-btn:hover {color: #002F5F;}
+.point-management .amway-theme .tabs-content-blocks .content-block .ditto-schedule-table tbody tr td.ditto-field-name .mob-order-num-text {display: none;}
+.point-management .amway-theme .tabs-content-blocks .content-block .ditto-schedule-table tbody tr td.ditto-field-name .mob-order-num-number {display: none;}
+.point-management .amway-theme .tabs-content-blocks .content-block .ditto-schedule-table tbody tr td:nth-child(4) .mob-division-text {display: none;}
+.point-management .amway-theme .tabs-content-blocks .content-block .ditto-schedule-table tbody tr td:nth-child(4) .mob-division-type {display: none;}
+
+
+@media (max-width: 768px) {
+	/** ---------------------------------
+	 * @register.css
+	 * ----------------------------------
+	 */
+	.small-wrap {padding-left: 11%;padding-right: 11%;}
+	.pop-box {width: 95%;}
+	.pop-header { padding-left: 20px;padding-right: 20px; font-size: 25px;}
+	.pop-content {padding-left: 20px;padding-right: 20px;padding-bottom: 20px; padding-top: 28px;}
+	.pop-footer {padding-left: 20px; padding-right: 20px;}
+	.pop-close {width: 16px; height: 16px;}
+
+	#register-landing-page .notice { margin-bottom: 35px;}
+	#register-landing-page .involved-way { padding: 0 0 30px 0; min-height: 1px;}
+	#register-landing-page .involved-way dd {padding: 0;}
+	#register-landing-page .involved-way .icon-gray-dot { position: relative;top: -3px;margin-right: 10px;}
+	#register-landing-page .show-terms {margin-left: 0;width: 250px;}
+	#register-landing-page .footer-notice {text-align: left; position: relative; padding-left: 28px; margin-bottom: 0; margin-left: 6%;}
+	#register-landing-page .footer-notice .tips { position: absolute; left: 0; top: 0;}
+
+	#involved-ways {text-align: center;margin-bottom: 40px;}
+	#involved-ways .line { height: 0;border-right: none; border-bottom: 1px solid #e3e3e3; position: static;padding-top: 37px;margin-bottom: 20px;clear: both;}
+
+	#terms h3 .icon-exports { display: none;}
+	#terms .conditions { border: none;}
+	#terms .row { overflow: hidden; max-height: 148px;}
+	#terms .row .div-table {display: block;}
+	#terms .text {overflow: hidden; max-height: 148px;padding-left: 0; padding-right: 0;}
+	#terms .simple .text {padding: 18px 15px;overflow-y: auto;max-height: 300px;}
+	#terms .col-text { padding-left: 0; padding-right: 0;}
+	#terms .col { display: block;}
+	#terms .col .line {display: none;}
+	#terms h4 { border-top: 1px solid #e3e3e3;border-bottom: 1px solid #e3e3e3;}
+	#terms .text-btn {display: inline-block; margin-top: 20px;}
+	#terms .expand .row {max-height: none;}
+	#terms .expand .text {max-height: none;}
+	#terms .expand .icon-arrow-downs {display: none;}
+	#terms .expand .icon-arrow-ups {display: inline-block;}
+	#terms .col-xs-12 {width: 100%;}
+
+	#market-validation-box {border-bottom: 1px solid #e3e3e3;}
+
+	#register-step-page .divider {margin-bottom: 17px;}
+	#register-step-page .reg-side-info .tips {margin-bottom: 0;}
+	#register-step-page .form-group {margin-right: 0;margin-left: 0;}
+	#register-step-page .form-control {width: 100%;}
+	#register-step-page .tips { margin-bottom: 25px;}
+	#register-step-page .control-label {margin-bottom: 5px;}
+	#register-step-page .checkout-step { width: 20%;font-size: 16px;}
+	#register-step-page .checkout-steps-active {width: 40%;}
+	#register-step-page .checkout-steps-circle {left: 25px; height: 25px;width: 25px;}
+	#register-step-page .checkout-steps-text {left: 55px;}
+	#register-step-page .checkout-steps-circleactive {left: 20px;height: 25px;width: 25px;}
+	#register-step-page .checkout-steps { margin-bottom: 30px;}
+	#register-step-page .form-item-row {width: 100%;}
+	#register-step-page .card-img { padding-top: 10px;}
+	#register-step-page .select2-container {width: 100%!important;}
+	#register-step-page .select2-container .select2-selection__rendered { width: 100%;}
+
+	.reg-items { padding-left: 36px;}
+	.reg-items [class*="col-"] { padding-left: 12px; padding-right: 12px;}
+	.reg-items .select-box { position: absolute;top: 21px;left: 3px;}
+	.reg-items h6 {margin-top: 8px;}
+	.reg-items .img-col {text-align: center;margin-left: -34px;}
+	.reg-items h5 {max-width: 235px;}
+
+	#expiration-date .mm {padding-right: 10px;}
+	#expiration-date .yy {padding-left: 10px;}
+	#expiration-date .col {width: 100%;}
+
+	.register-option-div .panel-collapse { margin-left: 0;}
+ 	.register-option-div {margin-left: 0;margin-right: 0;}
+ 	.register-option-div .amwa-radio + label { margin-left: 0;}
+	.register-option-div .form-group .btn-line { margin-left: 0;}
+	.register-option-div .form-group label {margin-left: 0;width: 100%;}
+
+	.datepicker-dropdown {left: 0!important;width: 100%!important;}
+
+
+	/** ---------------------------------
+	 * @sprint.css
+	 * ----------------------------------
+	 */
+	.cartlist-detail-desktop { display: none;}
+	.col-md-4 a.pull-right {float: left;width: 100%;}
+
+	/*쇼핑*/
+	.shipping-delivery .form-group .form-right-wrapper {margin-left: 0;}
+	.shipping-delivery .form-group .form-right-wrapper .collapse label {display: block;}
+	.shipping-delivery .form-group .form-right-wrapper .collapse input[type="text"] { margin-left: 0;margin-bottom: 10px;}
+
+
+	/*개인정보 활용동의 관리*/
+	.terms-and-conditions-management .bonus-payment-content .bonus-payment-wrapper .bonus-payment__title img {top: 24px;}
+	.terms-and-conditions-management #terms {padding: 0 25px;}
+	.terms-and-conditions-management .next-control { padding: 0 25px;}
+	.terms-and-conditions-management .page-bonus-payment .bonus-payment .bonus-payment-wrapper {margin-bottom: 20px;}
+
+	/*ABO TAX*/
+	.point-management .point-amway-theme { padding: 0 25px;}
+	.point-management .point-amway-theme .tabs-toggles {margin-left: 24px;margin-right: 24px;margin-bottom: -1px;}
+	.point-management .point-title {margin-top: 15px;}
+	.point-management .point-title .col-md-2 { margin-top: 0;}
+	.point-management .form-group {margin-top: 20px;}
+	.point-management .form-group .date-range-select {width: 100%;}
+	.point-management .form-group .date-range-select select.form-control {width: 100%;}
+	.point-management .form-group.date-form-group {display: block;margin-top: 0;}
+	.point-management .form-group.date-form-group .box-date-select select {display: inline-block;min-width: 0; margin: 0 1%;}
+	.point-management .form-group.date-form-group .box-date-select select:nth-child(1) { width: 36%;}
+	.point-management .form-group.date-form-group .box-date-select select:nth-child(2) {width: 23%;}
+	.point-management .form-group.date-form-group .box-date-select select:nth-child(3) {width: 36%; margin-right: 0;}
+	.point-management .form-group.date-form-group .date-range-icon {top: 0;margin: 10px auto;}
+	.point-management .form-group.date-form-group .point-search-btn { margin-top: 15px;margin-left: 0;display: block;}
+	.point-management .form-group.date-form-group .box-date-select input {width: 100%;}
+	.point-management .amway-theme .tabs-content-blocks .content-block { margin: 0 -25px;}
+	.point-management .amway-theme .tabs-content-blocks .content-block .ditto-schedule-table thead tr th:nth-child(1) { padding-left: 20px;}
+	.point-management .amway-theme .tabs-content-blocks .content-block .ditto-schedule-table thead tr th:nth-child(1) .ditto-header-button { min-width: 172px; }
+	.point-management .amway-theme .tabs-content-blocks .content-block .ditto-schedule-table thead tr th:nth-child(2) { display: none;}
+	.point-management .amway-theme .tabs-content-blocks .content-block .ditto-schedule-table thead tr th:nth-child(3) { display: none;}
+	.point-management .amway-theme .tabs-content-blocks .content-block .ditto-schedule-table thead tr th:nth-child(4) { text-align: right; padding-right: 20px;}
+	.point-management .amway-theme .tabs-content-blocks .content-block .ditto-schedule-table thead tr th:nth-child(4) .ditto-header-button {text-align: right!important;}
+	.point-management .amway-theme .tabs-content-blocks .content-block .ditto-schedule-table tbody tr td.ditto-field-name span { padding-left: 0;}
+	.point-management .amway-theme .tabs-content-blocks .content-block .ditto-schedule-table tbody tr td.ditto-field-name span.mob-order-num-text {display: block;text-transform: uppercase; }
+	.point-management .amway-theme .tabs-content-blocks .content-block .ditto-schedule-table tbody tr td.ditto-field-name span.mob-order-num-number {  display: block; }
+	.point-management .amway-theme .tabs-content-blocks .content-block .ditto-schedule-table tbody tr td:nth-child(2) {display: none;}
+	.point-management .amway-theme .tabs-content-blocks .content-block .ditto-schedule-table tbody tr td:nth-child(3) { display: none;}
+	.point-management .amway-theme .tabs-content-blocks .content-block .ditto-schedule-table tbody tr td:nth-child(4) { text-align: right; padding-right: 20px; font-weight: 600;}
+	.point-management .amway-theme .tabs-content-blocks .content-block .ditto-schedule-table tbody tr td:nth-child(4) .mob-division-text { display: block;  font-weight: 100; text-transform: uppercase;}
+	.point-management .amway-theme .tabs-content-blocks .content-block .ditto-schedule-table tbody tr td:nth-child(4) .mob-division-type { display: block;font-weight: 100;}
+	.point-management .outer-border-bottom { margin-left: -38px;margin-right: -42px;}
+	.point-management .bonus-payment-content .bonus-payment-wrapper .bonus-payment__title img {top: 28px;left: -20px;width: 18px;}
+}
+
+@media (max-width: 440px) {
+  /*ABO TAX*/
+  .point-management .form-group.date-form-group .box-date-select select:nth-child(2) {width: 21.5%;}
+}
+
+@media (max-width: 320px) {
+  /*쇼핑*/
+  .shipping-delivery .form-group .form-right-wrapper > a {display: block;margin-left: 0;}
+}

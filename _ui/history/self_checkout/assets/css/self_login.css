@@ -1,0 +1,17 @@
+@import url('common.css');
+@import url('page-template.css');
+
+/* login */
+.scan_login:before{display:block;content:'';position:absolute;bottom:0;left:70px;width:447px;height:235px;background:url('../images/bg_login_notify.png') no-repeat right center;background-size:485px auto}
+.scan_list_prd{text-align:center;}
+.scan_list_prd .login_notify{margin:30px 0 54px;font-size:30px;color:#fff;line-height:1.2;}
+.scan_list_prd .login_notify strong{font-weight:700;font-size:40px;}
+.scan_list_prd .login_notify .txt_amway{display:inline-block;width:325px;height:111px;font-size:0;vertical-align:middle;background:url('../images/logo_amway.png') no-repeat 0 0;}
+.scan_list_prd .inp_member{width:340px;height:65px;margin-bottom:19px;font-weight:300;font-size:34px;color:#fff;border:0;border-bottom:3px solid #fff;background-color:transparent;}
+.scan_list_prd .inp_member::placeholder{color:#fff;text-align:center;opacity:.3;}
+.scan_list_prd .box_pad{position:relative;width:258px;height:339px;margin:0 auto;}
+.scan_list_prd .box_pad:after{display:block;content:'';clear:both;}
+.scan_list_prd .box_pad li{float:left;margin:1px;}
+.scan_list_prd .box_pad .pad_0{position:absolute;bottom:0;left:87px;}
+.scan_list_prd .box_pad .pad_delete{position:absolute;bottom:0;left:1px;}
+.scan_list_prd .box_pad .pad_confirm{position:absolute;bottom:0;right:1px;}

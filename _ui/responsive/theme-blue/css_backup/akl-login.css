@@ -1,0 +1,926 @@
+/** ---------------------------------------------------------
+  * Version : AKL Hybris UIUX 1.0
+  * @ 파일 : akl-login.css
+  * @ 구분 : 로그인 아이프레임 용 css
+  * ---------------------------------------------------------
+  */
+   
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://www.amway.co.kr/_ui/responsive/theme-blue/fonts/notosanskr/notokr-regular.woff2) format('woff2'),
+		 url(https://www.amway.co.kr/_ui/responsive/theme-blue/fonts/notosanskr/notokr-regular.woff) format('woff') ;
+}
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 500;
+	src: url(https://www.amway.co.kr/_ui/responsive/theme-blue/fonts/notosanskr/notokr-medium.woff2) format('woff2'),
+		 url(https://www.amway.co.kr/_ui/responsive/theme-blue/fonts/notosanskr/notokr-medium.woff) format('woff') ;
+}
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 700;
+	src: url(https://www.amway.co.kr/_ui/responsive/theme-blue/fonts/notosanskr/notokr-bold.woff2) format('woff2'),
+		 url(https://www.amway.co.kr/_ui/responsive/theme-blue/fonts/notosanskr/notokr-bold.woff) format('woff') ;
+}
+
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+body{margin:0;}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block;}
+audio,canvas,progress,video{display:inline-block;vertical-align:baseline;}
+audio:not([controls]){display:none;height:0;}
+[hidden],template{display:none;}
+a{cursor:pointer;}
+a:active,a:hover{text-decoration:none;}
+abbr[title]{border-bottom:1px dotted;}
+b,strong{font-weight:bold;}
+dfn{font-style:italic;}
+h1{margin:.67em 0;font-size:2em;}
+mark{color:#000000;background:#ffff00;}
+small{font-size:80%;} 
+hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0;}
+pre{overflow:auto;}
+code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em;}
+button,input,optgroup,select,textarea{margin:0;font:inherit; }
+button{overflow:visible;}
+button,select{text-transform:none;}
+button,html input[type=button],input[type=reset],input[type=submit]{cursor:pointer;-webkit-appearance:button;}
+button[disabled],html input[disabled]{cursor:default;}
+button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0;}
+input{line-height:normal;}
+input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}
+input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto;}
+input[type=search]{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;-webkit-appearance:textfield;}
+input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}
+fieldset{margin:0;padding:0;}
+/* fieldset{margin:0 2px;padding:.35em .625em .75em;border:1px solid silver;} */
+legend{padding:0;border:0;}
+textarea{overflow:auto;}
+optgroup{font-weight:bold;}
+table{border-spacing:0;border-collapse:collapse;}
+td,th{padding:0;}
+ 
+a:hover,a:hover span{text-decoration:none;}
+@font-face{font-family:'Glyphicons Halflings';src:url(../fonts/bootstrap/glyphicons-halflings-regular.woff) format('woff'),url(../fonts/bootstrap/glyphicons-halflings-regular.ttf) format('truetype');}
+@font-face{font-family:'AmwayIcons';font-weight:normal;font-style:normal;src:url(../fonts/AmwayIcons.eot?5v2gxx);src:url(../fonts/AmwayIcons.eot?5v2gxx#iefix) format('embedded-opentype'),url(../fonts/AmwayIcons.ttf?5v2gxx) format('truetype'),url(../fonts/AmwayIcons.woff?5v2gxx) format('woff'),url(../fonts/AmwayIcons.svg?5v2gxx#AmwayIcons) format('svg');}
+ 
+[type=checkbox]:not(:checked){position:absolute;left:-9999px;}
+[type=checkbox]:not(:checked)+label{position:relative;padding-left:1.95em;font-size:15px;font-weight:100;cursor:pointer;text-align:left;color:#55565a;}
+[type=checkbox]:not(:checked)+label::before{position:absolute;top:0;left:0;width:1.25em;height:1.25em;content:'';border:1px solid #dadada;background:#ffffff;}
+[type=checkbox]:not(:checked)+label::after{position:absolute;top:0;left:0;width:20px;height:20px;font-size:1.3em;line-height:.8;content:'';transition:all .2s ease 0s;transform:scale(0);opacity:0;background:url(../images/checkbox_check.png) 0 0/contain no-repeat;}
+[type=checkbox]:checked{position:absolute;left:-9999px;}
+[type=checkbox]:checked+label{position:relative;padding-left:1.95em;font-size:15px;font-weight:100;cursor:pointer;text-align:left;color:#55565a;}
+[type=checkbox]:checked+label::before{position:absolute;top:0;left:0;width:1.25em;height:1.25em;content:'';border:1px solid #dadada;border-color:#0075a4;background:#ffffff;background-color:#0075a4;}
+[type=checkbox]:checked+label::after{position:absolute;top:4px;left:4px;font-family:'AmwayIcons'!important;font-size:9px;font-weight:normal;font-style:normal;font-variant:normal;line-height:1;content:'\e909';text-transform:none;color:#ffffff;speak:none;-webkit-font-smoothing:antialiased;}/*akl 수정*/
+.tips{position:relative;display:inline-block;}
+.tips .toolTips{position:absolute;z-index:1001;bottom:100%;left:-8px;display:none;width:260px;margin-bottom:10px;padding:15px 25px;font-size:14px;font-style:normal;color:#ffffff;border-radius:4px;background:#55565a;}
+@media (max-width: 420px){
+  .tips .toolTips{width:178px;}
+}
+.tips #triangle-down{position:absolute;bottom:-10px;left:15px;width:0;height:0;border-top:10px solid #55565a;border-right:10px solid transparent;border-left:10px solid transparent;}
+ 
+.btn:active,.btn:active:focus,.btn:focus,.btn:hover,button:focus{outline:initial !important;  box-shadow:none;} /*2018.05.08 수정; */
+ 
+._checkbox-element-global-class~span._checkbox-element-global-span{position:relative;top:0;display:inline-block;width:20px;height:20px;margin-right:5px;cursor:pointer;border:1px solid #dadada;background:#ffffff;}
+._checkbox-element-global-class~span._checkbox-element-global-span:before{position:relative;top:4px;left:3px;float:left;font-family:'AmwayIcons'!important;font-size:9px;font-weight:normal;font-style:normal;font-variant:normal;line-height:1;content:'\e909';text-transform:none;color:#ffffff;speak:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}/*akl 수정*/
+._checkbox-element-global-class:checked:not(:disabled)~span._checkbox-element-global-span{border-color:#0075a4;background:#0075a4;}
+a{cursor:pointer;color:#0075a4;}
+a:hover{color:#002f5f;}
+a *{text-decoration:none;}
+a:focus{text-decoration:none;}
+.form-control{transition:none;color:#56565a;border-radius:0;}
+.form-control:focus{border-color:#002f5f;box-shadow:none;}
+.tb120{display:block;padding:70px 0 120px;}
+.display-none{display:none;}
+.container{margin-right:auto;margin-left:auto;padding-right:12px;padding-left:12px;}
+ 
+.container-fluid{margin-right:auto;margin-left:auto;padding-right:12px;padding-left:12px;}
+@media (min-width: 1025px){
+  .container-lg{float:none;overflow:hidden;margin:0 auto!important;}
+}
+ 
+.amway-theme h1{margin:0;font-family:Roboto;font-size:2.75em;font-weight:100;line-height:1em; color:#002f5f;}
+.amway-theme h1.type2{font-weight:500;}
+.amway-theme h2{margin:0;font-family:Roboto;font-size:2.25em;font-weight:500;line-height:1em;color:#002f5f;}
+ 
+.amway-theme .disclaimer-text{font-family:SourceSansPro;font-size:.875em;font-weight:100;line-height:1em;color:#56565a;}
+.amway-theme .btn.primary,.amway-theme [role=button] input[type=submit].primary,.amway-theme button.primary,.amway-theme input[type=button].primary,.amway-theme input[type=reset].primary{color:#ffffff;border:1px solid #002f5f;background-color:#002f5f;}
+.amway-theme .btn.small,.amway-theme [role=button] input[type=submit].small,.amway-theme button.small,.amway-theme input[type=button].small,.amway-theme input[type=reset].small{height:40px;padding-top:7px;font-size:14px;}
+.amway-theme input[type=text]:focus{border:1px solid #002f5f;}
+.amway-theme input[type=text]:disabled{color:#bbbbbb;background:#f4f4f4;}
+.amway-theme textarea{display:inline-block;white-space:pre;text-decoration:none; outline:none}
+.amway-theme textarea:focus{border:1px solid #002f5f;}
+.amway-theme textarea:disabled{color:#bbbbbb;background:#f4f4f4;}
+.amway-theme select{display:inline-block;white-space:pre;text-decoration:none;}
+.amway-theme select:focus{border:1px solid #002f5f;}
+.amway-theme select:disabled{color:#bbbbbb;background:#f4f4f4;}
+.amway-theme input[type=submit]{overflow:visible;padding:0;font:inherit;line-height:normal;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;border:0;-webkit-appearance:button;}
+.amway-theme input[type=submit]:focus{}
+.amway-theme input[type=reset]{overflow:visible;box-sizing:border-box;height:40px;padding:0;padding:0 25px;font:inherit; font-size:20px;font-weight:500;line-height:normal;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;color:#002f5f;border:0;-webkit-appearance:button;}
+.amway-theme input[type=reset]:focus{}
+.amway-theme input[type=button]{overflow:visible;box-sizing:border-box;height:40px;padding:0;padding:0 20px;font:inherit; font-size:20px;font-weight:500;line-height:normal;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;color:#002f5f;border:0;-webkit-appearance:button;}
+.amway-theme input[type=button]:focus{}
+.amway-theme input::-moz-focus-inner{padding:0;border:0;}
+.amway-theme [role=button]{display:inline-block;cursor:default;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;text-align:center;white-space:pre;text-decoration:none;}
+.amway-theme [role=button] input[type=submit]{box-sizing:border-box;height:40px;padding:0 25px;font-family:SourceSansPro;font-size:1.125em;font-weight:500;color:#002f5f;}
+.amway-theme [role=button] input[type=submit].primary{color:#ffffff;border:1px solid #002f5f;background-color:#002f5f;}
+.amway-theme [role=button] input[type=submit].primary:hover{cursor:pointer;border:1px solid #004285;background-color:#004285;}
+.amway-theme [role=button] input[type=submit].primary:disabled{border:1px solid #bbbbbb;background-color:#bbbbbb;}
+.amway-theme [role=button] input[type=submit].secondary{color:#002f5f;border:1px solid #002f5f;background-color:#ffffff;}
+.amway-theme [role=button] input[type=submit].secondary:hover{cursor:pointer;color:#ffffff;background-color:#002f5f;}
+.amway-theme [role=button] input[type=submit].secondary:disabled{color:#bbbbbb;border:1px solid #bbbbbb;background:#ffffff;}
+.amway-theme [role=button] input[type=submit].transparent{color:#ffffff;border:1px solid #ffffff;background-color:rgba(0, 0, 0, .3);}
+.amway-theme [role=button] input[type=submit].transparent:hover{cursor:pointer;color:#ffffff;border-color:#ffffff;background-color:rgba(128, 130, 133, .3);}
+.amway-theme [role=button] input[type=submit].small{height:40px;padding-top:7px;font-size:14px;}
+.amway-theme [role=button] input[type=submit].large{height:60px;padding:0 40px;font-size:1.375em;}
+.amway-theme [role=button] input[type=submit].link-btn{text-transform:none;color:#002f5f;}
+.amway-theme [role=button] input[type=submit].link-btn:disabled{color:#bbbbbb;}
+.amway-theme .btn{box-sizing:border-box;height:40px;padding:0 25px;font-family:SourceSansPro;font-size:1.125em;font-weight:500;color:#002f5f;}
+.amway-theme input[type=reset].primary{color:#ffffff;border:1px solid #002f5f;background-color:#002f5f;}
+.amway-theme input[type=reset].primary:hover{cursor:pointer;border:1px solid #004285;background-color:#004285;}
+.amway-theme input[type=reset].primary:disabled{border:1px solid #bbbbbb;background-color:#bbbbbb;}
+.amway-theme input[type=button].primary{color:#ffffff;border:1px solid #002f5f;background-color:#002f5f;}
+.amway-theme input[type=button].primary:hover{cursor:pointer;border:1px solid #004285;background-color:#004285;}
+.amway-theme input[type=button].primary:disabled{border:1px solid #bbbbbb;background-color:#bbbbbb;}
+.amway-theme button.primary{color:#ffffff;border:1px solid #002f5f;background-color:#002f5f;}
+.amway-theme button.primary:hover{cursor:pointer;border:1px solid #004285;background-color:#004285;}
+.amway-theme button.primary:disabled{border:1px solid #bbbbbb;background-color:#bbbbbb;}
+.amway-theme .btn.primary{color:#ffffff;border:1px solid #002f5f;background-color:#002f5f;}
+.amway-theme .btn.primary:hover{cursor:pointer;border:1px solid #004285;background-color:#004285;}
+.amway-theme .btn.primary:disabled{border:1px solid #bbbbbb;background-color:#bbbbbb;}
+.amway-theme input[type=reset].secondary{color:#002f5f;border:1px solid #002f5f;background-color:#ffffff;}
+.amway-theme input[type=reset].secondary:hover{cursor:pointer;color:#ffffff;background-color:#002f5f;}
+.amway-theme input[type=reset].secondary:disabled{color:#bbbbbb;border:1px solid #bbbbbb;background:#ffffff;}
+.amway-theme input[type=button].secondary{color:#002f5f;border:1px solid #002f5f;background-color:#ffffff;}
+.amway-theme input[type=button].secondary:hover{cursor:pointer;color:#ffffff;background-color:#002f5f;}
+.amway-theme input[type=button].secondary:disabled{color:#bbbbbb;border:1px solid #bbbbbb;background:#ffffff;}
+.amway-theme button.secondary{color:#002f5f;border:1px solid #002f5f;background-color:#ffffff;}
+.amway-theme button.secondary:hover{cursor:pointer;color:#ffffff;background-color:#002f5f;}
+.amway-theme button.secondary:disabled{color:#bbbbbb;border:1px solid #bbbbbb;background:#ffffff;}
+.amway-theme .btn.secondary{color:#002f5f;border:1px solid #002f5f;background-color:#ffffff;}
+.amway-theme .btn.secondary:hover{cursor:pointer;color:#ffffff;background-color:#002f5f;}
+.amway-theme .btn.secondary:disabled{color:#bbbbbb;border:1px solid #bbbbbb;background:#ffffff;}
+.amway-theme input[type=reset].transparent{color:#ffffff;border:1px solid #ffffff;background-color:rgba(0, 0, 0, .3);}
+.amway-theme input[type=reset].transparent:hover{cursor:pointer;color:#ffffff;border-color:#ffffff;background-color:rgba(128, 130, 133, .3);}
+.amway-theme input[type=button].transparent{color:#ffffff;border:1px solid #ffffff;background-color:rgba(0, 0, 0, .3);}
+.amway-theme input[type=button].transparent:hover{cursor:pointer;color:#ffffff;border-color:#ffffff;background-color:rgba(128, 130, 133, .3);}
+.amway-theme button.transparent{color:#ffffff;border:1px solid #ffffff;background-color:rgba(0, 0, 0, .3);}
+.amway-theme button.transparent:hover{cursor:pointer;color:#ffffff;border-color:#ffffff;background-color:rgba(128, 130, 133, .3);}
+.amway-theme .btn.transparent{color:#ffffff;border:1px solid #ffffff;background-color:rgba(0, 0, 0, .3);}
+.amway-theme .btn.transparent:hover{cursor:pointer;color:#ffffff;border-color:#ffffff;background-color:rgba(128, 130, 133, .3);}
+.amway-theme input[type=reset].small{height:40px;padding-top:7px;font-size:14px;}
+.amway-theme input[type=button].small{height:40px;padding-top:7px;font-size:14px;}
+.amway-theme button.small{height:40px;padding-top:7px;font-size:14px;}
+.amway-theme .btn.small{height:40px;padding-top:7px;font-size:14px;}
+.amway-theme input[type=reset].large{height:60px;padding:0 40px;font-size:1.375em;}
+.amway-theme input[type=button].large{height:60px;padding:0 40px;font-size:1.375em;}
+.amway-theme button.large{height:60px;padding:0 40px;font-size:1.375em;}
+.amway-theme .btn.large{height:60px;padding:0 40px;font-size:1.375em;}
+.amway-theme input[type=reset].link-btn{text-transform:none;color:#002f5f;}
+.amway-theme input[type=reset].link-btn:disabled{color:#bbbbbb;}
+.amway-theme input[type=button].link-btn{text-transform:none;color:#002f5f;}
+.amway-theme input[type=button].link-btn:disabled{color:#bbbbbb;}
+.amway-theme button.link-btn{text-transform:none;color:#002f5f;}
+.amway-theme button.link-btn:disabled{color:#bbbbbb;}
+.amway-theme .btn.link-btn{text-transform:none;color:#002f5f;}
+.amway-theme .btn.link-btn:disabled{color:#bbbbbb;}
+.amway-theme a span{font-weight:500;}
+.amway-theme label{font-size:1em;font-weight:500;color:#002f5f;}
+.amway-theme .ditto-schedule-table-content .ditto-schedule-table .ditto-sorting-form{vertical-align:top;}
+.amway-theme .ditto-schedule-table-content .ditto-schedule-table .ditto-sorting-form .ditto-header-button{min-width:120px;height:auto;line-height:1.45;text-align:left;vertical-align:top;border:0;}
+.amway-theme .full-width-title-component{position:relative;width:100%;margin-left:0;padding:75px 0;text-align:center;}
+@media (max-width: 768px){
+  .amway-theme .full-width-title-component{padding:25px 0;}
+}
+ 
+body>.popover.fade.bottom.in:not(.auto-suggestion-popover){position:fixed!important;z-index:9991;top:34px!important;}
+body>.popover.fade.bottom.in:not(.auto-suggestion-popover) .arrow{top:-11px!important;}
+body>.popover.fade.bottom.in:not(.auto-suggestion-popover) .popover-content{overflow-y:auto;max-height:calc(50vh);}
+ 
+ 
+select{appearance:none;-moz-appearance:none;curson:pointer;-webkit-appearance:none;}
+select::-ms-expand{display:none;}
+select option{padding-left:10px;}
+input[type=text]:focus {outline:0; border:1px solid #002f5f; box-shadow:none;}
+input[type=checkbox],input[type=radio]{margin-right:10px;margin-bottom:20px;}
+label{font-size:13px;font-weight:500;color:#002f5f;}
+.form-control:focus{border-color:#002f5f;box-shadow:none;}
+.form-control::-moz-placeholder{opacity:1;color:#b9bdc2;}
+.form-control:-ms-input-placeholder,.form-control::-webkit-input-placeholder{color:#b9bdc2;}
+select.form-control{font-size:13px;}
+.form-control[disabled],.form-control[readonly],fieldset[disabled] .form-control{color:#929292;}
+.has-error .control-label{color:#153a59;}
+.has-error input.form-control{border-color:#c53131;background:#ffffff;}
+.has-error .help-block{font-weight:500;color:#c53131;}
+.has-success .control-label{color:#153a59;}
+.has-success input.form-control{border-color:#e3e3e3;background:0 0;}
+.has-success .help-block{font-weight:500;color:#00a651;}
+legend{margin-top:24px;margin-bottom:24px;font-size:18px;border-bottom:0;}
+.form-element-icon{position:relative;}
+.form-element-icon .glyphicon{position:absolute;}
+.form-element-icon.datepicker .glyphicon{top:32px;right:10px;cursor:pointer;color:#002f5f;}
+@media (max-width: 768px){
+  .form-element-icon.datepicker .glyphicon{top:38px;}
+}
+.form-control-checkbox,.form-control-radio{display:block;}
+.form-control-checkbox input,.form-control-radio input{float:left;margin-bottom:0;}
+.form-control-checkbox .form-control-label,.form-control-radio .form-control-label{margin-left:25px;}
+fieldset>div:last-of-type input,fieldset>div:last-of-type label{margin-bottom:0;}
+.legend{margin-bottom:24px;}
+textarea{min-height:245px;}
+textarea+.help-block{margin-bottom:25px;font-size:12px;text-align:right;}
+.form-horizontal .form-group-sm .form-control,.input-sm{height:40px;padding:9px 12px;font-size:14px;line-height:1.42857143;border-radius:0;}
+select.input-sm{height:40px;line-height:40px;}
+select[multiple].input-sm,textarea.input-sm{height:auto;}
+.textpage-faqs th:last-child{text-align:left;}
+.back-link{padding:24px 0;padding-right:30px;padding-left:30px;}
+.back-link button{padding:0;}
+.back-link .glyphicon{top:-2px;padding-right:10px;line-height:16px;border-right:1px solid #e3e3e3;border-radius:0;}
+.back-link .label{margin:0;padding:24px 0;padding-left:10px;font-size:24px;font-weight:700;line-height:35px;white-space:normal;color:#002f5f;}
+.back-link .label.border{margin-bottom:29px;border-bottom:1px solid #e5e5e5;}
+.back-link.border{border-bottom:1px solid #e3e3e3;}
+.back-link.product-details .label{font-weight:500;}
+@media (max-width: 1024px){
+  .back-link{padding-right:20px;padding-left:20px;}
+} 
+ 
+.bank-terms{padding:0 24px;}
+.bank-terms #terms h3{margin-top:10px;}
+.bank-terms #terms .action{margin-bottom:0;border:0;}
+.bank-terms #terms .action h3{font-family:SourceSansPro;}
+.bank-terms .next-control{padding-bottom:40px;}
+.channel-text select.form-control{width:180px;}
+.center-line{position:relative;top:3px;left:-5px;display:inline-block;width:20px;border-top:1px solid #dadada;}
+.add-delivery-accountActions{padding-left:0;}
+.add-delivery-accountActions *{width:76px;padding:0!important;}
+.right-btn{position:absolute;top:-10px;right:0;display:none;}
+.right-btn *{display:block;width:76px;margin:0 auto 12px;text-align:center;}
+.right-btn button{paDDING:0;}
+.right-btn a{margin-left:12px;}
+.delivery-home-icon:before{content:'';}
+.delivery-home-icon img{position:relative;top:-5px;width:20px;}
+.set-address span{cursor:default;text-transform:initial;}
+.delivery-set-checkbox{position:relative;top:4px;margin-bottom:0;}
+@media (max-width: 768px){
+  .right-btn.accountActions{position:relative;margin-bottom:0;}
+  .right-btn.accountActions .btn-white-blue{margin-right:0;}
+  .right-btn.accountActions a{position:relative;top:8px;}
+  .right-btn.accountActions *{display:inline-block;float:left;}
+  .deliver-list-content.list-content .form-horizontal{padding:0 10px;background:#f6f6f6;}
+  .deliver-list-content.list-content .content-list .btn-blue-white{margin-left:0;}
+}
+@media (min-width: 768px){
+  .user-account-header .go-block{top:2.5em;float:right;}
+}
+@media (max-width: 417px){
+  #business-page-accordion{font-size:16px;}
+}
+.form-wrapper{padding:10px 0;}
+.form-wrapper form input{width:62%;height:40px;margin-right:10px;padding:0 12px;line-height:inline-block;border:1px solid #dadada;}
+.form-wrapper form button{overflow:hidden;height:40px;padding:0 20px;line-height:36px;line-height:inline-block;color:#ffffff;border:2px solid #002f5f;background-color:#002f5f;}
+.form-wrapper form button:hover{color:#002f5f;border:2px solid #002f5f;background-color:#ffffff;}
+.form-wrapper form button span{background-color:transparent;}
+.form-wrapper form .select2-container .selection .select2-selection .select2-selection__rendered{color:#002f5f;}
+.form-wrapper form .select2:not(:last-child){margin-right:20px;}
+.form-wrapper form select{width:auto;margin-right:20px;}
+.form-wrapper select.form-control{margin-bottom:0;}
+.channel-text{display:inline-block;margin-left:10px;font-weight:500;vertical-align:middle;}
+@media (max-width: 768px){
+  .channel-text{display:block;}
+}
+.channel-text span{margin:0 10px;}
+.delivery-pagination-toolbar{padding:0 12px!important;}
+.search-form-wrapper input[type=text]{width:220px;margin-right:10px;}
+.action-panel{margin-top:20px;}
+.action-panel #delete{float:left;margin-top:5px;line-height:20px;}
+.action-panel .pull-right{text-align:right;}
+.account-page-box{padding:0 30px;border-bottom:1px solid #e3e3e3;}
+.bank-row-title{display:table;width:100%;margin:0;padding:10px 0;vertical-align:middle;background-color:#f4f4f4;}
+.bank-row-title div{font-weight:500;color:#002f5f;}
+.bank-row-title div .icon-arrow-dropdown{font-size:12px;}
+.bank-row-title div .hover-area{cursor:pointer;}
+.content-list{position:relative;display:table;width:100%;margin:0;padding:20px 0;vertical-align:middle;background:#ffffff;}
+.content-list:nth-child(2n+1){background-color:#f4f4f4;}
+.content-list .action-required a{font-weight:500;}
+.hidden-line{display:none;}
+.list-content{display:table;clear:both;width:100%;}
+.list-content [class^=col-]{display:table-cell;float:none;vertical-align:middle;}
+.list-content .form-horizontal{margin-top:30px;}
+.list-content .form-horizontal [class^=col-]{display:inline-block;float:left;text-align:left;vertical-align:middle;}
+.list-content .form-horizontal .form-group select.form-control{width:100%;margin-bottom:0;padding-left:12px;text-transform:initial;}
+.list-content .form-horizontal .form-group label.checklabel{padding-top:0;}
+.list-content .form-horizontal .form-group [type=checkbox]:checked+label::after,.list-content .form-horizontal .form-group [type=checkbox]:checked+label::before,.list-content .form-horizontal .form-group [type=checkbox]:not(:checked)+label::before{top:2px;}
+.list-content label{margin-bottom:0;}
+@media (max-width: 768px){
+  .list-content [class^=col-]{display:inherit;float:left;}
+  .list-content .form-item-row .col-xs-1,.list-content .form-item-row .last-col{padding-left:15px;}
+}
+.list-content .bank-row-title{margin-top:20px;border-top:1px solid #e3e3e3;}
+.list-content .content-list{border-top:1px solid #e3e3e3;}
+.list-content .content-list:nth-child(2n+1){background-color:#ffffff;}
+.list-content .add-new-payment-info{border-top:1px solid #e3e3e3;}
+.accountActions{z-index:99;margin:20px 0 30px;}
+.accountActions button{margin-left:12px;}
+.accountActions .btn-white-blue{margin-right:12px;}
+.add-new-payment-info{display:block;clear:both;overflow:hidden;padding:20px 0;cursor:pointer;color:#0075a4;}
+.add-new-payment-info .icon{position:relative;bottom:.25em;width:auto;margin-left:.25em;padding-right:5px;font-size:.5em;}
+.add-new-payment-info a{color:#002f5f;}
+.add-new-payment-info a:focus,.add-new-payment-info a:hover{color:#002f5f;}
+.account-landing-page .pagination{margin:0;}
+.account-landing-page .pagination li{display:inline-block;margin:0 2px;vertical-align:middle;}
+.account-landing-page .pagination li a,.account-landing-page .pagination li span{padding:6px 10px;line-height:1;color:#55565a;border:2px solid transparent;}
+.account-landing-page .pagination li a:hover{border:2px solid #002f5f;background:0 0;}
+.account-landing-page .pagination li:first-child>a,.account-landing-page .pagination li:last-child>a{border-radius:0;}
+.account-landing-page .pagination .active>a,.account-landing-page .pagination .active>a:focus,.account-landing-page .pagination .active>a:hover{color:#ffffff;background:#002f5f;}
+.account-landing-page .account-page-pagination{display:block;clear:both;overflow:hidden;padding:20px 0;text-align:center;}
+.account-landing-page .form-horizontal .form-group{margin:0 0 10px;}
+.icon-delivery-address{background:url(../images/icon-delivery-address.png) no-repeat;}
+.toggle-buttons-container{margin:0;}
+.toggle-buttons-container button{height:40px;padding-right:0;padding-left:0;color:#002f5f;border:0;border-bottom:1px solid #dadada;background-color:#ffffff;}
+.toggle-buttons-container button:not(:last-child){border-right:1px solid #dadada;}
+.toggle-buttons-container button .icon-Humburger_list::before{margin-right:5px;font-size:12px;color:#0075a4;}
+.toggle-buttons-container button .icon-search::before{color:#0075a4;}
+.toggle-buttons-container button.button-active{border-bottom:none;} 
+ 
+.agreement-content .wrapper{overflow-x:hidden;overflow-y:scroll;max-height:250px;border:1px solid #e3e3e3;}
+.agreement-content .wrapper .agreement-text{padding:1em 1.25em;}
+.row-title{margin-bottom:0;line-height:1.25em;}
+.row-title .checkbox-row{margin-top:1.25em;margin-bottom:1.875em;}
+.row-description{margin-bottom:0;line-height:1.25em;}
+.row-description .checkbox-row{margin-top:1.25em;margin-bottom:1.875em;}
+.row-description.mission-statement{line-height:1.5em;}
+.row-title.agreement-title{margin-top:1.25em;margin-bottom:1.875em;font-weight:500;color:#56565a;}
+.checkbox-row label{margin:0;padding:0;font-size:1em;font-weight:100;cursor:pointer;text-transform:none;color:#56565a;}
+.checkbox-row label._checkbox-element-global-label{padding-left:10px;font-size:1em;}
+.checkbox-row label._checkbox-element-global-label span._checkbox-element-global-text{line-height:1.75em;}
+button.account-profile__save-button{color:#ffffff!important;background:#002f5f!important;}
+button.account-profile__save-button.disabled{background:#bbbbbb!important;}
+.acknowledge-container{padding-left:6px;}
+.business-action-btn.cancel-btn{padding:14px 15px;font-size:16px;font-weight:500;text-transform:none;color:#0075a4;border:none;background:none;}
+.business-action-btn.cancel-btn:hover{color:#002f5f;}
+.password-security-container{margin-top:0;}
+.password-security-container .account-profile__label{padding-top:12px;line-height:1.2;}
+.password-security-container .account-profile__value{margin-bottom:10px;line-height:1.2;}
+.password-security-container .btn.btn-primary{margin-top:12px;}
+.password-security-container .edit-password-button{margin-top:20px;padding:10px 30px;background:#002f5f;}
+.password-security-container .edit-password-button a{color:#ffffff;}
+.password-security-container .edit-password-button:hover{background:#274980;}
+ 
+ 
+.amway-theme .tabs-content-blocks {margin:0;padding:0;}
+.amway-theme .tabs-content-blocks .content-block{margin:0;padding:0;}
+.amway-theme .table-content-rows .table-header{height:2.5em;border-top:1px solid #dadada;border-bottom:1px solid #dadada;background:#f4f4f4;}
+.amway-theme .table-content-rows .table-header div{background:0 0;}
+.amway-theme .table-content-rows .header-element:first-of-type{padding-left:0;}
+.amway-theme .table-content-rows .header-element:last-of-type{padding-right:0;}
+.amway-theme .table-content-rows .header-element .header-text{display:inline-block;padding:7px 0;font-size:.875em;font-weight:500;line-height:1.7145em;color:#002f5f;background:none;}
+.amway-theme .table-content-rows .table-row div{background:0 0;}
+.amway-theme .table-content-rows .table-row:nth-of-type(odd) .table-row-wrapper{background:#f4f4f4;}
+.amway-theme .table-content-rows .table-row .row-element{padding-top:1.125em;padding-bottom:1.125em;}
+.amway-theme .table-content-rows .table-row .row-element:first-of-type{padding-left:0;}
+.amway-theme .table-content-rows .table-row .row-element:last-of-type{padding-right:0;}
+.amway-theme .table-content-rows .table-row .row-element .row-text{display:inline-block;font-size:1em;line-height:1.5em;background:none;}
+.amway-theme table{margin:0;padding:0;}
+.amway-theme table td{margin:0;padding:0;}
+.amway-theme table tr{margin:0;padding:0;}
+.amway-theme table tr td{padding-right:10px;padding-left:10px;}
+.amway-theme table tr th{padding-right:10px;padding-left:10px;}
+.amway-theme table th{margin:0;padding:0;}
+.amway-theme table thead tr{height:40px;line-height:38px;border-top:1px solid #dadada;border-bottom:1px solid #dadada;background:#f4f4f4;}
+.amway-theme table thead td{font-size:.875em;font-weight:500;vertical-align:middle; color:#002f5f;background:0 0;}
+.amway-theme table thead th{font-size:.875em;font-weight:500;vertical-align:middle; color:#002f5f;background:0 0;}
+.amway-theme table tbody tr:nth-of-type(even){background:#f4f4f4;}
+.amway-theme table tbody td{padding-top:1.125em;padding-bottom:1.125em;font-size:1em;line-height:1.5em;color:#55565a;background:0 0;}
+.amway-theme .amw-checkbox-wrap{position:relative;text-transform:none;background-color:transparent;}
+.amway-theme label.amw-checkbox-wrap .amw-global-checkbox{top:2px;}
+.amway-theme label.amw-checkbox-wrap .amw-checkbox-overlay{top:2px;}
+.amway-theme input.amw-global-checkbox{position:relative;z-index:10;top:3px;left:2px;float:left;width:17px;height:18px;margin:0;padding:0;cursor:pointer;opacity:0;}
+.amway-theme input.amw-global-checkbox:checked+.amw-checkbox-overlay{border-color:#002f5f;background:#002f5f;}
+.amway-theme input.amw-global-checkbox:checked+.amw-checkbox-overlay:before{position:relative;bottom:3px;left:2px;font-family:'AmwayIcons'!important;font-size:9px;font-weight:normal;font-style:normal;font-variant:normal;content:'\e909';text-transform:none;color:#ffffff;speak:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+.amway-theme input.amw-global-checkbox~.amw-after-checkbox-label{text-transform:none;}
+.amway-theme input.amw-global-checkbox:disabled{cursor:default;}
+.amway-theme input.amw-global-checkbox:disabled+.amw-checkbox-overlay{cursor:default;border-color:#bbbbbb;background:#bbbbbb;}
+.amway-theme input.amw-global-checkbox:disabled~.amw-after-checkbox-label{cursor:default;color:#bbbbbb;}
+.amway-theme input.amw-global-checkbox:disabled~.amw-after-checkbox-label .amw-label-checkbox-text{cursor:default;}
+.amway-theme input.amw-global-checkbox:disabled~.amw-label-checkbox-text{cursor:default;color:#bbbbbb;}
+.amway-theme .amw-checkbox-overlay{position:absolute;z-index:5;top:0;left:0;display:inline-block;width:20px;height:20px;margin:0;padding:0;line-height:22px;cursor:pointer;border:1px solid #dadada;background:#ffffff;}
+.amway-theme .amw-label-checkbox-text{margin:0 0 0 28px;font-weight:100;cursor:pointer;color:#55565a;}
+.amway-theme .amw-radio-wrap{position:relative;text-transform:none;}
+.amway-theme label.amw-radio-wrap .amw-global-radio{top:3px;}
+.amway-theme label.amw-radio-wrap .amw-radio-overlay{top:4px;}
+.amway-theme input.amw-global-radio{position:relative;z-index:10;top:2px;width:16px;height:16px;margin:0;margin-left:1px;padding:0;cursor:pointer;opacity:0;}
+.amway-theme input.amw-global-radio:checked+.amw-radio-overlay{border-color:#999999;}
+.amway-theme input.amw-global-radio:checked+.amw-radio-overlay:before{position:relative;top:3px;left:3px;display:block;width:10px;height:10px;font-family:'AmwayIcons'!important;font-size:8px;font-weight:normal;font-style:normal;font-variant:normal;content:'';text-transform:none;border-radius:50%;background:#002f5f;speak:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+.amway-theme input.amw-global-radio~.amw-after-radio-label{text-transform:none;}
+.amway-theme input.amw-global-radio:disabled{cursor:default;}
+.amway-theme input.amw-global-radio:disabled+.amw-radio-overlay{cursor:default;border-color:#bbbbbb;background:#ffffff;}
+.amway-theme input.amw-global-radio:disabled+.amw-radio-overlay:before{background:#bbbbbb;}
+.amway-theme input.amw-global-radio:disabled~.amw-after-radio-label{cursor:default;color:#bbbbbb;}
+.amway-theme input.amw-global-radio:disabled~.amw-after-radio-label .amw-label-radio-text{cursor:default;color:#bbbbbb;}
+.amway-theme input.amw-global-radio:disabled~.amw-label-radio-text{cursor:default;color:#bbbbbb;}
+.amway-theme .amw-radio-overlay{position:absolute;z-index:5;top:2px;left:0;display:inline-block;width:18px;height:18px;margin:0;padding:0;line-height:22px;cursor:pointer;border:1px solid #dadada;border-radius:50%;background:#ffffff;}
+.amway-theme .amw-label-radio-text{margin:0 0 0 10px;font-weight:100;cursor:pointer;color:#55565a;}
+.amway-theme a{margin:0;padding:0;font-size:initial;font-weight:100;text-decoration:none;background:0 0;}/* 수정 : 2018.05.23 (폰트 사이즈 초기화) */
+.amway-theme a span{font-weight:500;text-decoration:none;background:0 0;}
+ 
+.amway-theme a.primary-link .primary-link-icon{display:inline-block;width:24px;height:24px;margin-left:3px;font-size:16px!important;font-weight:100;text-align:center;vertical-align:top;color:#ffffff;border-radius:50%;background:#e11e45;}
+.amway-theme a.primary-link .primary-link-icon:before{position:relative;}
+.amway-theme a.primary-link:hover{text-decoration:none;color:#002f5f;}
+.amway-theme a.primary-link:hover .primary-link-icon{text-decoration:none;color:#ffffff;}
+.amway-theme a.primary-link:focus{text-decoration:none;color:#002f5f;}
+.amway-theme a.primary-link:focus .primary-link-icon{text-decoration:none;color:#ffffff;}
+ 
+.amway-theme a.secondary-link-with-icon .secondary-link-icon{display:inline-block;margin-right:3px;font-size:24px;font-weight:100;line-height:24px;vertical-align:bottom;}
+.amway-theme a.secondary-link-with-icon:hover{text-decoration:none;}
+.amway-theme a.secondary-link-with-icon:hover .secondary-link-icon{text-decoration:none;}
+.amway-theme a.secondary-link-with-icon:focus{text-decoration:none;}
+.amway-theme a.secondary-link-with-icon:focus .secondary-link-icon{text-decoration:none;}
+.amway-theme a.breadcrumb-link{font-size:14px;font-weight:100;color:#55565a;}
+.amway-theme a.breadcrumb-link span{font-size:14px;font-weight:100;color:#55565a;}
+.amway-theme a.breadcrumb-link:hover{color:#55565a;}
+.amway-theme a.breadcrumb-link:hover span{color:#55565a;}
+.amway-theme a.breadcrumb-link:focus{color:#55565a;}
+.amway-theme a.breadcrumb-link:focus span{color:#55565a;}
+.amway-theme a.breadcrumb-link.breadcrumb-current-page{font-weight:500;}
+.amway-theme a.breadcrumb-link.breadcrumb-current-page span{font-weight:500;}
+.amway-theme a.disabled{cursor:default!important;pointer-events:none;color:#bbbbbb;}
+.amway-theme a.disabled span{color:#bbbbbb;}
+.amway-theme a.disabled .primary-link-icon{color:#ffffff;background-color:#bbbbbb;}
+.product-details.page-title{max-width:540px;}
+.searchEmptyPageMiddle{margin-bottom:20px;padding:80px 0 90px;}
+.searchEmptyPageMiddle-component{padding-right:30px;padding-left:30px;}
+.searchEmptyPageMiddle-component .content{width:65%;margin:auto;margin-bottom:20px;padding:5px 10px;font-size:1.25em;font-weight:400;line-height:1em;text-align:center;}
+.searchEmptyPageMiddle-component .content span{display:block;margin-bottom:5px;font-size:36px;line-height:1;color:#002f5f;}
+.searchEmptyPageMiddle-component .ui-front{width:30%;margin:auto;}
+.searchEmptyPageMiddle-component .ui-front .input-group{display:block;}
+.searchEmptyPageMiddle-component .ui-front .input-group .form-control{height:30px;padding:6px 12px;border-radius:3px;}
+.searchEmptyPageMiddle-component .ui-front .input-group-btn{position:absolute;z-index:2;top:-2px;right:35px;}
+.searchEmptyPageMiddle-component .ui-front .input-group-btn .btn{padding:6px 12px;}
+.searchEmptyPageMiddle-component .ui-front .input-group-btn .btn-link:hover{text-decoration:none;}
+.searchSpellingSuggestionPrompt{padding-right:20px;padding-left:20px;}
+.results h1{margin:0;margin-top:24px;padding:24px 0;padding-bottom:0;padding-left:24px;font-size:24px;font-weight:700;line-height:35px;color:#002f5f;}
+.results h1.border{margin-bottom:29px;border-bottom:1px solid #e5e5e5;}
+.search-empty{margin-top:20px;margin-bottom:20px;text-align:center;}
+.search-empty .headline{margin-bottom:20px;}
+.search-empty .search-suggestions{margin-bottom:20px;}
+ 
+ 
+.product-list-page-title{margin:0 0 1.11em .3125em;font-family:Roboto;font-size:2.57em;font-weight:700;color:#002f5f;}
+.product-list-page-title.spl-page-title{margin-bottom:30px;}
+.switch-buttons-wrapper{display:inline-block;width:100%;font-size:0;white-space:nowrap;}
+.switch-buttons-wrapper .wrap{border-bottom:1px solid #e3e3e3;}
+.switch-buttons-wrapper .search-type-switch-button{display:inline-block;padding:10px 20px;font-size:16px;font-weight:500;cursor:pointer;color:#55565a;border:1px solid #e3e3e3;border-bottom:none;background-color:#f4f4f4;}
+.switch-buttons-wrapper .search-type-switch-button.active{position:relative;top:2px;color:#002f5f;border:none;border-top:3px solid #002f5f;background-color:#ffffff;}
+.switch-buttons-wrapper .search-type-switch-button.active:first-child{border-left:1px solid #e3e3e3;}
+.switch-buttons-wrapper .search-type-switch-button.active:last-child{border-right:1px solid #e3e3e3;}
+ 
+.main-container{position:relative;max-width:1400px;margin:0 auto;padding:0 12px;}
+.main-container .product-list-page-title.shopping-list-page-title{margin-left:0;}
+.breadcrumb-section{position:relative;display:block;padding-top:30px;padding-left:0;background:none;}
+.btn{padding:10px 15px;font-size:16px;border-radius:0;}
+.btn.primary.transparent.banner-btn:hover{color:#002f5f;border-color:#002f5f!important;}
+.btn-text{color:#ffffff;}
+.btn-text:hover{color:#002f5f!important;}
+.banner-btn:hover{-webkit-transition:background-color .3s,color .3s!important;transition:background-color .3s,color .3s!important;text-decoration:none!important;color:#002f5f!important;border-color:#002f5f!important;background:#ffffff!important;}
+.btn-text-wrap:hover{border:2px solid #002f5f!important;border-color:#002f5f!important;background:#ffffff!important;}
+.category-name{height:12px;margin-right:0!important;font-size:16px;font-weight:500;line-height:1.5;text-align:center;color:#0075a4!important;}
+.category-item img:hover{cursor:pointer;-webkit-transform:scale(1.05);-ms-transform:scale(1.05);transform:scale(1.05);}
+.pcp-banner{margin-top:50px;border-top:1px solid #dadada;}
+.desktop-image{position:relative;}
+.second-option{-webkit-transition:all .3s;transition:all .3s;}
+.second-option:hover{-webkit-transform:scale(1.02);-ms-transform:scale(1.02);transform:scale(1.02);}
+.carousel-link-wrap{color:#ffffff!important;background:none!important;}
+.product-category-page .product-categories .pcp-banner{padding-top:50px!important;}
+body>.popover.auto-suggestion-popover{top:125px!important;}
+
+main{position:relative;}/* z-index:1 삭제 : 2018.09.03 */
+ 
+.sign-out i{margin-right:10px;font-size:20px;color:#002f5f;}
+.popover.bottom>.arrow{margin-left:20px;background:0 0!important;}
+.icon-caution{display:inline-block;width:24px;height:24px;background:url(../images/icon_caution.png) no-repeat!important; background-size:24px 24px!important;}
+.mini-cart-list{font-weight:100;}
+.mini-cart-list .first-price{font-weight:500;}
+.sys-message span{font-size:16px;font-weight:500;text-align:left;vertical-align:top;color:#002f5f;}
+.sys-message span.message-num{display:inline-block;min-width:30px;text-align:center;color:#ffffff;border-radius:11px;background:#e11e45!important;}
+.ico-wraper{display:inline-block!important;width:30px;}
+.account-popover__congratulation div.sys-message{display:block;}
+.nav-links-container span.icon-arrow-dropdown{display:inline-block;}
+.nav-links-container .opened span.icon-arrow-dropdown:before{font-family:'Glyphicons Halflings';content:'\e260'!important;}
+.nav-links-container .collapsed span.icon-arrow-dropdown:before{font-family:'Glyphicons Halflings';content:'\e259'!important;}
+.message-num-1{position:absolute;top:-4px;left:22px;min-width:24px;height:20px;padding:2px 5px;font-size:12px;line-height:1;text-align:center;color:#ffffff!important;border:2px solid #002f5f;border-radius:10px;background:#e11e45!important;}
+.mini-cart-item{padding-top:20px;padding-bottom:20px;border-bottom:1px solid #dadada;}
+.mini-cart-item .product-details .name{font-size:16px;font-weight:500;line-height:1;text-align:left;color:#002f5f;}
+.mini-cart-item .product-details .name:hover{color:#0075a4;}
+.list-item-pv-bv{font-size:14px;}
+.mini-cart-item:first-child {padding-top:10px;padding-bottom:10px;}
+.mini-cart-items-container .summary-block span.bold{font-weight:500;}
+.mini-cart-items-container .arrow{top:-11px;left:50%;margin-left:-11px;margin-left:40px;border-top-width:0;border-bottom-color:#999999;border-bottom-color:rgba(0, 0, 0, .25);background:0 0!important;}
+.mini-cart .mini-cart-body .mini-cart-totals{margin:12px -20px 36px;padding:12px 20px;color:#002f5f;border:1px solid #e5e5e5;border-width:1px 0;background:#f4f4f4!important;}
+.mini-cart .mini-cart-body .mini-cart-totals>div{font-weight:700;color:#002f5f;}
+.mini-cart .mini-cart-body .mini-cart-totals .key{float:left;}
+.mini-cart .mini-cart-body .mini-cart-totals .value{text-align:right;}
+.mini-cart .mini-cart-body .mini-cart-list .mini-cart-item .thumb{margin-right:0;}
+.mini-cart .mini-cart-body .mini-cart-list .retail-price{display:none;}
+.mini-cart .mini-cart-body .mini-cart-list .product-item-element{display:block;clear:both;}
+.mini-cart .mini-cart-body .mini-cart-list .product-item-element .value-wrapper{float:right;}
+.list-item-ibo-price .first-price *{color:#002f5f;}
+.btn-primary{ text-decoration:none;color:#ffffff!important;background:#002f5f!important;}
+.btn-primary:hover{text-decoration:none!important;color:#002f5f!important;background:#ffffff!important;} 
+.auto-suggestion-popover{top:123px;left:0;display:none;border:0;-webkit-box-shadow:0 0 10px rgba(0, 0, 0, .2);box-shadow:0 0 10px rgba(0, 0, 0, .2);}
+.auto-suggestion-popover .popover-content{position:relative;max-width:1400px;margin:0 auto;padding-left:50px;}
+.auto-suggestion-popover .popover-content .header .title span{font-size:16px;font-weight:700;color:#002f5f;}
+.auto-suggestion-popover .popover-content ul .products-wrapper .ui-menu-item{height:160px;vertical-align:top;}
+.auto-suggestion-popover .popover-content ul .products-wrapper .ui-menu-item a{display:block;height:140px;}
+.auto-suggestion-popover .popover-content ul .products-wrapper .ui-menu-item .name{display:block;height:35px;font-size:16px;font-weight:100;text-align:center;color:#0075a4;}
+.auto-suggestion-popover .popover-content ul .products-wrapper .ui-menu-item .name:hover{color:#002f5f;}
+.auto-suggestion-popover .popover-content ul .suggested-words-wrapper .ui-menu-item a .name{font-size:18px;font-weight:400;line-height:14px;text-align:left;color:#55565a;}
+.auto-suggestion-popover .popover-arrow{border:0;-webkit-box-shadow:0 0 10px rgba(0, 0, 0, .2);box-shadow:0 0 10px rgba(0, 0, 0, .2);}
+.auto-suggestion-popover .thumb{display:block;height:105px;text-align:center;vertical-align:middle;}
+.view-all-container a{font-size:16px;font-weight:500;color:#0075a4;}
+.view-all-container a:hover{color:#002f5f;}
+.search-results-close{position:absolute;top:15px;right:80px;width:18px;height:18px;text-indent:-9999px;border:0;background:url(../images/close@2x.png) no-repeat;background-size:contain;}
+   
+.location-arrow-down:before{font-size:11px;content:'\e259';color:#ffffff;}
+.icon-arrow-dropdown .location-arrow-down:before{content:'';}
+.overlay-menu-mobile__panel__heading{position:relative;background-image:url(../images/nutrition-icon@2x.png);background-size:26px;}
+.login-form{width:354px;}
+.popover{font-family:'SourceSansPro';font-weight:500;}
+.popover .login-form{padding:20px;}
+.popover .login-form .login-form__sub-text{font-size:14px;line-height:2.86;text-align:left;letter-spacing:.1px;color:#55565a;}
+.popover .login-form label{position:relative;display:inline-block;max-width:100%;margin-bottom:5px;padding-left:1.95em;font-size:15px;font-weight:100;cursor:pointer;text-align:left;color:#55565a;}
+.login-form__username{height:44px; padding:14px;border:1px solid #dadada;border-radius:4px;background:url(../images/info-icon@2x.png) 95% 11px no-repeat!important;background-color:#ffffff;background-size:18px!important;}
+.login-form__password{height:44px;padding:14px;border:1px solid #dadada;border-radius:4px;background-color:#ffffff;}
+.amway-theme .login-form__link{display:block;margin-top:15px;font-size:14px;line-height:1.43;text-align:left;letter-spacing:.1px;color:#0075a4;}
+.amway-theme .login-form__owner{margin-bottom:16px;font-size:16px;font-weight:500;line-height:3.44px;text-align:left;color:#002f5f;}
+.amway-theme .login-form__register{text-align:center; display:block; width:100%;height:60px; line-height:55px; font-size:20px; border:2px solid #e11e45; -webkit-transition:background-color .3s,color .3s;transition:background-color .3s,color .3s;letter-spacing:.2px; color:#fff;background-color:#e11e45; }
+.amway-theme .login-form__register:hover{color:#e11e45; background:#fff;}
+.remember-me{position:relative!important;display:block;margin:15px 0!important;padding:0 0 0 28px!important;}
+.remember-me::before{top:8px;}
+.extraclass1{top:41px ;}
+.extraclass1.bottom>.arrow{margin-left:50px;}
+.no-login.bottom>.arrow{margin-left:90px;}
+.overlay{position:fixed;z-index:9998;top:0;left:0;display:none;overflow:hidden;width:100%;height:100%;cursor:pointer;opacity:.7;background:#000000;}
+.cbox{position:fixed;z-index:9999;top:5%;left:50%;display:none;visibility:visible;width:auto;min-width:300px;max-width:960px;margin:0 auto;-webkit-transform:translate(-50%, 0);-ms-transform:translate(-50%, 0);transform:translate(-50%, 0);}
+ 
+  
+.dashboard-half-link{position:absolute;right:10px;bottom:10px;}
+ 
+ 
+.minicart__view-cart{display:inline-block;font-weight:100;letter-spacing:.2px;color:#ffffff;border:2px solid transparent;background-color:#002f5f;}
+.homepage .new-hot-brand{overflow:hidden;}
+.new-hot-brand__message-link{display:inline-block;font-weight:100;letter-spacing:.2px;color:#ffffff;border:2px solid transparent;background-color:#002f5f;}
+.product-description__addtocartbtn{display:inline-block;font-weight:100;letter-spacing:.2px;color:#ffffff;border:2px solid transparent;background-color:#002f5f;}
+.dashboard-bar__go{display:inline-block;width:50px;height:44px;font-weight:100;font-weight:500;letter-spacing:.2px;color:#ffffff;border:2px solid transparent;background-color:#002f5f;}
+.dashboard-bar__go:hover{color:#002f5f;border:2px solid #002f5f;background-color:#ffffff;}
+.clear-border{margin:0!important;padding:0!important;border:0!important;}
+.btn-blue-white{display:inline-block;height:auto;min-height:40px;padding:0 20px;font-size:16px;font-weight:100;font-weight:500;line-height:1;text-align:center;vertical-align:middle;letter-spacing:.2px; color:#ffffff;border:2px solid transparent;border-radius:1px;background-color:#002f5f;}
+.btn-blue-white:hover{-webkit-transition:background-color .3s,color .3s;transition:background-color .3s,color .3s;color:#002f5f;border:2px solid #002f5f;border-color:#002f5f;background:#ffffff;}
+.btn-blue-white:hover .btn-text{font-weight:500;color:#002f5f;}
+.btn-white-blue{display:inline-block;height:auto;min-height:40px;padding:10px 20px;font-size:16px;font-weight:100;font-weight:500;line-height:1;text-align:center;vertical-align:middle;letter-spacing:.2px; color:#002f5f;border:2px solid #002f5f;border-radius:1px;background-color:#ffffff;}
+.btn-white-blue:hover{-webkit-transition:background-color .3s,color .3s;transition:background-color .3s,color .3s;color:#ffffff;background-color:#002f5f;}
+.btn-ink{display:inline-block;font-size:16px;font-weight:100;letter-spacing:.2px;color:#ffffff;border:2px solid transparent;border:1px solid #ffffff!important;border-radius:2px;background:rgba(0, 0, 0, .3);background-color:#002f5f;}
+.btn-ink:hover{-webkit-transition:background-color .3s,color .3s;transition:background-color .3s,color .3s;color:#000000;background:#ffffff;}
+.btn-ink:hover span{color:#000000;}
+a.btn-blue-white,
+a.banner-button-link .btn-blue-white{line-height:40px!important;}
+.owl-theme .owl-item .sponsorship__img{width:182px;margin:0 auto;}
+ 
+.bar-chart-container{text-align:center;} 
+ 
+   
+/* ----- core 재정의 ----- */
+::-webkit-input-placeholder {color:#808285; opacity:.6;}
+:-ms-input-placeholder {color:#808285;}
+:-moz-placeholder {color:#808285;}
+::-moz-placeholder {color:#808285;}
+.form-control::-webkit-input-placeholder {color:#808285; opacity:.6;}
+.form-control::-moz-placeholder {color:#808285; opacity:1;}
+.form-control:-ms-input-placeholder {color:#808285;}
+.akl .has-error .form-control {border-color:#dadada;}
+.form-control[disabled], fieldset[disabled] .form-control {cursor:default !important;}
+
+hr.divide.no-line {border-top:0}
+
+/* breadcrumb */
+.breadcrumb>li {position:relative; display:inline-block; padding-left:18px;}
+.breadcrumb>li:first-child {padding-left:0;}
+.breadcrumb>li+li::before {position:absolute; top:0; left:0; padding:0 6px;}
+
+input,textarea,select{-webkit-appearance:none;-webkit-border-radius:0; font-weight:400;}
+input::-ms-clear {display:none;}
+
+/* focus */
+.akl .amway-theme * , .akl a:focus {outline:initial !important;}
+
+/* layout */
+.clearfix:after , .akl .clearfix:after {content:""; display:block; clear:both; width:0; height:0;}
+.akl .container-fluid {overflow:visible;}
+.akl .container-fluid.my-count {padding:0 0;}
+.akl .container {display:block; max-width:1400px; margin:0 auto; clear:both;}
+.container > .yCmsContentSlot > .container {padding:0;}
+.akl .row {margin:0;}
+.akl .mgAuto {margin:0 auto;}
+.akl.component {padding:20px;}
+
+/* font-family 재정의 */
+.akl {font-family:'Noto Sans KR', sans-serif; font-weight:normal;}
+.akl button {font-family:'Noto Sans KR', sans-serif !important; border:0;}
+.akl input[type="password"], .akl input[type="text"], .akl select.form-control,
+.akl input[type="button"], .akl .amway-theme .btn, .akl .page-title {font-family:'Noto Sans KR', sans-serif;}
+
+/* font-size 재정의 */
+.akl .amway-theme * {font-size:14px; letter-spacing:-1px;}
+.akl a {font-size:14px; font-weight:400;}
+.akl em, .akl i {font-size:14px; font-style:normal;}
+.akl dt , b, strong {font-weight:500;}
+.akl label span {font-size:14px;}
+.akl .text-uppercase {text-transform:capitalize;}
+
+/* 버튼 재정의 */
+.akl button.link-btn {height:auto; background:none; padding:0; border:0;}
+.akl .link-btn {display:inline-block; color:#0075a4 !important; font-size:14px; line-height:2; font-weight:500;}
+.akl .link-btn .glyphicon {width:15px; height:13px;}
+.akl .link-btn .glyphicon:before { position:absolute; right:0; top:1px;}
+.akl .link-btn.off {color:#bbb !important;}
+.akl .amway-theme input[type="reset"], .akl .amway-theme [role="button"] input[type="submit"],
+.akl .amway-theme button, .akl .amway-theme input[type="button"], .akl .amway-theme .btn {font-weight:500;}
+.akl .link-btn +.link-btn.off {margin-left:10px;}
+
+/* 재정의 기타 */
+.akl .pot {color:#e11e45;}
+.akl .col-disabled {color:#bbb;}
+.akl .title-box {display:block; padding:10px 0 0; clear:both;}
+.akl .account-area .title-box {padding-top:0}
+.sns-container {z-index:2;}/* brand 전용 */
+
+/* ASM화면(개발요청, 고객센터 전용화면) */
+.akl #_asm {position:fixed !important;}
+.asm-header .general-header {top:146px !important;}
+#_asm .collapseBtn.close {bottom:-110px !important; opacity:1;}
+.ui-front form {margin-bottom:0!important;}
+
+
+/** ---------------------------------
+  * @ 공통 UI
+  * ---------------------------------
+  */
+.hr {display:block; margin-top:40px !important; padding-top:40px !important; border-top:1px solid #dadada;}
+ 
+/* 공통:color */
+.color-red {color:#ed174c !important;}
+.color-red.big {font-size:16px;font-weight:500;letter-spacing:-1px;}
+.color-blue {color:#002f5f !important;}
+.color-blue-sky {color:#007eb0 !important;}
+.color-gray {color:#55565a !important;;}
+.color-green {color:#20893d;}
+ 
+.akl .extraclass1 {top:70px ;}
+.akl .message-num-1 {font-size:11px;}
+.akl .login-form {letter-spacing:-1px;}
+.akl .userinfo-open #login-drop-content {margin-top:0;border-radius:0;}
+.akl .popover.bottom > .arrow {left:auto; right:115px;}
+.akl .popover.bottom.extraclass1 > .arrow {right:93px !important;}
+.akl .amway-theme h1.login-form__title {font-size:23px; letter-spacing:-2px; margin-bottom:25px;}
+
+/* header > login */
+.akl .iframe-login {border:0; width:100%; height:220px;}
+.akl .popover .login-form input[type="text"],
+.akl .popover .login-form input[type="password"] {width:100%; height:44px; font-weight:400;box-sizing:border-box;}
+.akl .popover .login-form label {font-weight:700; margin-bottom:20px !important;} 
+.akl .login-form__link {font-weight:700; font-size:13px !important;}
+.akl .login-form__owner {line-height:1.5;}
+.akl .login-form__submit{border:0; letter-spacing:-1px; display:block;width:100%;height:60px;font-size:20px;-webkit-transition:background-color .3s,color .3s;transition:background-color .3s,color .3s;}
+.akl .login-form__submit:hover{text-decoration:none; color:#002f5f; border:2px solid #002f5f; background:#fff;}
+.amway-theme input.login-form__submit{height:60px;font-size: 20px;}
+.akl .login-email-box {position:relative;margin-bottom:15px;}
+.akl .login-email-box .login-form__username {background:none !important; width:100%;box-sizing:border-box;}
+.akl .login-form__password {width:100%;}
+.akl .login-email-box  button {position:absolute; right:0; top:0; background-color:#fff; height:44px; width:44px; background:url(../images/delete-icon.png) no-repeat 59% 11px !important;background-size:18px !important; text-indent:-999px; overflow:hidden;;outline:initial;}
+.akl .tooltip-wrap {display:none; position:absolute; top:44px; right:0; width:200px; height:62px; padding:12px; letter-spacing:0; line-height:1.1!important; text-align:center;; color:#fff; font-size:13px; font-weight:400; background:#56565a; border-radius:8px;}
+.akl .tooltip-wrap:before {content:""; position:absolute; top:-9px; right:15px; width:19px; height:9px;  background:url(../images/akl_common/ico_tooltip.png) no-repeat 0 0;}
+.akl .moble-login .fingerprint-wrap [type="checkbox"]:not(:checked) + label::before,
+.akl .moble-login .fingerprint-wrap [type=checkbox]:checked+label::before,
+.akl .moble-login [type="checkbox"]:not(:checked) + label::before,
+.akl .moble-login [type=checkbox]:checked+label::before {top: 2px;}
+
+/*header > login > 지문인증 로그인*/
+.wrapper-login{box-sizing:border-box;}
+.fingerprint { display:none}
+.akl .fingerprint-wrap { display:block;}
+.akl .fingerprint-inner {background:#fff; padding:30px 20px;position:absolute;left:0;top:0;height:100%;bottom:0;right:0;}
+.akl .fingerprint-wrap .title-h2 {margin-bottom:25px;font-weight:500}
+.akl .fingerprint-wrap p { font-weight:400}
+.akl .fingerprint-wrap dl {font-weight:400; padding-top:10px;}
+.akl .fingerprint-wrap dl dt {color: #002F5F; margin-bottom:5px; font-size:16px}
+.akl .fingerprint-wrap dl dd {margin-bottom:15px;}
+.akl .fingerprint-wrap .btn-wrap {border-top:1px solid #dadada; margin-top:30px; padding-top:10px;}
+.akl .fingerprint-wrap .btn-wrap input { width:100%; height:60px; margin-top:10px;}
+.akl .fingerprint-wrap .btn-wrap .finger-btn{font-size:20px;font-weight:500;color:#fff;border:0;width:100%; height:60px; margin-top:10px;background:#002f5f}
+.akl .fingerprint-wrap p.txt-italic  {background: url(../images/akl_common/ico_star.png) no-repeat left 5px!important;background-size: 5px!important;padding: 0 0 2px 10px;font-size: 13px;color: #808285;font-style: italic;}
+.akl .login-form a{text-decoration:none}
+.akl .login-form__register {text-align: center; display: block;width:auto;height: 60px;line-height: 55px; font-size: 20px;border: 2px solid #e11e45;-webkit-transition: background-color .3s,color .3s;transition: background-color .3s,color .3s; letter-spacing: .2px;color: #fff;background-color: #e11e45;}
+
+
+/* header > mini deshboard */
+.akl .ico-wraper.noData span.message-num {background:#bbb !important;}
+.akl .ico-wraper.noData .icon-caution {background:url(../images/icon_caution_off.png) no-repeat !important; background-size:24px 24px !important }
+.akl amw-performance-graph .grouppv-title {font-size:1.5em !important;}
+.akl amw-performance-graph .grouppv-value {font-size:2.2em !important;}
+.akl .popover {font-family:'Noto Sans KR', sans-serif;font-weight:500;}
+.akl .popover-content ul.nav__links li.account-popover__element a {font-weight:500;}
+.akl .account-popover__scores ul li {letter-spacing:-1px; font-weight:500;font-size:18px;}
+.akl .account-popover__scores ul li span{margin:0 6px 0 0; font-size:17px; display:inline-block;}
+.akl .account-popover__scores p {font-size:14px;}
+.akl .ico-wraper {margin-right:8px;}
+.akl .sys-message span {font-weight:500; font-size:14px;}
+.akl .sys-message span a,.akl .sys-message span a:hover {color:#fff!important;}
+.akl .sys-message span.menu-rock {margin-left:-30px; padding-left:30px; display:inline-block;}
+.account-popover__congratulation .account {padding:10px 0}
+.account-popover__congratulation .account .sys-message a span:hover{color:#0075a4;}
+.account-popover__congratulation .account .sys-message + .sys-message {margin-top:5px;}
+.point-new {padding:10px 0;position:relative;}
+.point-new em {margin-left:2px;}
+.point-new .coupon-area {position:relative; margin-bottom:10px; padding-left:35px; color:#002f5f;}
+.point-new .coupon-area a{color: #002f5f;}
+.point-new .coupon-area:before {content:""; position:absolute; top:0; left:0; display:inline-block; background:url(../images/akl_common/ico-cupon2_mob.png) no-repeat left center; width:26px;height:26px; background-size:24px auto}
+.point-new .point-area {position:relative; padding-left:35px; color:#002f5f;}
+.point-new .point-area:after {position:absolute; content:''; display:block; top:0; left:0; background:url(../images/akl_common/ico-point-management2_mob.png) no-repeat left top; width:26px;height:26px; background-size:25px auto }
+.point-new .point-area a{color: #002f5f;}
+.ccount-my {float:right; color:#56565a}
+.ccount-my b {color:#002f5f;}
+.akl .mDashboard .mobile-popover-close {display:none}
+.menurlock-pop {}
+.menurlock-tit {font-size:16px}
+.menurlock-tit strong { color:#002f5f}
+.menurlock-opt {overflow:hidden; margin:30px 0 20px;}
+.menurlock-opt .tite-label {width:35%; float:left; font-weight:500; color:#002f5f; margin-top:10px;}
+.menurlock-opt .txte-wrap {width:65%;float:left;}
+.menurlock-opt input {width:100%}
+
+li.account-popover__element.sign-out button {display:none}  
+ 
+
+/* ----- 헤딩/타이틀 ----- */
+h2[class^='title-'] {text-align:left; margin:0;}
+.akl h1, .akl h2 {font-size:32px; letter-spacing:-2px; font-family:'Noto Sans KR', sans-serif; line-height:100%; font-weight:700;}
+.akl h3, .akl h4, .akl h5,.akl h6 {font-family:'Noto Sans KR', sans-serif; font-weight:500;}
+.akl .title-h1, .akl .title-h2, .akl .title-h3, .akl .title-h4 {line-height:100%; letter-spacing:-2px; word-spacing:2px;}
+.akl .title-h1,
+.akl .title-h2 {font-size:32px; font-weight:700; color:#002F5F;}
+.akl .title-h3 {font-size:28px; font-weight:500;}
+.akl .title-h4 {font-size:24px; font-weight:500;}
+.akl .title-h5 {font-size:18px !important; font-weight:500 !important; letter-spacing:-1px; line-height:100%;}
+.akl .title-h6 {font-size:16px !important; font-weight:500 !important; letter-spacing:-1px; line-height:100%;} 
+
+ 
+/* ----- 버튼 ----- */
+.akl a.type-tel {color:#002f5f;font-weight:500; cursor:default;}
+.text-btn {background:none;outline:none;border:none;font-weight:normal;padding:0;color:#0075a4;}
+.text-btn .icon {height:8px;width:12px;position:relative;top:-1px; margin-left:3px; background-size:100%;}
+.text-btn .icon-arrow-ups {display:none;}
+.btn-cancel {border:2px solid transparent;display:inline-block;letter-spacing:0.2px;outline:medium none;background-color:#fff; font-size:16px;border-radius:1px; min-height:40px;height:auto; vertical-align:middle;line-height:1;padding:10px 20px;text-align:center;color:#0075a4;}
+.btn-cancel:hover {color:#002F5F;}
+
+.akl .end-control, .akl .next-control {text-align:center; padding:40px 0 0}
+.akl .amway-theme .btn {font-family:'Noto Sans KR', sans-serif;}
+.akl .btn-blue-white {background:#002f5f;color:#fff;}
+.akl .btn-blue-white:hover {color:#002f5f;background:#fff}
+.akl .btn-blue-white, .akl .bt-akl-txt {font-size:14px; min-width:120px;}
+.akl .bt-akl-blue,.akl .bt-akl-white {min-width:120px;}
+.akl .bt-akl-txt {min-width:90px;}
+.akl .bt-akl-blue.skyblue {background-color:#0074a3; border-color:#0074a3;}
+.akl .bt-akl-blue {display:inline-block;background-color:#002F5F;color:#fff;border:1px solid #002F5F; font-size:14px;padding:0 25px;height:40px;line-height:39px;vertical-align:middle;font-weight:500;}
+.akl .bt-akl-blue:hover, .akl .bt-akl-blue:focus, .akl .bt-akl-blue:active {color:#fff ;background-color:#002F5F;border-color:#002F5F;}
+.akl .bt-akl-blue:hover {background:#fff; color:#002F5F;-webkit-transition:background-color 0.3s, color 0.3s; transition:background-color 0.3s, color 0.3s;}
+.akl .bt-akl-blue.mini {font-size:12px; padding:0 10px; height:25px; line-height:23px; min-width:80px;}
+.akl .bt-akl-blue.large {height:60px;line-height:59px;font-size:20px;} 
+.akl .bt-akl-blue.type2 {min-width:80px;}
+.akl a.bt-akl-blue {padding:0 30px;}
+
+.akl .bt-akl-white {display:inline-block;background-color:#fff;color:#002F5F;border:1px solid #002F5F; font-size:14px;padding:0 25px; height:40px; line-height:39px;vertical-align:middle;font-weight:500;}
+.akl .bt-akl-white:hover,.akl .bt-akl-white:focus,.akl .bt-akl-white:active {color:#fff;background-color:#002F5F;border-color:#002F5F;-webkit-transition:background-color 0.3s, color 0.3s; transition:background-color 0.3s, color 0.3s;}
+.akl .bt-akl-white:hover,.akl .bt-akl-white:focus,.akl .bt-akl-white:active {color:#fff;background-color:#002F5F!important;border-color:#002F5F;-webkit-transition:background-color 0.3s, color 0.3s; transition:background-color 0.3s, color 0.3s;}
+.akl a.bt-akl-white {padding:0 30px;}
+.akl .bt-akl-white.mini {font-size:12px; padding:0 10px; height:25px; line-height:23px; min-width:74px;text-align:center;}
+.akl .bt-akl-white.large {height:60px;line-height:59px;font-size:20px;}
+.akl .bt-akl-txt {display:inline-block;background-color:#fff;color:#0075a4;font-size:14px; padding:0 25px; height:40px;line-height:39px;vertical-align:middle;border:2px solid transparent;font-weight:500;}
+.akl .bt-akl-txt:hover,.akl .bt-akl-txt:focus,.akl .bt-akl-txt:active {color:#002f5f;text-decoration:underline}
+.akl a.bt-akl-txt {padding:0 30px;}
+.akl a.bt-akl-txt:hover,.akl a.bt-akl-txt:focus,.akl a.bt-akl-txt:active {color:#002f5f;text-decoration:underline !important}
+.akl .bt-akl-txt.large {height:60px;line-height:59px;font-size:20px;}
+.akl .bt-akl-txt.mini {font-size:12px;padding:0 15px;height:25px;line-height:23px;}
+.akl .bt-akl-txt.normal {padding:7px 0 4px; text-align:center; min-width:initial}
+.akl button.bt-akl-blue,.akl button.bt-akl-white,.akl button.bt-akl-txt {padding:0 25px;font-size:14px;}
+.akl .bt-akl-blue,.akl a.bt-akl-blue,.akl .bt-akl-white,.akl a.bt-akl-white,.akl .bt-akl-txt,.akl a.bt-akl-txt {white-space:nowrap; text-align:center;}
+.akl .btn.btn-primary {border:1px solid #002F5F; padding:0 28px; height:40px; line-height:39px; min-width:auto;font-size:14px;font-weight:400; box-sizing:border-box;}
+.akl .btn.btn-primary.disabled {color:#fff; border-color:#bbb !important; background:#bbb !important;}
+.akl .btn.btn-primary.disabled:hover {color:#fff !important;}
+.akl .btn-primary:hover  {transition:background-color 0.3s, color 0.3s; transition:background-color 0.3s, color 0.3s;}
+.akl .btn.btn-primary span {font-size:14px; font-weight:400;}
+.akl .btn-cancel {font-size:14px;}
+.akl .coupon-offer-search .btn.btn-primary span {color:#fff;}
+.akl .coupon-offer-search .btn.btn-primary:focus span {color:#002f5f !important;}
+.akl .bt-akl-white.small, .akl .bt-akl-blue.small {min-width:74px;padding:0 10px;text-align:center;}
+.akl a.bt-akl-white.small, .akl a.bt-akl-blue.small {min-width:74px;padding:0 20px;text-align:center;}
+
+.akl .bt-akl-blue.dim, .akl .bt-akl-white.dim,.akl .btn-blue-white.dim {background:#f4f4f4;border-color:#f4f4f4;color:#c3c3c3;pointer-events:none;}
+.akl .btn-area {text-align:left;}
+.akl .btn-center {text-align:center;margin:40px auto 0;}
+.akl .download-btn {display:inline-block; font-weight:500; padding-left:25px; background:url(../images/akl_common/ico_download_m.png) no-repeat 0 3px; background-size:16px 16px;}
+.akl .akl-btn-wrap {text-align:center}
+.akl .akl-btn-wrap .banner__shop-now {padding:13px 40px;}
+.akl .akl-btn-wrap .banner__shop-now:hover{transition: background-color 0.3s, color 0.3s;}
+ 
+
+/* ----- Form ----- */
+label, select, button, input, input[type="text"], input[type="number"], input[type="date"], input[type="password"] {font-size:14px;}
+.disabled label:before {background-color:#dadada!important;border:1px solid #dadada!important;}
+.disabled label:after {color:#fff;}
+.akl input[type="date"] {height:40px; padding-left:10px; border:1px solid #dadada; background:#fff; line-height:37px;}
+.akl input[type="text"], .akl input[type="password"], .akl input[type="number"], .akl input[type="tel"],.akl input[type="date"] {height:40px; padding:0 15px; border:solid 1px #dadada;box-sizing:border-box;}
+.akl button[disabled], .akl input[readonly], .akl input[disabled], .akl select[disabled], .akl select[readonly] {font-weight:400; color:#bbb; white-space:nowrap; background:#f4f4f4 !important; border-color:#bbb !important;}
+.akl button[disabled]{color:#fff; border-color:#bbb !important; background:#bbb !important;}
+.akl button[disabled]:hover {color:#fff;}
+
+/* form-group */
+.akl .form-group:after {content:""; display:block; clear:both}
+.akl .form-group select.form-control {width:100%; vertical-align:middle; box-shadow:none;}
+.akl .amway-theme .form-group > label {padding-top:7px;}
+.phone-group .control-group {float:left; width:40%}
+.phone-group .form-group {float:right; width:60%; padding-left:8px;}
+.phone-group:after {content:""; display:block; clear:both; width:0; height:0;}
+.phone-group .form-group + .clearfix {clear:both;}
+.form-group .address {position:relative;}
+.form-group .address p {margin-right:107px; margin-bottom:0 }
+.form-group .address button  {position:absolute; right:0; top:0; padding:0 20px; min-width:95px;}
+.form-group .address input[type="text"] {width:100%;}
+.form-group .address > .form-control {margin-top:7px !important;}
+.form-group.def-ship_new {margin-top:-10px;}
+
+/* form-control */
+.akl .form-control {display:inline-block; margin:0; font-size:14px; box-shadow:0 0 0 rgba(0,0,0,0.075) inset;}
+.akl .form-group.url{ display: block; width: 100%}
+.akl span.form-control { display: block; width: 100%; font-weight:400; padding: 6px 8px; font-size:12px; height:auto; min-height:34px;word-break: break-all; text-align:left;}
+.akl select.form-control {padding:0 30px 0 15px; vertical-align:middle; font-weight:400;}
+.akl .opt-quantity .form-control {display:block !important;}
+.akl .pop-area-body .form-group button{width:100%; margin-top:5px;}
+/* label, label + checkbox(radio) */
+.akl label, .akl label .amw-label-radio-text, .akl .amway-theme label {font-size:14px; font-weight:500;}
+.akl .amwa-radio + label {height:18px; line-height:1.3;}
+.akl .amway-theme label {padding-top:0;}
+.akl .amway-theme label.amw-radio-wrap .amw-radio-overlay {top:1px;}
+.akl .amway-theme input.amw-global-radio:checked + .amw-radio-overlay:before {background:#0075a4;}
+.akl .radio-label + .radio-label {margin-left:20px !important; padding-bottom:1px;}
+input[type=radio]{border:0; clip:rect(0 0 0 0); height:1px; margin:-1px; overflow:hidden; padding:0; position:absolute; width:1px;}
+[type="checkbox"]+label,
+[type="checkbox"]:checked+label,
+[type="checkbox"]:not(:checked)+label {display:inline-block; padding-left:30px; vertical-align:top; font-weight:400; line-height:20px; margin:5px 0;}
+[type="checkbox"]:not(:checked)+label {color:#56565a;}
+[type="checkbox"]:checked + label {color:#002f5f;}
+[type="checkbox"]:checked + label::after {top:6px;} /* 체크 V */
+[type=checkbox]:not(:checked)[disabled]+label {font-weight:400; color:#bbb !important;}
+[type=checkbox]:not(:checked)[disabled]+label::before {background:#f4f4f4 !important;}
+[type=checkbox]:checked[disabled]+label {font-weight:400; color:#bbb !important;}
+[type=checkbox]:checked[disabled]+label::before {background:#ccc !important; border-color:#bbb;}
+
+.akl [type="checkbox"]:not(:checked) + label::before {top:0;}
+.akl [type="checkbox"]:not(:checked) + label::before, .akl [type="checkbox"]:checked + label::before {width:20px; height:20px;}
+.checkbox-element-wrapper {line-height:0;}
+._checkbox-element-global-class ~ span._checkbox-element-global-span {top:0;}
+._checkbox-element-global-class ~ span._checkbox-element-global-span:before {top:4px; left:2px; font-size:11px;}
+
+/* form-group basic 추가 */
+.form-group.basic {overflow:hidden; margin-bottom:20px;}
+.form-group.basic>label {float:left; width:26%; display:block; font-size:14px;}
+.form-group.basic .form-blockbox {overflow:hidden; float:left; width:74%;}
+ 
+/* form-group :휴대폰 */
+.form-group.basic .form-phone-select {width:110px; margin-right:12px;}
+.form-group.basic .form-phone-input {width:255px;}
+.form-group.basic .form-phone-input>input {width:100%; margin:0}
+.form-sms-receive>span{display:inline-block; margin-right:20px;}
+  
+@media (max-width:768px){  
+	/* ----- Form ----- */
+	.akl .amwa-radio + label {height:auto;}
+	.akl .control-label {font-weight:700!important; margin-bottom:7px;}
+	.akl  .txt-label {font-weight:700!important; margin-bottom:7px;}
+	.form-group .address p {margin-right:105px;}
+	.form-group .address button {right:0;}
+
+	/* form-group basic 추가 */
+	.form-group.basic > label {float:initial; width:auto; margin-bottom:10px;}
+	.form-group.basic .form-blockbox {float:initial; width:auto;} 
+}
+
+ 
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+ 

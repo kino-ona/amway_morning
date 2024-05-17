@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<title>Amway</title>
+	<link rel="stylesheet" type="text/css" href="../assets/css/common.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/layout.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/base.css">
+	<script src="../assets/js/plugins/jquery-3.6.0.min.js"></script>
+	<script src="../assets/js/common.js"></script>
+</head>
+
+<body>
+	<div id="wrap-ecp">
+		<div class="blue-bg"></div>
+		<div class="container">
+			<div class="ecp">
+				<div class="header">
+					<div class="buttons">
+						<a href="#">
+							<i class="icon">
+								<img src="../assets/images/common/icon_cancle.png" alt="취소 아이콘" style="width: 41px">
+							</i>
+							<span>픽업 취소하기</span>
+						</a>
+						<a href="#">
+							<i class="icon">
+								<img src="../assets/images/common/icon_call.png" alt="다시시작 아이콘" style="width: 41px">
+							</i>
+							<span>직원 호출하기</span>
+						</a>
+					</div>
+				</div>
+				<div class="content" style="margin: 100px auto 0; max-width: inherit;">
+				<div class="logo">
+						<img src="../assets/images/common/logo_amway_small.png" alt="logo" style="width: 85px">
+					</div>
+					<div class="employeer-number">
+						<p>
+							직원번호
+							<span>7001234567</span>
+						</p>
+					</div>
+					
+					<div class="scan-number scan-number--employeer" style="margin-top: 46px;">
+						<div class="scan-right">
+							<div class="scan-th">
+								<span class="prd-oder-number">No.</span>
+								<span class="prd-oder-name overflow">제품코드 / 상품명</span>
+								<span class="prd-oder-scan">스캔 수량</span>
+								<span class="prd-oder-apply">신청 수량</span>
+							</div>
+							<div class="scan-td">
+								<ul>
+									<li>
+										<a href="#">
+											<span class="prd-oder-number">01</span>
+											<span class="prd-oder-name overflow">
+												<span class="prd-code">1234KFH</span>
+												아티스트리 톤업 글로우 크림 SPF50+ PA+아티스트리 톤업 글로우 크림 SPF50+ PA+아티스트리 톤업 글로우 크림 SPF50+ PA+
+											</span>
+											<span class="prd-oder-scan">2</span>
+											<span class="prd-oder-apply">1</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="prd-oder-number">02</span>
+											<span class="prd-oder-name overflow">
+												<span class="prd-code">1234KFH</span>
+												아티스트리 톤업 글로우 크림 SPF50+ PA+...
+											</span>
+											<span class="prd-oder-scan">2</span>
+											<span class="prd-oder-apply">1</span>
+										</a>
+									</li>
+									<li class="active2 disabled">
+										<a href="#">
+											<span class="prd-oder-number">03</span>
+											<span class="prd-oder-name overflow">
+												<span class="prd-code">1234KFH</span>
+												아티스트리 톤업 글로우 크림 SPF50+ PA+...
+											</span>
+											<span class="prd-oder-scan">
+												<div class="count-box">
+													<button class="btn-minus" onClick="countDown(this)"></button>
+													<input type="number" min="0" class="modify-prd-qt" value="0" />
+													<button class="btn-delete">삭제</button>
+												</div>
+											</span>
+											<span class="prd-oder-apply">1</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="prd-oder-number">04</span>
+											<span class="prd-oder-name overflow">
+												<span class="prd-code">1234KFH</span>
+												아티스트리 톤업 글로우 크림 SPF50+ PA+...
+											</span>
+											<span class="prd-oder-scan">2</span>
+											<span class="prd-oder-apply">1</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="prd-oder-number">05</span>
+											<span class="prd-oder-name overflow">
+												<span class="prd-code">1234KFH</span>
+												아티스트리 톤업 글로우 크림 SPF50+ PA+...
+											</span>
+											<span class="prd-oder-scan">2</span>
+											<span class="prd-oder-apply">1</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="prd-oder-number">06</span>
+											<span class="prd-oder-name overflow">
+												<span class="prd-code">1234KFH</span>
+												아티스트리 톤업 글로우 크림 SPF50+ PA+...
+											</span>
+											<span class="prd-oder-scan">2</span>
+											<span class="prd-oder-apply">1</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="prd-oder-number">07</span>
+											<span class="prd-oder-name overflow">
+												<span class="prd-code">1234KFH</span>
+												아티스트리 톤업 글로우 크림 SPF50+ PA+...
+											</span>
+											<span class="prd-oder-scan">2</span>
+											<span class="prd-oder-apply">1</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="prd-oder-number">08</span>
+											<span class="prd-oder-name overflow">
+												<span class="prd-code">1234KFH</span>
+												아티스트리 톤업 글로우 크림 SPF50+ PA+...
+											</span>
+											<span class="prd-oder-scan">2</span>
+											<span class="prd-oder-apply">1</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="prd-oder-number">09</span>
+											<span class="prd-oder-name overflow">
+												<span class="prd-code">1234KFH</span>
+												아티스트리 톤업 글로우 크림 SPF50+ PA+...
+											</span>
+											<span class="prd-oder-scan">2</span>
+											<span class="prd-oder-apply">1</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="prd-oder-number">10</span>
+											<span class="prd-oder-name overflow">
+												<span class="prd-code">1234KFH</span>
+												아티스트리 톤업 글로우 크림 SPF50+ PA+...
+											</span>
+											<span class="prd-oder-scan">2</span>
+											<span class="prd-oder-apply">1</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="complete-button">
+						<a href="#">적용</a>
+					</div>
+				</div>
+			</div>
+		</div> <!-- container -->
+	</div>
+</body>
+
+</html>

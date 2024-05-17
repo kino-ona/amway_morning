@@ -1,0 +1,25 @@
+// layout
+.body {
+  min-height: 100vh;
+}
+
+.container {
+  position: relative;
+  min-height: calc(100vh - #{$footer-height});
+  padding-top: $header-height;
+}
+
+/* width:768~ */
+@include mq('md') {
+  .container {
+    min-height: calc(100vh - #{$footer-height-pc});
+  }
+}
+
+/* width:1000~ */
+@include mq('xl') {
+}
+
+/* width:1220~ */
+@include mq('xl') {
+}

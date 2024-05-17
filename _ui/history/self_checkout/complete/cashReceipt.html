@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Amway</title>
+        <link rel="stylesheet" href="../res/css/reset.css">
+        <link rel="stylesheet" href="../res/css/base.css">
+        <link rel="stylesheet" href="../res/css/layout.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-keyboard@latest/build/css/index.css">
+        <script src="https://cdn.jsdelivr.net/npm/simple-keyboard@latest/build/index.js"></script>
+        <script src="../res/js/plugins/jquery-3.6.0.min.js"></script>
+        <script src="../res/js/common.js"></script>
+        <script src="../res/js/payment.js"></script>
+    </head>
+    <body>
+
+        <div id="wrap">
+            <header></header>
+            <div class="blue-bg"></div>
+
+            <div class="container">
+                <div class="payment-wr payment-wr-v3"><!-- 20230515 A Station Self checkout ACM 적용(payment-wr-v3 클래스 추가) -->
+                    <div class="payment-tit">
+                        <img src="../res/image/logo_amway_small.png" alt="logo">
+                        <h2><strong>현금 영수증</strong>을 발급 받으시겠습니까?</h2>
+                    </div>
+
+                    <div class="point-wr receipt-wr">
+                        <div class="point-left">
+                            <ul class="point-type">
+                                <li class="on">소득공제</li>
+                                <li>지출증빙</li>
+                            </ul>
+
+                            <div class="point-box summary-box">
+                                <ul class="on">
+                                    <li><span>자동이체</span>
+                                        <strong>50,000원</strong>
+                                    </li>
+                                    <!-- S : 20230515 A Station Self checkout ACM 적용 -->
+                                    <li>
+                                        <span>A Cliks Money</span>
+                                        <strong>-000,000원</strong>
+                                    </li>
+                                    <!-- E : 20230515 A Station Self checkout ACM 적용 -->
+                                    <li><span>RE-CASH</span> <strong>-20,000원</strong></li>
+                                    <li><span>영수증 발행일자</span> <strong>2021.09.08 15:00</strong></li>
+                                </ul>
+                                <ul>
+                                    <li><span>자동이체</span>
+                                        <strong>50,000원</strong>
+                                    </li>
+                                    <!-- S : 20230615 A Station Self checkout ACM 수정 -->
+                                    <li>
+                                        <span>A Cliks Money</span>
+                                        <strong>-000,000원</strong>
+                                    </li>
+                                    <!-- E : 20230615 A Station Self checkout ACM 수정 -->
+                                    <li><span>RE-CASH</span> <strong>-20,000원</strong></li>
+                                    <li><span>영수증 발행일자</span> <strong>2021.09.08 15:00</strong></li>
+                                </ul>
+                            </div>
+
+                            <div class="total-price">
+                                <span>결제금액</span>
+                                <strong>230,000</strong>
+                            </div>
+                        </div>
+                        <div class="point-right">
+                            <input type="text" class="input-val phone-number" placeholder="010-0000-0000" maxlength="13">
+                            <div class="simple-keyboard"></div>
+                        </div>
+                    </div>
+
+                    <div class="pop-btn-box">
+                        <button class="btn-white">미발급</button>
+                        <button class="btn-pink btn-confirm">발급</button>
+                    </div>
+
+                </div>
+            </div> <!-- container -->
+        </div> <!-- wrap -->
+
+    </body>
+</html>

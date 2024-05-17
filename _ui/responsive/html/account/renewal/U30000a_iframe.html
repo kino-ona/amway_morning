@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>로그인 | ABN Korea</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords">
+	<meta name="description" content="NY Fee Bundle">
+	<meta name="robots" content="index,follow">
+
+	<!-- 2020-12-21 login.css -->
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/login.css">
+	<!-- 운영팀게시물 -->
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/content_res_all.css">
+
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.datepicker.js"></script><!-- datepicker : 2018.03.19 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/owl.carousel.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/isotope.pkgd.js"></script><!-- gnb 플러그인 : 2018.03.23 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/select2.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/new.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.raty.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_contents.js"></script><!-- brand 통합 : 2018.08.24 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_component.js"></script>
+</head>
+<body class="akl page-login">
+
+	<main>
+		<!-- S : 2020 login renewal -->
+		<div class="login_renewal">
+			<div class="login-area">
+				<div class="box_login-from">
+					<h1 class="login-title">로그인</h1>
+					<div class="line_form-type">
+						<input type="text" placeholder="아이디/회원번호" class="form_lines" title="아이디/회원번호">
+						<!-- <p class="text_validation">아이디를 입력하세요</p> -->
+
+						<!-- S : 20240207 버튼 추가 -->
+						<div class="form_group-button form_group-button-login">
+							<button type="button" class="form_element-button-delete" tabindex="-1">
+								<span class="btn_del">삭제</span>
+							</button>
+						</div>
+						<!-- E : 20240207 버튼 추가 -->
+					</div>
+					<div class="line_form-type">
+						<input type="password" placeholder="비밀번호" class="form_lines" title="비밀번호 입력">
+						<!--<p class="text_validation">비밀번호를 입력하세요</p>-->
+
+						<!-- S : 20240207 버튼 추가 -->
+						<div class="form_group-button form_group-button-login">
+							<button type="button" class="form_element-button-delete" tabindex="-1">
+								<span class="btn_del">삭제</span>
+							</button>
+
+							<button type="button" class="form_element-button-eye">
+								<span class="btn_eye btn_eye_on">보기</span>
+							</button>
+						</div>
+						<!-- E : 20240207 버튼 추가 -->
+					</div>
+					<div class="login_btn-group">
+						<button type="button" class="btn_login-normal">로그인</button>
+						<button type="button" class="btn_login-cacao"><i class="icon_cacao"></i><span class="txt_cacao"><span class="txt_cacao-tit">카카오로 로그인</span>간편로그인/비회원구매확인</span></button>
+						<!-- <button type="button" class="btn_login-apple"><i class="icon_apple"></i><span class="txt_apple">Apple로 로그인</span></button> 20240206 운영 현행화(잠시 화면에서 숨겨놓음) -->
+					</div>
+					<div class="box_login-etc pc-use" style="display:none;"><!-- 20240206 운영 현행화(운영에 display:none 처리 되어있음) -->
+						<div class="login_etc-item">
+							<span class="form_element-checkbox">
+								<input type="checkbox" id="checkbox" checked>
+								<label for="checkbox" class="sp_chk focus">아이디 저장</label>
+							</span>
+						</div>
+					</div>
+					<div class="box_login-etc mobile-use" style="display:none;"><!-- 20240206 운영 현행화(운영에 display:none 처리 되어있음) -->
+						<div class="login_etc-item">
+							<span class="form_element-checkbox">
+								<input type="checkbox" id="checkbox2" checked>
+								<label for="checkbox2" class="sp_chk focus">자동 로그인</label>
+							</span>
+						</div>
+						<div class="login_etc-item"><button type="button" class="btn_txt-type">생체 로그인</button></div>
+					</div>
+					<!-- S : 20240206 운영 현행화 -->
+					<div class="box_login-etc" id="kakao_hide_div01">
+						<div class="login_etc-item">
+							<span class="form_element-checkbox">
+								<input type="checkbox" id="remember" name="remember" checked="checekd">
+								<label for="remember" class="sp_chk focus">아이디 저장</label>
+							</span>
+						</div>
+						<!-- S : 20240207 자동 로그인 추가 -->
+						<div class="login_etc-item">
+							<span class="form_element-checkbox">
+								<input type="checkbox" class="chk_autologin" id="autologin" name="autologin">
+								<label for="autologin" class="sp_chk focus">자동 로그인</label>
+							</span>
+						</div>
+						<!-- E : 20240207 자동 로그인 추가 -->
+					</div>
+					<!-- E : 20240206 운영 현행화 -->
+
+					<!-- S : 20240305 생체로그인 마크업 추가(테스트용) -->
+					<div class="box_login-etc mobile-use" id="kakao_hide_div02">
+						<div class="login_etc-item" id="loginEtcItemBar">
+							<button type="button" class="btn_txt-type" id="fingerPrintLogin">생체 로그인</button>
+						</div>
+					</div>
+					<!-- E : 20240305 생체로그인 마크업 추가(테스트용) -->
+				</div>
+				<div class="box_login-link">
+					<a href="" class="link_login-item">아이디 찾기</a>
+					<a href="" class="link_login-item">비밀번호 찾기</a>
+					<a href="" class="link_login-item"><strong>회원가입</strong></a>
+					<div class="link_area">
+						<a href="" class="link_cacao-join"><i class="icon_cacao"></i>카카오로 회원가입</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- E : 2020 login renewal -->
+	</main>
+
+	<!-- S : 20240207 자동로그인 모바일웹 확장 및 아이디/패스워드 입력 개선 -->
+	<script>
+		$(function () {
+			$('.form_group-button-login').find('.form_element-button-delete').hide();
+
+			// 로그인 input 관련
+			$(document).on('keyup', '.box_login-from .line_form-type input', function(){
+				$(this).each(function(){
+					inputValueCheck($(this));
+				});
+			});
+
+			$('.box_login-from .line_form-type input').on('keyup focusin', function(){
+				inputValueCheck($(this));
+			});
+
+			/* S : 20240214 삭제 */
+			// $('.box_login-from .line_form-type input').focusout(function(){
+			// 	$(this).parent().find('.form_element-button-delete').hide();
+			// });
+			/* E : 20240214 삭제 */
+
+			// 삭제 버튼 클릭 시
+			$(document).on('click touchstart mousedown', '.form_group-button-login .form_element-button-delete', function(){
+				$(this).parent().find('.form_element-button-delete').hide();
+				$(this).parents('.line_form-type').find('input').val('');
+			});
+
+			// 비밀번호 보기/숨기기 관련
+			$(document).on('click', '.form_group-button-login .form_element-button-eye .btn_eye', function(){
+				$(this).parents().siblings('.form_element-button-delete').show();
+
+				if( $(this).hasClass('btn_eye_on') ){
+					$(this).removeClass('btn_eye_on').addClass('btn_eye_off');
+					$(this).parents('.line_form-type').find('input').attr('type', 'text');
+					$(this).text('숨기기');
+				} else {
+					$(this).removeClass('btn_eye_off').addClass('btn_eye_on');
+					$(this).parents('.line_form-type').find('input').attr('type', 'password');
+					$(this).text('보기');
+				}
+			});
+			
+			check_autologin();
+
+			$(window).resize(function(){
+				check_autologin();
+			});
+
+			// input value 체크하여 버튼 노출/비노출
+			function inputValueCheck(target) {
+				if( $(target).val() !== '' ){
+					$(target).parent().find('.form_element-button-delete').show();
+				} else {
+					$(target).parent().find('.form_element-button-delete').hide();
+				}
+			}
+
+			// 체크박스 자동로그인 관련
+			function check_autologin() {
+				if($(window).width() <= 768){
+					$('.chk_autologin').prop('checked', true); // 모바일 일 경우에 자동 로그인 체크박스 체크O
+				} else {
+					$('.chk_autologin').prop('checked', false); // PC 일 경우에 자동 로그인 체크박스 체크X
+				}
+			}
+		});
+	</script>
+	<!-- E : 20240207 자동로그인 모바일웹 확장 및 아이디/패스워드 입력 개선 -->
+</body>
+</html>

@@ -1,0 +1,119 @@
+<div id="address_modify" class="layer_section type-wide-a">
+    <div class="layer_section-container shipping_delivery_st02">
+        <div class="layer-header">
+            <h1 class="header-title">배송지 추가</h1>
+            <h1 class="header-title" style="display: none;">배송지 수정</h1> <!-- 수정화면에서 style="display: none;" 삭제 -->
+        </div>
+
+        <div class="layer-content shipping">
+            <dl class="address_modify new-payment gift_order renew">
+                <dt>받는 분</dt>
+                <dd>
+                    <input name="ko_name" id="ko_name" type="text" class="form_input" value="" placeholder="이름을 입력해 주세요.">
+                </dd>
+                <dt>받는 분 전화번호</dt>
+                <dd>
+                    <div class="payment-content tel">
+                        <div class="form-item-a">
+                            <div class="form-col-c">
+                                <span class="form_select-default">
+                                    <select class="form_select" title="휴대폰번호 앞자리를 선택하세요">
+                                        <option selected="selected">010</option>
+                                    </select>	
+                                </span>																	
+                            </div>
+                            <div class="form-col-c">
+                                <input type="tel" class="form_input" placeholder="‘-’없이 입력" minlength="10" maxlength="11" title="인수자 연락처 휴대폰번호">
+                            </div>
+                        </div>
+                    </div>
+
+                </dd>
+                <dt>주소</dt>
+                <dd>
+                    <div class="payment-content addr">
+                        <div class="form-item-a">
+                            <div class="form-col-c"><input name="ko_address01" id="ko_name" type="text" class="form_input" value="" placeholder="주소 검색"></div>
+                            <div class="form-col-c"><a class="btn_basic-d medium" data-continue-shopping-url="#">주소찾기</a></div>
+                        </div>
+                        <div class="form-item-a">
+                            <input name="ko_address03" id="ko_name" type="text" class="form_input mgt5" value="" placeholder="">
+                        </div>
+                        <div class="form-item-a">
+                            <input name="ko_address03" id="ko_name" type="text" class="form_input mgt5" value="" placeholder="나머지 주소를 입력해 주세요.">
+                        </div>
+                    </div>
+                    <!-- S : 20220428 기본배송지 체크박스 추가 -->
+                    <div class="form-group default-shipping">
+                        <div class="clearfix Defaul-taddr">
+                            <input id="remember5" type="checkbox">
+                            <label for="remember5" class="normal inline-label checklabel focus">기본 배송지</label>
+                       </div>
+                    </div>
+                    <!-- E : 20220428 기본배송지 체크박스 추가 -->
+                </dd>
+                <!-- <dt>
+                    <div class="withTooltip">
+                        <span class="sstit">배송메시지</span>
+                        <div class="toolTip-wrapper toolTip-type02 type-mob-full address mgt0">
+                            <button type="button" class="btn-tooltip"><span class="hidden">안내</span></button>
+                            <div class="tipCont-wrapper" style="max-width: none;">
+                                <div class="tooltip-content mobile01 mobile03 pop" style="display:none;">
+                                    <ul class="list-type52">
+                                        <li>택배기사님께 전달하는 메시지는 배송 시 참고하는 내용으로 배송상황 및 요청내용에 따라 반영되지 않을 수 있습니다.</li>
+                                        <li>배송일 및 배송시각은 지정하셔도 반영되지 않습니다.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </dt> -->
+                <!-- <dd>
+                    <span class="form_select-default">
+                        <select class="form_select" id="addressMessge">
+                            <option value="CPN">배송메시지 선택해 주세요</option>
+                            <option value="CDN01">직접입력</option>
+                            <option value="CDN02">문앞</option>
+                            <option value="CDN03">부재 시 문앞</option>
+                            <option value="CDN04">부재 시 경비실</option>
+                        </select>
+                        <input name="msg" id="" type="text" class="form_input mgt5" value="" placeholder="특수문자는(),를 제외하고 입력이 불가합니다.">
+                    </span>
+                    <div class="mgt15">
+                        <input type="checkbox" id="default_add" value=""  checked="checked">
+                        <label for="default_add">기본 배송지로 저장</span></label>
+                    </div>
+                </dd> -->
+            </dl>
+
+            <!-- 배송안내 동의-->
+            <div class="address_modifyBox">
+                <p>본인은 정보주체(배송 받는 사람)로부터 개인정보가 제3자인 한국 암웨이에 배송 목적으로 제공된다는 사실을 안내하고, 동의를 받으셨습니까?</p>
+                <div>
+                    <span>
+                        <input class="amwa-radio" type="radio" name="send_yesno" id="amway_yes" value="" checked="checked">
+                        <label for="amway_yes"><span>예</span></label>
+                    </span>
+                    <span class="no">
+                        <input class="amwa-radio" type="radio" name="send_yesno" id="amway_no"  value="">
+                        <label for="amway_no"><span>아니요</span></label>
+                    </span>
+                </div>
+            </div>  
+            <!-- //배송안내 동의-->    
+        </div>
+
+        <div class="align-box size-auto">
+            <button type="button" class="btn-modal_close v2">취소</button>
+            <button type="button" class="btn-modal_apply">확인</button>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>
+<script>
+     $(function(){
+       AMWAY.callLayer();
+       payments();
+    })
+</script>

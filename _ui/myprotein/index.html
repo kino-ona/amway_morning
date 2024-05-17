@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Amway</title>
+	<link rel="stylesheet" href="./assets/css/amway.css">
+	<script defer src="./assets/js/amway.js"></script>
+	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+	<div class="wrap">
+		<header class="header header--intro">
+			<div class="header__container">
+				<div class="header__row">
+					<div class="logo">
+						<div class="logo__container">
+							<div class="logo__row">
+								<h1 class="logo__logo" aria-label="my Protein TEST"></h1>
+								<button type="button" class="logo__trigger" aria-controls="logoLayer" aria-label="버튼" aria-haspopup="true" aria-expanded="false"></button>
+								<div role="menu" id="logoLayer" class="logo__layer">
+									<a role="menuitem" aria-label="Amway"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button type="button" class="share" aria-haspopup="dialog" aria-label="공유" data-micromodal-trigger="shareSns"></button>
+				</div>
+			</div>
+		</header>
+
+		<div class="contents">
+			<div class="contents__contents contents__contents--intro">
+				<div class="intro-swiper">
+					<div class="intro-swiper__swiper swiper">
+						<div class="swiper-wrapper">
+							<div class="intro-swiper__slide intro-swiper__slide--first swiper-slide">
+								<p class="title">
+									내가 바로<br>
+									단백질 전문가
+								</p>
+								<p class="desc">
+									백세 건강을 위해 내 몸에 꼭 필요한 단백질,<br>
+									어디까지 알고 계신가요?<br>
+									단백질에 대한 모든 것을 알려 드릴게요!
+								</p>
+								<div>
+									<lottie-player src="./assets/lottie/intro01.json" background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay></lottie-player>
+								</div>
+							</div>
+							<div class="intro-swiper__slide intro-swiper__slide--second swiper-slide">
+								<p class="title">
+									스스로 알아보는<br>
+									단백질 부족 신호
+								</p>
+								<p class="desc">
+									단백질이 부족하면 우리 몸은<br>
+									&lsquo;위험 신호&rsquo;를 보냅니다. 이런 증상이 있다면<br>
+									단백질 꼭 챙겨 드셔야 해요.
+								</p>
+								<div>
+									<lottie-player src="./assets/lottie/intro02.json" background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay></lottie-player>
+								</div>
+							</div>
+							<div class="intro-swiper__slide intro-swiper__slide--third swiper-slide">
+								<p class="title">
+									내 몸이 필요로 하는<br>
+									하루 단백질량은?
+								</p>
+								<p class="desc">
+									단백질은 근육을 이루는 주요 구성 성분으로,<br>
+									근육을 만드는 필수 재료예요! 효율적인<br>
+									근육 증가를 위해 충분히 단백질을 섭취해주세요.</p>
+									<div>
+										<lottie-player src="./assets/lottie/intro03.json" background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay></lottie-player>
+									</div>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+						<div class="swiper-button-prev"></div>
+  					<div class="swiper-button-next"></div>
+					</div>
+				</div>
+				<div class="button">
+					<div class="button__row">
+						<a href="./quiz.html" class="button__item button__item--secondary">시작하기</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="shareSns" class="modal" aria-hidden="true">
+		<div class="modal__overlay" tabindex="-1" data-micromodal-close="shareSns">
+			<div role="dialog" class="modal__body" aria-modal="true" aria-labelledby="shareSnsTitle">
+				<header class="modal__header">
+					<p id="shareSnsTitle" class="modal__title">SNS 공유</p>
+					<button type="button" class="close" aria-label="닫기" data-micromodal-close="shareSns"></button>
+				</header>
+				<div class="modal__contents">
+					<div class="sns-list">
+						<div class="sns-list__list">
+							<a href="#" class="sns-list__item sns-list__item--kakaostory">
+								<i></i>
+								<p>카카오스토리</p>
+							</a>
+							<a href="#" class="sns-list__item sns-list__item--facebook">
+								<i></i>
+								<p>페이스북</p>
+							</a>
+							<a href="#" class="sns-list__item sns-list__item--twitter">
+								<i></i>
+								<p>트위터</p>
+							</a>
+							<a href="#" class="sns-list__item sns-list__item--band">
+								<i></i>
+								<p>밴드</p>
+							</a>
+							<a href="#" class="sns-list__item sns-list__item--copy">
+								<i></i>
+								<p>URL 복사</p>
+							</a>
+						</div>
+						<div class="sns-list__noti">
+							<em>SNS 공유안내</em>
+							<p>
+								한국암웨이의 amway.co.kr에서 서비스 되는 일체의 콘텐츠에 대한 지적 재산권은 한국암웨이㈜에 있으며, 임의로 자료를 수정/변경하여 사용하거나, 기타 개인의 영리 목적으로 사용할 경우에는 지적 재산권 침해에 해당하는 사안으로, 그 모든 법적 책임은 콘텐츠를 불법으로 남용한 개인 또는 단체에 있습니다.
+								<br><br>
+								모든 자료는 원저작자의 요청이나 한국암웨이의 사정에 따라 예고 없이 삭제될 수 있습니다.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			MicroModal.init({
+				openClass: 'modal--opened',
+				disableScroll: true,
+				disableFocus: false
+			});
+
+			const introSwiper = new Swiper('.intro-swiper__swiper', {
+				autoplay: {
+					delay: 5000,
+					disableOnInteraction: false
+				},
+				fadeEffect: {
+					crossFade: true
+				},
+				effect: 'fade',
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev'
+				},
+				loop: true,
+				pagination: {
+					el: '.swiper-pagination',
+					type: 'bullets'
+				},
+				speed: 400
+			});
+		});
+	</script>
+</body>
+</html>

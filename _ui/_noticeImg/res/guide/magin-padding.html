@@ -1,0 +1,313 @@
+﻿﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>Amway 반응형 공지 가이드</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700&subset=korean" rel="stylesheet">
+<link rel="stylesheet" href="font_kr.css">
+<link rel="stylesheet" type="text/css" href="https://www.amway.co.kr/_ui/responsive/theme-blue/css/main_new.css">
+<link rel="stylesheet" type="text/css" href="https://www.amway.co.kr/wro/blue_responsive.css">    
+<link rel="stylesheet" type="text/css" href="https://www.amway.co.kr/wro/addons_responsive.css">
+<link rel="stylesheet" type="text/css" href="https://www.amway.co.kr/_ui/responsive/theme-blue/css/content_res_all.css">
+<link rel="stylesheet" type="text/css" href="https://www.amway.co.kr/_ui/responsive/theme-blue/css/uiux_res_all.css">
+<script src="https://www.amway.co.kr/_ui/responsive/common/js/jquery-3.2.1.min.js"></script>
+
+<style>
+  /*신규 페이지 모바일 실제크기 적용*/
+  body{max-width:none;margin:0 auto;}
+  @media screen and (max-width:639px) {
+    body{padding-left:15px;padding-right:15px;margin:0 auto;}
+    ::-webkit-scrollbar{-webkit-appearance:none}
+    ::-webkit-scrollbar:vertical{width:12px}
+    ::-webkit-scrollbar:horizontal{height:8px}
+    ::-webkit-scrollbar-thumb{background-color:rgba(0, 0, 0, .3); border-radius:10px; border:2px solid #ffffff}
+    ::-webkit-scrollbar-track{border-radius:10px; background-color:transparent}
+    ::scrollbar{appearance:none}
+    ::scrollbar:vertical{width:8px}
+    ::scrollbar:horizontal{height:12px}
+    ::scrollbar-thumb{background-color:rgba(0, 0, 0, .3); border-radius:10px; border:2px solid #ffffff}
+    ::scrollbar-track{border-radius:10px; background-color:transparent}
+  }
+  hr{margin-top:20px;margin-bottom:20px;border: 0;border-top: 1px solid #eee}
+  pre{display:block;padding:9.5px;margin:0 0 10px;font-size:13px;line-height:1.42857143;color:#333;word-break:break-all;word-wrap:break-word;background-color:#f5f5f5;border:1px solid #ccc;border-radius:4px;overflow:auto;font-family:Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;}
+
+  /*menu*/
+  .goto_menu{top:0;left:0;z-index:1000;width:100%;height:50px;padding:0 1em;background-color:rgba(240,240,240,.9);border-bottom:1px solid #ededed}
+  .goto_menu li{display:inline-block}
+  .goto_menu li a{display:block;padding:0 0.5em;color:#000 !important;font-size:16px;line-height:50px;letter-spacing:-2px}
+  [id^=goto_]{margin-top:0 !important;padding-top:60px !important}
+</style>
+
+</head>
+<body>
+<div class="akl"><div class="bod-view-txt">
+
+<!-- 반응형 공지 시작 -->
+<div class="os_noticeRes">
+
+  <p class="fntP marTM widL">공지 상단 비주얼 최상단(<b>.osResHeader</b>) 에서만 사용</p>
+  <div class="osResHeader padTop txtC" style="border:1px solid #888;background-image:linear-gradient(45deg, #888 8.33%, #ffffff 8.33%, #ffffff 50%, #888 50%, #888 58.33%, #ffffff 58.33%, #ffffff 100%);background-size:8.49px 8.49px;outline:4px solid rgba(255,255,0,.4);outline-offset:-2px">
+    <p style="background-color:#fff" class="padTSM">
+      <b class="bolder">.osResHeader.padTop</b><br>
+      <b class="disIb marS light fntH5 fntL">PC : 80px / Mobile : 40px / Photoshop : 80px</b>
+    </p>
+  </div>
+
+  <div class="clearfix osResContent">
+    <div class="floL txtR moTxtC">
+      <p class="fntH3 marTXL widL" id="margin"><strong class="regular">컨텐츠 간격 : 마진 margin </strong></p>
+      <p class="fntP marTL widL"><b class="bolder">mar</b>gin + <b class="bolder">L</b>eft{Right/Top/Bottom} + <b class="bolder">XXL</b>{XL/X/L/ML/M/SM/S} = <b class="bolder">marLXXL</b><br> (최대 크기 PC ~ 최소 크기 모바일, 포토샵 = 모바일 X 2)</p>
+    </div>
+    
+    <div class="floR moTxtC">
+      <p class="fntH3 marTXL widL" id="padding"><strong class="regular">컨텐츠 간격 : 패딩 padding</strong></p>
+      <p class="fntP marTL widL"><b class="bolder">pad</b>ding+ <b class="bolder">L</b>eft{Right/Top/Bottom} + <b class="bolder">XXL</b>{XL/X/L/ML/M/SM/S} = <b class="bolder">padLXXL</b><br> (최대 크기 PC ~ 최소 크기 모바일, 포토샵 = 모바일 X 2)</p>
+    </div>
+  </div>
+
+  <div class="clearfix">
+    <div class="floL">
+      <div class="txtC marTS">
+
+        <div style="border:1px solid #fff;background-image:linear-gradient(45deg, #888 8.33%, #ffffff 8.33%, #ffffff 50%, #888 50%, #888 58.33%, #ffffff 58.33%, #ffffff 100%);background-size:8.49px 8.49px;">
+          <p class="marLXXL marRXXL padTSM" style="bottom:-1px;border:1px solid #888;background-color:#fff">
+            margin-top <b class="bolder">.marTXXL</b>
+            margin-bottom <b class="bolder">.marTXXL</b><br>
+            margin-left <b class="bolder">.marLXXL</b>
+            margin-right <b class="bolder">.marRXXL</b><br>
+            margin (all) <b class="bolder">.marXXL</b><br>
+            <b class="disIb marS light fntH5 fntL">PC : 160px / Mobile : 80px / Photoshop : 160px</b>
+          </p>
+        </div>
+
+        <div style="border:1px solid #fff;background-image:linear-gradient(45deg, #888 8.33%, #ffffff 8.33%, #ffffff 50%, #888 50%, #888 58.33%, #ffffff 58.33%, #ffffff 100%);background-size:8.49px 8.49px;outline:4px solid rgba(255,255,0,.4);outline-offset:-2px">
+          <p class="marLXX marRXX padTSM" style="bottom:-1px;border:1px solid #888;background-color:#fff">
+            margin-top <b class="bolder">.marTXX</b>
+            margin-bottom <b class="bolder">.marTXX</b><br>
+            margin-left <b class="bolder">.marLXX</b>
+            margin-right <b class="bolder">.marRXX</b><br>
+            margin (all) <b class="bolder">.marXX</b><br>
+            <b class="disIb marS light fntH5 fntL">PC : 100px / Mobile : 70px / Photoshop : 140px</b>
+          </p>
+        </div>
+
+        <div style="border:1px solid #fff;background-image:linear-gradient(45deg, #888 8.33%, #ffffff 8.33%, #ffffff 50%, #888 50%, #888 58.33%, #ffffff 58.33%, #ffffff 100%);background-size:8.49px 8.49px;">
+          <p class="marLXL marRXL padTSM" style="bottom:-1px;border:1px solid #888;background-color:#fff">
+            margin-top <b class="bolder">.marTXL</b>
+            margin-bottom <b class="bolder">.marTXL</b><br>
+            margin-left <b class="bolder">.marLXL</b>
+            margin-right <b class="bolder">.marRXL</b><br>
+            margin (all) <b class="bolder">.marXL</b><br>
+            <b class="disIb marS light fntH5 fntL">PC : 80px / Mobile : 60px / Photoshop : 120px</b>
+          </p>
+        </div>
+
+        <div style="border:1px solid #fff;background-image:linear-gradient(45deg, #888 8.33%, #ffffff 8.33%, #ffffff 50%, #888 50%, #888 58.33%, #ffffff 58.33%, #ffffff 100%);background-size:8.49px 8.49px;outline:4px solid rgba(255,255,0,.4);outline-offset:-2px">
+          <p class="marLXM marRXM padTSM" style="bottom:-1px;border:1px solid #888;background-color:#fff">
+            margin-top <b class="bolder">.marTXM</b>
+            margin-bottom <b class="bolder">.marTXM</b><br>
+            margin-left <b class="bolder">.marLXM</b>
+            margin-right <b class="bolder">.marRXM</b><br>
+            margin (all) <b class="bolder">.marXM</b><br>
+            <b class="disIb marS light fntH5 fntL">PC : 70px / Mobile : 50px / Photoshop : 100px</b>
+          </p>
+        </div>
+        <div style="border:1px solid #fff;background-image:linear-gradient(45deg, #888 8.33%, #ffffff 8.33%, #ffffff 50%, #888 50%, #888 58.33%, #ffffff 58.33%, #ffffff 100%);background-size:8.49px 8.49px;">
+          <p class="marLX marRX padTSM" style="bottom:-1px;border:1px solid #888;background-color:#fff">
+            margin-top <b class="bolder">.marTX</b>
+            margin-bottom <b class="bolder">.marTX</b><br>
+            margin-left <b class="bolder">.marLX</b>
+            margin-right <b class="bolder">.marRX</b><br>
+            margin (all) <b class="bolder">.marX</b><br>
+            <b class="disIb marS light fntH5 fntL">PC : 50px / Mobile : 35px / Photoshop : 70px</b>
+          </p>
+        </div>
+
+        <div style="border:1px solid #fff;background-image:linear-gradient(45deg, #888 8.33%, #ffffff 8.33%, #ffffff 50%, #888 50%, #888 58.33%, #ffffff 58.33%, #ffffff 100%);background-size:8.49px 8.49px;">
+          <p class="marLL marRL padTSM" style="bottom:-1px;border:1px solid #888;background-color:#fff">
+            margin-top <b class="bolder">.marTL</b>
+            margin-bottom <b class="bolder">.marTL</b><br>
+            margin-left <b class="bolder">.marLL</b>
+            margin-right <b class="bolder">.marRL</b><br>
+            margin (all) <b class="bolder">.marL</b><br>
+            <b class="disIb marS light fntH5 fntL">PC : 40px / Mobile : 30px / Photoshop : 60px</b>
+          </p>
+        </div>
+        <div style="border:1px solid #fff;background-image:linear-gradient(45deg, #888 8.33%, #ffffff 8.33%, #ffffff 50%, #888 50%, #888 58.33%, #ffffff 58.33%, #ffffff 100%);background-size:8.49px 8.49px;">
+          <p class="marLML marRML padTSM" style="bottom:-1px;border:1px solid #888;background-color:#fff">
+            margin-top <b class="bolder">.marTML</b>
+            margin-bottom <b class="bolder">.marTML</b><br>
+            margin-left <b class="bolder">.marLML</b>
+            margin-right <b class="bolder">.marRML</b><br>
+            margin (all) <b class="bolder">.marML</b><br>
+            <b class="disIb marS light fntH5 fntL">PC : 30px / Mobile : 25px / Photoshop : 50px</b>
+          </p>
+        </div>
+
+        <div style="border:1px solid #fff;background-image:linear-gradient(45deg, #888 8.33%, #ffffff 8.33%, #ffffff 50%, #888 50%, #888 58.33%, #ffffff 58.33%, #ffffff 100%);background-size:8.49px 8.49px;">
+          <p class="marLM marRM padTSM" style="bottom:-1px;border:1px solid #888;background-color:#fff">
+            margin-top <b class="bolder">.marTM</b>
+            margin-bottom <b class="bolder">.marTM</b><br>
+            margin-left <b class="bolder">.marLM</b>
+            margin-right <b class="bolder">.marRM</b><br>
+            margin (all) <b class="bolder">.marM</b><br>
+            <b class="disIb marS light fntH5 fntL">PC : 20px / Mobile : 20px / Photoshop : 40px</b>
+          </p>
+        </div>
+        <div style="border:1px solid #fff;background-image:linear-gradient(45deg, #888 8.33%, #ffffff 8.33%, #ffffff 50%, #888 50%, #888 58.33%, #ffffff 58.33%, #ffffff 100%);background-size:8.49px 8.49px;">
+          <p class="marLSM marRSM padTSM" style="bottom:-1px;border:1px solid #888;background-color:#fff">
+            margin-top <b class="bolder">.marTSM</b>
+            margin-bottom <b class="bolder">.marBSM</b><br>
+            margin-left <b class="bolder">.marLSM</b>
+            margin-right <b class="bolder">.marRSM</b><br>
+            margin (all) <b class="bolder">.marSM</b><br>
+            <b class="disIb marS light fntH5 fntL">PC : 15px / Mobile : 15px / Photoshop : 30px</b>
+          </p>
+        </div>
+        <div style="border:1px solid #fff;background-image:linear-gradient(45deg, #888 8.33%, #ffffff 8.33%, #ffffff 50%, #888 50%, #888 58.33%, #ffffff 58.33%, #ffffff 100%);background-size:8.49px 8.49px;">
+          <p class="marLS marRS padTSM" style="bottom:-1px;border:1px solid #888;background-color:#fff">
+            margin-top <b class="bolder">.marTS</b>
+            margin-bottom <b class="bolder">.marBS</b><br>
+            margin-left <b class="bolder">.marLS</b>
+            margin-right <b class="bolder">.marRS</b><br>
+            margin (all) <b class="bolder">.marS</b><br>
+            <b class="disIb marS light fntH5 fntL">PC : 10px / Mobile : 10px / Photoshop : 20px</b>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- //마진 margin -->
+
+    <div class="floR">
+      <div class="txtC marTS">
+        <div class="padLXXL padRXXL" style="border:1px solid #888;background-image:linear-gradient(45deg, #888 8.33%, #ffffff 8.33%, #ffffff 50%, #888 50%, #888 58.33%, #ffffff 58.33%, #ffffff 100%);background-size:8.49px 8.49px;">
+          <p style="background-color:#fff" class="padTSM">
+            padding-top <b class="bolder">.padTXXL</b><br class="moOnly">
+            padding-bottom <b class="bolder">.padTXXL</b><br>
+            padding-left <b class="bolder">.padLXXL</b><br class="moOnly">
+            padding-right <b class="bolder">.padRXXL</b><br>
+            padding (all) <b class="bolder">.padXXL</b><br>
+            <b class="disIb marS light fntH5 fntL">PC : 160px / Mobile : 80px / Photoshop : 160px</b>
+          </p>
+        </div>
+
+        <div class="padLXX padRXX" style="border:1px solid #888;background-image:linear-gradient(45deg, #888 8.33%, #ffffff 8.33%, #ffffff 50%, #888 50%, #888 58.33%, #ffffff 58.33%, #ffffff 100%);background-size:8.49px 8.49px;outline:4px solid rgba(255,255,0,.4);outline-offset:-2px">
+          <p style="background-color:#fff" class="padTSM">
+            padding-top <b class="bolder">.padTXX</b><br class="moOnly">
+            padding-bottom <b class="bolder">.padTXX</b><br>
+            padding-left <b class="bolder">.padLXX</b><br class="moOnly">
+            padding-right <b class="bolder">.padRXX</b><br>
+            padding (all) <b class="bolder">.padXX</b><br>
+            <b class="disIb marS light fntH5 fntL">PC : 100px / Mobile : 70px / Photoshop : 140px</b>
+          </p>
+        </div>
+
+        <div class="padLXL padRXL" style="border:1px solid #888;background-image:linear-gradient(45deg, #888 8.33%, #ffffff 8.33%, #ffffff 50%, #888 50%, #888 58.33%, #ffffff 58.33%, #ffffff 100%);background-size:8.49px 8.49px;">
+          <p style="background-color:#fff" class="padTSM">
+            padding-top <b class="bolder">.padTXL</b><br class="moOnly">
+            padding-bottom <b class="bolder">.padTXL</b><br>
+            padding-left <b class="bolder">.padLXL</b><br class="moOnly">
+            padding-right <b class="bolder">.padRXL</b><br>
+            padding (all) <b class="bolder">.padXL</b><br>
+            <b class="disIb marS light fntH5 fntL">PC : 80px / Mobile : 60px / Photoshop : 120px</b>
+          </p>
+        </div>
+
+        <div class="padLXM padRXM" style="border:1px solid #888;background-image:linear-gradient(45deg, #888 8.33%, #ffffff 8.33%, #ffffff 50%, #888 50%, #888 58.33%, #ffffff 58.33%, #ffffff 100%);background-size:8.49px 8.49px;outline:4px solid rgba(255,255,0,.4);outline-offset:-2px">
+          <p style="background-color:#fff" class="padTSM">
+            padding-top <b class="bolder">.padTXM</b><br class="moOnly">
+            padding-bottom <b class="bolder">.padTXM</b><br>
+            padding-left <b class="bolder">.padLXM</b><br class="moOnly">
+            padding-right <b class="bolder">.padRXM</b><br>
+            padding (all) <b class="bolder">.padXM</b><br>
+            <b class="disIb marS light fntH5 fntL">PC : 70px / Mobile : 50px / Photoshop : 100px</b>
+          </p>
+        </div>
+
+        <div class="padLX padRX" style="border:1px solid #888;background-image:linear-gradient(45deg, #888 8.33%, #ffffff 8.33%, #ffffff 50%, #888 50%, #888 58.33%, #ffffff 58.33%, #ffffff 100%);background-size:8.49px 8.49px;">
+          <p style="background-color:#fff" class="padTSM">
+            padding-top <b class="bolder">.padTX</b><br class="moOnly">
+            padding-bottom <b class="bolder">.padTX</b><br>
+            padding-left <b class="bolder">.padLX</b><br class="moOnly">
+            padding-right <b class="bolder">.padRX</b><br>
+            padding (all) <b class="bolder">.padX</b><br>
+            <b class="disIb marS light fntH5 fntL">PC : 50px / Mobile : 35px / Photoshop : 70px</b>
+          </p>
+        </div>
+
+        <div class="padLL padRL" style="border:1px solid #888;background-image:linear-gradient(45deg, #888 8.33%, #ffffff 8.33%, #ffffff 50%, #888 50%, #888 58.33%, #ffffff 58.33%, #ffffff 100%);background-size:8.49px 8.49px;">
+          <p style="background-color:#fff" class="padTSM">
+            padding-top <b class="bolder">.padTL</b><br class="moOnly">
+            padding-bottom <b class="bolder">.padTL</b><br>
+            padding-left <b class="bolder">.padLL</b><br class="moOnly">
+            padding-right <b class="bolder">.padRL</b><br>
+            padding (all) <b class="bolder">.padL</b><br>
+            <b class="disIb marS light fntH5 fntL">PC : 40px / Mobile : 30px / Photoshop : 60px</b>
+          </p>
+        </div>
+        <div class="padLML padRML" style="border:1px solid #888;background-image:linear-gradient(45deg, #888 8.33%, #ffffff 8.33%, #ffffff 50%, #888 50%, #888 58.33%, #ffffff 58.33%, #ffffff 100%);background-size:8.49px 8.49px;">
+          <p style="background-color:#fff" class="padTSM">
+            padding-top <b class="bolder">.padTML</b><br class="moOnly">
+            padding-bottom <b class="bolder">.padTML</b><br>
+            padding-left <b class="bolder">.padLML</b><br class="moOnly">
+            padding-right <b class="bolder">.padRML</b><br>
+            padding (all) <b class="bolder">.padML</b><br>
+            <b class="disIb marS light fntH5 fntL">PC : 30px / Mobile : 25px / Photoshop : 50px</b>
+          </p>
+        </div>
+
+        <div class="padLM padRM" style="border:1px solid #888;background-image:linear-gradient(45deg, #888 8.33%, #ffffff 8.33%, #ffffff 50%, #888 50%, #888 58.33%, #ffffff 58.33%, #ffffff 100%);background-size:8.49px 8.49px;">
+          <p style="background-color:#fff" class="padTSM">
+            padding-top <b class="bolder">.padTM</b><br class="moOnly">
+            padding-bottom <b class="bolder">.padTM</b><br>
+            padding-left <b class="bolder">.padLM</b><br class="moOnly">
+            padding-right <b class="bolder">.padRM</b><br>
+            padding (all) <b class="bolder">.padM</b><br>
+            <b class="disIb marS light fntH5 fntL">PC : 20px / Mobile : 20px / Photoshop : 40px</b>
+          </p>
+        </div>
+        <div class="padLSM padRSM" style="border:1px solid #888;background-image:linear-gradient(45deg, #888 8.33%, #ffffff 8.33%, #ffffff 50%, #888 50%, #888 58.33%, #ffffff 58.33%, #ffffff 100%);background-size:8.49px 8.49px;">
+          <p style="background-color:#fff" class="padTSM">
+            padding-top <b class="bolder">.padTSM</b><br class="moOnly">
+            padding-bottom <b class="bolder">.padTSM</b><br>
+            padding-left <b class="bolder">.padLSM</b><br class="moOnly">
+            padding-right <b class="bolder">.padRSM</b><br>
+            padding (all) <b class="bolder">.padSM</b><br>
+            <b class="disIb marS light fntH5 fntL">PC : 15px / Mobile : 15px / Photoshop : 30px</b>
+          </p>
+        </div>
+        <div class="padLS padRS" style="border:1px solid #888;background-image:linear-gradient(45deg, #888 8.33%, #ffffff 8.33%, #ffffff 50%, #888 50%, #888 58.33%, #ffffff 58.33%, #ffffff 100%);background-size:8.49px 8.49px;">
+          <p style="background-color:#fff" class="padTSM">
+            padding-top <b class="bolder">.padTS</b><br class="moOnly">
+            padding-bottom <b class="bolder">.padTS</b><br>
+            padding-left <b class="bolder">.padLS</b><br class="moOnly">
+            padding-right <b class="bolder">.padRS</b><br>
+            padding (all) <b class="bolder">.padS</b><br>
+            <b class="disIb marS light fntH5 fntL">PC : 10px / Mobile : 10px / Photoshop : 20px</b>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 패딩 padding -->
+  </div>
+
+  <div class="osResContent marTM">
+    <p>- XXL, XL 은 비주얼에서 높이 맞출 때나 많은 간격이 필요할 때(PC/모바일 아주 많은 차이, 자주 사용하지 않음)</p>
+    <p>- X 는 넓은 폭(PC/모바일 큰 차이, 각 섹션 구분할 때)</p>
+    <p>- L, ML 은 중간 폭(PC/모바일 중간,약간 차이)</p>
+    <p>- M, SM, S 좁은 폭(PC/모바일 차이 없음)</p>
+  </div>
+
+</div>
+<!-- //os_noticeRes -->
+<!-- //반응형 공지 끝 -->
+
+
+</div><!-- //.bod-view-txt --></div><!-- //.akl -->
+<script src="https://www.amway.co.kr/wro/all_responsive.js"></script>
+<script src="https://www.amway.co.kr/wro/addons_responsive.js"></script>
+</body>
+</html>

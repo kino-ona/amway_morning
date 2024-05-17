@@ -1,0 +1,210 @@
+<html lang="ko">
+    <head>
+    <!-- page common -->
+    <meta charset="utf-8">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta name="referrer" content="unsafe-url">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- //page common -->
+    <!-- page unique -->
+    <meta name="Description" content="설명들어감">
+    <meta http-equiv="Last-Modified" content="">
+    
+    <!--[if lt IE 9]>
+        <script src="/_ui/desktop/common/js/html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript" async="" charset="utf-8" id="utag_69" src="//cdn.heapanalytics.com/js/heap-4243325240.js"></script><script src="//tags.tiqcdn.com/utag/amway/kr-hybris/prod/utag.js" type="text/javascript" async=""></script><script type="text/javascript" src="/ruxitagentjs_ICA27Vdefgijmoqrtuvx_10215210506134511.js" data-dtconfig="app=c91546c95c87690f|rcdec=1209600000|featureHash=ICA27Vdefgijmoqrtuvx|vcv=2|rdnt=1|uxrgce=1|bp=3|srmcrv=10|cuc=9rj8dgfh|mel=100000|dpvc=1|ssv=4|lastModification=1659669370860|dtVersion=10215210506134511|srmcrl=1|tp=500,50,0,1|uxdcw=1500|agentUri=/ruxitagentjs_ICA27Vdefgijmoqrtuvx_10215210506134511.js|reportUrl=/rb_bf49927etb|rid=RID_-1567330740|rpid=2141550260|domain=amway.co.kr"></script><link rel="stylesheet" href="/_ui/desktop/common/css/academy_default.css">
+    <script src="/_ui/desktop/common/js/jquery-1.8.3.min.js"></script>
+    <script src="/_ui/desktop/common/js/pbCommon2.js"></script>
+    <script src="/_ui/desktop/common/js/pbLayerPopup.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="/js/front.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="/js/json2.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="/js/json3.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="/js/jquery.form.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="/js/jquery.number.min.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="/js/jquery.popupWindow.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="/js/date.format.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="/js/jquery.history.js"></script>
+    <script src="/_ui/desktop/common/js/pbCommonAcademy.js"></script>
+    <script src="/js/adjustIframe.js"></script>
+    <script src="/js/mustache.min.js"></script>
+    <script type="text/javascript">
+        var openLayerPopup = function(options){
+            // 하나로 통일
+            var targetId = "acdemyLayerPop";
+            
+            var default_value =  {	
+                targetId : "acdemyLayerPop"
+                , width : 850
+                , height : 600
+                , maxHeight : 600
+                , callback : false
+                , params : ""
+                , level : "1"
+            };
+            
+            var opts = $.extend({}, default_value, options);
+            
+            opts.width = parseFloat(opts.width);
+            opts.height = parseFloat(opts.height);
+            opts.height = opts.height > opts.maxHeight ? opts.maxHeight : opts.height;
+                
+            var xindex = "10001";
+            
+            // modal
+            var parentDoc = $(document).find('body');
+            parentDoc.append('<div class="layerMask" id="layerMask" style="display:block;"></div>');
+            
+            // 기존 Layer 삭제
+            $("#" + targetId).remove();
+            $(document).find("body").append('<div id="' + targetId + '" tabindex="0"></div>');
+            
+            // Layer 레이아웃
+            var obj = $(document).find('#'+ targetId);
+            
+            $.ajax({
+                url: opts.url,
+                type:'post',
+                data : opts.params,
+                success: function(data){
+                    // 열린 Ifrm ID 설정
+                    obj.html(data);
+                    $(window).scrollTop();
+                    setTimeout(function(){ $("#uiLayerPop_w02" ).attr("tabindex","0").focus(); }, 500);
+                    // 닫기 버튼 이벤트
+                    $(".btnPopClose").on("click", function(){
+                        $('#layerMask').remove();
+                        $('#acdemyLayerPop').remove();
+                    });
+                },
+                error: function(xhr,status,error){
+                    $('#layerMask').remove();
+                    $('#acdemyLayerPop').remove();
+                    alert("code:"+xhr.status);
+                }
+            });	
+        };
+        
+        var openMultilLayerPopup = function(options,popid){
+            // 하나로 통일
+            var targetId = popid;
+            
+            var default_value =  {	
+                targetId : popid
+                , width : 850
+                , height : 600
+                , maxHeight : 600
+                , callback : false
+                , params : ""
+                , level : "1"
+            };
+            
+            var opts = $.extend({}, default_value, options);
+            
+            opts.width = parseFloat(opts.width);
+            opts.height = parseFloat(opts.height);
+            opts.height = opts.height > opts.maxHeight ? opts.maxHeight : opts.height;
+                
+            var xindex = "10001";
+            
+            // modal
+            var parentDoc = $(document).find('body');
+            parentDoc.append('<div class="layerMask" id="layerMask'+popid+'" style="display:block;"></div>');
+            
+            // 기존 Layer 삭제
+            $("#" + targetId).remove();
+            $(document).find("body").append('<div id="' + targetId + '" tabindex="0"></div>');
+            
+            // Layer 레이아웃
+            var obj = $(document).find('#'+ targetId);
+            
+            $.ajax({
+                url: opts.url,
+                type:'post',
+                data : opts.params,
+                success: function(data){
+                    // 열린 Ifrm ID 설정
+                    obj.html(data);
+                    $(window).scrollTop();
+                    setTimeout(function(){ $("#"+popid ).attr("tabindex","0").focus(); }, 500);
+                    // 닫기 버튼 이벤트
+                    $(".btnPopClose").on("click", function(){
+                        $('#layerMask'+popid).remove();
+                        $('#'+popid).remove();
+                    });
+                },
+                error: function(xhr,status,error){
+                    $('#layerMask'+popid).remove();
+                    $('#'+popid).remove();
+                    alert("code:"+xhr.status);
+                }
+            });	
+        };
+        
+    </script>
+    
+    <script type="text/javascript" async="" charset="utf-8" id="utag_amway.kr-hybris_41" src="//tags.tiqcdn.com/utag/tiqapp/utag.currency.js?utv=ut4.45.202206172042"></script><script type="text/javascript" async="" charset="utf-8" id="utag_amway.kr-hybris_69" src="//tags.tiqcdn.com/utag/amway/kr-hybris/prod/utag.69.js?utv=ut4.45.202206082043"></script></head>
+    <body>
+        <!-- S : 20230503 아카데미 그룹교육신청 작업 -->
+        <div id="pbPopWrap">
+            <header id="pbPopHeader">
+                <h1><img src="/_ui/desktop/images/academy/titie04.gif" alt="교육 신청 취소"></h1>
+            </header>
+            <a href="javascript:self.close();" class="btnPopClose">
+            <img src="/_ui/desktop/images/common/btn_close.gif" alt="팝업창 닫힘"></a>
+            <section id="pbPopContent">
+
+                <em class="listDotFS">교육 신청을 취소하시겠습니까?</em>
+
+                <!-- S : 2020-05-21 add -->
+                <!-- <h2 class="pdtL"><img src="/_ui/desktop/images/academy/h2_w020500120.gif" alt="예약정보"></h2>
+                <div class="reservInfoHeader">
+                    <div class="title"><span id="tempTypeName">시설종류 : OnAir예약</span><em>|</em><span>지역 : 강남ABC</span><em>|</em><span>ROOM명 : 온라인교육</span></div>
+                </div>
+                <table class="tblList lineLeft">
+                    <caption>예약정보 테이블</caption>
+                    <colgroup>
+                        <col style="width:30%" />
+                        <col style="width:40%" />
+                        <col style="width:auto" />
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col">사용일</th>
+                        <th scope="col">사용시간</th>
+                        <th scope="col">결제금액</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    <tr>
+                        <td>2020-05-22(금)</td>
+                        <td>세션2 (14:00~17:00)</td>
+                        <td>무료</td>
+                    </tr>
+                    <tr>
+                        <td>2020-05-22(금)</td>
+                        <td>세션1 (10:00~13:00)</td>
+                        <td>무료</td>
+                    </tr>
+                    </tbody>
+                </table> -->
+                <!-- E : 2020-05-21 add -->
+
+                <!-- 무료예약인 경우 -->
+                <!-- <div class="lineBox msgBox">
+                    <p class="textC">취소 시 패널티가 적용됩니다.</p>
+                </div> -->
+
+                <div class="btnWrapC">
+                    <input type="button" class="btnBasicGL" value="취소">
+                    <input type="button" class="btnBasicBL" value="확인">
+                </div>
+        
+            </section>
+        </div>
+        <!-- E : 20230503 아카데미 그룹교육신청 작업 -->
+    </body>
+</html>

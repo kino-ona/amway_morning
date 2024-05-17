@@ -1,0 +1,454 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>Amway 반응형 폰트 가이드</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700&subset=korean" rel="stylesheet">
+<link rel="stylesheet" href="font_kr.css">
+<link rel="stylesheet" type="text/css" href="https://www.amway.co.kr/_ui/responsive/theme-blue/css/main_new.css">
+<link rel="stylesheet" type="text/css" href="https://www.amway.co.kr/wro/blue_responsive.css">    
+<link rel="stylesheet" type="text/css" href="https://www.amway.co.kr/wro/addons_responsive.css">
+<link rel="stylesheet" type="text/css" href="https://www.amway.co.kr/_ui/responsive/theme-blue/css/content_res_all.css">
+<link rel="stylesheet" type="text/css" href="https://www.amway.co.kr/_ui/responsive/theme-blue/css/uiux_res_all.css">
+<script src="https://www.amway.co.kr/_ui/responsive/common/js/jquery-3.2.1.min.js"></script>
+
+<style>
+  body{max-width:none;margin:0 auto}
+  #loading{display:none!important}
+  @media screen and (max-width:639px) {
+  body{padding-left:15px;padding-right:15px;margin:0 auto}
+  }
+  hr{margin-top:20px;margin-bottom:20px;border:0;border-top:10px solid #eee}
+  pre{display:block;padding:9.5px;margin:0 0 10px;font-size:13px;line-height:1.42857143;color:#333;word-break:break-all;word-wrap:break-word;background-color:#f5f5f5;border:1px solid #ccc;border-radius:4px;overflow:auto;font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace}
+  .goto_menu{top:0;left:0;z-index:1000;width:100%;height:50px;padding:0 1em;background-color:rgba(240,240,240,.9);border-bottom:1px solid #ededed}
+  .goto_menu li{display:inline-block}
+  .goto_menu li a{display:block;padding:0 .5em;color:#000!important;font-size:16px;line-height:50px;letter-spacing:-.5px}
+  .helper_grid{display:grid;grid-template-columns:repeat(3,1fr);grid-column-gap:30px;grid-row-gap:30px;padding:20px}
+  .helper_box{padding:15px 10px;border:1px solid #aaa;border-radius:5px;transition:all 1s ease}
+  .helper_box dt{padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid #ddd}
+  .helper_box dt ul{margin-top:5px}
+  .helper_box dt li{display:inline-block}
+  .helper_box button{background-color:#eef;color:#444;border:1px solid #aaa;border-radius:3px;margin:3px;box-shadow:2px 2px 0px #666;}
+  .helper_box button:active,.helper_box button:focus,.helper_box button:hover,.helper_box button.active{background-color:#fff;border-color:#000;color:#000;box-shadow:1px 1px 0px #666;}
+  .helper_title{color:#333;font-weight:400;font-size:16px}
+  .helper_title strong{color:#000;font-size:28px;font-weight:500}
+  .helper_title b{color:#000;font-weight:500}
+  @media print {
+    .helper_grid{display:grid;grid-template-columns:repeat(3,1fr);grid-column-gap:30px;grid-row-gap:30px;padding:20px}
+  }
+  @media (max-width:1024px) {
+    .helper_grid{grid-template-columns:repeat(2,1fr)}
+    .helper_box dt li{display:block;margin-right:0}
+  }
+  @media (max-width:768px) {
+    .helper_grid{grid-column-gap:15px}
+    .helper_title strong{font-size:22px}
+    .helper_title{font-size:15px}
+  }
+  @media (max-width:639px) {
+    .goto_menu li a{font-size:14px;letter-spacing:-1px;padding:0 .3em}
+  }
+  @media (max-width:425px) {
+    .helper_grid{grid-template-columns:repeat(1,1fr);grid-column-gap:10px}
+  }
+  @media (max-width:320px) {
+    .helper_grid{display:block;padding:0}
+    .helper_box{display:block;border:0 none}
+  }
+</style>
+
+</head>
+
+<body>
+<div class="akl"><div class="bod-view-txt">
+
+<div class="os_noticeRes">
+  <div class="goto_menu posFx">
+    <div class="osResContent posRe">
+      <h1 class="posAb fntH6 pcOnly bolder" style="right:1em">Amway 반응형 코딩 가이드</h1>
+      <ul class="txtL">
+        <li><a href="noticeRes_guide.html#top">[Top]</a></li>
+        <li><a href="noticeRes_guide.html#margin">[Size]</a></li>
+
+        <li><a href="#"><strong class="bolder">[Font]</strong></a></li>
+        <li><a href="noticeRes_guide.html#table">[Table]</a></li>
+        <li><a href="noticeRes_guide.html#button">[Pop/Btn]</a></li>
+        <li><a href="noticeRes_guide.html#flex">[Flex]</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- //내비게이션 -->
+
+<!-- 반응형 공지 시작 -->
+<div class="os_noticeRes">
+  <p class="fntH4 padLM marTX"><strong>폰트 미리보기 (PC/Mobile/PSD)</strong></p>
+  <p class="fntP padLM marTS"><b>font-family : &ldquo;Noto Sans KR&rdquo;</b></p>
+  <div class="helper_grid">
+    <dl class="helper_box">
+      <dt class="helper_title">
+        <p><strong>.fntH1.fntL</strong></p>
+        <ul>
+          <li><button type="button">PC <b>68px</b><span class="icon-chevron-small-down"></span></button></li>
+          <li><button type="button">Mobile <b>42px</b><span class="icon-chevron-small-down"></span></button></li>
+          <li><button type="button" class="active">Photoshop <b>84px</b><span class="icon-chevron-small-down"></span></button></li>
+        </ul>
+      </dt>
+      <dd>
+        <p class="fntH1 fntL" style="font-size:84px">폰트 <b>84px</b></p>
+      </dd>
+    </dl>
+
+    <dl class="helper_box">
+      <dt class="helper_title">
+        <p><strong>.fntH1</strong></p>
+        <ul>
+          <li><button type="button">PC <b>64px</b><span class="icon-chevron-small-down"></span></button></li>
+          <li><button type="button">Mobile <b>38px</b><span class="icon-chevron-small-down"></span></button></li>
+          <li><button type="button" class="active">Photoshop <b>76px</b><span class="icon-chevron-small-down"></span></button></li>
+        </ul>
+      </dt>
+      <dd>
+        <p class="fntH1" style="font-size:76px">폰트 <b>76px</b></p>
+      </dd>
+    </dl>
+
+    <dl class="helper_box">
+      <dt class="helper_title">
+        <p><strong>.fntH1.fntM</strong></p>
+        <ul>
+          <li><button type="button">PC <b>60px</b><span class="icon-chevron-small-down"></span></button></li>
+          <li><button type="button">Mobile <b>34px</b><span class="icon-chevron-small-down"></span></button></li>
+          <li><button type="button" class="active">Photoshop <b>72px</b><span class="icon-chevron-small-down"></span></button></li>
+        </ul>
+      </dt>
+      <dd>
+        <p class="fntH1 fntM" style="font-size:76px">폰트 <b>72px</b></p>
+      </dd>
+    </dl>
+
+    <dl class="helper_box">
+      <dt class="helper_title">
+        <p><strong>.fntH2.fntL</strong></p>
+        <ul>
+          <li><button type="button">PC <b>52px</b><span class="icon-chevron-small-down"></span></button></li>
+          <li><button type="button">Mobile <b>32px</b><span class="icon-chevron-small-down"></span></button></li>
+          <li><button type="button" class="active">Photoshop <b>64px</b><span class="icon-chevron-small-down"></span></button></li>
+        </ul>
+      </dt>
+      <dd>
+        <p class="fntH2 fntL" style="font-size:64px">폰트 <b>64px</b></p>
+      </dd>
+    </dl>
+
+    <dl class="helper_box">
+      <dt class="helper_title">
+        <p><strong>.fntH2</strong></p>
+        <ul>
+          <li><button type="button">PC <b>48px</b><span class="icon-chevron-small-down"></span></button></li>
+          <li><button type="button">Mobile <b>28px</b><span class="icon-chevron-small-down"></span></button></li>
+          <li><button type="button" class="active">Photoshop <b>56px</b><span class="icon-chevron-small-down"></span></button></li>
+        </ul>
+      </dt>
+      <dd>
+        <p class="fntH2" style="font-size:56px">폰트 <b>56px</b></p>
+      </dd>
+    </dl>
+
+    <dl class="helper_box">
+      <dt class="helper_title">
+        <p><strong>.fntH2.fntM</strong></p>
+        <ul>
+          <li><button type="button">PC <b>50px</b><span class="icon-chevron-small-down"></span></button></li>
+          <li><button type="button">Mobile <b>30px</b><span class="icon-chevron-small-down"></span></button></li>
+          <li><button type="button" class="active">Photoshop <b>62px</b><span class="icon-chevron-small-down"></span></button></li>
+        </ul>
+      </dt>
+      <dd>
+        <p class="fntH2 fntM" style="font-size:76px">폰트 <b>62px</b></p>
+      </dd>
+    </dl>
+
+    <dl class="helper_box">
+      <dt class="helper_title">
+        <p><strong>.fntH3.fntL</strong></p>
+        <ul>
+          <li><button type="button">PC <b>46px</b><span class="icon-chevron-small-down"></span></button></li>
+          <li><button type="button">Mobile <b>26px</b><span class="icon-chevron-small-down"></span></button></li>
+          <li><button type="button" class="active">Photoshop <b>52px</b><span class="icon-chevron-small-down"></span></button></li>
+        </ul>
+      </dt>
+      <dd>
+        <p class="fntH3 fntL" style="font-size:52px">폰트 <b>52px</b></p>
+      </dd>
+    </dl>
+
+    <dl class="helper_box">
+      <dt class="helper_title">
+        <p><strong>.fntH3</strong></p>
+        <ul>
+          <li><button type="button">PC <b>42px</b><span class="icon-chevron-small-down"></span></button></li>
+          <li><button type="button">Mobile <b>24px</b><span class="icon-chevron-small-down"></span></button></li>
+          <li><button type="button" class="active">Photoshop <b>48px</b><span class="icon-chevron-small-down"></span></button></li>
+        </ul>
+      </dt>
+      <dd>
+        <p class="fntH3" style="font-size:48px">폰트 <b>48px</b></p>
+      </dd>
+    </dl>
+
+    <dl class="helper_box">
+      <dt class="helper_title">
+        <p><strong>.fntH3.fntM</strong></p>
+        <ul>
+          <li><button type="button">PC <b>44px</b><span class="icon-chevron-small-down"></span></button></li>
+          <li><button type="button">Mobile <b>25px</b><span class="icon-chevron-small-down"></span></button></li>
+          <li><button type="button" class="active">Photoshop <b>50px</b><span class="icon-chevron-small-down"></span></button></li>
+        </ul>
+      </dt>
+      <dd>
+        <p class="fntH3 fntM" style="font-size:76px">폰트 <b>50px</b></p>
+      </dd>
+    </dl>
+
+    <dl class="helper_box">
+      <dt class="helper_title">
+        <p><strong>.fntH4.fntL</strong></p>
+        <ul>
+          <li><button type="button">PC <b>34px</b><span class="icon-chevron-small-down"></span></button></li>
+          <li><button type="button">Mobile <b>22px</b><span class="icon-chevron-small-down"></span></button></li>
+          <li><button type="button" class="active">Photoshop <b>44px</b><span class="icon-chevron-small-down"></span></button></li>
+        </ul>
+      </dt>
+      <dd>
+        <p class="fntH4 fntL" style="font-size:44px">폰트 <b>44px</b></p>
+      </dd>
+    </dl>
+
+    <dl class="helper_box">
+      <dt class="helper_title">
+        <p><strong>.fntH4</strong></p>
+        <ul>
+          <li><button type="button">PC <b>30px</b><span class="icon-chevron-small-down"></span></button></li>
+          <li><button type="button">Mobile <b>20px</b><span class="icon-chevron-small-down"></span></button></li>
+          <li><button type="button" class="active">Photoshop <b>40px</b><span class="icon-chevron-small-down"></span></button></li>
+        </ul>
+      </dt>
+      <dd>
+        <p class="fntH5" style="font-size:40px">폰트 <b>40px</b></p>
+      </dd>
+    </dl>
+
+    <dl class="helper_box">
+      <dt class="helper_title">
+        <p><strong>.fntH4.fntM</strong></p>
+        <ul>
+          <li><button type="button">PC <b>36px</b><span class="icon-chevron-small-down"></span></button></li>
+          <li><button type="button">Mobile <b>23px</b><span class="icon-chevron-small-down"></span></button></li>
+          <li><button type="button" class="active">Photoshop <b>46px</b><span class="icon-chevron-small-down"></span></button></li>
+        </ul>
+      </dt>
+      <dd>
+        <p class="fntH4 fntM" style="font-size:44px">폰트 <b>46px</b></p>
+      </dd>
+    </dl>
+
+    <dl class="helper_box">
+      <dt class="helper_title">
+        <p><strong>.fntH5.fntL</strong></p>
+        <ul>
+          <li><button type="button">PC <b>28px</b><span class="icon-chevron-small-down"></span></button></li>
+          <li><button type="button">Mobile <b>19px</b><span class="icon-chevron-small-down"></span></button></li>
+          <li><button type="button" class="active">Photoshop <b>38px</b><span class="icon-chevron-small-down"></span></button></li>
+        </ul>
+      </dt>
+      <dd>
+        <p class="fntH5 fntL" style="font-size:38px">폰트 <b>38px</b></p>
+      </dd>
+    </dl>
+
+    <dl class="helper_box">
+      <dt class="helper_title">
+        <p><strong>.fntH5</strong></p>
+        <ul>
+          <li><button type="button">PC <b>24px</b><span class="icon-chevron-small-down"></span></button></li>
+          <li><button type="button">Mobile <b>18px</b><span class="icon-chevron-small-down"></span></button></li>
+          <li><button type="button" class="active">Photoshop <b>36px</b><span class="icon-chevron-small-down"></span></button></li>
+        </ul>
+      </dt>
+      <dd>
+        <p class="fntH5" style="font-size:36px">폰트 <b>36px</b></p>
+      </dd>
+    </dl>
+
+    <dl class="helper_box">
+      <dt class="helper_title">
+        <p><strong>.fntH6.fntL</strong></p>
+        <ul>
+          <li><button type="button">PC <b>22px</b><span class="icon-chevron-small-down"></span></button></li>
+          <li><button type="button">Mobile <b>17px</b><span class="icon-chevron-small-down"></span></button></li>
+          <li><button type="button" class="active">Photoshop <b>34px</b><span class="icon-chevron-small-down"></span></button></li>
+        </ul>
+      </dt>
+      <dd>
+        <p class="fntH6 fntL" style="font-size:34px">폰트 <b>34px</b></p>
+      </dd>
+    </dl>
+
+    <dl class="helper_box">
+      <dt class="helper_title">
+        <p><strong>.fntH6</strong></p>
+        <ul>
+          <li><button type="button">PC <b>18px</b><span class="icon-chevron-small-down"></span></button></li>
+          <li><button type="button">Mobile <b>16px</b><span class="icon-chevron-small-down"></span></button></li>
+          <li><button type="button" class="active">Photoshop <b>32px</b><span class="icon-chevron-small-down"></span></button></li>
+        </ul>
+      </dt>
+      <dd>
+        <p class="fntH6" style="font-size:32px">폰트 <b>32px</b></p>
+      </dd>
+    </dl>
+  </div>
+  <!-- //helper_grid -->
+
+  <hr>
+
+  <p class="fntH4 padLM"><strong>텍스트용 폰트/기타 (PC/Mobile/PSD)</strong></p>
+  <div class="helper_grid">
+    <dl class="helper_box">
+      <dt class="helper_title">
+        <p><strong>.fntP</strong></p>
+        <ul>
+          <li><button type="button">PC <b>16px</b><span class="icon-chevron-small-down"></span></button></li>
+          <li><button type="button">Mobile <b>15px</b><span class="icon-chevron-small-down"></span></button></li>
+          <li><button type="button" class="active">Photoshop <b>30px</b><span class="icon-chevron-small-down"></span></button></li>
+        </ul>
+      </dt>
+      <dd>
+        <p class="fntP" style="font-size:30px">폰트 <b>30px</b></p>
+      </dd>
+    </dl>
+
+    <dl class="helper_box">
+      <dt class="helper_title">
+        <p><strong>기본사이즈 (클래스 없음)</strong></p>
+        <ul>
+          <li><button type="button">PC <b>14px</b><span class="icon-chevron-small-down"></span></button></li>
+          <li><button type="button">Mobile <b>14px</b><span class="icon-chevron-small-down"></span></button></li>
+          <li><button type="button" class="active">Photoshop <b>28px</b><span class="icon-chevron-small-down"></span></button></li>
+        </ul>
+      </dt>
+      <dd>
+        <p style="font-size:28px">폰트 <b>28px</b></p>
+      </dd>
+    </dl>
+
+    <dl class="helper_box">
+      <dt class="helper_title">
+        <p><strong>.fntE</strong></p>
+        <ul>
+          <li><button type="button">PC <b>12px</b><span class="icon-chevron-small-down"></span></button></li>
+          <li><button type="button">Mobile <b>12px</b><span class="icon-chevron-small-down"></span></button></li>
+          <li><button type="button" class="active">Photoshop <b>24px</b><span class="icon-chevron-small-down"></span></button></li>
+        </ul>
+      </dt>
+      <dd>
+        <p class="fntE" style="font-size:24px">폰트 <b>24px</b></p>
+        <p class="marTM">(주석용)</p>
+      </dd>
+    </dl>
+
+  </div>
+  <!-- //helper_grid -->
+
+  <hr>
+
+  <!-- 폰트 굵기 -->
+  <p class="fntH3 osResContent padTL"><strong>폰트 굵기</strong></p>
+  <p class="fntP osResContent marBML">font-weight</p>
+  <div class="txtC osResContent clearfix marTL marBL">
+    <div class="floL" style="width:45%">
+      <p>(PS : Light, Thin, DemiLight / <b>font-weight : 300</b>)</p>
+      <p class="fntH1 marBM"><strong class="light">큰 폰트 .light</strong></p>
+      <p>(PS : Regular / <b>font-weight : 400</b>) : 기본</p>
+      <p class="fntH1 marBM"><strong class="regular">큰 폰트 .regular</strong></p>
+      <p>(PS : Medium / <b>font-weight : 500</b>) : <b class="bolder">&lt;strong&gt;, &lt;b&gt;</b></p>
+      <p class="fntH1 marBM"><strong>큰 폰트 .bold</strong></p>
+      <p>(PS : Bold, Black / <b>font-weight : 700</b>)</p>
+      <p class="fntH1 marBM"><strong class="bolder">큰 폰트 .bolder</strong></p>
+    </div>
+
+    <div class="floL" style="width:30%">
+      <p>(PS : Light, Thin, DemiLight / <b>font-weight : 300</b>)</p>
+      <p class="fntH4 fntL marBM"><strong class="light">중간 폰트 .light</strong></p>
+      <p>(PS : Regular / <b>font-weight : 400</b>) : 기본</p>
+      <p class="fntH4 fntL marBM"><strong class="regular">중간 폰트 .regular</strong></p>
+      <p>(PS : Medium / <b>font-weight : 500</b>) : <b class="bolder">&lt;strong&gt;, &lt;b&gt;</b></p>
+      <p class="fntH4 fntL marBM"><strong>중간 폰트 .bold</strong></p>
+      <p>(PS : Bold, Black / <b>font-weight : 700</b>)</p>
+      <p class="fntH4 fntL marBM"><strong class="bolder">중간 폰트 .bolder</strong></p>
+    </div>
+
+    <div class="floL" style="width:25%">
+      <p>(PS : Light, Thin, DemiLight / <b>font-weight : 300</b>)</p>
+      <p class="fntP marBM"><strong class="light">작은 폰트 .light</strong></p>
+      <p>(PS : Regular / <b>font-weight : 400</b>) : 기본</p>
+      <p class="fntP marBM"><strong class="regular">작은 폰트 .regular</strong></p>
+      <p>(PS : Medium / <b>font-weight : 500</b>) : <b class="bolder">&lt;strong&gt;, &lt;b&gt;</b></p>
+      <p class="fntP marBM"><strong>작은 폰트 .bold</strong></p>
+      <p>(PS : Bold, Black / <b>font-weight : 700</b>)</p>
+      <p class="fntP marBM"><strong class="bolder">작은 폰트 .bolder</strong></p>
+    </div>
+  </div>
+  <!-- //폰트 굵기 -->
+</div>
+
+<script>
+jQuery(function($) {
+  var _wrap = $('.helper_grid');
+  var _box = _wrap.find('.helper_box');
+  var _btn = _box.find('button');
+
+  function findOrder(btn) {
+    var item = btn.closest('li');
+    var list = item.closest('ul').find('li');
+    return list.index(item);
+  }
+
+  function activeBtn(btn) {
+    btn.closest('ul').find('li button').removeClass('active');
+    btn.addClass('active');
+  }
+
+  function changeSize(elem, size) {
+    $(elem).css({'font-size':size});
+  }
+
+  _btn.click(function(e) {
+    e.preventDefault();
+    var _this = $(this);
+    var num = findOrder(_this);
+    _box.each(function(index, value) {
+      var thisElem = $(value);
+      var thisList = thisElem.find('li').eq(num);
+      var thisExam = thisElem.find('dd p').first();
+      var thisBtn = thisList.find('button');
+      var size = thisList.find('button b').text();
+      var thisTxt = thisElem.closest('dl').find('p');
+      changeSize(thisExam, size);
+      activeBtn(thisBtn);
+    })
+  })
+})
+</script>
+<!-- //os_noticeRes -->
+<!-- //반응형 공지 끝 -->
+
+</div><!-- //.bod-view-txt --></div><!-- //.akl -->
+<script src="https://www.amway.co.kr/wro/all_responsive.js"></script>
+<script src="https://www.amway.co.kr/wro/addons_responsive.js"></script>
+</body>
+</html>

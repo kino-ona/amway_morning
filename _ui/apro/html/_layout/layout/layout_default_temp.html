@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<!--
+* @ Copyright (c) EiLAB
+* @ 화면명 : 임시레이아웃
+* @ 파일명 : html/_layout/layout/layout_default_temp.html
+* @ 수정이력
+* =====================================================================================================
+*	날짜				작업자				요청자/상세내용
+* -----------------------------------------------------------------------------------------------------
+* 	20200626			윤종규				최초작성
+* 	20200717			윤종규				헤더영역관련 공통레이아웃 추가
+* =====================================================================================================
+-->
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <title>레이아웃</title>
+    <!-- Publish CSS -->
+    <link rel="stylesheet" type="text/css" href="../../../public/css/ui_layout.css" />
+    <link rel="stylesheet" type="text/css" href="../../../public/css/ui_common.css" />
+    <link rel="stylesheet" type="text/css" href="../../../public/css/ui_contents.css" />
+    <link rel="stylesheet" type="text/css" href="../../../public/css/ui_plugin.css" />
+    <link rel="stylesheet" type="text/css" href="../../../public/css/ui_responsive.css" />
+    <!-- Publish JS -->
+    <script type="text/javascript" src="../../../public/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../../../public/js/jquery-ui-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../../../public/js/ui_common_head.js"></script>
+    <script type="text/javascript" src="../../../public/js/ui_plugin.js"></script>
+</head>
+<body class="apro">
+<!-- S : layout -->
+<div id="layout" class="layout">
+    <!-- S : header -->
+    <div id="header" class="header type_border"> <!-- .type_border 클래스로 헤더보더라인 제어 -->
+        <!-- S : header_wrap -->
+        <div class="header_wrap">		
+        
+
+            <div class="header_menu">
+                <div class="btn_pack">
+                    <button type="button" class="btn_icon icon_menu">전체메뉴</button>
+                </div>
+            </div>
+            <div class="header_title">Title</div>
+            <!-- <div class="header_logo">
+                <img src="../../../public/image/layout/img_logo_horizon.png" alt="">
+            </div>             -->
+            <!-- <div class="header_gnb">
+                <div class="header_gnb_list">
+                    <div class="btn_pack">
+                        <button type="button" class="btn_sub_text" title="마이fit메뉴">마이 fit</button>
+                    </div>
+                </div>
+                <div class="header_gnb_list">
+                    <div class="btn_pack">
+                        <button type="button" class="btn_sub_text" title="마이fit+메뉴">마이 fit +</button>
+                    </div>
+                </div>
+            </div> -->
+
+
+            <div class="search_form"> <!-- .active 클래스로 서치바 제어 -->
+                <div class="search_cancel"><!-- 20200717 검색취소 영역추가 -->
+                    <div class="btn_pack">
+                        <button type="button" class="btn_sub_text" title="검색취소">취소</button>
+                    </div>
+                </div>                
+                <div class="input_pack">
+                    <input type="text" placeholder="" value="" title="">
+                    <span class="input_placeholder"><span class="emphasis">강의명</span>이나 <span class="emphasis">강의번호</span>로 검색해보세요</span>
+                </div>
+                <!-- s : 20200717 검색버튼기능 분리 -->
+                <div class="search_util">
+                    <div class="btn_pack">
+                        <button type="button" class="btn_icon icon_search" title="검색버튼">검색버튼</button>
+                    </div>
+                    <div class="btn_pack">
+                        <button type="button" class="btn_icon icon_search_open" title="검색박스열기버튼">검색박스열기버튼</button>
+                    </div>
+                </div>
+                <!-- e : 20200717 검색버튼기능 분리 -->
+            </div>
+           
+        </div>
+        <!-- E : header_wrap -->
+    </div>
+    <!-- E : header -->
+    <!-- S : container  -->
+    <div id="container" class="container">
+        <!-- S : 20200717 cover_layer 영역추가 -->
+        <div class="cover_layer">
+            <!-- s : 전체메뉴 -->
+            <div class="total_menu">
+                <!-- s : 전체메뉴닫기버튼 -->
+                <div class="total_menu_close">
+                    <div class="btn_pack" >
+                        <button type="button" class="btn_icon icon_menu_close" title="전체메뉴닫기">전체메뉴닫기</button>
+                    </div>
+                </div>
+                <!-- e : 전체메뉴닫기버튼 -->
+                <div class="total_menu_group">
+                    <!-- s : 전체메뉴헤더 -->
+                    <div class="total_menu_logo">
+                        <img src="../../../public/image/layout/img_logo_horizon.png" alt="에이프로로고 가로형">
+                    </div>
+                    <div class="total_menu_copy">당신을 위한 맞춤 수업 서비스<br>지금 시작하세요!</div>
+                    <!-- e : 전체메뉴헤더 -->            
+                    <!-- s : 전체메뉴리스트(버튼형) -->
+                    <div class="total_menu_list">
+                        <div class="btn_pack">
+                            <button type="button" class="btn_sub_text" title="마이 프로필">마이 프로필</button>
+                        </div>            
+                        <div class="btn_pack">
+                            <button type="button" class="btn_sub_text" title="마이 스케줄">마이 스케줄</button>
+                        </div>
+                    </div>
+                    <!-- e : 전체메뉴리스트(버튼형) -->                
+                    <!-- s : 전체메뉴리스트(아코디언형) -->
+                    <div class="total_menu_accordion">
+                        <div class="accordion_pack active"> <!-- .active 활성화 비활성화 정의 -->
+                            <div class="accordion_list">
+                                <div class="accordion_title">6월 바디키</div>
+                                <div class="btn_pack">
+                                    <button type="button" class="btn_icon icon_accordion_small_arrow" title="아코디언버튼"></button>
+                                </div>
+                            </div>
+                            <div class="accordion_conts">                        
+                                <div class="btn_pack">
+                                    <button type="button" class="btn_sub_text" title="전체">전체</button>
+                                </div>
+                                <div class="btn_pack">
+                                    <button type="button" class="btn_sub_text" title="PT">PT</button>
+                                </div>
+                                <div class="btn_pack">
+                                    <button type="button" class="btn_sub_text" title="GX">GX</button>
+                                </div>
+                                <div class="btn_pack">
+                                    <button type="button" class="btn_sub_text" title="바디프로필">PHOTO</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- e : 전체메뉴리스트(아코디언형) -->
+                </div>
+                <!-- s : 로그아웃버튼 -->
+                <div class="total_menu_logout">
+                    <div class="btn_pack">
+                        <button type="button" class="btn_sub_text" title="로그아웃">로그아웃</button>
+                    </div>
+                </div>
+                <!-- e : 로그아웃버튼 -->
+            </div>
+            <!-- e : 전체메뉴 -->
+        </div>
+        <!-- E : 20200717 cover_layer 영역추가 -->
+        <!-- S : contents_wrap -->
+        <div class="contents_wrap multi_view"> <!-- 20200717 .multi_view PC레아아웃 클래스추가-->
+            <!-- S : contents -->
+            <div class="contents">
+                <!-- S : 콘텐츠 -->
+                <style>
+                    .cont01 { background: lightcoral; color: #fff; text-align: center; }
+                    .cont02 { background: tomato; color: #fff; text-align: center; }
+                    .cont03 { background: lightgreen; color: #fff; text-align: center; }
+                    .cont04 { background: lightblue; color: #fff; text-align: center; }
+                </style>
+                <div class="pc_fixed cont01">
+                    LNG콘텐츠01
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    LNG콘텐츠01
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    LNG콘텐츠01
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    LNG콘텐츠01
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    LNG콘텐츠01
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                </div>
+                <div class="cont02">
+                    콘텐츠영역
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    콘텐츠영역
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    <div class="cont03 pc_fixed">
+                        LNG콘텐츠02
+                        ↓<br>
+                        ↓<br>
+                        ↓<br>
+                        ↓<br>
+                        ↓<br>
+                        LNG콘텐츠02
+                        ↓<br>
+                        ↓<br>
+                        ↓<br>
+                        ↓<br>
+                        ↓<br>
+                        LNG콘텐츠02
+                        ↓<br>
+                        ↓<br>
+                        ↓<br>
+                        ↓<br>
+                        ↓<br>
+                        LNG콘텐츠02
+                        ↓<br>
+                        ↓<br>
+                        ↓<br>
+                        ↓<br>
+                        ↓<br>                        
+                    </div>
+                    콘텐츠영역
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    콘텐츠영역
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    콘텐츠영역
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    콘텐츠영역
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    콘텐츠영역
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    콘텐츠영역
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    콘텐츠영역
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    콘텐츠영역
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    콘텐츠영역
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    콘텐츠영역
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    콘텐츠영역
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    콘텐츠영역
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    콘텐츠영역
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    콘텐츠영역
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    콘텐츠영역
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    콘텐츠영역
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    콘텐츠영역
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                </div>
+                <div class="cont04 pc_fixed">
+                    LNG콘텐츠03
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    LNG콘텐츠03
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    LNG콘텐츠03
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                    ↓<br>
+                </div>
+                <!-- E : 콘텐츠 -->
+            </div>
+            <!-- E : contents -->		
+        </div>
+        <!-- E : contents_wrap -->
+        <!-- S : container_bottom -->
+        <div class="container_bottom">			
+        </div>
+        <!-- E : container_bottom -->
+    </div>
+    <!-- E : container -->			
+    <!-- S : footer -->
+    <div id="footer" class="footer">
+        <!-- S : footer_wrap -->
+        <div class="footer_wrap">
+            <div class="footer_set">
+                <div class="footer_link">
+                    <div class="footer_link_item">이용약관</div>
+                    <div class="footer_link_item">개인정보처리방침</div>
+                </div>
+                <div class="footer_pack">
+                    <div class="company_info">
+                        한국암웨이㈜ 서울특별시 강남구 영동대로 517 27층<br>
+                        (삼성동, 아셈타워) (대표이사 : 배수정)<br>
+                        사업자 등록번호 : 120-81-03391·통신판매신고번호 : 제 강남-1179호<br>
+                        고객센터/기술지원센터 : 
+                        <div class="company_number">
+                            <div class="btn_pack">
+                                <button type="button" class="btn_sub_text" title="">1588-0080</button>
+                            </div>
+                        </div>
+                        ·FAX : 02-557-2566<br>
+                        호스팅제공자 : 한국암웨이㈜ 사업자정보공개페이지
+                    </div>
+                    <div class="company_info">
+                        ALL CONTENTS Copyright<br>
+                        ⓒ 2020 Amway Korea LTD.ALL RIGHTS RESERVED
+                    </div>
+                    <div class="company_logo">
+                        <img src="../../../public/image/content/logo_amway.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- E : footer_wrap -->
+    </div>
+    <!-- E : footer -->
+</div>
+<!-- E : layout -->
+<!-- Publish JS -->
+<script type="text/javascript" src="../../../public/js/ui_common_body.js"></script>
+</body>
+</html>

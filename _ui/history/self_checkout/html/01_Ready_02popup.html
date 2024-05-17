@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>Amway Korea</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords">
+  <link rel="stylesheet" type="text/css" media="all" href="../assets/css/self_ready.css"><!-- ready css -->
+  <script type="text/javascript" src="../assets/js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="../assets/js/swiper.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      // slider
+      var swiper = new Swiper('.scan_ready_guide', {
+        width: 495,
+        navigation: {
+          nextEl: '.btn_next_guide',
+          prevEl: '.btn_prev_guide',
+        },
+          pagination: {
+          el: '.swiper-pagination',
+        },
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <div class="bundle">
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+    <div class="item">
+      <div id="scan_container" class="renewal-popup">
+        <!-- popup -->
+        <section class="box_popup">
+          <div class="popup_full">
+            <!-- swipe slider notice -->
+            <div class="popup_guide_swiper">
+              <div class="scan_ready_guide">
+                <ul class="list_guide swiper-wrapper">
+                  <li class="swiper-slide">
+                   <div class="renewal_guide-area">
+                      <p class="swiper-img"><img src="../assets/images/guide_pop-img01.png" alt=""></p>
+                      <p class="guide-step">이용방법 1단계</p>
+                      <p class="guide-txt">본인 ABO 회원번호를<br>입력해주세요.</p>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="renewal_guide-area">
+                      <p class="swiper-img"><img src="../assets/images/guide_pop-img02.png" alt=""></p>
+                      <p class="guide-step">이용방법 2단계</p>
+                      <p class="guide-txt">시작 버튼을 누르고,<br>구매하실 제품을 하나씩 올려주세요.</p>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="renewal_guide-area">
+                      <p class="swiper-img"><img src="../assets/images/guide_pop-img03.png" alt=""></p>
+                      <p class="guide-step">이용방법 3단계</p>
+                      <p class="guide-txt">컨베이어가 작동하며<br>제품이 스캔 됩니다.</p>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="renewal_guide-area">
+                      <p class="swiper-img"><img src="../assets/images/guide_pop-img04.png" alt=""></p>
+                      <p class="guide-step">이용방법 4단계</p>
+                      <p class="guide-txt">제품 스캔이 완료되면<br>결제하기를 눌러주세요.</p>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="renewal_guide-area">
+                      <p class="swiper-img"><img src="../assets/images/guide_pop-img05.png" alt=""></p>
+                      <p class="guide-step">이용방법 5단계</p>
+                      <p class="guide-txt">신용카드로<br>결제를 진행하세요.</p>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="renewal_guide-area">
+                      <p class="swiper-img"><img src="../assets/images/guide_pop-img06.png" alt=""></p>
+                      <p class="guide-step">이용방법 6단계</p>
+                      <p class="guide-txt">결제가 완료되었습니다!<br>제품과 영수증을 꼭 수령해주세요.</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <button type="button" class="btn_prev_guide"><span class="hidden">이전</span></button>
+            <button type="button" class="btn_next_guide"><span class="hidden">다음</span></button>
+            <div class="swiper-pagination"></div>
+            <!-- button -->
+            <div class="btn_pop_bottom">
+              <button type="button" class="btn_blue_s"><span>확인</span></button>
+            </div>
+            <!--// button -->
+            <!--// swipe slider notice -->
+          </div>
+        </section>
+        <!--// popup -->
+        <header class="scan_header">
+          <!-- 상단버튼 -->
+          <div class="scan_btns">
+            <button type="button" class="btn_howto"><span>이용방법</span></button>
+            <button type="button" class="btn_call"><span>직원호출</span></button>
+          </div>
+          <!--// 상단버튼 -->
+        </header>
+        <div class="new_temp-bg">대기화면 이미지</div>
+      </div>
+    </div>
+  </div>  
+</body>
+</html>

@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<!--
+* @ Copyright (c) EiLAB
+* @ 화면명 : 메인 | 마이 스케줄 | 개설서비스상세
+* @ 파일명 : html/page/main/W04.020.0410.html
+* @ 수정이력
+* =====================================================================================================
+*  날짜               작업자              요청자/상세내용
+* -----------------------------------------------------------------------------------------------------
+*  20200731           윤종규              최초작성
+* =====================================================================================================
+-->
+<html lang="ko">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <title>메인 | 마이 스케줄 | 개설서비스상세</title>
+    <!-- Publish CSS -->
+    <link rel="stylesheet" type="text/css" href="../../../public/css/ui_layout.css" />
+    <link rel="stylesheet" type="text/css" href="../../../public/css/ui_common.css" />
+    <link rel="stylesheet" type="text/css" href="../../../public/css/ui_contents.css" />
+    <link rel="stylesheet" type="text/css" href="../../../public/css/ui_plugin.css" />
+    <link rel="stylesheet" type="text/css" href="../../../public/css/ui_responsive.css" />
+    <!-- Publish JS -->
+    <script type="text/javascript" src="../../../public/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../../../public/js/jquery-ui-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../../../public/js/ui_common_head.js"></script>
+    <script type="text/javascript" src="../../../public/js/ui_plugin.js"></script>
+</head>
+
+<body class="apro">
+    <!-- S : layout -->
+    <div id="layout" class="layout">
+        <!-- S : header -->
+        <div id="header" class="header type_border">
+            <!-- .type_border 클래스로 헤더보더라인(제어위치변경) -->
+            <!-- S : header_wrap -->
+            <div class="header_wrap">
+                <!-- s : 헤더공통영역 -->
+                <div style="line-height: 50px; font-size: 20px; color: tomato">헤더영역(공통 레이아웃)</div>
+                <!-- e : 헤더공통영역 -->
+            </div>
+            <!-- E : header_wrap -->
+        </div>
+        <!-- E : header -->
+        <!-- S : container  -->
+        <div id="container" class="container">
+            <!-- S : cover_layer -->
+            <div class="cover_layer">
+            </div>
+            <!-- E : cover_layer -->
+            <!-- S : contents_wrap -->
+            <div class="contents_wrap multi_view">
+                <!-- .multi_view PC레아아웃 클래스추가-->
+                <!-- S : contents -->
+                <div class="contents">
+                    <!-- s : 내비게이션(영역추가) -->
+                    <div class="navigation_pack pc_view">
+                        <div class="navigation_depth">
+                            <div class="btn_pack">
+                                <button type="button" class="btn_sub_text">Depth</button>
+                            </div>
+                        </div>
+                        <div class="navigation_depth">
+                            <div class="btn_pack">
+                                <button type="button" class="btn_sub_text">Depth</button>
+                            </div>
+                        </div>
+                        <div class="navigation_depth">
+                            <div class="btn_pack">
+                                <button type="button" class="btn_sub_text">Depth</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- e : 내비게이션(영역추가) -->
+                    <!-- s : 플로팅프로필 추가 -->
+                    <div class="profile_form type_simple pc_fixed pc_view">
+                        <!-- s : .pc_fixed 플로팅제어, .pc_view PC뷰제어 -->
+                        <div class="profile_set">
+                            <div class="profile_pack">
+                                <div class="profile_photo type_shadow">
+                                    <img src="../../../public/image/content/temp_photo.png" alt="">
+                                </div>
+                                <div class="profile_edit">
+                                    <div class="btn_pack">
+                                        <button type="button" class="btn_icon icon_profile_edit"
+                                            title="프로필수정">프로필수정</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile_label">
+                                2020 바디키 챌린저
+                            </div>
+                            <div class="profile_meet">
+                                <div class="profile_greet">
+                                    <span class="user_name">한소희</span>님 안녕하세요!
+                                </div>
+                                <div class="btn_pack">
+                                    <button type="button" class="btn_icon icon_logout" title="로그아웃버튼">로그아웃버튼</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="expert_notice">
+                            전문가 이시군요! <span class="emphasis">새로운 서비스</span>를 개설할까요?
+                        </div>
+                        <div class="profile_util">
+                            <div class="profile_link">
+                                <div class="link_icon">
+                                    <img src="../../../public/image/content/icon_myprofile.png" alt="">
+                                </div>
+                                <div class="link_text">마이 프로필</div>
+                            </div>
+                            <div class="profile_link">
+                                <div class="link_icon">
+                                    <img src="../../../public/image/content/icon_mycalendar.png" alt="">
+                                </div>
+                                <div class="link_text">마이 스케줄</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- e : 플로팅프로필 추가 -->
+                    <!-- s : 서비스상세배너 스와이퍼 -->
+                    <div class="swiper-container detail_class_swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="../../../public/image/banner/temp_banner02.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../../../public/image/banner/temp_banner02.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../../../public/image/banner/temp_banner02.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../../../public/image/banner/temp_banner02.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <!-- e : 서비스상세배너 스와이퍼 -->
+                    <!-- s : 서비스상세요약 -->
+                    <div class="section_area pc_view">
+                        <div class="intro_set pc_fixed">
+                            <!-- s : 'pc_fixed' 클래스추가 -->
+                            <div class="intro_info">
+                                <div class="intro_tag_group">
+                                    <div class="intro_tag">Depth</div>
+                                    <div class="intro_tag">NickName</div>
+                                    <!-- 20211119 중복예약 가능 > 다자녀 예약 가능으로 문구 변경 -->
+                                    <div class="member-tag always-show">다자녀 예약 가능</div>
+                                </div>
+                                <div class="section_number">No&nbsp;:&nbsp;<span>1003884828</span></div>
+                            </div>
+                            <div class="intro_pack">
+                                <div class="intro_title">[강남] 섬세한 촬영</div>
+                                <div class="intro_describe">조명으로 잔근육을 섬세하게 촬영해드립니다.<br>이제 멋진바디 프로필을 찍어드릴게요!</div>
+                            </div>
+                            <div class="intro_summary type_expand">
+                                <div class="summary_item type_location">강남</div>
+                                <div class="summary_item type_duration"><span>60</span>분</div>
+                                <div class="summary_item type_people"><span>10</span>명</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- e : 서비스상세요약 -->
+                    <!-- s : 고정탭영역 -->
+                    <div class="tab_area">
+                        <div class="tab_pack type_scroll">
+                            <div class="tab_btn_item type_fixed">
+                                <div class="tab_btn active">
+                                    <button type="button" title="">서비스 소개</button>
+                                </div>
+                                <div class="tab_btn">
+                                    <button type="button" title="">전문가소개</button>
+                                </div>
+                                <div class="tab_btn">
+                                    <button type="button" title="">시간</button>
+                                </div>
+                                <div class="tab_btn">
+                                    <button type="button" title="">장소</button>
+                                </div>
+                                <div class="tab_btn">
+                                    <button type="button" title="">패널티/취소 정책</button>
+                                </div>
+                                <div class="navi_bar"></div>
+                            </div>
+                            <div class="tab_conts_item">
+                                <!-- s : 서비스 소개 -->
+                                <div class="tab_conts active">
+                                    <div class="intro_pack">
+                                        <div class="intro_title">서비스 소개</div>
+                                    </div>
+                                    <div class="class_introduce_box">
+                                        <!-- s : 서비스 소개카피 -->
+                                        <div class="class_head_copy">
+                                            <span class="emphasis">BodyKey</span>프로그램<br>참여하셨다면<br><span
+                                                class="emphasis">전문 프로필</span>을 찍어드립니다.
+                                        </div>
+                                        <div class="class_body_copy">
+                                            바디키 챌린지 우승을 하신 모든 분들을<br>
+                                            보다 더 좋은 이미지로 오늘을 기억 할 수 있도록 프로필을 찍어드립니다.
+                                        </div>
+                                        <!-- e : 서비스 소개카피 -->
+                                        <div class="number_list_pack">
+                                            <div class="number_list_title">
+                                                <span class="list_number">01</span><span>바디 프로필</span>
+                                            </div>
+                                            <div class="number_list_item">
+                                                <div class="list_text">돋보이는 바디샷으로 추억을 간직하세요.</div>
+                                            </div>
+                                        </div>
+                                        <!-- s : 배너팩 -->
+                                        <div class="banner_pack">
+                                            <img src="../../../public/image/banner/temp_big_banner.png" alt="">
+                                        </div>
+                                        <!-- e : 배너팩 -->
+                                        <div class="number_list_pack">
+                                            <div class="number_list_title">
+                                                <span class="list_number">02</span><span>그룹샷</span>
+                                            </div>
+                                            <div class="number_list_item">
+                                                <div class="list_text">각종테마와 함께 그룹샷을 찍어드립니다.<br>(테마 및 의상 대여가능)</div>
+                                            </div>
+                                        </div>
+                                        <!-- s : 배너팩 -->
+                                        <div class="banner_pack">
+                                            <img src="../../../public/image/banner/temp_mid_banner.png" alt="">
+                                        </div>
+                                        <!-- e : 배너팩 -->
+                                    </div>
+                                </div>
+                                <!-- e : 서비스 소개 -->
+                                <!-- s : 전문가소개 -->
+                                <div class="tab_conts">
+                                    <div class="intro_pack">
+                                        <div class="intro_title">전문가소개</div>
+                                    </div>
+                                    <!-- s : 전문가소개박스 -->
+                                    <div class="expert_introduce_box">
+                                        <div class="expert_summary">
+                                            <div class="expert_photo">
+                                                <img src="../../../public/image/content/temp_expert_profile.png" alt="">
+                                            </div>
+                                            <div class="expert_info">
+                                                <div class="expert_identity">
+                                                    <span class="expert_nick">김포토</span>&#40;<span
+                                                        class="expert_name">김길동</span>&#41;
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="expert_describe">
+                                            안녕하세요.<br>
+                                            언제나 새로움을 찾는 포토그래퍼 바디프로필 전문가입니다.<br>
+                                            항상 모든 사람과의 인연을 소중히 간직하고 본연의 매력을 찍어주려 애쓰고 있습니다.
+                                        </div>
+                                        <div class="document_group">
+                                            <div class="document_pack type_indent">
+                                                <div class="document_title">자격증</div>
+                                                <div class="document_describe">
+                                                    <div class="hyphen_list_pack">전문포토그래픽1급</div>
+                                                </div>
+                                                <div class="document_describe">
+                                                    <div class="hyphen_list_pack">전문포토그래픽2급</div>
+                                                </div>
+                                                <div class="document_describe">
+                                                    <div class="hyphen_list_pack">전문포토그래픽2급</div>
+                                                </div>
+                                            </div>
+                                            <div class="document_pack type_indent">
+                                                <div class="document_title">수상경력</div>
+                                                <div class="document_describe">
+                                                    <div class="hyphen_list_pack">2016 대한민국 올해의 포토그래퍼</div>
+                                                </div>
+                                                <div class="document_describe">
+                                                    <div class="hyphen_list_pack">바디프로필 사진공모작 은상</div>
+                                                </div>
+                                                <div class="document_describe">
+                                                    <div class="hyphen_list_pack">국제 사진공모전 우승</div>
+                                                </div>
+                                            </div>
+                                            <div class="document_pack type_indent">
+                                                <div class="document_title">경력사항</div>
+                                                <div class="document_describe">
+                                                    <div class="hyphen_list_pack">2012~2013 바디핏 짐 요가강사</div>
+                                                </div>
+                                                <div class="document_describe">
+                                                    <div class="hyphen_list_pack">2014 인도 빈야사 요가 트레이니 ​</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- e : 전문가소개박스 -->
+                                </div>
+                                <!-- e : 전문가소개 -->
+                                <!-- s : 시간 -->
+                                <div class="tab_conts">
+                                    <div class="intro_pack">
+                                        <div class="intro_title">일시</div>
+                                    </div>
+                                    <!-- s : 시간정보박스 -->
+                                    <div class="time_info_box">
+                                        <div class="calendar_pack type_horizon">
+                                            <div class="calendar_control">
+                                                <div class="btn_pack">
+                                                    <button type="button" class="btn_icon icon_calendar_prev"
+                                                        title="이전달달력" disabled="disabled">이전달달력</button>
+                                                </div>
+                                                <div class="calendar_date">
+                                                    <span class="calendar_year">2020</span>년&nbsp;<span
+                                                        class="calendar_month">06</span>월
+                                                </div>
+                                                <div class="btn_pack">
+                                                    <button type="button" class="btn_icon icon_calendar_next"
+                                                        title="다음달달력">다음달달력</button>
+                                                </div>
+                                            </div>
+                                            <div class="calendar_table">
+                                                <table>
+                                                    <caption>캘린더</caption>
+                                                    <thead>
+                                                        <tr>
+                                                            <th>월</th>
+                                                            <th>화</th>
+                                                            <th>수</th>
+                                                            <th>목</th>
+                                                            <th>금</th>
+                                                            <th class="saturday">토</th>
+                                                            <th class="sunday">일</th>
+                                                            <th>월</th>
+                                                            <th>화</th>
+                                                            <th>수</th>
+                                                            <th>목</th>
+                                                            <th>금</th>
+                                                            <th class="saturday">토</th>
+                                                            <th class="sunday">일</th>
+                                                            <th>월</th>
+                                                            <th>화</th>
+                                                            <th>수</th>
+                                                            <th>목</th>
+                                                            <th>금</th>
+                                                            <th class="saturday">토</th>
+                                                            <th class="sunday">일</th>
+                                                            <th>월</th>
+                                                            <th>화</th>
+                                                            <th>수</th>
+                                                            <th>목</th>
+                                                            <th>금</th>
+                                                            <th class="saturday">토</th>
+                                                            <th class="sunday">일</th>
+                                                            <th>월</th>
+                                                            <th>화</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="">
+                                                                <div class="date_unit">1</div>
+                                                            </td>
+                                                            <td class="type_disabled">
+                                                                <div class="date_unit">2</div>
+                                                            </td>
+                                                            <td class="type_disabled">
+                                                                <div class="date_unit">3</div>
+                                                            </td>
+                                                            <td class="type_disabled">
+                                                                <div class="date_unit">4</div>
+                                                            </td>
+                                                            <td class="type_disabled">
+                                                                <div class="date_unit">5</div>
+                                                            </td>
+                                                            <td class="type_disabled">
+                                                                <div class="date_unit">6</div>
+                                                            </td>
+                                                            <td class="type_disabled">
+                                                                <div class="date_unit">7</div>
+                                                            </td>
+                                                            <td class="type_today">
+                                                                <div class="date_unit">8</div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="date_unit">9</div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="date_unit">10</div>
+                                                            </td>
+                                                            <td class="type_selected">
+                                                                <div class="date_unit">11</div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="date_unit">12</div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="date_unit">13</div>
+                                                            </td>
+                                                            <td class="type_disabled">
+                                                                <div class="date_unit">14</div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="date_unit">15</div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="date_unit">16</div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="date_unit">17</div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="date_unit">18</div>
+                                                            </td>
+                                                            <td class="type_disabled">
+                                                                <div class="date_unit">19</div>
+                                                            </td>
+                                                            <td class="type_disabled">
+                                                                <div class="date_unit">20</div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="date_unit">21</div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="date_unit">22</div>
+                                                            </td>
+                                                            <td class="type_disabled">
+                                                                <div class="date_unit">23</div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="date_unit">24</div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="date_unit">25</div>
+                                                            </td>
+                                                            <td class="type_disabled">
+                                                                <div class="date_unit">26</div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="date_unit">27</div>
+                                                            </td>
+                                                            <td class="type_disabled">
+                                                                <div class="date_unit">28</div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="date_unit">29</div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="date_unit">30</div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="calendar_note">
+                                                <div class="note_today">오늘</div>
+                                                <div class="note_selected">선택</div>
+                                                <div class="note_disabled">불가</div>
+                                            </div>
+                                        </div>
+                                        <div class="text_notice_pack">해당 일에 가능한 시간을 알려드립니다.</div>
+                                        <!-- s : 시간리스트 -->
+                                        <div class="time_list_pack">
+                                            <div class="time_list">13:00 - 13:55</div>
+                                            <div class="time_list">13:00 - 13:55</div>
+                                            <div class="time_list">13:00 - 13:55</div>
+                                            <div class="time_list">13:00 - 13:55</div>
+                                            <div class="time_list">13:00 - 13:55</div>
+                                            <div class="time_list type_disabled">13:00 - 13:55(마감)</div>
+                                        </div>
+                                        <!-- e : 시간리스트 -->
+                                    </div>
+                                    <!-- e : 시간정보박스 -->
+                                </div>
+                                <!-- e : 시간 -->
+                                <!-- s : 장소 -->
+                                <div class="tab_conts">
+                                    <div class="accordion_pack type_expand active">
+                                        <div class="accordion_list">
+                                            <div class="accordion_title">장소</div>
+                                            <div class="btn_pack">
+                                                <button type="button" class="btn_icon icon_accordion_arrow"
+                                                    title="아코디언버튼"></button>
+                                            </div>
+                                        </div>
+                                        <div class="accordion_conts">
+                                            <div class="address_info_box">
+                                                <!-- s : 20200424 장소정보 추가 -->
+                                                <div class="location_info">
+                                                    <span class="position">분당 ABC</span><span class="room">퀸 A룸</span>
+                                                </div>
+                                                <!-- e : 20200424 장소정보 추가 -->
+                                                <div class="document_group">
+                                                    <div class="document_pack type_indent">
+                                                        <div class="document_title">상세주소</div> <!-- 20200724 문안수정 -->
+                                                        <div class="document_describe">
+                                                            <div class="custom_list_pack">
+                                                                <span class="custom_list_bullet">- 도로 : </span><span
+                                                                    class="custom_list_text">경기도 성남시 분당구 탄천상로 151번길 20
+                                                                    베어캐슬 1,2츨 암웨이 브랜드 체험 센터</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="document_describe">
+                                                            <div class="custom_list_pack">
+                                                                <span class="custom_list_bullet">- 지번 : </span><span
+                                                                    class="custom_list_text">경기도 성남시 분당구 구미동 159번지 베어캐슬
+                                                                    1,2츨 암웨이 브랜드 체험 센터</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- s : 구글맵 -->
+                                                <div class="google_map">
+                                                    <img src="../../../public/image/content/temp_map.png" alt=""
+                                                        style="width: 100%;"> <!-- 디자인확인 임시이미지 추후삭제 -->
+                                                </div>
+                                                <!-- e : 구글맵 -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- e : 장소 -->
+                                <!-- s : 취소 및 패널티 -->
+                                <div class="tab_conts">
+                                    <div class="document_confirm_form">
+                                        <div class="accordion_pack active">
+                                            <div class="accordion_list">
+                                                <div class="accordion_title">패널티/취소 정책</div>
+                                                <div class="btn_pack">
+                                                    <button type="button" class="btn_icon icon_accordion_arrow"
+                                                        title="아코디언버튼"></button>
+                                                </div>
+                                            </div>
+                                            <div class="accordion_conts">
+                                                <div class="document_group">
+                                                    <!-- s : 서비스 예약/변경/취소안내 -->
+                                                    <div class="document_notice" style="_display: none;">
+                                                        본 서비스 및 서비스는<br><span class="emphasis">2020.07.03
+                                                            18:30</span>전까지 예약/변경/취소가 가능합니다.
+                                                    </div>
+                                                    <div class="document_notice" style="display: none;">
+                                                        본 서비스 및 서비스는<br><span class="emphasis">00</span>일전까지 예약/변경/취소가
+                                                        가능합니다.
+                                                    </div>
+                                                    <!-- e : 서비스 예약/변경/취소안내 -->
+                                                    <div class="document_pack type_indent">
+                                                        <!-- S : 20201030 약관디자인변경 -->
+                                                        <div class="document_describe type_dot">3일전 철회 : 패널티 2회</div>
+                                                        <div class="document_describe type_dot">촬영 완료 후 철회 불가</div>
+                                                        <!-- E : 20201030 약관디자인변경 -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- e : 취소 및 패널티 -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- e : 고정탭영역 -->
+                    <!-- s : 바텀픽스버튼영역 -->
+                    <div class="fixed_bottom_area type_util">
+                        <div class="reserve_info_form">
+                            <div class="schedule_list_form">
+                                <div class="schedule_head">
+                                    <div class="schedule_state"><span class='state'>승인완료</span> (No : <span
+                                            class="number">1003884828</span> )</div>
+                                    <div class="schedule_info">
+                                        <div class="position">분당 ABC센터</div>
+                                        <div class="room">퀸A룸</div>
+                                        <div class="date">6월 9일 13:00~14:00</div>
+                                    </div>
+                                </div>
+                                <div class="after_approval">
+                                    <div class="btn_pack">
+                                        <button type="button" class="btn_sub_line" title="신청자 관리">신청자 관리</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- e : 바텀픽스버튼영역 -->
+                </div>
+                <!-- E : contents -->
+            </div>
+            <!-- E : contents_wrap -->
+            <!-- S : container_bottom -->
+            <div class="container_bottom">
+            </div>
+            <!-- E : container_bottom -->
+        </div>
+        <!-- E : container -->
+        <!-- S : footer -->
+        <div id="footer" class="footer">
+            <!-- S : footer_wrap -->
+            <div class="footer_wrap">
+                <div class="footer_set">
+                    <div class="footer_link">
+                        <div class="footer_link_item">이용약관</div>
+                        <div class="footer_link_item">전문가 이용동의서</div>
+                        <div class="footer_link_item">개인정보처리방침</div>
+                    </div>
+                    <div class="footer_pack">
+                        <div class="company_info">
+                            한국암웨이㈜ 서울특별시 강남구 영동대로 517 27층<br>
+                            (삼성동, 아셈타워) (대표이사 : 배수정)<br>
+                            사업자 등록번호 : 120-81-03391·통신판매신고번호 : 제 강남-1179호<br>
+                            고객센터/기술지원센터 : 1588-0080 · FAX : 02-557-2566<br>
+                            호스팅제공자 : 한국암웨이㈜ 사업자정보공개페이지
+                        </div>
+                        <div class="company_info">
+                            ALL CONTENTS Copyright<br>
+                            ⓒ 2020 Amway Korea LTD.ALL RIGHTS RESERVED
+                        </div>
+                        <div class="company_logo">
+                            <img src="../../../public/image/content/logo_amway.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- E : footer_wrap -->
+        </div>
+        <!-- E : footer -->
+    </div>
+    <!-- E : layout -->
+    <!-- Publish JS -->
+    <script type="text/javascript" src="../../../public/js/ui_common_body.js"></script>
+    <script>
+        $(function () {
+            var detailClassSwiper = new Swiper('.detail_class_swiper', {
+                speed: 400,
+                pagination: {
+                    el: '.detail_class_swiper .swiper-pagination',
+                    clickable: true, // 20201028 pc/mobile 페이지내이션 클릭 기능추가
+                },
+            });
+        });
+    </script>
+</body>
+
+</html>

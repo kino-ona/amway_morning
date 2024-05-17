@@ -1,0 +1,29 @@
+{
+  "name": "design",
+  "version": "1.0.0",
+  "description": "design - markup repository",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmwayAPACKR/design.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-watch": "^5.0.1"
+  },
+  "dependencies": {
+    "browser-sync": "^3.0.2"
+  }
+}

@@ -1,0 +1,4 @@
+<svg id="product_addbtn" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <rect id="base" width="30" height="30" rx="15" fill="#fff"/>
+  <path id="ic_add" d="M-556.25-865v-6h-6a.75.75,0,0,1-.751-.751.75.75,0,0,1,.751-.75h6v-6a.75.75,0,0,1,.751-.75.75.75,0,0,1,.75.75v6h6a.75.75,0,0,1,.75.75.75.75,0,0,1-.75.751h-6v6a.75.75,0,0,1-.75.751A.75.75,0,0,1-556.25-865Z" transform="translate(570.5 886.75)" fill="#608adf"/>
+</svg>

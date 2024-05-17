@@ -1,0 +1,77 @@
+﻿/* [디파이 수정] 신규파일 생성 */
+.akl .amway-theme .author-content .customer-notice-wrap { padding: 22px 0 30px; border-top: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5; margin-bottom: 18px; }
+.akl .amway-theme .author-content .customer-notice-wrap .customer-notice { display: flex; }
+.akl .amway-theme .author-content .customer-notice-wrap .customer-notice-part { width: 343px; }
+.akl .amway-theme .author-content .customer-notice-wrap .customer-notice-part + .customer-notice-part { margin-left: 17px; }
+.akl .amway-theme .author-content .customer-notice-wrap .notice { font-size: 14px; font-weight: normal; line-height: normal; letter-spacing: -0.7px; color: #56565c; margin-bottom: 22px; }
+.akl .amway-theme .author-content .customer-notice-wrap .customer-notice .customer-notice-part .noticeImg > img { width: 100%; }
+.akl .amway-theme .author-content .customer-notice-wrap .customer-notice .customer-notice-part .notice-phase-txt { text-align: center; margin-top: 8px; }
+
+.akl .wrapper-memb-join .next-control.login { padding-top: 0; text-align: left; margin: 25px 0 0 0;}
+.akl .wrapper-memb-join .next-control.login button.bt-akl-blue { padding: 0 55px; }
+
+/* .akl .author-content .validation-wrapper .box-input-details .validation-box-simple .form-group label { display: inline-block; } */
+.akl .author-content .validation-wrapper .box-input-details .validation-box-simple .form-group .ty-input-wrap { padding: 0;}
+.akl .author-content .validation-wrapper .box-input-details .validation-box-simple .form-group .toolTip-wrapper { display: inline-block; }
+.akl .author-content .validation-wrapper .box-input-details .validation-box-simple .form-group .toolTip-wrapper .btn-tooltip{position:relative; overflow:visible; width:18px; height:18px; margin-top:3px; background: url(../images/akl_plp/ico_tooltip.png) 50% 50% no-repeat; background-size: 16px auto; margin: 0; vertical-align: text-bottom;}
+.akl .author-content .validation-wrapper .box-input-details .validation-box-simple .form-group .toolTip-wrapper .btn-tooltip::after { width: 15px; height: 12px; background-position: -60px -90px; background-image: url(/_ui/responsive/theme-blue/images/akl_common/sprite/sp_amway.png); background-size: 250px auto; background-repeat: no-repeat; left: 50%; margin-left: -8px; top: 21px; }
+.akl .author-content .validation-wrapper .box-input-details .validation-box-simple .form-group .toolTip-wrapper.toolTip-type02 .tooltip-content { width: calc(100vw - 444px) !important; position: absolute; left: -60px; padding: 15px; margin-left: 0; top: 32px; border: 1px solid #666666 !important; border-radius: 8px; min-width: auto !important;  max-width: 484px; background-color: #fff; box-shadow: 0 2px 30px 0 rgb(0 0 0 / 20%);}
+
+
+
+.akl .author-content .validation-box-simple .ty-input-name input[type=text],
+.akl .author-content .validation-box-simple .ty-input-number input[type=text],
+.akl .author-content .validation-box-simple .ty-input-birth input[type=text] {width:317px;}
+
+.akl .wrapper-memb-join .author-content .author-text {padding: 0 0 17px;}
+.akl .wrapper-memb-join .author-content .author-text .author-text-notice { font-size: 13px; line-height: normal; letter-spacing: -0.65px; color: #56565c; margin-bottom: 3px; }
+.akl .wrapper-memb-join .author-content .author-text .author-web a { font-size: 13px; line-height: normal; letter-spacing: -0.65px; color: #0373a0; text-decoration: underline; }
+
+
+.akl .account-profile.modify .col-md-12 fieldset>.row .account-profile__address {float: none; width: 100%;}
+
+@media (max-width: 768px) {
+    .akl .amway-theme .author-content .customer-notice-wrap .customer-notice-part + .customer-notice-part { margin-left: 0; margin-top: 25px; }
+    .akl .amway-theme .author-content .customer-notice-wrap .customer-notice { display: block; }
+    .akl .amway-theme .author-content .customer-notice-wrap .customer-notice-part { width: auto; flex-direction: row; }
+    .akl .amway-theme .author-content .customer-notice-wrap .customer-notice .customer-notice-part .noticeImg > img { width: 100%; }
+    .akl .wrapper-memb-join .next-control.login { text-align: center; margin: 35px 0 0 0;}
+
+    .akl .author-content .validation-wrapper .box-input-details .validation-box-simple .form-group .toolTip-wrapper.toolTip-type02 .tooltip-content { top: 14px; left: -15px; width: calc(100vw - 83px) !important; font-weight: normal; }
+    .akl .author-content .validation-box-simple .ty-input-number input[type=text], .akl .author-content .validation-box-simple .ty-input-name input[type=text], .akl .author-content .validation-box-simple .ty-input-birth input[type=text] { width: 100%; }
+    
+}
+
+/* SOP  */ 
+/* .sop-program-layer.member-type { position: absolute; z-index: 10010; } */
+.sop-program-layer.active { background: rgba(0,0,0,.7); transition: all 0.5s ease; }
+.sop-program-layer.active ~ #uiLayerMask { background: none; }
+.sop-program-layer .layerBox { background: none; border: none !important; }
+.sop-program-layer .layerBox .box_member-choice { width: 600px; }
+.sop-program-layer .layerBox .box_member-choice .box_contents { border-radius: 16px; }
+.sop-program-layer .layerBox .box_member-choice .member-group:first-child { padding: 42px 0 38px 0;background-color: #597ce3; border-radius: 13px 13px 0 0; }
+.sop-program-layer .layerBox .box_member-choice .member-group:nth-child(2) { padding: 34px 0 40px 0; }
+.sop-program-layer .layerBox .box_member-choice .member-group .title { font-size: 20px; line-height: 0.9; letter-spacing: -1.46px; text-align: center; color: #fff; margin-bottom: 24px; font-weight: normal; }
+.sop-program-layer .layerBox .box_member-choice .member-group .title_type-b { letter-spacing: -1px; color: #333; font-size: 20px; margin-bottom: 0; text-align: center; }
+.sop-program-layer .layerBox .box_member-choice .member-group .title strong { font-weight: bold; }
+.sop-program-layer .layerBox .box_member-choice .member-group .member-item { flex-direction: row; justify-content: center; color: #fff; font-weight: bold; }
+.sop-program-layer .layerBox .box_member-choice .member-group .member-item .text_member-a { color: #fff; font-size: 16px; }
+.sop-program-layer .layerBox .box_member-choice .member-group button.button_member-a { width: 296px; transform: translate(50%); margin-top: 24px; background-color: #002f5f; color: #fff; height: 54px; }
+.sop-program-layer .layerBox .box_member-choice .member-group button.button_link-a { width: 296px; margin-top: 24px; background-color: #fff; border: 1px solid #002f5f;color: #002f5f; height: 54px; font-weight: bold; font-size: 16px; transform: translateX(50%); }
+.sop-program-layer .layerBox .box_member-choice .member_next-time { margin-top: 12px; }
+
+
+@media (max-width: 768px){
+    .sop-program-layer { padding: 0 16px !important; }
+    .sop-program-layer .layerBox.cbox { position: relative; margin-left: auto !important; left: auto !important; }
+    .sop-program-layer .layerBox .box_member-choice { width: 100%; }
+    .sop-program-layer .layerBox .box_member-choice .member-group:first-child { padding: 24px 20px; border-radius: 16px 16px 0 0; }
+    .sop-program-layer .layerBox .box_member-choice .member-group:nth-child(2) { padding: 24px 20px; }   
+    .sop-program-layer .layerBox .box_member-choice .member-group .title { font-size: 14px; line-height: normal; letter-spacing: -0.7px; margin-bottom: 20px; }
+    .sop-program-layer .layerBox .box_member-choice .member-group .title_type-b { letter-spacing: -0.7px; color: #333; font-size: 14px; }
+    .sop-program-layer .layerBox .box_member-choice .member-group .member-item .text_member-a { font-size: 12px; letter-spacing: -0.6; line-height: 1.67; padding-left: 16px; }
+    .sop-program-layer .layerBox .box_member-choice .member-group button.button_member-a { width: 100%; transform: none; margin-top: 20px; height: 32px; font-size: 12px; }
+    .sop-program-layer .layerBox .box_member-choice .member-group button.button_link-a { width: 100%; margin-top: 12px; height: 32px; font-size: 12px; transform: translateX(0);}
+    .sop-program-layer .layerBox .member_next-time { margin-top: 12px; }
+
+}

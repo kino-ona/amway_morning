@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>정기주문 결제수단 변경 | ABN Korea</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords">
+	<meta name="description" content="NY Fee Bundle">
+	<meta name="robots" content="index,follow">
+
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-lib.css"><!-- 플러그인용 css : 2018.03.14 추가  -->
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common-v2.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common-new.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common-new-v2.css">
+	<link rel="shortcut icon" type="image/x-icon" href="/_ui/responsive/theme-blue/images/akl_common/favicon.ico">
+	<link rel=”apple-touch-startup-image” href="/_ui/responsive/theme-blue/images/akl_common/favicon_app.png">
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.datepicker.js"></script><!-- datepicker : 2018.03.19 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/owl.carousel.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/isotope.pkgd.js"></script><!-- gnb 플러그인 : 2018.03.23 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/select2.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/new.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.raty.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_contents.js"></script><!-- brand 통합 : 2018.08.24 추가  -->
+	<!-- <script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_component.js"></script>brand 통합 : 2018.08.24 추가  -->
+</head>
+<body class="akl">
+
+<!-- 결제수단 변경 -->
+<div class="layerWrapper" id="pop-payment">
+	<div class="cbox layerBox popWidXL">
+		<div class="cart-popup__dialog">
+			<div class="cart-popup__header">
+				<span class="cart-popup__header-text">결제수단 변경
+					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close"><img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기"></a>
+				</span>
+			</div>
+			<div class="cart-popup__content payment new-payment change_payment">
+				<div class="pop-payment-change cart-items-wrapper">
+					<div class="sms-receive-box form-group payment_box">
+						<div class="col-xs-12 sms-reception">
+							<label class="col-md-2 col-xs-12 control-label">SMS 수신동의여부</label> 
+							<div class="col-md-9">
+								<span class="inline-label">
+									<input type="radio" id="smsAcceptance_OK" value="true" class="amwa-radio"> 
+									<label for="smsAcceptance_OK" class="focus">SMS 수신 동의함</label>
+								</span> 
+								<span class="inline-label">
+									<input type="radio" id="smsAcceptance_NO" value="false" class="amwa-radio"> 
+									<label for="smsAcceptance_NO" class="focus">SMS 수신 동의안함</label>
+								</span>
+							</div>
+						</div> 
+						<div class="col-xs-12 sms-reception">
+							<label for="sellNum1" class="col-md-2 col-xs-12 control-label">휴대폰 번호</label> 
+							<div class="col-md-10 col-xs-12 delivery-msg">
+								<input type="text" placeholder="‘-’없이 입력" title="휴대전화번호 입력" class="form-control m-message">
+							</div>
+						</div>
+					</div> 
+					<div class="payment_box">
+						<div id="payment" class="payment_selte">
+							<p class="shipping-delivery-shipping-header">결제수단</p> 
+							<div class="payTab">
+								<div class="payTab_button_area">
+									<!-- 20220331 자동이체 버튼 추가 -->
+									<a class="payTaba">자동이체</a>
+									<a class="payTaba">자동이체예약</a>
+									<a class="payTaba">신용카드</a>
+									<a class="payTaba on">무통장입금</a>
+								</div> 
+								<div class="payTab_cont_area">
+									<!-- S : 20220331 자동이체 탭 추가 -->
+									<div class="pay_cont pay_cont1 bankTransfer2">
+										<div class="row card-method">
+											<div class="form-group">
+												<div class="col-xs-12 col-md-3 card-tit">
+													<label for="ap">자동이체 비밀번호</label>
+												</div> 
+												<div class="col-xs-12 col-md-8">
+													<div class="a-point">
+														<input name="point" id="" type="password" value="" maxlength="6" placeholder="자동이체 번호 6자리" autocomplete="new-password" class="auto-pw"> 
+														<button type="button" class="bt-akl-white">자동이체계좌 등록</button>
+													</div> 
+													<div class="a-point info">
+														<ul class="list-type2">
+															<li>자동이체는 계좌 등록 후 사용이 가능합니다.</li>
+														</ul>
+													</div>
+												</div>
+											</div> 
+											<div class="transfer-resver-guide">
+												<div class="guid-box js-guidebox-toggle">
+													<a href="#" class="title">주의사항<span class="hidden">열기</span></a> 
+													<div class="tgg-hidden-area" style="display: none;">
+														<ul class="list-type5">
+															<li>즉시결제 시 A 포인트는 신용카드 또는 자동이체와 혼합하여 결제하실 수 있습니다.</li> 
+															<li>www.amway.co.kr에서 결제 정보(계좌이체 통장) 변경 시 스마트 오더 프로그램에도 동일하게 적용됩니다.</li> 
+															<li>나의 주문 내역 페이지에서 현금영수증을 발급하실 수 있습니다.</li> 
+															<li>현금영수증은 예약결제일 또는 즉시결제일 당일에만 발급 가능합니다.</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- E : 20220331 자동이체 탭 추가 -->
+									<!-- 20220331 클래스명 변경 -->
+									<div class="pay_cont pay_cont2 bankTransfer2">
+										<div class="row card-method">
+											<div class="form-group">
+												<div class="col-xs-12 col-md-3 card-tit">
+													<label for="ap">자동이체 비밀번호</label>
+												</div> 
+												<div class="col-xs-12 col-md-8">
+													<div class="a-point">
+														<input name="point" id="" type="password" value="" maxlength="6" placeholder="자동이체 번호 6자리" autocomplete="new-password" class="auto-pw"> 
+														<button type="button" class="bt-akl-white">자동이체계좌 등록</button>
+													</div> 
+													<div class="a-point info">
+														<ul class="list-type2">
+															<li>자동이체는 계좌 등록 후 사용이 가능합니다.</li>
+														</ul>
+													</div>
+												</div>
+											</div> 
+											<div class="transfer-resver-guide">
+												<div class="guid-box js-guidebox-toggle">
+													<a href="#" class="title">주의사항<span class="hidden">열기</span></a> 
+													<div class="tgg-hidden-area" style="display: none;">
+														<ul class="list-type5">
+															<li>즉시결제 시 A 포인트는 신용카드 또는 자동이체와 혼합하여 결제하실 수 있습니다.</li> 
+															<li>www.amway.co.kr에서 결제 정보(계좌이체 통장) 변경 시 스마트 오더 프로그램에도 동일하게 적용됩니다.</li> 
+															<li>나의 주문 내역 페이지에서 현금영수증을 발급하실 수 있습니다.</li> 
+															<li>현금영수증은 예약결제일 또는 즉시결제일 당일에만 발급 가능합니다.</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- 20220331 클래스명 변경 -->
+									<div class="pay_cont pay_cont3 creditCard">
+										<div class="row card-method">
+											<div class="card-favor">
+												<span class="card-info-txt G10600_lp2">
+													<a href="#" name="billingKeyRequest" class="bt-akl-white mini">결제정보 입력</a>
+												</span> 
+												<div>
+													<span class="card-info-txt" style="display: none;">
+														<a href="#" name="billingKeyRequest" class="bt-akl-white mini">결제정보 변경</a> 
+														<em>결제카드는 <b></b>로 선택하셨습니다.</em>
+													</span>
+													</div>
+												</div> 
+												<div class="transfer-resver-guide">
+													<div class="guid-box js-guidebox-toggle">
+														<a href="#" class="title">주의사항<span class="hidden">열기</span></a> 
+														<div class="tgg-hidden-area" style="display: none;">
+															<ul class="list-type5">
+																<li>마이페이지에서 결제 정보(계좌이체 통장) 변경 시 스마트 오더 프로그램에도 동일하게 적용됩니다.</li> 
+																<li>나의 주문 내역 페이지에서 현금영수증을 발급하실 수 있으며, 결제일 또는 즉시결제일 당일에만 발급 가능합니다.</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+									</div>
+									<div class="pay_cont pay_cont5 paybank">
+										<div class="row card-method paybank">
+											<div class="form-group">
+												<div class="col-xs-12 col-md-2 card-tit">
+													<label for="depositor">입금은행</label>
+												</div> 
+												<div class="col-xs-12 col-md-10">
+													<div class="col-xs-8 col-md-8 paybank">
+														<select id="bank" class="shipping-delivery-size">
+															<option selected="selected" value="[object Object]">입금은행을 선택해주세요</option> 
+															<option value="[object Object]">국민은행</option>
+															<option value="[object Object]">농협중앙회</option>
+															<option value="[object Object]">신한은행</option>
+															<option value="[object Object]">우체국</option>
+															<option value="[object Object]">우리은행</option>
+															<option value="[object Object]">KEB하나은행</option>
+															<option value="[object Object]">기업은행</option>
+															<option value="[object Object]">부산은행</option>
+															<option value="[object Object]">광주은행</option>
+															<option value="[object Object]">대구은행</option>
+														</select>
+													</div>
+												</div>
+											</div> 
+											<div class="form-group">
+											</div> 
+											<div class="transfer-resver-guide">
+												<div class="guid-box js-guidebox-toggle on">
+													<a href="#" class="title">주의사항 <span class="hidden">열기</span></a> 
+													<div class="tgg-hidden-area" style="display: block;">
+														<ul class="list-type5">
+															<li>가상계좌번호와 입금 정보는, 기본 정보에 등록된 휴대폰 번호로 카카오 알림톡 또는 문자를 통해 발송됩니다.</li> 
+															<li>입금기한 이내에 정확한 금액을 입금해야 주문이 완료되며, 미입금 시 주문은 자동 취소됩니다.</li> 
+															<li>반품 시, ABO는 보너스계좌로, 멤버는 등록된 환불계좌로 환불됩니다. (취소/반품 전 환불계좌 등록 필수 - 마이페이지&gt;계좌관리)</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div> 
+						<div class="shipping-delivery-ship payment_section">
+							<div class="col-xs-12 pay-transaction">
+								<p class="shipping-delivery-setup-title col-md-3">거래내역 증빙신청</p> 
+								<div class="col-md-9">
+									<div class="panel">
+										<input type="radio" name="receiptType" id="notApply" value="NO" class="amwa-radio"> 
+										<label for="notApply" class="focus">
+											<span class="text-regul">신청안함</span>
+										</label>
+									</div> 
+									<div class="panel">
+										<input type="radio" name="receiptType" id="taxBill" value="TAX" class="amwa-radio"> 
+										<label for="taxBill" tabindex="0" class="tax-bill focus">
+											<span class="text-regul">세금계산서(중개판매 신청) :</span>
+										</label> 
+										<span class="btn-business G10600_lp5">
+											<a href="#" id="businessLicense" class="bt-akl-white mini">사업자등록증 선택</a> 
+											<input type="hidden" id="businessLicenseNumber"> 
+											<input type="hidden" id="businessLicenseCompany">
+										</span>
+									</div> 
+									<div class="panel cash-receipts">
+										<div class="col-xs-12 col-md-3">
+											<input type="radio" name="receiptType" id="cashReceipts" value="CASH" class="amwa-radio"> 
+											<label for="cashReceipts" tabindex="0" class="focus">
+												<span class="text-regul">현금영수증</span>
+											</label>
+										</div> 
+										<div>
+											<div class="cash-type">
+												<div class="cash-phone">
+													<select title="구분을 선택하세요" id="receiptNumberType" class="form-control">
+														<option value="CPN">휴대폰번호</option>
+														<option value="CDN">현금영수증카드번호</option>
+														<option value="BRN">사업자등록번호</option>
+													</select> 
+													<input type="text" placeholder="‘-’없이 입력" id="receiptIssuanceNumber" maxlength="18" class="form-control">
+												</div> 
+												<div class="receipt-type">
+													<label for="re-type">영수증 유형</label> 
+													<select id="receiptIssuanceType" class="form-control">
+														<option value="INCOME_DEDUCTION">개인 소득공제용</option>
+														<option value="EXPENDITURE_PROOF">사업자 지출증빙용</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div> 
+									<div class="panel pvbv">
+										<span>거래명세서 표시</span> 
+										<input id="printInvoicePrice" name="printInvoicePrice" type="checkbox" value="printInvoicePrice" class="login-form-remember"> 
+										<label for="printInvoicePrice" class="focus">가격</label> 
+										<input id="printInvoicePvBv" name="printInvoicePvBv" type="checkbox" value="printInvoicePvBv" class="login-form-remember"> 
+										<label for="printInvoicePvBv" class="focus">PV/BV</label>
+									</div>
+								</div>
+							</div>
+						</div> 
+						<div class="shipping-delivery-ship payment_section">
+							<div class="col-xs-12 pay-transaction">
+								<div class="shipping-delivery-setup-title col-md-3">결제일(매달)
+									<div class="toolTip-wrapper toolTip-type02 type-mob-full">
+										<button type="button" class="btn-tooltip">
+											<span class="hidden">안내</span>
+										</button> 
+										<div class="tipCont-wrapper" style="max-width: none;">
+											<div class="tooltip-content left" style="display: none;">
+												<ul class="list-type2">
+													<li>결제일 지정은 카드결제의 경우 2일부터 27일까지, 무통장과 자동이체의 경우 2일부터 25일까지만 가능합니다.</li> 
+													<li>결제일 이전에도 즉시결제를 통해 결제하실 수 있습니다.</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div> 
+								<div class="col-md-9">
+									<div class="panel">
+										<select id="sopPdp_settlingDay" class="form-control">
+											<option value="2">2일</option>
+											<option value="3">3일</option>
+											<option value="4">4일</option>
+											<option value="5">5일</option>
+											<option value="6">6일</option>
+											<option value="7">7일</option>
+											<option value="8">8일</option>
+											<option value="9">9일</option>
+											<option value="10">10일</option>
+											<option value="11">11일</option>
+											<option value="12">12일</option>
+											<option value="13">13일</option>
+											<option value="14">14일</option>
+											<option value="15">15일</option>
+											<option value="16">16일</option>
+											<option value="17">17일</option>
+											<option value="18">18일</option>
+											<option value="19">19일</option>
+											<option value="20">20일</option>
+											<option value="21">21일</option>
+											<option value="22">22일</option>
+											<option value="23">23일</option>
+											<option value="24">24일</option>
+											<option value="25">25일</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div> 
+						<div id="paymentInsurance" class="shipping-delivery-ship payment_section">
+							<div class="deli-introduction">
+								<p class="tit">소비자피해보상보험 가입 안내 
+									<a href="https://www.macco.or.kr/ko/cn/KOCNMC01.action" target="_black" class="bt-akl-white mini">보험가입사실 확인</a>
+								</p> 
+								<p>전자상거래등에서의 소비자보호에관한 법률에 따라 직접판매공제조합에 가입하여 고객님의 결제금액에 대해 안전거래를 보장하고 있습니다.</p>
+							</div>
+						</div>
+					</div> 
+					<div class="akl-toggle-wrap ms-agree-toggle mgt20">
+						<div aria-multiselectable="false" class="panel-group accordion-custom">
+							<div class="panel">
+								<div role="tab" class="panel-heading">
+									<span class="text-uppercase accordion-header-text">
+										<input id="allPaymentTermsAgree" name="allPaymentTermsAgree" type="checkbox"> 
+										<label for="allPaymentTermsAgree" class="focus">이용 약관에 모두 동의 합니다.</label>
+									</span> 
+									<a href="#down20" data-toggle="collapse" aria-expanded="true" class="collapsed">
+										<div class="panel-title">
+											<span class="pull-right icon-minus"><span>약관 모두 보기</span></span>
+										</div>
+									</a>
+								</div> 
+								<div id="down20" role="tabpanel" class="panel-collapse applicants-panel collapse" style="height: 0px;">
+									<div class="panel-body">
+										<div>
+											<input id="sopAgreement1" type="checkbox" class="login-form-remember"> 
+											<label for="sopAgreement1" class="focus">본인은 본 스마트 주문으로 신청한 제품은
+												매월 정기 결제해야 하며, 별도의 해지 신청을 하지 않을 시에는 본인이 신청한 결제수단으로 매월 정기 결제 되는 것에
+												동의합니다. 자동결제 해지는 결제일 3일 이전에 신청하셔야 하며, 결제일이 도래하기 1일~2일 사이에 (예를 들어,
+												결제일이 25일인 경우, 23일~24일) 해지신청을 하시면, 당월은 결제가 이루어지고 익월에 해지신청이 반영됩니다.</label>
+											</div> 
+											<div>
+												<input id="sopAgreement2" type="checkbox" class="login-form-remember"> 
+												<label for="sopAgreement2" class="focus">주문하실 상품의 상품명, 가격, 배송정보를 확인하였으며, 이에 동의(전자상거래법 제8조 제2항)</label>
+											</div> 
+											<div>
+												<input id="sopAgreement4" type="checkbox" class="login-form-remember"> 
+												<label for="sopAgreement4" class="focus">스마트 오더 프로그램의 혜택 및 내용 등 본 프로그램과 관련된 구체적인 운영기준은 회사의 정책에 따라 추가되거나 변경될 수 있습니다.
+												상기 사항 및 불리한 조건 변경일 경우 회사가 인터넷 홈페이지,
+												이메일 등을 통해 개별적으로 공지합니다.</label>
+											</div> 
+											<div class="guid-box js-guidebox-toggle">
+												<input id="sopAgreement3" type="checkbox" class="login-form-remember"> 
+												<label for="sopAgreement3" class="focus">개인정보의 수집 및 이용에 동의</label> 
+												<a href="#" class="title">자세히 보기 <span class="hidden">열기</span></a> 
+												<div class="tgg-hidden-area" style="display: none;">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>			
+			<div class="cart-popup__item-link">
+				<button type="button" class="bt-akl-blue">저장</button>
+				<button type="button" class="btn-cancel">취소</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //결제수단 변경 -->
+
+
+
+
+<script type="text/javascript">
+$(function() {
+	layerPopOver('','#pop-payment');
+
+	$('.payTaba').each(function(){
+		$(this).click(function(){
+			var pay_box = $(".payTaba");
+			$('.payTaba').removeClass('on');
+			$(this).addClass('on');
+			for (j = 0; j < pay_box.length + 1; j++) {
+				var choice_active = $(".pay_cont"+[j]);
+				if ($('.payTab'+[j]).hasClass('on')) {
+					choice_active.css('display', 'block');
+				} else {
+					choice_active.css('display', 'none');
+					$('.payTab'+[j]).removeClass('on');
+				}
+			}
+		});
+	});
+});
+</script>
+
+</body>
+
+</html>

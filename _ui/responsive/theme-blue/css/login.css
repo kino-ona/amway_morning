@@ -1,0 +1,376 @@
+/* 2020-12-21 */
+
+@font-face {
+    font-family:'Noto Sans KR';
+    font-style:normal;
+    font-weight:300;
+    src:url(/_ui/responsive/theme-blue/fonts/notosanskr/notokr-light.woff2) format('woff2'),
+        url(/_ui/responsive/theme-blue/fonts/notosanskr/notokr-light.woff) format('woff') ;
+}
+@font-face {
+    font-family:'Noto Sans KR';
+    font-style:normal;
+    font-weight:400;
+    src:url(/_ui/responsive/theme-blue/fonts/notosanskr/notokr-regular.woff2) format('woff2'),
+        url(/_ui/responsive/theme-blue/fonts/notosanskr/notokr-regular.woff) format('woff') ;
+}
+@font-face {
+    font-family:'Noto Sans KR';
+    font-style:normal;
+    font-weight:500;
+    src:url(/_ui/responsive/theme-blue/fonts/notosanskr/notokr-medium.woff2) format('woff2'),
+        url(/_ui/responsive/theme-blue/fonts/notosanskr/notokr-medium.woff) format('woff') ;
+}
+@font-face {
+    font-family:'Noto Sans KR';
+    font-style:normal;
+    font-weight:700;
+    src:url(/_ui/responsive/theme-blue/fonts/notosanskr/notokr-bold.woff2) format('woff2'),
+        url(/_ui/responsive/theme-blue/fonts/notosanskr/notokr-bold.woff) format('woff') ;
+}
+
+*{box-sizing: border-box;}
+button, input, select, textarea {font-family: inherit;font-size: inherit;line-height: inherit;}
+input,textarea,select{-webkit-appearance:none;-webkit-border-radius:0;font-weight:400;}
+button{margin: 0;overflow: visible;text-transform: none;cursor: pointer;}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {display: block;}
+body{margin:0;font-family: 'Noto Sans KR', sans-serif;font-weight: normal;font-size: 14px;line-height: 1.42857143;line-height: 1.42857143;background-color: #fff;}
+a:active, a:hover {outline: 0;}
+a {color: #337ab7;text-decoration: none;}
+:after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* form */
+.akl .form_input,
+.form_input {padding:0 10px;width:100%;height:30px;font-size:13px;color:#666;border:solid 1px #dadada;box-sizing:border-box}
+.akl .sp_form {font-size:0;line-height:0;color:transparent}
+.akl .sp_chk:after,
+.akl .sp_form,
+.akl [class^="form_element-"] [type=checkbox]:not(:checked)+label:after {content:'';display:inline-block;background-color:transparent;background-image:url(/_ui/responsive/theme-blue/images/akl_plp/p_sp-form.png);background-repeat:no-repeat;background-size:400px auto}
+.akl label, .akl label .amw-label-radio-text, .akl .amway-theme label {font-size:14px;font-weight:500;}
+
+#skipToContent a {position:fixed;top:0;left:0;z-index:9999;width:100%;height:0;margin-top:-1px;display:block;background-color:#3875c1;font-size:14px;font-weight:normal;color:#fff;line-height:1;text-align:center;overflow:hidden;} /* 190411_수정 psup 테스트 - 웹접근성용 바로가기 폰트 굵기 수정 */
+#skipToContent a:focus,
+#skipToContent a:active {margin-top:0;height:auto;padding:10px 0px;}
+
+/* checkbox & radio */
+.akl [class^="form_element-"],
+[class^="form_element-"] {position:relative;display:inline-block;margin:0;padding:0}
+[class^="form_element-"] input[type='checkbox'],
+[class^="form_element-"] input[type='radio'] {position:absolute;left:0;top:0;margin:0;z-index:1;width:20px;height:20px;vertical-align:middle;opacity:0}
+[class^="form_element-"] input[type='checkbox'] + label,
+[class^="form_element-"] input[type='radio'] + label {position:relative;display:inline-block;padding-left:25px;color:#666;font-size:14px;line-height:20px;min-height:20px;font-weight:normal;vertical-align:middle;cursor:pointer}
+[class^="form_element-"] input:checked + label {color:#333}
+[class^="form_element-"].no_label {width:20px;height:20px}
+[class^="form_element-"].no_label input + label {padding-left:0;font-size:0 !important;line-height:0}
+[class^="form_element-"] label:before,
+[class^="form_element-"] label:after {content:'' !important;position:absolute;left:0;top:0;display:inline-block;width:20px;height:20px;box-sizing:border-box;border:1px solid #999;background-color:#fff}
+.form_group-element [class^="form_element-"] {margin-right:25px}
+.form_group-element [class^="form_element-"]:last-child {margin-right:0}
+[class^="form_element-"] input:disabled + label,
+[class^="form_element-"] input:disabled:checked + label {cursor:not-allowed}
+[class^="form_element-"] input:disabled + label,
+.form_element-checkbox input[type='checkbox']:disabled + label {color:#ececec !important}
+[class^="form_element-"] input:disabled + label:before,
+.akl [class^="form_element-"] input:disabled + label:before {background:#fff !important;border:1px solid #ececec}
+.akl [class^="form_element-"] input[type='checkbox']:checked + label:after, [class^="form_element-"] input[type='checkbox']:checked + .sp_chk:after {background-position: -13px 0;}
+
+/* radio */
+.form_element-radio label:before {border-radius:50%;border-color:#ececec}
+.form_element-radio label:after {left:5px;top:5px;display:block;width:10px;height:10px;border:none;border-radius:50%;background-color:#ececec}
+.form_element-radio input[type='radio']:checked + label:before {background-color:#002f5f;border:1px solid #002f5f}
+.form_element-radio input[type='radio']:checked + label:after {background-color:#fff}
+.form_element-radio input[type='radio']:disabled + label:after {background-color:#ececec}
+
+/* checkbox */
+[class^="form_element-"] input[type="checkbox"]+label,
+[class^="form_element-"] input[type="checkbox"]:checked+label,
+[class^="form_element-"] input[type="checkbox"]:not(:checked)+label {margin:0;z-index:1}
+.form_element-checkbox input[type="checkbox"] + label:before {border-radius:2px;border:1px solid #999}
+.form_element-checkbox input[type="checkbox"] + label.sp_chk:after,
+.sp_chk:after,
+[type=checkbox]:not(:checked)+label.sp_chk:after {top:7px;left:5px;width:9px;height:7px;border:none;transform:none;-webkit-transform:none;-webkit-transition:none;transition:none;opacity:1;font-size:0;font-family:none !important;-webkit-font-smoothing:none}
+
+.form_element-checkbox input[type='checkbox']:focus + label:before {outline:none}
+.form_element-checkbox input[type='checkbox']:checked + label:before {background-color:#002f5f;border-color:#002f5f}
+.form_element-checkbox input[type='checkbox']:disabled + label:after {opacity:.3}
+
+.form_element-checkbox.v2 input[type="checkbox"] + label:before {border-radius:0;border-color:#d0d0d0}
+.form_element-checkbox.v2 input[type="checkbox"]:hover + label:before {border-color:#ffd979}
+.form_element-checkbox.v2 input[type="checkbox"]:active + label:before {border-color:#dcbb68;background-color:#f5cf71}
+.form_element-checkbox.v2 input[type='checkbox']:checked + label:before {background-color:#ffd979;border-color:#dcbb68}
+.form_element-checkbox.v2 input[type='checkbox']:disabled + label:before {border-color:#f0f0f0}
+.form_element-checkbox.v2 input[type='checkbox']:disabled + label:after {opacity:1}
+.form_element-checkbox input[type="checkbox"] + label.sp_chk:after,
+.sp_chk:after, [type=checkbox]:not(:checked)+label.sp_chk:after {top:6px}
+.form_element-checkbox.v2 input[type="checkbox"] + label.sp_chk:after,
+.akl .form_element-checkbox.v2 [type=checkbox]:not(:checked)+label:after {width:10px;height:9px;background-position:0 -20px}
+.akl .form_element-checkbox.v2 input[type='checkbox']:checked + label:after,
+.form_element-checkbox.v2 input[type='checkbox']:checked + .sp_chk:after {background-position:-13px -20px}
+
+.akl [class*=_title], .akl [class*=title-], .akl [class*=-title] {word-break: keep-all;}
+.akl input[type="text"], .akl input[type="password"], .akl input[type="number"], .akl input[type="tel"], .akl input[type="date"] {height: 40px;padding: 0 15px;border: solid 1px #dadada;box-sizing: border-box;}
+.akl [class^="form_element-"], [class^="form_element-"] {position: relative;display: inline-block;margin: 0;padding: 0;}
+input[type=checkbox], input[type=radio] {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;padding: 0;}
+input[type=checkbox], input[type=radio] {margin: 4px 0 0;line-height: normal;}
+[type=checkbox]:checked {position: absolute;left: -9999px;}
+[class^="form_element-"] input[type='checkbox'], [class^="form_element-"] input[type='radio'] { position: absolute;left: 0;top: 0;margin: 0;z-index: 1;width: 20px;height: 20px;    vertical-align: middle;opacity: 0;}		
+
+.akl i {font-style: normal;}
+.akl b, strong {font-weight: 500;}
+.akl {font-family: 'Noto Sans KR', sans-serif;font-weight: normal;}
+.akl .row{margin: 0}
+
+main {margin-top: 0;}
+.login_renewal {padding-top: 38px;padding-bottom: 165px;margin-bottom: -20px;background: url(/_ui/responsive/theme-blue/images/login/pc_login-bg.png) no-repeat 50% bottom;background-size: auto 134px;height: 100vh;}
+.login-area {max-width: 325px;width: 100%;margin: 0 auto;}
+.login-area .login-title {margin: 0 0 22px;font-size: 24px;font-weight: 700;color: #002f5f;letter-spacing: -1px;line-height: 36px;}
+.akl .line_form-type .form_lines, .line_form-type .form_lines {height: 30px;border-width: 0 0 1px 0;border-color: #dedede;width: 100%;padding: 0;font-size: 14px;color: #333;    letter-spacing: -.5px;outline: none;}
+.line_form-type .form_lines::placeholder{color: #999;letter-spacing: -0.5px;}
+.line_form-type .text_validation {margin: 9px 0 0 0;font-size: 12px;color: #ed2250;letter-spacing: -.5px;}
+.line_form-type ~ .line_form-type {margin-top: 12px;}
+.login_btn-group {margin-top: 15px;}
+.login_btn-group [class^="btn_login-"] {width: 100%;height: 54px;border-radius: 4px;text-align: center;border: none;letter-spacing: -.5px;}
+.login_btn-group .btn_login-normal {background-color: #00305e;color: #fff;font-size: 16px;font-weight: 700;}
+.login_btn-group .btn_login-cacao {color: #381e1f;background-color: #feec02;}
+.login_btn-group [class^="btn_login-"] ~ [class^="btn_login-"] {margin-top: 10px;}
+.btn_login-cacao .icon_cacao {margin-right: 6px;width: 31px;height: 31px;background-size: 31px;}
+.login_btn-group .btn_login-cacao * {vertical-align: middle;}
+.icon_cacao {display: inline-block;background: url(/_ui/responsive/theme-blue/images/login/ico_kakao.png) no-repeat 0 0;}
+.icon_apple {display: inline-block;background: url(/_ui/responsive/theme-blue/images/login/ico_apple.png) no-repeat 0 0;width: 25px;height: 30px;    background-size: 100%;}
+.btn_login-cacao .txt_cacao {display: inline-block;font-size: 12px;line-height: 1;}
+.btn_login-cacao .txt_cacao .txt_cacao-tit {display: block;font-size: 16px;font-weight: 700;margin-bottom: 4px;}
+.login_btn-group .btn_login-apple {color: #111;background-color: #fff;border: 1px solid #111;font-weight: 600;}
+.login_btn-group .btn_login-apple * {vertical-align: middle;}
+.login_btn-group .btn_login-apple .icon_apple {margin-right: 12px;}
+.btn_login-apple .txt_apple {font-size: 16px;}
+.box_login-etc {margin-top: 17px;text-align: center;font-size: 0;}
+.box_login-etc .login_etc-item {display: inline-block;vertical-align: top;padding: 0 20px;}
+.box_login-etc.mobile-use {display: none;}
+.box_login-etc .login_etc-item ~ .login_etc-item { position: relative;}
+.box_login-etc .login_etc-item ~ .login_etc-item:before {content: '';position: absolute;left: 0;top: 50%;width: 1px;height: 16px;margin-top: -8px;background-color: #e6e6e6;}
+.login_renewal .btn_txt-type {padding: 0;height: 20px;background-color: transparent;border: none;margin: 0;font-size: 15px;letter-spacing: -.5px;color: #54565a;}
+.box_login-link {margin-top: 16px;text-align: center;}
+.box_login-link .link_login-item {display: inline-block;margin: 0 10px;font-size: 13px;letter-spacing: -.5px;color: #54565a;}
+.box_login-link .link_login-item strong {position: relative;font-size: 15px;color: #007eb0;}
+.box_login-link .link_login-item strong:after {content: '';position: absolute;left: 0;right: 0;bottom: 1px;height: 1px;background-color: #007eb0;}
+.box_login-link .link_area {margin-top: 24px;}
+.box_login-link .link_area .link_cacao-join {display: inline-block;height: 35px;width: 224px;line-height: 35px;border-radius: 4px;background-color: #f4f4f4;text-align: center;   color: #381e1f;font-size: 13px;font-weight: 700;letter-spacing: -.5px;}
+.link_cacao-join .icon_cacao {margin-right: 6px;width: 20px;height: 20px;background-size: 20px;vertical-align: middle;}
+
+/* 주문결제 */
+.akl .product-list-page-title {font-size: 24px;letter-spacing: -2px;word-spacing: 2px;margin-bottom: 10px;color: #002f5f;}
+.shipping-delivery{width: 100%;max-width: 1400px;margin: 0 auto;}
+.non_member_order p{margin-bottom:0}
+.non_member_order strong{font-weight:inherit}
+.non_member_order .shipping-delivery-shipping-header{margin-bottom:0;padding-bottom:10px;border-bottom:1px solid #56565a}
+.non_member_order .shipping-delivery-shipping-header .tit{font-weight:500;font-size:18px;line-height:1.11;color:#222}
+.non_member_order .new-join-wrap{width:100%}
+.non_member_order .new-join-wrap .ipt_area{height:auto}
+.non_member_order label,
+.non_member_order [type="checkbox"]+label,
+.non_member_order [type="checkbox"]:checked+label,
+.non_member_order [type="checkbox"]:not(:checked)+label{margin-top:0;margin-bottom:0}
+
+.new-join-wrap .ipt_area .new-join-btn {display: inline-block;height: 35px;width: 90px;margin-left: 40px;line-height: 32px;font-size: 14px;font-weight: 500;color: #56565a !important;vertical-align: bottom;border-radius: 17px;background-color: #f4f4f4 !important;border: 1px solid #808285 !important;letter-spacing: -1px;}
+.new-join-wrap,.new-join-wrap .new-join-container,.new-join-wrap .new-join-reception{width:768px;margin:0 auto}
+.new-join-wrap .ipt_area{position:relative;height:51px;font-size:0}
+.new-join-wrap .ipt_area.on .form_label{font-size:11px;color:#56565a;top:10px}
+.new-join-wrap .ipt_area .form_label{position:absolute;top:25px;left:10px;font-size:13px;font-weight:400;color:#bbb;transition:all 0.2s ease-in-out}
+.new-join-wrap .ipt_area .form_ipt01{outline:none;display:inline-block;width:calc(100% - 130px);height:30px;margin-top:21px;padding:0 10px;border-width:0 0 1px 0;border-bottom-color:#dadada !important;font-size:14px;font-weight:500;line-height:30px;color:#002f5f !important;background-color:transparent !important}
+.new-join-wrap .ipt_area input[class^=form_ipt]:focus{border-bottom-color:#56565a}
+.new-join-wrap .gender_wrap{display:inline-block;width:90px;margin-left:40px;vertical-align:bottom;position:relative}
+.new-join-wrap .gender_wrap input.gender_radio{position:absolute;left:-99999em;top:-99999em;display:none}
+.new-join-wrap .gender_wrap input.gender_radio + label{cursor:pointer;float:left;border:1px solid #dadada;background-color:#fff;margin:0 0 0 -1px;width:45px;line-height:35px;text-align:center;position:relative;color:#56565a;border-radius:17px 0 0 17px}
+.new-join-wrap .gender_wrap input.gender_radio + label + input + label{border-radius:0 17px 17px 0}
+.new-join-wrap .gender_wrap input.gender_radio:checked + label{background-color:#56565a;color:#fff;z-index:1;border-color:#56565a}
+.new-join-wrap .noti-suc{display:inline-block;margin:7px 0 0 10px;padding-left:13px;font-weight:500;color:#002f5f;background:url(/_ui/responsive/theme-blue/images/akl_common/icon-success.png) no-repeat 0 5px;background-size:8px 6px;letter-spacing: -1px;font-size:11px;line-height:16px}
+.new-join-wrap .noti-suc.fail{background-image:url(/_ui/responsive/theme-blue/images/akl_common/icon-fail.png);color:#e85350}
+.new-join-wrap .ipt_area input[class^=form_ipt]:focus{border-bottom-color:#56565a}
+
+.message_area {text-align: center;}
+.message_area .message .sp_ico{background-position:-340px 0; width: 50px;height: 50px;}
+.message_area .btns {text-align: center;margin-top: 20px;}
+.akl .box_txt-reason {margin-top:8px;text-align:center;line-height:20px;letter-spacing:-.7px}
+.btn_default-c {display:inline-block;height:32px;box-sizing:border-box;padding:0 10px;min-width:68px;border:1px solid transparent;font-size:13px;letter-spacing:-.6px;text-align:center;font-weight:500;border-radius:2px;background-color:#002f5f;border-color:#002f5f;color:#fff}
+.non_member_order.renew .new-order-container {margin-bottom: 30px;}
+.message_area .message .sp_ico{display: inline-block;background-color: transparent;background-image: url(/_ui/responsive/theme-blue/images/akl_plp/sp_mypage.png);background-repeat: no-repeat;background-size: 400px auto;background-position: -340px 0;width: 50px;height: 50px;}
+#header_sns {margin-bottom:25px;background-color:#ffffff;box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.1)}
+#header_sns .inner {display:flex;justify-content:space-between;align-items:center;height:55px;max-width:1400px;margin:0 auto;padding:0 12px}
+#header_sns .sns_logo {width:73px;height:25px;margin:0}
+#header_sns .sns_logo img {vertical-align:top;width:100%}
+.new-join-wrap .ipt_area .form_ipt01{width: calc(100% - 105px);}
+.new-join-wrap .ipt_area .form_select, .new-join-wrap .ipt_area .new-join-btn,
+.new-join-wrap .gender_wrap {margin-left: 15px;}
+.main-container {position: relative;max-width: 1400px;margin: 0 auto;padding: 0 12px;}
+.akl.new-v2 main,
+.akl.new-v2 .renew_main{margin-top: 0;padding-top: 0;}
+
+.login-radio{ font-size: 0; margin-bottom: 40px; }
+.login-radio .radio-item{ display: inline-block; vertical-align: top; margin: 5px 10px 5px 0; letter-spacing: -1px; position: relative;}
+.login-radio .radio-item input[type=radio]{ position: absolute; top: 0; left: 0; opacity: 0;}
+.login-radio .radio-item input[type=radio] + label{ color: #666; font-size: 14px; font-weight: 500; }
+.login-radio .radio-item input[type=radio] + label::before{ content: ''; display: inline-block; vertical-align: middle; width: 18px; height: 18px; margin-right: 5px; border-radius: 100%; border: 1px solid #ccc; background: radial-gradient(#ccc 0%, #ccc 4px, #fff 4px, #fff 100%); transition: all .2s ease; }
+.login-radio .radio-item input[type=radio]:checked + label::before{ border-width: 5px; border-color: #00305e; background: 0; }
+
+.login_renewal--kakao .login-title{ display: none; }
+.login_renewal--kakao .login-radio{ margin: 32px 0 9px; }
+
+.kakao-header__image{ display: block; width: 169px; margin: 0 auto; font-size: 0;}
+.kakao-header__image img{ width: 100%; max-width: 100%; }
+.kakao-header__title{ margin: 16px 0 0; text-align: center; font-size: 18px; line-height: 1.5; font-weight: 700; color: #02305E; letter-spacing: -.5px; }
+.kakao-header__text{ margin-top: 7px; text-align: center; font-size: 14px; line-height: 1.4; color: #666; }
+
+.login_renewal.login_renewal--agree{ overflow: auto; height: auto;padding: 60px 0 100px; background: 0; }
+.login-agree__content{ margin-top: 32px; padding: 0 16px; }
+.login-agree__content .row{ margin-top: 16px }
+.login-agree__content .row ~ .row{ margin-top: 32px; }
+.title-agreement{ margin: 0; font-size: 14px; font-weight: 700; }
+.title-agreement .highlight{ color: #ED174C; }
+.conditions-chk{ position: relative; }
+.login_renewal--agree input[type=checkbox],
+.login_renewal--agree input[type=radio]{ position: absolute; top: 0; left: 0; width: 100%; height: 100%; margin: 0; }
+.conditions-chk .checkbox + .label{ display: block; font-size: 16px; color: #333333; font-weight: 500; }
+.conditions-chk .checkbox + .label::before{ content: ''; display: inline-block; vertical-align: middle; width: 20px; height: 20px; margin-right: 8px; background: url(/_ui/responsive/theme-blue/images/login/icon-login-check-off.png) 0 0 no-repeat; background-size: 100% auto; }
+.conditions-chk .checkbox:checked + .label::before{ background-image: url(/_ui/responsive/theme-blue/images/login/icon-login-check.png); }
+.scroll-area{ overflow: auto; width: 100%; max-height: 191px; margin-top: 8px; padding: 12px; border: 1px solid #E5E5E5; }
+.scroll-area ul{ margin: 0; padding: 0; }
+.scroll-area ul li{ list-style: none; margin: 0; padding: 0; color: #66656A; line-height: 1.4; font-size: 12px; font-weight: 400; }
+.scroll-area .main,
+.scroll-area .text{ margin: 8px 0 0; color: #66656A; line-height: 1.4; font-size: 12px; font-weight: 400; }
+.scroll-area .main{ margin: 0; }
+.scroll-area ul li ~ li{ margin-top: 8px; }
+.login_renewal--agree .login-radio{ margin: 8px 0 0; }
+.login_renewal--agree .login-radio .radio-item{ position: relative; margin: 0 20px 0 0; }
+.login_renewal--agree .login-radio .radio-item input[type=radio] + label{ color: #333; }
+.login_renewal--agree .login-radio .radio-item input[type=radio] + label::before{ background: 0; }
+.login-agree__bottom{ display: flex; position: fixed; bottom: 0; left: 0; width: 100%; }
+.login-agree__bottom .bt-akl-white, .login-agree__bottom .bt-akl-blue{ width: 50%; height: 60px; background: 0; border: 0; font-weight: 700; font-size: 16px; }
+.login-agree__bottom .bt-akl-white{ border: 1px solid #002F5F; background: #fff; color: #002F5F; }
+.login-agree__bottom .bt-akl-blue{ border: 1px solid #002F5F; background: #002F5F; color: #fff; }
+
+/* mobile */
+@media (max-width: 768px) {
+    .login_renewal {position: relative;padding: 0 25px 165px;height: calc(100vh - 150px);min-height: 550px;box-sizing: border-box;}
+    .login_renewal {margin-bottom: 0;height: 100vh;padding-top: 40px;}
+    .box_login-link {margin-top: 0;position: absolute;left: 0;right: 0;top: calc(50% + 90px);}
+    .box_login-link .link_area {margin-top: 15px;}
+    .box_login-etc.pc-use {display: none;}
+    .box_login-etc.mobile-use {display: block;}
+    .login-area .login-title {display: none;}
+    .main-container, .akl .container {padding: 0 15px;}
+    .login_renewal--kakao{ height: calc(100vh - 53px);padding-top: 60px; }
+    .login_renewal--kakao .login_btn-group{ margin-top: 20px; }
+}
+.header_type-a {width:100%;height:53px;padding:14px 16px;margin:0;z-index:10;background-color:#324cb5;box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.16)}
+.header_type-a .header-logo {margin:0 auto;max-width:1400px}
+.header_type-a .header-logo a {display:block;width:75px;height:26px;font-size:0;color:transparent;background:url(/_ui/responsive/theme-blue/images/akl_plp/m_logo.png) 0 0 no-repeat;background-size:75px auto}
+
+/* (jquery.msgbox) 컨펌-알럿 전용 플러그인 관련 */
+.jMsgbox-overlay {background-color:rgba(0,0,0,.8);}
+.jMsgbox-wrap {border:1px solid #999;}
+.jMsgbox-title {color:#55565a;height:40px !important;background-color:#fff;}
+.jMsgbox-controls {right:6px;top:3px;}
+.jMsgbox-controls a {width:20px;height:20px;margin:10px 2px;background:url(../images/akl_common/ico_closed.png) no-repeat;background-size:15px auto}
+.jMsgbox-content {display:table;width:100%;background-color:#fff;}
+.jMsgbox-content .jMsgbox-shortcut {display:table-cell;vertical-align:middle;padding:0;text-align:center;}
+
+/*2020-09-15 공통 팝업 내용 많을때 스크롤 */
+.jMsgbox-content .jMsgbox-shortcut.jMsgbox-alert {display:table-cell;flex:none;vertical-align:middle;}
+.jMsgbox-content .jMsgbox-shortcut.jMsgbox-alert.scroll{display:block;height:100%;width:100%;align-items:center;justify-content:center;overflow-y:auto;}
+
+/* 2020-11-24 추가 */
+.jMsgbox-content .jMsgbox-shortcut.jMsgbox-confirm {display:table-cell;flex:none;vertical-align:middle;}
+.jMsgbox-content .jMsgbox-shortcut.jMsgbox-confirm.scroll{display:block;height:100%;width:100%;align-items:center;justify-content:center;overflow-y:auto;}
+
+.jMsgbox-content .jMsgbox-shortcut>p{padding:15px;}
+.jMsgbox-prompt-input {display:block;padding:6px 6px;margin-bottom:10px;color:#555;vertical-align:middle;background-color:#FFF;border:1px solid #ccc;}
+.jMsgbox-loading {background:url(../img/loading.gif) center center no-repeat transparent;}
+.jMsgbox-loaded {padding:15px;}
+.jMsgbox-foot {height:80px !important;background:#fff;margin:0 auto;padding:20px 20px 0;border-top:1px solid #dadada;text-align:center;box-sizing:border-box;}
+.jMsgbox-foot input {display:inline-block;min-width:120px;height:40px;padding:4px 12px;border:0;font-size:14px;line-height:20px;color:#fff;background:#002F5F;}
+.jMsgbox-foot input:hover {color:#002F5F;background:#fff;}
+.jMsgbox-foot input.jMsgbox-ok {color:#fff;background:#002F5F;}
+.jMsgbox-foot input.jMsgbox-ok:hover {color:#002F5F;background:#fff;border:2px solid #002F5F;}
+.jMsgbox-foot input.jMsgbox-cancel {color:#0075a4;background:#fff;}
+.jMsgbox-foot input.jMsgbox-cancel:hover {color:#002f5f;text-decoration:underline;background:#fff;}
+.jMsgbox-resize {background:#ddd;width:10px;height:10px;}
+.jMsgbox-resize:hover {}
+
+.loading { display: table; width: 100%; height: 100%; position: fixed; left: 0; right: 0; top: 0; bottom: 0; background: rgba(255, 255, 255, 0.5); z-index:10000 }
+.loading .loading-wrap { display: table-cell; width: 100%; height: 100%; vertical-align: middle; text-align: center; }
+.loading .loading-wrap img { width: 110px; }
+img.loader-size { width: 55px; }
+.akl .loading.box_renew-loading { background:transparent }
+.akl .loading-wrap .box_loading-area { display: flex; width: 120px; height: 120px; margin: auto; border-radius: 50%; background: #fff; justify-content: center; align-items: center; box-shadow:1px 1px 20px 0 rgba(0, 0, 0, 0.1);overflow: hidden;}
+
+@media (max-width: 768px) {
+    .loading .loading-wrap img { width: 55px; }
+    img.loader-size { width: 35px; }
+    .akl .loading-wrap .box_loading-area { width: 60px; height:60px }
+    .loading .loading-wrap .box_loading-area img { width:50px }
+}
+
+.kakao-header__text{
+    margin-bottom: 0;
+}
+.kakao-header__text::before{
+    content: '';
+    display: inline-block;
+    vertical-align: 4px;
+    width: 3px;
+    height: 3px;
+    margin-right: 4px;
+    border-radius: 100%;
+    background: #666;
+}
+.kakao-header__text ~ .kakao-header__text{
+    margin-top: 4px;
+}
+.login_renewal--agree .notice{
+    margin: 8px 0 0;
+    font-size: 12px;
+    color: #e85350;
+}
+.login_renewal--agree .agree-notice{
+    position: relative;
+    margin: 20px 0 0;
+    padding-left: 10px;
+    font-size: 12px;
+    color: #999;
+}
+.login_renewal--agree .agree-notice .link{
+    color: #008fc5;
+    text-decoration: underline;
+}
+.login_renewal--agree .agree-notice::before{
+    content: '*';
+    position: absolute;
+    top: 2px;
+    left: 0;
+}
+
+/* S : 20240207 자동로그인 모바일웹 확장 및 아이디/패스워드 입력 개선 */ /* UAT 푸시할 때는 lynxauth/web/webroot/_ui/responsive/common/css/login.css 에 적용 */
+.akl .line_form-type {position:relative;}
+.akl input.form_lines[type=password]::-ms-reveal {display:none;}
+
+/* 버튼 그룹화 */
+.akl .form_group-button {display:flex; gap:10px; align-items:center; margin-top:3px;} /* 20240216 수정 */
+.akl .form_group-button button {border:none; background-color:transparent;}
+.akl .form_group-button button [class^="btn_"] {display:block; width:100%; height:100%; text-indent:-9999px; background-repeat:no-repeat; background-position:left top; background-size:100% auto;}
+.akl .form_group-button-login {position:absolute; right:0; top:0;}
+.akl .form_group-button-login button {display:block; width:24px; height:24px;}
+
+/* 버튼 그룹화 - 삭제 버튼 */
+.akl .form_element-button-delete {}
+.akl .form_element-button-delete .btn_del {background-image:url(/_ui/responsive/theme-blue/images/akl_common/ico_del.png);}
+
+/* 버튼 그룹화 - 눈 버튼 */
+.akl .form_element-button-eye {}
+.akl .form_element-button-eye .btn_eye {}
+.akl .form_element-button-eye .btn_eye.btn_eye_on {background-image:url(/_ui/responsive/theme-blue/images/akl_common/ico_eye_on.png);}
+.akl .form_element-button-eye .btn_eye.btn_eye_off {background-image:url(/_ui/responsive/theme-blue/images/akl_common/ico_eye_off.png);}
+/* E : 20240207 자동로그인 모바일웹 확장 및 아이디/패스워드 입력 개선 */

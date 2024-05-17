@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Amway</title>
+        <link rel="stylesheet" href="../res/css/reset.css">
+        <link rel="stylesheet" href="../res/css/base.css">
+        <link rel="stylesheet" href="../res/css/layout.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-keyboard@latest/build/css/index.css">
+        <script src="https://cdn.jsdelivr.net/npm/simple-keyboard@latest/build/index.js"></script>
+        <script src="../res/js/plugins/jquery-3.6.0.min.js"></script>
+        <script src="../res/js/common.js"></script>
+        <script src="../res/js/loginMember.js"></script>
+    </head>
+    <body>
+
+        <div id="wrap">
+            <header></header>
+
+            <div class="container">
+                <div class="login-wr">
+                    <div class="login-tit">
+                        <img src="../res/image/logo_amway_small.png" alt="logo">
+                        <h2>잠시만 기다려주세요. <strong>직원 호출 중</strong>입니다.</h2>
+                    </div>
+
+                    <div class="login-staff">
+                        <div class="member-number-box">
+                            <input type="text" class="input-val staff-number btn-open-pop" placeholder="0000000000" maxlength="10" readonly>
+                            <button class="btn-cm btn-write btn-open-pop">직원번호 입력</button>
+                        </div>
+                        <div class="staff-img">
+                            <img src="../res/image/img_bubble.png">
+                            <img src="../res/image/img_staff.png">
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- container -->
+        </div> <!-- wrap -->
+
+        <!-- 20211213 loading-wrap 클래스 추가 -->
+        <!-- 20211217 call 클래스 추가 -->
+        <div id="loading-wr" class="loading-wrap call">
+            <div>
+                <!-- S : 20211213 btn-back 뒤로가기 버튼 추가 -->
+                <button class="btn-back" onClick="javascript:window.history.back();">
+                    <img src="../res/image/icn_btn_back.png">뒤로가기
+                </button>
+                <!-- E : 20211213 btn-back 뒤로가기 버튼 추가 -->
+                <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+                <div class="login-tit">
+                    <h2>잠시만 기다려주세요. <strong>직원 호출 중</strong>입니다.</h2>
+                </div>
+            </div>
+        </div>
+
+
+    </body>
+</html>

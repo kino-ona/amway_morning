@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>공지 확인 | Amway Korea</title>
+	<link rel="stylesheet" type="text/css" href="https://www.amway.co.kr/_ui/responsive/theme-blue/css/content_res_reset.css">
+	<link rel="stylesheet" type="text/css" href="https://www.amway.co.kr/_ui/responsive/theme-blue/css/content_res_all.css">
+	<style>
+		body{margin:0;padding:0;font-family:'Noto Sans KR','Nanum Gothic','Apple SD Gothic Neo','Malgun Gothic',"돋움","Dotum",san-serif;background-color:#f8f9f9}
+		.os_alert_webkit{width:100%;text-align:center;background-color:green;color:#fff;font-size:12px;font-weight:bold;padding:.5rem;margin:0 0 .5rem 0;box-shadow:3px 0 2px #000}
+		.btnChangeStat{position:absolute;top:1rem;right:1.2rem;z-index:2000;border:none;cursor: pointer;font-family:'Noto Sans KR','Nanum Gothic','Apple SD Gothic Neo','Malgun Gothic',"돋움","Dotum",san-serif;font-size:18px; padding:15px 40px;outline: none;background-color: #27ae60;border-radius:5px;box-shadow: 0 9px #95a5a6;color:#fff;width:15rem;box-sizing:border-box}
+		.floating_notice{position:absolute;top:6rem;right:1.2rem;z-index:2000;border-radius:5px;background:rgba(230,230,230,.4);border:1px dotted rgba(0,0,0,.25);color:#111;padding:.1rem .5rem .2rem 0rem;font-size:14px;width:15rem;font-weight:500;box-sizing:border-box;letter-spacing:-.5px}
+		.floating_notice li{list-style:decimal;word-break:keep-all}
+		.btnChangeStat:hover{background-color:#2ecc71}
+		.btnChangeStat:active{background-color:#2ecc71;box-shadow:0 5px #95a5a6;transform: translateY(4px)}
+		
+		.os_tab_m{width:375px;height:2em;text-align:center;font-size:14px;line-height:1;background-color:rgba(0,0,0,.9);color:#fff;margin:1em auto -2px auto;border:10px solid rgba(0,0,0,.9);padding:.4em 0 .1em 0;border-radius:20px 20px 0 0;position:relative;z-index:1;top:1em}
+		.os_mockup_m{width:375px;height:667px;margin:0 auto;border-radius:20px;border:10px solid rgba(0,0,0,.9);overflow:hidden;position:relative;z-index:2}
+	  .os_mockup_m > iframe{width:100%;height:100%;display:block;position:static;scroll;overflow-y:scroll;scrollbar-width:none;-ms-overflow-style:none;scrollbar-width:none}
+		.os_mockup_m > iframe:-webkit-scrollbar{display:none}
+		.os_mockup_m > iframe::scrollbar{display:none}
+		.os_mockup_m > iframe
+	  .os_mockup_f{width:100%;height:100%;margin:0;overflow:auto}
+		.os_mockup_f > iframe{width:100%;height:100%;overflow:hidden;position:absolute;top:0;bottom:0;left:0;right:0;z-index:1}
+	  .os_mockup_f + .os_tab_m{display:none}
+		@media (max-width:639px) {
+			.os_tab_m,
+			.os_alert_webkit,
+			.floating_notice,
+			.btnChangeStat{display:none}
+			.os_mockup_m,
+			.os_mockup_f{width:100%;height:100%;margin:0;overflow:auto;border:0 none;position:static}
+			.os_mockup_m > iframe,
+			.os_mockup_f > iframe{width:100%;height:100%;overflow:hidden;position:absolute;top:0;bottom:0;left:0;right:0;z-index:1}
+		}
+	</style>
+</head>
+<body>
+	<p class="os_alert_webkit">정확한 코딩 확인을 위해 크롬, 웨일, 엣지 최신 버전 브라우저에서 열어주세요.</p>
+	<button data-mode="mobile" class="btnChangeStat btnChangeStat01">PC로 보기</button>
+	<aside class="floating_notice">
+		<ul>
+			<li>모니터에 따라 실제 모바일 화면과 차이가 있을 수 있습니다.</li>
+			<li><strong class="bolder">모바일 화면 위주</strong>로 확인바랍니다.</li>
+		</ul>
+	</aside>
+
+	<h1 class="os_tab_m">모바일 화면</h1>
+	<div class="os_mockup_m">
+		<iframe src="notice/img_res_msg.html" frameborder="0"></iframe><!-- src=""에 코딩확인 미리보기할 파일 이름으로 변경 -->
+	</div>
+	<script>
+		var agent = navigator.userAgent.toLowerCase(); 
+		if (agent.indexOf("chrome") != -1) {
+		  document.getElementsByClassName("os_alert_webkit")[0].style.display = "none";
+		}
+
+		const btn = document.getElementsByClassName("btnChangeStat")[0];
+		const el = document.getElementsByClassName("os_mockup_m")[0];
+		btn.addEventListener("click", changeStat);
+
+		function changeStat(event) {
+			let btnState = el.getAttribute("class");
+			switch (btnState) {
+				case "os_mockup_m":
+					btn.textContent = "모바일로 보기";
+					el.setAttribute("class", "os_mockup_f");
+					break;				
+				case "os_mockup_f":
+					btn.textContent = "PC로 보기";
+					el.setAttribute("class", "os_mockup_m") ;
+					break;
+			}
+		}
+	</script>
+</body>
+</html>

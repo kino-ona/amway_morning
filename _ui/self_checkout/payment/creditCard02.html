@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Amway</title>
+        <link rel="stylesheet" href="../res/css/reset.css">
+        <link rel="stylesheet" href="../res/css/base.css">
+        <link rel="stylesheet" href="../res/css/layout.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-keyboard@latest/build/css/index.css">
+        <script src="https://cdn.jsdelivr.net/npm/simple-keyboard@latest/build/index.js"></script>
+        <script src="../res/js/plugins/jquery-3.6.0.min.js"></script>
+        <script src="../res/js/common.js"></script>
+        <script src="../res/js/payment.js"></script>
+    </head>
+    <body>
+
+        <div id="wrap">
+            <header></header>
+            <div class="blue-bg"></div>
+
+            <div class="container">
+                <div class="payment-wr payCredit"><!-- 20230515 A Station Self checkout ACM 적용(payCredit 클래스 추가) -->
+                    <div class="payment-tit">
+                        <img src="../res/image/logo_amway_small.png" alt="logo">
+                        <h2>총 결제금액 <strong>확인 및 결제수단</strong>을 선택해주세요.</h2>
+                    </div>
+
+                    <div class="point-wr select-wr">
+                        <div class="select-box">
+                            <div class="point-left">
+                                <div class="point-box summary-box">
+                                    <ul class="a-point on">
+                                        <li>
+                                            <span>총금액</span>
+                                            <strong class="total-prc">350,000</strong>
+                                        </li>
+                                        <li>
+                                            <span>할인 금액</span>
+                                            <strong class="sum-dc">-50,000원
+                                                <span class="flag-coupon">쿠폰 적용중</span>
+                                            </strong>
+                                        </li>
+                                        <!-- S : 20230515 A Station Self checkout ACM 적용 -->
+                                        <li>
+                                            <span>A Cliks Money</span>
+                                            <strong class="sum-dc">
+                                                -000,000원
+                                                <span class="flag-coupon flag-coupon--no-flag">(사용 시 현금IC 결제 불가)</span>
+                                            </strong>
+                                        </li>
+                                        <!-- E : 20230515 A Station Self checkout ACM 적용 -->
+                                        <li><span>멤버 포인트</span> <strong>-20,000 P</strong></li>
+                                        <li><span>총 PV/BV</span> <strong>70,000/60,000</strong></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="total-price">
+                                <span>최종 결제금액</span>
+                                <strong>230,000</strong>
+                            </div>
+                            <div class="point-right">
+                                <button class="btn-white pay-credit on">신용카드</button>
+                                <button class="btn-white btn-pay-ic">현금IC카드</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div> <!-- container -->
+        </div> <!-- wrap -->
+
+    </body>
+</html>

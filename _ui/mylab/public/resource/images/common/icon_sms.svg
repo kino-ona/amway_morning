@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45">
+  <g id="icon_sms" transform="translate(-383.295 -129.913)">
+    <path id="base" d="M428.295,166.669a8.211,8.211,0,0,1-8.183,8.244H391.473a8.209,8.209,0,0,1-8.178-8.244V138.158a8.213,8.213,0,0,1,8.178-8.245h28.639a8.215,8.215,0,0,1,8.183,8.245Z" transform="translate(0)" fill="#6387ff"/>
+    <g id="ic_mail" transform="translate(393.395 142.582)">
+      <rect id="사각형_1408" data-name="사각형 1408" width="24.801" height="19.941" rx="2" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <g id="그룹_2069" data-name="그룹 2069" transform="translate(1.081 1.215)">
+        <path id="패스_15506" data-name="패스 15506" d="M-192.508,639.454l5.524,5.323,2.211,1.93,2.211,1.931a1.773,1.773,0,0,0,.573.33,1.964,1.964,0,0,0,.653.11,1.967,1.967,0,0,0,.653-.11,1.77,1.77,0,0,0,.572-.33l2.21-1.931,2.21-1.93,5.631-5.431" transform="translate(192.508 -639.346)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

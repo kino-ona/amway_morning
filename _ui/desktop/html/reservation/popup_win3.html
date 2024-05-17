@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<!-- page common -->
+	<meta charset="utf-8">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- //page common -->
+	<!-- page unique -->
+	<meta name="Description" content="설명들어감">
+	<meta http-equiv="Last-Modified" content="">
+	<!-- //page unique -->
+	<title>체험예약 - ABN Korea</title>
+	<!--[if lt IE 9]>
+<script src="/_ui/desktop/common/js/html5.js"></script>
+<script src="/_ui/desktop/common/js/ie.print.js"></script>
+<![endif]-->
+	<link rel="stylesheet" href="/_ui/desktop/common/css/academy_default.css">
+	<script src="/_ui/desktop/common/js/jquery-1.8.3.min.js"></script>
+	<script src="/_ui/desktop/common/js/owl.carousel2.js"></script>
+	<script src="/_ui/desktop/common/js/pbCommon2.js"></script>
+	<script src="/_ui/desktop/common/js/pbCommonAcademy.js"></script>
+	<script src="/_ui/desktop/common/js/pbLayerPopup.js"></script>
+</head>
+
+<body>
+	<div class="popWin">
+		<div class="popWinTop">
+			<span> 체험예약 </span>
+			<button type="button" class="close">닫기</button>
+		</div>
+		<section id="pbContent" class="bizroom">
+			<a href="" class="akllinkBtn">시설예약</a>
+			<div class="col-search-tab">
+				<!-- S : 20220805 예약 카테고리 추가 -->
+				<ul>
+					<!-- S : 20220811 상단 카테고리 수정 -->
+					<li><a href="#">체성분/근육 분석</a></li>
+					<li class="letterSpacing"><a href="#">자세·체형 분석 예약</a></li> <!-- 20230104 PC 아카데미 메뉴명 변경, letterSpacing 클래스 추가 -->
+					<!-- 20211123 마이팩 수령 > 마이팩 화상상담으로 문구 수정 -->
+					<li><a href="#">피부/두피 분석</a></li>
+					<li><a href="#">마이팩 화상상담</a></li>
+					<li><a href="#">브랜드 체험</a></li>
+					<li><a href="#">웰니스 체험</a></li>
+					<li class="activeTab"><a href="#">체험예약 현황</a></li>
+					<!-- E : 20220811 상단 카테고리 수정 -->
+				</ul>
+				<!-- E : 20220805 예약 카테고리 추가 -->
+			</div>
+			<div class="hWrap">
+				<h1><img src="/_ui/desktop/images/academy/h1_w020500370.gif" alt="체험예약 현황확인"></h1>
+				<p><img src="/_ui/desktop/images/academy/txt_w020500370.gif" alt="체험예약 현황을 확인할 수 있습니다."></p>
+			</div>
+
+			<div class="bizroomStateBox">
+				<dl class="tblDetailCol4">
+					<dt>예약자</dt>
+					<dd>7480000&nbsp;암웨이</dd>
+					<dt>등록일자</dt>
+					<dd>2022-08-05</dd>
+				</dl>
+
+				<h2 class="pdtL"><img src="/_ui/desktop/images/academy/h2_w020500120.gif" alt="예약정보"></h2>
+				<div class="reservInfoHeader">
+					<div class="title"><span>체험종류 : 피부&amp;두피측정</span><em>|</em><span>지역 : 대전ABC</span></div>
+				</div>
+
+				<span id="snsText" style="display:none">
+					<p>
+						■ 대전ABC (피부&amp;두피측정) 2022-08-10(수)| 18:00~18:30|
+						비동반
+					</p>
+				</span>
+				<table class="tblList lineLeft">
+					<caption>예약정보 테이블</caption>
+					<colgroup>
+						<col style="width:20%">
+						<col style="width:auto">
+						<col style="width:20%">
+						<col style="width:20%">
+						<col style="width:15%">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">체험일자</th>
+							<th scope="col">프로그램</th>
+							<th scope="col">비고</th>
+							<th scope="col">상태</th>
+							<th scope="col"></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>2022-08-10(수)<br>18:00~18:30</td>
+							<td>피부&amp;두피측정</td>
+							<td>피부측정
+								<a href="#uiLayerPop_w03"
+									onclick="javascript:changeSh('2063100', 'R01', '1659684042802', '', '', '82223','20220810','295522');"
+									class="btnTbl"><span>변경</span></a>
+							</td>
+							<td>예약완료</td>
+
+							<!--오늘날짜가 예약일이 아닐때 -->
+							<td>
+								<a href="javascript:void(0);" class="btnTbl"
+									onclick="javascript:expInfoRsvCancel('2063100','82223','20220810','295522', 'N', '1659684042802');"><span>예약취소</span></a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<!-- layer popup -->
+				<div class="pbLayerWrap" id="uiLayerPop_w03"
+					style="width: 400px; display: none; position: fixed; top: 50%; left: 50%; margin-top: -131.5px; margin-left: -200px;"
+					tabindex="-1">
+					<div class="pbLayerHeader">
+						<strong>
+							<!-- S : 20220805 예약 카테고리 추가 -->
+							<!-- 이미지 주소, alt 변경 -->
+							<img src="/_ui/desktop/images/academy/h1_w020500381_pop.png" alt="체형·근골격분석 변경">
+						</strong>
+						<a href="#" class="btnPopClose"><img src="/_ui/desktop/images/common/btn_close.gif"
+								alt="체형·근골격분석 변경 닫기"></a>
+						<!-- E : 20220805 예약 카테고리 추가 -->
+					</div>
+					<div class="pbLayerContent">
+						<div class="inputList">
+							<span><input type="radio" id="radio01" name="skinHeadTypeCode" value="R01"><label
+									for="radio01">피부측정</label></span>
+							<span><input type="radio" id="radio02" name="skinHeadTypeCode" value="R02"><label
+									for="radio02">두피&amp;모발측정</label></span>
+						</div>
+						<div class="btnWrapC">
+							<a href="javascript:void(0);" class="btnBasicGL">변경취소</a>
+							<a href="javascript:void(0);" class="btnBasicBL" id="shChange">변경완료</a>
+						</div>
+					</div>
+				</div>
+				<!-- //layer popup -->
+
+				<!-- layer popup -->
+				<div class="pbLayerWrap" id="uiLayerPop_w01" style="width:400px;display:none">
+					<div class="pbLayerHeader">
+						<strong><img src="/_ui/desktop/images/academy/h1_w020500380_pop.gif" alt="동반여부 변경"></strong>
+						<a href="#" class="btnPopClose"><img src="/_ui/desktop/images/common/btn_close.gif"
+								alt="동반여부 변경 닫기"></a>
+					</div>
+					<div class="pbLayerContent">
+						<div class="inputList">
+							<span><input type="radio" id="radio01" name="partnerTypeCode" value="R01"><label
+									for="radio01">ABO</label></span>
+							<span><input type="radio" id="radio02" name="partnerTypeCode" value="R02"><label
+									for="radio02">일반인</label></span>
+							<span><input type="radio" id="radio03" name="partnerTypeCode" value="R03"><label
+									for="radio03">비동반</label></span>
+						</div>
+						<div class="btnWrapC">
+							<a href="javascript:void(0);" class="btnBasicGL">변경취소</a>
+							<a href="javascript:void(0);" class="btnBasicBL" id="brandChange">변경완료</a>
+						</div>
+					</div>
+				</div>
+				<!-- //layer popup -->
+
+				<!-- layer popup -->
+				<div class="pbLayerWrap" id="uiLayerPop_02" style="width:400px;display:none">
+					<div class="pbLayerHeader">
+						<strong><img src="/_ui/desktop/images/academy/h1_w020500360_pop4.gif" alt="참석인원 변경"></strong>
+						<a href="javascript:void(0);" class="btnPopClose"><img
+								src="/_ui/desktop/images/common/btn_close.gif" alt="안내 닫기"></a>
+					</div>
+					<div class="pbLayerContent">
+						<div class="textC mgtbL">
+							<span class="mgRS">참여인원</span>
+							<select id="visitNumber" name="visitNumber" title="참석인원 선택">
+							</select>
+						</div>
+
+						<div class="btnWrapC">
+							<input type="button" class="btnBasicGL" value="변경취소">
+							<input type="button" class="btnBasicBL" value="변경완료"
+								onclick="javascript:visitNumberChangeConfirm();">
+						</div>
+					</div>
+				</div>
+				<!-- //layer popup -->
+
+				<div class="brWrap">
+					<div class="snsWrap">
+						<!-- 20150313 : SNS영역 수정 -->
+						<span class="snsLink">
+							<!-- @eidt 20160627 URL 복사 삭제 -->
+							<a href="#" id="snsKs" class="snsCs"
+								onclick="javascript:tempSharing('https://academy.amway.co.kr/reservation/redirectUrl.do', 'kakaostory');"
+								title="새창열림"><span class="hide">카카오스토리</span></a>
+							<a href="#" class="snsBand"
+								onclick="javascript:tempSharing('https://academy.amway.co.kr/reservation/redirectUrl.do', 'band');"
+								title="새창열림"><span class="hide">밴드</span></a>
+							<a href="#" id="snsFb" class="snsFb"
+								onclick="javascript:tempSharing('https://academy.amway.co.kr/reservation/simpleReservation.do', 'facebook');"
+								title="새창열림"><span class="hide">페이스북</span></a>
+						</span>
+						<!-- //20150313 : SNS영역 수정 -->
+						<span class="snsText"><img src="/_ui/desktop/images/academy/sns_text.gif" alt="예약내역공유"></span>
+					</div>
+					<div class="btnWrapC">
+						<a href="javascript:void(0);" class="btnBasicBXL">체험예약 현황확인 목록</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+</body>
+
+</html>

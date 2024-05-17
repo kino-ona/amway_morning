@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>홈페이지 | Amway Korea</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<!-- 기본 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- ios -->
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">-->
+	<meta name="keywords">
+	<meta name="description" content="NY Fee Bundle">
+	<meta name="robots" content="index,follow">
+
+	<!-- S: 2020-12-15 SNS 공유 관련 메타태그 -->
+	<meta property="og:title" content="한국 암웨이" />
+	<meta property="og:description" content="HELPING PEOPLE LIVE BETTER LIVES" />
+	<meta property="og:image" content="/_ui/responsive/theme-blue/images/logo_sns_amway.png" />
+	<meta property="og:url" content="www.amway.co.kr" />
+	<meta property="og:type" content="website" />
+	<!-- E: 2020-12-15 SNS 공유 관련 메타태그 -->
+
+
+	<!-- 메인css (2019-09-16 css 분리)  -->
+	<!-- blue_responsive 기본 -->
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/layout.css">
+
+	<!-- // blue_responsive 기본 -->
+
+	<!-- <link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-main-new.css"> -->
+
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.datepicker.js"></script><!-- datepicker : 2018.03.19 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/owl.carousel.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/isotope.pkgd.js"></script><!-- gnb 플러그인 : 2018.03.23 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/select2.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/new.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.raty.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.lazy.min.js"></script><!-- lazyloading : 190327 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_contents.js"></script><!-- brand 통합 : 2018.08.24 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_component.js"></script>
+</head>
+<body class="akl new-v2 topbanner"><!-- 2019-08-19 메인 : new-v2 클래스 추가/top banner 노출시 topbanner 클래스 추가  -->
+	<!-- skipToContent -->
+	<div id="skipToContent">
+		<a href="#contents">콘텐츠 바로가기</a>
+	</div>
+	<!-- //skipToContent -->
+
+	<!-- main -->
+	<!-- abo 로그인시 abo_login 클래스 추가 -->
+	<main>
+		<!-- topbanner -->
+		<div id="topbanner"></div>
+		<!--<div id="topbannerApp">
+			<div class="akl-topbanner akl-topbanner-app">
+				<img src="/_ui/responsive/theme-blue/images/akl_common/m_icon_pop_app.png" alt="">
+				<p>지금 암웨이 App을 설치해 보세요!</p>
+				<a href="#n">설치하기</a>
+				<button type="button" onclick="topBannerClose()">닫기</button>
+			</div>
+		</div>-->
+		<!-- //topbanner -->
+		<!-- header -->
+		<div id="header"></div>
+		<!-- //header -->
+
+		<!-- contents 2018-08-29 메인 -->
+		<div class="main-v2"></div>
+		<!-- contents 2018-08-29 메인 -->
+
+		<!-- quick -->
+		<div id="quick">
+		</div>
+		<!-- //quick -->
+
+		<!-- footer -->
+		<div id="footer">
+		</div>
+		<!-- //footer -->
+	</main>
+	<!-- //main -->
+
+	<!-- 장바구니 담기 팝업 -->
+	<div class="layerWrapper G10000_lp3">
+		<div class="cbox layerBox popWidS">
+			<div class="cart-popup__dialog bg-white">
+				<a href="#" class="cart-popup__close" data-dismiss="modal" aria-label="Close" aria-hidden="true">
+					<img src="/_ui/responsive/theme-blue/images/akl_common/ico_closed.png" alt="닫기">
+				</a>
+				<div class="cart-popup__content">
+					<div class="cart-popup__item-info">
+						<div class="cart-complete">
+							<ul>
+								<li><span class="noti-suc">장바구니에 제품을 담았습니다.</span></li>
+								<li><p>인테스티플로라 7 신학기 장튼튼 프로모션</p></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="cart-popup__item-link commpete">
+					<button type="button" class="bt-akl-blue">계속 쇼핑하기</button>
+					<a class="bt-akl-txt" href="javascript:void(0);">장바구니 바로가기</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 장바구니 중복 팝업 -->
+	<div class="layerWrapper G10000_lp3_2">
+		<div class="cbox layerBox popWidM">
+			<div class="cart-popup__dialog">
+				<div class="cart-popup__header">
+					<span class="cart-popup__header-text">장바구니 중복 제품 알림
+						<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true" class="confirm_popup_close cart-popup__close">
+							<img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기">
+						</a>
+					</span>
+				</div>
+				<div class="cart-popup__content">
+					<div class="cart-popup__item-info">
+						<div class="product-overlap-title">
+							<p>장바구니에 선택하신 제품이 이미 담겨있습니다. 해당 제품을 장바구니에 담으시겠습니까?</p>
+						</div>
+						<div class="product-overlap-body">
+							<ul class="shopping-cart-item-list js-shopping-cart-item-list shopping-cart-product-item-list">
+								<li class="cart-item-header">
+									<div class="col-xs-12 list-header">
+										<div class="col-xs-5 list-item-info">
+											<div class="product-item-element list-item-toggle">
+												<label class="checkbox-element-wrapper all-ak-check">
+													<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" id="checkbox-all" value="" data-product-code="" type="checkbox" checked="" title="전체선택">
+													<span class="_checkbox-element-global-span"></span>
+												</label>
+												<span class="all-txt">제품</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="product-item-overlap entry_product_item">
+												<!-- 장바구니 담기 이벤트 관련 클래스 productCodePost, pdpAddtoCartInput -->
+												<input type="hidden" name="productCodePost" class="productCodePost" value="100395K">
+												<input type="hidden" name="pdpAddtoCartInput" class="pdpAddtoCartInput" value="1">
+												<div class="product-item-element list-item-toggle">
+												<label class="checkbox-element-wrapper">
+													<input class="shopping-cart-entry-checkbox _checkbox-element-global-class checkbox-product-entry" value="" data-product-code="" type="checkbox" checked="" title="선택1">
+													<span class="_checkbox-element-global-span"></span>
+												</label>
+											</div>
+											<div class="pro-overlap-info">
+												<div class="pro-over-name">
+													<p>100395K</p>
+												</div>
+												<div class="pro-overlap-num">
+													<div class="prover-qty">장바구니 수량:  3</div>
+													<div class="prover-add-qty">추가수량:  1</div>
+													<div class="prover-all-qty">합계:  4</div>
+												</div>
+											</div></li>
+										</ul>
+							<div class="duplicate-txt">
+								<ul class="list-type2">
+									<li>선택된 제품만 장바구니에 담아집니다.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cart-popup__item-link">
+					<button type="button" class="bt-akl-blue" id="applyAddToCartBtn">확인</button>
+					<a class="bt-akl-txt" href="javascript:void(0);" id="cancelAddToCartBtn">취소</a>
+				</div>
+			</div>
+		</div>	
+	</div>
+
+	<!-- 20200227 공지 팝업 -->
+	<div class="layer_notify" style="display: none;">
+		<div class="layer_notify-inner">
+			<div id="notifyOwl" class="owl-carousel">
+				<div class="notify-item">
+					<a href=""><img src="/_ui/responsive/theme-blue/images/new-main/@notify_img1.jpg" alt=""></a>
+				</div>
+				<div class="notify-item">
+					<a href=""><img src="/_ui/responsive/theme-blue/images/new-main/@notify_img1.jpg" alt=""></a>
+				</div>
+			</div>
+			<div class="button_group">
+				<button type="button" class="btn_base-a big">오늘 그만 보기</button>
+				<button type="button" class="btn_base-b big">닫기</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- S : 전화번호 유효성 팝업 -->
+	<div class="layer_zone phone" style="display:none">
+		<div class="layer_container">
+			<div class="layer_zone-header">
+				<h1 class="layer_title">
+					동일한 전화번호로 등록된 회원이 <br>
+					<em class="ph-cnt">120명</em> 확인되었습니다.
+				</h1>
+			</div>
+			<div class="layer_zone-content" style="display:block">
+				<p class="phone_guide-txt">
+					동일한 전화번호로 등록되어 있는 경우 <br>
+					<span class="point_col-01">Amway 서비스 사용에 제한이 있을 수 있습니다.</span>
+				</p>
+				<div class="user_phone-area">
+					<span class="phone_guide-txt v1">내 전화번호</span>
+					<span class="user_phone">010-<span class="hidden_phone">****</span>-1234</span>
+					<a href="#;" class="btn_myPage">내 전화번호 변경</a>
+				</div>
+				<p class="phone_guide-txt">
+					중복 전화번호 관련 문의사항은, <br>
+					<span class="point_col-02"><i class="sp_amway phone"></i>고객센터(1588-0800)</span>로 연락해 주세요.
+					<a href="tel:1588-8000" class="mob-tel"><span class="blind">전화걸기</span></a>
+				</p>
+				<a href="#;" class="btn_confirm">
+					<span class="btn_confirm-inner">동일 전화번호로 등록된 ABO 확인<i class="sp_amway icon_arr"></i></span>
+				</a>
+			</div>
+
+			<!-- S : 동일 전화번호로 등록된 ABO 확인 영역 -->
+			<div class="layer_zone-content" style="display:none">
+				<div class="scroll-area">
+					<table class="tbl-phone">
+						<caption>이 표는 회원번호, 회원명으로 구성되어 있습니다.</caption>
+						<colgroup>
+							<col style="width:35%">
+							<col style="width:auto">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>회원번호</th>
+								<th>회원명</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>7480001</td>
+								<td>홍길동</td>
+							</tr>
+							<tr>
+								<td>7480001</td>
+								<td>홍길동</td>
+							</tr>
+							<tr>
+								<td>7480001</td>
+								<td>홍길동</td>
+							</tr>
+							<tr>
+								<td>7480001</td>
+								<td>홍길동</td>
+							</tr>
+							<tr>
+								<td>7480001</td>
+								<td>홍길동</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<a href="#;" class="btn_confirm">
+					<span class="btn_confirm-inner">내 전화번호 변경<i class="sp_amway icon_arr"></i></span>
+				</a>
+			</div>
+			<!-- E : 동일 전화번호로 등록된 ABO 확인 영역 -->
+
+			<button type="button" class="btn_layer-close sp_amway"><span class="blind">레이어 닫기</span></button>
+		</div>
+	</div>
+	<!-- E : 전화번호 유효성 팝업 -->
+
+<!-- S : 개인정보 변경 안내 팝업 -->
+<div class="layer_zone type2" style="display:none">
+	<div class="layer_container">
+		<div class="layer_zone-header">
+			<h1 class="tit-layer">개인정보의 제3자 제공에 대한 동의 변경에 따른 안내</h1>
+			<button type="button" class="btn_layer-close close-type2">레이어 닫기</button>
+		</div>
+		<div class="layer_zone-content">
+			<p class="txt_layer-cont">새로운 비즈니스 시스템 도입에 따라 기존의 ‘개인정보의 제3자 제공에 대한 동의’가 아래와 같이 새롭게 변경되어 운영되오니, 아래 동의 여부를 선택하여 주시기 바랍니다.</p>
+			<p class="tit_layer-cont">[선택] 개인정보의 제3자 제공에 대한 동의</p>
+			<p class="txt_layer-cont">한국암웨이는 본인이 동의한 경우에 한하여 본인의 개인정보를 제3자에게 제공하고 있습니다. 동의하지 않은 경우 개인 정보를 제공하지 않으며, 동의한 경우에도 언제든지 그 동의를 철회할 수 있습니다.</p>
+			<div class="res_table-type type2">
+				<table class="tbl-type1 line-st">
+					<caption>개인정보의 국외 이전에 대한 동의 현황을 보여주는 표 : 이전목적, 이전 받는 자, 이전국가, 이전항목, 이전시점, 이전방법, 보유기간</caption>
+					<colgroup>
+						<col style="width:20%">
+						<col style="width:22%">
+						<col>
+						<col style="width:25%">
+					</colgroup>
+					<thead>
+					<tr>
+						<th scope="col">제공받는 자</th>
+						<th scope="col">이용목적</th>
+						<th scope="col">제공항목</th>
+						<th scope="col">보유 및 이용기간</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td class="td-t-offer">
+							<div class="td-t-inner">본인이 속한 LOS 그룹 내 상위 및 하위 ABO</div>
+						</td>
+						<td class="td-t-purpose">
+							<div class="td-t-inner">ABO 조직관리, 제품정보 등의 DM 발송, 교육 및 상담, 체험프로그램 제공</div>
+						</td>
+						<td class="td-t-offeritem">
+							<div class="td-t-inner">(상위ABO) 회원번호, 이름, 주소, 전화번호, 이메일 주소, 실적, 주문 및 반품 내역 (제품명, 결제방법, 거래명세 확인, 배송지 확인, 주문 처리 및 취소여부, 환불 여부), 미수금 여부 (하위ABO) 회원번호, 이름, 주소, 전화번호, 이메일 주소</div>
+						</td>
+						<td class="td-t-term">
+							<div class="td-t-inner">제공동의 시부터 제공동의 철회 시까지</div>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="box_agree">
+				<p class="txt_layer-cont">*본인이 속한 LOS 그룹 내 상위 및 하위 ABO (제공받는 자)는 가입완료 후 마이페이지 및 LOS MAP에서 확인할 수 있습니다.</p>
+				<p class="txt_layer-cont">*본 제3자 정보 제공 동의를 거부할 수 있습니다.</p>
+			</div>
+			<p class="txt_layer-cont">※ 동의 여부를 선택하지 않는 경우, 2020년 6월부터 본 ‘개인정보 제3자 제공’에 동의하지 않는 것으로 적용됩니다(단, 적용 일정은 변경될 수 있음)</p>
+		</div>
+		<div class="box_bottom-agree">
+			<div class="form_group-element">
+				<span class="form_element-radio v1">
+					<input type="radio" id="radio" name="radio" checked="checked">
+					<label for="radio" class="focus">동의함</label>
+				</span>
+				<span class="form_element-radio v1">
+					<input type="radio" id="radio2" name="radio">
+					<label for="radio2" class="focus">동의안함</label>
+				</span>
+			</div>
+
+			<div class="box_chk-today">
+				<span class="form_element-checkbox v1">
+					<input type="checkbox" id="chk01">
+					<label for="chk01" class="sp_chk focus">오늘 하루 보지 않기</label>
+				</span>
+				<button type="button" class="btn_basic-a medium close-type2">확인</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- E : 개인정보 변경 안내 팝업 -->
+
+<!-- S : 2020-12-02 SNS 공유 레이어팝업 -->
+<div id="loadLayer"></div>
+<!-- E : 2020-12-02 SNS 공유 레이어팝업 -->
+<script>
+	//2020-12-02 SNS 공유 레이어 팝업 호출 (퍼블 인클루드용) 
+	$( '#loadLayer' ).load( '../include/share_sns.html' )
+</script>
+
+	<script>
+		(function () {
+            var notifyOwlInit = function () {
+                var notifyOwl = $('#notifyOwl');
+                var notifyItem = notifyOwl.find( '.notify-item' ).length;
+                var notifyDefaultOpt = {
+                    nav: true,
+					items: 1,
+                    autoplay : true, // 2020-03-24 옵션 추가
+                };
+
+                if (notifyItem > 1) {
+                    notifyDefaultOpt.loop = true;
+                    notifyDefaultOpt.dots = true;
+                    notifyOwl.owlCarousel(notifyDefaultOpt);
+
+                } else {
+                    notifyDefaultOpt.touchDrag = false;
+                    notifyDefaultOpt.mouseDrag = false;
+                    notifyOwl.owlCarousel(notifyDefaultOpt);
+                }
+            };
+
+            window.addEventListener( 'DOMContentLoaded', function () {
+                notifyOwlInit();
+            } );
+
+            $('.layer_zone.type2 .close-type2').click(function () {
+				$(this).closest('.layer_zone.type2').addClass('is-hidden');
+			});
+        })();
+
+	</script>
+
+	<!-- 20200227 알림 팝업 -->
+	<div class="layer_alarm" data-alarm="alarm" style="display:block">
+		<div class="alarm-content">
+			<p class="alarm-text">Amway와 생활 속의 기쁨을&nbsp;함께하실래요? </p>
+			<button type="button" class="btn_base-d">함께하기</button>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+        (function () {
+			var alarmModule = function () {
+                var filter = "win16|win32|win64|mac|macintel";
+                var layerAlarm = document.querySelector('[data-alarm="alarm"]');
+                var checkOff =  layerAlarm.classList.contains( 'off' );
+
+                if (navigator.platform)
+                    if (filter.indexOf(navigator.platform.toLowerCase()) < 0) {
+                        setTimeout(timeOff, 5000);
+                        window.addEventListener( 'scroll', function () {
+                            if (checkOff) return;
+                            controlClass();
+                        } );
+                    } else {
+                        setTimeout(timeOff, 5000);
+                    }
+
+                function timeOff() {
+                    controlClass();
+                }
+                function controlClass() {
+                    layerAlarm.classList.add( 'off' );
+                }
+            };
+
+            window.addEventListener('DOMContentLoaded', function () {
+                alarmModule();
+            });
+
+        })();
+	</script>
+</body>
+</html>

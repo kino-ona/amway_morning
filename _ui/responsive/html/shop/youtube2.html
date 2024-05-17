@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>위시 리스트 – ABN Korea </title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords">
+	<meta name="description" content="NY Fee Bundle">
+	<meta name="robots" content="index,follow">
+
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-lib.css"><!-- 플러그인용 css : 2018.03.14 추가  -->
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common.css">
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.datepicker.js"></script><!-- datepicker : 2018.03.19 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/owl.carousel.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/isotope.pkgd.js"></script><!-- gnb 플러그인 : 2018.03.23 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/select2.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/new.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.raty.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_contents.js"></script><!-- brand 통합 : 2018.08.24 추가  -->
+</head>
+
+<body class="akl">
+
+<style>
+* {margin:0; padding:0; box-sizing:border-box;}
+
+.button {display:inline-block; height:24px; padding:0 15px; background:#333; color:#fff; font-size:14px; text-decoration:none; text-align:center; line-height:24px;}
+.page {padding:20px;}
+#layer {display:none; position:absolute; top:50%; left:50%; width:600px; height:376px; margin:-188px 0 0 -300px; padding:20px; background:#eee; box-shadow:1px 1px 10px rgba(0,0,0,0.3); border:1px solid #dadada; z-index:21;}
+#layer #player {display:block; margin:20px auto 0;}
+#layer .inner {position:relative;}
+#layer .inner .close {position:absolute; top:-30px; right:0; display:block; width:20px; height:20px; background:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt18SOam3wUX0wExC6ji5-lY732vA2fEPBscikPQaLbT_tJd7Y7g') no-repeat 0 0; text-indent:-999em; background-size:20px 20px;}
+.dim {display:none; position:fixed; _position:absolute; top:0;left:0; background:#000; width:100%; height:100%; filter:Alpha(opacity=40); opacity:0.4; -moz-opacity:0.4; z-index:20;}
+</style>
+
+<div class="page">
+<a href="#layer" class="button">OPEN</a>
+</div>
+
+<div id="layer">
+<div class="inner">
+<div class="video-wrapper">
+	  <iframe id="player" width="560" height="315" src="https://www.youtube.com/embed/uI2StclXaCc" frameborder="0" allowfullscreen></iframe>
+	</div>
+	<a href="#none" class="close">close</a>
+</div>
+</div>
+<div class="dim"></div>
+
+
+<script>
+$(function(){
+
+	var embed = $('.video-wrapper').html(); //동영상 코드
+
+	$('.button').on('click', function(){ //레이어 열때
+		var path = $(this).attr('href');
+		$('.video-wrapper').html(embed);
+		$(path).show();
+		$('.dim').show();
+	})
+
+	$('.close').on('click', function(){ //레이어 닫을때
+		$(this).parents('#layer').hide();
+		$('.dim').hide();
+		$('.video-wrapper').empty();
+	})
+
+	$('.dim').on('click', function(){
+		$(this).hide();
+		$('#layer').hide();
+		$('.video-wrapper').empty();
+	});
+
+});
+</script>
+
+</body>
+</html>

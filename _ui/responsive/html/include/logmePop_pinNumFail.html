@@ -1,0 +1,41 @@
+<div id="logmePop_pinNumFail" class="layer_section type-wide-a logmePop logmePopPinNum">
+    <div class="layer_section-container shipping_delivery_st02">
+        <div class="layer-header">
+            <div class="layer-header-box">
+                <a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true" class="btn_layer-close btn-modal_close"><span class="hidden">닫기</span></a>
+                <h1 class="header-title">PIN 인증</h1>
+            </div>
+        </div>
+
+        <div class="layer-content layer-logmePop">          
+            <div class="logmePop-box">
+                <div class="pinNum-box">
+                    <div class="input_pinNum" data-count="0"><!-- 20231016 수정 -->
+                        <input id="input" type="password" maxlength="4" value="" name="inp_pwd" inputmode="numeric">
+                        <!-- S : 20231016 추가 -->
+						<div class="inp_mark_box">
+							<span class="inp_mark_ico logmeAct"></span>
+							<span class="inp_mark_ico"></span>
+							<span class="inp_mark_ico"></span>
+							<span class="inp_mark_ico"></span>
+						</div>
+						<!-- E : 20231016 추가 -->
+                    </div>
+                    <!-- Case1. PIN 번호 불일치 -->
+                    <p class="color-red fail-txt">PIN 번호가 일치하지 않습니다.<br/>5회 실패 시 PIN번호가 재설정됩니다. (1/5회)</p>
+
+                    <!-- Case2. PIN 번호 미입력 -->
+                    <p class="color-red fail-txt">PIN 번호를 입력해 주세요.</p>
+                </div>
+                <a href="#;" class="btn_txt-a">PIN 번호를 잊으셨나요?</a>
+            </div>
+        </div>
+
+        <div class="align-box size-auto">
+            <button type="button" class="btn-modal_apply">확인</button>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>

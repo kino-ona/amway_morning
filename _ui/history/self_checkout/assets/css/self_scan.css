@@ -1,0 +1,6 @@
+@import url('common.css');
+@import url('page-template.css');
+
+.scan_ready_box{position:relative;z-index:40;text-align:center;}
+.scan_ready_box .txt_scan{padding:87px 0 58px;font-weight:500;font-size:35px;color:#fff;line-height:42px;}
+.scan_ready_box .txt_scan .txt_opacity{font-weight:400;font-size:25px;color:#fff;line-height:44px;opacity:0.7;}

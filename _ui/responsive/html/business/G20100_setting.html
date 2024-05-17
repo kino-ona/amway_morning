@@ -1,0 +1,435 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>LOSMAP 조회 항목 설정 및 변경</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords">
+  <meta name="description" content="NY Fee Bundle">
+  <meta name="robots" content="index,follow">
+
+  <link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-lib.css"><!-- 플러그인용 css : 2018.03.14 추가  -->
+  <link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/base.css">
+  <link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common.css">
+  <script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.min.js"></script>
+  <script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.datepicker.js"></script><!-- datepicker : 2018.03.19 추가  -->
+  <script type="text/javascript" src="/_ui/responsive/theme-blue/js/owl.carousel.js"></script>
+  <script type="text/javascript" src="/_ui/responsive/theme-blue/js/isotope.pkgd.js"></script><!-- gnb 플러그인 : 2018.03.23 추가  -->
+  <script type="text/javascript" src="/_ui/responsive/theme-blue/js/select2.js"></script>
+  <script type="text/javascript" src="/_ui/responsive/theme-blue/js/new.js"></script>
+  <script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.raty.min.js"></script>
+  <script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>
+  <script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_contents.js"></script><!-- brand 통합 : 2018.08.24 추가  -->
+
+<script>
+  $(function() {
+    layerPopOver('', '.losmap-pop-setting')
+  })
+</script>
+</head>
+<body class="akl topbanner"><!-- 탑배너 노출 시 클래스 추가 - 클래스명 : topbanner -->
+  <!-- skipToContent -->
+  <div id="skipToContent">
+  <a href="#contents">콘텐츠 바로가기 </a>
+  </div>
+  <!-- //skipToContent -->
+
+  <main>
+    <div id="topbanner"></div>
+
+    <div id="header"></div>
+
+    <div class="container-fluid main-container" id="contents"><!-- id="contents" 추가 -->
+      <div class="print-hide breadcrumb-section">
+        <ol class="breadcrumb">
+          <li><a href="#">홈</a></li>
+          <li><a href="#">1depth</a></li>
+          <li><a href="#">2depth</a></li>
+          <li class="active">3depth</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="jump-to-business">
+      <div></div>
+    </div>
+
+
+
+      <!-- 190214 losmap page 영역 -->
+      <div class="container amway-theme business losmap-page-wrap">
+
+        <!-- losmap-page-header -->
+        <div class="losmap-page-header">
+          <div class="row">
+            <div class="col-xs-7">
+              <h1 class="title-h2">LOS MAP</h1>
+            </div>
+            <div class="col-xs-5 text-right losmap-page-header-pos">
+              <a href="https://www.amway.co.kr/business/losmap/pt-group" class="bt-akl-blue">PT그룹 조회</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <p class="losmap-page-header-sub">회원님의 하위 다운라인에 대한 다양한 정보를 보실 수 있습니다.</p>
+            </div>
+          </div>
+        </div>
+        <!-- //losmap-page-header -->
+
+        <div class="navigation-tabs-container order-history-container js-order-history-container losmap-page-tab">
+          
+          <!-- tab -->
+          <div class="outer-border-bottom border-none"><span class="scrollable-area left" style="display: none;"></span><span class="scrollable-area right" style="display: none;"></span>
+            <div class="tabWrapper">
+              <ul class="tabs-toggles">
+                <li class="tab-toggle-wrap active"> <a class="tab-toggle" data-toggle="tab" href="#LosmapCurrentMonth"> <span class="toggle-text">당월</span> </a> </li>
+                <li class="tab-toggle-wrap"> <a class="tab-toggle" data-toggle="tab" href="#LosmapPreviousMonth"> <span class="toggle-text">전월</span> </a> </li>
+              </ul>
+            </div>
+          </div>
+          <!-- //tab -->
+
+
+          <div class="tab-content tabs-content-blocks">
+
+            <!-- tab-content #LosmapCurrentMonth -->
+            <div class="tab-pane content-block active" id="LosmapCurrentMonth">
+              <h2 class="hidden">당월</h2>
+
+                <div class="losmap-page-content">
+                    <div class="conHeader row">
+                        <div class="col-sm-2 col-xs-4 viewSetBtns">
+                            <a href="#" class="btnTreeView active btnLosmapTree"><span class="hidden">트리뷰로 LOS MAP 보기</span></a>
+                            <a href="#" class="btnGridView btnLosmapGrid"><span class="hidden">그리드뷰로 LOS MAP 보기</span></a>
+                        </div>
+                        <div class="col-sm-5 col-custom-width01 col-xs-8 text-right">
+                          <div class="searchField">
+                            <a href="#" class="bt-akl-blue hide"><span>My LOS</span></a>
+                            
+                            <select class="form-control no-uppercase-form-control" tabindex="-1" aria-hidden="true">
+                              <option value="defaultRecord">실적</option>
+                              <option value="defaultAcheive">달성률현황</option>
+                              <option value="defaultAboInfo">ABO정보</option>
+                            </select>
+                            <button type="button" class="bt-akl-blue losmap-page-setbtn" onclick="layerPopOver('', '.losmap-pop-setting')">조회항목설정<span class="icon-setup"></span></button>
+                          </div>
+                        </div>
+                        <div class="col-sm-5 col-custom-width02 col-xs-12 text-right">                        
+                          <div class="topSearch">
+                              <div class="form-s">
+                                  <input type="text" placeholder="성명, 회원번호" value="" class="input-st" title="성명 또는 회원번호 입력">
+                                  <a href="#" class="icon-cross"><span class="hide">내용 지우기</span></a>
+                                  <button type="submit" class="btn btn-primary" onclick="layerPopOver(this, '.losmap-pop-result')"><span class="icon-search visible-xs"></span><span class="hidden-xs hidden-sm">검색</span></button>
+                              </div>
+                              <a href="#" class="topSearch-btn"><img src="https://www.amway.co.kr/_ui/responsive/theme-blue/images/ico_research.png" alt="검색 초기화"><span class="hidden-xs">검색 초기화</span></a>
+                          </div>
+                        </div>
+                    </div>
+
+                    <!-- losmap 데이터뷰 영역 -->
+                    <div class="losmapWrap">
+                        <div style="width:100%;height:543px;background-color:lightgray">//로스맵 트리뷰 영역</div>
+                        <p class="memo hide">검색 결과가 존재하지 않습니다.</p>
+                    </div>
+                    <!-- //losmap 데이터뷰 영역 -->
+
+                    <ul class="list-type2 mgt20">
+                        <li>그리드뷰는 트리뷰에서 확장된 회원의 정보만 제공합니다.</li>
+                        <li>매월초 마감 작업으로 인하여 정확한 전월 실적 정보는 영업기준일 7일 이후에 조회하실 수 있습니다.</li>
+                        <li>하위 대리후원 그룹이 보너스레벨 21% 달성으로 독립하는 경우에는, 조회되는 실시간 그룹 실적이 실제 마감데이터와 다를 수 있습니다.</li>
+                    </ul>
+                </div>
+
+            </div>
+            <!-- //tab-content #LosmapCurrentMonth -->
+
+            <!-- tab-content #LosmapPreviousMonth -->
+            <div class="tab-pane content-block" id="LosmapPreviousMonth">
+              <h2 class="hidden">전월</h2>
+              <div>
+
+                <div class="losmap-page-content">
+                    <div class="conHeader row">
+                        <div class="col-sm-2 col-xs-4 viewSetBtns">
+                            <a href="#" class="btnTreeView active btnLosmapTree"><span class="hidden">트리뷰로 LOS MAP 보기</span></a>
+                            <a href="#" class="btnGridView btnLosmapGrid"><span class="hidden">그리드뷰로 LOS MAP 보기</span></a>
+                        </div>
+                        <div class="col-sm-5 col-custom-width01 col-xs-8 text-right">
+                          <div class="searchField">
+                            <a href="#" class="bt-akl-blue hide"><span>My LOS</span></a>
+                            
+                            <select class="form-control no-uppercase-form-control" tabindex="-1" aria-hidden="true">
+                              <option value="defaultRecord">실적</option>
+                              <option value="defaultAcheive">달성률현황</option>
+                              <option value="defaultAboInfo">ABO정보</option>
+                            </select>
+                            <button type="button" class="bt-akl-blue losmap-page-setbtn" onclick="layerPopOver('', '.losmap-pop-setting')">조회항목설정<span class="icon-setup"></span></button>
+                          </div>
+                        </div>
+                        <div class="col-sm-5 col-custom-width02 col-xs-12 text-right">                        
+                          <div class="topSearch">
+                              <div class="form-s">
+                                  <input type="text" placeholder="성명, 회원번호" value="" class="input-st" title="성명 또는 회원번호 입력">
+                                  <a href="#" class="icon-cross"><span class="hide">내용 지우기</span></a>
+                                  <button type="submit" class="btn btn-primary" onclick="layerPopOver(this, '.losmap-pop-result')"><span class="icon-search visible-xs"></span><span class="hidden-xs hidden-sm">검색</span></button>
+                              </div>
+                              <a href="#" class="topSearch-btn"><img src="https://www.amway.co.kr/_ui/responsive/theme-blue/images/ico_research.png" alt="검색 초기화"><span class="hidden-xs">검색 초기화</span></a>
+                          </div>
+                        </div>
+                    </div>
+
+                    <!-- losmap 데이터뷰 영역 -->
+                    <div class="losmapWrap">
+                        <div style="width:100%;height:543px;background-color:lightgray">//로스맵 트리뷰 영역</div>
+                        <p class="memo hide">검색 결과가 존재하지 않습니다.</p>
+                    </div>
+                    <!-- //losmap 데이터뷰 영역 -->
+
+                    <ul class="list-type2 mgt20">
+                        <li>그리드뷰는 트리뷰에서 확장된 회원의 정보만 제공합니다.</li>
+                        <li>매월초 마감 작업으로 인하여 정확한 전월 실적 정보는 영업기준일 7일 이후에 조회하실 수 있습니다.</li>
+                        <li>하위 대리후원 그룹이 보너스레벨 21% 달성으로 독립하는 경우에는, 조회되는 실시간 그룹 실적이 실제 마감데이터와 다를 수 있습니다.</li>
+                    </ul>
+                </div>
+
+              </div>
+            </div>
+            <!-- //tab-content #LosmapPreviousMonth -->
+          </div>
+        </div>
+
+      </div>
+      <!-- // 190214 losmap page 영역 -->
+
+
+    <div id="quick"></div>
+    <div id="footer"></div>
+  </main>
+
+<!-- 190214_losmap 조회 항목 설정 및 변경 레이어 팝업 --> 
+<div class="layerWrapper losmap-pop-setting">
+  <div class="cbox layerBox losmap-pop-wrap">
+    <div class="cart-popup__dialog">
+      <div class="cart-popup__header">
+        <span class="cart-popup__header-text">
+          조회 항목 설정 및 변경
+          <a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close"><img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기"></a>
+        </span>
+      </div>
+      <div class="cart-popup__content">
+
+        <!-- losmap popup contents -->
+        <div class="amway-theme">
+          <div class="losmap-pop-content">
+
+            <div class="col-search-tab">
+              <ul>
+                <li class="active"><a href="#tabLosmapSetting01" data-toggle="tab">기존 설정</a></li>
+                <li><a href="#tabLosmapSetting02" data-toggle="tab">신규 설정</a></li>
+              </ul>
+            </div>
+
+            <div class="tab-content tabs-content-blocks">
+              <div class="tab-pane content-block active" id="tabLosmapSetting01">
+                <h2 class="hidden">기존 설정</h2>
+                <div>
+                  <select class="form-control losmap-form-fullsize">
+                    <option>실적</option>
+                    <option>달성률 현황</option>
+                    <option>ABO 정보</option>
+                    <option>(개인)11111111</option>
+                  </select>
+                  <input type="text" class="form-control losmap-form-fullsize" placeholder="‘-’없이 입력" title="사용자 조회 항목명">
+
+                  <div class="row losmap-border-top">
+                    <div class="col-xs-7">
+                      <p><strong>상세 항목을 선택하세요.</strong><br>
+                      대상 항목 (최소 1개 이상, 최대 6개 이하 선택)</p>
+                    </div>
+                    <div class="col-xs-5 text-right">
+                      <button type="button" class="bt-akl-blue small losmap-bt-gray">전체선택취소</button>
+                    </div>
+                  </div>
+                  <div class="losmap-btn-group">
+                    <div class="button-type2">
+                      <button type="button" class="bt-akl-white">개인 PV</button>
+                      <button type="button" class="bt-akl-white">개인 BV</button>
+                    </div>
+                    <div class="button-type2">
+                      <button type="button" class="bt-akl-white">그룹 PV</button>
+                      <button type="button" class="bt-akl-white">그룹 BV</button>
+                    </div>
+                    <div class="button-type2">
+                      <button type="button" class="bt-akl-white">Q 레그 수</button>
+                      <button type="button" class="bt-akl-white">개인주문금액/수</button>
+                    </div>
+                    <div class="button-type2">
+                      <button type="button" class="bt-akl-white">반품주문금액/수</button>
+                      <button type="button" class="bt-akl-white">현재 달성률</button>
+                    </div>
+                    <div class="button-type2">
+                      <button type="button" class="bt-akl-white">차기 달성률</button>
+                      <button type="button" class="bt-akl-white">목표 달성률</button>
+                    </div>
+                    <div class="button-type2">
+                      <button type="button" class="bt-akl-white">지역</button>
+                      <button type="button" class="bt-akl-white">가입일</button>
+                    </div>
+                    <div class="button-type2">
+                      <button type="button" class="bt-akl-white losmap-text-long">국제후원자여부(대리후원)</button>
+                      <button type="button" class="bt-akl-white">현재 핀</button>
+                    </div>
+                    <div class="button-type2">
+                      <button type="button" class="bt-akl-white">리뉴얼 여부</button>
+                      <button type="button" class="bt-akl-white">최고달성 핀</button>
+                    </div>
+                    <div class="button-type2">
+                      <button type="button" class="bt-akl-white">신규가입 회원 수</button>
+                      <button type="button" class="bt-akl-white">리더쉽 PV</button>
+                    </div>
+                    <div class="button-type2">
+                      <button type="button" class="bt-akl-white">리더쉽 BV</button>
+                    </div>
+                  </div>
+
+                  <div class="button-type1">
+                    <button type="button" class="bt-akl-blue losmap-bt-lightblue">바로 검색</button>
+                  </div>
+                  <div class="button-type1">
+                    <button type="button" class="bt-akl-blue losmap-bt-lightblue">수정</button>
+                  </div>
+                  <div class="button-type1">
+                    <button type="button" class="bt-akl-blue losmap-bt-lightblue">다른 이름 저장</button>
+                  </div>
+                  <div class="button-type1">
+                    <button type="button" class="bt-akl-blue losmap-bt-gray">삭제</button>
+                  </div>
+                </div>
+              </div>
+              <!-- //기존 설정 탭 컨텐츠 -->
+
+              <div class="tab-pane content-block" id="tabLosmapSetting02">
+                <h2 class="hidden">신규 설정</h2>
+                <div>
+                  <select class="form-control losmap-form-fullsize">
+                    <option>실적</option>
+                    <option>달성률 현황</option>
+                    <option>ABO 정보</option>
+                    <option>(개인)11111111</option>
+                  </select>
+                  <input type="text" class="form-control losmap-form-fullsize" placeholder="‘-’없이 입력" title="사용자 조회 항목명">
+
+                  <div class="row losmap-border-top">
+                    <div class="col-xs-7">
+                      <p><strong>상세 항목을 선택하세요.</strong><br>
+                      대상 항목 (최소 1개 이상, 최대 6개 이하 선택)</p>
+                    </div>
+                    <div class="col-xs-5 text-right">
+                      <button type="button" class="bt-akl-blue small losmap-bt-gray">전체선택취소</button>
+                    </div>
+                  </div>
+                  <div class="losmap-btn-group2">
+                    <div class="button-type2">
+                      <button type="button" class="bt-akl-white">개인 PV</button>
+                      <button type="button" class="bt-akl-white">개인 BV</button>
+                    </div>
+                    <div class="button-type2">
+                      <button type="button" class="bt-akl-white">그룹 PV</button>
+                      <button type="button" class="bt-akl-white">그룹 BV</button>
+                    </div>
+                    <div class="button-type2">
+                      <button type="button" class="bt-akl-white">Q 레그 수</button>
+                      <button type="button" class="bt-akl-white">개인주문금액/수</button>
+                    </div>
+                    <div class="button-type2">
+                      <button type="button" class="bt-akl-white">반품주문금액/수</button>
+                      <button type="button" class="bt-akl-white">현재 달성률</button>
+                    </div>
+                    <div class="button-type2">
+                      <button type="button" class="bt-akl-white">차기 달성률</button>
+                      <button type="button" class="bt-akl-white">목표 달성률</button>
+                    </div>
+                    <div class="button-type2">
+                      <button type="button" class="bt-akl-white">지역</button>
+                      <button type="button" class="bt-akl-white">가입일</button>
+                    </div>
+                    <div class="button-type2">
+                      <button type="button" class="bt-akl-white losmap-text-long">국제후원자여부(대리후원)</button>
+                      <button type="button" class="bt-akl-white">현재 핀</button>
+                    </div>
+                    <div class="button-type2">
+                      <button type="button" class="bt-akl-white">리뉴얼 여부</button>
+                      <button type="button" class="bt-akl-white">최고달성 핀</button>
+                    </div>
+                    <div class="button-type2">
+                      <button type="button" class="bt-akl-white">신규가입 회원 수</button>
+                      <button type="button" class="bt-akl-white">리더쉽 PV</button>
+                    </div>
+                    <div class="button-type2">
+                      <button type="button" class="bt-akl-white">리더쉽 BV</button>
+                    </div>
+                  </div>
+
+                  <div class="button-type1">
+                    <button type="button" class="bt-akl-blue losmap-bt-lightblue">바로 검색</button>
+                  </div>
+                  <div class="button-type1">
+                    <button type="button" class="bt-akl-blue losmap-bt-gray">삭제</button>
+                  </div>
+                </div>
+              </div>
+              <!-- //신규 설정 탭 컨텐츠 -->
+            </div>
+            
+          </div>
+        </div>
+        <!-- //losmap popup contents -->
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- //190214_losmap 조회 항목 설정 및 변경 레이어 팝업 --> 
+
+<!-- 190214 조회항목 설정용 스크립트(임시?) -->
+<script>
+  $(function() {
+    var selectBtnGroup = $('.losmap-btn-group');
+    var selectBtn = selectBtnGroup.find('button');
+
+    selectBtn.click(function(e) {
+      var _this = $(this);
+      var selectedBtnLength = selectBtnGroup.find('.active').length;
+      if ( _this.hasClass('active') ) {
+        _this.removeClass('active')
+      } else if ( selectedBtnLength < 6) {
+        _this.addClass('active')
+      }
+    })
+
+
+    var selectBtnGroup2 = $('.losmap-btn-group2');
+    var selectBtn2 = selectBtnGroup2.find('button');
+
+    selectBtn2.click(function(e) {
+      var _this = $(this);
+      var selectedBtnLength2 = selectBtnGroup2.find('.active').length;
+      if ( _this.hasClass('active') ) {
+        _this.removeClass('active')
+      } else if ( selectedBtnLength2 < 6) {
+        _this.addClass('active')
+      }
+    })
+
+  });
+</script>
+
+
+
+</body>
+
+</html>

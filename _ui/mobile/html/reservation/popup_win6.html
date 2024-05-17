@@ -1,0 +1,399 @@
+<html lang="ko">
+
+<head>
+    <!-- page common -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="referrer" content="unsafe-url">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- //page common -->
+    <!-- page unique -->
+    <meta name="Description" content="설명들어감">
+    <meta http-equiv="Last-Modified" content="">
+    <meta id="metaTitle" property="og:title">
+    <meta id="metaUrl" property="og:url">
+    <meta id="metaContent" property="og:description">
+    <meta id="metaImage" property="og:image">
+
+    <meta content="website" property="og:type">
+    <meta content="Amway Site" property="og:site_name">
+    <!-- //page unique -->
+    <title>Amway Korea | 체성분측정예약</title>
+    <!--[if lt IE 9]>
+	<script src="/_ui/mobile/common/js/html5.js"></script>
+	<script src="/_ui/mobile/common/js/ie.print.js"></script>
+	<![endif]-->
+    <script type="text/javascript"
+        src="//zn3rssdvubtreszoh-alticorinc.siteintercept.qualtrics.com/WRSiteInterceptEngine/?Q_ZID=ZN_3rSsdvUbtRESZoh&amp;Q_LOC=https%3A%2F%2Facademy.amway.co.kr%2Freservation%2FexpMeasureForm.do%3FmenuCode%3D4">
+    </script>
+    <script type="text/javascript" async="" charset="utf-8" id="utag_69"
+        src="//cdn.heapanalytics.com/js/heap-4243325240.js"></script>
+    <script src="//tags.tiqcdn.com/utag/amway/kr-hybris/prod/utag.js" type="text/javascript" async=""></script>
+    <script src="//tags.tiqcdn.com/utag/amway/kr-hybris/prod/utag.js" type="text/javascript" async=""></script>
+    <script type="text/javascript" src="/ruxitagentjs_ICA27Vdefgijmoqrtuvx_10215210506134511.js"
+        data-dtconfig="app=c91546c95c87690f|rcdec=1209600000|featureHash=ICA27Vdefgijmoqrtuvx|vcv=2|rdnt=1|uxrgce=1|bp=3|srmcrv=10|cuc=9rj8dgfh|mel=100000|dpvc=1|ssv=4|lastModification=1659885370845|dtVersion=10215210506134511|srmcrl=1|tp=500,50,0,1|uxdcw=1500|agentUri=/ruxitagentjs_ICA27Vdefgijmoqrtuvx_10215210506134511.js|reportUrl=/rb_bf49927etb|rid=RID_1211165602|rpid=-1344552610|domain=amway.co.kr">
+    </script>
+    <link rel="stylesheet" href="/_ui/mobile/common/css/academy_default.css">
+    <link rel="stylesheet" href="/_ui/mobile/common/css/default.css">
+    <link rel="stylesheet" href="/_ui/mobile/common/css/main.css">
+
+    <script src="/_ui/mobile/common/js/jquery-1.8.3.min.js"></script>
+    <script src="/_ui/mobile/common/js/pbLayerPopup.js"></script>
+    <script src="/_ui/mobile/common/js/pbCommon.js"></script>
+
+    <script type="text/javascript" charset="UTF-8" src="/js/front.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="/js/json2.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="/js/json3.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="/js/jquery.form.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="/js/jquery.number.min.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="/js/jquery.popupWindow.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="/js/date.format.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="/js/jquery.history.js"></script>
+
+    <script src="/_ui/mobile/common/js/owl.carousel.js"></script>
+    <script src="/_ui/mobile/common/js/apps/kakao.link.js"></script>
+    <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <script src="/_ui/mobile/common/js/jquery.event.drag-1.5.min.js"></script>
+    <script src="/_ui/mobile/common/js/jquery.touchSlider.js"></script>
+    <script src="/_ui/mobile/common/js/jquery.touchSlider2.js"></script>
+
+    <script src="/_ui/mobile/common/js/pbCommonAcademyReservationSecond.js"></script>
+    <script src="/_ui/mobile/common/js/pbCommon.js"></script>
+    <script src="/_ui/mobile/common/js/reservationSns.js"></script>
+    <script src="/_ui/mobile/common/js/reservation_tab.js"></script>
+
+
+    <script type="text/javascript" charset="UTF-8" src="/js/front_reservation.js"></script>
+
+    <script src="/js/mustache.min.js"></script>
+    <script src="/js/stringUtility.js"></script>
+
+    <script type="text/javascript">
+        //window.utag_cfg_ovrd = {noview : true};
+    </script>
+    <style>
+        input {
+            height: 31px;
+        }
+    </style>
+    <script type="text/javascript">
+        var browser;
+
+        // 모바일 가로/세로 resize
+        $(window).on("orientationchange", function (event) {
+            //		setTimeout(function(){ abnkorea_resize(); }, 500);
+        });
+
+        // ap안내 아이프레임 높이 조정
+        function abnkoreaApInfoPop_resize() {
+
+            var tempHeight = 0;
+
+            if ($("#uiLayerPop_apInfo").height() > 900) {
+                tempHeight = 0;
+            } else {
+                tempHeight = 900 - $("#uiLayerPop_apInfo").height();
+            }
+
+
+            var iHeight = $("#uiLayerPop_apInfo").height() + tempHeight; //"1320"//
+
+            var isResize = false;
+            if (iHeight == null) {
+                iHeight = $(document).height();
+            }
+            try {
+
+                window.parent.postMessage(iHeight, "*");
+                isResize = true;
+
+                $("#layerMask").css("display", "none");
+            } catch (e) {
+                isResize = false;
+            }
+            if (!isResize) {
+                try {} catch (e) {}
+            }
+
+        }
+
+        // ap안내 아이프레임 높이 조정
+        function abnkoreaConfirmPop_resize() {
+            var iHeight = $("#pbContent").height() + 200;
+            var isResize = false;
+            if (iHeight == null) {
+                iHeight = $(document).height();
+            }
+            try {
+                window.parent.postMessage(iHeight, "*");
+                isResize = true;
+            } catch (e) {
+                isResize = false;
+            }
+            if (!isResize) {
+                try {} catch (e) {}
+            }
+        }
+
+
+        // 아이프레임 높이 조정
+        function abnkoreaCard_resize() {
+            var iHeight = $("#pbContent").height() + 200;
+            var isResize = false;
+            if (iHeight == null) {
+                iHeight = $(document).height();
+            }
+            try {
+                window.parent.postMessage(iHeight, "*");
+                isResize = true;
+            } catch (e) {
+                isResize = false;
+            }
+            if (!isResize) {
+                try {} catch (e) {}
+            }
+        }
+
+        // 아이프레임 높이 조정
+        function rsvConfirmPop_resize() {
+            $("body").scrollTop(0);
+            //alert($('#uiLayerPop_confirm').length);
+            //$('#uiLayerPop_confirm').eq(0).scrollIntoView(true);
+            $('#uiLayerPop_confirm').each(function () {
+                this.scrollIntoView(true);
+            });
+        }
+    </script>
+    <!-- S : 20220805 퍼블용 스크립트 -->
+    <style>
+        .selectDiv dd {
+            display: block !important
+        }
+    </style>
+    <!-- E : 20220805 퍼블용 스크립트 -->
+</head>
+<div id="pbContainer">
+    <section id="pbContent" class="bizroom">
+        <div class="pbLayerPopup new">
+            <div class="pbLayerHeader">
+                <strong>체험예약</strong>
+            </div>
+            <div class="pbLayerContent">
+                <p><a class="link-btn" href="/reservation/roomForm.do?menuCode=1">시설예약</a></p>
+                <!-- S : 20220805 예약 카테고리 추가 -->
+                <div class="selectArea sizeM colorW">
+                    <a href="#">체성분/근육 분석</a>
+                    <a href="">체형·근골격 분석</a>
+                    <a href="" class="active2">피부/두피 분석</a>
+                    <a href="">마이팩 화상상담</a>
+                    <a href="">브랜드 체험</a>
+                    <a href="">웰니스 체험</a>
+                    <a href="" class="active2">체험예약 현황</a>
+                </div>
+                <!-- E : 20220805 예약 카테고리 추가 -->
+                <div class="tab-conts" id="business1" style="display:block;">
+                    <div>
+                        <div class="topBox">
+                            <dl>
+                                <dt>예약자</dt>
+                                <dd>7480000&nbsp;이병헌</dd>
+                                <dt>등록일자</dt>
+                                <dd>2022-08-04</dd>
+                            </dl>
+                        </div><!-- //.topBox -->
+
+                        <div class="titP mgtM">
+                            예약정보
+                        </div>
+                        <div class="topBox mgbS">
+                            <dl>
+                                <dt>체험종류</dt>
+                                <dd>피부/두피분석</dd>
+                                <dt>지역</dt>
+                                <dd>분당ABC</dd>
+                            </dl>
+                        </div><!-- //.topBox -->
+
+                        <div class="stateWrap">
+                            <dl class="tblBizroomState">
+                                <dt>-</dt>
+                                <dd>
+                                    <!-- 문화체험 -->
+
+
+                                    <!-- 브랜드 그룹 -->
+                                    <p>피부/두피분석<em>|</em>피부분석
+                                        <a href="#" class="btnTbl" onclick="">측정항목 변경</a>|</p>
+                                    <p>상태 : 예약완료</p>
+                                </dd>
+                            </dl>
+                            <span id="snsText" name="snsText" style="display:none">
+                                <p>
+                                    ■ 분당ABC (피부/두피분석) 2022-08-10(수)| 12:00~12:30|비동반
+                                </p>
+                            </span>
+                        </div>
+
+                        <div class="stepDone selcWrap">
+                            <div class="detailSns">
+                                <a href="#none" id="snsKt"
+                                    onclick="javascript:tempSharing('http://aq.amway.co.kr/reservation/redirectUrl.do', 'kakaotalk');"
+                                    title="새창열림"><img src="/_ui/mobile/images/common/btn_sns_ct.gif" alt="카카오톡"></a>
+                                <a href="#none" id="snsKs"
+                                    onclick="javascript:tempSharing('http://aq.amway.co.kr/reservation/redirectUrl.do', 'kakaostory');"
+                                    title="새창열림"><img src="/_ui/mobile/images/common/btn_sns_cs.gif" alt="카카오스토리"></a>
+                                <a href="#none" id="snsBd"
+                                    onclick="javascript:tempSharing('http://aq.amway.co.kr/reservation/redirectUrl.do', 'band');"
+                                    title="새창열림"><img src="/_ui/mobile/images/common/btn_sns_bd.gif" alt="밴드"></a>
+                                <a href="#none" id="snsFb"
+                                    onclick="javascript:tempSharing('http://aq.amway.co.kr/reservation/simpleReservation.do', 'facebook');"
+                                    title="새창열림"><img src="/_ui/mobile/images/common/btn_sns_fb.gif" alt="페이스북"></a>
+                            </div>
+                            <span class="doneText">예약내역공유</span>
+                        </div>
+
+                        <div class="btnWrap aNumb1">
+                            <a href="#none" class="btnBasicBL" id="goExpInfoList">체험예약 현황확인 목록</a>
+                        </div>
+                        <!-- 체험예약 현황확인 -->
+                        <div class="pbLayerPopup" id="uiLayerPop_alterMemberNum" style="display:none">
+                            <div class="pbLayerHeader">
+                                <strong>참석인원 변경</strong>
+                            </div>
+                            <div class="pbLayerContent">
+                                <div class="selectBox mgAuto">
+                                    <label for="memberNum">참여인원</label>
+                                    <input type="hidden" id="rsvseq">
+                                    <select id="visitNumber" title="참석인원 선택">
+                                        <option value="1">없음</option>
+                                        <option value="2">있음</option>
+                                    </select>
+                                </div>
+
+                                <div class="btnWrap aNumb2">
+                                    <span><a href="#" class="btnBasicGL"
+                                            onclick="javascript:alterClosePop();">변경취소</a></span>
+                                    <span><a href="#" class="btnBasicBL"
+                                            onclick="javascript:visitNumberChangeConfirm();">변경완료</a></span>
+                                </div>
+                            </div>
+                            <a href="#none" class="btnPopClose" onclick="javascript:alterClosePop();"><img
+                                    src="/_ui/mobile/images/common/btn_close.gif" alt="창 닫기"></a>
+                        </div>
+
+                    </div>
+
+                    <!-- layer popoup -->
+                    <!-- //layer popoup -->
+                    <!-- 예약취소&동반자 변경 팝업 모음 -->
+
+                    <div class="pbLayerPopup" id="uiLayerPop_cancel" tabindex="0" style="display:none;top:271px;">
+                        <div class="pbLayerHeader">
+                            <strong>예약취소</strong>
+                        </div>
+                        <div class="pbLayerContent">
+
+                            <div class="cancelWrap">
+                                <p>예약을 취소하시겠습니까?</p>
+                                <!-- 무료예약의 경우 -->
+
+                                <!-- 20160714 페널티 수정 -->
+                                <p class="bdBox" id="cancelMsg">취소 시 패널티가 적용됩니다.</p>
+                            </div>
+
+                            <div class="btnWrap aNumb2">
+                                <span><a href="#none" class="btnBasicGL"
+                                        onclick="javascript:cancelPop(this);">취소</a></span>
+                                <span><a href="#none" class="btnBasicBL"
+                                        onclick="javascript:cancelExpRsvLayerPop();">확인</a></span>
+                            </div>
+                        </div>
+
+                        <a href="#none" class="btnPopClose"><img src="/_ui/mobile/images/common/btn_close.gif"
+                                alt="창 닫기"></a>
+                    </div>
+
+
+                    <div class="pbLayerPopup" id="uiLayerPop_alter" style="display:none;top:271px;" tabindex="0">
+                        <div class="pbLayerHeader">
+                            <strong>동반여부 변경</strong>
+                        </div>
+                        <div class="pbLayerContent">
+                            <div class="radioList mgAuto">
+
+                                <span><input type="radio" id="cpRadio1" name="partnerTypeCode" value="R01"><label
+                                        for="cpRadio1">ABO</label></span>
+
+                                <span><input type="radio" id="cpRadio2" name="partnerTypeCode" value="R02"><label
+                                        for="cpRadio2">일반인</label></span>
+
+                                <span><input type="radio" id="cpRadio3" name="partnerTypeCode" value="R03"><label
+                                        for="cpRadio3">비동반</label></span>
+
+                            </div>
+
+                            <div class="btnWrap aNumb2">
+                                <span><a href="#" class="btnBasicGL"
+                                        onclick="javascript:cancelPop(this);">변경취소</a></span>
+                                <span><a href="#" class="btnBasicBL"
+                                        onclick="javascript:changePartnertLayerPop();">변경완료</a></span>
+                            </div>
+                        </div>
+                        <a href="#none" class="btnPopClose"><img src="/_ui/mobile/images/common/btn_close.gif"
+                                alt="창 닫기"></a>
+                    </div>
+
+
+                    <div class="pbLayerPopup" id="uiLayerPop_shalter" style="top: 312px; display: none;" tabindex="0"
+                        aria-hidden="true">
+                        <div class="pbLayerHeader">
+                            <strong>체형·근골격분석 예약</strong>
+                        </div>
+                        <div class="pbLayerContent">
+                            <div class="radioList mgAuto">
+                                <span>
+                                    <input type="radio" id="cpRadio1" name="skinHeadTypeCode" value="R01"
+                                        checked="checked">
+                                    <label for="cpRadio1">피부분석</label>
+                                </span>
+                                <span>
+                                    <input type="radio" id="cpRadio2" name="skinHeadTypeCode" value="R02">
+                                    <label for="cpRadio2">두피분석</label>
+                                </span>
+                            </div>
+
+                            <div class="btnWrap aNumb2">
+                                <span><a href="#" class="btnBasicGL" onclick="">변경취소</a></span>
+                                <span><a href="#" class="btnBasicBL" onclick="">변경완료</a></span>
+                            </div>
+                        </div>
+                        <a href="#none" class="btnPopClose"><img src="/_ui/mobile/images/common/btn_close.gif"
+                                alt="창 닫기"></a>
+                    </div>
+                    <div class="layerMask" id="layerMask" style="display:none">
+                        <img src="/_ui/mobile/images/common/bg_mask.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <a href="https://www.uat.amway.co.kr/business-center" class="btnPopClose"><img
+                    src="/_ui/mobile/images/common/new_close.png" alt="창 닫기"></a>
+        </div>
+    </section>
+</div>
+</body>
+<!-- S : 20220805 퍼블용 스크립트 -->
+<script>
+    $('.tblBizroomState').find('.btnTbl').on('click', function () {
+        $('.layerMask').css('display', 'block');
+        $('#uiLayerPop_shalter').css('display', 'block');
+    })
+    $('.btnPopClose').on('click', function () {
+        $('.layerMask').css('display', 'none');
+        $('#uiLayerPop_shalter').css('display', 'none');
+    })
+</script>
+<!-- E : 20220805 퍼블용 스크립트 -->
+
+</html>

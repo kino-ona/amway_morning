@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>A-Station</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords">
+    <meta name="description" content="NY Fee Bundle">
+    <meta name="robots" content="index,follow">
+
+    <style>
+        /* reset */
+        html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+        article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+        body { line-height: 1.2; }
+        ol, ul { list-style: none; }
+        blockquote, q { quotes: none; }
+        blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+        table { border-collapse: collapse; border-spacing: 0; }
+        html,body{ height: 100vh; font-family: 'RixSinHeadEB', 'Noto Sans KR', sans-serif; box-sizing: border-box; letter-spacing:-.5px}
+        img{ width: 100%; max-width: 100%; }
+        *,*::before,&::after{ box-sizing: border-box; }
+
+        @font-face { font-family:'Noto Sans KR'; font-style:normal; font-weight:300; src:url(/_ui/responsive/theme-blue/fonts/notosanskr/notokr-light.woff2) format('woff2'), url(/_ui/responsive/theme-blue/fonts/notosanskr/notokr-light.woff) format('woff') ; }
+        @font-face { font-family:'Noto Sans KR'; font-style:normal; font-weight:400; src:url(/_ui/responsive/theme-blue/fonts/notosanskr/notokr-regular.woff2) format('woff2'), url(/_ui/responsive/theme-blue/fonts/notosanskr/notokr-regular.woff) format('woff') ; }
+        @font-face { font-family:'Noto Sans KR'; font-style:normal; font-weight:500; src:url(/_ui/responsive/theme-blue/fonts/notosanskr/notokr-medium.woff2) format('woff2'), url(/_ui/responsive/theme-blue/fonts/notosanskr/notokr-medium.woff) format('woff') ; }
+        @font-face { font-family:'Noto Sans KR'; font-style:normal; font-weight:700; src:url(/_ui/responsive/theme-blue/fonts/notosanskr/notokr-bold.woff2) format('woff2'), url(/_ui/responsive/theme-blue/fonts/notosanskr/notokr-bold.woff) format('woff') ; }
+        @font-face { font-family:'RixSinHeadEB'; font-style:normal; font-weight:500; src:url(/_ui/responsive/theme-blue/fonts/rixsinhead/RixSinHead_Medium.woff2) format('woff2'), url(/_ui/responsive/theme-blue/fonts/rixsinhead/RixSinHead_Medium.woff) format('woff') ; }
+        @font-face { font-family:'RixSinHeadEB'; font-style:normal; font-weight:700; src:url(/_ui/responsive/theme-blue/fonts/rixsinhead/RixSinHead_bold.woff2) format('woff2'), url(/_ui/responsive/theme-blue/fonts/rixsinhead/RixSinHead_bold.woff) format('woff') ; }
+        .wrapper{ width: 100%; height: 100%; padding: 6.95vw 0 0; background: url(/_ui/responsive/theme-blue/images/a-station/bg_kakaotalk_1.png) 0 bottom no-repeat; background-size: 100% auto; background-color:rgb(30, 152, 122); box-sizing: border-box;overflow-y: auto;overflow-x: hidden;}
+        .container{ width: 78vw; margin: 0 auto; }        
+        .logo img{ width:83px }
+        .a-coupon__title{ margin-top:8.6vw; color:#fff; font-family:'RixSinHeadEB'; font-size:6vw; font-weight: 500; text-align:center; letter-spacing:-1.5px}
+        .underline{ display: inline-block; position: relative; z-index: 1; }
+        .underline::before{ content: ''; position: absolute; bottom: 0; left: 0; z-index: -1; width: 100%; height: 9px; background: #fff6c7; opacity: .7; }
+        /* S : 20220119 QR코드 크기 수정 */  /* S : 20220121 QR코드 크기 수정 */
+        .a-coupon__qr{ position:relative; display: flex; width:90vw; height:90vw; margin:11vw auto; margin-left:-6vw; align-items: center; justify-content: center; border-radius: 40px; background-image: linear-gradient(to top, #f0f0f0, #f0f0f0);box-shadow: inset 0 0 0 0 #fff, inset 0 0 0 1px rgba(255, 255, 255, 0.2), 14.1px 14.1px 27.3px 2.7px rgba(0, 0, 0, 0.16);overflow:hidden;}
+        /* .a-coupon__qr:before{ content:''; position:absolute; top:7.65vw; left:8.15vw; width:45vw; height:46vw; background:url(/_ui/responsive/theme-blue/images/a-station/qr_box.png) no-repeat; background-size:45vw auto} */
+        .a-coupon__qr img{ width: 100%; height:auto }
+        .a-coupon__qr.disable:after{ content:''; position:absolute; left:0; width:90vw; height:90vw; margin:11vw auto; align-items: center; justify-content: center; border-radius: 40px; background-image: linear-gradient(to top, #f0f0f0, #f0f0f0); opacity:0.9}
+        /* E : 20220119 QR코드 크기 수정 */ /* E : 20220121 QR코드 크기 수정 */
+        .a-coupon-timer{ position:relative; padding:1.95vw 25px 2.3vw 20px;width:32.5vw; min-width:150px; height:3.25vw; margin:-3vw auto; border-radius:27px; background-color:#3ac38a; color:#fff; font-size:3.3vw; font-weight:500; text-align:right}
+        .a-coupon-timer em{color:#fff05d}
+        .a-coupon-timer:before{ content:''; position:absolute; top:2vw; left:20px; width:3.4vw; height:3.5vw; min-width:15px; min-height:15px; background:url(/_ui/responsive/theme-blue/images/a-station/icon-reservation.png) no-repeat; background-size:100% auto }
+        .a-coupon-notice{ margin:7vw auto; padding-bottom:6vw; border-bottom:1px solid #fff; color:#fff; font-size:2.2vw; font-weight:500; text-align:center; line-height:2;}
+        .a-coupon__title.small{ margin-top: 7.5vw; font-size:3.9vw; }
+        .a-coupon-qr-benefit{margin-bottom:85px}
+        .a-coupon-qr-benefit .a-coupon-box{ position:relative; margin:3vw auto; background:url(/_ui/responsive/theme-blue/images/a-station/coupon_box.png) no-repeat center;background-size: 66vw auto; }
+        .a-coupon-qr-benefit .a-coupon-num{ content:''; position:absolute; top:6.5vw; left:3.4vw; width: 6.67vw; height:6.67vw; box-shadow: 0.4vw 0.3vw 1vw 0.12vw rgba(39, 21, 4, 0.18); background-color:#fff05d; border-radius:7vw; font-size:3.33vw; color:#353535; text-align:center; line-height: 6.33vw;}
+        .a-coupon-qr-benefit .a-coupon-box__inner{ position:relative; padding:0 0 0 25vw; width:100%; height:22vw;}
+        .a-coupon-qr-benefit .a-coupon-box.well:before{content:''; position:absolute; top:7.5vw;left:13.5vw; width:5.5vw; height:5.9vw; background:url(/_ui/responsive/theme-blue/images/a-station/icon_well.png) no-repeat; background-size: 100% auto; }
+        .a-coupon-qr-benefit .a-coupon-box.buy:before{content:''; position:absolute; top:6.5vw;left:13.5vw; width:5.5vw; height:7.9vw; background:url(/_ui/responsive/theme-blue/images/a-station/icon_buy.png) no-repeat; background-size: 100% auto; }
+        .a-coupon-qr-benefit .a-coupon-box.ex:before{content:''; position:absolute; top:5vw;left:12.8vw; width:6.5vw; height:10.9vw; background:url(/_ui/responsive/theme-blue/images/a-station/icon_ex.png) no-repeat; background-size: 100% auto; }
+        .a-coupon-qr-benefit .a-coupon-box__inner .a-coupon-box__table{ display:flex; height:100%; flex-direction:column; justify-content:center; }
+        .a-coupon-qr-benefit .a-coupon-box__inner .a-coupon-benefit__title{ display:block; height:5vw; color:#353535; font-size:2.8vw; font-weight:700; }
+        .a-coupon-qr-benefit .a-coupon-box__inner .a-coupon-benefit__subtitle{ display:block; color:#aaa; font-size:2.28vw; }
+        .a-coupon-qr-benefit .a-coupon-box__inner .a-coupon-benefit__notice{ position:relative; display:block; margin-top:2vw; padding-left:1.5vw; color:#3ac38a; font-size:2.28vw; }
+        .a-coupon-qr-benefit .a-coupon-box__inner .a-coupon-benefit__notice:before{ content:'*'; position:absolute; left:-0.2vw; color:#3ac38a; font-size:2.28vw; }
+
+        @media (max-width:450px){
+            .a-coupon-timer{ padding:10px 15px 14px 15px; font-size:15px; }
+            .a-coupon-timer:before{ top:11px; }
+            .a-coupon-qr-benefit .a-coupon-box{ background-size:75vw auto; }
+            .a-coupon-qr-benefit .a-coupon-num{ top:7.5vw; left:-1vw; line-height: 6.6vw; }
+            .a-coupon-qr-benefit .a-coupon-box__inner{ height:25vw; }
+            .a-coupon-qr-benefit .a-coupon-box__inner:before{ top:8.5vw; left:10vw; }
+            .a-coupon-qr-benefit .a-coupon-box.well:before{ top:8.5vw; left:10vw }
+            .a-coupon-qr-benefit .a-coupon-box.buy:before{ top:7.5vw; left:10.5vw }
+            .a-coupon-qr-benefit .a-coupon-box.ex:before{ top:6vw; left:9.3vw }
+        }        
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container a-coupon">
+            <h1 class="logo">
+                <img src="/_ui/responsive/theme-blue/images/logo_white.png" alt="Top header logo image">
+            </h1>
+
+            <h2 class="a-coupon__title">A-Station 비회원 체험용 QR</h2>
+
+            <div class="a-coupon__qr disable"> <!-- 인증 유효시간이 초과될 경우 disable 클래스 추가 -->
+                <img src="/_ui/responsive/theme-blue/images/a-station/qr_temp.png" alt="QR image">
+            </div>
+            
+            <div class="a-coupon-timer">
+                남은 시간 <em>23시 18분</em>
+            </div>
+            <!-- S : 인증 유효시간이 초과된 경우 -->
+            <!-- <div class="a-coupon-timer">
+                인증 유효 시간 초과
+            </div> -->
+            <!-- E : 인증 유효시간이 초과된 경우 -->
+
+            <div class="a-coupon-notice">                
+                <ul>
+                    <li>· QR 코드의 유효시간은 24시간이며, 유효시간이 지날 경우 키오스크에서 재발급 해주세요.</li>
+                    <li>· 발급된 QR 코드는 A-STATION 스타시티점 전용입니다.</li>
+                </ul>
+            </div>
+
+            <div class="a-coupon-qr-benefit">
+                <h3 class="a-coupon__title small">[ QR 코드 발급 혜택 ]</h3>
+                <div class="a-coupon-box well">
+                    <div class="a-coupon-num">1</div>
+                    <div class="a-coupon-box__inner">
+                        <div class="a-coupon-box__table">
+                            <span class="a-coupon-benefit__title">당일 웰니스 체험 프로그램 제공</span>
+                            <span class="a-coupon-benefit__subtitle">“웰니스 체험 프로그램” 화면에서 즉시 예약</span>
+                            <span class="a-coupon-benefit__notice">당일 현장의 일정에 따라 체험 가능한<br>
+                                프로그램이 없을 수 있습니다</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="a-coupon-box buy">
+                    <div class="a-coupon-num">2</div>
+                    <div class="a-coupon-box__inner">
+                        <div class="a-coupon-box__table">
+                            <span class="a-coupon-benefit__title">제품 구매 혜택(최초 1회)</span>
+                            <span class="a-coupon-benefit__subtitle">“QR 코드를 활용한 셀프 계산대 구매<br> 서비스 제공</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="a-coupon-box ex">
+                    <div class="a-coupon-num">3</div>
+                    <div class="a-coupon-box__inner">
+                        <div class="a-coupon-box__table">
+                            <span class="a-coupon-benefit__title">XS 음료 교환권 제공</span>
+                            <span class="a-coupon-benefit__subtitle">비회원 QR 발급 시 마다 제공 (하루 1회 한정)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

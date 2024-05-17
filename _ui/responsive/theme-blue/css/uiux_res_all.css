@@ -1,0 +1,216 @@
+@media (max-width:768px) {
+	.mobile-nav-menu .business .category li a {max-width:73px}
+	.mobile-nav-menu .business .category.collapsed li > ul > li,
+	.mobile-nav-menu .category > li > ul > li {width:50% !important; padding:0 !important;}
+	.mobile-nav-menu .business .category.collapsed li > ul > li a,
+	.mobile-nav-menu .category > li > ul > li a {max-width:100% !important;}
+}
+/* S : 2020-05-06 scan-paygo 숨김 */
+.new-v2 .search-btn-container.scan-paygo .mobile-search-btn {width:calc(100% - 36px) !important}
+.new-v2 .search-btn-container.scan-paygo .scan-paygo-btn {display:none !important}
+/* E : 2020-05-06 scan-paygo 숨김 */
+
+/* 2020-06-19 긴급 */
+.txt_share-product {margin:0 !important;padding:21px 0 25px !important;color:#002f5f !important;font-size:18px !important;letter-spacing:-.5px !important;line-height:1 !important;background:none !important;text-align:left !important;}
+.box_share-banner {position:relative !important;border:1px solid #ddd !important;border-radius:10px !important;box-shadow:0 2px 10px 0 rgba(0, 0, 0, 0.2) !important;padding:12px 12px 7px !important}
+.kakao_share-product .box_share-img {position:relative !important;width:100% !important;min-height:290px !important;background:url('/_ui/responsive/theme-blue/images/akl_plp/customer_banner-img.png') no-repeat 50% top !important;background-size:320px auto !important;font-size:0 !important}
+.kakao_share-product .box_share-img .img-logo {position:absolute !important;left:13px !important;top:10px !important;width:70px !important;height:25px !important;background:url('/_ui/responsive/theme-blue/images/akl_plp/img_logo.png') no-repeat 0 0 !important;background-size:70px auto !important;}
+.kakao_share-product .btn_share-product {margin-top:32px !important;text-align:center !important}
+.kakao_share-product .btn_share-product button {font-size:17px !important;font-weight:500 !important}
+.kakao_share-product .btn_share-product .btn-share {padding:15px 86px 15px 115px !important}
+@media (max-width:768px) {
+	.box_kakao-hd.type-a {margin:0 20px 20px!important}
+	.kakao_share-product .box_kakao-hd.type-a {padding-top:53px !important}
+	.kakao_share-product .txt_share-product {margin:0 0 0 3px !important;line-height:22px !important}
+	.kakao_share-product .box_product.product_list-type .product_item.cart-thead + .product_item {border-top:1px solid #dcdcdc !important}
+	.kakao_share-product .txt_footer-cont span ~ span:before {display:none !important}
+	.kakao_share-product .btn_share-product {position:fixed !important;bottom:0 !important;z-index:20 !important;margin-top:0 !important;width:100% !important}
+	.kakao_share-product .btn_share-product .btn-share {width:100%;padding:15px !important}
+}
+
+/* 2020-06-24 sop 오류 */
+.new-sop .cart-popup__dialog .pdp-info .product-main-info .product-details .price {font-size:34px}
+.new-sop .cart-popup__dialog .sop-more-benefits p:after {display:none}
+.new-sop .cart-popup__dialog .sop-more-benefits p {height:auto}
+.new-sop .cart-popup__dialog .pdp-info .product-details .item-code {border-bottom:none}
+
+
+@media (max-width:768px) {
+	/* 2020-07-13 긴급 : 헤더경량화 주문/결제 페이지 배송지 & 결제수단 선택 모바일화면 여백생김 수정 */
+	.shipping-delivery .checkout-steps {margin:0 auto !important}
+	.gift_order.renew.new-payment .cart_product-area .payment_box {margin-top:0 !important}
+	.header-type .gift_order.renew.new-payment .cart_product-area .payment_box {margin-top:20px !important}
+	/* 2020-08-14 긴급 */
+	.section_banner-inner.size-a {padding:10px 50px 12px 20px !important}
+}
+
+/* 2020-07-17 */
+.product_recommend-item .box_product-summery .product_text-data .text_product-title {min-height:42px}
+.txt_total-title button {margin:2px 0 0 4px}
+.box_cart-info .tooltip-layer {left:-140px}
+@media (max-width:768px) {
+	.box_cart-info .tooltip-layer {left:0}
+}
+
+/* 2020-07-31 */
+.akl .v-m-pros .image-gallery {-webkit-transition:all .3s;transition:all .3s;}
+.akl .v-m-pros .image-gallery {padding-bottom:20%}
+.akl .v-m-pros .image-gallery:hover {max-width:100%;padding-bottom:0}
+.image-gallery.js-gallery img:hover {margin:0 !important}
+.image-gallery.js-gallery img{-webkit-transition:all .3s;transition:all .3s;}
+.image-gallery.js-gallery img:hover{-webkit-transform:scale(1) !important;-ms-transform:scale(1) !important;transform:scale(1) !important;}
+.page-productDetails .img-product .product-image-gallery {margin-bottom:30px}
+
+/* 2020-08-14 김급 */
+.box_sop-visual .container {display:block !important}
+@media (max-width: 768px) {
+.box_sop-visual .container {/*background:url('/_ui/responsive/theme-blue/images/akl_plp/m_sp-visual01.png') no-repeat bottom/cover  !important*/}
+}
+
+
+/* 2020-08-28 긴급 */
+@media print{ .cbox.layerBox  .cart-popup__content.payment .cart-popup__item-info.nq-pop-wrap{max-height: none;}	}
+
+
+/* 2020-10-22 chatbot icon 수정 */
+/*
+.box-chatbot .btn-chatbot {position:relative;display:block;width:70px !important;height:70px !important;background:url(/_ui/responsive/theme-blue/images/chatbot_icon_new.gif) 0 0 no-repeat !important;text-align:center !important;padding:0 !important;margin:0 !important;background-size:70px auto !important;border-radius:0 !important;box-shadow:none !important;}
+.box-chatbot .btn-chatbot .icon-chatbot {display:none !important;}
+.chatbot-type .chatbot-item .link-chatbot .sp_chatbot-c{top:-5px !important;background:url(/_ui/responsive/theme-blue/images/chatbot_item01.png) 0 0 no-repeat !important;background-size:50px 50px !important;}
+.chatbot-type .chatbot-item .link-chatbot .sp_chatbot-b{background:url(/_ui/responsive/theme-blue/images/chatbot_item02.png) 0 0 no-repeat !important;background-size:50px 50px !important;}
+*/
+
+/* 2020-11-11 */
+/* .box-chatbot {bottom:20px !important;right:20px !important;} */
+.box-chatbot .btn-chatbot {position:relative;display:block;width:70px !important;height:70px !important;background:url(/_ui/responsive/theme-blue/images/chatbot_icon_new.gif) 0 0 no-repeat !important;text-align:center !important;padding:0 !important;margin:0 !important;background-size:70px auto !important;border-radius:0 !important;box-shadow:none !important;}
+/* 20220518 챗봇교체 */
+.box-chatbot .btn-chatbot {position:relative;display:block;width:70px !important;height:70px !important;background:url(/_ui/responsive/theme-blue/images/chatbot_icon_unmask.gif) 0 0 no-repeat !important;text-align:center !important;padding:0 !important;margin:0 !important;background-size:70px auto !important;border-radius:0 !important;box-shadow:none !important;}
+.box-chatbot .btn-chatbot .icon-chatbot {display:none !important;}
+.chatbot-type .chatbot-item .link-chatbot .sp_chatbot-c{top:-5px !important;background:url(/_ui/responsive/theme-blue/images/chatbot_item01.png) 0 0 no-repeat !important;background-size:50px 50px !important;}
+.chatbot-type .chatbot-item .link-chatbot .sp_chatbot-b{background:url(/_ui/responsive/theme-blue/images/chatbot_item02.png) 0 0 no-repeat !important;background-size:50px 50px !important;}
+
+@media (max-width: 768px) {
+	/* .akl .renewal_floating-type ~ .box-chatbot {bottom:70px !important;right:6px !important;} */
+	.akl .renewal_floating-type2 ~ .box-chatbot {bottom:110px !important;} /* 20220609 */
+	/* .box-chatbot {bottom:73px !important;right:6px !important;} */
+	.box-chatbot .btn-chatbot{width:54px !important;height:48px !important;background-size:54px auto !important;}
+}
+
+/* 2021-12-09 챗봇 아이콘 변경 */ /* 2022-01-17 원복 */
+/* .box-chatbot .btn-chatbot {position:relative;display:block;width:70px !important;height:70px !important;background:url(/_ui/responsive/theme-blue/images/chatbot_icon_winter.gif) 0 0 no-repeat !important;text-align:center !important;padding:0 !important;margin:0 !important;background-size:70px auto !important;border-radius:0 !important;box-shadow:none !important}
+
+@media (max-width:768px){
+	.box-chatbot .btn-chatbot{width:54px !important;height:54px !important;background-size:54px auto !important;}
+} */
+
+/* 2020-11-12 sop 제품정보 안내 문구 추가 */
+/* .article-sop #smartEditProfilePage + .sop_title-area-b,
+.article-sop .box_acliks-benefit + .sop_title-area-b{position: relative;margin-bottom: 80px;;}
+.article-sop #smartEditProfilePage + .sop_title-area-b:after,
+.article-sop .box_acliks-benefit + .sop_title-area-b:after{display: block;content:'* 새로 받을 제품을 먼저 추가 하신 후, 필요하지 않은 제품을 삭제해주세요. '; height: 30px;border-top: solid 1px #ccc;color:blue; width: 100%;position: absolute;top:50px;padding-top: 10px;} */
+
+
+
+/* .article-sop #smartEditProfilePage + .sop_title-area-b,
+.article-sop .box_acliks-benefit + .sop_title-area-b{position: relative;margin-bottom: 100px;;}
+.article-sop #smartEditProfilePage + .sop_title-area-b:after,
+.article-sop .box_acliks-benefit + .sop_title-area-b:after{display: block;content:''; height: 70px;width: 100%;position: absolute;top:50px;padding-top: 10px;background:url(/_ui/responsive/theme-blue/images/akl_plp/sop_guide_txt_pc.png) center 0 no-repeat !important;background-size:auto 60px !important;}
+
+@media (max-width: 768px) {
+	.article-sop #smartEditProfilePage + .sop_title-area-b,
+	.article-sop .box_acliks-benefit + .sop_title-area-b{position: relative;margin-bottom: 120px;;}
+	.article-sop #smartEditProfilePage + .sop_title-area-b:after,
+	.article-sop .box_acliks-benefit + .sop_title-area-b:after{display: block;content:''; height: 90px;width: 100%;position: absolute;top:50px;padding-top: 10px;background:#FEFBEA url(/_ui/responsive/theme-blue/images/akl_plp/sop_guide_txt_mo.png) center 0 no-repeat !important;background-size: auto 90px !important;}
+} */
+
+/* S :2020-12-11 sop 관련 긴급배포 */
+.box_sop-visual.box_sop-home.st_type2 {
+    background: url(/_ui/responsive/theme-blue/images/akl_plp/sop_visual_bg_.png) no-repeat center/cover;
+    background-size: auto 100%;
+    background-color: #fefbea;
+    height: 389px;
+}
+.box_sop-visual.box_sop-home.st_type2 .container {
+    color: #333;
+    background: url(/_ui/responsive/theme-blue/images/akl_plp/sop_visual_symbol_.png) no-repeat center/cover;
+    background-size: auto 389px;
+}
+.box_sop-visual.box_sop-home.st_type2 .container .tit_sp:before {
+    display: block;
+    content: '';
+    height: 82px;
+    background: url(/_ui/responsive/theme-blue/images/akl_plp/sop_visual_txt_.png) no-repeat center;
+    background-size: auto 82px;
+    margin-bottom: 10px;
+}
+@media (max-width: 1100px) {
+	.box_sop-visual.box_sop-home.st_type2 .container {
+		color: #333;
+		background: url(/_ui/responsive/theme-blue/images/akl_plp/sop_visual_symbol_.png) no-repeat -50px/cover;
+		background-size: auto 389px;
+	}
+	.box_sop-visual.box_sop-home.st_type2 .container .tit_sp:before, .box_sop-visual.box_sop-home.st_type2 .container .txt_sp-desc_1, .box_sop-visual.box_sop-home.st_type2 .container .txt_sp-desc_2, .box_sop-visual.box_sop-home.st_type2 .top_action-area {
+		margin-left: 50%;
+	}
+}
+@media (max-width: 768px) {
+	.box_sop-visual.box_sop-home.st_type2 {
+		background: url(/_ui/responsive/theme-blue/images/akl_plp/sop_visual_bg_m_.png) no-repeat right center;
+		background-size: 100% 100%;
+		height: 442px;
+	}
+	.box_sop-visual.box_sop-home.st_type2 .container {
+		background: none;
+	}
+	.box_sop-visual.box_sop-home.st_type2 .container .visual_area {
+		background: url(/_ui/responsive/theme-blue/images/akl_plp/sop_visual_symbol_m_.png) no-repeat center center;
+		background-size: auto 100%;
+		height: 375px;
+		position: relative;
+	}
+	.box_sop-visual.box_sop-home.st_type2 .container .tit_sp:before, .box_sop-visual.box_sop-home.st_type2 .container .txt_sp-desc_1 {
+	margin-left: 30%;
+	}
+	.box_sop-visual.box_sop-home.st_type2 .container .tit_sp:before {
+		display: block;
+		content: '';
+		height: 52px;
+		background: url(/_ui/responsive/theme-blue/images/akl_plp/sop_visual_txt_.png) no-repeat center;
+		background-size: auto 52px;
+		margin-bottom: 5px;
+	}
+	.box_sop-visual.box_sop-home.st_type2 .top_action-area {
+		/*width: 167px;
+		position: absolute;
+		bottom: 0;
+		left: 50%;*/
+		margin-left: -170px;
+	}
+}
+/* E :2020-12-11 sop 관련 긴급배포 */
+
+/* 2020-12-18 결제수단변경 관련 css 긴급배포 */
+.layer_section.type-wide-a .layer_section-container .layer-content {background-color:#fff;padding:20px;margin:-1px 0 0;max-height:calc(100vh - 250px)}
+
+/* 2021-04-13 레이어팝업 수정 긴급배포 */
+@media (max-width: 768px){
+	.plp-v2-st2.layer-area.showing .layer-area_container {height: 100%;}
+}
+
+/* 20220525 tabList noline 관련 css 수정 */
+@media (max-width:740px) {
+	.akl .amway-theme .tblList,
+	.akl .amway-theme .tblList tbody{display:block;}
+}
+
+/* 20220712 챗봇 그만보기 버튼 추가 */
+.scrollTopWrapper{bottom:135px}
+.box-chatbot{bottom:53px;right:22px !important}
+.box-chatbot .btn-chatbot{display:inline-block;width:58px !important;height:58px !important;background-size:58px auto !important}
+.box-chatbot .btn-chatbot-hide{position:relative;display:inline-block;padding:0;background:transparent;border:none;text-indent:-9999px;-webkit-appearance:none;-moz-appearance:none;appearance:none;vertical-align:top;font-size:0}
+.box-chatbot .btn-chatbot-hide:before{position:absolute;content:'';top:-10px;right:-6px;width:17px;height:17px;border:1px solid #cbcbcb;border-radius:8.5px;background:url(../images/akl_common/ico_chatbot_closed.png) 50% 50% no-repeat;background-size:7px auto;background-color:transparent;}
+@media (max-width:768px) {
+	.box-chatbot,
+	.akl .renewal_floating-type ~ .box-chatbot{right:13px !important;bottom:58px}
+	.akl .renewal_floating-type2 ~ .box-chatbot{right:13px !important}
+}

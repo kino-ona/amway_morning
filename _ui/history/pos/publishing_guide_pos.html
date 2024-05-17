@@ -1,0 +1,2224 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Amway POS Publishing Guide</title>
+<style type="text/css">
+	* {margin:0; padding:0;}
+	html {overflow-y:scroll;}
+	body {padding: 8px; color:#666; font:12px/1.5 Malgun Gothic, Tahoma, Sans-serif; word-break:break-all}
+	a {color:#27e; }
+	a:focus, a:hover, a:active {text-decoration:underline5;}
+	.header {position: fixed; width: 100%; height: 140px; padding: 8px;background: #fff;  border-bottom: 1px solid #ccc;  box-sizing: border-box; top: 0; left: 0; font:12px/1.5 Malgun Gothic, Tahoma, Sans-serif; z-index: 10}
+	.header h1 {height: 40px; line-height: 40px; border: 2px solid #ccc; color:#444; font-size:2em; text-align: center; }
+	.header h1 strong {font-size:70%;}
+	.header .nav {list-style:none; background:#969696; padding:0.5em 0.5em 0.2em; color:#f9f9f9; font-2017-07-24weight:bold; font-size:1.1em;}
+	.header .nav li {display:inline; margin-right:0.5em;}
+	.header .nav li a {color:#f9f9f9;}
+	.header .nav li a.on {color:#fff !important; border-bottom:2px solid #3e3e3e; text-shadow:#7c7c7c 2px 1px 2px; text-decoration:none; font-size:105%;}
+	.header .nav-otherlink {list-style:none; text-align:right; padding:0.5em 0.5em 0.2em; color:#969696; font-size:1em;}
+	.header .nav-otherlink li {display:inline;}
+	.header .nav-otherlink li a {color:#969696; font-weight:bold;}
+	.header .nav-otherlink li a.on {color:#3e3e3e;}
+	.header .nav-otherlink li a.on:before {content:'→'; font-size:0.9em;}
+	.rule {background:#f7f7f7; margin:0 0.8em 2em; padding:0.5em; font-size:95%;}
+	.rule dt {margin-bottom:0.3em; font-weight:bold;}
+	.rule dd {padding-left:0.5em;}
+	.rule dd ul {list-style-type:square; margin-left:1.2em;}
+	.progress {height: 24px; line-height:<!-- 2017.06.21  24px;background: #fafafa; border: 2px solid #eee; border-top: 0 none; }
+	.progress .total{ float: right ; width: 50%; border-left: 1px solid #eee;font-size:11px; font-weight:bold; color:#666; text-align: center; box-sizing: border-box; }
+	.progress .total_D{ float: left; width: 50%;  font-size:11px; font-weight:bold; colro:#666; text-align: center;  }
+	.guide_txt {float: right; margin-top: 33px; font-size:11px; font-weight:bold; color:#666; text-align:right;}
+	.togglebtn{padding:2px 5px; margin:0; background:#000; border:0; border-radius:3px; color:#f2f2f2; font:bold 11px/1.5 Malgun Gothic, Tahoma, Sans-serif; cursor:pointer; text-decoration:none;vertical-align: middle;}
+	.noneHideBtn,
+	.noneHideBtn:hover,
+	.showHideBtn,
+	.showHideBtn:hover {padding:2px 8px; margin:0; background:#ab1111; border:0; border-radius:3px; font:bold 11px/1.5 Malgun Gothic, Tahoma, Sans-serif; cursor:pointer; text-decoration:none; }
+	.noneHideBtn,
+	.showHideBtn { color: #fff; }
+	.noneHideBtn:hover,
+	.showHideBtn:hover { color: #000; }
+	.body {margin-top: 150px; padding-bottom:1em;}
+	.section .title {position: relative;}
+	.section .title:after { content:"▼"; position:absolute; right:20px; top:5px; z-index:10000; color:#fff }
+	.section .title {  margin:0; padding:0.5em; background-color:#6b7178; color:#fff; font-weight:bold; font-size:100%; margin-top:-1px; position:relative; *zoom:1; cursor:pointer;}
+	.section {margin-top:10px; }
+	.section .title_toggle {margin:0; padding:0 0 6px 0;  color:#000; font-weight:bold; font-size:100%; margin-top:-1px; position:relative; *zoom:1;}
+	.section .content { display: none; }
+	.section.open .content { display:block; }
+	.section.open .title{ background: #014286; }
+	.section.open .title:after { content:"▲";  }
+
+	.section table {width:100%; border-collapse:collapse; border-spacing:0; border:0; table-layout:fixed;}
+	.section table caption {display:none;}
+	.section table th {color:#333; background-color:#f1f1f1; font-size:11px; text-align:center;}
+	.section table td {text-align:left;/* text-overflow: ellipsis; overflow: hidden; white-space: norwap; */}
+	.section table th, table td {padding:0.3em; border:1px solid #ddd; }
+	.section table td.tit {color:#333; font-weight:bold;}
+	.section table td.file {color:#aaa;}
+	.section table td.date {text-align:center; font-style:italic; white-space:nowrap;}
+	.section table td.date del {display:block; color:#aaa !important;}
+	.section table td.stat , .section table td.statD{text-align:center; font-family:Gulim;}
+	 .statD{color: #41a919}
+	 .stat {color: #5da9dd}
+	.section table td.desc, .section table td.note, .section table td.history {font-style:italic; color:#777; font-size:11px;}
+	.section table td.author {text-align:center; white-space:nowrap;}
+	.section table td ul {list-style:none; margin:0; padding:0 10px; font-style:italic;}
+	.section table td em {color:#c82026;}
+	.section table td em.blue {color:#69f;}
+	.section table tr.overcoloring {background:#fafafa !important;}
+	.section table tr.today {background:#fcf7bd;}
+	.section table tr.today .date {color:#444;}
+	.section table td.history-jira {font-style:italic; font-size:11px;}
+	.section table td.history-jira a {color:#3b73af; font-weight:bold;}
+	.section table td.history ul li:before, .section table td.history-jira ul li:before {content:'- ';}
+	.section table .taCenter{text-align:center !important}
+	table td span.red {color:red} /* 추가 수정*/
+	.brbottom1 td{border-bottom: 1px solid #bebebe; }
+	.brbottom2 {border-bottom: 2px solid #aaa; }
+	.btn-top { display:block; background:#000; color:#fff; text-align:center; padding:10px; font-weight:bold}
+	td.note p:nth-of-type(odd) { color:#0760a4}
+	td.note p:nth-of-type(even) { color:#8a5bab}
+	td.note p:nth-of-type(odd) b{ color:#5ea519}
+	td.note p:nth-of-type(even) b{ color:#dc8027}
+	.section table td ul.modify-date { padding: 0}
+	.modify-date li:nth-of-type(1){ color:#119f22}
+	.modify-date li:nth-of-type(2){ color:#157ef5}
+	.modify-date li:nth-of-type(3){ color:#c660d5}
+	.modify-date li:nth-of-type(4){ color:#d5a860}
+	.modify-date li:nth-of-type(5n+1){ color:#119f22}
+	.link-btn1 { display:inline-block; padding:0 5px; height:20px; line-height:18px; vertical-align: middle; text-decoration: none; color:#fff; background: #8c429c; border-radius:3px;}
+	.link-btn2 { display:inline-block; padding:0 5px; height:20px; line-height:18px; vertical-align: middle; text-decoration: none; color:#fff; background: #1f85bf; border-radius:3px;}
+	.link-btn3 { display:inline-block; padding:0 10px; height:20px; line-height:18px; vertical-align: middle; text-decoration: none; color:#fff; background: #074f99; border-radius:3px;}
+	.delete { background-color: #ddd}
+	.delete:hover td { background-color: #ddd}
+	.delete td { text-decoration:line-through; }
+	.delete td.note{ text-decoration:none; font-weight: bold;}
+	/* .owner {background:#c5dcf7;} */
+	.owner span{position:relative;display:inline-block;width:43px; padding-left:7px;}
+	.owner span:before {content:'/'; position:absolute; top:0; left:0; color:#eee;}
+	.owner span:first-child:before{content:'';padding-left:0;}
+	th.owner span {width:auto; padding:0 8px;}
+	th.owner span:before {color:#666;}
+	.partPlan{}
+	.partDesign{}
+	.partPub{}
+</style>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript">
+	jQuery.fn.stat = function (options) {
+		var settings = jQuery.extend({
+				total: '.total',
+				toggleBtn: '.togglebtn',
+				title: 'h2.title',
+				content: 'div.content',
+				files: 'tbody tr',
+				stat: 'td.stat',
+				completed: '●',
+				index: 0,
+				openAll: true
+			}, options),
+			all_sections = this;
+		return this.each(function () {
+			var self = this,
+				$self = $(self),
+				title_text = [],
+				completed = 0;
+			self.section_title = $(settings.title, $self);
+			self.content = $(settings.content, $self);
+			self.files = $(settings.files, $self);
+			self.files.each(function () {
+				var stat = $(settings.stat, this);
+				stat.each(function () {
+					var text = $(this).text();
+					if (text && (text === settings.completed)) {
+						completed++;
+					}
+				});
+			});
+			title_text = [self.section_title.text(), ' (퍼블 진행상황: ',completed,'/',self.files.length,' / '];
+			self.section_title.text(title_text.join(''));
+			self.section_title.click(function() {
+				self.content.slideToggle(450);
+
+				//수정: 2018.03.13
+				var findParent = $(this).parent();
+				findParent.siblings().removeClass('open');
+				findParent.addClass('open');
+			});
+			$(settings.toggleBtn).text('전체열기').toggle(function() {
+				$(settings.toggleBtn).text('전체닫기');
+				$(settings.content).show();
+			}, function() {
+				$(settings.toggleBtn).text('전체열기');
+				$(settings.content).hide();
+			});
+
+
+			//total
+			var completedAll = 0;
+			$(settings.stat).each(function () {
+				var text = $(this).text();
+				if (text && (text == settings.completed)) {
+					completedAll++;
+				}
+			});
+			$(settings.total).text('검수 진행률 : '+completedAll+'/'+$(settings.files).length+'pages (전체진행율'+Math.round(completedAll/$(settings.files).length*100)+'%)');
+
+		});
+	};
+
+	jQuery.fn.statD = function (options) {
+		var settings = jQuery.extend({
+				total_D: '.total_D',
+				toggleBtn: '.togglebtn',
+				title: 'h2.title',
+				content: 'div.content',
+				files: 'tbody tr',
+				statD: 'td.statD',
+				completed: '●',
+				index: 0,
+				openAll: true
+			}, options),
+			all_sections = this;
+		return this.each(function () {
+			var self = this,
+				$self = $(self),
+				title_text = [],
+				completed = 0;
+			self.section_title = $(settings.title, $self);
+			self.content = $(settings.content, $self);
+			self.files = $(settings.files, $self);
+			self.files.each(function () {
+				var statD = $(settings.statD, this);
+				statD.each(function () {
+					var text = $(this).text();
+					if (text && (text === settings.completed)) {
+						completed++;
+					}
+				});
+			});
+			title_text = [self.section_title.text(), ' 검수 진행상황: ',completed,'/',self.files.length,')'];
+			self.section_title.text(title_text.join(''));
+
+
+			//total
+			var completedAll_D = 0;
+			$(settings.statD).each(function () {
+				var text = $(this).text();
+				if (text && (text == settings.completed)) {
+					completedAll_D++;
+				}
+			});
+			$(settings.total_D).text('퍼블리싱 진행율 : '+completedAll_D+'/'+$(settings.files).length+'pages (전체진행율'+Math.round(completedAll_D/$(settings.files).length*100)+'%)');
+
+		});
+	};
+
+	$(document).ready(function () {
+		$('div.section').stat();
+		$('div.section').statD();
+
+		//over-coloring
+		$('div.section tbody tr').mouseover(function() {
+			$(this).addClass('overcoloring');
+		}).mouseout(function() {
+			$(this).removeClass('overcoloring');
+		});
+		$('.showHideBtn').hide();
+
+		$('a.noneHideBtn').click(function () {
+			$('.none').hide();
+			$('.showHideBtn').show();
+			$('.noneHideBtn').hide();
+		});
+
+		$('a.showHideBtn').click(function () {
+			$('.none').show();
+			$('.showHideBtn').hide();
+			$('.noneHideBtn').show();
+		});
+
+		/* 수정: 2018.03.13 (self.section_title 이동)
+		$('.section .title').click(function(){
+			var findParent = $(this).parent('.section');
+
+			$(this).parent('.section').addClass('open');
+			$(findParent).siblings().removeClass('open');
+		}); */
+
+		// to top
+		var scrollDiv = document.createElement('div');
+		$(scrollDiv).attr('id', 'toTop').html('<a href="#nohref" class="btn-top"> ↑ 처음으로 이동 </a>').appendTo('body');
+		$(window).scroll(function(){
+			if ($(this).scrollTop() != 0) {
+				$('#toTop').fadeIn();
+			} else {
+				$('#toTop').fadeOut();
+			}
+		});
+		$('#toTop').click(function(){
+			$('body,html').animate({scrollTop: 0}, 'fast');
+			return false;
+		});
+		$('.overlay').click(function(){
+			$('.dNotice').hide(200); $('.overlay').fadeOut();
+		});
+	});
+
+</script>
+</head>
+<body>
+<div class="header">
+	<h1>:: Amway POS Publishing Guide   ::</h1>
+	<div class="progress">
+		<p class="total_D"></p>
+		<p class="total"></p>
+	</div>
+
+	<p class="guide_txt">△ : 대기 / ○ : 부분완료 /  <span class="statD">● </span>: 퍼블리싱 완료 / <span class="stat">● </span>: 검수 완료&nbsp;&nbsp;
+
+	<div class="section" style="margin-top: 30px;">
+		<div class="title_toggle">
+			<button class="togglebtn" type="button"></button>
+			<a href="publishing_guide_pos.html" class="link-btn3">pos</a>
+		</div>
+
+	</div>
+</div>
+<div class="body">
+<!-- POS -->
+	<div class="section open"><!-- 열림상태 : open -->
+		<h2 class="title">POS</h2>
+		<div class="content">
+			<table border="1">
+				 <colgroup>
+					<col width="8%" /><col width="10%" />
+					<col width="12%" /><col width="12%" /><col width="10%" /><col width="6%" /><col width="5%" /><col width="5%" />
+					<col width="5%" /><col width="9%" /><col width="8%" /><col width="*" />
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="col">1depth</th>
+						<th scope="col">2depth</th>
+						<th scope="col">3depth</th>
+						<th scope="col">화면Lv.1</th>
+						<th scope="col">화면Lv.2</th>
+						<th scope="col">File Name(html)</th>
+						<th scope="col">Chrome</th>
+						<th scope="col" title="△ :대기 / ○ :부분완료 / ● :완료">Publishing tatus</th>
+						<th scope="col">Check Status</th>
+						<th scope="col" class="owner"><div>담당자</div><div><span class="partPlan">기획</span><span class="partDesign">디자인</span><span class="partPub">퍼블</span></div></th>
+						<th scope="col">complete date / modify Date</th>
+						<th scope="col">note</th>
+					</tr>
+				</thead>
+				<tbody>
+
+					<tr>
+						<td class="tit">Dash-board</td>
+						<td>캐셔화면</td>
+						<td>메인 (로그인 전)</td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/dsboard/U10001.html" target="_blank">U10001.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.03.27 /<span style="color: #914698;font-weight:bold">2018.09.17</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.09.17</strong> 버튼 명칭 변경</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>판매정산 진입불가 팝업</td>
+						<td></td>
+						<td class="file"><a href="/html/dsboard/U10001_lp1.html" target="_blank">U10001_lp1.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">김승원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.08.22</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>판매정산 정산 영수증 출력 팝업</td>
+						<td></td>
+						<td class="file"><a href="/html/dsboard/U10001_lp2.html" target="_blank">U10001_lp2.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">김승원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.08.22</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td>메인 (로그인 후)</td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/dsboard/U10002.html" target="_blank">U10002.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.03.27</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td>고객화면</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/dsboard/U10004.html" target="_blank">U10004.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.04.02 /<span style="color: #914698;font-weight:bold">2018.09.13</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.04.18</strong> 이름 마스킹 처리 삭제</li>
+								 <li><strong>2018.05.04</strong> 수정사항 주석표기</li>
+								 <li><strong>2018.07.24</strong> 공지사항 상단 이동</li>
+								 <li><strong>2018.08.22</strong> 점포명(프라자삭제),A포인트와 리캐쉬 금액 마스킹처리</li>
+								 <li><strong>2018.09.13</strong> 상단 고객리스트 및 하단 보유쿠폰 추가</li>
+							</ul>
+						</td>
+					</tr>
+					<tr class="delete">
+						<td class="tit"></td>
+						<td></td>
+						<td>그룹결제 메인</td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/dsboard/U10005.html" target="_blank">U10005.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.04.02 /<span style="color: #914698;font-weight:bold">2018.08.22</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.04.18</strong> 이름 마스킹 처리 삭제</li>
+								 <li><strong>2018.05.04</strong> 수정사항 주석표기</li>
+								 <li><strong>2018.07.24</strong> 공지사항 상단 이동</li>
+								 <li><strong>2018.08.22</strong> 점포명(프라자삭제),A포인트와 리캐쉬 금액 마스킹처리</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit">로그인</td>
+						<td>(Casher Login)</td>
+						<td>로그인 입력 창</td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/login/U10006a.html" target="_blank">U10006a.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.03.23</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td>로그아웃 확인</td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/login/U10006b.html" target="_blank">U10006b.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.03.23</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td>POS 종료 시 확인</td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/login/U10006c.html" target="_blank">U10006c.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.03.23</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td>POS 종료 시 배치정보 저장 완료</td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/login/U10006d.html" target="_blank">U10006d.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.03.23</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td>POS 종료 시 배치정보 저장 (주문 수량이 0건인 경우)</td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/login/U10006e.html" target="_blank">U10006e.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.03.23</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td>화면풀림/잠금</td>
+						<td>화면풀림</td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/login/U10007a.html" target="_blank">U10007a.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.03.27</td>
+						<td class="note"></td>
+					</tr>
+
+
+					<tr>
+						<td class="tit">검색</td>
+						<td>상품검색</td>
+						<td></td>
+						<td>상품 SKU ID,  상품명 입력 및 검색</td>
+						<td></td>
+						<td class="file"><a href="/html/search/U10012a.html" target="_blank">U10012a.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.03.28 /<span style="color: #914698;font-weight:bold">2018.05.11</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.05.11</strong> 검색영역 수정</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>검색결과</td>
+						<td></td>
+						<td class="file"><a href="/html/search/U10012b.html" target="_blank">U10012b.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.03.28 /<span style="color: #914698;font-weight:bold">2018.09.04</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.05.11</strong> 검색영역 수정</li>
+								 <li><strong>2018.09.04</strong> 취소버튼 초기화로 명칭변경</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>회원/비회원 정보 입력</td>
+						<td></td>
+						<td class="file"><a href="/html/search/U10012e.html" target="_blank">U10012e.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">김승원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.09.04 /<span style="color: #914698;font-weight:bold">2018.09.11</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.09.11</strong> 경고 타이틀 알림으로 변경</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit">판매등록</td>
+						<td>메인(캐셔화면)</td>
+						<td>회원정보 인식 전</td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/sell/U20019.html" target="_blank">U20019.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.03.23 /<span style="color: #914698;font-weight:bold">2018.09.12</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.04.13</strong> 수정사항 주석표기</li>
+								 <li><strong>2018.05.04</strong> 수정사항 주석표기</li>
+								 <li><strong>2018.05.14</strong> 프로모션 텍스트로 변경</li>
+								 <li><strong>2018.06.27</strong> 통합결제 버튼으로 변경</li>
+								 <li><strong>2018.07.24</strong> 공지사항 상단 이동</li>
+								 <li><strong>2018.08.22</strong> 점포명(프라자삭제)</li>
+								 <li><strong>2018.09.12</strong> 프로모션 수정</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td>회원정보 인식 후</td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/sell/U20001.html" target="_blank">U20001.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.03.23 /<span style="color: #914698;font-weight:bold">2018.09.21</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.04.13</strong> 수정사항 주석표기</li>
+								 <li><strong>2018.04.18</strong> 름 마스킹 처리 삭제</li>
+								 <li><strong>2018.05.04</strong> 수정사항 주석표기</li>
+								 <li><strong>2018.05.14</strong> 프로모션 텍스트로 변경</li>
+								 <li><strong>2018.06.27</strong> 통합결제 버튼으로 변경</li>
+								 <li><strong>2018.07.24</strong> 공지사항 상단 이동</li>
+								 <li><strong>2018.08.22</strong> 점포명(프라자삭제)</li>
+								 <li><strong>2018.09.04</strong> 내신금액을 받은금액으로 명칭변경</li>
+								 <li><strong>2018.09.12</strong> 프로모션 수정 및 사용가능 보유 쿠폰 추가</li>
+								 <li><strong>2018.09.21</strong> 리스트내 프로모션 레이어 추가</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>혜택(증정품)선택 팝업</td>
+						<td></td>
+						<td class="file"><a href="/html/sell/U20003_lp2.html" target="_blank">U20003_lp2.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">김승원</span><span class="partDesign">황혜승</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.09.12</td>
+						<td class="note">
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>알림 팝업</td>
+						<td></td>
+						<td class="file"><a href="/html/sell/U20003_lp4.html" target="_blank">U20003_lp4.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">김승원</span><span class="partDesign">황혜승</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.09.11</td>
+						<td class="note">
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>프로모션 팝업</td>
+						<td></td>
+						<td class="file"><a href="/html/sell/U20003_lp5.html" target="_blank">U20003_lp5.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">김승원</span><span class="partDesign">황혜승</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.09.12</td>
+						<td class="note">
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td>STEP 1. 회원선택 및 인증</td>
+						<td>회원 정보 검색</td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/sell/U20002a.html" target="_blank">U20002a.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.03.28</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>알림 팝업</td>
+						<td></td>
+						<td class="file"><a href="/html/sell/U20002a_lp.html" target="_blank">U20002a_lp.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">김승원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.08.22 /<span style="color: #914698;font-weight:bold">2018.09.11</span>ㅁ</td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.09.11</strong> 경고 타이틀 알림으로 변경</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td>회원정보 검색결과</td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/sell/U20002b.html" target="_blank">U20002b.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.03.28 /<span style="color: #914698;font-weight:bold">2018.09.04</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.04.18</strong> 이름 마스킹 처리 삭제</li>
+								 <li><strong>2018.09.04</strong> 취소버튼 초기화로 명칭변경</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td>개인정보수집 및 이용동의</td>
+						<td>신규회원 또는 신규 구매자 동의</td>
+						<td></td>
+						<td class="file"><a href="/html/sell/U20002d.html" target="_blank">U20002d.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.04.10</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>암웨이 회원가입하기 (Member)</td>
+						<td></td>
+						<td class="file"><a href="/html/sell/U20002d_lp.html" target="_blank">U20002d_lp.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">김승원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.08.22</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>알림 팝업</td>
+						<td></td>
+						<td class="file"><a href="/html/sell/U20002d_lp2.html" target="_blank">U20002d_lp2.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">김승원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.09.11</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td>휴대폰번호/전화번호 입력 에러 팝업</td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/sell/U20002e.html" target="_blank">U20002e.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.04.10</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td>개인정보 수집 및 이용 동의 확인 팝업</td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/sell/U20002f.html" target="_blank">U20002f.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.04.18</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td>회원갱신여부 확인 팝업</td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/sell/U20002h.html" target="_blank">U20002h.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.03</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td>회원프로모션 적용여부 확인 팝업</td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/sell/U20002i.html" target="_blank">U20002i.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.03</td>
+						<td class="note"></td>
+					</tr>
+
+					<tr>
+						<td class="tit"></td>
+						<td>STEP 2. 구매제한</td>
+						<td> 구매제한알림</td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/sell/U20003_lp.html" target="_blank">U20003_lp.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.03.29 / <span style="color: #914698;font-weight:bold">2018.05.11</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.05.11</strong> 이전,다음 버튼 추가</li>
+							</ul>
+						</td>
+					</tr>
+
+					<!-- 단일결제 -->
+					<tr>
+						<td class="tit"></td>
+						<td>STEP 3. 통합결제 (Cart 화면)</td>
+						<td>단일결제(결제 버튼 누르면 Lp 노출)</td>
+						<td>단일 결제수단 선택</td>
+						<td></td>
+						<td class="file"><a href="/html/sell/U20006_lp.html" target="_blank">U20006_lp.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.03.27 / <span style="color: #914698;font-weight:bold">2018.09.04</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.04.16</strong> A/R을 Re-Cash(A/P)로 변경</li>
+								 <li><strong>2018.07.13</strong> 수정사항 주석표기</li>
+								 <li><strong>2018.09.04</strong> Re-Cash(A/P) → Re-Cash 버튼 명칭 변경 및 결제금액 영역 추가</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>잔여 금액 결제 안내</td>
+						<td></td>
+						<td class="file"><a href="/html/sell/U20006_lp1.html" target="_blank">U20006_lp1.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">김승원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.09.04 / <span style="color: #914698;font-weight:bold">2018.09.11</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.09.11</strong> 경고 타이틀 알림으로 변경</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>복합 결제 취소</td>
+						<td></td>
+						<td class="file"><a href="/html/sell/U20006_lp2.html" target="_blank">U20006_lp2.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">김승원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.09.04</td>
+						<td class="note">
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>Re-Cash 없음</td>
+						<td></td>
+						<td class="file"><a href="/html/sell/U20006_lp3.html" target="_blank">U20006_lp3.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">김승원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.09.04</td>
+						<td class="note">
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>신용카드 결제</td>
+						<td>무이자 할부 입력</td>
+						<td class="file"><a href="/html/sell/U20006a.html" target="_blank">U20006a.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.03.28 / <span style="color: #914698;font-weight:bold">2018.09.04</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.04.13</strong> 비밀번호 인풋 비활성화</li>
+								 <li><strong>2018.06.19</strong> 무이자 할부 정보 조회 버튼 추가</li>
+								 <li><strong>2018.07.13</strong> 수정사항 주석표기</li>
+								 <li><strong>2018.09.04</strong> 확인버튼 추가</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>알림 팝업</td>
+						<td class="file"><a href="/html/sell/U20006a_lp.html" target="_blank">U20006a_lp.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">김승원</span><span class="partDesign">황혜승</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.09.11</span></td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>통신중 </td>
+						<td class="file"><a href="/html/sell/U20006b.html" target="_blank">U20006b.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.03.29</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>결제완료 </td>
+						<td class="file"><a href="/html/sell/U20006c.html" target="_blank">U20006c.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.03.28 /<span style="color: #914698;font-weight:bold">2018.07.13</span></td>
+						<td class="note">
+						<ul class="modify-date">
+							<li><strong>2018.06.19</strong> 무이자 할부 정보 조회 버튼 추가</li>
+							<li><strong>2018.07.13</strong> 수정사항 주석표기</li>
+						</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>결제실패</td>
+						<td class="file"><a href="/html/sell/U20006d.html" target="_blank">U20006d.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.03.28 /<span style="color: #914698;font-weight:bold">2018.07.13</span></td>
+						<td class="note">
+						<ul class="modify-date">
+							<li><strong>2018.06.19</strong> 무이자 할부 정보 조회 버튼 추가</li>
+							<li><strong>2018.07.13</strong> 수정사항 주석표기</li>
+						</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>체크카드 결제</td>
+						<td>결제</td>
+						<td class="file"><a href="/html/sell/U20006e.html" target="_blank">U20006e.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.03.28 /<span style="color: #914698;font-weight:bold">2018.07.13</span></td>
+						<td class="note">
+						<ul class="modify-date">
+							<li><strong>2018.07.13</strong> 수정사항 주석표기</li>
+						</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>결제완료</td>
+						<td class="file"><a href="/html/sell/U20006f.html" target="_blank">U20006f.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.03.28 /<span style="color: #914698;font-weight:bold">2018.07.13</span></td>
+						<td class="note">
+						<ul class="modify-date">
+							<li><strong>2018.07.13</strong> 수정사항 주석표기</li>
+						</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>IC카드 결제</td>
+						<td>IC카드입력안내</td>
+						<td class="file"><a href="/html/sell/U20006g.html" target="_blank">U20006g.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.04.02</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>결제완료</td>
+						<td class="file"><a href="/html/sell/U20006h.html" target="_blank">U20006h.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.03.28 / <span style="color: #914698;font-weight:bold">2018.09.04</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.04.13</strong> 비밀번호 인풋 생성</li>
+								 <li><strong>2018.07.13</strong> 수정사항 주석표기</li>
+								 <li><strong>2018.09.04</strong> 확인버튼 추가로 인한 수정</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>현금 결제</td>
+						<td></td>
+						<td class="file"><a href="/html/sell/U20006i.html" target="_blank">U20006i.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.03.28 / <span style="color: #914698;font-weight:bold">2018.07.13</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.04.13</strong> 발행구분 라디오로 변경</li>
+								 <li><strong>2018.06.20</strong> 고객번호 인풋변경</li>
+								 <li><strong>2018.07.13</strong> 수정사항 주석표기</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>자동이체</td>
+						<td>자동이체 비밀번호 입력</td>
+						<td class="file"><a href="/html/sell/U20006j.html" target="_blank">U20006j.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.03.28 / <span style="color: #914698;font-weight:bold">2018.08.23</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.04.17</strong> 잔액 필드 삭제</li>
+								 <li><strong>2018.07.13</strong> 수정사항 주석표기</li>
+								 <li><strong>2018.08.23</strong> 승인번호,이체일자 삭제</li>
+							</ul>
+						</td>
+					</tr>
+					<tr class="delete">
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>즉시출금불가</td>
+						<td class="file"><a href="/html/sell/U20006k.html" target="_blank">U20006k.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.04.02</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>Re-Cash</td>
+						<td>Re-Cash</td>
+						<td class="file"><a href="/html/sell/U20006l.html" target="_blank">U20006l.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.03.28 /<span style="color: #914698;font-weight:bold">2018.07.13</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.04.16</strong>화면전체수정(A/R에서 Re-Cash로 변경)</li>
+								 <li><strong>2018.07.13</strong> 수정사항 주석표기</li>
+							</ul>
+						</td>
+					</tr>
+					<tr class="delete">
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>Re-Cash 경고안내</td>
+						<td class="file"><a href="/html/sell/U20006m.html" target="_blank">U20006m.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.04.02</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>현금/수표</td>
+						<td></td>
+						<td class="file"><a href="/html/sell/U20006n.html" target="_blank">U20006n.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.04.16 /<span style="color: #914698;font-weight:bold">2018.07.13</span></td>
+						<td class="note">
+						<ul class="modify-date">
+							<li><strong>2018.07.13</strong> 수정사항 주석표기</li>
+						</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>현금/수표</td>
+						<td></td>
+						<td class="file"><a href="/html/sell/U20006n_lp.html" target="_blank">U20006n_lp.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">김승원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.07.24 /<span style="color: #914698;font-weight:bold">2018.09.04</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								<li><strong>2018.09.04</strong> 취소버튼 초기화로 명칭변경</li>
+							</ul>
+						</td>
+					</tr>
+					<!-- //단일결제 -->
+					<!-- 복합결제 -->
+					<tr class="delete">
+						<td class="tit"></td>
+						<td></td>
+						<td>복합결제(결제 버튼 누르면 Lp 노출)</td>
+						<td>복합 결제수단 선택 </td>
+						<td></td>
+						<td class="file"><a href="/html/sell/U20007_lp.html" target="_blank">U20007_lp.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.03.27 / <span style="color: #914698;font-weight:bold">2018.06.19</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.04.16</strong>A/R을 Re-Cash(A/P)로 변경</li>
+								 <li><strong>2018.06.19</strong>쿠폰버튼 삭제, 주의사항 수정</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>신용카드 결제</td>
+						<td></td>
+						<td class="file"><a href="/html/sell/U20007a.html" target="_blank">U20007a.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.03.28 /<span style="color: #914698;font-weight:bold">2018.11.14</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.06.19</strong> 무이자 할부 정보 조회 버튼 추가</li>
+								 <li><strong>2018.07.13</strong> 수정사항 주석표기</li>
+								 <li><strong>2018.11.14</strong> 할부개월 라디오 추가</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>통신중 </td>
+						<td class="file"><a href="/html/sell/U20007b.html" target="_blank">U20007b.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.04.17</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>결제완료 </td>
+						<td class="file"><a href="/html/sell/U20007c.html" target="_blank">U20007c.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.04.17 /<span style="color: #914698;font-weight:bold">2018.07.13</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.06.19</strong> 무이자 할부 정보 조회 버튼 추가</li>
+								 <li><strong>2018.07.13</strong> 수정사항 주석표기</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>결제실패</td>
+						<td class="file"><a href="/html/sell/U20007d.html" target="_blank">U20007d.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.04.17 /<span style="color: #914698;font-weight:bold">2018.07.13</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.06.19</strong> 무이자 할부 정보 조회 버튼 추가</li>
+								 <li><strong>2018.07.13</strong> 수정사항 주석표기</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>체크카드 결제</td>
+						<td>결제</td>
+						<td class="file"><a href="/html/sell/U20007e.html" target="_blank">U20007e.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.04.02 /<span style="color: #914698;font-weight:bold">2018.07.13</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.07.13</strong> 수정사항 주석표기</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>결제완료</td>
+						<td class="file"><a href="/html/sell/U20007f.html" target="_blank">U20007f.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.04.17 /<span style="color: #914698;font-weight:bold">2018.07.13</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.07.13</strong> 수정사항 주석표기</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>IC카드 결제</td>
+						<td>IC카드입력안내</td>
+						<td class="file"><a href="/html/sell/U20007g.html" target="_blank">U20007g.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.04.17</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>결제완료</td>
+						<td class="file"><a href="/html/sell/U20007h.html" target="_blank">U20007h.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.04.17 /<span style="color: #914698;font-weight:bold">2018.07.13</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.07.13</strong> 수정사항 주석표기</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>현금/수표 결제</td>
+						<td></td>
+						<td class="file"><a href="/html/sell/U20007i.html" target="_blank">U20007i.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.04.16 /<span style="color: #914698;font-weight:bold">2018.09.17</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.06.19</strong> 수표조회 버튼 추가</li>
+								 <li><strong>2018.09.17</strong> 수정사항 화면 내 주석표기</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>현금영수증</td>
+						<td></td>
+						<td class="file"><a href="/html/sell/U20007j.html" target="_blank">U20007j.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.03.28 / <span style="color: #914698;font-weight:bold">2018.07.13</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.04.16</strong> 발행구분 라디오로 변경</li>
+								 <li><strong>2018.06.20</strong> 고객번호 인풋 변경</li>
+								 <li><strong>2018.07.13</strong> 수정사항 주석표기</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>Re-Cash</td>
+						<td>Re-Cash</td>
+						<td class="file"><a href="/html/sell/U20007k.html" target="_blank">U20007k.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.03.28 /<span style="color: #914698;font-weight:bold">2018.07.13</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.04.16</strong>화면전체수정(A/R에서 Re-Cash로 변경)</li>
+								 <li><strong>2018.07.13</strong> 수정사항 주석표기</li>
+							</ul>
+						</td>
+					</tr>
+					<tr class="delete">
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>Re-Cash 경고안내</td>
+						<td class="file"><a href="/html/sell/U20007l.html" target="_blank">U20007l.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.04.16</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>A포인트 결제</td>
+						<td>결제</td>
+						<td class="file"><a href="/html/sell/U20007m.html" target="_blank">U20007m.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.03.28 / <span style="color: #914698;font-weight:bold">2018.07.13</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.04.17</strong> 회원등급 필드 삭제</li>
+								 <li><strong>2018.07.13</strong> 수정사항 주석표기</li>
+							</ul>
+						</td>
+					</tr>
+					<tr class="delete">
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>경고안내</td>
+						<td class="file"><a href="/html/sell/U20007n.html" target="_blank">U20007n.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.03.28</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>Member 포인트 결제</td>
+						<td></td>
+						<td class="file"><a href="/html/sell/U20007o.html" target="_blank">U20007o.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.03.28 / <span style="color: #914698;font-weight:bold">2018.04.17</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.04.17</strong> 회원등급 필드 삭제</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>쿠폰 결제</td>
+						<td>쿠폰 조회</td>
+						<td class="file"><a href="/html/sell/U20007p.html" target="_blank">U20007p.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.03.29 / <span style="color: #914698;font-weight:bold">2018.12.04</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.06.11</strong> 버튼 추가</li>
+								 <li><strong>2018.07.13</strong> 수정사항 주석처리</li>
+								 <li><strong>2018.12.04</strong> 수량 추가</li>
+							</ul>
+						</td>
+					</tr>
+					<tr class="delete">
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>사용 쿠폰 번호 입력, 바코드 입력</td>
+						<td class="file"><a href="/html/sell/U20007q.html" target="_blank">U20007q.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.03.29 /<span style="color: #914698;font-weight:bold">2018.06.19</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.06.19</strong> 버튼 추가</li>
+							</ul>
+						</td>
+					</tr>
+					<tr class="delete">
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>쿠폰확인</td>
+						<td class="file"><a href="/html/sell/U20007r.html" target="_blank">U20007r.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">김승원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.06.19</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>무이자 할부 정보</td>
+						<td class="file"><a href="/html/sell/U20007s.html" target="_blank">U20007s.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">김승원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.06.19</td>
+						<td class="note"></td>
+					</tr>
+					<!-- //복합결제 -->
+
+					<tr>
+						<td class="tit"></td>
+						<td>STEP 3. 프로모션 상품 선택</td>
+						<td>프로모션 팝업</td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/sell/U20008_lp.html" target="_blank">U20008_lp.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.03.27 / <span style="color: #914698;font-weight:bold">2018.09.17</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.04.13</strong> 비닐봉투, 파이토카페상품은 프로모션 다음 페이지 노출</li>
+								 <li><strong>2018.09.17</strong> 타이틀 변경</li>
+							</ul>
+						</td>
+					</tr>
+
+					<tr>
+						<td class="tit"></td>
+						<td>STEP 4. 결제완료</td>
+						<td>결제완료내역</td>
+						<td>결제완료</td>
+						<td></td>
+						<td class="file"><a href="/html/sell/U20009a.html" target="_blank">U20009a.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.04.16 / <span style="color: #914698;font-weight:bold">2018.09.04</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.07.13</strong> 수정사항 주석처리</li>
+								 <li><strong>2018.09.04</strong> 현금영수증 버튼 추가</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td>주문취소(Button)</td>
+						<td>주문취소 알림</td>
+						<td></td>
+						<td class="file"><a href="/html/sell/U20009b.html" target="_blank">U20009b.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.04.02</td>
+						<td class="note"></td>
+					</tr>
+
+					<!-- 영수증발행 -->
+					<tr>
+						<td class="tit"></td>
+						<td>STEP 5. 영수증 발행</td>
+						<td>영수증 발행 (Button)</td>
+						<td>취소 영수증</td>
+						<td></td>
+						<td class="file"><a href="/html/sell/U20010b.html" target="_blank">U20010b.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.04.02</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>영수증재발행</td>
+						<td></td>
+						<td class="file"><a href="/html/sell/U20010c.html" target="_blank">U20010c.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.04.02 / <span style="color: #914698;font-weight:bold">2018.09.17</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.09.17</strong> 타이틀 변경</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>영수증 발행</td>
+						<td></td>
+						<td class="file"><a href="/html/sell/U20010c_lp.html" target="_blank">U20010c_lp.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.04.02</td>
+						<td class="note"></td>
+					</tr>
+					<!-- //영수증발행 -->
+					<tr>
+						<td class="tit"></td>
+						<td>주문취소</td>
+						<td>주문 취소 알림</td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/sell/U20011_lp.html" target="_blank">U20011_lp.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.04.03</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td>주문 취소 알림(그룹결제)</td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/sell/U20012_lp.html" target="_blank">U20012_lp.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.04.17</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td>주문 취소</td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/sell/U20013_lp.html" target="_blank">U20013_lp.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">김승원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.08.22</td>
+						<td class="note"></td>
+					</tr>
+
+					<!-- 픽업주문 -->
+					<tr class="delete">
+						<td class="tit"></td>
+						<td>픽업 주문</td>
+						<td>STEP 3. ECP 컨펌</td>
+						<td> ECP 출력 및 ECP 컨펌 선택</td>
+						<td></td>
+						<td class="file"><a href="/html/sell/U20022_lp.html" target="_blank">U20022_lp.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.04.03 /<span style="color: #914698;font-weight:bold">2018.06.07</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.04.13</strong> ECP컨펌과 ECP출력 앞뒤로 순서바뀜</li>
+								 <li><strong>2018.06.07</strong> 화면삭제</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td>픽업 주문</td>
+						<td>ECP픽업 주문 리스트 팝업</td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/sell/U20022a_lp.html" target="_blank">U20022a_lp.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">김승원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.06.19 /<span style="color: #914698;font-weight:bold">2018.11.15</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.07.13</strong> 수정사항 주석처리</li>
+								 <li><strong>2018.08.22</strong> 컨펌버트 삭제</li>
+								 <li><strong>2018.08.27</strong> 이전,다음 버튼 스타일 변경</li>
+								 <li><strong>2018.09.11</strong> 타이틀 변경</li>
+								 <li><strong>2018.09.17</strong> 취소 버튼 초기화로 변경</li>
+								 <li><strong>2018.11.15</strong> 출력셀 추가</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>ECP 컨펌 확인 팝업</td>
+						<td></td>
+						<td class="file"><a href="/html/sell/U20022a_lp2.html" target="_blank">U20022a_lp2.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">김승원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.08.22 /<span style="color: #914698;font-weight:bold">2018.09.11</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.09.11</strong> 타이틀 변경</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>알림 팝업</td>
+						<td></td>
+						<td class="file"><a href="/html/sell/U20022a_lp3.html" target="_blank">U20022a_lp3.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">김승원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.09.11</td>
+						<td class="note">
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td>STEP 4. 결제완료내역</td>
+						<td>ECP 출력 / ECP 컨펌</td>
+						<td></td>
+						<td class="file"><a href="/html/sell/U20023_lp.html" target="_blank">U20023_lp.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.04.17 /<span style="color: #914698;font-weight:bold">2018.09.11</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.09.11</strong> 타이틀 변경</li>
+							</ul>
+						</td>
+					</tr>
+					<tr class="delete">
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>ECP 출력 / ECP 컨펌(ECP 주문 2건 이상)</td>
+						<td></td>
+						<td class="file"><a href="/html/sell/U20026_lp.html" target="_blank">U20026_lp.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.04.17 /<span style="color: #914698;font-weight:bold">2018.06.07</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.06.07</strong> 화면삭제</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>ECP 컨펌 확인 팝업</td>
+						<td></td>
+						<td class="file"><a href="/html/sell/U20027_lp.html" target="_blank">U20027_lp.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.14 /<span style="color: #914698;font-weight:bold">2018.09.11</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.05.23</strong> 바코드 스캔 인풋 추가</li>
+								 <li><strong>2018.06.07</strong> 리스트 노출정보 변경</li>
+								 <li><strong>2018.07.13</strong> 수정사항 주석처리</li>
+								 <li><strong>2018.09.11</strong> 타이틀 변경</li>
+							</ul>
+						</td>
+					</tr>
+					<tr class="delete">
+						<td class="tit"></td>
+						<td></td>
+						<td>STEP 5. 영수증 발행</td>
+						<td>ECP 컨펌 영수증 출력 안내</td>
+						<td></td>
+						<td class="file"><a href="/html/sell/U20024_lp.html" target="_blank">U20024_lp.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.04.03 /<span style="color: #914698;font-weight:bold">2018.06.07</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.06.07</strong> 화면삭제</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>온라인 픽업(ECP) 컨펌 확인</td>
+						<td></td>
+						<td class="file"><a href="/html/sell/U20025_lp.html" target="_blank">U20025_lp.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.04.03 /<span style="color: #914698;font-weight:bold">2018.09.11</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.09.04</strong> 문구변경</li>
+								 <li><strong>2018.09.11</strong> 타이틀 변경</li>
+							</ul>
+						</td>
+					</tr>
+					<tr class="delete">
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>픽업주문 키보드에서 선택 시 Alert</td>
+						<td></td>
+						<td class="file"><a href="/html/sell/U20026.html" target="_blank">U20026.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.04.20 /<span style="color: #914698;font-weight:bold">2018.06.07</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.06.07</strong> 화면삭제</li>
+							</ul>
+						</td>
+					</tr>
+					<!-- //픽업주문 -->
+
+					<tr>
+						<td class="tit">프로모션/할인</td>
+						<td>프로모션</td>
+						<td>(탭) 진행중인 프로모션 목록</td>
+						<td>프로모션 제품</td>
+						<td></td>
+						<td class="file"><a href="/html/sell/U30001_lp.html" target="_blank">U30001_lp.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.04.03 / <span style="color: #914698;font-weight:bold">2018.04.13</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.04.13</strong> 비닐봉투, 파이토카페상품은 프로모션 다음 페이지 노출</li>
+							</ul>
+						</td>
+					</tr>
+
+					<tr>
+						<td class="tit">중개판매 관리</td>
+						<td>기타</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/mediation/U40001.html" target="_blank">U40001.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.03.29 / <span style="color: #914698;font-weight:bold">2018.09.04</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.05.11</strong> 대시보드 이동버튼 추가</li>
+								 <li><strong>2018.06.20</strong> 간편선물,설치주문 버튼 추가</li>
+								 <li><strong>2018.08.22</strong> 하단 주의 문구 추가, 사업자등록증조회 버튼 삭제, 파이토 카페 상품 버튼 추가</li>
+								 <li><strong>2018.09.04</strong> 영수증 재발행, 결제수단변경/재주문 버튼 삭제</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td>(버튼)사업자등록증 정보 조회</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/mediation/U40002.html" target="_blank">U40002.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.03.29 / <span style="color: #914698;font-weight:bold">2018.09.04</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.09.04</strong> 취소버튼 초기화로 명칭변경</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td>(상단아이콘) 보류내역 조회</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/mediation/U40003.html" target="_blank">U40003.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.03.29 /<span style="color: #914698;font-weight:bold">2018.04.13</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.04.13</strong> 최대노출건수 변경 및 페이징 추가</li>
+							</ul>
+						</td>
+					</tr>
+					<tr class="delete">
+						<td class="tit"></td>
+						<td>RFID 칩 스캔 여부</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/mediation/U40004.html" target="_blank">U40004.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.11</td>
+						<td class="note"></td>
+					</tr>
+					<tr class="delete">
+						<td class="tit"></td>
+						<td>시리얼 번호 스캔 여부</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/mediation/U40005.html" target="_blank">U40005.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.11</td>
+						<td class="note"></td>
+					</tr>
+					<tr class="delete">
+						<td class="tit"></td>
+						<td>시리얼 번호 스캔 여부</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/mediation/U40004_lp.html" target="_blank">U40004_lp.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.11</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td>시리얼 번호 입력 / RFID 스캔</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/mediation/U40004_lp1.html" target="_blank">U40004_lp1.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.08.06</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td>시리얼 번호 입력 / RFID 스캔</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/mediation/U40004_lp2.html" target="_blank">U40004_lp2.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.08.06</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td>사용자 변경 확인</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/mediation/U40006.html" target="_blank">U40006.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">김승원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.07.17</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td>수량 변경 안내</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/mediation/U40006_lp.html" target="_blank">U40006_lp.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">김승원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.08.06</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td>미등록 기기 알림 팝업</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/mediation/U40007.html" target="_blank">U40007.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.17</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td>수량 변경 확인</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/mediation/U40008.html" target="_blank">U40008.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.17</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td>간편 선물 리스트</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/mediation/U40010.html" target="_blank">U40010.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">김승원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.06.19 /<span style="color: #914698;font-weight:bold">2018.09.04</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.09.04</strong> 취소버튼 초기화로 명칭변경</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td>간편 선물 컨펌 확인</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/mediation/U40010a.html" target="_blank">U40010a.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">김승원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.06.07 /<span style="color: #914698;font-weight:bold">2018.07.13</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.07.13</strong> 수정사항 주석처리</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td>간편 선물 리스트</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/mediation/U40020.html" target="_blank">U40020.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">김승원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.06.19 /<span style="color: #914698;font-weight:bold">2018.09.04</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.09.04</strong> 취소버튼 초기화로 명칭변경</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td>설치 주문 컨펌 확인</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/mediation/U40020a.html" target="_blank">U40020a.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">김승원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.06.07 /<span style="color: #914698;font-weight:bold">2018.07.13</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.07.13</strong> 수정사항 주석처리</li>
+							</ul>
+						</td>
+					</tr>
+
+					<tr>
+						<td class="tit">주문관리</td>
+						<td>주문내역</td>
+						<td>주문내역조회</td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/order/U60001.html" target="_blank">U60001.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.04.03 /<span style="color: #914698;font-weight:bold">2018.09.17</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.05.11</strong> 판매등록 버튼 추가</li>
+								 <li><strong>2018.06.07</strong> 문구수정</li>
+								 <li><strong>2018.06.27</strong> 라디오버튼 2개로 변경</li>
+								 <li><strong>2018.07.13</strong> 수정사항 주석표기</li>
+								 <li><strong>2018.08.27</strong> 확인버튼 삭제 및 버튼 순서 변경</li>
+								 <li><strong>2018.09.17</strong> 취소버튼 초기화로 변경</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>경고팝업</td>
+						<td></td>
+						<td class="file"><a href="/html/order/U60001_lp1.html" target="_blank">U60001_lp1.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">김승원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.09.04</td>
+						<td class="note">
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>주문 상세정보 화면</td>
+						<td></td>
+						<td class="file"><a href="/html/order/U60002.html" target="_blank">U60002.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.04.02 /<span style="color: #914698;font-weight:bold">2018.09.11</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.07.13</strong> 수정사항 주석표기</li>
+								 <li><strong>2018.09.04</strong> 현행화</li>
+								 <li><strong>2018.09.05</strong> 팝업사이즈 변경</li>
+								 <li><strong>2018.09.11</strong> 출력일자 및 카드사명 추가</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>주문완료내역_ECP 출력 취소 팝업</td>
+						<td></td>
+						<td class="file"><a href="/html/order/U60002a_lp.html" target="_blank">U60002a_lp.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">김승원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.06.07 /<span style="color: #914698;font-weight:bold">2018.09.11</span></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.09.11</strong> 타이틀 변경</li>
+							</ul>
+						</td>
+					</tr>
+
+				</tbody>
+			</table>
+		</div>
+	</div>
+<!-- //POS -->
+</div>
+</body>
+</html>

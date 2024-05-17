@@ -1,0 +1,14 @@
+version: 0.1
+
+phases:
+  install:
+    commands:
+      - echo deploy
+  build:
+    commands:
+      - echo start-build
+  post_build:
+    commands:
+      - echo Copying dist to S3 bucket.
+      - aws s3 cp --recursive . s3://uiux-review.preprod.kr.amway.net
+      - echo Job finished!

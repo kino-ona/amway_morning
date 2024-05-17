@@ -1,0 +1,305 @@
+<!doctype html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>Amway Publishing Guide </title>
+<style type="text/css">
+	* {margin:0; padding:0;}
+	html {overflow-y:scroll;}
+	body {padding: 8px; color:#666; font:12px/1.5 Malgun Gothic, Tahoma, Sans-serif; word-break:break-all}
+	a {color:#27e; }
+	a:focus, a:hover, a:active {text-decoration:underline;}
+	.header {position: fixed; width: 100%; height: 60px; padding: 8px;background: #fff;  border-bottom: 1px solid #ccc;  box-sizing: border-box; top: 0; left: 0; font:12px/1.5 Malgun Gothic, Tahoma, Sans-serif; z-index: 10}
+	.header h1 {height: 40px; line-height: 40px; border: 2px solid #ccc; color:#444; font-size:2em; text-align: center; }
+	.header h1 strong {font-size:70%;}
+	.header .nav li {display:inline; margin-right:0.5em;}
+	.header .nav li a {color:#f9f9f9;}
+	.header .nav li a.on {color:#fff !important; border-bottom:2px solid #3e3e3e; text-shadow:#7c7c7c 2px 1px 2px; text-decoration:none; font-size:105%;}
+	.header .nav-otherlink li {display:inline;}
+	.header .nav-otherlink li a {color:#969696; font-weight:bold;}
+	.header .nav-otherlink li a.on {color:#3e3e3e;}
+	.header .nav-otherlink li a.on:before {content:'→'; font-size:0.9em;}
+	.rule dt {margin-bottom:0.3em; font-weight:bold;}
+	.rule dd {padding-left:0.5em;}
+	.rule dd ul {list-style-type:square; margin-left:1.2em;}
+	.body {margin-top: 60px; padding-bottom:1em;}
+	.section .title {position: relative;}
+	.section .title {  margin:0; padding:0.5em; background-color:#6b7178; color:#fff; font-weight:bold; font-size:100%; margin-top:-1px; position:relative; *zoom:1;}
+	.section {margin-top:10px; }
+	.section .title_toggle {margin:0; padding:0 0 6px 0;  color:#000; font-weight:bold; font-size:100%; margin-top:-1px; position:relative; *zoom:1;}
+	.section .content { display: none; }
+	.section.open .content { display:block; }
+	.section.open .title{ background: #014286; }
+	.section.open .title:after { content:"▲";  }
+
+	.section table {width:100%; border-collapse:collapse; border-spacing:0; border:0; table-layout:fixed;}
+	.section table caption {display:none;}
+	.section table th {color:#333; background-color:#f1f1f1; font-size:11px; text-align:center;}
+	.section table td {text-align:left;/* text-overflow: ellipsis; overflow: hidden; white-space: norwap; */}
+	.section table th, table td {padding:0.3em; border:1px solid #ddd; }
+	.section table td.tit {color:#333; font-weight:bold;}
+	.section table td.file {color:#aaa;}
+	.section table td.date {text-align:center; font-style:italic; white-space:nowrap;}
+	.section table td.date del {display:block; color:#aaa !important;}
+	.section table td.stat , .section table td.statD{text-align:center; font-family:Gulim;}
+	.section table td.desc, .section table td.note, .section table td.history {font-style:italic; color:#777; font-size:11px;}
+	.section table td.author {text-align:center; white-space:nowrap;}
+	.section table td ul {list-style:none; margin:0; padding:0 10px; font-style:italic;}
+	.section table td em {color:#c82026;}
+	.section table td em.blue {color:#69f;}
+	.section table tr.overcoloring {background:#fafafa !important;}
+	.section table tr.today {background:#fcf7bd;}
+	.section table tr.today .date {color:#444;}
+	.section table td.history-jira {font-style:italic; font-size:11px;}
+	.section table td.history-jira a {color:#3b73af; font-weight:bold;}
+	.section table td.history ul li:before, .section table td.history-jira ul li:before {content:'- ';}
+	.section table .taCenter{text-align:center !important}
+	table td span.red {color:red} /* 추가 수정*/
+	.brbottom1 td{border-bottom: 1px solid #bebebe; }
+	.btn-top { display:block; background:#000; color:#fff; text-align:center; padding:10px; font-weight:bold}
+	td.note p:nth-of-type(odd) { color:#0760a4}
+	td.note p:nth-of-type(even) { color:#8a5bab}
+	td.note p:nth-of-type(odd) b{ color:#5ea519}
+	td.note p:nth-of-type(even) b{ color:#dc8027}
+	.section table td ul.modify-date { padding: 0}
+	.modify-date li:nth-of-type(1){ color:#119f22}
+	.modify-date li:nth-of-type(2){ color:#157ef5}
+	.modify-date li:nth-of-type(3){ color:#c660d5}
+	.modify-date li:nth-of-type(4){ color:#d5a860}
+	.modify-date li:nth-of-type(5n+1){ color:#119f22}
+	.delete:hover td { background-color: #ddd}
+	.delete td { text-decoration:line-through; }
+	.delete td.note{ text-decoration:none; font-weight: bold;}
+	.owner span{position:relative;display:inline-block;width:40px;padding-left:5px;}
+	.owner span:before {content:'/'; position:absolute; top:0; left:0; color:#eee;}
+	.owner span:first-child:before{content:'';padding-left:0;}
+	th.owner span {width:auto; padding:0 8px;}
+	th.owner span:before {color:#666;}
+</style>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+</head>
+<body>
+<div class="header">
+	<h1>:: Mypack by Nutrilite  ::</h1>
+</div>
+<div class="body">
+
+	<!-- ##  수정페이지  -->
+	<div class="section">
+		<div class="content" style="display: block;">
+			<table border="1">
+				<colgroup>
+					<col width="8%"><col width="8%"><col width="8%"><col width="6%"><col width="9%"><col width="15%"><col width="10%">
+					<!-- <col width="2%"><col width="2%"><col width="3%"><col width="3%"><col width="3%">
+					<col width="4%"><col width="5%"><col width="9%"> -->
+					<col width="8%"><col width="*">
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="col">1depth</th>
+						<th scope="col">2depth</th>
+						<th scope="col">3depth</th>
+						<th scope="col">화면[TAB/POP]</th>
+						<th scope="col">Service Catalog</th>
+						<th scope="col">File Name(html)</th>
+						<th scope="col">Template</th>
+						<th scope="col">start date / <br>complete date / <br>modify Date</th>
+						<th scope="col">note</th>
+					</tr>
+				</thead>
+				<tbody>                    
+					<tr>
+						<td class="tit">마이팩 뉴트리라이트</td>
+						<td>메인페이지</td>
+						<td></td>
+						<td class="taCenter"></td>
+						<td></td>
+						<td class="file"><a href="/_ui/a_service/NM_01.html" target="_blank">/_ui/a_service/NM_01.html</a></td>
+						<td></td> 
+						<td class="taCenter">20.09.24<br />마크업 전달 완료</td>
+						<td class="note">
+							- 2020-09-28 추천팩 리스트 ul > li 구조에서 div 구조로 변경 <br />
+							- 2020-09-28 recomend_list > select_item 에 item_box 클래스 추가<br />
+							- 2020-10-05 recomend_list > select_item 에 각 패키지 id값 추가<br />
+							- 2020-10-23 수정본 전달완료<br />
+							- 2020-11-05 모바일 플로팅 버튼 추가<br />
+							- 2020-11-11 메인페이지 변경된 디자인으로 마크업 수정 ( 2020-11-11 주석 참고 )<br />>
+							<span class="red">- 2020-11-12 추천책 설명 텍스트 수정 ( 2020-11-12 주석 참고 ) </span>
+						</td>
+					</tr>			
+					<tr>
+						<td class="tit">마이팩 뉴트리라이트</td>
+						<td>약관동의</td>
+						<td></td>
+						<td class="taCenter"></td>
+						<td></td>
+						<td class="file"><a href="/_ui/a_service/NM_02.html" target="_blank">/_ui/a_service/NM_02.html</a></td>
+						<td></td>
+						<td class="taCenter">20.09.22<br />마크업 전달 완료</td>
+						<td class="note">
+							<span>- 2020-10-23 수정본 전달완료</span><br />
+							<span class="red">- 2020-11-06 약관동의 페이지 수정 (전체동의, 약관레이어팝업)</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit">마이팩 뉴트리라이트</td>
+						<td>건강 설문 후 추천받기</td>
+						<td></td>
+						<td class="taCenter"></td>
+						<td></td>
+						<td class="file"><a href="/_ui/a_service/NM_02_01.html" target="_blank">/_ui/a_service/NM_02_01.html</a></td>
+						<td></td>
+						<td class="taCenter">20.10.05<br />마크업 전달 완료</td>
+						<td class="note">
+							<span>- 2020-10-23 수정본 전달완료</span><br />
+							<span>- 2020-11-12 수정 ( 2020-11-12 주석참고 )</span><br />
+							<span class="red">- 2020-11-26 면역버튼 숨김처리, 21-01-05에 노출되어야 함</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit">마이팩 뉴트리라이트</td>
+						<td>마이팩만들기 1단계</td>
+						<td></td>
+						<td class="taCenter"></td>
+						<td></td>
+						<td class="file"><a href="/_ui/a_service/NM_03.html" target="_blank">/_ui/a_service/NM_03.html</a></td>
+						<td></td>
+						<td class="taCenter">20.09.28<br />마크업 전달 완료</td>
+						<td class="note">
+							<span>- 2020-10-23 수정본 전달완료</span><br />
+							<span>- 2020-11-05 카테고리 선택 영역 플로팅</span><br />
+							<span>- 2020-11-09 카테고리 선택 영역 클릭시 앵커 이동</span><br />
+							<span>- 2020-11-12 텍스트 추가 및 수정 ( 2020-11-12 주석참고 )</span><br />
+							<span class="red">- 2020-11-26 버튼 관련 수정</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit">마이팩 뉴트리라이트</td>
+						<td>제품상세보기</td>
+						<td></td>2020-11-12 10:32:24
+						<td class="taCenter"></td>
+						<td></td>
+						<td class="file"><a href="/_ui/a_service/NM_03_view.html" target="_blank">/_ui/a_service/NM_03_view.html</a></td>
+						<td></td>
+						<td class="taCenter">20.11.04<br />마크업 전달 완료</td>
+						<td class="note">
+							<span>2020-11-09 수정</span><br />							
+						</td>
+					</tr>
+					<tr>
+						<td class="tit">마이팩 뉴트리라이트</td>
+						<td>마이팩만들기 2단계</td>
+						<td></td>
+						<td class="taCenter"></td>
+						<td></td>
+						<td class="file"><a href="/_ui/a_service/NM_04.html" target="_blank">/_ui/a_service/NM_04.html</a></td>
+						<td></td>
+						<td class="taCenter">20.09.28<br />마크업 전달 완료</td>
+						<td class="note">
+							<span>- 2020-10-23 수정본 전달완료</span><br />
+							<span class="red">-2020-11-12 텍스트 등 수정 ( 2020-11-12 주석참고 )</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit">마이팩 뉴트리라이트</td>
+						<td>마이팩만들기 3단계</td>
+						<td></td>
+						<td class="taCenter"></td>
+						<td></td>
+						<td class="file"><a href="/_ui/a_service/NM_05.html" target="_blank">/_ui/a_service/NM_05.html</a></td>
+						<td></td>
+						<td class="taCenter">20.09.29<br />마크업 전달 완료</td>
+						<td class="note">
+							<span>- 2020-10-23 수정본 전달완료</span><br />
+							<span class="red">- 2020-11-12 수정 ( 2020-11-12 주석참고 ) </span>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit">마이팩 뉴트리라이트</td>
+						<td>마이팩 신청완료</td>
+						<td></td>
+						<td class="taCenter"></td>
+						<td></td>
+						<td class="file"><a href="/_ui/a_service/NM_06.html" target="_blank">/_ui/a_service/NM_06.html</a></td>
+						<td></td>
+						<td class="taCenter">20.09.29<br />마크업 전달 완료</td>
+						<td class="note">
+							<span>-2020-10-23 수정본 전달완료</span><br />
+							<span class="red">- 2020-11-12 수정 ( 2020-11-12 주석참고 ) </span>
+						</td>
+					</tr>											
+                    <tr>
+						<td class="tit">마이팩 뉴트리라이트 관리</td>
+						<td>마이팩 뉴트리라이트 목록</td>
+						<td></td>
+						<td class="taCenter"></td>
+						<td></td>
+						<td class="file"><a href="/_ui/a_service/NM_07.html" target="_blank">/_ui/a_service/NM_07.html</a></td>
+						<td></td>
+						<td class="taCenter">20.09.21<br />마크업 전달 완료</td>
+						<td class="note">
+							<span>- 2020-10-23 수정본 전달완료</span><br />
+							<span>- 2020-10-28 더보기 버튼 추가</span><br />
+							<span>- 2020-11-05 내용 없음, 검색결과 없음 메세지 추가, 더보기 버튼 구조 변경</span><br />
+							<span>- 2020-11-20 버튼명, 배송지변경 팝업, 상태 텍스트 컬러  (2020-11-20 주석 참고) </span><br />
+							<span class="red">- 2020-11-26 신청번호 추가 </span>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit">마이팩 뉴트리라이트 관리</td>
+						<td>마이팩 뉴트리라이트 상세</td>
+						<td></td>
+						<td class="taCenter"></td>
+						<td></td>
+						<td class="file"><a href="/_ui/a_service/NM_08.html" target="_blank">/_ui/a_service/NM_08.html</a></td>
+						<td></td>
+						<td class="taCenter">20.09.21<br />마크업 전달 완료</td>
+						<td class="note">
+							<span>- 2020-10-23 수정본 전달완료</span><br />
+							<span>- 2020-11-12 수정 ( 2020-11-12 주석참고 ) </span><br />
+							<span>- 2020-11-20 주문내역 탭 추가, 주문내쳑 컨텐츠 추가, 배송지 변경 팝업, 상태 텍스트 컬러 (2020-11-20 주석 참고) </span><br />
+							<span>- 2020-11-23 주문내역 없음 추가 (2020-11-23 주석 참고) </span><br />
+							<span class="red">- 2020-11-26 주문취소팝업 수정 (2020-11-26 주석 참고) </span>
+						</td>
+                    </tr>
+                    <tr>
+						<td class="tit">주문결제</td>
+						<td></td>
+						<td></td>
+						<td class="taCenter"></td>
+						<td></td>
+						<td class="file"><a href="/_ui/a_service/NM_09.html" target="_blank">/_ui/a_service/NM_09.html</a></td>
+						<td></td>
+						<td class="taCenter">완료</td>
+						<td class="note"><span class="red">-2020-10-23 수정본 전달완료</span></td>
+                    </tr>
+                    <tr>
+						<td class="tit">결제완료</td>
+						<td></td>
+						<td></td>
+						<td class="taCenter"></td>
+						<td></td>
+						<td class="file"><a href="/_ui/a_service/NM_11.html" target="_blank">/_ui/a_service/NM_11.html</a></td>
+						<td></td>
+						<td class="taCenter">완료</td>
+						<td class="note"><span class="red">-2020-10-23 수정본 전달완료</span></td>
+					</tr>
+					<tr>
+						<td class="tit">파킹페이지</td>
+						<td></td>
+						<td></td>
+						<td class="taCenter"></td>
+						<td></td>
+						<td class="file"><a href="/_ui/a_service/parking.html" target="_blank">/_ui/a_service/parking.html</a></td>
+						<td></td>
+						<td class="taCenter">완료</td>
+						<td class="note"><span class="red">- 2020-11-23 마크업 전달완료</span></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+</div>
+
+</body>
+</html>

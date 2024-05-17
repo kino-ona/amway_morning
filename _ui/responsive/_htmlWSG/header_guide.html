@@ -1,0 +1,81 @@
+﻿			<header class="main-header general-header">
+				<nav class="header-container">
+					<div class="header-wrapper">
+						<div class="header-content">
+							<div class="header-element-content"><a href="index.html" class="logo"><h1>html style guide</h1></a></div>
+							<a href="#" class="btnViewIndex"><span>목차보기</span></a>
+						</div>
+
+						<div id="guideTopIndex">
+							<div class="viewIndexWrapper">
+								<h1 class="guideHeading">목차</h1>
+								<section class="typeLayout">
+									<h2 class="guideHeading">Layout</h2>
+									<ol>
+										<li><a class="btnLink" target="_blank" href="../html/layout.html">기본 Layout</a></li>
+									</ol>
+								</section>
+								<section class="typeUIcommon">
+									<h2 class="guideHeading">UI 공통 요소</h2>
+									<ol>
+										<li><a class="btnLink" href="guide_heading.html">상단공통<span>breadcrumb  / jump to menu / heading</span></a></li>
+										<li><a class="btnLink" href="guide_step.html">진행단계<span>step box</span> </a></li>
+										<li><a class="btnLink" href="guide_list.html">목록<span>Bulleted Lists</span></a></li>
+										<li><a class="btnLink" href="guide_table.html">테이블형 목록<span> table(div,ul) / paging</span></a></li>
+										<li><a class="btnLink" href="guide_form.html">폼 요소<span>form control</span></a></li>
+										<li><a class="btnLink" href="guide_button.html">버튼</a></li>
+										<li><a class="btnLink" href="guide_iconfonts.html">아이콘<span>icon fonts</span></a></li>
+									</ol>
+								</section>
+								<section class="typeUIbehavior">
+									<h2 class="guideHeading">기능구현</h2>
+									<ol>
+										<li><a class="btnLink" href="guide_layer.html">레이어 팝업 / 알럿-컨펌 </a></li>
+										<li><a class="btnLink" href="guide_tabs.html">탭 메뉴</a></li>
+										<li><a class="btnLink" href="guide_accordion.html">아코디언 / 토글 / 툴팁 </a></li>
+										<li><a class="btnLink" href="guide_carousel.html">carousel</a></li>
+									</ol>
+								</section>
+							</div>
+						</div>
+					</div>
+				</nav>
+
+				<!-- 메뉴(pc/mob) -->
+				<div class="amw-navigation-menu">
+					<div class="navigation-menu-container">
+						<div class="desktop-nav-menu"><div class="overlay-menu-component-desktop-wrapper"><!-- <a href="#" class="">메뉴</a> --></div></div>
+
+						<div class="mobile-container">
+							<div class="mobile-wrapper">
+								<div class="mobile-header-cell navigation-menu-toggle-wrapper"><a href="#" class="overlay-menu-toggle-mobile collapsed"><span class="hamburger-icon"></span></a></div>
+								<div class="mobile-header-cell mobile-nav-row-btn-logo"><a href="index.html" class="logo"><h1>html guide</h1></a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //메뉴(pc/mob) -->
+			</header>
+
+<script type="text/javascript">
+$(function(){
+	var _headerLinkBox = $('#guideTopIndex');
+	$('.btnViewIndex').on('click',function(){
+		if(_headerLinkBox.is(':hidden')){
+			_headerLinkBox.show();
+		}
+		else {
+			_headerLinkBox.hide();
+		}
+	});
+
+	$(document).on('click',function(e) {
+		if( _headerLinkBox.is(':visible')){
+			if(! $('#header-guide').has(e.target).length) {
+				_headerLinkBox.hide();
+			}
+		}
+	});
+
+});
+</script>

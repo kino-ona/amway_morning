@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>form control | HTML 가이드</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="index,follow">
+	<link rel="shortcut icon" type="image/x-icon" href="/_ui/responsive/theme-blue/images/akl_common/favicon.ico">
+	<link rel=”apple-touch-startup-image” href="/_ui/responsive/theme-blue/images/akl_common/favicon_app.png">
+
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-lib.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/_htmlWSG/_guide.css"><!-- html 스타일 가이드 전용 css  -->
+
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.datepicker.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/owl.carousel.js"></script>
+
+	<script type="text/javascript" src="/_ui/responsive/_htmlWSG/guide.js"></script><!-- html 스타일 가이드 전용 js  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/new.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_contents.js"></script>
+</head>
+<body class="akl htmlWSG">
+	<div id="skipToContent"><a href="#contents">콘텐츠 바로가기 </a></div>
+	<main>
+		<div id="header-guide"></div><!-- 가이드용 header -->
+		<div id="guideType_form" class="container">
+			<div class="topTitle"><h1>폼 요소<span>form control</span></h1></div>
+
+			<ol class="subList noline">
+				<li>
+					<h2 class="subHeading"><em>radio</em></h2>
+					<div class="guideCodeWrapper">
+						<p class="subtit">반드시 .amway-theme 하위에서 사용</p>
+						<div class="amway-theme">
+
+							<div class="radio-wrapper">
+								<label class="amw-radio-wrap radio-label">
+									<input type="radio" name="radio-1" class="amw-global-radio" checked="checked">
+									<span class="amw-radio-overlay"></span>
+									<span class="amw-label-radio-text">예</span>
+								</label>
+								<label class="amw-radio-wrap radio-label">
+									<input type="radio" name="radio-1" class="amw-global-radio">
+									<span class="amw-radio-overlay"></span>
+									<span class="amw-label-radio-text">아니오</span>
+								</label>
+							</div>
+
+						</div>
+
+						<hr>
+
+						<div class="wrapper-memb-join amway-theme">
+							<div class="action">
+								<div class="radio-wrapper">
+									<label class="amw-radio-wrap radio-label">
+										<input type="radio" name="radio-1" checked="checked" class="amw-global-radio">
+										<span class="amw-radio-overlay"></span>
+										<span class="amw-label-radio-text">동의함</span>
+									</label>
+								</div>
+								<div class="radio-wrapper">
+									<label class="amw-radio-wrap radio-label">
+										<input type="radio" name="radio-1" class="amw-global-radio">
+										<span class="amw-radio-overlay"></span>
+										<span class="amw-label-radio-text">동의안함</span>
+									</label>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+				</li>
+				<li>
+					<h2 class="subHeading"><em>checkebox</em></h2>
+					<div class="guideCodeWrapper">
+						<p>
+							<input id="remember" type="checkbox" checked="checked">
+							<label for="remember" class="normal inline-label checklabel">체크1</label>
+
+							&nbsp;&nbsp;&nbsp;&nbsp; <!-- 가이드 html 용 -->
+
+							<input id="remember2" type="checkbox">
+							<label for="remember2" class="normal inline-label checklabel">체크2</label>
+						</p>
+
+						<hr>
+
+						<div class="product__list--wrapper search-list-page-right-result-list-component">
+							<div class="product-solition-top type2">
+								<div>
+									<a id="" href="#" class="bt-akl-txt normal">선택제품 장바구니 담기</a>
+								</div>
+								<div class="product-allchoice">
+									<input id="checkbox1" type="checkbox">
+									<label for="checkbox1" class="normal inline-label checklabel focus"><span class="hidden">전체선택</span></label>
+								</div>
+							</div>
+						</div>
+
+						<br><br>
+
+						<ul class="wish-list-item">
+							<li class="list-headers">
+								<div class="field-name">
+									<label class="checkbox-element-wrapper all-ak-check">
+										<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" data-product-code="" type="checkbox" title="전체선택">
+										<span class="_checkbox-element-global-span"></span>
+									</label>
+									<span class="all-txt">위시리스트 명<em>(5)</em></span><!-- 제품수 추가 2018.03.12 -->
+								</div>
+								<div class="field-memo">
+									<span>메모</span>
+								</div>
+							</li>
+							<li class="list-details">
+								<div class="field-name">
+									<label class="checkbox-element-wrapper">
+										<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" data-product-code="" type="checkbox" title="선택">
+										<span class="_checkbox-element-global-span"></span>
+									</label>
+									<span class="wisth-name"><a href="#"><strong>기본</strong><em>(5)</em></a></span>
+								</div>
+								<div class="field-memo">
+									<span class="wisth-info">기본으로 제공되는 위시리스트로 삭제할 수 없습니다.</span>
+								</div>
+							</li>
+							<li class="list-details">
+								<div class="field-name">
+									<label class="checkbox-element-wrapper">
+										<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" data-product-code="" type="checkbox" title="선택">
+										<span class="_checkbox-element-global-span"></span>
+									</label>
+									<span class="wisth-name"><a href="#"><strong>위시리스트 01</strong><em>(10)</em></a></span>
+								</div>
+								<div class="field-memo">
+									<span class="wisth-info">최길동님을 위한 위시리스트</span>
+								</div>
+							</li>
+						</ul>
+
+					</div>
+				</li>
+
+				<li>
+					<h2 class="subHeading"><em>검색</em></h2>
+					<div class="guideCodeWrapper">
+						<p class="subtit">검색버튼이 모바일에서 돋보기 이미지로 전환</p>
+						<div class="form-s">
+							<input type="text" id="" name="" placeholder="받는 분, 주소를 입력하세요" value="" class="input-st" title="받는 분 주소 입력">
+							<button type="submit" class="btn btn-primary"><span class="hidden-sm hidden-xs">검색</span></button>
+						</div>
+
+						<p class="subtit">필더/검색</p>
+						<div class="customer-wrap">
+							<div class="order-history-container">
+
+								<div class="order-history-search-wrapper search-filter row"><!-- 2018.07.02 클래스 : amway-theme->search-filter 변경 -->
+									<div class="toggle-buttons-container row cutomer"><!-- 2018.07.02 클래스 : hidden-md hidden-lg 삭제 -->
+										<button class="col-sm-6 js-order-history-filters"><span class="icon-Humburger_list"></span><span>필터</span> </button>
+										<button class="col-sm-6 js-order-history-search"><span class="icon-search"></span> <span>검색</span> </button>
+									</div>
+									<div class="form-wrapper search-form-wrapper col-md-6 col-sm-12 js-search-form-wrapper"><!-- 2018.07.02 클래스 : hidden-sm hidden-xs 삭제 -->
+										<div class="cuton-form-wrapper">
+											<div class="form-s">
+												<input type="text" id="" name="" placeholder="제목, 내용을 입력하세요" value="" class="input-st" title="제목, 내용을 입력">
+												<button type="submit" class="btn btn-primary" id="NotificationBoard_Search"><span>검색</span></button><!-- 2018.07.02 클래스 : hidden-sm hidden-xs 삭제 -->
+											</div>
+										</div>
+									</div>
+									<div class="new-select form-wrapper col-md-6 col-sm-12 js-filter-form-wrapper"><!-- 2018.07.02 클래스 : hidden-sm hidden-xs 삭제 -->
+										<div class="cuton-sel">
+											<select id="type" name="type" class="form-control no-uppercase-form-control" tabindex="-1" aria-hidden="true">
+												<option value="Latest-date">전체 공지</option>
+												<option value="Oldest-date">Oldest date</option>
+												<option value="Inquiry-Authority">Inquiry Authority</option>
+											</select>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+
+
+					</div>
+				</li>
+				<li>
+					<h2 class="subHeading"><em>select / input<span>적용예시</span></em></h2>
+					<div class="guideCodeWrapper">
+						<p class="subtit">반드시 .amway-theme 하위에서 사용</p>
+						<hr><br>
+
+						<!-- 회원가입 일부 발췌 -->
+						<div id="register-step-page" class="amway-theme">
+							<h3 class="form-sub-title">연락처 정보</h3>
+							<div class="form-group">
+								<label class="col-md-2 control-label" for="mainOperatorMobile">주사업자 휴대폰번호<span class="ico-must-astar">필수</span></label>
+								<div class="col-md-10 col-xs-12">
+									<div class="row form-item-row">
+										<div class="col-xs-4 col">
+											<select class="form-control" id="mainOperatorMobile">
+												<option>010</option>
+												<option>012</option>
+											</select>
+										</div>
+										<div class="col-xs-8 col last-col">
+											<input type="text" class="form-control" placeholder="‘-’없이 입력" title="주사업자 휴대폰번호 뒷자리 입력">
+										</div>
+
+									</div>
+									<p class="txt-input-guide">회원가입 완료 직후, ABO 고유번호가 주사업자의 휴대폰번호로 전송됩니다.</p>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-2 control-label" for="mainOperatorPhone">주사업자 전화번호</label>
+								<div class="col-md-10 col-xs-12">
+									<div class="row form-item-row">
+										<div class="col-xs-4 col">
+											<select class="form-control" id="mainOperatorPhone">
+												<option>선택</option>
+												<option>012</option>
+											</select>
+										</div>
+										<div class="col-xs-8 col last-col">
+											<input type="text" class="form-control" placeholder="‘-’없이 입력" title="주사업자 전화번호 뒷자리 입력">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- 수정: 2018.03.22 (이메일주소 추가, ConnectID 삭제로 설계변경) -->
+							<div class="form-group">
+								<label class="col-md-2 control-label" for="mainOperatorEmail">이메일 주소<span class="ico-must-astar">필수</span></label>
+								<div class="col-md-10 col-xs-12">
+									<div class="row">
+										<div class="form-set-email">
+											<span>
+												<input type="text" class="email-input1" id="mainOperatorEmail" title="이메일 아이디 "><em class="email-input-txt">@</em><input type="text" class="email-input2" title="직접 이메일 주소 입력">
+											</span>
+
+											<select class="email-select form-control" title="이메일 주소 선택">
+												<option value="" selected="selected">직접입력</option>
+												<option value="">naver.com</option>
+												<option value="">gmail.com</option>
+											</select>
+											<!-- 2018.09.12 삭제 <button type="button" class="email-btn bt-akl-white">이메일 인증</button> -->
+										</div>
+										<p class="confirm-sucees col-space-top">사용이 가능한 형태의 이메일 입니다.</p>
+										<p class="help-block" style="display:block"><span>이메일 형식이 올바르지 않습니다.</span></p>
+
+										<ul class="list-type2">
+											<li>ABN 사이트에서 한국암웨이의 ABO 회원가입 시 반드시 본인의 이메일 주소를 입력하셔야 합니다.</li>
+											<li>이메일 주소를 입력하시지 않거나 허위로 작성 시 회원가입이 이루어지지 않습니다.</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- //수정: 2018.03.22 (이메일주소 추가, ConnectID 삭제로 설계변경) -->
+
+							<div class="divider"></div>
+							<h3 class="form-sub-title primary-address">주소 정보</h3>
+							<div class="form-group seek-address">
+								<label class="col-md-2 control-label" for="mainOperatorAddress">주소<span class="ico-must-astar">필수</span></label>
+								<div class="col col-md-10 col-xs-12">
+									<!-- 2018.09.17 마크업 수정 -->
+									<p><input type="text" class="form-control" readonly="readonly" id="mainOperatorAddress"></p>
+									<button type="button" class="bt-akl-white">주소찾기</button>
+									<input type="text" name="" class="form-control" title="나머지 주소1" readonly="readonly">
+									<input type="text" name="" class="form-control" title="나머지 주소2" readonly="readonly">
+									<!-- 2018.09.17 마크업 수정 -->
+								</div>
+							</div>
+						</div>
+						<!-- //회원가입 일부 발췌 -->
+					</div>
+				</li>
+
+			</ol>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</main>
+</body>
+</html>

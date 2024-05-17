@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>주문/결제 | ABN Korea</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords">
+	<meta name="description" content="NY Fee Bundle">
+	<meta name="robots" content="index,follow">
+
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-lib.css"><!-- 플러그인용 css : 2018.03.14 추가  -->
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common-new-v2.css">
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.datepicker.js"></script><!-- datepicker : 2018.03.19 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/owl.carousel.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/isotope.pkgd.js"></script><!-- gnb 플러그인 : 2018.03.23 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/select2.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/new.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.raty.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_contents.js"></script><!-- brand 통합 : 2018.08.24 추가  -->
+</head>
+<body class="akl">
+<!-- skipToContent -->
+<div id="skipToContent">
+<a href="#contents">콘텐츠 바로가기 </a>
+</div>
+<!-- //skipToContent -->
+
+<main>
+	<div id="header"></div>
+	<div class="container-fluid main-container" id="contents">
+		<div class="print-hide breadcrumb-section">
+			<ol class="breadcrumb">
+				<li><a href="#">홈</a></li>
+				<li class="active">주문/결제</li>
+			</ol>
+		</div>
+	</div>
+	<div class="container-fluid main-container">
+		<div class="shipping-delivery">
+			<div class="container-fluid">
+				<div class="row cartTitile">
+					<h1 class="product-list-page-title mb25">주문/결제</h1>
+				</div>
+			</div>
+			<ul class="checkout-steps">
+				<li class="checkout-step col-xs-6 col-md-6"><span class="checkout-steps-text arrow-steps-ship">배송지 & 결제방법 선택</span> </li>
+				<li class="checkout-step col-xs-6 col-md-6 checkout-steps-active"><span class="checkout-steps-text checkout-steps-order">주문완료</span></li>
+			</ul>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-12 col-md-9 cart-items-wrapper">
+						<div class="confirm-box">
+							<p class="confirm-box-message">주문이 완료되었습니다.</p>
+							<!--
+							<div class="btn_area">
+								<a class="bt-akl-blue" href="#">주문내역 확인</a>
+								<a class="bt-akl-txt" href="#">쇼핑 계속하기</a>
+							</div>
+
+							<div class="amwaySOL_img">
+								<a href="#" class="pc_wellet"><img src="/_ui/responsive/theme-blue/images/akl_common/ban_wallet_roulette_pc.png" class="pc" alt="Amway 월렛 출시 기념 이벤트. Amway 월렛! 행운의 룰렛 돌려볼렛?"></a>
+								<a href="#" class="mob_wellet"><img src="/_ui/responsive/theme-blue/images/akl_common/ban_wallet_roulette_m.png" class="mob" alt="Amway 월렛 출시 기념 이벤트. Amway 월렛! 행운의 룰렛 돌려볼렛?"></a>
+							</div> -->
+							<!-- 2019-10-11 mobile QR 추가 -->
+							<div class="order-confirm-qr">
+									<div class="txt-notify">
+										주문 컨펌을 위해 전용 게이트에서<br>
+										아래 QR코드를 스캔하시고<br>
+										마지막 단계를 수행해 주세요.
+									</div>
+									<div class="box-qr"><img src="/_ui/responsive/theme-blue/images/scan_paygo/qr_gate.png" alt="" class="qr-code"></div>
+							</div>
+							<!--// 2019-10-11 mobile QR 추가 -->
+						</div>
+
+						<div id="shippingdiv" class="shipping-delivery-ship">
+							<p class="shipping-delivery-shipping-header">배송정보</p>
+							<div class="order-preview-box">
+								<label class="order-preview-label">선물 정보</label>
+								<div class="order-preview-value">
+									<p class="shipping-delivery-address-detail">Amway 초대 선물</p>
+								</div>
+							</div>
+							<div class="order-preview-box">
+								<label class="order-preview-label">주문번호</label>
+								<div class="order-preview-value">
+									<p class="shipping-delivery-address-detail">123456789</p>
+								</div>
+							</div>
+							<div class="order-preview-box">
+								<label class="order-preview-label">주문일</label>
+								<div class="order-preview-value">
+									<p class="shipping-delivery-address-detail">2018-02-21</p>
+								</div>
+							</div>
+							<div class="order-preview-box">
+								<label class="order-preview-label">배송방법</label>
+								<div class="order-preview-value">
+									<p class="shipping-delivery-address-detail">배달 <strong class="color-blue">1</strong>건</p>
+								</div>
+							</div>
+							<div class="order-preview-box">
+								<label class="order-preview-label">배송지 주소</label>
+								<div class="order-preview-value">
+									<p class="shipping-delivery-address-name">받는분 : 홍길동</p>
+									<p class="shipping-delivery-address-detail">
+										[07583] 서울 강서구 강서로 56가길 45,.(등촌동)<br>
+										연락처 : 010-1234-5678<br>
+										배송메시지 : 부재시 경비실에 맡겨주세요.
+									</p>
+								</div>
+							</div>
+							<div class="order-preview-box">
+								<label class="order-preview-label">결제수단</label>
+								<div class="order-preview-value">
+									<p class="shipping-delivery-address-detail">신용카드</p>
+								</div>
+							</div>
+							<!-- 2018.06.01 쿠폰정보 추가 -->
+							<div class="order-preview-box">
+								<label class="order-preview-label">적용된 쿠폰정보</label>
+								<div class="order-preview-value">
+									<p class="shipping-delivery-address-detail">선물세트프로모션(쿠폰명)</p>
+								</div>
+							</div>
+							<!-- //2018.06.01 쿠폰정보 추가 -->
+
+							<div class="my-Shipping-info">
+								<ul class="list-type2">
+									<li>배송지변경은 <span class="pot-basic">쇼핑 > 나의 쇼핑정보 > 나의 주문내역 > <a href="#">주문상세정보</a></span>에서 하실 수 있습니다.</li><!-- 수정 : 2018.11.20 (a 추가) -->
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-3 shipping-delivery-summary">
+						<div class="shipping-delivery-side">
+							<div class="shipping-delivery-summary-header">
+								<span>결제금액</span>
+							</div>
+							<div class="shipping-delivery-summary-prices">
+								<ul>
+									<li class="shipping-delivery-list-item">
+										<span class="shipping-delivery-item-label">주문금액(원)</span>
+										<span class="performance-box-item-abovalue">288,000</span>
+									</li>
+									<li class="shipping-delivery-list-item">
+										<span class="shipping-delivery-item-label">배송비(1곳)</span>
+										<span class="performance-box-item-abovalue">2,500</span>
+									</li>
+									<li class="shipping-delivery-list-item">
+										<span class="shipping-delivery-item-label">할인정보</span>
+										<span class="performance-box-item-abovalue">- 10,000</span>
+									</li>
+									<li class="shipping-delivery-list-item">
+										<span class="shipping-delivery-item-label">A포인트사용</span>
+										<span class="performance-box-item-abovalue">100,000</span>
+									</li>
+									<li class="shipping-delivery-list-item-total">
+										<span class="shipping-delivery-item-total">최종결제금액</span>
+										<span class="shipping-delivery-item-totalvalue">270,500</span>
+									</li>
+									<li class="shipping-delivery-list-item-pvbv">
+										<span class="shipping-delivery-item-total">총 PV/BV</span>
+										<span class="shipping-delivery-item-totalvalue">35,000 / 12,500</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="cartlist">
+			<!-- 2019-07-03 구조 수정 -->
+			<div id="shopping-list-content">
+				<div class="akl-toggle-wrap type_full">
+					<div class="panel-group accordion-custom" aria-multiselectable="true">
+						<div class="panel">
+							<div class="panel-heading" role="tab">
+								<a href="#pListA" data-toggle="collapse" aria-expanded="false" class="collapsed">
+									<div class="panel-title">
+										<span class="text-uppercase accordion-header-text">주문제품 보기</span>
+										<span class="pull-right icon-minus"></span>
+									</div>
+								</a>
+							</div>
+							<div id="pListA" class="panel-collapse applicants-panel collapse" role="tabpanel" aria-expanded="false" style="height: 0px;">
+								<div class="panel-body">
+									<div class="my_prod_wrap">
+										<div class="products_list_wrap no_btns">
+											<!-- deco title line -->
+											<div class="deco_head" aria-hidden="true">
+												<div class="col w40">
+													<div class="chk_item">
+														<span class="tit_prod">제품</span>
+													</div>
+												</div>
+												<div class="col w20"><span class="tit_prod">단가(원)</span></div>
+												<div class="col w20"><span class="tit_prod">소계(원)</span></div>
+												<div class="col w20"><span class="tit_prod">수량</span></div>
+											</div>
+											<!-- //deco title line -->
+											<!-- real product info -->
+											<ul class="prod_list">
+												<!-- loop -->
+												<li class="prod_list_row">
+													<div class="prod_top_cnt">
+														<div class="prod_info col w40">
+															<div class="prod_img"><img src="https://media.amway.co.kr/sys-master/images/h2b/h02/8815765291038/NU_284570K_1_240_R.jpg" alt=""></div>
+															<div class="prod_desc">
+																<div class="prod_tags">
+																	<span class="ico-bg-sky">증정품</span><span class="ico-bg-sky">한정상품</span><span class="ico-bg-sky">프로모션</span><!-- 요소 간 띄어쓰기 없음 -->
+																</div>
+																<div class="prod_name">
+																	<strong class="tit_name">XS 니온 블라스트 6캔</strong>
+																</div>
+																<div class="prod_etc">
+																	<div class="prod_number">
+																		<div class="prod_code">5872 / 284570K</div>
+																		<div class="prod_pvbv">PV 6,540 / BV 10,400</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="prod_price col w40">
+															<div class="prod_price_unit">
+																<strong class="tit_prod">단가(원)</strong>
+																<span class="txt_prod">
+																	<strong class="txt_price">1,000,000</strong>
+																</span>
+															</div>
+															<div class="prod_price_amount">
+																<strong class="tit_prod">소계(원)</strong>
+																<span class="txt_prod">
+																	<strong class="txt_price">1,000,000</strong>
+																</span>
+															</div>
+														</div>
+														<div class="prod_quantity col_right w20">
+															<strong class="hidden">수량</strong>
+															<div class="opt-quantity mini">
+																<input type="text" size="1" name="quantity" maxlength="3" data-original-qty="1" class="form-control js-qty-selector-input inpNum" value="999" readonly>
+																<a class="btnMinus disabled">수량하나빼기</a>
+																<a class="btnPlus disabled">수량하나더하기</a>
+															</div>
+															<div class="prod_stock">
+																<span class="green">
+																	<span class="icon icon-check-bold"></span>
+																	<span class="text text-uppercase">재고있음</span>
+																</span>
+															</div>
+														</div>
+													</div>
+													<div class="prod_bottom_cnt">
+														<div class="prod_option">
+															<!-- 이미지 없을 때 -->
+															<div class="opt_info">
+																<div class="txt_opt"><span>1박스 배송주문</span></div>
+															</div>
+															<!-- //이미지 없을 때 -->
+															<div class="prod_set_info">
+																<div class="toolTip-wrapper toolTip-type02 type_txt_arr">
+																	<button type="button" class="btn-tooltip">세트구성</button>
+																	<div class="tipCont-wrapper">
+																		<div class="tooltip-content">
+																			<ul class="set_item">
+																				<li>
+																					<div class="set_name">[본품] 아티스트리 인텐시브 스킨케어 부스팅 인퓨전</div>
+																					<div class="set_count">2</div>
+																				</li>
+																				<li>
+																					<div class="set_name">[본품] 인텐시브 스킨케어 어드배스드 비타민 C+ 히알루론산 트리트먼트</div>
+																					<div class="set_count">25</div>
+																				</li>
+																				<li>
+																					<div class="set_name">[본품] 유스 익스텐드 인리칭</div>
+																					<div class="set_count">2</div>
+																				</li>
+																				<li>
+																					<div class="set_name">[추가구성품] 아티스트리 글로우 페이셜 오일</div>
+																					<div class="set_count set_add">2</div>
+																				</li>
+																				<li>
+																					<div class="set_name">[증정품] 유스 익스텐드 리치 클렌징 폼 미니</div>
+																					<div class="set_count set_add">2</div>
+																				</li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+												<!-- //loop -->
+											</ul>
+											<!-- //real product info -->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //2019-07-03 구조 수정 -->
+		</div>
+		<div class="amwa-btnbar mgt20">
+			<a href="#" class="bt-akl-blue" onclick="">주문내역 확인</a><!-- 2019-07-18 수정 -->
+			<button type="button" class="bt-akl-white btn-printPage hidden-xs">인쇄</button><!-- 추가 : 2018.05.02 (인쇄버튼 class추가) -->
+			<a href="#" class="bt-akl-txt">쇼핑 계속하기</a>
+		</div>
+	</div>
+	<div id="quick"></div>
+	<div id="footer"></div>
+
+</main>
+
+<script>
+
+</script>
+</body>
+</html>

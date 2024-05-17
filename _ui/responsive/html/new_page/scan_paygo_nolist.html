@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>카테고리 | ABN Korea</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords">
+	<meta name="description" content="NY Fee Bundle">
+	<meta name="robots" content="index,follow">
+
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-lib.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/sprint.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-customer.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-shop.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-sop.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-account.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-business.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-product.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-brand.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common-v2.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common-new-v2.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/content_res_all.css">
+
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.datepicker.js"></script><!-- datepicker : 2018.03.19 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/owl.carousel.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/isotope.pkgd.js"></script><!-- gnb 플러그인 : 2018.03.23 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/select2.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/new.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.raty.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_contents.js"></script><!-- brand 통합 : 2018.08.24 추가  -->
+</head>
+
+<body class="akl new-v2">
+	<div class="scan-paygo" style="display: block;">
+		<!-- 화면 확인용 더미 이미지 / 소스반영X -->
+		<!--191120 : delete 
+		<img src="/_ui/responsive/theme-blue/images/scan_paygo/@dummy-img.jpg" style="width:calc(100% + 20px);display:block;position:fixed;left:-10px;top:0;">
+		
+		<div class="scan-paygo-camera">
+			<button class="back-bt">이전</button>
+			<p class="txt">바코드를 영역에 맞추면 자동 인식됩니다.</p>
+			<div class="focus-zone">
+				<div class="bar bar0"></div>
+				<div class="bar bar1"></div>
+				<div class="bar bar2"></div>
+				<div class="bar bar3"></div>
+			</div>
+		</div>
+		-->
+		<!-- //카메라 영역 -->
+
+		<!-- 리스트 absolute-->
+		<!--191122 : 펼침 상태 및 기능변경 -->
+		<div class="scan-paygo-list">
+			<button class="open-bt"  onclick="paygoListOpen()"><span class="arr-ico"></span><span class="txt">펼쳐보기</span></button>
+		<!--//191122 : 펼침 상태 및 기능변경 -->
+			
+			<div class="top-txt"><p>장바구니 (총 0개 제품)</p></div>
+
+			<div class="list-cont">
+				<p class="no-list"><span class="barcode-ico"></span>바코드를 스캔하시면 제품을 담을 수 있습니다.</p>
+			</div>
+			
+			<div class="btn-cont">
+				<div class="txt">
+					<dl>
+						<dt>총금액 :</dt>
+						<dd>0원</dd>
+					</dl>
+					<dl>
+						<dt>총PV/BV :</dt>
+						<dd>0 / 0</dd>
+					</dl>
+				</div>
+				<a href="#n" class="bt-akl-blue ">총 <strong>0</strong>개 제품 주문하기</a>
+			</div>
+			
+		</div>
+		<!-- //리스트 -->
+	</div>
+	<script>
+		function paygoListOpen(){
+			if($('.scan-paygo-list').hasClass('open')){
+				$('.scan-paygo-list').removeClass('open');
+				$('.scan-paygo-list .open-bt .txt').text('펼쳐보기');
+			}else{
+				$('.scan-paygo-list').addClass('open');
+				$('.scan-paygo-list .open-bt .txt').text('접기');
+			}
+			
+		}
+		$(function(){
+
+		})
+	</script>
+</body>
+</html>

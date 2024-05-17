@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>자주 구매 제품</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords">
+	<meta name="description" content="NY Fee Bundle">
+	<meta name="robots" content="index,follow">
+
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-lib.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/sprint.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-customer.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-shop.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-sop.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-account.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-business.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-product.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-brand.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-brand-new.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common-new.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common-new-v2.css">
+
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/content_res_all.css">
+	<!-- 코어제공 -->
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common-v2.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-product-renewal.css">
+
+
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.datepicker.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/owl.carousel.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/isotope.pkgd.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/select2.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/new.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.raty.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_contents.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_component.js"></script>
+</head>
+<body class="akl new-v2">
+	<!-- skipToContent -->
+	<div id="skipToContent">
+	<a href="#contents">콘텐츠 바로가기 </a>
+	</div>
+	<!-- //skipToContent -->
+
+	<main>
+		<div id="header"></div>
+		<div class="sub-nav-section">
+			<div class="container">
+				<ol class="breadcrumb">
+					<li><a href="#;">홈</a></li>
+					<li>마이페이지</li>
+					<li>마이쇼핑정보</li>
+					<li>마이쇼핑</li>
+				</ol>
+				<div class="locationBox">
+					<ul id="locationBoxList">
+						<li class="active" data-taggingid="마이쇼핑"><a href="">마이쇼핑</a></li>
+						<li data-taggingid="반품내역"><a href="">반품내역</a></li>
+						<li data-taggingid="마이팩"><a href="">마이팩</a></li>
+						<li data-taggingid="위시리스트"><a href="">위시리스트</a></li>
+						<li data-taggingid="제품구매 예약"><a href="">제품구매 예약</a></li>
+						<li data-taggingid="중개판매 관리"><a href="">중개판매 관리</a></li>
+						<li data-taggingid="쿠폰 및 구매권한 양도/양수"><a href="">쿠폰 및 구매권한 양도/양수</a></li>
+						<li data-taggingid="정기주문&amp;스마트오더 내역"><a href="">정기주문&amp;스마트오더 내역</a></li>
+						<li data-taggingid="배송지 및 주문알림 관리"><a href="">배송지 및 주문알림 관리</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- container-fluid -->
+		<div class="container-fluid main-container">
+
+			<!-- sop-container -->
+			<article class="article-sop renewal-fonts renewal_floating-type">
+				<h1 class="title-h1">자주 구매 제품</h1>
+
+				<div class="sub-title-box">
+					<p class="title_type-d">일반 제품 (20)</p>
+					<p class="txt_info-a"><i class="sp_core sp_core-blt-c"></i>최근 90일동안 구매한 정보가 노출됩니다.</p>
+				</div>
+
+				<!-- S : 데이터가 없을 경우 -->
+				<div class="box_no-data-a type-member">
+					<i class="sp_ico sp_no-data"></i>
+					<p class="txt_no-data-s">구매한 제품이 없습니다.</p>
+				</div>
+				<!-- E : 데이터가 없을 경우 -->
+				<div class="box_sort-area-b type-member">
+					<button type="button" class="btn_default-c medium">선택담기</button>
+					<div class="select-a">
+						<span class="form_select-default v1">
+							<select class="form_select">
+								<option>자주구매순</option>
+								<option>최근구매순</option>
+							</select>
+							<i class="sp_form sp_select-default"></i>
+						</span>
+					</div>
+				</div>
+				<section class="section_sop-list type-list">
+					<div class="sop-item">
+						<div class="buy-count">10개 구매</div>
+						<div class="box_checkbox">
+							<span class="form_element-checkbox no_label v1">
+								<input type="checkbox" id="sop1">
+								<label for="sop1" class="sp_chk focus">checkbox4</label>
+							</span>
+						</div>
+						<div class="box_thumb">
+							<img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png">
+							<div class="flag_wrap">
+								<span class="flag_item-new">신제품</span>
+							</div>
+						</div>
+						<div class="box_product-info">
+							<a href="" class="link-area">
+								<p class="txt-name">뉴트리라이트 파운데이션 프로틴 뉴트리라이트 파운데이션 프로틴 뉴트리라이트 파운데이션 프로틴 뉴트리라이트 파운데이션 프로틴</p>
+								<p class="txt-price"><span class="price-value">36,780</span>원</p>
+							</a>
+						</div>
+						<div class="box_btn-area"><button type="button" class="btn_circle-a"><i class="sp_button sp_button-cart">장바구니</i></button></div>
+					</div>
+					<div class="sop-item">
+						<div class="buy-count">10개 구매</div>
+						<div class="box_checkbox">
+							<span class="form_element-checkbox no_label v1">
+								<input type="checkbox" id="sop2">
+								<label for="sop2" class="sp_chk focus">checkbox4</label>
+							</span>
+						</div>
+						<div class="box_thumb">
+							<img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png">
+						</div>
+						<div class="box_product-info">
+							<a href="" class="link-area">
+								<p class="txt-name">뉴트리라이트 파운데이션</p>
+								<p class="txt-price"><span class="price-value">36,780</span>원</p>
+							</a>
+						</div>
+						<div class="box_btn-area"><button type="button" class="btn_circle-a"><i class="sp_button sp_button-cart">장바구니</i></button></div>
+					</div>
+					<div class="sop-item">
+						<div class="buy-count">10개 구매</div>
+						<div class="box_checkbox">
+							<span class="form_element-checkbox no_label v1">
+								<input type="checkbox" id="sop3">
+								<label for="sop3" class="sp_chk focus">checkbox4</label>
+							</span>
+						</div>
+						<div class="box_thumb">
+							<img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png">
+						</div>
+						<div class="box_product-info">
+							<a href="" class="link-area">
+								<p class="txt-name">뉴트리라이트 파운데이션</p>
+								<p class="txt-price"><span class="price-value">36,780</span>원</p>
+							</a>
+						</div>
+						<div class="box_btn-area"><button type="button" class="btn_circle-a"><i class="sp_button sp_button-cart">장바구니</i></button></div>
+					</div>
+					<div class="sop-item">
+						<div class="buy-count">10개 구매</div>
+						<div class="box_checkbox">
+							<span class="form_element-checkbox no_label v1">
+								<input type="checkbox" id="sop4">
+								<label for="sop4" class="sp_chk focus">checkbox4</label>
+							</span>
+						</div>
+						<div class="box_thumb">
+							<img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png">
+						</div>
+						<div class="box_product-info">
+							<a href="" class="link-area">
+								<p class="txt-name">뉴트리라이트 파운데이션</p>
+								<p class="txt-price"><span class="price-value">36,780</span>원</p>
+							</a>
+						</div>
+						<div class="box_btn-area"><button type="button" class="btn_circle-a"><i class="sp_button sp_button-cart">장바구니</i></button></div>
+					</div>
+					<div class="sop-item">
+						<div class="buy-count">10개 구매</div>
+						<div class="box_checkbox">
+							<span class="form_element-checkbox no_label v1">
+								<input type="checkbox" id="sop5">
+								<label for="sop5" class="sp_chk focus">checkbox4</label>
+							</span>
+						</div>
+						<div class="box_thumb">
+							<img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png">
+						</div>
+						<div class="box_product-info">
+							<a href="" class="link-area">
+								<p class="txt-name">뉴트리라이트 파운데이션</p>
+								<p class="txt-price"><span class="price-value">36,780</span>원</p>
+							</a>
+						</div>
+						<div class="box_btn-area"><button type="button" class="btn_circle-a"><i class="sp_button sp_button-cart">장바구니</i></button></div>
+					</div>
+					<div class="sop-item">
+						<div class="buy-count">10개 구매</div>
+						<div class="box_checkbox">
+							<span class="form_element-checkbox no_label v1">
+								<input type="checkbox" id="sop6">
+								<label for="sop6" class="sp_chk focus">checkbox4</label>
+							</span>
+						</div>
+						<div class="box_thumb">
+							<img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png">
+						</div>
+						<div class="box_product-info">
+							<a href="" class="link-area">
+								<p class="txt-name">뉴트리라이트 파운데이션</p>
+								<p class="txt-price"><span class="price-value">36,780</span>원</p>
+							</a>
+						</div>
+						<div class="box_btn-area"><button type="button" class="btn_circle-a"><i class="sp_button sp_button-cart">장바구니</i></button></div>
+					</div>
+					<div class="sop-item">
+						<div class="buy-count">10개 구매</div>
+						<div class="box_checkbox">
+							<span class="form_element-checkbox no_label v1">
+								<input type="checkbox" id="sop7">
+								<label for="sop7" class="sp_chk focus">checkbox4</label>
+							</span>
+						</div>
+						<div class="box_thumb">
+							<img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png">
+						</div>
+						<div class="box_product-info">
+							<a href="" class="link-area">
+								<p class="txt-name">뉴트리라이트 파운데이션</p>
+								<p class="txt-price"><span class="price-value">36,780</span>원</p>
+							</a>
+						</div>
+						<div class="box_btn-area"><button type="button" class="btn_circle-a"><i class="sp_button sp_button-cart">장바구니</i></button></div>
+					</div>
+					<div class="sop-item">
+						<div class="buy-count">10개 구매</div>
+						<div class="box_checkbox">
+							<span class="form_element-checkbox no_label v1">
+								<input type="checkbox" id="sop8">
+								<label for="sop8" class="sp_chk focus">checkbox4</label>
+							</span>
+						</div>
+						<div class="box_thumb">
+							<img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png">
+						</div>
+						<div class="box_product-info">
+							<a href="" class="link-area">
+								<p class="txt-name">뉴트리라이트 파운데이션</p>
+								<p class="txt-price"><span class="price-value">36,780</span>원</p>
+							</a>
+						</div>
+						<div class="box_btn-area"><button type="button" class="btn_circle-a"><i class="sp_button sp_button-cart">장바구니</i></button></div>
+					</div>
+					<div class="sop-item">
+						<div class="buy-count">10개 구매</div>
+						<div class="box_checkbox">
+							<span class="form_element-checkbox no_label v1">
+								<input type="checkbox" id="sop9">
+								<label for="sop9" class="sp_chk focus">checkbox4</label>
+							</span>
+						</div>
+						<div class="box_thumb">
+							<img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png">
+						</div>
+						<div class="box_product-info">
+							<a href="" class="link-area">
+								<p class="txt-name">뉴트리라이트 파운데이션</p>
+								<p class="txt-price"><span class="price-value">36,780</span>원</p>
+							</a>
+						</div>
+						<div class="box_btn-area"><button type="button" class="btn_circle-a"><i class="sp_button sp_button-cart">장바구니</i></button></div>
+					</div>
+					<div class="sop-item">
+						<div class="buy-count">10개 구매</div>
+						<div class="box_checkbox">
+							<span class="form_element-checkbox no_label v1">
+								<input type="checkbox" id="sop10">
+								<label for="sop10" class="sp_chk focus">checkbox4</label>
+							</span>
+						</div>
+						<div class="box_thumb">
+							<img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png">
+						</div>
+						<div class="box_product-info">
+							<a href="" class="link-area">
+								<p class="txt-name">뉴트리라이트 파운데이션</p>
+								<p class="txt-price"><span class="price-value">36,780</span>원</p>
+							</a>
+						</div>
+						<div class="box_btn-area"><button type="button" class="btn_circle-a"><i class="sp_button sp_button-cart">장바구니</i></button></div>
+					</div>
+					<div class="sop-item">
+						<div class="buy-count">10개 구매</div>
+						<div class="box_checkbox">
+							<span class="form_element-checkbox no_label v1">
+								<input type="checkbox" id="sop11">
+								<label for="sop11" class="sp_chk focus">checkbox4</label>
+							</span>
+						</div>
+						<div class="box_thumb">
+							<img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png">
+						</div>
+						<div class="box_product-info">
+							<a href="" class="link-area">
+								<p class="txt-name">뉴트리라이트 파운데이션</p>
+								<p class="txt-price"><span class="price-value">36,780</span>원</p>
+							</a>
+						</div>
+						<div class="box_btn-area"><button type="button" class="btn_circle-a"><i class="sp_button sp_button-cart">장바구니</i></button></div>
+					</div>
+					<div class="sop-item">
+						<div class="buy-count">10개 구매</div>
+						<div class="box_checkbox">
+							<span class="form_element-checkbox no_label v1">
+								<input type="checkbox" id="sop12">
+								<label for="sop12" class="sp_chk focus">checkbox4</label>
+							</span>
+						</div>
+						<div class="box_thumb">
+							<img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png">
+						</div>
+						<div class="box_product-info">
+							<a href="" class="link-area">
+								<p class="txt-name">뉴트리라이트 파운데이션</p>
+								<p class="txt-price"><span class="price-value">36,780</span>원</p>
+							</a>
+						</div>
+						<div class="box_btn-area"><button type="button" class="btn_circle-a"><i class="sp_button sp_button-cart">장바구니</i></button></div>
+					</div>
+				</section>
+				<div class="align-box">
+					<button type="button" class="btn_more-dash">더보기 <i class="sp_amway icon-more"></i></button>
+				</div>
+				<!-- S : mobile floating -->
+				<div class="box_mobile-floating">
+					<div class="btn_floating-group">
+						<span class="btn_box">
+							<button type="button" class="btn_square-a">바로구매</button>
+						</span>
+						<span class="btn_box">
+							<button type="button" class="btn_square-c btn-basket"><i class="sp_ico"></i>장바구니</button>
+						</span>
+					</div>
+				</div>
+				<!-- E : mobile floating -->
+			</article>
+			<!-- //sop-container -->
+		</div>
+		<!-- //container-fluid -->
+
+		<div id="quick"></div>
+		<div id="footer"></div>
+	</main>
+
+	<!-- SOP 제품취소 -->
+	<div class="layerWrapper" id="sop-prdt-cancel">
+		<div class="cbox layerBox popWidL">
+			<div class="cart-popup__dialog">
+				<div class="cart-popup__header">
+					<span class="cart-popup__header-text">
+						제품 삭제
+						<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close"><img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기"></a>
+					</span>
+				</div>
+				<div class="cart-popup__content payment">
+					<div class="cart-popup__item-info">
+						<!-- 제품 취소 -->
+						<div class="pop-sop-details prdt-cancel">
+							<p class="txt-top">아래의 제품을 정기주문&스마트 오더에서 삭제 합니다.</p>
+
+							<div class="row">
+								<div class="title-product-replacement-container">
+									<div class="pdp-info page-title-container">
+										<div class="product-details page-title">
+											<h1 class="name">틴즈 퍼펙트 팩</h1>
+											<div class="item-code">
+												<span>SKU :</span>
+												<span class="code">117875K4</span>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- img-product -->
+								<div class="img-product type-SOP"><!-- .type-SOP 추가 -->
+									<div class="plp-item-label-wrap">
+										<div class="plp-item-label bg-blue">스마트 오더</div>
+									</div>
+									<div class="col-sm-12 col-md-6 product-image-gallery js-product-image-gallery v-m-pros new-product-image-gallery">
+										<div class="image-gallery sopConfirmation"><img src="/_ui/responsive/theme-blue/images/akl_common/@img_sop_package.jpg" alt="틴즈 퍼펙트 팩"></div>
+
+										<!-- 이미지롤링&확대보기 : SOP제품 담기완료에서 사용안함
+										<div id="pdpImg" class="ui-snap-big"></div>
+										<div class="product-recentlyviewed__imagelist ui-snap-item owl-carousel owl-theme" id="uiPrdViewDetail"></div>
+										-->
+
+									</div>
+									<div class="clearfix hidden-sm hidden-md hidden-lg print-hide"></div>
+
+									<!-- pdp-info -->
+									<div class="col-sm-12 col-md-6 pdp-info new-pdp-info">
+										<!-- product-main-info -->
+										<div class="product-main-info">
+											<div class="col-md-12">
+												<!-- SOP 사용안함
+												<div class="description"></div>
+												<div class="lip-color-choose"></div>
+												<hr class="description__line">
+												-->
+
+												<div class="product-details">
+													<p class="price retail-price-discount">139,000원</p>
+													<span class="additional-price">
+														<ul>
+															<li>
+																<span class="retail-price-strike-out">PV / BV : 79,500 / 126,400</span>
+															</li>
+														</ul>
+													</span>
+
+													<div class="sop-more-benefits prdt-cancel">
+														<p><strong class="ico-fa-tag">6개월 혜택 :</strong><span>뉴트리라이프 10프로 할인쿠폰 증정</span></p>
+														<p><strong class="ico-fa-tag">12개월 혜택 :</strong><span>PV 10,000 / BV 10,000 추가 보너스 제공</span></p>
+														<p><strong class="ico-fa-tag">18개월 혜택 :</strong><span>뉴트리라이트 더블케어 샘플 제공</span></p>
+														<p><strong class="ico-fa-tag">24개월 혜택 :</strong><span>뉴트리라이트 더블케이 10% 할인</span></p>
+													</div>
+												</div>
+											</div>
+											<div class="col-sm-12 col-md-12">
+												<div class="page-details-variants-select new-page-details-variants-select">
+													<div class="page-details-add-to-cart-component">
+														<!-- SOP제품 옵션 -->
+														<div class="addtocart-component sop-pdp"><!-- 수정 : class 추가(.sop-pdp) -->
+															<div class="amway-theme qty-selector js-qty-selector control-group">
+																<div class="row">
+																	<div class="qty-selector-container">
+																		<strong class="control-label">수량</strong><div class="label-texts">10</div>
+																	</div>
+																</div>
+																<div class="row">
+																	<div class="size-selector-container">
+																		<strong class="control-label">주기</strong><div class="label-texts">매 달, 6개월</div>
+																	</div>
+																</div>
+																<div class="row">
+																	<div class="size-selector-container">
+																		<strong class="control-label">시작월</strong><div class="label-texts">2018년 5월</div>
+																	</div>
+																</div>
+																<div class="row">
+																	<div class="auto-continue">
+																		<input id="sopPdp_renew" type="checkbox" disabled="disabled"><label for="sopPdp_renew">자동연장하기</label>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<!-- //SOP제품 옵션 -->
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- //product-main-info -->
+									</div>
+									<!-- //pdp-info -->
+								</div>
+								<!-- //img-product -->
+							</div>
+
+							<div class="row">
+								<!-- SOP 제품목록 -->
+								<div class="mysop-product-detail-list">
+									<!-- Type1 번들 -->
+									<div class="list-content mysop-item-list">
+										<div class="list-row-title row">
+											<div class="col-md-5 col-xs-12">번들 제품</div>
+											<div class="col-md-2 color-option hidden-xs">옵션</div>
+											<div class="col-md-2 hidden-xs">가격(원)</div>
+											<div class="col-md-2 hidden-xs">PV/BV</div>
+											<div class="col-md-1 hidden-xs">수량</div>
+										</div>
+										<div class="content-list row">
+											<div class="row con-list-item">
+												<div class="col-md-5 col-xs-12 item-prdt-name"><p>아티스트리 시그니쳐 컬러 쉬어 립스틱</p></div>
+												<div class="col-md-2 col-xs-9 color-option">
+													<div class="color-img"><img src="/_ui/responsive/theme-blue/images/@glitz-4.png" alt="19번 코랄 선라이즈"></div>
+													<span>19번 코랄 선라이즈</span>
+												</div>
+												<div class="col-md-2 col-xs-3">
+													<span class="mob-float-right">32,000</span>
+												</div>
+												<div class="col-md-2 col-xs-12">
+													<span class="mob-block blue">PV/BV</span>
+													<span class="mob-float-right">18,300/29,100</span>
+												</div>
+												<div class="col-md-1 col-xs-12">
+													<span class="mob-block blue">수량</span>
+													<span class="mob-float-right">1</span>
+												</div>
+											</div>
+										</div>
+										<div class="content-list row">
+											<div class="row con-list-item">
+												<div class="col-md-5 col-xs-12 item-prdt-name"><p>아티스트리 시그니처 컬러 립스틱</p></div>
+												<div class="col-md-2 col-xs-9 color-option">
+													<div class="color-img"><img src="/_ui/responsive/theme-blue/images/@glitz-5.png" alt="6번 달링 레드"></div>
+													<span>6번 달링 레드</span>
+												</div>
+												<div class="col-md-2 col-xs-3">
+													<span class="mob-float-right">32,000</span>
+												</div>
+												<div class="col-md-2 col-xs-12">
+													<span class="mob-block blue">PV/BV</span>
+													<span class="mob-float-right">18,300/29,100</span>
+												</div>
+												<div class="col-md-1 col-xs-12">
+													<span class="mob-block blue">수량</span>
+													<span class="mob-float-right">1</span>
+												</div>
+											</div>
+										</div>
+										<div class="content-list row">
+											<div class="row con-list-item">
+												<div class="col-md-5 col-xs-12 item-prdt-name"><p>아티스트리 시그니처 컬러 립스틱</p></div>
+												<div class="col-md-2 col-xs-9 color-option">
+													<div class="color-img"><img src="/_ui/responsive/theme-blue/images/@glitz-5.png" alt="6번 달링 레드"></div>
+													<span>6번 달링 레드</span>
+												</div>
+												<div class="col-md-2 col-xs-3">
+													<span class="mob-float-right">32,000</span>
+												</div>
+												<div class="col-md-2 col-xs-12">
+													<span class="mob-block blue">PV/BV</span>
+													<span class="mob-float-right">18,300/29,100</span>
+												</div>
+												<div class="col-md-1 col-xs-12">
+													<span class="mob-block blue">수량</span>
+													<span class="mob-float-right">1</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- //Type1 번들 -->
+
+									<!-- Type2 증정 -->
+									<ul class="shopping-cart-item-list mysop-item-list">
+										<li>
+											<div class="col-xs-12 list-header change-list-header">
+												<div class="col-md-5 col-xs-12 list-item-info">제품</div>
+												<div class="col-md-2 list-item-quantity hidden-xs">옵션</div>
+												<div class="col-md-2 list-item-set-price hidden-xs">금액(원)</div>
+												<div class="col-md-2 list-item-price hidden-xs">PV/BV</div>
+												<div class="col-md-1 list-item-total hidden-xs">수량</div>
+											</div>
+										</li>
+										<li class="product-list-item">
+											<div class="col-md-5 col-xs-12 product-details">
+												<div class="product-item-element list-item-image">
+													<div><a href="#"><img src="/_ui/responsive/theme-blue/images/@nu105480.jpg" alt="Soft Cleanser" title="Soft Cleanser"></a></div>
+												</div>
+												<div class="product-item-element list-item-info">
+													<p>뉴트리라이드 칼맥 디</p>
+													<span class="product-name lightBlue">더블박스 상품을 50,000원 이상 구매 시 프리 뉴트리라이드 칼맥 디 </span>
+												</div>
+											</div>
+											<div class="col-md-2 col-xs-9  product-item-element list-item-option">
+												<div class="color-img"><img src="/_ui/responsive/theme-blue/images/@glitz-4.png" alt="19번 코랄 선라이즈"></div>
+												<span>19번 코랄 선라이즈</span>
+											</div>
+											<div class="col-md-2 col-xs-9  product-item-element list-item-price">
+												<span class="price-label">가격</span>
+												<div class="value-wrapper"><span class="past-price">32,000</span></div>
+											</div>
+											<div class="col-md-2 col-xs-9  product-item-element list-item-value">
+												<span class="price-label">PV/BV</span>
+												<div class="value-wrapper"><span class="past-price">18,300/29,100</span></div>
+											</div>
+											<div class="col-md-1 col-xs-9  product-item-element list-item-numb">
+												<span class="price-label">수량</span>
+												<div class="value-wrapper"><span class="past-price">1</span></div>
+											</div>
+										</li>
+									</ul>
+									<!-- //Type2 증정 -->
+								</div>
+								<!-- //SOP 제품목록 -->
+							</div>
+
+							<div class="txt-bottom">
+								<strong>현재 주문서에 포함된 제품에 대해 더 이상 정기주문&스마트오더를 하지 않으시겠습니까? </strong>
+								<p>이 제품에 포함된 혜택이 있을 경우 취소처리 됩니다.</p>
+							</div>
+						</div>
+						<!-- //제품 취소 -->
+					</div>
+
+					<div class="cart-popup__item-link">
+						<button type="button" class="bt-akl-blue">제품 삭제</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //SOP 제품취소 -->
+
+
+	<script>
+		$(function(){
+			$('#edit-profile2').click(function(){
+				$('.edit-block').addClass('on');
+				return false;
+			});
+			$('.close-edit').click(function(){
+				$('.edit-block').removeClass('on');
+				return false;
+			});
+
+			// tab
+			$('.article__tab-contents').uxeTabs({
+				'tabsContentSlector':'.tab__contents',
+				'useSubTarget': true,
+				'autoFirstActivate': true,
+				'navClickScrollToTabsTop':true
+			});
+
+			// order edit
+			$('.order-edit').on('click', function(){
+				$(this).removeClass('active');
+				$('#orderInfo').removeClass('active');
+				$('#orderEdit, .edit-end').addClass('active');
+			});
+			$('.edit-end').on('click', function(){
+				$(this).removeClass('active');
+				$('#orderEdit').removeClass('active');
+				$('#orderInfo, .order-edit').addClass('active');
+			});
+
+			// NEW PLP : 모바일하단메뉴 플로팅
+			$('.btn_floating').click(function (){
+				$(this).toggleClass('active');
+
+				if(!$(this).hasClass('active')) {
+					$('.akl .renewal_floating-type ~ #footer .scrollTopWrapper').css('bottom','70px');
+				} else {
+					$('.akl .renewal_floating-type ~ #footer .scrollTopWrapper').css('bottom','115px');
+				}
+			})
+
+			stickyBtn();
+			$(window).on('resize scroll touchmove', function(){
+				stickyBtn();
+			});
+		});
+	</script>
+</body>
+</html>

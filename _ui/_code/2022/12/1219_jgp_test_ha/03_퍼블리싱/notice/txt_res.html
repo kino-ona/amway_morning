@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>공지사항 - Amway Korea</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="font_kr.css">
+<link rel="stylesheet" type="text/css" href="https://www.amway.co.kr/_ui/responsive/theme-blue/css/main_new.css">
+<link rel="stylesheet" type="text/css" href="https://www.amway.co.kr/wro/blue_responsive.css">    
+<link rel="stylesheet" type="text/css" href="https://www.amway.co.kr/wro/addons_responsive.css">
+<link rel="stylesheet" type="text/css" href="https://www.amway.co.kr/_ui/responsive/theme-blue/css/content_res_all.css">
+<link rel="stylesheet" type="text/css" href="https://www.amway.co.kr/_ui/responsive/theme-blue/css/uiux_res_all.css">
+<script src="https://www.amway.co.kr/_ui/responsive/common/js/jquery-3.2.1.min.js"></script>
+<style>
+  /*신규 페이지 모바일 실제크기 적용*/
+  body{max-width:1376px;margin:0 auto;}
+  #loading{display:none !important}
+  @media screen and (max-width:639px) {
+    body{padding-left:15px;padding-right:15px;margin:0 auto;}
+  }
+</style>
+</head>
+<body>
+<div class="akl"><div class="bod-view-txt">
+
+
+<!-- 반응형 공지 시작 -->
+<div class="os_noticeRes">
+
+	<!-- 제목 -->
+	<p class="osResH1">[판매 종료 예정] 정기품 초사리 유기 전통김</p>
+	<!-- //제목 -->
+
+	<!-- 내용 -->
+	<div class="widM">
+		<!-- 텍스트 -->
+		<p class="osResTxtP">
+			안녕하세요.<br>
+			많은 관심을 보내주신 정기품 초사리 유기 전통김의 수량이 모두 소진되어 판매가 종료될 예정이며, 리비전을 통해 새롭게 출시될 예정입니다. 그동안의 성원에 감사드리며, 더욱 좋은 제품으로 찾아뵙겠습니다.
+		</p>
+		<p class="osResH2">대상 제품</p>
+		<div class="osResTbBlock txtC marTS marBS">
+			<table class="osResTb">
+				<caption>
+					<strong>정기품 초사리 유기 전통김 판매 종료 예정 제품</strong>
+					<p class="hide">제품명, VPS, SKU으로 구성된 표입니다.</p>
+				</caption>
+				<colgroup>
+					<col style="width:auto">
+					<col style="width:21%">
+					<col style="width:auto">
+				</colgroup>
+				<thead>
+					<tr>
+						<th>제품명</th>
+						<th>VPS</th>
+						<th>SKU</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td data-title="제품명">정기품 초사리 유기 전통김</td>
+						<td data-title="VPS">2397</td>
+						<td data-title="SKU">302893K</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- <p>※ ABC별 단종 시점은 재고 상황에 따라 다를 수 있습니다.</p> -->
+		<!-- //텍스트 -->
+	</div>
+	<!-- //내용 -->
+	
+  
+</div>
+<!-- //os_noticeRes -->
+<script>
+  /* 반응형 rowspan 스크립트 (예제:data-rowspan="4") */
+  convertRowSpan();
+  function convertRowSpan() {
+    const rowSpanElement = document.querySelectorAll("[data-rowspan]");
+    rowSpanElement.forEach(function (item, index) {
+      const rowCount = item.getAttribute("data-rowspan");
+      let parentClassName = "os_temp_rowspan_" + index;
+      item.parentNode.parentNode.classList.add(parentClassName);
+      item.setAttribute("rowspan", rowCount);
+      addTableCellClass(item, parentClassName, rowCount);
+      item.parentNode.parentNode.classList.remove(parentClassName);
+    });
+  }
+  function addTableCellClass(element, parentName, count) {
+    const cellName = element.getAttribute("data-title");
+    const elementTxt = element.textContent;
+    let startSpan = false;
+    let startNum = 1;
+    document.querySelectorAll("." + parentName + ' [data-title="' + cellName + '"]').forEach(function (item, index) {
+      const currentTxt = item.textContent;
+      if ( !(item.getAttribute('data-rowspan')) && elementTxt == currentTxt && startSpan && startNum <= count && !(item.classList.contains('moView'))) {
+        item.setAttribute("class", "moView");
+        startNum++;
+      } else if ( (item.getAttribute("data-rowspan")) && elementTxt == currentTxt) {
+        startSpan = true;
+        startNum++;
+      } else if ( startSpan && startNum > count) {
+        startSpan = false;
+        startNum = 1;
+      }
+    });
+  }
+</script>
+<!-- //반응형 공지 끝 -->
+
+
+</div><!-- //.bod-view-txt --></div><!-- //.akl -->
+<script src="https://www.amway.co.kr/wro/all_responsive.js"></script>
+<script src="https://www.amway.co.kr/wro/addons_responsive.js"></script>
+</body>
+</html>

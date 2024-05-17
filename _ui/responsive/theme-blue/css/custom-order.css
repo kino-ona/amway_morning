@@ -1,0 +1,103 @@
+﻿/* base */
+html {height:100%;font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+body {position:relative;margin:0;height:100%;font-family:SourceSansPro;line-height:1.4;font-weight:100;color:#55565a;background:#ffffff}
+* {-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+a {cursor:pointer;color:#0075a4;text-decoration:none}
+a:hover {color:#002f5f}
+a * {text-decoration:none}
+a:focus {text-decoration:none}
+.akl {font-family:'Noto Sans KR', sans-serif;font-weight:normal}
+.akl button {font-family:'Noto Sans KR', sans-serif !important;border:0}
+.akl input[type="password"], .akl input[type="text"], .akl select.form-control,
+.akl input[type="button"], .akl .amway-theme .btn, .akl .page-title {font-family:'Noto Sans KR', sans-serif}
+.main-container {position:relative;max-width:1400px;margin:0 auto;padding:0 12px}
+.product-list-page-title {margin:0 0 10px 0;color:#002f5f}
+
+/* bootstrap */
+.container-fluid:after, .container-fluid:before,
+.row:after, .row:before {display:table;content:'';clear:both}
+
+/* skipToContent */
+#skipToContent a {position:fixed;top:0;left:0;z-index:9999;width:100%;height:0;margin-top:-1px;display:block;background-color:#3875c1;font-size:14px;font-weight:normal;color:#fff;line-height:1;text-align:center;overflow:hidden}
+#skipToContent a:focus,
+#skipToContent a:active {margin-top:0;height:auto;padding:10px 0px}
+
+/* common */
+.akl h1, .akl h2 {font-size:32px;letter-spacing:-2px;font-family:'Noto Sans KR', sans-serif;line-height:100%;font-weight:700;word-break:keep-all} /* 190220_수정 단어단위 줄바꿈 heading tag */
+.akl h3, .akl h4, .akl h5,.akl h6 {font-family:'Noto Sans KR', sans-serif;font-weight:500;word-break:keep-all} /* 190220_수정 단어단위 줄바꿈 heading tag */
+.akl .row {margin:0}
+.akl .shipping-delivery {min-height:400px}
+.akl [class*=_title], .akl [class*=title-], .akl [class*=-title] {word-break:keep-all}
+.akl label, .akl label .amw-label-radio-text, .akl .amway-theme label {font-size:14px;font-weight:500}
+.new-join-wrap .noti-suc {display:inline-block;margin:7px 0 0 10px;padding-left:13px;font-size:13px;font-weight:500;color:#002f5f;background:url(/_ui/responsive/theme-blue/images/akl_common/icon-success.png) no-repeat 0 5px;background-size:8px 6px}
+.new-join-wrap .noti-suc.fail {background-image:url(/_ui/responsive/theme-blue/images/akl_common/icon-fail.png);color:#e85350}
+.new-join-wrap .ipt_area {position:relative;font-size:0}
+.new-join-wrap .ipt_area.on .form_label{font-size:11px;color:#56565a;top:10px}
+.new-join-wrap .ipt_area .form_label {position:absolute;top:25px;left:10px;font-size:13px;font-weight:400;color:#bbb;transition:all 0.2s ease-in-out}
+.new-join-wrap .ipt_area .form_ipt01 {outline:none;display:inline-block;width:calc(100% - 130px);height:30px;margin-top:21px;padding:0 10px;border-width:0 0 1px 0;border-bottom-color:#dadada !important;font-size:14px;font-weight:500;line-height:30px;color:#002f5f !important;background-color:transparent !important}
+.new-join-wrap .ipt_area .new-join-btn {display:inline-block;height:35px;width:90px;margin-left:40px;line-height:32px;font-size:14px;font-weight:500;color:#56565a !important;vertical-align:bottom;border-radius:17px;background-color:#f4f4f4 !important;border:1px solid #808285 !important;letter-spacing:-1px}
+.new-join-wrap .gender_wrap{display:inline-block;width:90px;margin-left:40px;vertical-align:bottom;position:relative}
+.new-join-wrap .gender_wrap input.gender_radio{position:absolute;left:-99999em;top:-99999em;display:none}
+.new-join-wrap .gender_wrap input.gender_radio + label{cursor:pointer;float:left;border:1px solid #dadada;background-color:#fff;margin:0 0 0 -1px;width:45px;line-height:35px;text-align:center;position:relative;color:#56565a;border-radius:17px 0 0 17px}
+.new-join-wrap .gender_wrap input.gender_radio + label + input + label{border-radius:0 17px 17px 0}
+.new-join-wrap .gender_wrap input.gender_radio:checked + label{background-color:#56565a;color:#fff;z-index:1;border-color:#56565a}
+
+/* font */
+@font-face {
+	font-family:'Noto Sans KR';
+	font-style:normal;
+	font-weight:300;
+	src:url(../fonts/notosanskr/notokr-light.woff2) format('woff2'),
+	url(../fonts/notosanskr/notokr-light.woff) format('woff') ;
+}
+@font-face {
+	font-family:'Noto Sans KR';
+	font-style:normal;
+	font-weight:400;
+	src:url(../fonts/notosanskr/notokr-regular.woff2) format('woff2'),
+	url(../fonts/notosanskr/notokr-regular.woff) format('woff') ;
+}
+@font-face {
+	font-family:'Noto Sans KR';
+	font-style:normal;
+	font-weight:500;
+	src:url(../fonts/notosanskr/notokr-medium.woff2) format('woff2'),
+	url(../fonts/notosanskr/notokr-medium.woff) format('woff') ;
+}
+@font-face {
+	font-family:'Noto Sans KR';
+	font-style:normal;
+	font-weight:700;
+	src:url(../fonts/notosanskr/notokr-bold.woff2) format('woff2'),
+	url(../fonts/notosanskr/notokr-bold.woff) format('woff') ;
+}
+
+@font-face {font-family:'Roboto';font-style:normal;font-weight:400;src:url(/_ui/responsive/theme-blue/fonts/Roboto-Regular.woff2) format('woff2'), url(/_ui/responsive/theme-blue/fonts/Roboto-Regular.woff) format('woff'), url(/_ui/responsive/theme-blue/fonts/Roboto-Regular.otf) format('opentype')}
+@font-face {font-family:'Roboto';font-style:normal;font-weight:500;src:url(/_ui/responsive/theme-blue/fonts/Roboto-Medium.woff2) format('woff2'), url(/_ui/responsive/theme-blue/fonts/Roboto-Medium.woff) format('woff'), url(/_ui/responsive/theme-blue/fonts/Roboto-Medium.otf) format('opentype')}
+@font-face {font-family:'Roboto';font-style:normal;font-weight:700;src:url(/_ui/responsive/theme-blue/fonts/Roboto-Bold.woff2) format('woff2'), url(/_ui/responsive/theme-blue/fonts/Roboto-Bold.woff) format('woff'), url(/_ui/responsive/theme-blue/fonts/Roboto-Bold.otf) format('opentype')}
+
+/* product renewal */
+.akl .renewal-fonts,
+.renewal-fonts,
+.akl .renewal-fonts .accordion-custom {font-family:'Roboto', 'noto sans kr', sans-serif}
+
+#header_sns {margin-bottom:25px;background-color:#ffffff;box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.1)}
+#header_sns .inner {display:flex;justify-content:space-between;align-items:center;height:55px;max-width:1400px;margin:0 auto;padding:0 12px}
+#header_sns .sns_logo {width:73px;height:25px;margin:0}
+#header_sns .sns_logo img {vertical-align:top;width:100%}
+#header_sns .user_box .myAccount {font-size:13px;color:#000}
+#header_sns .user_box .myAccount:after {content:'';display:inline-block;width:23px;height:23px;margin-left:4px;background:url(/_ui/responsive/theme-blue/images/icon100.png) no-repeat -50px 0;background-size:100px auto;vertical-align:bottom}/* 2020-03-09 modify CSS */
+.renew_main .cart_product-area.v1 {margin-bottom:20px}
+
+/* new */
+.non_member_order.renew .new-order-container {margin:28px 0 0}
+.non_member_order .shipping-delivery-shipping-header {margin:0;padding:0 0 10px;border-bottom:1px solid #56565a;font-size:16px;font-weight:500;letter-spacing:-1px;color:#55565a}
+.non_member_order .shipping-delivery-shipping-header .tit {font-weight:500;font-size:18px;line-height:1.11;color:#222;letter-spacing:-.5px}
+
+@media (max-width: 768px) {
+	.akl .product-list-page-title {margin:10px 0;font-size:24px}
+	.main-container, .akl .container {padding:0 15px}
+	.non_member_order.renew .new-order-container {margin:15px 0 0}
+	.new-join-wrap .ipt_area .form_select, .new-join-wrap .ipt_area .new-join-btn, .new-join-wrap .gender_wrap {margin-left:15px}
+	.new-join-wrap .ipt_area .form_ipt01{width:calc(100% - 105px);font-size:16px}
+}

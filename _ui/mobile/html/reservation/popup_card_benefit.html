@@ -1,0 +1,39 @@
+<!-- S : layer-popup -->
+<div id="popup_card_benefit" class="layer-area layer-area_new-popup plp-v2 plp-v2-st2">
+    <div class="layer-area_container with_pop_head  shipping_delivery_st02">
+        <div class="layer-prd_search_top cash_tax">
+            <div class="pop_head">
+                <button type="button" class="btn-modal_close v2">취소</button>
+            </div>
+
+            <div class="layer-content">
+                <iframe src="https://uiux-review.preprod.kr.amway.net/_ui/responsive/html/new_page/renewal/card_benefits_popup.html" width="100%" height="100%" frameborder="0"></iframe>
+                <!-- 개발 주석 | 
+			        퍼블 화면 확인 위해 로컬 주소로 작성하였습니다.
+			        추후 운영 배포 시에는 운영 주소로 변경 부탁드리겠습니다.
+			        주소: https://www.amway.co.kr/
+                -->
+            </div>             
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="/_ui/mobile/common/js/pbCommon.js"></script>
+<script>
+    $(document).ready(function(){
+        var popupUrl = 'https://uiux-review.preprod.kr.amway.net';
+        /* 개발 주석 | 
+			퍼블 화면 확인 위해 로컬 주소로 작성하였습니다.
+			추후 운영 배포 시에는 운영 주소로 변경 부탁드리겠습니다.
+			주소: https://www.amway.co.kr/
+		*/
+
+        $('.sub-title-area').find('a').on('click', function(evt){
+            if($(evt.target).is('.card_benefit1')){
+                $('#popup_card_benefit .layer-content').find('iframe').attr('src', popupUrl + '/_ui/responsive/html/new_page/renewal/card_benefits_popup.html?tab1')
+            } else if($(evt.target).is('.card_benefit2')){
+                $('#popup_card_benefit .layer-content').find('iframe').attr('src', popupUrl + '/_ui/responsive/html/new_page/renewal/card_benefits_popup.html?tab2')
+            }
+        });
+    });
+</script>
+<!-- E : layer-popup -->

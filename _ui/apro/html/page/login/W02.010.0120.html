@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!--
+* @ Copyright (c) EiLAB
+* @ 화면명 : 로그인 | 주/부사업자선택
+* @ 파일명 : html/page/login/W02.010.0120.html
+* @ 수정이력
+* =====================================================================================================
+*  날짜               작업자              요청자/상세내용
+* -----------------------------------------------------------------------------------------------------
+*  20200703           윤종규              최초작성
+*  20200715           윤종규              PC반응형화면 페이지수정
+*  20200724           윤종규              문안변경
+* =====================================================================================================
+-->
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <title>로그인 | 주/부사업자선택</title>
+    <!-- Publish CSS -->
+    <link rel="stylesheet" type="text/css" href="../../../public/css/ui_layout.css" />
+    <link rel="stylesheet" type="text/css" href="../../../public/css/ui_common.css" />
+    <link rel="stylesheet" type="text/css" href="../../../public/css/ui_contents.css" />
+    <link rel="stylesheet" type="text/css" href="../../../public/css/ui_plugin.css" />
+    <link rel="stylesheet" type="text/css" href="../../../public/css/ui_responsive.css" />
+    <!-- Publish JS -->
+    <script type="text/javascript" src="../../../public/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../../../public/js/jquery-ui-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../../../public/js/ui_common_head.js"></script>
+    <script type="text/javascript" src="../../../public/js/ui_plugin.js"></script>
+</head>
+<body class="apro">
+<!-- S : layout -->
+<div id="layout" class="layout">
+    <!-- S : header -->
+    <div id="header" class="header type_border"> <!-- 20200715 .type_border 클래스로 헤더보더라인(제어위치변경) -->
+        <!-- S : header_wrap -->
+        <div class="header_wrap">
+            <!-- s : 20200715 헤더공통영역 -->
+            <div style="line-height: 50px; font-size: 20px; color: tomato">헤더영역(공통 레이아웃)</div>
+            <!-- e : 20200715 헤더공통영역 -->
+        </div>
+        <!-- E : header_wrap -->
+    </div>
+    <!-- E : header -->
+    <!-- S : container  -->
+    <div id="container" class="container">
+        <!-- S : 20200715 cover_layer 영역추가 -->
+        <div class="cover_layer">
+        </div>
+        <!-- E : 20200715 cover_layer 영역추가 -->
+        <!-- S : contents_wrap -->
+        <div class="contents_wrap single_view"> <!-- 20200715 .single_view PC레아아웃 클래스추가-->
+            <!-- S : contents -->
+            <div class="contents">
+                <!-- s : 20200715 뎁스타이틀 추가 -->
+                <div class="depth_title pc_view">사용자선택</div>
+                <!-- e : 20200715 뎁스타이틀 추가 -->
+                <div class="section_area">
+                    <div class="intro_pack">
+                        <div class="intro_title"> <!-- 20201028 문안 띄어쓰기 변경 '선택해주세요' > '선택해 주세요' -->
+                            활동하실 사용자를 선택해 주세요
+                        </div>
+                        <div class="intro_describe"> <!-- 20200724 '강의 및' 문안삭제 -->
+                            사용자를 선택하시면 이용하시는<br>
+                            예약신청과 서비스 개설은 각각 진행됩니다.
+                        </div>
+                    </div>                    
+                    <div class="text_warn_pack">사용자를 변경하려면 로그아웃 후 재로그인 해주시기 바랍니다.</div>					
+                    <div class="profile_choice_group">
+                        <div class="profile_choice_pack">
+                            <div class="profile_choice_photo">
+                                <img src="../../../public/image/content/temp_photo.png" alt="">
+                            </div>
+                            <div class="profile_choice_info">
+                                <div class="choice_user_kr">한소희</div>
+                                <div class="choice_user_en">Han So-hee</div>
+                                <div class="choice_duty">주사업자</div>
+                            </div>
+                        </div>
+                        <div class="profile_choice_pack">
+                            <div class="profile_choice_photo">
+                                <img src="../../../public/image/content/temp_photo02.png" alt="">
+                            </div>
+                            <div class="profile_choice_info">
+                                <div class="choice_user_kr">이태오</div>
+                                <div class="choice_user_en">Lee Tae-O</div>
+                                <div class="choice_duty">부사업자</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- E : 콘텐츠 -->
+            </div>
+            <!-- E : contents -->
+        </div>		
+        <!-- E : contents_wrap -->
+        <!-- S : container_bottom -->
+        <div class="container_bottom">
+            <div class="bottom_btn_area">
+                <div class="btn_pack">
+                    <button type="button" class="btn_main" title="다음" disabled="disabled">다음</button>
+                </div>
+            </div>
+        </div>
+        <!-- E : container_bottom -->
+    </div>
+    <!-- E : container -->
+    <!-- S : footer -->
+    <div id="footer" class="footer">
+        <!-- S : footer_wrap -->
+        <div class="footer_wrap">
+            <!-- s : 20200715 PC용 푸터영역추가 -->
+            <div class="footer_set pc_view"> <!-- s : 20200715 .pc_view PC뷰제어 -->
+                <div class="footer_link">
+                    <div class="footer_link_item">이용약관</div>
+                    <div class="footer_link_item">전문가 이용동의서</div>
+                    <div class="footer_link_item">개인정보처리방침</div>
+                </div>
+                <div class="footer_pack">
+                    <div class="company_info">
+                        한국암웨이㈜ 서울특별시 강남구 영동대로 517 27층<br>
+                        (삼성동, 아셈타워) (대표이사 : 배수정)<br>
+                        사업자 등록번호 : 120-81-03391·통신판매신고번호 : 제 강남-1179호<br>
+                        고객센터/기술지원센터 : 1588-0080 · FAX : 02-557-2566<br>
+                        호스팅제공자 : 한국암웨이㈜ 사업자정보공개페이지
+                    </div>
+                    <div class="company_info">
+                        ALL CONTENTS Copyright<br>
+                        ⓒ 2020 Amway Korea LTD.ALL RIGHTS RESERVED
+                    </div>
+                    <div class="company_logo">
+                        <img src="../../../public/image/content/logo_amway.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- e : 20200715 PC용 푸터영역추가 -->
+        </div>
+        <!-- E : footer_wrap -->
+    </div>
+    <!-- E : footer -->
+</div>
+<!-- E : layout -->
+<!-- Publish JS -->
+<script type="text/javascript" src="../../../public/js/ui_common_body.js"></script>
+<script>
+    $(window).on('load', function(){
+        // 사용자 선택펑션
+        function profileChoice(){
+            var $profileGroup = $('.profile_choice_group'),
+                $proflieList = $profileGroup.children('.profile_choice_pack');
+            $proflieList.each(function(){
+                var $this = $(this);
+                $this.on('click', function(){
+                    var $thisProfile = $(this);
+                    if( !$thisProfile.hasClass('active') ){
+                        $thisProfile.addClass('active');
+                        $thisProfile.siblings().removeClass('active');
+                    };
+                });
+            });
+        };
+        profileChoice(); // 사용자 선택펑션 실행
+    });
+</script>
+</body>
+</html>

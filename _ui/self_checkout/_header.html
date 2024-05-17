@@ -1,0 +1,109 @@
+<div class="header-login">
+    <button class="btn-back" onClick="javascript:window.history.back();">
+        <img src="../res/image/icn_btn_back.png">뒤로가기
+    </button>
+
+    <div class="btn-box">
+        <button class="btn-view-manual">이용방법 보기</button>
+        <button class="btn-call-staff">직원 호출하기</button>
+    </div>
+</div>
+
+<div class="header-scan">
+    <ul class="pay-process">
+        <li>제품스캔</li>
+        <li>결제진행</li>
+        <li>결제완료</li>
+    </ul>
+
+    <div class="btn-box">
+        <button class="btn-cancel">구매 취소하기</button>
+        <button class="btn-call-staff">직원 호출하기</button>
+    </div>
+</div>
+
+<div class="header-payment">
+    <button class="btn-back" onClick="javascript:window.history.back();">
+        <img src="../res/image/icn_btn_back.png">뒤로가기
+    </button>
+
+    <ul class="pay-process">
+        <li>제품스캔</li>
+        <li>결제진행</li>
+        <li>결제완료</li>
+    </ul>
+
+    <div class="btn-box">
+        <button class="btn-cancel">구매 취소하기</button>
+        <button class="btn-call-staff">직원 호출하기</button>
+    </div>
+</div>
+
+<div class="header-admin">
+    <button class="btn-back" onClick="javascript:window.history.back();">
+        <img src="../res/image/icn_btn_back.png">뒤로가기
+    </button>
+
+    <p class="scan-member">
+        <span class="member-name">직원번호</span>
+        <strong class="member-number">7001234567</strong>
+    </p>
+
+    <div class="btn-box">
+        <button class="btn-view-manual">이용방법 보기</button>
+        <button class="btn-call-staff">직원 호출하기</button>
+    </div>
+</div>
+
+<div class="header-exception">
+    <button class="btn-back" onClick="javascript:window.history.back();">
+        <img src="../res/image/icn_btn_back.png">뒤로가기
+    </button>
+
+    <div class="btn-box">
+        <button class="btn-view-manual">이용방법 보기</button>
+        <button class="btn-call-staff">직원 호출하기</button>
+    </div>
+</div>
+
+<script>
+    const loc = window.location.pathname;
+    if(loc == '/' || loc == '/index.html' || loc == '/Amway/' || loc == '/Amway/index.html') {
+        $(".btn-back").css("visibility", "hidden");
+    }
+
+    if(loc.indexOf('/scan') > -1) {
+        $(".header-scan").css("display", "flex");
+        $(".header-scan .pay-process > li").eq(0).addClass("on");
+    }else if(loc.indexOf('/payment') > -1) {
+        $(".header-payment").css("display", "flex");
+        $(".header-payment .pay-process > li").eq(1).addClass("on");
+    }else if(loc.indexOf('/complete') > -1) {
+        $(".header-payment").css("display", "flex");
+        $(".header-payment .pay-process > li").eq(2).addClass("on");
+
+        if(loc.indexOf('reprint') > -1) {
+            $(".header-payment .logo").css("display", "flex");
+            $(".header-payment .btn-back").hide();
+            $(".header-payment .btn-cancel").hide();
+            $(".header-payment .pay-process").css("margin-left", "7.5%");
+        }
+    }else if(loc.indexOf('/administrator') > -1) {
+        $(".header-admin").css("display", "flex");
+        $(".btn-call-staff").addClass("on");
+        if(loc.indexOf('modify') > -1) {
+            $(".header-admin .logo").css("display", "flex");
+            $(".header-admin .btn-back").hide();
+            $(".scan-member").show();
+        }
+    }else if(loc.indexOf('/exception') > -1) {
+        $(".header-exception").css("display", "flex");
+        if(loc.indexOf('manual') > -1) {
+            $(".btn-view-manual").addClass("on");
+        }else if(loc.indexOf('error') > -1) {
+            $(".btn-back").hide();
+        }
+    }else {
+        $(".header-login").css("display", "flex");
+    }
+</script>
