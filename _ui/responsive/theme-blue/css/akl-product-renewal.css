@@ -16737,6 +16737,260 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 .bsop_benefit_bubble.small::before {left:initial; top:initial; right:17px; bottom:-12px; background-image:url(/_ui/responsive/theme-blue/images/akl_plp/ico_bsop_bubble_b2.png);}
 .bsop_benefit_desc {color:#6e6e6e; font-size:18px; font-weight:500; line-height:1.3; letter-spacing:-0.56px; text-align:center; margin:27px 0 0;}
 
+/* 20240517 것모닝 프로모션 */
+.box_sop-promotion .promotion_banner_container .promotion_banner_top {
+	margin: 16px 0;
+	padding: 52px 90px;
+	border-radius: 20px;
+	background: url(/_ui/responsive/theme-blue/images/akl_plp/bg_gutmorning_promotion.png) right center no-repeat #544BFF;
+	background-size: contain;
+	color: #fff;
+}
+.box_sop-promotion .promotion_banner_container .promotion_banner_top .promotion_banner_title {
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+.box_sop-promotion .promotion_banner_container .promotion_banner_top .promotion_banner_title::before {
+	content: '';
+	position: relative;
+	top: -3px;
+	display: inline-block;
+	width: 16px;
+	height: 62px;
+	margin-right: 4px;
+	background: url(/_ui/responsive/theme-blue/images/akl_plp/ico_bracket_left.png) center center no-repeat;
+	background-size: cover;
+}
+.box_sop-promotion .promotion_banner_container .promotion_banner_top .promotion_banner_title::after {
+	content: '';
+	position: relative;
+	top: -3px;
+	display: inline-block;
+	width: 16px;
+	height: 62px;
+	margin-left: 4px;
+	background: url(/_ui/responsive/theme-blue/images/akl_plp/ico_bracket_right.png) center center no-repeat;
+	background-size: cover;
+}
+.box_sop-promotion .promotion_banner_container .promotion_banner_top .promotion_banner_title h2 {
+	margin: 0;
+	font-weight: 900;
+	font-size: 54px;
+	line-height: 64.8px;
+	white-space: pre;
+}
+.box_sop-promotion .promotion_banner_container .promotion_banner_top .promotion_banner_title h2 span {
+	color: #F9DB13;
+}
+.box_sop-promotion .promotion_banner_container .promotion_banner_top .promotion_desc {
+	margin: 8px 0 0;
+	padding-left: 20px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 26px;
+	letter-spacing: -0.05em;
+	opacity: 0.8;
+}
+.box_sop-promotion .promotion_banner_container .promotion_banner_top .promotion_date {
+	margin: 28px 0 0;
+	padding-left: 20px;
+	font-size: 16px;
+	line-height: 22px;
+}
+.box_sop-promotion .promotion_banner_container .promotion_banner_top .promotion_date span {
+	position: relative;
+	padding-left: 18px;
+}
+.box_sop-promotion .promotion_banner_container .promotion_banner_top .promotion_date span::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 9px;
+	transform: translateY(-50%);
+	width: 2px;
+	height: 14px;
+	background: #fff;
+	opacity: 0.5;
+}
+.box_sop-promotion .promotion_detail_container {
+	display: flex;
+	column-gap: 16px;
+	margin-bottom: 68px;
+}
+.box_sop-promotion .promotion_detail_container .promotion_detail_contents {
+	padding: 40px;
+	border-radius: 20px;
+}
+.box_sop-promotion .promotion_detail_container .promotion_detail_contents span {
+	font-size: 14px;
+	color: #fff;
+	padding: 4px 12px;
+	border-radius: 20px;
+}
+.box_sop-promotion .promotion_detail_container .promotion_detail_contents h3 {
+	margin: 12px 0 0;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 36px;
+	letter-spacing: -0.05em;
+	color: #000;
+}
+.box_sop-promotion .promotion_detail_container .promotion_detail_contents p {
+	margin: 2px 0 0;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 26px;
+	letter-spacing: -0.05em;
+	color: #999;
+}
+.box_sop-promotion .promotion_detail_container .promotion_detail_contents img {
+	width: 180px;
+	height: 180px;
+	margin-top: 28px;
+	margin-left: 78px;
+}
+.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(1) {
+	display: flex;
+	justify-content: center;
+	flex: 1;
+	flex-direction: column;
+	padding: 50px 40px;
+	background: #F4F4F4;
+}
+.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(1) .promotion_contents_row:nth-of-type(1) {
+	margin-bottom: 33px;
+}
+.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(1) .promotion_contents_seperate {
+	position: relative;
+	margin-bottom: 32px;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: -0.05em;
+	color: #CACACA;
+	text-align: center;
+}
+.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(1) .promotion_contents_seperate::before {
+	content: '';
+	width: calc(47% - 12px);
+	height: 1px;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	background: #CACACA;
+}
+.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(1) .promotion_contents_seperate::after {
+	content: '';
+	width: calc(47% - 12px);
+	height: 1px;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	background: #CACACA;
+}
+.box_sop-promotion .promotion_detail_container .promotion_detail_contents .promotion_contents_row {
+	position: relative;
+}
+.box_sop-promotion .promotion_detail_container .promotion_detail_contents .promotion_contents_row img {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	width: 130px;
+	height: 130px;
+	margin: 0;
+}
+.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(1) .promotion_contents_row:nth-of-type(1) span {
+	background: #567BF3;
+}
+.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(1) .promotion_contents_row:nth-of-type(2) span {
+	background: #FF932F;
+}
+.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) {
+	background: #EBF5F0;
+}
+.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) span {
+	background: #23C16D;
+}
+.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(3) {
+	background: #E8DAFF;
+}
+.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(3) span {
+	background: #9870D7;
+}
+.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(3) img {
+	margin-top: 64px;
+}
+.box_sop-promotion .promotion_button_wrap {
+	display: flex;
+	column-gap: 16px;
+	margin-bottom: 105px;
+}
+.box_sop-promotion .promotion_button_wrap .button_container {
+	position: relative;
+	width: 50%;
+}
+.box_sop-promotion .promotion_button_wrap .button_container .button_tooltip {
+	position: absolute;
+	top: -56px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 8px 12px;
+	white-space: nowrap;
+	background: #FFF;
+	border-radius: 8px;
+	box-shadow: 6px 4px 16px rgba(0, 0, 0, 0.2);
+}
+.box_sop-promotion .promotion_button_wrap .button_container .button_tooltip::after {
+	content: '';
+	position: absolute;
+	bottom: -8px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 20px;
+	height: 20px;
+	background: url(/_ui/responsive/theme-blue/images/akl_plp/ico_tooltip_arrow_wt.png) center center no-repeat;
+	background-size: cover;
+}
+.box_sop-promotion .promotion_button_wrap .button_container .button_tooltip button {
+	width: 16px;
+	height: 16px;
+	background: url(/_ui/responsive/theme-blue/images/akl_plp/ico_tooltip_close.png) center center no-repeat;
+	background-size: cover;
+}
+.box_sop-promotion .promotion_button_wrap  .button_container > button {
+	width: 100%;
+	padding: 28px 0;
+	font-size: 22px;
+	font-weight: 500;
+	line-height: 24px;
+	border: 1px solid #002F5F;
+	border-radius: 8px;
+}
+.box_sop-promotion .promotion_button_wrap .button_container:nth-of-type(1) > button {
+	color: #002F5F;
+	background: #FFF;
+}
+.box_sop-promotion .promotion_button_wrap .button_container:nth-of-type(1) > button:hover {
+	background: #002F5F;
+	color: #fff;
+	transition: background-color 0.3s, color 0.3s;
+}
+.box_sop-promotion .promotion_button_wrap .button_container:nth-of-type(2) > button {
+	background: #002F5F;
+	color: #fff;
+}
+.box_sop-promotion .promotion_button_wrap .button_container:nth-of-type(2) > button:hover {
+	background: #fff;
+	color: #002F5F;
+	transition: background-color 0.3s, color 0.3s;
+}
+/* // 20240517 것모닝 프로모션 */
+
 .box_sop-main.sh_bsop_renewal .bsop_case1 {background:#fefbec url(/_ui/responsive/theme-blue/images/akl_plp/bg_bsop_semicircle2.png) no-repeat right calc(100% + 80px) / 552px auto;}
 .box_sop-main.sh_bsop_renewal .bsop_case1::before {content:""; position:absolute; left:-112px; bottom:176px; width:389px; height:389px; background-color:#fff9e1; border-radius:100%; opacity:0.5; mix-blend-mode:multiply;}
 .box_sop-main.sh_bsop_renewal .bsop_case1::after {content:""; position:absolute; left:149px; bottom:148px; display:block; width:138px; height:138px; background-color:#fff7d5; border-radius:100%; opacity:0.5; mix-blend-mode:multiply;}
