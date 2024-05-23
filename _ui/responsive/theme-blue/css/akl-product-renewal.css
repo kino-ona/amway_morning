@@ -17196,7 +17196,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	position: relative;
 	padding: 24px 40px;
 	background: #F9F9F9;
-	overflow: hidden;
+	/* overflow: hidden; */
 	z-index: 3;
 }
 .box_sop-product-helper .accordion_wrap .accordion_title_wrap {
@@ -17605,6 +17605,9 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	align-items: flex-start;
 	row-gap: 24px;
 }
+.box_sop-product-helper .accordion_wrap .accordion_body .accordion_contents.accordion_optional.mo {
+	display: none;
+}
 .box_sop-product-helper .accordion_wrap .accordion_body .optional_info_wrap {
 	width: 100%;
 	padding: 12px 40px 20px;
@@ -17612,6 +17615,9 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 .box_sop-product-helper .accordion_wrap .accordion_body .optional_select_wrap {
 	display: flex;
 	align-items: center;
+}
+.box_sop-product-helper .accordion_wrap .accordion_body .optional_category_wrap {
+	display: none;
 }
 .box_sop-product-helper .accordion_wrap .accordion_body .optional_info_wrap p {
 	margin-bottom: 12px;
@@ -18039,7 +18045,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		border-radius: 40px;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_btn_wrap {
-		padding: 20px;
+		padding: 0 20px 20px;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_btn_wrap .accordion_prev_btn,
 	.box_sop-product-helper .accordion_wrap .accordion_btn_wrap .accordion_next_btn {
@@ -18049,6 +18055,9 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		line-height: 24px;
 		border-radius: 8px;
 	}
+	.box_sop-product-helper .accordion_wrap .accordion_list.opened .accordion_header {
+		padding-bottom: 8px;
+	}
 	.box_sop-product-helper .accordion_wrap .accordion_info_wrap {
 		position: unset;
 		flex-direction: row;
@@ -18056,15 +18065,39 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		justify-content: space-between;
 		transform: unset;
 	}
+	.box_sop-product-helper .accordion_wrap .accordion_list.opened .accordion_info_wrap {
+		padding-top: 20px;
+	}
+	.box_sop-product-helper .accordion_wrap .accordion_list.last_step.opened {
+		overflow: visible;
+	}
+	.box_sop-product-helper .accordion_wrap .accordion_list.last_step.opened .accordion_header {
+		padding-bottom: 20px;
+	}
+	.box_sop-product-helper .accordion_wrap .accordion_list.last_step.opened .accordion_info_wrap {
+		position: absolute;
+		top: 256px;
+		left: 20px;
+		padding-top: 0;
+	}
 	.box_sop-product-helper .accordion_wrap .accordion_info_wrap span {
 		font-size: 12px !important;
 		line-height: 17.38px;
+	}
+	.box_sop-product-helper .accordion_wrap .accordion_info_wrap span.chk_product_num {
+		padding: 2px 8px;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_info_wrap span.chk_product_name {
 		max-width: 188px;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_list.opened .accordion_info_wrap span.chk_product_num {
 		padding-left: 0;
+	}
+	.box_sop-product-helper .accordion_wrap .accordion_list.opened .accordion_info_wrap span.error_message {
+		padding-left: 24px;
+	}
+	.box_sop-product-helper .accordion_wrap .accordion_list.opened .accordion_info_wrap span.error_message::before {
+		left: 0;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_body .accordion_contents {
 		padding: 8px 20px  16px;
@@ -18104,6 +18137,8 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_body .optional_select_wrap input[type="radio"] + label {
 		width: calc(100% - 40px);
+		font-size: 14px;
+		line-height: 16px;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_body .optional_select_wrap input[type="radio"] + label:nth-of-type(1) {
 		margin-right: 0;
@@ -18129,12 +18164,25 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	.box_sop-product-helper .accordion_swiper .accordion_product_wrap .product_btn button {
 		padding:15px;
 	}
+	.box_sop-product-helper .accordion_swiper .accordion_product_wrap input[type="checkbox"] + label {
+		top: 12px;
+		left: 12px;
+	}
 	.box_sop-product-helper .accordion_wrap .accordion_body .accordion_product_title {
 		display: none;
 		/* WAIT */
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_body .accordion_contents.accordion_optional {
-		padding: 20px;	
+		display: none;
+		padding: 20px;
+	}
+	.box_sop-product-helper .accordion_wrap .accordion_body .accordion_contents.accordion_optional.mo {
+		display: block;
+	}
+	.box_sop-product-helper .accordion_wrap .accordion_body .accordion_contents.accordion_optional.mo .swiper-slide {
+		display: flex;
+		flex-direction: column;
+		row-gap: 8px;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_title_wrap p .promotion_message {
 		display: none;
@@ -18148,6 +18196,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		height: unset;
 		padding: 12px 0 0;
 		border-top: 1px solid #EEE;
+		z-index: 301;
 	}
 	.box_sop-product-helper .promotion_float_wrap.mo .promotion_total {
 		width: 100%;
@@ -18272,6 +18321,44 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		font-weight: 500;
 		background: none;
 		color: #000;
+	}
+	.box_sop-product-helper .accordion_wrap .accordion_body .optional_category_wrap {
+		position: relative;
+		display: block;
+		padding: 20px 0 22px 20px;
+	}
+	.box_sop-product-helper .accordion_wrap .accordion_body .optional_category_wrap::before {
+		content: '';
+		width: calc(100% - 40px);
+		height: 1px;
+		background: #D0D7EF;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.box_sop-product-helper .accordion_wrap .accordion_body .optional_category_wrap ul {
+		display: flex;
+		column-gap: 8px;
+		overflow-x: scroll;
+	}
+	.box_sop-product-helper .accordion_wrap .accordion_body .optional_category_wrap ul::-webkit-scrollbar {
+		display: none;
+	}
+	.box_sop-product-helper .accordion_wrap .accordion_body .optional_category_wrap ul li {
+		padding: 6px 8px;
+		font-size: 12px;
+		font-weight: 500;
+		line-height: 17.38px;
+		letter-spacing: -0.05em;
+		border: 1px solid #D7D7D7;
+		border-radius: 99px;
+		white-space: nowrap;
+	}
+	.box_sop-product-helper .accordion_wrap .accordion_body .optional_category_wrap ul li.active {
+		background: #567BF3;
+		border-color: #567BF3;
+		color: #FFF;
 	}
 	.akl .scrollTopWrapper.floatingUp {
 		bottom: 270px;

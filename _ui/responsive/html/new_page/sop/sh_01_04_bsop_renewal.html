@@ -710,7 +710,7 @@
 							</div>
 
 							<div class="accordion_info_wrap">
-								<span class="info_message">1개 이상의 제품을 선택해야 합니다.</span><!-- 20240522 열렸을때 info message 케이스 -->
+								<!-- <span class="info_message">1개 이상의 제품을 선택해야 합니다.</span> --><!-- 20240522 열렸을때 info message 케이스 -->
 								<span class="error_message">제품이 선택되지 않았어요. 제품을 선택해주세요.</span><!-- 20240522 에러 케이스 -->
 								<!--<span class="chk_product_num"><span>2</span>개 제품 선택됨</span>--><!-- 20240522 선택된 제품 개수 케이스 -->
 								<!--<span class="chk_product_name">뉴트리 파이토 푸로틴 450g x 1, 뉴트리 파이토 푸로틴 900g x 1</span>--><!-- 20240522 선택된 제품 이름 케이스 -->
@@ -975,7 +975,7 @@
 						</div>
 					</div>
 
-					<div class="accordion_list accordion_list--first">
+					<div class="accordion_list accordion_list--first last_step">
 						<div class="accordion_header" onclick="accordionOpen(4)">
 							<div class="accordion_title_wrap">
 								<p>
@@ -1003,6 +1003,16 @@
 									<input type="radio" name="chk_optional_yn1" id="chk_optional01_2" value=optional_n>
 									<label for="chk_optional01_2">추가 구성을 희망하지 않습니다.</label>
 								</div>
+							</div>
+
+							<div class="optional_category_wrap">
+								<ul>
+									<li class="active">전체 (<span>99</span>)</li>
+									<li>기초 영양 (<span>36</span>)</li>
+									<li>기능성 (<span>27</span>)</li>
+									<li>어린이 (<span>4</span>)</li>
+									<li>식품/음료 (<span>8</span>)</li>
+								</ul>
 							</div>
 
 							<div class="optional_tab">
@@ -1453,6 +1463,139 @@
 									<div class="swiper-button-prev"></div>
 									<div class="swiper-button-next"></div>
 								</div>
+
+								<!-- 아코디언 마지막 Step 모바일 용 sorting -->
+								<div class="accordion_contents accordion_optional mo">
+									<div class="accordion_swiper swiper">
+										<div class="swiper-wrapper">
+	
+											<div class="swiper-slide">
+												<div class="accordion_product_wrap">
+													<input id="chk_mobile_product01_1" type="checkbox">
+													<label for="chk_mobile_product01_1"></label>
+														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+		
+														<p class="product_name">밸런스위드인365 (30포)</p>
+														<strong class="product_price"><span>15,500</span>원</strong>
+		
+														<div class="product_btn">
+															<button>빼기 버튼</button>
+															<span>100</span>
+															<button>더하기 버튼</button>
+														</div>
+												</div>
+												<div class="accordion_product_wrap">
+													<input id="chk_mobile_product01_2" type="checkbox">
+													<label for="chk_mobile_product01_2"></label>
+														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+		
+														<p class="product_name">밸런스위드인365 (30포)</p>
+														<strong class="product_price"><span>15,500</span>원</strong>
+		
+														<div class="product_btn">
+															<button>빼기 버튼</button>
+															<span>100</span>
+															<button>더하기 버튼</button>
+														</div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="accordion_product_wrap">
+													<input id="chk_mobile_product01_3" type="checkbox">
+													<label for="chk_mobile_product01_3"></label>
+													<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+	
+													<p class="product_name">밸런스위드인365 (30포)</p>
+													<strong class="product_price"><span>15,500</span>원</strong>
+	
+													<div class="product_btn">
+														<button>빼기 버튼</button>
+														<span>100</span>
+														<button>더하기 버튼</button>
+													</div>
+												</div>
+												<div class="accordion_product_wrap">
+													<input id="chk_mobile_product01_4" type="checkbox">
+													<label for="chk_mobile_product01_4"></label>
+													<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+	
+													<p class="product_name">밸런스위드인365 (30포)</p>
+													<strong class="product_price"><span>15,500</span>원</strong>
+	
+													<div class="product_btn">
+														<button>빼기 버튼</button>
+														<span>100</span>
+														<button>더하기 버튼</button>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="accordion_product_wrap">
+													<input id="chk_mobile_product01_5" type="checkbox">
+													<label for="chk_mobile_product01_5"></label>
+													<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+		
+													<p class="product_name">밸런스위드인365 (30포)</p>
+													<strong class="product_price"><span>15,500</span>원</strong>
+		
+													<div class="product_btn">
+														<button>빼기 버튼</button>
+														<span>100</span>
+														<button>더하기 버튼</button>
+													</div>
+												</div>
+												<div class="accordion_product_wrap">
+													<input id="chk_mobile_product01_6" type="checkbox">
+													<label for="chk_mobile_product01_6"></label>
+													<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+		
+													<p class="product_name">밸런스위드인365 (30포)</p>
+													<strong class="product_price"><span>15,500</span>원</strong>
+		
+													<div class="product_btn">
+														<button>빼기 버튼</button>
+														<span>100</span>
+														<button>더하기 버튼</button>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="accordion_product_wrap">
+													<input id="chk_mobile_product01_7" type="checkbox">
+													<label for="chk_mobile_product01_7"></label>
+													<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+	
+													<p class="product_name">밸런스위드인365 (30포)</p>
+													<strong class="product_price"><span>15,500</span>원</strong>
+	
+													<div class="product_btn">
+														<button>빼기 버튼</button>
+														<span>100</span>
+														<button>더하기 버튼</button>
+													</div>
+												</div>
+												<div class="accordion_product_wrap">
+													<input id="chk_mobile_product01_8" type="checkbox">
+													<label for="chk_mobile_product01_8"></label>
+													<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+	
+													<p class="product_name">밸런스위드인365 (30포)</p>
+													<strong class="product_price"><span>15,500</span>원</strong>
+	
+													<div class="product_btn">
+														<button>빼기 버튼</button>
+														<span>100</span>
+														<button>더하기 버튼</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+											
+									<div class="swiper-button-prev"></div>
+									<div class="swiper-button-next"></div>
+								</div>
+								<!-- // 아코디언 마지막 Step 모바일 용 sorting -->
 							</div>
 
 							<div class="accordion_btn_wrap">
@@ -1460,6 +1603,7 @@
 							</div>
 						</div>
 					</div>
+					
 					<!-- // 아코디언 Step01 조건 01 -->
 
 					<!-- 아코디언 Step01 조건 02 -->
@@ -1472,7 +1616,7 @@
 
 							<div class="accordion_info_wrap">
 								<span class="info_message">1개 이상의 제품을 선택해야 합니다.</span><!-- 20240522 열렸을때 info message 케이스 -->
-								<span class="error_message">제품이 선택되지 않았어요. 제품을 선택해주세요.</span><!-- 20240522 에러 케이스 -->
+								<!-- <span class="error_message">제품이 선택되지 않았어요. 제품을 선택해주세요.</span> --><!-- 20240522 에러 케이스 -->
 								<!--<span class="chk_product_num"><span>2</span>개 제품 선택됨</span>--><!-- 20240522 선택된 제품 개수 케이스 -->
 								<!--<span class="chk_product_name">뉴트리 파이토 푸로틴 450g x 1, 뉴트리 파이토 푸로틴 900g x 1</span>--><!-- 20240522 선택된 제품 이름 케이스 -->
 							</div>
@@ -1622,7 +1766,7 @@
 						</div>
 					</div>
 
-					<div class="accordion_list accordion_list--second">
+					<div class="accordion_list accordion_list--second last_step">
 						<div class="accordion_header" onclick="accordionOpen(3)">
 							<div class="accordion_title_wrap">
 								<p>Step 03. 추가 구성을 선택하세요. (선택)
@@ -1649,6 +1793,16 @@
 									<input type="radio" name="chk_optional_yn2" id="chk_optional02_2" value=optional_n>
 									<label for="chk_optional02_2">추가 구성을 희망하지 않습니다.</label>
 								</div>
+							</div>
+
+							<div class="optional_category_wrap">
+								<ul>
+									<li class="active">전체 (<span>99</span>)</li>
+									<li>기초 영양 (<span>36</span>)</li>
+									<li>기능성 (<span>27</span>)</li>
+									<li>어린이 (<span>4</span>)</li>
+									<li>식품/음료 (<span>8</span>)</li>
+								</ul>
 							</div>
 
 							<div class="optional_tab">
@@ -2099,6 +2253,139 @@
 									<div class="swiper-button-prev"></div>
 									<div class="swiper-button-next"></div>
 								</div>
+
+								<!-- 아코디언 마지막 Step 모바일 용 sorting -->
+								<div class="accordion_contents accordion_optional mo">
+									<div class="accordion_swiper swiper">
+										<div class="swiper-wrapper">
+	
+											<div class="swiper-slide">
+												<div class="accordion_product_wrap">
+													<input id="chk_mobile_product02_1" type="checkbox">
+													<label for="chk_mobile_product02_1"></label>
+														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+		
+														<p class="product_name">밸런스위드인365 (30포)</p>
+														<strong class="product_price"><span>15,500</span>원</strong>
+		
+														<div class="product_btn">
+															<button>빼기 버튼</button>
+															<span>100</span>
+															<button>더하기 버튼</button>
+														</div>
+												</div>
+												<div class="accordion_product_wrap">
+													<input id="chk_mobile_product02_2" type="checkbox">
+													<label for="chk_mobile_product02_2"></label>
+														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+		
+														<p class="product_name">밸런스위드인365 (30포)</p>
+														<strong class="product_price"><span>15,500</span>원</strong>
+		
+														<div class="product_btn">
+															<button>빼기 버튼</button>
+															<span>100</span>
+															<button>더하기 버튼</button>
+														</div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="accordion_product_wrap">
+													<input id="chk_mobile_product02_3" type="checkbox">
+													<label for="chk_mobile_product02_3"></label>
+													<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+	
+													<p class="product_name">밸런스위드인365 (30포)</p>
+													<strong class="product_price"><span>15,500</span>원</strong>
+	
+													<div class="product_btn">
+														<button>빼기 버튼</button>
+														<span>100</span>
+														<button>더하기 버튼</button>
+													</div>
+												</div>
+												<div class="accordion_product_wrap">
+													<input id="chk_mobile_product02_4" type="checkbox">
+													<label for="chk_mobile_product02_4"></label>
+													<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+	
+													<p class="product_name">밸런스위드인365 (30포)</p>
+													<strong class="product_price"><span>15,500</span>원</strong>
+	
+													<div class="product_btn">
+														<button>빼기 버튼</button>
+														<span>100</span>
+														<button>더하기 버튼</button>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="accordion_product_wrap">
+													<input id="chk_mobile_product02_5" type="checkbox">
+													<label for="chk_mobile_product02_5"></label>
+													<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+		
+													<p class="product_name">밸런스위드인365 (30포)</p>
+													<strong class="product_price"><span>15,500</span>원</strong>
+		
+													<div class="product_btn">
+														<button>빼기 버튼</button>
+														<span>100</span>
+														<button>더하기 버튼</button>
+													</div>
+												</div>
+												<div class="accordion_product_wrap">
+													<input id="chk_mobile_product02_6" type="checkbox">
+													<label for="chk_mobile_product02_6"></label>
+													<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+		
+													<p class="product_name">밸런스위드인365 (30포)</p>
+													<strong class="product_price"><span>15,500</span>원</strong>
+		
+													<div class="product_btn">
+														<button>빼기 버튼</button>
+														<span>100</span>
+														<button>더하기 버튼</button>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="accordion_product_wrap">
+													<input id="chk_mobile_product02_7" type="checkbox">
+													<label for="chk_mobile_product02_7"></label>
+													<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+	
+													<p class="product_name">밸런스위드인365 (30포)</p>
+													<strong class="product_price"><span>15,500</span>원</strong>
+	
+													<div class="product_btn">
+														<button>빼기 버튼</button>
+														<span>100</span>
+														<button>더하기 버튼</button>
+													</div>
+												</div>
+												<div class="accordion_product_wrap">
+													<input id="chk_mobile_product02_8" type="checkbox">
+													<label for="chk_mobile_product02_8"></label>
+													<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+	
+													<p class="product_name">밸런스위드인365 (30포)</p>
+													<strong class="product_price"><span>15,500</span>원</strong>
+	
+													<div class="product_btn">
+														<button>빼기 버튼</button>
+														<span>100</span>
+														<button>더하기 버튼</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+											
+									<div class="swiper-button-prev"></div>
+									<div class="swiper-button-next"></div>
+								</div>
+								<!-- // 아코디언 마지막 Step 모바일 용 sorting -->
 							</div>
 
 							<div class="accordion_btn_wrap">
@@ -2106,7 +2393,7 @@
 							</div>
 						</div>
 					</div>
-					<!-- 아코디언 Step01 조건 02 -->
+					<!-- // 아코디언 Step01 조건 02 -->
 					
 				</div>
 				<!-- // 아코디언 영역 -->
@@ -5813,6 +6100,29 @@
 
 	step1Tab();
 
+	// 모바일 카테고리 선택할 시 액티브
+	$('.optional_category_wrap ul li').click(function() {
+		$('.optional_category_wrap ul li').removeClass('active');
+		$(this).addClass('active');
+	});
+
+	
+	// 20240523 모바일 하단 플로팅 영역에 의한 챗봇과 스크롤 버튼 위치 조정
+	$('.tabs').click(function() {
+		if ($(this)[0] == $('.tabs').eq(2)[0]) {
+			$('.scrollTopWrapper').addClass('floatingUp');
+			$('.box-chatbot').addClass('floatingUp');
+		} else {
+			$('.scrollTopWrapper').removeClass('floatingUp');
+			$('.box-chatbot').removeClass('floatingUp');
+		}
+	});
+
+	$('.promotion_total .total_button').click(function() {
+		$(this).toggleClass('active');
+		$('.my_product_wrap').toggleClass('active');
+	});
+
 	// 20240521 Step04 추가 구성 상품 희망
 	function optionalProductOpen () {			
 		$('input[name="chk_optional_yn1"]').change(function() {
@@ -5822,8 +6132,12 @@
 			
 			if (value1 === 'optional_n') {
 				$('.accordion_list--first .optional_tab').hide();
+				$('.accordion_list--first .optional_category_wrap').hide();
+				$('.accordion_list--first.last_step .accordion_info_wrap').hide();
 			} else {
 				$('.accordion_list--first .optional_tab').show();
+				$('.accordion_list--first .optional_category_wrap').show();
+				$('.accordion_list--first.last_step .accordion_info_wrap').show();
 			}
 		});
 
@@ -5834,8 +6148,12 @@
 			
 			if (value2 === 'optional_n') {
 				$('.accordion_list--second .optional_tab').hide();
+				$('.accordion_list--second .optional_category_wrap').hide();
+				$('.accordion_list--second.last_step .accordion_info_wrap').hide();
 			} else {
 				$('.accordion_list--second .optional_tab').show();
+				$('.accordion_list--second .optional_category_wrap').show();
+				$('.accordion_list--second.last_step .accordion_info_wrap').show();
 			}
 		});
 	};
@@ -5866,15 +6184,15 @@
 					},	
 				});
 
-				console.log($(this).siblings('.swiper-button-prev'));
+				// console.log($(this).siblings('.swiper-button-prev'));
 
-				if ($(this).siblings('.swiper-button-prev').hasClass('swiper-button-disabled') && $(this).siblings('.swiper-button-next').hasClass('swiper-button-disabled')) {
-					$(this).siblings('.swiper-button-prev').hide();
-					$(this).siblings('.swiper-button-next').hide();
-				} else {
-					$(this).siblings('.swiper-button-prev').show();
-					$(this).siblings('.swiper-button-next').show();
-				}
+				// if ($(this).siblings('.swiper-button-prev').hasClass('swiper-button-disabled') && $(this).siblings('.swiper-button-next').hasClass('swiper-button-disabled')) {
+				// 	$(this).siblings('.swiper-button-prev').hide();
+				// 	$(this).siblings('.swiper-button-next').hide();
+				// } else {
+				// 	$(this).siblings('.swiper-button-prev').show();
+				// 	$(this).siblings('.swiper-button-next').show();
+				// }
 			});
 
 		} else if (ww <= 1200) {
@@ -5940,31 +6258,6 @@
 		$('.cont').css('display', 'none');
 		$('.cont').eq(2).css('display', 'block');
 	});
-
-	// 20240523 모바일 하단 플로팅 영역에 의한 챗봇과 스크롤 버튼 위치 조정
-	$('.tabs').click(function() {
-		if ($(this)[0] == $('.tabs').eq(2)[0]) {
-			$('.scrollTopWrapper').addClass('floatingUp');
-			$('.box-chatbot').addClass('floatingUp');
-		} else {
-			$('.scrollTopWrapper').removeClass('floatingUp');
-			$('.box-chatbot').removeClass('floatingUp');
-		}
-	});
-
-	$('.promotion_total .total_button').click(function() {
-		$(this).toggleClass('active');
-		$('.my_product_wrap').toggleClass('active');
-
-		if ($(this).hasClass('active')) {
-			$('.scrollTopWrapper').addClass('hide');
-			$('.box-chatbot').addClass('hide');
-		} else {
-			$('.scrollTopWrapper').removeClass('hide');
-			$('.box-chatbot').removeClass('hide');
-		}
-	});
-
 
 	// 탭메뉴 sticky 컨트롤
 	$(function() {
