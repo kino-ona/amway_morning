@@ -2121,12 +2121,61 @@
 						<p><span>83,000</span>PV</p>
 						<p><span>145,000</span>BV</p>
 	
-						<span class="promotion_totle_flag">프로모션 미적용</span>
+						<span class="promotion_total_flag">프로모션 미적용</span>
 						<!-- <span class="promotion_totle_flag active">프로모션 적용</span> --> <!-- 20240522 프로모션 Active인 경우 -->
 					</div>
 
 					<a href="#" class="promotion_button_confirm">장스오 제품 담기</a>
 				</div>
+				
+				<div class="promotion_float_wrap mo">
+					<div class="promotion_total">
+						<p>총 개수</p>
+						<p><span>0</span>개</p>
+						<button type="button" class="total_button on">전체 보기 버튼</button> <!-- 20240523 담긴 제품이 없을 땐 비활성화, 담긴 제품이 있을 시 on -->
+					</div>
+					<div class="my_product_wrap">
+						<div class="my_product_container">
+							<div class="my_product_list">
+								<p class="my_product_title">
+									프로틴 (2)
+									<button type="button">전체삭제</button>
+								</p>
+	
+								<p>밸런스 위드인 365 (30포)<button type="button">리스트 삭제 버튼</button></p>
+								<p>밸런스 위드인 365 (30포)<button type="button">리스트 삭제 버튼</button></p>
+							</div>
+							<div class="my_product_list">
+								<p class="my_product_title">
+									프로바이오틱스 (3)
+									<button type="button">전체삭제</button>
+								</p>
+	
+								<p>밸런스 위드인 365 (30포)<button type="button">리스트 삭제 버튼</button></p>
+								<p>밸런스 위드인 365 (30포)<button type="button">리스트 삭제 버튼</button></p>
+							</div>
+							<div class="my_product_list">
+								<p class="my_product_title">
+									추가 구성 (1)
+									<button type="button">전체삭제</button>
+								</p>
+	
+								<p>밸런스 위드인 365 (30포)<button type="button">리스트 삭제 버튼</button></p>
+							</div>
+						</div>
+					</div>
+					<div class="promotion_total">
+						<p>총 PV / BV</p>
+						<p><span>0</span>/&nbsp;<span>0</span></p>
+					</div>
+					<div class="promotion_total">
+						<p>결제예정금액<span class="promotion_total_flag">프로모션 미적용</span></p>
+						<p><span>0</span>원</p>
+					</div>
+
+					<a href="#" class="promotion_button_confirm">장스오 제품 담기</a>
+				</div>
+
 				<!-- //맨밑 플로팅 -->
 			</div>
 			<!-- // 20240520 것모닝 제품 구성 도우미 -->
@@ -5746,233 +5795,103 @@
 <!--div id="loadLayer"></!--div--> 
 
 <script>
-		// 20240521 Step01 상품 탭
-		function step1Tab () {
-			$('input[name="step1"]').change(function() {
-				let value = $(this).val();
-				var checked = $(this).prop('checked');
+	// 20240521 Step01 상품 탭
+	function step1Tab () {
+		$('input[name="step1"]').change(function() {
+			let value = $(this).val();
+			var checked = $(this).prop('checked');
 
-				if (value === 'step1_1') {
-					$('.accordion_list--first').show();
-					$('.accordion_list--second').hide();
+			if (value === 'step1_1') {
+				$('.accordion_list--first').show();
+				$('.accordion_list--second').hide();
+			} else {
+				$('.accordion_list--first').hide();
+				$('.accordion_list--second').show();
+			}
+		});
+	};
+
+	step1Tab();
+
+	// 20240521 Step04 추가 구성 상품 희망
+	function optionalProductOpen () {			
+		$('input[name="chk_optional_yn1"]').change(function() {
+			let value1 = $(this).val();
+			var checked1 = $(this).prop('checked');
+
+			
+			if (value1 === 'optional_n') {
+				$('.accordion_list--first .optional_tab').hide();
+			} else {
+				$('.accordion_list--first .optional_tab').show();
+			}
+		});
+
+		$('input[name="chk_optional_yn2"]').change(function() {
+			let value2 = $(this).val();
+			var checked2 = $(this).prop('checked');
+
+			
+			if (value2 === 'optional_n') {
+				$('.accordion_list--second .optional_tab').hide();
+			} else {
+				$('.accordion_list--second .optional_tab').show();
+			}
+		});
+	};
+
+	optionalProductOpen();
+
+	// 20240521 아코디언 스와이퍼
+	let ww = $(window).width();
+	
+	function initSwiper() {
+		let $slider = $('.accordion_contents');
+
+		if (ww > 1200) {
+			$slider.find('.accordion_swiper').each(function(i) {
+				$(this).siblings("[class*='swiper-button']").addClass("type"+i);
+
+				const slider = new Swiper($(this), {
+					slidesPerView: 'auto',
+					spaceBetween: 21.6,
+					touchRatio: 0,
+					simulateTouch: false,
+					observer: true,
+					observeParents: true,
+
+					navigation: {
+						nextEl: $slider.find('.swiper-button-next.type' + i),
+						prevEl: $slider.find('.swiper-button-prev.type' + i),
+					},	
+				});
+
+				console.log($(this).siblings('.swiper-button-prev'));
+
+				if ($(this).siblings('.swiper-button-prev').hasClass('swiper-button-disabled') && $(this).siblings('.swiper-button-next').hasClass('swiper-button-disabled')) {
+					$(this).siblings('.swiper-button-prev').hide();
+					$(this).siblings('.swiper-button-next').hide();
 				} else {
-					$('.accordion_list--first').hide();
-					$('.accordion_list--second').show();
+					$(this).siblings('.swiper-button-prev').show();
+					$(this).siblings('.swiper-button-next').show();
 				}
 			});
-		};
 
-		step1Tab();
-
-		// 20240521 Step04 추가 구성 상품 희망
-		function optionalProductOpen () {			
-			$('input[name="chk_optional_yn1"]').change(function() {
-				let value1 = $(this).val();
-				var checked1 = $(this).prop('checked');
-
-				
-				if (value1 === 'optional_n') {
-					$('.accordion_list--first .optional_tab').hide();
-				} else {
-					$('.accordion_list--first .optional_tab').show();
-				}
-			});
-
-			$('input[name="chk_optional_yn2"]').change(function() {
-				let value2 = $(this).val();
-				var checked2 = $(this).prop('checked');
-
-				
-				if (value2 === 'optional_n') {
-					$('.accordion_list--second .optional_tab').hide();
-				} else {
-					$('.accordion_list--second .optional_tab').show();
-				}
-			});
-		};
-
-		optionalProductOpen();
-
-		// 20240521 아코디언 스와이퍼
-		function swiperButtonHide () {
-			if ($('.accordion_protein_swiper .swiper-slide').length <= 6) {
-				$('.accordion_protein .swiper-button-prev').css('display', 'none');
-				$('.accordion_protein .swiper-button-next').css('display', 'none');
-			}
-			if ($('.accordion_probiotics_swiper .swiper-slide').length <= 6) {
-				$('.accordion_probiotics .swiper-button-prev').css('display', 'none');
-				$('.accordion_probiotics .swiper-button-next').css('display', 'none');
-			}
-			if ($('.accordion_optional_swiper1_1 .swiper-slide').length <= 6) {
-				$('.accordion_optional1_1 .swiper-button-prev').css('display', 'none');
-				$('.accordion_optional1_1 .swiper-button-next').css('display', 'none');
-			}
-			if ($('.accordion_optional_swiper1_2 .swiper-slide').length <= 6) {
-				$('.accordion_optional1_2 .swiper-button-prev').css('display', 'none');
-				$('.accordion_optional1_2 .swiper-button-next').css('display', 'none');
-			}
-			if ($('.accordion_optional_swiper1_3 .swiper-slide').length <= 6) {
-				$('.accordion_optional1_3 .swiper-button-prev').css('display', 'none');
-				$('.accordion_optional1_3 .swiper-button-next').css('display', 'none');
-			}
-			if ($('.accordion_optional_swiper1_4 .swiper-slide').length <= 6) {
-				$('.accordion_optional1_4 .swiper-button-prev').css('display', 'none');
-				$('.accordion_optional1_4 .swiper-button-next').css('display', 'none');
-			}
-			if ($('.accordion_bundlepack_swiper .swiper-slide').length <= 6) {
-				$('.accordion_bundlepack .swiper-button-prev').css('display', 'none');
-				$('.accordion_bundlepack .swiper-button-next').css('display', 'none');
-			}
-			if ($('.accordion_optional_swiper2_1 .swiper-slide').length <= 6) {
-				$('.accordion_optional2_1 .swiper-button-prev').css('display', 'none');
-				$('.accordion_optional2_1 .swiper-button-next').css('display', 'none');
-			}
-			if ($('.accordion_optional_swiper2_2 .swiper-slide').length <= 6) {
-				$('.accordion_optional2_2 .swiper-button-prev').css('display', 'none');
-				$('.accordion_optional2_2 .swiper-button-next').css('display', 'none');
-			}
-			if ($('.accordion_optional_swiper2_3 .swiper-slide').length <= 6) {
-				$('.accordion_optional2_3 .swiper-button-prev').css('display', 'none');
-				$('.accordion_optional2_3 .swiper-button-next').css('display', 'none');
-			}
-			if ($('.accordion_optional_swiper2_4 .swiper-slide').length <= 6) {
-				$('.accordion_optional2_4 .swiper-button-prev').css('display', 'none');
-				$('.accordion_optional2_4 .swiper-button-next').css('display', 'none');
-			}
+		} else if (ww <= 1200) {
+			slider.destroy();
 		}
-		swiperButtonHide();
+	}
 
-		const proteinSwiper = new Swiper('.accordion_protein_swiper', {
-			slidesPerView: 'auto',
-			spaceBetween: 21.6,
-			observer: true,
-			observeParents: true,
+	initSwiper();
 
-			navigation: {
-				nextEl: '.accordion_protein .swiper-button-next',
-				prevEl: '.accordion_protein .swiper-button-prev',
-			},	
-		});
+	$(window).on('resize', function() {
+		ww = $(window).width();
 
-		const probioticsSwiper = new Swiper('.accordion_probiotics_swiper', {
-			slidesPerView: 'auto',
-			spaceBetween: 21.6,
-			observer: true,
-			observeParents: true,
+		if (ww > 1200) {
+			initSwiper();
+		}
+	})
 
-			navigation: {
-				nextEl: '.accordion_probiotics .swiper-button-next',
-				prevEl: '.accordion_probiotics .swiper-button-prev',
-			},	
-		});
-
-		const optionalSwiper1_1 = new Swiper('.accordion_optional_swiper1_1', {
-			slidesPerView: 'auto',
-			spaceBetween: 21.6,
-			observer: true,
-			observeParents: true,
-
-			navigation: {
-				nextEl: '.accordion_optional1_1 .swiper-button-next',
-				prevEl: '.accordion_optional1_1 .swiper-button-prev',
-			},	
-		});
-
-		const optionalSwiper1_2 = new Swiper('.accordion_optional_swiper1_2', {
-			slidesPerView: 'auto',
-			spaceBetween: 21.6,
-			observer: true,
-			observeParents: true,
-
-			navigation: {
-				nextEl: '.accordion_optional1_2 .swiper-button-next',
-				prevEl: '.accordion_optional1_2 .swiper-button-prev',
-			},	
-		});
-
-		const optionalSwiper1_3 = new Swiper('.accordion_optional_swiper1_3', {
-			slidesPerView: 'auto',
-			spaceBetween: 21.6,
-			observer: true,
-			observeParents: true,
-
-			navigation: {
-				nextEl: '.accordion_optional1_3 .swiper-button-next',
-				prevEl: '.accordion_optional1_3 .swiper-button-prev',
-			},	
-		});
-
-		const optionalSwiper1_4 = new Swiper('.accordion_optional_swiper1_4', {
-			slidesPerView: 'auto',
-			spaceBetween: 21.6,
-			observer: true,
-			observeParents: true,
-
-			navigation: {
-				nextEl: '.accordion_optional1_4 .swiper-button-next',
-				prevEl: '.accordion_optional1_4 .swiper-button-prev',
-			},	
-		});
-
-		const bundlePackSwiper = new Swiper('.accordion_bundlepack_swiper', {
-			slidesPerView: 'auto',
-			spaceBetween: 21.6,
-			observer: true,
-			observeParents: true,
-
-			navigation: {
-				nextEl: '.accordion_bundlepack .swiper-button-next',
-				prevEl: '.accordion_bundlepack .swiper-button-prev',
-			},
-		});
-		
-		const optionalSwiper2_1 = new Swiper('.accordion_optional_swiper2_1', {
-			slidesPerView: 'auto',
-			spaceBetween: 21.6,
-			observer: true,
-			observeParents: true,
-
-			navigation: {
-				nextEl: '.accordion_optional2_1 .swiper-button-next',
-				prevEl: '.accordion_optional2_1 .swiper-button-prev',
-			},	
-		});
-
-		const optionalSwiper2 = new Swiper('.accordion_optional_swiper2_2', {
-			slidesPerView: 'auto',
-			spaceBetween: 21.6,
-			observer: true,
-			observeParents: true,
-
-			navigation: {
-				nextEl: '.accordion_optional2_2 .swiper-button-next',
-				prevEl: '.accordion_optional2_2 .swiper-button-prev',
-			},	
-		});
-
-		const optionalSwiper3 = new Swiper('.accordion_optional_swiper2_3', {
-			slidesPerView: 'auto',
-			spaceBetween: 21.6,
-			observer: true,
-			observeParents: true,
-
-			navigation: {
-				nextEl: '.accordion_optional2_3 .swiper-button-next',
-				prevEl: '.accordion_optional2_3 .swiper-button-prev',
-			},	
-		});
-
-		const optionalSwiper4 = new Swiper('.accordion_optional_swiper2_4', {
-			slidesPerView: 'auto',
-			spaceBetween: 21.6,
-			observer: true,
-			observeParents: true,
-
-			navigation: {
-				nextEl: '.accordion_optional2_4 .swiper-button-next',
-				prevEl: '.accordion_optional2_4 .swiper-button-prev',
-			},	
-		});
 
 	// 20240521 아코디언 열고닫기 function
 	function accordionOpen (index) {
@@ -5981,8 +5900,6 @@
 		$(this).addClass('opened').siblings().removeClass('opened');
 		$(this).siblings().find(".accordion_body").slideUp(300);
 		});
-
-		console.log("tabIndex", index);
 	}
 	accordionOpen();
 
@@ -6021,7 +5938,31 @@
 		$('.tabs').eq(2).addClass('on');
 
 		$('.cont').css('display', 'none');
-		$('.cont').eq(2).css('display', 'block');;
+		$('.cont').eq(2).css('display', 'block');
+	});
+
+	// 20240523 모바일 하단 플로팅 영역에 의한 챗봇과 스크롤 버튼 위치 조정
+	$('.tabs').click(function() {
+		if ($(this)[0] == $('.tabs').eq(2)[0]) {
+			$('.scrollTopWrapper').addClass('floatingUp');
+			$('.box-chatbot').addClass('floatingUp');
+		} else {
+			$('.scrollTopWrapper').removeClass('floatingUp');
+			$('.box-chatbot').removeClass('floatingUp');
+		}
+	});
+
+	$('.promotion_total .total_button').click(function() {
+		$(this).toggleClass('active');
+		$('.my_product_wrap').toggleClass('active');
+
+		if ($(this).hasClass('active')) {
+			$('.scrollTopWrapper').addClass('hide');
+			$('.box-chatbot').addClass('hide');
+		} else {
+			$('.scrollTopWrapper').removeClass('hide');
+			$('.box-chatbot').removeClass('hide');
+		}
 	});
 
 
