@@ -6082,31 +6082,68 @@
 <!--div id="loadLayer"></!--div--> 
 
 <script>
-	// 20240521 Step01 상품 탭
-	function step1Tab () {
-		$('input[name="step1"]').change(function() {
-			let value = $(this).val();
-			var checked = $(this).prop('checked');
+	//처음 진입시 모바일 화면체크
+	if($('.box_sop-product-helper .optional_category_wrap')) {
+		var windowWidth = $(window).width();
 
-			if (value === 'step1_1') {
-				$('.accordion_list--first').show();
-				$('.accordion_list--second').hide();
-			} else {
-				$('.accordion_list--first').hide();
-				$('.accordion_list--second').show();
-			}
+		if(windowWidth <= 768) {
+			$('.optional_category_wrap').show();
+		}else {
+			$('.optional_category_wrap').hide();
+		}
+ 	}
+
+	//모바일 화면 > 추가구성 컨텐츠 tap action
+	function optionalMoCategory() {
+		var optionalCategoryItems = $('.optional_category_wrap ul li');
+
+		optionalCategoryItems.click(function() {
+			optionalCategoryItems.removeClass('active');
+			$(this).addClass('active');
 		});
+	}
+
+	// 20240521 Step01 상품 탭
+  function step1Tab () {
+		if($('.box_sop-product-helper input[name="step1"')) {
+			$('input[name="step1"]').click(function() {
+      	$(this).val() === 'step1_1' ? step1ContentAction('step1_1') : step1ContentAction('step1_2');
+    	});
+		}
+  };
+
+  function step1ContentAction(data) {
+    $('.accordion_list--first').css('display', data === 'step1_1' ? 'block' :'none');
+    $('.accordion_list--second').css('display', data === 'step1_1' ? 'none' :'block');
+  }
+
+	// 20240521 Step04 추가 구성 상품 희망
+	function optionalProductOpen () {
+		if($('.box_sop-product-helper input[name="chk_optional_yn1"]') || $('.box_sop-product-helper input[name="chk_optional_yn2"]')) {
+			$('input[name="chk_optional_yn1"]').click(function() {
+				optionalProductAction('step1_1', $(this).val());
+			})
+
+			$('input[name="chk_optional_yn2"]').click(function() {
+				optionalProductAction('step1_2', $(this).val());
+			})
+		}
 	};
 
+	function optionalProductAction(step, data) {
+		var number = 0;
+		step === 'step1_1' ? number = 'first' :  number = 'second';
+
+		$('.accordion_list--'+ number +' .optional_tab').css('display', data === 'optional_n' ? 'none' :'block');
+  }
+
 	step1Tab();
+	optionalMoCategory();
+	optionalProductOpen();
 
-	// 모바일 카테고리 선택할 시 액티브
-	$('.optional_category_wrap ul li').click(function() {
-		$('.optional_category_wrap ul li').removeClass('active');
-		$(this).addClass('active');
-	});
+	//resize 될때 추가구성 컨텐츠 tap action 작업 필요
 
-	
+
 	// 20240523 모바일 하단 플로팅 영역에 의한 챗봇과 스크롤 버튼 위치 조정
 	$('.tabs').click(function() {
 		if ($(this)[0] == $('.tabs').eq(2)[0]) {
@@ -6123,42 +6160,6 @@
 		$('.my_product_wrap').toggleClass('active');
 	});
 
-	// 20240521 Step04 추가 구성 상품 희망
-	function optionalProductOpen () {			
-		$('input[name="chk_optional_yn1"]').change(function() {
-			let value1 = $(this).val();
-			var checked1 = $(this).prop('checked');
-
-			
-			if (value1 === 'optional_n') {
-				$('.accordion_list--first .optional_tab').hide();
-				$('.accordion_list--first .optional_category_wrap').hide();
-				$('.accordion_list--first.last_step .accordion_info_wrap').hide();
-			} else {
-				$('.accordion_list--first .optional_tab').show();
-				$('.accordion_list--first .optional_category_wrap').show();
-				$('.accordion_list--first.last_step .accordion_info_wrap').show();
-			}
-		});
-
-		$('input[name="chk_optional_yn2"]').change(function() {
-			let value2 = $(this).val();
-			var checked2 = $(this).prop('checked');
-
-			
-			if (value2 === 'optional_n') {
-				$('.accordion_list--second .optional_tab').hide();
-				$('.accordion_list--second .optional_category_wrap').hide();
-				$('.accordion_list--second.last_step .accordion_info_wrap').hide();
-			} else {
-				$('.accordion_list--second .optional_tab').show();
-				$('.accordion_list--second .optional_category_wrap').show();
-				$('.accordion_list--second.last_step .accordion_info_wrap').show();
-			}
-		});
-	};
-
-	optionalProductOpen();
 
 	// 20240521 아코디언 스와이퍼
 	let ww = $(window).width();
