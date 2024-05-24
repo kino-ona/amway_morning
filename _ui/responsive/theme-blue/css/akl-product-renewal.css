@@ -18418,6 +18418,11 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		display: block;
 		padding: 20px 0 22px 20px;
 	}
+	.box_sop-product-helper .accordion_wrap .accordion_body .optional_category_wrap button {
+		width: 100%;
+		height: 100%;
+		background: none;
+	}
 	.box_sop-product-helper .accordion_wrap .accordion_body .optional_category_wrap::before {
 		content: '';
 		width: calc(100% - 40px);
@@ -18665,6 +18670,11 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	.bsop_benefit_title h2 {font-size:22px; letter-spacing:-0.66px;}
 	.bsop_benefit_title h2 span {font-size:27px; letter-spacing:-0.81px;}
 	.bsop_benefit_title h2 span::before {height:1px;}
+	
+	/* 202405 것모닝 작업 - 영역 틀어짐 수정 */
+	@media (max-width: 360px) {
+		.bsop_benefit_title h2 span::before {bottom: 2px}
+	}
 	.bsop_benefit_cont {max-width:initial; padding:90px 24px 100px; margin:0 -24px;}
 	.bsop_benefit_cont::before {content:""; position:absolute; left:0; top:-75px; display:block; width:100%; height:75px; background:url(/_ui/responsive/theme-blue/images/akl_plp/bg_bsop_semicircle.png) no-repeat left top / 100% auto;}
 	.bsop_benefit_cont > h2 {top:-39px; gap:6px; font-size:27px; letter-spacing:-0.81px; margin:0 0 30px;}
