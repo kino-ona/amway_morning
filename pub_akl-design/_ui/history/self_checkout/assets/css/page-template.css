@@ -1,0 +1,26 @@
+
+/* button */
+.btn_cancel{width:84px;height:83px;padding:55px 0 13px;font-size:15px;color:#0d3654;text-align:center;line-height:15px;border-radius:2px;background:url('../images/icon_cancel.png') #fff no-repeat 50% 13px;box-shadow:0px 1px 5px 0 rgba(0, 0, 0, 0.3);background-size:23px 23px;}
+.btn_call{width:84px;height:83px;padding:55px 0 13px;font-size:15px;color:#0d3654;text-align:center;line-height:15px;border-radius:2px;background:url('../images/icon_call.png') #fff no-repeat 50% 13px;box-shadow:0px 1px 5px 0 rgba(0, 0, 0, 0.3);background-size:25px 30px;}
+.btn_back{width:84px;height:83px;padding:55px 0 13px;font-size:15px;color:#0d3654;text-align:center;line-height:15px;border-radius:2px;background:url('../images/icon_back.png') #fff no-repeat 50% 13px;box-shadow:0px 1px 5px 0 rgba(0, 0, 0, 0.3);background-size:32px 25px;}
+.btn_howto{position:relative;width:84px;height:83px;padding:55px 0 13px;font-size:15px;color:#0d3654;text-align:center;line-height:15px;border-radius:2px;box-shadow:0px 1px 5px 0 rgba(0, 0, 0, 0.3);background-color:#fff;}
+.btn_howto:before{display:block;content:'';position:absolute;left:42px;top:16px;width:2px;height:21px;background-color:#0d3654;}
+.btn_howto:after{display:block;content:'';position:absolute;left:42px;top:39px;width:2px;height:2px;background-color:#0d3654;}
+
+/* layout */
+#scan_container{position:relative;overflow:hidden;width:100%;height:100%;padding:13px 13px 0;background:url('../images/bg_01.png') no-repeat 0 0;background-size:cover;}
+#scan_container .scan_header{display:flex;justify-content:space-between;position:relative;z-index:3;min-height:83px;}
+
+/* header */
+.info_user{position:relative;z-index:10;padding:10px 0 0 21px;}
+.info_user .name, .info_user .number{display:inline-block;margin-right:8px;font-size:18px;color:#fff;line-height:1.11;opacity:.7;}
+.info_user .steps{display:block;width:300px;height:31px;margin-top:16px;font-size:0;}
+.info_user .steps.step01{background:url('../images/img_progress_1.png') no-repeat 0 0;background-size:300px auto;}
+.info_user .steps.step02{background:url('../images/img_progress_2.png') no-repeat 0 0;background-size:300px auto;}
+.info_user .steps.step03{background:url('../images/img_progress_3.png') no-repeat 0 0;background-size:300px auto;}
+.info_user .steps.step04{background:url('../images/img_progress_4.png') no-repeat 0 0;background-size:243px auto;}
+.scan_btns{position:absolute;right:0;top:0;z-index:20;font-size:0;}
+.scan_btns button{margin-left:2px;}
+
+/* 191125 : loading text 문구추가 */
+.box_loading .progress_text{margin-top:30px; color:#fff; font-size:35px;}

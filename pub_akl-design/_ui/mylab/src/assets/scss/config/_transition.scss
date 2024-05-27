@@ -1,0 +1,36 @@
+/* Transition */
+/* Enter and leave animations can use different */
+/* durations and timing functions.              */
+.slide-fade-enter-active {
+  position: absolute;
+  transition: all .3s ease;
+  z-index: 2;
+}
+.slide-fade-leave-active {
+  position: absolute;
+  transition: all .2s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+  z-index: 1;
+}
+.slide-fade-enter, .slide-fade-leave-to
+  /* .slide-fade-leave-active below version 2.1.8 */ {
+  position: absolute;
+  transform: translateY(10px);
+  opacity: 0;
+}
+
+/* modal transition */
+.modal-enter,
+.modal-leave-active {
+  opacity: 0;
+}
+
+.modal-leave-active,
+.modal-leave-active .modal__dialog {
+  transition: all .2s linear;
+}
+
+.modal-enter .modal__dialog,
+.modal-leave-active .modal__dialog {
+  -webkit-transform: translateY(-100px);
+  transform: translateY(-100px);
+}

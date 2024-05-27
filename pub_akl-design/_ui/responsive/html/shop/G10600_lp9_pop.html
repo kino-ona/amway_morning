@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SNS-popup</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords">
+    <meta name="description" content="NY Fee Bundle">
+    <meta name="robots" content="index,follow">
+
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-lib.css"><!-- 플러그인용 css : 2018.03.14 추가  -->
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common.css">
+	<link rel="shortcut icon" type="image/x-icon" href="/_ui/responsive/theme-blue/images/akl_common/favicon.ico">
+	<link rel=”apple-touch-startup-image” href="/_ui/responsive/theme-blue/images/akl_common/favicon_app.png">
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.datepicker.js"></script><!-- datepicker : 2018.03.19 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/owl.carousel.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/isotope.pkgd.js"></script><!-- gnb 플러그인 : 2018.03.23 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/select2.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/new.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.raty.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_contents.js"></script><!-- brand 통합 : 2018.08.24 추가  -->
+	<style type="text/css">
+	
+		.akl .cart-popup__header{ height:50px; } /*alk-common 732*/
+		.akl .cart-popup__header-text { height:50px; }/*alk-common 733*/
+	</style>
+</head>
+<body class="akl">
+
+<!-- ABC픽업 수령기간 안내 알림 팝업 -->
+<div class="layerWrapper G10600_lp1_pop">
+	<div class="cbox layerBox popWidM">
+		<div class="cart-popup__dialog">
+			<div class="cart-popup__header">
+				<span class="cart-popup__header-text">ABC픽업 수령기간 안내
+					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close">
+					<img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기">
+					</a>
+				</span>
+			</div>
+			<div class="cart-popup__content abc_pickup">
+				<div class="content_notice">
+					장스오 픽업은 월 말일까지 꼭 수령해 주세요.<br>
+					수령 가능한 마지막 영업일은<br class="mo"> <span class="emphasis">0000년 00월 00일</span> 입니다.<!-- 20221116 수정 -->
+				</div>
+				<div class="content_list">
+					<ul>
+						<li>
+							<span class="color-red">장스오 픽업의 수령 기한은 주문일로부터 최대 7일입니다. 단, 월 말일을 초과할 수 없습니다.</span><br>
+							(예 : 7월 30일 주문 시 수령 기한은 7월 31일까지)
+						</li>
+						<li>최대 수령일까지 미수령한 경우 자동반품/환불 및 실적 차감되며, 장바구니 스마트 오더 주문서가 취소됩니다.</li>
+					</ul>
+				</div>
+			</div>
+			<!-- S : 20230103 버튼 삭제 및 수정 -->
+			<div class="cart-popup__item-link">
+				<!-- <button type="button" class="bt-akl-white">이전</button> -->
+				<button type="button" class="bt-akl-blue">확인</button>
+			</div>
+			<!-- E : 20230103 버튼 삭제 및 수정 -->
+		</div>
+	</div>
+</div>
+<!--//ABC픽업 수령기간 안내 알림 팝업 -->
+
+<script type="text/javascript">
+   $(function() {
+   	layerPopOver('','.G10600_lp1_pop');
+   });
+</script>
+</body>
+
+</html>

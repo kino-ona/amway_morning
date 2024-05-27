@@ -1,0 +1,81 @@
+<!-- NEW PLP 구매공유 카카오 팝업 -->
+<div class="kakao-share-v2 renewal-fonts">
+	<h1 class="tit-kakao">소비자,ABO,Member에게<br>마이팩을 전달하세요!</h1>
+	<div class="box_share-cont">
+		<div class="share_list-item">
+			<div class="share_col-thmb">
+				<a href="" class="link_product"><img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png"></a>
+			</div>
+			<div class="share_col-info">
+				<p class="text_product-title">아티스트리 시그니처 셀렉트 아티스트리 시그니처 셀렉트 아티스트리 시그니처 셀렉트</p>
+				<p class="text_product-price"><strong>33,000</strong>원 / <strong>1</strong>개</p>
+			</div>
+		</div>
+		<div class="share_list-item">
+			<div class="share_col-thmb">
+				<a href="" class="link_product"><img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png"></a>
+			</div>
+			<div class="share_col-info">
+				<p class="text_product-title">아티스트리 하이드라-브이 모이스처</p>
+				<p class="text_product-price"><strong>180,000</strong>원 / <strong>1</strong>개</p>
+			</div>
+		</div>
+		<div class="share_list-item">
+			<div class="share_col-thmb">
+				<a href="" class="link_product"><img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png"></a>
+			</div>
+			<div class="share_col-info">
+				<p class="text_product-title">아티스트리 하이드라-브이 모이스처</p>
+				<p class="text_product-price"><strong>180,000</strong>원 / <strong>1</strong>개</p>
+			</div>
+		</div>
+
+		<div class="share_textbox">
+			<textarea placeholder="마음을 담은 메시지와 제품을 함께 공유해보세요."></textarea>
+		</div>
+	</div>
+	<div class="box_share-footer">
+		<div class="box_total-floating">
+			<div class="box_total-inner">
+				<span class="text_total"><strong>총</strong><strong class="point-color">127,000</strong>원<span class="text_price-option">(+3,500원 배송비)</span></span>
+				<span class="text_total">총 PV/BV:<strong class="point-color">370,000,000</strong></span>
+			</div>
+		</div>
+		<button type="button" class="btn_share-select btn_square-a">닫기</button>
+		<button type="button" class="btn_share-select btn-share"><i class="sp_ico"></i>공유대상 선택</button>
+	</div>
+
+	<button type="button" class="btn_share-noti">소비자 공유 주의사항</button>
+	<div class="box_share-noti">
+		<p class="txt_share-noti">소비자가 30일 내 다른 ABO에게 받은 링크로 이미 구매한 경우, 내가 전달한 링크로 구매 하더라도 PV/ BV는 내 실적으로 쌓이지 않습니다.</p>
+	</div>
+</div>
+<!--// NEW PLP 구매공유 카카오 팝업 -->
+
+<script>
+    // 2020-06-22 구매공유(카카오버튼)
+    var $btnShare = $('.btn_share-mypack'),
+        $html = $('html'),
+        $kakaoShare = $( '.kakao-share-v2' ),
+        $uiLayerMask = $( '#uiLayerMask' );
+
+    $btnShare.on('click', function () {
+        $html.addClass('scrollLock');
+        $kakaoShare.addClass( 'active' );
+		$('#uiLayerMask').css('display','block').addClass( 'on' )
+    })
+    $('.btn_share-select.btn_square-a').on('click', function () {
+        $html.removeClass('scrollLock');
+        $kakaoShare.removeClass( 'active' );
+		$('#uiLayerMask').attr('style','display:none').removeClass( 'on' );
+    })
+
+    $('.btn_share-noti').click(function(e) {
+        $(this).toggleClass('active');
+        e.stopPropagation();
+    });
+    $('.kakao-share').click(function() {
+        $('.btn_share-noti').removeClass('active');
+    });
+
+</script>

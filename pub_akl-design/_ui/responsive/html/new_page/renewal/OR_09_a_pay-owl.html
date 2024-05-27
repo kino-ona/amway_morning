@@ -1,0 +1,3950 @@
+<!-- S : [디파이 수정2] 신규 파일 : CAP2 A Pay 주문 결제 카드 등록 -->
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<title>주문/결제 | Amway Korea</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords">
+	<meta name="description" content="NY Fee Bundle">
+	<meta name="robots" content="index,follow">
+
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-lib.css"><!-- 플러그인용 css : 2018.03.14 추가  -->
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/base.css">
+	<!-- 코어제공 -->
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/sprint.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-customer.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-shop.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-sop.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-account.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-business.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-product.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-brand.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-brand-new.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common-new-v2.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common-new-v3.css">
+
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/content_res_all.css">
+	<!-- 코어제공 -->
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common-v2.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-product-renewal.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-product-renewal_v1.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-cap2.css"> <!-- [디파이 수정2] 신규 파일 css 추가 -->
+
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.datepicker.js"></script><!-- datepicker : 2018.03.19 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/owl.carousel.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/isotope.pkgd.js"></script><!-- gnb 플러그인 : 2018.03.23 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/select2.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/new.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.raty.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common_v1.js"></script><!-- 210525 [디파이 수정] 스크립트 추가 -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_contents.js"></script><!-- brand 통합 : 2018.08.24 추가  -->
+
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_component.js"></script>
+</head>
+
+<body class="akl new-v2 header-type"> <!-- D: 2020 장바구니 개선 -header-type 클래스 추가 -->
+<!-- skipToContent -->
+<div id="skipToContent">
+	<a href="#contents">콘텐츠 바로가기</a>
+</div>
+<!-- //skipToContent -->
+
+<!-- main -->
+<main>
+	<!-- S : 2020 장바구니 개선 renewal header type -->
+	<div class="header_type-a">
+		<h1 class="header-logo">
+			<a href="#n">Amway</a>
+		</h1>
+	</div>
+	<!-- E : 2020 장바구니 개선 renewal header type -->
+
+	<!-- main-contents -->
+	<div class="container-fluid main-container renewal-fonts renewal_floating-type"><!-- D : 2020 연계화면 renewal [renewal_floating-type renewal-fonts] class add -->
+		<div class="shipping-delivery">
+			<div class="container-fluid">
+				<div class="row cartTitile article_title-type"> <!-- D: 2020 장바구니 개선 - article_title-type 클래스 추가 -->
+					<!-- S: 2020-08-12 타이틀, 단계 수정 -->
+					<h1 class="product-list-page-title mb25">주문/결제</h1>					
+					<div class="box_breadcrumb-type">
+						<ul class="breadcrumb-list">
+							<li><span class="num"></span>장바구니</li>
+							<li class="active"><span class="num">2</span>주문결제</li>
+							<li><span class="num">3</span>주문완료</li>
+						</ul>
+					</div>
+					<!-- E: 2020-08-12 타이틀, 단계 수정 -->
+				</div>
+			</div>
+
+			<div class="container-fluid">
+				<div class="new-payment gift_order renew n_v2"><!--  D : 2020-08-12 즉시결제 [n_v2] class add -->
+					<div class="cart_product-area">
+						<div class="akl-toggle-wrap order-items-toggle cart_product-list">
+							<div class="cart-items-wrapper tabs-transform">
+								<!-- S : AS-IS -->								
+
+								<div class="payment_box">
+									<div id="shippingdiv" class="shipping-delivery-ship">
+										<p class="shipping-delivery-shipping-header">배송방법
+											<span class="btn-delivery-guide">
+												<a href="#;" class="bt-akl-white mini" data-layer="faq_customer">배송방법 가이드</a>
+											</span>
+										</p>
+										<div class="tab-wrapper" role="tablist" aria-multiselectable="true">
+											<!-- 탭헤드 -->
+											<div class="tab-head" role="tab">
+												<input class="amwa-radio" type="radio" name="deliveryMode" id="shippingDelivery-type01" value="delivery" checked="checked">
+												<label for="shippingDelivery-type01" class="focus">배달주문 <span class="text-sm">(택배 배송)</span></label>
+											</div>
+											<div class="tab-head" role="tab">
+												<input class="amwa-radio" type="radio" name="deliveryMode" id="shippingDelivery-type02" value="pickup" data-default-check="" checked>
+												<label for="shippingDelivery-type02" class="focus">픽업주문
+													<span class="text-sm">
+														(ABC에서 제품 수령)
+													</span>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="tab-body" role="tabpanel">
+									<div id="collapseOne" class="payment_box shipping-delivery-radio-body tab-pane"><!-- 2019-08-02 collapse 삭제 -->
+										<div class="amway-theme order-payment">
+											<div class="navigation-tabs-container order-history-container js-order-history-container">
+												<div class="tab-content tabs-content-blocks">
+													<div class="tab-pane content-block active" id="single">
+														<h2 class="hidden">단일</h2>
+														<div class="single-body">															
+															<p class="address-tit">
+																배송지 선택
+																<span class="btn-delivery-guide"><a href="#" class="bt-akl-blue mini">배송지 목록</a><a href="#" class="bt-akl-blue mini" id="G10600_lp9_pop" onclick="layerPopOver(this,'.G10600_lp9_pop')">새 배송지</a></span>
+																<span class="txt_small st01">
+																	배송지 변경은 즉시결제 건에서만 반영됩니다.
+																</span><!-- 2020-08-12 안내글 추가 -->
+															</p>							
+																													
+
+															<div class="shipping-list-order"><!-- 2019-08-01 간편선물 2차(class=addDisabled 추가) ::  2019-11-12 addDisabled 클래스 기본값 삭제 -->
+																<span>
+																	<input class="amwa-radio" type="radio" name="abnAdress" id="radio100" value="M" checked="checked">
+																	<label for="radio100" class="focus">기본 배송지 기본 배송지 그냥 저냥 이름이 길면 어떻게 나오나요</label>
+																</span>
+																<span>
+																	<input class="amwa-radio" type="radio" name="abnAdress" id="radio101" value="I">
+																	<label for="radio101" class="focus">설치주문테스트</label>
+																</span>
+																<span>
+																	<input class="amwa-radio" type="radio" name="abnAdress" id="radio200" value="M">
+																	<label for="radio200" class="focus">1231</label>
+																</span>
+																<span>
+																	<input class="amwa-radio" type="radio" name="abnAdress" id="radio201" value="I">
+																	<label for="radio201" class="focus">111</label>
+																</span>
+																<span>
+																	<input class="amwa-radio" type="radio" name="abnAdress" id="radio202" value="M">
+																	<label for="radio202" class="focus">테스트111</label>
+																</span>
+																<span>
+																	<input class="amwa-radio" type="radio" name="abnAdress" id="radio203" value="I">
+																	<label for="radio203" class="focus">테스트</label>
+																</span>
+																<span>
+																	<input class="amwa-radio" type="radio" name="abnAdress" id="radio204" value="M">
+																	<label for="radio204" class="focus">한 줄에 3개씩</label>
+																</span>
+																<span>
+																	<input class="amwa-radio" type="radio" name="abnAdress" id="radio205" value="I">
+																	<label for="radio205" class="focus">긴텍스트말줄임</label>
+																</span>
+															</div>
+
+															<div id="changeTextArea">
+																<div class="default-shipping-address" id="changeM" style="">
+																	<p class="address-tit">배송지 정보
+																		<span class="btn-delivery-guide"><a href="#" class="bt-akl-blue mini">배송지 수정</a></span>
+																	</p>
+																	<div class="detail-content">
+																		<div class="col-xs-12">
+																			<span class="col-xs-4 col-md-2 left-content">받는분</span><!-- 2019-05-24 문구수정 -->
+																			<span class="col-xs-8 col-md-10 right-info">암웨이</span>
+																		</div>
+																		<div class="col-xs-12">
+																			<span class="col-xs-4 col-md-2 left-content">휴대폰 번호</span>
+																			<span class="col-xs-8 col-md-10 right-info">010-0000-0000</span>
+																		</div>
+																		<div class="col-xs-12">
+																			<span class="col-xs-4 col-md-2 left-content">주소</span>
+																			<span class="col-xs-8 col-md-10 right-info">[00000] 서울 강동구 고덕로27길 33-19(암사동)</span>
+																		</div>
+																		<div class="form-group col-xs-12">
+																			<label for="remess9" class="col-md-2 col-xs-12 control-label">배송메시지</label>
+																			<div class="col-md-10 col-xs-12 delivery-msg">
+																				<input type="text" id="remess9" class="form-control m-message" placeholder="특수문자는 ( ) . 를 제외하고 입력이 불가합니다.">
+																				<span class="byte-txt">(0/40byte)</span>
+																				<div class="delivery-msg-list">
+																					<button type="button">부재 시 경비실에 맡겨주세요.</button>
+																					<button type="button">부재 시 휴대폰으로 연락주세요.</button>
+																					<button type="button">배송 전 연락 부탁 드립니다.</button>
+																				</div>
+																				<div class="message-shop">
+																					<ul class="list-type2">
+																						<li>택배기사님께 전달하는 메시지는 배송 시 참고하는 내용으로 배송상황 및 요청내용에 따라 반영되지 않을 수 있습니다. 배송일 및 배송시각은 지정하셔도 반영되지 않습니다.</li>
+																					</ul>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="default-shipping-address" id="changeI" style="display: none;">
+																	<p class="address-tit">받으시는 분 정보<!-- 2019-05-24 문구수정 -->
+																		<span class="btn-delivery-guide"><a href="#" class="bt-akl-blue mini">수정</a></span><!-- 2019-05-24 문구수정 -->
+																	</p>
+																	<div class="detail-content">
+																		<div class="col-xs-12">
+																			<span class="col-xs-4 col-md-2 left-content">받으시는 분</span><!-- 2019-05-24 문구수정 -->
+																			<span class="col-xs-8 col-md-10 right-info">암웨이222222 최근배송지</span>
+																		</div>
+																		<div class="col-xs-12">
+																			<span class="col-xs-4 col-md-2 left-content">휴대폰번호</span>
+																			<span class="col-xs-8 col-md-10 right-info">010-0000-0000</span>
+																		</div>
+																		<div class="col-xs-12">
+																			<span class="col-xs-4 col-md-2 left-content">주소</span>
+																			<span class="col-xs-8 col-md-10 right-info">[00000] 서울 강동구 고덕로27길 33-19(암사동)</span>
+																		</div>
+																		<div class="form-group col-xs-12">
+																			<label for="remess2" class="col-md-2 col-xs-12 control-label">배송메시지</label>
+																			<div class="col-md-10 col-xs-12 delivery-msg">
+																				<input type="text" id="remess2" class="form-control m-message" placeholder="특수문자는 ( ) . 를 제외하고 입력이 불가합니다.">
+																				<span class="byte-txt">(0/40byte)</span>
+																				<div class="delivery-msg-list">
+																					<button type="button">부재 시 경비실에 맡겨주세요.</button>
+																					<button type="button">부재 시 휴대폰으로 연락주세요.</button>
+																					<button type="button">배송 전 연락 부탁 드립니다.</button>
+																				</div>
+																				<div class="message-shop">
+																					<ul class="list-type2">
+																						<li>택배기사님께 전달하는 메시지는 배송 시 참고하는 내용으로 배송상황 및 요청내용에 따라 반영되지 않을 수 있습니다. 배송일 및 배송시각은 지정하셔도 반영되지 않습니다.</li>
+																						<li>특수문자는 ( ) . 를 제외하고 입력이 불가합니다.</li>
+																					</ul>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+
+															<!-- 2019-08-01 간편선물 2차 -->
+															<div id="changeTextArea1" style="display: none;">
+																<div class="default-shipping-address">
+																	<p class="address-tit">받으시는 분 정보</p>
+																	<div class="detail-content">
+																		<div class="w_tutorialCont4"><!-- 2019-10-22 감싼 div 추가 -->
+																			<div class="col-xs-12">
+																				<label for="recipientName" class="col-xs-4 col-md-2 control-label">받으시는 분</label>
+																				<span class="col-xs-8 col-md-10 right-info"><input type="text" id="recipientName" class="form-control m-message"></span>
+																				<!-- 2019-10-22 이동 -->
+																				<!-- <div class="tutorialCont4">
+                                                                                    <div>받는 분 성함과 휴대폰 번호만 입력하시면 선물이 발송됩니다.</div>
+                                                                                </div> -->
+																				<!--// 2019-10-22 이동 -->
+																			</div>
+																			<div class="col-xs-12">
+																				<label for="recipientPhoneNumber" class="col-xs-4 col-md-2 control-label">휴대폰번호</label>
+																				<span class="col-xs-8 col-md-10 right-info"><input type="text" id="recipientPhoneNumber" class="form-control m-message" placeholder="- 없이 입력"></span>
+																			</div>
+																		</div><!--// 2019-10-22 감싼 div 추가 -->
+																		<div class="col-xs-12">
+																			<span class="col-xs-4 col-md-2 left-content">주소</span>
+																			<span class="col-xs-8 col-md-10 right-info">받으시는 분이 주소 직접 입력</span>
+																		</div>
+																		<div class="form-group col-xs-12">
+																			<label for="remess1" class="col-md-2 col-xs-12 control-label">배송메시지</label>
+																			<div class="col-md-10 col-xs-12 delivery-msg">
+																				<input type="text" class="form-control m-message" disabled="disabled" placeholder="특수문자는 ( ) . 를 제외하고 입력이 불가합니다.">
+																				<span class="byte-txt">(0/40byte)</span>
+																				<div class="message-shop">
+																					<ul class="list-type2">
+																						<li>택배기사님께 전달하는 메시지는 배송 시 참고하는 내용으로 배송상황 및 요청내용에 따라 반영되지 않을 수 있습니다. 배송일 및 배송시각은 지정하셔도 반영되지 않습니다.</li>
+																					</ul>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<!--// 2019-08-01 간편선물 2차 -->
+
+															<script>
+																$(document).ready(function() {
+																	if($('#selfInsertAddress').prop('checked')) {
+																		$('.addDisabled').find('input[type=radio]').attr('disabled','disabled');
+																		$('#changeTextArea').hide();
+																		$('#changeTextArea1').show();
+																	}
+
+																	$('#selfInsertAddress').on('click', function() {
+																		if($(this).prop('checked')) {
+																			$('.addDisabled').find('input[type=radio]').attr('disabled','disabled');
+																			$('#changeTextArea').hide();
+																			$('#changeTextArea1').show();
+																		} else {
+																			$('.addDisabled').find('input[type=radio]').removeAttr('disabled');
+																			$('#changeTextArea').show();
+																			$('#changeTextArea1').hide();
+																		}
+																	})
+																});
+															</script>
+
+														</div>
+													</div>
+												</div>
+												<!-- //단일/복수 (내용) -->
+											</div>
+										</div>
+										<!-- //order-payment -->
+									</div>
+								</div>
+
+								<!-- S : [디파이 수정2] 210901 CAP2 A Pay 주문 결제 작업 영역  -->
+								<div class="payment_box">
+									<div id="payment" class="payment_selte">
+										<!-- S : 2020-08-25 A Cliks Money modify -->
+										<p class="shipping-delivery-shipping-header">결제수단<span class="acliks-info-tip">A Cliks money는 A Cliks 공유 시 사용할 수 있습니다. A Cliks를 통해 제품을 전달해보세요.</span></p>
+										<!-- E : 2020-08-25 A Cliks Money modify -->
+										<!-- <p class="amwaySOL_txt"></p>2019-05-24 월렛 추가, 190515 문구 삭제 , css 로 처리 -->
+										<div class="payTab v2">
+											<div class="payTab_button_area">
+												<a class="payTaba payTab0 on" data-tab="directdebit">
+													A-Pay 간편결제
+													<input class="amwa-radio" type="radio" name="paymentMode" id="paymentDirectDebit" value="directdebit" style="display:none">
+												</a>
+												<!-- S : 2020-08-12 A Cliks Money modify -->
+												<!-- <a class="payTaba payTab1" data-tab="wallet">
+													Amway 월렛
+													<input class="amwa-radio" type="radio" name="paymentMode" id="paymentWallet" value="wallet" style="display:none">
+												</a> -->
+												<!-- E : 2020-08-12 A Cliks Money modify -->
+												<a class="payTaba payTab2" data-tab="directdebit">
+													자동이체
+													<input class="amwa-radio" type="radio" name="paymentMode" id="paymentDirectDebit" value="directdebit" style="display:none">
+												</a>
+												<a class="payTaba payTab3" data-tab="directdebitreserve" >
+													자동이체 예약
+													<input class="amwa-radio" type="radio" name="paymentMode" id="paymentDirectDebitReserve" value="directdebitreserve" style="display:none">
+												</a>
+												<a class="payTaba payTab4" data-tab="creditcard">
+													신용카드
+													<input class="amwa-radio" type="radio" name="paymentMode" id="paymentCreditCard" value="creditcard" style="display:none">
+												</a>
+												<a class="payTaba payTab5" data-tab="deposit">
+													무통장입금
+													<input class="amwa-radio" type="radio" name="paymentMode" id="paymentDeposit" value="deposit" style="display:none">
+												</a>
+												<!-- S : 2020-08-25 A Cliks Money modify -->
+												<a class="payTaba sol ico_new payTab6 acliks" data-tab="AcliksMoney">
+													A Cliks Money
+													<input class="amwa-radio" type="radio" name="paymentMode" id="paymentAcliksMoney" value="wallet" style="display:none">
+												</a>
+												<script>
+													jQuery(function() {
+														$(".payTaba.acliks").click(function(){
+															$(".acliks-info-tip").addClass("active");
+														});
+													})
+												</script>
+												<!-- E : 2020-08-25 A Cliks Money modify -->
+												<a class="payTaba payTab6" data-tab="point">
+													A포인트 / Re-Cash<input class="amwa-radio" type="radio" name="paymentMode" id="paymentPoint" value="point" style="display:none">
+												</a>
+												<!-- <a class="payTaba payTab6" data-tab="point">
+													멤버포인트<input class="amwa-radio" type="radio" name="paymentMode" id="paymentPoint" value="point" style="display:none">
+												</a> -->
+												<!-- <a class="payTaba payTab7" data-tab="Apoint">
+													A포인트
+													<input class="amwa-radio" type="radio" name="paymentMode" id="paymentApoint" value="apoint" style="display:none">
+												</a> -->
+											</div>
+											<div class="payTab_cont_area">
+												<!-- S : [디파이 수정2] 210830 A Pay 탭 -->
+												<div class="pay_cont pay_cont0 paybank payment-bank-card" style="display: block;">
+													<div class="tit_top-line">
+														<!-- <div class="form_group-element">
+															<span>
+																<input type="radio" id="radio" name="payment" class="amwa-radio" checked="checked">
+																<label for="radio" class="focus">카드 간편결제</label>
+															</span>
+															<span>
+																<input type="radio" id="radio2" name="payment" class="amwa-radio" >
+																<label for="radio2" class="focus">계좌 간편결제</label>
+															</span>
+														</div> -->
+														<div class="tab-wrapper" role="tablist" aria-multiselectable="true">
+															<!-- 탭헤드 -->
+															<div class="tab-head" role="tab">
+																<input class="amwa-radio" type="radio" name="deliveryMode" id="card-easy-payment" value="delivery" data-default-check="" checked>
+																<label for="card-easy-payment" class="focus">카드 간편결제</label>
+															</div>
+															<div class="tab-head" role="tab">
+																<input class="amwa-radio" type="radio" name="deliveryMode" id="account-easy-payment" value="pickup">
+																<label for="account-easy-payment" class="focus">계좌 간편결제</label>
+															</div>
+														</div>
+														
+														<div class="about_a-pay pc">
+
+															<div class="amway-theme radio-type-tooltip">
+																<div class="radio-wrapper">
+																	A-Pay 안내
+																	<!-- 툴팁 -->
+																	<div class="toolTip-wrapper toolTip-type02 type-mob-full">
+																		<button type="button" class="btn-tooltip"><span class="hidden">안내</span></button>
+																		<div class="tipCont-wrapper" style="max-width: none;">
+																		<div class="tooltip-content" style="display: none;">
+																			<p>
+																				A-Pay는 신용카드 및 은행 계좌를 1회 등록 후 결제 비밀번호 입력만으로 결제할 수 있는 간편결제 서비스입니다.
+																			</p>
+																		</div>
+																		</div>
+																	</div>
+																	<!-- //툴팁 -->
+																</div>
+															</div>
+															<!-- <button id="pop_a-pay"> -->
+															<button class="pop_a-pay">
+																A-Pay 관리
+															</button>
+														</div>
+													</div>
+													
+													
+													<!-- S : [디파이 수정2] 210830 카드 간편결제 슬라이드 -->
+													<div id="aPayCardSwiper" class="owl-carousel card-swiper">
+														<div class="payment-unit">
+															<a href="#" class="payment-link">
+																<!--
+																	/* S : 은행/카드 클래스 */ 
+																		type01 농협은행 / NH채움
+																		type02 우리은행 / 우리카드
+																		type03 신한은행 & 제주은행 / 신한 & 제주카드
+																		type04 국민은행 / KB국민카드
+																		type05 하나은행 / 하나카드
+																		type06 씨티은행 / 씨티카드
+																		type07 기업은행
+																		type08 산업은행 / KDB산업
+																		type09 SC제일은행
+																		type10 대구은행
+																		type11 부산은행 & 경남은행
+																		type12 전북은행 & 광주은행 / 전북카드 & 광주카드
+																		type13 새마을금고 / MG새마을
+																		type14 수협 / 수협카드
+																		type15 신협 / 신협카드
+																		type16 우체국
+																		type17 케이뱅크
+																		type18 카카오뱅크
+																		type19 저축은행
+																		type20 산림조합
+																		type21 토스뱅크
+																		type22 BC카드
+																		type23 현대카드
+																		type24 롯데카드
+																		type25 삼성카드
+																	/* E : 은행/카드 클래스 */
+																-->
+																<div class="payment-card type01">
+																	<span class="icon"></span>
+																	<span class="txt">농협은행</span>
+																	<span class="account_number">559621******1234</span>
+																</div>
+															</a>
+														</div>
+														<div class="payment-unit">
+															<a href="#" class="payment-link">
+																<div class="payment-card type02">
+																	<span class="icon"></span>
+																	<span class="txt">우리은행</span>
+																	<span class="account_number">559621******1234</span>
+																</div>
+															</a>
+														</div>
+														<div class="payment-unit">
+															<a href="#" class="payment-link">
+																<div class="payment-card type03">
+																	<span class="icon"></span>
+																	<span class="txt">신한은행</span>
+																	<span class="account_number">559621******1234</span>
+																</div>
+															</a>
+														</div>
+														<div class="payment-unit">
+															<a href="#" class="payment-link">
+																<div class="payment-card type04">
+																	<span class="icon"></span>
+																	<span class="txt">국민은행</span>
+																	<span class="account_number">559621******1234</span>
+																</div>
+															</a>
+														</div>
+														<div class="payment-unit">
+															<a href="#" class="payment-link">
+																<div class="payment-card type05">
+																	<span class="icon"></span>
+																	<span class="txt">하나은행</span>
+																	<span class="account_number">559621******1234</span>
+																</div>
+															</a>
+														</div>
+														<div class="payment-unit">
+															<a href="#" class="payment-link">
+																<div class="payment-card type06">
+																	<span class="icon"></span>
+																	<span class="txt">씨티은행</span>
+																	<span class="account_number">559621******1234</span>
+																</div>
+															</a>
+														</div>
+														<div class="payment-unit">
+															<a href="#" class="payment-link">
+																<div class="payment-card type07">
+																	<span class="icon"></span>
+																	<span class="txt">기업은행</span>
+																	<span class="account_number">559621******1234</span>
+																</div>
+															</a>
+														</div>
+														<div class="payment-unit">
+															<a href="#" class="payment-link">
+																<div class="payment-card type08">
+																	<span class="icon"></span>
+																	<span class="txt">산업은행</span>
+																	<span class="account_number">559621******1234</span>
+																</div>
+															</a>
+														</div>
+														<!-- <div class="payment-unit">
+															<a href="#" class="payment-link">
+																<div class="payment-card type09">
+																	<span class="icon"></span>
+																	<span class="txt">SC제일은행</span>
+																	<span class="account_number">559621******1234</span>
+																</div>
+															</a>
+														</div>
+														<div class="payment-unit">
+															<a href="#" class="payment-link">
+																<div class="payment-card type10">
+																	<span class="icon"></span>
+																	<span class="txt">대구은행</span>
+																	<span class="account_number">559621******1234</span>
+																</div>
+															</a>
+														</div>
+														<div class="payment-unit">
+															<a href="#" class="payment-link">
+																<div class="payment-card type11">
+																	<span class="icon"></span>
+																	<span class="txt">부산은행</span>
+																	<span class="account_number">559621******1234</span>
+																</div>
+															</a>
+														</div>
+														<div class="payment-unit">
+															<a href="#" class="payment-link">
+																<div class="payment-card type12">
+																	<span class="icon"></span>
+																	<span class="txt">전북은행</span>
+																	<span class="account_number">559621******1234</span>
+																</div>
+															</a>
+														</div>
+														<div class="payment-unit">
+															<a href="#" class="payment-link">
+																<div class="payment-card type11">
+																	<span class="icon"></span>
+																	<span class="txt">경남은행</span>
+																	<span class="account_number">559621******1234</span>
+																</div>
+															</a>
+														</div>
+														<div class="payment-unit">
+															<a href="#" class="payment-link">
+																<div class="payment-card type03">
+																	<span class="icon"></span>
+																	<span class="txt">제주은행</span>
+																	<span class="account_number">559621******1234</span>
+																</div>
+															</a>
+														</div>
+														<div class="payment-unit">
+															<a href="#" class="payment-link">
+																<div class="payment-card type12">
+																	<span class="icon"></span>
+																	<span class="txt">광주은행</span>
+																	<span class="account_number">559621******1234</span>
+																</div>
+															</a>
+														</div>
+														<div class="payment-unit">
+															<a href="#" class="payment-link">
+																<div class="payment-card type13">
+																	<span class="icon"></span>
+																	<span class="txt">새마을금고</span>
+																	<span class="account_number">559621******1234</span>
+																</div>
+															</a>
+														</div>
+														<div class="payment-unit">
+															<a href="#" class="payment-link">
+																<div class="payment-card type14">
+																	<span class="icon"></span>
+																	<span class="txt">수협</span>
+																	<span class="account_number">559621******1234</span>
+																</div>
+															</a>
+														</div>
+														<div class="payment-unit">
+															<a href="#" class="payment-link">
+																<div class="payment-card type15">
+																	<span class="icon"></span>
+																	<span class="txt">신협</span>
+																	<span class="account_number">559621******1234</span>
+																</div>
+															</a>
+														</div>
+														<div class="payment-unit">
+															<a href="#" class="payment-link">
+																<div class="payment-card type16">
+																	<span class="icon"></span>
+																	<span class="txt">우체국</span>
+																	<span class="account_number">559621******1234</span>
+																</div>
+															</a>
+														</div>
+														<div class="payment-unit">
+															<a href="#" class="payment-link">
+																<div class="payment-card type17">
+																	<span class="icon"></span>
+																	<span class="txt">케이뱅크</span>
+																	<span class="account_number">559621******1234</span>
+																</div>
+															</a>
+														</div>
+														<div class="payment-unit">
+															<a href="#" class="payment-link">
+																<div class="payment-card type18">
+																	<span class="icon"></span>
+																	<span class="txt">카카오뱅크</span>
+																	<span class="account_number">559621******1234</span>
+																</div>
+															</a>
+														</div>
+														<div class="payment-unit">
+															<a href="#" class="payment-link">
+																<div class="payment-card type19">
+																	<span class="icon"></span>
+																	<span class="txt">저축은행</span>
+																	<span class="account_number">559621******1234</span>
+																</div>
+															</a>
+														</div>
+														<div class="payment-unit">
+															<a href="#" class="payment-link">
+																<div class="payment-card type20">
+																	<span class="icon"></span>
+																	<span class="txt">산림조합</span>
+																	<span class="account_number">559621******1234</span>
+																</div>
+															</a>
+														</div>
+														<div class="payment-unit">
+															<a href="#" class="payment-link">
+																<div class="payment-card type21">
+																	<span class="icon"></span>
+																	<span class="txt">토스뱅크</span>
+																	<span class="account_number">559621******1234</span>
+																</div>
+															</a>
+														</div> -->
+														<div class="payment-unit">
+															<a href="#" class="payment-link">
+																<div class="payment-card card-area">
+																	<span class="icon_plus">
+																		<img src="/_ui/responsive/theme-blue/images/akl_cap2/icon_plus_deepBlue.png" alt="카드 간편결제 플러스 버튼">
+																	</span>
+																	<p>
+																		A-Pay 카드를 추가하여<br>
+																		간편하고 빠르게 결제하세요!
+																	</p>
+																</div>
+															</a>
+														</div>
+													</div>
+													<div class="payment-select">
+														<select id="paymentSelect" name="type" class="form-control no-uppercase-form-control" aria-hidden="true" title="label 없는 경우 타이틀 반드시 입력">
+															<option value="">일시불</option>
+															<option value="">36개월</option>
+															<option value="">24개월</option>
+															<option value="">12개월</option>
+															<option value="">6개월</option>
+														</select>
+													</div>
+													<!-- E : [디파이 수정2] 210830 카드 간편결제 슬라이드 -->
+														
+													<div class="about_a-pay mobile">
+
+														<div class="amway-theme radio-type-tooltip">
+															<div class="radio-wrapper">
+																A-Pay 안내
+																<!-- 툴팁 -->
+																<div class="toolTip-wrapper toolTip-type02 type-mob-full">
+																	<button type="button" class="btn-tooltip"><span class="hidden">안내</span></button>
+																	<div class="tipCont-wrapper" style="max-width: none;">
+																	<div class="tooltip-content" style="display: none;">
+																		<p>
+																			A-Pay는 신용카드 및 은행 계좌를 1회 등록 후 결제 비밀번호 입력만으로 결제할 수 있는 간편결제 서비스입니다.
+																		</p>
+																	</div>
+																	</div>
+																</div>
+																<!-- //툴팁 -->
+															</div>
+														</div>
+														<!-- <button id="pop_a-pay"> -->
+														<button class="pop_a-pay">
+															A-Pay 관리
+														</button>
+													</div>
+												</div>
+												<!-- E : [디파이 수정2] 210830 A Pay 탭 -->
+												<div class="pay_cont pay_cont1 sol_cont">
+												</div>
+
+												<div class="pay_cont pay_cont4 creditCard">
+													<div class="row card-method">
+														<div class="form-group">
+														<div class="col-xs-12 col-md-2 card-tit"><label for="creditCardKind">카드종류</label></div>
+														<div class="col-xs-12 col-md-10">
+															<span class="card-kinds-sel">
+																<select class="shipping-delivery-size" id="creditCardKind">
+																	<option value="C0B" data-extracode="11" data-authtype="ISP">국민카드</option>
+																	<option value="C04" data-extracode="61" data-authtype="MPI">현대카드</option>
+																	<option value="C03" data-extracode="41" data-authtype="MPI">신한카드(구LG카드)</option>
+																	<option value="C02" data-extracode="51" data-authtype="MPI">삼성카드</option>
+																	<option value="C09" data-extracode="46" data-authtype="ISP">광주카드</option>
+																	<option value="C0G" data-extracode="" data-authtype="MPI">기타카드</option>
+																	<option value="C05" data-extracode="71" data-authtype="MPI">롯데카드</option>
+																	<option value="C0A" data-extracode="31" data-authtype="ISP">비씨카드</option>
+																	<option value="C0C" data-extracode="30" data-authtype="ISP">산업은행</option>
+																	<option value="C08" data-extracode="34" data-authtype="ISP">수협카드</option>
+																	<option value="C06" data-extracode="42" data-authtype="ISP">신한(제주)카드</option>
+																	<option value="C07" data-extracode="36" data-authtype="MPI">씨티(한미)카드</option>
+																	<option value="C01" data-extracode="21" data-authtype="MPI">외환카드</option>
+																	<option value="C10" data-extracode="35" data-authtype="ISP">전북카드</option>
+																	<option value="C11" data-extracode="32" data-authtype="MPI">하나카드</option>
+																	<option value="C12" data-extracode="91" data-authtype="MPI">NH농협</option>
+																	</select>
+																
+																<span class="G10600_lp2"><a href="#" class="bt-akl-white mini" id="benefitsForCreditCard">카드사 혜택보기</a></span>
+															</span>
+															<div class="card-kinds" style="display:none;" id="memberTypeArea">
+																<span class="col-xs-12 col-md-6">
+																	<input class="amwa-radio" type="radio" name="memberType" id="personal" value="PERSONAL" checked="checked">
+																	<label for="personal">개인카드</label>
+																</span>
+																<span class="col-xs-12 col-md-6">
+																	<input class="amwa-radio" type="radio" name="memberType" id="legal" value="LEGAL">
+																	<label for="legal">법인카드</label>
+																</span>
+															</div>
+															<div class="card-kinds card-bonuspoint" style="display:none;" id="cardBonusPointArea">
+																<input type="checkbox" name="cardBonuspoint" id="cardBonusPoint">
+																<label for="cardBonusPoint" class="focus">보너스포인트 사용</label>
+															</div>
+														</div>
+													</div>
+													<div class="card-sort panel-collapse collapsed">
+														<div class="form-group">
+															<div class="col-xs-12 col-md-2 card-tit">결제방식</div>
+															<div class="col-xs-12 col-md-10">
+																<div class="pay-system">
+																	<span class="col-xs-12 col-md-2">
+																			<input class="amwa-radio" type="radio" name="paymentType" id="safety" value="SAFE">
+																			<label for="safety">안심결제</label>
+																		</span>
+																	<span class="col-xs-12 col-md-2">
+																		<input class="amwa-radio" type="radio" name="paymentType" id="general" value="GENERAL">
+																		<label for="general">일반결제</label>
+																	</span>
+																</div>
+															</div>
+														</div>
+														<div class="pay-line" id="generalPaymentInputArea" style="display:none;">
+															<div class="form-group row">
+																<label for="card-num" class="col-md-2 col-xs-12">카드번호</label>
+																<span class="col-md-10 col-xs-12">
+																	<input name="card-num" id="cardNumber1" type="text" class="card-inp" title="첫번째 네자리" maxlength="4">
+																			<input name="card-num" id="cardNumber2" type="password" class="card-inp" title="두번째 네자리" maxlength="4" autocomplete="new-password">
+																			<input name="card-num" id="cardNumber3" type="password" class="card-inp" title="세번째 네자리" maxlength="4" autocomplete="new-password">
+																			<input name="card-num" id="cardNumber4" type="text" class="card-inp" title="네번째 세자리 또는 네자리" maxlength="4">
+																		</span>
+															</div>
+															<div class="form-group row">
+																<label for="validToMonth" class="col-md-2 col-xs-12">유효기간</label>
+																<input type="text" id="validToMonth" placeholder="월" class="card-inp2" maxlength="2">
+																	<div class="payment-forms-back-slash">/</div>
+																<input type="text" id="validToYear" placeholder="년" class="card-inp2" maxlength="2" title="년도 입력">
+																	</div>
+															<div class="form-group row" id="cardPasswordArea">
+																<label for="cardPassword" class="col-md-2 col-xs-12">카드비밀번호</label>
+																<input type="password" placeholder="**" id="cardPassword" class="card-inp3" maxlength="2" autocomplete="new-password">
+																	<div class="payment-forms-txt">비밀번호 앞 2자리</div>
+															</div>
+															<div class="form-group row" id="dateOfBirthArea">
+																<label for="dateOfBirth" class="col-md-2 col-xs-12">생년월일</label>
+																<input type="text" placeholder="800111" id="dateOfBirth" class="card-inp4" maxlength="6">
+																	<div class="payment-forms-txt2">주민번호 앞 6자리와 동일하게 입력</div>
+															</div>
+															<div class="form-group row" style="display:none;" id="businessRegistrationNumberArea">
+																<label for="businessRegistrationNumber" class="col-md-2 col-xs-12">사업자등록번호</label>
+																<input type="text" id="businessRegistrationNumber" class="card-inp4" maxlength="10">
+																	<div class="payment-forms-txt2">사업자등록번호 10자리 '-'없이 입력</div>
+															</div>
+														</div>
+														<div class="form-group">
+															<div class="col-xs-12 col-md-2 card-tit"><label for="installment">할부기간</label></div>
+															<div class="col-xs-12 col-md-10">
+																<select class="shipping-delivery-size" id="installmentPlans">
+																	<option value="0">일시불</option>
+																	<option value="2">2개월</option>
+																	<option value="3">3개월</option>
+																	<option value="4">4개월</option>
+																	<option value="5">5개월</option>
+																	<option value="6">6개월</option>
+																	<option value="7">7개월</option>
+																	<option value="8">8개월</option>
+																	<option value="9">9개월</option>
+																	<option value="10">10개월</option>
+																	<option value="11">11개월</option>
+																	<option value="12">12개월</option>
+																	</select>
+															</div>
+														</div>
+													</div></div>
+												</div>
+
+												<div class="pay_cont pay_cont2 bankTransfer">
+													<div class="row card-method">
+														<div class="form-group">
+															<div class="col-xs-12 col-md-2 card-tit"><label for="ap">자동이체 비밀번호</label></div><!-- 2019-06-24 클래스 수정 -->
+															<div class="col-xs-12 col-md-10"><!-- 2019-06-24 클래스 수정 -->
+																<div class="a-point">
+																	<input name="point" id="directDebitPassword" type="password" value="" maxlength="6" class="auto-pw" placeholder="자동이체 번호 6자리" autocomplete="new-password">
+																	<button type="button" class="bt-akl-white">자동이체계좌 등록</button>
+																</div>
+																<div class="a-point info">
+																	<ul class="list-type2">
+																		<li>자동이체는 계좌 등록 후 사용이 가능합니다.</li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+														<div class="transfer-resver-guide">
+															<div class="guid-box js-guidebox-toggle">
+																<a href="#" class="title">자동이체 안내 <span class="hidden">닫기</span></a>
+																<div class="tgg-hidden-area" style="display: none;">
+																	<ul class="list-type5">
+																		<li>자동이체 결제 후 주문 취소하실 경우 환불시점은 영업일 기준 익일 오후 5시입니다.</li>
+																		<li><span class="color-red">자동이체 가능은행</span> : 국민, 신한, 우리, SC제일, KEB하나, 농협, 기업, 씨티, 우체국, 유안타증권</li>
+																	</ul>
+																	<ul class="list-type5">
+																		<li><strong>거래가능시간</strong>
+																			<ul>
+																				<li>한도금액을 초과하는 주문 시에는 주문을 나누어 주십시오.</li>
+																				<li>자동이체는 주문 해당 월에 결제되지 않으면 당월 실적으로 인정되지 않으므로 예약이체 시에 주의하시기 바랍니다.</li>
+																				<li>자동이체는 은행에 따라 새벽시간(00시 ~ 00시 30분) 거래가 불안정할 수 있습니다.
+																					<p>또한, 월말에는 거래 가능 시간에도 불구하고 은행에 따라 은행영업시간(오후 4시) 이후에 거래가 되지 않을 수 있으니
+																						자동이체 이외의 타 결제 수단을 이용하시기 바랍니다.
+																					</p>
+																				</li>
+																			</ul>
+																		</li>
+																		<li>SC제일은행, 농협, 우리은행, KEB하나은행, 신한은행, 기업은행, 씨티은행, 우체국 : 한도없음</li>
+																		<li>유안타증권 : 1일 1,000만원 한도</li>
+																		<li>KEB하나은행 : 1거래당 1,000만원 한도</li>
+																		<li>국민은행 : 1거래당 600만원 한도</li>
+																	</ul>
+																	<ul class="list-type2">
+																		<li>자동이체계좌는 주사업자(A&amp;B인 경우 A)의 주민등록번호로 개설된 계좌만 가능합니다. </li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!-- 2020-08-12 : 확인용(운영화면소스) -->
+												<div class="pay_cont pay_cont3 creditCard">
+													<div class="row card-method">
+														<div class="form-group">
+															<div class="col-xs-12 col-md-2 card-tit"><label for="creditCardKind">카드종류</label></div><!-- 2019-06-24 클래스 수정 -->
+															<div class="col-xs-12 col-md-10"><!-- 2019-06-24 클래스 수정 -->
+																<span class="card-kinds-sel">
+															<select class="shipping-delivery-size" id="creditCardKind">
+																<option value="C0B" data-extracode="11" data-authtype="ISP">국민카드</option>
+																<option value="C04" data-extracode="61" data-authtype="MPI">현대카드</option>
+																<option value="C03" data-extracode="41" data-authtype="MPI">신한카드(구LG카드)</option>
+																<option value="C02" data-extracode="51" data-authtype="MPI">삼성카드</option>
+																<option value="C09" data-extracode="46" data-authtype="ISP">광주카드</option>
+																<option value="C0G" data-extracode="" data-authtype="MPI">기타카드</option>
+																<option value="C05" data-extracode="71" data-authtype="MPI">롯데카드</option>
+																<option value="C0A" data-extracode="31" data-authtype="ISP">비씨카드</option>
+																<option value="C0C" data-extracode="30" data-authtype="ISP">산업은행</option>
+																<option value="C08" data-extracode="34" data-authtype="ISP">수협카드</option>
+																<option value="C06" data-extracode="42" data-authtype="ISP">신한(제주)카드</option>
+																<option value="C07" data-extracode="36" data-authtype="MPI">씨티(한미)카드</option>
+																<option value="C01" data-extracode="21" data-authtype="MPI">외환카드</option>
+																<option value="C10" data-extracode="35" data-authtype="ISP">전북카드</option>
+																<option value="C11" data-extracode="32" data-authtype="MPI">하나카드</option>
+																<option value="C12" data-extracode="91" data-authtype="MPI">NH농협</option>
+																</select>
+
+																	<span class="G10600_lp2"><a href="#" class="bt-akl-white mini" id="benefitsForCreditCard">카드사 혜택보기</a></span>
+																</span>
+																<div class="card-kinds" style="display:none;" id="memberTypeArea">
+																	<span class="col-xs-12 col-md-6">
+																		<input class="amwa-radio" type="radio" name="memberType" id="personal" value="PERSONAL" checked="checked">
+																		<label for="personal" class="focus">개인카드</label>
+																	</span>
+																	<span class="col-xs-12 col-md-6">
+																		<input class="amwa-radio" type="radio" name="memberType" id="legal" value="LEGAL">
+																		<label for="legal" class="focus">법인카드</label>
+																	</span>
+																</div>
+																<div class="card-kinds card-bonuspoint" style="display:none;" id="cardBonusPointArea">
+																	<input type="checkbox" name="cardBonuspoint" id="cardBonusPoint">
+																	<label for="cardBonusPoint" class="focus">보너스포인트 사용</label>
+																</div>
+															</div>
+														</div>
+														<div class="card-sort panel-collapse collapsed">
+															<div class="form-group">
+																<div class="col-xs-12 col-md-2 card-tit">결제방식</div><!-- 2019-06-24 클래스 수정 -->
+																<div class="col-xs-12 col-md-10"><!-- 2019-06-24 클래스 수정 -->
+																	<div class="pay-system">
+																		<span class="col-xs-12 col-md-2">
+																			<input class="amwa-radio" type="radio" name="paymentType" id="safety" value="SAFE">
+																			<label for="safety" class="focus">안심결제</label>
+																		</span>
+																		<span class="col-xs-12 col-md-2">
+																			<input class="amwa-radio" type="radio" name="paymentType" id="general" value="GENERAL">
+																			<label for="general" class="focus">일반결제</label>
+																		</span>
+																	</div>
+																</div>
+															</div>
+															<!-- 2019-06-24 구조 수정 -->
+															<div class="pay-line" id="generalPaymentInputArea" style="display:none;">
+																<div class="form-group row">
+																	<label for="cardNumber1" class="col-md-2 col-xs-12">카드번호</label>
+																	<span class="col-md-10 col-xs-12">
+																		<input name="card-num" id="cardNumber1" type="text" class="card-inp" title="첫번째 네자리" maxlength="4">
+																		<input name="card-num" id="cardNumber2" type="password" class="card-inp" title="두번째 네자리" maxlength="4" autocomplete="new-password">
+																		<input name="card-num" id="cardNumber3" type="password" class="card-inp" title="세번째 네자리" maxlength="4" autocomplete="new-password">
+																		<input name="card-num" id="cardNumber4" type="text" class="card-inp" title="네번째 세자리 또는 네자리" maxlength="4">
+																	</span>
+																</div>
+																<div class="form-group row">
+																	<label for="validToMonth" class="col-md-2 col-xs-12">유효기간</label>
+																	<input type="text" id="validToMonth" placeholder="월" class="card-inp2" maxlength="2">
+																	<div class="payment-forms-back-slash">/</div>
+																	<input type="text" id="validToYear" placeholder="년" class="card-inp2" maxlength="2" title="년도 입력">
+																</div>
+																<div class="form-group row" id="cardPasswordArea">
+																	<label for="cardPassword" class="col-md-2 col-xs-12">카드비밀번호</label>
+																	<input type="password" placeholder="**" id="cardPassword" class="card-inp3" maxlength="2" autocomplete="new-password">
+																	<div class="payment-forms-txt">비밀번호 앞 2자리</div>
+																</div>
+																<div class="form-group row" id="dateOfBirthArea">
+																	<label for="dateOfBirth" class="col-md-2 col-xs-12">생년월일</label>
+																	<input type="text" placeholder="800111" id="dateOfBirth" class="card-inp4" maxlength="6">
+																	<div class="payment-forms-txt2">주민번호 앞 6자리와 동일하게 입력</div>
+																</div>
+																<div class="form-group row" style="display:none;" id="businessRegistrationNumberArea">
+																	<label for="businessRegistrationNumber" class="col-md-2 col-xs-12">사업자등록번호</label>
+																	<input type="text" id="businessRegistrationNumber" class="card-inp4" maxlength="10">
+																	<div class="payment-forms-txt2">사업자등록번호 10자리 '-'없이 입력</div>
+																</div>
+															</div>
+															<!-- //2019-06-24 구조 수정 -->
+															<div class="form-group">
+																<div class="col-xs-12 col-md-2 card-tit"><label for="installmentPlans">할부기간</label></div><!-- 2019-06-24 클래스 수정 -->
+																<div class="col-xs-12 col-md-10"><!-- 2019-06-24 클래스 수정 -->
+																	<select class="shipping-delivery-size" id="installmentPlans">
+																		<option value="0">일시불</option>
+																		<option value="2">2개월</option>
+																		<option value="3">3개월</option>
+																		<option value="4">4개월</option>
+																		<option value="5">5개월</option>
+																		<option value="6">6개월</option>
+																		<option value="7">7개월</option>
+																		<option value="8">8개월</option>
+																		<option value="9">9개월</option>
+																		<option value="10">10개월</option>
+																		<option value="11">11개월</option>
+																		<option value="12">12개월</option>
+																	</select>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!-- 2020-08-12 : 확인용(운영화면소스) //-->
+												<!-- S: 2020-05 주문/결제 추가 및 수정 -->
+												<div class="pay_cont pay_cont5 paybank">
+													<div class="row card-method paybank">
+														<div class="form-group">
+															<div class="col-xs-12 col-md-2 card-tit"><label for="depositBankAccount">입금은행</label></div>
+															<div class="col-xs-12 col-md-10">
+																<div class="col-xs-8 col-md-8 paybank">
+																	<select class="shipping-delivery-size" id="depositBankAccount">
+																		<option value="">입금은행을 선택해주세요</option>
+																		<option value="B71" data-displayname="우체국012765-01-000881 (입금기한 2020년 06월 04일)">우체국</option>
+																		<option value="B04" data-displayname="국민은행829-01-0138404 (입금기한 2020년 06월 04일)">국민은행</option>
+																		<option value="B11" data-displayname="농협중앙회018-01-140831[CMS/10042] (입금기한 2020년 06월 04일)">농협중앙회</option>
+																		<option value="B26" data-displayname="신한은행342-05-006828 (입금기한 2020년 06월 04일)">신한은행</option>
+																	</select>
+																</div>
+															</div>
+														</div>
+														<div class="form-group">
+															<div class="col-xs-12 col-md-2 card-tit">입금기한</div>
+															<div class="col-xs-12 col-md-10">
+																<div class="a-point info">
+																	<p class="payment-title type-a">2020년 12월 12일 12시 12분</p>
+																</div>
+															</div>
+														</div>
+														<div class="transfer-resver-guide">
+															<div class="guid-box js-guidebox-toggle on">
+																<a href="#" class="title">주의사항 <span class="hidden">열기</span></a>
+																<div class="tgg-hidden-area">
+																	<ul class="list-type5">
+																		<li>가상계좌번호와 입금 정보는, 기본 정보에 등록된 휴대폰 번호로 카카오 알림톡 또는 문자를 통해 발송됩니다.</li>
+																		<li>입금기한 이내에 정확한 금액을 입금해야 주문이 완료되며, 미입금 시 주문은 자동 취소됩니다.</li>
+																		<li>반품 시, ABO는 보너스계좌로, 멤버는 등록된 환불계좌로 환불됩니다. (취소/반품 전 환불계좌 등록 필수 - 마이페이지&gt;계좌관리)</li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!-- E: 2020-05 주문/결제 추가 -->
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- E : [디파이 수정2] 210901 CAP2 A Pay 주문 결제 작업 영역  -->
+
+								<!-- E : AS-IS -->
+							</div>
+
+							<div class="panel-group accordion-custom mgt20" aria-multiselectable="true"> <!-- D: 2020-03-24 mgt20 class 추가 -->
+								<div class="panel">
+									<div class="panel-heading v1" role="tab"><!-- D : 2020 연계화면 renewal [v1] class add -->
+										<a href="#pListA" data-toggle="collapse" aria-expanded="false" class="collapsed">
+											<div class="panel-title">
+												<span class="text-uppercase accordion-header-text">주문제품 보기</span>
+												<span class="pull-right icon-minus"></span>
+											</div>
+										</a>
+									</div>
+									<div id="pListA" class="panel-collapse applicants-panel collapse" role="tabpanel" aria-expanded="false" style="height: 0px;">
+										<div class="panel-body">
+											<!-- S : 2020 연계화면 renewal -->
+											<div class="box_product product_list-type">
+												<!-- S : product item title -->
+												<div class="product_item cart-thead">
+													<div class="product_col-summery">
+														<p class="txt_cart-thead">제품</p>
+													</div>
+													<div class="product_col-panels">
+														<p class="txt_cart-thead">옵션</p>
+													</div>
+													<div class="product_col-panels">
+														<p class="txt_cart-thead">수량</p>
+													</div>
+													<div class="product_col-price box_product-price">
+														<p class="txt_cart-thead">단가(원) / 소계(원)</p>
+													</div>
+													<div class="product_col-del">
+														<p class="txt_cart-thead">삭제</p>
+													</div>
+												</div>
+												<!-- E : product item title -->
+												<!-- S : product_item(재고없음) -->
+												<div class="product_item">
+													<div class="product_col-summery">
+														<div class="box_product-summery">
+															<div class="summery_col-thumb"><a href="" class="link_product"><img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png"></a></div>
+															<div class="summery_col-info">
+																<a href="" class="link_product">
+																	<div class="flag_wrap">
+																		<span class="flag_item-new">신제품</span>
+																		<span class="flag_item-promotion">프로모션</span>
+																	</div>
+																	<div class="product_text-data">
+																		<p class="text_product-title">하이드라-브이 쉬어 라이트 파운데이션 [SPF15, PA++] - 샤블리 하이드라-브이 쉬어 라이트 파운데이션 [SPF15, PA++] - 샤블리하이드라-브이 쉬어 라이트 파운데이션 [SPF15, PA++] - 샤블리</p>
+																	</div>
+																</a>
+																<div class="stock_box">
+																	<span class="order-state">재고없음</span>
+																	<button type="button" class="btn_mobile-del"><i class="sp_button sp_button-del">삭제</i></button>
+																</div>
+
+																<!-- S : 2020-02-28 AS-IS add -->
+																<div class="product-stock has-promotion-stock">
+																	<div class="promotion">
+																		<div class="lightBlue pointer promotion-tip">
+																			<button type="button" class="tooltip-btn">프로모션 내용</button>
+																		</div>
+																		<div class="promotion-tip-alert">
+																			<div class="txt-wrap">
+																				<p>아티스트리 워터 에센스 선 프로텍트</p>
+																				<p>SPF50+ PA++++ 2개 구매 시, 아티스트리 워터</p>
+																				<p>에센스 선 프로텍트 미니 1개 증정</p>
+																			</div>
+																			<div class="txt-btn-detail"><a href="#"><span>프로모션 상세보기</span></a></div>
+																			<div class="tip-close">
+																				<button type="button" class="tooltip-closed">창닫기</button>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="cartlist-instock">
+																		<span class="green">
+																			<a href="#">
+																				<span class="icon icon-check-bold"></span>
+																				<span class="text text-uppercase">적용</span>
+																			</a>
+																		</span>
+																	</div>
+																</div>
+																<!-- E : 2020-02-28 AS-IS add -->
+
+																<div class="box_mobile-price box_product-price">
+																	<div class="text_product-state opt">
+																		<div class="state_title">옵션</div>
+																		<div class="state_contents">
+																			<img src="//dummyimage.com/16x16/f8e2d8/222" alt="">
+																			<span class="state_data">샤블리</span>
+																		</div>
+																	</div>
+																	<div class="text_product-state">
+																		<div class="state_title">수량</div>
+																		<div class="state_contents"><span class="state_data">999</span></div>
+																	</div>
+																	<div class="text_product-price unit">
+																		<div class="price_title">단가</div>
+																		<div class="price_contents"><span class="text_price-data">1,220,000</span>원</div>
+																	</div>
+																	<div class="text_product-price">
+																		<div class="price_title">소계</div>
+																		<div class="price_contents"><span class="text_price-data">10,220,000</span>원</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="product_col-panels">
+														<div class="text_product-state">
+															<img src="//dummyimage.com/16x16/f8e2d8/222" alt="">
+															<span class="state_data">샤블리</span>
+														</div>
+													</div>
+													<div class="product_col-panels">
+														<div class="text_product-state">
+															<div class="state_title">수량</div>
+															<div class="state_contents"><span class="state_data">999</span></div>
+														</div>
+													</div>
+													<div class="product_col-price box_product-price">
+														<div class="text_product-price unit">
+															<div class="price_title">단가</div>
+															<div class="price_contents"><span class="text_price-data">1,220,000</span>원</div>
+														</div>
+														<div class="text_product-price">
+															<div class="price_title">소계</div>
+															<div class="price_contents"><span class="text_price-data">10,220,000</span>원</div>
+														</div>
+													</div>
+													<div class="product_col-del">
+														<button type="button" class="btn_pc-del">삭제</button>
+													</div>
+												</div>
+												<!-- E : product_item(재고없음) -->
+												<!-- S : product_item(재고있음) -->
+												<div class="product_item">
+													<div class="product_col-summery">
+														<div class="box_product-summery">
+															<div class="summery_col-thumb"><a href="" class="link_product"><img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png"></a></div>
+															<div class="summery_col-info">
+																<a href="" class="link_product">
+																	<div class="flag_wrap">
+																		<span class="flag_item-new">신제품</span>
+																	</div>
+																	<div class="product_text-data">
+																		<p class="text_product-title">하이드라-브이 쉬어 라이트 파운데이션 [SPF15, PA++]</p>
+																	</div>
+																</a>
+																<div class="stock_box">
+																	<span class="order-state v1">재고있음</span>
+																	<!--<button type="button" class="btn_mobile-del"><i class="sp_button sp_button-del">삭제</i></button>-->
+																</div>
+																<div class="box_mobile-price box_product-price">
+																	<div class="text_product-state opt">
+																		<div class="state_title">옵션</div>
+																		<div class="state_contents">
+																			<span class="state_data">ABC픽업/ 1박스 배송주문</span>
+																		</div>
+																	</div>
+																	<div class="text_product-state">
+																		<div class="state_title">수량</div>
+																		<div class="state_contents"><span class="state_data">999</span></div>
+																	</div>
+																	<div class="text_product-price unit">
+																		<div class="price_title">단가</div>
+																		<div class="price_contents"><span class="text_price-data">1,220,000</span>원</div>
+																	</div>
+																	<div class="text_product-price">
+																		<div class="price_title">소계</div>
+																		<div class="price_contents"><span class="text_price-data">10,220,000</span>원</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="product_col-panels">
+														<!-- 옵션 없음 -->
+													</div>
+													<div class="product_col-panels">
+														<div class="text_product-state">
+															<div class="state_title">수량</div>
+															<div class="state_contents"><span class="state_data">999</span></div>
+														</div>
+													</div>
+													<div class="product_col-price box_product-price">
+														<div class="text_product-price unit">
+															<div class="price_title">단가</div>
+															<div class="price_contents"><span class="text_price-data">1,220,000</span>원</div>
+														</div>
+														<div class="text_product-price">
+															<div class="price_title">소계</div>
+															<div class="price_contents"><span class="text_price-data">10,220,000</span>원</div>
+														</div>
+													</div>
+													<div class="product_col-del">
+														<!-- 삭제버튼 없음 -->
+													</div>
+												</div>
+												<!-- E : product_item(재고있음) -->
+												<!-- S : product_item(재고있음) -->
+												<div class="product_item">
+													<div class="product_col-summery">
+														<div class="box_product-summery">
+															<div class="summery_col-thumb"><a href="" class="link_product"><img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png"></a></div>
+															<div class="summery_col-info">
+																<a href="" class="link_product">
+																	<div class="product_text-data">
+																		<p class="text_product-title">하이드라-브이 쉬어 라이트 파운데이션 [SPF15, PA++]</p>
+																	</div>
+																</a>
+																<div class="stock_box">
+																	<span class="order-state v1">재고있음</span>
+																	<!--<button type="button" class="btn_mobile-del"><i class="sp_button sp_button-del">삭제</i></button>-->
+																</div>
+																<div class="box_mobile-price box_product-price">
+																	<div class="text_product-state opt">
+																		<div class="state_title">옵션</div>
+																		<div class="state_contents">
+																			<span class="state_data">ABC픽업/ 1박스 배송주문</span>
+																		</div>
+																	</div>
+																	<div class="text_product-state">
+																		<div class="state_title">수량</div>
+																		<div class="state_contents"><span class="state_data">999</span></div>
+																	</div>
+																	<div class="text_product-price unit">
+																		<div class="price_title">단가</div>
+																		<div class="price_contents"><span class="text_price-data">1,220,000</span>원</div>
+																	</div>
+																	<div class="text_product-price">
+																		<div class="price_title">소계</div>
+																		<div class="price_contents"><span class="text_price-data">10,220,000</span>원</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="product_col-panels">
+														<div class="text_product-state">
+															<span class="state_data">ABC픽업/1박스 배송주문</span>
+														</div>
+													</div>
+													<div class="product_col-panels">
+														<div class="text_product-state">
+															<div class="state_title">수량</div>
+															<div class="state_contents"><span class="state_data">999</span></div>
+														</div>
+													</div>
+													<div class="product_col-price box_product-price">
+														<div class="text_product-price unit">
+															<div class="price_title">단가</div>
+															<div class="price_contents"><span class="text_price-data">1,220,000</span>원</div>
+														</div>
+														<div class="text_product-price">
+															<div class="price_title">소계</div>
+															<div class="price_contents"><span class="text_price-data">10,220,000</span>원</div>
+														</div>
+													</div>
+													<div class="product_col-del">
+														<!-- 삭제버튼 없음 -->
+													</div>
+												</div>
+												<!-- E : product_item(재고있음) -->
+												<!-- S : product_item(재고있음) -->
+												<div class="product_item">
+													<div class="product_col-summery">
+														<div class="box_product-summery">
+															<div class="summery_col-thumb"><a href="" class="link_product"><img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png"></a></div>
+															<div class="summery_col-info">
+																<a href="" class="link_product">
+																	<div class="flag_wrap">
+																		<span class="flag_item-new">신제품</span>
+																		<span class="flag_item-promotion">프로모션</span>
+																	</div>
+																	<div class="product_text-data">
+																		<p class="text_product-title">하이드라-브이 쉬어 라이트 파운데이션 [SPF15, PA++] - 샤블리 하이드라-브이 쉬어 라이트 파운데이션 [SPF15, PA++] - 샤블리하이드라-브이 쉬어 라이트 파운데이션 [SPF15, PA++] - 샤블리</p>
+																	</div>
+																</a>
+																<div class="stock_box">
+																	<span class="order-state v1">재고있음</span>
+																	<!--<button type="button" class="btn_mobile-del"><i class="sp_button sp_button-del">삭제</i></button>-->
+																</div>
+																<!-- S : 2020-02-28 AS-IS add -->
+																<div class="product-stock has-promotion-stock">
+																	<div class="promotion">
+																		<div class="lightBlue pointer promotion-tip">
+																			<button type="button" class="tooltip-btn">프로모션 내용</button>
+																		</div>
+																		<div class="promotion-tip-alert">
+																			<div class="txt-wrap">
+																				<p>아티스트리 워터 에센스 선 프로텍트</p>
+																				<p>SPF50+ PA++++ 2개 구매 시, 아티스트리 워터</p>
+																				<p>에센스 선 프로텍트 미니 1개 증정</p>
+																			</div>
+																			<div class="txt-btn-detail"><a href="#"><span>프로모션 상세보기</span></a></div>
+																			<div class="tip-close">
+																				<button type="button" class="tooltip-closed">창닫기</button>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="cartlist-instock">
+																		<span class="green">
+																			<a href="#">
+																				<span class="icon icon-check-bold"></span>
+																				<span class="text text-uppercase">적용</span>
+																			</a>
+																		</span>
+																	</div>
+																</div>
+																<!-- E : 2020-02-28 AS-IS add -->
+																<div class="box_mobile-price box_product-price">
+																	<div class="text_product-state opt">
+																		<div class="state_title">옵션</div>
+																		<div class="state_contents">
+																			<img src="//dummyimage.com/16x16/f8e2d8/222" alt="">
+																			<span class="state_data">샤블리</span>
+																		</div>
+																	</div>
+																	<div class="text_product-state">
+																		<div class="state_title">수량</div>
+																		<div class="state_contents"><span class="state_data">999</span></div>
+																	</div>
+																	<div class="text_product-price unit">
+																		<div class="price_title">단가</div>
+																		<div class="price_contents"><span class="text_price-data">1,220,000</span>원</div>
+																	</div>
+																	<div class="text_product-price">
+																		<div class="price_title">소계</div>
+																		<div class="price_contents"><span class="text_price-data">10,220,000</span>원</div>
+																	</div>
+																</div>
+																<dl class="box_accordion set_type js-accordion">
+																	<dt class="accordion_title js-accordion-item">세트구성<button type="button" class="btn_accordion"><i class="sp_form sp_accordion-a">open</i></button></dt>
+																	<dd class="accordion_contents" style="display: none;">
+																		<div class="set_group">
+																			<div class="set_col-code">A59712P</div>
+																			<div class="set_col-name">하이드라 앰플 마스크 하이드라 앰플 마스크 하이드라 앰플 마스크</div>
+																			<div class="set_col-num">999</div>
+																			<div class="set_col-state">일시품절</div>
+																		</div>
+																		<div class="set_group">
+																			<div class="set_col-code">A5971P</div>
+																			<div class="set_col-name">아세로라C(100정)</div>
+																			<div class="set_col-num">58</div>
+																			<div class="set_col-state"></div>
+																		</div>
+																		<div class="set_group">
+																			<div class="set_col-code">A5971P</div>
+																			<div class="set_col-name">아세로라C(100정)</div>
+																			<div class="set_col-num">1</div>
+																			<div class="set_col-state"></div>
+																		</div>
+																	</dd>
+																</dl>
+															</div>
+														</div>
+													</div>
+													<div class="product_col-panels">
+														<!-- 옵션 없음 -->
+													</div>
+													<div class="product_col-panels">
+														<div class="text_product-state">
+															<div class="state_title">수량</div>
+															<div class="state_contents"><span class="state_data">999</span></div>
+														</div>
+													</div>
+													<div class="product_col-price box_product-price">
+														<div class="text_product-price unit">
+															<div class="price_title">단가</div>
+															<div class="price_contents"><span class="text_price-data">1,220,000</span>원</div>
+														</div>
+														<div class="text_product-price">
+															<div class="price_title">소계</div>
+															<div class="price_contents"><span class="text_price-data">10,220,000</span>원</div>
+														</div>
+													</div>
+													<div class="product_col-del">
+														<!-- 삭제 버튼 없음 -->
+													</div>
+												</div>
+												<!-- E : product_item(재고있음) -->
+											</div>
+											<div class="bottom_action-area btn_full">
+												<a class="btn_basic-d medium" data-continue-shopping-url="#">장바구니로 이동</a>
+											</div>
+											<!-- E : 2020 연계화면 renewal -->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- S : 2020 연계화면 renewal -->
+						<!-- S : 오른쪽 -->
+						<div class="cart_product-floating js-uxeposfix">
+							<div class="box_cart-option">
+								<p class="txt_order-title">결제금액</p>
+								<div class="box_cart-info">
+									<div class="box_row-group">
+										<div class="box_row-info">
+											<p class="txt_total-title">주문금액(원)</p>
+											<p class="txt_total-info">3,300,000</p>
+										</div>
+										<div class="box_row-info">
+											<p class="txt_total-title">배송비(1곳)</p>
+											<p class="txt_total-info">0</p>
+										</div>
+										<div class="box_row-info">
+											<p class="txt_total-title">할인정보</p>
+											<p class="txt_total-info">0</p><!-- D : 2020-08-12 할인 금액이 있을 경우 [discount] class add -->
+										</div>
+										<!-- S : 2020-08-12 A Cliks Money add -->
+										<div class="box_row-info">
+											<p class="txt_total-title">A Cliks Money</p>
+											<p class="txt_total-info discount">-20,000</p><!-- D : 2020-08-12 할인 금액이 있을 경우 [discount] class add -->
+										</div>
+										<!-- E : 2020-08-12 A Cliks Money add -->
+										<div class="box_row-info">
+											<p class="txt_total-title">A포인트사용</p>
+											<p class="txt_total-info discount">-350,000</p><!-- D : 2020-08-12 할인 금액이 있을 경우 [discount] class add -->
+										</div>
+										<div class="box_row-info">
+											<p class="txt_total-title">Re-cash</p>
+											<p class="txt_total-info">0</p><!-- D : 2020-08-12 할인 금액이 있을 경우 [discount] class add -->
+										</div>
+									</div>
+									<div class="box_row-info box_price">
+										<p class="txt_total-title">결제금액</p>
+										<p class="txt_total-info">0</p>
+									</div>
+									<div class="box_row-info box_total">
+										<p class="txt_total-title">총 PV/BV</p>
+										<p class="txt_total-info">
+											<span class="text_price-pv">100,000,000 /</span>
+											<span class="text_price-bv">100,000,000</span>
+										</p>
+									</div>
+								</div>
+								
+								<div class="btn_floating-group">
+									<span class="btn_box">
+										<button type="button" class="btn_square-a">결제하기</button>
+									</span>
+								</div>
+							</div>
+						</div>
+						<!-- E : 오른쪽 -->
+
+						<div class="box_mobile-floating">
+							<!-- S: 2020-05-07 마크업 변경 -->
+							<button type="button" class="btn_square-a btn_payment-type">
+								<span class="txt_total-price">
+									총<strong class="txt_point-color">300,000</strong>원
+								</span>
+								<span class="txt_point-payment">결제하기</span>
+							</button>
+							<!-- E: 2020-05-07 마크업 변경 -->
+						</div>
+						<!-- E : 2020 연계화면 renewal -->
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!-- 2020 연계화면 renewal  amwa-btnbar 마크업 del -->
+	</div>
+	<!-- //main-contents -->
+
+	<div id="quick"></div>
+	<div id="footer"></div>
+</main>
+<!-- //main -->
+
+<!-- 주소찾기 팝업 -->
+<div class="layerWrapper U61000_lp1_pop">
+	<div class="cbox layerBox popWidM">
+		<div class="cart-popup__dialog">
+			<div class="cart-popup__header">
+                    <span class="cart-popup__header-text">주소찾기
+                        <a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true" class="cart-popup__close">
+                            <img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기">
+                        </a>
+                    </span>
+			</div>
+			<div class="cart-popup__content payment">
+				<div class="cart-popup__item-info">
+					<div class="form-wrapper address-pop">
+						<input type="text" id="" name="" placeholder="예: 영동대로 517 / 아셈타워 / 삼성동 159-1" value="" title="검색할 주소 입력">
+						<button type="submit" class="btn btn-primary">
+							<span>검색</span>
+						</button>
+					</div>
+					<ul class="list-type2">
+						<li>예) 도로명: 영동대로 517 / 아셈타워 / 삼성동 159-1</li>
+						<li>단, 도로명 혹은 동(읍/면/리)만 검색하시는 경우 정확한 검색결과가 나오지 않을 수 있습니다.</li>
+					</ul>
+					<p>아래에서 해당되는 주소의 [선택]버튼을 눌러주세요</p>
+					<div class="table-wrapper">
+						<table class="tbl-type1 address">
+							<caption>우편번호, 주소, 그룹명 제공</caption>
+							<colgroup>
+								<col style="width:90px">
+								<col >
+							</colgroup>
+							<thead>
+							<tr>
+								<th scope="col">우편번호</th>
+								<th scope="col">그룹명</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td>06193</td>
+								<td>
+									<ul>
+										<li>
+											<strong>도로</strong>
+											<p>서울 강남구 테헤란로 테헤란로 68길 15(대치동, 대치동우정에쉐르2)</p>
+											<button type="button">선택</button>
+										</li>
+										<li>
+											<strong>지번</strong>
+											<p>서울 강남구 대치동 890-42 대치동우정에쉐르2</p>
+											<button type="button">선택</button>
+										</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td>06193</td>
+								<td>
+									<ul>
+										<li>
+											<strong>도로</strong>
+											<p>서울 강남구 테헤란로 테헤란로 68길 15(대치동, 대치동우정에쉐르2)</p>
+											<button type="button">선택</button>
+										</li>
+										<li>
+											<strong>지번</strong>
+											<p>서울 강남구 대치동 890-42 대치동우정에쉐르2</p>
+											<button type="button">선택</button>
+										</li>
+									</ul>
+								</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="paging">
+						<a href="#" class="prev">맨 처음 페이지</a>
+						<a href="#" class="before">이전 페이지</a>
+						<ul>
+							<li><a href="#">1</a></li>
+							<li class="on"><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+						</ul>
+						<a href="#" class="after">다음페이지</a>
+						<a href="#" class="next">맨 마지막 페이지</a>
+					</div>
+
+					<div class="form-wrapper address-pop02">
+						<dl>
+							<dt>상세 주소 입력</dt>
+							<dd>
+								<input type="text" id="" name="" value="06196" title="우편번호" readonly="readonly">
+								<input type="text" id="" name="" value="서울 강서구 강서로56가길 45, 르네상스 (등촌동)" title="주소" readonly="readonly">
+								<input type="text" id="" name="" placeholder="상세주소 입력 후 주소입력 버튼을 눌러주세요." value="" title="상세주소 입력">
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<div class="cart-popup__item-link">
+				<button type="button" class="bt-akl-blue">주소입력</button>
+				<button type="button" class="bt-akl-txt">취소</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!--// 주소찾기 팝업 -->
+
+<!-- 배송지 목록(단일) 팝업 -->
+<div class="layerWrapper G10600_lp3_pop">
+	<div class="cbox layerBox popWidM">
+		<div class="cart-popup__dialog">
+			<div class="cart-popup__header">
+                    <span class="cart-popup__header-text">배송지 목록
+						<!-- 수정 : 2018.05.03 ('단일' text삭제) -->
+                        <a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true" class="cart-popup__close">
+                            <img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기">
+                        </a>
+                    </span>
+			</div>
+			<div class="cart-popup__content payment">
+				<div class="cart-popup__item-info">
+
+
+					<div style="padding:50px 0 70px;">
+						<p>[공통사용] 배송지 목록 페이지 분리 : 2018.04.23 </p>
+						<a href="G10600_lp3_pop.html" target="_blank">G10600_lp3_pop.html</a>
+					</div>
+
+					<!-- 주문결제 공통 사용, 팝업 html 분리  : 2018.04.23
+                <div class="form-wrapper address-book">
+                    <input type="text" id="" name="" placeholder="받는 분,  주소명 입력" value="" title="검색할 주소 입력">
+                    <span class="btn-book">
+                        <button type="submit" class="btn btn-primary">
+                            <span>검색</span>
+                        </button>
+                        <button type="button" class="link-btn">전체보기</button>
+                    </span>
+                </div>
+                <p class="my-Shipping-txt">나의 배송지(999)</p>
+                <div class="table-wrapper my-Shipping-list">
+                    <table class="tbl-type1">
+                        <caption>이름, 주소, 선택항목 제공</caption>
+                        <colgroup>
+                            <col style="width:75%">
+                            <col style="width:25%">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>현빈<span>(기본배송지)</span></p>
+                                    <p>[000-000] 서울특별시 강남구 삼성동 00-00</p>
+                                </td>
+                                <td class="right"><button type="button" class="link-btn">선택</button></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>현빈 </p>
+                                    <p>[000-000] 서울특별시 강남구 삼성동 00-00</p>
+                                </td>
+                                <td class="right"><button type="button" class="link-btn">선택</button></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>현빈</p>
+                                    <p>[000-000] 서울특별시 강남구 삼성동 00-00</p>
+                                </td>
+                                <td class="right"><button type="button" class="link-btn">선택</button></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>현빈 </p>
+                                    <p>[000-000] 서울특별시 강남구 삼성동 00-00</p>
+                                </td>
+                                <td class="right"><button type="button" class="link-btn">선택</button></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="no-data">내역이 없습니다.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="my-Shipping-info">
+                    <ul class="list-type2">
+                        <li>배송지 수정/삭제 등의 관리는 <span class="pot-basic">마이페이지 > 배송지관리</span> 에서 하실 수 있습니다</li>
+                    </ul>
+                </div> -->
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--//배송지 목록(단일) 팝업 -->
+
+<!-- 배송지 목록(복수) 팝업 -->
+<div class="layerWrapper G10600_lp4_pop">
+	<div class="cbox layerBox popWidL">
+		<div class="cart-popup__dialog">
+			<div class="cart-popup__header">
+				<span class="cart-popup__header-text">배송지 목록(복수)
+					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true" class="cart-popup__close">
+						<img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기">
+					</a>
+				</span>
+			</div>
+			<div class="cart-popup__content payment">
+				<div class="cart-popup__item-info">
+					<div class="pop-revenge-web">
+						<div class="form-wrapper address-book">
+							<input type="text" id="" name="" placeholder="받는 분,  주소명 입력" value="" title="검색할 주소 입력">
+							<span class="btn-book">
+								<button type="submit" class="btn btn-primary">
+									<span>검색</span>
+								</button>
+								<button type="button" class="link-btn">전체보기</button>
+							</span>
+						</div>
+						<div class="row po-revlist-body">
+							<div class="col-xs-12 col-md-5">
+								<div class="po-rev-title" style="z-index:100">
+									<input id="1111" name="aall" type="checkbox">
+									<label for="1111" class="normal inline-label checklabel">전체선택</label>
+								</div>
+								<div class="table-wrapper my-revenge-list">
+									<table class="tbl-type1">
+										<caption>이름, 주소, 선택항목 제공</caption>
+										<colgroup>
+											<col style="width:20%">
+											<col style="width:80%">
+										</colgroup>
+										<tbody>
+										<tr>
+											<td class="center">
+												<label class="checkbox-element-wrapper">
+													<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" type="checkbox" name="global-class" title="선택">
+													<span class="_checkbox-element-global-span"></span>
+												</label>
+											</td>
+											<td>
+												<p>현빈<span>(기본배송지)</span></p>
+												<p>[000-000] 서울특별시 강남구 삼성동 00-00</p>
+											</td>
+										</tr>
+										<tr>
+											<td class="center">
+												<label class="checkbox-element-wrapper">
+													<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" type="checkbox" title="선택">
+													<span class="_checkbox-element-global-span"></span>
+												</label>
+											</td>
+											<td>
+												<p>현빈<span>(기본배송지)</span></p>
+												<p>[000-000] 서울특별시 강남구 삼성동 00-00</p>
+											</td>
+										</tr>
+										<tr>
+											<td class="center">
+												<label class="checkbox-element-wrapper">
+													<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" type="checkbox" title="선택">
+													<span class="_checkbox-element-global-span"></span>
+												</label>
+											</td>
+											<td>
+												<p>현빈<span>(기본배송지)</span></p>
+												<p>[000-000] 서울특별시 강남구 삼성동 00-00</p>
+											</td>
+										</tr>
+										<tr>
+											<td class="center">
+												<label class="checkbox-element-wrapper">
+													<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" type="checkbox" title="선택">
+													<span class="_checkbox-element-global-span"></span>
+												</label>
+											</td>
+											<td>
+												<p>현빈<span>(기본배송지)</span></p>
+												<p>[000-000] 서울특별시 강남구 삼성동 00-00</p>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2" class="no-data">내역이 없습니다.</td>
+										</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="my-Shipping-info">
+									<ul class="list-type2">
+										<li>배송지 수정/삭제 등의 관리는 <span class="pot-basic"><a href="#">마이페이지 > 나의쇼핑정보 > 배송지관리</a></span> 에서 하실 수 있습니다.</li><!-- 수정 : 2018.11.28 (a 추가/text변경) -->
+									</ul>
+								</div>
+							</div>
+							<div class="col-xs-12 col-md-2">
+								<p><a href="#"><img src="/_ui/responsive/theme-blue/images/akl_common/btn-arrow-prev.png" alt="왼쪽으로 옮기기"></a></p>
+								<p><a href="#"><img src="/_ui/responsive/theme-blue/images/akl_common/btn-arrow-next.png" alt="오른쪽으로 옮기기"></a></p>
+							</div>
+							<div class="col-xs-12 col-md-5">
+								<div class="po-rev-title">
+									<span>선택 배송지 (<strong class="color-blue">2</strong>개)</span>
+								</div>
+								<div class="table-wrapper my-revenge-list">
+									<table class="tbl-type1">
+										<caption>이름, 주소, 선택항목 제공</caption>
+										<colgroup>
+											<col style="width:20%">
+											<col style="width:80%">
+										</colgroup>
+										<tbody>
+										<tr>
+											<td class="center">
+												<label class="checkbox-element-wrapper">
+													<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" type="checkbox" title="선택">
+													<span class="_checkbox-element-global-span"></span>
+												</label>
+											</td>
+											<td>
+												<p>현빈<span>(기본배송지)</span></p>
+												<p>[000-000] 서울특별시 강남구 삼성동 00-00</p>
+											</td>
+										</tr>
+										<tr>
+											<td class="center">
+												<label class="checkbox-element-wrapper">
+													<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" type="checkbox" title="선택">
+													<span class="_checkbox-element-global-span"></span>
+												</label>
+											</td>
+											<td>
+												<p>현빈<span>(기본배송지)</span></p>
+												<p>[000-000] 서울특별시 강남구 삼성동 00-00</p>
+											</td>
+										</tr>
+										<tr>
+											<td class="center">
+												<label class="checkbox-element-wrapper">
+													<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" type="checkbox" title="선택">
+													<span class="_checkbox-element-global-span"></span>
+												</label>
+											</td>
+											<td>
+												<p>현빈<span>(기본배송지)</span></p>
+												<p>[000-000] 서울특별시 강남구 삼성동 00-00</p>
+											</td>
+										</tr>
+										<tr>
+											<td class="center">
+												<label class="checkbox-element-wrapper">
+													<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" type="checkbox" title="선택">
+													<span class="_checkbox-element-global-span"></span>
+												</label>
+											</td>
+											<td>
+												<p>현빈<span>(기본배송지)</span></p>
+												<p>[000-000] 서울특별시 강남구 삼성동 00-00</p>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2" class="no-data">내역이 없습니다.</td>
+										</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="my-Shipping-info">
+									<ul class="list-type2">
+										<li>배송지 선택은 최대 100개까지 가능합니다.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="pop-revenge-mob">
+						<div class="form-wrapper address-book">
+							<input type="text" id="" name="" placeholder="받는 분,  주소명 입력" value="" title="검색할 주소 입력">
+							<span class="btn-book">
+								<button type="submit" class="btn btn-primary">
+									<span>검색</span>
+								</button>
+								<button type="button" class="link-btn">전체보기</button>
+							</span>
+						</div>
+						<div class="row po-revlist-body">
+							<div class="col-xs-12">
+								<div class="po-rev-title">
+									<span>나의 배송지(999)</span>
+								</div>
+								<div class="table-wrapper my-revenge-list">
+									<table class="tbl-type1">
+										<caption>이름, 주소, 선택항목 제공</caption>
+										<colgroup>
+											<col style="width:20%">
+											<col style="width:80%">
+										</colgroup>
+										<tbody>
+										<tr>
+											<td class="center">
+												<div class="">
+													<label class="checkbox-element-wrapper">
+														<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" type="checkbox" name="global-class" title="선택">
+														<span class="_checkbox-element-global-span"></span>
+													</label>
+												</div>
+											</td>
+											<td>
+												<p>현빈<span>(기본배송지)</span></p>
+												<p>[000-000] 서울특별시 강남구 삼성동 00-00</p>
+											</td>
+										</tr>
+										<tr>
+											<td class="center">
+												<label class="checkbox-element-wrapper">
+													<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" type="checkbox" title="선택">
+													<span class="_checkbox-element-global-span"></span>
+												</label>
+											</td>
+											<td>
+												<p>현빈<span>(기본배송지)</span></p>
+												<p>[000-000] 서울특별시 강남구 삼성동 00-00</p>
+											</td>
+										</tr>
+										<tr>
+											<td class="center">
+												<label class="checkbox-element-wrapper">
+													<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" type="checkbox" title="선택">
+													<span class="_checkbox-element-global-span"></span>
+												</label>
+											</td>
+											<td>
+												<p>현빈<span>(기본배송지)</span></p>
+												<p>[000-000] 서울특별시 강남구 삼성동 00-00</p>
+											</td>
+										</tr>
+										<tr>
+											<td class="center">
+												<label class="checkbox-element-wrapper">
+													<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" type="checkbox" title="선택">
+													<span class="_checkbox-element-global-span"></span>
+												</label>
+											</td>
+											<td>
+												<p>현빈<span>(기본배송지)</span></p>
+												<p>[000-000] 서울특별시 강남구 삼성동 00-00</p>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2" class="no-data">내역이 없습니다.</td>
+										</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="my-Shipping-info">
+									<ul class="list-type2">
+										<li>배송지 선택은 최대 100개까지 가능합니다.</li>
+										<li>배송지 수정/삭제 등의 관리는 <span class="pot-basic"><a href="#">마이페이지 > 나의쇼핑정보 > 배송지관리</a></span> 에서 하실 수 있습니다.</li><!-- 수정 : 2018.11.28 (a 추가/text변경) -->
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cart-popup__item-link">
+				<button type="button" class="bt-akl-blue">확인</button>
+				<button type="button" class="bt-akl-txt">취소</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!--//배송지 목록(복수)팝업 -->
+
+<!-- ABC안내 팝업 -->
+<div class="layerWrapper G10600_lp8_pop">
+	<div class="cbox layerBox popWidM">
+		<div class="cart-popup__dialog">
+			<div class="cart-popup__header">
+				<span class="cart-popup__header-text">ABC안내
+					<!-- 2018.06.21 명칭 수정 -->
+					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true" class="cart-popup__close">
+						<img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기">
+					</a>
+				</span>
+			</div>
+			<div class="cart-popup__content payment">
+				<div class="cart-popup__item-info">
+					<div class="ap-container">
+						<ul class="ap-tabs">
+							<li><a href='#tab1'>분당ABC</a></li>
+							<li><a href='#tab2'>강남</a></li>
+							<li><a href='#tab3'>강서</a></li>
+							<li><a href='#tab4'>인천</a></li>
+							<li><a href='#tab5'>대전</a></li>
+							<li><a href='#tab6'>천안</a></li>
+							<li><a href='#tab7'>청주</a></li>
+							<li><a href='#tab8'>해운대</a></li><!-- 2018.05.09 명칭 수정 -->
+							<li><a href='#tab9'>부산</a></li>
+							<li><a href='#tab10'>대구</a></li>
+							<li><a href='#tab11'>창원</a></li>
+							<li><a href='#tab12'>울산</a></li>
+							<li><a href='#tab13'>광주</a></li>
+							<li><a href='#tab14'>전주</a></li>
+							<li><a href='#tab15'>강릉</a></li>
+							<li><a href='#tab16'>제주</a></li>
+						</ul>
+						<div id='tab1' class="aptab_content">
+							<p class="tab-tit">분당ABC (암웨이 브랜드 센터)</p>
+							<div class="ap-map-google">
+								<img src="/_ui/responsive/theme-blue/images/akl_common/img_map.png" alt="분당ABC 지도">
+							</div>
+							<div class="map-info-pay">
+								<p class="title-adder">주소</p>
+								<div class="map-inp-txt">
+									<p>[지번] 경기도 성남시 분당구 구미동 159번지 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+									<p>[도로] 경기도 성남시 분당구 탄천상로 151번길 20 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+								</div>
+
+								<p class="title-phone">전화번호</p>
+								<div class="map-inp-txt">
+									<p>031-786-1199</p>
+								</div>
+
+								<p class="title-time">영업시간</p>
+								<div class="map-inp-txt">
+									<ul>
+										<li>매장
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>Café W
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 18:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 22:00</li>
+												<li><strong>휴무일 없음(설,추석 연휴 당일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>상담부스, 체험관, 반품창구
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 : 일요일(반품창구 제외)</strong></li>
+											</ul>
+										</li>
+										<li>미술관
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 19:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div id='tab2' class="aptab_content">
+							<p class="tab-tit">강남</p>
+							<div class="ap-map-google">
+								<img src="/_ui/responsive/theme-blue/images/akl_common/img_map.png" alt="강남 지도">
+							</div>
+							<div class="map-info-pay">
+								<p class="title-adder">주소</p>
+								<div class="map-inp-txt">
+									<p>[지번] 경기도 성남시 분당구 구미동 159번지 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+									<p>[도로] 경기도 성남시 분당구 탄천상로 151번길 20 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+								</div>
+
+								<p class="title-phone">전화번호</p>
+								<div class="map-inp-txt">
+									<p>031-786-1199</p>
+								</div>
+
+								<p class="title-time">영업시간</p>
+								<div class="map-inp-txt">
+									<ul>
+										<li>매장
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>Café W
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 18:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 22:00</li>
+												<li><strong>휴무일 없음(설,추석 연휴 당일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>상담부스, 체험관, 반품창구
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 : 일요일(반품창구 제외)</strong></li>
+											</ul>
+										</li>
+										<li>미술관
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 19:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div id='tab3' class="aptab_content">
+							<p class="tab-tit">강서</p>
+							<div class="ap-map-google">
+								<img src="/_ui/responsive/theme-blue/images/akl_common/img_map.png" alt="강서 지도">
+							</div>
+							<div class="map-info-pay">
+								<p class="title-adder">주소</p>
+								<div class="map-inp-txt">
+									<p>[지번] 경기도 성남시 분당구 구미동 159번지 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+									<p>[도로] 경기도 성남시 분당구 탄천상로 151번길 20 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+								</div>
+
+								<p class="title-phone">전화번호</p>
+								<div class="map-inp-txt">
+									<p>031-786-1199</p>
+								</div>
+
+								<p class="title-time">영업시간</p>
+								<div class="map-inp-txt">
+									<ul>
+										<li>매장
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>Café W
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 18:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 22:00</li>
+												<li><strong>휴무일 없음(설,추석 연휴 당일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>상담부스, 체험관, 반품창구
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 : 일요일(반품창구 제외)</strong></li>
+											</ul>
+										</li>
+										<li>미술관
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 19:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div id='tab4' class="aptab_content">
+							<p class="tab-tit">인천</p>
+							<div class="ap-map-google">
+								<img src="/_ui/responsive/theme-blue/images/akl_common/img_map.png" alt="인천 지도">
+							</div>
+							<div class="map-info-pay">
+								<p class="title-adder">주소</p>
+								<div class="map-inp-txt">
+									<p>[지번] 경기도 성남시 분당구 구미동 159번지 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+									<p>[도로] 경기도 성남시 분당구 탄천상로 151번길 20 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+								</div>
+
+								<p class="title-phone">전화번호</p>
+								<div class="map-inp-txt">
+									<p>031-786-1199</p>
+								</div>
+
+								<p class="title-time">영업시간</p>
+								<div class="map-inp-txt">
+									<ul>
+										<li>매장
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>Café W
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 18:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 22:00</li>
+												<li><strong>휴무일 없음(설,추석 연휴 당일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>상담부스, 체험관, 반품창구
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 : 일요일(반품창구 제외)</strong></li>
+											</ul>
+										</li>
+										<li>미술관
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 19:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div id='tab5' class="aptab_content">
+							<p class="tab-tit">대전</p>
+							<div class="ap-map-google">
+								<img src="/_ui/responsive/theme-blue/images/akl_common/img_map.png" alt="대전 지도">
+							</div>
+							<div class="map-info-pay">
+								<p class="title-adder">주소</p>
+								<div class="map-inp-txt">
+									<p>[지번] 경기도 성남시 분당구 구미동 159번지 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+									<p>[도로] 경기도 성남시 분당구 탄천상로 151번길 20 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+								</div>
+
+								<p class="title-phone">전화번호</p>
+								<div class="map-inp-txt">
+									<p>031-786-1199</p>
+								</div>
+
+								<p class="title-time">영업시간</p>
+								<div class="map-inp-txt">
+									<ul>
+										<li>매장
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>Café W
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 18:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 22:00</li>
+												<li><strong>휴무일 없음(설,추석 연휴 당일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>상담부스, 체험관, 반품창구
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 : 일요일(반품창구 제외)</strong></li>
+											</ul>
+										</li>
+										<li>미술관
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 19:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div id='tab6' class="aptab_content">
+							<p class="tab-tit">천안</p>
+							<div class="ap-map-google">
+								<img src="/_ui/responsive/theme-blue/images/akl_common/img_map.png" alt="천안 지도">
+							</div>
+							<div class="map-info-pay">
+								<p class="title-adder">주소</p>
+								<div class="map-inp-txt">
+									<p>[지번] 경기도 성남시 분당구 구미동 159번지 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+									<p>[도로] 경기도 성남시 분당구 탄천상로 151번길 20 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+								</div>
+
+								<p class="title-phone">전화번호</p>
+								<div class="map-inp-txt">
+									<p>031-786-1199</p>
+								</div>
+
+								<p class="title-time">영업시간</p>
+								<div class="map-inp-txt">
+									<ul>
+										<li>매장
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>Café W
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 18:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 22:00</li>
+												<li><strong>휴무일 없음(설,추석 연휴 당일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>상담부스, 체험관, 반품창구
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 : 일요일(반품창구 제외)</strong></li>
+											</ul>
+										</li>
+										<li>미술관
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 19:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div id='tab7' class="aptab_content">
+							<p class="tab-tit">청주</p>
+							<div class="ap-map-google">
+								<img src="/_ui/responsive/theme-blue/images/akl_common/img_map.png" alt="청주 지도">
+							</div>
+							<div class="map-info-pay">
+								<p class="title-adder">주소</p>
+								<div class="map-inp-txt">
+									<p>[지번] 경기도 성남시 분당구 구미동 159번지 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+									<p>[도로] 경기도 성남시 분당구 탄천상로 151번길 20 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+								</div>
+
+								<p class="title-phone">전화번호</p>
+								<div class="map-inp-txt">
+									<p>031-786-1199</p>
+								</div>
+
+								<p class="title-time">영업시간</p>
+								<div class="map-inp-txt">
+									<ul>
+										<li>매장
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>Café W
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 18:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 22:00</li>
+												<li><strong>휴무일 없음(설,추석 연휴 당일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>상담부스, 체험관, 반품창구
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 : 일요일(반품창구 제외)</strong></li>
+											</ul>
+										</li>
+										<li>미술관
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 19:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div id='tab8' class="aptab_content">
+							<p class="tab-tit">해운대 </p>
+							<div class="ap-map-google">
+								<img src="/_ui/responsive/theme-blue/images/akl_common/img_map.png" alt="해운대ABC 지도">
+							</div>
+							<div class="map-info-pay">
+								<p class="title-adder">주소</p>
+								<div class="map-inp-txt">
+									<p>[지번] 경기도 성남시 분당구 구미동 159번지 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+									<p>[도로] 경기도 성남시 분당구 탄천상로 151번길 20 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+								</div>
+
+								<p class="title-phone">전화번호</p>
+								<div class="map-inp-txt">
+									<p>031-786-1199</p>
+								</div>
+
+								<p class="title-time">영업시간</p>
+								<div class="map-inp-txt">
+									<ul>
+										<li>매장
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>Café W
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 18:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 22:00</li>
+												<li><strong>휴무일 없음(설,추석 연휴 당일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>상담부스, 체험관, 반품창구
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 : 일요일(반품창구 제외)</strong></li>
+											</ul>
+										</li>
+										<li>미술관
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 19:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div id='tab9' class="aptab_content">
+							<p class="tab-tit">부산</p>
+							<div class="ap-map-google">
+								<img src="/_ui/responsive/theme-blue/images/akl_common/img_map.png" alt="부산 지도">
+							</div>
+							<div class="map-info-pay">
+								<p class="title-adder">주소</p>
+								<div class="map-inp-txt">
+									<p>[지번] 경기도 성남시 분당구 구미동 159번지 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+									<p>[도로] 경기도 성남시 분당구 탄천상로 151번길 20 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+								</div>
+
+								<p class="title-phone">전화번호</p>
+								<div class="map-inp-txt">
+									<p>031-786-1199</p>
+								</div>
+
+								<p class="title-time">영업시간</p>
+								<div class="map-inp-txt">
+									<ul>
+										<li>매장
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>Café W
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 18:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 22:00</li>
+												<li><strong>휴무일 없음(설,추석 연휴 당일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>상담부스, 체험관, 반품창구
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 : 일요일(반품창구 제외)</strong></li>
+											</ul>
+										</li>
+										<li>미술관
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 19:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div id='tab10' class="aptab_content">
+							<p class="tab-tit">대구</p>
+							<div class="ap-map-google">
+								<img src="/_ui/responsive/theme-blue/images/akl_common/img_map.png" alt="대구 지도">
+							</div>
+							<div class="map-info-pay">
+								<p class="title-adder">주소</p>
+								<div class="map-inp-txt">
+									<p>[지번] 경기도 성남시 분당구 구미동 159번지 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+									<p>[도로] 경기도 성남시 분당구 탄천상로 151번길 20 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+								</div>
+
+								<p class="title-phone">전화번호</p>
+								<div class="map-inp-txt">
+									<p>031-786-1199</p>
+								</div>
+
+								<p class="title-time">영업시간</p>
+								<div class="map-inp-txt">
+									<ul>
+										<li>매장
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>Café W
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 18:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 22:00</li>
+												<li><strong>휴무일 없음(설,추석 연휴 당일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>상담부스, 체험관, 반품창구
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 : 일요일(반품창구 제외)</strong></li>
+											</ul>
+										</li>
+										<li>미술관
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 19:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div id='tab11' class="aptab_content">
+							<p class="tab-tit">창원</p>
+							<div class="ap-map-google">
+								<img src="/_ui/responsive/theme-blue/images/akl_common/img_map.png" alt="창원 지도">
+							</div>
+							<div class="map-info-pay">
+								<p class="title-adder">주소</p>
+								<div class="map-inp-txt">
+									<p>[지번] 경기도 성남시 분당구 구미동 159번지 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+									<p>[도로] 경기도 성남시 분당구 탄천상로 151번길 20 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+								</div>
+
+								<p class="title-phone">전화번호</p>
+								<div class="map-inp-txt">
+									<p>031-786-1199</p>
+								</div>
+
+								<p class="title-time">영업시간</p>
+								<div class="map-inp-txt">
+									<ul>
+										<li>매장
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>Café W
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 18:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 22:00</li>
+												<li><strong>휴무일 없음(설,추석 연휴 당일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>상담부스, 체험관, 반품창구
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 : 일요일(반품창구 제외)</strong></li>
+											</ul>
+										</li>
+										<li>미술관
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 19:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div id='tab12' class="aptab_content">
+							<p class="tab-tit">울산</p>
+							<div class="ap-map-google">
+								<img src="/_ui/responsive/theme-blue/images/akl_common/img_map.png" alt="울산 지도">
+							</div>
+							<div class="map-info-pay">
+								<p class="title-adder">주소</p>
+								<div class="map-inp-txt">
+									<p>[지번] 경기도 성남시 분당구 구미동 159번지 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+									<p>[도로] 경기도 성남시 분당구 탄천상로 151번길 20 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+								</div>
+
+								<p class="title-phone">전화번호</p>
+								<div class="map-inp-txt">
+									<p>031-786-1199</p>
+								</div>
+
+								<p class="title-time">영업시간</p>
+								<div class="map-inp-txt">
+									<ul>
+										<li>매장
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>Café W
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 18:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 22:00</li>
+												<li><strong>휴무일 없음(설,추석 연휴 당일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>상담부스, 체험관, 반품창구
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 : 일요일(반품창구 제외)</strong></li>
+											</ul>
+										</li>
+										<li>미술관
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 19:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div id='tab13' class="aptab_content">
+							<p class="tab-tit">광주</p>
+							<div class="ap-map-google">
+								<img src="/_ui/responsive/theme-blue/images/akl_common/img_map.png" alt="광주 지도">
+							</div>
+							<div class="map-info-pay">
+								<p class="title-adder">주소</p>
+								<div class="map-inp-txt">
+									<p>[지번] 경기도 성남시 분당구 구미동 159번지 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+									<p>[도로] 경기도 성남시 분당구 탄천상로 151번길 20 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+								</div>
+
+								<p class="title-phone">전화번호</p>
+								<div class="map-inp-txt">
+									<p>031-786-1199</p>
+								</div>
+
+								<p class="title-time">영업시간</p>
+								<div class="map-inp-txt">
+									<ul>
+										<li>매장
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>Café W
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 18:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 22:00</li>
+												<li><strong>휴무일 없음(설,추석 연휴 당일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>상담부스, 체험관, 반품창구
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 : 일요일(반품창구 제외)</strong></li>
+											</ul>
+										</li>
+										<li>미술관
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 19:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div id='tab14' class="aptab_content">
+							<p class="tab-tit">전주</p>
+							<div class="ap-map-google">
+								<img src="/_ui/responsive/theme-blue/images/akl_common/img_map.png" alt="전주 지도">
+							</div>
+							<div class="map-info-pay">
+								<p class="title-adder">주소</p>
+								<div class="map-inp-txt">
+									<p>[지번] 경기도 성남시 분당구 구미동 159번지 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+									<p>[도로] 경기도 성남시 분당구 탄천상로 151번길 20 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+								</div>
+
+								<p class="title-phone">전화번호</p>
+								<div class="map-inp-txt">
+									<p>031-786-1199</p>
+								</div>
+
+								<p class="title-time">영업시간</p>
+								<div class="map-inp-txt">
+									<ul>
+										<li>매장
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>Café W
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 18:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 22:00</li>
+												<li><strong>휴무일 없음(설,추석 연휴 당일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>상담부스, 체험관, 반품창구
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 : 일요일(반품창구 제외)</strong></li>
+											</ul>
+										</li>
+										<li>미술관
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 19:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div id='tab15' class="aptab_content">
+							<p class="tab-tit">강릉</p>
+							<div class="ap-map-google">
+								<img src="/_ui/responsive/theme-blue/images/akl_common/img_map.png" alt="강릉 지도">
+							</div>
+							<div class="map-info-pay">
+								<p class="title-adder">주소</p>
+								<div class="map-inp-txt">
+									<p>[지번] 경기도 성남시 분당구 구미동 159번지 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+									<p>[도로] 경기도 성남시 분당구 탄천상로 151번길 20 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+								</div>
+
+								<p class="title-phone">전화번호</p>
+								<div class="map-inp-txt">
+									<p>031-786-1199</p>
+								</div>
+
+								<p class="title-time">영업시간</p>
+								<div class="map-inp-txt">
+									<ul>
+										<li>매장
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>Café W
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 18:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 22:00</li>
+												<li><strong>휴무일 없음(설,추석 연휴 당일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>상담부스, 체험관, 반품창구
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 : 일요일(반품창구 제외)</strong></li>
+											</ul>
+										</li>
+										<li>미술관
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 19:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div id='tab16' class="aptab_content">
+							<p class="tab-tit">제주</p>
+							<div class="ap-map-google">
+								<img src="/_ui/responsive/theme-blue/images/akl_common/img_map.png" alt="제주 지도">
+							</div>
+							<div class="map-info-pay">
+								<p class="title-adder">주소</p>
+								<div class="map-inp-txt">
+									<p>[지번] 경기도 성남시 분당구 구미동 159번지 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+									<p>[도로] 경기도 성남시 분당구 탄천상로 151번길 20 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+								</div>
+
+								<p class="title-phone">전화번호</p>
+								<div class="map-inp-txt">
+									<p>031-786-1199</p>
+								</div>
+
+								<p class="title-time">영업시간</p>
+								<div class="map-inp-txt">
+									<ul>
+										<li>매장
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>Café W
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 18:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 22:00</li>
+												<li><strong>휴무일 없음(설,추석 연휴 당일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>상담부스, 체험관, 반품창구
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 : 일요일(반품창구 제외)</strong></li>
+											</ul>
+										</li>
+										<li>미술관
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 19:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cart-popup__item-link">
+				<button type="button" class="bt-akl-blue">확인</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!--//ABC안내 팝업 -->
+
+<!-- 쿠폰선택 팝업 -->
+<div class="layerWrapper G10600_lp7_pop">
+	<div class="cbox layerBox popWidL">
+		<!-- 수정 : 2018.12.03 (class 변경  / popWidL > popWidL) -->
+		<div class="cart-popup__dialog">
+			<div class="cart-popup__header">
+                    <span class="cart-popup__header-text">쿠폰선택
+                        <a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true" class="cart-popup__close"><img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기"></a>
+                    </span>
+			</div>
+			<div class="cart-popup__content payment">
+				<div class="cart-popup__item-info">
+					<div class="form-wrapper address-pop">
+						<input type="text" id="" name="" placeholder="쿠폰명, 쿠폰번호를 입력해주세요" value="" title="검색할 쿠폰명, 쿠폰번호 입력">
+						<button type="submit" class="btn btn-primary">
+							<span>검색</span>
+						</button>
+					</div>
+
+					<p>총 쿠폰 수 : <strong class="color-blue">3</strong> 개</p>
+					<div class="table-wrapper">
+						<div class="popTable-list">
+							<ul>
+								<li class="thead-tit">
+									<span class="pcupon-number">쿠폰번호</span>
+									<span class="pcupon-name">쿠폰명</span>
+									<span class="pcupon-volume">수량</span><!-- 수정 : 2018.12.03 (수량 추가) -->
+									<span class="pcupon-period">사용기한</span>
+								</li>
+								<li class="tbody">
+									<div class="pcupon-check">
+										<input class="amwa-radio" type="radio" name="cupo" id="cupob1" value="" />
+										<label for="cupob1"><span class="hidden">선택</span></label>
+									</div>
+									<div class="pcu-group">
+										<div class="pcupon-number">
+											<span class="mob-txt">쿠폰번호</span>
+											<span class="number">11711010000030</span>
+										</div>
+										<div class="pcupon-name">
+											<span class="mob-txt">쿠폰명</span>
+											<span class="name">SOP THANK YOU PROMOTION</span>
+										</div>
+										<!-- 수정 : 2018.12.03 (수량 추가) -->
+										<div class="pcupon-volume">
+											<span class="mob-txt">수량</span>
+											<span class="number-coupon">2</span>
+										</div>
+										<!-- //수정 : 2018.12.03 (수량 추가) -->
+										<div class="pcupon-period">
+											<span class="mob-txt">사용기한</span>
+											<span class="period">2017-11-01 ~ 2018-01-31</span>
+										</div>
+									</div>
+								</li>
+								<li class="tbody">
+									<div class="pcupon-check">
+										<input class="amwa-radio" type="radio" name="cupo" id="cupob2" value="" />
+										<label for="cupob2"><span class="hidden">선택</span></label>
+									</div>
+									<div class="pcu-group">
+										<div class="pcupon-number">
+											<span class="mob-txt">쿠폰번호</span>
+											<span class="number">11711010000030</span>
+										</div>
+										<div class="pcupon-name">
+											<span class="mob-txt">쿠폰명</span>
+											<span class="name">SOP THANK YOU PROMOTION</span>
+										</div>
+										<!-- 수정 : 2018.12.03 (수량 추가) -->
+										<div class="pcupon-volume">
+											<span class="mob-txt">수량</span>
+											<span class="number-coupon">2</span>
+										</div>
+										<!-- //수정 : 2018.12.03 (수량 추가) -->
+										<div class="pcupon-period">
+											<span class="mob-txt">사용기한</span>
+											<span class="period">2017-11-01 ~ 2018-01-31</span>
+										</div>
+									</div>
+								</li>
+								<li class="tbody">
+									<div class="pcupon-check">
+										<input class="amwa-radio" type="radio" name="cupo" id="cupob3" value="" />
+										<label for="cupob3"><span class="hidden">선택</span></label>
+									</div>
+									<div class="pcu-group">
+										<div class="pcupon-number">
+											<span class="mob-txt">쿠폰번호</span>
+											<span class="number">11711010000030</span>
+										</div>
+										<div class="pcupon-name">
+											<span class="mob-txt">쿠폰명</span>
+											<span class="name">SOP THANK YOU PROMOTION</span>
+										</div>
+										<!-- 수정 : 2018.12.03 (수량 추가) -->
+										<div class="pcupon-volume">
+											<span class="mob-txt">수량</span>
+											<span class="number-coupon">2</span>
+										</div>
+										<!-- //수정 : 2018.12.03 (수량 추가) -->
+										<div class="pcupon-period">
+											<span class="mob-txt">사용기한</span>
+											<span class="period">2017-11-01 ~ 2018-01-31</span>
+										</div>
+									</div>
+								</li>
+								<li class="tbody">
+									<div class="pcupon-check">
+										<input class="amwa-radio" type="radio" name="cupo" id="cupob4" value="" />
+										<label for="cupob4"><span class="hidden">선택</span></label>
+									</div>
+									<div class="pcu-group">
+										<div class="pcupon-number">
+											<span class="mob-txt">쿠폰번호</span>
+											<span class="number">11711010000030</span>
+										</div>
+										<div class="pcupon-name">
+											<span class="mob-txt">쿠폰명</span>
+											<span class="name">SOP THANK YOU PROMOTION</span>
+										</div>
+										<!-- 수정 : 2018.12.03 (수량 추가) -->
+										<div class="pcupon-volume">
+											<span class="mob-txt">수량</span>
+											<span class="number-coupon">2</span>
+										</div>
+										<!-- //수정 : 2018.12.03 (수량 추가) -->
+										<div class="pcupon-period">
+											<span class="mob-txt">사용기한</span>
+											<span class="period">2017-11-01 ~ 2018-01-31</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<!-- 내역이 없을때 클래스 삭제하고 넣어주세요. -->
+									<div class="search-no-result">
+										<p>쿠폰 내역이 없습니다. </p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- 수정: 2018.05.28 (추가) -->
+					<script>
+						$(function(){
+							var allRadios = $('input[name=cupo]');
+							allRadios.each(function(){
+								$(this).on('click',function(){
+									allRadios.prop('checked', false).attr('checked',false);
+									$(this).prop('checked', true).attr('checked', 'checked');
+								});
+							});
+						});
+					</script>
+					<!-- //수정: 2018.05.28 (추가) -->
+				</div>
+			</div>
+			<div class="cart-popup__item-link">
+				<button type="button" class="bt-akl-blue">적용</button>
+				<button type="button" class="bt-akl-txt">취소</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!--//쿠폰선택 팝업 -->
+
+<!-- 190315_수정 사업자등록증 관리 팝업 개선 -->
+<div class="layerWrapper G10600_lp5_pop">
+	<div class="cbox layerBox popWidL">
+		<div class="cart-popup__dialog">
+			<div class="cart-popup__header">
+                    <span class="cart-popup__header-text">사업자등록증 관리
+                        <a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true" class="cart-popup__close">
+                            <img src="http://hybrisuiux.preprod.kr.amway.net/_ui/responsive/theme-blue/images/close.png" alt="닫기">
+                        </a>
+                    </span>
+			</div>
+
+			<div class="cart-popup__content payment business-regis-modified">
+				<div class="cart-popup__item-info">
+					<p>
+						사업자등록번호를 해당사업장의 동의 없이 무단으로 이용하시는 경우 법적으로 제재 조치가 발생할 수 있습니다.<br>
+						세금계산서 발행일은 재화가 인도된 날 기준이므로, 배달 주문의 경우 출고 완료 기준으로 발행됩니다. 발행일 기준 익일 10시 이후부터 국세청 사이트에서 조회 가능합니다.<br>
+						단, 월말/ 월초 등 물량 증가로 출고가 지연될 경우 ,출고일 기준으로 세금계산서가 발행됩니다.
+					</p>
+					<div class="form-wrapper business-pop">
+						<label for="business-name">상호(법인명) 검색</label>
+						<input type="text" id="business-name" name="" placeholder="" value="">
+						<span class="busn-search-btn">
+                                <button type="submit" class="btn btn-primary">
+                                    <span>검색</span>
+                                </button>
+                                <button type="button" class="link-btn">검색초기화</button>
+                            </span>
+					</div>
+
+					<p>총 <strong class="color-blue">4</strong>개의 사업자등록증이 있습니다.</p>
+					<div class="table-wrapper">
+						<div class="popTable-list busim">
+							<ul>
+								<li class="thead-tit">
+									<span class="company-name">상호(법인명)</span>
+									<span class="company-num">사업자등록번호</span>
+									<span class="company-exponent">대표자 성명</span>
+									<span class="company-day">등록일</span>
+									<span class="company-sel">선택</span>
+									<span class="company-view">상세보기</span>
+								</li>
+								<li class="tbody">
+									<div class="com-inof">
+										<div class="company-name">
+											<span class="mob-txt">상호(법인명)</span>
+											<span class="mob-right">나우건축</span>
+										</div>
+										<div class="company-num">
+											<span class="mob-txt">사업자등록번호</span>
+											<span class="mob-right">1293607526</span>
+										</div>
+										<div class="company-exponent">
+											<span class="mob-txt">대표자 성명</span>
+											<span class="mob-right">신현정</span>
+										</div>
+										<div class="company-day">
+											<span class="mob-txt">등록일</span>
+											<span class="mob-right">2010-07-30</span>
+										</div>
+									</div>
+									<div class="com-btn">
+										<div class="company-sel">
+											<button type="button" class="bt-akl-blue mini">선택</button> <!-- 190315_클래스수정 사업자등록증 관리 레이어팝업 수정 -->
+										</div>
+										<div class="company-view">
+											<a href="#" class="bt-akl-white mini">상세보기</a>
+										</div>
+									</div>
+								</li>
+								<li class="tbody">
+									<div class="com-inof">
+										<div class="company-name">
+											<span class="mob-txt">상호(법인명)</span>
+											<span class="mob-right">나우건축</span>
+										</div>
+										<div class="company-num">
+											<span class="mob-txt">사업자등록번호</span>
+											<span class="mob-right">1293607526</span>
+										</div>
+										<div class="company-exponent">
+											<span class="mob-txt">대표자 성명</span>
+											<span class="mob-right">신현정</span>
+										</div>
+										<div class="company-day">
+											<span class="mob-txt">등록일</span>
+											<span class="mob-right">2010-07-30</span>
+										</div>
+									</div>
+									<div class="com-btn">
+										<div class="company-sel">
+											<button type="button" class="bt-akl-blue mini">선택</button>
+										</div>
+										<div class="company-view">
+											<a href="#" class="bt-akl-white mini">상세보기</a>
+										</div>
+									</div>
+								</li>
+								<li class="tbody">
+									<div class="com-inof">
+										<div class="company-name">
+											<span class="mob-txt">상호(법인명)</span>
+											<span class="mob-right">나우건축</span>
+										</div>
+										<div class="company-num">
+											<span class="mob-txt">사업자등록번호</span>
+											<span class="mob-right">1293607526</span>
+										</div>
+										<div class="company-exponent">
+											<span class="mob-txt">대표자 성명</span>
+											<span class="mob-right">신현정</span>
+										</div>
+										<div class="company-day">
+											<span class="mob-txt">등록일</span>
+											<span class="mob-right">2010-07-30</span>
+										</div>
+									</div>
+									<div class="com-btn">
+										<div class="company-sel">
+											<button type="button" class="bt-akl-blue mini">선택</button>
+										</div>
+										<div class="company-view">
+											<a href="#" class="bt-akl-white mini">상세보기</a>
+										</div>
+									</div>
+								</li>
+								<li class="tbody">
+									<div class="com-inof">
+										<div class="company-name">
+											<span class="mob-txt">상호(법인명)</span>
+											<span class="mob-right">나우건축</span>
+										</div>
+										<div class="company-num">
+											<span class="mob-txt">사업자등록번호</span>
+											<span class="mob-right">1293607526</span>
+										</div>
+										<div class="company-exponent">
+											<span class="mob-txt">대표자 성명</span>
+											<span class="mob-right">신현정</span>
+										</div>
+										<div class="company-day">
+											<span class="mob-txt">등록일</span>
+											<span class="mob-right">2010-07-30</span>
+										</div>
+									</div>
+									<div class="com-btn">
+										<div class="company-sel">
+											<button type="button" class="bt-akl-blue mini">선택</button>
+										</div>
+										<div class="company-view">
+											<a href="#" class="bt-akl-white mini">상세보기</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<!-- 내역이 없을때 클래스 삭제하고 넣어주세요. -->
+									<div class="search-no-result">
+										<p>쿠폰 내역이 없습니다. </p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="paging">
+						<a href="#" class="prev">맨 처음 페이지</a>
+						<a href="#" class="before">이전 페이지</a>
+						<ul>
+							<li><a href="#">1</a></li>
+							<li class="on"><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+						</ul>
+						<a href="#" class="after">다음페이지</a>
+						<a href="#" class="next">맨 마지막 페이지</a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //190315_수정 사업자등록증 관리 팝업 개선 -->
+
+<!-- 사업자등록증 상세보기 팝업 -->
+<div class="layerWrapper G10600_lp6_pop">
+	<div class="cbox layerBox popWidL">
+		<div class="cart-popup__dialog">
+			<div class="cart-popup__header">
+				<span class="cart-popup__header-text">사업자등록증 상세보기
+					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true" class="cart-popup__close">
+						<img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기">
+					</a>
+				</span>
+			</div>
+			<div class="cart-popup__content payment">
+				<div class="cart-popup__item-info">
+					<p class="busine-tit">사업자등록증 정보</p>
+					<div class="table-wrapper">
+						<table class="tbl-type1 buse-view">
+							<caption>사업자등록번호, 상호(법인명), 대표자 성명, 사업장 주소, 업태, 종목 제공</caption>
+							<tbody>
+							<tr>
+								<th scope="row">사업자등록번호</th>
+								<td>1234-1234-1234</td>
+							</tr>
+							<tr>
+								<th scope="row">상호(법인명)</th>
+								<td>나우건축</td>
+							</tr>
+							<tr>
+								<th scope="row">대표자 성명</th>
+								<td>신현정</td>
+							</tr>
+							<tr>
+								<th scope="row">사업장 주소</th>
+								<td>서울시 서초구 서초동 77-7</td>
+							</tr>
+							<tr>
+								<th scope="row">업태</th>
+								<td>도소매업</td>
+							</tr>
+							<tr>
+								<th scope="row">종목</th>
+								<td>잡화</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<p class="busine-tit">전자세금계산서 수신정보</p>
+					<div class="table-wrapper">
+						<table class="tbl-type1 buse-view">
+							<caption>받는이, 휴대폰번호, 수신자 이메일 주소 제공</caption>
+							<tbody>
+							<tr>
+								<th scope="row">받는이</th>
+								<td>홍길동</td>
+							</tr>
+							<tr>
+								<th scope="row">휴대폰번호</th>
+								<td>010-0000-0000 (SMS 수신 동의함)</td>
+							</tr>
+							<tr>
+								<th scope="row">수신자 이메일 주소</th>
+								<td>Abc123@naver.com</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<p class="busine-tit">중개 ABO 정보</p>
+					<div class="table-wrapper">
+						<table class="tbl-type1 buse-view">
+							<caption>휴대폰번호, 이메일 주소 제공</caption>
+							<tbody>
+							<tr>
+								<th scope="row">휴대폰번호</th>
+								<td>홍길동</td>
+							</tr>
+							<tr>
+								<th scope="row">이메일 주소</th>
+								<td>youngchul@amway.com</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="busine-infotxe">
+						<ul class="list-type2">
+							<li>전자세금계산서 수신정보와 중개 ABO정보는 중개판매 관리에서 수정하실 수 있습니다</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="cart-popup__item-link">
+				<button type="button" class="bt-akl-blue">목록</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!--//사업자등록증 상세보기 팝업 -->
+
+<!-- 카드사 혜택보기 팝업 -->
+<div class="layerWrapper G10600_lp2_pop">
+	<div class="cbox layerBox popWidL">
+		<div class="cart-popup__dialog">
+			<div class="cart-popup__header">
+				<span class="cart-popup__header-text">카드사 혜택보기
+					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true" class="cart-popup__close">
+						<img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기">
+					</a>
+				</span>
+			</div>
+			<div class="cart-popup__content payment">
+				<div class="cart-popup__item-info">
+
+					<div style="padding:50px 0 70px;">
+						<p>[공통사용] 신용카드 혜택보기 페이지 분리 : 2018.04.23 </p>
+						<a href="G10600_lp2_pop.html" target="_blank">G10600_lp2_pop.html</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--//카드사 혜택보기 팝업 -->
+
+<!-- 주문불가 제품 알림 팝업 -->
+<div class="layerWrapper G10600_lp1_pop">
+	<div class="cbox layerBox popWidM">
+		<div class="cart-popup__dialog">
+			<div class="cart-popup__header">
+				<span class="cart-popup__header-text">주문불가 제품 알림
+					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true" class="cart-popup__close">
+						<img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기">
+					</a>
+				</span>
+			</div>
+			<div class="cart-popup__content payment">
+				<div class="cart-popup__item-info">
+					<p>수량제한 AP : 강서 AP</p>
+					<div class="pop-prot-body">
+						<div class="cannot-order-list">
+							<!-- div 영역 추가 2018.05.16 -->
+							<div class="cartlist-image">
+								<img src="/_ui/responsive/theme-blue/images/akl_common/@heart-health_checkout.png" class="no-border-image" alt="pro-duct3" />
+							</div>
+							<div class="cartlist-text">
+								<div class="cart-popup__item-head">
+									<div class="cartlist-title">
+										아티스트리 시그니처 컬러 라잇업 립글로스 립글로스 립글로스 립글로스 립글로스
+										<div class="cartlist-small2">1038 / 120435D </div>
+									</div>
+									<div class="cartlist-quantity">
+										<span class="qua-tite">주문수량</span>
+										<span class="qua-num">20</span>
+									</div>
+								</div>
+
+								<div class="cart-popup__item-com">
+									<div class="com-ttile">주문불가 사유</div>
+									<div class="com-num"><span class="ico-i">수량제한</span></div>
+									<p class="com-txt">벌크제품과 같이주문시 두개만 주문가능하고 개별로 주문시 4개까지만 주문가능함</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="pop-prot-form">
+						<div class="form-group">
+							<input class="amwa-radio" type="radio" name="impossible" id="impossible1" value="" checked>
+							<label for="impossible1">장바구니로 돌아가 다시 주문정보 수정</label>
+						</div>
+						<div class="form-group">
+							<input class="amwa-radio" type="radio" name="impossible" id="impossible2" value="">
+							<label for="impossible2">현재상품 삭제 후 주문 진행</label>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+			<div class="cart-popup__item-link">
+				<button type="button" class="bt-akl-blue">확인</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!--//주문불가 제품 알림 팝업 -->
+
+<!-- 재고현황  팝업 -->
+<div class="layerWrapper G10300_lp2_pop">
+	<!-- div.layerWrapper 추가 -->
+	<div class="cbox G10300_lp2 layerBox popWidM">
+		<!-- .layerBox 추가 -->
+		<div class="cart-popup__dialog">
+			<div class="cart-popup__header">
+				<span class="cart-popup__header-text">재고현황
+					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true" class="cart-popup__close">
+						<img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기">
+					</a>
+				</span>
+			</div>
+			<div class="cart-popup__content">
+				<div class="cart-popup__item-info">
+					<div class="product-status-title">
+						<p>재고현황은 실시간 변동으로 인하여 결제 시 달라질 수 있습니다.</p>
+						<p class="right">
+							<span class="in-Stock">재고 있음</span>
+							<span class="no-Stock">재고 없음</span>
+						</p>
+					</div>
+					<div class="product-status-body">
+						<ul class="pro-staus-list">
+							<!-- 2018.02.13 나열순서 변경 -->
+							<li><span class="in-Stock">배달주문</span></li>
+							<li><span class="no-Stock">분당ABC</span></li>
+							<li><span class="in-Stock">강남</span></li>
+							<li><span class="no-Stock">강서</span></li>
+							<li><span class="no-Stock">인천</span></li>
+							<li><span class="in-Stock">대전</span></li>
+							<li><span class="no-Stock">천안</span></li>
+							<li><span class="in-Stock">청주</span></li>
+							<li><span class="no-Stock">해운대</span></li><!-- 2018.05.09 명칭 수정 -->
+							<li><span class="no-Stock">부산</span></li>
+							<li><span class="in-Stock">대구</span></li>
+							<li><span class="no-Stock">창원</span></li>
+							<li><span class="in-Stock">울산</span></li>
+							<li><span class="no-Stock">광주</span></li>
+							<li><span class="in-Stock">전주</span></li>
+							<li><span class="no-Stock">강릉</span></li>
+							<li><span class="no-Stock">제주</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- // 재고현황 팝업  -->
+
+<!-- 로그인 알림 -->
+<div class="layerWrapper pop01">
+	<div class="cbox layerBox">
+		<div class="cart-popup__dialog">
+			<div class="cart-popup__header">
+				<span class="cart-popup__header-text">
+					로그인 알림
+					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close"><img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기"></a>
+				</span>
+			</div>
+			<div class="cart-popup__content payment">
+				<div class="cart-popup__item-info">지문인증 로그인을 위해 로그인 해주세요.<br>(최초 1회)</div>
+			</div>
+			<div class="cart-popup__item-link">
+				<button type="button" class="bt-akl-blue">로그인</button>
+				<button type="button" class="btn-cancel">취소</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- 로그인 알림 -->
+<div class="layerWrapper pop01">
+	<div class="cbox layerBox">
+		<div class="cart-popup__dialog">
+			<div class="cart-popup__header">
+				<span class="cart-popup__header-text">
+					로그인 알림
+					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close"><img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기"></a>
+				</span>
+			</div>
+			<div class="cart-popup__content payment">
+				<div class="cart-popup__item-info">지문인증 로그인을 위해 로그인 해주세요.<br>(최초 1회)</div>
+			</div>
+			<div class="cart-popup__item-link">
+				<button type="button" class="bt-akl-blue">로그인</button>
+				<button type="button" class="btn-cancel">취소</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- S : [디파이 수정2] A pay 결제 관련 팝업 -->
+<!-- S : A-Pay 관리 버튼 클릭 시 보여지는 팝업 -->
+<div class="layerWrapper popup_a-pay popup_a-pay_setting type_left-align">
+	<div class="cbox layerBox popWidS">
+		<div class="container">
+			<div class="popup-header">
+                <h1 class="header-title">A-Pay 관리</h1>
+                <a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true" class="btn_layer-close btn-modal_close"><span class="hidden">닫기</span></a>
+			</div>
+			<div class="popup-body">
+				<div class="payment_setting-list">
+					<ul>
+						<li>
+							<a href="#" class="pop_a-pay-add-delete">
+								결제 수단 등록/삭제
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								결제 비밀번호 설정
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="popup-footer">
+				<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true" class="btn-modal_close">닫기</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- E : A-Pay 관리 버튼 클릭 시 보여지는 팝업 -->
+
+<!-- S : A-Pay 관리 팝업 > 결제 수단 등록/삭제 팝업 -->
+<div class="layerWrapper popup_a-pay popup_a-pay-add-delete">
+	<div class="cbox layerBox popWidS no-bottom-btn">
+		<div class="container">
+			<div class="popup-header">
+                <h1 class="header-title">결제 수단 등록/삭제</h1>
+                <a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true" class="btn_layer-close btn-modal_close"><span class="hidden">닫기</span></a>
+			</div>
+			<div class="popup-body">
+				<div class="payment-registered card">
+					<div class="title-area">
+						<h3><span>등록된 카드</span><span class="number">3</spanc></h3>
+						<button type="button">등록하기</button>
+					</div>
+					<!-- /* S : 카드 클래스 */
+						type01 NH 농협
+						type02 우리카드
+						type03 신한/제주
+						type04 국민카드
+						type05 하나카드
+						type06 씨티카드
+						type07 전북/광주
+						type08 산업
+						type09 MG새마을
+						type10 수협카드
+						type11 신협카드
+						type12 우체국
+						type13 케이뱅크
+						type14 카카오뱅크
+						type15 저축은행
+						type16 BC카드
+						type17 현대카드
+						type18 롯데카드
+						type19 삼성카드
+					/* E : 카드 클래스 */ -->
+					<ul class="lists">
+						<li class="type01">
+							<div class="img"><span class="hidden">은행/카드 이미지</span></div>
+							<div class="text"><span class="title">NH 농협</span><span>5706</span></div>
+							<button class="delete">삭제</button>
+						</li>
+						<li class="type02">
+							<div class="img"><span class="hidden">은행/카드 이미지</span></div>
+							<div class="text"><span class="title">우리카드</span><span>5706</span></div>
+							<button class="delete">삭제</button>
+						</li>
+						<li class="type03">
+							<div class="img"><span class="hidden">은행/카드 이미지</span></div>
+							<div class="text"><span class="title">신한/제주</span><span>5706</span></div>
+							<button class="delete">삭제</button>
+						</li>
+						<li class="type04">
+							<div class="img"><span class="hidden">은행/카드 이미지</span></div>
+							<div class="text"><span class="title">국민카드</span><span>5706</span></div>
+							<button class="delete">삭제</button>
+						</li>
+						<li class="type05">
+							<div class="img"><span class="hidden">은행/카드 이미지</span></div>
+							<div class="text"><span class="title">하나카드</span><span>5706</span></div>
+							<button class="delete">삭제</button>
+						</li>
+						<li class="type06">
+							<div class="img"><span class="hidden">은행/카드 이미지</span></div>
+							<div class="text"><span class="title">씨티카드</span><span>5706</span></div>
+							<button class="delete">삭제</button>
+						</li>
+						<li class="type07">
+							<div class="img"><span class="hidden">은행/카드 이미지</span></div>
+							<div class="text"><span class="title">전북카드</span><span>5706</span></div>
+							<button class="delete">삭제</button>
+						</li>
+						<li class="type07">
+							<div class="img"><span class="hidden">은행/카드 이미지</span></div>
+							<div class="text"><span class="title">광주카드</span><span>5706</span></div>
+							<button class="delete">삭제</button>
+						</li>
+						<li class="type08">
+							<div class="img"><span class="hidden">은행/카드 이미지</span></div>
+							<div class="text"><span class="title">산업</span><span>5706</span></div>
+							<button class="delete">삭제</button>
+						</li>
+						<li class="type09">
+							<div class="img"><span class="hidden">은행/카드 이미지</span></div>
+							<div class="text"><span class="title">MG새마을</span><span>5706</span></div>
+							<button class="delete">삭제</button>
+						</li>
+						<li class="type10">
+							<div class="img"><span class="hidden">은행/카드 이미지</span></div>
+							<div class="text"><span class="title">수협카드</span><span>5706</span></div>
+							<button class="delete">삭제</button>
+						</li>
+						<li class="type11">
+							<div class="img"><span class="hidden">은행/카드 이미지</span></div>
+							<div class="text"><span class="title">신협카드</span><span>5706</span></div>
+							<button class="delete">삭제</button>
+						</li>
+						<li class="type12">
+							<div class="img"><span class="hidden">은행/카드 이미지</span></div>
+							<div class="text"><span class="title">우체국</span><span>5706</span></div>
+							<button class="delete">삭제</button>
+						</li>
+						<li class="type13">
+							<div class="img"><span class="hidden">은행/카드 이미지</span></div>
+							<div class="text"><span class="title">케이뱅크</span><span>5706</span></div>
+							<button class="delete">삭제</button>
+						</li>
+						<li class="type14">
+							<div class="img"><span class="hidden">은행/카드 이미지</span></div>
+							<div class="text"><span class="title">카카오뱅크</span><span>5706</span></div>
+							<button class="delete">삭제</button>
+						</li>
+						<li class="type15">
+							<div class="img"><span class="hidden">은행/카드 이미지</span></div>
+							<div class="text"><span class="title">저축은행</span><span>5706</span></div>
+							<button class="delete">삭제</button>
+						</li>
+						<li class="type16">
+							<div class="img"><span class="hidden">은행/카드 이미지</span></div>
+							<div class="text"><span class="title">BC카드</span><span>5706</span></div>
+							<button class="delete">삭제</button>
+						</li>
+						<li class="type17">
+							<div class="img"><span class="hidden">은행/카드 이미지</span></div>
+							<div class="text"><span class="title">현대카드</span><span>5706</span></div>
+							<button class="delete">삭제</button>
+						</li>
+						<li class="type18">
+							<div class="img"><span class="hidden">은행/카드 이미지</span></div>
+							<div class="text"><span class="title">롯데카드</span><span>5706</span></div>
+							<button class="delete">삭제</button>
+						</li>
+						<li class="type19">
+							<div class="img"><span class="hidden">은행/카드 이미지</span></div>
+							<div class="text"><span class="title">삼성카드</span><span>5706</span></div>
+							<button class="delete">삭제</button>
+						</li>
+					</ul>
+				</div>
+				<div class="payment-registered bank">
+					<div class="title-area">
+						<h3><span>등록된 계좌</span><span class="number">3</spanc></h3>
+						<button type="button">등록하기</button>
+					</div>
+					<!-- /* S : 은행 클래스 */
+						type01 NH 농협
+						type02 우리은행
+						type03 신한/제주은행
+						type04 국민은행
+						type05 하나은행
+						type06 씨티은행
+						type07 전북/광주은행
+						type08 산업은행
+						type09 새마을금고
+						type10 수협
+						type11 신협
+						type12 우체국
+						type13 케이뱅크
+						type14 카카오뱅크
+						type15 저축은행
+						type16 부산/경남은행
+						type17 기업은행
+						type18 SC제일은행
+						type19 대구은행
+						type20 산림조합
+						type21 토스뱅크
+					/* E : 은행 클래스 */ -->
+					<ul class="lists">
+						<li class="type01">
+							<div class="img"><span class="hidden">은행/카드 이미지</span></div>
+							<div class="text"><span class="title">NH 농협계좌</span><span>984********1237</span></div>
+							<button class="delete">삭제</button>
+						</li>
+						<li class="type02">
+							<div class="img"><span class="hidden">은행/카드 이미지</span></div>
+							<div class="text"><span class="title">우리계좌</span><span>100******1234</span></div>
+							<button class="delete">삭제</button>
+						</li>
+						<li class="type03">
+							<div class="img"><span class="hidden">은행/카드 이미지</span></div>
+							<div class="text"><span class="title">신한계좌</span><span>100******1234</span></div>
+							<button class="delete">삭제</button>
+						</li>
+						<li class="type03">
+							<div class="img"><span class="hidden">은행/카드 이미지</span></div>
+							<div class="text"><span class="title">제주계좌</span><span>100******1234</span></div>
+							<button class="delete">삭제</button>
+						</li>
+						<li class="type04">
+							<div class="img"><span class="hidden">은행/카드 이미지</span></div>
+							<div class="text"><span class="title">국민계좌</span><span>100******1234</span></div>
+							<button class="delete">삭제</button>
+						</li>
+						<li class="type05">
+							<div class="img"><span class="hidden">은행/카드 이미지</span></div>
+							<div class="text"><span class="title">하나계좌</span><span>100******1234</span></div>
+							<button class="delete">삭제</button>
+						</li>
+						<li class="type06">
+							<div class="img"><span class="hidden">은행/카드 이미지</span></div>
+							<div class="text"><span class="title">씨티계좌</span><span>100******1234</span></div>
+							<button class="delete">삭제</button>
+						</li>
+						<li class="type07">
+							<div class="img"><span class="hidden">은행/카드 이미지</span></div>
+							<div class="text"><span class="title">전북계좌</span><span>100******1234</span></div>
+							<button class="delete">삭제</button>
+						</li>
+						<li class="type07">
+							<div class="img"><span class="hidden">은행/카드 이미지</span></div>
+							<div class="text"><span class="title">광주계좌</span><span>100******1234</span></div>
+							<button class="delete">삭제</button>
+						</li>
+						<li class="type08">
+							<div class="img"><span class="hidden">은행/카드 이미지</span></div>
+							<div class="text"><span class="title">산업계좌</span><span>100******1234</span></div>
+							<button class="delete">삭제</button>
+						</li>
+						<li class="type09">
+							<div class="img"><span class="hidden">은행/카드 이미지</span></div>
+							<div class="text"><span class="title">새마을금고</span><span>100******1234</span></div>
+							<button class="delete">삭제</button>
+						</li>
+						<li class="type10">
+							<div class="img"><span class="hidden">은행/카드 이미지</span></div>
+							<div class="text"><span class="title">수협</span><span>100******1234</span></div>
+							<button class="delete">삭제</button>
+						</li>
+						<li class="type11">
+							<div class="img"><span class="hidden">은행/카드 이미지</span></div>
+							<div class="text"><span class="title">신협</span><span>100******1234</span></div>
+							<button class="delete">삭제</button>
+						</li>
+						<li class="type12">
+							<div class="img"><span class="hidden">은행/카드 이미지</span></div>
+							<div class="text"><span class="title">우체국</span><span>100******1234</span></div>
+							<button class="delete">삭제</button>
+						</li>
+						<li class="type13">
+							<div class="img"><span class="hidden">은행/카드 이미지</span></div>
+							<div class="text"><span class="title">케이뱅크</span><span>100******1234</span></div>
+							<button class="delete">삭제</button>
+						</li>
+						<li class="type14">
+							<div class="img"><span class="hidden">은행/카드 이미지</span></div>
+							<div class="text"><span class="title">카카오뱅크</span><span>100******1234</span></div>
+							<button class="delete">삭제</button>
+						</li>
+						<li class="type15">
+							<div class="img"><span class="hidden">은행/카드 이미지</span></div>
+							<div class="text"><span class="title">저축은행</span><span>100******1234</span></div>
+							<button class="delete">삭제</button>
+						</li>
+						<li class="type16">
+							<div class="img"><span class="hidden">은행/카드 이미지</span></div>
+							<div class="text"><span class="title">부산계좌</span><span>100******1234</span></div>
+							<button class="delete">삭제</button>
+						</li>
+						<li class="type16">
+							<div class="img"><span class="hidden">은행/카드 이미지</span></div>
+							<div class="text"><span class="title">경남계좌</span><span>100******1234</span></div>
+							<button class="delete">삭제</button>
+						</li>
+						<li class="type17">
+							<div class="img"><span class="hidden">은행/카드 이미지</span></div>
+							<div class="text"><span class="title">기업계좌</span><span>100******1234</span></div>
+							<button class="delete">삭제</button>
+						</li>
+						<li class="type18">
+							<div class="img"><span class="hidden">은행/카드 이미지</span></div>
+							<div class="text"><span class="title">SC제일계좌</span><span>100******1234</span></div>
+							<button class="delete">삭제</button>
+						</li>
+						<li class="type19">
+							<div class="img"><span class="hidden">은행/카드 이미지</span></div>
+							<div class="text"><span class="title">대구계좌</span><span>100******1234</span></div>
+							<button class="delete">삭제</button>
+						</li>
+						<li class="type20">
+							<div class="img"><span class="hidden">은행/카드 이미지</span></div>
+							<div class="text"><span class="title">산림조합</span><span>100******1234</span></div>
+							<button class="delete">삭제</button>
+						</li>
+						<li class="type21">
+							<div class="img"><span class="hidden">은행/카드 이미지</span></div>
+							<div class="text"><span class="title">토스뱅크</span><span>100******1234</span></div>
+							<button class="delete">삭제</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- E : A-Pay 관리 팝업 > 결제 수단 등록/삭제 팝업 -->
+
+<!-- S : 결제 수단 '삭제' 버튼 클릭 시 모달 -->
+<div class="layerWrapper popup_type_alert alert01" style="box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.2);">
+	<div class="cbox layerBox">
+		<div class="popup_contents">
+			<p class="txt">
+				삼성 카드를 삭제하면 다음 결제 시 다시 등록 해야 합니다. 삭제하시겠습니까?
+			</p>
+		</div>
+		<div class="popup_footer">
+			<button type="button" class="btn-cancel">유지</button>
+			<button type="button" class="bt-akl-blue next-phase">삭제</button>
+		</div>
+	</div>
+</div>
+<!-- E : 결제 수단 '삭제' 버튼 클릭 시 모달 -->
+<!-- E : [디파이 수정2] A pay 결제 관련 팝업 -->
+
+<div id="loadLayer6"></div>
+<div id="loadLayer7"></div>
+<script>
+    $(function() {
+		// 레이어 오픈 함수 호출
+		AMWAY.callLayer();
+
+		// S : [디파이 수정2] 210901 A Pay 관리 관련 팝업
+		$('.pop_a-pay').click(function(event) {
+			event.preventDefault();
+			layerPopOver(this,'.popup_a-pay_setting');
+		});
+		$('.pop_a-pay-add-delete').click(function(event) {
+			event.preventDefault();
+			layerPopOver(this,'.popup_a-pay-add-delete');
+		});
+		$('.payment-registered .lists .delete').click(function(event) {
+			event.preventDefault();
+			layerPopOver(this,'.alert01');
+            $('.alert01').css('background','rgba(0,0,0,0.2)');
+		});
+		
+		// E : [디파이 수정2] 210901 A Pay 관리 관련 팝업
+    });
+    $( '#loadLayer6' ).load( '/_ui/responsive/html/include/faq_customer.html'); //배송방법가이드
+
+	jQuery(function() {
+		//2019.02.21 아코디언 형태를 탭 형태로 변경, new.js 에 통합해야 함
+		var tabRoot = $('.tabs-transform').find('.tab-wrapper');
+		var tab = tabRoot.find('.tab-head').children('.amwa-radio');
+
+		tab.click(function() {
+			var $tab = $(this);
+			var $tabIdx = $tab.parent().index();
+			var $panel = $(this).parents('.tab-wrapper').find('.tab-body');
+
+			if ($(this).prop("checked", false)) {
+				$(this).prop("checked", true).attr('checked', 'checked');
+				$panel.eq($tabIdx).children('.tab-pane').removeClass('collapse');
+				$panel.not($panel.eq($tabIdx)).children('.tab-pane').addClass('collapse');
+			};
+		})
+		var carousel = $('#aPayCardSwiper');
+		carousel.owlCarousel({
+			center: true,
+			autoWidth: true,
+			loop: false,
+			nav: true,
+			dots: false,
+			margin: 16,
+			responsiveClass: true,
+			// responsive: {
+			// 	0:{
+			// 		items:3
+			// 	},
+			// 	600:{
+			// 		items: 3,
+			// 		stagePadding: 450
+			// 	},
+			// 	1000:{
+					
+			// 		items: 3,
+			// 		stagePadding: 450
+			// 	}
+			// }
+		});
+		// carousel.on('initialized.owl.carousel resized.owl.carousel', function() {
+		// 	console.log($(this));
+		// 	var carouselWidth = $(this).width();
+		// 	var owlInstance = $(this).data('owlCarousel');
+		// 	var imgsWidth = 0;
+		// 	$($(this).find('.owl-item').get().reverse()).each(function(i) {
+		// 		imgsWidth += $(this).width();
+		// 		if (imgsWidth > carouselWidth) {
+		// 			owlInstance.settings.items = i ? i : 1;
+		// 			$(this).trigger('refresh.owl.carousel');
+		// 			return false;
+		// 		}
+		// 	});                
+		// });
+		// cart floating
+		$('.cart_product-floating').uxePositionFix({
+			'ctrlTop': 20,
+			'useBottomLimit': true,
+			'bottomLimitSelector' : '#quick' //2020-03-20 modify
+		});
+	});
+</script>
+<style>
+	/* .owl-item { min-width: 100%; padding-left: 10px; padding-right: 10px;  } */
+	/* .owl-carousel { max-width: 960px; } */
+</style>
+</body>
+
+</html>
+<!-- E : [디파이 수정2] 신규 파일 : CAP2 A Pay 주문 결제 카드 등록 -->

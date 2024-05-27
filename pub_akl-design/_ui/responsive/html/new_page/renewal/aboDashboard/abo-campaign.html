@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>대시보드 | Amway Korea NEW</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords">
+    <meta name="description" content="NY Fee Bundle">
+    <meta name="robots" content="index,follow">
+
+	<!-- ABO Dashboard 용 css -->
+	<link rel="stylesheet" type="text/css" href="./css/abo.css">
+
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/common.js"></script>
+	<script src="./js/confetti.js"></script>
+</head>
+<body>
+	<div id="skipToContent">
+		<a href="#contents">콘텐츠 바로가기 </a>
+	</div>
+	<!-- main -->
+	<main>
+		<div id="dashBoardHeader" class="dashboard-header">
+			<div class="dashboard-header__inner">
+				<div class="dashboard-header__logo">
+					<span class="hidden">Hello Spring</span>
+				</div>
+				<h1 class="dashboard-header__title">신규 ABO 후원 장려 캠페인</h1>
+				<a href="#" class="dashboard-header__link">
+					<span class="logo">
+						<span class="hidden">Amway</span>
+					</span>
+					홈으로 >
+				</a>
+			</div>
+		</div>
+
+		<!-- contents -->
+		<div class="abo-dashboard">
+			<div class="month-area">
+				<button type="button" class="btn-prev"><span class="blind">이전</span></button>
+				<span class="month-value">2020.04</span>
+				<button type="button" class="btn-next"><span class="blind">다음</span></button>
+			</div>
+
+			<div class="main-dash_section">
+				<div class="chart-section">
+					<div class="chart-section__inner">
+						<svg viewBox="0 0 448 448" class="chart">
+							<linearGradient
+								id="strokeGradient"
+								x1="1"
+								y1="0"
+								x2="0.2"
+								y2="0"
+							>
+								<stop offset="0" style="stop-color:#f7be01"/>
+								<stop offset="1.0" style="stop-color:#178100;"/>
+							</linearGradient>
+							<circle
+								class="chart-ring"
+								cx="224"
+								cy="224"
+								r="210"
+								fill="transparent"
+								stroke="#eaeaea"
+								stroke-width="28"
+							></circle>
+
+							<!-- 달성 정도에 따라 data-per="50" 로 입력 -->
+							<circle
+								class="chart-segment chart-ring center"
+								data-per="50"
+								cx="224"
+								cy="224"
+								r="210"
+								fill="transparent"
+								stroke-width="28"
+								stroke-dasharray="0 0"
+								stroke="url(#strokeGradient)"
+								stroke-linecap="round"
+							></circle>
+							<!-- // 달성 정도에 따라 data-per="50" 로 입력 -->
+						</svg>
+
+						<div class="box-chart-data">
+							<div class="chart-txt">달성 조</div>
+							<div class="chart-data">5</div>
+							<button type="button" class="chart-button" data-layer="aboPopup">달성조건 보기</button>
+						</div>
+
+					</div>
+					<div class="goal-box">
+						<h4 class="goal-box__title">3월 목표 달성에 성공하셨습니다!</h4>
+						<p class="goal-box__description">
+							<span class="clicks-img"><span class="hidden">Clicks Money</span></span>
+							지급에 대한 내용은 추후 <br>맞춤메시지를 통해 안내 드리도록 하겠습니다.
+						</p>
+						<a href="#" class="goal-box__link">A Cliks Money 관리</a>
+					</div>
+				</div>
+				<div class="dashboard-info">
+					<div class="dashboard-info__title">
+						<h3 class="title">신규 ABO 후원 현황</h3>
+						<p class="description">* 신규가입 ABO의 구매실적 데이터는 다음 날 반영되며, 실시간 데이터를 확인하시려면 LOS MAP을 확인해주세요.</p>
+					</div>
+					<!-- 가입자 정보가 없을 경우 -->
+					<div class="dashboard-info__nodata">
+						<i class="no-data-icon"></i>
+						<p class="no-data-text">신규 ABO 가입자 정보가 없습니다.</p>
+					</div>
+					<!-- // 가입자 정보가 없을 경우 -->
+					<div class="dashboard-info__card">
+						<div class="dashboard-info__card-item">
+							<div class="card-inner">
+								<div class="title">
+									<span class="num">01</span>
+									<span class="name">홍길동</span>
+									<span class="account">(7023344***)</span>
+								</div>
+								<div class="result">
+									<div class="result__title">누적 구매금액</div>
+									<div class="result__summary">
+										<strong class="amount">20,000</strong>
+										<span class="currency">원</span>
+									</div>
+								</div>
+								<div class="graph">
+									<div class="graph__inner" style="width: 20%;"></div>
+								</div>
+								<button type="button" class="detail-button" data-layer="orderHistory">주문내역</button>
+							</div>
+						</div>
+
+						<div class="dashboard-info__card-item">
+							<div class="card-inner">
+								<div class="title">
+									<span class="num">02</span>
+									<span class="name">박**</span>
+									<span class="account">(7023344***)</span>
+								</div>
+								<div class="result">
+									<div class="result__title">누적 구매금액</div>
+									<div class="result__summary">
+										<strong class="amount">40,000</strong>
+										<span class="currency">원</span>
+									</div>
+								</div>
+								<div class="graph">
+									<div class="graph__inner" style="width: 40%;"></div>
+								</div>
+								<button type="button" class="detail-button" data-layer="orderHistory">주문내역</button>
+							</div>
+						</div>
+
+						<div class="dashboard-info__card-item">
+							<div class="card-inner">
+								<div class="title">
+									<span class="num">03</span>
+									<span class="name">박**</span>
+									<span class="account">(7023344***)</span>
+								</div>
+								<div class="result">
+									<div class="result__title">누적 구매금액</div>
+									<div class="result__summary">
+										<strong class="amount">60,000</strong>
+										<span class="currency">원</span>
+									</div>
+								</div>
+								<div class="graph">
+									<div class="graph__inner" style="width: 60%;"></div>
+								</div>
+								<button type="button" class="detail-button" data-layer="orderHistory">주문내역</button>
+							</div>
+						</div>
+
+						<div class="dashboard-info__card-item">
+							<!-- 누적 구매금액이 없을경우 none 추가 -->
+							<div class="card-inner none">
+								<div class="title">
+									<span class="num">04</span>
+									<span class="name">박**</span>
+									<span class="account">(7023344***)</span>
+								</div>
+								<div class="result">
+									<div class="result__title">누적 구매금액</div>
+									<div class="result__summary">
+										<strong class="amount">0</strong>
+										<span class="currency">원</span>
+									</div>
+								</div>
+								<div class="graph">
+									<div class="graph__inner" style="width: 0%;"></div>
+								</div>
+								<button type="button" class="detail-button" data-layer="orderHistory">주문내역</button>
+							</div>
+						</div>
+
+						<div class="dashboard-info__card-item">
+							<div class="card-inner">
+								<div class="title">
+									<span class="num">05</span>
+									<span class="name">박**</span>
+									<span class="account">(7023344***)</span>
+								</div>
+								<div class="result">
+									<div class="result__title">누적 구매금액</div>
+									<div class="result__summary">
+										<strong class="amount">50,000</strong>
+										<span class="currency">원</span>
+									</div>
+								</div>
+								<div class="graph">
+									<div class="graph__inner" style="width: 50%;"></div>
+								</div>
+								<button type="button" class="detail-button" data-layer="orderHistory">주문내역</button>
+							</div>
+						</div>
+
+						<div class="dashboard-info__card-item">
+							<div class="card-inner">
+								<div class="title">
+									<span class="num">06</span>
+									<span class="name">박**</span>
+									<span class="account">(7023344***)</span>
+								</div>
+								<div class="result">
+									<div class="result__title">누적 구매금액</div>
+									<div class="result__summary">
+										<strong class="amount">100,000</strong>
+										<span class="currency">원</span>
+									</div>
+								</div>
+								<div class="graph">
+									<div class="graph__inner" style="width: 100%;"></div>
+								</div>
+								<button type="button" class="detail-button" data-layer="orderHistory">주문내역</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 목표 달성시 style="display: block;" 추가 -->
+			<div class="abo-dimmed" style="display: block;">
+				<div class="dimmed-text">
+					3월 목표 달성에 <br>성공하셨습니다!
+				</div>
+			</div>
+			<!-- // 목표 달성시 style="display: block;" 추가 -->
+		</div>
+		<!-- //contents -->
+	</main>
+	<!-- //main -->
+
+	<div id="loadLayer1"></div>
+	<div id="loadLayer2"></div>
+
+	<!-- Dashboard 의 % 계산  -->
+	<script>
+		var segments = $(".chart-segment");
+        var firstSegmentOffset = parseInt($(segments[0]).attr("stroke-dashoffset"));
+        var preSegmentsTotalLength = $(segments[0]).data("per");
+
+        for (var i = 0; i < segments.length; i++) {
+			var progress = $(segments[i]).data("per");
+			var radian = 2 * Math.PI * $(segments[i]).attr('r');
+
+			progress = progress / 100;
+			progress = radian * (1 - progress);
+			var strokeDasharray = progress;
+
+			// console.log(
+			// 	'radian ', radian,
+			// 	'offset ', progress,
+			// 	progress / radian * 100 - 100,
+			// 	'percent ', $(segments[i]).data("per")
+			// )
+
+			$(segments[i]).css({
+				'strokeDasharray': radian,
+				'strokeDashoffset': progress,
+				// radian
+			});
+			if (i != 0) {
+				var strokeDashoffset = 100 - preSegmentsTotalLength + firstSegmentOffset;
+				$(segments[i]).css("stroke-dashoffset", strokeDashoffset);
+				preSegmentsTotalLength += percent;
+			}
+		}
+	</script>
+	<!-- // Dashboard 의 % 계산  -->
+
+	<!-- layer -->
+	<script>
+		$(function(){
+			AMWAY.callLayer();
+		});
+		$( '#loadLayer1').load('./order-history.html');// 주문내역
+		$( '#loadLayer2').load('./abo-popup.html');// 달성조건안내
+	</script>
+	<!-- // layer -->
+
+	<!-- 누적 구매금액 애니메이션 -->
+	<script>
+		function detectScroll() {
+			var graphTarget = document.querySelectorAll( '.card-inner' );
+			function showValue() {
+				var posY;
+				for (var i = 0; i < graphTarget.length; i++) {
+					posY = graphTarget[i].getBoundingClientRect().top;
+					if (posY < (window.innerHeight * 0.98)) {
+						graphTarget[i].classList.add( 'moving' );
+					}
+				}
+			}
+			showValue();
+			window.addEventListener( 'scroll', function () {
+				showValue();
+			} );
+		}
+		detectScroll();
+	</script>
+	<!-- // 누적 구매금액 애니메이션 -->
+
+	<!-- confetti -->
+	<script>
+		confetti.start()
+
+		setTimeout(function() {
+			confetti.stop()
+			confetti.remove()
+			$('.abo-dimmed').fadeOut()
+		}, 2000);
+	</script>
+	<!-- // confetti -->
+
+</body>
+</html>

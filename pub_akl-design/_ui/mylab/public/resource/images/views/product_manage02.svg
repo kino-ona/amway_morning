@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45.626" height="32" viewBox="0 0 45.626 32">
+  <g id="product_manage02" transform="translate(-63 -890.04)">
+    <g id="그룹_3590" data-name="그룹 3590" transform="translate(12.832 601.217)">
+      <circle id="타원_149" data-name="타원 149" cx="15.5" cy="15.5" r="15.5" transform="translate(56.709 289.323)" fill="#fff" stroke="#096a77" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="패스_22375" data-name="패스 22375" d="M102.55,325.634a10,10,0,1,1-10-10A10,10,0,0,1,102.55,325.634Z" transform="translate(-20.342 -20.737)" fill="#e8f8f8" stroke="#096a77" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <g id="그룹_3587" data-name="그룹 3587" transform="translate(50.314 290.611)">
+        <g id="그룹_3585" data-name="그룹 3585" transform="translate(0 0)">
+          <path id="패스_22376" data-name="패스 22376" d="M51.55,303.966v18.9H53.2v-4.869H55.92S55.565,304.662,51.55,303.966Z" transform="translate(-50.842 -303.966)" fill="#fff" stroke="#096a77" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <rect id="사각형_1619" data-name="사각형 1619" width="3.779" height="11.337" transform="translate(0.354 16.061)" fill="#2ed1a2" stroke="#096a77" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+      </g>
+      <g id="그룹_3589" data-name="그룹 3589" transform="translate(88.168 291.784)">
+        <path id="패스_22379" data-name="패스 22379" d="M162.358,307.288v6.133c0,.26.185.471-.075.471a.471.471,0,0,1-.471-.471v-6.144c-.359.006-.738.017-1.132.017s-.772-.011-1.131-.017v6.144a.471.471,0,0,1-.471.471c-.26,0-.075-.211-.075-.471v-6.133c-1.13.062-1.885.379-1.885,1.7v5a3.392,3.392,0,0,0,2.562,3.553.815.815,0,0,0-.06.292V332.2a1.071,1.071,0,0,0,2.121,0V317.832a.815.815,0,0,0-.06-.292,3.393,3.393,0,0,0,2.562-3.553v-5C164.243,307.667,163.487,307.35,162.358,307.288Z" transform="translate(-157.117 -307.277)" fill="#fff" stroke="#096a77" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <rect id="사각형_1621" data-name="사각형 1621" width="3.779" height="11.928" transform="translate(1.689 14.298)" fill="#2ed1a2" stroke="#096a77" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

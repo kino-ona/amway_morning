@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>POS Korea</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="/_ui/pos/assets/css/common.css">
+</head>
+<body>
+<!-- wrap -->
+<div id="wrap">
+    <!-- 상단 -->
+    <div id="header">
+        <div class="left">
+            <img src="/_ui/pos/assets/images/common/logo.png" alt="Amway">
+            <em>POS No. 강서</em>
+            <span>2018.02.05 17:16:19</span>
+        </div>
+        <div class="right">
+            <!-- 20180504 삭제 <button type="button" class="type01 dp01"><i class="ico_comm keyboard"></i>키보드</button> -->
+            <button type="button" class="type01 dp02"><span class="count">2</span>보류</button>
+            <button type="button" class="type02">근무종료</button>
+            <button type="button" class="type02">화면잠금</button>
+        </div>
+    </div>
+    <!-- //상단 -->
+    <!-- 본문 -->
+    <div id="container">
+        <!-- 좌측영역 -->
+        <div class="m_cont m_cont_v2"><!-- 20230407 A Cliks Money 결제 가능 영역 확대(m_cont_v2 클래스 추가) -->
+        	<!-- 20180724 수정 -->
+        	<div class="mc_top">
+	        	<!-- 공지사항 -->
+	            <dl class="notice">
+	                <dt class="tag01">공지사항</dt>
+	                <dd>3월 26일  시스템 점검 시스템 점검 시스템이 예정되어 있으니 업부에 착오 없으시길 바랍니다. 문의: 1588 - 0000</dd>
+	            </dl>
+	            <!-- //공지사항 -->
+	            <!-- 고객리스트 : 그룹결제시 노출  -->
+	            <div class="member_list">
+	                <span>
+	                    <button type="button" class="ico_comm prev02">이전</button>
+	                    <button type="button" class="ico_comm next02">다음</button>
+	                </span>
+	                <span>
+	                    <a href="#" class="on">홍길동</a>
+	                    <a href="#">박보검</a>
+	                    <a href="#">조쉬하트넷</a>
+	                </span>
+	            </div>
+	            <!-- //고객리스트 : 그룹결제시 노출 -->
+	            <!-- 중개판매표기 
+	            <div class="jg_number">
+	            	<span>BER NO. 2118724942</span>
+	            </div>
+	             //중개판매표기 -->
+            </div>
+            <!-- //20180724 수정 -->
+            <!-- 상품리스트 -->
+            <div class="section01">
+                <div class="list_wrap">
+                    <!-- 상품이 10개가 넘을 시 노출  -->
+                    <div class="paging">
+                        <button type="button" class="ico_comm prev01">이전</button>
+                        <button type="button" class="ico_comm next01">다음</button>
+                    </div>
+                    <!-- //상품이 10개가 넘을 시 노출  -->
+                    <div class="list click_add">
+                        <table>
+                        <caption>상품리스트</caption>
+                        <!-- 20180504 수정 -->
+                        <colgroup>
+                            <col style="width:50px">
+                            <col style="width:110px">
+                            <col>
+                            <col style="width:50px">
+                            <col style="width:100px">
+                            <col style="width:100px">
+                            <col style="width:100px">
+                        </colgroup>
+                        <!-- //20180504 수정 -->
+                        <thead>
+                            <tr>
+                                <th scope="col">No.</th>
+                                <th scope="col">상품코드</th>
+                                <th scope="col">상품명</th>
+                                <th scope="col">수량</th>
+                                <th scope="col">단가</th>
+                                <th scope="col">합계</th>
+                                <th scope="col">비고</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- 선택시 on클래스 추가 -->
+                            <tr class="on">
+                                <!-- 20180413수정 : 수량 1000 → 1,000 --><td>9,999</td><!-- //20180413수정 : 수량 1000 → 1,000 -->
+                                <td class="al">13213K122</td>
+                                <td class="al"><span class="elips">글리스터 리후레셔 스프레이 리후레셔 스프레이 스프레이 리후레셔 스프레이</span></td>
+                                <td>9,999</td>
+                                <td class="ar">999,999,999</td>
+                                <td class="ar">999,999,999</td>
+                                <td>증정품</td>
+                            </tr>
+                            <tr>
+                                <td>123</td>
+                                <td class="al">13213K122</td>
+                                <td class="al"><span class="elips">글리스터 리후레셔</span></td>
+                                <td>123</td>
+                                <td class="ar">0</td>
+                                <td class="ar">0</td>
+                                <td> - </td>
+                            </tr>
+                            <tr>
+                                <td>123</td>
+                                <td class="al">13213K122</td>
+                                <td class="al"><span class="elips">글리스터 리후레셔</span></td>
+                                <td>123</td>
+                                <td class="ar">0</td>
+                                <td class="ar">0</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>123</td>
+                                <td class="al">13213K122</td>
+                                <td class="al"><span class="elips">글리스터 리후레셔</span></td>
+                                <td>123</td>
+                                <td class="ar">0</td>
+                                <td class="ar">0</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>123</td>
+                                <td class="al">13213K122</td>
+                                <td class="al"><span class="elips">글리스터 리후레셔</span></td>
+                                <td>123</td>
+                                <td class="ar">0</td>
+                                <td class="ar">0</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>123</td>
+                                <td class="al">13213K122</td>
+                                <td class="al"><span class="elips">글리스터 리후레셔</span></td>
+                                <td>123</td>
+                                <td class="ar">0</td>
+                                <td class="ar">0</td>
+                                <td>
+                                	<div class="promotion_layer">
+                                		<button type="button" class="btn04_white">프로모션 내용</button>
+                                		<!-- 1 ~ 6줄까지는 아래로 뜨는 레이어 class="player" -->
+                                		<div class="player"><!-- 버튼 클릭시 open 클래스 -->
+                                			<div class="inner">
+                                			파이토 믹스 체리 구매 시 레몬향 증정 파이토 믹스 체리 구매 시 레몬향 증정 파이토 믹스 체리 구매 시 레몬향 증정 파이토 믹스 체리 구매 시 레몬향 증정 파이토 믹스 체리 구매 시 레몬향 증정 파이토 믹스 체리 구매 시 레몬향 증정
+                                			</div>
+                                			<button type="button" class="ico_comm lay_close01">닫기</button>
+                                		</div>
+                                	</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>123</td>
+                                <td class="al">13213K122</td>
+                                <td class="al"><span class="elips">글리스터 리후레셔</span></td>
+                                <td>123</td>
+                                <td class="ar">0</td>
+                                <td class="ar">0</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>123</td>
+                                <td class="al">13213K122</td>
+                                <td class="al"><span class="elips">글리스터 리후레셔</span></td>
+                                <td>123</td>
+                                <td class="ar">0</td>
+                                <td class="ar">0</td>
+                                <td>
+                                	<div class="promotion_layer">
+                                		<button type="button" class="btn04_white">프로모션 내용</button>
+                                		<!-- 7, 8줄은 위로 뜨는 레이어 class="player up" -->
+                                		<div class="player up"><!-- 버튼 클릭시 open 클래스 -->
+                                			<div class="inner">
+                                			파이토 믹스 체리 구매 시 레몬향 증정 파이토 믹스 체리 구매 시 레몬향 증정 파이토 믹스 체리 구매 시 레몬향 증정 파이토 믹스 체리 구매 시 레몬향 증정 파이토 믹스 체리 구매 시 레몬향 증정 파이토 믹스 체리 구매 시 레몬향 증정
+                                			</div>
+                                			<button type="button" class="ico_comm lay_close01">닫기</button>
+                                		</div>
+                                	</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- //상품리스트 -->
+
+            <!-- 회원정보 및 계산 -->
+            <div class="section02">
+                <div class="left">
+                    <!-- 검색영역 -->
+                    <div class="search_wrap">
+                        <div class="inner">
+                            <div class="tab">
+                                <!-- 선택시 on클래스 추가 -->
+                                <button type="button" class="on">회원</button>
+                                <button type="button">상품</button>
+                            </div>
+                            <div class="search">
+                                <input type="text">
+                                <button type="button" class="ico_comm search01">검색</button>
+                            </div>
+                        </div>
+                        <!-- 비회원 선택시 class="btn on" -->
+                        <button type="button" class="btn">비회원</button>
+                    </div>
+                    <!-- //검색영역 -->
+                    <!-- 회원정보 -->
+                    <div class="member_info">
+                    	<!-- 20180504 수정 -->
+                        <div class="info_top">
+                            <!-- 비회원시 삭제1 -->
+                            <em>CHITTENDEN&ADAIR 회원님</em>
+                            <span class="t01">7480000</span>
+                            <!-- 20189012 삭제<span class="t02">일반결제(복합)</span> -->
+                            <!-- //비회원시 삭제1 -->
+                        </div>
+                        <!-- //20180504 수정 -->
+                        <!-- S : 20230407 A Cliks Money 결제 가능 영역 확대 -->
+                        <div class="info_cont info_cont_v2">
+                            <div class="ic01">
+                                <!-- 비회원시 삭제2 -->
+                                <dl>
+                                    <dt>A Cliks Money</dt>
+                                    <dd>100,000,000,000원<br/><span>(당월 소멸예정 1,000,000원)</span></dd>
+                                </dl>
+                                <!-- //비회원시 삭제2 -->
+                            </div>
+                            <!-- 20180912 변경 -->
+                            <div class="ic02">
+                                <!-- 비회원시 삭제3 -->
+                                <!-- S : 20220708 A포인트로 변경 -->
+                                <dl>
+                                    <dt>A 포인트</dt>
+                                    <dd>1,984,876,055P</dd>
+                                </dl>
+                                <!-- E : 20220708 A포인트로 변경 -->
+                                <!-- //비회원시 삭제3 -->
+                            </div>
+                            <div class="ic04">
+                                <!-- 비회원시 삭제5 -->
+                               	 <dl>
+                                    <dt>Re_Cash</dt>
+                                    <dd>136,779,197원</dd>
+                                </dl>
+                                <!-- //비회원시 삭제5 -->
+                            </div>
+                            <!-- //20180912 변경 -->
+                            <div class="ic05">
+                                <dl>
+                                    <dt>사용가능 보유 쿠폰</dt>
+                                    <dd><a href="#">총42개</a></dd>
+                                </dl>
+                            </div>
+                            <!-- S : 20230531 수정 -->
+                            <div class="ic03 ic03_v1">
+                                <!-- 비회원시 삭제4 -->
+                                <ul>
+                                    <li class="credit">
+                                        <span>A Pay</span>
+                                        <em>0 <span>(할부 12개월)</span></em>
+                                    </li>
+                                    <li class="credit">
+                                        <span>신용카드</span>
+                                        <em>0 <span>(할부 12개월)</span></em>
+                                    </li>
+                                    <li>
+                                        <span>현금</span>
+                                        <em>0</em>
+                                    </li>
+                                    <li>
+                                        <span>A Cliks Money</span>
+                                        <em>0</em>
+                                    </li>
+                                    <!-- S : 20220708 멤버 포인트로 수정, A포인트 추가 -->
+                                    <!-- <li>
+                                        <span>멤버 포인트</span>
+                                        <em>34,000</em>
+                                    </li> -->
+                                    <li>
+                                        <span>A 포인트</span>
+                                        <em>0</em>
+                                    </li>
+                                    <!-- E : 20220708 멤버 포인트로 수정, A포인트 추가 -->
+                                    <!-- S : 20220708 Re-Cash 삭제 -->
+                                    <!-- <li>
+                                        <span>Re-Cash</span>
+                                        <em>0</em>
+                                    </li> -->
+                                    <!-- E : 20220708 Re-Cash 삭제 -->
+                                    <li>
+                                        <span>Re-Cash</span>
+                                        <em>0</em>
+                                    </li>
+                                    <li>
+                                        <span>자동이체</span>
+                                        <em>0</em>
+                                    </li>
+                                </ul>
+                                <!-- //비회원시 삭제4 -->
+                            </div>
+                            <!-- E : 20230531 수정 -->
+                        </div>
+                        <!-- E : 20230407 A Cliks Money 결제 가능 영역 확대 -->
+                    </div>
+                    <!-- //회원정보 -->
+                </div>
+                <div class="right">
+                    <ul class="calc01">
+                        <li>
+                            <span>총수량</span>
+                            <em>123</em>
+                        </li>
+                        <li>
+                            <span>할인금액</span>
+                            <em class="sale">122,000</em>
+                        </li>
+                        <li>
+                            <span class="t01">Total PV/BV</span>
+                            <em>645,000/635,000</em>
+                        </li>
+                    </ul>
+                    <ul class="calc02">
+                        <li>
+                            <span>결제금액</span>
+                            <em>3,579,800</em>
+                        </li>
+                        <li>
+                            <!-- 20180904 수정 --><span>받은금액</span><!-- //20180904 수정 -->
+                            <em>3,579,800</em>
+                        </li>
+                        <!-- 20180413 수정 : 거스름 → 거스름돈  -->
+                        <li>
+                            <span>거스름돈</span>
+                            <em>2,000</em>
+                        </li>
+                        <!-- //20180413 수정 : 거스름 → 거스름돈  -->
+                    </ul>
+                </div>
+            </div>
+            <!-- //회원정보 및 계산 -->
+
+        </div>
+        <!-- //좌측영역 -->
+
+        <!-- 우측영역 -->
+        <div class="m_right">
+            <!-- 20180413수정 : 메뉴변경 -->
+            <div class="nav">
+                <!-- 선택시 class="on" -->
+                <!-- 20180627 수정 : 통합결제로 변경 -->
+                <button type="button" class="blue on">통합결제</button> 
+                <!-- //20180627 수정 : 통합결제로 변경 -->
+                <button type="button">그룹주문</button>
+                <button type="button" class="disabled">픽업주문</button><!-- 픽업주문 비활성화시 class="disabled" -->
+                <button type="button">중개주문</button>
+                <!-- //선택시 class="on" -->
+                <button type="button">주문취소</button>
+                <button type="button" class="purple">프로모션 상품</button>
+                <button type="button">기타</button>
+            </div>
+            <!-- //20180413수정 : 메뉴변경 -->
+            <div class="promotion">
+            	<!-- 20180912 수정 -->
+                <ul class="img">
+                    <!-- 현재 활성화 이미지 on클래스 추가 -->
+                    <li class="on">
+                    	<div class="blue">
+                    		<span class="inner">
+		                		<span class="pro">Promotion</span>
+		                		<strong class="tit">[신규 ABO프로모션]</strong>
+		                		<span class="txt">더블엑스 상품은1+1 </span>
+		                	</span>
+	                	</div>
+                    	<div class="red">
+                    		<span class="inner">
+		                		<span class="pro">Promotion</span>
+		                		<strong class="tit">[신규 ABO프로모션신규 ABO프로모션신규 ABO프로모션]</strong>
+		                		<span class="txt">더블엑스 상품은 2018.02.05~ 02.28 까지 1+1 증정 진행 중입니다.많은 참여 바랍니다.</span>
+		                	</span>
+	                	</div>
+                    </li>
+                    <li>
+                    	<div class="green">
+                    		<span class="inner">
+		                		<span class="pro">Promotion</span>
+		                		<strong class="tit">[신규 ABO프로모션신규 ABO프로모션신규 ABO프로모션]</strong>
+		                		<span class="txt">더블엑스 상품은 2018.02.05~ 02.28 까지 1+1 증정 진행 중입니다.많은 참여 바랍니다.</span>
+		                	</span>
+	                	</div>
+                    	<div class="blue">
+                    		<span class="inner">
+		                		<span class="pro">Promotion</span>
+		                		<strong class="tit">[신규 ABO프로모션신규 ABO프로모션신규 ABO프로모션]</strong>
+		                		<span class="txt">더블엑스 상품은 2018.02.05~ 02.28 까지 1+1 증정 진행 중입니다.많은 참여 바랍니다.</span>
+		                	</span>
+	                	</div>
+                    </li>
+                </ul>
+                <!-- //20180912 수정 -->
+                <span class="controls">
+                    <a href="#" class="bx_prev">이전</a>
+                    <a href="#" class="bx_next">다음</a>
+                </span>
+                <span class="pager">
+                    <!-- 현재 활성화 이미지 번호 on클래스 추가 -->
+                    <span class="on">1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>6</span>
+                    <span>7</span>
+                    <span>8</span>
+                </span>
+            </div>
+        </div>
+        <!-- //우측영역 -->
+    </div>
+    <!-- //본문 -->
+</div>
+<!-- //wrap -->
+</body>
+</html>

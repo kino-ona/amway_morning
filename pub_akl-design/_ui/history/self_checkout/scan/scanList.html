@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Amway</title>
+        <link rel="stylesheet" href="../res/css/reset.css">
+        <link rel="stylesheet" href="../res/css/base.css">
+        <link rel="stylesheet" href="../res/css/layout.css">
+        <link rel="stylesheet" href="../res/css/plugins/swiper.min.css">
+        <script src="../res/js/plugins/jquery-3.6.0.min.js"></script>
+        <script src="../res/js/plugins/swiper.min.js"></script>
+        <script src="../res/js/common.js"></script>
+        <script src="../res/js/scan.js"></script>
+    </head>
+    <body>
+
+        <div id="wrap">
+            <header>
+                <div class="header-scan">
+                    <img src="../res/image/logo_amway_small.png" class="logo">
+                    <ul class="pay-process">
+                        <li>제품스캔</li>
+                        <li>결제진행</li>
+                        <li>결제완료</li>
+                    </ul>
+                
+                    <div class="btn-box">
+                        <button class="btn-cancel">구매 취소하기</button>
+                        <button class="btn-call-staff">직원 호출하기</button>
+                    </div>
+                </div>
+            </header>
+
+            <div class="container">
+
+                <div class="scan-wr">
+                    <div class="scan-left-sec">
+                        <div class="img-scan-info01">
+                            <img src="../res/image/img_scanner.png" />
+                        </div>
+                        <div class="img-scan-info02">
+
+                        </div>
+                    </div>
+
+                    <div class="scan-right-sec">
+                        <div class="scan-member"> 반갑습니다!
+                            <!-- S : 20211215 공백추가 -->
+                            <span class="member-name">&nbsp;김*연 회원님</span>
+                            <strong class="member-number">&nbsp;7001234567</strong>
+                            <!-- E : 20211215 공백추가 -->
+                            <button type="button" class="button">
+                                적용된 프로모션
+                            </button>
+                        </div>
+
+                        <div class="scan-list">
+                            <div class="list-th">
+                                <span class="prd-num">No.</span>
+                                <span class="prd-code">제품코드</span>
+                                <span class="prd-name">상품명</span>
+                                <span class="prd-promo"></span>
+                                <span class="prd-qt">수량</span>
+                                <span class="prd-price">단가</span>
+                                <span class="prd-total">합계</span>
+                            </div>
+
+                            <div class="scan-cont swiper-container">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <span class="prd-num">01</span>
+                                        <span class="prd-code">1234KFH</span>
+                                        <span class="prd-name">글리스터 리후레셔 스프레이</span>
+                                        <span class="prd-promo"></span>
+                                        <span class="prd-qt">2</span>
+                                        <span class="prd-price">35,000</span>
+                                        <span class="prd-total">70,000</span>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <span class="prd-num">02</span>
+                                        <span class="prd-code">1234KFH</span>
+                                        <span class="prd-name">더블엑스 1+1</span>
+                                        <span class="prd-promo"><button type="button" class="btn-view-promotion btn-open-pop">프로모션</button></span>
+                                        <span class="prd-qt">2</span>
+                                        <span class="prd-price">35,000</span>
+                                        <span class="prd-total">70,000</span>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <span class="prd-num">03</span>
+                                        <span class="prd-code">1234KFH</span>
+                                        <span class="prd-name">아티스트리 시그니처 셀렉트 퍼스널 더블엑스</span>
+                                        <span class="prd-promo"><button type="button" class="btn-view-promotion btn-open-pop">프로모션</button></span>
+                                        <span class="prd-qt">2</span>
+                                        <span class="prd-price">35,000</span>
+                                        <span class="prd-total">70,000</span>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <span class="prd-num">04</span>
+                                        <span class="prd-code">1234KFH</span>
+                                        <span class="prd-name">파이토 믹스 체리향</span>
+                                        <span class="prd-promo"></span>
+                                        <span class="prd-qt">2</span>
+                                        <span class="prd-price">35,000</span>
+                                        <span class="prd-total">70,000</span>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <span class="prd-num">05</span>
+                                        <span class="prd-code">1234KFH</span>
+                                        <span class="prd-name">펌프 디스펜서 화이트 블랙베리</span>
+                                        <span class="prd-promo"></span>
+                                        <span class="prd-qt">2</span>
+                                        <span class="prd-price">35,000</span>
+                                        <span class="prd-total">70,000</span>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <span class="prd-num">06</span>
+                                        <span class="prd-code">1234KFH</span>
+                                        <span class="prd-name">글리스터 리후레셔 스프레이</span>
+                                        <span class="prd-promo"></span>
+                                        <span class="prd-qt">2</span>
+                                        <span class="prd-price">35,000</span>
+                                        <span class="prd-total">70,000</span>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <span class="prd-num">07</span>
+                                        <span class="prd-code">1234KFH</span>
+                                        <span class="prd-name">더블엑스 1+1</span>
+                                        <span class="prd-promo"></span>
+                                        <span class="prd-qt">2</span>
+                                        <span class="prd-price">35,000</span>
+                                        <span class="prd-total">70,000</span>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <span class="prd-num">08</span>
+                                        <span class="prd-code">1234KFH</span>
+                                        <span class="prd-name">아티스트리 시그니처 셀렉트 퍼스널 더블엑스</span>
+                                        <span class="prd-promo"></span>
+                                        <span class="prd-qt">2</span>
+                                        <span class="prd-price">35,000</span>
+                                        <span class="prd-total">70,000</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="scan-list-bt">
+                                <p class="scan-noti">* 제품 수량변경 및 삭제는 직원을 호출해주세요.</p>
+                                <div>
+                                    <div class="swiper-count">
+                                    </div>
+                                    <!-- If we need pagination -->
+                                    <div class="swiper-pagination"></div>
+                                    <!-- If we need navigation buttons -->
+                                    <div class="swiper-btn">
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- scan-list -->
+
+                        <div class="scan-result">
+                            <div class="summary-box">
+                                <ul>
+                                    <li>
+                                        <span>제품수량</span>
+                                        <strong class="sum-qt">10</strong>
+                                    </li>
+                                    <li>
+                                        <span>총 금액</span>
+                                        <strong class="sum-price">350,000</strong>
+                                    </li>
+                                    <li>
+                                        <span>할인 금액</span>
+                                        <strong class="sum-dc">-50,000
+                                            <button type="button" class="btn-view-coupon btn-open-pop">보유쿠폰 <span>5</span></button>
+                                        </strong>
+                                    </li>
+                                    <li>
+                                        <span>총 PV/BV</span>
+                                        <strong>70,000 / 60.000</strong>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="total-box">
+                                <div class="total-price">
+                                    <span>결제금액</span>
+                                    <strong>300,000</strong>
+                                </div>
+                                <button class="btn-cm btn-pay">결제하기</button>
+                            </div>
+                        </div>
+
+                    </div> <!-- scan-right-sec -->
+                </div> <!-- scan-wr -->
+
+            </div> <!-- container -->
+        </div> <!-- wrap -->
+
+    </body>
+</html>

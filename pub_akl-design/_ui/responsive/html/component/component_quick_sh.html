@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>component group cart</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords">
+	<meta name="description" content="NY Fee Bundle">
+	<meta name="robots" content="index,follow">
+
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-lib.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/base.css">
+	<!-- 코어제공 -->
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/sprint.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-customer.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-shop.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-sop.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-account.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-business.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-product.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-brand.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common-v2.css"><!-- 말줄임 css수정 : 2019.11.18 추가  -->
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-account.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common-new.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-product-renewal.css">
+
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.datepicker.js"></script><!-- datepicker : 2018.03.19 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/owl.carousel.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/isotope.pkgd.js"></script><!-- gnb 플러그인 : 2018.03.23 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/select2.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/new.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.raty.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_contents.js"></script><!-- brand 통합 : 2018.08.24 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_component.js"></script>
+	<style>
+		body {padding:20px}
+		.top-area {background-color:#002f5f;margin:-20px -20px 0;padding:20px 20px 15px}
+		.top-area p {text-align:center;color:#fff;font-size:30px}
+		.tabs ul li {float:left}
+		.tabs ul li a {position:relative;z-index:2;display:block;text-align:center;height:35px;width:35px;line-height:35px;font-weight:bold;color:#fff;font-size:13px;position:relative;font-family:'verdana';border-radius:50%;background-color:#253981}
+		.tabs ul li ~ li {margin:0 0 0 5px}
+		.tabs ul li a.active {z-index:3;background-color:#02cfdf}
+		.tabs ul li a.active span {display:block}
+		.tabs ul li a span {display:none;position:absolute;left:50%;top:30px;margin-left:-38px;width:76px;color:#333;background-color:#ffffff;border:1px solid #46675c;height:20px;line-height:18px;padding:0;border-radius:10px;white-space:nowrap;font-weight:normal;font-size:11px}
+
+		.h1 {padding-left:10px;font-weight:bold;font-size:18px;color:#000;margin-bottom:10px;font-family:'verdana'}
+		.h1 ~ .h1 {margin-top:50px}
+		.h2 {background-color:#f1f1f1;margin:0 -20px 10px -20px;height:30px;line-height:30px;padding:0 20px;font-weight:bold;font-size:14px}
+		.box_wrap {border:1px solid #ddd;padding:0 20px 0 20px;background-color:#fff}
+		.type_view {padding-bottom:20px}
+		.type_view .sbt {margin-bottom:5px;color:#333}
+		.type_view .sbt ~ .sbt {margin-top:10px}
+		.type_view.btn_view button {margin-right:20px}
+		.type_view > .checkbox, .type_view > .radio {margin-right:15px}
+		.spinor_area ~ .spinor_area {margin-top:10px}
+
+		@media (max-width:700px) {
+			.tabs .logo {display:none}
+			.list_box_wrap {min-width:320px;padding:0 10px 10px 10px}
+			.h1 {padding-left:0}
+			.h2 {margin:0 0 10px 0;padding:0 10px}
+			.box_wrap {border:1px solid #ddd;border-left:none;border-right:none;padding:0;margin:0 -20px}
+		}
+	</style>
+</head>
+<body class="akl ">
+	<div class="top-area">
+		<p>COMPONENT QUICK SEARCH GUIDE</p>
+	</div>
+	<p class="h1">Quick Search</p>
+	<div class="box_wrap">
+		<p class="h2">Basic</p>
+		<div class="type_view">
+			<div class="row cart-content-wrapper">
+				<!-- S : component area -->
+				<div class="account-section-content new-account-section-content quick_sh-renewal"><!-- D : 2020 cart renewal - [quick_sh-renewal] class add -->
+					<div class="akl-toggle-wrap sort-order">
+						<div class="panel-group accordion-custom" role="tablist" aria-multiselectable="true">
+							<div class="panel">
+								<div class="panel-heading" role="tab" id="quickShop">
+									<a  href="#down1" role="button" data-toggle="collapse" data-parent="#quickShopAccordion" aria-controls="quickShopBody" class="">
+										<div class="panel-title">
+											<img src="/_ui/responsive/theme-blue/images/shopping-cart-icon.png" alt="cart" class="cart-header__cart-icon" />
+											<span class="text-uppercase accordion-header-text">빠른 제품 검색</span>
+											<!-- S : 2020 cart renewal -->
+											<i class="icon_accordion"></i>
+											<!-- E : 2020 cart renewal -->
+										</div>
+									</a>
+								</div>
+								<div id="down1" class="panel-collapse applicants-panel collapse in" role="tabpanel" aria-labelledby="headingOne">
+									<div class="panel-body quick_sh-contents renewal-fonts"><!-- D : 2020-03-17 modify - [quick_sh-contents renewal-fonts] class add -->
+										<div id="quickShopForm" class="item_quick_sch_area">
+											<div class="item-name-container">
+												<label class="js-sku-input-field-label sku-input-field-label" for="name-vps">제품명 또는 VPS 입력</label>
+												<div class="inp-button">
+													<div class="form-s">
+														<input type="text" id="name-vps" name="" value="" class="input-st inp_item_quick_sch">
+														<!-- S : 2020 cart renewal [i] tag add -->
+														<button type="submit" class="btn_basic-b" id="Cart_Search"><i class="sp_button sp_button-sh"></i>검색</button>
+														<!-- E : 2020 cart renewal [i] tag add -->
+													</div>
+												</div>
+											</div>
+											<div class="add-item-container os_listNew_btn_reset">
+												<button type="button" class="btn_basic-d" id="quickSearchReset">검색초기화</button>
+											</div>
+											<!--search suggest-->
+											<div class="popover item-suggestion-popover fade bottom in" role="tooltip" id="">
+												<div class="popover-content-akl">
+													<div class="popover-content">
+														<button class="search-results-close">x</button>
+														<div>
+															<ul class="category-wrapper js-category-wrapper suggested-words-wrapper js-suggested-words-wrapper js-search-words-wrapper">
+																<li class="ui-menu-item">
+																	<a href="#">
+																		<div class="name">
+																			<span class="js-name"></span>
+																			<span class="js-start-of-name"></span>
+																			<span class="bold js-highlited-part-of-name">테스트</span>
+																		</div>
+																	</a>
+																</li>
+																<li class="ui-menu-item">
+																	<a href="#">
+																		<div class="name">
+																			<span class="js-name"></span>
+																			<span class="js-start-of-name"></span>
+																			<span class="bold js-highlited-part-of-name">아티스트리</span>
+																			<span class="js-rest-of-name">에센셜</span>
+																		</div>
+																	</a>
+																</li>
+																<li class="ui-menu-item">
+																	<a href="#">
+																		<div class="name">
+																			<span class="js-name"></span>
+																			<span class="js-start-of-name"></span>
+																			<span class="bold js-highlited-part-of-name">아티스트리</span>
+																			<span class="js-rest-of-name">뉴 쇼핑백</span>
+																		</div>
+																	</a>
+																</li>
+																<li class="ui-menu-item">
+																	<a href="#">
+																		<div class="name">
+																			<span class="js-name"></span>
+																			<span class="js-start-of-name"></span>
+																			<span class="bold js-highlited-part-of-name">아티스트리</span>
+																			<span class="js-rest-of-name">딥 클렌징 마스크</span>
+																		</div>
+																	</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!--search end-->
+										</div>
+										<div class="shoping-cart-search" style="display:block"> <!-- 확인을 위해 강제로 열어둠 -->
+											<div class="container-fluid main-container quick-area os_listNew_quick">
+												<!-- S : 2020 cart renewal -->
+												<p class="txt_sh-title">"12" 검색결과 00 건</p>
+												<div class="box_product product_list-type">
+													<!-- S : product_item(회원) -->
+													<div class="product_item">
+														<div class="product_col-form">
+															<span class="form_element-checkbox no_label">
+																<input type="checkbox" id="checkbox1">
+																<label for="checkbox1" class="sp_chk focus">선택</label>
+															</span>
+														</div>
+														<div class="product_col-summery">
+															<div class="box_product-summery">
+																<div class="summery_col-thumb"><a href="" class="link_product"><img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png"></a></div>
+																<div class="summery_col-info">
+																	<a href="" class="link_product">
+																		<div class="flag_wrap">
+																			<span class="flag_item-new">신제품</span>
+																		</div>
+																		<div class="product_text-data">
+																			<p class="text_product-title">하이드라-브이 쉬어 라이트 파운데이션 [SPF15, PA++] - 샤블리 </p>
+																			<div class="box_product-info">
+																				<div class="product_sub-data">
+																					<div class="sub_data-title">VPS / SKU</div>
+																					<div class="sub_data-contents">2002 / 294460L</div>
+																				</div>
+																				<div class="product_sub-data">
+																					<div class="sub_data-title">PV / BV</div>
+																					<div class="sub_data-contents">940,090,000 / 148,100,000</div>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="text_product-price">
+																			<div class="price_title">가격</div>
+																			<div class="price_contents"><span class="text_price-data">10,220,000</span>원</div>
+																		</div>
+																	</a>
+																	<div class="box_spinor box_spinor-mobile">
+																		<div class="spinor_area">
+																			<button type="button" class="btn_spinor-minus"><span class="txt_hide">감소</span></button>
+																			<button type="button" class="btn_spinor-plus"><span class="txt_hide">증가</span></button>
+																			<input type="text" class="form_input">
+																		</div>
+																		<button type="button" class="btn_basic-e">담기</button>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="product_col-spinor">
+															<div class="box_buttons">
+																<div class="btn_area">
+																	<span class="btn_col"><button type="button" class="btn_basic-b">담기</button></span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<!-- E : product_item(회원) -->
+													<!-- S : product_item(SOP) -->
+													<div class="product_item">
+														<div class="product_col-form">
+															<span class="form_element-checkbox no_label">
+																<input type="checkbox" id="checkbox3">
+																<label for="checkbox3" class="sp_chk focus">선택</label>
+															</span>
+														</div>
+														<div class="product_col-summery">
+															<div class="box_product-summery">
+																<div class="summery_col-thumb"><a href="" class="link_product"><img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png"></a></div>
+																<div class="summery_col-info">
+																	<a href="" class="link_product">
+																		<div class="flag_wrap">
+																			<span class="flag_item-smart">스마트오더</span>
+																		</div>
+																		<div class="product_text-data">
+																			<p class="text_product-title">하이드라-브이 쉬어 라이트 파운데이션 [SPF15, PA++] - 샤블리 </p>
+																			<div class="box_product-info">
+																				<div class="product_sub-data">
+																					<div class="sub_data-title">VPS / SKU</div>
+																					<div class="sub_data-contents">2002 / 294460L</div>
+																				</div>
+																				<div class="product_sub-data">
+																					<div class="sub_data-title">PV / BV</div>
+																					<div class="sub_data-contents">940,090,000 / 148,100,000</div>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="text_product-price">
+																			<div class="price_title">가격</div>
+																			<div class="price_contents"><span class="text_price-data">10,220,000</span>원</div>
+																		</div>
+																	</a>
+																	<div class="box_spinor box_spinor-mobile">
+																		<button type="button" class="btn_basic-e">담기</button>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="product_col-spinor">
+															<div class="box_buttons">
+																<div class="btn_area">
+																	<span class="btn_col"><button type="button" class="btn_basic-b">담기</button></span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<!-- E : product_item(SOP) -->
+													<!-- S : product_item(품절) -->
+													<div class="product_item">
+														<div class="product_col-form">
+															<span class="form_element-checkbox no_label">
+																<input type="checkbox" id="checkbox5" disabled>
+																<label for="checkbox5" class="sp_chk focus">선택</label>
+															</span>
+														</div>
+														<div class="product_col-summery">
+															<div class="box_product-summery">
+																<div class="summery_col-thumb"><a href="" class="link_product"><img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png"></a></div>
+																<div class="summery_col-info">
+																	<a href="" class="link_product">
+																		<div class="flag_wrap">
+																			<span class="flag_item-soldout">일시품절</span>
+																		</div>
+																		<div class="product_text-data">
+																			<p class="text_product-title">하이드라-브이 쉬어 라이트 파운데이션 [SPF15, PA++] - 샤블리 </p>
+																			<div class="box_product-info">
+																				<div class="product_sub-data">
+																					<div class="sub_data-title">VPS / SKU</div>
+																					<div class="sub_data-contents">2002 / 294460L</div>
+																				</div>
+																				<div class="product_sub-data">
+																					<div class="sub_data-title">PV / BV</div>
+																					<div class="sub_data-contents">940,090,000 / 148,100,000</div>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="text_product-price">
+																			<div class="price_title">가격</div>
+																			<div class="price_contents"><span class="text_price-data">10,220,000</span>원</div>
+																		</div>
+																	</a>
+																	<div class="box_spinor box_spinor-mobile">
+																		<button type="button" class="btn_basic-e" disabled>담기</button>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="product_col-spinor">
+															<div class="box_buttons">
+																<div class="btn_area">
+																	<span class="btn_col"><button type="button" class="btn_basic-b" disabled>담기</button></span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<!-- E : product_item(품절) -->
+												</div>
+												<div class="row">
+													<div class="col-xs-12 btn-area">
+														<button type="button" class="btn_basic-b">선택담기</button>
+														<button type="button" class="btn_basic-d btnClosed">검색 결과 닫기</button>
+													</div>
+												</div>
+												<!-- E : 2020 cart renewal -->
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- E : component area -->
+			</div>
+		</div>
+		<p class="h2">Basic(결과 없을 경우)</p>
+		<div class="type_view">
+			<div class="row cart-content-wrapper">
+				<!-- S : component area -->
+				<div class="account-section-content new-account-section-content quick_sh-renewal"><!-- D : 2020 cart renewal - [quick_sh-renewal] class add -->
+					<div class="akl-toggle-wrap sort-order">
+						<div class="panel-group accordion-custom" role="tablist" aria-multiselectable="true">
+							<div class="panel">
+								<div class="panel-heading" role="tab" id="quickShop2">
+									<a  href="#down2" role="button" data-toggle="collapse" data-parent="#quickShopAccordion" aria-controls="quickShopBody" class="">
+										<div class="panel-title">
+											<img src="/_ui/responsive/theme-blue/images/shopping-cart-icon.png" alt="cart" class="cart-header__cart-icon" />
+											<span class="text-uppercase accordion-header-text">빠른 제품 검색</span>
+											<!-- S : 2020 cart renewal -->
+											<i class="icon_accordion"></i>
+											<!-- E : 2020 cart renewal -->
+										</div>
+									</a>
+								</div>
+								<div id="down2" class="panel-collapse applicants-panel collapse in" role="tabpanel" aria-labelledby="headingOne">
+									<div class="panel-body quick_sh-contents"><!-- D : 2020 cart renewal - [quick_sh-contents] class add -->
+										<div id="quickShopForm" class="item_quick_sch_area">
+											<div class="item-name-container">
+												<label class="js-sku-input-field-label sku-input-field-label" for="name-vps">제품명 또는 VPS 입력</label>
+												<div class="inp-button">
+													<div class="form-s">
+														<input type="text" id="name-vps" name="" value="" class="input-st inp_item_quick_sch">
+														<!-- S : 2020 cart renewal [i] tag add -->
+														<button type="submit" class="btn_basic-b" id="Cart_Search"><i class="sp_button sp_button-sh"></i>검색</button>
+														<!-- E : 2020 cart renewal [i] tag add -->
+													</div>
+												</div>
+											</div>
+											<div class="add-item-container os_listNew_btn_reset">
+												<button type="button" class="btn_basic-d" id="quickSearchReset">검색초기화</button>
+											</div>
+											<!--search suggest-->
+											<div class="popover item-suggestion-popover fade bottom in" role="tooltip" id="">
+												<div class="popover-content-akl">
+													<div class="popover-content">
+														<button class="search-results-close">x</button>
+														<div>
+															<ul class="category-wrapper js-category-wrapper suggested-words-wrapper js-suggested-words-wrapper js-search-words-wrapper">
+																<li class="ui-menu-item">
+																	<a href="#">
+																		<div class="name">
+																			<span class="js-name"></span>
+																			<span class="js-start-of-name"></span>
+																			<span class="bold js-highlited-part-of-name">테스트</span>
+																		</div>
+																	</a>
+																</li>
+																<li class="ui-menu-item">
+																	<a href="#">
+																		<div class="name">
+																			<span class="js-name"></span>
+																			<span class="js-start-of-name"></span>
+																			<span class="bold js-highlited-part-of-name">아티스트리</span>
+																			<span class="js-rest-of-name">에센셜</span>
+																		</div>
+																	</a>
+																</li>
+																<li class="ui-menu-item">
+																	<a href="#">
+																		<div class="name">
+																			<span class="js-name"></span>
+																			<span class="js-start-of-name"></span>
+																			<span class="bold js-highlited-part-of-name">아티스트리</span>
+																			<span class="js-rest-of-name">뉴 쇼핑백</span>
+																		</div>
+																	</a>
+																</li>
+																<li class="ui-menu-item">
+																	<a href="#">
+																		<div class="name">
+																			<span class="js-name"></span>
+																			<span class="js-start-of-name"></span>
+																			<span class="bold js-highlited-part-of-name">아티스트리</span>
+																			<span class="js-rest-of-name">딥 클렌징 마스크</span>
+																		</div>
+																	</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!--search end-->
+										</div>
+										<div class="shoping-cart-search" style="display:block"> <!-- 확인을 위해 강제로 열어둠 -->
+											<div class="box_not-result">
+												<p class="txt_not-result">“xxxxxxx” 검색결과가 없습니다.</p>
+												<p class="txt_re-search">입력하신 내용을 확인 후 다시 검색해 보세요.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- E : component area -->
+			</div>
+		</div>
+	</div>
+	<script>
+		$(function() {
+			//2019-06-03 빠른제품검색 최근검색어
+			showItemSuggestion();
+
+			$(".btnClosed").click(function() {
+				$(".shoping-cart-search").hide();
+			});
+		});
+
+		//2019-06-03 빠른제품검색 최근검색어
+		function showItemSuggestion() {
+			var itemQuickSch = $('.item_quick_sch_area');
+			var inpSchWord = itemQuickSch.find('.inp_item_quick_sch');
+			var layerSchItemList = itemQuickSch.find('.item-suggestion-popover');
+			var btnCloseLayer = layerSchItemList.find('.search-results-close');
+			var setFunc;
+
+			inpSchWord.bind({
+				'focus' : function(e){
+					layerSchItemList.show();
+					/* 2019-06-07 : 아코디언 안에 있을 경우 추가 */
+					if ( $(this).closest('.panel-body.product-detail').length > 0 ) {
+						$(this).closest('.panel-body.product-detail').css('overflow', 'visible');
+					}
+				},
+				'blur' : function(e){
+					layerSchItemList.hide();
+					/* 2019-06-07 : 아코디언 안에 있을 경우 추가 */
+					if ( $(this).closest('.panel-body.product-detail').length > 0 ) {
+						$(this).closest('.panel-body.product-detail').css('overflow', '');
+					}
+				}
+			});
+		}
+	</script>
+</body>
+</html>

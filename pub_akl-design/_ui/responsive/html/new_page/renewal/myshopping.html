@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>나의 주문내역 상세정보 | ABN Korea</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords">
+	<meta name="description" content="NY Fee Bundle">
+	<meta name="robots" content="index,follow">
+
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-lib.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/base.css">
+
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/sprint.css">
+
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-customer.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-shop.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-sop.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-account.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-business.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-product.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-brand.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common-new.css">
+
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/content_res_all.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common-v2.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common-new-v2.css">
+
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-product-renewal.css">
+
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.datepicker.js"></script><!-- datepicker : 2018.03.19 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/owl.carousel.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/isotope.pkgd.js"></script><!-- gnb 플러그인 : 2018.03.23 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/select2.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/new.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.raty.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_contents.js"></script><!-- brand 통합 : 2018.08.24 추가  -->
+</head>
+<body class="akl new-v2">
+<!-- skipToContent -->
+<div id="skipToContent">
+	<a href="#contents">콘텐츠 바로가기 </a>
+</div>
+<!-- //skipToContent -->
+
+<main>
+	<div id="header"></div>
+	<!-- s: 2020 연계화면 리뉴얼 -->
+	<div class="sub-nav-section">
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="#;">홈</a></li>
+				<li>마이페이지</li>
+				<li>마이쇼핑정보</li>
+				<li>마이쇼핑</li>
+			</ol>
+			<div class="locationBox">
+				<ul id="locationBoxList">
+					<li class="active" data-taggingid="마이쇼핑"><a href="">마이쇼핑</a></li>
+					<li data-taggingid="반품내역"><a href="">반품내역</a></li>
+					<li data-taggingid="마이팩"><a href="">마이팩</a></li>
+					<li data-taggingid="위시리스트"><a href="">위시리스트</a></li>
+					<li data-taggingid="제품구매 예약"><a href="">제품구매 예약</a></li>
+					<li data-taggingid="중개판매 관리"><a href="">중개판매 관리</a></li>
+					<li data-taggingid="쿠폰 및 구매권한 양도/양수"><a href="">쿠폰 및 구매권한 양도/양수</a></li>
+					<li data-taggingid="정기주문&amp;스마트오더 내역"><a href="">정기주문&amp;스마트오더 내역</a></li>
+					<li data-taggingid="배송지 및 주문알림 관리"><a href="">배송지 및 주문알림 관리</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- E: 2020 연계화면 리뉴얼 -->
+
+	<!-- 마이쇼핑 -->
+	<div class="container amway-theme renewal-fonts"> <!-- s: 2020 연계화면 리뉴얼 renewal-fonts class add -->
+		<div class="my_shopping_wrap renewal_my-shopping">
+			<h1 class="title-h1">마이쇼핑</h1>
+			<!-- S : 2020-06-05 modify -->
+			<div class="box-my-summary">
+				<div class="summary-item">
+					<a href="" class="link-my">
+						<span class="txt-summary"><i class="sp_ico sp_point"></i>A포인트</span>
+						<span class="txt-content"><span class="txt-value">997,687,812</span>P</span>
+					</a>
+					<a href="" class="link-my">
+						<span class="txt-summary"><i class="sp_ico sp_coupon"></i>보유쿠폰</span>
+						<span class="txt-content type-a"><span class="txt-value">300</span>장</span>
+					</a>
+				</div>
+				<div class="box-often-buy">
+					<a href="" class="link-buy">
+						<p class="link-txt">
+							<i class="sp_ico sp_often-buy"></i>
+							<span class="link-txt-point">자주 구매 제품</span>
+							자주 구매한 제품을 확인하세요!
+						</p>
+						<i class="sp_ico sp_link-blt"></i>
+					</a>
+				</div>
+			</div>
+			<!-- E : 2020-06-05 modify -->
+
+			<!-- 나의 주문 -->
+			<div class="mysp_order_wrap">
+				<div class="outer-border-bottom">
+					<ul class="tabs-toggles">
+						<li class="tab-toggle-wrap active"><a class="tab-toggle" data-toggle="tab" href="#order_recent"><span class="toggle-text">최근 쇼핑내역</span></a></li>
+						<li class="tab-toggle-wrap"><a class="tab-toggle" data-toggle="tab" href="#order_all"><span class="toggle-text">전체 주문내역</span></a></li>
+					</ul>
+				</div>
+				<div class="tab-content tabs-content-blocks">
+					<div class="tab-pane content-block active" id="order_recent">
+						<!-- 최근 쇼핑내역 -->
+						<div class="mysp_recent">
+							<div class="cnt_head">
+								<div class="tit_area">
+									<h2 class="tit_ico ico_history"><span>나의 최근 주문</span></h2>
+								</div>
+								<div class="filter">
+									<input id="chk1" type="checkbox">
+									<label for="chk1" class="normal inline-label checklabel focus">판매중인 상품만 보기</label>
+								</div>
+							</div>
+
+							<!-- s: 2020 연계화면 리뉴얼 -->
+							<div class="product_item-not">
+								<p class="text_no-product">최근 주문내역이 없습니다.</p>
+								<div class="bottom_action-area btn_full">
+									<a class="btn_basic-a" data-continue-shopping-url="#">Amway 제품보기</a>
+								</div>
+							</div>
+							<!-- E: 2020 연계화면 리뉴얼 -->
+
+							<!-- loop : 주문 -->
+							<div class="order_sheet">
+								<div class="summary_order">
+									<div class="order_num">
+										<a href="#" class="num">180-343484002</a>
+										<!-- 2019-03-18 : 마크업 변경-->
+										<a href="#;" class="order_view">(주문상세보기)</a><!-- s: 2020 연계화면 리뉴얼 주문상세보기 텍스트 추가 -->
+										<span class="order_date">2019-07-03</span> <!-- s: 2020 연계화면 리뉴얼  -->
+										<!-- 2020 연계화면 리뉴얼 주문취소 버튼 삭제 -->
+
+										<!--<div class="order_reminder">
+                                            <div class="btn_area">
+                                                <button class="btn_ico ico_alarm">알림설정</button>
+                                            </div>
+                                        </div>-->
+									</div>
+									<!-- s: 2020 연계화면 리뉴얼 -->
+									<div class="order_stat_wrap">
+										<div class="stat">
+											<span class="order-state v1">주문완료</span>
+											<span class="order_btn-group">
+												<button type="button" class="btn_square-e small">전체재주문</button>
+												<button type="button" class="btn_square-c small">전체 주문취소</button>
+											</span>
+										</div>
+										<div class="total_amount">
+											<em class="tit_val">총 PV/BV</em> <strong class="txt_val">740,000,000/930,000,000</strong>
+										</div>
+										<div class="total_amount">
+											<em class="tit_val">총 주문금액(원)</em> <strong class="txt_val">270,500</strong>
+										</div>
+									</div>
+									<!-- E: 2020 연계화면 리뉴얼 -->
+								</div>
+
+								<!-- s: 2020 연계화면 리뉴얼 -->
+								<div class="box_product product_list-type">
+									<!-- S : product_item -->
+									<div class="product_item">
+										<div class="product_col-summery">
+											<div class="box_product-summery">
+												<div class="summery_col-thumb"><a href="" class="link_product"><img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png"></a></div>
+												<div class="summery_col-info">
+													<a href="" class="link_product">
+														<div class="flag_wrap">
+															<span class="flag_item-new">신제품</span>
+															<span class="flag_item-promotion">프로모션</span>
+														</div>
+														<div class="product_text-data">
+															<p class="text_product-title">하이드라-브이 쉬어 라이트 파운데이션 [SPF15, PA++] - 샤블리 하이드라-브이 쉬어 라이트 파운데이션 [SPF15, PA++] - 샤블리하이드라-브이 쉬어 라이트 파운데이션 [SPF15, PA++] - 샤블리</p>
+														</div>
+														<!-- S: member, abo 타입 -->
+														<div class="box_product-info">
+															<div class="product_sub-data">
+																<div class="sub_data-title">VPS / SKU</div>
+																<div class="sub_data-contents">2002 / 294460L</div>
+															</div>
+															<div class="product_sub-data">
+																<div class="sub_data-title">PV / BV</div>
+																<div class="sub_data-contents">940,090,000 / 148,100,000</div>
+															</div>
+														</div>
+														<!-- S : 2020-04-01 반품 진행 상태 추가 -->
+														<div class="stock_box">
+															<span class="order-state">반품진행중</span>
+														</div>
+														<!-- E : 2020-04-01 반품 진행 상태 추가 -->
+														<!-- E: member, abo 타입 -->
+														<div class="breakdown">
+															<div class="breakdown_data">
+																<span class="breakdown_data-num">10,220,000</span>
+																<span class="breakdown-unit">원</span>
+															</div>/
+															<div class="breakdown_data"><span class="breakdown_data-num">1</span>개</div>
+														</div>
+													</a>
+													<div class="box_mobile-price box_product-price">
+														<div class="btn_state-box v1">
+															<button type="button" class="btn_basic-e btn-breakdown">재주문</button>
+															<button type="button" class="btn_basic-f btn-breakdown">반품</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="product_col-panels col-m">
+											<div class="btn_state-box v1">
+												<button type="button" class="btn_basic-e btn-breakdown">재주문</button>
+												<button type="button" class="btn_basic-f btn-breakdown">반품</button>
+											</div>
+										</div>
+									</div>
+									<!-- E : product_item -->
+									<!-- S : product_item -->
+									<div class="product_item sold-out"> <!-- 2020 proudct renewal sold-out class add -->
+										<div class="product_col-summery">
+											<div class="box_product-summery">
+												<div class="summery_col-thumb"><a href="" class="link_product"><img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png"></a></div>
+												<div class="summery_col-info">
+													<a href="" class="link_product">
+														<div class="flag_wrap">
+															<span class="flag_item-pickup">픽업전용</span>
+														</div>
+														<div class="product_text-data">
+															<p class="text_product-title">하이드라-브이 쉬어 라이트 파운데이션 [SPF15, PA++] - 샤블리 하이드라-브이 쉬어 라이트 파운데이션 [SPF15, PA++] - 샤블리하이드라-브이 쉬어 라이트 파운데이션 [SPF15, PA++] - 샤블리</p>
+														</div>
+														<div class="box_product-info">
+															<div class="product_sub-data">
+																<div class="sub_data-title">VPS / SKU</div>
+																<div class="sub_data-contents">2002 / 294460L</div>
+															</div>
+															<div class="product_sub-data">
+																<div class="sub_data-title">PV / BV</div>
+																<div class="sub_data-contents">940,090,000 / 148,100,000</div>
+															</div>
+														</div>
+														<div class="breakdown">
+															<div class="breakdown_data">
+																<span class="breakdown_data-num breakdown-deleting">10,220,000</span>
+																<em class="breakdown_data-num v1">0</em><span class="breakdown-unit">원</span>
+															</div>/
+															<div class="breakdown_data"><span class="breakdown_data-num">1</span>개</div>
+														</div>
+													</a>
+													<div class="box_mobile-price box_product-price">
+														<div class="btn_state-box v1">
+															<button type="button" class="btn_basic-e btn-breakdown">재주문</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="product_col-panels col-m">
+											<div class="btn_state-box v1">
+												<button type="button" class="btn_basic-e btn-breakdown">재주문</button>
+											</div>
+										</div>
+									</div>
+									<!-- E : product_item -->
+								</div>
+								<!-- E: 2020 연계화면 리뉴얼 -->
+
+								<!-- 더보기 : 없으면 통으로 날려주세요 -->
+								<div class="btn_more_wrap">
+									<button class="btn_more type_gray"><span>주문제품 더보기</span></button>
+								</div>
+								<!-- //더보기 -->
+							</div>
+							<div class="btn_more_wrap">
+								<button class="btn_more"><span>주문내역 더보기</span></button>
+							</div>
+							<!-- //loop : 주문 -->
+							<div class="order_sheet">
+								<div class="summary_order">
+									<div class="order_num">
+										<a href="#" class="num">180-343484002</a>
+										<span class="order_view">(주문상세보기)</span><!-- s: 2020 연계화면 리뉴얼 주문상세보기 텍스트 추가 -->
+										<span class="order_date">2019-07-03</span> <!-- s: 2020 연계화면 리뉴얼  -->
+										<!-- 2020 연계화면 리뉴얼 주문취소 버튼 삭제 -->
+
+										<!--<div class="order_reminder">
+                                            <div class="btn_area">
+                                                <button class="btn_ico ico_alarm">알림설정</button>
+                                            </div>
+                                        </div>-->
+									</div>
+									<!-- s: 2020 연계화면 리뉴얼 -->
+									<div class="order_stat_wrap">
+										<div class="stat">
+											<span class="order-state">주문취소</span>
+											<span class="order_btn-group">
+												<button type="button" class="btn_square-e small">전체재주문</button>
+												<button type="button" class="btn_square-c small">반품취소</button><!-- D : 2020-04-01 반품취소 버튼 추가 -->
+											</span>
+										</div>
+
+										<div class="total_amount">
+											<em class="tit_val">총 주문금액(원)</em> <strong class="txt_val">270,500</strong>
+										</div>
+									</div>
+									<!-- E: 2020 연계화면 리뉴얼 -->
+								</div>
+								<div class="box_product product_list-type">
+									<!-- S : product_item -->
+									<div class="product_item">
+										<div class="product_col-summery">
+											<div class="box_product-summery">
+												<div class="summery_col-thumb"><a href="" class="link_product"><img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png"></a></div>
+												<div class="summery_col-info">
+													<a href="" class="link_product">
+														<div class="flag_wrap">
+															<span class="flag_item-freebies">증정품</span>
+														</div>
+														<div class="product_text-data">
+															<p class="text_product-title">하이드라-브이 쉬어 라이트 파운데이션 [SPF15, PA++] - 샤블리 하이드라-브이 쉬어 라이트 파운데이션 [SPF15, PA++] - 샤블리하이드라-브이 쉬어 라이트 파운데이션 [SPF15, PA++] - 샤블리</p>
+														</div>
+														<div class="breakdown">
+															<div class="breakdown_data">
+																<span class="breakdown_data-num breakdown-deleting">10,220,000</span>
+																<em class="breakdown_data-num v1">0</em><span class="breakdown-unit">원</span>
+															</div>/
+															<div class="breakdown_data"><span class="breakdown_data-num">1</span>개</div>
+														</div>
+													</a>
+													<div class="box_mobile-price box_product-price">
+														<div class="btn_state-box v1">
+															<button type="button" class="btn_basic-e btn-breakdown">재주문</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="product_col-panels col-m">
+											<div class="btn_state-box v1">
+												<button type="button" class="btn_basic-e btn-breakdown">재주문</button>
+											</div>
+										</div>
+									</div>
+									<!-- E : product_item -->
+								</div>
+							</div>
+							<!-- 더보기 : 없으면 통으로 날려주세요 -->
+							<div class="btn_more_wrap">
+								<button class="btn_more"><span>주문내역 더보기</span></button>
+							</div>
+							<!-- //더보기 : 없으면 통으로 날려주세요 -->
+						</div>
+						<!-- //최근 쇼핑내역 -->
+					</div>
+					<div class="tab-pane content-block" id="order_all">
+						<h2 class="hidden">전체 주문내역</h2>
+						<!-- 전체 주문내역 -->
+						<div>
+							전체 주문내역 노출
+						</div>
+						<!-- //전체 주문내역 -->
+					</div>
+				</div>
+			</div>
+			<!-- //나의 주문 -->
+
+			<!-- 최근 본 상품 -->
+			<div class="recent_view_items">
+				<div class="cnt_head">
+					<div class="tit_area">
+						<h2 class="tit_ico ico_recent_view"><span>최근 본 상품 (10)</span></h2>
+						<p class="txt_comment">최근 일주일 간 확인한 상품</p>
+					</div>
+					<div class="filter">
+						<input id="chk2" type="checkbox">
+						<label for="chk2" class="normal inline-label checklabel focus">판매중인 상품만 보기</label>
+					</div>
+				</div>
+				<div class="view_item_wrap">
+					<!-- loop : 날짜별 -->
+					<div class="group_by_date">
+						<!-- loop : 상품 -->
+						<div class="row_item soldout table_layout"><!-- 2019-07-12 : 주문불가 ( .soldout ) -->
+							<div class="col w60">
+								<div class="item_info_wrap">
+									<div class="item_thumb">
+										<div class="img_thumb"><a href="#"><img src="/_ui/responsive/theme-blue/images/@nu105480.jpg" alt=""></a></div>
+									</div>
+									<div class="item_desc">
+										<strong class="tit_name">아티스트리</strong>
+										<div class="item_price">
+											<strong class="price"><span>32,000</span>원</strong></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col w40">
+								<div class="item_set_wrap">
+									<div class="item_add_wish">
+										<div class="btn_area">
+											<div class="add-wish-warp">
+												<div class="plp-add-to-shopping-list">
+													<button class="btn_ico ico_wish js-add-list-shopping-button">위시리스트</button>
+													<div class="cart-detail__dropdown-menu dropdown-menu" role="menu">
+														<ul>
+															<li>
+																<input class="amwa-radio" type="radio" name="optradio" id="radio1" value="">
+																<label for="radio1" class="focus">아티스트리 아티스트리  아티스트리 아티스트리 아티스트리 </label>
+															</li>
+															<li>
+																<input class="amwa-radio" type="radio" name="optradio" id="radio2" value="">
+																<label for="radio2" class="focus">선택</label>
+															</li>
+															<li>
+																<input class="amwa-radio" type="radio" name="optradio" id="radio3" value="">
+																<label for="radio3" class="focus">선택</label>
+															</li>
+															<li>
+																<input class="amwa-radio" type="radio" name="optradio" id="radio4" value="">
+																<label for="radio4" class="focus">선택</label>
+															</li>
+															<li>
+																<input class="amwa-radio" type="radio" name="optradio" id="radio5" value="">
+																<label for="radio5" class="focus">선택</label>
+															</li>
+														</ul>
+														<div class="dropdown-menu-bottom">
+															<button id="addToLIST1" class="btn btn-primary addToLIST">보내기</button>
+															<a href="javascript:void(0);" id="" class="btn-add-wish">위시리스트 추가</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item_add_cart">
+										<div class="quantity">
+											<div class="opt-quantity mini">
+												<input type="text" maxlength="3" class="form-control js-qty-selector-input inpNum" size="1" value="1" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" id="pdpAddtoCartInput2" />
+												<a href="#" class="btnMinus">수량하나빼기</a>
+												<a href="#" class="btnPlus">수량하나더하기</a>
+											</div>
+										</div>
+										<div class="btn_cart_area">
+											<button class="bt-akl-blue btn_ico_cart"><span>장바구니</span></button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //loop : 상품 -->
+					</div>
+					<!-- //loop : 날짜별 -->
+					<div class="group_by_date">
+						<strong class="tit_date">1일전</strong>
+						<div class="row_item table_layout">
+							<div class="col w60">
+								<div class="item_info_wrap">
+									<div class="item_thumb">
+										<div class="img_thumb"><a href="#"><img src="/_ui/responsive/theme-blue/images/@nu105480.jpg" alt=""></a></div>
+									</div>
+									<div class="item_desc">
+										<strong class="tit_name">아티스트리 시그니처 컬러 립스틱 - 19번 코랄 선라이즈</strong>
+										<div class="item_price">
+											<strong class="price"><span>32,000</span>원</strong></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col w40">
+								<div class="item_set_wrap">
+									<div class="item_add_wish">
+										<div class="btn_area">
+											<div class="add-wish-warp">
+												<div class="plp-add-to-shopping-list">
+													<button class="btn_ico ico_wish js-add-list-shopping-button">위시리스트</button>
+													<div class="cart-detail__dropdown-menu dropdown-menu" role="menu">
+														<ul>
+															<li>
+																<input class="amwa-radio" type="radio" name="optradio" id="radio1" value="">
+																<label for="radio1" class="focus">아티스트리 아티스트리  아티스트리 아티스트리 아티스트리 </label>
+															</li>
+															<li>
+																<input class="amwa-radio" type="radio" name="optradio" id="radio2" value="">
+																<label for="radio2" class="focus">선택</label>
+															</li>
+															<li>
+																<input class="amwa-radio" type="radio" name="optradio" id="radio3" value="">
+																<label for="radio3" class="focus">선택</label>
+															</li>
+															<li>
+																<input class="amwa-radio" type="radio" name="optradio" id="radio4" value="">
+																<label for="radio4" class="focus">선택</label>
+															</li>
+															<li>
+																<input class="amwa-radio" type="radio" name="optradio" id="radio5" value="">
+																<label for="radio5" class="focus">선택</label>
+															</li>
+														</ul>
+														<div class="dropdown-menu-bottom">
+															<button id="addToLIST1" class="btn btn-primary addToLIST">보내기</button>
+															<a href="javascript:void(0);" id="" class="btn-add-wish">위시리스트 추가</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item_add_cart">
+										<div class="quantity">
+											<div class="opt-quantity mini">
+												<input type="text" maxlength="3" class="form-control js-qty-selector-input inpNum" size="1" value="1" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" id="pdpAddtoCartInput2" />
+												<a href="#" class="btnMinus">수량하나빼기</a>
+												<a href="#" class="btnPlus">수량하나더하기</a>
+											</div>
+										</div>
+										<div class="btn_cart_area">
+											<button class="bt-akl-blue btn_ico_cart"><span>장바구니</span></button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row_item table_layout">
+							<div class="col w60">
+								<div class="item_info_wrap">
+									<div class="item_thumb">
+										<div class="img_thumb"><a href="#"><img src="/_ui/responsive/theme-blue/images/@nu105480.jpg" alt=""></a></div>
+									</div>
+									<div class="item_desc">
+										<strong class="tit_name">아티스트리 시그니처 컬러 립스틱 - 19번 코랄 선라이즈</strong>
+										<div class="item_price">
+											<strong class="price"><span>32,000</span>원</strong></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col w40">
+								<div class="item_set_wrap">
+									<div class="item_add_wish">
+										<div class="btn_area">
+											<div class="add-wish-warp">
+												<div class="plp-add-to-shopping-list">
+													<button class="btn_ico ico_wish js-add-list-shopping-button">위시리스트</button>
+													<div class="cart-detail__dropdown-menu dropdown-menu" role="menu">
+														<ul>
+															<li>
+																<input class="amwa-radio" type="radio" name="optradio" id="radio1" value="">
+																<label for="radio1" class="focus">아티스트리 아티스트리  아티스트리 아티스트리 아티스트리 </label>
+															</li>
+															<li>
+																<input class="amwa-radio" type="radio" name="optradio" id="radio2" value="">
+																<label for="radio2" class="focus">선택</label>
+															</li>
+															<li>
+																<input class="amwa-radio" type="radio" name="optradio" id="radio3" value="">
+																<label for="radio3" class="focus">선택</label>
+															</li>
+															<li>
+																<input class="amwa-radio" type="radio" name="optradio" id="radio4" value="">
+																<label for="radio4" class="focus">선택</label>
+															</li>
+															<li>
+																<input class="amwa-radio" type="radio" name="optradio" id="radio5" value="">
+																<label for="radio5" class="focus">선택</label>
+															</li>
+														</ul>
+														<div class="dropdown-menu-bottom">
+															<button id="addToLIST1" class="btn btn-primary addToLIST">보내기</button>
+															<a href="javascript:void(0);" id="" class="btn-add-wish">위시리스트 추가</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item_add_cart">
+										<div class="quantity">
+											<div class="opt-quantity mini">
+												<input type="text" maxlength="3" class="form-control js-qty-selector-input inpNum" size="1" value="1" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" id="pdpAddtoCartInput2" />
+												<a href="#" class="btnMinus">수량하나빼기</a>
+												<a href="#" class="btnPlus">수량하나더하기</a>
+											</div>
+										</div>
+										<div class="btn_cart_area">
+											<button class="bt-akl-blue btn_ico_cart"><span>장바구니</span></button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="group_by_date">
+						<strong class="tit_date">2019-05-17</strong>
+						<div class="row_item table_layout">
+							<div class="col w60">
+								<div class="item_info_wrap">
+									<div class="item_thumb">
+										<div class="img_thumb"><a href="#"><img src="/_ui/responsive/theme-blue/images/@nu105480.jpg" alt=""></a></div>
+									</div>
+									<div class="item_desc">
+										<strong class="tit_name">아티스트리 시그니처 컬러 립스틱 - 19번 코랄 선라이즈</strong>
+										<div class="item_price">
+											<strong class="price"><span>32,000</span>원</strong></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col w40">
+								<div class="item_set_wrap">
+									<div class="item_add_wish">
+										<div class="btn_area">
+											<div class="add-wish-warp">
+												<div class="plp-add-to-shopping-list">
+													<button class="btn_ico ico_wish js-add-list-shopping-button">위시리스트</button>
+													<div class="cart-detail__dropdown-menu dropdown-menu" role="menu">
+														<ul>
+															<li>
+																<input class="amwa-radio" type="radio" name="optradio" id="radio1" value="">
+																<label for="radio1" class="focus">아티스트리 아티스트리  아티스트리 아티스트리 아티스트리 </label>
+															</li>
+															<li>
+																<input class="amwa-radio" type="radio" name="optradio" id="radio2" value="">
+																<label for="radio2" class="focus">선택</label>
+															</li>
+															<li>
+																<input class="amwa-radio" type="radio" name="optradio" id="radio3" value="">
+																<label for="radio3" class="focus">선택</label>
+															</li>
+															<li>
+																<input class="amwa-radio" type="radio" name="optradio" id="radio4" value="">
+																<label for="radio4" class="focus">선택</label>
+															</li>
+															<li>
+																<input class="amwa-radio" type="radio" name="optradio" id="radio5" value="">
+																<label for="radio5" class="focus">선택</label>
+															</li>
+														</ul>
+														<div class="dropdown-menu-bottom">
+															<button id="addToLIST1" class="btn btn-primary addToLIST">보내기</button>
+															<a href="javascript:void(0);" id="" class="btn-add-wish">위시리스트 추가</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item_add_cart">
+										<div class="quantity">
+											<div class="opt-quantity mini">
+												<input type="text" maxlength="3" class="form-control js-qty-selector-input inpNum" size="1" value="1" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" id="pdpAddtoCartInput2" />
+												<a href="#" class="btnMinus">수량하나빼기</a>
+												<a href="#" class="btnPlus">수량하나더하기</a>
+											</div>
+										</div>
+										<div class="btn_cart_area">
+											<button class="bt-akl-blue btn_ico_cart"><span>장바구니</span></button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="btn_more_wrap">
+					<button class="btn_more"><span>더보기</span></button>
+				</div>
+			</div>
+			<!-- //최근 본 상품 -->
+
+			<div class="menu_link_area">
+				<div class="menu_link_box"><a href="#" class="menu_link">정기주문&amp;스마트 오더 내역 (<span>999</span>)</a></div>
+				<div class="menu_link_box"><a href="#" class="menu_link">위시리스트 (<span>999</span>)</a></div>
+			</div>
+		</div>
+	</div>
+	<!-- //마이쇼핑 -->
+
+	<div id="quick"></div>
+	<div id="footer"></div>
+</main>
+
+<script type="text/javascript">
+	/** --------------------------------------
+	 *  HTML 내용 확인용으로 스크립트 추가되었습니다.
+	 *  UI 공통 js에서 관리 하지 않습니다.
+	 *  --------------------------------------
+	 */
+</script>
+</body>
+</html>

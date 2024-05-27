@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="343" height="468" viewBox="0 0 343 468">
+    <defs>
+        <clipPath id="viz3m3n70a">
+            <path transform="translate(795 334)" style="fill:#fef9ff" d="M0 0h343v468H0z"/>
+        </clipPath>
+    </defs>
+    <g data-name="bg" transform="translate(-795 -334)" style="clip-path:url(#viz3m3n70a)">
+        <path data-name="bg" transform="translate(795 334)" style="fill:#f1eff7" d="M0 0h343v522H0z"/>
+        <rect data-name="사각형 39" width="359.329" height="115.607" rx="57.803" transform="rotate(-42 1307.205 -788.125)" style="opacity:.3;fill:#fdd16e"/>
+        <rect data-name="사각형 40" width="305.972" height="115.607" rx="57.803" transform="rotate(-42 1093.015 -1129.199)" style="fill:#c8beff;opacity:.3"/>
+        <circle data-name="타원 1" cx="56.978" cy="56.978" r="56.978" transform="translate(799.889 256.18)" style="opacity:.2;fill:#c8beff"/>
+        <circle data-name="타원 2" cx="8.619" cy="8.619" r="8.619" transform="translate(878.414 351.941)" style="fill:#c8beff;opacity:.3"/>
+        <rect data-name="사각형 159" width="305.972" height="115.607" rx="57.803" transform="rotate(-42 1410.032 -546.088)" style="opacity:.3;fill:#fdd16e"/>
+        <rect data-name="사각형 160" width="359.329" height="115.607" rx="57.803" transform="rotate(-42 1613.218 -355.05)" style="fill:#c8beff;opacity:.3"/>
+    </g>
+</svg>

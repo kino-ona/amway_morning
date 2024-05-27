@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>G10300_제품상세</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords">
+	<meta name="description" content="NY Fee Bundle">
+	<meta name="robots" content="index,follow">
+
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-lib.css"><!-- 플러그인용 css : 2018.03.14 추가  -->
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common.css">
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.datepicker.js"></script><!-- datepicker : 2018.03.19 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/owl.carousel.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/isotope.pkgd.js"></script><!-- gnb 플러그인 : 2018.03.23 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/select2.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/new.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.raty.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_contents.js"></script><!-- brand 통합 : 2018.08.24 추가  -->
+</head>
+<body class="akl">
+
+<script>
+	// 190313 비디오 링크 akl_common.js에 추가
+	$(function() {
+		$('.js-gallery-link').on('click', function(e) {
+			e.preventDefault();
+
+			var _this = $(this);
+			var videoLink = _this.attr('href');
+			var videoTitle = _this.attr('title') || '암웨이 비디오';
+			var videoText = _this.data('text') || '';
+
+			if ( !(_this.attr('href')) ) { return true }
+			if ( $('.layerWrapper.js-gallery-layer').length > 0 ) {
+				var _videoWrapper = $('.layerWrapper.js-gallery-layer');
+				_videoWrapper.find('.headline-text').html(videoTitle);
+				_videoWrapper.find('.video-wrapper').next().html(videoText);
+				_videoWrapper.find('iframe').attr('title', videoTitle);
+				_videoWrapper.find('iframe').attr('src', videoLink);
+				setTimeout(function() {
+					layerPopOver('','.js-gallery-layer');
+				}, 300);
+			} else {
+				var videoLayerHTML = '<div class="layerWrapper js-gallery-layer"><div class="videobox lynx-modal-window--opened directbox typeVideoView"><div class="video-pop"><div class="cboxTitle"><div class="headline"><span class="headline-text">' + videoTitle + '</span></div></div><div class="bonusPaymentDirectDeposit"><div class="bonus-payment-method__wrapper"><div class="popup-video-preview__content"><div class="video-cont"><div class="video-wrapper"><iframe width="100%" height="100%" title="' + videoTitle + '" src="' + videoLink + '" frameborder="0"></iframe></div><p class="mgt10">' + videoText + '</p></div></div></div></div><a href="#" class="cClose cboxClose js-gallery-close" title="닫기"><span class="modal-close-icon"></span></a></div></div></div>';
+				$('body').append(videoLayerHTML);
+				layerPopOver('','.js-gallery-layer');
+			}
+		});
+
+		$('.js-gallery-close').on('click', function(e) {
+			var _videoWrapper = $('.layerWrapper.js-gallery-layer');
+			_videoWrapper.find('.headline-text').html('');
+			_videoWrapper.find('.video-wrapper').next().html('');
+			_videoWrapper.find('iframe').attr('title', '');
+			_videoWrapper.find('iframe').attr('src', '');
+		})
+	});
+
+</script>
+
+<!-- 190313 비디오 링크 .js-gallery-link 클래스 추가, 비디오는 href, 제목은 title, 설명은 data-text 속성에 추가 -->
+<a class="bt-akl-blue mini js-gallery-link" href="https://www.youtube.com/embed/7EIP6jB2VvQ" title="[뉴트리라이트] DNA보호(30초)" data-text="아세요? 피부, 혈관, 뼈, 우리 몸을 구성하는 모든 세포의 중심엔 DNA가 있다는 사실.<br>더블엑스의 영양소는 향산화를 통해 DNA를 보호합니다.">비디오 팝업 오픈 1</a><br><br>
+<a class="bt-akl-blue mini js-gallery-link" href="https://www.youtube.com/embed/xXCuwUxap-Q" title="[뉴트리라이트]">비디오 팝업 오픈 2(하단 텍스트 없음)</a><br><br>
+<a class="bt-akl-blue mini js-gallery-link" href="https://www.youtube.com/embed/k6D0KiHy5QA">비디오 팝업 오픈 3(제목 없음)</a><br><br>
+<a class="bt-akl-blue mini js-gallery-link">비디오 팝업 오픈 4(링크 없음)</a><br><br>
+
+
+<!-- (팝업) Video Gallery -->
+
+<!-- //(팝업) Video Gallery -->
+
+</body>
+</html>

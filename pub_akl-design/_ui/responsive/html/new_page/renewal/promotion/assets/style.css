@@ -1,0 +1,189 @@
+/* reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+select {
+  -webkit-appearance:none; /* 크롬 화살표 없애기 */
+  -moz-appearance:none; /* 파이어폭스 화살표 없애기 */
+  appearance:none
+}
+
+*,*::before,*::after{box-sizing: border-box; font-family: 'NotoSansCJKkr', sans-serif; font-size: 14px; font-weight:normal; margin:0; padding:0;}
+
+/*fonts*/
+@font-face {font-family:'Roboto';font-style:normal;font-weight:400;src:url(./fonts/Roboto-Regular.woff2) format('woff2'), url(./fonts/Roboto-Regular.woff) format('woff')}
+@font-face {font-family:'Roboto';font-style:normal;font-weight:500;src:url(./fonts/Roboto-Medium.woff2) format('woff2'), url(./fonts/Roboto-Medium.woff) format('woff')}
+@font-face {font-family:'Roboto';font-style:normal;font-weight:700;src:url(./fonts/Roboto-Bold.woff2) format('woff2'), url(./fonts/Roboto-Bold.woff) format('woff')}
+@font-face {font-family:'NotoSansCJKkr';font-style:normal;font-weight:300;src:url(./fonts/NotoSansCJKkr-light.woff2) format('woff2'),url(./fonts/NotoSansCJKkr-light.woff) format('woff');}
+@font-face {font-family:'NotoSansCJKkr';font-style:normal;font-weight:400;src:url(./fonts/NotoSansCJKkr-Regular.woff2) format('woff2'),url(./fonts/NotoSansCJKkr-Regular.woff) format('woff');}
+@font-face {font-family:'NotoSansCJKkr';font-style:normal;font-weight:500;src:url(./fonts/NotoSansCJKkr-Medium.woff2) format('woff2'),url(./fonts/NotoSansCJKkr-Medium.woff) format('woff');}
+@font-face {font-family:'NotoSansCJKkr';font-style:normal;font-weight:700;src:url(./fonts/NotoSansCJKkr-Bold.woff2) format('woff2'),url(./fonts/NotoSansCJKkr-Bold.woff) format('woff');}
+
+/* 기본 */
+.read-only {display: none; width: 0; height: 0; padding: 0; margin: 0; z-index: -999; }
+body {font-family: 'NotoSansCJKkr', sans-serif; font-weight:normal;}
+
+/* css */
+.voucher {width: 100%; max-width: 375px; height: 100%; margin: 0 auto;}
+.header {position: relative; padding-top: 164%; background: url(./images/img_background.png) 0 0/100% no-repeat; }
+.item {position: absolute; top: 21%; left: 0; right: 0; height: 73.3%; background: url(./images/img_content.png) center 0/contain no-repeat; }
+.item > div {position: absolute;}
+.item > div:first-child {display: flex; align-items:center; justify-content: center; top: 2%; left: 16.8%; width: 66.5%; height: 21.9%; padding-top: 10px; text-align: center;}
+.item > div:first-child h2 {color: #2f2d2c; font-size: 16px; font-weight: 500; line-height: normal;}
+.item > div:first-child h2 span {margin-right: 5px; font-family:'Roboto'; font-weight: 500;}
+.item > div:first-child p {display: inline-block; width: 57.8%; padding: 2.6% 0; margin: 3.35% auto 0; color: #3c3c3c; font-size: 14px; line-height: 1; border: 1px solid #797979; background-color: #fff;}
+.item > div:last-child {top: 30.4%; left: 24.8%; width: 50.1%; height: 61%;}
+.item > div:last-child p {display: flex; align-items: center; justify-content: center;height: 32%;color: #2f2d2c; font-size: 16px; line-height: 1.6; text-align: center;}
+.element {display: flex; justify-content: space-between; position: absolute; top: 0; width: 100%; height: 100%;}
+.element p {width: 53.3%; margin-top: 5%; margin-left: 5.3%; background: url(./images/img_bg_text.png) center 0/contain no-repeat; }
+.element > span {display: inline-block; width: 31.7%; margin-top: 3.7%; margin-right: 7.2%; background: url(./images/img_bg_tree.png) center 0/contain no-repeat; }
+.product {width: 100%;}
+
+.content {background: #f5f5f5;}
+.wrap {padding-bottom: 16.5%}
+.infomation {padding: 40px 4.3% 30px;}
+.area + .area {margin-top: 6.6%;}
+.area dd > div {display: flex; position: relative;}
+.area dd > div + div {margin-top: 8px;}
+.content-title {width: 27.1%; margin-bottom: 3%; padding: 1.08%; color: #7e7e7e; font-size: 13px; font-weight: 500; line-height: normal; letter-spacing: -0.52px; text-align: center; background: #fff; border: solid 1px #a0a0a0;}
+.content-text {color: #111111; font-size: 16px; line-height: normal; font-weight: 700; letter-spacing:-0.064px;}
+.content-text span {font-family:'Roboto'; font-weight: 700;}
+.link {display: flex; align-items: center; justify-content: space-between;}
+.link a {display: flex; align-items:center; color: #666666; font-size: 12px; font-weight: normal; line-height: normal; text-decoration: none;}
+.link a::after {display: inline-block; width: 7px; height: 7px; margin-left: 5px; border-top: 1px solid #666666; border-right: 1px solid #666666; transform: rotate(45deg); content: '';}
+.link > span {font-family:'Roboto'; font-weight: 700;}
+.link a > span {display: inline-block; margin-right: 2px; font-family:'Roboto'; font-weight: 400;}
+.content-description {position: relative; margin-left: 9px; color: #111111; font-size: 13px; line-height: normal; letter-spacing: -.052px; word-break: keep-all;}
+.content-description + .content-description {margin-top: 2.6%}
+.content-description::before {display: inline-block; position: absolute; top: 50%; left: -9px; width: 3px; height: 3px; margin-top: -3px; background: #222222; border-radius: 50%; vertical-align: middle; content: ''; transform: translateY(-50%);}
+.content-description span {font-family:'Roboto'; font-weight: 400;}
+.area .content-description:first-of-type::before {top: 10px;}
+.mark {display: inline-block; width: 18.1%; padding: 1.6% 0; color: #ffffff; font-size: 11px; line-height: 1; letter-spacing: -.044px; text-align: center; background-color: #222222; border-radius: 12px;}
+.mark--complete {color: #222222; background-color: #ffffff; border:1px solid #222222;}
+.mark--complete + .count {color: #bebebe;}
+.count {margin-left: 5%; color: #222222; font-size: 16px; font-family:'Roboto'; font-weight: 700; line-height: normal; letter-spacing: -.056px;}
+.count span {font-family: 'NotoSansCJKkr'; font-size: 14px; font-weight: 400;}
+.more-button {position: absolute; top: 50%; right: 0; padding-right: 6.5%; color: #666666; font-size:12px; line-height: 1; font-family:'Roboto'; font-weight: 400; border:none; background: none; cursor: pointer; transform: translateY(-50%);}
+.more-button::after {display: inline-block; position: absolute; right: 10px; bottom: 50%; width: 7px; height: 7px; margin-left: 5px; border-top: 1px solid #666666; border-right: 1px solid #666666; transform: rotate(135deg) translateY(-50%); content: '';}
+.more-button.active::after {transform: rotate(-43deg) translateY(80%);}
+
+.variation {padding: 0 4.3%;}
+.quantity {display: flex; align-items: center; justify-content: space-between; margin-bottom: 8%; padding: 6.4%; background: #ffffff;}
+.quantity > p {color: #111111; font-size: 13px; font-weight: 700; letter-spacing: -.033px;}
+.quantity > div {display: flex;}
+.quantity button {position: relative; width: 42px; height: 42px; background: #f4f4f4; border: 1px solid #dadada; cursor: pointer;}
+.minus {border-radius: 2px 0 0 2px;}
+.minus::before {display: inline-block; width: 18px; height: 2px; background-color: #222222; content: ''; }
+.minus.no-active::before {background-color: #d8d8d8}
+.plus {border-radius: 0 2px 2px 0;}
+.plus::before {display: inline-block; width: 18px; height: 2px; background-color: #222222; content: ''; }
+.plus::after {display: inline-block; position: absolute; top: 50%; left: 50%; width: 18px; height: 2px; margin-left: -9px; background-color: #222222; transform: rotate(-90deg); content: ''; }
+.quantity-number {overflow: hidden; width: 67px; height: 42px; padding: 0 10px; color: #222222; font-size: 19px; font-family:'Roboto'; font-weight: 700; text-align: center; line-height: 42px; background: #ffffff; border-top: 1px solid #dadada; border-bottom: 1px solid #dadada; text-overflow: ellipsis;}
+.etc-buttons {position: fixed; bottom: 0; left: 0; right: 0; max-width: 375px; margin: 0 auto; z-index: 9;}
+.check {display: block; width: 100%; height: auto; padding:5.2% 0; background: #404040; color: #ffffff; font-size: 16px; font-weight: 700; line-height: normal; border: none; }
+.check--complete {color: #222222; background: #ffffff; border: 2px solid #404040; box-sizing: border-box;}
+.check--end-date {color: #9f9f9f; background: #868686; }
+.confirm {position: relative; padding: 8% 0; z-index: 9;}
+.confirm::before {display: block; position: absolute; top: 0; left: -4.6%; right: 0; width: 109.3%; height: 100%; background: #ffffff; border-left: 1px solid #f5f5f5; border-right: 1px solid #f5f5f5; z-index: -1; content:'';}
+.confirm p {margin-bottom: 8px; color: #111111; font-size: 13px; line-height: 1.6; letter-spacing: -0.33px;}
+.confirm select {width: 35%; padding: 3.8%; color: #222222; font-size: 13px; line-height: 1.1; font-family:'Roboto'; font-weight: 400; background:url('./images/icon_arrow.png') 90% 50% /16px no-repeat; border: 1px solid #d7d7d7; border-radius: 2px; box-sizing: border-box;}
+.confirm input {width: calc(65% - 8px); margin-left: 8px; padding: 3.8%; color: #222222; font-size: 13px; line-height: 1.1; border-radius: 2px; border: solid 1px #dadada; background-color: #fff; box-sizing: border-box;}
+.select {display: flex; align-items: center; justify-content: space-between;}
+.area dd > div.detail {overflow: hidden; display: none; max-height: 0; cursor: pointer;}
+.area dd > div.detail.active {display:block; max-height: 100vw; padding: 5%; background: #ffffff; border-top: 1px solid #dcdcdc;}
+.detail > div {display: flex; align-items: center; justify-content: flex-start}
+.detail > div + div {margin-top: 4.6%;}
+.detail p {color: #111111; font-size: 13px; line-height: normal; letter-spacing: -0.52px;}
+.detail > div span {font-family:'Roboto'; font-weight: 500; font-size: 13px;}
+.detail .count {display: flex; align-items:center; position: relative; margin: 0; padding: 0 2.3% 0 4.9%; font-weight: 500;}
+.detail .count::before {display: block; position: absolute; left: 19%; width: 1px; height: 12px; background:#d0d0d0; content: '';}
+.position {padding: 2px 6px 3px; background: #ffffff; border: 1px solid #dcdcdc; line-height: 1; font-weight: 500;}
+
+@media(max-width: 768px) {
+  .voucher {max-width: 100%;}
+  .item > div:first-child p,
+  .count span {font-size: 3.646vw;}/* 28px -> 원래 14px */
+  
+  .item > div:first-child h2, 
+  .item > div:last-child p, 
+  .content-text,
+  .count,
+  .check {font-size: 4.167vw;} /* 32px -> 원래 16px */
+
+  .content-title, 
+  .content-description,
+  .quantity > p,
+  .confirm p,
+  .confirm select,
+  .confirm input,
+  .detail p,
+  .detail > div span {font-size: 3.385vw;} /* 26px- > 원래 13px*/
+
+  .link a,
+  .more-button {font-size: 3.125vw;} /*  24px- > 원래 12px*/
+
+  .mark {font-size: 2.865vw; border-radius: 3vw;} /*  22px- > 원래 11px*/
+
+  .etc-buttons {max-width: 100%;}
+  .confirm select {height: auto; background:url('./images/icon_arrow.png') 90% 50% /4vw no-repeat}
+  .link a::after,
+  .more-button::after {width: 1.6vw; height: 1.6vw; }
+  .area .content-description:first-of-type::before {top: 28%;}
+}
+
+/* S : 20240220 암웨이 퀸 Ti 크라운세트 ABC 구매 스페셜 프로모션 */
+.voucher_queenTi .header {background-image:url('./images/bg_queenTi.png'); background-position:center 75%; background-size:calc(100% + 80%) auto;}
+.voucher_queenTi .content-title {padding:0.99% 1.08% 1.08%;}
+.voucher_queenTi .content-description::before {top:12px; transform:translateY(0);}
+.voucher_queenTi .area .content-description:first-of-type::before {top:12px;}
+.voucher_queenTi .mark {height:24px; line-height:24px; padding:0;}
+.voucher_queenTi .item {height:auto; background:none; margin:0 50px;}
+.voucher_queenTi .item img {width:100%;}
+.voucher_queenTi .confirm select {height:40px; line-height:40px; padding:0 3.8%;}
+.voucher_queenTi .confirm input {height:40px; line-height:40px; padding:0 3.8%;}
+/* E : 20240220 암웨이 퀸 Ti 크라운세트 ABC 구매 스페셜 프로모션 */

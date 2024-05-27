@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>Amway Korea</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords">
+  <link rel="stylesheet" type="text/css" media="all" href="../assets/css/self_payment.css"><!-- scan payment css -->
+  <script type="text/javascript" src="../assets/js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="../assets/js/swiper.min.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <div class="bundle">
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+    <div class="item">
+      <div id="scan_container">
+        <!-- popup -->
+        <section class="box_popup">
+          <div class="popup_inner">
+            <div class="tit_alert">결제에<br>실패하였습니다</div>
+            <div class="txt_description red">실패사유 : 카드한도 초과</div>
+            <!-- button -->
+            <div class="btn_pop_bottom payment">
+              <button type="button" class="btn_blueline_s wide"><span>결제취소</span></button>
+              <button type="button" class="btn_blue_s wide"><span>다시 결제</span></button>
+            </div>
+            <!--// button -->
+          </div>
+        </section>
+        <!--// popup -->
+    
+        <header class="scan_header">
+          <!-- 회원정보 -->
+          <div class="info_user">
+            <span class="name">김*이 회원님</span><span class="number">7001033219</span>
+            <span class="steps step03">step3 결제</span>
+          </div>
+          <!--// 회원정보 -->
+          <!-- 상단버튼 -->
+          <div class="scan_btns">
+            <button type="button" class="btn_back"><span>이전</span></button>
+            <button type="button" class="btn_cancel"><span>전체취소</span></button>
+            <button type="button" class="btn_call"><span>직원호출</span></button>
+          </div>
+          <!--// 상단버튼 -->
+        </header>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>

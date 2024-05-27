@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>미디어 라이브러리 | ABN Korea</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords">
+	<meta name="description" content="NY Fee Bundle">
+	<meta name="robots" content="index,follow">
+	
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-lib.css"><!-- 플러그인용 css : 2018.03.14 추가  -->
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common.css">
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.datepicker.js"></script><!-- datepicker : 2018.03.19 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/owl.carousel.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/isotope.pkgd.js"></script><!-- gnb 플러그인 : 2018.03.23 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/select2.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/new.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.raty.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/masonry.pkgd.min.js"></script><!-- media-borad-list 플러그인 : 2018.07.25 추가  -->
+	
+	<script language="javascript" type="text/javascript">
+		$(document).ready(function(){
+			var $grid = [];
+
+			$grid[0] = $('.media-borad-list-video ul').masonry({
+				columnWidth: '.grid-item',
+				transitionDuration:0,
+				percentPosition: true
+			});
+			$grid[1] = $('.media-borad-list-gallery ul').masonry({
+				columnWidth: '.grid-item',
+				transitionDuration:0,
+				percentPosition: true
+			});
+
+			$(document).on('click', '.tab-toggle', function(e) {
+				e.preventDefault();
+				var $index = +$(this).attr('data-index')
+
+				$($(this)[0].hash).show(0, function() {
+					$grid[$index].masonry();
+				})
+			});
+
+			//$( '.tab-toggle').eq(0).trigger('click');
+
+			var i = 0;
+
+			$(document).on('click', '.media-more-btn button', function(e) {
+				var $winSize = $(window).outerWidth();
+				i++;
+				e.preventDefault();
+				var $index = +$(this).parent().attr('data-index');
+				var startNum = 10 * i;
+				var endNum = startNum + 10;
+
+				$(this).parent().parent().children().slice(startNum, endNum).css("display", "block");
+
+				setTimeout(function(){ $grid[$index].masonry() }, 0);
+
+				if(!$(this).parent().prev().is(':hidden')){
+					$(this).hide();
+				}
+			});
+		});
+
+		
+	</script>
+	<style type="text/css">
+		.testBox {overflow:hidden;}
+		.testBox > div {width:50%;float:left}
+		.testBox > div img {width:100%}
+		.testBox > div .pink {width:50%;float:left;background:#e11e44;color:#fff !important;}
+	
+		.testBox > div > div {position:relative;overflow:hidden;}
+		.testBox > div > div > img {width:50%;float:left}
+		@media (max-width:1024px) { 
+			.testBox {overflow:hidden;position:relative}
+			.testBox > div:first-child {width:66.666%;}
+			.testBox > div .pink {position:static;left:0;width:100%;}
+			.testBox > div {width:33.333%}
+			.testBox > div > div > img {width:100%;float:left}
+			.testBox > div:last-child {width:66.666%;position:absolute;bottom:0;left:0;}
+		}
+	</style>
+</head>
+<body class="akl new-v2">
+	<!-- skipToContent -->
+	<div id="skipToContent">
+	<a href="#contents">콘텐츠 바로가기 </a>
+	</div>
+	<!-- //skipToContent -->
+
+	<main>
+		<div id="header"></div>
+		<div class="container-fluid main-container" id="contents">
+			<div class="print-hide breadcrumb-section">
+				<ol class="breadcrumb">
+					<li><a href="#">홈</a></li> 
+					<li>암웨이소개</li>
+					<li>아티스트리</li>
+				</ol>
+			</div>
+			<div class="jump-to-amway">
+				<div>
+					<p>메뉴이동</p>
+					<div class="jump-to-wrapper">
+						<div class="jump-menu">
+							<span class="currentTxt"><a href="#">아티스트리 홈</a></span>
+							<div class="select-wrapper">
+								<ul class="select-list">
+									<li>
+										<a href="#" class="menu-dep1">아티스트리</a>
+										<ul class="select-depth2">
+											<li><a href="#" class="menu-dep2 current">아티스트리 홈</a></li>
+											<li><a href="#" class="menu-dep2">아티스트리 스토리</a></li>
+											<li><a href="#" class="menu-dep2">미디어 라이브러리</a></li>
+											<li><a href="#" class="menu-dep2">연혁</a></li>
+											<li><a href="#" class="menu-dep2">아티스트리캠페인</a></li>
+											<li><a href="#" class="menu-dep2">스킨케어 제품 맵</a></li>
+											<li><a href="#" class="menu-dep2">제품소개</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#" class="menu-dep1">XS 에너지</a>
+										<ul class="select-depth2">
+											<li><a href="#" class="menu-dep2">XS 에너지 홈</a></li>
+											<li><a href="#" class="menu-dep2">What is XS</a></li>
+											<li><a href="#" class="menu-dep2">제품소개</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //jump-to-amway -->
+		</div>
+
+
+		<div class="container">
+			<div class="customer-area">
+				<div class="title-box">
+					<div class="product-list-page-title">
+						<h1 class="notice">미디어 라이브러리</h1>
+					</div>
+				</div>
+
+				<div class="customer-wrap">
+					<div class="amway-theme">
+						
+						<div class="testBox">
+							<div class="">
+								<img src="../../theme-blue/images/akl_brand/@test01.png" alt=""/>
+							</div>
+							<div class="">
+								<div class="">
+									<img src="../../theme-blue/images/akl_brand/@test02.png" alt=""/>
+									<div class="pink">
+										<img src="../../theme-blue/images/akl_brand/@test05.png" alt=""/>
+									</div>
+								</div>
+								<div class="">
+									<div class="pink">
+										<img src="../../theme-blue/images/akl_brand/@test05.png" alt=""/>
+									</div>
+									<img src="../../theme-blue/images/akl_brand/@test03.png" alt=""/>
+									
+								</div>
+							</div>
+							<div class="">
+								<img src="../../theme-blue/images/akl_brand/@test04.png" alt=""/>
+							</div>
+						</div>
+
+
+						<div class="img-product">
+						<div class="col-sm-12 col-md-6 product-image-gallery js-product-image-gallery v-m-pros new-product-image-gallery" style="opacity: 1;">
+							<!-- 2018.03.14 마크업 수정  -->
+							<div id="pdpImg" class="ui-snap-big"><!-- 수정 : 2018.03.29 (class 변경) -->
+								<div class="plp-item-label-wrap">
+									<div class="plp-item-label bg-purple">스마트 오더</div>
+								</div>
+
+								<ul class="slides">
+									<li>
+										<div class="image-gallery js-gallery"><img src="/_ui/responsive/theme-blue/images/akl_common/@img_sop_package.jpg" alt=""></div>
+										<div class="buttons zoom-center js-zoom-center">
+											<button class="enlarge2 btn btn-link G10300_lp1_btn"><span class="glyphicon glyphicon-zoom-in"></span><span>크게보기</span></button>
+										</div>
+									</li>
+									<li>
+										<div class="image-gallery js-gallery"><img src="/_ui/responsive/theme-blue/images/akl_common/no_img_b.png" alt=""></div>
+										<div class="buttons zoom-center js-zoom-center">
+											<button class="enlarge2 btn btn-link G10300_lp1_btn"><span class="glyphicon glyphicon-zoom-in"></span><span>크게보기</span></button>
+										</div>
+									</li>
+
+									<li class="type-video"><!-- 수정 : 2018.03.29 (동영상 구분 class) -->
+										<!-- 유튜브 영상 예시 2018.03.14 추가
+										<div class="video-wrapper"><!-- 2018.03.14 마크업 수정 ( .video-wrapper 추가)
+											<video width="100%" height="100%" controls autoplay><!-- height 100% 수정
+												<source src="/_ui/responsive/theme-blue/images/WeChatSight969.mp4" type="video/mp4">
+												<source src="movie.ogg" type="video/ogg">
+												<source src="movie.webm" type="video/webm">
+											</video>
+										</div>
+										-->
+										<div class="video-wrapper">
+											<iframe width="100%" height="100%" title="아티스트리 하이드라-브이 1분 스토리" src="http://www.youtube.com/embed/7CKdgdVhrwU?rel=0&amp;wmode=opaque" frameborder="0" allowfullscreen=""></iframe>
+										</div>
+									</li>
+									<li>
+										<div class="image-gallery js-gallery">
+										<img src="/_ui/responsive/theme-blue/images/no-border-images/truvivity.png" alt=""></div>
+										<div class="buttons zoom-center js-zoom-center">
+											<button class="enlarge2 btn btn-link G10300_lp1_btn"><span class="glyphicon glyphicon-zoom-in"></span><span>크게보기</span></button>
+										</div>
+									</li>
+									<li>
+										<div class="image-gallery js-gallery">
+										<img src="/_ui/responsive/theme-blue/images/no-border-images/perfect-pack.png" alt=""></div>
+										<div class="buttons zoom-center js-zoom-center">
+											<button class="enlarge2 btn btn-link G10300_lp1_btn"><span class="glyphicon glyphicon-zoom-in"></span><span>크게보기</span></button>
+										</div>
+									</li>
+									<li>
+										<div class="image-gallery js-gallery">
+										<img src="/_ui/responsive/theme-blue/images/no-border-images/cleanser.png" alt=""></div>
+										<div class="buttons zoom-center js-zoom-center">
+											<button class="enlarge2 btn btn-link G10300_lp1_btn"><span class="glyphicon glyphicon-zoom-in"></span><span>크게보기</span></button>
+										</div>
+									</li>
+									<li>
+										<div class="image-gallery js-gallery">
+										<img src="/_ui/responsive/theme-blue/images/no-border-images/blush.png" alt=""></div>
+										<div class="buttons zoom-center js-zoom-center">
+											<button class="enlarge2 btn btn-link G10300_lp1_btn"><span class="glyphicon glyphicon-zoom-in"></span><span>크게보기</span></button>
+										</div>
+									</li>
+								</ul>
+							</div>
+
+							<!-- 수정 : 2018.03.29 (기존 .flexslider 사용안함) -->
+							<div class="product-recentlyviewed__imagelist ui-snap-item owl-carousel owl-theme" id="uiPrdViewDetail"><!-- carousel 수정(2018.06.15) : .owl-carousel.owl-theme 추가  -->
+								<div><button type="button" data-n="0" class="ui-snap-btn"><img src="/_ui/responsive/theme-blue/images/akl_common/@img_sop_package.jpg" alt=""></button></div>
+								<div><button type="button" data-n="1" class="ui-snap-btn"><img src="/_ui/responsive/theme-blue/images/akl_common/no_img_b.png" alt=""></button></div>
+								<div><button type="button" data-n="2" class="ui-snap-btn type-video"><img src="/_ui/responsive/theme-blue/images/new-detail-small-pic.png" alt="동영상"></button></div>
+								<div><button type="button" data-n="3" class="ui-snap-btn"><img src="/_ui/responsive/theme-blue/images/no-border-images/truvivity.png" alt=""></button></div>
+								<div><button type="button" data-n="4" class="ui-snap-btn"><img src="/_ui/responsive/theme-blue/images/no-border-images/perfect-pack.png" alt=""></button></div>
+								<div><button type="button" data-n="5" class="ui-snap-btn"><img src="/_ui/responsive/theme-blue/images/no-border-images/cleanser.png" alt=""></button></div>
+								<div><button type="button" data-n="6" class="ui-snap-btn"><img src="/_ui/responsive/theme-blue/images/no-border-images/blush.png" alt=""></button></div>
+							</div>
+							<!-- //수정 : 2018.03.29 (.flexslider 사용안함) -->
+						</div>
+						<div class="clearfix hidden-sm hidden-md hidden-lg print-hide"></div>
+
+						<!-- pdp-info -->
+						<div class="col-sm-12 col-md-6 pdp-info new-pdp-info">
+							<!-- product-main-info -->
+							<div class="product-main-info">
+								<div class="col-md-12">
+									<!-- SOP 사용안함
+									<div class="description"></div>
+									<div class="lip-color-choose"></div>
+									<hr class="description__line">
+									-->
+
+									<div class="product-details">
+										<p class="price retail-price-discount">139,000원</p>
+										<span class="additional-price">
+											<ul>
+												<li>
+													<span class="retail-price-strike-out">PV / BV : 79,500 / 126,400</span>
+												</li>
+											</ul>
+										</span>
+									</div>
+								</div>
+								<div class="col-sm-12 col-md-12">
+									<div class="page-details-variants-select new-page-details-variants-select">
+										<div class="page-details-add-to-cart-component">
+											<!-- SOP제품 옵션 -->
+											<div class="addtocart-component sop-pdp"><!-- 수정 : class 추가(.sop-pdp) -->
+												<div class="amway-theme qty-selector js-qty-selector control-group">
+													<div class="row">
+														<div class="qty-selector-container">
+															<label class="control-label" for="amount-cal-input-id">수량</label>
+															<div class="opt-quantity amount-cal">
+																<input type="text" value="1" class="form-control js-qty-selector-input inpNum" id="amount-cal-input-id">
+																<a href="#" class="btnMinus">수량하나빼기</a>
+																<a href="#" class="btnPlus">수량하나더하기</a>
+															</div>
+														</div>
+													</div>
+
+													<div class="row">
+														<div class="size-selector-container">
+															<label class="control-label" for="sopPdp_settlingDay">주기</label>
+															<select class="size-select text-center form-control" id="sopPdp_settlingDay" disabled="disabled">
+																<option>매 달, 6개월</option>
+																<option>매 달, 3개월</option>
+															</select>
+														</div>
+													</div>
+
+													<div class="row">
+														<div class="size-selector-container">
+															<label class="control-label" for="sopPdp_starting">시작월</label>
+															<select class="size-select text-center form-control" id="sopPdp_starting">
+																<option>2018년 8월</option>
+																<option>2018년 9월</option>
+															</select>
+														</div>
+													</div>
+
+													<!-- 자동연장 -->
+													<div class="row">
+														<div class="auto-continue">
+															<input id="sopPdp_renew" type="checkbox"><label for="sopPdp_renew">자동연장하기</label>
+															<!-- 툴팁 -->
+															<div class="toolTip-wrapper">
+																<button type="button" class="btn-tooltip"><span class="hidden">자동연장 안내</span></button>
+																<div class="tooltip-content">
+																	<button type="button" class="btn-tooltip-close"><span class="hidden">안내닫기</span></button>
+																	<p>체크할 경우 <br>시작월로부터 24개월간 스마트 오더를 진행합니다</p>
+																</div>
+															</div>
+															<!-- //툴팁 -->
+														</div>
+													</div>
+													<!-- //자동연장 -->
+
+													<!-- 정기주문 혜택 -->
+													<div class="row benefits-tips">
+														<strong class="control-label">혜택 (4)</strong>
+														<div class="toggle-benefits">
+															<a href="#" class="btn-tgg-list ico-fa-angle-down"><em class="hidden">정기주문 혜택 열기</em></a>
+
+															<div class="sop-more-benefits">
+																<p><strong class="ico-fa-tag">6개월 혜택 :</strong><span>뉴트리라이프 10프로 할인쿠폰 증정</span></p>
+																<p><strong class="ico-fa-tag">12개월 혜택 :</strong><span>PV 10,000 / BV 10,000 추가 보너스 제공</span></p>
+																<p><strong class="ico-fa-tag">18개월 혜택 :</strong><span>뉴트리라이트 더블케어 샘플 제공</span></p>
+																<p><strong class="ico-fa-tag">24개월 혜택 :</strong><span>뉴트리라이트 더블케이 10% 할인</span></p>
+															</div>
+														</div>
+													</div>
+													<!-- //정기주문 혜택 -->
+
+													<div class="row">
+														<div class="mark-box">
+															<ul class="exc-mark">
+																<li>해당 제품 특성상 지정된 수량 단위로 주문 가능합니다.</li>
+															</ul>
+														</div>
+													</div>
+
+												</div>
+											</div>
+											<!-- //SOP제품 옵션 -->
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- //product-main-info -->
+						</div>
+						<!-- //pdp-info -->
+					</div>
+						
+
+
+								
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="quick"></div>
+		<div id="footer"></div>
+	</main>
+
+</body>
+</html>

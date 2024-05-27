@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>정기주문&amp;스마트 오더 주문서 생성 | Amway Korea</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords">
+	<meta name="description" content="NY Fee Bundle">
+	<meta name="robots" content="index,follow">
+
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-lib.css"><!-- 플러그인용 css : 2018.03.14 추가  -->
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common.css">
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.datepicker.js"></script><!-- datepicker : 2018.03.19 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/owl.carousel.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/isotope.pkgd.js"></script><!-- gnb 플러그인 : 2018.03.23 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/select2.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/new.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.raty.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_contents.js"></script><!-- brand 통합 : 2018.08.24 추가  -->
+</head>
+<body class="akl">
+	<!-- skipToContent -->
+	<div id="skipToContent">
+	<a href="#contents">콘텐츠 바로가기 </a>
+	</div>
+	<!-- //skipToContent -->
+
+	<main>
+		<div id="header"></div>
+		<div class="container-fluid main-container" id="contents">
+			<div class="print-hide breadcrumb-section">
+				<ol class="breadcrumb">
+					<li><a href="#">홈</a></li>
+					<li><a href="#">쇼핑</a></li>
+					<li><a href="#">플러스쇼핑</a></li>
+					<li class="active">정기주문 & 스마트 오더 프로그램</li>
+				</ol>
+			</div>
+		</div>
+
+		<!-- main-container -->
+		<div class="container-fluid main-container">
+			<div class="shipping-delivery sopCreate">
+				<div class="container-fluid">
+					<div class="row cartTitile">
+						<h1 class="product-list-page-title mb25">정기주문&스마트 오더 주문서 생성</h1>
+					</div>
+				</div>
+
+				<div class="container-fluid amway-theme">
+					<div class="row">
+						<div class="cart-items-wrapper"><!-- .col- 삭제 -->
+							<!-- 주문서 명 -->
+							<div class="sop-order-name">
+								<label for="sopOrderName">주문서 명</label><input type="text" id="sopOrderName">
+							</div>
+
+							<div id="shippingdiv"><!-- .shipping-delivery-ship -->
+								<p class="shipping-delivery-shipping-header">배송방법 선택<span class="btn-delivery-guide"><a href="#" class="bt-akl-white mini">배송방법 가이드</a></span></p>
+
+								<div class="sop-delivery-adress">
+									<a class="link-btn G10600_lp3" href="#">배송지목록<span class="featured-product__message-icon glyphicon glyphicon-menu-right"></span></a>
+
+									<div class="shipping-list-order">
+										<span>
+											<input class="amwa-radio" type="radio" name="abnAdress" id="radio100" value="M"><label for="radio100" >기본 배송지</label>
+										</span>
+										<span>
+											<input class="amwa-radio" type="radio" name="abnAdress" id="radio101" value="I"><label for="radio101" >최근 등록배송지1</label>
+										</span>
+										<span>
+											<input class="amwa-radio" type="radio" name="abnAdress" id="radio200" value="H"><label for="radio200" >새 배송지</label>
+										</span>
+									</div>
+									<div id="changeTextArea">
+										<div class="default-shipping-address" id="changeM"><!-- 기본 배송지 클릭했을 때 나오는 화면 -->
+											<p class="address-tit">배송지 정보</p>
+											<div class="detail-content">
+												<div class="col-xs-12">
+													<span class="col-md-2 left-content">받는분</span>
+													<span class="col-md-10 right-info">홍길동</span>
+												</div>
+												<div class="col-xs-12">
+													<span class="col-md-2 left-content">주소</span>
+													<span class="col-md-10 right-info">[07583] 서울 강서구 강서로 56가길 45,.(등촌동)</span>
+												</div>
+												<div class="col-xs-12">
+													<span class="col-md-2 left-content">휴대폰 번호</span>
+													<span class="col-md-10 right-info">010-1234-5678</span>
+												</div>
+												<div class="form-group col-xs-12">
+													<label for="remess2" class="col-md-2 col-xs-12 control-label">배송메시지</label>
+													<div class="col-md-10 col-xs-12 delivery-msg"><!-- 2018.07.03 클래스:delivery-msg 추가 -->
+														<input type="text" id="remess2" class="form-control m-message">
+														<span class="byte-txt">(0/40byte)</span><!-- 수정 : 2018.10.08 (추가) -->
+
+														<!-- 2018.07.03 마크업 추가 -->
+														<div class="delivery-msg-list">
+															<button type="button">부재 시 경비실에 맡겨주세요.</button>
+															<button type="button">부재 시 휴대폰으로 연락주세요.</button>
+															<button type="button">배송 전 연락 부탁 드립니다.</button>
+														</div>
+														<!--// 2018.07.03 마크업 추가 -->
+														<div class="message-shop">
+															<ul class="list-type2">
+																<li>택배기사님께 전달하는 메시지는 배송 시 참고하는 내용으로 배송상황 및 요청내용에 따라 반영되지 않을 수 있습니다. 배송일 및 배송시각은 지정하셔도 반영되지 않습니다.</li>
+																<li>특수문자는 ( ) . 를 제외하고 입력이 불가합니다.</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="default-shipping-address" id="changeI"><!-- 최근배송지 클릭했을 때 나오는 화면 -->
+											<p class="address-tit">배송지 정보</p>
+											<div class="detail-content">
+												<div class="col-xs-12">
+													<span class="col-md-2 left-content">받는분</span>
+													<span class="col-md-10 right-info">김길동</span>
+												</div>
+												<div class="col-xs-12">
+													<span class="col-md-2 left-content">주소</span>
+													<span class="col-md-10 right-info">[07583] 서울 강서구 강서로 56가길 45,.(등촌동)</span>
+												</div>
+												<div class="col-xs-12">
+													<span class="col-md-2 left-content">휴대폰 번호</span>
+													<span class="col-md-10 right-info">010-1234-5678</span>
+												</div>
+												<div class="form-group col-xs-12">
+													<label for="remess2" class="col-md-2 col-xs-12 control-label">배송메시지</label>
+													<div class="col-md-10 col-xs-12 delivery-msg"><!-- 2018.07.09 클래스:delivery-msg 추가 -->
+														<input type="text" id="remess2" class="form-control m-message">
+														<span class="byte-txt">(0/40byte)</span>
+														<!-- 2018.07.09 마크업 추가 -->
+														<div class="delivery-msg-list">
+															<button type="button">부재 시 경비실에 맡겨주세요.</button>
+															<button type="button">부재 시 휴대폰으로 연락주세요.</button>
+															<button type="button">배송 전 연락 부탁 드립니다.</button>
+														</div>
+														<!--// 2018.07.09 마크업 추가 -->
+														<div class="message-shop">
+															<ul class="list-type2">
+																<li>택배기사님께 전달하는 메시지는 배송 시 참고하는 내용으로 배송상황 및 요청내용에 따라 반영되지 않을 수 있습니다. 배송일 및 배송시각은 지정하셔도 반영되지 않습니다.</li>
+																<li>특수문자는 ( ) . 를 제외하고 입력이 불가합니다.</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="new-shipping-address" id="changeH"><!-- 새 배송지 클릭했을 때 나오는 화면 -->
+											<p class="address-tit">배송지 정보</p>
+											<div class="new-message-shop">
+												<ul class="list-type2">
+													<li>정확하고 빠른 배송을 위해 정확한 주소지와 휴대폰 번호 등록을 확인해 주십시오.</li>
+												</ul>
+												<p><strong class="pot">*</strong> 는 필수입력 항목입니다.</p>
+											</div>
+											<div class="detail-content">
+												<div class="new-cart">
+													<div class="delv-shopbox">
+														<div class="form-group">
+															<label for="receiver2" class="col-md-3 control-label">받는분 <strong class="pot">*</strong></label>
+															<div class="col-md-9 col-xs-12 receiver">
+																<input type="text" id="receiver2" class="form-control">
+															</div>
+														</div>
+														<div class="form-group">
+															<label for="address2" class="col-md-3 control-label">주소 <strong class="pot">*</strong></label>
+															<div class="col-md-9 col-xs-12 address">
+																<p><input type="text" id="address2" name="" class="form-control" readonly="readonly"></p>
+																<button type="button" class="bt-akl-white" id="U61000_lp1">주소찾기</button>
+																<input type="text" id="" name="" class="form-control" title="나머지 주소 1" readonly="readonly">
+																<input type="text" id="" name="" class="form-control" title="나머지 주소 2" readonly="readonly">
+															</div>
+														</div>
+
+														<div class="form-group">
+															<label  for="sellNum1" class="col-md-3 control-label">휴대폰 번호 <strong class="pot">*</strong></label>
+															<div class="phone-group col-md-9 col-xs-12">
+																<div class="control-group">
+																	<select id="sellNum1" name="" class="form-control" title="휴대전화번호 앞자리 선택">
+																		<option value="1" selected="selected">010</option>
+																		<option value="509">011</option>
+																	</select>
+																</div>
+																<div class="form-group">
+																	<input type="text" name="" class="text form-control" minlength="1"  maxlength="8" value="" placeholder="12345678"  title="휴대전화번호 입력">
+																</div>
+															</div>
+														</div>
+														<div class="form-group def-ship_new">
+															<div class="clearfix Defaul-taddr">
+																<input id="remember5" type="checkbox">
+																<label for="remember5" class="normal inline-label checklabel">기본 배송지</label>
+														</div>
+														</div>
+
+													</div>
+													<div class="new-shipping-agree">
+														<p>본인은 정보주체(배송 받는 사람)로부터 개인정보가 제3자인 한국 암웨이에 배송 목적으로 제공된다는 사실을 안내하고, 동의를 받으셨습니까?</p>
+														<div class="form-group">
+															<input class="amwa-radio" type="radio" name="abnAdress" id="radio500" value="yes" />
+															<label for="radio500">예</label>
+															<input class="amwa-radio" type="radio" name="abnAdress" id="radio501" value="no" />
+															<label for="radio501">아니오</label>
+														</div>
+													</div>
+													<div class="new-shipping-btnw">
+														<ul class="list-type2">
+															<li>기본배송지의 전화번호 수정은 <span class="pot-basic">마이페이지 > 기본정보</span> 수정에서 가능합니다.</li>
+														</ul>
+														<button type="button" class="bt-akl-blue">확인</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+							<!-- 수정 : 2018.11.06 (추가) -->
+							<div class="shipping-delivery-ship sms-receive-box"><!-- 수정 : 2018.11.15 (.sms-receive-box 추가) -->
+								<div class="col-xs-12 sms-reception">
+									<p class="shipping-delivery-setup-title col-md-3">SMS 수신동의여부</p>
+									<div class="col-md-9">
+										<span class="inline-label"><input type="radio" name="smsAcceptance" class="amwa-radio" id="smsAcceptance_OK"><label for="smsAcceptance_OK">SMS 수신 동의함</label></span>
+										<span class="inline-label"><input type="radio" name="smsAcceptance" class="amwa-radio" id="smsAcceptance_NO"><label for="smsAcceptance_NO">SMS 수신 동의안함</label></span>
+									</div>
+								</div>
+
+								<!-- 수정 : 2018.11.15 (추가) -->
+								<div class="col-xs-12 sms-reception">
+									<label class="shipping-delivery-setup-title col-md-3" for="sellNum1">휴대폰 번호</label>
+									<div class="phone-group col-md-9 col-xs-12">
+										<div class="control-group">
+											<select id="sellNum1" name="" class="form-control" title="휴대전화번호 앞자리 선택">
+												<option value="1" selected="selected">010</option>
+												<option value="509">011</option>
+											</select>
+										</div>
+										<div class="form-group">
+											<input type="text" class="text form-control" placeholder="‘-’없이 입력" title="휴대전화번호 입력">
+										</div>
+									</div>
+								</div>
+								<!-- //수정 : 2018.11.15 (추가) -->
+
+							</div>
+							<!-- //수정 : 2018.11.06 (추가) -->
+
+							<div id="selectPay" class="shipping-delivery-ship method">
+								<p class="shipping-delivery-shipping-header">결제방법 선택</p>
+								<!-- 수정 : 2018.10.08 (결제방법 선택 순서변경 - 자동이체 > 신용카드 > 무통장) -->
+								<div class="panel">
+									<input class="amwa-radio" type="radio" name="optradio" id="radio5" />
+									<label for="radio5">자동이체</label>
+									<div id="collapseFive" class="shipping-delivery-radio-body panel-collapse collapse">
+										<div class="panel-body paymemnt">
+											<div class="row card-method">
+												<div class="form-group">
+													<div  class="col-xs-12 col-md-3 card-tit"><label for="ap">자동이체 비밀번호</label></div>
+													<div class="col-xs-12 col-md-8">
+														<div class="a-point">
+															<input name="point" id="ap" type="text" value="" class="auto-pw" placeholder="자동이체 비밀번호 6자리"><!-- 수정 : 2018.05.03 (placeholder) -->
+														</div>
+														<div class="a-point info">
+															<ul class="list-type2">
+																<li>자동이체계좌를 등록하지 않은 분은 자동이체계좌 및 비밀번호 등록을 먼저 해주시기 바랍니다.</li>
+															</ul>
+														</div>
+														<div class="direct-debit-account"><button type="button" class="bt-akl-white">자동이체계좌 등록</button></div><!-- 수정 : 2018.10.24 (버튼 자리이동) -->
+													</div>
+												</div>
+
+												<!-- 수정 : 2018.08.22 (추가) -->
+												<div class="form-group info-txtbox">
+													<div class="col-xs-12 col-md-3 card-tit">주의사항</div>
+													<div class="col-xs-12 col-md-8">
+														<ul class="list-type5">
+															<li> 즉시결제 시 A 포인트는 신용카드 또는 자동이체와 혼합하여 결제하실 수 있습니다.</li>
+															<li> www.amway.co.kr에서 결제 정보(계좌이체 통장) 변경 시 스마트 오더 프로그램에도 동일하게 적용됩니다.</li><!-- 20190111 수정 abn 에서 www.amway.co.kr로 -->
+															<li> 나의 주문 내역 페이지에서 현금영수증을 발급하실 수 있습니다.</li>
+															<li> 현금영수증은 예약결제일 또는 즉시결제일 당일에만 발급 가능합니다.</li>
+															<!-- <li>2016년 9월부터는 스마트 오더 프로그램의 혜택과 자동이체 10% PV UP 은 중복 적용되지 않습니다.</li> 삭제 : 2018.11.30 (AHPS-5106) -->
+														</ul>
+													</div>
+												</div>
+												<!-- //수정 : 2018.08.22 (추가) -->
+											</div>
+
+											<!--
+											<div class="transfer-resver-guide"></div> 수정 : 2018.08.22 (SOP 사용안함 - 자동이체 안내 삭제) -->
+										</div>
+									</div>
+								</div>
+								<!-- //수정 : 2018.10.08 (결제방법 선택 순서변경 - 자동이체 > 신용카드 > 무통장) -->
+								<div class="panel">
+									<input class="amwa-radio" type="radio" name="optradio" id="radio3" /><label for="radio3">신용카드</label>
+									<div id="collapseThree" class="shipping-delivery-radio-body panel-collapse collapse">
+										<div class="panel-body paymemnt">
+
+											<!-- 수정 : 2018.08.22 (카드 결제방식 삭제) -->
+											<div class="row card-method">
+												<div class="card-favor">
+
+													<!-- 수정 : 2018.10.31 (결제카드 정보 추가) -->
+													<span class="card-info-txt">
+														<a href="#" class="bt-akl-white mini">결제정보 입력</a>
+														<!-- <em>결제카드 &nbsp;&nbsp;:</em><b>현대카드</b> -->
+													</span>
+
+													<div>
+														<!-- 수정 : 2018.11.05 (결제정보 확인 후) -->
+														<span class="card-info-txt">
+															<a href="#" class="bt-akl-white mini">결제정보 변경</a>
+															<em>결제카드는 <b>현대카드</b>로 선택하셨습니다.</em>
+														</span>
+														<!-- //수정 : 2018.11.05 (결제정보 확인 후) -->
+													</div>
+												</div>
+
+												<!-- 수정 : 2018.09.17 (삭제)
+												<div class="form-group">
+													<div  class="col-xs-12 col-md-3 card-tit"><label for="cardfecture">카드종류</label></div>
+													<div class="col-xs-12 col-md-8">
+														<select class="shipping-delivery-size" id="cardfecture">
+															<option>선택하세요</option>
+															<option>Tokyo-to</option>
+															<option>Tokyo-to</option>
+														</select>
+
+														<div class="card-kinds">
+															<span class="col-xs-12 col-md-6">
+																<input class="amwa-radio" type="radio" name="optradio" id="individual" />
+																<label for="individual">개인카드</label>마크업수정 2018.04.02
+															</span>
+															<span class="col-xs-12 col-md-6">
+																<input class="amwa-radio" type="radio" name="optradio" id="corporation" />
+																<label for="corporation">법인카드</label>마크업수정 2018.04.02
+															</span>
+														</div>
+														<div class="card-favor">
+															<span class="G10600_lp2"><a href="#" class="bt-akl-white mini">카드사 혜택보기</a></span>
+														</div>
+													</div>
+												</div>
+
+												<div id="gaeincard" class="card-sort panel-collapse collapse">
+													<div class="form-group">
+														<div  class="col-xs-12 col-md-3 card-tit"><label for="installment">할부기간</label></div>
+														<div class="col-xs-12 col-md-8">
+															<select class="shipping-delivery-size" id="installment">
+																<option>일시불</option>
+																<option>Tokyo-to</option>
+																<option>Tokyo-to</option>
+															</select>
+														</div>
+													</div>
+												</div>
+												<div id="bubincard" class="card-sort panel-collapse collapse">
+													<div class="form-group">
+														<div  class="col-xs-12 col-md-3 card-tit"><label for="installment">할부기간</label></div>
+														<div class="col-xs-12 col-md-8">
+															<select class="shipping-delivery-size" id="installment">
+																<option selected="">일시불</option>
+																<option>Tokyo-to</option>
+																<option>Tokyo-to</option>
+															</select>
+														</div>
+													</div>
+												</div> -->
+
+												<!-- 수정 : 2018.08.22 (문구추가) -->
+												<div class="info-txtbox">
+													<div class="form-group">
+														<!-- 수정 : 2018.09.17 (문구수정) -->
+														<div  class="col-xs-12 col-md-2 card-tit">주의사항</div>
+														<div class="col-xs-12 col-md-10">
+															<div class="precautions-txt">
+																<ul class="list-type5">
+																	<li>마이페이지에서 결제 정보(계좌이체 통장) 변경 시 스마트 오더 프로그램에도 동일하게 적용됩니다.</li>
+																	<li>나의 주문 내역 페이지에서 현금영수증을 발급하실 수 있으며, 결제일 또는 즉시결제일 당일에만 발급 가능합니다.</li>
+																</ul>
+															</div>
+														</div>
+														<!-- //수정 : 2018.09.17 (문구수정) -->
+													</div>
+												</div>
+												<!-- //수정 : 2018.08.22 (문구추가) -->
+
+											</div>
+											<!-- //수정 : 2018.08.22 (카드 결제방식 삭제) -->
+
+										</div>
+									</div>
+								</div>
+								<div class="panel">
+									<input class="amwa-radio" type="radio" name="optradio" id="radio40" />
+									<label for="radio40">무통장입금</label>
+									<div id="collapseFour" class="shipping-delivery-radio-body panel-collapse collapse">
+										<div class="panel-body paymemnt">
+											<div class="row card-method">
+												<div class="form-group">
+													<div  class="col-xs-12 col-md-3 card-tit"><label for="depositor">입금자명</label></div>
+													<div class="col-xs-12 col-md-8">
+														<p><input name="name-of-depositor" id="depositor" type="text" value="" class="comm-inp" placeholder=""></p><!-- 수정 : 2018.05.03 (p 추가) -->
+														<!-- 수정 : 2018.05.03 (추가) -->
+														<ul class="list-type2">
+															<li>입금정보는 기본 정보에 등록된 휴대폰 번호로 문자 발송됩니다.</li>
+														</ul>
+														<!-- //수정 : 2018.05.03 (추가) -->
+													</div>
+												</div>
+												<div class="form-group">
+													<div  class="col-xs-12 col-md-3 card-tit"><label for="bank">은행선택</label></div>
+													<div class="col-xs-12 col-md-8">
+														<select class="shipping-delivery-size" id="bank">
+															<option selected="">선택하세요</option>
+															<option>국민</option>
+															<option>우리</option>
+														</select>
+													</div>
+												</div>
+												<div class="form-group">
+													<div  class="col-xs-12 col-md-3 card-tit">무통장입금계좌</div>
+													<div class="col-xs-12 col-md-8">
+														<span class="payment-forms-txt3">국민은행 829-01-0138404</span><!-- 수정 : 2018.08.22 (입금기한 삭제) -->
+													</div>
+												</div>
+												<div class="form-group info-txtbox">
+													<div  class="col-xs-12 col-md-3 card-tit">주의사항</div>
+													<div class="col-xs-12 col-md-8">
+														<div class="precautions-txt">
+															<!-- 수정 : 2018.08.22 (문구수정) -->
+															<ul class="list-type5">
+																<li> 즉시결제 시 A 포인트는 신용카드 또는 자동이체와 혼합하여 결제하실 수 있습니다.</li>
+																<li> www.amway.co.kr에서 결제 정보(계좌이체 통장) 변경 시 스마트 오더 프로그램에도 동일하게 적용됩니다.</li><!-- 20190111 수정 abn 에서 www.amway.co.kr로 -->
+																<li> 나의 주문 내역 페이지에서 현금영수증을 발급하실 수 있습니다.</li>
+																<li> 현금영수증은 예약결제일 또는 즉시결제일 당일에만 발급 가능합니다.</li>
+																<!-- <li> 익일 배송을 위해서 주문 및 무통장입금은 <strong>오전 11시 30분 이전</strong>에 완료하셔야 합니다.</li> --><!-- 20190123 수정 문구 삭제 -->
+																<!-- <li>2016년 9월부터는 스마트 오더 프로그램의 혜택과 자동이체 10% PV UP 은 중복 적용되지 않습니다.</li> 삭제 : 2018.11.30 (AHPS-5106) -->
+															</ul>
+															<!-- //수정 : 2018.08.22 (문구수정) -->
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- 수정 : 2018.08.22 (주문결제와 동일하게 수정) -->
+							<div class="shipping-delivery-ship">
+								<div class="col-xs-12 pay-transaction">
+									<p class="shipping-delivery-setup-title col-md-3">거래내역 증빙신청</p>
+									<div class="col-md-9">
+										<div class="panel">
+											<input class="amwa-radio" type="radio" name="optradio3" id="radio31" value="radio31" checked="" />
+											<label for="radio31"><span class="text-regul">신청안함</span></label><!-- class 추가 2018.04.03 -->
+										</div>
+										<div class="panel">
+											<input class="amwa-radio" type="radio" name="optradio3" id="radio32" value="radio32" />
+											<label for="radio32" class="tax-bill"><span class="text-regul">세금계산서(중개판매 신청) :</span> 123456789 명품서천특산품</label><!-- class 추가 2018.04.03 -->
+											<span class="btn-business G10600_lp5"><a href="#" class="bt-akl-white mini">사업자등록증 선택</a></span>
+										</div>
+										<div class="panel cash-receipts">
+											<div class="col-xs-12 col-md-3">
+												<input class="amwa-radio" type="radio" name="optradio3" id="radio33" value="radio33" />
+												<label for="radio33"><span class="text-regul">현금영수증</span></label><!-- class 추가 2018.04.03 -->
+											</div>
+											<div class="col-xs-12 col-md-9">
+												<!-- 마크업 수정 2018.04.05 -->
+												<div class="cash-type">
+													<div class="cash-phone">
+														<select class="form-control" title="구분을 선택하세요">
+															<option>휴대폰번호</option>
+															<option>현금영수증카드번호</option>
+															<option>사업자등록번호</option>
+														</select>
+														<input type="text" class="form-control" placeholder="‘-’없이 입력" title="핸드폰 번호 뒷자리 6~8자리를 입력하세요">
+													</div>
+													<div class="receipt-type">
+														<label for="re-type">영수증 유형</label>
+														<select class="form-control" id="re-type">
+															<option>소득공제용(개인)</option>
+															<option>소득공제용(법인)</option>
+														</select>
+													</div>
+												</div>
+												<!-- //마크업 수정 2018.04.05 -->
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="shipping-delivery-ship">
+								<div class="col-xs-12 pay-transaction">
+									<p class="shipping-delivery-setup-title col-md-3">거래명세서에 가격/PV/BV를 표시하시겠습니까?</p>
+									<div class="col-md-9">
+										<div class="panel pay-pvbv">
+											<input class="login-form-remember" id="includePrice1" name="includePrice" type="checkbox" />
+											<label for="includePrice1">가격표시</label>
+											<input class="login-form-remember" id="includePrice2" name="includePrice" type="checkbox" />
+											<label for="includePrice2">PV/BV 표시</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- //수정 : 2018.08.22 (주문결제와 동일하게 수정) -->
+
+							<div class="shipping-delivery-ship">
+								<ul class="list-type2">
+									<li>세금계산서 발행일은 재화가 인도된 날 기준이므로, 배달 주문의 경우 출고 완료 기준으로 발행됩니다. 발행일 기준 익일 10시 이후부터 국세청 사이트에서 조회 가능합니다. 단, 월말/ 월초 등 물량 증가로 출고가 지연될 경우 ,출고일 기준으로 세금계산서가 발행됩니다.</li>
+								</ul>
+								<div class="txt-tye">
+									<p class="setup-title">주문완료까지 시간이 지연될 수 있습니다. 조금만 기다려 주세요.</p>
+									<p class="setup-info"><strong>[결제요청]</strong> 버튼을 한 번만 누르세요. 여러 번 선택하시면 주문이 중복 생성될 수 있습니다.</p>
+								</div>
+							</div>
+							<div class="shipping-delivery-ship">
+								<div class="deli-introduction">
+									<p class="tit">소비자피해보상보험 가입 안내</p>
+									<p>전자상거래등에서의 소비자보호에관한 법률에 따라 직접판매공제조합에 가입하여 고객님의 결제금액에 대해 안전거래를 보장하고 있습니다.</p>
+									<div class="btn-checking-insurance"><a href="#" class="bt-akl-white mini">보험가입사실 확인</a></div>
+								</div>
+							</div>
+							<div class="shipping-delivery-ship">
+								<div class="row dev-agree">
+									<div class="col-xs-12 col-md-8">
+										<p>본인은 본 스마트 주문으로 신청한 제품은 매월 정기 결제해야 하며,
+											별도의 해지 신청을 하지 않을 시에는 본인이 신청한 결제수단으로 매월 정기 결제 되는 것에 동의합니다.
+											자동결제 해지는 결제일 3일 이전에 신청하셔야 하며,
+											결제일이 도래하기 1일~2일 사이에 (예를 들어, 결제일이 25일인 경우, 23일~24일) 해지신청을 하시면,
+											당월은 결제가 이루어지고 익월에 해지신청이 반영됩니다.
+										</p>
+									</div>
+									<div class="col-xs-12 col-md-4">
+										<input class="login-form-remember" id="sopAgreement1" name="sopAgreement" type="checkbox">
+										<label for="sopAgreement1">동의합니다</label>
+									</div>
+
+									<div class="col-xs-12 col-md-8">
+										<p>주문하실 상품의 상품명, 가격, 배송정보를 확인하였으며, 이에 동의하십니까? (전자상거래법 제8조 제2항)</p>
+									</div>
+									<div class="col-xs-12 col-md-4">
+										<input class="login-form-remember" id="sopAgreement2" name="sopAgreement" type="checkbox">
+										<label for="sopAgreement2">동의합니다</label>
+									</div>
+
+									<div class="col-xs-12 col-md-8">
+										<p>배송 및 결제 정보 수집/이용 및 국외이전에 대해 이해하였으며, 이에 동의하십니까?</p>
+									</div>
+									<div class="col-xs-12 col-md-4">
+										<input class="login-form-remember" id="sopAgreement3" name="sopAgreement" type="checkbox">
+										<label for="sopAgreement3">동의합니다</label>
+									</div>
+								</div>
+
+								<!-- (약관내용) -->
+								<div class="use-agreement">
+									<ul id="terms" class="box-sizing">
+										<li>
+											<div class="conditions">
+												<div class="text">
+													<!-- 약관수정 : 2018.11.09 -->
+													<div class="termsWrapper onFocus privacyInfo" tabindex="0">
+														<!-- 약관1 -->
+														<strong class="titH2">[필수] 개인정보 수집/이용에 대한 동의</strong>
+														<div class="tbl-list-view terms">
+															<div class="thead">
+																<div class="tr">
+																	<strong style="width:30%">목적</strong>
+																	<strong style="width:70%">항목</strong>
+																</div>
+															</div>
+															<div class="tbody">
+																<div class="tr">
+																	<strong class="mob-hide">목적</strong>
+																	<div class="td mob-tit">대금 결제 서비스</div>
+																	<strong>항목</strong>
+																	<div class="td">ABO 번호 또는 회원 ID, 이름, 신용카드 정보, 계좌정보, A 포인트 정보(결제 방식에 따른 정보 수집)</div>
+																</div>
+																<div class="tr">
+																	<strong class="mob-hide">목적</strong>
+																	<div class="td mob-tit">상품 배송</div>
+																	<strong>항목</strong>
+																	<div class="td">이름, 주소, 휴대폰번호, 전화번호(선택)</div>
+																</div>
+															</div>
+														</div>
+														<div class="terms-tit-con">
+															<strong class="box-type-tit">(공통) 이용·보유기간</strong>
+															<div class="box-type-con">
+																<ul>
+																	<li>계약 또는 청약철회 등에 관한 기록 5년</li>
+																	<li>대금결제 및 재화 등의 공급에 관한 기록 5년</li>
+																</ul>
+															</div>
+														</div>
+														<p class="listWarning">개인정보 수집 및 이용에 대한 동의를 거부하실 수 있으나, 거부 시 상품의 구매, 대금 결제, 배송이 제한됩니다.</p>
+
+														<!-- 약관2 -->
+														<hr class="divide no-line">
+														<strong class="titH2">[필수] 개인정보의 국외 이전에 대한 동의</strong>
+														<div class="tbl-list-view terms">
+															<div class="tr">
+																<div class="th mob-block">이전목적</div>
+																<div class="td mob-block">시스템 유지보수</div>
+															</div>
+															<div class="tr">
+																<div class="th mob-block">이전국가 및 이전받는 자</div>
+																<div class="td mob-block">USA (미국 Alticor)<br>관리책임자 : Jim Redd (<a href="mailto:alticor_privacy@alticor.com">alticor_privacy@alticor.com)</a></div>
+															</div>
+															<div class="tr">
+																<div class="th mob-block">이전항목</div><div class="td mob-block">
+																	대금 결제 서비스관련 정보 : ABO 번호 또는 회원 ID, 이름, 신용카드 정보, 계좌정보, A 포인트 정보(결제 방식에 따른 정보 수집)<br>
+																	상품 배송관련 정보 : 이름, 주소, 휴대폰번호, 전화번호(선택)
+																</div>
+															</div>
+															<div class="tr">
+																<div class="th mob-block">이전시점</div><div class="td mob-block">주문 시</div>
+															</div>
+															<div class="tr">
+																<div class="th mob-block">이전방법</div><div class="td mob-block">온라인 전송</div>
+															</div>
+															<div class="tr">
+																<div class="th mob-block">보유기간</div><div class="td mob-block">계약 또는 청약철회 등에 관한 기록 5년<br>대금결제 및 재화 등의 공급에 관한 기록 5년</div>
+															</div>
+														</div>
+														<p class="listWarning">서비스 제공 시스템이 국외에 위치하므로, 동의를 거부하실 경우 상품의 구매, 대금 결제, 배송이 제한됩니다.</p>
+													</div>
+													<!-- //약관수정 : 2018.11.09 -->
+												</div>
+												<button class="text-btn view-all">더보기
+													<i class="icon icon-arrow-downs"></i>
+													<i class="icon icon-arrow-ups"></i>
+												</button>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<!-- //(약관내용) -->
+							</div>
+
+							<!-- 수정 : 2018.08.13 (추가) -->
+							<div class="shipping-delivery-ship">
+								<div class="col-xs-12 sop-settlingDay">
+									<label class="shipping-delivery-setup-title col-md-2 control-label" for="sopPdp_settlingDay">결제일</label>
+									<div class="col-md-10">
+										<span>매달</span>
+										<select class="form-control" id="sopPdp_settlingDay">
+											<option>1일</option>
+											<option>2일</option>
+										</select>
+
+										<!-- 수정 : 2018.08.22 (추가) -->
+										<div class="info-txtbox">
+											<ul class="list-type2">
+												<li>결제일 지정은 카드결제의 경우 2일부터 27일까지, 무통장과 자동이체의 경우 2일부터 25일까지만 가능합니다.</li>
+												<li>결제일 이전에도 즉시결제를 통해 결제하실 수 있습니다.</li>
+											</ul>
+										</div>
+										<!-- //수정 : 2018.08.22 (추가) -->
+									</div>
+								</div>
+							</div>
+							<!-- //수정 : 2018.08.13 (추가) -->
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="amwa-btnbar">
+				<a href="/_ui/responsive/html/shop/G10431.html" class="btn-blue-white">생성</a>
+				<a href="#" class="bt-akl-txt">취소</a>
+			</div>
+		</div>
+		<div id="quick"></div>
+		<div id="footer"></div>
+
+	</main>
+
+<!-- 주소찾기 팝업 -->
+<div class="layerWrapper U61000_lp1_pop">
+	<div class="cbox layerBox popWidM">
+		<div class="cart-popup__dialog">
+			<div class="cart-popup__header">
+				<span class="cart-popup__header-text">주소찾기
+					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close">
+					<img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기">
+					</a>
+				</span>
+			</div>
+			<div class="cart-popup__content payment">
+				<div class="cart-popup__item-info">
+					<div class="form-wrapper address-pop">
+						<input type="text" id="" name="" placeholder="예: 영동대로 517 / 아셈타워 / 삼성동 159-1" value="" title="검색할 주소 입력">
+						<button type="submit" class="btn btn-primary">
+							<span>검색</span>
+						</button>
+					</div>
+					<ul class="list-type2">
+						<li>예) 도로명: 영동대로 517 / 아셈타워 / 삼성동 159-1</li>
+						<li>단, 도로명 혹은 동(읍/면/리)만 검색하시는 경우 정확한 검색결과가 나오지 않을 수 있습니다.</li>
+					</ul>
+					<p>아래에서 해당되는 주소의 [선택]버튼을 눌러주세요</p>
+					<div class="table-wrapper">
+						<table class="tbl-type1 address">
+							<caption>우편번호, 주소, 그룹명 제공</caption>
+							<colgroup>
+								<col style="width:90px">
+								<col style="">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">우편번호</th>
+									<th scope="col">그룹명</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>06193</td>
+									<td>
+										<ul>
+											<li>
+												<strong>도로</strong>
+												<p>서울 강남구 테헤란로 테헤란로 68길 15(대치동, 대치동우정에쉐르2)</p>
+												<button type="button">선택</button>
+											</li>
+											<li>
+												<strong>지번</strong>
+												<p>서울 강남구 대치동 890-42 대치동우정에쉐르2</p>
+												<button type="button">선택</button>
+											</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<td>06193</td>
+									<td>
+										<ul>
+											<li>
+												<strong>도로</strong>
+												<p>서울 강남구 테헤란로 테헤란로 68길 15(대치동, 대치동우정에쉐르2)</p>
+												<button type="button">선택</button>
+											</li>
+											<li>
+												<strong>지번</strong>
+												<p>서울 강남구 대치동 890-42 대치동우정에쉐르2</p>
+												<button type="button">선택</button>
+											</li>
+										</ul>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="paging">
+						<a href="#" class="prev">맨 처음 페이지</a>
+						<a href="#" class="before">이전 페이지</a>
+						<ul>
+							<li><a href="#">1</a></li>
+							<li class="on"><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+						</ul>
+						<a href="#" class="after">다음페이지</a>
+						<a href="#" class="next">맨 마지막 페이지</a>
+					</div>
+
+					<div class="form-wrapper address-pop02">
+						<dl>
+							<dt>상세 주소 입력</dt>
+							<dd>
+								<input type="text" id="" name="" value="06196" title="우편번호" readonly="readonly">
+								<input type="text" id="" name="" value="서울 강서구 강서로56가길 45, 르네상스 (등촌동)" title="주소"  readonly="readonly">
+								<input type="text" id="" name="" placeholder="상세주소 입력 후 주소입력 버튼을 눌러주세요." value="" title="상세주소 입력">
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<div class="cart-popup__item-link">
+				<button type="button" class="bt-akl-blue">주소입력</button>
+				<button type="button" class="bt-akl-txt">취소</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!--// 주소찾기 팝업 -->
+
+<!-- 배송지 목록(단일) 팝업 -->
+<div class="layerWrapper G10600_lp3_pop">
+	<div class="cbox layerBox popWidM">
+		<div class="cart-popup__dialog">
+			<div class="cart-popup__header">
+				<span class="cart-popup__header-text">배송지 목록 <!-- 수정 : 2018.05.03 ('단일' text삭제) -->
+					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close">
+					<img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기">
+					</a>
+				</span>
+			</div>
+			<div class="cart-popup__content payment">
+				<div class="cart-popup__item-info">
+
+					<div style="padding:50px 0 70px;">
+						<p>[공통사용] 배송지 목록 페이지 분리 : 2018.04.23 </p>
+						<a href="../shop/G10600_lp3_pop.html" target="_blank">G10600_lp3_pop.html</a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--//배송지 목록(단일) 팝업 -->
+
+<!-- 카드사 혜택보기 팝업 : 2018.10.05 사용안함
+<div class="layerWrapper G10600_lp2_pop">
+	<div class="cbox layerBox popWidL">
+		<div class="cart-popup__dialog">
+			<div class="cart-popup__header">
+				<span class="cart-popup__header-text">카드사 혜택보기
+					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close">
+					<img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기">
+					</a>
+				</span>
+			</div>
+			<div class="cart-popup__content payment">
+				<div class="cart-popup__item-info">
+
+					<div style="padding:50px 0 70px;">
+						<p>[공통사용] 신용카드 혜택보기 페이지 분리 : 2018.04.23 </p>
+						<a href="G10600_lp2_pop.html" target="_blank">G10600_lp2_pop.html</a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div> -->
+<!--//카드사 혜택보기 팝업 -->
+
+<!-- 주문불가 제품 알림 팝업 -->
+<div class="layerWrapper G10600_lp1_pop">
+	<div class="cbox layerBox popWidM">
+		<div class="cart-popup__dialog">
+			<div class="cart-popup__header">
+				<span class="cart-popup__header-text">주문불가 제품 알림
+					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close">
+					<img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기">
+					</a>
+				</span>
+			</div>
+			<div class="cart-popup__content payment">
+				<div class="cart-popup__item-info">
+					<p>수량제한 AP : 강서 AP</p>
+					<div class="pop-prot-body">
+						<div class="cannot-order-list"><!-- div 영역 추가 2018.05.16 -->
+							<div class="cartlist-image">
+								<img src="/_ui/responsive/theme-blue/images/akl_common/@heart-health_checkout.png" class="no-border-image" alt="pro-duct3" />
+							</div>
+							<div class="cartlist-text">
+								<div class="cart-popup__item-head">
+									<div class="cartlist-title">
+										아티스트리 시그니처 컬러 라잇업 립글로스 립글로스 립글로스  립글로스  립글로스
+										<div class="cartlist-small2">1038 / 120435D </div>
+									</div>
+									<div class="cartlist-quantity">
+										<span class="qua-tite">주문수량</span>
+										<span class="qua-num">20</span>
+									</div>
+								</div>
+
+								<div class="cart-popup__item-com">
+									<div class="com-ttile">주문불가 사유</div>
+									<div class="com-num"><span class="ico-i">수량제한</span></div>
+									<p class="com-txt">벌크제품과 같이주문시 두개만 주문가능하고 개별로 주문시 4개까지만 주문가능함</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="pop-prot-form">
+						<div class="form-group">
+							<input class="amwa-radio" type="radio" name="impossible" id="impossible1" value="" checked>
+							<label for="impossible1">장바구니로 돌아가 다시 주문정보 수정</label>
+						</div>
+						<div class="form-group">
+							<input class="amwa-radio" type="radio" name="impossible" id="impossible2" value="">
+							<label for="impossible2">현재상품 삭제 후 주문 진행</label>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+			<div class="cart-popup__item-link">
+				<button type="button" class="bt-akl-blue">확인</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!--//주문불가 제품 알림 팝업 -->
+
+</body>
+</html>

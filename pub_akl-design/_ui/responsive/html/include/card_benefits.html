@@ -1,0 +1,85 @@
+<div id="card_benefits" class="layer-area plp-v2 plp-v2-st2 card_benefits">
+    <div class="layer-area_container with_pop_head shipping_delivery_st02">
+        <!-- 다른 채널에서는 타이틀을 사용하기 때문에 마크업 남겨놓음 -->
+        <div class="layer-prd_search_top cash_tax">
+            <div class="pop_head">
+                <h2 class="tax">카드혜택</h2>
+                <button type="button" class="btn-modal_close moView">
+                    <img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기">
+                </button>
+            </div>
+        </div>
+
+        <!-- S : 팝업 내용 -->
+        <div class="layer-area_card_benefits">
+            
+        </div>
+        <!-- E : 팝업 내용 -->
+
+        <div class="layer-area_bottom01 pcOnly">
+            <div class="align-box size-auto">
+                <button type="button" class="btn-modal_close">닫기</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>
+<script>
+     $(function(){
+       AMWAY.callLayer();
+       payments();
+    })
+
+    $(document).ready(function(){
+        if($('body').hasClass('akl new-v2')){
+            $('#card_benefits').addClass('style_add_hb');
+        } else {
+            $('#card_benefits').addClass('showing');
+            $('#card_benefits, #card_benefits .layer-area_container').css('transition','none');
+            $('#card_benefits .btn-modal_close').removeClass('moView').css('display','none');
+            $('body, #card_benefits').css('background','transparent');
+
+            var nowUrl = document.location.href.split("?")[1];
+            if (nowUrl == 'tab1') {
+                $('#card_benefits').addClass('style_add');
+
+                if ($(".card_benefits .tabs-toggles li").hasClass("active")){
+                    $(".card_benefits .tabs-toggles li").eq(0).addClass("active");
+                    $(".card_benefits .tabs-toggles li").eq(1).removeClass("active");
+                } 
+
+                if ($(".card_benefits .tab-pane.content-block").hasClass("active")){
+                    $(".card_benefits .tab-pane.content-block").eq(0).addClass("active");
+                    $(".card_benefits .tab-pane.content-block").eq(1).removeClass("active");
+                }
+
+                $(".layer-area_card_benefits").scrollTop(0);
+            } else if(nowUrl == 'tab2') {
+                $('#card_benefits').addClass('style_add');
+
+                if ($(".card_benefits .tabs-toggles li").hasClass("active")){
+                    $(".card_benefits .tabs-toggles li").eq(0).removeClass("active");
+                    $(".card_benefits .tabs-toggles li").eq(1).addClass("active");
+                } 
+
+                if ($(".card_benefits .tab-pane.content-block").hasClass("active")){
+                    $(".card_benefits .tab-pane.content-block").eq(0).removeClass("active");
+                    $(".card_benefits .tab-pane.content-block").eq(1).addClass("active");
+                }
+
+                $(".layer-area_card_benefits").scrollTop(0);
+            }
+
+            $('.tabs-toggles').find('li').on('click', function(){
+                var tabIdx = $(this).index();
+
+                $(this).addClass('active').siblings().removeClass('active');
+                $('.tab-content > div').hide();
+                $('.tab-content > div').eq(tabIdx).show();
+
+                return false;
+            });
+        }
+    });
+</script>

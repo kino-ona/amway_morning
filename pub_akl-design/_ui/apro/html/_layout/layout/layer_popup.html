@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<!--
+* @ Copyright (c) EiLAB
+* @ 화면명 : Layer Popup Guide
+* @ 파일명 : html/_layout/layout/layer_popup.html
+* @ 수정이력
+* =====================================================================================================
+*	날짜				작업자				요청자/상세내용
+* -----------------------------------------------------------------------------------------------------
+* 	20200626			윤종규				최초작성
+* =====================================================================================================
+-->
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    
+    <title>Layer Popup Guide</title>
+
+    <!-- Publish CSS -->
+    <link rel="stylesheet" type="text/css" href="../../../public/css/ui_layout.css" />
+    <link rel="stylesheet" type="text/css" href="../../../public/css/ui_common.css" />
+    <link rel="stylesheet" type="text/css" href="../../../public/css/ui_contents.css" />
+    <link rel="stylesheet" type="text/css" href="../../../public/css/ui_plugin.css" />
+    <link rel="stylesheet" type="text/css" href="../../../public/css/ui_responsive.css" />
+
+    <!-- Publish JS -->
+    <script type="text/javascript" src="../../../public/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../../../public/js/jquery-ui-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../../../public/js/ui_common_head.js"></script>
+    <script type="text/javascript" src="../../../public/js/ui_plugin.js"></script>
+    
+    <!-- zEilab guide(가이드에만 선언) -->
+    <link type="text/css" rel="stylesheet" href="../../../z_eilab/guide.css" />
+    <script type="text/javascript" src="../../../z_eilab/guide.js"></script>
+</head>
+
+<body class="apro">
+
+<!-- S : Layout -->
+<div id="layout" class="layout">
+
+<h1 class="example_title">&lt; Layer Popup Guide &gt;</h1>
+
+<div class="example_box">
+    <div class="ex_title">레이어팝업 function 가이드</div>
+    <div class="ex_type">
+        <div class="ex_info_wrap">
+            <b>호출</b><br><br>
+            alertShow( 'width' , 'height' , '얼럿ID' )<br>
+            popupShow( 'width' , 'height' , '팝업ID' )<br>
+            pageopupShow( '팝업ID' )<br>
+            slidePopupShow( '팝업ID' )<br><br><br>
+            
+            <b>업데이트(20200720 추가)</b><br>
+            - 비동기데이터 대응 업데이트 매서드실행<br><br>
+            $( '얼럿ID' )[0].update();<br>
+            $( '팝업ID' )[0].update();<br><br><br>
+
+            <b>닫기 function ( 외부제어용 )</b><br><br>
+            <b>얼럿 숨기기</b><br>
+            단일 : alertClose( 'hide' , '얼럿ID' )<br><br>
+            <b>얼럿 삭제</b><br>
+            단일 : alertClose( 'remove' , '얼럿ID' )<br><br>
+            <b>팝업 숨기기</b><br>
+            단일 : popupClose( 'hide' , '팝업ID' )<br><br>
+            <b>팝업 삭제</b><br>
+            단일 : popupClose( 'remove' , '팝업ID' )<br><br>
+
+        </div>
+    </div>
+</div>
+
+<div class="example_box">
+    <div class="ex_title">얼럿 (20200720 유형추가)</div>
+    <div class="ex_type">
+        <div class="ex_info_wrap"><span class="name">default</span><span class="class_name">div.alert_wrap</span></div>
+        <div class="etc_info_wrap">
+            alertShow( 'width' , 'height' , '얼럿ID' )<br>
+        </div>
+        <div class="source_code">
+
+<button type="button" class="guide_btn" onclick="alertShow('','','tempAlert00');">예제 얼럿(기본) 열기</button>
+<button type="button" class="guide_btn" onclick="alertShow('','','tempAlert01');">예제 얼럿(타이틀X) 열기</button>
+
+        </div>
+    </div>
+</div>
+<div class="example_box">
+    <div class="ex_title">팝업 (20200720 유형추가)</div>
+    <div class="ex_type">
+        <div class="ex_info_wrap"><span class="name">default</span><span class="class_name">div.popup_wrap</span></div>
+        <div class="etc_info_wrap">
+            popupShow( 'width' , 'height' , '팝업ID' )
+        </div>
+        <div class="source_code">
+
+<button type="button" class="guide_btn" onclick="popupShow('', '', 'tempPopup00',function(){ });">예제 팝업(기본 + 중첩) 열기</button>
+<button type="button" class="guide_btn" onclick="popupShow('', '', 'tempPopup01',function(){ });">예제 팝업(타이틀X) 열기</button>
+<button type="button" class="guide_btn" onclick="popupShow('', '', 'tempPopup02',function(){ });">예제 팝업(원버튼) 열기</button>
+
+
+        </div>
+    </div>
+</div>
+<div class="example_box">
+    <div class="ex_title">페이지팝업 (20200720 유형추가)</div>
+    <div class="ex_type">
+        <div class="ex_info_wrap"><span class="name">default</span><span class="class_name">div.pagepop_wrap</span></div>
+        <div class="etc_info_wrap">
+            pagePopupShow( '팝업ID' )</div>
+        <div class="source_code">
+
+<button type="button" class="guide_btn" onclick="pagePopupShow('tempPagepop00');">예제 페이지팝업(기본 + 스크롤) 열기</button>
+<button type="button" class="guide_btn" onclick="pagePopupShow('tempPagepop01');">예제 페이지팝업(타이틀X) 열기</button>
+<button type="button" class="guide_btn" onclick="pagePopupShow('tempPagepop02');">예제 페이지팝업(원버튼) 열기</button>
+
+        </div>
+    </div>
+</div>
+<div class="example_box">
+    <div class="ex_title">슬라이드팝업 (20200727 반응형개선)</div>
+    <div class="ex_type">
+        <div class="ex_info_wrap"><span class="name">default</span><span class="class_name">div.slidepopup_wrap</span></div>
+        <div class="etc_info_wrap">
+            slidePopupShow( '팝업ID' )</div>
+        <div class="source_code">
+
+<button type="button" class="guide_btn" onclick="slidePopupShow('tempSlidePopup00');">예제 페이지팝업 열기</button>
+
+        </div>
+    </div>
+</div>
+
+
+</div>
+<!-- E : Layout -->
+
+
+<!-------------------------------
+    20200720 얼럿유형 그룹
+--------------------------------->
+<!-- S : 얼럿유형 - 기본 -->
+<div id="tempAlert00" class="alert_wrap">
+    <div class="alert_layer">
+        <div class="alert_inner">
+            <div class="alert_header">
+                <!-- s : 얼럿 타이틀 -->
+                <div class="alert_title">얼럿 타이틀</div>
+                <!-- e : 얼럿 타이틀 -->
+            </div>            
+            <div class="alert_container">
+                <div class="alert_scroll">
+                    <div class="alert_scrollinner">
+                        <!-- s : 얼럿 콘텐츠 -->
+                        <div class="popup_text">
+                            얼럿텍스트얼럿텍스트얼럿텍스트<br>얼럿텍스트얼럿텍스트얼럿텍스트
+                        </div>
+                        <div class="popup_text">
+                            얼럿텍스트얼럿텍스트얼럿텍스트
+                        </div>
+                        <!-- e : 얼럿 콘텐츠 -->
+                    </div>
+                </div>
+            </div>
+            <div class="alert_footer">
+                <div class="alert_btn_wrap">
+                    <!-- s : 얼럿푸터 -->
+                    <div class="btn_pack">
+                        <button type="button" class="btn_main" title="" data-action="hide">Btn</button>
+                    </div>
+                    <!-- e : 얼럿푸터 -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- E : 얼럿유형 - 기본 -->
+<!-- S : 얼럿유형 - 타이틀X -->
+<div id="tempAlert01" class="alert_wrap type_no_title"> <!-- 20200720 .type_no_title 타이틀 유무정의 -->
+    <div class="alert_layer">
+        <div class="alert_inner">
+            <div class="alert_header">
+                <!-- s : 얼럿 타이틀 -->
+                <div class="alert_title">얼럿 타이틀</div>
+                <!-- e : 얼럿 타이틀 -->
+            </div>            
+            <div class="alert_container">
+                <div class="alert_scroll">
+                    <div class="alert_scrollinner">
+                        <!-- s : 얼럿 콘텐츠 -->
+                        <div class="popup_text">
+                            얼럿텍스트얼럿텍스트얼럿텍스트<br>얼럿텍스트얼럿텍스트얼럿텍스트
+                        </div>
+                        <div class="popup_text">
+                            얼럿텍스트얼럿텍스트얼럿텍스트
+                        </div>
+                        <!-- e : 얼럿 콘텐츠 -->
+                    </div>
+                </div>
+            </div>
+            <div class="alert_footer">
+                <div class="alert_btn_wrap">
+                    <!-- s : 얼럿푸터 -->
+                    <div class="btn_pack">
+                        <button type="button" class="btn_main" title="" data-action="hide">Btn</button>
+                    </div>
+                    <!-- e : 얼럿푸터 -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- E : 얼럿유형 - 타이틀X -->
+
+
+<!-------------------------------
+    20200720 팝업유형 그룹
+--------------------------------->
+<!-- S : 팝업유형 - 기본 -->
+<div id="tempPopup00" class="popup_wrap">
+    <div class="popup_layer">
+        <div class="popup_inner">
+            <div class="popup_header">
+                <!-- s : 팝업 타이틀 -->                
+                <div class="popup_title">팝업 타이틀</div>
+                <!-- s : 팝업 타이틀 -->
+            </div>
+            <div class="popup_container">
+                <div class="popup_scroll">
+                    <div class="popup_scrollinner">
+                        <!-- s : 팝업 콘텐츠 -->
+                        <div class="popup_text">
+                            얼럿텍스트얼럿텍스트얼럿텍스트<br>얼럿텍스트얼럿텍스트얼럿텍스트
+                        </div>
+                        <div class="popup_text">
+                            얼럿텍스트얼럿텍스트얼럿텍스트<br>얼럿텍스트얼럿텍스트얼럿텍스트
+                        </div>
+                        <div class="popup_text">
+                            얼럿텍스트얼럿텍스트얼럿텍스트
+                        </div>
+                        <!-- s : 팝업 콘텐츠 -->
+                    </div>
+                </div>
+            </div>
+            <div class="popup_footer">		
+                <div class="popup_btn_wrap">
+                    <!-- s : 팝업 푸터 -->
+                    <div class="btn_group">
+                        <div class="btn_pack">
+                            <button type="button" class="btn_main type_graysh" title="" data-action="hide">Btn</button>
+                        </div>
+                        <div class="btn_pack">
+                            <button type="button" class="btn_main" title="" data-action="" onclick="alertShow('','','tempAlert00');">Btn(얼럿)</button>
+                        </div>
+                    </div>
+                    <!-- e : 팝업 푸터 -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- E : 팝업유형 - 기본 -->
+<!-- S : 팝업유형 - 타이틀X -->
+<div id="tempPopup01" class="popup_wrap type_no_title"> <!-- 20200720 .type_no_title 타이틀 유무정의 -->
+    <div class="popup_layer">
+        <div class="popup_inner">
+            <div class="popup_header">
+                <!-- s : 팝업 타이틀 -->                
+                <div class="popup_title">팝업 타이틀</div>
+                <!-- s : 팝업 타이틀 -->
+            </div>
+            <div class="popup_container">
+                <div class="popup_scroll">
+                    <div class="popup_scrollinner">
+                        <!-- s : 팝업 콘텐츠 -->
+                        <div class="popup_text">
+                            얼럿텍스트얼럿텍스트얼럿텍스트<br>얼럿텍스트얼럿텍스트얼럿텍스트
+                        </div>
+                        <div class="popup_text">
+                            얼럿텍스트얼럿텍스트얼럿텍스트
+                        </div>
+                        <!-- s : 팝업 콘텐츠 -->
+                    </div>
+                </div>
+            </div>
+            <div class="popup_footer">		
+                <div class="popup_btn_wrap">
+                    <!-- s : 팝업 푸터 -->
+                    <div class="btn_pack">
+                        <button type="button" class="btn_main" title="" data-action="hide">Btn</button>
+                    </div>
+                    <!-- e : 팝업 푸터 -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- E : 팝업유형 - 타이틀X -->
+<!-- S : 팝업유형 - 원버튼 -->
+<div id="tempPopup02" class="popup_wrap">
+    <div class="popup_layer">
+        <div class="popup_inner">
+            <div class="popup_header">
+                <!-- s : 팝업 타이틀 -->                
+                <div class="popup_title">팝업 타이틀</div>
+                <!-- s : 팝업 타이틀 -->
+            </div>
+            <div class="popup_container">
+                <div class="popup_scroll">
+                    <div class="popup_scrollinner">
+                        <!-- s : 팝업 콘텐츠 -->
+                        <div class="popup_text">
+                            얼럿텍스트얼럿텍스트얼럿텍스트<br>얼럿텍스트얼럿텍스트얼럿텍스트
+                        </div>
+                        <div class="popup_text">
+                            얼럿텍스트얼럿텍스트얼럿텍스트
+                        </div>
+                        <!-- s : 팝업 콘텐츠 -->
+                    </div>
+                </div>
+            </div>
+            <div class="popup_footer">		
+                <div class="popup_btn_wrap">
+                    <!-- s : 팝업 푸터 -->                    
+                    <div class="btn_group">
+                        <div class="btn_pack">
+                            <button type="button" class="btn_main type_graysh" title="" data-action="hide">Btn</button>
+                        </div>
+                        <div class="btn_pack">
+                            <button type="button" class="btn_main" title="" data-action="hide">Btn</button>
+                        </div>
+                    </div>
+                    <!-- e : 팝업 푸터 -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- E : 팝업유형 - 원버튼 -->
+
+
+<!-------------------------------
+    20200720 페이지팝업유형 그룹
+--------------------------------->
+<!-- S : 페이지팝업 - 기본 -->
+<div id="tempPagepop00" class="pagepop_wrap">
+    <div class="pagepop_layer">
+        <div class="pagepop_inner">
+            <div class="pagepop_header">
+                <!-- s : 페이지팝업 헤더 -->
+                <div class="pagepop_title">페이지팝업 타이틀</div>
+                <div class="btn_pack">
+                    <button type="button" class="btn_icon icon_popup_close" title="" data-action="hide">닫기</button>
+                </div>
+                <!-- e : 페이지팝업 헤더 -->
+            </div>
+            <div class="pagepop_container">
+                <div class="pagepop_scroll">
+                    <div class="pagepopup_scrollinner">
+                        <!-- s : 페이지팝업 콘텐츠 -->                        
+                        <div style="border: 1px dashed #3750b4; box-sizing: border-box">
+                            콘텐츠시작<br>
+                            scroll ↓↓↓<br><br><br><br><br><br><br>scroll ↓↓↓<br><br><br><br><br><br><br>scroll ↓↓↓<br><br><br><br><br><br><br>
+                            scroll ↓↓↓<br><br><br><br><br><br><br>scroll ↓↓↓<br><br><br><br><br><br><br>scroll ↓↓↓<br><br><br><br><br><br><br>
+                            scroll ↓↓↓<br><br><br><br><br><br><br>scroll ↓↓↓<br><br><br><br><br><br><br>scroll ↓↓↓<br><br><br><br><br><br><br>
+                            scroll ↓↓↓<br><br><br><br><br><br><br>scroll ↓↓↓<br><br><br><br><br><br><br>scroll ↓↓↓<br><br><br><br><br><br><br>
+                            scroll ↓↓↓<br><br><br><br><br><br><br>scroll ↓↓↓<br><br><br><br><br><br><br>scroll ↓↓↓<br><br><br><br><br><br><br>
+                            <br>콘텐츠끝
+                        </div>
+                        <!-- e : 페이지팝업 콘텐츠 -->
+                    </div>
+                </div>
+            </div>
+            <div class="pagepop_footer">		
+                <div class="pagepop_btn_wrap">
+                    <!-- s : 페이지팝업 푸터 -->
+                    <div class="btn_group">
+                        <div class="btn_pack">
+                            <button type="button" class="btn_main_line" title="" data-action="hide">Btn</button>
+                        </div>
+                        <div class="btn_pack">
+                            <button type="button" class="btn_main" title="" data-action="hide">Btn</button>
+                        </div>
+                    </div> 
+                    <!-- e : 페이지팝업 푸터 -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- E : 페이지팝업 - 기본 -->
+<!-- S : 페이지팝업 - 타이틀X -->
+<div id="tempPagepop01" class="pagepop_wrap type_no_title"> <!-- 20200720 .type_no_title 타이틀 유무정의 -->
+    <div class="pagepop_layer">
+        <div class="pagepop_inner">
+            <div class="pagepop_header">
+                <!-- s : 페이지팝업 헤더 -->
+                <div class="pagepop_title">페이지팝업 타이틀</div>
+                <div class="btn_pack">
+                    <button type="button" class="btn_icon icon_popup_close" title="" data-action="hide">닫기</button>
+                </div>
+                <!-- e : 페이지팝업 헤더 -->
+            </div>
+            <div class="pagepop_container">
+                <div class="pagepop_scroll">
+                    <div class="pagepopup_scrollinner">
+                        <!-- s : 페이지팝업 콘텐츠 -->                        
+                        <div style="border: 1px dashed #3750b4; box-sizing: border-box">
+                            콘텐츠시작<br>
+                            scroll ↓↓↓<br><br><br><br><br><br><br>scroll ↓↓↓<br><br><br><br><br><br><br>scroll ↓↓↓<br><br><br><br><br><br><br>
+                            scroll ↓↓↓<br><br><br><br><br><br><br>scroll ↓↓↓<br><br><br><br><br><br><br>scroll ↓↓↓<br><br><br><br><br><br><br>
+                            <br>콘텐츠끝
+                        </div>
+                        <!-- e : 페이지팝업 콘텐츠 -->
+                    </div>
+                </div>
+            </div>
+            <div class="pagepop_footer">		
+                <div class="pagepop_btn_wrap">
+                    <!-- s : 페이지팝업 푸터 -->
+                    <div class="btn_group">
+                        <div class="btn_pack">
+                            <button type="button" class="btn_main_line" title="" data-action="hide">Btn</button>
+                        </div>
+                        <div class="btn_pack">
+                            <button type="button" class="btn_main" title="" data-action="hide">Btn</button>
+                        </div>
+                    </div> 
+                    <!-- e : 페이지팝업 푸터 -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- E : 페이지팝업 - 타이틀X -->
+<!-- S : 페이지팝업 - 원버튼 -->
+<div id="tempPagepop02" class="pagepop_wrap">
+    <div class="pagepop_layer">
+        <div class="pagepop_inner">
+            <div class="pagepop_header">
+                <!-- s : 페이지팝업 헤더 -->
+                <div class="pagepop_title">페이지팝업 타이틀</div>
+                <div class="btn_pack">
+                    <button type="button" class="btn_icon icon_popup_close" title="" data-action="hide">닫기</button>
+                </div>
+                <!-- e : 페이지팝업 헤더 -->
+            </div>
+            <div class="pagepop_container">
+                <div class="pagepop_scroll">
+                    <div class="pagepopup_scrollinner">
+                        <!-- s : 페이지팝업 콘텐츠 -->
+                        <div style="border: 1px dashed #3750b4; box-sizing: border-box">
+                            콘텐츠시작<br>
+                            scroll ↓↓↓<br><br><br><br><br><br><br>scroll ↓↓↓<br><br><br><br><br><br><br>scroll ↓↓↓<br><br><br><br><br><br><br>
+                            scroll ↓↓↓<br><br><br><br><br><br><br>scroll ↓↓↓<br><br><br><br><br><br><br>scroll ↓↓↓<br><br><br><br><br><br><br>
+                            <br>콘텐츠끝
+                        </div>
+                        <!-- e : 페이지팝업 콘텐츠 -->
+                    </div>
+                </div>
+            </div>
+            <div class="pagepop_footer">		
+                <div class="pagepop_btn_wrap">
+                    <!-- s : 페이지팝업 푸터 -->                    
+                    <div class="btn_pack">
+                        <button type="button" class="btn_main" title="" data-action="hide">Btn</button>
+                    </div>
+                    <!-- e : 페이지팝업 푸터 -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- E : 페이지팝업 - 원버튼 -->
+
+
+
+<!-- s : 슬라이드팝업 -->
+<div id="tempSlidePopup00" class="slidepopup_wrap">
+    <div class="slidepopup_layer">
+        <div class="slidepopup_header">
+            <div class="slidepopup_title_wrap">
+                <!-- s : 슬라이드팝업 헤더 -->
+                <div class="slidepopup_title">슬라이드팝업 타이틀</div>
+                <div class="btn_pack">
+                    <button type="button" class="btn_icon icon_popup_close" title="" onclick="slidePopupHide('tempSlidePopup00')">슬라이드팝업 닫기</button>
+                </div>
+                <!-- e : 슬라이드팝업 헤더 -->
+            </div>
+        </div>
+        <div class="slidepopup_container">
+            <div class="slidepopup_contents">
+                <!-- s : 슬라이드팝업 콘텐츠 -->
+                <div style="height:500px; border: 1px dashed #3750b4; box-sizing: border-box">
+                    슬라이드 콘텐츠
+                </div>
+                <!-- e : 슬라이드팝업 콘텐츠 -->
+            </div>
+        </div>
+        <div class="slidepopup_footer">
+            <!-- s : 슬라이드팝업 푸터 -->
+            <div class="btn_group">
+                <div class="btn_pack">
+                    <button type="button" class="btn_main_line" title="" onclick="slidePopupHide('tempSlidePopup00')">Btn</button>
+                </div>
+                <div class="btn_pack">
+                    <button type="button" class="btn_main" title="" >Btn</button>
+                </div>
+            </div>
+            <!-- e : 슬라이드팝업 푸터 -->
+        </div>
+    </div>
+</div>
+<!-- e : 슬라이드팝업 -->
+
+
+
+
+
+
+
+<!-- Publish JS -->
+<script type="text/javascript" src="../../../public/js/ui_common_body.js"></script>
+
+
+</body>
+</html>

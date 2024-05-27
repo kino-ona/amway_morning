@@ -1,0 +1,829 @@
+//== member
+
+// 멤버 관리
+.member {
+  padding: 3.5rem 2.4rem 0;
+
+  .member-info {
+    position: relative;
+    margin-top: 3.5rem;
+    padding: 4rem 2rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: #dfe6f2 0px 2px 10px;
+
+    .img {
+      position: absolute;
+      top: -3rem;
+      left: 50%;
+      width: 6rem;
+      margin-left: -3rem;
+      background: #eeeeee;
+      border-radius: 100%;
+
+      &.primary {
+        background: #f39f9f;
+      }
+      &.sub {
+        background: #95afe4;
+      }
+      &.rc {
+        background: #eeeeee;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .user {
+      text-align: center;
+      line-height: 1;
+
+      * {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      strong {
+        margin-right: 0.2rem;
+        color: $dark-color;
+        font-size: 1.3rem;
+      }
+      span {
+        color: $dark-color;
+        font-size: 1.2rem;
+      }
+      .label {
+        width: 1.6rem;
+        height: 1.6rem;
+        margin-right: 0.4rem;
+        color: $white-color;
+        font-size: 1rem;
+        line-height: 1.6;
+        border-radius: 16px;
+        text-align: center;
+
+        &.primary {
+          background: #ef7b63;
+        }
+        &.sub {
+          background: #5982de;
+        }
+        &.rc {
+          background: #4dc290;
+        }
+      }
+    }
+    .btn-wrap {
+      position: absolute;
+      top: 0.5rem;
+      right: 0.5rem;
+      text-align: right;
+    }
+    .summary {
+      dl {
+        font-size: 1.1rem;
+
+        dt {
+          display: inline-block;
+          width: 7.5rem;
+          margin-top: 1rem;
+          color: $dark-color;
+          vertical-align: top;
+        }
+        dd {
+          display: inline-block;
+          width: calc(100% - 7.5rem);
+          margin-top: 1rem;
+          color: $darkgray-color;
+          vertical-align: top;
+        }
+      }
+    }
+    .link {
+      margin-top: 1.5rem;
+    }
+    .guideinfo {
+      margin: 1.5rem -2rem -1.5rem;
+      .txt-black {
+        color: #222;
+      }
+    }
+  }
+  .newkitbtn {
+    margin: 2rem 2rem 0;
+  }
+  .tab {
+    margin-bottom: 4rem;
+  }
+  .nodata {
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: #dfe6f2 0px 2px 10px;
+    text-align: center;
+
+    p {
+      color: $darkgray-color;
+      font-size: 1.1rem;
+    }
+    .btn.full.large {
+      margin-top: 1.5rem;
+    }
+  }
+  .btn-area {
+    margin-top: -1rem;
+    margin-bottom: 1.5rem;
+
+    .btn-withdrawal {
+      padding-bottom: 0.2rem;
+      color: $gray-color;
+      font-size: 1.1rem;
+      border-bottom: 1px solid #999;
+
+      &:hover,
+      &:active {
+        color: $dark-color;
+        border-color: #222;
+      }
+    }
+  }
+  .kit {
+    position: relative;
+    margin-top: 1.5rem;
+    box-shadow: #dfe6f2 0px 2px 10px;
+    border-radius: 8px;
+    overflow: hidden;
+
+    &.open {
+      .acc-cont {
+        display: block;
+      }
+      .btn-more {
+        transform: rotate(-180deg);
+      }
+    }
+    .acc-head {
+      padding: 1.2rem 1.5rem;
+
+      .kit-tit {
+        color: $dark-color;
+        font-size: 1.4rem;
+      }
+      .kit-date {
+        margin-top: 0.2rem;
+
+        span {
+          display: inline-block;
+          margin-right: 1.5rem;
+          color: $darkgray-color;
+          font-size: 1.1rem;
+        }
+      }
+      .btn-del {
+        position: absolute;
+        top: 1.5rem;
+        right: 1rem;
+      }
+    }
+    .acc-cont {
+      display: none;
+      border-top: 2px solid #f6f8fc;
+
+      .step {
+        > li {
+          position: relative;
+          padding: 1.5rem 2rem 1.5rem 3rem;
+          background: $lightblue-color;
+          color: $gray-color;
+
+          &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 1.8rem;
+            width: 0.1rem;
+            height: 100%;
+            background: #e8e8e8;
+          }
+          &:first-child {
+            &:before {
+              top: 1.8rem;
+            }
+          }
+          &:last-child {
+            &:before {
+              height: 2.1rem;
+            }
+          }
+          &.active {
+            background: $white-color;
+            color: $dark-color;
+
+            .step-tit {
+              color: $blue-color;
+
+              &:before {
+                background: $blue-color;
+                z-index: 1;
+              }
+              &:after {
+                content: '';
+                position: absolute;
+                top: 0.2rem;
+                left: -1.8rem;
+                width: 1.2rem;
+                height: 1.2rem;
+                background: #dce5f8;
+                border-radius: 100%;
+              }
+            }
+            .red {
+              color: $red-color;
+            }
+          }
+          dl {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+
+            dt {
+              width: 50%;
+              margin-top: 1rem;
+              color: $dark-color;
+              font-size: 1.1rem;
+            }
+            dd {
+              width: 50%;
+              margin-top: 1rem;
+              color: $dark-color;
+              font-size: 1.1rem;
+              font-weight: 600;
+              text-align: right;
+
+              .btn {
+                font-weight: 500;
+              }
+            }
+            & ~ .guideinfo {
+              margin-top: 1rem;
+            }
+          }
+          .step-tit {
+            position: relative;
+            color: $gray-color;
+            font-size: 1.3rem;
+
+            &:before {
+              content: '';
+              position: absolute;
+              top: 0.5rem;
+              left: -1.5rem;
+              width: 0.6rem;
+              height: 0.6rem;
+              background: #d8d8d8;
+              border-radius: 100%;
+            }
+            & ~ p {
+              margin-top: 0.5rem;
+              font-size: 1.1rem;
+              line-height: 1.4;
+            }
+            & ~ .btn {
+              margin-top: 1rem;
+            }
+          }
+          .product {
+            margin: 2rem -2rem 0 -3rem;
+            padding: 2rem 2.5rem 0.5rem;
+            text-align: center;
+            border-top: 1px solid #efefef;
+
+            strong {
+              color: $dark-color;
+              font-size: 1.3rem;
+            }
+            .img {
+              display: block;
+              margin-top: 1rem;
+              text-align: center;
+
+              img {
+                width: 12rem;
+              }
+            }
+            .btn {
+              margin-top: 1rem;
+              padding-left: 2.3rem;
+              padding-right: 2.3rem;
+            }
+            .nodata-text {
+              color: $gray-color;
+              font-size: 1.1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// 멤버 추가
+.member-add {
+  padding: 0 2.4rem 4rem;
+
+  .formbox {
+    input[type='radio'] + span {
+      margin-right: 5rem;
+    }
+  }
+
+  .guideinfo {
+    .txt-black {
+      color: #222;
+    }
+  }
+
+  .agree-area {
+    margin-top: 3rem;
+
+    h3 {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+// 멤버 수정
+.member-edit {
+  padding: 0 2.4rem 4rem;
+
+  .member-info {
+    position: relative;
+    margin-top: -5rem;
+    margin-bottom: 1rem;
+
+    .img {
+      width: 6rem;
+      margin: 0 auto;
+      background: #eeeeee;
+      border-radius: 100%;
+
+      &.primary {
+        background: #f39f9f;
+      }
+      &.sub {
+        background: #95afe4;
+      }
+      &.rc {
+        background: #eeeeee;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .user {
+      margin-top: 1rem;
+      text-align: center;
+      line-height: 1;
+
+      * {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      strong {
+        margin-right: 0.2rem;
+        color: $dark-color;
+        font-size: 1.3rem;
+      }
+      span {
+        color: $dark-color;
+        font-size: 1.2rem;
+      }
+      .label {
+        width: 1.6rem;
+        height: 1.6rem;
+        margin-right: 0.4rem;
+        color: $white-color;
+        font-size: 1rem;
+        line-height: 1.6;
+        border-radius: 16px;
+        text-align: center;
+
+        &.primary {
+          background: #ef7b63;
+        }
+        &.sub {
+          background: #5982de;
+        }
+        &.rc {
+          background: #4dc290;
+        }
+      }
+    }
+  }
+  .formbox {
+    margin-top: 3.5rem;
+  }
+}
+
+// 탈퇴
+.member-leave {
+  padding: 2.3rem 2.4rem 4rem;
+
+  .h3-title {
+    letter-spacing: -0.05em;
+  }
+  .title-area {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #d8d8d8;
+
+    p {
+      margin: 0.5rem 0 1.5rem;
+      color: $darkgray-color;
+      font-size: 1.1rem;
+      line-height: 1.5;
+    }
+  }
+  .formbox {
+    margin-top: 1rem;
+
+    dd {
+      margin-top: 0;
+    }
+    ul {
+      li {
+        margin-top: 2rem;
+
+        &:first-child {
+          margin-top: 0;
+        }
+        &.direct {
+          input {
+            width: calc(100% - 2.3rem);
+            margin-top: 0.7rem;
+            margin-left: 2.3rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* width:768~ */
+@include mq('md') {
+  // 멤버 관리
+  .member {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 30px 0;
+
+    .member-info {
+      position: relative;
+      margin-top: 100px;
+      padding: 60px 60px 30px;
+
+      .img {
+        top: -60px;
+        width: 110px;
+        margin-left: -55px;
+      }
+      .user {
+        strong {
+          margin-right: 6px;
+          font-size: 18px;
+        }
+        span {
+          font-size: 18px;
+        }
+        .label {
+          width: 20px;
+          height: 20px;
+          margin-top: -1px;
+          margin-right: 6px;
+          padding: 1px 2px 0px 1px;
+          font-size: 12px;
+          border-radius: 20px;
+        }
+      }
+      .btn-wrap {
+        top: 20px;
+        right: 30px;
+      }
+      .summary {
+        margin-top: 10px;
+
+        dl {
+          font-size: 16px;
+
+          dt {
+            width: 90px;
+            margin-top: 20px;
+          }
+          dd {
+            width: calc(50% - 90px);
+            margin-top: 20px;
+          }
+        }
+      }
+      .link {
+        margin-top: 30px;
+        text-align: center;
+
+        .btn {
+          width: 340px;
+        }
+      }
+      .guideinfo {
+        margin: 30px -60px -30px;
+
+        .txt-black {
+          color: #222;
+        }
+      }
+    }
+    .newkitbtn {
+      margin-top: 40px;
+      text-align: center;
+
+      .btn {
+        width: 340px;
+      }
+    }
+    .tab {
+      margin-bottom: 100px;
+    }
+    .nodata {
+      padding: 60px;
+      border-radius: 12px;
+
+      p {
+        font-size: 16px;
+      }
+      .btn.full.large {
+        width: 340px;
+        margin-top: 20px;
+      }
+    }
+    .btn-area {
+      margin-top: -40px;
+      margin-bottom: 25px;
+
+      .btn-withdrawal {
+        padding-bottom: 5px;
+        font-size: 15px;
+      }
+    }
+    .kit {
+      margin-top: 20px;
+      border-radius: 12px;
+
+      .acc-head {
+        height: 80px;
+        padding: 30px 40px;
+        text-align: right;
+
+        .kit-tit {
+          float: left;
+          font-size: 20px;
+        }
+        .kit-date {
+          display: inline-block;
+          margin-top: 2px;
+
+          span {
+            margin-right: 0;
+            font-size: 15px;
+          }
+          span + span {
+            margin-left: 30px;
+          }
+        }
+        .btn-del {
+          position: static;
+          margin-top: -10px;
+          margin-bottom: -10px;
+          margin-left: 20px;
+        }
+      }
+      .acc-cont {
+        border-color: #f1f5fc;
+
+        .step {
+          > li {
+            padding: 20px 73px 18px;
+
+            &:before {
+              left: 48px;
+              width: 1px;
+            }
+            &:first-child {
+              &:before {
+                top: 27px;
+              }
+            }
+            &:last-child {
+              &:before {
+                height: 23px;
+              }
+            }
+            &.active {
+              .step-tit {
+                &:after {
+                  top: 2px;
+                  left: -35px;
+                  width: 20px;
+                  height: 20px;
+                }
+              }
+            }
+            dl {
+              dt {
+                margin-top: 20px;
+                font-size: 16px;
+              }
+              dd {
+                margin-top: 20px;
+                font-size: 16px;
+
+                .btn {
+                  height: 44px;
+                  padding: 12px 24px 11px;
+                }
+              }
+              & ~ .guideinfo {
+                margin-top: 15px;
+              }
+            }
+            .step-tit {
+              font-size: 18px;
+
+              &:before {
+                top: 7px;
+                left: -30px;
+                width: 10px;
+                height: 10px;
+              }
+              & ~ p {
+                margin-top: 10px;
+                font-size: 16px;
+                line-height: 26px;
+              }
+              & ~ .btn {
+                width: 340px;
+                margin-top: 15px;
+              }
+            }
+            .guideinfo {
+              margin-top: 15px;
+            }
+            .product {
+              margin: 30px -73px 0;
+              padding: 30px 0 22px;
+              text-align: center;
+              border-color: #e8e8e8;
+
+              strong {
+                display: block;
+                font-size: 18px;
+              }
+              .img {
+                margin-top: 10px;
+
+                img {
+                  width: 200px;
+                }
+              }
+              .btn {
+                width: 340px;
+                margin-top: 10px;
+              }
+              .nodata-text {
+                padding-top: 20px;
+                font-size: 15px;
+                line-height: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .kit ~ .kit {
+      margin-top: 35px;
+    }
+  }
+
+  // 멤버 추가
+  .member-add {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 30px 100px;
+
+    .guideinfo {
+      li.txt-black {
+        color: #222;
+      }
+    }
+
+    .agree-area {
+      margin-top: 60px;
+
+      h3 {
+        font-size: 20px;
+      }
+      .agreesummary {
+        margin-top: 30px;
+
+        label {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  // 멤버 수정
+  .member-edit {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 30px 100px;
+
+    .member-info {
+      position: relative;
+      margin-top: -100px;
+      margin-bottom: 30px;
+
+      .img {
+        width: 110px;
+      }
+      .user {
+        margin-top: 10px;
+
+        strong {
+          margin-right: 6px;
+          font-size: 18px;
+        }
+        span {
+          font-size: 18px;
+        }
+        .label {
+          width: 20px;
+          height: 20px;
+          margin-right: 6px;
+          padding: 1px 2px 0px 1px;
+          font-size: 12px;
+          border-radius: 20px;
+        }
+      }
+    }
+    .formbox {
+      margin-top: 100px;
+    }
+  }
+
+  // 탈퇴
+  .member-leave {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 30px 100px;
+
+    .title-area {
+      margin-bottom: 40px;
+      padding-bottom: 15px;
+
+      p {
+        margin: 10px 0 15px;
+        font-size: 14px;
+      }
+      input[type='checkbox'] + span {
+        font-size: 18px;
+      }
+    }
+    .formbox {
+      margin-top: 20px;
+
+      dt {
+        width: 0;
+        padding: 0;
+      }
+      ul {
+        li {
+          margin-top: 30px;
+
+          &.direct {
+            margin-top: 13px;
+
+            label {
+              display: inline-block;
+              vertical-align: middle;
+            }
+            input {
+              width: calc(100% - 11.3rem);
+              margin-top: 0;
+              margin-left: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

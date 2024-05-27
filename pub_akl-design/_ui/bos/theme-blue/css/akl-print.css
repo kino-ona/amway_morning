@@ -1,0 +1,83 @@
+/** ---------------------------------------------------------
+  * Version : AKL Hybris UIUX 1.0
+  * @ 파일 : akl-print.css
+  * @ 구분 : 인쇄관련
+  * ---------------------------------------------------------
+  */
+@media print{
+	@page {margin:1cm .6cm .6cm;}/* ie는 적용안됨 */
+
+	/* 영수증 */
+	.pop_wrap .pop_content {max-height:none}
+
+	/* 공통영역 */
+	#header {display:none;}
+	#quick {display:none;}
+	#footer {display:none;}
+	.breadcrumb-section {display:none;}
+	a[href]:after{display:none;}
+
+	html {max-width:32cm; min-width:29cm; margin:0; font-size:11px; box-sizing:border-box;}
+	body {position:relative; width:auto; height:auto;max-width:32cm; min-height:100%; overflow-y:scroll; overflow:visible; margin:0; padding:12px 0 0 0; box-sizing:border-box;}
+
+	.akl main{margin:0; padding:0; box-sizing:border-box;}
+	.akl .layerWrapper.active {position:static; width:100%; height:auto !important;}
+	.container-fluid.main-container, .main-container {padding:0;margin:0;}
+	.akl .popup-dialog {padding:0 15px 0 0;}
+
+	/* 레이어 띄운상태에서 body 컨텐츠 숨김 */
+	.scrollLock .akl main {display:none;}
+
+	/* ----- 마이페이지 ----- */
+	.container-fluid.my-count {display:none;}
+	.container-fluid.main-container#contents {display:none;}
+	.next-control {display:none;}
+
+	/* 맞춤메시지 공통 */
+	.message-center-details {padding-top:0;}
+	.message-center-details .btn-prev-page {display:none;}
+	.custom-message-header .popup__close {display:none;}
+	.custom-message-body {margin:0 !important; padding:0;}
+	.custom-message-body .message-detail {margin:0 !important; padding:0 !important;}
+	.akl .message-center-wrapper .message-title {display:none;}
+	.board-view-head .btn-box, .board-view-foot {display:none;}
+
+	/* 맞춤메시지 레이어 인쇄버튼 클릭 시 .printReady_layer */
+	.printReady_layer main,
+	.printReady_layer .top-image,
+	.printReady_layer .nca-footer-image,
+	.printReady_layer .message-detail.type-agreement,
+	.printReady_layer .message-detail.apply-seminar,
+	.printReady_layer .message-detail .box-top-text.small-txt {display:none;}
+	.printReady_layer .message-detail .custom-message>li {margin-top:0;}
+	.flight-info>p .tag-txt {border:1px solid #999;}
+
+	/* 맞춤메시지 레이어 : 동의 후 .trip-detail */
+	.printReady_layer .custom-message.trip-detail>li {display:none;}
+	.printReady_layer .custom-message.trip-detail .print-section.set_printArea {display:block; border-top:0;}
+	.printReady_layer .custom-message.trip-detail .print-section.set_printArea .btn-print-it {display:none;}
+
+
+	/* ----- 기타 레이어 ----- */
+	.printReady_layer .print-section-normal .layerBox {left:0 !important; top:0 !important; margin:0 !important;}
+	.printReady_layer .cart-popup__content.payment {overflow:initial;}
+	.printReady_layer .akl .cbox.popWidS,
+	.printReady_layer .akl .cbox.popWidM,
+	.printReady_layer .akl .cbox.popWidL,
+	.printReady_layer .akl .cbox.popWidXL {width:100% !important; max-width:none;}
+
+	/* 상품상세 */
+	#productSuggestListTabs {width:28cm; padding:0; margin:0;}
+	.carousel-title-container,
+	.amway-recentlyviewed,.amway-suggest {max-width:32cm; min-width:29cm; padding:0; box-sizing:border-box;}
+	.akl .v-m-pros .image-gallery,
+	.image-gallery.js-gallery img {max-width:500px;}
+
+	/* 공지사항, 뉴스룸 */
+	.board-details .btn-page-list {display:none;}
+	.bod-view-body .bod-view-sns {display:none;}
+	.prev-bod-confirm .link-btn {display:none;}
+	.akl .customer-area .title-box {display:none;}
+	.akl .jump-to-amway {display:none;}
+
+}

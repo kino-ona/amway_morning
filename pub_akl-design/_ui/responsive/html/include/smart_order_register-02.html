@@ -1,0 +1,30 @@
+<div id="smart_order_register-02" class="layer_section type-wide-a">
+    <div class="layer_section-container smart shipping_delivery_st02">
+        <div class="layer-content smart_order_change">
+            <!-- S : 20220608 문구변경 -->
+           <p><em>5월 27일</em> 첫 정기 결제 예정입니다.</p>
+           <p>다음 달 첫 주문 하시려면 오늘 이전 날짜로<br>
+            결제일을 변경해주세요.</p>
+            <!-- E : 20220608 문구변경 -->
+
+           <div class="payment_order">
+               <button class="reservation_pay">결제일<br> 변경하기</button>
+               <button class="demand_pay" data-layer="">이번달부터 시작하기</button>
+           </div>
+
+        </div>
+        <!-- S : 20220526 닫기버튼 삭제 -->
+        <!-- <div class="align-box size-auto">
+            <button type="button" class="btn-modal_close v2">취소</button>
+            <button type="button" class="btn-modal_close">닫기</button>
+        </div> -->
+        <!-- E : 20220526 닫기버튼 삭제 -->
+    </div>
+</div>
+
+<script>
+    $(".reservation_pay").on('click', function() {
+        $('#smart_order_register-02').removeClass('showing');
+    })
+</script>
+

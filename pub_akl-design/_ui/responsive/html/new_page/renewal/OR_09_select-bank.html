@@ -1,0 +1,251 @@
+<!-- S : [디파이 수정2] 신규 파일 : CAP2 A Pay 주문 결제 카드 등록 -->
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<title>주문/결제 | Amway Korea</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords">
+	<meta name="description" content="NY Fee Bundle">
+	<meta name="robots" content="index,follow">
+
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-lib.css"><!-- 플러그인용 css : 2018.03.14 추가  -->
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/base.css">
+	<!-- 코어제공 -->
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/sprint.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-customer.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-shop.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-sop.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-account.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-business.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-product.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-brand.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-brand-new.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common-new-v2.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common-new-v3.css">
+
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/content_res_all.css">
+	<!-- 코어제공 -->
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common-v2.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-product-renewal.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-product-renewal_v1.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-cap2.css"> <!-- [디파이 수정2] 신규 파일 css 추가 -->
+
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.datepicker.js"></script><!-- datepicker : 2018.03.19 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/owl.carousel.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/isotope.pkgd.js"></script><!-- gnb 플러그인 : 2018.03.23 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/select2.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/new.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.raty.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common_v1.js"></script><!-- 210525 [디파이 수정] 스크립트 추가 -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_contents.js"></script><!-- brand 통합 : 2018.08.24 추가  -->
+
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_component.js"></script>
+</head>
+
+<body class="akl new-v2 header-type"> <!-- D: 2020 장바구니 개선 -header-type 클래스 추가 -->
+<!-- skipToContent -->
+<div id="skipToContent">
+	<a href="#contents">콘텐츠 바로가기</a>
+</div>
+<!-- //skipToContent -->
+
+<!-- main -->
+<main>
+	<button type="button" class="bt-akl-blue next-phase">버튼</button>
+</main>
+<!-- //main -->
+
+<!-- S : [디파이 수정2] A pay 결제 관련 팝업 -->
+<!-- S : 결제 약관 동의 팝업 -->
+<div class="layerWrapper popup_a-pay popup_bank-list">
+	<div class="cbox layerBox popWidS no-bottom-btn">
+		<div class="container">
+			<div class="popup-header">
+                <h1 class="header-title">A-Pay 간편결제 등록</h1>
+                <a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true" class="btn_layer-close btn-modal_close"><span class="hidden">닫기</span></a>
+			</div>
+			<div class="popup-body">
+				<p class="notice_blue">
+                    등록할 은행을 선택해주세요.
+                </p>
+                <!-- S : 은행 리스트 -->
+                <div class="bank-list-wrapper">
+                    <ul class="bank-lists">
+                        <li>
+                            <button type="button">
+                                <span class="emblem type01"><em class="hidden">NH 농협</em></span>
+                                <span>NH 농협</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button">
+                                <span class="emblem type02"><em class="hidden">우리은행</em></span>
+                                <span>우리은행</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button">
+                                <span class="emblem type03"><em class="hidden">신한은행</em></span>
+                                <span>신한은행</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button">
+                                <span class="emblem type04"><em class="hidden">국민은행</em></span>
+                                <span>국민은행</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button">
+                                <span class="emblem type05"><em class="hidden">하나은행</em></span>
+                                <span>하나은행</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button">
+                                <span class="emblem type06"><em class="hidden">씨티은행</em></span>
+                                <span>씨티은행</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button">
+                                <span class="emblem type17"><em class="hidden">기업은행</em></span>
+                                <span>기업은행</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button">
+                                <span class="emblem type08"><em class="hidden">산업은행</em></span>
+                                <span>산업은행</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button">
+                                <span class="emblem type18"><em class="hidden">SC제일은행</em></span>
+                                <span>SC제일은행</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button">
+                                <span class="emblem type19"><em class="hidden">대구은행</em></span>
+                                <span>대구은행</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button">
+                                <span class="emblem type16"><em class="hidden">부산은행</em></span>
+                                <span>부산은행</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button">
+                                <span class="emblem type07"><em class="hidden">전북은행</em></span>
+                                <span>전북은행</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button">
+                                <span class="emblem type16"><em class="hidden">경남은행</em></span>
+                                <span>경남은행</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button">
+                                <span class="emblem type03"><em class="hidden">제주은행</em></span>
+                                <span>제주은행</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button">
+                                <span class="emblem type07"><em class="hidden">광주은행</em></span>
+                                <span>광주은행</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button">
+                                <span class="emblem type09"><em class="hidden">새마을금고</em></span>
+                                <span>새마을금고</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button">
+                                <span class="emblem type10"><em class="hidden">수협</em></span>
+                                <span>수협</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button">
+                                <span class="emblem type11"><em class="hidden">신협</em></span>
+                                <span>신협</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button">
+                                <span class="emblem type12"><em class="hidden">우체국</em></span>
+                                <span>우체국</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button">
+                                <span class="emblem type13"><em class="hidden">케이뱅크</em></span>
+                                <span>케이뱅크</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button">
+                                <span class="emblem type14"><em class="hidden">카카오뱅크</em></span>
+                                <span>카카오뱅크</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button">
+                                <span class="emblem type15"><em class="hidden">저축은행</em></span>
+                                <span>저축은행</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button">
+                                <span class="emblem type20"><em class="hidden">산림조합</em></span>
+                                <span>산림조합</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button">
+                                <span class="emblem type21"><em class="hidden">토스뱅크</em></span>
+                                <span>토스뱅크</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <!-- E : 은행 리스트 -->
+			</div>
+		</div>
+	</div>
+</div>
+<!-- E : 결제 약관 동의 팝업 -->
+<!-- E : [디파이 수정2] A pay 결제 관련 팝업 -->
+
+<script>
+    $(function() {
+		// 레이어 오픈 함수 호출
+		AMWAY.callLayer();
+
+		// S : [디파이 수정2] 210901 A Pay 간편결제 등록 관련 팝업
+		$('.next-phase').click(function(event) {
+			event.preventDefault();
+			layerPopOver(this,'.popup_bank-list');
+		});
+		// E : [디파이 수정2] 210901 A Pay 간편결제 등록 관련 팝업
+    });
+</script>
+</body>
+
+</html>
+<!-- E : [디파이 수정2] 신규 파일 : CAP2 A Pay 주문 결제 카드 등록 -->

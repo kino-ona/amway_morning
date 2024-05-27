@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>BOS 회원가입 | ABN Korea</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords">
+	<meta name="description" content="NY Fee Bundle">
+	<meta name="robots" content="index,follow">
+
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-lib.css"><!-- 플러그인용 css : 2018.03.14 추가  -->
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common.css">
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.datepicker.js"></script><!-- datepicker : 2018.03.19 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/owl.carousel.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/isotope.pkgd.js"></script><!-- gnb 플러그인 : 2018.03.23 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/select2.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/new.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.raty.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>
+</head>
+<body class="akl">
+	<!-- skipToContent -->
+	<div id="skipToContent">
+	<a href="#contents">콘텐츠 바로가기 </a>
+	</div>
+	<!-- //skipToContent -->
+
+	<main>
+		<div id="header"></div>
+		<div class="container-fluid main-container" id="contents">
+			<div class="print-hide breadcrumb-section">
+				<ol class="breadcrumb">
+					<li><a href="#">홈</a></li>
+					<li>회원가입</li>
+				</ol>
+			</div>
+		</div>
+
+		<div class="container-fluid main-container">
+			<div class="product-list-page-title md25"><h1>회원가입</h1></div>
+			<div class="step-wrap">
+				<ul class="checkout-steps num03 clearfix">
+					<li class="checkout-step checkout-steps-active"><span class="checkout-steps-text">본인확인</span></li>
+					<li class="checkout-step"><span class="checkout-steps-text">신청서 작성</span></li>
+					<li class="checkout-step"><span class="checkout-steps-text">회원가입 완료</span></li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- 본인확인 -->
+		<div class="wrapper-memb-join step-validation bos-admin">
+
+			<h2 class="tit-h2">본인확인</h2>
+
+			<div class="container-fluid main-container">
+				<div id="market-validation-box">
+
+					<div class="validation-wrapper amway-theme">
+						<div class="valid-type-phone">
+							<p class="validation-para">
+								<strong>휴대폰 본인확인</strong>
+								<span>고객님 명의로 된 휴대폰을 통해<br> 본인을 확인합니다.</span>
+								<a href="#" class="bt-akl-blue js-btn-show" id="Authentication_Mobile">휴대폰 본인확인</a>
+							</p>
+							<div class="valid-progress">
+								<p class="valid-result-box on"><strong class="noti-suc">본인확인이 완료되었습니다.</strong></p><!-- 본인확인 결과 노출 시 .on 추가 -->
+							</div>
+						</div>
+						
+						
+						<div class="valid-type-simple">
+							<p class="validation-para">
+								<strong>간편 본인확인</strong>
+								<span>고객님의 이름과 생년월일, 휴대폰번호로 <br> 본인을 확인합니다.</span>
+								<a href="#" class="bt-akl-blue js-btn-show" id="Authentication_Simple">간편 본인확인</a>
+							</p>
+							<div class="valid-progress">
+								<!-- 간편 본인확인 입력 전체 -->
+								<div class="box-input-details">
+									<p><strong class="st-text">간편 본인확인으로 ABO 가입 시 ABO에게 제공되는 일부 서비스와 활동이 제한될 수 있습니다.</strong></p>
+									<p>모든 입력 항목은 필수 항목입니다.</p>
+
+									<div class="validation-box-simple">
+										<div class="form-group ty-input-name">
+											<label class="col-md-3 col-xs-12 control-label" for="simpleName">이름</label>
+											<div class="col-md-9 col-xs-12"><input type="text" id="simpleName" class="form-control" placeholder="실명 입력"></div>
+										</div>
+
+										<div class="form-group ty-input-birth">
+											<label class="col-md-3 col-xs-12 control-label" for="simpleBirth">법정생년월일</label>
+											<div class="col-md-9 col-xs-12">
+												<input type="text" id="simpleBirth" class="form-control" value="">
+												<p class="txt-input-guide">주민등록번호상의 생년월일을 입력해주세요. (예: 19800323)</p>
+											</div>
+										</div>
+
+										<div class="form-group ty-input-birth">
+											<label class="col-md-3 col-xs-12 control-label">성별</label>
+											<div class="col-md-9 col-xs-12 select-gender">
+												<div class="radio-wrapper">
+													<label class="amw-radio-wrap radio-label" for="selectGenderMale">
+														<input type="radio" name="radio-gender" checked="checked" class="amw-global-radio" id="selectGenderMale">
+														<span class="amw-radio-overlay"></span>
+														<span class="amw-label-radio-text">남</span>
+													</label>
+												</div>
+												<div class="radio-wrapper">
+													<label class="amw-radio-wrap radio-label" for="selectGenderFemale">
+														<input type="radio" name="radio-gender" class="amw-global-radio" id="selectGenderFemale">
+														<span class="amw-radio-overlay"></span>
+														<span class="amw-label-radio-text">여</span>
+													</label>
+												</div>
+											</div>
+										</div>
+
+
+										<!-- 휴대폰 번호+인증 -->
+										<div class="form-group mobile">
+											<label class="col-md-3 control-label" for="simpleMobile">휴대폰 번호</label>
+											<div class="col-md-6 col-xs-12">
+												<div class="row form-item-row">
+													<div class="col-md-4 col-xs-4 input-part-1">
+														<select class="form-control" id="simpleMobile">
+															<option>010</option>
+														</select>
+													</div>
+													<div class="col-md-8 col-xs-8 input-part-2">
+														<input type="text" class="form-control" placeholder="‘-’없이 입력" title="휴대폰번호 뒷자리 입력">
+													</div>
+												</div>
+											</div>
+											<div class="col-md-3 col col-xs-12 col-space-top"><button type="button" class="bt-akl-white">인증번호 재전송</button></div>
+										</div>
+										<div class="form-group mobile-certifi">
+											<div class="col-md-3 col-empty"></div>
+											<div class="col-md-9 col-xs-12 certifi-input-box">
+												<label class="col-md-3 col-xs-12 certifi-label" for="simpleCertiNumber">인증번호 입력</label>
+												<div class="col-md-5 col-xs-8 certifi-input">
+													<input type="text" class="form-control" id="simpleCertiNumber">
+													<p class="txt-input-guide">남은시간:2분59초</p>
+												</div>
+												<div class="col-md-4 col-xs-4 col-btn"><button type="button" class="bt-akl-blue">확인</button></div>
+											</div>
+										</div>
+										<!-- //휴대폰 번호+인증 -->
+									</div>
+								</div>
+								<!-- //간편 본인확인 입력 전체 -->
+
+								<p class="valid-result-box"><strong class="noti-suc">본인확인이 완료되었습니다.</strong></p><!-- 본인확인 결과 노출 시 .on 추가 -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="next-control">
+				<button type="button" class="bt-akl-blue">다음</button><!-- akl 클래스명 수정 -->
+				<button type="button" class="bt-akl-txt">이전</button>
+			</div>
+		</div>
+		<!-- //본인확인 -->
+
+		<div id="quick"></div>
+		<div id="footer"></div>
+	</main>
+	
+	<script type="text/javascript">
+	$(function(){
+		validationStepBox(); //본인확인 상세
+	});
+
+	//본인확인 상세
+	function validationStepBox(){
+		var jsBtnShow = $('[class^=valid-type]').find('.js-btn-show');
+
+		$(jsBtnShow).on('click',function(e){
+			e.preventDefault();
+			var $hiddenArea = $(this).closest('[class^=valid-type]').find('.box-input-details');
+			
+			$('.box-input-details').css('display','none');
+			if($hiddenArea.is(':hidden')){
+				$hiddenArea.show();
+			}
+		});
+	}
+	</script>
+
+</body>
+
+</html>

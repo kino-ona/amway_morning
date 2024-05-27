@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="service_process02" transform="translate(-44 -567)">
+    <circle id="base" cx="30" cy="30" r="30" transform="translate(44 567)" fill="#fee"/>
+    <g id="ic" transform="translate(-430.222 109.326)">
+      <rect id="base-2" data-name="base" width="30" height="30" transform="translate(489.222 472.674)" fill="#fff" opacity="0"/>
+      <g id="그룹_135" data-name="그룹 135" transform="translate(493.25 474.213)">
+        <path id="패스_22038" data-name="패스 22038" d="M503.043,477.739" transform="translate(-496.533 -474.299)" fill="none" stroke="#0098ff" stroke-linejoin="round" stroke-width="1"/>
+        <path id="패스_22039" data-name="패스 22039" d="M507.388,477.739h2.231a2.044,2.044,0,0,1,.412.042,2,2,0,0,1,.385.119,2.047,2.047,0,0,1,.347.189,2.067,2.067,0,0,1,.554.553,2.03,2.03,0,0,1,.307.732,2.013,2.013,0,0,1,.042.412v19.389a2,2,0,0,1-.042.411,2.02,2.02,0,0,1-.307.732,2.015,2.015,0,0,1-.251.3,1.962,1.962,0,0,1-.3.25,1.983,1.983,0,0,1-.347.189,2.067,2.067,0,0,1-.385.119,2.009,2.009,0,0,1-.412.042h-17.85a2.017,2.017,0,0,1-.413-.042,2.088,2.088,0,0,1-.384-.119,1.985,1.985,0,0,1-.347-.189,2.029,2.029,0,0,1-.3-.25,2.069,2.069,0,0,1-.25-.3,2,2,0,0,1-.188-.347,1.968,1.968,0,0,1-.119-.385,2,2,0,0,1-.042-.411V479.786a2.008,2.008,0,0,1,.042-.412,1.961,1.961,0,0,1,.119-.384,2.022,2.022,0,0,1,.188-.348,2.059,2.059,0,0,1,.553-.553,2.05,2.05,0,0,1,.347-.189,2.02,2.02,0,0,1,.384-.119,2.052,2.052,0,0,1,.413-.042H494" transform="translate(-489.722 -474.299)" fill="#fff" stroke="#777" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path id="패스_22040" data-name="패스 22040" d="M521.306,477.739" transform="translate(-505.871 -474.299)" fill="none" stroke="#0098ff" stroke-linejoin="round" stroke-width="1"/>
+        <path id="패스_22041" data-name="패스 22041" d="M511.967,474.428v.044a1.617,1.617,0,0,0-1.617-1.617h-.757c0-.018,0-.035,0-.053a2.1,2.1,0,1,0-4.2,0c0,.018,0,.035,0,.053h-.756a1.617,1.617,0,0,0-1.618,1.617v-.044c0,.089.013-.149.026-.064a.645.645,0,0,0-.026.172v1.078a.647.647,0,0,0,.647.647h7.652a.648.648,0,0,0,.647-.647v-1.078a.576.576,0,0,0-.027-.172C511.954,474.28,511.967,474.517,511.967,474.428Z" transform="translate(-496.522 -470.7)" fill="#fff" stroke="#ff9292" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="그룹_136" data-name="그룹 136" transform="translate(501.543 487.675)">
+        <line id="선_38" data-name="선 38" x2="5.25" fill="none" stroke="#ff9292" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line id="선_39" data-name="선 39" x2="5.25" transform="translate(0 4.5)" fill="none" stroke="#ff9292" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,64 @@
+﻿@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 300;
+  src: url(font/notokr-light.woff2) format('woff2'),
+    url(font/notokr-light.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 400;
+  src: url(font/notokr-regular.woff2) format('woff2'),
+    url(font/notokr-regular.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  src: url(font/notokr-medium.woff2) format('woff2'),
+    url(font/notokr-medium.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 700;
+  src: url(font/notokr-bold.woff2) format('woff2'),
+    url(font/notokr-bold.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Free 3 of 9 Regular';
+  src: url(font/FREE3OF9.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url(font/glyphicons-halflings-regular.woff) format('woff'),
+    url(font/glyphicons-halflings-regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'AmwayIcons';
+  font-weight: normal;
+  font-style: normal;
+  src: url(font/AmwayIcons.eot?5v2gxx);
+  src: url(font/AmwayIcons.eot?5v2gxx#iefix) format('embedded-opentype'),
+    url(font/AmwayIcons.ttf?5v2gxx) format('truetype'),
+    url(font/AmwayIcons.woff?5v2gxx) format('woff'),
+    url(font/AmwayIcons.svg?5v2gxx#AmwayIcons) format('svg');
+}
+
+@font-face {
+  font-family: 'AmwayIcons';
+  font-weight: normal;
+  font-style: normal;
+  src: url(font/AmwayIcons.eot?5v2gxx);
+  src: url(font/AmwayIcons.eot?5v2gxx#iefix) format('embedded-opentype'),
+    url(font/AmwayIcons.ttf?5v2gxx) format('truetype'),
+    url(font/AmwayIcons.woff?5v2gxx) format('woff'),
+    url(font/AmwayIcons.svg?5v2gxx#AmwayIcons) format('svg');
+}

@@ -1,0 +1,591 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>공지사항 - Amway Korea</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="font_kr.css">
+<link rel="stylesheet" type="text/css" href="https://www.amway.co.kr/_ui/responsive/theme-blue/css/main_new.css">
+<link rel="stylesheet" type="text/css" href="https://www.amway.co.kr/wro/blue_responsive.css">    
+<link rel="stylesheet" type="text/css" href="https://www.amway.co.kr/wro/addons_responsive.css">
+<link rel="stylesheet" type="text/css" href="https://www.amway.co.kr/_ui/responsive/theme-blue/css/content_res_all.css">
+<link rel="stylesheet" type="text/css" href="https://www.amway.co.kr/_ui/responsive/theme-blue/css/uiux_res_all.css">
+<script src="https://www.amway.co.kr/_ui/responsive/common/js/jquery-3.2.1.min.js"></script>
+<style>
+  /*신규 페이지 모바일 실제크기 적용*/
+  body{max-width:1376px;margin:0 auto;}
+  #loading{display:none !important}
+  @media screen and (max-width:639px) {
+    body{padding-left:15px;padding-right:15px;margin:0 auto;}
+  }
+</style>
+</head>
+<body>
+<div class="akl"><div class="bod-view-txt">
+
+
+<!-- 반응형 공지 시작 -->
+<style>
+  /* 두 요소가 너비가 고정 되어있어서 반응형 작업이 원활하게 되지 않아 임시 설정 하였습니다 */
+.sub-nav-section {
+  max-width: 1400px !important;
+  min-width: 100% !important;
+  width: 100% !important;
+}
+.box_sop-wrap {
+  width: 100% !important;
+  max-width: 1400px;
+}
+/* 두 요소가 너비가 고정 되어있어서 반응형 작업이 원활하게 되지 않아 임시 설정 하였습니다 */
+
+/* 팝업시 바디 스크롤 정지 */
+.new-v2.pop-open {
+  overflow: hidden;
+}
+
+/* sop주문서 목록 페이지(account>U70700.html) */
+.mylab-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 50px;
+  line-height: 18px;
+  background: #b4ccba;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+}
+.mylab-tag::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 0;
+  height: 0;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  border: 9px solid transparent;
+  border-left-color: #b4ccba;
+}
+
+@media (max-width: 768px) {
+  .list-content.mysop-list-content .content-list .item-name {
+    margin-top: 8px;
+  }
+}
+
+/* sop 주문서 상세 페이지(sop>so_02.html)  */
+.article-sop .sop_order_name_box {
+  padding: 40px 0;
+  position: relative;
+}
+.article-sop .sop_order-name.custom {
+  margin: 0;
+}
+.mylab-tag.big {
+  top: 9px;
+  font-size: 14px;
+  width: 60px;
+  line-height: 20px;
+}
+.mylab-tag.big::after {
+  border: 10px solid transparent;
+  border-left-color: #b4ccba;
+}
+.article__sub-tabs {
+  margin-top: 16px;
+}
+
+/* 스마트오더 home (sop>sh_01_01_sop.html) */
+/* 팝업 */
+.mylab-pop-wrap {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+}
+.mylab-pop-wrap.open {
+  display: block;
+}
+.mylab-pop-container {
+  width: 100%;
+  height: 100%;
+  max-width: 610px;
+  max-height: 1250px;
+  margin: 0 auto;
+  background: #ffffff;
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.mylab-pop-header {
+  padding: 40px 8.197% 18px 8.197%;
+}
+.mylab-pop-header .mylab-header-logo {
+  display: block;
+  margin: 0 auto;
+}
+.mylab-pop-content {
+  overflow-y: auto;
+  height: calc(100% - 142px);
+}
+.mylab-pop-info-list-wrap {
+  padding: 0 8.197%;
+}
+.mylab-pop-content .mylab-pop-info-list {
+  border-top: 1px solid #e8e8e8;
+  padding: 30px 0;
+}
+.mylab-pop-content .mylab-pop-info-list .mylab-info-title {
+  margin: 0;
+  font-size: 16px;
+  padding: 0;
+  margin-bottom: 18px;
+  color: #0e315b;
+}
+.mylab-pop-content .mylab-pop-info-list .mylab-info-desc {
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: -0.07px;
+  margin: 0;
+  color: #000000;
+}
+.mylab-pop-content .mylab-pop-info-list .mylab-info-desc strong {
+  font-weight: 700;
+}
+.mylab-benefit-box {
+  display: flex;
+}
+.mylab-benefit {
+  width: 250px;
+  border-radius: 6px;
+  padding: 18px;
+  display: flex;
+}
+.mylab-benefit:nth-child(1) {
+  margin-right: 2%;
+  background-color: #f9f7fb;
+}
+.mylab-benefit:nth-child(2) {
+  background-color: #e5fef8;
+}
+.benefit-icon-box {
+  display: flex;
+  align-items: center;
+  margin-right: 12px;
+}
+
+.benefit-tag {
+  display: inline-block;
+  padding: 3px 7px;
+  font-size: 10px;
+  color: #fff;
+  border-radius: 20px;
+  margin-bottom: 6px;
+}
+.benefit-tag.tag01 {
+  background: #a68cc6;
+}
+.benefit-tag.tag02 {
+  background: #34b095;
+}
+.benefit-text {
+  font-size: 13px;
+  line-height: 1.38;
+  margin: 0;
+  color: #000;
+}
+.benefit-text strong {
+  font-weight: 700;
+  font-size: 12px;
+}
+.mylab-benefit-desc {
+  font-size: 11px;
+  color: #8f8f8f;
+  letter-spacing: -0.06px;
+  line-height: 23px;
+  margin-top: 6px;
+}
+.mylab-pop-info-caution-wrap .info-caution-list {
+  display: flex;
+  font-size: 13px;
+  letter-spacing: -0.07px;
+  color: #000000;
+  line-height: 1.77;
+}
+.mylab-pop-info-caution-wrap .info-caution-list::before {
+  display: inline-block;
+  content: "•";
+  padding-right: 5px;
+}
+.mylab-progress-step::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+.step-box {
+  float: left;
+  width: 25%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.step-img {
+  margin: 0 auto;
+  width: 80px;
+}
+.step-img > img {
+  display: block;
+  width: 100%;
+}
+.step-tag {
+  display: block;
+  width: 60px;
+  height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 2;
+  border-radius: 20px;
+  border: 1px solid;
+  margin: 8px 0;
+}
+.step-tag.odd {
+  color: #e87662;
+  border-color: #e87662;
+}
+.step-tag.even {
+  color: #f3a155;
+  border-color: #f3a155;
+}
+.step-info {
+  font-size: 13px;
+  color: #000;
+  line-height: 1.38;
+  margin: 0;
+}
+.mylab-progress-info {
+  width: 100%;
+  background: #f6f6f6;
+  color: #8f8f8f;
+  text-align: center;
+  padding: 7px;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: -0.06px;
+  margin-top: 10px;
+}
+
+.mylab-pop-footer {
+  width: 100%;
+  display: flex;
+  background-color: #002f5f;
+}
+.mylab-pop-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 52px;
+  font-size: 16px;
+  border-top: 1px solid #002f5f;
+}
+.akl button.mylab-pop-btn.closeBtn {
+  background: #fff;
+  color: #002f5f;
+  border-top: 1px solid #002f5f;
+}
+.mylab-pop-btn.linkBtn {
+  color: #fff;
+  background: #002f5f;
+}
+
+@media (min-width: 610px) {
+  .benefit-info-box {
+    flex-grow: 1;
+  }
+}
+
+@media (max-width: 609px) {
+  .mylab-benefit-box {
+    display: block;
+  }
+  .mylab-benefit {
+    width: 100%;
+    justify-content: center;
+  }
+  .mylab-benefit:nth-child(1) {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+  .benefit-info-box.green-box {
+    padding-right: 15px;
+  }
+  .step-box {
+    width: 50%;
+    margin-bottom: 10px;
+  }
+  @media (max-width: 410px) {
+    .mylab-progress-info .text-for-pc {
+      display: none;
+    }
+  }
+}
+
+/* 마이랩 주문서 등록 페이지 (renewal>OR_04_new.html)*/
+.panel-mylab-text {
+  display: inline-block;
+  margin: 0;
+  vertical-align: middle;
+  padding-left: 10px;
+  padding-top: 5px;
+  color: #ed174c;
+}
+
+.panel-mylab-text > span {
+  padding-left: 5px;
+}
+@media (max-width: 410px) {
+  .panel-mylab-text .for-pc {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .new-sop-add .amwa-btnbar.sop-apply-btn-box {
+    width: 285px;
+  }
+  .new-sop-add .amwa-btnbar a.sop-apply-btn {
+    width: auto;
+  }
+}
+@media (max-width: 350px) {
+  .new-sop-add .amwa-btnbar a.sop-apply-btn {
+    padding: 0 10px;
+  }
+}
+
+/* 배너 이미지 공통처리 */
+.mylab-banner-box {
+  padding: 30px 0;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .mylab-banner-box.confirm-page {
+    padding: 30px 15px;
+  }
+}
+.mylab-banner-box.smart-order-banner {
+  padding-top: 0;
+}
+.mylab-banner-box .banner-img-wrap {
+  width: 100%;
+  display: block;
+}
+.mylab-banner-img {
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+}
+.mylab-banner-img.for-mobile {
+  display: none;
+}
+@media (max-width: 768px) {
+  .mylab-banner-img.for-pc {
+    display: none;
+  }
+  .mylab-banner-img.for-mobile {
+    display: block;
+  }
+}
+.mylab-banner-box .mylab-banner-text {
+  font-size: 13px;
+  margin-top: 15px;
+}
+.mylab-banner-box .mylab-banner-text > a {
+  text-decoration: underline;
+}
+</style>
+<div class="os_noticeRes">
+  <!-- header -->
+  <div class="osResHeader">
+
+  </div>
+  <!-- //osResHeader -->
+  <!-- //header -->
+
+  <!-- content -->
+  <div class="osResContent">
+    <div class="osResBntGrp">
+      <a href="#osLayerPop" onclick="layerPopOver(this, '#osLayerPop')" class="osResBtn01L marTL">예시보기</a>
+    </div>
+  </div>
+  <!-- //content -->
+</div>
+<!-- //os_noticeRes -->
+<!-- //반응형 공지 끝 -->
+
+
+<!-- 공지 레이어 팝업 -->
+<div class="layerWrapper" id="osLayerPop">
+  <div class="cbox layerBox popWidM">
+    <div class="cart-popup__dialog">
+      <div class="cart-popup__header"><span class="cart-popup__header-text">my LAB 마이크로바이옴 솔루션 <a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true" class="cart-popup__close"><img src="https://uiux-review.preprod.kr.amway.net/_ui/_noticeImg/res/close.png" alt="닫기"></a></span></div>
+      <div class="cart-popup__content payment">
+        <div class="cart-popup__item-info amway-theme">
+
+          <div class="mylab-pop-container layer-area_container">
+            <div class="mylab-pop-header">
+              <img class="mylab-header-logo" src="https://uiux-review.preprod.kr.amway.net/_ui/responsive/theme-blue/images/mylab_logo.svg" alt="logo">
+            </div>
+            <div class="mylab-pop-content">
+              <ul class="mylab-pop-info-list-wrap">
+                <li class="mylab-pop-info-list">
+                  <h2 class="mylab-info-title">
+                    my&nbsp;LAB 마이크로바이옴 솔루션이란?
+                  </h2>
+                  <p class="mylab-info-desc">
+                    마이랩 바이 뉴트리라이트는 뉴트리라이트의 맞춤 건강 서비스로,
+                    사람마다 다른 마이크로바이옴 상태를 집요하고 철저하게 분석하여
+                    한 사람 한 사람을 위한 균형 잡힌 건강을 설계합니다.
+                  </p>
+                </li>
+                <li class="mylab-pop-info-list">
+                  <h2 class="mylab-info-title">
+                    my&nbsp;LAB 스마트 오더(SOP 정기배송) 란?
+                  </h2>
+                  <p class="mylab-info-desc">
+                    국내 유일 듀얼 장 건강 분석을 통해 추천된 맞춤형
+                    프로바이오틱스를
+                    <strong>스마트 오더 프로그램(SOP 정기배송)</strong>
+                    으로 매달 정기적으로 배송 받고 혜택도 함께 받으실 수 있습니다.
+                  </p>
+                </li>
+                <li class="mylab-pop-info-list">
+                  <h2 class="mylab-info-title">
+                    my&nbsp;LAB 스마트 오더(SOP 정기배송) 혜택
+                  </h2>
+                  <ul class="mylab-benefit-box">
+                    <li class="mylab-benefit">
+                      <div class="benefit-icon-box">
+                        <img src="https://uiux-review.preprod.kr.amway.net/_ui/responsive/theme-blue/images/mylab_pop_icon02.png" alt="icon">
+                      </div>
+                      <div class="benefit-info-box">
+                        <span class="benefit-tag tag01">50% 할인</span>
+                        <p class="benefit-text">
+                          맞춤형 프로바이오틱스<br>
+                          <strong>3개월 / 6개월 차 50% 할인</strong>
+                        </p>
+                      </div>
+                    </li>
+                    <li class="mylab-benefit">
+                      <div class="benefit-icon-box">
+                        <img src="https://uiux-review.preprod.kr.amway.net/_ui/responsive/theme-blue/images/mylab_pop_icon01.png" alt="icon">
+                      </div>
+                      <div class="benefit-info-box green-box">
+                        <span class="benefit-tag tag02">무료증정</span>
+                        <p class="benefit-text">
+                          맞춤형 프로바이오틱스<br>
+                          <strong> 12월 차 제품 무료 증정</strong>
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                  <p class="mylab-benefit-desc">
+                    1개월 차란, 마이크로바이옴 분석 완료 후 추천된 맞춤형
+                    프로바이오틱스 정기배송 받은 첫 달을 의미합니다.
+                  </p>
+                </li>
+                <li class="mylab-pop-info-list">
+                  <h2 class="mylab-info-title">
+                    my&nbsp;LAB 스마트 오더(SOP 정기배송) 진행 단계
+                  </h2>
+                  <div class="mylab-progress-box">
+                    <ul class="mylab-progress-step">
+                      <li class="step-box">
+                        <div class="step-img">
+                          <img src="https://uiux-review.preprod.kr.amway.net/_ui/responsive/theme-blue/images/mylab_pop_icn_step1.png" alt="icon">
+                        </div>
+                        <span class="step-tag odd">STEP 1</span>
+                        <p class="step-info">키트 구매</p>
+                      </li>
+                      <li class="step-box">
+                        <div class="step-img">
+                          <img src="https://uiux-review.preprod.kr.amway.net/_ui/responsive/theme-blue/images/mylab_pop_icn_step2.png" alt="icon">
+                        </div>
+                        <span class="step-tag even">STEP 2</span>
+                        <p class="step-info">
+                          SOP 정기배송 <br>
+                          신청
+                        </p>
+                      </li>
+                      <li class="step-box">
+                        <div class="step-img">
+                          <img src="https://uiux-review.preprod.kr.amway.net/_ui/responsive/theme-blue/images/mylab_pop_icn_step3.png" alt="icon">
+                        </div>
+                        <span class="step-tag odd">STEP 3</span>
+                        <p class="step-info">
+                          분석&amp;결과 <br>
+                          레포트 수령
+                        </p>
+                      </li>
+                      <li class="step-box">
+                        <div class="step-img">
+                          <img src="https://uiux-review.preprod.kr.amway.net/_ui/responsive/theme-blue/images/mylab_pop_icn_step4.png" alt="icon">
+                        </div>
+                        <span class="step-tag even">STEP 4</span>
+                        <p class="step-info">
+                          추천제품 <br>
+                          SOP 정기배송
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="mylab-progress-info">
+                    추후에 마이 쇼핑 &gt; 주문내역 리스트에서 키트 구매 건을
+                    선택하여<br class="text-for-pc">
+                    스마트 오더를 신청하실 수도 있습니다.
+                  </div>
+                </li>
+                <li class="mylab-pop-info-list">
+                  <h2 class="mylab-info-title">주의사항</h2>
+                  <ul class="mylab-pop-info-caution-wrap">
+                    <li class="info-caution-list">
+                      테스트 키트를 구매하신 분만 스마트 오더를 신청하실 수
+                      있습니다.
+                    </li>
+                    <li class="info-caution-list">
+                      마이크로바이옴 분석이 완료되면 맞춤형 프로바이오틱스 SOP
+                      정기배송이 자동으로 시작됩니다.
+                    </li>
+                    <li class="info-caution-list">
+                      SOP 정기배송이 시작되면 알림톡으로 안내드릴 예정입니다.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="cart-popup__item-link"><a href="" class="bt-akl-blue btn_close">확인</a></div>
+    </div>
+  </div>
+</div>
+<!-- //공지 레이어 팝업 -->
+
+</div><!-- //.bod-view-txt --></div><!-- //.akl -->
+<script src="https://www.amway.co.kr/wro/all_responsive.js"></script>
+<script src="https://www.amway.co.kr/wro/addons_responsive.js"></script>
+</body>
+</html>

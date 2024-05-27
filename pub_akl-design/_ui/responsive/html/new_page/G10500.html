@@ -1,0 +1,2073 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>장바구니 | Amway Korea</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords">
+	<meta name="description" content="NY Fee Bundle">
+	<meta name="robots" content="index,follow">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-lib.css"><!-- 플러그인용 css : 2018.03.14 추가  -->
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common-new.css">
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.datepicker.js"></script><!-- datepicker : 2018.03.19 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/owl.carousel.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/isotope.pkgd.js"></script><!-- gnb 플러그인 : 2018.03.23 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/select2.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/new.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.raty.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_contents.js"></script><!-- brand 통합 : 2018.08.24 추가  -->
+</head>
+<body class="akl">
+<!-- skipToContent -->
+<div id="skipToContent">
+   <a href="#contents">콘텐츠 바로가기 </a>
+</div>
+<!-- //skipToContent -->
+
+<main>
+	<div id="header"></div>
+	<div class="container-fluid main-container" id="contents">
+		<div class="print-hide breadcrumb-section">
+			<ol class="breadcrumb">
+				<li><a href="#">홈</a></li>
+				<li class="active">장바구니</li>
+			</ol>
+		</div>
+	</div>
+	<div class="container-fluid main-container">
+		<div class="row border cartTitile">
+			<h1 class="product-list-page-title shopping-list-page-title mb25">장바구니 <div class="cart-top-totals inline-block mgt0">(총 25개 제품)</div></h1>
+			<p class="product-list-page-sub-title">장바구니에서 선택하신 제품을 관리하고 주문할 수 있습니다.</p>
+		</div>
+		<div class="row cart-content-wrapper">
+			<div class="account-section-content new-account-section-content">
+				<!-- 마크업 수정 -->
+				<div class="akl-toggle-wrap sort-order">
+					<div class="panel-group accordion-custom" role="tablist" aria-multiselectable="true">
+						<div class="panel">
+							<div class="panel-heading" role="tab" id="quickShop">
+								<a  href="#down1" role="button" data-toggle="collapse" data-parent="#quickShopAccordion" aria-controls="quickShopBody" class=""><!-- 2018.05.29 펼침일때 css 삭제 -->
+									<div class="panel-title">
+										<img src="/_ui/responsive/theme-blue/images/shopping-cart-icon.png" alt="cart" class="cart-header__cart-icon" />
+										<span class="text-uppercase accordion-header-text">빠른 제품 검색</span>
+										<span class="pull-right icon-minus"></span>
+									</div>
+								</a>
+							</div>
+							<div id="down1" class="panel-collapse applicants-panel collapse" role="tabpanel" aria-labelledby="headingOne"><!--  2018.05.03  기본 열기 (.collapse.in)  -->
+								<div class="panel-body">
+									<div id="quickShopForm" class="item_quick_sch_area"><!-- 2019-06-03 클래스 추가 -->
+										<div class="item-name-container">
+											<label class="js-sku-input-field-label sku-input-field-label" for="name-vps">제품명 또는 VPS 입력</label>
+											<div class="inp-button">
+												<div class="form-s">
+													<input type="text" id="name-vps" name="" value="" class="input-st inp_item_quick_sch"><!-- 2019-06-03 클래스 추가 -->
+													<button type="submit" class="btn btn-primary" id="Cart_Search"><span class="hidden-sm hidden-xs">검색</span></button>
+												</div>
+											</div>
+										</div>
+										<div class="add-item-container os_listNew_btn_reset">
+											<a class="bt-akl-txt" id="quickSearchReset">검색초기화</a>
+										</div>
+										<!-- 2019-06-03 추가 -->
+										<!--search suggest-->
+										<div class="popover item-suggestion-popover fade bottom in" role="tooltip" id="">
+											<div class="popover-content-akl">
+												<div class="popover-content">
+													<button class="search-results-close">x</button>
+													<div>
+														<ul class="category-wrapper js-category-wrapper suggested-words-wrapper js-suggested-words-wrapper js-search-words-wrapper">
+															<li class="ui-menu-item">
+																<a href="#">
+																	<div class="name">
+																		<span class="js-name"></span>
+																		<span class="js-start-of-name"></span>
+																		<span class="bold js-highlited-part-of-name">테스트</span>
+																	</div>
+																</a>
+															</li>
+															<li class="ui-menu-item">
+																<a href="#">
+																	<div class="name">
+																		<span class="js-name"></span>
+																		<span class="js-start-of-name"></span>
+																		<span class="bold js-highlited-part-of-name">아티스트리</span>
+																		<span class="js-rest-of-name">에센셜</span>
+																	</div>
+																</a>
+															</li>
+															<li class="ui-menu-item">
+																<a href="#">
+																	<div class="name">
+																		<span class="js-name"></span>
+																		<span class="js-start-of-name"></span>
+																		<span class="bold js-highlited-part-of-name">아티스트리</span>
+																		<span class="js-rest-of-name">뉴 쇼핑백</span>
+																	</div>
+																</a>
+															</li>
+															<li class="ui-menu-item">
+																<a href="#">
+																	<div class="name">
+																		<span class="js-name"></span>
+																		<span class="js-start-of-name"></span>
+																		<span class="bold js-highlited-part-of-name">아티스트리</span>
+																		<span class="js-rest-of-name">딥 클렌징 마스크</span>
+																	</div>
+																</a>
+															</li>
+														</ul>
+													</div>
+
+													<div class="container-fluid main-container quick-area">
+														<div class="amway-suggest col-md-12">
+															<div id="header_productSuggestListTabs" class="amway-suggest__list owl-carousel owl-theme"><!-- carousel 수정(2018.06.15) : .owl-carousel.owl-theme 추가 --><!-- 수정 : 2018.05.14 (ID수정) -->
+																<div class="amway-suggest__item-container">
+																	<div class="amway-suggest__item sort"><!-- sort 추가 -->
+																		<div class="amway-suggest__item-content amwahover">
+																			<img src="/_ui/responsive/theme-blue/images/@product_list_item1.png" class="amway-suggest__thumbnail" alt="product1">
+																			<div class="amway-suggest__item-detail quick-search">
+																				<p class="amway-suggest__item-number">[9658] 282658K</p>
+																				<p class="amway-suggest__item-title">이그젝트 핏 퍼펙팅 컨실러<br>라이트</p>
+																				<p class="amway-suggest__pvbv">PV 18,650 / BV 29,100</p><!-- 2018.03.14 PV 18,650 / BV 29,100 추가 -->
+																				<div class="amway-suggest__item-title amway-suggest__item-aboprice">
+																					<span class="amway-suggest__item-abovalue">320,000원</span>
+																				</div> <!-- 2018.03.21 수량 증감 제거 이하 동일  -->
+																			</div>
+																		</div>
+																		<div class="amway-suggest__item-link">
+																			<a href="#" class="btn-blue-white" data-toggle="modal" data-target="#cart-modal" id="DirectSearch_addtoCart">장바구니</a><!-- 2018.03.15 태깅 아이디 추가, tabindex 제거-->
+																		</div>
+																	</div>
+																</div>
+																<div class="amway-suggest__item-container">
+																	<div class="amway-suggest__item sort"><!-- sort 추가 -->
+																		<div class="amway-suggest__item-content amwahover">
+																			<img src="/_ui/responsive/theme-blue/images/@product_list_item2.png" class="amway-suggest__thumbnail" alt="product2">
+																			<div class="amway-suggest__item-detail quick-search">
+																				<p class="amway-suggest__item-number">[9658] 282658K</p>
+																				<p class="amway-suggest__item-title">시그니처 컬러 라잇업 립글로스<br>라즈베리 키스</p>
+																				<p class="amway-suggest__pvbv">PV 18,650 / BV 29,100</p><!-- 2018.03.14 PV 18,650 / BV 29,100 추가 -->
+																				<div class="amway-suggest__item-title amway-suggest__item-aboprice">
+																					<span class="amway-suggest__item-abovalue">27,000원</span>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="amway-suggest__item-link">
+																			<a href="#" class="btn-blue-white" id="DirectSearch_addtoCart">장바구니</a><!-- 2018.03.15 태깅 아이디 추가, tabindex 제거-->
+																		</div>
+																	</div>
+																</div>
+																<div class="amway-suggest__item-container">
+																	<div class="amway-suggest__item sort"><!-- sort 추가 -->
+																		<div class="amway-suggest__item-content amwahover">
+																			<img src="/_ui/responsive/theme-blue/images/@product_list_item3.png" class="amway-suggest__thumbnail" alt="product3">
+																			<div class="amway-suggest__item-detail quick-search">
+																				<p class="amway-suggest__item-number">[9658] 282658K</p>
+																				<p class="amway-suggest__item-title">아세로라 C<br>100 정</p>
+																				<p class="amway-suggest__pvbv">PV 18,650 / BV 29,100</p><!-- 2018.03.14 PV 18,650 / BV 29,100 추가 -->
+																				<div class="amway-suggest__item-title amway-suggest__item-aboprice">
+																					<span class="amway-suggest__item-abovalue">27,000원</span>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="amway-suggest__item-link">
+																			<a href="#" class="btn-blue-white" id="DirectSearch_addtoCart">장바구니</a><!-- 2018.03.15 태깅 아이디 추가, tabindex 제거-->
+																		</div>
+																	</div>
+																</div>
+																<div class="amway-suggest__item-container">
+																	<div class="amway-suggest__item sort"><!-- sort 추가 -->
+																		<div class="amway-suggest__item-content amwahover">
+																			<img src="/_ui/responsive/theme-blue/images/@product_list_item4.png" class="amway-suggest__thumbnail" alt="product4">
+																			<div class="amway-suggest__item-detail quick-search">
+																				<p class="amway-suggest__item-number">[9658] 282658K</p>
+																				<p class="amway-suggest__item-title">아세로라 C<br>300 정</p>
+																				<p class="amway-suggest__pvbv">PV 18,650 / BV 29,100</p><!-- 2018.03.14 PV 18,650 / BV 29,100 추가 -->
+																				<div class="amway-suggest__item-title amway-suggest__item-aboprice">
+																					<span class="amway-suggest__item-abovalue">27,000원</span>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="amway-suggest__item-link">
+																			<a href="#" class="btn-blue-white" id="DirectSearch_addtoCart">장바구니</a><!-- 2018.03.15 태깅 아이디 추가,  tabindex 제거-->
+																		</div>
+																	</div>
+																</div>
+																<div class="amway-suggest__item-container">
+																	<div class="amway-suggest__item sort"><!-- sort 추가 -->
+																		<div class="amway-suggest__item-content amwahover">
+																			<img src="/_ui/responsive/theme-blue/images/@product_list_item4.png" class="amway-suggest__thumbnail" alt="product5">
+																			<div class="amway-suggest__item-detail quick-search">
+																				<p class="amway-suggest__item-number">[9658] 282658K</p>
+																				<p class="amway-suggest__item-title ellipsis2">허아릳랴ㅓ린 허아릳랴ㅓ린허아릳랴ㅓ린허아릳랴ㅓ</p>
+																				<p class="amway-suggest__pvbv">PV 18,650 / BV 29,100</p><!-- 2018.03.14 PV 18,650 / BV 29,100 추가 -->
+																				<div class="amway-suggest__item-title amway-suggest__item-aboprice">
+																					<span class="amway-suggest__item-abovalue">27,000원</span>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="amway-suggest__item-link">
+																			<a href="#" class="btn-blue-white" id="DirectSearch_addtoCart">장바구니</a><!-- 2018.03.15 태깅 아이디 추가, tabindex 제거-->
+																		</div>
+																	</div>
+																</div>
+																<div class="amway-suggest__item-container">
+																	<div class="amway-suggest__item sort"><!-- sort 추가 -->
+																		<div class="amway-suggest__item-content amwahover">
+																			<img src="/_ui/responsive/theme-blue/images/@product_list_item4.png" class="amway-suggest__thumbnail" alt="product5">
+																			<div class="amway-suggest__item-detail quick-search">
+																				<p class="amway-suggest__item-number">[9658] 282658K</p>
+																				<p class="amway-suggest__item-title ellipsis2">허아릳랴ㅓ린 허아릳랴ㅓ린허아릳랴ㅓ린허아릳랴ㅓ</p>
+																				<p class="amway-suggest__pvbv">PV 18,650 / BV 29,100</p><!-- 2018.03.14 PV 18,650 / BV 29,100 추가 -->
+																				<div class="amway-suggest__item-title amway-suggest__item-aboprice">
+																					<span class="amway-suggest__item-abovalue">27,000원</span>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="amway-suggest__item-link">
+																			<a href="#" class="btn-blue-white" id="DirectSearch_addtoCart">장바구니</a><!-- 2018.03.15 태깅 아이디 추가, tabindex 제거-->
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!--search end-->
+										<!-- //2019-06-03 추가 -->
+									</div>
+									<div class="shoping-cart-search"> <!-- 확인을 위해 강제로 열어둠 -->
+										<div class="container-fluid main-container quick-area os_listNew_quick"> <!-- 190110_리스트개선_클래스 수정 -->
+
+											<!-- 190110_리스트개선_빠른검색_신규(선택) -->
+											<!-- listType -->
+											<div class="row">
+												<div class="os_listNew_btn_viewChoice">
+													<a href="#" class="list select"><b class="os_listNew_btn_typeBox"><span class="icon-Icon-Hamburger-01"></span></b>리스트형</a>
+													<a href="G10500_2.html" class="list"><b class="os_listNew_btn_typeBox"><span class="icon-grid"></span></b>이미지형</a>
+												</div>
+											</div>
+											<!-- //listType -->
+											<!-- //190110_리스트개선_빠른검색_신규(선택) -->
+
+											<!-- 190110_리스트개선_신규(리스트형) -->
+											<!-- product list -->
+											<div class="os_listNew_quickSearch">
+
+												<!-- product item -->
+												<div class="os_listNew_quickSearch_item">
+													<div class="row no-gutters">
+														<div class="col-md-9 col-xs-8">
+															<div class="row no-gutters">
+																<div class="col-lg-6 col-md-6 col-xs-12">
+																	<!-- Checkbox -->
+																	<label class="checkbox-element-wrapper">
+																		<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+																		<span class="_checkbox-element-global-span"></span>
+																	</label>
+																	<!-- //Checkbox -->
+
+																	<!-- Name -->
+																	<a target="_self" href="#" class="os_listNew_quickSearch_title">아티스트리 이그젝트 핏 쿠션 파운데이션 올 데이 커버 SPF50+ PA+++ 23호</a>
+																	<!-- //Name -->
+																</div>
+
+																<div class="col-lg-5 col-md-4 col-xs-12">
+																	<!-- VPS / SKU -->
+																	<div class="os_listNew_quickSearch_numbers">
+																		<span class="os_listNew_quickSearch_label">VPS / SKU : </span>
+																		<span class="os_listNew_quickSearch_value">1374 / 118400D</span>
+																	</div>
+																	<!-- //VPS / SKU -->
+																	<!-- PV / BV -->
+																	<div class="os_listNew_quickSearch_numbers hidden-xs">
+																		<span class="os_listNew_quickSearch_label">PV / BV : </span>
+																		<span class="os_listNew_quickSearch_label">903,400 / 1,436,400</span>
+																	</div>
+																	<!-- //PV / BV -->
+																</div>
+
+																<div class="col-lg-1 col-md-2 col-xs-12">
+																	<!-- Price -->
+																	<span class="os_listNew_quickSearch_price">1,580,000원</span>
+																	<!-- //Price -->
+																</div>
+															</div>
+														</div>
+														<div class="col-md-3 col-xs-4 text-center">
+															<!-- Quantity -->
+															<div class="product-list__item-retailprice quantity hidden-xs">
+																<span class="product-list__item-abolabel hide">수량:</span>
+																<span class="product-list__item-abovalue">
+																	<div class="opt-quantity mini">
+																		<input type="text" maxlength="3" class="form-control js-qty-selector-input inpNum" size="1" value="1" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" title="수량 입력" />
+																		<a href="#" class="btnMinus">수량하나빼기</a>
+																		<a href="#" class="btnPlus">수량하나더하기</a>
+																	</div>
+																</span>
+															</div>
+															<!-- //Quantity -->
+
+															<!-- Cart Button -->
+															<a href="#" class="btn-blue-white os_listNew_listType_buyBtn" data-toggle="modal" data-target="#cart-modal" id="">장바구니 담기</a>
+															<!-- //Cart Button -->
+														</div>
+													</div>
+												</div>
+												<!-- //product item -->
+
+												<!-- product item -->
+												<div class="os_listNew_quickSearch_item">
+													<div class="row no-gutters">
+														<div class="col-md-9 col-xs-8">
+															<div class="row no-gutters">
+																<div class="col-lg-6 col-md-6 col-xs-12">
+																	<!-- Checkbox -->
+																	<label class="checkbox-element-wrapper">
+																		<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+																		<span class="_checkbox-element-global-span"></span>
+																	</label>
+																	<!-- //Checkbox -->
+
+																	<!-- Name -->
+																	<a target="_self" href="#" class="os_listNew_quickSearch_title">아티스트리 이그젝트 핏 쿠션 파운데이션 올 데이 커버 SPF50+ PA+++ 23호</a>
+																	<!-- //Name -->
+																</div>
+
+																<div class="col-lg-5 col-md-4 col-xs-12">
+																	<!-- VPS / SKU -->
+																	<div class="os_listNew_quickSearch_numbers">
+																		<span class="os_listNew_quickSearch_label">VPS / SKU : </span>
+																		<span class="os_listNew_quickSearch_value">1374 / 118400D</span>
+																	</div>
+																	<!-- //VPS / SKU -->
+																	<!-- PV / BV -->
+																	<div class="os_listNew_quickSearch_numbers hidden-xs">
+																		<span class="os_listNew_quickSearch_label">PV / BV : </span>
+																		<span class="os_listNew_quickSearch_label">903,400 / 1,436,400</span>
+																	</div>
+																	<!-- //PV / BV -->
+																</div>
+
+																<div class="col-lg-1 col-md-2 col-xs-12">
+																	<!-- Price -->
+																	<span class="os_listNew_quickSearch_price">1,580,000원</span>
+																	<!-- //Price -->
+																</div>
+															</div>
+														</div>
+														<div class="col-md-3 col-xs-4 text-center">
+															<!-- Quantity -->
+															<div class="product-list__item-retailprice quantity hidden-xs">
+																<span class="product-list__item-abolabel hide">수량:</span>
+																<span class="product-list__item-abovalue">
+																	<div class="opt-quantity mini">
+																		<input type="text" maxlength="3" class="form-control js-qty-selector-input inpNum" size="1" value="1" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" title="수량 입력" />
+																		<a href="#" class="btnMinus">수량하나빼기</a>
+																		<a href="#" class="btnPlus">수량하나더하기</a>
+																	</div>
+																</span>
+															</div>
+															<!-- //Quantity -->
+
+															<!-- Cart Button -->
+															<a href="#" class="btn-blue-white os_listNew_listType_buyBtn" data-toggle="modal" data-target="#cart-modal" id="">장바구니 담기</a>
+															<!-- //Cart Button -->
+														</div>
+													</div>
+												</div>
+												<!-- //product item -->
+
+												<!-- product item -->
+												<div class="os_listNew_quickSearch_item">
+													<div class="row no-gutters">
+														<div class="col-md-9 col-xs-8">
+															<div class="row no-gutters">
+																<div class="col-lg-6 col-md-6 col-xs-12">
+																	<!-- Checkbox -->
+																	<label class="checkbox-element-wrapper">
+																		<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+																		<span class="_checkbox-element-global-span"></span>
+																	</label>
+																	<!-- //Checkbox -->
+
+																	<!-- Name -->
+																	<a target="_self" href="#" class="os_listNew_quickSearch_title">아티스트리 이그젝트 핏 쿠션 파운데이션 올 데이 커버 SPF50+ PA+++ 23호</a>
+																	<!-- //Name -->
+																</div>
+
+																<div class="col-lg-5 col-md-4 col-xs-12">
+																	<!-- VPS / SKU -->
+																	<div class="os_listNew_quickSearch_numbers">
+																		<span class="os_listNew_quickSearch_label">VPS / SKU : </span>
+																		<span class="os_listNew_quickSearch_value">1374 / 118400D</span>
+																	</div>
+																	<!-- //VPS / SKU -->
+																	<!-- PV / BV -->
+																	<div class="os_listNew_quickSearch_numbers hidden-xs">
+																		<span class="os_listNew_quickSearch_label">PV / BV : </span>
+																		<span class="os_listNew_quickSearch_label">903,400 / 1,436,400</span>
+																	</div>
+																	<!-- //PV / BV -->
+																</div>
+
+																<div class="col-lg-1 col-md-2 col-xs-12">
+																	<!-- Price -->
+																	<span class="os_listNew_quickSearch_price">1,580,000원</span>
+																	<!-- //Price -->
+																</div>
+															</div>
+														</div>
+														<div class="col-md-3 col-xs-4 text-center">
+															<!-- Quantity -->
+															<div class="product-list__item-retailprice quantity hidden-xs">
+																<span class="product-list__item-abolabel hide">수량:</span>
+																<span class="product-list__item-abovalue">
+																	<div class="opt-quantity mini">
+																		<input type="text" maxlength="3" class="form-control js-qty-selector-input inpNum" size="1" value="1" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" title="수량 입력" />
+																		<a href="#" class="btnMinus">수량하나빼기</a>
+																		<a href="#" class="btnPlus">수량하나더하기</a>
+																	</div>
+																</span>
+															</div>
+															<!-- //Quantity -->
+
+															<!-- Cart Button -->
+															<a href="#" class="btn-blue-white os_listNew_listType_buyBtn" data-toggle="modal" data-target="#cart-modal" id="">장바구니 담기</a>
+															<!-- //Cart Button -->
+														</div>
+													</div>
+												</div>
+												<!-- //product item -->
+
+												<!-- product item -->
+												<div class="os_listNew_quickSearch_item">
+													<div class="row no-gutters">
+														<div class="col-md-9 col-xs-8">
+															<div class="row no-gutters">
+																<div class="col-lg-6 col-md-6 col-xs-12">
+																	<!-- Checkbox -->
+																	<label class="checkbox-element-wrapper">
+																		<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+																		<span class="_checkbox-element-global-span"></span>
+																	</label>
+																	<!-- //Checkbox -->
+
+																	<!-- Name -->
+																	<a target="_self" href="#" class="os_listNew_quickSearch_title">아티스트리 이그젝트 핏 쿠션 파운데이션 올 데이 커버 SPF50+ PA+++ 23호</a>
+																	<!-- //Name -->
+																</div>
+
+																<div class="col-lg-5 col-md-4 col-xs-12">
+																	<!-- VPS / SKU -->
+																	<div class="os_listNew_quickSearch_numbers">
+																		<span class="os_listNew_quickSearch_label">VPS / SKU : </span>
+																		<span class="os_listNew_quickSearch_value">1374 / 118400D</span>
+																	</div>
+																	<!-- //VPS / SKU -->
+																	<!-- PV / BV -->
+																	<div class="os_listNew_quickSearch_numbers hidden-xs">
+																		<span class="os_listNew_quickSearch_label">PV / BV : </span>
+																		<span class="os_listNew_quickSearch_label">903,400 / 1,436,400</span>
+																	</div>
+																	<!-- //PV / BV -->
+																</div>
+
+																<div class="col-lg-1 col-md-2 col-xs-12">
+																	<!-- Price -->
+																	<span class="os_listNew_quickSearch_price">1,580,000원</span>
+																	<!-- //Price -->
+																</div>
+															</div>
+														</div>
+														<div class="col-md-3 col-xs-4 text-center">
+															<!-- Quantity -->
+															<div class="product-list__item-retailprice quantity hidden-xs">
+																<span class="product-list__item-abolabel hide">수량:</span>
+																<span class="product-list__item-abovalue">
+																	<div class="opt-quantity mini">
+																		<input type="text" maxlength="3" class="form-control js-qty-selector-input inpNum" size="1" value="1" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" title="수량 입력" />
+																		<a href="#" class="btnMinus">수량하나빼기</a>
+																		<a href="#" class="btnPlus">수량하나더하기</a>
+																	</div>
+																</span>
+															</div>
+															<!-- //Quantity -->
+
+															<!-- Cart Button -->
+															<a href="#" class="btn-blue-white os_listNew_listType_buyBtn" data-toggle="modal" data-target="#cart-modal" id="">장바구니 담기</a>
+															<!-- //Cart Button -->
+														</div>
+													</div>
+												</div>
+												<!-- //product item -->
+
+												<!-- product item -->
+												<div class="os_listNew_quickSearch_item">
+													<div class="row no-gutters">
+														<div class="col-md-9 col-xs-8">
+															<div class="row no-gutters">
+																<div class="col-lg-6 col-md-6 col-xs-12">
+																	<!-- Checkbox -->
+																	<label class="checkbox-element-wrapper">
+																		<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+																		<span class="_checkbox-element-global-span"></span>
+																	</label>
+																	<!-- //Checkbox -->
+
+																	<!-- Name -->
+																	<a target="_self" href="#" class="os_listNew_quickSearch_title">아티스트리 이그젝트 핏 쿠션 파운데이션 올 데이 커버 SPF50+ PA+++ 23호</a>
+																	<!-- //Name -->
+																</div>
+
+																<div class="col-lg-5 col-md-4 col-xs-12">
+																	<!-- VPS / SKU -->
+																	<div class="os_listNew_quickSearch_numbers">
+																		<span class="os_listNew_quickSearch_label">VPS / SKU : </span>
+																		<span class="os_listNew_quickSearch_value">1374 / 118400D</span>
+																	</div>
+																	<!-- //VPS / SKU -->
+																	<!-- PV / BV -->
+																	<div class="os_listNew_quickSearch_numbers hidden-xs">
+																		<span class="os_listNew_quickSearch_label">PV / BV : </span>
+																		<span class="os_listNew_quickSearch_label">903,400 / 1,436,400</span>
+																	</div>
+																	<!-- //PV / BV -->
+																</div>
+
+																<div class="col-lg-1 col-md-2 col-xs-12">
+																	<!-- Price -->
+																	<span class="os_listNew_quickSearch_price">1,580,000원</span>
+																	<!-- //Price -->
+																</div>
+															</div>
+														</div>
+														<div class="col-md-3 col-xs-4 text-center">
+															<!-- Quantity -->
+															<div class="product-list__item-retailprice quantity hidden-xs">
+																<span class="product-list__item-abolabel hide">수량:</span>
+																<span class="product-list__item-abovalue">
+																	<div class="opt-quantity mini">
+																		<input type="text" maxlength="3" class="form-control js-qty-selector-input inpNum" size="1" value="1" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" title="수량 입력" />
+																		<a href="#" class="btnMinus">수량하나빼기</a>
+																		<a href="#" class="btnPlus">수량하나더하기</a>
+																	</div>
+																</span>
+															</div>
+															<!-- //Quantity -->
+
+															<!-- Cart Button -->
+															<a href="#" class="btn-blue-white os_listNew_listType_buyBtn" data-toggle="modal" data-target="#cart-modal" id="">장바구니 담기</a>
+															<!-- //Cart Button -->
+														</div>
+													</div>
+												</div>
+												<!-- //product item -->
+
+											</div>
+											<!-- //product list -->
+
+											<div class="row">
+												<div class="col-xs-12 text-center">
+													<a href="#" class="btn-blue-white">장바구니 담기</a>
+												</div>
+											</div>
+											<!-- //190110_리스트개선_신규(리스트형) -->
+
+										</div>
+
+										<div class="btn-colsed-right">
+											<a href="#" class="btnClosed"><img src="/_ui/responsive/theme-blue/images/akl_common/ico_closed.png" alt="닫기"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //마크업 수정 -->
+			</div>
+			<!-- 장바구니 신규 레이아웃 -->
+			<div class="row shop-cart-conts new-cart">
+				<!-- 왼쪽 (.cart-items-wrapper) -->
+				<!-- 2019.01.31 클래스명 변경 및 button-modified 클래스 추가 -->
+				<div class="col-md-9">
+					<div class="order-entry-pagination">
+						<div class="pagination-bar top">
+							<div class="print-hide pagination-toolbar">
+								<div class="helper clearfix hidden-md hidden-lg"></div>
+								<div class="sort-refine-bar">
+									<div class="row">
+										<!-- 2018.03.02 마크업 수정 -->
+										<div class="col-xs-6 col-sm-6 col-md-6 pagination-left">
+											<div class="wish-del">
+												<a href="#" class="bt-akl-gray mini normal">선택 삭제</a><!--  2018.03.15 태깅 아이디 추가 -->
+											</div>
+										</div>
+										<div class="col-xs-6 col-sm-6 col-md-6 pagination-wrap">
+											<div class="wish-num">
+												<span>선택 제품 : <strong>3</strong>개</span>
+											</div>
+											<div class="add-wish-warp">
+												<div class="plp-add-to-shopping-list">
+													<div class="product-list__item-link-text product-list__item-link-common col-xs-6 col-md-8 js-add-list-shopping-button">
+														<button type="button"><!-- 2018.04.04 수정 -->
+															<span class="shopping-list-button-text">위시리스트로 보내기</span><!-- 2018.05.03 명칭 수정 -->
+														</button>
+													</div>
+													<div class="cart-detail__dropdown-menu dropdown-menu" role="menu">
+														<ul>
+															<li>
+																<input class="amwa-radio" type="radio" name="optradio" id="radio1" value="">
+																<label for="radio1" class="focus">아티스트리 아티스트리  아티스트리 아티스트리 아티스트리 </label>
+															 </li>
+															 <li>
+																 <input class="amwa-radio" type="radio" name="optradio" id="radio2" value="">
+																 <label for="radio2" class="focus">선택</label>
+															 </li>
+															 <li>
+																 <input class="amwa-radio" type="radio" name="optradio" id="radio3" value="">
+																 <label for="radio3" class="focus">선택</label>
+															 </li>
+															 <li>
+																<input class="amwa-radio" type="radio" name="optradio" id="radio4" value="">
+																 <label for="radio4" class="focus">선택</label>
+															 </li>
+															 <li>
+																 <input class="amwa-radio" type="radio" name="optradio" id="radio5" value="">
+																 <label for="radio5" class="focus">선택</label>
+															</li>
+														</ul>
+														<div class="dropdown-menu-bottom">
+															<button id="addToLIST1" class="btn btn-primary addToLIST">보내기</button>
+															<a href="javascript:void(0);" id="" class="btn-add-wish">위시리스트 추가</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- //2018.03.02 마크업 수정 -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<ul class="shopping-cart-item-list js-shopping-cart-item-list new-shopping-cart-item-list change-shopping-cart-item-list">
+						<li class="product-list-item js-shopping-cart-list-item first-item">
+							<label class="checkbox-element-wrapper">
+								<input type="checkbox" class="_checkbox-element-global-class"> 
+								<span class="_checkbox-element-global-span"></span>
+							</label>
+							<div class="product-item-info">
+								<div class="cart-image">
+									<div><a class="thumb"><img src="/_ui/responsive/theme-blue/images/@nu105480.jpg"></a></div>
+								</div>
+								<div class="product-item-element list-item-info">
+									<div class="product-status-value">
+										<span class="ico-bg-sky">신제품</span>
+									</div>
+									<span class="product-name"><a>아티스트리 스킨 배리어 프로텍션 프로모션 세트</a></span>
+									<div class="product-code">8195 / 282647L</div>
+									<div class="product-pvbv">PV 150,910 / BV 235,400</div>
+									<div class="product-price"><span class="one-price">단가 : 1,006,000원</span><span class="total-price">소계 : 1,002,000원</span></div>
+								</div>
+							</div>
+							<div class="product-item-control">
+								<div class="opt-quantity mini">
+									<input type="text" maxlength="3" size="1" value="1" data-max="FORCE_IN_STOCK" data-min="1" name="" title="수량 입력" class="form-control inpNum "> 
+									<a class="btnMinus">수량하나빼기</a> 
+									<a class="btnPlus">수량하나더하기</a>
+								</div>
+								<div class="control_btn_wrap">
+									<a class="bt-akl-gray mini">삭제</a>
+									<a class="bt-akl-blue skyblue mini" id="G10500_lp2">옵션변경</a>
+									<span class="option-wrap">
+										<span class="option-color">
+											<img src="/_ui/responsive/theme-blue/images/@glitz-4.png" alt="color-4">
+										</span>
+										<span class="option-txt">선물세트</span>
+									</span>
+								</div>
+								<div class="control_btn_wrap">
+									<div class="toolTip-wrapper toolTip-type02">
+										<button type="button" class="btn-tooltip">구성품</button>
+										
+										<div class="tipCont-wrapper">
+											<div class="tooltip-content">
+												<ul class="set_item">
+													<li>
+														<div class="set_name">[본품] 아티스트리 인텐시브 스킨케어 부스팅 인퓨전</div>
+														<div class="set_count">2</div>
+													</li>
+													<li>
+														<div class="set_name">[본품] 인텐시브 스킨케어 어드배스드 비타민 C+ 히알루론산 트리트먼트</div>
+														<div class="set_count">25</div>
+													</li>
+													<li>
+														<div class="set_name">[본품] 유스 익스텐드 인리칭</div>
+														<div class="set_count">2</div>
+													</li>
+													<li>
+														<div class="set_name">[추가구성품] 아티스트리 글로우 페이셜 오일</div>
+														<div class="set_count set_add">2</div>
+													</li>
+													<li>
+														<div class="set_name">[증정품] 유스 익스텐드 리치 클렌징 폼 미니</div>
+														<div class="set_count set_add">2</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+ 
+							</div>	
+							<div class="add-wish-warp">
+								<div class="plp-add-to-shopping-list">
+									<div class="product-list__item-link-text product-list__item-link-common js-add-list-shopping-button">
+										<button type="button"><!-- 2018.04.04 수정 -->
+											<span class="shopping-list-button-text">위시리스트</span><!-- 2018.05.03 명칭 수정 -->
+										</button>
+									</div>
+									<div class="cart-detail__dropdown-menu dropdown-menu" role="menu">
+										<ul>
+											<li>
+												<input class="amwa-radio" type="radio" name="optradio" id="radio1" value="">
+												<label for="radio1" class="focus">아티스트리 아티스트리  아티스트리 아티스트리 아티스트리 </label>
+											 </li>
+											 <li>
+												 <input class="amwa-radio" type="radio" name="optradio" id="radio2" value="">
+												 <label for="radio2" class="focus">선택</label>
+											 </li>
+											 <li>
+												 <input class="amwa-radio" type="radio" name="optradio" id="radio3" value="">
+												 <label for="radio3" class="focus">선택</label>
+											 </li>
+											 <li>
+												<input class="amwa-radio" type="radio" name="optradio" id="radio4" value="">
+												 <label for="radio4" class="focus">선택</label>
+											 </li>
+											 <li>
+												 <input class="amwa-radio" type="radio" name="optradio" id="radio5" value="">
+												 <label for="radio5" class="focus">선택</label>
+											</li>
+										</ul>
+										<div class="dropdown-menu-bottom">
+											<button id="addToLIST1" class="btn btn-primary addToLIST">보내기</button>
+											<a href="javascript:void(0);" id="" class="btn-add-wish">위시리스트 추가</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>	
+						<li class="product-list-item js-shopping-cart-list-item first-item">
+							<label class="checkbox-element-wrapper">
+								<input type="checkbox" class="_checkbox-element-global-class"> 
+								<span class="_checkbox-element-global-span"></span>
+							</label>
+							<div class="product-item-info">
+								<div class="cart-image">
+									<div><a class="thumb"><img src="/_ui/responsive/theme-blue/images/@nu105480.jpg"></a></div>
+								</div>
+								<div class="product-item-element list-item-info">
+									<div class="product-status-value">
+										<span class="ico-bg-sky">신제품</span>
+									</div>
+									<span class="product-name"><a>아티스트리 스킨 배리어 프로텍션 프로모션 세트</a></span>
+									<div class="product-code">8195 / 282647L</div>
+									<div class="product-pvbv">PV 150,910 / BV 235,400</div>
+									<div class="product-price"><span class="one-price">단가 : 1,006,000원</span><span class="total-price">소계 : 1,002,000원</span></div>
+								</div>
+							</div>
+							<div class="product-item-control">
+								<div class="opt-quantity mini">
+									<input type="text" maxlength="3" size="1" value="1" data-max="FORCE_IN_STOCK" data-min="1" name="" title="수량 입력" class="form-control inpNum "> 
+									<a class="btnMinus">수량하나빼기</a> 
+									<a class="btnPlus">수량하나더하기</a>
+								</div>
+								<div class="control_btn_wrap">
+									<a class="bt-akl-gray mini">삭제</a>
+									<a class="bt-akl-blue skyblue mini">옵션변경</a>
+									<span class="option-wrap">
+										<span class="option-color">
+											<img src="/_ui/responsive/theme-blue/images/@glitz-4.png" alt="color-4">
+										</span>
+										<span class="option-txt">선물세트</span>
+									</span>
+								</div>
+ 
+							</div>	
+							<div class="add-wish-warp">
+								<div class="plp-add-to-shopping-list">
+									<div class="product-list__item-link-text product-list__item-link-common js-add-list-shopping-button">
+										<button type="button"><!-- 2018.04.04 수정 -->
+											<span class="shopping-list-button-text">위시리스트</span><!-- 2018.05.03 명칭 수정 -->
+										</button>
+									</div>
+									<div class="cart-detail__dropdown-menu dropdown-menu" role="menu">
+										<ul>
+											<li>
+												<input class="amwa-radio" type="radio" name="optradio" id="radio11" value="">
+												<label for="radio11" class="focus">아티스트리 아티스트리  아티스트리 아티스트리 아티스트리 </label>
+											 </li>
+											 <li>
+												 <input class="amwa-radio" type="radio" name="optradio" id="radio12" value="">
+												 <label for="radio12" class="focus">선택</label>
+											 </li>
+											 <li>
+												 <input class="amwa-radio" type="radio" name="optradio" id="radio13" value="">
+												 <label for="radio13" class="focus">선택</label>
+											 </li>
+											 <li>
+												<input class="amwa-radio" type="radio" name="optradio" id="radio14" value="">
+												 <label for="radio14" class="focus">선택</label>
+											 </li>
+											 <li>
+												 <input class="amwa-radio" type="radio" name="optradio" id="radio15" value="">
+												 <label for="radio15" class="focus">선택</label>
+											</li>
+										</ul>
+										<div class="dropdown-menu-bottom">
+											<button id="addToLIST2" class="btn btn-primary addToLIST">보내기</button>
+											<a href="javascript:void(0);" id="" class="btn-add-wish">위시리스트 추가</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>	
+						<li class="product-list-item js-shopping-cart-list-item first-item">
+							<label class="checkbox-element-wrapper">
+								<input type="checkbox" class="_checkbox-element-global-class"> 
+								<span class="_checkbox-element-global-span"></span>
+							</label>
+							<div class="product-item-info">
+								<div class="cart-image">
+									<div><a class="thumb"><img src="/_ui/responsive/theme-blue/images/@nu105480.jpg"></a></div>
+								</div>
+								<div class="product-item-element list-item-info">
+									<div class="product-status-value">
+										<span class="ico-bg-sky">신제품</span>
+									</div>
+									<span class="product-name"><a>아티스트리 스킨 배리어 프로텍션 프로모션 세트</a></span>
+									<div class="product-code">8195 / 282647L</div>
+									<div class="product-pvbv">PV 150,910 / BV 235,400</div>
+									<div class="product-price"><span class="one-price">단가 : 1,006,000원</span><span class="total-price">소계 : 1,002,000원</span></div>
+								</div>
+							</div>
+							<div class="product-item-control">
+								<div class="opt-quantity mini">
+									<input type="text" maxlength="3" size="1" value="1" data-max="FORCE_IN_STOCK" data-min="1" name="" title="수량 입력" class="form-control inpNum "> 
+									<a class="btnMinus">수량하나빼기</a> 
+									<a class="btnPlus">수량하나더하기</a>
+								</div>
+								<div class="control_btn_wrap">
+									<a class="bt-akl-gray mini">삭제</a>
+									<a class="bt-akl-blue skyblue mini">옵션변경</a>
+									<span class="option-wrap">
+										<span class="option-txt">선물세트</span>
+									</span>
+								</div>
+								<div class="control_btn_wrap">
+									<div class="toolTip-wrapper toolTip-type02">
+										<button type="button" class="btn-tooltip">프로모션 세트 구성</button>
+										
+										<div class="tipCont-wrapper">
+											<div class="tooltip-content">
+												<ul class="set_item">
+													<li>
+														<div class="set_name">[본품] 아티스트리 인텐시브 스킨케어 부스팅 인퓨전</div>
+														<div class="set_count">2</div>
+														<div class="set_status"><span class="red">일시품절</span></div>
+													</li>
+													<li>
+														<div class="set_name">[본품] 인텐시브 스킨케어 어드배스드 비타민 C+ 히알루론산 트리트먼트</div>
+														<div class="set_count">25</div>
+													</li>
+													<li>
+														<div class="set_name">[본품] 유스 익스텐드 인리칭</div>
+														<div class="set_count">2</div>
+													</li>
+													<li>
+														<div class="set_name">[추가구성품] 아티스트리 글로우 페이셜 오일</div>
+														<div class="set_count set_add">2</div>
+													</li>
+													<li>
+														<div class="set_name">[증정품] 유스 익스텐드 리치 클렌징 폼 미니</div>
+														<div class="set_count set_add">2</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>	
+							<div class="add-wish-warp">
+								<div class="plp-add-to-shopping-list">
+									<div class="product-list__item-link-text product-list__item-link-common js-add-list-shopping-button">
+										<button type="button"><!-- 2018.04.04 수정 -->
+											<span class="shopping-list-button-text">위시리스트</span><!-- 2018.05.03 명칭 수정 -->
+										</button>
+									</div>
+									<div class="cart-detail__dropdown-menu dropdown-menu" role="menu">
+										<ul>
+											<li>
+												<input class="amwa-radio" type="radio" name="optradio" id="radio21" value="">
+												<label for="radio21" class="focus">아티스트리 아티스트리  아티스트리 아티스트리 아티스트리 </label>
+											 </li>
+											 <li>
+												 <input class="amwa-radio" type="radio" name="optradio" id="radio22" value="">
+												 <label for="radio22" class="focus">선택</label>
+											 </li>
+											 <li>
+												 <input class="amwa-radio" type="radio" name="optradio" id="radio23" value="">
+												 <label for="radio23" class="focus">선택</label>
+											 </li>
+											 <li>
+												<input class="amwa-radio" type="radio" name="optradio" id="radio24" value="">
+												 <label for="radio24" class="focus">선택</label>
+											 </li>
+											 <li>
+												 <input class="amwa-radio" type="radio" name="optradio" id="radio25" value="">
+												 <label for="radio25" class="focus">선택</label>
+											</li>
+										</ul>
+										<div class="dropdown-menu-bottom">
+											<button id="addToLIST3" class="btn btn-primary addToLIST">보내기</button>
+											<a href="javascript:void(0);" id="" class="btn-add-wish">위시리스트 추가</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>	
+					</ul>
+
+					<div class="order-entry-pagination">
+						<div class="pagination-bar top">
+							<div class="print-hide pagination-toolbar">
+								<div class="helper clearfix hidden-md hidden-lg"></div>
+								<div class="sort-refine-bar">
+									<div class="row">
+										<!-- 2018.03.02 마크업 수정 -->
+										<div class="col-xs-6 col-sm-6 col-md-6 pagination-left">
+											<div class="wish-del">
+												<a href="#" class="bt-akl-gray mini normal">선택 삭제</a><!--  2018.03.15 태깅 아이디 추가 -->
+											</div>
+										</div>
+										<div class="col-xs-6 col-sm-6 col-md-6 pagination-wrap">
+											<div class="wish-num">
+												<span>선택 제품 : <strong>3</strong>개</span>
+											</div>
+											<div class="add-wish-warp">
+												<div class="plp-add-to-shopping-list">
+													<div class="product-list__item-link-text product-list__item-link-common col-xs-6 col-md-8 js-add-list-shopping-button">
+														<button type="button"><!-- 2018.04.04 수정 -->
+															<span class="shopping-list-button-text">위시리스트로 보내기</span><!-- 2018.05.03 명칭 수정 -->
+														</button>
+													</div>
+													<div class="cart-detail__dropdown-menu dropdown-menu" role="menu">
+														<ul>
+															<li>
+																<input class="amwa-radio" type="radio" name="optradio" id="radio31" value="">
+																<label for="radio31" class="focus">아티스트리 아티스트리  아티스트리 아티스트리 아티스트리 </label>
+															 </li>
+															 <li>
+																 <input class="amwa-radio" type="radio" name="optradio" id="radio32" value="">
+																 <label for="radio32" class="focus">선택</label>
+															 </li>
+															 <li>
+																 <input class="amwa-radio" type="radio" name="optradio" id="radio33" value="">
+																 <label for="radio33" class="focus">선택</label>
+															 </li>
+															 <li>
+																<input class="amwa-radio" type="radio" name="optradio" id="radio34" value="">
+																 <label for="radio34" class="focus">선택</label>
+															 </li>
+															 <li>
+																 <input class="amwa-radio" type="radio" name="optradio" id="radio35" value="">
+																 <label for="radio35" class="focus">선택</label>
+															</li>
+														</ul>
+														<div class="dropdown-menu-bottom">
+															<button id="addToLIST4" class="btn btn-primary addToLIST">보내기</button>
+															<a href="javascript:void(0);" id="" class="btn-add-wish">위시리스트 추가</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- //2018.03.02 마크업 수정 -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //2019.01.31 클래스명 변경 및 button-modified 클래스 추가 -->
+				<!-- //왼쪽 (.cart-items-wrapper) -->
+
+				<!-- 오른쪽 -->
+				<div class="col-md-3">
+					<!-- shopping-cart-total-wrapper -->
+					<div class="row shopping-cart-total-wrapper">
+						<div class="shopping-cart-total">
+							<div class="order-block order-total">
+								<div class="cart-totals">
+									<div class="js-cart-totals js-cart-totals-order-summary">
+										<div class="wrapper row auto-subtotal">
+											<div class="col-xs-6 cart-totals-left">주문금액</div><!-- 2018.05.16 원 취소 -->
+											<div class="col-xs-6 cart-totals-right text-right">288,000</div>
+										</div>
+										<div class="wrapper row auto-subtotal">
+											<div class="col-xs-6 cart-totals-left">배송비</div>
+											<div class="col-xs-6 cart-totals-right text-right">2,500</div>
+										</div>
+
+										<div class="wrapper wrapper-borders row auto-total">
+											<div class="col-xs-6 cart-totals-left">결제예정금액</div><!-- 수정 : 2018.05.04 (오타) -->
+											<div class="col-xs-6 cart-totals-right text-right">270,500</div>
+										</div>
+										<div class="wrapper row auto-total all-pvbv"><!-- noTop 삭제 -->
+											<div class="col-xs-6 cart-totals-left">총 PV/BV</div>
+											<div class="col-xs-6 cart-totals-right text-right">35,000 / 12,500</div>
+										</div>
+									</div>
+									<div class="cart-autio-info">
+										<ul class="list-type2">
+											<li>위의 정보는 결제 확정금액이 아닙니다. 정확한 할인, 프로모션, 배송비, 세금 및 기타 수수료는 실제 결제 시 산정됩니다. </li><!-- 수정 : 2018.05.04 (오타) -->
+										</ul>
+									</div>
+								</div>
+
+								<div class="cart-totals">
+									<div class="order-block-header">
+										<span>보유혜택</span><!-- 2018.05.16 원 추가 -->
+									</div>
+									<div class="js-cart-totals js-cart-totals-order-summary">
+										<div class="wrapper row auto-subtotal">
+											<div class="col-xs-4 cart-totals-left">A포인트</div>
+											<div class="col-xs-8 cart-totals-right text-right">2,344 P
+												<div>
+													<a href="" class="bt-akl-white mini">M포인트 > A포인트 전환</a>
+												</div>
+											</div>
+										</div>
+										<div class="wrapper row auto-subtotal">
+											<div class="col-xs-6 cart-totals-left">쿠폰갯수</div>
+											<div class="col-xs-6 cart-totals-right text-right">3개</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="express-checkout-block">
+							<a href="#" class="bt-akl-blue" id="Cart_Order1">주문하기</a><!--  2018.03.15 태깅 아이디 추가 -->
+						</div>
+					</div>
+					<!-- //shopping-cart-total-wrapper -->
+				</div>
+				<!-- //오른쪽 -->
+			</div>
+			<!-- //장바구니 신규 레이아웃 -->
+			<!-- 마크업 수정 -->
+			<div class="add_to_cart_form shop-cart type2">
+				<a href="checkout-1-shipping-and-delivery.html" class="bt-akl-blue" data-checkout-url="#" id="Cart_Order2">주문하기</a><!--  2018.03.15 태깅 아이디 추가 -->
+				<a class="bt-akl-txt" data-continue-shopping-url="#">쇼핑계속하기</a>
+			</div>
+			<!-- //마크업 구조 변경 -->
+
+		</div>
+		<div class="row cart-content-wrapper">
+			<ul class="list-type2">
+				<li>주문하실 때는 최대 25개 제품만 가능합니다.</li>
+				<li>제품 주문 합계액이 60,000원 이상이면 배송비가 무료입니다.</li>
+				<li>생산자 직접 배송 제품만 주문하는 경우에는 배송비가 부과되지 않습니다.</li>
+				<!-- <li>장바구니 재고현황은 배달기준(물류센터) 으로 체크됩니다.</li> 삭제 : 2018.12.06 -->
+				<li>장바구니의 보관기간은 28일입니다.</li>
+			</ul>
+		</div>
+	</div>
+	<div id="quick"></div>
+	<div id="footer"></div>
+</main>
+
+
+<!-- 재고현황  팝업 -->
+<div class="layerWrapper G10300_lp2_pop"><!-- div.layerWrapper 추가 -->
+	<div class="cbox G10300_lp2 layerBox popWidM"><!-- .layerBox 추가 -->
+		<div class="cart-popup__dialog">
+			<div class="cart-popup__header">
+				<span class="cart-popup__header-text">재고현황
+					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close">
+						<img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기">
+					</a>
+				</span>
+			</div>
+			<div class="cart-popup__content">
+				<div class="cart-popup__item-info">
+					<div class="product-status-title">
+						<p>재고현황은 실시간 변동으로 인하여 결제 시 달라질 수 있습니다.</p>
+						<p class="right">
+							<span class="in-Stock">재고 있음</span>
+							<span class="no-Stock">재고 없음</span>
+						</p>
+					</div>
+					<div class="product-status-body">
+						<ul class="pro-staus-list"><!-- 2018.02.13 나열순서 변경 -->
+							<li><span class="in-Stock">배달주문</span></li>
+							<li><span class="no-Stock">분당ABC</span></li>
+							<li><span class="in-Stock">강남</span></li>
+							<li><span class="no-Stock">강서</span></li>
+							<li><span class="no-Stock">인천</span></li>
+							<li><span class="in-Stock">대전</span></li>
+							<li><span class="no-Stock">천안</span></li>
+							<li><span class="in-Stock">청주</span></li>
+							<li><span class="no-Stock">해운대</span></li><!-- 2018.05.09 명칭 수정 -->
+							<li><span class="no-Stock">부산</span></li>
+							<li><span class="in-Stock">대구</span></li>
+							<li><span class="no-Stock">창원</span></li>
+							<li><span class="in-Stock">울산</span></li>
+							<li><span class="no-Stock">광주</span></li>
+							<li><span class="in-Stock">전주</span></li>
+							<li><span class="no-Stock">강릉</span></li>
+							<li><span class="no-Stock">제주</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- // 재고현황 팝업  -->
+
+<!-- 위시리스트 추가 팝업 -->
+<div class="layerWrapper wishListAdd_pop"><!-- div.layerWrapper 추가 -->
+	<div class="cbox wishListAdd layerBox popWidM"><!-- .layerBox 추가 -->
+		<div class="cart-popup__dialog">
+			<div class="cart-popup__header">
+				<span class="cart-popup__header-text">위시리스트 추가
+					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close">
+						<img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기">
+					</a>
+				</span>
+			</div>
+			<div class="cart-popup__content wish-list">
+				<div class="cart-popup__item-info">
+					<div class="form-horizontal">
+						<div class="form-group">
+							<label class="col-md-4 account-profile__label" for="wishname">위시리스트 명</label>
+							<div class="col-md-8 account-profile__value">
+								<input type="text" class="form-control" id="wishname">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cart-popup__item-link">
+					<a href="javascript:void(0)" class="btn-blue-white">확인</a>
+					<a class="bt-akl-txt">취소</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- // 위시리스트 추가 팝업 -->
+
+
+<!-- 옵션변경  팝업 -->
+<div class="layerWrapper G10500_lp2_pop"><!-- div.layerWrapper 추가 -->
+	<div class="cbox G10500_lp2 layerBox popWidM"><!-- .layerBox 추가 -->
+		<div class="cart-popup__dialog">
+			<div class="cart-popup__header">
+				<span class="cart-popup__header-text">옵션변경
+					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close">
+						<img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기">
+					</a>
+				</span>
+			</div>
+			<div class="cart-popup__content">
+				<div class="cart-popup__item-info">
+					<div class="product-status-title">
+						<p>현재 제품 : 이티스트리 시그니처 컬러 립스틱 / 19번 – 코랄 선라이즈</p>
+					</div>
+					<div class="option-body">
+						<!-- type1 -->
+						<div class="lip-color-choose">
+							<p class="lip-color-choose-message">옵션 선택</p>
+							<ul class="lip-color-choose__nav">
+								<li><img data-toggle="tab" href="#lips-1" src="/_ui/responsive/theme-blue/images/@glitz-1.png" alt="color-1"></li>
+								<li><img data-toggle="tab" href="#lips-2" src="/_ui/responsive/theme-blue/images/@glitz-2.png" alt="color-2"></li>
+								<li class="active"><img data-toggle="tab" href="#lips-3" src="/_ui/responsive/theme-blue/images/@glitz-3.png" alt="color-3"></li>
+								<li><img data-toggle="tab" href="#lips-4" src="/_ui/responsive/theme-blue/images/@glitz-4.png" alt="color-4"></li>
+								<li><img data-toggle="tab" href="#lips-5" src="/_ui/responsive/theme-blue/images/@glitz-5.png" alt="color-5"></li>
+								<li><img data-toggle="tab" href="#lips-6" src="/_ui/responsive/theme-blue/images/@glitz-6.png" alt="color-6"></li>
+								<li><img data-toggle="tab" href="#lips-7" src="/_ui/responsive/theme-blue/images/@glitz-7.png" alt="color-7"></li>
+								<li><img data-toggle="tab" href="#lips-8" src="/_ui/responsive/theme-blue/images/@glitz-8.png" alt="color-8"></li>
+								<li><img data-toggle="tab" href="#lips-9" src="/_ui/responsive/theme-blue/images/@glitz-9.png" alt="color-9"></li>
+							</ul>
+						</div>
+						<!-- //type1 -->
+						<!-- type2 -->
+						<div class="otpyin-select">
+							<p class="otpyin-message">옵션 선택</p>
+							<ul class="otpyin-list">
+								<li>
+									<div class="amway-theme">
+										<label class="amw-radio-wrap radio-label">
+											<input type="radio" name="radio-1" class="amw-global-radio" title="선택 1">
+											<span class="amw-radio-overlay"></span>
+											<span class="amw-label-radio-text">120정(75.61g)</span>
+										</label>
+									</div>
+								</li>
+								<li>
+									<div class="amway-theme">
+										<label class="amw-radio-wrap radio-label">
+											<input type="radio" name="radio-1" class="amw-global-radio" title="선택 2">
+											<span class="amw-radio-overlay"></span>
+											<span class="amw-label-radio-text">360정(242.32g)</span>
+										</label>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!-- //type2 -->
+						<div class="option-change">
+							<p>변경옵션 : <span>11번 – 프림로즈</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="cart-popup__item-link">
+					<a href="javascript:void(0)" class="btn-blue-white">적용</a>
+					<a class="bt-akl-txt">취소</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //옵션변경 팝업  -->
+
+
+<!-- 퀵오더 팝업 사용안함 -->
+<div class="layerWrapper G10500_lp1_pop"><!-- div.layerWrapper 추가 -->
+	<div class="cbox G10500_lp1 layerBox popWidM"><!-- .layerBox 추가 -->
+		<div class="cart-popup__dialog">
+			<div class="cart-popup__header">
+				<span class="cart-popup__header-text">퀵오더
+					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close">
+						<img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기">
+					</a>
+				</span>
+			</div>
+			<div class="cart-popup__content">
+				<div class="cart-popup__item-info">
+					<div class="product-status-title quik-order">
+						<p>제품을 추가하시려면, 아래 VPS 코드 및 수량을 입력 후 [담기] 버튼을 눌러 주세요.<br>
+							[입력란 추가] 버튼을 누르시면 입력란이 추가됩니다.</p>
+					</div>
+					<div class="quick-order-box">
+						<div class="quick-order-btn">
+							<span class="right"><a class="bt-akl-txt normal">입력란 추가</a></span>
+						</div>
+						<!--  마크업 수정 -->
+						<ul class="shopping-cart-item-list js-shopping-cart-item-list shopping-cart-product-item-list">
+							<li class="visible-md visible-lg">
+								<div class="col-xs-12 list-header">
+									<div class="col-xs-5 list-item-info">
+										<div class="product-item-element list-item-toggle">
+											<label class="checkbox-element-wrapper all-ak-check">
+												<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" data-product-code="" type="checkbox" title="전체선택">
+												<span class="_checkbox-element-global-span"></span>
+											</label>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="quick-order-item">
+								<div class="order-list">
+									<div class="product-order-element">
+										<label class="checkbox-element-wrapper">
+											<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" data-product-code="" type="checkbox" title="선택">
+											<span class="_checkbox-element-global-span"></span>
+										</label>
+									</div>
+									<div class="product-order-info">
+										<div class="quick-vps-qty">
+											<div class="quick-vps">
+												<label for="vps1" class="control-label">VPS</label>
+												<input id="vps1" type="text" class="form-control">
+											</div>
+											<div class="quick-qty">
+												<div class="qty-selector-container">
+													<label class="control-label" for="pdpAddtoCartInput2">수량</label>
+													<div class="opt-quantity mini">
+														<input type="text" maxlength="3" class="form-control js-qty-selector-input inpNum" size="1" value="1" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" id="pdpAddtoCartInput2" />
+														<a href="#" class="btnMinus">수량하나빼기</a>
+														<a href="#" class="btnPlus">수량하나더하기</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="quick-cate">
+											<div class="category-name-txt">[282658K] 행복한아름 물티슈</div>
+										</div>
+										<div class="quick-price-pb">
+											<div class="product-price">
+												<span class="price-txt">금액</span>
+												<span class="price-number">45,000,000</span>
+											</div>
+											<div class="product-pvbv">
+												<span class="pvbv-txt">PV/BV</span>
+												<span class="pvbv-number">325,000 / 321,000</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="quick-order-item">
+								<div class="order-list">
+									<div class="product-order-element">
+										<label class="checkbox-element-wrapper">
+											<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" data-product-code="" type="checkbox" title="선택">
+											<span class="_checkbox-element-global-span"></span>
+										</label>
+									</div>
+									<div class="product-order-info">
+										<div class="quick-vps-qty">
+											<div class="quick-vps">
+												<label for="vps2" class="control-label">VPS</label>
+												<input id="vps2" type="text" class="form-control">
+											</div>
+											<div class="quick-qty">
+												<div class="qty-selector-container">
+													<label class="control-label" for="pdpAddtoCartInput3">수량</label>
+													<div class="opt-quantity mini">
+														<input type="text" maxlength="3" class="form-control js-qty-selector-input inpNum" size="1" value="1" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" id="pdpAddtoCartInput3" />
+														<a href="#" class="btnMinus">수량하나빼기</a>
+														<a href="#" class="btnPlus">수량하나더하기</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="quick-cate">
+											<div class="category-name-txt">[282658K] 행복한아름 물티슈</div>
+										</div>
+										<div class="quick-price-pb">
+											<div class="product-price">
+												<span class="price-txt">금액</span>
+												<span class="price-number">45,000,000</span>
+											</div>
+											<div class="product-pvbv">
+												<span class="pvbv-txt">PV/BV</span>
+												<span class="pvbv-number">325,000 / 321,000</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="quick-order-item">
+								<div class="order-list">
+									<div class="product-order-element">
+										<label class="checkbox-element-wrapper">
+											<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" data-product-code="" type="checkbox" title="선택">
+											<span class="_checkbox-element-global-span"></span>
+										</label>
+									</div>
+									<div class="product-order-info">
+										<div class="quick-vps-qty">
+											<div class="quick-vps">
+												<label for="vps3" class="control-label">VPS</label>
+												<input id="vps3" type="text" class="form-control">
+											</div>
+											<div class="quick-qty">
+												<div class="qty-selector-container">
+													<label class="control-label" for="pdpAddtoCartInput4">수량</label>
+													<div class="opt-quantity mini">
+														<input type="text" maxlength="3" class="form-control js-qty-selector-input inpNum" size="1" value="1" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" id="pdpAddtoCartInput4" />
+														<a href="#" class="btnMinus">수량하나빼기</a>
+														<a href="#" class="btnPlus">수량하나더하기</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="quick-cate">
+											<div class="category-name-txt">[282658K] 행복한아름 물티슈</div>
+										</div>
+										<div class="quick-price-pb">
+											<div class="product-price">
+												<span class="price-txt">금액</span>
+												<span class="price-number">45,000,000</span>
+											</div>
+											<div class="product-pvbv">
+												<span class="pvbv-txt">PV/BV</span>
+												<span class="pvbv-number">325,000 / 321,000</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<!--  //마크업 수정 -->
+
+						<div class="order-total-box">
+							<p>
+								<span class="total-tit">총 금액</span>
+								<span class="total-number">999,191,050,000</span>
+							</p>
+							<p>
+								<span class="total-tit">총 PV/BV</span>
+								<span class="total-number">999,999,611,860 / 999,99.9542,500</span>
+							</p>
+						</div>
+
+						<div class="quick-order-btn">
+							<span class="left"><a class="bt-akl-txt normal">선택한 제품 삭제</a></span>
+							<span class="right"><a class="bt-akl-txt normal">입력란 추가</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cart-popup__item-link">
+				<a href="javascript:void(0)" class="btn-blue-white">확인</a>
+				<a class="bt-akl-txt">취소</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //퀵오더 팝업 -->
+
+<!-- QUICK VIEW 팝업 --><!-- 2018.03.14 팝업 추가  -->
+<div class="layerWrapper QUICK_VIEW_pop"><!-- div.layerWrapper 추가 -->
+	<div class="cbox layerBox popWidM"><!-- .layerBox 추가 -->
+		<div class="cart-popup__dialog">
+			<div class="cart-popup__header">
+				<span class="cart-popup__header-text">Quick View
+					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close" ><!-- a 태그 추가 -->
+					   <img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기">
+					</a><!-- a 태그 추가 -->
+				</span>
+			</div>
+			<div class="cart-popup__content">
+
+				<div class="cart-popup__item-info">
+					<!-- 공통 사용, 팝업 html 분리  : 2018.05.14 -->
+					<div style="padding:50px 0 70px;">
+						<p>[공통사용] 퀵뷰 페이지 분리 : 2018.05.14 </p>
+						<a href="QUICK_VIEW_pop.html" target="_blank">QUICK_VIEW_pop.html</a>
+					</div>
+					<!-- //공통 사용, 팝업 html 분리  : 2018.05.14 -->
+				</div>
+
+			</div>
+			<div class="cart-popup__item-link">
+				<div class="cart-popup__item-link-content">
+					<button id="PopupQuickView_DirectPurchase" class="bt-akl-blue" onclick="openDialog();">바로구매</button> <!-- 클래스 변경 --><!-- 2018.03.15 태깅 아이디 추가 -->
+					<button id="PopupQuickView_AddCart" class="bt-akl-white" onclick="openDialog();">장바구니</button><!-- 클래스 변경 --><!-- 2018.03.15 태깅 아이디 추가 -->
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- QUICK VIEW 팝업 -->
+
+
+<!-- 옵션 선택  팝업 2018.05.16 추가 -->
+<div class="layerWrapper G10000_lp9_pop">
+	<div class="cbox layerBox popWidL">
+		<div class="cart-popup__dialog">
+			<div class="cart-popup__header">
+				<span class="cart-popup__header-text">옵션 선택
+					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close">
+						<img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기">
+					</a>
+				</span>
+			</div>
+			<div class="cart-popup__content">
+				<div class="cart-popup__item-info">
+					<div class="pop-option-area">
+						<div class="pop-option-title">
+							<div class="ttit">쿠션 파운데이션 하이드라 터치 출시 프로모션</div>
+							<p class="ttxt">쿠션파운데이션 구매 시  라잇업 립글로스 스윗멜론, 미스티모브, 쥬이스  피치 중 선택가능</p>
+						</div>
+						<div class="pop-option-body">
+							<div class="gift-box-item">
+								<p class="tt-num">선택 가능 수량 : 1/3</p>
+								<div class="giftList">
+									<div class="giftBox">
+										<div class="giftImg"><img src="/_ui/responsive/theme-blue/images/@gift-img-04.png" alt="Soft Cleanser" title="Soft Cleanser"></div>
+										<div class="giftName">
+											<span class="gift-tit"><a href="#">스윗멜론</a></span>
+										</div>
+										<div class="giftCon">
+											<span class="amount-cal gift-total">
+												<a class="icon-del opera" data="-">
+													<i class="far fa-angle-down"></i>
+												</a>
+												<input type="tel" class="pdpAddtoCartInput amount-cal-input" name='pdpAddtoCartInput' id="amount-gift-input" value="1">
+												<a class="icon-add opera" data="+">
+													<i class="far fa-angle-up disabled"></i>
+												</a>
+											</span>
+										</div>
+									</div>
+									<div class="giftBox">
+										<div class="giftImg"><img src="/_ui/responsive/theme-blue/images/@gift-img-04.png" alt="Soft Cleanser" title="Soft Cleanser"></div>
+										<div class="giftName">
+											<span class="gift-tit"><a href="#">미스티모브</a></span>
+										</div>
+										<div class="giftCon">
+											<span class="amount-cal gift-total">
+												<a class="icon-del opera" data="-">
+													<i class="far fa-angle-down"></i>
+												</a>
+												<input type="tel" class="pdpAddtoCartInput amount-cal-input" name='pdpAddtoCartInput' id="amount-gift-input" value="1">
+												<a class="icon-add opera" data="+">
+													<i class="far fa-angle-up"></i>
+												</a>
+											</span>
+										</div>
+									</div>
+									<div class="giftBox disabled">
+										<div class="giftImg"><img src="/_ui/responsive/theme-blue/images/@gift-img-04.png" alt="Soft Cleanser" title="Soft Cleanser"></div>
+										<div class="giftName">
+											<span class="gift-tit"><a href="#">쥬이시 피치</a></span>
+										</div>
+										<div class="giftCon">
+											<span class="amount-cal gift-total">
+												<a class="icon-del opera" data="-">
+													<i class="far fa-angle-down"></i>
+												</a>
+												<input type="tel" class="pdpAddtoCartInput amount-cal-input" name='pdpAddtoCartInput' id="amount-gift-input" value="1" >
+												<a class="icon-add opera" data="+">
+													<i class="far fa-angle-up"></i>
+												</a>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="pop-option-area">
+						<div class="pop-option-title">
+							<div class="ttit">파이토 믹스 & 파이토 스틱 출시 프로모션</div>
+							<p class="ttxt">파이토 믹스 체리 2개 구매 시 파이토 스틱 레몬향, 오렌지향, 체리향 중 1개 증정</p>
+						</div>
+						<div class="pop-option-body">
+							<div class="gift-box-item">
+								<p class="tt-num">선택 가능 수량 : 0/1</p>
+								<div class="giftList">
+									<div class="giftBox">
+										<div class="giftImg"><img src="/_ui/responsive/theme-blue/images/@gift-img-04.png" alt="Soft Cleanser" title="Soft Cleanser"></div>
+										<div class="giftName">
+											<span class="gift-tit"><a href="#">레몬향</a></span>
+										</div>
+										<div class="giftCon">
+											<span class="amount-cal gift-total">
+												<a class="icon-del opera" data="-">
+													<i class="far fa-angle-down"></i>
+												</a>
+												<input type="tel" class="pdpAddtoCartInput amount-cal-input" name='pdpAddtoCartInput' id="amount-gift-input" value="1">
+												<a class="icon-add opera" data="+">
+													<i class="far fa-angle-up disabled"></i>
+												</a>
+											</span>
+										</div>
+									</div>
+									<div class="giftBox">
+										<div class="giftImg"><img src="/_ui/responsive/theme-blue/images/@gift-img-04.png" alt="Soft Cleanser" title="Soft Cleanser"></div>
+										<div class="giftName">
+											<span class="gift-tit"><a href="#">오렌지향</a></span>
+										</div>
+										<div class="giftCon">
+											<span class="amount-cal gift-total">
+												<a class="icon-del opera" data="-">
+													<i class="far fa-angle-down"></i>
+												</a>
+												<input type="tel" class="pdpAddtoCartInput amount-cal-input" name='pdpAddtoCartInput' id="amount-gift-input" value="1">
+												<a class="icon-add opera" data="+">
+													<i class="far fa-angle-up"></i>
+												</a>
+											</span>
+										</div>
+									</div>
+									<div class="giftBox">
+										<div class="giftImg"><img src="/_ui/responsive/theme-blue/images/@gift-img-04.png" alt="Soft Cleanser" title="Soft Cleanser"></div>
+										<div class="giftName">
+											<span class="gift-tit"><a href="#">체리향</a></span>
+										</div>
+										<div class="giftCon">
+											<span class="amount-cal gift-total">
+												<a class="icon-del opera" data="-">
+													<i class="far fa-angle-down"></i>
+												</a>
+												<input type="tel" class="pdpAddtoCartInput amount-cal-input" name='pdpAddtoCartInput' id="amount-gift-input" value="1" >
+												<a class="icon-add opera" data="+">
+													<i class="far fa-angle-up"></i>
+												</a>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cart-popup__item-link">
+					<a href="javascript:void(0)" class="btn-blue-white">적용</a>
+					<a class="bt-akl-txt">취소</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //옵션 선택 팝업  -->
+
+<!-- 제품 선택  팝업 2018.05.16 추가 -->
+<div class="layerWrapper G10000_lp10_pop">
+	<div class="cbox layerBox popWidL">
+		<div class="cart-popup__dialog">
+			<div class="cart-popup__header">
+				<span class="cart-popup__header-text">제품 선택
+					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close">
+						<img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기">
+					</a>
+				</span>
+			</div>
+			<div class="cart-popup__content">
+				<div class="cart-popup__item-info">
+					<div class="pop-option-area">
+						<div class="pop-option-title">
+							<div class="ttit">시그니처 라잇업 립글로스 프로모션 </div>
+							<p class="ttxt">{아티스트리 제품} 5만원 이상 구매 시  시그니처 라잇업 립글로스 본품 5000원에 구매가능</p>
+						</div>
+						<div class="pop-option-body">
+							<div class="gift-box-item">
+								<p class="tt-num">선택 가능 수량 : 0/1</p>
+								<div class="giftList">
+									<div class="giftBox">
+										<div class="giftImg"><img src="/_ui/responsive/theme-blue/images/@gift-img-04.png" alt="Soft Cleanser" title="Soft Cleanser"></div>
+										<div class="giftName">
+											<span class="gift-tit"><a href="#">아티스트리 시그니처 컬러</a></span>
+											<div class="gift-price">5,000원</div>
+										</div>
+										<div class="giftCon">
+											<span class="amount-cal gift-total">
+												<a class="icon-del opera" data="-">
+													<i class="far fa-angle-down"></i>
+												</a>
+												<input type="tel" class="pdpAddtoCartInput amount-cal-input" name='pdpAddtoCartInput' id="amount-gift-input" value="2">
+												<a class="icon-add opera" data="+">
+													<i class="far fa-angle-up disabled"></i>
+												</a>
+											</span>
+										</div>
+									</div>
+									<div class="giftBox">
+										<div class="giftImg"><img src="/_ui/responsive/theme-blue/images/@gift-img-04.png" alt="Soft Cleanser" title="Soft Cleanser"></div>
+										<div class="giftName">
+											<span class="gift-tit"><a href="#">아티스트리 시그니처 컬러 라잇업 립글로스 - 미스티모브</a></span>
+											<div class="gift-price">5,000원</div>
+										</div>
+										<div class="giftCon">
+											<span class="amount-cal gift-total">
+												<a class="icon-del opera" data="-">
+													<i class="far fa-angle-down"></i>
+												</a>
+												<input type="tel" class="pdpAddtoCartInput amount-cal-input" name='pdpAddtoCartInput' id="amount-gift-input" value="1">
+												<a class="icon-add opera" data="+">
+													<i class="far fa-angle-up"></i>
+												</a>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cart-popup__item-link">
+					<a href="javascript:void(0)" class="btn-blue-white">적용</a>
+					<a class="bt-akl-txt">취소</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //제품 선택 팝업  -->
+
+<!-- 프로모션 혜택 변경 알림 2018.05.16 추가 -->
+<div class="layerWrapper G10500_lp3_pop">
+	<div class="cbox layerBox popWidM">
+		<div class="cart-popup__dialog">
+			<div class="cart-popup__header">
+				<span class="cart-popup__header-text">프로모션 혜택 변경 알림
+					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close">
+						<img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기">
+					</a>
+				</span>
+			</div>
+			<div class="cart-popup__content">
+				<div class="cart-popup__item-info">
+					<div class="pop-option-title">
+						<p class="ttxt">프로모션 적용 조건이 충족되지 않아, 다음 제품이 장바구니에서 삭제 되었습니다.</p>
+					</div>
+					<div class="pop-promotion-body">
+						<div class="list-content">
+							<div class="row list-row-title">
+								<div class="promtion-ware">제품</div>
+								<div class="promtion-quantity">수량</div>
+								<div class="promtion-price">총 가격</div>
+							</div>
+							<div class="row content-list">
+								<div class="row con-list-item">
+									<div class="col-ak-10 promtion-ware">
+										<span class="tite-label">제품</span>
+										<span class="txte-wrap">
+											아티스트리 워터 에센스 선 프로텍트 미니
+										</span>
+									</div>
+									<div class="col-ak-10 promtion-quantity">
+										<span class="tite-label">수량</span>
+										<span class="txte-wrap">10</span>
+									</div>
+									<div class="col-ak-10 promtion-price">
+										<span class="tite-label">총 가격</span>
+										<span class="txte-wrap"></span>
+									</div>
+								</div>
+							</div>
+							<div class="row content-list">
+								<div class="row con-list-item">
+									<div class="col-ak-10 promtion-ware">
+										<span class="tite-label">제품</span>
+										<span class="txte-wrap">
+											라잇업 립글로스
+										</span>
+									</div>
+									<div class="col-ak-10 promtion-quantity">
+										<span class="tite-label">수량</span>
+										<span class="txte-wrap">10</span>
+									</div>
+									<div class="col-ak-10 promtion-price">
+										<span class="tite-label">총 가격</span>
+										<span class="txte-wrap"></span>
+									</div>
+								</div>
+							</div>
+							<div class="row content-list">
+								<div class="row con-list-item">
+									<div class="col-ak-10 promtion-ware">
+										<span class="tite-label">제품</span>
+										<span class="txte-wrap">
+											아티스트리 스킨 배리어 프로텍션 프로모션 세트
+										</span>
+									</div>
+									<div class="col-ak-10 promtion-quantity">
+										<span class="tite-label">수량</span>
+										<span class="txte-wrap">1</span>
+									</div>
+									<div class="col-ak-10 promtion-price">
+										<span class="tite-label">총 가격</span>
+										<span class="txte-wrap">134,500</span>
+									</div>
+								</div>
+							</div>
+							<div class="row content-list">
+								<div class="row con-list-item">
+									<div class="col-ak-10 promtion-ware">
+										<span class="tite-label">제품</span>
+										<span class="txte-wrap">
+											더블엑스
+										</span>
+									</div>
+									<div class="col-ak-10 promtion-quantity">
+										<span class="tite-label">수량</span>
+										<span class="txte-wrap">1</span>
+									</div>
+									<div class="col-ak-10 promtion-price">
+										<span class="tite-label">총 가격</span>
+										<span class="txte-wrap">30,000</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cart-popup__item-link">
+					<a href="javascript:void(0)" class="btn-blue-white">확인</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //프로모션 혜택 변경 알림 -->
+
+<!-- 프로모션 안내 2018.05.16 추가 -->
+<div class="layerWrapper G10000_lp8_pop">
+	<div class="cbox layerBox popWidM">
+		<div class="cart-popup__dialog">
+			<div class="cart-popup__header">
+				<span class="cart-popup__header-text">프로모션 안내
+					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close">
+						<img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기">
+					</a>
+				</span>
+			</div>
+			<div class="cart-popup__content">
+				<div class="cart-popup__item-info">
+					<p class="promotion-txt">프로모션 제품번호로 구매하시면 프로모션 혜택이 적용됩니다.</p>
+				</div>
+				<div class="cart-popup__item-link">
+					<a href="javascript:void(0)" class="btn-blue-white">프로모션 확인</a>
+					<a class="bt-akl-txt">취소</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //프로모션 안내 -->
+
+<script>
+	$(function() {
+
+		$(".cart-popup__close,.closeCbox").click(function() {
+			$(".cbox,.overlay").hide();
+		});
+
+		$(".js-order-history-filters").click(function () {
+			$(".js-search-form-wrapper").addClass('hidden-sm hidden-xs');
+			if ($(".js-filter-form-wrapper").hasClass('hidden-sm hidden-xs')) {
+				$(".js-filter-form-wrapper").removeClass('hidden-sm hidden-xs');
+			} else {
+				$(".js-filter-form-wrapper").addClass('hidden-sm hidden-xs');
+			}
+		});
+		$(".js-order-history-search").click(function () {
+			$(".js-filter-form-wrapper").addClass('hidden-sm hidden-xs');
+			if ($(".js-search-form-wrapper").hasClass('hidden-sm hidden-xs')) {
+				$(".js-search-form-wrapper").removeClass('hidden-sm hidden-xs');
+			} else {
+				$(".js-search-form-wrapper").addClass('hidden-sm hidden-xs');
+			}
+		});
+
+		$(".js-expand-order").click(function () {
+			if (!$(this).hasClass("open")) {
+				$(this).addClass("open");
+				$(this).next(".js-order-details-block").addClass("expanded");
+			} else {
+				$(this).removeClass("open");
+				$(this).next(".js-order-details-block").removeClass("expanded");
+			}
+		});
+
+
+		//add to event
+		$(".cart-detail__addto.dropdown-toggle").click(function () {
+			if($(".cart-detail__dropdown-menu.dropdown-menu").css('display')=='none'){
+				$(".cart-detail__dropdown-menu.dropdown-menu").show();
+			}else{
+				$(".cart-detail__dropdown-menu.dropdown-menu").hide();
+			}
+
+		});
+
+		//akl 추가 : 팝업
+		$('#G10300_lp2').click(function(event) {
+			event.preventDefault();
+			layerPopOver(this,'.G10300_lp2_pop');
+		});
+
+		$(".cart-detail__dropdown-menu").on("click",function(e){
+			e.stopPropagation();
+		});
+
+		$('.btn-add-wish').click(function(event) {
+			event.preventDefault();
+			layerPopOver(this,'.wishListAdd_pop');
+		});
+
+		$(".btn-tip-colse").click(function() {
+			$(".opt-quantity-tooltip").hide();
+		});
+
+		$('.quick-view-btn').click(function(event) {
+			event.preventDefault();
+			layerPopOver(this,'.QUICK_VIEW_pop');
+		});
+		$('#productSuggestListTabs').owlCarousel({
+			loop: false,
+			nav: true,
+			dots: false,
+			margin: 0,
+			items: 1,
+			responsiveClass: true,
+			responsive: {
+				480 : {
+					items: 1
+				},
+				768 : {
+					items: 2
+				},
+				960 : {
+					items: 3
+				},
+				1200 : {
+					items: 5
+				}
+			}
+		});
+		$('#Cart_Search').click(function(event){ //ID변경 : 2018.03.15 태깅 아이디 추가
+			event.preventDefault();
+			$(".shoping-cart-search").show();
+		});
+
+		$(".btnClosed").click(function() {
+			$(".shoping-cart-search").hide();
+		});
+
+	    //프로모션 관련 2018.05.16 추가
+		$('.remove-item-btn').click(function(){
+			$(".delete-list-box,.overlay").show();
+		});
+
+		$('.view-cart').click(function(){
+			$(".delete-list-box,.overlay").hide();
+			$('.delete-example,.delete-example-gift').hide();
+		});
+		/*
+		$(".cartlist-view").click(function(){
+			$(this).hasClass("view-open") ? $(this).removeClass("view-open") : $(this).addClass("view-open");
+		}) */
+
+		$('#G10500_lp1').click(function(event) { //사용안함
+			event.preventDefault();
+			layerPopOver(this,'.G10500_lp1_pop');
+		});
+
+		$('#G10500_lp2').click(function(event) {//변경하기 버튼에 링크
+			event.preventDefault();
+			layerPopOver(this,'.G10500_lp2_pop');
+		});
+
+		$('#G10500_lp3').click(function(event) {//삭제 버튼에 링크
+			event.preventDefault();
+			layerPopOver(this,'.G10500_lp3_pop');
+		});
+
+		$('#G10000_lp8').click(function(event) {//수량빼기 버튼에 링크
+			event.preventDefault();
+			layerPopOver(this,'.G10000_lp8_pop');
+		});
+
+		$('#G10000_lp9').click(function(event) {//3번째 변경하기 버튼에 링크
+			event.preventDefault();
+			layerPopOver(this,'.G10000_lp9_pop');
+		});
+
+		$('#G10000_lp10').click(function(event) {//5번째 변경하기 버튼에 링크
+			event.preventDefault();
+			layerPopOver(this,'.G10000_lp10_pop');
+		});
+
+
+		var owl = $('#recommendedListTabs');
+		owl.owlCarousel({
+			margin: 0,
+			nav: true,
+			dots: false,
+			loop: false,
+			responsive: {
+			  0: {
+				items: 1
+			  },
+			  768: {
+				items: 2
+			  },
+			  960: {
+				items: 4
+			  }
+			}
+
+		});
+
+
+		function countGift() {
+			var inputs = $('.giftList input');
+			var val = 0;
+			inputs.each(function(){
+				val += + this.value;
+			});
+			return val;
+		}
+
+		$('.giftList').delegate('.gift-total .opera', 'click', function(){
+			var count = $(this).attr("data");
+			var inputNum = $(this).parent().children("#amount-gift-input");
+
+			inputNum.val(function(){
+				var value= $(this).val();
+				var parent = $(this).parent();
+				count=="-"?value--:value++;
+				if ( value < 1) {
+					parent.children(".icon-del").removeClass("opera");
+					var value = 0;
+				} else {
+					parent.children(".icon-del").addClass("opera");
+				}
+				var val = countGift();
+				if (val < 99) {
+					$(".gift-total .icon-add").addClass("opera");
+					$('.giftList .gift-total').removeClass('count-limit');
+					return value;
+				} else {
+					$(".gift-total .icon-add").removeClass("opera");
+					$('.giftList .gift-total').addClass('count-limit');
+					return value;
+				}
+			})
+		});
+
+		//2019-06-03 빠른제품검색 최근검색어
+		showItemSuggestion();
+	});
+
+	//2019-06-03 빠른제품검색 최근검색어
+	function showItemSuggestion() {
+		var itemQuickSch = $('.item_quick_sch_area');
+		var inpSchWord = itemQuickSch.find('.inp_item_quick_sch');
+		var layerSchItemList = itemQuickSch.find('.item-suggestion-popover');
+		var btnCloseLayer = layerSchItemList.find('.search-results-close');
+		var setFunc;
+
+		inpSchWord.bind({
+			'focus' : function(e){
+				layerSchItemList.show();
+				/* 아코디언 안에 있을 경우 추가 */
+				if ( $(this).closest('.panel-body.product-detail').length > 0 ) {
+					$(this).closest('.panel-body.product-detail').css('overflow', 'visible');
+				}
+			},
+			'blur' : function(e){
+				layerSchItemList.hide();
+				/* 아코디언 안에 있을 경우 추가 */
+				if ( $(this).closest('.panel-body.product-detail').length > 0 ) {
+					$(this).closest('.panel-body.product-detail').css('overflow', '');
+				}
+			}
+		});
+	}
+</script>
+
+</body>
+</html>

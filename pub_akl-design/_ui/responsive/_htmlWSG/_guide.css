@@ -1,0 +1,184 @@
+/** ---------------------------------------------------------
+  * @ 파일 : _guide.css
+  * @ 구분 : html guide 전용
+  * ---------------------------------------------------------
+  */
+
+/* 가이드용 재조정 */
+h1,h2,h3,h4,h5,h6{etter-spacing:normal; margin:0; padding:0;}
+.akl.htmlWSG > table td {padding:0}
+#guideType_form .customer-wrap {padding:0}
+
+/* 가이드용 헤더 */
+#header-guide .header-wrapper .header-element-content h1 {margin:0; font-size:27px; font-weight:300 !important; letter-spacing:0;}
+.akl.htmlWSG header.main-header .amw-navigation-menu .navigation-menu-container {max-width:1400px; padding:0 12px;}
+.akl.htmlWSG .navigation-menu-container {font-size:16px; height:64px;}
+.akl.htmlWSG a.logo {display:inline-block; height:36px; padding:4px 0 0 120px; color:#fff; text-transform:uppercase; background:url(../theme-blue/images/logo1.png) 0 50% no-repeat; background-size:auto 36px;}
+.akl.htmlWSG a.logo:hover {color:#fff;}
+
+#header-guide .header-wrapper {display:table; width:100%; height:100%;}
+#header-guide .header-wrapper .header-content {display:table-cell; vertical-align:middle; max-width:1400px; min-height:72px;}
+#header-guide .header-wrapper .header-element-content {float:left; width:auto !important}
+#header-guide .header-wrapper .btnViewIndex {float:right; width:40px; height:40px; text-align:center; font-size:23px; color:#fff;}
+#header-guide .header-wrapper .btnViewIndex:before {content:'\ea7a'; width:30px; padding-top:10px; color:#fff; font-size:26px; font-family:'AmwayIcons'!important; line-height:140%;}
+#header-guide .header-wrapper .btnViewIndex > span {overflow:hidden; display:block; width:1px; height:1px;}
+
+/* 목차 레이어 */
+#guideTopIndex {display:none; position:absolute; top:72px; left:0; right:0; width:100%; background:#fff; box-shadow:0 10px 15px rgba(100,100,100,.2); }
+#guideTopIndex .viewIndexWrapper {overflow:hidden; max-width:1376px; margin:0 auto; padding:30px 15px;}
+#guideTopIndex .viewIndexWrapper > h1 {display:none;}
+#guideTopIndex .viewIndexWrapper > section {float:left; width:30%; min-width:150px;}
+#guideTopIndex .viewIndexWrapper > section.typeLayout {width:20%;}
+#guideTopIndex .viewIndexWrapper h1{ margin-bottom:10px;}
+#guideTopIndex .viewIndexWrapper h2{ font-size:22px;margin-bottom:10px;}
+#guideTopIndex .viewIndexWrapper .guideHeading {font-size:18px; font-weight:700; letter-spacing:0;}
+#guideTopIndex .viewIndexWrapper ol {margin-bottom:15px;}
+#guideTopIndex .viewIndexWrapper li {position:relative; padding-left:8px; margin-top:8px;}
+#guideTopIndex .viewIndexWrapper li:before {content:''; position:absolute; top:10px; left:0; display:block; width:3px; height:3px; background:#0075a4;}
+
+
+/* 가이드 목차 */
+.container.guideIndex {position:relative; overflow:hidden; padding:100px 0 0 250px;}
+.container.guideIndex h1.guideHeading{position:absolute; top:100px; left:20px; padding:40px; font-weight:300; background:#333; color:#fff;}
+.container.guideIndex > section {float:left; box-sizing:border-box; padding-right:70px;}
+.container.guideIndex .typeLayout {width:220px;}
+.container.guideIndex .typeUIcommon {}
+.container.guideIndex .typeUIbehavior {}
+
+.btnLink {font-size:30px;}
+.akl.htmlWSG .guideIndex h2.guideHeading {position:relative; padding:30px 0 10px; font-size:40px !important; line-height:normal; font-weight:300 !important;}
+.akl.htmlWSG section li>a {}
+.guideIndex ol {list-style-position:outside; padding-left:28px;}
+.guideIndex ol li {padding-left:5px; font-size:18px; margin-top:5px; list-style-type:decimal-leading-zero;}
+.guideIndex ol li a {color:#555; line-height:normal; font-size:18px;}
+.guideIndex ol li a:hover, .guideIndex ol li a:focus {text-decoration:underline; color:#222;/*  font-style:oblique */}
+.guideIndex ol li a > span {/* display:block; */ margin:0 0 10px 13px; font-size:13px; color:#999;}
+
+/* 가이드 제목 */
+.akl.htmlWSG .topTitle h1 {padding:60px 0 40px; font-size:47px !important;  text-align:center; font-weight:300;  letter-spacing:-0.05em;}
+.akl.htmlWSG .topTitle h1>span {display:block; margin-top:10px;  font-size:18px; letter-spacing:0;line-height:normal;}
+
+.subHeading { olor:#3f7bb7; font-weight:400 !important; font-size:18px !important; letter-spacing:0 !important; border-top:1px dashed #dcdcdc;}
+.subHeading > em {display:inline-block; padding:20px; background:#444; color:#fff;}
+.subHeading > em span {display:inline-block; margin-left:10px; color:#999;}
+.subHeading > em span:before {content:'-'; display:inline-block; margin-right:10px;}
+
+/* 가이드 코드 wrapper */
+.guideCodeWrapper {padding:30px 0; margin-bottom:40px;}
+.noline .guideCodeWrapper {}
+.layerMask {background:rgba(0,0,0,0); width:100%; height:100%;}
+
+/* 가이드 상세목록 */
+.subHeading + .codeField {margin-top:20px;}
+
+.subHeading.titType-Example {margin-top:40px; border-top:1px solid #eee; color:#aaa; font-weight:normal}
+/* .subHeading.titType-Example:before {content:'\e909'; display:inline-block; padding-right:5px; vertical-align:middle; font-family:'AmwayIcons'!important; font-size:18px; } */
+.subHeading.top {background:none; padding-left:0; border-top:1px solid #bbb; font-size:20px !important; color:#111 ;letter-spacing:-1px !important;}
+.subList.border {margin-top:40px; border-bottom:0;}
+.subList.border li {border-radius:3px; border:1px solid #ddd;}
+.subList.border .subHeading {background:none;}
+.subList.border .codeField {border:0;}
+.mgbLarge {margin-bottom:60px;}
+
+.subList {margin-bottom:100px;}
+.subList>li {overflow:hidden;/*  border:1px solid rgba(167,186,206,.4); border-radius:15px; */}
+.subList>li+li {margin-top:30px;}
+.subtit {padding:45px 0 10px; margin-bottom:0; font-size:19px; font-weight:500; color:#111; letter-spacing:-1px;}
+.guideCodeWrapper > .subtit:first-child {padding-top:0;}
+
+/* 기타 */
+.iconsLIST {overflow:hidden;}
+.iconsLIST>li {float:left; display:block; width:20%; min-height:40px; box-sizing:border-box;}
+.iconsLIST>li>span, .iconsLIST>li> div>span {display:block; padding:15px; height:auto; font-size:14px;}
+.iconsLIST>li>span:before {margin-right:15px; font-size:24px; vertical-align:middle}
+.iconsLIST>li [class^=icon-] {width:auto;}
+.akl.htmlWSG .icon-minus:before {font-size:24px; vertical-align:middle}
+
+.uiExample {margin:0 15px 20px;}
+.codeField {padding:20px; border:1px dashed #e3e3e3; background:#f5f5f5;}
+.codeField pre {border:0; padding:0; margin:0; background:#f5f5f5}
+.codeField code { display:block; background:none; font-family:"Courier New", monospace;}
+.codeField>p {padding:; margin-top:10px;font-size:14px;}
+.codeField hr {border-top:1px dashed #ccc}
+.codeField .subtit {padding:0; margin:0 0 25px; font-size:20px;}
+.codeField .code-explain>span {display:inline-block; width:60px;}
+.codeField .code-explain {font-family:'돋움체','DotumChe'; font-size:13px;}
+.btns a+a{margin-left:10px;}
+
+@media (max-width:1200px){
+	.container.guideIndex > section {float:none; margin-right:0;}
+	.container.guideIndex .typeLayout {}
+	.container.guideIndex .typeUIcommon {}
+	.container.guideIndex .typeUIbehavior {}
+}
+@media (max-width:900px){
+	.iconsLIST>li {width:33%;}
+}
+@media (min-width:769px){
+}
+
+@media (max-width:768px){
+	#guideTopIndex {top:63px;}
+	#header-guide .header-wrapper {position:relative}
+	#header-guide .header-wrapper .btnViewIndex {position:absolute; top:13px; right:20px; width:30px; height:30px; padding:0; color:#eee ; background:;}
+	#header-guide .header-wrapper .btnViewIndex:before {content:'\ea7a'; width:30px; color:#002f5f; font-size:20px; font-family:'AmwayIcons'!important; line-height:140%;}
+
+	#guideTopIndex .viewIndexWrapper > section {float:none; width:100%; min-width:auto;}
+	#guideTopIndex .viewIndexWrapper > section + section {padding-top:20px;}
+	#guideTopIndex .viewIndexWrapper > section.typeLayout {width:auto;}
+
+	.viewIndexWrapper {width:100%; background:#fff; padding:22px; box-shadow:0 12px 15px rgba(0,0,0,.3); border-top:1px dashed #ddd;}
+	.viewIndexWrapper .guideHeading {font-weight:normal; font-size:16px;}
+	.viewIndexWrapper h2 { font-size:22px;margin-bottom:10px;}
+	.viewIndexWrapper ol { margin-bottom:15px;}
+
+	.mgbLarge {margin-bottom:30px;}
+
+	/* 가이드용 헤더 */
+	.akl.htmlWSG header.main-header .amway-theme .header-container {display:none;}
+	.akl.htmlWSG header.main-header .navigation-menu-container .desktop-nav-menu {display:none;}
+	.akl.htmlWSG header.main-header .amw-navigation-menu .navigation-menu-container {padding:0;}
+	.akl.htmlWSG header.main-header .mobile-container {display:block;}
+	.akl.htmlWSG header.main-header .mobile-container .mobile-wrapper .mobile-header-cell:first-of-type {border:0;}
+	.akl.htmlWSG header.main-header .mobile-container .mobile-wrapper .mobile-nav-row-btn-logo {text-align:left;}
+	.akl.htmlWSG .navigation-menu-toggle-wrapper {display:none !important;}
+	.akl.htmlWSG .mobile-header-cell.mobile-nav-row-btn-logo {padding-left:15px; vertical-align:middle;}
+	.akl.htmlWSG a.logo {display:inline-block; margin-top:3px; padding:6px 0 0 85px; color:#002f5f; background:url(../theme-blue/images/logo2.png) 0 50% no-repeat; background-size:auto 25px;}
+	.akl.htmlWSG a.logo h1 {font-size:22px; font-weight:400 !important; letter-spacing:0;}
+
+	/* 가이드 목차 */
+	.akl.htmlWSG .guideIndex h2.guideHeading {padding:30px 0 10px; font-size:30px !important; font-weight:400 !important;}
+	.container.guideIndex {padding:30px 15px;}
+	.container.guideIndex h1.guideHeading {position:static; display:inline-block; padding:20px; font-size:20px !important; color:#fff; background:#333;}
+	.container.guideIndex > section {float:none; width:100%; border-top:1px dashed #ddd;}
+	.container.guideIndex .typeLayout {border-top:0}
+	.container.guideIndex .typeLayout,
+	.container.guideIndex .typeUIcommon,
+	.container.guideIndex .typeUIbehavior {width:100%; padding:0 0 40px 30px;}
+	.guideIndex ol {padding-left:0;}
+	.guideIndex ol li {padding-left:0; font-weight:300; font-size:14px; list-style-position:inside; margin-top:5px}
+	.guideIndex ol li a {font-size:14px;}
+	.guideIndex ol li a > span {display:none}
+
+	/* 가이드 제목 */
+	.akl.htmlWSG .topTitle {margin-bottom:20px;}
+	.akl.htmlWSG .topTitle h1 {font-size:24px !important; padding:40px 0 10px; font-weight:500;}
+	.akl.htmlWSG .topTitle h1>span {font-size:14px; font-weight:400; color:#999; margin-top:2px;}
+	.subHeading {position:relative; padding:20px; font-size:16px !important; background:#444; border-top:0}
+	.subHeading > em {padding:0;}
+	.subtit {font-size:16px; font-weight:500; padding:30px 0 15px; margin-bottom:0; color:#222;}
+
+	/* 가이드 코드 wrapper */
+	.guideCodeWrapper {border:0; border-width:0 1px 1px; border-radius:0; box-shadow:0px 10px 10px rgba(110,110,110,0);}
+	#guideType_heading .guideCodeWrapper {padding:0}
+	#guideType_heading .guideCodeWrapper.brand {margin-bottom:80px;}
+	#guideType_heading .subList>li {overflow:visible;}
+	.layerMask {padding-top:20px;}
+
+	/* 가이드용 여백조정 */
+	.akl.htmlWSG main {margin-top:62px;}
+	.iconsLIST>li {width:50%;}
+}
+@media (min-width:320px) and (max-width:359px){
+	#guideTopIndex .viewIndexWrapper {overflow-y:scroll; height:400px; -webkit-overflow-scrolling: touch;}
+}

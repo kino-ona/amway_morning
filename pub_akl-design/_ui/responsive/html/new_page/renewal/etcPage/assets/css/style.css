@@ -1,0 +1,59 @@
+/* font */
+@font-face {font-family:'Noto Sans KR'; font-style:normal; font-weight:900; src:url(/_ui/responsive/html/new_page/renewal/etcPage/assets/fonts/NotoSansKR-Black.woff2) format('woff2'), url(/_ui/responsive/html/new_page/renewal/etcPage/assets/fonts/NotoSansKR-Black.woff) format('woff') ;}
+
+/* S : 20240510 암웨이 숨은 혜택 받기 - 알림톡 페이지 */
+.color-blue05 {color: #9fb5fd;}
+.event-info-wrap {width:100%; max-width:375px; margin:0 auto;}
+.event-info-wrap .header_type-a {padding:15px 0;}
+.event-info-wrap .header_type-a .header-logo {padding:0 20px;}
+.event-info-wrap .event-info-visual {width: 100%; height: 562px; background: url(/_ui/responsive/html/new_page/renewal/etcPage/assets/images/event_info_visual_img.png) center center no-repeat; background-size: cover;}
+.event-info-wrap .event-info-visual .event-info-visual-cont {color: #fff; padding: 40px 20px; height: 100%; display: flex; flex-direction: column;}
+.event-info-wrap .event-info-visual .event-info-visual-cont .event-info-visual-desc {font-size: 16px; letter-spacing: -.8px; opacity: .5; padding: 0 0 0 10px; margin: 0 0 5px;}
+.event-info-wrap .event-info-visual .event-info-visual-cont .event-info-visual-desc.box {width: 100%; padding: 0; margin: 0; opacity: 1; font-size: 14px; line-height: 1.5; letter-spacing: -.42px; text-align: center; background: rgba(86, 123, 243, 0.4); box-shadow: inset 0 0 2px 0 rgba(0, 0, 0, 0.15); border-radius: 10px; padding: 14px 15px 13px;}
+.event-info-wrap .event-info-visual .event-info-visual-cont .event-info-visual-title {height: 100%; margin: 0; font-size: 54px; font-weight: 900; letter-spacing: normal; line-height: 1.2; padding: 0 0 0 10px;}
+
+.event-info-wrap .event-info-cont {padding:48px 20px; text-align:center;}
+.event-info-wrap .event-info-cont:nth-child(even) {background-color:#f9f9f9;}
+.event-info-wrap .event-info-cont .event-info-step {display:inline-block; color:#111; font-size:12px; font-weight:500; line-height:1.5; padding:2px 8px 0; border:1px solid #111; border-radius:20px; margin-bottom: 16px;}
+.event-info-wrap .event-info-cont .event-info-title {color:#111; font-size:24px; font-weight:900; line-height:1.33; letter-spacing: normal; margin: 0 0 12px;}
+.event-info-wrap .event-info-cont .event-info-title span {position:relative; display:inline-block; z-index:1;}
+.event-info-wrap .event-info-cont .event-info-title span::after {content:""; position:absolute; left:50%; bottom:0; transform:translateX(-50%); display:block; width:calc(100% + 2px); height:15px; background-color:#e3eeff; z-index:-1;}
+.event-info-wrap .event-info-cont .event-info-desc {color:#999; font-size:14px; font-weight:400; line-height:1.43; letter-spacing:-0.42px; margin: 0;}
+.event-info-wrap .event-info-cont .event-info-desc + .event-info-desc-add {margin: 32px 0 20px;}
+.event-info-wrap .event-info-cont .event-info-desc + .event-info-desc-add.underline {margin: 20px 0 32px;}
+.event-info-wrap .event-info-cont .event-info-desc-add {color:#111; font-size:16px; font-weight:500; line-height:1.5; letter-spacing:-0.48px;}
+.event-info-wrap .event-info-cont .event-info-desc-add.underline {color:#666; font-size:14px; font-weight: normal; line-height:1.43; letter-spacing:-0.42px; text-decoration:underline;}
+.event-info-wrap .event-info-cont .event-info-desc-add + .event-info-desc-small {margin: 8px 0 0;}
+.event-info-wrap .event-info-cont .event-info-desc-small {font-size: 12px; line-height: 1.5; letter-spacing: -.36px; color: #999; text-align: center;}
+.event-info-wrap .event-info-cont .event-info-desc-small + .event-info-detail {margin-top: 20px;}
+.event-info-wrap .event-info-cont .event-info-detail + .event-info-desc-small {margin: 12px 0 0;}
+
+.event-info-wrap .event-info-cont .event-info-coupon-img {position: relative;}
+.event-info-wrap .event-info-cont .event-info-coupon-img .coupon-img {width: 100%; padding: 0 40px;}
+.event-info-wrap .event-info-cont .event-info-coupon-img .event-info-coupon-flag {display: flex; align-items: center; justify-content: center; width: 52px; height: 52px; background: #111; position: absolute; top: -24px; right: 15px; color: #fff; font-size: 12px; font-weight: 500; line-height: 1.17; letter-spacing: -.36px; border-radius: 50%; word-break: keep-all; padding-top: 2px;}
+.event-info-wrap .event-info-cont .event-info-coupon-img + .event-info-desc-add {margin: 32px 0 0;}
+
+.event-info-wrap .event-info-cont .event-info-detail {border: 1px solid #ededed; border-radius: 8px;}
+.event-info-wrap .event-info-cont .event-info-product-box {display: flex; justify-content: space-evenly; gap: 9px; padding: 15px;}
+.event-info-wrap .event-info-cont .event-info-product-box .event-info-product {display: flex; flex-direction: column; gap: 8px;}
+.event-info-wrap .event-info-cont .event-info-product-box .event-info-product .product-img {width: 100%; max-width: 90px; border-radius: 8px; overflow: hidden;}
+.event-info-wrap .event-info-cont .event-info-product-box .event-info-product .product-name {font-size: 12px; line-height: 1.5; letter-spacing: -.36px; color: #999;}
+.event-info-wrap .event-info-cont .event-info-shop-img {width: calc(100% + 1.5px); margin: -1px 0 0 -1px; border-radius: 8px 8px 0 0; overflow: hidden;}
+.event-info-wrap .event-info-cont .event-info-detail-cont {padding: 20px 19px;}
+.event-info-wrap .event-info-cont .detail-cont-box {display: flex; gap: 24px;}
+.event-info-wrap .event-info-cont .detail-cont-box ~ .detail-cont-box {margin: 16px 0 0;}
+.event-info-wrap .event-info-cont .detail-cont-box dt {white-space: nowrap; color: #111; font-weight: 500; line-height: 1.43; letter-spacing: -.42px;}
+.event-info-wrap .event-info-cont .detail-cont-box dd {text-align: left; color: #666; line-height: 1.43; letter-spacing: -.42px;}
+
+.event-info-wrap .event-info-notice {background-color:#f9f9f9; padding:40px 20px 60px;}
+.event-info-wrap .event-info-notice .event-info-notice-title {position:relative; color:#111; font-size:16px; font-weight:500; line-height:1.5; letter-spacing:-0.48px; margin:0 0 12px; padding-left:22px;}
+.event-info-wrap .event-info-notice .event-info-notice-title::after {content:""; position:absolute; left:0; top:5px; display:block; width:15px; height:15px; background:url(/_ui/responsive/html/new_page/renewal/etcPage/assets/images/ico_notice_yellow.png) no-repeat left top / 100% auto;}
+.event-info-wrap .event-info-notice .event-info-notice-desc {}
+.event-info-wrap .event-info-notice .event-info-notice-desc li {position:relative; color:#999; font-size:14px; font-weight:400; line-height:1.57; letter-spacing:-0.42px; padding-left:7px;}
+.event-info-wrap .event-info-notice .event-info-notice-desc li + li {margin-top:4px;}
+.event-info-wrap .event-info-notice .event-info-notice-desc li::after {content:""; position:absolute; left:0; top:10px; display:block; width:2px; height:2px; background-color:#888; border-radius:100%;}
+
+.event-info-wrap .event-info-btn {display:block; width:100%; color:#fff; font-size:16px; font-weight:500; line-height:1.5; letter-spacing:-0.8px; text-align:center; border-radius:8px; cursor:pointer; padding:14px 0; margin-top: 48px;}
+.event-info-wrap .event-info-btn.blue {background-color:#002f5f;}
+.event-info-wrap .event-info-btn.skyblue {background-color:#567bf3;}
+/* E : 20240510 암웨이 숨은 혜택 받기 - 알림톡 페이지 */

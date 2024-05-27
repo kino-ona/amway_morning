@@ -1,0 +1,134 @@
+#popWinWrap{padding:30px; position:relative;}
+#popWinHeader { border-bottom:1px solid #e3e3e3; height:42px; overflow: hidden;}
+#popWinHeader h1 { float:left; font-weight: 600; margin:0; font-size:24px; color:#002f5f;}
+#popWinHeader .selMonthBtn { float: right;}
+#popWinHeader h1 strong { letter-spacing:2px;}
+#popWinHeader h1 span { font-size:14px; color:#56565a; font-weight: normal; letter-spacing:-1px; padding-left:5px;}
+#popWinHeader .bt-akl-white { border-color:#bbbbbb; }
+#popWinHeader .bt-akl-white.active { border-color:#002f5f; }
+#popWinContent{padding-top:20px; }
+.conHeader { padding-bottom:20px; }
+.conHeader .clearfix { overflow: hidden; }
+.conHeader .viewSetBtns{ float:left; }
+.conHeader .viewSetBtns a:last-child { margin-left: 5px; }
+.conHeader .viewSetBtns .btnTreeView{ display: inline-block; background:url(/_ui/responsive/theme-blue/images/btn_tree_view.gif) no-repeat; width:40px; height:40px;}
+.conHeader .viewSetBtns .btnGridView{ display: inline-block; background:url(/_ui/responsive/theme-blue/images/btn_grid_view.gif) no-repeat; width:40px; height:40px;}
+.conHeader .viewSetBtns .btnTreeView:hover{background: url(/_ui/responsive/theme-blue/images/btn_tree_view_on.gif) no-repeat;transition: 0.3s;}
+.conHeader .viewSetBtns .btnGridView:hover{background: url(/_ui/responsive/theme-blue/images/btn_grid_view_on.gif) no-repeat;transition: 0.3s;}
+.conHeader .viewSetBtns .btnGridView.active { background:url(/_ui/responsive/theme-blue/images/btn_grid_view_on.gif) no-repeat; }
+.conHeader .viewSetBtns .btnTreeView.active { background:url(/_ui/responsive/theme-blue/images/btn_tree_view_on.gif) no-repeat; }
+
+.conHeader .searchField{ float:right; text-align: right; }	
+.conHeader ul { margin-top: 20px; }
+.conHeader ul li { padding-right:15px; text-indent:-15px; margin-left:15px; }
+.btmSearch { margin-top:30px; text-align: center; }
+.btmSearch .bt-akl-txt img{ vertical-align: middle; }
+
+.popWinMobile { overflow:hidden; }
+.popWinMobile .selMonthBtn { float:right; margin-top: 15px; }
+.popWinMobile .selMonthBtn { float:right; margin-top: 15px; }
+.popWinMobile .searchField { margin-top: 20px; float:none; position: relative;}
+.popWinMobile .searchField select { float:none; width:100%; margin-right:55px; box-sizing: border-box;}
+.popWinMobile .searchField button{  position: absolute; right:0; top:0; width:40px; height:40px; padding:0; min-width:auto;}
+.popWinMobile .searchField button{  background-image:url(/_ui/responsive/theme-blue/images/ico_set_search_on.png); background-size: 40px 40px; background-repeat: no-repeat; background-position: -1px -1px;}
+
+.popWinMobile .searchFieldName { position: relative; }
+.popWinMobile .searchFieldName input { float:none; width:100%; margin-right:55px; box-sizing: border-box;}
+.popWinMobile .searchFieldName .initSearch{  position: absolute; right:0; top:0; width:40px; height:40px; padding:0; min-width:auto;}
+.popWinMobile .searchFieldName .initSearch{  background-image:url(/_ui/responsive/theme-blue/images/ico_research_big_on.png); background-size: 40px 40px; background-repeat: no-repeat; background-position: -1px -1px;}
+.popWinMobile .searchFieldName .btn-primary{ right:50px; top:0;}
+
+
+.popWinMobile .conHeader ul { margin-bottom: 30px;}
+.popWinMobile .searchField button:hover{  background-image:url(/_ui/responsive/theme-blue/images/ico_set_search.png); background-size: 40px 40px;background-repeat: no-repeat; background-position: -1px -1px; transition: 0.3s}
+.popWinMobile .searchFieldName .initSearch:hover{ background-image:url(/_ui/responsive/theme-blue/images/ico_research_big.png); background-size: 40px 40px;background-repeat: no-repeat; background-position: -1px -1px; transition: 0.3s}
+.popWinMobile#popWinWrap { padding:15px;}
+.akl .popWinMobile .form-s .btn.btn-primary { right:50px; position: absolute; top:1px;}
+@media all and (min-width:680px){
+	.akl .popWinMobile .form-s .btn.btn-primary { top:0px;}
+}
+.iframeScroll { width:100; overflow-x:scroll; }
+
+
+/* losmap */
+.losmapWrap { border-top: 2px solid #9e9e9e; }
+.losmapWrap .dhxgrid_sort_desc, .dhxgrid_sort_asc { z-index:10; width:15px; height:12px; background: url("/_ui/desktop/images/common/bg_sorting.gif") no-repeat right bottom; top:50% !important; margin-top:-6px !important;  }
+.losmapWrap .dhxgrid_sort_asc { width:15px; height:12px; background: url("/_ui/desktop/images/common/bg_sorting.gif") no-repeat right top; }
+
+.losmapWrap div.gridbox .objbox { border-top:1px solid #d5d5d5; border-bottom:0 !important; 
+scrollbar-arrow-color:#fff;
+scrollbar-3dlight-color:#d5d5d5;
+scrollbar-highlight-color:#d5d5d5;
+scrollbar-face-color:#d5d5d5;
+scrollbar-shadow-color:#d5d5d5;
+scrollbar-darkshadow-color:#d5d5d5;
+scrollbar-track-color:#ececec 
+}
+.losmapWrap div.gridbox_dhx_skyblue.gridbox { border:0; }
+.losmapWrap div.gridbox_dhx_skyblue.gridbox table.obj { font-family:"돋움",Dotum,"굴림",Gulim,Arial,"Trebuchet MS",Verdana,"Sans-serif"; color:#444; }
+.losmapWrap div.gridbox_dhx_skyblue.gridbox table.obj td img { vertical-align:middle !important; padding-top:0 !important;  }
+.losmapWrap div.gridbox_dhx_skyblue.gridbox table.hdr {  }
+.losmapWrap div.gridbox_dhx_skyblue.gridbox table.hdr td { font-family:"돋움",Dotum,"굴림",Gulim,Arial,"Trebuchet MS",Verdana,"Sans-serif"; }
+
+.losmapWrap div.gridbox_dhx_skyblue.gridbox .xhdr { background:none; }
+.losmapWrap div.gridbox_dhx_skyblue.isModern table.hdr tr td { font-size:11px;  font-weight:normal; color:#444; background:#fafafa none ; border:0; height:30px; padding:0; min-height:30px; vertical-align:middle; }
+.losmapWrap div.gridbox_dhx_skyblue.gridbox table.hdr td div.hdrcell { padding-left:0; text-align:center; }
+.losmapWrap div.gridbox_dhx_skyblue.isModern table.obj.row20px tr td div.treegrid_cell span { padding-left:2px; }
+.losmapWrap div.gridbox_dhx_skyblue.isModern table.obj.row20px tr td div.treegrid_cell span a { color:#444; }
+
+.losmapWrap div.gridbox .objbox { background:#fff; }
+.losmapWrap div.gridbox table.obj { border-bottom:1px solid #d5d5d5 !important; margin-top:-1px;  }
+
+.losmapWrap div.gridbox table.obj td { padding:4px 0; border-right:0px !important; overflow: hidden; padding-top:0px; padding-bottom:0px; }
+.losmapWrap div.gridbox table.obj tr td:first-child { border-left:0px !important; border-bottom:1px solid #fff;  }
+.losmapWrap div.gridbox_dhx_skyblue.gridbox table.obj td { border:1px solid #d5d5d5; }
+.losmapWrap div.gridbox_dhx_skyblue.gridbox table.obj.row20px tr td { height:25px; }
+
+.losmapWrap #losmapGrid table.obj tr td:first-child { border-bottom:1px solid #d5d5d5 !important; }
+.losmapWrap #losmapGrid table.obj tr td:first-child img, .losmapWrap #losmapGrid table.obj tr td:first-child a { display:inline;  }
+.losmapWrap #losmapGrid table.obj tr td img { margin:4px 3px 0 0; }
+
+div.gridbox_dhx_skyblue.gridbox table.obj td { border-width: 1px 0px 0px 1px !important; border-color:#d5d5d5 !important; }
+div.gridbox_dhx_skyblue.gridbox table.obj td:first-child { border-top:1px solid #fff !important; }
+
+
+/* losmap (akl) */
+.akl .losmapWrap { border-top: 2px solid #9e9e9e; }
+.akl .losmapWrap .dhxgrid_sort_desc, .dhxgrid_sort_asc { z-index:10; width:15px; height:12px; background: url("/_ui/responsive/theme-blue/images/bg_sorting.gif") no-repeat right bottom; top:50% !important; margin-top:-6px !important;  }
+.akl .losmapWrap .dhxgrid_sort_asc { width:15px; height:12px; background: url("/_ui/responsive/theme-blue/images/bg_sorting.gif") no-repeat right top; }
+
+.akl .losmapWrap div.gridbox .objbox { border-top:1px solid #d5d5d5; border-bottom:0 !important; 
+scrollbar-arrow-color:#fff;
+scrollbar-3dlight-color:#d5d5d5;
+scrollbar-highlight-color:#d5d5d5;
+scrollbar-face-color:#d5d5d5;
+scrollbar-shadow-color:#d5d5d5;
+scrollbar-darkshadow-color:#d5d5d5;
+scrollbar-track-color:#ececec 
+}
+.akl .losmapWrap div.gridbox_dhx_skyblue.gridbox { border:0; }
+.akl .losmapWrap div.gridbox_dhx_skyblue.gridbox table.obj { font-family:"돋움",Dotum,"굴림",Gulim,Arial,"Trebuchet MS",Verdana,"Sans-serif"; color:#444; }
+.akl .losmapWrap div.gridbox_dhx_skyblue.gridbox table.obj td img { vertical-align:middle !important; padding-top:0 !important;  }
+.akl .losmapWrap div.gridbox_dhx_skyblue.gridbox table.hdr {  }
+.akl .losmapWrap div.gridbox_dhx_skyblue.gridbox table.hdr td { font-family:"돋움",Dotum,"굴림",Gulim,Arial,"Trebuchet MS",Verdana,"Sans-serif"; }
+
+.akl .losmapWrap div.gridbox_dhx_skyblue.gridbox .xhdr { background:none; }
+.akl .losmapWrap div.gridbox_dhx_skyblue.isModern table.hdr tr td { font-size:11px;  font-weight:normal; color:#444; background:#fafafa none ; border:0; height:30px; padding:0; min-height:30px; vertical-align:middle; }
+.akl .losmapWrap div.gridbox_dhx_skyblue.gridbox table.hdr td div.hdrcell { padding-left:0; text-align:center; }
+.akl .losmapWrap div.gridbox_dhx_skyblue.isModern table.obj.row20px tr td div.treegrid_cell span { padding-left:2px; }
+.akl .losmapWrap div.gridbox_dhx_skyblue.isModern table.obj.row20px tr td div.treegrid_cell span a { color:#444; }
+
+.akl .losmapWrap div.gridbox .objbox { background:#fff; }
+.akl .losmapWrap div.gridbox table.obj { border-bottom:1px solid #d5d5d5 !important; margin-top:-1px;  }
+
+.akl .losmapWrap div.gridbox table.obj td { padding:4px 0; border-right:0px !important; overflow: hidden; padding-top:0px; padding-bottom:0px; }
+.akl .losmapWrap div.gridbox table.obj tr td:first-child { border-left:0px !important; border-bottom:1px solid #fff;  }
+.akl .losmapWrap div.gridbox_dhx_skyblue.gridbox table.obj td { border:1px solid #d5d5d5; }
+.akl .losmapWrap div.gridbox_dhx_skyblue.gridbox table.obj.row20px tr td { height:25px; }
+
+.akl .losmapWrap #losmapGrid table.obj tr td:first-child { border-bottom:1px solid #d5d5d5 !important; }
+.akl .losmapWrap #losmapGrid table.obj tr td:first-child img, .akl .losmapWrap #losmapGrid table.obj tr td:first-child a { display:inline;  }
+.akl .losmapWrap #losmapGrid table.obj tr td img { margin:4px 3px 0 0; }
+
+.akl div.gridbox_dhx_skyblue.gridbox table.obj td { border-width: 1px 0px 0px 1px !important; border-color:#d5d5d5 !important; }
+.akl div.gridbox_dhx_skyblue.gridbox table.obj td:first-child { border-top:1px solid #fff !important; }

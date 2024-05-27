@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<!-- page common -->
+	<meta charset="utf-8">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- //page common -->
+	<!-- page unique -->
+	<meta name="Description" content="암웨이 아카데미 3">
+	<meta http-equiv="Last-Modified" content="">
+	<!-- //page unique -->
+	<title>Amway Korea | 시설예약현황확인</title>
+	<!--[if lt IE 9]>
+	<script src="/_ui/desktop/common/js/html5.js"></script>
+	<script src="/_ui/desktop/common/js/ie.print.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="/ruxitagentjs_ICA2SVfqru_10191200518082328.js" data-dtconfig="app=8b29b2d2fd2fb132|featureHash=ICA2SVfqru|rdnt=1|uxrgce=1|cuc=0bzsarpi|srms=1,1,,,|uxrgcm=100,25,300,3;100,25,300,3|dpvc=1|bismepl=2000|lastModification=1590004573363|dtVersion=10191200518082328|tp=500,50,0,1|uxdcw=1500|agentUri=/ruxitagentjs_ICA2SVfqru_10191200518082328.js|reportUrl=/rb_bf06412xlw|rid=RID_-1237249710|rpid=259660393|domain=amway.co.kr"></script>
+	<link rel="stylesheet" href="/_ui/desktop/common/css/academy_default.css">
+	<script src="/_ui/desktop/common/js/jquery-1.8.3.min.js"></script>
+	<script src="/_ui/desktop/common/js/pbCommon2.js"></script>
+	<script src="/_ui/desktop/common/js/pbCommonAcademy.js"></script>
+	<script src="/_ui/desktop/common/js/pbLayerPopup.js"></script>
+	<script src="/_ui/desktop/common/js/owl.carousel2.js"></script>
+	<script src="/_ui/desktop/common/js/pbNavigation.js"></script><!-- 추가 : 2018.05.25 -->
+	<script src="/_ui/desktop/common/js/isotope.pkgd.js"></script><!-- 추가 : 2018.05.25 -->
+	<script type="text/javascript" charset="UTF-8" src="/js/front.js"></script>
+	<script type="text/javascript" charset="UTF-8" src="/js/json2.js"></script>
+	<script type="text/javascript" charset="UTF-8" src="/js/json3.js"></script>
+	<script type="text/javascript" charset="UTF-8" src="/js/jquery.form.js"></script>
+	<script type="text/javascript" charset="UTF-8" src="/js/jquery.number.min.js"></script>
+	<script type="text/javascript" charset="UTF-8" src="/js/jquery.popupWindow.js"></script>
+	<script type="text/javascript" charset="UTF-8" src="/js/date.format.js"></script>
+	<script type="text/javascript" charset="UTF-8" src="/js/jquery.history.js"></script>
+	<script type="text/javascript" charset="UTF-8" src="/js/clipboard.min.js"></script>
+	<script type="text/javascript">
+		//window.utag_cfg_ovrd = {noview : true};
+	</script>
+</head>
+
+<meta id="metaTitle"   property="og:title">
+<meta id="metaUrl"     property="og:url">
+<meta id="metaContent" property="og:description">
+<meta id="metaImage"   property="og:image">
+
+<meta content="website" property="og:type">
+<meta content="Amway" property="og:site_name">
+
+<script type="text/javascript" src="/_ui/desktop/common/js/jquery.touchSlider.js"></script>
+<script type="text/javascript" src="/_ui/desktop/common/js/pbCommonAcademyReservation.js"></script>
+<script src="/js/adjustIframe.js"></script>
+<script src="/js/stringUtility.js"></script>
+<script src="/js/mustache.min.js"></script>
+<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+<script src="/_ui/desktop/common/js/reservationSns.js"></script>
+<script type="text/javascript" src="http://share.naver.net/js/naver_sharebutton.js"></script>
+<script type="text/javascript" charset="UTF-8" src="/js/front_reservation.js"></script>
+
+
+<script type="text/javascript">
+	var openLayerPopup = function(options){
+		// 하나로 통일
+		var targetId = "acdemyLayerPop";
+
+		var default_value =  {
+			targetId : "acdemyLayerPop"
+			, width : 850
+			, height : 600
+			, maxHeight : 600
+			, callback : false
+			, params : ""
+			, level : "1"
+		};
+
+		var opts = $.extend({}, default_value, options);
+
+		opts.width = parseFloat(opts.width);
+		opts.height = parseFloat(opts.height);
+		opts.height = opts.height > opts.maxHeight ? opts.maxHeight : opts.height;
+
+		var xindex = "10001";
+
+		// modal
+		var parentDoc = $(document).find('body');
+		parentDoc.append('<div class="layerMask" id="layerMask" style="display:block;"></div>');
+
+		// 기존 Layer 삭제
+		$("#" + targetId).remove();
+		$(document).find("body").append('<div id="' + targetId + '" tabindex="0"></div>');
+
+		// Layer 레이아웃
+		var obj = $(document).find('#'+ targetId);
+
+		$.ajax({
+			url: opts.url,
+			type:'post',
+			data : opts.params,
+			success: function(data){
+				// 열린 Ifrm ID 설정
+				obj.html(data);
+				$(window).scrollTop();
+				setTimeout(function(){ $("#uiLayerPop_w02" ).attr("tabindex","0").focus(); }, 500);
+				// 닫기 버튼 이벤트
+				$(".btnPopClose").on("click", function(){
+					$('#layerMask').remove();
+					$('#acdemyLayerPop').remove();
+				});
+			},
+			error: function(xhr,status,error){
+				$('#layerMask').remove();
+				$('#acdemyLayerPop').remove();
+				alert("code:"+xhr.status);
+			}
+		});
+	};
+
+</script>
+<!-- //Adobe Analytics Header 호출 include -->
+<!-- analytics AI staging (TBD) -->
+<script src="//assets.adobedtm.com/82aecb95e0b4e7a4cd5816c4c5d4fb1902bdbcf5/satelliteLib-a1be4b37db6eea7c35859ed88c870d1b39caf70d-staging.js"></script>
+<script type="text/javascript">
+
+	/* 뒤로가기 제어 */
+	History.pushState(null, null, location.href);
+	History.Adapter.bind(window,'statechange',function(){
+		var state = History.getState();
+		history.go(1);
+	});
+
+
+	$(document.body).ready(function(){
+
+		var system_type = "DEV";
+		if (system_type == "PROD") {
+			//send tagging information
+			(function(a,b,c,d){
+				a='//tags.tiqcdn.com/utag/amway/kr-hybris/prod/utag.js'; // ê°ë°/QA íê²½ì¸ ê²½ì°
+				b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+				a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+			})();
+		}
+		else{
+			//send tagging information
+			(function(a,b,c,d){
+				a='//tags.tiqcdn.com/utag/amway/kr-hybris/dev/utag.js'; // ê°ë°/QA íê²½ì¸ ê²½ì°
+				b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+				a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+			})();
+		}
+
+		$(".btnBasicBXL").on("click", function(){
+			location.href = "/reservation/roomInfoList.do";
+// 		$("#roomInfoForm").attr("action", "/reservation/roomInfoList.do");
+// 		$("#roomInfoForm").submit();
+		});
+
+		setTimeout(function(){ abnkorea_resize(); }, 500);
+
+	});
+
+	/* 예약 취소 팝업 */
+	function roomInfoRsvCancel(rsvseq, roomseq, standByNumber, typecode ,cancelYn){
+
+		if(cancelYn == "N") {
+			alert("예약 취소는 예약 완료 후 5분뒤에 가능합니다 \n 5분뒤 다시 조회후 취소해주세요");
+			return false;
+		} else {
+			$("input[name = rsvseq]").val("");
+			$("input[name = rsvseq]").val(rsvseq);
+
+			$("input[name = roomseq]").val("");
+			$("input[name = roomseq]").val(roomseq);
+
+			$("input[name = standByNumber]").val("");
+			$("input[name = standByNumber]").val(standByNumber);
+
+			$("input[name = typecode]").val("");
+			$("input[name = typecode]").val(typecode);
+
+			var frm = document.roomInfoForm
+			var url = "/reservation/roomInfoRsvCancelPop.do";
+			var title = "testpop";
+			var status = "toolbar=no, width=600, height=387, directories=no, status=no, scrollbars=no, resizable=no";
+			window.open("", title,status);
+
+			frm.target = title;
+			frm.action = url;
+			frm.method = "post";
+			frm.submit();
+		}
+	}
+
+	/* 환불 내역 확인 팝업 */
+	function roomInfoRsvPaybackInfo(rsvseq){
+		$("input[name = rsvseq]").val("");
+		$("input[name = rsvseq]").val(rsvseq);
+
+		var frm = document.roomInfoForm
+		var url = "/reservation/roomInfoRsvPaybackInfoPop.do";
+		var title = "testpop";
+		var status = "toolbar=no, width=600, height=800, directories=no, status=no, scrollbars=yes, resizable=no";
+		window.open("", title,status);
+
+		frm.target = title;
+		frm.action = url;
+		frm.method = "post";
+		frm.submit();
+	}
+
+	function showRoomRsvReceipt(){
+
+		var tempTypeName = $("#tempTypeName").text().split(":");
+
+		$("input[name='typeName']").val("");
+		$("input[name='typeName']").val($.trim(tempTypeName[1]));
+
+		$("input[name='cardName']").val("");
+		$("input[name='cardName']").val($("#tempCardName").text());
+
+		var frm = document.roomInfoForm
+		var url = "/reservation/showRoomRsvReceiptPop.do";
+		var title = "testpop";
+		var status = "toolbar=no, width=400, height=600, directories=no, status=no, scrollbars=no, resizable=no";
+		window.open("", title,status);
+
+		frm.target = title;
+		frm.action = url;
+		frm.method = "post";
+		frm.submit();
+	}
+
+
+	function tempSharing(url, sns){
+
+		var title = "예약 - 교육장";
+		var content = ""
+
+		$("span[name=snsText]").each(function( index ) {
+			content = content + $.trim($(this).text().trim().replace(/[\t\n]+/g,'')) + "\n";
+		});
+
+		if(sns == "facebook") {
+			var tmpUrl = url+"?reservation="+$("#transactionTime").val();
+		} else {
+			var tmpUrl = url;
+		}
+		console.log(tmpUrl);
+
+		sharing(tmpUrl, title, sns, content);
+	}
+
+</script>
+</head>
+<body>
+<form id="roomInfoForm" name="roomInfoForm" method="post">
+	<input type="hidden" name="rsvseq">
+	<input type="hidden" name="roomseq" value="2056">
+	<input type="hidden" name="standByNumber">
+	<input type="hidden" name="reservationDate" value="20200522">
+	<input type="hidden" name="purchasedate" value="1589872683088">
+	<input type="hidden" name="searchPurchasedate" value="20200519">
+	<input type="hidden" name="transactionTime"  id="transactionTime" value="1589872683088">
+	<input type="hidden" name="virtualpurchasenumber" value="">
+	<input type="hidden" name="typecode">
+	<input type="hidden" name="typeName">
+	<input type="hidden" name="cardName">
+</form>
+<div class="popWin">
+	<div class="popWinTop">
+		<span> 시설예약 </span>
+		<button type="button" class="close">닫기</button>
+	</div>
+
+	<!-- content area | ### academy IFRAME Start ### -->
+	<section id="pbContent" class="bizroom">
+		<a href="/reservation/expMeasureForm.do?menuCode=4" class="akllinkBtn">체험예약</a>
+		<div class="col-search-tab">
+			<ul>
+				<li><a href="/reservation/roomForm.do?menuCode=1">교육장예약</a></li>
+				<li><a href="/reservation/roomForm.do?menuCode=2">퀸룸/파티룸예약</a></li>
+				<li><a href="/reservation/roomForm.do?menuCode=3">비즈룸예약</a></li>
+				<li><a href="/reservation/roomForm.do?menuCode=8">On Air 예약</a></li>
+				<li class="activeTab"><a href="#">시설예약현황</a></li>
+				<!--
+                <li><a href="/reservation/roomOutBoundForm.do">외부임대 교육장 안내</a></li>
+                //-->
+			</ul>
+		</div>
+		<div class="hWrap">
+			<h1><img src="/_ui/desktop/images/academy/h1_w020500110.gif" alt="시설예약 현황확인"></h1>
+			<p><img src="/_ui/desktop/images/academy/txt_w020500110.gif" alt="시설예약 현황을 확인할 수 있습니다."></p>
+		</div>
+
+		<div class="bizroomStateBox">
+			<dl class="tblDetailCol4">
+				<dt>예약자</dt>
+				<dd>7480001 김윤석&박해일</dd>
+				<dt>등록일자</dt>
+				<dd>2020-05-19</dd>
+			</dl>
+			<div class="tblBottomBtnR">
+			</div>
+
+			<h2 class="pdtL"><img src="/_ui/desktop/images/academy/h2_w020500120.gif" alt="예약정보"></h2>
+			<div class="reservInfoHeader">
+				<div class="title"><span id="tempTypeName">시설종류 : OnAir예약</span><em>|</em><span>지역 : 강남ABC</span><em>|</em><span>ROOM명 : 온라인교육</span></div>
+				<!-- S : 2020-05-21 add -->
+				<a href="#none" class="btnTbl btnR"><span>선택 예약취소</span></a>
+				<!-- E : 2020-05-21 add -->
+			</div>
+			<!-- @edit 20160627 테이블 태그 수정, 환불관련 추가, 환불영수증 버튼명 변경 20160701 환불영수증 버튼명 환불내역으로 재변경, 예약가능->대기신청 -->
+			<!-- S : 2020-05-21 modify -->
+			<table class="tblList lineLeft">
+				<caption>예약정보 테이블</caption>
+				<colgroup>
+					<col style="width:5%" />
+					<col style="width:15%" />
+					<col style="width:20%" />
+					<col style="width:28%" />
+					<col style="width:20%" />
+					<col style="width:auto" />
+				</colgroup>
+				<thead>
+				<tr>
+					<th scope="col"><input type="checkbox"></th>
+					<th scope="col">사용일</th>
+					<th scope="col">사용시간</th>
+					<th scope="col">결제금액</th>
+					<th scope="col">상태</th>
+					<th scope="col"></th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td><input type="checkbox"></td>
+					<td>2020-05-22(금)</td>
+					<td>세션2 (14:00~17:00)</td>
+					<td>무료</td>
+					<td>결제완료</td>
+					<td><a href="#none" class="btnTbl" onclick="javascript:roomInfoRsvCancel('329930', '2056', '0', 'F', 'Y');"><span>예약취소</span></a></td>
+				</tr>
+				<span name="snsText" style="display:none"><p>■ 강남ABC (OnAir예약) 2020-05-22(금)|세션2 (14:00~17:00)|결제완료</p></span>
+				<tr>
+					<td><input type="checkbox"></td>
+					<td>2020-05-22(금)</td>
+					<td>세션1 (10:00~13:00)</td>
+					<td>무료</td>
+					<td>결제완료</td>
+					<td><a href="#none" class="btnTbl" onclick="javascript:roomInfoRsvCancel('329929', '2056', '0', 'F', 'Y');"><span>예약취소</span></a></td>
+				</tr>
+				<span name="snsText" style="display:none"><p>■ 강남ABC (OnAir예약) 2020-05-22(금)|세션1 (10:00~13:00)|결제완료</p></span>
+				<tr>
+					<td><input type="checkbox"></td>
+					<td>2020-05-20(수)</td>
+					<td>세션2 (14:00~17:00)</td>
+					<td>무료</td>
+					<td>사용완료</td>
+					<td>-</td>
+				</tr>
+				<span name="snsText" style="display:none"><p>■ 강남ABC (OnAir예약) 2020-05-20(수)|세션2 (14:00~17:00)|사용완료</p></span>
+				<tr>
+					<td><input type="checkbox"></td>
+					<td>2020-05-20(수)</td>
+					<td>세션1 (10:00~13:00)</td>
+					<td>무료</td>
+					<td>사용완료</td>
+					<td>-</td>
+				</tr>
+				<span name="snsText" style="display:none"><p>■ 강남ABC (OnAir예약) 2020-05-20(수)|세션1 (10:00~13:00)|사용완료</p></span>
+				</tbody>
+			</table>
+			<!-- E : 2020-05-21 modify -->
+			<!-- @edit 20160627 환불 관련 추가 -->
+			<ul class="listDot">
+				<li>예약취소 시 실제 카드승인취소는 한국암웨이에서 카드사로 승인취소를요청한 날로부터 3~5일 후에 이루어집니다.</li>
+				<li>카드 승인취소여부와 정확한 환불일자는 해당카드사에서 확인하실 수 있습니다.</li>
+			</ul>
+			<!-- //@edit 20160627 환불 관련 추가 -->
+			<div class="brWrap">
+
+				<div class="snsWrap">
+					<!-- 20150313 : SNS영역 수정 -->
+					<span class="snsLink">
+						<!-- @eidt 20160627 URL 복사 삭제 -->
+						<a href="#" id="snsKs" class="snsCs" onclick="javascript:tempSharing('http://aq.amway.co.kr/reservation/redirectUrl.do', 'kakaostory');" title="새창열림"><span class="hide">카카오스토리</span></a>
+						<a href="#" class="snsBand" onclick="javascript:tempSharing('http://aq.amway.co.kr/reservation/redirectUrl.do', 'band');" title="새창열림"><span class="hide">밴드</span></a>
+						<a href="#" id="snsFb" class="snsFb" onclick="javascript:tempSharing('http://aq.amway.co.kr/reservation/simpleReservation.do', 'facebook');" title="새창열림"><span class="hide">페이스북</span></a>
+					</span>
+					<!-- //20150313 : SNS영역 수정 -->
+					<span class="snsText"><img src="/_ui/desktop/images/academy/sns_text.gif" alt="예약내역공유" /></span>
+				</div>
+				<div class="btnWrapC">
+					<a href="javascript:void(0);" class="btnBasicBXL">시설예약 현황확인 목록</a>
+				</div>
+
+			</div>
+		</div>
+	</section>
+</div>
+
+<!-- //Adobe Analytics Footer 호출 include -->
+<script type="text/javascript">
+	//<![CDATA[
+	//Adobe_Analytics
+	//    if(typeof dataLayer == 'undefined') {
+	var dataLayer = {};
+	//    }
+	// site Info.
+	dataLayer.site = {
+		"isProduction":"false",
+		"type":"desktop",
+		"country":"kr",
+		"language":"ko",
+		"currencyCode":"krw",
+		"region":"apac",
+		"subRegion":"korea",
+		"subGroup":"korea",
+		"webProperty":"ecm"
+	};
+	// cos Info.
+	dataLayer.visitor = {
+		"customerID":"7480001",
+		"imcID":"18000007480001",
+		"pinNumber":"Founders Emerald",
+		"userProfile":"abo"
+	};
+	// conn page Info.
+	dataLayer.page = {
+		"section":"비즈니스",
+		"category":"시설예약",
+		"subCategory":"시설예약현황확인",
+		"detail":""
+	};
+
+	if (typeof (_satellite) != "undefined") _satellite.pageBottom();
+	// if (typeof (_satellite) != "undefined") _satellite.track('academy');
+	//]]>
+</script>
+
+<!-- //content area | ### academy IFRAME End ### -->
+
+</body>
+</html>

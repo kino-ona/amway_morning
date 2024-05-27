@@ -1,0 +1,88 @@
+<!-- S : 2020-03-09 SNS 공유 레이어팝업 -->
+<div id="sns-layer" class="layer_section sns-layer-renew"><!-- 20240514 클래스 추가 -->
+	<div class="layer_section-container">
+		<div class="layer-header">
+			<h1 class="header-title">SNS 공유</h1>
+		</div>
+		<div class="layer-content">
+			<!-- [Dev] 제품 및 주문 금액 노출의 경우 사용 -->
+			<!--<div class="layer_check-box">
+				<p class="check-desc">제품 및 주문 금액 노출을 원할 경우 체크해주세요!</p>
+				<div class="check-list">
+					<span class="form_element-checkbox v1">
+						<input type="checkbox" id="chk01" checked="checked">
+						<label for="chk01" class="sp_chk focus">제품금액</label>
+					</span>
+					<span class="form_element-checkbox v1">
+						<input type="checkbox" id="chk02">
+						<label for="chk02" class="sp_chk focus">주문금액</label>
+					</span>
+				</div>
+			</div>-->
+			<ul class="share-list">
+				<li class="share-item check-item">
+					<a href="#;" class="share-link">
+						<span class="share-icon ico01"></span>
+						<span class="share-text">카카오톡</span>
+					</a>
+				</li>
+				<!-- S : 20240516 삭제 취소 -->
+				<li class="share-item check-item">
+					<a href="#;" class="share-link">
+						<span class="share-icon ico02"></span>
+						<span class="share-text">카카오스토리</span>
+					</a>
+				</li>
+				<!-- E : 20240516 삭제 취소 -->
+				<li class="share-item">
+					<a href="#;" class="share-link">
+						<span class="share-icon ico03"></span>
+						<span class="share-text">페이스북</span>
+					</a>
+				</li>
+				<li class="share-item">
+					<a href="#;" class="share-link">
+						<span class="share-icon ico04"></span>
+						<span class="share-text">X</span><!-- 20240514 수정 -->
+					</a>
+				</li>
+				<li class="share-item">
+					<a href="#;" class="share-link">
+						<span class="share-icon ico05"></span>
+						<span class="share-text">밴드</span>
+					</a>
+				</li>
+				<li class="share-item">
+					<a href="#;" class="share-link">
+						<span class="share-icon ico06"></span>
+						<span class="share-text">URL 복사</span><!-- 20240514 수정 -->
+					</a>
+				</li>
+			</ul>
+			<dl class="accordion_renew set_type">
+				<dt class="accordion_title">SNS 공유 안내 <button type="button" class="btn_arrow"><span class="blind">공유안내 열기</span></button></dt><!-- 20240514 수정 -->
+				<dd class="accordion_contents">
+					<!-- S : 20240514 수정 -->
+					<p class="accordion_text">
+						한국암웨이의 amway.co.kr에서 서비스 되는 일체의 콘텐츠에 대한 지적 재산권은 한국암웨이㈜에 있으며, 임의로 자료를 수정/변경하여 사용하거나, 기타 개인의 영리 목적으로 사용할 경우에는 지적 재산권 침해에 해당하는 사안으로, 그 모든 법적 책임은 콘텐츠를 불법으로 남용한 개인 또는 단체에 있습니다.
+					</p>
+					<p class="accordion_text">모든 자료는 원저작자의 요청이나 한국암웨이의 사정에 따라 예고 없이 삭제될 수 있습니다.</p>
+					<!-- E : 20240514 수정 -->
+				</dd>
+			</dl>
+		</div>
+		<button type="button" class="btn_layer-close"><span class="blind">레이어팝업 닫기</span></button>
+	</div>
+</div>
+<!-- E : 2020-03-09 SNS 공유 레이어팝업 -->
+
+
+<script>
+        // Set Accordion
+        $('.accordion_renew').uxeAccordionMenu({
+            'clickedShowOnly': true,
+            'navigation' : '.btn_arrow',
+        });
+        // 레이어 호출
+        AMWAY.callLayer();
+</script>

@@ -1,0 +1,266 @@
+<div id="payment-layer" class="layer_section type-wide-a">
+    <div class="layer_section-container">
+        <div class="layer-header">
+            <h1 class="header-title">결제정보 변경</h1>
+        </div>
+        <div class="layer-content">
+            <div class="payment-title-wrap">
+                <h2 class="payment-title-a">결제수단</h2>
+                <span class="payment-des-a">* 결제는 신용카드만 가능합니다.</span>
+            </div>
+            <div class="payment_tab-box">
+                <ul class="payment_tab-list">
+                    <li class="list-item--tab is-selected"><button type="button" class="list-item--btn" name="#payment-a">자동이체예약</button></li>
+                    <li class="list-item--tab"><button type="button" class="list-item--btn" name="#payment-b">신용카드</button></li>
+                </ul>
+                <div class="tab_contents active" id="payment-a">
+                    <!-- S : 2020-10-22 자동이체 비밀번호 -->
+                    <div class="payment-item-a">
+                        <div class="payment-title">
+                            <p class="payment-item-title">자동이체 비밀번호</p>
+                        </div>
+                        <div class="payment-content">
+                            <div class="box-form-a">
+                                <div class="form-col"><input type="text" placeholder="자동이체 번호 6자리" class="form-input-a"></div>
+                                <div class="form-col btn-type"><button type="button" class="btn_default-d medium">자동이체계좌 등록</button></div>
+                            </div>
+                            <p class="payment-des-b">* 자동이체는 계좌 등록 후 사용이 가능합니다.</p>
+                            <dl class="accordion_item-a">
+                                <dt class="accordion_title">자동이체 안내<i class="accordion-blt"></i><button type="button" class="btn_open"><span class="blind">열기</span></button></dt>
+                                <dd class="accordion_content">
+                                    <ul class="dash-list-a">
+                                        <li class="list-item">마이페이에서 결제 정보(계좌이체 통장) 변경 시 스마트 오더 프로그램에도 동일하게 적용됩니다.</li>
+                                        <li class="list-item">나의 주문 내역 페이지에서 현금영수증을 발급하실 수 있습니다. 현금영수증은 예약결제일 또는 즉시결제일 당일에만 발급 가능합니다.</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <!-- E : 2020-10-22 자동이체 비밀번호 -->
+                    <!-- S : 거래내역 증빙신청 -->
+                    <div class="payment-item-a">
+                        <div class="payment-title">
+                            <p class="payment-item-title">거래내역 증빙신청</p>
+                        </div>
+                        <div class="payment-content">
+                            <div class="choice-item-a">
+                                <input type="radio" name="receiptType" id="notApply" value="NO" class="amwa-radio"> <label for="notApply" class="focus"><span class="text-regul">신청안함</span></label>
+                            </div>
+                            <div class="choice-item-a">
+                                <input type="radio" name="receiptType" id="taxBill" value="TAX" class="amwa-radio">
+                                <label for="taxBill" class="tax-bill focus"><span class="text-regul">세금계산서(중개판매 신청) :</span></label>
+                                <button type="button" class="btn_default-d small" data-layer="business-license-layer">사업자등록증 선택</button>
+                                <input type="hidden" id="businessLicenseNumber"> <input type="hidden" id="businessLicenseCompany">
+                            </div>
+                            <div class="choice-item-a">
+                                <input type="radio" name="receiptType" id="cashReceipts" value="CASH" class="amwa-radio"> <label for="cashReceipts" class="focus"><span class="text-regul">현금영수증</span></label>
+                                <div class="cash-type">
+                                    <div class="cash-phone">
+                                        <div class="cash-col-a">
+                                            <select title="구분을 선택하세요" id="receiptNumberType" class="form-control">
+                                                <option value="CPN">휴대폰번호</option>
+                                                <option value="CDN">현금영수증카드번호</option>
+                                                <option value="BRN">사업자등록번호</option>
+                                            </select>
+                                        </div>
+                                        <div class="cash-col-b"><input type="text" placeholder="‘-’없이 입력" id="receiptIssuanceNumber" maxlength="18" class="form-control"></div>
+                                    </div>
+                                    <div class="receipt-type">
+                                        <div class="cash-col-a"><label for="receiptIssuanceType">영수증 유형</label></div>
+                                        <div class="cash-col-b">
+                                            <select id="receiptIssuanceType" class="form-control">
+                                                <option value="INCOME_DEDUCTION">소득공제용(개인)</option>
+                                                <option value="EXPENDITURE_PROOF">지출증빙용(사업자)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pvbv-type">
+                                <span class="txt-pvbv">거래명세서 표시</span>
+                                <input id="printInvoicePrice" name="printInvoicePrice" type="checkbox" value="printInvoicePrice" class="login-form-remember">
+                                <label for="printInvoicePrice" class="focus">가격</label>
+                                <input id="printInvoicePvBv" name="printInvoicePvBv" type="checkbox" value="printInvoicePvBv" class="login-form-remember">
+                                <label for="printInvoicePvBv" class="focus">PV/BV</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- E : 거래내역 증빙신청 -->
+                </div>
+                <div class="tab_contents" id="payment-b">
+                    <!-- S : 신용카드 정보 -->
+                    <div class="payment-item-a">
+                        <div class="payment-title">
+                            <p class="payment-item-title">신용카드 정보</p>
+                        </div>
+                        <div class="payment-content">
+                            <button type="button" class="btn_default-d medium">결제정보 변경</button>
+                            <p class="payment-des-d">* 결제카드는 <span class="card-value">현대카드</span>로 선택하셨습니다.</p>
+                        </div>
+                    </div>
+                    <!-- E : 신용카드 정보 -->
+                </div>
+                <!-- S : 정기주문 결제일 -->
+                <div class="payment-item-a has-tooltip">
+                    <div class="payment-title">
+                        <p class="payment-item-title">정기주문 결제일</p>
+                        <div class="tooltip-section">
+                            <button type="button" data-tooltip="tooltip" class="btn-tooltip"><i class="sp_order sp_tooltip"></i></button>
+                            <div id="tooltip" class="tooltip-layer sp_amway-b">
+                                <div class="tooltip-cont">
+                                    <p class="tooltip-txt">
+                                        결제일과 상품은 마이쇼핑 &gt; 정기주문&amp;스마트오더<br>
+                                        내역에서 매월 결제일 이전에 변경이 가능합니다.
+                                    </p>
+                                    <p class="tooltip-txt-b">* 신용카드 : 매월 2일~25일까지 선택가능</p>
+                                    <p class="tooltip-txt-b">* 자동이체예약 : 매월 2일~27일까지 선택가능</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <dd class="payment-content">
+                        <select id="" class="form-control">
+                            <option value="">2일</option>
+                        </select>
+                        <p class="payment-des-c">* 정기 결제완료 후 익일제품 발송(공휴일 제외)</p>
+                    </dd>
+                </div>
+                <!-- E : 정기주문 결제일 -->
+                <!-- S : 소비자피해보상보험 가입 안내 -->
+                <dl class="accordion_item-b">
+                    <dt class="accordion_title"><p class="accordion_title-txt">소비자피해보상보험 가입 안내</p><button type="button" class="btn_open">자세히 보기<i class="accordion-blt"></i></button></dt>
+                    <dd class="accordion_content">
+                        <p class="accordion_content-txt">전자상거래등에서의 소비자보호에관한 법률에 따라 직접판매공제조합에 가입하여 고객님의 결제금액에 대해 안전거래를 보장하고 있습니다.</p>
+                        <span class="custom-btn-a"><a href="https://www.macco.or.kr/ko/cn/KOCNMC01.action" class="btn_default-d" target="_black">보험가입사실 확인</a></span>
+                    </dd>
+                </dl>
+                <!-- E : 소비자피해보상보험 가입 안내 -->
+                <!-- S : 이용 약관 -->
+                <dl class="accordion_item-b">
+                    <dt class="accordion_title">
+                        <span class="form_element-checkbox v1">
+                            <input type="checkbox" id="chk01" checked="checked">
+                            <label for="chk01" class="sp_chk focus">이용 약관에 모두 동의 합니다.</label>
+                        </span>
+                        <button type="button" class="btn_open">약관 모두 보기<i class="accordion-blt"></i></button>
+                    </dt>
+                    <dd class="accordion_content">
+                        <div class="check-item">
+                            <span class="form_element-checkbox v1">
+                                <input type="checkbox" id="chk02" checked="checked">
+                                <label for="chk02" class="sp_chk focus">주문하실 상품의 상품명, 가격, 배송정보를 확인하였으며, 이에 동의(전자상거래법 제8조 제2항)</label>
+                            </span>
+                        </div>
+                        <div class="check-item accordion_item-c">
+                            <div class="accordion_title">
+                                <span class="form_element-checkbox v1">
+                                    <input type="checkbox" id="chk03" checked="checked">
+                                    <label for="chk03" class="sp_chk focus">개인정보의 수집 및 이용에 동의</label>
+                                </span>
+                                <button type="button" class="btn_open-b">자세히 보기<i class="accordion-blt"></i></button>
+                            </div>
+                            <div class="accordion_content">
+                                <!-- 약관1 -->
+                                <div class="tbl-list-view terms">
+                                    <div class="thead">
+                                        <div class="tr">
+                                            <strong style="width:30%">목적</strong>
+                                            <strong style="width:70%">항목</strong>
+                                        </div>
+                                    </div>
+                                    <div class="tbody">
+                                        <div class="tr">
+                                            <strong class="mob-hide">목적</strong>
+                                            <div class="td mob-tit">대금 결제 서비스</div>
+                                            <strong>항목</strong>
+                                            <div class="td">ABO 번호 또는 회원 ID, 이름, 신용카드 정보, 계좌정보, A 포인트 정보(결제 방식에 따른 정보 수집)</div>
+                                        </div>
+                                        <div class="tr">
+                                            <strong class="mob-hide">목적</strong>
+                                            <div class="td mob-tit">상품 배송</div>
+                                            <strong>항목</strong>
+                                            <div class="td">이름, 주소, 휴대폰번호, 전화번호(선택)</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="terms-tit-con">
+                                    <strong class="box-type-tit">(공통) 이용·보유기간</strong>
+                                    <div class="box-type-con">
+                                        <ul>
+                                            <li>계약 또는 청약철회 등에 관한 기록 5년</li>
+                                            <li>대금결제 및 재화 등의 공급에 관한 기록 5년</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p class="listWarning">개인정보 수집 및 이용에 대한 동의를 거부하실 수 있으나, 거부 시 상품의 구매, 대금 결제, 배송이 제한됩니다.</p>
+                                <!-- 약관2 -->
+                                <hr class="divide no-line">
+                                <strong class="titH2">[필수] 개인정보의 국외 이전에 대한 동의</strong>
+                                <div class="tbl-list-view terms">
+                                    <div class="tr">
+                                        <div class="th mob-block">이전목적</div>
+                                        <div class="td mob-block">시스템 유지보수</div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="th mob-block">이전국가 및 이전받는 자</div>
+                                        <div class="td mob-block">USA (미국 Alticor)<br>관리책임자 : Jim Redd (<a href="mailto:alticor_privacy@alticor.com">alticor_privacy@alticor.com)</a></div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="th mob-block">이전항목</div><div class="td mob-block">
+                                        대금 결제 서비스관련 정보 : ABO 번호 또는 회원 ID, 이름, 신용카드 정보, 계좌정보, A 포인트 정보(결제 방식에 따른 정보 수집)<br>
+                                        상품 배송관련 정보 : 이름, 주소, 휴대폰번호, 전화번호(선택)
+                                    </div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="th mob-block">이전시점</div><div class="td mob-block">주문 시</div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="th mob-block">이전방법</div><div class="td mob-block">온라인 전송</div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="th mob-block">보유기간</div><div class="td mob-block">계약 또는 청약철회 등에 관한 기록 5년<br>대금결제 및 재화 등의 공급에 관한 기록 5년</div>
+                                    </div>
+                                </div>
+                                <p class="listWarning"> 서비스 제공 시스템이 국외에 위치하므로, 동의를 거부하실 경우 상품의 구매, 대금 결제, 배송이 제한됩니다.</p>
+                            </div>
+                            <!-- //약관 -->
+                        </div>
+                    </dd>
+                </dl>
+                <!-- E : 이용 약관 -->
+            </div>
+        </div>
+        <div class="align-box size-auto">
+            <button type="button" class="btn-modal_close v2">취소</button>
+            <button type="button" class="btn-modal_close">저장</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(function(){
+        // tab 실행
+        $('.payment_tab-box').uxeTabs({
+            'tabsContentSlector':'.tab_contents',
+            'useSubTarget': true,
+            'autoFirstActivate': true,
+            'navClickScrollToTabsTop':true
+        });
+
+        // Set Accordion
+        $('.accordion_item-a').uxeAccordionMenu({
+            'clickedShowOnly': true,
+            'navigation' : '.btn_open',
+        });
+        $('.accordion_item-b').uxeAccordionMenu({
+            'clickedShowOnly': true,
+            'navigation' : '.btn_open',
+        });
+        $('.accordion_item-c').uxeAccordionMenu({
+            'clickedShowOnly': true,
+            'navigation' : '.btn_open-b',
+        });
+
+        // tollTipLayer
+        tollTipLayer();
+    })
+</script>

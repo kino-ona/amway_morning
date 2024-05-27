@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SNS-popup</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords">
+    <meta name="description" content="NY Fee Bundle">
+    <meta name="robots" content="index,follow">
+
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-lib.css"><!-- 플러그인용 css : 2018.03.14 추가  -->
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common.css">
+	<link rel="shortcut icon" type="image/x-icon" href="/_ui/responsive/theme-blue/images/akl_common/favicon.ico">
+	<link rel=”apple-touch-startup-image” href="/_ui/responsive/theme-blue/images/akl_common/favicon_app.png">
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.datepicker.js"></script><!-- datepicker : 2018.03.19 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/owl.carousel.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/isotope.pkgd.js"></script><!-- gnb 플러그인 : 2018.03.23 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/select2.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/new.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.raty.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_contents.js"></script><!-- brand 통합 : 2018.08.24 추가  -->
+	<style type="text/css">
+	
+		.akl .cart-popup__header{ height:50px; } /*alk-common 732*/
+		.akl .cart-popup__header-text { height:50px; }/*alk-common 733*/
+	</style>
+</head>
+<body class="akl">
+
+<!-- 주문불가 제품 알림 팝업 -->
+<div class="layerWrapper G10600_lp1_pop">
+	<div class="cbox layerBox popWidM">
+		<div class="cart-popup__dialog">
+			<div class="cart-popup__header">
+				<span class="cart-popup__header-text">주문불가 제품 알림
+					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close">
+					<img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기">
+					</a>
+				</span>
+			</div>
+			<div class="cart-popup__content payment">
+				<div class="cart-popup__item-info">
+					<p>수량제한 ABC : 강서 ABC</p>
+					<div class="pop-prot-body">
+						<div class="cannot-order-list"><!-- div 영역 추가 2018.05.16 -->
+							<div class="cartlist-image">
+								<img src="/_ui/responsive/theme-blue/images/akl_common/@heart-health_checkout.png" class="no-border-image" alt="pro-duct3" />
+							</div>
+							<div class="cartlist-text">
+								<div class="cart-popup__item-head">
+									<div class="cartlist-title">
+										아티스트리 시그니처 컬러 라잇업 립글로스 립글로스 립글로스  립글로스  립글로스
+										<div class="cartlist-small2">1038 / 120435D </div>
+									</div>
+									<div class="cartlist-quantity">
+										<span class="qua-tite">주문수량</span>
+										<span class="qua-num">20</span>
+									</div>
+								</div>
+
+								<div class="cart-popup__item-com">
+									<div class="com-ttile">주문불가 사유</div>
+									<!-- 수정 : 2018.05.29 (노출안함)
+									<div class="com-num"><span class="ico-i">수량제한</span></div> -->
+									<p class="com-txt">벌크제품과 같이주문시 두개만 주문가능하고 개별로 주문시 4개까지만 주문가능함</p>
+								</div>
+							</div>
+						</div>
+						<div class="cannot-order-list"><!-- div 영역 추가 2018.05.16 -->
+							<div class="cartlist-image">
+								<img src="/_ui/responsive/theme-blue/images/akl_common/@heart-health_checkout.png" class="no-border-image" alt="pro-duct3" />
+							</div>
+							<div class="cartlist-text">
+								<div class="cart-popup__item-head">
+									<div class="cartlist-title">
+										아티스트리 시그니처 컬러 라잇업 립글로스 립글로스 립글로스  립글로스  립글로스
+										<div class="cartlist-small2">1038 / 120435D </div>
+									</div>
+									<div class="cartlist-quantity">
+										<span class="qua-tite">주문수량</span>
+										<span class="qua-num">20</span>
+									</div>
+								</div>
+
+								<div class="cart-popup__item-com">
+									<div class="com-ttile">주문불가 사유</div>
+									<!-- 수정 : 2018.05.29 (노출안함)
+									<div class="com-num"><span class="ico-i">수량제한</span></div> -->
+									<!-- <p class="com-txt">벌크제품과 같이주문시 두개만 주문가능하고 개별로 주문시 4개까지만 주문가능함</p> -->
+									<!-- 20220331 재고없음 CASE 추가 -->
+									<p class="com-txt">선택하신 ABC에 주문 가능한 재고가 없습니다.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- S : 0221031 장스오 ABC 픽업 추가 -->
+					<div class="pop-prot-form">
+						<div class="form-group">
+							<input class="amwa-radio" type="radio" name="impossible" id="impossible1" value="" checked>
+							<label for="impossible1">이전으로 돌아가기(다른 ABC 또는 배달주문 선택)</label>
+						</div>
+						<div class="form-group">
+							<input class="amwa-radio" type="radio" name="impossible" id="impossible1" value="" checked>
+							<label for="impossible1">현재상품 삭제 후 주문 진행</label>
+						</div>
+						<div class="form-group">
+							<input class="amwa-radio" type="radio" name="impossible" id="impossible2" value="">
+							<label for="impossible2">주문서에서 제품 변경 (제품 추가 및 교체)</label>
+						</div>
+					</div>					
+					<!-- E : 0221031 장스오 ABC 픽업 추가 -->
+				</div>
+
+			</div>
+			<div class="cart-popup__item-link">
+				<button type="button" class="bt-akl-blue">확인</button>
+				<button type="button" class="bt-akl-white">취소</button>
+				<!-- 2019.03.12 : 취소 버튼 추가 -->
+			</div>
+		</div>
+	</div>
+</div>
+<!--//주문불가 제품 알림 팝업 -->
+
+<script type="text/javascript">
+   $(function() {
+   	layerPopOver('','.G10600_lp1_pop');
+   });
+</script>
+</body>
+
+</html>

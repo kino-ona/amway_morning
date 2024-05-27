@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Amway</title>
+	<link rel="stylesheet" href="./assets/css/amway.css">
+	<script defer src="./assets/js/amway.js"></script>
+</head>
+<body>
+	<div class="wrap">
+		<header class="header header--step">
+			<div class="header__container">
+				<div class="header__row">
+					<button type="button" class="prev" aria-lebel="이전"></button>
+					<button type="button" class="close" aria-label="닫기"></button>
+				</div>
+				<nav class="step">
+					<ol class="step__row">
+						<li class="step__step" aria-current="step">
+							<span>1</span>
+							<p>알쏭달쏭 단백질 퀴즈</p>
+						</li>
+						<li class="step__step">
+							<span>2</span>
+							<p>단백질 부족 자가진단</p>
+						</li>
+						<li class="step__step">
+							<span>3</span>
+							<p>하루 권장 섭취량 체크</p>
+						</li>
+					</ol>
+				</nav>
+				<div class="progress-bar">
+					<div class="progress-bar__row">
+						<div class="progress-bar__bar">
+							<div style="width: 12.5%;"></div>
+						</div>
+						<div class="progress-bar__bar">
+							<div></div>
+						</div>
+						<div class="progress-bar__bar">
+							<div></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="contents">
+			<div class="protein-check">
+				<div class="protein-check__swiper">
+					<div class="swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide" data-index-number="1">
+								<div class="quiz">
+									<span class="quiz__chapter">
+										<span>Q</span>
+										1
+									</span>
+									<p class="quiz__question">
+										단백질은 운동하는 사람에게만<br>
+										중요한 영양소이다?
+									</p>
+									<div class="quiz__answer quiz__answer--ox">
+										<input type="radio" id="question01_01" name="question01">
+										<label for="question01_01" aria-label="O"></label>
+										<input type="radio" id="question01_02" name="question01">
+										<label for="question01_02" aria-label="X"></label>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide" data-index-number="2">
+								<div class="quiz">
+									<span class="quiz__chapter">
+										<span>Q</span>
+										2
+									</span>
+									<p class="quiz__question">
+										단백질,<br>
+										한번에 많이 먹을수록 좋다?
+									</p>
+									<div class="quiz__answer quiz__answer--ox">
+										<input type="radio" id="question02_01" name="question02">
+										<label for="question02_01" aria-label="O"></label>
+										<input type="radio" id="question02_02" name="question02">
+										<label for="question02_02" aria-label="X"></label>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide" data-index-number="3">
+								<div class="quiz">
+									<span class="quiz__chapter">
+										<span>Q</span>
+										3
+									</span>
+									<p class="quiz__question">
+										나이가 들수록 체내 단백질이<br>
+										자연스럽게 줄어든다?
+									</p>
+									<div class="quiz__answer quiz__answer--ox">
+										<input type="radio" id="question03_01" name="question03">
+										<label for="question03_01" aria-label="O"></label>
+										<input type="radio" id="question03_02" name="question03">
+										<label for="question03_02" aria-label="X"></label>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide" data-index-number="4">
+								<div class="quiz">
+									<span class="quiz__chapter">
+										<span>Q</span>
+										4
+									</span>
+									<p class="quiz__question">
+										운동만 열심히 하면<br>
+										근육이 늘어난다?
+									</p>
+									<div class="quiz__answer quiz__answer--ox">
+										<input type="radio" id="question04_01" name="question04">
+										<label for="question04_01" aria-label="O"></label>
+										<input type="radio" id="question04_02" name="question04">
+										<label for="question04_02" aria-label="X"></label>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide" data-index-number="5">
+								<div class="quiz">
+									<span class="quiz__chapter">
+										<span>Q</span>
+										5
+									</span>
+									<p class="quiz__question">
+										다음 중 ‘좋은 단백질 제품을<br>
+										고르는 기준’으로 맞는 내용을<br>
+										<span class="line-highlight">모두</span> 골라주세요.
+										<em>(중복 선택)</em>
+									</p>
+									<div class="quiz__answer">
+										<input type="checkbox" id="question05_01">
+										<label for="question05_01">식약처 인증 건강기능식품 제품을 선택한다.</label>
+										<input type="checkbox" id="question05_02">
+										<label for="question05_02">품질 유지와 맛있는 맛을 위해 첨가물이 많은 제품을 선택한다.</label>
+										<input type="checkbox" id="question05_03">
+										<label for="question05_03">아미노산 스코어가 100 이상인 높은 영양가 제품을 선택한다.</label>
+										<input type="checkbox" id="question05_04">
+										<label for="question05_04">철저한 원재료 구분 유통 관리로 검증 된 원재료를 사용한 제품을 선택한다.</label>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide" data-index-number="6">
+								<div class="quiz">
+									<span class="quiz__chapter">
+										<span>Q</span>
+										6
+									</span>
+									<em class="quiz__noti">빈칸에 들어갈 숫자는 무엇일까요?</em>
+									<p class="quiz__question">
+										우리 몸에 반드시 필요한<br>
+										필수 및 비필수 아미노산은<br>
+										총 ____ 종이다.
+									</p>
+									<div class="quiz__answer quiz__answer">
+										<input type="radio" id="question06_01" name="question06">
+										<label for="question06_01">5종</label>
+										<input type="radio" id="question06_02" name="question06">
+										<label for="question06_02">10종</label>
+										<input type="radio" id="question06_03" name="question06">
+										<label for="question06_03">2시간</label>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide" data-index-number="7">
+								<div class="quiz">
+									<span class="quiz__chapter">
+										<span>Q</span>
+										7
+									</span>
+									<em class="quiz__noti">빈칸에 들어갈 숫자는 무엇일까요?</em>
+									<p class="quiz__question">
+										단백질 섭취 골든타임은<br>
+										운동 직후 ____ 이내이다.
+									</p>
+									<div class="quiz__answer quiz__answer">
+										<input type="radio" id="question07_01" name="question07">
+										<label for="question07_01">10분</label>
+										<input type="radio" id="question07_02" name="question07">
+										<label for="question07_02">45분</label>
+										<input type="radio" id="question07_03" name="question07">
+										<label for="question07_03">2시간</label>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide" data-index-number="8">
+								<div class="quiz">
+									<span class="quiz__chapter">
+										<span>Q</span>
+										8
+									</span>
+									<p class="quiz__question">
+										다음 중 단백질의 공식 기능이<br>
+										<span class="line-highlight">아닌 것</span>은 무엇일까요?
+									</p>
+									<div class="quiz__answer quiz__answer">
+										<input type="radio" id="question08_01" name="question08">
+										<label for="question08_01">근육, 결합조직 등 신체 조직의 구성 성분</label>
+										<input type="radio" id="question08_02" name="question08">
+										<label for="question08_02">효소, 호르몬, 항체의 구성에 필요</label>
+										<input type="radio" id="question08_03" name="question08">
+										<label for="question08_03">체내 필수 영양성분이나 활성물질의 운반과 저장에 필요</label>
+										<input type="radio" id="question08_04" name="question08">
+										<label for="question08_04">숙면에 도움</label>
+										<input type="radio" id="question08_05" name="question08">
+										<label for="question08_05">체액, 산-염기의 균형 유지에 필요</label>
+										<input type="radio" id="question08_06" name="question08">
+										<label for="question08_06">에너지, 포도당, 지질의 합성에 필요</label>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide" data-index-number="1">
+								<div class="quiz">
+									<p class="quiz__noti quiz__noti--secondary">
+										<span>혹시나도?</span>
+										<span class="line-highlight">스스로 알아보는 단백질 부족신호</span>
+									</p>
+									<p class="quiz__question">
+										해당되는 항목이 있는지 체크해보세요.
+										<em>(중복 선택)</em>
+									</p>
+									<div class="quiz__answer quiz__answer">
+										<input type="checkbox" id="question09_01">
+										<label for="question09_01">머리카락이 많이 빠져 탈모가 걱정 된다.</label>
+										<input type="checkbox" id="question09_02">
+										<label for="question09_02">머리카락이 가늘어지거나 갈라지며 푸석푸석하다.</label>
+										<input type="checkbox" id="question09_03">
+										<label for="question09_03">피부가 거칠어지고 탄력을 잃고 주름이 생기는 것 같다.</label>
+										<input type="checkbox" id="question09_04">
+										<label for="question09_04">손톱 발톱이 얇아지고 쉽게 갈라지거나 부러진다.</label>
+										<input type="checkbox" id="question09_05">
+										<label for="question09_05">운동을 해도 근육이 잘 생기지 않고 전체적으로 근육량이 줄어든 느낌이 든다.</label>
+										<input type="checkbox" id="question09_06">
+										<label for="question09_06">면역력이 약해져 감기에 자주 걸리고 잘 낫지 않는다.</label>
+										<input type="checkbox" id="question09_07">
+										<label for="question09_07">혈액순환이 잘 되지 않아 손발이 차고 종아리나 발이 자주 붓는다.</label>
+										<input type="checkbox" id="question09_08">
+										<label for="question09_08">단 음식이 자주 먹고싶다.</label>
+										<input type="checkbox" id="question09_09">
+										<label for="question09_09">항상 피곤하고 잔병치레가 많다.</label>
+										<input type="checkbox" id="question09_10">
+										<label for="question09_10">예전과 달리 무거운 것을 들기 힘들고 근력이 떨어진 것 같다.</label>
+									</div>
+									<p class="quiz__etc">*출처 : Indian J Nutr Dietetics 57.4 (2020): 486-497., J. Food Sci. Nutr 1 (2017): 645-647., Paediatrics and international child health 35.2 (2015): 83-89., Obesity reviews 6.2 (2005): 133-142. Seshadri, Divya, and Dipankar De. “Nails in nutritional deficiencies.” Indian Journal of Dermatology, Venereology and Leprology 78 (2012): 237.</p>
+								</div>
+							</div>
+							<div class="swiper-slide" data-index-number="1">
+								<div class="quiz">
+									<span class="quiz__chapter">
+										<span>Q</span>
+										1
+									</span>
+									<p class="quiz__question">
+										단백질을 섭취하는 목적을<br>
+										알려주세요.
+									</p>
+									<div class="quiz__answer quiz__answer">
+										<input type="radio" id="question10_01" name="question10">
+										<label for="question10_01">
+											건강을 위해 필수 영양소인<br>
+											단백질을 섭취하려고 해요.
+										</label>
+										<input type="radio" id="question10_02" name="question10">
+										<label for="question10_02">
+											탄탄한 몸을 위해<br>
+											체지방 조절을 하고 싶어요.
+										</label>
+										<input type="radio" id="question10_03" name="question10">
+										<label for="question10_03">근육 증가를 원해요.</label>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide" data-index-number="2">
+								<div class="quiz">
+									<span class="quiz__chapter">
+										<span>Q</span>
+										2
+									</span>
+									<p class="quiz__question">몸무게를 알려주세요.</p>
+									<div class="quiz__answer">
+										<div class="quiz__form">
+											<label for="weight" class="a11y">몸무게</label>
+											<input type="number" id="weight" maxlength="5" placeholder="00" oninput="maxLengthCheck(this)">
+											<span>kg</span>
+										</div>
+										<p class="quiz__etc">*단백질 하루 권장 섭취량 계산에 필요합니다.</p>
+									</div>
+									<div class="button">
+										<div class="button__row">
+											<input type="submit" class="button__item button__item--secondary" value="결과보기" disabled onclick="window.location.href='./calculate.html'">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="protein-check__next button">
+					<div class="button__row">
+						<button type="button" class="button__item">
+							다음
+							<i></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		function maxLengthCheck(object){
+			if (object.value.length > object.maxLength){
+				object.value = object.value.slice(0, object.maxLength);
+			}    
+		}
+
+		document.addEventListener('DOMContentLoaded', () => {
+			const proteinCheckSwiper = new Swiper('.protein-check__swiper .swiper', {
+				allowTouchMove: false,
+				autoHeight: true,
+				breakpoints: {
+					1024: {
+						width: 720
+					}
+				},
+				creativeEffect: {
+					prev: {
+						translate: ['-130%', 0, 0],
+						rotate: [0, 0, -30],
+						opacity: 0,
+					},
+					next: {
+						opacity: 0,
+						scale: 0.95
+					}
+				},
+				effect: 'creative',
+				navigation: {
+					nextEl: '.protein-check__next .button__item',
+					prevEl: '.prev'
+				},
+				on: {
+					afterInit(swiper) {
+						const $el = swiper.$el,
+									$slide = $el.find('.swiper-slide');
+						
+						const radio = $slide.find('input[type=radio]'),
+									checkbox = $slide.find('input[type=checkbox]'),
+									nextBtn = $el.closest('.protein-check').find('.protein-check__next'),
+									weight = $slide.find('input[type=number]')[0];
+									result = $slide.find('input[type=submit]')[0];
+
+						radio.on('keydown', (event) => {
+							if(event.key == 'ArrowLeft' || event.key == 'ArrowRight' || event.key == 'ArrowUp' || event.key == 'ArrowDown') {
+								event.preventDefault();
+							}
+						});
+
+						checkbox.on('keydown', (event) => {
+							if(event.key == 'Tab' || event.code == 'Space') {
+								event.preventDefault();
+							}
+						});
+						
+						radio.on('change', () => {
+							if (swiper.activeIndex <= 4) {
+								if ($slide.eq(swiper.activeIndex).find('input[type=radio]:last-of-type')[0].checked) {
+									swiper.params.creativeEffect.prev.translate = ['130%', 0, 0];
+									swiper.params.creativeEffect.prev.rotate = [0, 0, 30];
+									swiper.slideNext();
+								} else {
+									swiper.params.creativeEffect.prev.translate = ['-130%', 0, 0];
+									swiper.params.creativeEffect.prev.rotate = [0, 0, -30];
+									swiper.slideNext();
+								}
+							} else {
+								swiper.slideNext();
+							}
+						});
+
+						checkbox.on('change', () => {
+							const checked = $slide.eq(swiper.activeIndex).find('input[type=checkbox]:checked');
+							
+							if (checked.length > 0) {
+								nextBtn.css('display', 'block');
+								swiper.params.creativeEffect.prev.translate = ['-130%', 0, 0];
+								swiper.params.creativeEffect.prev.rotate = [0, 0, -30];
+							} else {
+								nextBtn.css('display', 'none');
+							}
+						});
+
+						weight.addEventListener('keyup', () => {
+							if (weight.value) {
+								result.disabled = false;
+							} else {
+								result.disabled = true
+							}
+						});
+					},
+					slideChange(swiper) {
+						const $el = swiper.$el,
+									$slide = $el.find('.swiper-slide');
+
+						const checkbox = $slide.eq(swiper.activeIndex).find('input[type=checkbox]'),
+									nextBtn = $el.closest('.protein-check').find('.protein-check__next');
+
+						const step = document.querySelectorAll('.step__step'),
+							progress = document.querySelectorAll('.progress-bar__bar'),
+							index = Number($slide.eq(swiper.activeIndex).attr('data-index-number'));
+									
+						if (swiper.activeIndex == 4 || swiper.activeIndex == 8) {
+							const checked = $slide.eq(swiper.activeIndex).find('input[type=checkbox]:checked');
+							
+							if (checked.length > 0)	{
+								nextBtn.css('display', 'block');
+							}
+
+						} else {
+							nextBtn.css('display', 'none');
+						}
+
+						if (swiper.activeIndex <= 7) {
+							step.forEach((item) => {
+								item.removeAttribute('aria-current');
+							});
+
+							step[0].setAttribute('aria-current', 'step');
+										
+							progress[0].children[0].style.width = index * (100 / 8) + '%';
+							progress[1].children[0].style.width = 0;
+						} else if (swiper.activeIndex <= 8) {
+							step.forEach((item) => {
+								item.removeAttribute('aria-current');
+							});
+
+							step[1].setAttribute('aria-current', 'step');
+							
+							progress[1].children[0].style.width = index * (100 / 1) + '%';
+							progress[2].children[0].style.width = 0;
+						} else if (swiper.activeIndex >= 9) {
+							step.forEach((item) => {
+								item.removeAttribute('aria-current');
+							});
+
+							step[2].setAttribute('aria-current', 'step');
+							
+							progress[2].children[0].style.width = index * (100 / 2) + '%';
+						}
+
+						if (swiper.activeIndex === 10) {
+							$slide.eq(swiper.activeIndex).find('input[type=number]')[0].focus();
+						}
+					},
+					slidePrevTransitionEnd(swiper) {
+						const $el = swiper.$el,
+									$slide = $el.find('.swiper-slide');
+
+						if(swiper.activeIndex <= 4 && swiper.activeIndex > 0) {
+							if ($slide.eq(swiper.activeIndex - 1).find('input[type=radio]:last-of-type')[0].checked) {
+								swiper.params.creativeEffect.prev.translate = ['130%', 0, 0];
+								swiper.params.creativeEffect.prev.rotate = [0, 0, 30];
+								swiper.update();
+							}
+
+							if ($slide.eq(swiper.activeIndex - 1).find('input[type=radio]:first-of-type')[0].checked) {
+								swiper.params.creativeEffect.prev.translate = ['-130%', 0, 0];
+								swiper.params.creativeEffect.prev.rotate = [0, 0, -30];
+								swiper.update();
+							}
+						}						
+
+						swiper.navigation.init();
+					},
+					slidePrevTransitionStart(swiper) {
+						const $el = swiper.$el,
+									$slide = $el.find('.swiper-slide');
+
+						const radio = $slide.eq(swiper.activeIndex).find('input[type=radio]:checked'),
+									checkbox = $slide.eq(swiper.activeIndex).find('input[type=checkbox]:checked'),
+									nextBtn = $el.closest('.protein-check').find('.protein-check__next');
+
+						if (radio.length > 0) {
+							radio.forEach(item => {
+								item.checked = false;
+							});
+						}
+
+						if (checkbox.length > 0) {
+							checkbox.forEach(item => {
+								item.checked = false;
+								nextBtn.css('display', 'none');
+							});
+						}
+
+						swiper.navigation.destroy();
+					}
+				},
+				speed: 400
+			});
+		});
+	</script>
+</body>
+</html>

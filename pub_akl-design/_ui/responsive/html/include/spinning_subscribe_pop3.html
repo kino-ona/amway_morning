@@ -1,0 +1,319 @@
+<!-- S : 20220517 스피닝 구독서비스 구독 해지 팝업(혜택이 있을 경우) -->
+<!-- <div class="layerWrapper" id="pop-payment"> -->
+<div id="spinning_subscribe_pop3" class="layer-area plp-v2 plp-v2-st2">
+	<div class="layer-area_container with_pop_head  shipping_delivery_st02 subscribe_popup">
+		<div class="layer-prd_search_top cash_tax">
+			<div class="pop_head">
+				<span><button class="btn_back"><i class="sp_ic">이전</i></button></span>
+				<h2 class="tax">프리미엄 서비스 구독 해지</h2>
+			</div>
+
+			<div class="layer-content-cash new-payment gift_order renew">
+				<div class="subscribe_pop">
+					<div class="gray_box">
+						<p>지금 해지하시면 현재 받고 계신<br>혜택 이용이 종료 됩니다.</p>
+						<span>이용 기간 : 2022.09.01 (목) ~ 2022.11.30 (수)</span>
+						<div class="subscribe_money_check">
+							<span class="black"><em>3</em> 개월 간</span>
+							<span class="cancel"><em>19,900</em>원</span>
+							<span class="red"><em>0</em>원</span>
+							구독
+						</div>
+					</div>
+
+					<p class="subscribe_desc">지금 해지하셔도 <span>2022년 11월 30일</span>까지 25센트 라이드 프리미엄 서비스를 사용하실 수 있습니다.</p>
+					<p class="subscribe_desc">서비스는 <span>2022년 12월 1일</span> 자동 해지 됩니다.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="layer-area_bottom01">
+			<div class="align-box size-auto">
+				<button type="button" class="btn-modal_close v2">해지하기</button>
+				<button type="button" class="btn-modal_apply">서비스 계속 이용</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- </div> -->
+<!-- E : 20220517 스피닝 구독서비스 구독 해지 팝업(혜택이 있을 경우) -->
+
+<!-- S : 20220503 장스오 약관 추가 -->
+<div id="loadLayer7"></div>
+<div id="loadLayer12"></div>
+<!-- E : 20220503 장스오 약관 추가 -->
+
+
+<script type="text/javascript">
+	$(function () {
+		layerPopOver('', '#pop-payment');
+	});
+	jQuery(function () {
+		// 190412 결제수단 선택 탭 
+		$('.payTaba').each(function () {
+			$(this).click(function () {
+				var pay_box = $(".payTaba");
+				$('.payTaba').removeClass('on');
+				$(this).addClass('on');
+				for (j = 0; j < pay_box.length + 1; j++) {
+					var choice_active = $(".pay_cont" + [j]);
+					if ($('.payTab' + [j]).hasClass('on')) {
+						choice_active.show();
+					} else {
+						choice_active.hide();
+						$('.payTab' + [j]).removeClass('on');
+					}
+				}
+			});
+		});
+	});
+</script>
+<script>
+	$(function () {
+		$('.layer-area_container').addClass('with_pop_head');
+		$('.layer-area_container .pop_head').show();
+	});
+	var swiper = new Swiper(".mySwiper", {
+		cssWidthAndHeight: true,
+		slidesPerView: 'auto',
+		visibilityFullFit: true,
+		autoResize: false,
+		spaceBetween: 0,
+		centeredSlides: true,
+		// initialSlide: 0, // 초기 슬라이드 위치
+		observer: true,
+		observeParents: true,
+		grabCursor: true,
+		slideToClickedSlide: true, //20220218 슬라이드 클릭 시 이동
+		keyboard: {
+			enabled: true,
+		},
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		}
+	});
+
+	// 토스트팝업 20211215
+	$('.payment-basic').click(function () {
+		$('.toastPopup.payment').css('display', 'block').delay(3000).fadeOut(600);
+	});
+
+	// apay 결제수단
+	$('.payTab.v2 > #payment-other').on('click', function () {
+		$('.payTab1, .payTab2, .payTab3, .payTab4, .payTab5').removeClass('on');
+		$('.payTab.v2 > #payment-other').closest('.payTab.v2').find('.payTab_button_area').css('display', 'block');
+		$('.pay_cont').closest('#target_payment > .accodion_box_cont.apay-loose').find('.payTab_cont_area').css(
+			'display', 'none');
+		$('.pay_cont').closest('#target_payment > .accodion_box_cont.apay-loose').find('.pay_cont_tail').css(
+			'display', 'none'); // 20220121 추가
+		$('.pay_cont').closest('#target_payment > .accodion_box_cont.apay-loose').css('background-color', '#fff');
+		$('.pay_cont').closest('#target_payment > .accodion_box_cont.payment-other').css('background-color',
+			'#f4f4f4');
+		$('.pay_cont').css('border-top', 'none');
+	});
+
+	$('.payTab1').on('click', function () {
+		$('.payTab2, .payTab3, .payTab4, .payTab5').removeClass('on');
+		$('.pay_cont').closest('#target_payment > .accodion_box_cont.apay-loose').css('background-color',
+			'#f4f4f4');
+		$('.pay_cont').closest('#target_payment > .accodion_box_cont.payment-other').css('background-color',
+			'#fff');
+		$('.pay_cont').closest('#target_payment > .accodion_box_cont.payment-other').find('.payTab_cont_area').css(
+			'background-color', '#fff');
+		$('.pay_cont').closest('#target_payment > .accodion_box_cont.apay-loose').find('.payTab_cont_area').css(
+			'display', 'block');
+		$('.pay_cont').closest('#target_payment > .accodion_box_cont.payment-other').find('.payTab_cont_area').css(
+			'display', 'none'); // 20220120 추가
+		$('.pay_cont').closest('#target_payment > .accodion_box_cont.apay-loose').find('.pay_cont_tail').css(
+			'display', 'block'); // 20220121 추가
+		$('.pay_cont').closest('#target_payment > .accodion_box_cont.payment-other').find('.pay_cont_tail').css(
+			'display', 'none'); // 20220121 추가
+		$('.pay_cont').closest('#target_payment > .accodion_box_cont.payment-other').find('.payTab_cont_area').css(
+			'border-top', 'none');
+		$('.payTab.v2 > #payment-other').closest('.payTab.v2').find('.payTab_button_area').css('display', 'none');
+		$('.pay_cont').css('border-top', 'none');
+		$('.payTab.v2 > #payment-other').prop('checked', false);
+	});
+
+	$('.payTab2').on('click', function () {
+		$('.payTab1, .payTab3, .payTab4, .payTab5').removeClass('on');
+		$('.pay_cont').closest('#target_payment > .accodion_box_cont.payment-other').find('.payTab_cont_area').css(
+			'display', 'block'); // 20220120 추가
+		$('.pay_cont').closest('#target_payment > .accodion_box_cont.apay-loose').find('.payTab_cont_area').css(
+			'display', 'none'); // 20220120 추가
+		$('.pay_cont').closest('#target_payment > .accodion_box_cont.apay-loose').find('.pay_cont_tail').css(
+			'display', 'none'); // 20220121 추가
+		$('.pay_cont').closest('#target_payment > .accodion_box_cont.payment-other').find('.pay_cont_tail').css(
+			'display', 'block'); // 20220121 추가
+		$('.pay_cont').closest('#target_payment > .accodion_box_cont.apay-loose').css('background-color', '#fff');
+		$('.pay_cont').closest('#target_payment > .accodion_box_cont.payment-other').css('background-color',
+			'#f4f4f4');
+		$('.pay_cont').css('border-top', 'none');
+		$('.pay_cont').closest('#target_payment > .accodion_box_cont.payment-other .payTab_cont_area').css(
+			'border-top', '1px solid #d7d7d7')
+	});
+
+	$('.payTab3').on('click', function () {
+		$('.payTab1, .payTab2, .payTab4, .payTab5').removeClass('on');
+		$('.pay_cont').closest('#target_payment > .accodion_box_cont.apay-loose').css('background-color',
+			'#f4f4f4');
+		$('.pay_cont').closest('#target_payment > .accodion_box_cont.payment-other').css('background-color',
+			'#fff');
+		$('.pay_cont').closest('#target_payment > .accodion_box_cont.payment-other').find('.payTab_cont_area').css(
+			'background-color', '#fff');
+		$('.pay_cont').closest('#target_payment > .accodion_box_cont.payment-other').find('.payTab_cont_area').css(
+			'display', 'none'); // 20220120 추가
+		$('.pay_cont').closest('#target_payment > .accodion_box_cont.payment-other').find('.pay_cont_tail').css(
+			'display', 'none'); // 20220121 추가
+		$('.pay_cont').closest('#target_payment > .accodion_box_cont.apay-loose').find('.pay_cont_tail').css(
+			'display', 'block'); // 20220121 추가
+		$('.payTab.v2 > #payment-other').closest('.payTab.v2').find('.payTab_button_area').css('display', 'none');
+		$('.pay_cont').closest('#target_payment > .accodion_box_cont.apay-loose').find('.payTab_cont_area').css(
+			'display', 'block');
+		$('.pay_cont').closest('#target_payment > .accodion_box_cont.payment-other').find('.payTab_cont_area').css(
+			'border-top', 'none');
+		$('.payTab.v2 > #payment-other').prop('checked', false);
+	});
+
+	$('.payTab4').on('click', function () {
+		$('.payTab1, .payTab2, .payTab3, .payTab5').removeClass('on');
+		$('.pay_cont').closest('#target_payment > .accodion_box_cont.payment-other').find('.payTab_cont_area').css(
+			'display', 'block'); // 20220120 추가
+		$('.pay_cont').closest('#target_payment > .accodion_box_cont.apay-loose').find('.payTab_cont_area').css(
+			'display', 'none'); // 20220120 추가
+		$('.pay_cont').closest('#target_payment > .accodion_box_cont.payment-other').find('.pay_cont_tail').css(
+			'display', 'block'); // 20220121 추가
+		$('.pay_cont').closest('#target_payment > .accodion_box_cont.apay-loose').find('.pay_cont_tail').css(
+			'display', 'none'); // 20220121 추가
+		$('.pay_cont').closest('#target_payment > .accodion_box_cont.apay-loose').css('background-color', '#fff');
+		$('.pay_cont').closest('#target_payment > .accodion_box_cont.payment-other').css('background-color',
+			'#f4f4f4');
+		$('.pay_cont').closest('#target_payment > .accodion_box_cont.payment-other .payTab_cont_area').css(
+			'border-top', '1px solid #d7d7d7')
+	});
+
+	$('.payTab5').on('click', function () {
+		$('.payTab1, .payTab2, .payTab3, .payTab4').removeClass('on');
+		$('.pay_cont').closest('#target_payment > .accodion_box_cont.payment-other').find('.payTab_cont_area').css(
+			'display', 'block'); // 20220120 추가
+		$('.pay_cont').closest('#target_payment > .accodion_box_cont.apay-loose').find('.payTab_cont_area').css(
+			'display', 'none'); // 20220120 추가
+		$('.pay_cont').closest('#target_payment > .accodion_box_cont.apay-loose').find('.pay_cont_tail').css(
+			'display', 'none'); // 20220121 추가
+		$('.pay_cont').closest('#target_payment > .accodion_box_cont.payment-other').find('.pay_cont_tail').css(
+			'display', 'block'); // 20220121 추가
+		$('.pay_cont').closest('#target_payment > .accodion_box_cont.apay-loose').css('background-color', '#fff');
+		$('.pay_cont').closest('#target_payment > .accodion_box_cont.payment-other').css('background-color',
+			'#f4f4f4');
+		$('.pay_cont').closest('#target_payment > .accodion_box_cont.payment-other .payTab_cont_area').css(
+			'border-top', '1px solid #d7d7d7')
+	});
+
+	$('.pay_cont.creditCard > .card-method > .payment-item-f.withLineB > .point-tit.withTooltip > #chk_p_02').on('click',
+		function () {
+			$(this).closest('.payment-item-f.withLineB').siblings('.cont_card_detail').toggle();
+			$(this).closest('.payment-item-f.withLineB').siblings('.cont_card_detail').find('#paymentType02_01').prop(
+				'checked', true);
+		});
+
+	$('#creditCardKind').change(function () {
+		var result = $('#creditCardKind option:selected').val();
+		if ($(window).width() > 769 && result == 'C02') {
+			$('.bonus_use_area').css('display', 'inline-block');
+			$('.pay_cont.creditCard > .row.card-method > .form_group_a > .payment-item-a').css('padding-bottom',
+				'10px');
+		} else if ($(window).width() < 768 && (result == 'C02')) {
+			$('.bonus_use_area').css('display', 'inline-block');
+			$('.pay_cont.creditCard > .row.card-method > .form_group_a > .payment-item-a').css('padding-bottom',
+				'0');
+		} else {
+			$('.bonus_use_area').hide();
+		};
+	});
+
+	var tabArea = $('.tabs_block_wrap'),
+		tabMenu = tabArea.find('.tab-toggle');
+	payMenu = $('#target_payment .payTaba');
+
+	var toggleHandler = function () {
+		payMenu.on('click', function (e) {
+			e.preventDefault();
+			$(this).addClass('on');
+			$(this).siblings().removeClass('on');
+			var tabContent = $(this).attr('data-tab');
+			$('.pay_cont').hide();
+			$('.pay_cont.target_' + tabContent).show();
+		})
+	}
+
+	toggleHandler();
+
+	$(function () {
+		$('.check-all').on('click', function () {
+			if ($('.check-all').is(':checked')) {
+				$('.login-form-remember').prop('checked', true);
+			} else {
+				$('.login-form-remember').prop('checked', false);
+			}
+		})
+
+		$('.login-form-remember').on('click', function () {
+			if ($('input[class=login-form-remember]:checked').length == $('.login-form-remember').length) {
+				$('.check-all').prop('checked', true);
+			} else {
+				$('.check-all').prop('checked', false);
+			}
+		})
+	})
+	// E : 20220411 결제수단 변경 팝업
+
+	function toolTips_open() {
+		var _winWidth = $(window).width();
+		var _btnToolTip = $('.toolTip-wrapper').find('.btn-tooltip');
+		var _btnTooltipClose = $('.toolTip-wrapper').find('.btn-tooltip-close');
+
+		_btnToolTip.each(function () {
+			$(this).off('click').on('click', function (e) {
+				e.preventDefault();
+
+				//컨텐츠 노출
+				var _tipContent = $(this).parent().find('.tooltip-content');
+				if (_tipContent.is(':hidden')) {
+					$(this).parent().addClass('open'); //화살표
+					_tipContent.show();
+				} else if (_tipContent.is(':visible')) {
+					$(this).parent().removeClass('open'); //화살표
+					_tipContent.hide();
+				}
+			});
+		});
+
+		//닫기 버튼
+		_btnTooltipClose.off('click').on('click', function (e) {
+			e.preventDefault();
+
+			var tooltipWrapper = $(this).parents('.toolTip-wrapper');
+			var tooltipContent = tooltipWrapper.find('.tooltip-content');
+			tooltipWrapper.removeClass('open'); //화살표
+			tooltipContent.hide();
+		});
+
+		//body 클릭 시 툴팁닫기
+		$('.toolTip-wrapper').click(function (e) {
+			e.stopPropagation();
+		});
+		$('html').click(function () {
+			$('.toolTip-wrapper').removeClass('open');
+			$('.tooltip-content').hide();
+		});
+	};
+	toolTips_open();
+
+	// 20220503 레이어오픈 함수 추가
+	$(function () {
+		AMWAY.callLayer();
+	});
+	$('#loadLayer7').load('/_ui/responsive/html/include/personal_information.html');
+	$('#loadLayer12').load('/_ui/responsive/html/include/share_cart_sop_agree.html');
+</script>

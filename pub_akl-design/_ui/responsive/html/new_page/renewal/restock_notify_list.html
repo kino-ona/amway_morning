@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<title>재입고 알림 신청 관리 | Amway Korea</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords">
+	<meta name="description" content="NY Fee Bundle">
+	<meta name="robots" content="index,follow">
+
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-lib.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/sprint.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-customer.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-shop.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-sop.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-account.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-business.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-product.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-brand.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common-v2.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common-new.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-product-renewal.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/swiper-bundle.min.css" />
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-cap2.css">
+
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.datepicker.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/owl.carousel.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/isotope.pkgd.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/select2.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/new.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.raty.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_contents.js"></script>
+
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_component.js"></script>
+</head>
+
+<body class="akl new-v2 ">
+<!-- S : 20231013 재입고 알림 신청 관리 페이지 -->
+	<!-- skipToContent -->
+	<div id="skipToContent">
+		<a href="#contents">콘텐츠 바로가기 </a>
+	</div>
+	<!-- //skipToContent -->
+
+	<main>
+		<div id="header"></div>
+
+		<div class="sub-nav-section">
+			<div class="inner">
+				<ol class="breadcrumb">
+					<li>
+						<a href="/main">홈</a>
+					</li>
+					<li>
+						<a href="/my-account">마이페이지</a>
+					</li>
+					<li>
+						<a href="/my-account/orders/recent">마이쇼핑정보</a>
+					</li>
+					<li class="active">재입고 알림 신청 관리</li>
+				</ol>
+				<!-- S : 20230110 locationBox 현행화 -->
+				<div class="locationBox">
+					<ul id="locationBoxList">
+						<li data-taggingid="마이쇼핑">
+							<a href="/my-account/orders/recent">마이쇼핑</a>
+						</li>
+						<li data-taggingid="반품내역">
+							<a href="/my-shopping/my-return">반품내역</a>
+						</li>
+						<li data-taggingid="위시리스트">
+							<a href="/shopping-lists/all">위시리스트</a>
+						</li>
+						<li data-taggingid="제품구매 예약">
+							<a href="/my-shopping/pre-reservation">제품구매 예약</a>
+						</li>
+						<li data-taggingid="중개판매 관리">
+							<a href="/my-shopping/arrangement-sales-quotation">중개판매 관리</a>
+						</li>
+						<li data-taggingid="양도/양수">
+							<a href="/my-shopping/transfer-money">양도/양수</a>
+						</li>
+						<li data-taggingid="정기주문&amp;스마트오더 내역">
+							<a href="/sop/list-profiles">정기주문&amp;스마트오더 내역</a>
+						</li>
+						<li data-taggingid="장바구니 스마트 오더 내역">
+							<a href="/smart-order/profiles">장바구니 스마트 오더 내역</a>
+						</li>
+						<li data-taggingid="배송지 및 주문알림 관리">
+							<a href="/my-account/address-book">배송지 및 주문알림 관리</a>
+						</li>
+						<li data-taggingid="이스프링 케어 알림 관리"><!-- 20230807 수정 -->
+							<a href="#">이스프링 케어 알림 관리</a><!-- 20230807 수정 -->
+						</li>
+						<li class="active" data-taggingid="재입고 알림 신청 관리">
+							<a href="#">재입고 알림 신청 관리</a>
+						</li>
+					</ul>
+				</div>
+				<!-- E : 20230110 locationBox 현행화 -->
+			</div>
+		</div>
+
+		<!-- container-fluid -->
+		<div class="container-fluid main-container amway-theme">
+			<!-- sop-container -->
+			<div class="sop-container">
+				<div class="sort_area">
+					<h1 class="icon-sub-title mySOP-title hd_tit_restock">재입고 알림 신청 관리</h1>
+				</div>
+
+				<div class="customer-area my_prd_check_list">
+					<div class="cart_product-list">
+						<div class="cart_top-area">
+							<div class="box_cart-count">
+								<span class="form_element-checkbox">
+									<input type="checkbox" id="Allcheck">
+									<label for="Allcheck" class="sp_chk focus">
+										<span class="txt_count">전체제품 : <span class="count_data">4</span>개</span>
+									</label>
+								</span>
+							</div>
+							<div class="cart_btn-area">
+								<span class="cart_btn-col check_del"><button type="button" class="btn_basic-a">선택 삭제</button></span>
+							</div>
+						</div>
+					</div>
+
+					<div class="box_product product_list-type">
+						<div class="product_item">
+							<div class="product_col-form cart_type">
+								<span class="form_element-checkbox no_label">
+									<input type="checkbox" id="cb1">
+									<label for="cb1" class="sp_chk focus">선택</label>
+								</span>
+							</div>
+							<div class="product_col-summery">
+								<div class="box_product-summery">
+									<div class="summery_col-thumb">
+										<a href="" class="link_product">
+											<img src="https://media.amway.co.kr/sys-master/images/hbb/h2c/9338347257886/BB_125914K_280_R.jpg">
+										</a>
+									</div>
+									<div class="summery_col-info">
+										<a href="" class="link_product">
+											<div class="flag_wrap">
+												<span class="flag_item-new">신제품</span>
+											</div>
+											<div class="product_text-data">
+												<p class="text_product-title">g&h 너리쉬 바디 워시(400 ml)</p>
+												<div class="box_product-info">
+													<div class="text_product-price unit">
+														<div class="price_contents"><span class="text_price-data">14,500</span>원</div>
+													</div>
+												</div>
+											</div>
+										</a>
+
+										<div class="product_col-spinor2">
+											<div class="spinor_area">
+												<span class="cart_btn-col"><button type="button" class="btn_basic-c">신청취소</button></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="product_item">
+							<div class="product_col-form cart_type">
+								<span class="form_element-checkbox no_label">
+									<input type="checkbox" id="cb2">
+									<label for="cb2" class="sp_chk focus">선택</label>
+								</span>
+							</div>
+							<div class="product_col-summery">
+								<div class="box_product-summery">
+									<div class="summery_col-thumb">
+										<a href="" class="link_product">
+											<img src="https://media.amway.co.kr/sys-master/images/h0a/hd8/9322154491934/BB_124111K_1_280_R.jpg">
+										</a>
+									</div>
+									<div class="summery_col-info">
+										<a href="" class="link_product">
+											<!-- <div class="flag_wrap">
+												<span class="flag_item-new">신제품</span>
+											</div> -->
+											<div class="product_text-data">
+												<p class="text_product-title">글리스터 리후레셔 스프레이</p>
+												<div class="box_product-info">
+													<div class="text_product-price unit">
+														<div class="price_contents"><span class="text_price-data">5,500</span>원</div>
+													</div>
+												</div>
+											</div>
+										</a>
+
+										<div class="product_col-spinor2">
+											<div class="spinor_area">
+												<span class="cart_btn-col"><button type="button" class="btn_basic-c">신청취소</button></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="product_item">
+							<div class="product_col-form cart_type">
+								<span class="form_element-checkbox no_label">
+									<input type="checkbox" id="cb3">
+									<label for="cb3" class="sp_chk focus">선택</label>
+								</span>
+							</div>
+							<div class="product_col-summery">
+								<div class="box_product-summery">
+									<div class="summery_col-thumb">
+										<a href="" class="link_product">
+											<img src="https://media.amway.co.kr/sys-master/images/h45/hbf/9347978428446/321721K_01_280_v2.jpg">
+										</a>
+									</div>
+									<div class="summery_col-info">
+										<a href="" class="link_product">
+											<div class="flag_wrap">
+												<span class="flag_item-new">신제품</span>
+											</div>
+											<div class="product_text-data">
+												<p class="text_product-title">정기품 송화소금</p>
+												<div class="box_product-info">
+													<div class="text_product-price unit">
+														<div class="price_contents"><span class="text_price-data">7,800</span>원</div>
+													</div>
+												</div>
+											</div>
+										</a>
+
+										<div class="product_col-spinor2">
+											<div class="spinor_area">
+												<span class="cart_btn-col"><button type="button" class="btn_basic-c">신청취소</button></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="product_item">
+							<div class="product_col-form cart_type">
+								<span class="form_element-checkbox no_label">
+									<input type="checkbox" id="cb3">
+									<label for="cb3" class="sp_chk focus">선택</label>
+								</span>
+							</div>
+							<div class="product_col-summery">
+								<div class="box_product-summery">
+									<div class="summery_col-thumb">
+										<a href="" class="link_product">
+											<img src="https://media.amway.co.kr/sys-master/images/h7a/h30/9338347388958/BB_125915K_280_R.jpg">
+										</a>
+									</div>
+									<div class="summery_col-info">
+										<a href="" class="link_product">
+											<div class="flag_wrap">
+												<span class="flag_item-new">신제품</span>
+											</div>
+											<div class="product_text-data">
+												<p class="text_product-title">g&h 리프레쉬 바디 워시(1 L)</p>
+												<div class="box_product-info">
+													<div class="text_product-price unit">
+														<div class="price_contents"><span class="text_price-data">31,000</span>원</div>
+													</div>
+												</div>
+											</div>
+										</a>
+
+										<div class="product_col-spinor2">
+											<div class="spinor_area">
+												<span class="cart_btn-col"><button type="button" class="btn_basic-c">신청취소</button></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- paging-->
+				<div class="paging-wrap">
+					<div class="paging">
+						<a href="#" class="prev">맨 처음 페이지</a>
+						<a href="#" class="before">이전 페이지</a>
+						<ul>
+							<li class="on"><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+						</ul>
+						<a href="#" class="after">다음페이지</a>
+						<a href="#" class="next">맨 마지막 페이지</a>
+					</div>
+				</div>
+				<!-- //paging -->
+			</div>
+			<!-- //sop-container -->
+		</div>
+		<!-- //container-fluid -->
+
+		<div id="quick"></div>
+		<div id="footer"></div>
+	</main>
+
+	<div id="loadLayer1"></div>
+	<div id="loadLayer2"></div>
+
+	<script>
+		$(function () {
+			// 레이어 오픈 함수 호출
+			AMWAY.callLayer();
+		});
+	</script>
+<!-- E : 20231013 재입고 알림 신청 관리 페이지 -->
+</body>
+
+</html>

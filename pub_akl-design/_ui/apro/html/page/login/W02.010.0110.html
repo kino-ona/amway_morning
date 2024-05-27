@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--
+* @ Copyright (c) EiLAB
+* @ 화면명 : 로그인(바디키)
+* @ 파일명 : html/page/login/W02.010.0110.html
+* @ 수정이력
+* =====================================================================================================
+*  날짜               작업자              요청자/상세내용
+* -----------------------------------------------------------------------------------------------------
+*  20200703           윤종규              최초작성
+*  20200715           윤종규              PC반응형화면 페이지수정
+* =====================================================================================================
+-->
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <title>로그인(바디키)</title>
+    <!-- Publish CSS -->
+    <link rel="stylesheet" type="text/css" href="../../../public/css/ui_layout.css" />
+    <link rel="stylesheet" type="text/css" href="../../../public/css/ui_common.css" />
+    <link rel="stylesheet" type="text/css" href="../../../public/css/ui_contents.css" />
+    <link rel="stylesheet" type="text/css" href="../../../public/css/ui_plugin.css" />
+    <link rel="stylesheet" type="text/css" href="../../../public/css/ui_responsive.css" />
+    <!-- Publish JS -->
+    <script type="text/javascript" src="../../../public/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../../../public/js/jquery-ui-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../../../public/js/ui_common_head.js"></script>
+    <script type="text/javascript" src="../../../public/js/ui_plugin.js"></script>
+</head>
+<body class="apro">
+<!-- S : layout -->
+<div id="layout" class="layout">
+    <!-- 20200710 헤더영역 불필요 삭제 -->
+    <!-- S : container  -->
+    <div id="container" class="container">
+        <!-- S : 20200715 cover_layer 영역추가 -->
+        <div class="cover_layer">
+        </div>
+        <!-- E : 20200715 cover_layer 영역추가 -->
+        <!-- S : contents_wrap -->
+        <div class="contents_wrap">
+            <!-- S : contents -->
+            <div class="contents single_view"> <!-- 20200710 PC 레아아웃 클래스추가-->
+                <div class="login_area">
+                    <div class="login_head">
+                        <div class="login_logo">
+                            <img src="../../../public/image/content/temp_logo.png" alt="">
+                        </div>
+                        <div class="login_text">
+                            예약을 위해<br>암웨이 계정으로 로그인 하세요!
+                        </div>
+                    </div>
+                    <div class="login_body">
+                        <div class="login_form">
+                            <div class="input_group">
+                                <div class="input_pack">
+                                    <input type="text" placeholder="ID" value="" title="아이디입력">
+                                </div>
+                                <div class="input_pack">
+                                    <input type="password" placeholder="PW" value="" title="패스워드입력">
+                                </div>
+                            </div>	
+                            <div class="btn_pack">
+                                <button type="button" class="btn_main" title="로그인버튼">로그인</button>
+                            </div>
+                        </div>
+                        <!-- s : 20200819 찾기버튼 분리 -->
+                        <div class="btn_group">
+                            <div class="btn_pack">
+                                <button type="button" class="btn_sub_text" title='아이디 찾기'>아이디 찾기</button>
+                            </div>
+                            <div class="btn_pack">
+                                <button type="button" class="btn_sub_text" title='비밀번호 찾기'>비밀번호 찾기</button>
+                            </div>
+                        </div>
+                        <!-- e : 20200819 찾기버튼 분리 -->
+                    </div>
+                </div>
+            </div>
+            <!-- E : contents -->
+        </div>		
+        <!-- E : contents_wrap -->
+        <!-- S : container_bottom -->
+        <div class="container_bottom">
+        </div>
+        <!-- E : container_bottom -->
+    </div>
+    <!-- E : container -->
+    <!-- S : footer -->
+    <div id="footer" class="footer">
+        <!-- S : footer_wrap -->
+        <div class="footer_wrap">
+        </div>
+        <!-- E : footer_wrap -->
+    </div>
+    <!-- E : footer -->
+</div>
+<!-- E : layout -->
+<!-- Publish JS -->
+<script type="text/javascript" src="../../../public/js/ui_common_body.js"></script>
+</body>
+</html>

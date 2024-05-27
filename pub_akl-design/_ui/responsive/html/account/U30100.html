@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>아이디 찾기 | ABN Korea</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords">
+	<meta name="description" content="NY Fee Bundle">
+	<meta name="robots" content="index,follow">
+
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-lib.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/base.css">
+	<!-- 코어제공 -->
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/sprint.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-customer.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-shop.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-sop.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-account.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-business.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-product.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-brand.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common-v2.css"><!-- 말줄임 css수정 : 2019.11.18 추가  -->
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-account.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common-new-v2.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-product-renewal.css">
+	<!-- 운영팀게시물 -->
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/content_res_all.css">
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.datepicker.js"></script><!-- datepicker : 2018.03.19 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/owl.carousel.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/isotope.pkgd.js"></script><!-- gnb 플러그인 : 2018.03.23 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/select2.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/new.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.raty.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_contents.js"></script><!-- brand 통합 : 2018.08.24 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_component.js"></script>
+</head>
+<body class="akl new-v2">
+	<!-- skipToContent -->
+	<div id="skipToContent">
+	<a href="#contents">콘텐츠 바로가기 </a>
+	</div>
+	<!-- //skipToContent -->
+
+	<main>
+		<div id="header"></div>
+		<div class="container-fluid main-container" id="contents">
+			<div class="print-hide breadcrumb-section">
+				<ol class="breadcrumb">
+					<li><a href="#">홈</a></li>
+					<li>아이디 찾기</li>
+				</ol>
+			</div>
+		</div>
+
+		<!-- id,pw 찾기 전체 -->
+		<div class="wrapper-memb-join seek-login-data find_my_idpw amway-theme"><!-- 2019-06-11 클래스추가 : find_my_idpw -->
+			<div class="product-list-page-title"><h1>아이디 찾기</h1></div>
+
+			<!-- 회원유형 선택하기 -->
+			<hr class="divide-line">
+			<h2 class="tit-h2">회원유형 선택</h2>
+			<div class="choose-seeking-type">
+				<span><input type="radio" name="chooseSeekingType" class="amwa-radio" id="seekID_abo"><label for="seekID_abo">암웨이 ABO</label></span>
+				<span><input type="radio" name="chooseSeekingType" class="amwa-radio" id="seekID_member"><label for="seekID_member">암웨이 Member</label></span>
+			</div>
+			<!-- //회원유형 선택하기 -->
+
+			<!-- 2019-06-11 수정 : 본인인증 삭제, ABO 선택시  / 수정 : 2018.11.06 (탭형식 원복) -->
+			<div id="choose-abo" class="navigation-tabs-container" style="display:none;">
+				<div class="simple_chk_abo">
+					<div class="author-content">
+						<strong class="tit-h2">본인확인</strong>
+						<p class="author-text">
+							회원정보에 등록된 이름, 성별, 생년월일, 휴대폰번호를 입력해주세요.
+						</p>
+
+						<!--  -->
+						<div class="validation-wrapper simpleABO">
+							<!-- 간편가입 ABO 입력 전체 -->
+							<div class="box-input-details">
+								<div class="validation-box-simple">
+									<div class="form-group ty-input-name">
+										<label class="col-md-3 col-xs-12 control-label" for="simpleName">이름<span class="ico-must-astar">필수</span></label>
+										<div class="col-md-9 col-xs-12"><input type="text" id="simpleName" class="form-control" placeholder="실명 입력"></div>
+									</div>
+
+									<div class="form-group ty-input-birth">
+										<label class="col-md-3 col-xs-12 control-label">성별<span class="ico-must-astar">필수</span></label>
+										<div class="col-md-9 col-xs-12 select-gender">
+											<div class="radio-wrapper">
+												<label class="amw-radio-wrap radio-label" for="selectGenderMale">
+													<input type="radio" name="radio-gender" class="amw-global-radio" id="selectGenderMale">
+													<span class="amw-radio-overlay"></span>
+													<span class="amw-label-radio-text">남</span>
+												</label>
+											</div>
+											<div class="radio-wrapper">
+												<label class="amw-radio-wrap radio-label" for="selectGenderFemale">
+													<input type="radio" name="radio-gender" class="amw-global-radio" id="selectGenderFemale">
+													<span class="amw-radio-overlay"></span>
+													<span class="amw-label-radio-text">여</span>
+												</label>
+											</div>
+										</div>
+									</div>
+
+									<div class="form-group ty-input-birth">
+										<label class="col-md-3 col-xs-12 control-label" for="simpleBirth">생년월일<span class="ico-must-astar">필수</span></label>
+										<div class="col-md-9 col-xs-12">
+											<input type="text" id="simpleBirth" class="form-control" value="" placeholder="예: 19800323">
+										</div>
+									</div>
+
+									<div class="form-group mobile">
+										<label class="col-md-3 control-label" for="simpleMobile">휴대폰 번호<span class="ico-must-astar">필수</span></label>
+										<div class="col-md-6 col-xs-12">
+											<div class="row form-item-row">
+												<div class="col-md-4 col-xs-4 input-part-1">
+													<select class="form-control" id="simpleMobile">
+														<option>010</option>
+														<option>011</option>
+													</select>
+												</div>
+												<div class="col-md-8 col-xs-8 input-part-2">
+													<input type="text" class="form-control" placeholder="‘-’없이 입력" title="휴대폰번호 뒷자리 입력">
+												</div>
+											</div>
+										</div>
+										<div class="col-md-3 col col-xs-12 col-space-top"><button type="button" class="bt-akl-white">인증번호 재전송</button></div>
+									</div>
+									<div class="form-group mobile-certifi">
+										<div class="col-md-3 col-empty"></div>
+										<div class="col-md-9 col-xs-12 certifi-input-box">
+											<label class="col-md-3 col-xs-12 certifi-label" for="simpleCertiNumber">인증번호 입력</label>
+											<div class="col-md-5 col-xs-8 certifi-input">
+												<input type="text" class="form-control" id="simpleCertiNumber">
+												<p class="txt-input-guide">남은시간:2분59초</p>
+											</div>
+											<div class="col-md-4 col-xs-4 col-btn"><button type="button" class="bt-akl-white">확인</button></div>
+										</div>
+										<!-- 2019-07-01 문구 추가 -->
+										<div class="col-md-3 col-empty"></div>
+										<div class="col-md-9 col-xs-12">
+											<p class="noti-suc type_in_form">휴대폰 번호 확인이 완료되었습니다.</p>
+											<p class="noti-fail type_in_form"><span>인증번호가 맞지 않습니다. 다시 입력해 주세요.</span></p>
+										</div>
+										<!-- //2019-07-01 문구 추가 -->
+									</div>
+								</div>
+							</div>
+							<!-- //간편가입 ABO 입력 전체 -->
+						</div>
+						<!-- // -->
+
+						<div class="info-txt-btm">
+							<ul class="list-type2">
+								<li>아이디를 찾지 못하신 경우 <a href="tel:1588-0080" class="type-tel">한국암웨이 고객센터 1588-0080</a> 로 연락 바랍니다.</li>
+							</ul>
+						</div>
+
+						<div class="next-control">
+							<button type="button" class="bt-akl-blue">확인</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //2019-06-11 수정 : 본인인증 삭제, ABO 선택시  / 수정 : 2018.11.06 (탭형식 원복) -->
+
+			<!-- Member 선택시 -->
+			<div id="choose-member" class="author-content member" style="display:none;">
+				<strong class="author-tit">간편확인</strong>
+				<p class="author-text">
+					간편확인은 <em>아이디의 일부가 *로 표시</em>됩니다. <br>
+					회원정보에 등록된 이름, 생년월일, 휴대폰 번호를 입력해주세요.
+				</p>
+
+				<div class="validation-wrapper simpleMember">
+					<!-- 간편확인 입력 전체 -->
+					<div class="box-input-details">
+						<div class="validation-box-simple">
+							<div class="form-group ty-input-name">
+								<label class="col-md-3 col-xs-12 control-label" for="simpleName_member">이름<span class="ico-must-astar">필수</span></label>
+								<div class="col-md-9 col-xs-12"><input type="text" id="simpleName_member" class="form-control" placeholder="실명 입력"></div>
+							</div>
+
+							<div class="form-group ty-input-birth">
+								<label class="col-md-3 col-xs-12 control-label" for="simpleBirth_member">법정생년월일<span class="ico-must-astar">필수</span></label>
+								<div class="col-md-9 col-xs-12">
+									<input type="text" id="simpleBirth_member" class="form-control" value="">
+									<p class="txt-input-guide">주민등록번호상의 생년월일을 입력해주세요. (예: 19800323)</p>
+								</div>
+							</div>
+
+							<div class="form-group mobile">
+								<label class="col-md-3 control-label" for="simpleMobile_member">휴대폰 번호<span class="ico-must-astar">필수</span></label>
+								<div class="col-md-6 col-xs-12">
+									<div class="row form-item-row">
+										<div class="col-md-4 col-xs-4 input-part-1">
+											<select class="form-control" id="simpleMobile_member">
+												<option>010</option>
+												<option>011</option>
+											</select>
+										</div>
+										<div class="col-md-8 col-xs-8 input-part-2">
+											<input type="text" class="form-control" placeholder="‘-’없이 입력" title="휴대폰번호 뒷자리 입력">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- //간편확인 입력 전체 -->
+				</div>
+
+				<div class="info-txt-btm">
+					<ul class="list-type2">
+						<li>아이디를 찾지 못하신 경우 <a href="tel:1588-0080" class="type-tel">한국암웨이 고객센터 1588-0080</a> 로 연락 바랍니다.</li>
+					</ul>
+				</div>
+
+				<div class="next-control">
+					<button type="button" class="bt-akl-blue">확인</button>
+				</div>
+			</div>
+			<!-- //Member 선택시 -->
+		</div>
+		<!-- //id,pw 찾기 전체 -->
+
+		<div id="quick"></div>
+		<div id="footer"></div>
+	</main>
+</body>
+
+<script type="text/javascript">
+/** --------------------------------------
+ *  HTML 내용 확인용으로 스크립트 추가되었습니다.
+ *  UI 공통 js에서 관리 하지 않습니다.
+ *  --------------------------------------
+ */
+$(function(){
+	//암웨이 ABO
+	$('#seekID_abo').click(function(){
+		$(this).prop("checked",true).attr('checked', 'checked');
+
+		var _parentsDiv = $(this).parents('.seek-login-data');
+		_parentsDiv.find('#choose-abo').slideDown(500);
+		_parentsDiv.find('#choose-member').hide();
+	});
+
+	//암웨이 Member
+	$('#seekID_member').click(function(){
+		$(this).prop("checked",true).attr('checked', 'checked');
+
+		var _parentsDiv = $(this).parents('.seek-login-data');
+		_parentsDiv.find('#choose-abo').hide();
+		_parentsDiv.find('#choose-member').slideDown(500);
+	});
+
+	//간편 본인확인
+	//validationStepBox();
+});
+
+//간편 본인확인
+function validationStepBox(){
+	var simpleAuthor = $('.valid-type-simple');
+	var jsBtnShow = simpleAuthor.find('.js-btn-show');
+	var hiddenBox = simpleAuthor.find('.identify-input');
+
+	$(jsBtnShow).on('click',function(e){
+		e.preventDefault();
+
+		if( hiddenBox.is(':hidden')){
+			hiddenBox.slideDown('fast');
+		}
+	});
+}
+</script>
+</html>

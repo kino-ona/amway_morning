@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<!--
+* @ Copyright (c) EiLAB
+* @ 화면명 : 메인 | 마이 프로필 | 전문가프로필보기
+* @ 파일명 : html/page/main/W04.010.0210.html
+* @ 수정이력
+* =====================================================================================================
+*  날짜               작업자              요청자/상세내용
+* -----------------------------------------------------------------------------------------------------
+*  20200731           윤종규              최초작성
+* =====================================================================================================
+-->
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <title>메인 | 마이 프로필 | 전문가프로필보기</title>
+    <!-- Publish CSS -->
+    <link rel="stylesheet" type="text/css" href="../../../public/css/ui_layout.css" />
+    <link rel="stylesheet" type="text/css" href="../../../public/css/ui_common.css" />
+    <link rel="stylesheet" type="text/css" href="../../../public/css/ui_contents.css" />
+    <link rel="stylesheet" type="text/css" href="../../../public/css/ui_plugin.css" />
+    <link rel="stylesheet" type="text/css" href="../../../public/css/ui_responsive.css" />
+    <!-- Publish JS -->
+    <script type="text/javascript" src="../../../public/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../../../public/js/jquery-ui-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../../../public/js/ui_common_head.js"></script>
+    <script type="text/javascript" src="../../../public/js/ui_plugin.js"></script>
+</head>
+<body class="apro">
+<!-- S : layout -->
+<div id="layout" class="layout">
+    <!-- S : header -->
+    <div id="header" class="header type_border"> <!-- .type_border 클래스로 헤더보더라인제어 -->
+        <!-- S : header_wrap -->
+        <div class="header_wrap">
+            <!-- s : 헤더공통영역 -->
+            <div style="line-height: 50px; font-size: 20px; color: tomato">헤더영역(공통 레이아웃)</div>
+            <!-- e : 헤더공통영역 -->
+        </div>
+        <!-- E : header_wrap -->
+    </div>
+    <!-- E : header -->
+    <!-- S : container  -->
+    <div id="container" class="container">
+        <!-- S : cover_layer -->
+        <div class="cover_layer">
+        </div>
+        <!-- E : cover_layer -->
+        <!-- S : contents_wrap -->
+        <div class="contents_wrap single_view"> <!-- .single_view PC레아아웃 클래스 -->
+            <!-- S : contents -->
+            <div class="contents">
+                <!-- s : 내비게이션(영역추가) -->
+                <div class="navigation_pack pc_view"> 
+                    <div class="navigation_depth">
+                        <div class="btn_pack">
+                            <button type="button" class="btn_sub_text">Home</button>
+                        </div>
+                    </div>
+                    <div class="navigation_depth">
+                        <div class="btn_pack">
+                            <button type="button" class="btn_sub_text">마이프로필</button>
+                        </div>
+                    </div>                    
+                </div>
+                <!-- e : 내비게이션(영역추가) -->
+                <!-- s : 뎁스타이틀 추가 -->
+                <div class="depth_title pc_view">마이프로필</div>
+                <!-- e : 뎁스타이틀 추가 -->              
+                <div class="profile_tab_form">
+                    <div class="tab_pack">
+                        <div class="tab_btn_item">
+                            <div class="tab_btn">
+                                <button type="button" title="">기본</button>
+                            </div>
+                            <div class="tab_btn active">
+                                <button type="button" title="">전문가</button>
+                            </div>
+                            <div class="navi_bar"></div>
+                        </div>
+                        <div class="tab_conts_item">
+                            <div class="tab_conts">
+                            </div>
+                            <div class="tab_conts active">
+                                <!-- s : 전문가프로필 있음 -->
+                                <div class="expert_profile" style="_display: none;">
+                                    <div class="profile_set">
+                                        <div class="profile_pack">
+                                            <div class="profile_photo">
+                                                <img src="../../../public/image/content/temp_photo.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="profile_name">한소희</div>
+                                        <div class="profile_info">@sosoy77</div>
+                                    </div>
+
+                                    <!-- s : 20201103 문안수정 -->
+                                    <div class="expert_introduce_box">
+                                        <div class="expert_head">
+                                            <div class="expert_title">
+                                                전문가 프로필
+                                            </div>
+                                            <div class="expert_util">
+                                                <div class="btn_pack">
+                                                    <button type="button" class="btn_icon icon_profile_edit" title="소개수정하기">소개수정하기</button>
+                                                </div>
+                                                <div class="btn_pack">
+                                                    <button type="button" class="btn_icon icon_delete" title="소개삭제하기">소개삭제하기</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 20201103 전문가소개삭제 -->
+                                        <div class="document_group">
+                                            <div class="document_pack type_indent">
+                                                <div class="document_title">재능분야</div>
+                                                <div class="document_describe">
+                                                    <div class="hyphen_list_pack">필라테스</div>
+                                                </div>
+                                                <div class="document_describe">
+                                                    <div class="hyphen_list_pack">발레핏</div>
+                                                </div>
+                                                <div class="document_describe">
+                                                    <div class="hyphen_list_pack">기타</div>
+                                                </div>
+                                            </div>
+                                            <!-- s : 20201103 전문가 소개생성 -->
+                                            <div class="document_pack type_indent">
+                                                <div class="document_title">소개</div>
+                                                <div class="document_describe">
+                                                    안녕하세요.<br>
+                                                    언제나 새로움을 찾는 포토그래퍼 바디프로필 전문가입니다.<br>
+                                                    항상 모든 사람과의 인연을 소중히 간직하고 본연의 매력을 찍어주려 애쓰고 있습니다.
+                                                </div>
+                                            </div>
+                                            <!-- e : 20201103 전문가 소개생성 -->
+                                            <!-- s : 20201103 경력사항 위치변경 -->
+                                            <div class="document_pack type_indent">
+                                                <div class="document_title">경력사항</div>
+                                                <div class="document_describe">
+                                                    <div class="hyphen_list_pack">2012~2013 바디핏 짐 요가강사</div>
+                                                </div>
+                                                <div class="document_describe">
+                                                    <div class="hyphen_list_pack">2014 인도 빈야사 요가 트레이니 ​</div>
+                                                </div>
+                                            </div>
+                                            <!-- e : 20201103 경력사항 위치변경 -->
+                                            <div class="document_pack type_indent">
+                                                <div class="document_title">자격증</div>
+                                                <div class="document_describe">
+                                                    <div class="hyphen_list_pack">전문포토그래픽1급</div>
+                                                </div>
+                                                <div class="document_describe">
+                                                    <div class="hyphen_list_pack">전문포토그래픽2급</div>
+                                                </div>
+                                                <div class="document_describe">
+                                                    <div class="hyphen_list_pack">전문포토그래픽2급</div>
+                                                </div>
+                                            </div>
+                                            <div class="document_pack type_indent">
+                                                <div class="document_title">수상경력</div>
+                                                <div class="document_describe">
+                                                    <div class="hyphen_list_pack">2016 대한민국 올해의 포토그래퍼</div>
+                                                </div>
+                                                <div class="document_describe">
+                                                    <div class="hyphen_list_pack">바디프로필 사진공모작 은상</div>
+                                                </div>
+                                                <div class="document_describe">
+                                                    <div class="hyphen_list_pack">국제 사진공모전 우승</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- s : 20201103 문안수정 -->
+                                </div>
+                                <!-- s : 전문가프로필 있음 -->
+                                <!-- s : 전문가프로필 없음 -->
+                                <div class="expert_profile_empty" style="display: none;">
+                                    <div class="empty_img">
+                                        <img src="../../../public/image/content/icon_no_profile.png" alt="">
+                                    </div>
+                                    <div class="empty_title">아직 전문가 등록을 하지 않으셨군요!</div>
+                                    <div class="empty_text">
+                                        전문가 프로필을 등록하시면<br>
+                                        재능을 살려 서비스를 개설할 수 있습니다.                                        
+                                    </div>
+                                    <div class="empty_text">
+                                        프로필을 등록하시겠습니까?
+                                    </div>
+                                </div>
+                                <!-- e : 전문가프로필 없음 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- E : contents -->
+        </div>
+        <!-- E : contents_wrap -->
+        <!-- S : container_bottom -->
+        <div class="container_bottom">
+            <!-- s : 전문가프로필 없음 -->
+            <div class="bottom_btn_area" style="display: none;">
+                <div class="btn_pack">
+                    <button type="button" class="btn_main" title="전문가 등록하기">전문가 등록하기</button>
+                </div>
+            </div>
+            <!-- e : 전문가프로필 없음 -->
+        </div>
+        <!-- E : container_bottom -->
+    </div>
+    <!-- E : container -->
+    <!-- S : footer -->
+    <div id="footer" class="footer">
+        <!-- S : footer_wrap -->
+        <div class="footer_wrap">
+            <!-- s : PC용 푸터영역 -->
+            <div class="footer_set pc_view"> <!-- s : .pc_view PC뷰제어 -->
+                <div class="footer_link">
+                    <div class="footer_link_item">이용약관</div>
+                    <div class="footer_link_item">전문가 이용동의서</div>
+                    <div class="footer_link_item">개인정보처리방침</div>
+                </div>
+                <div class="footer_pack">
+                    <div class="company_info">
+                        한국암웨이㈜ 서울특별시 강남구 영동대로 517 27층<br>
+                        (삼성동, 아셈타워) (대표이사 : 배수정)<br>
+                        사업자 등록번호 : 120-81-03391·통신판매신고번호 : 제 강남-1179호<br>
+                        고객센터/기술지원센터 : 1588-0080 · FAX : 02-557-2566<br>
+                        호스팅제공자 : 한국암웨이㈜ 사업자정보공개페이지
+                    </div>
+                    <div class="company_info">
+                        ALL CONTENTS Copyright<br>
+                        ⓒ 2020 Amway Korea LTD.ALL RIGHTS RESERVED
+                    </div>
+                    <div class="company_logo">
+                        <img src="../../../public/image/content/logo_amway.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- e : PC용 푸터영역 -->
+        </div>
+        <!-- E : footer_wrap -->
+    </div>
+    <!-- E : footer -->
+</div>
+<!-- E : layout -->
+<!-- Publish JS -->
+<script type="text/javascript" src="../../../public/js/ui_common_body.js"></script>
+</body>
+</html>

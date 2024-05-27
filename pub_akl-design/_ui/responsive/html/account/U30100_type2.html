@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>아이디 찾기 | ABN Korea</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords">
+	<meta name="description" content="NY Fee Bundle">
+	<meta name="robots" content="index,follow">
+
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-lib.css"><!-- 플러그인용 css : 2018.03.14 추가  -->
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common.css">
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.datepicker.js"></script><!-- datepicker : 2018.03.19 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/owl.carousel.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/isotope.pkgd.js"></script><!-- gnb 플러그인 : 2018.03.23 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/select2.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/new.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.raty.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_contents.js"></script><!-- brand 통합 : 2018.08.24 추가  -->
+</head>
+<body class="akl">
+	<!-- skipToContent -->
+	<div id="skipToContent">
+	<a href="#contents">콘텐츠 바로가기 </a>
+	</div>
+	<!-- //skipToContent -->
+
+	<main>
+		<div id="header"></div>
+		<div class="container-fluid main-container" id="contents">
+			<div class="print-hide breadcrumb-section">
+				<ol class="breadcrumb">
+					<li><a href="#">홈</a></li>
+					<li>아이디 찾기</li>
+				</ol>
+			</div>
+		</div>
+
+		<!-- id,pw 찾기 전체 -->
+		<div class="wrapper-memb-join seek-login-data amway-theme">
+			<div class="product-list-page-title"><h1>아이디 찾기</h1></div>
+
+			<!-- 회원유형 선택하기 -->
+			<hr class="divide-line">
+			<h2 class="tit-h2">회원유형 선택</h2>
+			<div class="choose-seeking-type">
+				<span><input type="radio" name="chooseSeekingType" class="amwa-radio" id="seekID_abo"><label for="seekID_abo">암웨이 ABO</label></span>
+				<span><input type="radio" name="chooseSeekingType" class="amwa-radio" id="seekID_member"><label for="seekID_member">암웨이 Member</label></span>
+			</div>
+			<!-- //회원유형 선택하기 -->
+
+			<!-- ABO 선택시  / 수정 : 2018.10.15 (탭삭제) -->
+			<div id="choose-abo" class="navigation-tabs-container" style="display:none;">
+				<div class="author-content">
+					<strong class="author-tit">본인확인</strong>
+					<p class="author-text">
+						본인확인은 <em>전체아이디가 표시</em>됩니다.<br>
+						인증 시 제공되는 정보는 해당 인증기관에서 직접 수집하며, 인증이외의 용도로 이용/저장하지 않습니다.
+					</p>
+
+					<div class="validation-wrapper findInfo_author"><!-- 수정 : 2018.10.15 (.findInfo_author 추가 / .subBiz 삭제) -->
+						<!-- 수정 : 2018.10.15 (간편 본인확인 추가) -->
+						<div class="valid-type-simple">
+							<p class="validation-para">
+								<strong>간편 확인</strong>
+								<span>고객님의 이름과 법정생년월일,<br> 성별, 휴대폰번호로 본인을 확인합니다</span><!-- 수정 : 2018.10.17 -->
+								<a href="#" class="bt-akl-blue js-btn-show" id="Authentication_Simple">간편 확인</a><!-- 수정: 2018.03.13 (Tagging ID 추가) -->
+							</p>
+
+							<!-- 본인확인 입력영역 -->
+							<div class="identify-input">
+								<strong class="author-tit">본인확인</strong>
+								<p class="author-text">
+									본인인증(휴대폰 또는 아이핀 인증)없이 간편 회원가입을 통해 가입하신 회원의 경우 이용 가능하며, <em>전체 아이디</em>가 표시됩니다.<br>
+									회원정보에 등록된 이름, 성별, 생년월일, 휴대폰번호를 입력해주세요.
+								</p>
+
+								<div class="validation-wrapper simpleABO">
+									<!-- 간편가입 ABO 입력 전체 -->
+									<div class="box-input-details">
+										<div class="validation-box-simple">
+											<div class="form-group ty-input-name">
+												<label class="col-md-3 col-xs-12 control-label" for="simpleName">이름<span class="ico-must-astar">필수</span></label>
+												<div class="col-md-9 col-xs-12"><input type="text" id="simpleName" class="form-control" placeholder="실명 입력"></div>
+											</div>
+
+											<div class="form-group ty-input-birth">
+												<label class="col-md-3 col-xs-12 control-label">성별<span class="ico-must-astar">필수</span></label>
+												<div class="col-md-9 col-xs-12 select-gender">
+													<div class="radio-wrapper">
+														<label class="amw-radio-wrap radio-label" for="selectGenderMale">
+															<input type="radio" name="radio-gender" class="amw-global-radio" id="selectGenderMale">
+															<span class="amw-radio-overlay"></span>
+															<span class="amw-label-radio-text">남</span>
+														</label>
+													</div>
+													<div class="radio-wrapper">
+														<label class="amw-radio-wrap radio-label" for="selectGenderFemale">
+															<input type="radio" name="radio-gender" class="amw-global-radio" id="selectGenderFemale">
+															<span class="amw-radio-overlay"></span>
+															<span class="amw-label-radio-text">여</span>
+														</label>
+													</div>
+												</div>
+											</div>
+
+											<div class="form-group ty-input-birth">
+												<label class="col-md-3 col-xs-12 control-label" for="simpleBirth">법정생년월일<span class="ico-must-astar">필수</span></label>
+												<div class="col-md-9 col-xs-12">
+													<input type="text" id="simpleBirth" class="form-control" value="" placeholder="예: 19800323">
+													<p class="txt-input-guide">주민등록번호상의 생년월일을 입력해주세요. </p>
+												</div>
+											</div>
+
+											<div class="form-group mobile">
+												<label class="col-md-3 control-label" for="simpleMobile">휴대폰 번호<span class="ico-must-astar">필수</span></label>
+												<div class="col-md-6 col-xs-12">
+													<div class="row form-item-row">
+														<div class="col-md-4 col-xs-4 input-part-1">
+															<select class="form-control" id="simpleMobile">
+																<option>010</option>
+																<option>011</option>
+															</select>
+														</div>
+														<div class="col-md-8 col-xs-8 input-part-2">
+															<input type="text" class="form-control" placeholder="‘-’없이 입력" title="휴대폰번호 뒷자리 입력">
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="next-control">
+										<button type="button" class="bt-akl-blue">확인</button>
+									</div>
+									<!-- //간편가입 ABO 입력 전체 -->
+								</div>
+
+							</div>
+							<!-- //본인확인 입력영역 -->
+						</div>
+						<!-- //수정 : 2018.10.15 (간편 본인확인 추가) -->
+
+						<div class="valid-type-phone">
+							<p class="validation-para">
+								<strong>휴대폰 본인확인</strong>
+								<span>고객님 명의로 된 휴대폰을 통해<br> 본인을 확인합니다.</span>
+								<a href="#" class="bt-akl-blue js-btn-show">휴대폰 본인확인</a>
+							</p>
+						</div>
+						<div class="valid-type-ipin">
+							<p class="validation-para">
+								<strong>아이핀 본인확인</strong>
+								<span>고객님의 아이핀과 패스워드를 통해<br> 본인을 확인합니다.</span>
+								<a href="#" class="bt-akl-blue js-btn-show">아이핀 본인확인</a>
+							</p>
+						</div>
+					</div>
+					<div class="info-txt-btm">
+						<ul class="list-type2">
+							<li>아이디를 찾지 못하신 경우 <a href="tel:1588-0080" class="type-tel">한국암웨이 고객센터 1588-0080</a> 로 연락 바랍니다.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- //ABO 선택시  / 수정 : 2018.10.15 (탭삭제) -->
+
+			<!-- ABO 선택시  / 수정 : 2018.10.15 (탭형식 사용안함)
+			<div id="choose-abo" class="navigation-tabs-container" style="display:none;">
+				<div class="outer-border-bottom">
+					<ul class="tabs-toggles">
+						<li class="tab-toggle-wrap active"><a class="tab-toggle" data-toggle="tab" href="#authorization-abo"><span class="toggle-text">본인인증 ABO</span> </a> </li>
+						<li class="tab-toggle-wrap"><a class="tab-toggle" data-toggle="tab" href="#authorization-simple"><span class="toggle-text">간편가입 ABO</span> </a> </li>
+					</ul>
+				</div>
+				<div class="tab-content tabs-content-blocks">
+					tab1
+					<div class="tab-pane content-block active" id="authorization-abo">
+						<h2 class="hidden">본인인증 ABO</h2>
+
+						<div class="author-content">
+							<strong class="author-tit">본인확인</strong>
+							<p class="author-text">
+								본인확인은 <em>전체아이디가 표시</em>됩니다.<br>
+								인증 시 제공되는 정보는 해당 인증기관에서 직접 수집하며, 인증이외의 용도로 이용/저장하지 않습니다.
+							</p>
+							<div class="validation-wrapper subBiz">
+								<div class="valid-type-phone">
+									<p class="validation-para">
+										<strong>휴대폰 본인확인</strong>
+										<span>고객님 명의로 된 휴대폰을 통해<br> 본인을 확인합니다.</span>
+										<a href="#" class="bt-akl-blue js-btn-show">휴대폰 본인확인</a>
+									</p>
+								</div>
+								<div class="valid-type-ipin">
+									<p class="validation-para">
+										<strong>아이핀 본인확인</strong>
+										<span>고객님의 아이핀과 패스워드를 통해<br> 본인을 확인합니다.</span>
+										<a href="#" class="bt-akl-blue js-btn-show">아이핀 본인확인</a>
+									</p>
+								</div>
+							</div>
+							<div class="info-txt-btm">
+								<ul class="list-type2">
+									<li>아이디를 찾지 못하신 경우 <a href="tel:1588-0080" class="type-tel">한국암웨이 고객센터 1588-0080</a> 로 연락 바랍니다.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					//tab1
+
+					tab2
+					<div class="tab-pane content-block" id="authorization-simple">
+						<h2 class="hidden">간편가입 ABO</h2>
+						<div class="author-content">
+							<strong class="author-tit">본인확인</strong>
+							<p class="author-text">
+								본인인증(휴대폰 또는 아이핀 인증)없이 간편 회원가입을 통해 가입하신 회원의 경우 이용 가능하며, <em>전체 아이디</em>가 표시됩니다.<br>
+								회원정보에 등록된 이름, 성별, 생년월일, 휴대폰번호를 입력해주세요.
+							</p>
+
+							<div class="validation-wrapper simpleABO">
+								간편가입 ABO 입력 전체
+								<div class="box-input-details">
+									<div class="validation-box-simple">
+										<div class="form-group ty-input-name">
+											<label class="col-md-3 col-xs-12 control-label" for="simpleName">이름</label>
+											<div class="col-md-9 col-xs-12"><input type="text" id="simpleName" class="form-control" placeholder="실명 입력"></div>
+										</div>
+
+										<div class="form-group ty-input-birth">
+											<label class="col-md-3 col-xs-12 control-label">성별</label>
+											<div class="col-md-9 col-xs-12 select-gender">
+												<div class="radio-wrapper">
+													<label class="amw-radio-wrap radio-label" for="selectGenderMale">
+														<input type="radio" name="radio-gender" class="amw-global-radio" id="selectGenderMale">
+														<span class="amw-radio-overlay"></span>
+														<span class="amw-label-radio-text">남</span>
+													</label>
+												</div>
+												<div class="radio-wrapper">
+													<label class="amw-radio-wrap radio-label" for="selectGenderFemale">
+														<input type="radio" name="radio-gender" class="amw-global-radio" id="selectGenderFemale">
+														<span class="amw-radio-overlay"></span>
+														<span class="amw-label-radio-text">여</span>
+													</label>
+												</div>
+											</div>
+										</div>
+
+										<div class="form-group ty-input-birth">
+											<label class="col-md-3 col-xs-12 control-label" for="simpleBirth">법정생년월일</label>
+											<div class="col-md-9 col-xs-12">
+												<input type="text" id="simpleBirth" class="form-control" value="" placeholder="예: 19800323">
+												<p class="txt-input-guide">주민등록번호상의 생년월일을 입력해주세요. </p>
+											</div>
+										</div>
+
+										<div class="form-group mobile">
+											<label class="col-md-3 control-label" for="simpleMobile">휴대폰 번호</label>
+											<div class="col-md-6 col-xs-12">
+												<div class="row form-item-row">
+													<div class="col-md-4 col-xs-4 input-part-1">
+														<select class="form-control" id="simpleMobile">
+															<option>010</option>
+															<option>011</option>
+														</select>
+													</div>
+													<div class="col-md-8 col-xs-8 input-part-2">
+														<input type="text" class="form-control" placeholder="‘-’없이 입력" title="휴대폰번호 뒷자리 입력">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								//간편가입 ABO 입력 전체
+							</div>
+
+							<div class="info-txt-btm">
+								<ul class="list-type2">
+									<li>아이디를 찾지 못하신 경우 <a href="tel:1588-0080" class="type-tel">한국암웨이 고객센터 1588-0080</a> 로 연락 바랍니다.</li>
+								</ul>
+							</div>
+
+							<div class="next-control">
+								<button type="button" class="bt-akl-blue">확인</button>
+							</div>
+						</div>
+					</div>
+					//tab2
+				</div>
+			</div>
+			//ABO 선택시 -->
+
+			<!-- Member 선택시 -->
+			<div id="choose-member" class="author-content member" style="display:none;">
+				<strong class="author-tit">간편확인</strong>
+				<p class="author-text">
+					간편확인은 <em>아이디의 일부가 *로 표시</em>됩니다. <br>
+					회원정보에 등록된 이름, 생년월일, 휴대폰 번호를 입력해주세요.
+				</p>
+
+				<div class="validation-wrapper simpleMember">
+					<!-- 간편확인 입력 전체 -->
+					<div class="box-input-details">
+						<div class="validation-box-simple">
+							<div class="form-group ty-input-name">
+								<label class="col-md-3 col-xs-12 control-label" for="simpleName_member">이름</label>
+								<div class="col-md-9 col-xs-12"><input type="text" id="simpleName_member" class="form-control" placeholder="실명 입력"></div>
+							</div>
+
+							<div class="form-group ty-input-birth">
+								<label class="col-md-3 col-xs-12 control-label" for="simpleBirth_member">법정생년월일</label>
+								<div class="col-md-9 col-xs-12">
+									<input type="text" id="simpleBirth_member" class="form-control" value="">
+									<p class="txt-input-guide">주민등록번호상의 생년월일을 입력해주세요. (예: 19800323)</p>
+								</div>
+							</div>
+
+							<div class="form-group mobile">
+								<label class="col-md-3 control-label" for="simpleMobile_member">휴대폰 번호</label>
+								<div class="col-md-6 col-xs-12">
+									<div class="row form-item-row">
+										<div class="col-md-4 col-xs-4 input-part-1">
+											<select class="form-control" id="simpleMobile_member">
+												<option>010</option>
+												<option>011</option>
+											</select>
+										</div>
+										<div class="col-md-8 col-xs-8 input-part-2">
+											<input type="text" class="form-control" placeholder="‘-’없이 입력" title="휴대폰번호 뒷자리 입력">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- //간편확인 입력 전체 -->
+				</div>
+
+				<div class="info-txt-btm">
+					<ul class="list-type2">
+						<li>아이디를 찾지 못하신 경우 <a href="tel:1588-0080" class="type-tel">한국암웨이 고객센터 1588-0080</a> 로 연락 바랍니다.</li>
+					</ul>
+				</div>
+
+				<div class="next-control">
+					<button type="button" class="bt-akl-blue">확인</button>
+				</div>
+			</div>
+			<!-- //Member 선택시 -->
+		</div>
+		<!-- //id,pw 찾기 전체 -->
+
+		<div id="quick"></div>
+		<div id="footer"></div>
+	</main>
+</body>
+
+<script type="text/javascript">
+/** --------------------------------------
+ *  HTML 내용 확인용으로 스크립트 추가되었습니다.
+ *  UI 공통 js에서 관리 하지 않습니다.
+ *  --------------------------------------
+ */
+$(function(){
+	//암웨이 ABO
+	$('#seekID_abo').click(function(){
+		$(this).prop("checked",true).attr('checked', 'checked');
+
+		var _parentsDiv = $(this).parents('.seek-login-data');
+		_parentsDiv.find('#choose-abo').slideDown(500);
+		_parentsDiv.find('#choose-member').hide();
+	});
+
+	//암웨이 Member
+	$('#seekID_member').click(function(){
+		$(this).prop("checked",true).attr('checked', 'checked');
+
+		var _parentsDiv = $(this).parents('.seek-login-data');
+		_parentsDiv.find('#choose-abo').hide();
+		_parentsDiv.find('#choose-member').slideDown(500);
+	});
+
+	validationStepBox(); //간편 본인확인
+});
+
+//간편 본인확인
+function validationStepBox(){
+	var simpleAuthor = $('.valid-type-simple');
+	var jsBtnShow = simpleAuthor.find('.js-btn-show');
+	var hiddenBox = simpleAuthor.find('.identify-input');
+
+	$(jsBtnShow).on('click',function(e){
+		e.preventDefault();
+
+		if( hiddenBox.is(':hidden')){
+			hiddenBox.slideDown('fast');
+		}
+	});
+}
+</script>
+</html>

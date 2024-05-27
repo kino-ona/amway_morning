@@ -1,0 +1,73 @@
+﻿/** ---------------------------------------------------------
+  * Version : AKL Hybris UIUX 1.0
+  * @ 파일 : akl-common.css
+  * @ 구분 : css import 및 폰트 설정
+  * ---------------------------------------------------------
+  */
+
+/* 코어제공 */
+/*
+@import url("select2.css");
+@import url("register.css");*/
+@import url("sprint.css");
+
+/* akl */
+@import url("akl-basic.css");
+@import url("akl-customer.css");
+@import url("akl-shop.css");
+@import url("akl-sop.css");
+@import url("akl-account.css");
+@import url("akl-business.css");
+@import url("akl-product.css");
+@import url("akl-brand.css");
+@import url("akl-brand_hw.css");
+@import url("akl-print.css");
+
+/* 운영팀게시물 */
+@import url("content_res_all.css");
+
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 300;
+	src: url(../fonts/NotoSansKR-Light.woff2) format('woff2'),
+		 url(../fonts/NotoSansKR-Light.woff) format('woff') ;
+}
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 400;
+	src: url(../fonts/NotoSansKR-Regular.woff2) format('woff2'),
+		 url(../fonts/NotoSansKR-Regular.woff) format('woff') ;
+}
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 500;
+	src: url(../fonts/NotoSansKR-Medium.woff2) format('woff2'),
+		 url(../fonts/NotoSansKR-Medium.woff) format('woff') ;
+}
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 700;
+	src: url(../fonts/NotoSansKR-Bold.woff2) format('woff2'),
+		 url(../fonts/NotoSansKR-Bold.woff) format('woff') ;
+}
+/*
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 900;
+	src: url(../fonts/NotoSansKR-Black.woff2) format('woff2'),
+		 url(../fonts/NotoSansKR-Black.woff) format('woff');
+}*/
+
+@font-face {
+	font-family:'Free 3 of 9 Regular';
+	src:url(../fonts/FREE3OF9.woff) format('woff');
+}
+
+
+/* -------- 이하 공백 -------- */

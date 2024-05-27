@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--
+* @ Copyright (c) EiLAB
+* @ 화면명 : Publishing Guide
+* @ 파일명 : html/_guide/guide/guide.html
+* @ 수정이력
+* =====================================================================================================
+*	날짜				작업자				요청자/상세내용
+* -----------------------------------------------------------------------------------------------------
+* 	20200626			윤종규			최초작성
+* =====================================================================================================
+-->
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	
+	<title>Publishing Guide</title>
+
+	<!-- Publish CSS -->
+	<link rel="stylesheet" type="text/css" href="../../../public/css/ui_layout.css" />
+	<link rel="stylesheet" type="text/css" href="../../../public/css/ui_common.css" />
+	<link rel="stylesheet" type="text/css" href="../../../public/css/ui_contents.css" />
+	<link rel="stylesheet" type="text/css" href="../../../public/css/ui_plugin.css" />
+
+	<!-- Publish JS -->
+	<script type="text/javascript" src="../../../public/js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="../../../public/js/jquery-ui-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../../../public/js/ui_plugin.js"></script>
+	<script type="text/javascript" src="../../../public/js/ui_common_head.js"></script>
+
+	<!-- zEilab guide(가이드에만 선언) -->
+	<link rel="stylesheet" type="text/css" href="../../../z_eilab/guide.css" />
+	<script type="text/javascript" src="../../../z_eilab/guide.js"></script>
+
+</head>
+<body class="apro">
+
+<!-- S : layout -->
+<div id="layout">
+
+<style>
+	.pub_guide { font-size: 14px; line-height: 22px; color: #707070; text-align: justify; }
+	.pub_section { padding: 0 15px; }
+	.pub_guide .pub_title { padding: 10px 0 5px; font-size: 16px; color: #303030; font-weight: bold; }
+	.pub_guide .pub_tbl table { width: 100%; }
+	.pub_guide .pub_tbl table th { text-align: left; font-weight: normal; }
+	.pub_conts { padding-bottom: 10px; }
+	.pub_conts b { font-size: 16px; color: #707070; }
+	.pub_section.section_caution { color: red; }
+	.pub_section.section_caution .pub_title { font-size: 20px; color: red; }
+	.pub_btn { display: inline-block; padding: 10px; border-radius: 3px; font-size: 16px; color: #ffffff; text-align: center; text-decoration: none; background: #1c1d43; }
+
+</style>
+<h1 class="example_title">&lt; Publishing Guide &gt;</h1>
+
+<div class="pub_guide">
+	<div class="pub_section">
+		<div class="pub_title"></div>
+		<div class="pub_conts">
+			<a href="../../../z_eilab/Eilab_HTML표준가이드v2.0.docx" class="pub_btn">퍼블리싱가이드 다운로드</a>
+		</div>
+		<div class="pub_conts">
+			위 문서는 EiLAB에서 제공하는 HTML표준가이드로 마크업 개발과 관련된 <b>환경 정의</b> 및 마크업 개발자가 <b>소스 코드 작성 시 준수해야할 규칙</b>이 기술되어 있습니다.
+		</div>
+	</div>
+	<div class="pub_section section_caution">
+		<div class="pub_title">※ 유의사항</div>
+		<div class="pub_conts">
+			이아이랩에서는 js, css에 대한 별도의 버전 관리를 하고 있습니다.
+			따라서 외부에서 resource(js,css) 수정이 필요한 경우 
+			이아이랩에서 관리 중인 resource 파일(ui_***.css, ui_***.js)에 직접 수정하지 마시고
+			새로운 파일을 생성하여 관리해주시기 바랍니다.
+		</div>
+	</div>
+</div>
+
+
+</div>
+<!-- E : layout -->
+
+<!-- Publish JS -->
+<script type="text/javascript" src="../../../public/js/ui_common_body.js"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!-- S : 20240409 SOP 수량 변경 팝업 -->
+<div class="layerWrapper so-op-pop so-op-pop-renewal change_qty_pop" id="change_quantity_popup">
+    <div class="popbox">
+        <div class="pop__header">
+            <h2>수량 변경</h2>
+            <button type="button" class="btn-modal_close">
+                <img src="/_ui/responsive/theme-blue/images/new_popup_close_v3.png" alt="닫기">
+            </button>
+        </div>
+        <div class="pop__content">
+            <div class="pop-sop-details prdt-cancel">
+                <div class="row">
+                    <div class="title-product-replacement-container">
+                        <div class="pdp-info page-title-container">
+                            <div class="product-details page-title">
+                                <h1 class="name">틴즈 퍼펙트 팩</h1>
+                                <div class="item-code">
+                                    <span>SKU :</span>
+                                    <span class="code">117875K4</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- img-product -->
+                    <div class="img-product type-SOP">
+                        <!-- .type-SOP 추가 -->
+                        <div class="plp-item-label-wrap">
+                            <div class="plp-item-label bg-blue">스마트 오더</div>
+                        </div>
+                        <div
+                            class="col-sm-12 col-md-6 product-image-gallery js-product-image-gallery v-m-pros new-product-image-gallery">
+                            <div class="image-gallery sopConfirmation"><img
+                                    src="/_ui/responsive/theme-blue/images/akl_common/@img_sop_package.jpg"
+                                    alt="틴즈 퍼펙트 팩"></div>
+
+                        </div>
+                        <div class="clearfix hidden-sm hidden-md hidden-lg print-hide"></div>
+
+                        <!-- pdp-info -->
+                        <div class="col-sm-12 col-md-6 pdp-info new-pdp-info">
+                            <!-- product-main-info -->
+                            <div class="product-main-info">
+                                <div class="col-md-12">
+
+                                    <div class="product-details">
+                                        <p class="price retail-price-discount"><span class="price-num">139,000</span>원</p>
+                                        <span class="additional-price">
+                                            <ul>
+                                                <li>
+                                                    <span class="retail-price-strike-out">PV 90,360 / BV 149,100</span>
+                                                </li>
+                                            </ul>
+                                        </span>
+                                    </div>
+
+                                    <div class="qty-selector-wrapper">
+                                        <div class="qty-selector-container qty-selector-container__new">
+                                            <label class="control-label" for="pdpAddtoCartInput2">수량</label>
+                                            <div class="opt-quantity opt-quantity-renew">
+                                                <input type="text" maxlength="3" class="form-control js-qty-selector-input inpNum" size="1" value="1" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" id="pdpAddtoCartInput2">
+                                                <a href="#" class="btnMinus">수량하나빼기</a>
+                                                <a href="#" class="btnPlus disabled">수량하나더하기</a>
+                                            </div>
+                                        </div>
+    
+                                        <p class="info-txt-box">수량을 늘리길 원하시는 경우 새 주문서를 생성하거나 기존 주문서에 추가해주세요.</p> <!-- 20240517 SOP 월별혜택보기 추가 수정 -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //product-main-info -->
+                        </div>
+                        <!-- //pdp-info -->
+                    </div>
+                    <!-- //img-product -->
+                </div>
+            </div>
+        </div>
+        <div class="pop__footer">
+            <button class="btn-modal_close" id="sop-prdt-cancel-closebtn">취소</button>
+            <button class="btn-modal_apply">변경사항 적용</button>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>
+
+<script>
+    $(function(){
+        $(".qty-change-btn").on("click", function(e) {
+			event.preventDefault();
+			layerPopOver(this, ".change_qty_pop");
+		});
+
+        $(".session-type .item-summary").on("click", function(e) {
+			event.preventDefault();
+			layerPopOver(this, ".change_qty_pop");
+		});
+
+        $(".section_sop-list .sop-item .box_thumb, .section_sop-list .sop-item .box_product-info").on("click", function(e){
+            event.preventDefault();
+			layerPopOver(this, ".change_qty_pop");
+        })
+    });
+</script>
+<!-- E : 20240409 SOP 수량 변경 팝업 -->
