@@ -1529,6 +1529,8 @@
 @media (max-width: 768px) {
 .box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type {
     height: unset;
+    background: url(../images/akl_plp/bg_bsop_new_02_m.png) center center no-repeat;
+    background-size: cover;
 }
 .box_sop-visual.box_sop-home.st_type2.v_04 .container::before, .box_sop-visual.box_sop-home.st_type2.v_04 .container::after {
     display: none;
@@ -1561,6 +1563,7 @@
     display:block;
     padding: 20px 16px;
     margin: 0 0 12px !important;
+    background: rgba(255, 255, 255, 0.2);;
 }
 .box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_benefit.new-type .info_benefit_txt div p {
     max-width: 240px;

@@ -1760,16 +1760,53 @@ a[class^="btn_default-"].small {line-height:24px}
 #layer-editProduct .layer-area_container .layer-area_bottom .layer-toast {
 	position: relative;
 	width: fit-content;
+	max-width: 250px;
 	margin: 0 auto -4px;
 	padding: 8px 12px;
-	white-space: nowrap;
 	background: #FFF;
 	border-radius: 8px;
 	box-shadow: 6px 4px 16px rgba(0, 0, 0, 0.2);
 	font-size: 12px;
 	font-weight: 500;
+	text-align: center;
+	word-break: keep-all;
+}
+#layer-editProduct .layer-area_container .layer-area_bottom .layer-toast span {
+	color: #018C51;
 }
 #layer-editProduct .layer-area_container .layer-area_bottom .layer-toast::after {
+	content: '';
+	position: absolute;
+	bottom: -8px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 20px;
+	height: 20px;
+	background: url(/_ui/responsive/theme-blue/images/akl_plp/ico_tooltip_arrow_wt.png) center center no-repeat;
+	background-size: cover;
+}
+#layer-addProduct .layer-area_container .layer-area_bottom .layer-toast {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 89%;
+	width: fit-content;
+	min-width: 250px;
+	margin: 0 auto -4px;
+	padding: 8px 12px;
+	background: #FFF;
+	border-radius: 8px;
+	box-shadow: 6px 4px 16px rgba(0, 0, 0, 0.2);
+	font-size: 12px;
+	font-weight: 500;
+	text-align: center;
+	word-break: keep-all;
+	z-index: 2;
+}
+#layer-addProduct .layer-area_container .layer-area_bottom .layer-toast span {
+	color: #018C51;
+}
+#layer-addProduct .layer-area_container .layer-area_bottom .layer-toast::after {
 	content: '';
 	position: absolute;
 	bottom: -8px;
@@ -1803,7 +1840,8 @@ a[class^="btn_default-"].small {line-height:24px}
 	-webkit-align-items: center;
 	align-items: center;
 	width:auto;
-	padding:14px 10px 11px 16px;
+	/* padding:14px 10px 11px 16px; */
+	padding:14px 10px 11px 10px; /* 202405 것모닝 작업 - 패딩 수정 */
 	letter-spacing: -0.4px;
 }
 
@@ -3040,6 +3078,86 @@ i.state-fail:before {transform:rotate(-45deg);-webkit-transform:rotate(-45deg)}
 .box_sop-cont .box_gift-article:before,
 .box_sop-cont .box_gift-article:after {background:url('/_ui/responsive/theme-blue/images/akl_plp/p-bg_sop.png') no-repeat 0 0}
 .box_sop-cont .box_product-summery .product_text-data .text_product-title {min-height:62px}
+/* 202405 것모닝 작업 - 텍스트 옆 PV UP, 말풍선 */
+.product_item--gutmorning .product_text-data .text_product-flag {
+	display: inline-block;
+	width: fit-content;
+	margin: 8px 0 0;
+	padding: 5px 6px 3px;
+	color: #544BFF;
+	border: 1px solid #544BFF;
+	font-size: 14px;
+	line-height: 1;
+	font-weight: 500;
+	border-radius: 6px;
+}
+.product_item--gutmorning .product_text-data .text_product-flag--secondary {
+	border-color: #E400CD;
+	color: #E400CD;
+}
+.product_item--gutmorning .product_text-data .text_product-flag--tertiary {
+	border-color: #F98113;
+	color: #F98113;
+}
+.product_item--gutmorning .product_text-data .text_product-up {
+	margin-left: 4px;
+	padding: 4px 12px;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 20px;
+	color: #018C51;
+	background: #EBF5F0;
+	border-radius: 99px;
+}
+.product_item--gutmorning .text_product-title {
+	min-height: unset !important;
+}
+.box_mobile-floating .gutmorning_tooltip {
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	transform: translate(-50%);
+	min-width: 240px;
+	padding: 8px 12px;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 20px;
+	color: #000;
+	background: #FFF;
+	border-radius: 8px;
+	box-shadow: 6px 4px 16px 0 rgba(0, 0, 0, 0.2);
+	text-align: center;
+}
+.box_mobile-floating .gutmorning_tooltip::after {
+	content: '';
+	position: absolute;
+	left: 50%;
+	bottom: -8px;
+	transform: translate(-50%);
+	width: 20px;
+	height: 20px;
+	background: url(/_ui/responsive/theme-blue/images/akl_plp/ico_tooltip_arrow_wt.png) center center no-repeat;
+	background-size: contain;
+	z-index: -1;
+}
+.box_mobile-floating .gutmorning_tooltip span {
+	color: #018C51;
+}
+@media (max-width: 768px) {
+	.product_item--gutmorning .product_text-data .text_product-flag {
+		margin: 4px 0 0;
+		padding: 2px 5px;
+		font-size: 12px;
+		line-height: 17.38px;
+		letter-spacing: -0.05em;
+	}
+	.product_item--gutmorning .product_text-data .text_product-up {
+		font-size: 12px;
+		line-height: 17.38px;
+		letter-spacing: -0.05em;
+	}
+}
+/* // 202405 것모닝 작업 - 텍스트 옆 PV UP, 말풍선 */
 .box_sop-cont .box_gift-article {background-color:#dee16e;}
 .box_sop-cont .box_gift-article .box_gift-inner:before,
 .box_sop-cont .box_gift-article .box_gift-inner:after {background:#dee16e}
@@ -3739,7 +3857,7 @@ i.state-fail:before {transform:rotate(-45deg);-webkit-transform:rotate(-45deg)}
 .layer-area_container .sorting-area .sorting-link::after {content:"";display:inline-block;width:1px;height:12px;margin:0 12px;background-color:#ccc}
 .layer-area_container .sorting-area .sorting-link:last-child::after {display:none}
 .layer-area_container .box_product.product_list-type.catalogue {border-top:0}
-.layer-area_container .layer-area_bottom {overflow:hidden;position:absolute;bottom:0;width:100%;padding-bottom:60px;z-index:100}
+.layer-area_container .layer-area_bottom {position:absolute;bottom:0;width:100%;padding-bottom:60px;z-index:100} /* 202405 것모닝 작업 - overflow hidden 속성 삭제 */
 .layer-area_container .layer-area_bottom01 {overflow:hidden;position:absolute;bottom:0;width:100%;z-index:100}
 .layer-area_container .button-box {position:absolute;bottom:0;width:100%}
 .layer-area_bottom .cart-area {position:relative;padding:23px 0 0 0;background:url(/_ui/responsive/theme-blue/images/akl_plp/floating_bottom_line.png) no-repeat left 50% top 0;background-size:auto 23px;height:0}
@@ -17728,7 +17846,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	padding: 28px 80px;
 	border-top: 1px solid #EDEDED;
 	background: #FFF;
-	z-index: 5;
+	z-index: 10;
 }
 .box_sop-product-helper .promotion_float_wrap.mo {
 	display: none;
