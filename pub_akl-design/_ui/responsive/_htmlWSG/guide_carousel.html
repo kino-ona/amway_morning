@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>carousel (플러그인) | HTML 가이드</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="index,follow">
+	<link rel="shortcut icon" type="image/x-icon" href="/_ui/responsive/theme-blue/images/akl_common/favicon.ico">
+	<link rel=”apple-touch-startup-image” href="/_ui/responsive/theme-blue/images/akl_common/favicon_app.png">
+
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-lib.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/_htmlWSG/_guide.css"><!-- html 스타일 가이드 전용 css  -->
+
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.datepicker.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/owl.carousel.js"></script>
+
+	<script type="text/javascript" src="/_ui/responsive/_htmlWSG/guide.js"></script><!-- html 스타일 가이드 전용 js  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/new.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_contents.js"></script>
+</head>
+<body class="akl htmlWSG">
+	<div id="skipToContent"><a href="#contents">콘텐츠 바로가기 </a></div>
+	<main>
+		<div id="header-guide"></div><!-- 가이드용 header -->
+		<div id="guideType_" class="container">
+			<div class="topTitle"><h1>Carousel<span>owl.carousel.js</span></h1></div>
+
+			<ol class="subList">
+				<li>
+
+					<h2 class="subHeading"><em>owlCarousel 사용방법<span>플러그인</span></em></h2>
+					<div class="codeField">
+<pre><code>$('ID 또는 class').owlCarousel({
+	loop: false,
+	nav: true,
+	dots: false,
+	margin: 0,
+	items: 1,
+	responsiveClass: true,
+	responsive: {
+	  480  : {items: 1},
+	  960  : {items: 3},
+	  1200 : {items: 5}
+	}
+});
+</code></pre>
+					</div>
+
+
+					<h2 class="subHeading titType-Example"><em>적용 예</em></h2>
+					<div class="guideCodeWrapper">
+
+
+						<div class="row featured_brands">
+							<div class=" col-sm-12">
+								<div class="amway-theme">
+									<div class="full-width-title-component">
+									<h2 class="full-width-title-component__title">암웨이 대표 브랜드</h2></div>
+								</div>
+								<div class="product-recentlyviewed__imagelist featured_brandsList owl-carousel owl-theme" id="featured_brandsList"><!-- carousel 수정(2018.06.15) : .owl-carousel.owl-theme 추가  --><!-- 2018.04.26 클래스 추가 -->
+									<div><img class="product-recentlyviewed__img" src="/_ui/responsive/theme-blue/images/akl_common/logo/nutrilite.jpg" alt="nutrilite"></div>
+									<div><img class="product-recentlyviewed__img" src="/_ui/responsive/theme-blue/images/akl_common/logo/Xs.jpg" alt="Xs"></div>
+									<div><img class="product-recentlyviewed__img" src="/_ui/responsive/theme-blue/images/akl_common/logo/artistry.jpg" alt="artistry"></div>
+									<div><img class="product-recentlyviewed__img" src="/_ui/responsive/theme-blue/images/akl_common/logo/glister.jpg" alt="glister"></div>
+									<div><img class="product-recentlyviewed__img" src="/_ui/responsive/theme-blue/images/akl_common/logo/icook.jpg" alt="icook"></div>
+									<div><img class="product-recentlyviewed__img" src="/_ui/responsive/theme-blue/images/akl_common/logo/nutrilite.jpg" alt="nutrilite"></div>
+									<div><img class="product-recentlyviewed__img" src="/_ui/responsive/theme-blue/images/akl_common/logo/Xs.jpg" alt="Xs"></div>
+								</div>
+							</div>
+						</div>
+						<script type="text/javascript">
+						$(function(){
+							$('#featured_brandsList').owlCarousel({
+								loop: false,
+								nav: true,
+								dots: false,
+								margin: 0,
+								items: 1,
+								responsiveClass: true,
+								responsive: {
+									480 : {
+										items: 1
+									},
+									960 : {
+										items: 3
+									},
+									1200 : {
+										items: 5
+									}
+								}
+							});
+						});
+						</script>
+
+						<br><br>
+
+						<!-- 수정 : 2018.09.13 (PC/MOB 통합사용) -->
+						<div class="member-brand">
+							<div class="row product-recentlyviewed">
+								<div class="col-sm-12 column product-description__section">
+									<div class="product-title-container">
+										<h2 class="amway-learning__title">암웨이 대표 브랜드</h2>
+									</div>
+									<div class="product-recentlyviewed__imagelist owl-carousel owl-theme" id="recentlyViewedListTabnew">
+										<div><a href="#"><span>뉴트리라이트</span></a></div>
+										<div><a href="#"><span>XS ENERGY</span></a></div>
+										<div><a href="#"><span>아티스트리</span></a></div>
+										<div><a href="#"><span>퍼스널 케어</span></a></div>
+										<div><a href="#"><span>이스프링</span></a></div>
+										<div><a href="#"><span>엣모스피어</span></a></div>
+										<div><a href="#"><span>암웨이퀸</span></a></div>
+										<div><a href="#"><span>암웨이홈</span></a></div>
+										<div><a href="#"><span>원포원</span></a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //수정 : 2018.09.13 (PC/MOB 통합사용) -->
+
+						<br><br>
+
+						<div id="bizMovie" class="owl-carousel owl-theme biz-slide-wrap">
+							<div class="item">
+								<div class="full-width-item second-option">
+									<div class="item-image-wrap">
+										<a href="#" class="primary-link" onclick="layerPopOver(this,'.B20206_lp1_pop');">
+											<img src="/_ui/responsive/theme-blue/images/akl_brand/artistry/thumb_biz_movie01.jpg" alt="">
+											<p>클럽 아티스트리 맨 시즌 6</p>
+											<span>동영상 플레이</span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="full-width-item second-option">
+									<div class="item-image-wrap">
+										<a href="#" class="primary-link" onclick="layerPopOver(this,'.B20206_lp2_pop');">
+											<img src="/_ui/responsive/theme-blue/images/akl_brand/artistry/thumb_biz_movie02.jpg" alt="">
+											<p>[아티스트리 맨] 클럽 아티스트리 맨 시즌 6 티저영상</p>
+											<span>동영상 플레이</span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="full-width-item second-option">
+									<div class="item-image-wrap">
+										<a href="#" class="primary-link" onclick="layerPopOver(this,'.B20206_lp3_pop');" >
+											<img src="/_ui/responsive/theme-blue/images/akl_brand/artistry/thumb_biz_movie03.jpg" alt="">
+											<p>클럽 아티스트리 맨 시즌 5</p>
+											<span>동영상 플레이</span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="full-width-item second-option">
+									<div class="item-image-wrap">
+										<a href="#" class="primary-link" onclick="layerPopOver(this,'.B20206_lp4_pop');" >
+											<img src="/_ui/responsive/theme-blue/images/akl_brand/artistry/thumb_biz_movie04.jpg" alt="">
+											<p>클럽 아티스트리 맨 시즌 4</p>
+											<span>동영상 플레이</span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="full-width-item second-option">
+									<div class="item-image-wrap">
+										<a href="#" class="primary-link" onclick="layerPopOver(this,'.B20206_lp5_pop');" >
+											<img src="/_ui/responsive/theme-blue/images/akl_brand/artistry/thumb_biz_movie05.jpg" alt="">
+											<p>[아티스트리 맨] 클럽 아티스트리 맨 시즌 4, TOP 12와의 만남 </p>
+											<span>동영상 플레이</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</li>
+			</ol>
+
+
+
+
+		</div>
+
+	</main>
+</body>
+</html>

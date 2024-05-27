@@ -1,0 +1,46 @@
+﻿@charset "UTF-8";
+
+.os_noticeRes div,.os_noticeRes span,.os_noticeRes dl,.os_noticeRes dt,.os_noticeRes dd,.os_noticeRes ul,.os_noticeRes ol,.os_noticeRes li,.os_noticeRes h1,.os_noticeRes h2,.os_noticeRes h3,.os_noticeRes h4,.os_noticeRes h5,.os_noticeRes h6,.os_noticeRes blockquote,.os_noticeRes p,.os_noticeRes address,.os_noticeRes pre,.os_noticeRes cite,.os_noticeRes form,.os_noticeRes fieldset,.os_noticeRes caption,.os_noticeRes input,.os_noticeRes textarea,.os_noticeRes select,.os_noticeRes table,.os_noticeRes th,.os_noticeRes td,.os_noticeRes map{margin:0;padding:0}
+.os_noticeRes h1,.os_noticeRes h2,.os_noticeRes h3,.os_noticeRes h4,.os_noticeRes h5,.os_noticeRes h6{line-height:normal;font-size:100%}
+.os_noticeRes dl,.os_noticeRes dt,.os_noticeRes dd,.os_noticeRes ul,.os_noticeRes ol,.os_noticeRes li{list-style:none}
+.os_noticeRes strong,.os_noticeRes em,.os_noticeRes i,.os_noticeRes address{font-style:normal;font-weight:normal}
+
+.os_noticeRes a{color:inherit;text-decoration:none}
+.os_noticeRes a:link,.os_noticeRes a:hover,.os_noticeRes a:focus,.os_noticeRes a:active{text-decoration:none}
+.os_noticeRes a:visited{color:inherit}
+
+.os_noticeRes a,.os_noticeRes span{display:inline-block}
+.os_noticeRes area{cursor:pointer}
+.os_noticeRes hr{overflow:hidden;visibility:hidden;font-size:0;line-height:0}
+
+.os_noticeRes table{border-spacing:0;border-collapse:collapse}
+.os_noticeRes caption{overflow:hidden;width:0;height:0;font-size:0;line-height:0}
+.os_noticeRes img{vertical-align:middle;border:0}
+
+.os_noticeRes label{cursor:pointer;vertical-align:middle;display:inline-block}
+.os_noticeRes button{cursor:pointer;vertical-align:middle;overflow:visible;margin:0;padding:0;border:0;background:0}
+.os_noticeRes textarea,input{vertical-align:middle;font-size:inherit;font-family:inherit}
+.os_noticeRes select{min-width:65px;height:33px;padding:.5em;background:#fff;line-height:100%;font-size:inherit;font-family:inherit;vertical-align:middle;border-radius:none}
+.os_noticeRes textarea{resize:none;border-radius:0;line-height:inherit;border:1px solid #b2b5b8}
+.os_noticeRes fieldset{border:0;padding:0}
+.os_noticeRes legend{position:absolute;left:-9999px;overflow:hidden;width:0;height:0;margin:0;padding:0;font-size:0;line-height:0}
+.os_noticeRes button[disabled],input[disabled]{cursor:default}
+.os_noticeRes input[type=text],
+.os_noticeRes input[type=password],
+.os_noticeRes input[type=tel],
+.os_noticeRes input[type=number],
+.os_noticeRes input[type=email],
+.os_noticeRes input[type=url]{-webkit-appearance:none;-moz-appearance:none;appearance:none;-webkit-border-radius:0;border-radius:none;border:1px solid #b2b5b8;height:31px;padding:0;text-indent:10px;font-size:13px}
+.os_noticeRes input[type=button],
+.os_noticeRes input[type=submit]{-webkit-appearance:none;-moz-appearance:none;appearance:none;-webkit-border-radius:0;border-radius:none}
+.os_noticeRes input[type=radio],input[type=radio]{font-size:0;vertical-align:middle}
+.os_noticeRes input[type=radio] + label,input[type=checkbox] + label{margin-left:5px;vertical-align:0;font-size:13px}
+.os_noticeRes input[type=text]:read-only,
+.os_noticeRes input[type=password]:read-only,
+.os_noticeRes input[type=tel]:read-only,
+.os_noticeRes input[type=number]:read-only,
+.os_noticeRes input[type=email]:read-only,
+.os_noticeRes input[type=url]:read-only,
+.os_noticeRes input[type=file]:read-only{background:#f4f6f7;color:#666}
+.os_noticeRes input[readonly]{background:#f4f6f7;color:#666}
+

@@ -1,0 +1,97 @@
+<!-- NEW PLP 구매공유 카카오 팝업 -->
+<div class="kakao-share-v2 acliks-share-plp renewal-fonts">
+	<h1 class="tit-kakao">소비자에게<br>제품 체험기회를 전달하세요!</h1>
+	<div class="box_share-cont">
+
+		<p class="txt_noti-share top">* 첫번째 제품의 이미지가 메시지에 표시됩니다.</p>
+		<div class="share_list-item">
+			<div class="share_col-thmb">
+				<a href="" class="link_product"><img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png"></a>
+			</div>
+			<div class="share_col-info">
+				<p class="text_product-title">아티스트리 시그니처 셀렉트 아티스트리 시그니처 셀렉트 아티스트리 시그니처 셀렉트</p>
+				<p class="text_product-price"><strong>33,000</strong>원 / <strong>1</strong>개</p>
+			</div>
+		</div>
+		<div class="share_list-item">
+			<div class="share_col-thmb">
+				<a href="" class="link_product"><img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png"></a>
+			</div>
+			<div class="share_col-info">
+				<p class="text_product-title">아티스트리 하이드라-브이 모이스처</p>
+				<p class="text_product-price"><strong>180,000</strong>원 / <strong>1</strong>개</p>
+			</div>
+		</div>
+		<div class="share_list-item">
+			<div class="share_col-thmb">
+				<a href="" class="link_product"><img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png"></a>
+			</div>
+			<div class="share_col-info">
+				<p class="text_product-title">아티스트리 하이드라-브이 모이스처</p>
+				<p class="text_product-price"><strong>180,000</strong>원 / <strong>1</strong>개</p>
+			</div>
+		</div>
+
+		<div class="box_acliks-money">
+			<p class="tit_alicks-money"><span>A Cliks Money 와 함께 공유</span><i class="txt_point-maker"></i></p>
+			<div class="box_alicks-info">
+				<span class="txt_money">A Cliks Money</span>
+				<span class="txt_money-info">* 최대 50,000원까지 공유가능</span><!--2020-09-28 최대 50,000원으로 변경-->
+			</div>
+			<div class="box_price-input">
+				<input type="text" class="form_input" title="금액 입력" value="원" placeholder="원">
+			</div>
+			<div class="box_price-info">
+				<span>보유금액:<strong>100,000</strong>원</span>
+				<span class="txt_extinction-amount">(당월 소멸 예정:<strong>50,000</strong>원)</span>
+			</div>
+		</div>
+
+		<div class="share_textbox">
+			<p class="tit_form-txt">전달 메세지</p>
+			<textarea placeholder="마음을 담은 메시지와 제품을 함께 공유해보세요."></textarea>
+		</div>
+	</div>
+	<div class="box_share-footer">
+		<div class="box_total-floating">
+			<div class="box_total-inner">
+				<span class="text_total"><strong>총</strong><strong class="point-color">518,518,000</strong>원</span>
+				<span class="text_total"><strong>총 PV /BV : </strong><strong class="point-color">370,370,000/120,120,000</strong></span>
+				<span class="text_total"><strong>A Cliks Money: </strong><strong class="point-color">20,000</strong></span>
+			</div>
+		</div>
+		<button type="button" class="btn_share-select btn_square-a">닫기</button>
+		<button type="button" class="btn_share-select btn-share"><i class="sp_ico"></i>공유대상 선택</button>
+	</div>
+
+	<button type="button" class="btn_share-noti">소비자 공유 주의사항</button>
+	<div class="box_share-noti">
+		<p class="txt_share-noti">소비자가 90일 내 다른 ABO에게 받은 링크로 이미 구매한 경우, 내가 전달한 링크로 구매 하더라도 PV/ BV는 내 실적으로 쌓이지 않습니다.</p>
+	</div>
+</div>
+<!--// NEW PLP 구매공유 카카오 팝업 -->
+
+<script>
+	$('.acliks-share-plp .btn_share-noti').click(function(e) {
+		$(this).toggleClass('active');
+		e.stopPropagation();
+	});
+
+    var $btnShare = $('.btn_product-share'),
+        $html = $('html'),
+        $current = $('.acliks_sop-pop'),
+        $kakaoShare = $( '.acliks-share-plp' ),
+        $uiLayerMask = $( '#uiLayerMask' );
+
+    $btnShare.on('click', function () {
+        $html.addClass('scrollLock');
+		$current.css('display','none');
+        $kakaoShare.addClass( 'active' );
+        $uiLayerMask.attr('style','').addClass( 'on' );
+    });
+    $('.btn_share-select.btn_square-a').on('click', function () {
+        $html.removeClass('scrollLock');
+        $kakaoShare.removeClass( 'active' );
+        $uiLayerMask.attr('style','display:none').removeClass( 'on' );
+    });
+</script>

@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>나의 주문내역 | ABN Korea</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords">
+	<meta name="description" content="NY Fee Bundle">
+	<meta name="robots" content="index,follow">
+
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-lib.css"><!-- 플러그인용 css : 2018.03.14 추가  -->
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common.css">
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.datepicker.js"></script><!-- datepicker : 2018.03.19 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/owl.carousel.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/isotope.pkgd.js"></script><!-- gnb 플러그인 : 2018.03.23 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/select2.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/new.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.raty.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_contents.js"></script><!-- brand 통합 : 2018.08.24 추가  -->
+</head>
+<body class="akl">
+	<!-- skipToContent -->
+	<div id="skipToContent">
+	<a href="#contents">콘텐츠 바로가기 </a>
+	</div>
+	<!-- //skipToContent -->
+
+	<main>
+		<div id="header"></div>
+		<div class="container-fluid main-container" id="contents">
+			<div class="print-hide breadcrumb-section">
+				<ol class="breadcrumb">
+					<li><a href="homepage-logged-in.html">홈</a></li>
+					<li><a href="#">나의 쇼핑정보</a></li>
+					<li>나의 주문내역</li>
+				</ol>
+			</div>
+		</div>
+		<div class="container-fluid my-count">
+			<div class="row">
+				<div class="container-lg">
+					<div class="account-landing-page">
+						<div class="user-account-header">
+							<div class="container">
+								<div class="row">
+									<div class="user-block col-sm-6">
+										<div class="user-image-container">
+											<img class="user-image" src="/_ui/responsive/theme-blue/images/yui.png" alt="프로필 이미지">
+											<div class="icon icon-pencil">
+												<a href="#" onclick="layerPopOver(this,'.U60000a_lp2');"><span class="hidden">프로필 사진 관리</span></a><!-- 수정 : 2018.04.12 (링크 추가) -->
+											</div>
+										</div>
+										<div class="user-info">
+											<span class="user-name">홍길동&김길동</span>
+											<span class="user-id">회원번호 : 7480002</span>
+										</div>
+									</div>
+									<div class="go-block col-sm-6">
+										<!-- <div class="amway-theme">
+											<div class="jump-to-wrapper">
+												<select class="js-jump-to-selection form-control no-uppercase-form-control" aria-hidden="true" title="간편가입 선택">
+													<option value="/my-account/terms-and-conditions-management" class="js-account-option-link text-capitalize" selected>간편가입</option>
+												</select>
+												<input type="button" class="js-jump-to-selection-btn" value="이동">
+											</div>
+										</div> -->
+
+										<!-- 수정 2018.05.16 -->
+										<div class="jump-to-wrapper">
+											<div class="jump-menu">
+												<span class="currentTxt"><a href="#">마이페이지</a></span>
+												<div class="select-wrapper">
+													<ul class="select-list">
+														<li class="sub-main"><a href="#" class="menu-dep1">마이페이지 홈</a>
+														<li class="sub-main"><a href="#" class="menu-dep1">ABO갱신</a>
+														<li>
+															<a href="#" class="menu-dep1">회원정보 관리</a>
+															<ul class="select-depth2">
+																<li><a href="#" class="menu-dep2">개인정보 수정</a></li>
+																<li><a href="#" class="menu-dep2">맞춤메시지</a></li>
+																<li><a href="#" class="menu-dep2">맞춤쪽지</a></li>
+																<li><a href="#" class="menu-dep2">ABO 자녀정보등록</a></li>
+																<li><a href="#" class="menu-dep2">AB0 등록증/수첩 재발송 신청</a></li>
+																<li><a href="#" class="menu-dep2">메뉴잠금 설정</a></li>
+															</ul>
+														</li>
+														<li>
+															<a href="#" class="menu-dep1">나의쇼핑정보</a>
+															<ul class="select-depth2">
+																<li><a href="#" class="menu-dep2 current">나의주문내역</a></li>
+																<li><a href="#" class="menu-dep2">나의반품내역</a></li>
+																<li><a href="#" class="menu-dep2">위시리시트</a></li>
+																<li><a href="#" class="menu-dep2">제품구매예약</a></li>
+																<li><a href="#" class="menu-dep2">중개판매 관리</a></li>
+																<li><a href="#" class="menu-dep2">구매권한 양도/양수</a></li>
+																<li><a href="#" class="menu-dep2">나의 정기주문&amp;스마트 오더</a></li>
+																<li><a href="#" class="menu-dep2">배송지 관리</a></li>
+															</ul>
+														</li>
+														<li>
+															<a href="#" class="menu-dep1">결제관리</a>
+															<ul class="select-depth2">
+																<li><a href="#" class="menu-dep2">계좌관리</a></li>
+																<li><a href="#" class="menu-dep2">포인트 관리</a></li>
+																<li><a href="#" class="menu-dep2">쿠폰관리</a></li>
+															</ul>
+														</li>
+														<li>
+															<a href="#" class="menu-dep1">멤버십</a>
+															<ul class="select-depth2">
+																<li><a href="#" class="menu-dep2">간편가입</a></li>
+																<li><a href="#" class="menu-dep2">개인정보 활용동의 관리</a></li>
+																<li><a href="#" class="menu-dep2">회원탈퇴</a></li>
+															</ul>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<!-- //수정 2018.05.16 -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container amway-theme"><!-- class 추가 2018.05.16 -->
+			<div class="account-area">
+				<div class="title-box">
+					<div class="product-list-page-title">
+						<h1 class="myorder">나의 주문내역</h1>
+					</div>
+				</div>
+
+				<div class="myorder-history">
+					<div class="order-info-type">
+						<ul class="list-type5">
+							<li>나의 주문내역을 확인할 수 있습니다.</li>
+							<li>회계연도 9월 기준으로 최근 2년간의 구매 내역을 확인하실 수 있습니다.</li>
+							<li>상품 준비중 또는 출고 완료의 경우 주문 취소와 배송지 변경이 불가합니다.</li>
+
+						</ul>
+					</div>
+					<div class="order-conts">
+						<div class="col-xs-3 print-hide">
+							<div class="product-list-left-refinements-slot">
+								<div class="product-list-left-refinements-component">
+									<div id="product-facet" class="pc-product-facet product__facet col-product__facet js-product-facet hidden-xs hidden-sm-down"><!-- 수정 : 2018.07.09 (hidden-sm >> hidden-sm-down) -->
+										<div class="filters-header">
+											<span>검색조건</span>
+											<button form="clearAllForm" type="submit">초기화</button>
+										</div>
+										<div class="order-require">
+											<div class="panel-group accordion-custom new-accordion-custom" id="facetAccordion" role="tablist" aria-multiselectable="true">
+												<div class="panel">
+													<div class="panel-heading" role="tab" id="">
+														<h4 class="panel-title">
+															<a role="button" class="collapse-button" data-toggle="collapse" data-parent="#facetAccordion" href="#orderDate" aria-controls="retailPriceFacetBody">
+																<span class="text-uppercase">기간선택</span>
+																<span class="pull-right icon-minus"></span>
+															</a>
+														</h4>
+													</div>
+													<div id="orderDate" class=" panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+														<div class="panel-body">
+															<div class="dateRange-area">
+																<div class="dateSel">
+																	<select class="form-control">
+																		<option>당월</option>
+																	</select>
+																</div>
+																<div class="dateStart-end">
+																	<p>기간(시작일)<span class="mob2">(예 : 19800131)</span></p>
+																	<div class="box-date-select">
+																		<input type="text" maxlength="" class="form_datetime text-center js-qty-selector-input pc" value="2018-01-22" data-max="FORCE_IN_STOCK" data-min="1" name="" id="" title="시작일자 선택">
+
+																		<!-- 추가 : 2018.26 ( input[type=date] ) -->
+																		<input type="number" maxlength="" class="form_datetime text-center js-qty-selector-input mob" value="2018-01-22" data-max="FORCE_IN_STOCK" data-min="1" name="" id="" title="시작일자 선택">
+																	</div>
+																	<p>기간(종료일)<span class="mob2">(예 : 19800131)</span></p>
+																	<div class="box-date-select">
+																		<input type="text" maxlength="" class="form_datetime text-center js-qty-selector-input pc" value="2018-01-29" data-max="FORCE_IN_STOCK" data-min="1" name="" id="" title="종료일자 선택">
+
+																		<!-- 추가 : 2018.26 ( input[type=date] ) -->
+																		<input type="number" maxlength="" class="form_datetime text-center js-qty-selector-input mob" value="2018-01-29" data-max="FORCE_IN_STOCK" data-min="1" name="" id="" title="종료일자 선택">
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="panel">
+													<div class="panel-heading" role="tab" id="">
+														<h4 class="panel-title">
+															<a role="button" class="collapse-button collapsed" data-toggle="collapse" data-parent="#facetAccordion" href="#orderChannel" aria-controls="retailPriceFacetBody">
+																<span class="text-uppercase">주문채널</span>
+																<span class="pull-right icon-minus"></span>
+															</a>
+														</h4>
+													</div>
+													<div id="orderChannel" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+														<div class="panel-body">
+															<div id="tabContent_sizePc" class="facet js-facet">
+																<div class="facet__values facet_select_list">
+																	<ul class="facet__list second-list">
+																		<li class="js-facet-value js-facet-init-value js-facet-top-value">
+																			<input id="number-ring1" type="checkbox">
+																			<label for="number-ring1" class="inline-label checklabel">
+																				<span>주문채널 전체</span>
+																			</label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring2" type="checkbox">
+																			<label for="number-ring2" class="inline-label checklabel">
+																				<span>Amway</span>
+																			</label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring3" type="checkbox">
+																			<label for="number-ring3" class="inline-label checklabel">
+																				<span>SABN</span>
+																			</label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring4" type="checkbox">
+																			<label for="number-ring4" class="inline-label checklabel">
+																				<span>MABN</span>
+																			</label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring5" type="checkbox">
+																			<label for="number-ring5" class="inline-label checklabel">
+																				<span>ABC</span>
+																			</label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring6" type="checkbox">
+																			<label for="number-ring6" class="inline-label checklabel">
+																				<span>콜센터</span></label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring7" type="checkbox">
+																			<label for="number-ring7" class="inline-label checklabel">
+																				<span>ARS</span>
+																			</label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring8" type="checkbox">
+																			<label for="number-ring8" class="inline-label checklabel">
+																				<span>온라인팩스</span>
+																			</label>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="panel">
+													<div class="panel-heading" role="tab" id="">
+														<h4 class="panel-title">
+															<a role="button" class="collapse-button collapsed" data-toggle="collapse" data-parent="#facetAccordion" href="#orderWay" aria-controls="retailPriceFacetBody">
+																<span class="text-uppercase">배송방법</span>
+																<span class="pull-right icon-minus"></span>
+															</a>
+														</h4>
+													</div>
+													<div id="orderWay" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+														<div class="panel-body">
+															<div id="tabContent_categoryPc" class="facet js-facet">
+																<div class="facet__values facet_select_list">
+																	<ul class="facet__list second-list">
+																		<li class="js-facet-value js-facet-init-value js-facet-top-value">
+																			<input id="number-ring1" type="checkbox">
+																			<label for="number-ring1" class="inline-label checklabel">
+																				<span>배송방법 전체</span>
+																			</label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring2" type="checkbox">
+																			<label for="number-ring2" class="inline-label checklabel">
+																				<span>설치</span>
+																			</label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring3" type="checkbox">
+																			<label for="number-ring3" class="inline-label checklabel">
+																				<span>픽업</span>
+																			</label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring4" type="checkbox">
+																			<label for="number-ring4" class="inline-label checklabel">
+																				<span>배달</span>
+																			</label>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="panel">
+													<div class="panel-heading" role="tab" id="">
+														<h4 class="panel-title">
+															<a role="button" class="collapse-button collapsed" data-toggle="collapse" data-parent="#facetAccordion" href="#orderGenre" aria-controls="retailPriceFacetBody">
+																<span class="text-uppercase">주문유형</span>
+																<span class="pull-right icon-minus"></span>
+															</a>
+														</h4>
+													</div>
+													<div id="orderGenre" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+														<div class="panel-body">
+															<div id="tabContent_brandPc" class="facet js-facet">
+																<div class="facet__values facet_select_list">
+																	<ul class="facet__list second-list">
+																		<li class="js-facet-value js-facet-init-value js-facet-top-value">
+																			<input id="number-ring1" type="checkbox">
+																			<label for="number-ring1" class="inline-label checklabel">
+																				<span>주문유형 전체</span>
+																			</label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring2" type="checkbox">
+																			<label for="number-ring2" class="inline-label checklabel">
+																				<span>일반주문</span>
+																			</label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring3" type="checkbox">
+																			<label for="number-ring3" class="inline-label checklabel">
+																				<span>교육장주문</span>
+																			</label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring4" type="checkbox">
+																			<label for="number-ring4" class="inline-label checklabel">
+																				<span>중개판매</span>
+																			</label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring4" type="checkbox">
+																			<label for="number-ring4" class="inline-label checklabel">
+																				<span>스마트오더</span>
+																			</label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring4" type="checkbox">
+																			<label for="number-ring4" class="inline-label checklabel">
+																				<span>제품교환</span>
+																			</label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring4" type="checkbox">
+																			<label for="number-ring4" class="inline-label checklabel">
+																				<span>누락배송</span>
+																			</label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring4" type="checkbox">
+																			<label for="number-ring4" class="inline-label checklabel">
+																				<span>그룹주문</span>
+																			</label>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="panel">
+													<div class="panel-heading" role="tab" id="">
+														<h4 class="panel-title">
+															<a role="button" class="collapse-button collapsed" data-toggle="collapse" data-parent="#facetAccordion" href="#orderCondition" aria-controls="retailPriceFacetBody">
+																<span class="text-uppercase">주문상태</span>
+																<span class="pull-right icon-minus"></span>
+															</a>
+														</h4>
+													</div>
+													<div id="orderCondition" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+														<div class="panel-body">
+															<div id="tabContent_brandPc" class="facet js-facet">
+																<div class="facet__values facet_select_list">
+																	<ul class="facet__list second-list">
+																		<li class="js-facet-value js-facet-init-value js-facet-top-value">
+																			<input id="number-ring1" type="checkbox">
+																			<label for="number-ring1" class="normal inline-label checklabel remember">
+																				<span>주문상태 전체</span>
+																			</label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring2" type="checkbox">
+																			<label for="number-ring2" class="inline-label checklabel">
+																				<span>주문 취소</span>
+																			</label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring3" type="checkbox">
+																			<label for="number-ring3" class="inline-label checklabel">
+																				<span>입금확인 대기</span>
+																			</label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring4" type="checkbox">
+																			<label for="number-ring4" class="inline-label checklabel">
+																				<span>주문 완료</span>
+																			</label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring4" type="checkbox">
+																			<label for="number-ring4" class="inline-label checklabel">
+																				<span>픽업 완료</span>
+																			</label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring4" type="checkbox">
+																			<label for="number-ring4" class="inline-label checklabel">
+																				<span>상품 준비중</span>
+																			</label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring4" type="checkbox">
+																			<label for="number-ring4" class="inline-label checklabel">
+																				<span>픽업 예약</span>
+																			</label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring4" type="checkbox">
+																			<label for="number-ring4" class="inline-label checklabel">
+																				<span>픽업 미인수</span>
+																			</label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring4" type="checkbox">
+																			<label for="number-ring4" class="inline-label checklabel">
+																				<span>부분상품 준비중</span>
+																			</label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring4" type="checkbox">
+																			<label for="number-ring4" class="inline-label checklabel">
+																				<span>출고완료</span>
+																			</label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring4" type="checkbox">
+																			<label for="number-ring4" class="inline-label checklabel">
+																				<span>미인수 자동반품</span>
+																			</label>
+																		</li>
+
+																		<!-- 수정 : 2018.11.01 (추가) -->
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="releaseCheck" type="checkbox">
+																			<label for="releaseCheck" class="inline-label checklabel">
+																				<span>부분출고완료</span>
+																			</label>
+																		</li>
+																		<!-- //수정 : 2018.11.01 (추가) -->
+																	</ul>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="btn-require">
+												<button type="button" class="bt-akl-blue">조회</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-9">
+							<!-- mobile Start -->
+							<div class="order-reqemnet mob-product-facet amway-theme row">
+								<div class="hidden-sm-down hidden-md hidden-lg toggle-buttons-container row myorder"><!-- 수정 : 2018.07.09 (.hidden-sm-down 추가) -->
+									<button class="col-sm-6 js-order-history-filters"><span class="icon-Humburger_list"></span><span>필터</span> </button>
+									<button class="col-sm-6 js-order-history-search"><span class="icon-search"></span> <span>검색</span> </button>
+								</div>
+
+								<div class="new-select form-wrapper col-md-6 col-sm-12 js-filter-form-wrapper hidden-sm hidden-xs">
+									<div class="print-hide pagination-wrapper top">
+										<div class="pagination-toolbar">
+											<div class="panel-group accordion-custom myorder" id="facetAccordion" role="tablist" aria-multiselectable="true">
+												<div class="panel">
+													<div class="panel-heading" role="tab" id="">
+														<h4 class="panel-title">
+															<a role="button" class="collapse-button" data-toggle="collapse" data-parent="#facetAccordion" href="#orderDate2" aria-controls="retailPriceFacetBody">
+																<span class="text-uppercase">기간선택</span>
+																<span class="pull-right icon-minus"></span>
+															</a>
+														</h4>
+													</div>
+													<div id="orderDate2" class=" panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+														<div class="panel-body">
+															<div class="dateRange-area">
+																<div class="dateSel">
+																	<select class="form-control">
+																		<option>당월</option>
+																	</select>
+																</div>
+																<div class="dateStart-end">
+																	<p>기간(시작일)<span class="mob2">(예 : 19800131)</span></p>
+																	<div class="box-date-select">
+																		<input type="text" maxlength="" class="form_datetime text-center js-qty-selector-input pc" value="2018-01-22" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" id="pdpAddtoCartInput" title="시작일자 선택">
+
+																		<!-- 추가 : 2018.26 ( input[type=date] ) -->
+																		<input type="number" maxlength="" class="form_datetime text-center js-qty-selector-input mob" value="2018-01-22" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" id="pdpAddtoCartInput" title="시작일자 선택">
+																	</div>
+																	<p>기간(종료일)<span class="mob2">(예 : 19800131)</span></p>
+																	<div class="box-date-select">
+																		<input type="text" maxlength="" class="form_datetime text-center js-qty-selector-input pc" value="2018-01-29" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" id="pdpAddtoCartInput" title="종료일자 선택">
+
+																		<!-- 추가 : 2018.26 ( input[type=date] ) -->
+																		<input type="number" maxlength="" class="form_datetime text-center js-qty-selector-input mob" value="2018-01-29" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" id="pdpAddtoCartInput" title="종료일자 선택">
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="panel">
+													<div class="panel-heading" role="tab" id="">
+														<h4 class="panel-title">
+															<a role="button" class="collapse-button collapsed" data-toggle="collapse" data-parent="#facetAccordion" href="#orderChannel2" aria-controls="retailPriceFacetBody">
+																<span class="text-uppercase">주문채널</span>
+																<span class="pull-right icon-minus"></span>
+															</a>
+														</h4>
+													</div>
+													<div id="orderChannel2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+														<div class="panel-body">
+															<div id="tabContent_sizePc" class="facet js-facet">
+																<div class="facet__values facet_select_list">
+																	<ul class="facet__list second-list">
+																		<li class="js-facet-value js-facet-init-value js-facet-top-value">
+																			<input id="number-ring1" type="checkbox">
+																			<label for="number-ring1" class="inline-label checklabel">
+																				<span>주문채널 전체</span>
+																			</label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring2" type="checkbox">
+																			<label for="number-ring2" class="inline-label checklabel">
+																				<span>Amway</span>
+																			</label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring3" type="checkbox">
+																			<label for="number-ring3" class="inline-label checklabel">
+																				<span>SABN</span>
+																			</label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring4" type="checkbox">
+																			<label for="number-ring4" class="inline-label checklabel">
+																				<span>MABN</span>
+																			</label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring5" type="checkbox">
+																			<label for="number-ring5" class="inline-label checklabel">
+																				<span>ABC</span>
+																			</label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring6" type="checkbox">
+																			<label for="number-ring6" class="inline-label checklabel">
+																				<span>콜센터</span></label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring7" type="checkbox">
+																			<label for="number-ring7" class="inline-label checklabel">
+																				<span>ARS</span>
+																			</label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring8" type="checkbox">
+																			<label for="number-ring8" class="inline-label checklabel">
+																				<span>온라인팩스</span>
+																			</label>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="panel">
+													<div class="panel-heading" role="tab" id="">
+														<h4 class="panel-title">
+															<a role="button" class="collapse-button collapsed" data-toggle="collapse" data-parent="#facetAccordion" href="#orderWay2" aria-controls="retailPriceFacetBody">
+																<span class="text-uppercase">배송방법</span>
+																<span class="pull-right icon-minus"></span>
+															</a>
+														</h4>
+													</div>
+													<div id="orderWay2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+														<div class="panel-body">
+															<div id="tabContent_categoryPc" class="facet js-facet">
+																<div class="facet__values facet_select_list">
+																	<ul class="facet__list second-list">
+																		<li class="js-facet-value js-facet-init-value js-facet-top-value">
+																			<input id="number-ring1" type="checkbox">
+																			<label for="number-ring1" class="inline-label checklabel">
+																				<span>배송방법 전체</span>
+																			</label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring2" type="checkbox">
+																			<label for="number-ring2" class="inline-label checklabel">
+																				<span>설치</span>
+																			</label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring3" type="checkbox">
+																			<label for="number-ring3" class="inline-label checklabel">
+																				<span>픽업</span>
+																			</label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring4" type="checkbox">
+																			<label for="number-ring4" class="inline-label checklabel">
+																				<span>배달</span>
+																			</label>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="panel">
+													<div class="panel-heading" role="tab" id="">
+														<h4 class="panel-title">
+															<a role="button" class="collapse-button collapsed" data-toggle="collapse" data-parent="#facetAccordion" href="#orderGenre2" aria-controls="retailPriceFacetBody">
+																<span class="text-uppercase">주문유형</span>
+																<span class="pull-right icon-minus"></span>
+															</a>
+														</h4>
+													</div>
+													<div id="orderGenre2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+														<div class="panel-body">
+															<div id="tabContent_brandPc" class="facet js-facet">
+																<div class="facet__values facet_select_list">
+																	<ul class="facet__list second-list">
+																		<li class="js-facet-value js-facet-init-value js-facet-top-value">
+																			<input id="number-ring1" type="checkbox">
+																			<label for="number-ring1" class="inline-label checklabel">
+																				<span>주문유형 전체</span>
+																			</label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring2" type="checkbox">
+																			<label for="number-ring2" class="inline-label checklabel">
+																				<span>일반주문</span>
+																			</label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring3" type="checkbox">
+																			<label for="number-ring3" class="inline-label checklabel">
+																				<span>교육장주문</span>
+																			</label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring4" type="checkbox">
+																			<label for="number-ring4" class="inline-label checklabel">
+																				<span>중개판매</span>
+																			</label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring4" type="checkbox">
+																			<label for="number-ring4" class="inline-label checklabel">
+																				<span>스마트오더</span>
+																			</label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring4" type="checkbox">
+																			<label for="number-ring4" class="inline-label checklabel">
+																				<span>제품교환</span>
+																			</label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring4" type="checkbox">
+																			<label for="number-ring4" class="inline-label checklabel">
+																				<span>누락배송</span>
+																			</label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring4" type="checkbox">
+																			<label for="number-ring4" class="inline-label checklabel">
+																				<span>그룹주문</span>
+																			</label>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="panel">
+													<div class="panel-heading" role="tab" id="">
+														<h4 class="panel-title">
+															<a role="button" class="collapse-button collapsed" data-toggle="collapse" data-parent="#facetAccordion" href="#orderCondition2" aria-controls="retailPriceFacetBody">
+																<span class="text-uppercase">주문상태</span>
+																<span class="pull-right icon-minus"></span>
+															</a>
+														</h4>
+													</div>
+													<div id="orderCondition2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+														<div class="panel-body">
+															<div id="tabContent_brandPc" class="facet js-facet">
+																<div class="facet__values facet_select_list">
+																	<ul class="facet__list second-list">
+																		<li class="js-facet-value js-facet-init-value js-facet-top-value">
+																			<input id="number-ring1" type="checkbox">
+																			<label for="number-ring1" class="normal inline-label checklabel remember">
+																				<span>주문상태 전체</span>
+																			</label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring2" type="checkbox">
+																			<label for="number-ring2" class="inline-label checklabel">
+																				<span>주문 취소</span>
+																			</label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring3" type="checkbox">
+																			<label for="number-ring3" class="inline-label checklabel">
+																				<span>입금확인 대기</span>
+																			</label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring4" type="checkbox">
+																			<label for="number-ring4" class="inline-label checklabel">
+																				<span>주문 완료</span>
+																			</label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring4" type="checkbox">
+																			<label for="number-ring4" class="inline-label checklabel">
+																				<span>픽업 완료</span>
+																			</label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring4" type="checkbox">
+																			<label for="number-ring4" class="inline-label checklabel">
+																				<span>상품 준비중</span>
+																			</label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring4" type="checkbox">
+																			<label for="number-ring4" class="inline-label checklabel">
+																				<span>픽업 예약</span>
+																			</label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring4" type="checkbox">
+																			<label for="number-ring4" class="inline-label checklabel">
+																				<span>픽업 미인수</span>
+																			</label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring4" type="checkbox">
+																			<label for="number-ring4" class="inline-label checklabel">
+																				<span>부분상품 준비중</span>
+																			</label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring4" type="checkbox">
+																			<label for="number-ring4" class="inline-label checklabel">
+																				<span>출고완료</span>
+																			</label>
+																		</li>
+																		<li class="js-facet-value js-facet-init-value">
+																			<input id="number-ring4" type="checkbox">
+																			<label for="number-ring4" class="inline-label checklabel">
+																				<span>미인수 자동반품</span>
+																			</label>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- 2018.09.12  모바일 조회 버튼 추가 -->
+									<div class="btn-require">
+										<button type="button" class="bt-akl-blue">조회</button>
+									</div>
+									<!--// 2018.09.12  모바일 조회 버튼 추가 -->
+								</div>
+								<div class="form-wrapper search-form-wrapper col-md-6 col-sm-12 hidden-sm hidden-xs js-search-form-wrapper">
+									<div class="myorder-search">
+										<div class="cuton-sel">
+											<select id="type" name="type" class="form-control no-uppercase-form-control" tabindex="-1" aria-hidden="true">
+												<option value="" selected="selected">전체</option>
+												<option value="">VPS코드</option>
+												<option value="">주문번호</option>
+												<option value="">제품명</option>
+												<option value="">SKU번호</option>
+											</select>
+										</div>
+										<div class="cuton-form-wrapper">
+											<div class="form-s">
+												<input type="text" id="" name="" placeholder="검색어를 입력하세요" value="" class="input-st" title="검색어 입력">
+												<button type="submit" class="btn btn-primary" id="NotificationBoard_Search"><span class="hidden-xs">검색</span></button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- //mobile End -->
+
+							<div class="myorder-list-area">
+								<div class="myorder-search">
+									<div class="cuton-sel">
+										<select id="type" name="type" class="form-control no-uppercase-form-control" tabindex="-1" aria-hidden="true">
+											<option value="" selected="selected">전체</option>
+											<option value="">VPS코드</option>
+											<option value="">주문번호</option>
+											<option value="">제품명</option>
+											<option value="">SKU번호</option>
+										</select>
+									</div>
+									<div class="cuton-form-wrapper">
+										<div class="form-s">
+											<input type="text" id="" name="" placeholder="검색어를 입력하세요" value="" class="input-st" title="검색어 입력">
+											<button type="submit" class="btn btn-primary" id="NotificationBoard_Search"><span class="hidden-xs">검색</span></button>
+										</div>
+									</div>
+								</div>
+
+								<div class="myorder-list-num">
+									<p>총 <strong>12</strong>개의 주문내역이 있습니다.</p>
+									<div class="hype-btn U70101_lp16">
+										<a class="link-btn" href="#">HyperStore 주문내역<span class="featured-product__message-icon glyphicon glyphicon-menu-right"></span></a>
+									</div>
+								</div>
+
+								<div class="myorder-list type02"><!-- 2018.08.03 다중 클래스 'type02' 추가 -->
+									<div class="list-content">
+										<div class="list-row-title row">
+											<div class="col-ak-10 ord-num">주문번호</div>
+											<div class="col-ak-10 ord-date">주문일자</div>
+											<div class="col-ak-10 ord-price">결제금액(원)/방법</div>
+											<div class="col-ak-10 ord-pvbv">총 PV/BV</div>
+											<div class="col-ak-10 ord-chnnel">주문채널/배송방법</div>
+											<div class="col-ak-10 ord-type">주문유형</div>
+											<div class="col-ak-10 ord-cond">주문상태</div>
+											<div class="col-ak-10 ord-btn"></div>
+										</div>
+
+
+										<div class="content-list">
+											<!-- tr(loop) -->
+											<div class="row con-list-item">
+												<div class="col-ak-10 ord-num">
+													<span class="tite-label">주문번호</span>
+													<span class="txte-wrap"><a href="U70101.html">1234568</a></span>
+												</div>
+												<div class="col-ak-10 ord-date">
+													<span class="tite-label">주문일자</span>
+													<span class="txte-wrap">2014-05-30</span>
+												</div>
+												<div class="col-ak-10 ord-price">
+													<span class="tite-label">결제금액</span>
+													<span class="txte-wrap">60,000<em class="price-way">(무통장입금)</em></span>
+												</div>
+												<div class="col-ak-10 ord-pvbv">
+													<span class="tite-label">총 PV/BV</span>
+													<span class="txte-wrap">211,050 /<em class="price-bv">232,500</em></span>
+												</div>
+												<div class="col-ak-10 ord-chnnel">
+													<div class="pc-in">
+														<span class="txte-wrap">ABN<em class="od-way">(배달주문)</em></span>
+													</div>
+													<div class="mob-in">
+														<p class="jumon">
+															<span class="tite-label">주문채널</span>
+															<span class="txte-wrap">온라인팩스</span>
+														</p>
+														<p class="bab">
+															<span class="tite-label">배송방법</span>
+															<span class="txte-wrap">배달주문</span>
+														</p>
+													</div>
+												</div>
+												<div class="col-ak-10 ord-type">
+													<span class="tite-label">주문유형</span>
+													<span class="txte-wrap">일반주문</span>
+												</div>
+												<div class="col-ak-10 ord-cond">
+													<span class="tite-label">주문상태</span>
+													<span class="txte-wrap">출고완료</span>
+												</div>
+												<div class="col-ak-10 ord-btn">
+													<span class="txte-wrap">
+														<button type="button" class="link-btn">택배조회</button>
+													</span>
+												</div>
+											</div>
+										 	<!--// tr(loop) -->
+
+
+											<!-- (loop) -->
+											<ul class="sub-list">
+												<li class="row con-list-item">
+													<div class="col-ak-10 ord-num">
+														<span class="tite-label">주문번호</span>
+														<span class="txte-wrap"><a href="U70101.html">1234568</a></span>
+													</div>
+													<div class="col-ak-10 ord-date">
+														<span class="tite-label">주문일자</span>
+														<span class="txte-wrap">2014-05-30</span>
+													</div>
+													<div class="col-ak-10 ord-price">
+														<span class="tite-label">결제금액</span>
+														<span class="txte-wrap">60,000</span>
+													</div>
+													<div class="col-ak-10 ord-pvbv">
+														<span class="tite-label">총 PV/BV</span>
+														<span class="txte-wrap">211,050 /<em class="price-bv">232,500</em></span>
+													</div>
+													<div class="col-ak-10 ord-chnnel">
+														<div class="pc-in">
+															<span class="txte-wrap">ABN<em class="od-way">(배달주문)</em></span>
+														</div>
+														<div class="mob-in">
+															<p class="jumon">
+																<span class="tite-label">주문채널</span>
+																<span class="txte-wrap">온라인팩스</span>
+															</p>
+															<p class="bab">
+																<span class="tite-label">배송방법</span>
+																<span class="txte-wrap">배달주문</span>
+															</p>
+														</div>
+													</div>
+													<div class="col-ak-10 ord-type">
+														<span class="tite-label">주문유형</span>
+														<span class="txte-wrap">일반주문</span>
+													</div>
+													<div class="col-ak-10 ord-cond">
+														<span class="tite-label">주문상태</span>
+														<span class="txte-wrap">출고완료</span>
+													</div>
+													<div class="col-ak-10 ord-btn">
+														<span class="txte-wrap">배송명1</span>
+													</div>
+												</li>
+											</ul>
+											<!--// (loop) -->
+
+											<!-- tr(loop) -->
+											<ul class="sub-list">
+												<li class="row con-list-item">
+													<div class="col-ak-10 ord-num">
+														<span class="tite-label">주문번호</span>
+														<span class="txte-wrap"><a href="U70101.html">1234568</a></span>
+													</div>
+													<div class="col-ak-10 ord-date">
+														<span class="tite-label">주문일자</span>
+														<span class="txte-wrap">2014-05-30</span>
+													</div>
+													<div class="col-ak-10 ord-price">
+														<span class="tite-label">결제금액</span>
+														<span class="txte-wrap">60,000</span>
+													</div>
+													<div class="col-ak-10 ord-pvbv">
+														<span class="tite-label">총 PV/BV</span>
+														<span class="txte-wrap">211,050 /<em class="price-bv">232,500</em></span>
+													</div>
+													<div class="col-ak-10 ord-chnnel">
+														<div class="pc-in">
+															<span class="txte-wrap">ABN<em class="od-way">(배달주문)</em></span>
+														</div>
+														<div class="mob-in">
+															<p class="jumon">
+																<span class="tite-label">주문채널</span>
+																<span class="txte-wrap">온라인팩스</span>
+															</p>
+															<p class="bab">
+																<span class="tite-label">배송방법</span>
+																<span class="txte-wrap">배달주문</span>
+															</p>
+														</div>
+													</div>
+													<div class="col-ak-10 ord-type">
+														<span class="tite-label">주문유형</span>
+														<span class="txte-wrap">일반주문</span>
+													</div>
+													<div class="col-ak-10 ord-cond">
+														<span class="tite-label">주문상태</span>
+														<span class="txte-wrap">출고완료</span>
+													</div>
+													<div class="col-ak-10 ord-btn">
+														<span class="txte-wrap">배송명1</span>
+													</div>
+												</li>
+											</ul>
+											<!--// tr(loop) -->
+
+											<!-- tr(loop) -->
+											<div class="row con-list-item">
+												<div class="col-ak-10 ord-num">
+													<span class="tite-label">주문번호</span>
+													<span class="txte-wrap"><a href="U70101.html">1234568</a></span>
+												</div>
+												<div class="col-ak-10 ord-date">
+													<span class="tite-label">주문일자</span>
+													<span class="txte-wrap">2014-05-30</span>
+												</div>
+												<div class="col-ak-10 ord-price">
+													<span class="tite-label">결제금액</span>
+													<span class="txte-wrap">60,000<em class="price-way">(신용카드)</em></span>
+												</div>
+												<div class="col-ak-10 ord-pvbv">
+													<span class="tite-label">총 PV/BV</span>
+													<span class="txte-wrap">211,050 /<em class="price-bv">232,500</em></span>
+												</div>
+												<div class="col-ak-10 ord-chnnel">
+													<div class="pc-in">
+														<span class="txte-wrap">ABN<em class="od-way">(설치주문)</em></span>
+													</div>
+													<div class="mob-in">
+														<p class="jumon">
+															<span class="tite-label">주문채널</span>
+															<span class="txte-wrap">온라인팩스</span>
+														</p>
+														<p class="bab">
+															<span class="tite-label">배송방법</span>
+															<span class="txte-wrap">설치주문</span>
+														</p>
+													</div>
+												</div>
+												<div class="col-ak-10 ord-type">
+													<span class="tite-label">주문유형</span>
+													<span class="txte-wrap">일반주문</span>
+												</div>
+												<div class="col-ak-10 ord-cond">
+													<span class="tite-label">주문상태</span>
+													<span class="txte-wrap">출고대기중</span>
+												</div>
+												<div class="col-ak-10 ord-btn">
+													<span class="txte-wrap">
+														<button type="button" class="bt-akl-white mini">주문취소</button><!-- 수정 : 2018.11.12 -->
+													</span>
+												</div>
+											</div>
+											<!--// tr(loop) -->
+
+											<!-- tr(loop) -->
+											<div class="row con-list-item">
+												<div class="col-ak-10 ord-num">
+													<span class="tite-label">주문번호</span>
+													<span class="txte-wrap"><a href="U70101.html">1234568</a></span>
+												</div>
+												<div class="col-ak-10 ord-date">
+													<span class="tite-label">주문일자</span>
+													<span class="txte-wrap">2014-05-30</span>
+												</div>
+												<div class="col-ak-10 ord-price">
+													<span class="tite-label">결제금액</span>
+													<span class="txte-wrap">60,000<em class="price-way">(신용카드)</em></span>
+												</div>
+												<div class="col-ak-10 ord-pvbv">
+													<span class="tite-label">총 PV/BV</span>
+													<span class="txte-wrap">211,050 /<em class="price-bv">232,500</em></span>
+												</div>
+												<div class="col-ak-10 ord-chnnel">
+													<div class="pc-in">
+														<span class="txte-wrap">ABN<em class="od-way">(설치주문)</em></span>
+													</div>
+													<div class="mob-in">
+														<p class="jumon">
+															<span class="tite-label">주문채널</span>
+															<span class="txte-wrap">온라인팩스</span>
+														</p>
+														<p class="bab">
+															<span class="tite-label">배송방법</span>
+															<span class="txte-wrap">설치주문</span>
+														</p>
+													</div>
+												</div>
+												<div class="col-ak-10 ord-type">
+													<span class="tite-label">주문유형</span>
+													<span class="txte-wrap">일반주문</span>
+												</div>
+												<div class="col-ak-10 ord-cond">
+													<span class="tite-label">주문상태</span>
+													<span class="txte-wrap">출고대기중</span>
+												</div>
+												<div class="col-ak-10 ord-btn">
+													<span class="txte-wrap">
+														<button type="button" class="bt-akl-white mini">주문취소</button><!-- 수정 : 2018.11.12 -->
+													</span>
+												</div>
+											</div>
+											<!--// tr(loop) -->
+
+											<!-- tr(loop) -->
+											<div class="row con-list-item">
+												<div class="col-ak-10 ord-num">
+													<span class="tite-label">주문번호</span>
+													<span class="txte-wrap"><a href="U70101.html">1234568</a></span>
+												</div>
+												<div class="col-ak-10 ord-date">
+													<span class="tite-label">주문일자</span>
+													<span class="txte-wrap">2014-05-30</span>
+												</div>
+												<div class="col-ak-10 ord-price">
+													<span class="tite-label">결제금액</span>
+													<span class="txte-wrap">60,000<em class="price-way">(신용카드)</em></span>
+												</div>
+												<div class="col-ak-10 ord-pvbv">
+													<span class="tite-label">총 PV/BV</span>
+													<span class="txte-wrap">211,050 /<em class="price-bv">232,500</em></span>
+												</div>
+												<div class="col-ak-10 ord-chnnel">
+													<div class="pc-in">
+														<span class="txte-wrap">ABN<em class="od-way">(설치주문)</em></span>
+													</div>
+													<div class="mob-in">
+														<p class="jumon">
+															<span class="tite-label">주문채널</span>
+															<span class="txte-wrap">온라인팩스</span>
+														</p>
+														<p class="bab">
+															<span class="tite-label">배송방법</span>
+															<span class="txte-wrap">설치주문</span>
+														</p>
+													</div>
+												</div>
+												<div class="col-ak-10 ord-type">
+													<span class="tite-label">주문유형</span>
+													<span class="txte-wrap">일반주문</span>
+												</div>
+												<div class="col-ak-10 ord-cond">
+													<span class="tite-label">주문상태</span>
+													<span class="txte-wrap">출고대기중</span>
+												</div>
+												<div class="col-ak-10 ord-btn">
+													<span class="txte-wrap">
+														<button type="button" class="bt-akl-white mini">주문취소</button><!-- 수정 : 2018.11.12 -->
+													</span>
+												</div>
+											</div>
+											<!--// tr(loop) -->
+
+											<!-- tr(loop) -->
+											<ul class="sub-list">
+												<li class="row con-list-item">
+													<div class="col-ak-10 ord-num">
+														<span class="tite-label">주문번호</span>
+														<span class="txte-wrap"><a href="U70101.html">1234568</a></span>
+													</div>
+													<div class="col-ak-10 ord-date">
+														<span class="tite-label">주문일자</span>
+														<span class="txte-wrap">2014-05-30</span>
+													</div>
+													<div class="col-ak-10 ord-price">
+														<span class="tite-label">결제금액</span>
+														<span class="txte-wrap">60,000</span>
+													</div>
+													<div class="col-ak-10 ord-pvbv">
+														<span class="tite-label">총 PV/BV</span>
+														<span class="txte-wrap">211,050 /<em class="price-bv">232,500</em></span>
+													</div>
+													<div class="col-ak-10 ord-chnnel">
+														<div class="pc-in">
+															<span class="txte-wrap">ABN<em class="od-way">(배달주문)</em></span>
+														</div>
+														<div class="mob-in">
+															<p class="jumon">
+																<span class="tite-label">주문채널</span>
+																<span class="txte-wrap">온라인팩스</span>
+															</p>
+															<p class="bab">
+																<span class="tite-label">배송방법</span>
+																<span class="txte-wrap">배달주문</span>
+															</p>
+														</div>
+													</div>
+													<div class="col-ak-10 ord-type">
+														<span class="tite-label">주문유형</span>
+														<span class="txte-wrap">일반주문</span>
+													</div>
+													<div class="col-ak-10 ord-cond">
+														<span class="tite-label">주문상태</span>
+														<span class="txte-wrap">출고완료</span>
+													</div>
+													<div class="col-ak-10 ord-btn">
+														<span class="txte-wrap">배송명1</span>
+													</div>
+												</li>
+											</ul>
+											<!--// tr(loop) -->
+
+											<!-- tr(loop) -->
+											<ul class="sub-list">
+												<li class="row con-list-item">
+													<div class="col-ak-10 ord-num">
+														<span class="tite-label">주문번호</span>
+														<span class="txte-wrap"><a href="U70101.html">1234568</a></span>
+													</div>
+													<div class="col-ak-10 ord-date">
+														<span class="tite-label">주문일자</span>
+														<span class="txte-wrap">2014-05-30</span>
+													</div>
+													<div class="col-ak-10 ord-price">
+														<span class="tite-label">결제금액</span>
+														<span class="txte-wrap">60,000</span>
+													</div>
+													<div class="col-ak-10 ord-pvbv">
+														<span class="tite-label">총 PV/BV</span>
+														<span class="txte-wrap">211,050 /<em class="price-bv">232,500</em></span>
+													</div>
+													<div class="col-ak-10 ord-chnnel">
+														<div class="pc-in">
+															<span class="txte-wrap">ABN<em class="od-way">(배달주문)</em></span>
+														</div>
+														<div class="mob-in">
+															<p class="jumon">
+																<span class="tite-label">주문채널</span>
+																<span class="txte-wrap">온라인팩스</span>
+															</p>
+															<p class="bab">
+																<span class="tite-label">배송방법</span>
+																<span class="txte-wrap">배달주문</span>
+															</p>
+														</div>
+													</div>
+													<div class="col-ak-10 ord-type">
+														<span class="tite-label">주문유형</span>
+														<span class="txte-wrap">일반주문</span>
+													</div>
+													<div class="col-ak-10 ord-cond">
+														<span class="tite-label">주문상태</span>
+														<span class="txte-wrap">출고완료</span>
+													</div>
+													<div class="col-ak-10 ord-btn">
+														<span class="txte-wrap">배송명1</span>
+													</div>
+												</li>
+											</ul>
+											<!--// tr(loop) -->
+										</div>
+
+										<div class="search-no-result line">
+											<p>조회된 주문 내역이 없습니다.</p>
+										</div>
+									</div>
+
+									<div class="paging-wrap">
+										<div class="paging">
+											<a href="#" class="prev">맨 처음 페이지</a>
+											<a href="#" class="before">이전 페이지</a>
+											<ul>
+												<li><a href="#">1</a></li>
+												<li class="on"><a href="#">2</a></li>
+												<li><a href="#">3</a></li>
+												<li><a href="#">4</a></li>
+												<li><a href="#">5</a></li>
+											</ul>
+											<a href="#" class="after">다음페이지</a>
+											<a href="#" class="next">맨 마지막 페이지</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="txt-botm">
+									<ul class="list-type2">
+										<li>프로모션 적용 여부, 거래내역 확인서, 현금영수증/세금계산서 발급 등은 주문상세내역에서 확인하실 수 있습니다.</li>
+										<li>복수배송 주문취소 시 해당되는 모든 주문은 일괄 취소 됩니다. </li>
+									</ul>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="quick"></div>
+		<div id="footer"></div>
+	</main>
+
+<!-- (팝업)HyperStore 주문내역 : 수정 2018.11.20 -->
+<div class="layerWrapper hyperStore U70101_lp16_pop">
+	<div class="cbox layerBox RD-View typeFullSizeView">
+		<div class="cart-popup__dialog">
+			<div class="cart-popup__header">
+				<span class="cart-popup__header-text">HyperStore 주문내역
+					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close"><img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기"></a>
+				</span>
+			</div>
+
+			<div class="layer-content-wrapper RD-Viewer">
+				<!-- **
+						HyperStore 주문내역 컨텐츠 영역은 ASP로 제작된 외부페이지 iframe으로 제작됨
+						U70101_lp16.html (내용만 있음)
+				-->
+				<iframe src="U70101_lp16.html" width="100%" height="100%"></iframe>
+
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //(팝업)HyperStore 주문내역 : 수정 2018.11.20 -->
+
+<script type="text/javascript">
+/** --------------------------------------
+ *  HTML 내용 확인용으로 스크립트 추가되었습니다.
+ *  UI 공통 js에서 관리 하지 않습니다.
+ *  --------------------------------------
+ */
+	$(function(){
+		//akl HyperStore 주문내역 팝업
+		$('.U70101_lp16').click(function(event) {
+			event.preventDefault();
+			layerPopOver(this,'.U70101_lp16_pop');
+		});
+
+	});
+</script>
+</body>
+</html>

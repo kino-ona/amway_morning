@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>정기주문&amp;스마트 오더 주문서 생성 | ABN Korea</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords">
+	<meta name="description" content="NY Fee Bundle">
+	<meta name="robots" content="index,follow">
+
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-lib.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/sprint.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-customer.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-shop.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-sop.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-account.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-business.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-product.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-brand.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-brand-new.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common-new.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common-new-v2.css">
+
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/content_res_all.css">
+	<!-- 코어제공 -->
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common-v2.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-product-renewal.css">
+
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.datepicker.js"></script><!-- datepicker : 2018.03.19 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/owl.carousel.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/isotope.pkgd.js"></script><!-- gnb 플러그인 : 2018.03.23 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/select2.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/new.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.raty.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_contents.js"></script><!-- brand 통합 : 2018.08.24 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_component.js"></script>
+</head>
+<body class="akl new-v2">
+	<!-- skipToContent -->
+	<div id="skipToContent">
+	<a href="#contents">콘텐츠 바로가기 </a>
+	</div>
+	<!-- //skipToContent -->
+
+	<main>
+		<div id="header"></div>
+		<div class="sub-nav-section">
+			<div class="inner">
+				<ol class="breadcrumb">
+					<li>
+						<a href="/main">
+							홈</a>
+					</li>
+					<li>
+						<a href="/my-account">마이페이지</a>
+					</li>
+					<li>
+						<a href="/my-account/orders/recent">마이쇼핑정보</a>
+					</li>
+					<li class="active">정기주문&amp;스마트오더 내역</li>
+				</ol>
+				<div class="locationBox">
+					<ul id="locationBoxList">
+						<li data-taggingid="마이쇼핑">
+							<a href="/my-account/orders/recent">마이쇼핑</a>
+						</li>
+						<li data-taggingid="반품내역">
+							<a href="/my-shopping/my-return">반품내역</a>
+						</li>
+						<li data-taggingid="위시리스트">
+							<a href="/shopping-lists/all">위시리스트</a>
+						</li>
+						<li data-taggingid="제품구매 예약">
+							<a href="/my-shopping/pre-reservation">제품구매 예약</a>
+						</li>
+						<li data-taggingid="중개판매 관리">
+							<a href="/my-shopping/arrangement-sales-quotation">중개판매 관리</a>
+						</li>
+						<li data-taggingid="양도/양수">
+							<a href="/my-shopping/transfer-money">양도/양수</a>
+						</li>
+						<li class="active" data-taggingid="정기주문&amp;스마트오더 내역">
+							<a href="/sop/list-profiles">정기주문&amp;스마트오더 내역</a>
+						</li>
+						<li data-taggingid="장바구니 스마트 오더 내역">
+							<a href="/smart-order/profiles">장바구니 스마트 오더 내역</a>
+						</li>
+						<li data-taggingid="배송지 및 주문알림 관리">
+							<a href="/my-account/address-book">배송지 및 주문알림 관리</a>
+						</li>
+						<li data-taggingid="25센트 라이드 구독서비스 관리">
+							<a href="/my-account/subscription">25센트 라이드 구독서비스 관리</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- sop-order-done -->
+		<div class="container-fluid main-container sop-order-done sop-order-done-renewal"> <!-- 20240418 마이랩 SOP 신청 방법 정정 개발_클래스 추가 -->
+
+			<!-- sopCreate -->
+			<div class="shipping-delivery sopCreate">
+				<div class="container-fluid">
+					<div class="row cartTitile">
+						<h1 class="product-list-page-title mb25">스마트 오더(SOP) 주문서 생성</h1>
+					</div>
+				</div>
+
+				<!-- container-fluid -->
+				<div class="container-fluid amway-theme">
+					<div class="row sop-confirmation">
+						<div class="sop-confirmation-head confirm-box">
+							<p class="confirm-box-message">주문서 생성이 완료되었습니다.</p>
+						</div>
+					</div>
+
+					<!-- S : 20240418 마이랩 SOP 신청 방법 정정 개발 -->
+					<div class="sop-mylab-banner-box">
+						<a href="https://mylab.amway.co.kr" class="pc" target="_blank">
+							<img src="/_ui/responsive/theme-blue/images/mylab_testkit_banner_pc.png" alt="마이랩 사이트에서 테스트 키트를 등록하세요. 분석이 완료되면 정기배송이 자동으로 진행됩니다. 테스트 키트 등록하기 >"/>
+						</a>
+						<a href="https://mylab.amway.co.kr" class="mo" target="_blank">
+							<img src="/_ui/responsive/theme-blue/images/mylab_testkit_banner_mo.png" alt="마이랩 사이트에서 테스트 키트를 등록하세요. 분석이 완료되면 정기배송이 자동으로 진행됩니다. 테스트 키트 등록하기 >"/>
+						</a>
+					</div>
+					<!-- E : 20240418 마이랩 SOP 신청 방법 정정 개발 -->
+
+					<!-- S: 2020-05 주문/결제 추가 TO-BE 타입 -->
+					<ul class="info_list">
+						<li class="info_list-row">
+							<div class="info_item-item">주문서 명</div>
+							<div class="info_item-item">
+								<!-- S : 20230320 SOP 간편 재시작, SOP/장스오 자동갱신 -->
+								<span class="info_item-txt">
+									<a href="/_ui/responsive/html/new_page/sop/so_02_v2.html" class="color-blue04">주문서 명이 노출됩니다 주문서 선택 시 주문서 상세 화면으로 이동합니다</a> <!-- 20240418 마이랩 SOP 신청 방법 정정 개발 -->
+								</span>
+								<!-- E : 20230320 SOP 간편 재시작, SOP/장스오 자동갱신 -->
+							</div>
+						</li>
+						<li class="info_list-row">
+							<div class="info_item-item">결제수단</div>
+							<div class="info_item-item">
+								<span class="info_item-txt">신용카드</span>
+							</div>
+						</li>
+						<li class="info_list-row">
+							<div class="info_item-item">무통장입금(가상계좌)</div>
+							<div class="info_item-item">
+								<span class="info_item-txt">하나은행 000-000000-00000<span class="mo_txt-block"> (예금주명: Amway 홍길동)</span><button type="button" class="btn_square-c small">계좌번호 복사</button></span>
+							</div>
+						</li>
+						<li class="info_list-row">
+							<div class="info_item-item">배송지 주소</div>
+							<div class="info_item-item">
+								<span class="info_item-txt">서울시 강남구 영동대로 517</span>
+							</div>
+						</li>
+						<li class="info_list-row">
+							<div class="info_item-item">결제일</div>
+							<div class="info_item-item">
+								<span class="info_item-txt">매달 5일</span>
+							</div>
+						</li>
+						<!-- S : 20240418 마이랩 SOP 신청 방법 정정 개발 -->
+						<li class="info_list-row">
+							<div class="info_item-item">배송 시작일</div>
+							<div class="info_item-item">
+								<span class="info_item-txt">이번달 부터 배송 시작</span>
+								<span class="info_item-sub-txt color-blue04">이번 달부터 정기 배송이 시작됩니다.</span>
+							</div>
+						</li>
+						<!-- E : 20240418 마이랩 SOP 신청 방법 정정 개발 -->
+					</ul>
+					<!-- E: 2020-05 주문/결제 추가 TO-BE 타입 -->
+				</div>
+				<!-- //container-fluid -->
+
+
+			</div>
+			<!-- //sopCreate -->
+
+			<!-- 2019.02.01 버튼추가 및 버튼명 변경 -->
+			<div class="amwa-btnbar button-add flex">
+				<a href="#" class="bt-akl-blue">즉시 결제</a>
+				<a href="#" class="bt-akl-blue">제품 추가</a>
+				<a href="#" class="bt-akl-white">주문서 목록</a><!-- 수정 : 2018.09.20 (text) -->
+			</div>
+			<!-- //2019.02.01 버튼추가 및 버튼명 변경 -->
+
+		</div>
+		<!-- //sop-order-done -->
+
+		<div id="quick"></div>
+		<div id="footer"></div>
+	</main>
+</body>
+
+</html>

@@ -1,0 +1,844 @@
+<!-- S : [디파이 수정2] 신규 파일 : CAP2 A Pay 마이페이지 A pay 결제수단 관리 페이지 -->
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<title>마이페이지 | ABN Korea</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords">
+	<meta name="description" content="NY Fee Bundle">
+	<meta name="robots" content="index,follow">
+
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-lib.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/base.css">
+
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/sprint.css">
+
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-customer.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-shop.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-sop.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-account.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-business.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-product.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-brand.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common-new.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common-v2.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common-new-v2.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-product-renewal.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-product-renewal_v1.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/content_res_all.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-cap2.css">
+	<!-- [디파이 수정2] 신규 파일 css 추가 -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> <!-- [디파이 수정2] 스와이퍼 추가 -->
+
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.datepicker.js"></script>
+	<!-- datepicker : 2018.03.19 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/owl.carousel.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/swiper.min.js"></script>
+	<!-- [디파이 수정2] 스와이퍼 추가 -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/isotope.pkgd.js"></script>
+	<!-- gnb 플러그인 : 2018.03.23 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/select2.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/new.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.raty.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_contents.js"></script>
+	<!-- brand 통합 : 2018.08.24 추가  -->
+
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_component.js"></script>
+</head>
+
+<body class="akl new-v2">
+	<!-- skipToContent -->
+	<div id="skipToContent">
+		<a href="#contents">콘텐츠 바로가기 </a>
+	</div>
+	<!-- //skipToContent -->
+
+	<main>
+		<!-- <div id="header"></div> -->
+		<!-- 걸리적 거려서 잠시 지움 최종본에 다시 나오게 할 것 -->
+
+		<div class="sub-nav-section mb0">
+			<div class="container">
+				<ol class="breadcrumb">
+					<li><a href="homepage-logged-in.html">홈</a></li>
+					<li>마이페이지</li>
+					<li class="active">A-Pay 결제수단 관리</li>
+				</ol>
+				<div class="locationBox">
+					<ul>
+						<li><a href="#;">계좌관리</a></li>
+						<li><a href="#;">포인트 관리</a></li>
+						<li><a href="#;">쿠폰관리</a></li>
+						<li><a href="#;">암웨이-현대 제휴카드</a></li>
+						<li class="active"><a href="#;">A-Pay 결제수단 관리</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- container-fluid -->
+		<div class="yCmsContentSlot">
+			<div class="container-fluid main-container ">
+				<!-- S : 20220901 A Pay 수정 -->
+				<div class="row amway-theme mypage-main-wrapper">
+					<div class="title-tooltip-area">                    
+						<h1 class="page-title2">A Pay 결제수단 관리</h1>
+						<!-- 툴팁 -->
+						<div class="toolTip-wrapper toolTip-type03 type-mob-full">
+							<button type="button" class="btn-tooltip"><span class="hidden">안내</span></button>
+							<div class="tipCont-wrapper" style="max-width: none;">
+								<div class="tooltip-content tooltip-content1" style="display: none;">
+									<p>
+										A-Pay는 신용카드 및 은행 계좌를 1회 등록 후 결제 비밀번호 입력만으로 결제할 수 있는 간편결제 서비스입니다.
+									</p>
+								</div>
+							</div>
+						</div>
+						<!-- //툴팁 -->
+					</div>
+
+					<div class="joint-business-select-wrap">
+						<h3 class="tit-joint-business">A Pay 결제 시 어떤 분의 계좌/카드를<br class="mo"> 먼저 보여드릴까요?</h3>
+						<div class="joint-business-select-box">
+							<input type="radio" id="joint-business-select-1" name="joint-business-select" checked>
+							<label for="joint-business-select-1">공동사업자1 (<span>한국암웨이한국암웨이한국암웨이한국암웨이한국암웨이한국암웨이한국암웨이한국암웨이</span>  님)</label>
+							<input type="radio" id="joint-business-select-2" name="joint-business-select">
+							<label for="joint-business-select-2">공동사업자2 (<span>김암웨이김암웨이김암웨이김암웨이김암웨이김암웨이김암웨이김암웨이김암웨이</span>  님)</label>
+						</div>
+						<p class="joint-business-select-info">결제하시는 모든 결제화면에서 선택하신 공동사업자의 카드/계좌를 우선 표시합니다.</p>
+						<div class="box_wrap top_action-area">
+							<button type="button" class="btn_basic-b">저장</button>
+						</div>
+					</div>
+
+					<div class="tabWrapper joint-business">
+						<ul class="tabs-toggles case01">
+							<li class="tab-toggle-wrap active">
+								<a class="tab-toggle" data-toggle="tab" href="#joint-business-1"> 
+									<span class="toggle-text">공동사업자1</span>
+								</a>
+							</li>
+							<li class="tab-toggle-wrap">
+								<a class="tab-toggle" data-toggle="tab" href="#joint-business-2"> 
+									<span class="toggle-text">공동사업자2</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="tab-content tabs-content-blocks">
+						<!-- S : 20220816 공동사업자1 tab -->
+						<div class="tab-pane content-block active" id="joint-business-1">
+							<ul class="easy-payment-wrap">
+								<!-- S : 20220816 계좌이체와 카드결제 순서를 바꿈 -->
+								<li>
+									<!-- S : 20220816 A Pay 확산 부사업자등록 -->
+									<!-- 문구수정 -->
+									<h3 class="tit_payment">A Pay 자동 이체</h3>
+									<!-- E : 20220816 A Pay 확산 부사업자등록 -->
+									<!-- S : [디파이 수정2] 210830 은행 간편결제 슬라이드 -->
+									<div class="swiper mySwiper card-swiper">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide" style="width: 302px !important; padding: 0 8px;">
+												<div class="payment-unit">
+													<a href="#" class="payment-link">
+														<div class="payment-card card-area">
+															<!-- S : 20220816 A Pay 확산 부사업자등록 -->
+															<div class="payment-user-name">
+																<span>한국암웨이한국암웨이한국암웨이한국암웨이한국암웨이</span>님
+															</div>
+															<!-- E : 20220816 A Pay 확산 부사업자등록 -->
+															<span class="icon_plus">
+																<img src="/_ui/responsive/theme-blue/images/akl_cap2/icon_plus_deepBlue.png"
+																	alt="카드 간편결제 플러스 버튼">
+															</span>
+															<!-- S : 20220207 문구 변경 -->
+															<!-- S : 20220816 문구 변경 -->
+															<p>
+																이곳을 눌러 A PAY 결제 계좌를<br>
+																등록하세요.
+															</p>
+															<!-- E : 20220816 문구 변경 -->
+															<!-- //E : 20220207 문구 변경 -->
+														</div>
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-button-next"></div>
+										<div class="swiper-button-prev"></div>
+										<div class="swiper-pagination"></div>
+									</div>
+									<!-- E : [디파이 수정2] 210830 은행 간편결제 슬라이드 -->
+								</li>
+								<li>
+									<!-- S : 20220816 A Pay 확산 부사업자등록 -->
+									<!-- 문구수정 -->
+									<h3 class="tit_payment">A Pay 카드 결제</h3>
+									<!-- E : 20220816 A Pay 확산 부사업자등록 -->
+									<!-- S : [디파이 수정2] 210830 은행 간편결제 슬라이드 -->
+									<div class="swiper mySwiper card-swiper">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide" style="width: 302px !important; padding: 0 8px;">
+												<div class="payment-unit">
+													<a href="#" class="payment-link">
+														<div class="payment-card card-area">
+															<!-- S : 20220816 A Pay 확산 부사업자등록 -->
+															<div class="payment-user-name">
+																<span>한국암웨이</span>님
+															</div>
+															<!-- E : 20220816 A Pay 확산 부사업자등록 -->
+															<span class="icon_plus">
+																<img src="/_ui/responsive/theme-blue/images/akl_cap2/icon_plus_deepBlue.png"
+																	alt="카드 간편결제 플러스 버튼">
+															</span>
+															<!-- S : 20220207 문구 변경 -->
+															<!-- S : 20220816 문구 변경 -->
+															<p>
+																이곳을 눌러 A PAY 결제 계좌를<br>
+																등록하세요.
+															</p>
+															<!-- E : 20220816 문구 변경 -->
+															<!-- //E : 20220207 문구 변경 -->
+														</div>
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-button-next"></div>
+										<div class="swiper-button-prev"></div>
+										<div class="swiper-pagination"></div>
+									</div>
+									<!-- E : [디파이 수정2] 210830 은행 간편결제 슬라이드 -->
+								</li>
+								<!-- E : 20220816 계좌이체와 카드결제 순서를 바꿈 -->
+							</ul>
+						</div>
+						<!-- E : 20220816 공동사업자1 tab -->
+						<!-- S : 20220816 공동사업자2 tab -->
+						<div class="tab-pane content-block" id="joint-business-2">
+							<ul class="easy-payment-wrap">
+								<!-- S : 20220816 계좌이체와 카드결제 순서를 바꿈 -->
+								<li>
+									<!-- S : 20220816 A Pay 확산 부사업자등록 -->
+									<!-- 문구수정 -->
+									<h3 class="tit_payment">A Pay 자동 이체</h3>
+									<!-- E : 20220816 A Pay 확산 부사업자등록 -->
+									<!-- S : [디파이 수정2] 210830 은행 간편결제 슬라이드 -->
+									<div class="swiper mySwiper card-swiper">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide" style="width: 302px !important; padding: 0 8px;">
+												<div class="payment-unit">
+													<a href="#" class="payment-link">
+														<div class="payment-card card-area">
+															<!-- S : 20220816 A Pay 확산 부사업자등록 -->
+															<div class="payment-user-name">
+																<span>김암웨이김암웨이김암웨이김암웨이김암웨이</span>님
+															</div>
+															<!-- E : 20220816 A Pay 확산 부사업자등록 -->
+															<span class="icon_plus">
+																<img src="/_ui/responsive/theme-blue/images/akl_cap2/icon_plus_deepBlue.png"
+																	alt="카드 간편결제 플러스 버튼">
+															</span>
+															<!-- S : 20220207 문구 변경 -->
+															<!-- S : 20220816 문구 변경 -->
+															<p>
+																이곳을 눌러 A PAY 결제 계좌를<br>
+																등록하세요.
+															</p>
+															<!-- E : 20220816 문구 변경 -->
+															<!-- //E : 20220207 문구 변경 -->
+														</div>
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-button-next"></div>
+										<div class="swiper-button-prev"></div>
+										<div class="swiper-pagination"></div>
+									</div>
+									<!-- E : [디파이 수정2] 210830 은행 간편결제 슬라이드 -->
+								</li>
+								<li>
+									<!-- S : 20220816 A Pay 확산 부사업자등록 -->
+									<!-- 문구수정 -->
+									<h3 class="tit_payment">A Pay 카드 결제</h3>
+									<!-- E : 20220816 A Pay 확산 부사업자등록 -->
+									<!-- S : [디파이 수정2] 210830 은행 간편결제 슬라이드 -->
+									<div class="swiper mySwiper card-swiper">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide" style="width: 302px !important; padding: 0 8px;">
+												<div class="payment-unit">
+													<a href="#" class="payment-link">
+														<div class="payment-card card-area">
+															<!-- S : 20220816 A Pay 확산 부사업자등록 -->
+															<div class="payment-user-name">
+																<span>김암웨이</span>님
+															</div>
+															<!-- E : 20220816 A Pay 확산 부사업자등록 -->
+															<span class="icon_plus">
+																<img src="/_ui/responsive/theme-blue/images/akl_cap2/icon_plus_deepBlue.png"
+																	alt="카드 간편결제 플러스 버튼">
+															</span>
+															<!-- S : 20220207 문구 변경 -->
+															<!-- S : 20220816 문구 변경 -->
+															<p>
+																이곳을 눌러 A PAY 결제 계좌를<br>
+																등록하세요.
+															</p>
+															<!-- E : 20220816 문구 변경 -->
+															<!-- //E : 20220207 문구 변경 -->
+														</div>
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-button-next"></div>
+										<div class="swiper-button-prev"></div>
+										<div class="swiper-pagination"></div>
+									</div>
+									<!-- E : [디파이 수정2] 210830 은행 간편결제 슬라이드 -->
+								</li>
+								<!-- E : 20220816 계좌이체와 카드결제 순서를 바꿈 -->
+							</ul>
+						</div>
+						<!-- E : 20220816 공동사업자2 tab -->
+					</div>
+
+					<div class="box_wrap top_action-area a-pay">
+						<!-- <button type="button" class="btn_basic-b pop_a-pay-add-delete">A-Pay 관리</button> -->
+						<!-- 20220218 A-Pay 문구를 hidden으로 감쌈 -->
+						<button type="button" class="btn_basic-b btn_basic-b--apay"><span class="hidden">A-Pay</span> 관리</button>
+					</div>
+				</div>
+				<!-- E : 20220901 A Pay 수정 -->
+			</div>
+		</div>
+		<!-- //container-fluid -->
+
+		<div id="quick"></div>
+		<div id="footer"></div>
+	</main>
+
+	<!-- S : 결제 약관 동의 팝업 -->
+	<div class="layerWrapper popup_a-pay popup_terms">
+		<div class="cbox layerBox popWidS">
+			<div class="container">
+				<div class="popup-header">
+					<h1 class="header-title">A-Pay 간편결제 등록</h1>
+					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"
+						class="btn_layer-close btn-modal_close"><span class="hidden">닫기</span></a>
+				</div>
+				<div class="popup-body">
+					<!-- <p class="notice_password">
+						서비스 이용을 위해<br>약관에 동의해주세요.
+					</p> -->
+					<p class="notice_blue">
+						서비스 이용을 위해<br>약관에 동의해주세요.
+					</p>
+
+					<div class="terms-wrapper">
+						<div class="checkbox_all-agree">
+							<span class="form_element-checkbox v1">
+								<input type="checkbox" id="checkboxAll" name="checkAll" />
+								<label for="checkboxAll" class="sp_chk">전체 동의하기</label>
+							</span>
+						</div>
+						<div class="checkbox_group">
+							<a href="#" class="checkbox_item check01">
+								<span class="form_element-checkbox v1">
+									<input type="checkbox" id="checkbox01" name="check" class="essential" />
+									<label for="checkbox01" class="sp_chk">개인회원 이용약관 (필수)</label>
+									<span class="terms-arrow"><em class="hidden">화살표</em></span>
+								</span>
+							</a>
+							<a href="#" class="checkbox_item check02">
+								<span class="form_element-checkbox v1">
+									<input type="checkbox" id="checkbox02" name="check" class="essential" />
+									<label for="checkbox02" class="sp_chk">개인회원 처리방침 (필수)</label>
+									<span class="terms-arrow"><em class="hidden">화살표</em></span>
+								</span>
+							</a>
+							<a href="#" class="checkbox_item check03">
+								<span class="form_element-checkbox v1">
+									<input type="checkbox" id="checkbox03" name="check" class="essential" />
+									<label for="checkbox03" class="sp_chk">개인회원 수집 및 이용 (필수)</label>
+									<span class="terms-arrow"><em class="hidden">화살표</em></span>
+								</span>
+							</a>
+							<a href="#" class="checkbox_item check04">
+								<span class="form_element-checkbox v1">
+									<input type="checkbox" id="checkbox04" name="check" />
+									<label for="checkbox04" class="sp_chk">개인회원 수집 및 이용 (선택)</label>
+									<span class="terms-arrow"><em class="hidden">화살표</em></span>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="popup-footer">
+					<button type="button" class="bt-akl-blue next-phase-01" disabled
+						onClick="location.href='./U60001_a_pay-02-card-01.html'">다음</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- E : 결제 약관 동의 팝업 -->
+
+
+	<!-- S : 결제 약관 동의 팝업 -->
+	<div class="layerWrapper popup_a-pay popup_terms_personal personal01">
+		<div class="cbox layerBox popWidS">
+			<div class="container">
+				<div class="popup-header">
+					<h1 class="header-title">개인회원 이용약관</h1>
+					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"
+						class="btn_layer-close btn-modal_close"><span class="hidden">닫기</span></a>
+				</div>
+				<div class="popup-body">
+					<h3 class="title">
+						출금 시 오픈뱅킹 활용 안내
+					</h3>
+					<div class="contents">
+						2019년 12월 18일부터 암웨이 서비스가 금융결제원의 오픈 뱅킹을 활용하여 제공됩니다.
+						오픈뱅킹을 활용하는 서비스는 기존에 동의하신「서비스 이용 약관」및 「금융기관 출금이체 약관」에 따라 제공됩니다.
+						기존에 출금이체 동의를 하신 은행 계좌에서 간편송금, 결제, A-Pay 간편결제 충전 등을 위한 금액 출금 시 오픈뱅킹이 활용될 수 있으며, 이와 관련하여 고객님께서 별도로
+						취해야 하는 조치는 없습니다.
+					</div>
+					<p class="preference">
+						오픈뱅킹 등록으로 각 은행으로부터 계좌 별 1회의 확인 문자가 발송될 수 있습니다.
+					</p>
+					<div class="bottom-contents">
+						<a href="#">내가 출금이체 동의한 은행</a>
+					</div>
+				</div>
+				<div class="popup-footer">
+					<button type="button" class="bt-akl-blue">확인</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- E : 결제 약관 동의 팝업 -->
+
+	<!-- S : 결제 약관 동의 팝업 -->
+	<div class="layerWrapper popup_a-pay popup_terms_personal personal02">
+		<div class="cbox layerBox popWidS">
+			<div class="container">
+				<div class="popup-header">
+					<h1 class="header-title">개인회원 이용약관</h1>
+					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"
+						class="btn_layer-close btn-modal_close"><span class="hidden">닫기</span></a>
+				</div>
+				<div class="popup-body">
+					<h3 class="title">
+						출금 시 오픈뱅킹 활용 안내
+					</h3>
+					<div class="contents">
+						2019년 12월 18일부터 암웨이 서비스가 금융결제원의 오픈 뱅킹을 활용하여 제공됩니다.
+						오픈뱅킹을 활용하는 서비스는 기존에 동의하신「서비스 이용 약관」및 「금융기관 출금이체 약관」에 따라 제공됩니다.
+						기존에 출금이체 동의를 하신 은행 계좌에서 간편송금, 결제, A-Pay 간편결제 충전 등을 위한 금액 출금 시 오픈뱅킹이 활용될 수 있으며, 이와 관련하여 고객님께서 별도로
+						취해야 하는 조치는 없습니다.
+					</div>
+					<p class="preference">
+						오픈뱅킹 등록으로 각 은행으로부터 계좌 별 1회의 확인 문자가 발송될 수 있습니다.
+					</p>
+					<div class="bottom-contents">
+						<a href="#">내가 출금이체 동의한 은행</a>
+					</div>
+				</div>
+				<div class="popup-footer">
+					<button type="button" class="bt-akl-blue">확인</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- E : 결제 약관 동의 팝업 -->
+
+	<!-- S : 결제 약관 동의 팝업 -->
+	<div class="layerWrapper popup_a-pay popup_terms_personal personal03">
+		<div class="cbox layerBox popWidS">
+			<div class="container">
+				<div class="popup-header">
+					<h1 class="header-title">개인회원 이용약관</h1>
+					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"
+						class="btn_layer-close btn-modal_close"><span class="hidden">닫기</span></a>
+				</div>
+				<div class="popup-body">
+					<h3 class="title">
+						출금 시 오픈뱅킹 활용 안내
+					</h3>
+					<div class="contents">
+						2019년 12월 18일부터 암웨이 서비스가 금융결제원의 오픈 뱅킹을 활용하여 제공됩니다.
+						오픈뱅킹을 활용하는 서비스는 기존에 동의하신「서비스 이용 약관」및 「금융기관 출금이체 약관」에 따라 제공됩니다.
+						기존에 출금이체 동의를 하신 은행 계좌에서 간편송금, 결제, A-Pay 간편결제 충전 등을 위한 금액 출금 시 오픈뱅킹이 활용될 수 있으며, 이와 관련하여 고객님께서 별도로
+						취해야 하는 조치는 없습니다.
+					</div>
+					<p class="preference">
+						오픈뱅킹 등록으로 각 은행으로부터 계좌 별 1회의 확인 문자가 발송될 수 있습니다.
+					</p>
+					<div class="bottom-contents">
+						<a href="#">내가 출금이체 동의한 은행</a>
+					</div>
+				</div>
+				<div class="popup-footer">
+					<button type="button" class="bt-akl-blue">확인</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- E : 결제 약관 동의 팝업 -->
+
+	<!-- S : 결제 약관 동의 팝업 -->
+	<div class="layerWrapper popup_a-pay popup_terms_personal personal04">
+		<div class="cbox layerBox popWidS">
+			<div class="container">
+				<div class="popup-header">
+					<h1 class="header-title">개인회원 이용약관</h1>
+					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"
+						class="btn_layer-close btn-modal_close"><span class="hidden">닫기</span></a>
+				</div>
+				<div class="popup-body">
+					<h3 class="title">
+						출금 시 오픈뱅킹 활용 안내
+					</h3>
+					<div class="contents">
+						2019년 12월 18일부터 암웨이 서비스가 금융결제원의 오픈 뱅킹을 활용하여 제공됩니다.
+						오픈뱅킹을 활용하는 서비스는 기존에 동의하신「서비스 이용 약관」및 「금융기관 출금이체 약관」에 따라 제공됩니다.
+						기존에 출금이체 동의를 하신 은행 계좌에서 간편송금, 결제, A-Pay 간편결제 충전 등을 위한 금액 출금 시 오픈뱅킹이 활용될 수 있으며, 이와 관련하여 고객님께서 별도로
+						취해야 하는 조치는 없습니다.
+					</div>
+					<p class="preference">
+						오픈뱅킹 등록으로 각 은행으로부터 계좌 별 1회의 확인 문자가 발송될 수 있습니다.
+					</p>
+					<div class="bottom-contents">
+						<a href="#">내가 출금이체 동의한 은행</a>
+					</div>
+				</div>
+				<div class="popup-footer">
+					<button type="button" class="bt-akl-blue">확인</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- E : 결제 약관 동의 팝업 -->
+
+	<!-- ********* A-Pay 계좌 ********* -->
+	<!-- S : 은행 리스트 팝업 -->
+	<div class="layerWrapper popup_a-pay popup_bank-list">
+		<div class="cbox layerBox popWidS no-bottom-btn">
+			<div class="container">
+				<div class="popup-header">
+					<h1 class="header-title">A-Pay 간편결제 등록</h1>
+					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"
+						class="btn_layer-close btn-modal_close"><span class="hidden">닫기</span></a>
+				</div>
+				<div class="popup-body">
+					<p class="notice_blue">
+						등록할 은행을 선택해주세요.
+					</p>
+					<!-- S : 은행 리스트 -->
+					<div class="bank-list-wrapper">
+						<ul class="bank-lists">
+							<li>
+								<button type="button" onClick="location.href='./U60001_a_pay-02-bank-01.html'">
+									<span class="emblem type01"><em class="hidden">NH 농협</em></span>
+									<span>NH 농협</span>
+								</button>
+							</li>
+							<li>
+								<button type="button" onClick="location.href='./U60001_a_pay-02-bank-01.html'">
+									<span class="emblem type02"><em class="hidden">우리은행</em></span>
+									<span>우리은행</span>
+								</button>
+							</li>
+							<li>
+								<button type="button" onClick="location.href='./U60001_a_pay-02-bank-01.html'">
+									<span class="emblem type03"><em class="hidden">신한은행</em></span>
+									<span>신한은행</span>
+								</button>
+							</li>
+							<li>
+								<button type="button" onClick="location.href='./U60001_a_pay-02-bank-01.html'">
+									<span class="emblem type04"><em class="hidden">국민은행</em></span>
+									<span>국민은행</span>
+								</button>
+							</li>
+							<li>
+								<button type="button" onClick="location.href='./U60001_a_pay-02-bank-01.html'">
+									<span class="emblem type05"><em class="hidden">하나은행</em></span>
+									<span>하나은행</span>
+								</button>
+							</li>
+							<li>
+								<button type="button" onClick="location.href='./U60001_a_pay-02-bank-01.html'">
+									<span class="emblem type06"><em class="hidden">씨티은행</em></span>
+									<span>씨티은행</span>
+								</button>
+							</li>
+							<li>
+								<button type="button" onClick="location.href='./U60001_a_pay-02-bank-01.html'">
+									<span class="emblem type17"><em class="hidden">기업은행</em></span>
+									<span>기업은행</span>
+								</button>
+							</li>
+							<li>
+								<button type="button" onClick="location.href='./U60001_a_pay-02-bank-01.html'">
+									<span class="emblem type08"><em class="hidden">산업은행</em></span>
+									<span>산업은행</span>
+								</button>
+							</li>
+							<li>
+								<button type="button" onClick="location.href='./U60001_a_pay-02-bank-01.html'">
+									<span class="emblem type18"><em class="hidden">SC제일은행</em></span>
+									<span>SC제일은행</span>
+								</button>
+							</li>
+							<li>
+								<button type="button" onClick="location.href='./U60001_a_pay-02-bank-01.html'">
+									<span class="emblem type19"><em class="hidden">대구은행</em></span>
+									<span>대구은행</span>
+								</button>
+							</li>
+							<li>
+								<button type="button" onClick="location.href='./U60001_a_pay-02-bank-01.html'">
+									<span class="emblem type16"><em class="hidden">부산은행</em></span>
+									<span>부산은행</span>
+								</button>
+							</li>
+							<li>
+								<button type="button" onClick="location.href='./U60001_a_pay-02-bank-01.html'">
+									<span class="emblem type07"><em class="hidden">전북은행</em></span>
+									<span>전북은행</span>
+								</button>
+							</li>
+							<li>
+								<button type="button" onClick="location.href='./U60001_a_pay-02-bank-01.html'">
+									<span class="emblem type16"><em class="hidden">경남은행</em></span>
+									<span>경남은행</span>
+								</button>
+							</li>
+							<li>
+								<button type="button" onClick="location.href='./U60001_a_pay-02-bank-01.html'">
+									<span class="emblem type03"><em class="hidden">제주은행</em></span>
+									<span>제주은행</span>
+								</button>
+							</li>
+							<li>
+								<button type="button" onClick="location.href='./U60001_a_pay-02-bank-01.html'">
+									<span class="emblem type07"><em class="hidden">광주은행</em></span>
+									<span>광주은행</span>
+								</button>
+							</li>
+							<li>
+								<button type="button" onClick="location.href='./U60001_a_pay-02-bank-01.html'">
+									<span class="emblem type09"><em class="hidden">새마을금고</em></span>
+									<span>새마을금고</span>
+								</button>
+							</li>
+							<li>
+								<button type="button" onClick="location.href='./U60001_a_pay-02-bank-01.html'">
+									<span class="emblem type10"><em class="hidden">수협</em></span>
+									<span>수협</span>
+								</button>
+							</li>
+							<li>
+								<button type="button" onClick="location.href='./U60001_a_pay-02-bank-01.html'">
+									<span class="emblem type11"><em class="hidden">신협</em></span>
+									<span>신협</span>
+								</button>
+							</li>
+							<li>
+								<button type="button" onClick="location.href='./U60001_a_pay-02-bank-01.html'">
+									<span class="emblem type12"><em class="hidden">우체국</em></span>
+									<span>우체국</span>
+								</button>
+							</li>
+							<li>
+								<button type="button" onClick="location.href='./U60001_a_pay-02-bank-01.html'">
+									<span class="emblem type13"><em class="hidden">케이뱅크</em></span>
+									<span>케이뱅크</span>
+								</button>
+							</li>
+							<li>
+								<button type="button" onClick="location.href='./U60001_a_pay-02-bank-01.html'">
+									<span class="emblem type14"><em class="hidden">카카오뱅크</em></span>
+									<span>카카오뱅크</span>
+								</button>
+							</li>
+							<li>
+								<button type="button" onClick="location.href='./U60001_a_pay-02-bank-01.html'">
+									<span class="emblem type15"><em class="hidden">저축은행</em></span>
+									<span>저축은행</span>
+								</button>
+							</li>
+							<li>
+								<button type="button" onClick="location.href='./U60001_a_pay-02-bank-01.html'">
+									<span class="emblem type20"><em class="hidden">산림조합</em></span>
+									<span>산림조합</span>
+								</button>
+							</li>
+							<li>
+								<button type="button" onClick="location.href='./U60001_a_pay-02-bank-01.html'">
+									<span class="emblem type21"><em class="hidden">토스뱅크</em></span>
+									<span>토스뱅크</span>
+								</button>
+							</li>
+						</ul>
+					</div>
+					<!-- E : 은행 리스트 -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- E : 은행 리스트 팝업 -->
+</body>
+
+</html>
+<!-- E : [디파이 수정2] 신규 파일 : CAP2 A Pay 마이페이지 A pay 결제수단 관리 페이지 -->
+<script>
+	// S : [디파이 수정2] 210901 A Pay 관리 관련 팝업
+	// S : [디파이 수정2] 210901 A Pay 간편결제 등록 서비스 이용약관 동의 팝업
+	$(".terms-wrapper").on("click", "#checkboxAll", function () {
+		var checked = $(this).is(":checked");
+
+		if (checked) {
+			$(this).parents(".terms-wrapper").find('input').prop("checked", true);
+			$('.next-phase-01').prop('disabled', false);
+		} else {
+			$(this).parents(".terms-wrapper").find('input').prop("checked", false);
+			$('.next-phase-01').prop('disabled', true);
+		}
+	});
+
+	$(".terms-wrapper").on("click", function () {
+		var input = $("input[name='check']");
+		var inputCheck = $("input[name='check']:checked");
+		var essential = $(".essential");
+		var essentialCheck = $(".essential:checked");
+
+		if (inputCheck.length == input.length) {
+			$("#checkboxAll").prop("checked", true);
+			$('.next-phase-01').prop('disabled', false);
+		} else if (inputCheck.length < input.length) {
+			$("#checkboxAll").prop("checked", false);
+			if (essentialCheck.length == essential.length) {
+				$('.next-phase-01').prop('disabled', false);
+			} else if (essentialCheck.length < essential.length) {
+				$('.next-phase-01').prop('disabled', true);
+			}
+		}
+	});
+	// E : [디파이 수정2] 210901 A Pay 간편결제 등록 서비스 이용약관 동의 팝업
+	var swiper = new Swiper(".mySwiper", {
+		/* S : 20220901 A Pay 수정 */
+		cssWidthAndHeight: true,
+        slidesPerView: 'auto',
+        visibilityFullFit: true,
+        autoResize: false,
+        spaceBetween: 0,
+        centeredSlides: true,
+        // initialSlide: 0, // 초기 슬라이드 위치
+        grabCursor: true,
+		slideToClickedSlide : true, //20220218 슬라이드 클릭 시 이동
+        observer: true, //20220816 A Pay 확산 부사업자등록
+        observeParents: true, //20220816 A Pay 확산 부사업자등록
+        keyboard: {
+            enabled: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        // S : 슬라이더 양옆 비활성화 하기 20220111
+        on: {
+            slideChangeTransitionEnd: function(){
+                $('.swiper-slide').find('.payment-basic').attr('disabled', false);
+                $('.swiper-slide-prev').find('.payment-basic').attr('disabled', true);
+                $('.swiper-slide-next').find('.payment-basic').attr('disabled', true);
+            },
+        }
+		/* E : 20220901 A Pay 수정 */
+	});
+
+	// 레이어 오픈 함수 호출
+	AMWAY.callLayer();
+	$('.card-swiper .payment-link.card').click(function (event) {
+		event.preventDefault();
+		layerPopOver(this, '.popup_terms');
+	});
+	$('.card-swiper .payment-link.bank').click(function (event) {
+		event.preventDefault();
+		layerPopOver(this, '.popup_bank-list');
+	});
+
+	var checkConfirm = function () {
+		var notCheckedItems = $('.terms-wrapper .essential').filter(function () {
+			return !$(this).is(':checked')
+		})
+		if (notCheckedItems.length <= 0) {
+			$('.popup_terms').find('.next-phase-01').prop('disabled', false)
+		}
+	}
+
+	// S : 이용약관 영역
+	$('.checkbox_item.check01 .terms-arrow').click(function (event) {
+		event.preventDefault();
+		layerPopOver(this, '.popup_terms_personal.personal01');
+	});
+	$('.checkbox_item.check02 .terms-arrow').click(function (event) {
+		event.preventDefault();
+		layerPopOver(this, '.popup_terms_personal.personal02');
+	});
+	$('.checkbox_item.check03 .terms-arrow').click(function (event) {
+		event.preventDefault();
+		layerPopOver(this, '.popup_terms_personal.personal03');
+	});
+	$('.checkbox_item.check04 .terms-arrow').click(function (event) {
+		event.preventDefault();
+		layerPopOver(this, '.popup_terms_personal.personal04');
+	});
+	$('.popup_terms_personal .bt-akl-blue').click(function (e) {
+		if (e.target.closest('.personal01')) {
+			$('.terms-wrapper').find('#checkbox01').prop('checked', true);
+			$('.personal01').hide();
+		} else if (e.target.closest('.personal02')) {
+			$('.terms-wrapper').find('#checkbox02').prop('checked', true);
+			$('.personal02').hide();
+		} else if (e.target.closest('.personal03')) {
+			$('.terms-wrapper').find('#checkbox03').prop('checked', true);
+			$('.personal03').hide();
+		} else if (e.target.closest('.personal04')) {
+			$('.terms-wrapper').find('#checkbox04').prop('checked', true);
+			$('.personal04').hide();
+		}
+		checkConfirm()
+	});
+		// E : 이용약관 영역
+    // E : [디파이 수정2] 210901 A Pay 관리 관련 팝업
+
+	/* S : 20220901 A Pay 수정 */
+	// 20220216 모바일 A-pay버튼 floating 변경
+	$(window).scroll(function() {
+		var scrollTop = $(this).scrollTop();
+		var footerHeight = $('footer').height();
+
+		if(scrollTop >= $(document).height() - $(window).height() - footerHeight - 270) {
+			$('.box_wrap.top_action-area.a-pay').addClass('inherit');
+		} else {
+			$('.box_wrap.top_action-area.a-pay').removeClass('inherit');
+		}
+	})
+	/* E : 20220901 A Pay 수정 */
+</script>
+</body>
+
+</html>
+<!-- E : [디파이 수정2] 신규 파일 : CAP2 A Pay 주문 결제 카드 등록 -->

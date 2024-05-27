@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>ABN Korea</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, minimum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700&subset=korean" rel="stylesheet">
+	<link rel="stylesheet" href="css/mask.css">
+	<script src="https://www.amway.co.kr/_ui/responsive/common/js/jquery-3.2.1.min.js"></script>
+</head>
+<body class="gate_page">
+<h1 class="logo_img">amway</h1>
+<div class="mask_index-wrap">
+	<div class="mask_img pc_block sold-out">
+		<img src="images/main_product.png" alt="">
+	</div>
+	<div class="mask_info">
+		<p class="product_logo">atomsphere sky</p>
+		<p class="product_name">금일 예정된 마스크가 <br><span class="txt_strong">모두 소진 되었습니다.</span></p>
+		<p class="product_info">엣모스피어 스카이 미세먼지마스크 KF94(의약외품)에 <span class="block">많은 관심을 주셔서 감사합니다.</span></p>
+		<div class="mask_img m_block sold-out">
+			<img src="images/main_product.png" alt="">
+		</div>
+		<div class="mobile-floating">
+			<div class="box_button-a">
+				<a href="reservations_sh.html" target="_blank" class="btn_pc" onclick="popOpen(this.href, 'popWin', 730, 530);return false;">예약 조회</a>
+				<button type="button" class="btn_mobile open_reservation-sh"><i class="ico_02"></i>예약 조회</button>
+			</div>
+			<div class="box_button-b">
+				<a href="" class="btn_type-b">회원가입</a>
+				<a href="" class="btn_type-c">암웨이 홈으로</a>
+			</div>
+			<p class="txt_noti">다른 제품 주문을 위해 amway.co.kr 홈으로 이동합니다.</p>
+		</div>
+	</div>
+</div>
+
+<div class="layer_popup layer_reservation">
+	<iframe src="mask_reservations.html" frameborder="0" class="box_iframe" scrolling="no"></iframe>
+	<button type="button" class="layer_close">닫기</button>
+</div>
+<div class="layer_popup layer_reservation-sh">
+	<iframe src="reservations_sh.html" frameborder="0" class="box_iframe" scrolling="no"></iframe>
+	<button type="button" class="layer_close">닫기</button>
+</div>
+<script>
+	function popOpen(url, name, width, height){
+		var toolbar_str = 'no';
+		var menubar_str = 'no';
+		var statusbar_str = 'no';
+		var scrollbar_str = 'yes';
+		var resizable_str = 'no';
+		window.open(url, name, 'width='+width+',height='+height+',toolbar='+toolbar_str+',menubar='+menubar_str+',status='+statusbar_str+',scrollbars='+scrollbar_str+',resizable='+resizable_str);
+	}
+
+	$(function() {
+		$('.open_reservation').click(function(event) {
+			$('.layer_reservation').addClass('active');
+		});
+		$('.open_reservation-sh').click(function(event) {
+			$('.layer_reservation-sh').addClass('active');
+		});
+		$('.layer_close').click(function(event) {
+			$('.layer_popup').removeClass('active');
+		});
+	})
+</script>
+</body>
+</html>

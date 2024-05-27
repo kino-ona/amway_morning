@@ -1,0 +1,21 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo start [Production branch]
+      - echo Insatlling NPM Packages and wget Enviorment File
+      - npm install -g pnpm@6
+  pre_build:
+    commands:
+      - pnpm install
+  build:
+    commands:
+      - echo pnpm build start `date`
+      - pnpm build
+  post_build:
+    commands:
+      - ls -al
+      - echo Copy Mylab Build File
+      - aws s3 cp --recursive dist/ s3://mylab.amway.co.kr
+      - echo Build completed on `date`

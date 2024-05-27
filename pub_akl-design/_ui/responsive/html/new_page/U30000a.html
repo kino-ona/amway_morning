@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>로그인 | Amway Korea</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords">
+	<meta name="description" content="NY Fee Bundle">
+	<meta name="robots" content="index,follow">
+
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-lib.css"><!-- 플러그인용 css : 2018.03.14 추가  -->
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common.css">
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.datepicker.js"></script><!-- datepicker : 2018.03.19 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/owl.carousel.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/isotope.pkgd.js"></script><!-- gnb 플러그인 : 2018.03.23 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/select2.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/new.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.raty.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_contents.js"></script><!-- brand 통합 : 2018.08.24 추가  -->
+	
+	
+	<!-- 190322 to 개발 : 현업컨펌을 위해 추가하는 css입니다. 실반영하지 말아주세요.-->
+	<style>
+		@media (max-width: 768px){
+			.new-wrapper-login .fingerprint {padding:0 !important}
+			.new-wrapper-login .fingerprint .finger-text.text-smaller {font-size: 10px !important; margin-bottom: 8px !important}
+			.new-wrapper-login .login-title {display: none;}
+			.new-wrapper-login .login-form__username {margin-top:0 !important}
+			.akl .new-wrapper-login .login-form__submit {height:40px !important; font-size:14px !important; font-weight: 500 !important}
+			.akl .new-wrapper-login .login-form__register {height:40px !important; font-size:14px !important; line-height:37px; font-weight: 500 !important}
+			.new-wrapper-login hr {margin:0 0 12px !important; border:none !important}
+			.new-wrapper-login .login-form__link {margin-top:7px !important}
+			.akl .new-wrapper-login .login-page .login-form__owner {margin-bottom: 5px !important}
+		}
+	</style>
+	<!-- //190322 to 개발 : 현업컨펌을 위해 추가하는 css입니다. 실반영하지 말아주세요.-->
+	
+	
+</head>
+<body class="akl">
+	<!-- skipToContent -->
+	<div id="skipToContent">
+	<a href="#contents">콘텐츠 바로가기 </a>
+	</div>
+	<!-- //skipToContent -->
+
+	<main>
+		<div id="header"></div>
+		<div class="container-fluid main-container" id="contents">
+			<div class="print-hide breadcrumb-section">
+				<ol class="breadcrumb">
+					<li><a href="#">홈</a></li>
+					<li>로그인</li>
+				</ol>
+			</div>
+		</div>
+
+		<div class="wrapper-login new-wrapper-login"><!-- 수정 : 190322 클래스추가 new-wrapper-login-->
+			<div class="login-page">
+				<h1 class="login-title">로그인</h1>
+				<div class="login-email-box">
+					<input type="text" placeholder="아이디/회원번호" class="login-form__username" title="아이디/회원번호">
+					<p class="help-block" style="display:block"><span>아이디를 입력하세요</span></p>
+				</div>
+				<input type="password" placeholder="비밀번호" class="login-form__password" title="비밀번호 입력">
+				<p class="help-block" style="display:block"><span>비밀번호를 입력하세요</span></p>
+				<input class="login-form__remember" id="remember" name="remember" type="checkbox"><label for="remember" class="remember-me">아이디 저장</label>
+				<input class="btn-primary button login-form__submit" type="button" value="로그인" id="Login_Login">
+
+				<a class="login-form__link" href="#">아이디찾기</a>
+				<a class="login-form__link" href="#">비밀번호찾기</a>
+				<hr>
+
+				<!-- 190308_수정 로그인 문구 수정 -->
+				<p class="fingerprint">
+					<span class="finger-text text-smaller">
+						지문(생체) 로그인을 위해서는 지문(생체) 등록 및 인식기능을 제공하는 휴대폰에서 이용 가능합니다.<br>
+						※ 안드로이드 홍채 및 얼굴인식 로그인은 지원되지 않습니다.
+					</span>
+					<button type="button" class="bt-akl-blue"><span>지문인증 로그인</span></button>
+				</p>
+				<!-- //190308_수정 로그인 문구 수정 -->
+
+				<p class="login-form__owner">암웨이 비즈니스와 함께하세요.</p>
+				<a href="register-landing.html"><span class="login-form__register">회원가입</span></a>
+			</div>
+		</div>
+
+		<div id="quick"></div>
+		<div id="footer"></div>
+	</main>
+
+</body>
+
+</html>

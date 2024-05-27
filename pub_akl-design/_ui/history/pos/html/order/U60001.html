@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>POS Korea</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="/assets/css/common.css">
+</head>
+<body>
+<!-- wrap -->
+<div id="wrap">
+    <!-- 상단 -->
+    <div id="header">
+        <div class="left">
+            <img src="/assets/images/common/logo.png" alt="Amway">
+            <!-- 20180917 프라자 삭제 --><em>POS No. 강서</em><!-- //20180917 프라자 삭제 -->
+            <span>2018.02.05 17:16:19</span>
+        </div>
+        <div class="right">
+            <button type="button" class="type01 dp01"><i class="ico_comm keyboard"></i>키보드</button>
+            <button type="button" class="type01 dp02"><span class="count">2</span>보류</button>
+            <button type="button" class="type02">근무종료</button>
+            <button type="button" class="type02">화면잠금</button>
+        </div>
+    </div>
+    <!-- //상단 -->
+    <!-- 본문 -->
+    <div id="container" class="customer">
+        <div class="m_cont type02">
+            <!-- 검색영역 -->
+            <div class="srch_wrap">
+                <h1 class="tit_h1">주문완료 내역</h1>
+                <p class="txt01">현 ABS에서는 현재 인식된 고객의 60일간 픽업/예약주문에 대한 조회만 가능합니다.</p>
+                <!-- 20180627 수정 -->
+                <label class="inp_rd type01" for="sk1">ABO 번호/아이디<input type="radio" name="sk" id="sk1" checked><span class="checkmark"></span></label>
+                <label class="inp_rd type01" for="sk2">휴대폰 번호<input type="radio" name="sk" id="sk2"><span class="checkmark"></span></label>
+                <!-- //20180627 수정 -->
+                <div class="mbinfo_search">
+                    <select title="회원구분">
+                        <option>ABO회원</option>
+                    </select>
+                    <input type="text" style="width:480px">
+                    <button type="button" class="btn01_blue">확인</button>
+                </div>
+            </div>
+            <!-- //검색영역 -->
+
+            <!-- 검색결과 영역 : 검색 후-->
+            <div class="mbinfo_list">
+                <p class="txt"><strong>총 <span class="fc_red">35</span>건</strong>이 검색되었습니다.</p>
+                <span class="btn_wrap">
+                    <!-- 이전,다음 리스트가 있을때 on클래스 추가 -->
+                    <a href="#" class="ico_comm prev03">이전</a>
+                    <a href="#" class="ico_comm next03 on">다음</a>
+                    <!-- //이전,다음 리스트가 있을때 on클래스 추가 -->
+                </span>
+                <!-- 검색결과 : 있음(페이지당 회원 최대 수 7개) -->
+                <!-- 20180713 수정 -->
+                <div class="tbl_col bg_bar">
+                    <table>
+                        <caption>조회결과</caption>
+                        <colgroup>
+                            <col style="width:70px">
+                            <col style="width:120px">
+                            <col>
+                            <col style="width:130px">
+                            <col style="width:150px">
+                            <col style="width:80px">
+                            <col style="width:110px">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">번호</th>
+                                <th scope="col">주문번호</th>
+                                <th scope="col">성명</th>
+                                <th scope="col">결제금액</th>
+                                <th scope="col">실주문일자</th>
+                                <th scope="col">주문형태</th>
+                                <th scope="col">주문상태</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- 회원 선택시 tr에 on클래스 추가 -->
+                            <tr class="on">
+                                <td><span>1</span></td>
+                                <td><span>23232017234</span></td>
+                                <td><span class="elips mx180 ac">김길동</span></td>
+                                <td class="ar"><span>999,120,000원</span></td>
+                                <td><span>18/01/30  15:53:55</span></td>
+                                <td><span>일반</span></td>
+                                <td><span>주문완료<!-- 삭제<a href="#" class="btn03_blue mgl10">취소</a><a href="#" class="btn03_gray">영수증</a> --></span></td>
+                            </tr>
+                            <tr>
+                                <td><span>2</span></td>
+                                <td><span>23232017</span></td>
+                                <td><span class="elips mx180 ac">김길동동동동동동</span></td>
+                                <td class="ar"><span>20,000원</span></td>
+                                <td><span>18/01/30  15:53:55</span></td>
+                                <td><span>픽업</span></td>
+                                <td><span>주문완료<!-- 삭제<a href="#" class="btn03_blue mgl10">취소</a><a href="#" class="btn03_gray">영수증</a> --></span></td>
+                            </tr>
+                            <tr>
+                                <td><span>3</span></td>
+                                <td><span>23232017</span></td>
+                                <td><span class="elips mx180 ac">김길동동동동동동</span></td>
+                                <td class="ar"><span>20,000원</span></td>
+                                <td><span>18/01/30  15:53:55</span></td>
+                                <td><span>픽업</span></td>
+                                <td><span>주문완료<!-- 삭제<a href="#" class="btn03_blue mgl10">취소</a><a href="#" class="btn03_gray">영수증</a> --></span></td>
+                            </tr>
+                            <tr>
+                                <td><span>4</span></td>
+                                <td><span>23232017</span></td>
+                                <td><span class="elips mx180 ac">김길동동동동동동</span></td>
+                                <td class="ar"><span>20,000원</span></td>
+                                <td><span>18/01/30  15:53:55</span></td>
+                                <td><span>픽업</span></td>
+                                <td><span>주문완료<!-- 삭제<a href="#" class="btn03_blue mgl10">취소</a><a href="#" class="btn03_gray">영수증</a> --></span></td>
+                            </tr>
+                            <tr>
+                                <td><span>5</span></td>
+                                <td><span>23232017</span></td>
+                                <td><span class="elips mx180 ac">김길동동동동동동</span></td>
+                                <td class="ar"><span>20,000원</span></td>
+                                <td><span>18/01/30  15:53:55</span></td>
+                                <td><span>픽업</span></td>
+                                <td><span>주문완료<!-- 삭제<a href="#" class="btn03_blue mgl10">취소</a><a href="#" class="btn03_gray">영수증</a> --></span></td>
+                            </tr>
+                            <tr>
+                                <td><span>6</span></td>
+                                <td><span>23232017</span></td>
+                                <td><span class="elips mx180 ac">김길동동동동동동</span></td>
+                                <td class="ar"><span>20,000원</span></td>
+                                <td><span>18/01/30  15:53:55</span></td>
+                                <td><span>픽업</span></td>
+                                <td><span>주문완료<!-- 삭제<a href="#" class="btn03_blue mgl10">취소</a><a href="#" class="btn03_gray">영수증</a> --></span></td>
+                            </tr>
+                            <tr>
+                                <td><span>7</span></td>
+                                <td><span>23232017</span></td>
+                                <td><span class="elips mx180 ac">김길동동동동동동</span></td>
+                                <td class="ar"><span>20,000원</span></td>
+                                <td><span>18/01/30  15:53:55</span></td>
+                                <td><span>픽업</span></td>
+                                <td><span>주문완료<!-- 삭제<a href="#" class="btn03_blue mgl10">취소</a><a href="#" class="btn03_gray">영수증</a> --></span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- //20180713 수정 -->
+                <!-- // 검색결과 : 있음(페이지당 회원 최대 수 7개) -->
+
+                <!-- 검색결과 : 없음
+                 <p class="no_data">해당 하는 검색 결과가 없습니다. 다시 검색해 주세요.</p>
+                //검색결과 : 없음 -->
+
+                <div class="btn_bottom">
+                    <span class="fr">
+                        <!-- 20180827 삭제 <a href="#" class="btn01_blue">확인</a> -->
+                        <a href="#" class="btn01_blue">판매등록</a>
+                        <!-- 20180917 변경 --><a href="#" class="btn01_white">초기화</a><!-- //20180917 변경 -->
+                    </span>
+                </div>
+
+            </div>
+            <!-- //검색결과 영역 : 검색 후 -->
+        </div>
+    </div>
+    <!-- //본문 -->
+</div>
+<!-- //wrap -->
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>POS Korea</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="/assets/css/common.css">
+</head>
+<body>
+<div class="layer_pop">
+    <div class="pop_wrap pop_l">
+        <div class="pop_header">
+            <h1>상품정보조회</h1>
+            <button type="button" class="ico_comm pop_close01">닫기</button>
+        </div>
+        <!-- pop_container -->
+        <div class="pop_container">
+            <div class="pop_content">
+                <p class="txt01">상품 정보 조회 시 아래의 바코드 스캐닝 또는 직접 입력을 선택하여 조회 가능합니다.</p>
+               <!-- 바코드 스캐닝 삭제 :20180511
+                <label class="inp_rd type01" for="bs">바코드 스캐닝<input type="radio" name="jb" id="bs"><span class="checkmark"></span></label>
+                <div class="mbinfo_search">
+                    <input type="text" style="width:480px">
+                    <button type="button" class="btn01_blue">확인</button>
+                </div>
+                //바코드 스캐닝 -->
+                <!-- 직접 입력 -->
+                <div class="mgt12">
+                    <label class="inp_rd type01" for="jb1">바코드 (SKU 코드)<input type="radio" name="jb" id="jb1" checked><span class="checkmark"></span></label>
+                    <label class="inp_rd type01" for="jb2">VPS 코드<input type="radio" name="jb" id="jb2"><span class="checkmark"></span></label>
+                    <label class="inp_rd type01" for="jb3">상품명<input type="radio" name="jb" id="jb3"><span class="checkmark"></span></label>
+                </div>
+                <div class="mbinfo_search">
+                    <input type="text" style="width:480px">
+                    <button type="button" class="btn01_blue">확인</button>
+                </div>
+                <!-- //직접 입력 -->
+
+                <!-- 검색결과 영역 : 검색 후-->
+                <div class="mbinfo_list">
+                    <p class="txt"><strong>총 <span class="fc_red">35</span>건</strong>이 검색되었습니다.</p>
+                    <span class="btn_wrap">
+                        <!-- 이전,다음 리스트가 있을때 on클래스 추가 -->
+                        <a href="#" class="ico_comm prev03">이전</a>
+                        <a href="#" class="ico_comm next03 on">다음</a>
+                    </span>
+                    <!-- 검색결과 : 있음(페이지당 상품 최대 개수 5개) -->
+                    <div class="tbl_col bg_bar">
+                        <table>
+                            <caption>상품조회결과</caption>
+                            <colgroup>
+                                <col style="width:70px">
+                                <col>
+                                <col style="width:90px">
+                                <col style="width:100px">
+                                <col style="width:130px">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">프로모션</th>
+                                    <th scope="col">상품명</th>
+                                    <th scope="col">VPS 코드</th>
+                                    <th scope="col">상품코드</th>
+                                    <th scope="col">재고수량</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- 상품 선택시 tr에 on클래스 추가 -->
+                                <tr class="on">
+                                    <td><span class="tag02_blue">1+1</span></td>
+                                    <td class="tit"><span class="elips">글리스터 리후레셔 스프레이 리후레셔 스프레이 스프레이 리후레셔 스프레이</span></td>
+                                    <td><span class="none">[2010]</span></td>
+                                    <td><span>100394K19</span></td>
+                                    <td><span>재고(총 10개)</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="tag02_sky">NEW</span></td>
+                                    <td class="tit"><span class="elips">글리스터 리후레셔 스프레이</span></td>
+                                    <td><span class="none">[2010]</span></td>
+                                    <td><span>100394K19</span></td>
+                                    <td><span>재고(총 1,000개)</span></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="tit"><span class="elips">글리스터 리후레셔 스프레이</span></td>
+                                    <td><span class="none">[2010]</span></td>
+                                    <td><span>100394K19</span></td>
+                                    <td><span>재고(총 1,000개)</span></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="tit"><span class="elips">글리스터 리후레셔 스프레이</span></td>
+                                    <td><span class="none">[2010]</span></td>
+                                    <td><span>100394K19</span></td>
+                                    <td><span>재고(총 1,000개)</span></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="tit"><span class="elips">글리스터 리후레셔 스프레이</span></td>
+                                    <td><span class="none">[2010]</span></td>
+                                    <td><span>100394K19</span></td>
+                                    <td><span>재고(총 1,000개)</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- // 검색결과 : 있음(페이지당 상품 최대 개수 5개) -->
+
+                    <!-- 검색결과 : 없음
+                     <p class="no_data">해당 하는 검색 결과가 없습니다. 다시 검색해 주세요.</p>
+                    //검색결과 : 없음 -->
+
+                </div>
+                <!-- //검색결과 영역 : 검색 후 -->
+            </div>
+        </div>
+        <!-- //pop_container -->
+        <div class="pop_footer clearfix">
+            <span class="fl">취소 ESC</span>
+            <span class="fr">
+                <a href="#" class="btn01_blue">선택</a>
+                <!-- 20180904 수정 --><a href="#" class="btn01_white">초기화</a><!-- //20180904 수정 -->
+            </span>
+        </div>
+    </div>
+</div>
+</body>
+</html>

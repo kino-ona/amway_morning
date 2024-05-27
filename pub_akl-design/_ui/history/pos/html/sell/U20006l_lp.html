@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>POS Korea</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <link rel="stylesheet" type="text/css" href="/assets/css/common.css"> -->
+    <link rel="stylesheet" type="text/css" href="/_ui/pos/assets/css/common.css">
+</head>
+<body>
+<div class="layer_pop layer_pop_aCliks">
+    <div class="pop_wrap pop_m">
+        <div class="pop_header">
+            <h1>A Cliks Money</h1>
+            <button type="button" class="ico_comm pop_close01">닫기</button>
+        </div>
+        <!-- pop_container -->
+        <div class="pop_container">
+            <div class="pop_content">
+                <!-- 결제내역 -->
+                <div class="tbl_row">
+                    <table>
+                        <caption>A Cliks Money</caption>
+                        <colgroup>
+                            <col style="width:120px">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">총 결제금액</th>
+                                <td colspan="3"><span class="won">100,000원</span></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">사용 가능한<br/>A Cliks Money</th>
+                                <td colspan="3"><span class="won">100,000원</span> / 당월 소멸예정 100,000원</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">사용할 금액</th>
+                                <td colspan="3">
+                                    <input type="text" class="w110 ar" title="사용할 금액"> 원
+                                    <label class="inp_rd mgl10" for="fg1">일부금액<input type="radio" name="fg" id="fg1" checked><span class="checkmark"></span></label>
+                                    <label class="inp_rd" for="fg2">전체금액<input type="radio" name="fg" id="fg2"><span class="checkmark"></span></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">잔여<br/>A Cliks Money</th>
+                                <td colspan="3"><span class="won">100,000원</span></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <dl class="caution">
+                    <dt><span class="tag01">주의</span></dt>
+                    <dd>매월 보너스 지급일인 15일에 보너스 계좌로 입금 될 수 있습니다.<br>(계좌 오류 시 재 적립 됨)</dd>
+                    <dd>환불을 원하시는 경우 고객센터 1588-0080번으로 연락을 주십시오.</dd>
+                    <dd class="star">전체 금액 사용 체크 시 1원을 제외한 최종 결제 금액이 적용됩니다.</dd>
+                </dl>
+                <!-- //결제내역 -->
+            </div>
+        </div>
+        <!-- //pop_container -->
+        <div class="pop_footer clearfix">
+            <span class="fl">취소 ESC</span>
+            <!-- 20180713 추가 -->
+            <em class="finish fail">잔액보다 사용하려는 금액이클 수 없습니다.</em>
+            <!-- //20180713 추가 -->
+        </div>
+    </div>
+</div>
+</body>
+</html>

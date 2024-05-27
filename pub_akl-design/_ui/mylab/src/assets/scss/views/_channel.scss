@@ -1,0 +1,188 @@
+//== 멤버 채널
+
+.channel {
+  // 공통 .h2-title
+  .h2-title {
+    display: block;
+    margin-top: 3rem;
+  }
+  // 페이지별 .h2-title 여백조정
+  &.kit-enroll {
+    .h2-title {
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+  &.kit-buy {
+    .h2-title {
+      margin-top: 2rem;
+    }
+  }
+
+  // 로그인
+  &.login {
+    padding: 0 2.4rem 4rem;
+
+    .title-summary {
+      p {
+        color: $darkgray-color;
+        font-size: 1.1rem;
+        line-height: 1.5;
+      }
+    }
+    .formbox {
+      margin-top: 1.5rem;
+    }
+  }
+
+  // 약관동의
+  &.agree {
+    padding: 0 2.4rem 4rem;
+  }
+
+  // 멤버
+  &.member {
+    margin-top: 5rem;
+
+    .h2-title {
+      display: none;
+    }
+  }
+
+  // 멤버 수정
+  &.member-edit {
+    padding: 0 2.4rem;
+
+    .h2-title {
+      display: none;
+    }
+    .formbox {
+      margin-top: 5rem;
+    }
+    .btn-area {
+      margin-top: 3rem;
+      margin-bottom: 1.5rem;
+
+      .btn-withdrawal {
+        padding-bottom: 0.2rem;
+        color: $gray-color;
+        font-size: 1.1rem;
+        border-bottom: 1px solid #999;
+
+        &:hover,
+        &:active {
+          color: $dark-color;
+          border-color: #222;
+        }
+      }
+    }
+  }
+
+  // 탈퇴
+  &.member-leave {
+    padding-top: 0;
+  }
+}
+
+/* width:768~ */
+@include mq('md') {
+  .channel {
+    // 공통 .h2-title
+    .h2-title {
+      display: block;
+      margin-top: 0;
+      margin-bottom: 40px;
+    }
+
+    // 로그인
+    &.login {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 30px 100px;
+
+      .title-summary {
+        margin-top: -28px;
+        p {
+          color: $gray-color;
+          font-size: 16px;
+          text-align: center;
+        }
+      }
+      .formbox {
+        margin-top: 40px;
+      }
+    }
+
+    // 약관동의
+    &.agree {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 30px 100px;
+    }
+
+    // 멤버
+    &.member {
+      margin-top: 0;
+
+      .h2-title {
+        display: block;
+      }
+    }
+
+    // 멤버 수정
+    &.member-edit {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 30px 0;
+
+      .h2-title {
+        display: block;
+      }
+      .member-info {
+        position: relative;
+        margin-top: -100px;
+        margin-bottom: 30px;
+
+        .img {
+          width: 110px;
+        }
+        .user {
+          margin-top: 10px;
+
+          strong {
+            margin-right: 6px;
+            font-size: 18px;
+          }
+          span {
+            font-size: 18px;
+          }
+          .label {
+            width: 20px;
+            height: 20px;
+            margin-right: 6px;
+            padding: 1px 2px 0px 1px;
+            font-size: 12px;
+            border-radius: 20px;
+          }
+        }
+      }
+      .formbox {
+        margin-top: 100px;
+      }
+      .btn-area {
+        margin-top: 60px;
+        margin-bottom: 25px;
+
+        .btn-withdrawal {
+          padding-bottom: 5px;
+          font-size: 15px;
+        }
+      }
+    }
+
+    // 탈퇴
+    &.member-leave {
+      padding-top: 60px;
+    }
+  }
+}

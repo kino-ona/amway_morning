@@ -1,0 +1,494 @@
+<div id="sop_order_copy" class="layer-area plp-v2 plp-v2-st2 auto_renewal sop_order_copy">
+    <div class="layer-area_container with_pop_head shipping_delivery_st02">
+        <div class="layer-prd_search_top cash_tax">
+            <div class="pop_head">
+                <span>
+                    <button class="btn_back moView">
+                        <i class="sp_ic">이전</i>
+                    </button>
+                </span>
+                <h2 class="tax">SOP 주문서 복사</h2>
+            </div>
+        </div>
+
+        <div class="layer-area_content2 new-payment gift_order renew layer-area_sop_order_copy">
+            <div class="sop_order_copy-container">
+                <h3 class="sop_order_copy-title">복사할 주문서를 선택하세요.</h3>
+
+                <!-- S : 20230427 SOP 간편 재시작, SOP/장스오 자동갱신 수정 -->
+                <div class="sop_order_btn_wrap">
+                    <!-- S : 20231004 SOP 주문서 복사 개선 -->
+                    <!-- <p>주문서상태</p> -->
+                    <div class="sop_order_btn_tit">
+                        <p>주문서상태</p>
+                        <div class="alignBtnBox">
+                            <button type="button" class="alignBtn new active">최신순</button>
+                            <button type="button" class="alignBtn old">오래된순</button>
+                        </div>
+                    </div>
+                    <!-- E : 20231004 SOP 주문서 복사 개선 -->
+                    <div>
+                        <button type="button" class="btn_cond active">진행중</button>
+                        <button type="button" class="btn_cond">완료</button>
+                        <button type="button" class="btn_cond">취소</button>
+                    </div>
+                </div>
+                <!-- E : 20230427 SOP 간편 재시작, SOP/장스오 자동갱신 수정 -->
+
+                <div class="sop-accodion-area">
+                    <!-- to 개발 | 리스트 최대 10개 노출 -->
+                    <div class="sop-accodion-box">
+                        <div class="sop-accodion-box-tit">
+                            <input class="amwa-radio" type="radio" name="sopOrderList" id="order_01" vlue>
+                            <label class="text-uppercase accordion-header-text" for="order_01"></label>
+                            <a href="#sop-accodion-con1"  aria-expanded="false">
+                                <span class="sop-accodion-hd-txt">주문서명 1줄로 노출됩니다 주문서명 1줄로 노출됩니다.</span>
+                                <span class="pull-right icon-arr"></span>
+                            </a>
+                        </div>
+                        <div id="sop-accodion-con1" class="sop-accodion-con" aria-expanded="false">
+                            <div class="accodion-con-area">
+                                <div class="accodion-con-box">
+                                    <div class="accodion-con-title">
+                                        <p>결제수단</p>
+                                    </div>
+                                    <div class="accodion-con-txt">
+                                        <p>무통장입금</p>
+                                    </div>
+                                </div>
+                                <div class="accodion-con-box">
+                                    <div class="accodion-con-title">
+                                        <p>배송지</p>
+                                    </div>
+                                    <div class="accodion-con-txt">
+                                        <p>[11111] 서울시 양천구 남부순환로11길 111 가나다라마바사아 1단지 111동 1111호</p>
+                                    </div>
+                                </div>
+                                <div class="accodion-con-box">
+                                    <div class="accodion-con-title">
+                                        <p>결제일</p>
+                                    </div>
+                                    <div class="accodion-con-txt">
+                                        <p>매월1일</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- S : 픽업 주문 케이스 -->
+                    <div class="sop-accodion-box">
+                        <div class="sop-accodion-box-tit">
+                            <input class="amwa-radio" type="radio" name="sopOrderList" id="order_02" vlue>
+                            <label class="text-uppercase accordion-header-text" for="order_02"></label>
+                            <a href="#sop-accodion-con2"  aria-expanded="false">
+                                <span class="sop-accodion-hd-txt">주문서명 1줄로 노출됩니다 주문서명 1줄로 노출됩니다.</span>
+                                <span class="pull-right icon-arr"></span>
+                            </a>
+                        </div>
+                        <div id="sop-accodion-con2" class="sop-accodion-con" aria-expanded="false">
+                            <div class="accodion-con-area">
+                                <div class="accodion-con-box">
+                                    <div class="accodion-con-title">
+                                        <p>결제수단</p>
+                                    </div>
+                                    <div class="accodion-con-txt">
+                                        <p>무통장입금</p>
+                                    </div>
+                                </div>
+                                <!-- S : 20230427 SOP 간편 재시작, SOP/장스오 자동갱신 수정 -->
+                                <div class="accodion-con-box">
+                                    <div class="accodion-con-title">
+                                        <p>수령지</p>
+                                    </div>
+                                    <div class="accodion-con-txt">
+                                        <p class="accodion-con-txt_area">인천</p>
+                                        <p class="accodion-con-txt_add">인천광역시 남동구 서창남순환로10번길 50 코아프라자 2층 암웨이 비즈니스 센터</p>
+                                    </div>
+                                </div>
+                                <!-- E : 20230427 SOP 간편 재시작, SOP/장스오 자동갱신 수정 -->
+                                <div class="accodion-con-box">
+                                    <div class="accodion-con-title">
+                                        <p>결제일</p>
+                                    </div>
+                                    <div class="accodion-con-txt">
+                                        <p>매월1일</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- E : 픽업 주문 케이스 -->
+                    <div class="sop-accodion-box">
+                        <div class="sop-accodion-box-tit">
+                            <input class="amwa-radio" type="radio" name="sopOrderList" id="order_03" vlue>
+                            <label class="text-uppercase accordion-header-text" for="order_03"></label>
+                            <a href="#sop-accodion-con3"  aria-expanded="false">
+                                <span class="sop-accodion-hd-txt">주문서명 1줄로 노출됩니다 주문서명 1줄로 노출됩니다.</span>
+                                <span class="pull-right icon-arr"></span>
+                            </a>
+                        </div>
+                        <div id="sop-accodion-con3" class="sop-accodion-con" aria-expanded="false">
+                            <div class="accodion-con-area">
+                                <div class="accodion-con-box">
+                                    <div class="accodion-con-title">
+                                        <p>결제수단</p>
+                                    </div>
+                                    <div class="accodion-con-txt">
+                                        <p>무통장입금</p>
+                                    </div>
+                                </div>
+                                <div class="accodion-con-box">
+                                    <div class="accodion-con-title">
+                                        <p>배송지</p>
+                                    </div>
+                                    <div class="accodion-con-txt">
+                                        <p>[11111] 서울시 양천구 남부순환로11길 111 가나다라마바사아 1단지 111동 1111호</p>
+                                    </div>
+                                </div>
+                                <div class="accodion-con-box">
+                                    <div class="accodion-con-title">
+                                        <p>결제일</p>
+                                    </div>
+                                    <div class="accodion-con-txt">
+                                        <p>매월1일</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sop-accodion-box">
+                        <div class="sop-accodion-box-tit">
+                            <input class="amwa-radio" type="radio" name="sopOrderList" id="order_04" vlue>
+                            <label class="text-uppercase accordion-header-text" for="order_04"></label>
+                            <a href="#sop-accodion-con4"  aria-expanded="false">
+                                <span class="sop-accodion-hd-txt">주문서명 1줄로 노출됩니다 주문서명 1줄로 노출됩니다.</span>
+                                <span class="pull-right icon-arr"></span>
+                            </a>
+                        </div>
+                        <div id="sop-accodion-con4" class="sop-accodion-con" aria-expanded="false">
+                            <div class="accodion-con-area">
+                                <div class="accodion-con-box">
+                                    <div class="accodion-con-title">
+                                        <p>결제수단</p>
+                                    </div>
+                                    <div class="accodion-con-txt">
+                                        <p>무통장입금</p>
+                                    </div>
+                                </div>
+                                <div class="accodion-con-box">
+                                    <div class="accodion-con-title">
+                                        <p>배송지</p>
+                                    </div>
+                                    <div class="accodion-con-txt">
+                                        <p>[11111] 서울시 양천구 남부순환로11길 111 가나다라마바사아 1단지 111동 1111호</p>
+                                    </div>
+                                </div>
+                                <div class="accodion-con-box">
+                                    <div class="accodion-con-title">
+                                        <p>결제일</p>
+                                    </div>
+                                    <div class="accodion-con-txt">
+                                        <p>매월1일</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sop-accodion-box">
+                        <div class="sop-accodion-box-tit">
+                            <input class="amwa-radio" type="radio" name="sopOrderList" id="order_05" vlue>
+                            <label class="text-uppercase accordion-header-text" for="order_05"></label>
+                            <a href="#sop-accodion-con5"  aria-expanded="false">
+                                <span class="sop-accodion-hd-txt">주문서명 1줄로 노출됩니다 주문서명 1줄로 노출됩니다.</span>
+                                <span class="pull-right icon-arr"></span>
+                            </a>
+                        </div>
+                        <div id="sop-accodion-con5" class="sop-accodion-con" aria-expanded="false">
+                            <div class="accodion-con-area">
+                                <div class="accodion-con-box">
+                                    <div class="accodion-con-title">
+                                        <p>결제수단</p>
+                                    </div>
+                                    <div class="accodion-con-txt">
+                                        <p>무통장입금</p>
+                                    </div>
+                                </div>
+                                <div class="accodion-con-box">
+                                    <div class="accodion-con-title">
+                                        <p>배송지</p>
+                                    </div>
+                                    <div class="accodion-con-txt">
+                                        <p>[11111] 서울시 양천구 남부순환로11길 111 가나다라마바사아 1단지 111동 1111호</p>
+                                    </div>
+                                </div>
+                                <div class="accodion-con-box">
+                                    <div class="accodion-con-title">
+                                        <p>결제일</p>
+                                    </div>
+                                    <div class="accodion-con-txt">
+                                        <p>매월1일</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sop-accodion-box">
+                        <div class="sop-accodion-box-tit">
+                            <input class="amwa-radio" type="radio" name="sopOrderList" id="order_06" vlue>
+                            <label class="text-uppercase accordion-header-text" for="order_06"></label>
+                            <a href="#sop-accodion-con6"  aria-expanded="false">
+                                <span class="sop-accodion-hd-txt">주문서명 1줄로 노출됩니다 주문서명 1줄로 노출됩니다.</span>
+                                <span class="pull-right icon-arr"></span>
+                            </a>
+                        </div>
+                        <div id="sop-accodion-con6" class="sop-accodion-con" aria-expanded="false">
+                            <div class="accodion-con-area">
+                                <div class="accodion-con-box">
+                                    <div class="accodion-con-title">
+                                        <p>결제수단</p>
+                                    </div>
+                                    <div class="accodion-con-txt">
+                                        <p>무통장입금</p>
+                                    </div>
+                                </div>
+                                <div class="accodion-con-box">
+                                    <div class="accodion-con-title">
+                                        <p>배송지</p>
+                                    </div>
+                                    <div class="accodion-con-txt">
+                                        <p>[11111] 서울시 양천구 남부순환로11길 111 가나다라마바사아 1단지 111동 1111호</p>
+                                    </div>
+                                </div>
+                                <div class="accodion-con-box">
+                                    <div class="accodion-con-title">
+                                        <p>결제일</p>
+                                    </div>
+                                    <div class="accodion-con-txt">
+                                        <p>매월1일</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sop-accodion-box">
+                        <div class="sop-accodion-box-tit">
+                            <input class="amwa-radio" type="radio" name="sopOrderList" id="order_07" vlue>
+                            <label class="text-uppercase accordion-header-text" for="order_07"></label>
+                            <a href="#sop-accodion-con7"  aria-expanded="false">
+                                <span class="sop-accodion-hd-txt">주문서명 1줄로 노출됩니다 주문서명 1줄로 노출됩니다.</span>
+                                <span class="pull-right icon-arr"></span>
+                            </a>
+                        </div>
+                        <div id="sop-accodion-con7" class="sop-accodion-con" aria-expanded="false">
+                            <div class="accodion-con-area">
+                                <div class="accodion-con-box">
+                                    <div class="accodion-con-title">
+                                        <p>결제수단</p>
+                                    </div>
+                                    <div class="accodion-con-txt">
+                                        <p>무통장입금</p>
+                                    </div>
+                                </div>
+                                <div class="accodion-con-box">
+                                    <div class="accodion-con-title">
+                                        <p>배송지</p>
+                                    </div>
+                                    <div class="accodion-con-txt">
+                                        <p>[11111] 서울시 양천구 남부순환로11길 111 가나다라마바사아 1단지 111동 1111호</p>
+                                    </div>
+                                </div>
+                                <div class="accodion-con-box">
+                                    <div class="accodion-con-title">
+                                        <p>결제일</p>
+                                    </div>
+                                    <div class="accodion-con-txt">
+                                        <p>매월1일</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sop-accodion-box">
+                        <div class="sop-accodion-box-tit">
+                            <input class="amwa-radio" type="radio" name="sopOrderList" id="order_08" vlue>
+                            <label class="text-uppercase accordion-header-text" for="order_08"></label>
+                            <a href="#sop-accodion-con8"  aria-expanded="false">
+                                <span class="sop-accodion-hd-txt">주문서명 1줄로 노출됩니다 주문서명 1줄로 노출됩니다.</span>
+                                <span class="pull-right icon-arr"></span>
+                            </a>
+                        </div>
+                        <div id="sop-accodion-con8" class="sop-accodion-con" aria-expanded="false">
+                            <div class="accodion-con-area">
+                                <div class="accodion-con-box">
+                                    <div class="accodion-con-title">
+                                        <p>결제수단</p>
+                                    </div>
+                                    <div class="accodion-con-txt">
+                                        <p>무통장입금</p>
+                                    </div>
+                                </div>
+                                <div class="accodion-con-box">
+                                    <div class="accodion-con-title">
+                                        <p>배송지</p>
+                                    </div>
+                                    <div class="accodion-con-txt">
+                                        <p>[11111] 서울시 양천구 남부순환로11길 111 가나다라마바사아 1단지 111동 1111호</p>
+                                    </div>
+                                </div>
+                                <div class="accodion-con-box">
+                                    <div class="accodion-con-title">
+                                        <p>결제일</p>
+                                    </div>
+                                    <div class="accodion-con-txt">
+                                        <p>매월1일</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sop-accodion-box">
+                        <div class="sop-accodion-box-tit">
+                            <input class="amwa-radio" type="radio" name="sopOrderList" id="order_09" vlue>
+                            <label class="text-uppercase accordion-header-text" for="order_09"></label>
+                            <a href="#sop-accodion-con9"  aria-expanded="false">
+                                <span class="sop-accodion-hd-txt">주문서명 1줄로 노출됩니다 주문서명 1줄로 노출됩니다.</span>
+                                <span class="pull-right icon-arr"></span>
+                            </a>
+                        </div>
+                        <div id="sop-accodion-con9" class="sop-accodion-con" aria-expanded="false">
+                            <div class="accodion-con-area">
+                                <div class="accodion-con-box">
+                                    <div class="accodion-con-title">
+                                        <p>결제수단</p>
+                                    </div>
+                                    <div class="accodion-con-txt">
+                                        <p>무통장입금</p>
+                                    </div>
+                                </div>
+                                <div class="accodion-con-box">
+                                    <div class="accodion-con-title">
+                                        <p>배송지</p>
+                                    </div>
+                                    <div class="accodion-con-txt">
+                                        <p>[11111] 서울시 양천구 남부순환로11길 111 가나다라마바사아 1단지 111동 1111호</p>
+                                    </div>
+                                </div>
+                                <div class="accodion-con-box">
+                                    <div class="accodion-con-title">
+                                        <p>결제일</p>
+                                    </div>
+                                    <div class="accodion-con-txt">
+                                        <p>매월1일</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sop-accodion-box">
+                        <div class="sop-accodion-box-tit">
+                            <input class="amwa-radio" type="radio" name="sopOrderList" id="order_10" vlue>
+                            <label class="text-uppercase accordion-header-text" for="order_10"></label>
+                            <a href="#sop-accodion-con10"  aria-expanded="false">
+                                <span class="sop-accodion-hd-txt">주문서명 1줄로 노출됩니다 주문서명 1줄로 노출됩니다.</span>
+                                <span class="pull-right icon-arr"></span>
+                            </a>
+                        </div>
+                        <div id="sop-accodion-con10" class="sop-accodion-con" aria-expanded="false">
+                            <div class="accodion-con-area">
+                                <div class="accodion-con-box">
+                                    <div class="accodion-con-title">
+                                        <p>결제수단</p>
+                                    </div>
+                                    <div class="accodion-con-txt">
+                                        <p>무통장입금</p>
+                                    </div>
+                                </div>
+                                <div class="accodion-con-box">
+                                    <div class="accodion-con-title">
+                                        <p>배송지</p>
+                                    </div>
+                                    <div class="accodion-con-txt">
+                                        <p>[11111] 서울시 양천구 남부순환로11길 111 가나다라마바사아 1단지 111동 1111호</p>
+                                    </div>
+                                </div>
+                                <div class="accodion-con-box">
+                                    <div class="accodion-con-title">
+                                        <p>결제일</p>
+                                    </div>
+                                    <div class="accodion-con-txt">
+                                        <p>매월1일</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- S : 20231004 SOP 주문서 복사 개선 -->
+                <!-- paging-->
+                <div class="paging-wrap">
+                    <div class="paging ">
+                        <a href="#" class="prev">맨 처음 페이지</a>
+                        <a href="#" class="before">이전 페이지</a>
+                        <ul>
+                            <li class="on"><a href="#">1</a></li>
+                            <li><a href="#" class="order_move_page" data-page="2">2</a></li>
+                            <li><a href="#" class="order_move_page" data-page="3">3</a></li>
+                            <li><a href="#" class="order_move_page" data-page="4">4</a></li>
+                            <li><a href="#" class="order_move_page" data-page="5">5</a></li>
+                        </ul>
+                        <a href="#" class="after order_move_page" data-page="2">다음페이지</a>
+                        <a href="#" class="next order_move_page" data-page="7">맨 마지막 페이지</a>
+                    </div>
+                </div>
+                <!-- //paging -->
+                <!-- E : 20231004 SOP 주문서 복사 개선 -->
+            </div>
+        </div>
+
+        <div class="layer-area_bottom01">
+            <div class="align-box size-auto">
+                <button type="button" class="btn-modal_close v2 pcOnly">닫기</button>
+                <button type="button" class="btn-modal_apply">주문서 정보 복사</button> <!-- 주문서 선택 시, 버튼 활성화 : active 클래스 추가 -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>
+
+<script>
+    //아코디언 메뉴 스크립트
+    $(".layer-area_sop_order_copy .sop-accodion-area .sop-accodion-box .sop-accodion-box-tit").on("click", function(e){
+        e.preventDefault();
+        $(this).next(".sop-accodion-con").slideToggle();
+        $(this).parent().siblings().children(".sop-accodion-con").slideUp();
+        
+        if($(this).find("a").attr("aria-expanded") === "false") {
+            $(this).find("a").attr("aria-expanded", "true");
+            $(this).next(".sop-accodion-con").attr("aria-expanded", "true");
+            $(this).parent().siblings().children(".sop-accodion-box-tit").find("a").attr("aria-expanded", "false");
+            $(this).parent().siblings().children(".sop-accodion-con").attr("aria-expanded", "false");
+            $(this).find("input[type=radio]").prop("checked", true);
+        } else if($(this).find("a").attr("aria-expanded") === "true") {
+            $(this).find("a").attr("aria-expanded", "false");
+            $(this).next(".sop-accodion-con").attr("aria-expanded", "false");
+            $(this).find("input[type=radio]").prop("checked", false);
+        }
+    })
+
+    /* S : 20230427 SOP 간편 재시작, SOP/장스오 자동갱신 수정 */
+    //주문서 상태 버튼 스크립트
+    $(".btn_cond").on("click", function(){
+        $(this).addClass("active");
+        $(this).siblings().removeClass("active");
+    })
+    /* E : 20230427 SOP 간편 재시작, SOP/장스오 자동갱신 수정 */
+
+    /* S : 20231004 SOP 주문서 복사 개선 */
+    $(".alignBtnBox button").on("click", function(){
+        $(".alignBtnBox button").removeClass("active");
+        $(this).addClass("active");
+    })
+    /* E : 20231004 SOP 주문서 복사 개선 */
+</script>

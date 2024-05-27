@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>table/paging | HTML 가이드</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="index,follow">
+	<link rel="shortcut icon" type="image/x-icon" href="/_ui/responsive/theme-blue/images/akl_common/favicon.ico">
+	<link rel=”apple-touch-startup-image” href="/_ui/responsive/theme-blue/images/akl_common/favicon_app.png">
+
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-lib.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/_htmlWSG/_guide.css"><!-- html 스타일 가이드 전용 css  -->
+
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.datepicker.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/owl.carousel.js"></script>
+
+	<script type="text/javascript" src="/_ui/responsive/_htmlWSG/guide.js"></script><!-- html 스타일 가이드 전용 js  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/new.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_contents.js"></script>
+</head>
+<body class="akl htmlWSG">
+	<div id="skipToContent"><a href="#contents">콘텐츠 바로가기 </a></div>
+	<main>
+		<div id="header-guide"></div><!-- 가이드용 header -->
+		<div id="guideType_table" class="container">
+			<!-- <div class="topTitle"><h1>table(div,ul) / paging<span> 테이블 모양의 목록</span></h1></div> -->
+
+			<div class="topTitle"><h1>테이블형 목록<span> table(div,ul) / paging</span></h1></div>
+
+			<ol class="subList">
+				<li>
+					<h2 class="subHeading"><em>.shopping-cart-item-list<span>(core)</span></em></h2>
+					<div class="guideCodeWrapper">
+
+						<div id="shopping-list-content">
+							<p class="subtit" style="padding-top:0">장바구니 제품목록</p>
+
+							<div class="wish-promotion">
+								<ul class="shopping-cart-item-list js-shopping-cart-item-list new-shopping-cart-item-list change-shopping-cart-item-list">
+									<!-- 수정 : 2018.06.05 (class 변경) -->
+									<li class="cart-item-header"><!-- .visible-md.visible-lg 삭제 -->
+										<div class="col-xs-12 uppercase list-header change-list-header">
+											<div class="col-xs-5 list-item-info">
+												<label class="checkbox-element-wrapper">
+													<input id="selectAllDitto" class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+													<span class="_checkbox-element-global-span"></span>
+												</label>
+												<em>제품</em>
+											</div>
+											<div class="col-xs-3 list-item-quantity">수량</div>
+											<div class="col-xs-2 list-item-set-price">옵션</div>
+											<div class="col-xs-1 list-item-price">단가(원)</div>
+											<div class="col-xs-1 list-item-total">소계(원)</div>
+										</div>
+									</li>
+									<!-- 수정 : 2018.06.05 (class변경) -->
+									<li class="product-list-item js-shopping-cart-list-item first-item">
+										<div class="plp-item-label-wrap">
+											<div class="plp-item-label bg-blue">프로모션</div>
+										</div>
+										<div class="col-xs-12 col-md-5 product-details print-col-6">
+											<div class="product-item-element list-item-toggle">
+												<label class="checkbox-element-wrapper">
+													<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+													<span class="_checkbox-element-global-span"></span>
+												</label>
+											</div>
+											<div class="product-item-element list-item-image">
+												<div>
+													<a href="#">
+														<img src="/_ui/responsive/theme-blue/images/@driver.jpg" alt="엣모스피어 드라이브" title="엣모스피어 드라이브">
+													</a>
+												</div>
+												<div class="list-item-remove">
+													<a class="remove-item-btn js-remove-entry-button" id="removeEntry_1">삭제</a>
+												</div>
+											</div>
+											<div class="product-item-element list-item-info">
+												<span class="product-name">엣모스피어 드라이브</span>
+												<div class="product-code">1477 / 121637A</div>
+												<div class="product-pvbv">PV 251,570 / BV 400,000</div>
+												<!-- <div class="product-stock"> //2018.05.24 삭제
+													<div class="proabo-btn">
+														<span class="stock">
+															<span class="product-availability">
+																<span class="green">
+																	<span class="icon icon-check-bold"></span>
+																	<span class="text text-uppercase">재고있음</span>
+																</span>
+																<span class="sto-blue">
+																	<button id="G10300_lp2" class="bt-akl-white mini">재고현황</button>
+																</span>
+															</span>
+														</span>
+													</div>
+												</div> -->
+												<div class="product-stock has-promotion-stock">
+													<div class="promotion">
+														<div class="lightBlue pointer promotion-tip">
+															<button type="button" class="tooltip-btn">프로모션 내용</button>
+														</div>
+														<div class="promotion-tip-alert">
+															<div class="txt-wrap">
+																<p>아티스트리 워터 에센스 선 프로텍트</p>
+																<p>SPF50+ PA++++ 2개 구매 시, 아티스트리 워터</p>
+																<p>에센스 선 프로텍트 미니 1개 증정</p>
+															</div>
+															<div class="txt-btn-detail"><a href="#"><span>프로모션 상세보기</span></a></div>
+															<div class="tip-close">
+																<button type="button" class="tooltip-closed">창닫기</button>
+															</div>
+														</div>
+													</div>
+													<div class="cartlist-instock">
+														<span class="green">
+															<a href="#">
+																<span class="icon icon-check-bold"></span>
+																<span class="text text-uppercase">적용</span>
+															</a>
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-9 col-md-3 product-item-element list-item-amount print-col-6">
+											<span class="qty-label">수량</span>
+											<div class="opt-quantity mini">
+												<input type="text" maxlength="3" class="form-control js-qty-selector-input inpNum" size="1" value="1" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" id="pdpAddtoCartInput6" title="수량 입력">
+												<a href="#" class="btnMinus">수량하나빼기</a>
+												<a href="#" class="btnPlus">수량하나더하기</a>
+											</div>
+										</div>
+										<div class="col-xs-9 col-md-2 product-item-element list-item-quantity print-col-6">
+											<span class="total-price-label">옵션</span>
+											<span class="value-wrapper option">
+												<div class="option-info">
+													<span>&nbsp;</span>
+												</div>
+											</span>
+										</div>
+										<div class="col-xs-9 col-md-1 product-item-element list-item-ibo-price list-item-price print-col-6">
+											<span class="price-label">단가(원)</span>
+											<div class="value-wrapper new-value-wrapper">
+												<span>269,000</span>
+											</div>
+										</div>
+										<div class="col-xs-9 col-md-1 product-item-element list-item-price js-item-total print-col-6">
+											<span class="total-price-label">소계(원)</span>
+											<div class="value-wrapper new-value-wrapper">
+												<span>538,000</span>
+											</div>
+										</div>
+									</li>
+									<li class="product-list-item js-shopping-cart-list-item gwp-item">
+										<div class="col-xs-12 col-md-5 product-details print-col-6">
+											<div class="product-item-element list-item-image">
+												<div>
+													<a href="#"><img src="/_ui/responsive/theme-blue/images/@toothpaste.jpg" alt="글리스터 치약" title="글리스터 치약"></a>
+												</div>
+											</div>
+											<div class="product-item-element list-item-info">
+												<div class="product-status-value">
+													<span class="ico-bg-sky">증정품</span>
+												</div>
+												<span class="product-name">글리스터 치약 (여행용 사이즈)</span>
+												<div class="product-pvbv">PV 0 / BV 0</div>
+											</div>
+										</div>
+
+										<div class="col-xs-9 col-md-3 product-item-element list-item-amount print-col-6">
+											<span class="qty-label">수량</span>
+											<div class="opt-quantity mini disabled">
+												<input type="text" maxlength="3" class="form-control js-qty-selector-input inpNum" size="1" value="2" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" id="pdpAddtoCartInput6" title="수량 입력">
+												<a href="#" class="btnMinus">수량하나빼기</a>
+												<a href="#" class="btnPlus">수량하나더하기</a>
+											</div>
+										</div>
+										<div class="col-xs-9 col-md-2 product-item-element list-item-quantity print-col-6">
+											<span class="total-price-label">옵션</span>
+											<span class="value-wrapper option">
+												<div class="option-info">
+													<span>&nbsp;</span>
+												</div>
+											</span>
+										</div>
+										<div class="col-xs-9 col-md-1 product-item-element list-item-ibo-price list-item-price print-col-6">
+											<span class="price-label">단가(원)</span>
+											<div class="value-wrapper new-value-wrapper">
+												<span><del>3,600</del></span>
+												<span class="red">0</span>
+											</div>
+										</div>
+										<div class="col-xs-9 col-md-1 product-item-element list-item-price js-item-total print-col-6">
+											<span class="total-price-label">소계(원)</span>
+											<div class="value-wrapper new-value-wrapper">
+												<span><del>7,200</del></span>
+												<span class="red">0</span>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+
+
+							<p class="subtit">주문/결제 제품목록</p>
+							<div class="payment-promotion">
+								<ul class="shopping-cart-item-list js-shopping-cart-item-list new-shopping-cart-item-list change-shopping-cart-item-list">
+									<li class="visible-md visible-lg">
+										<div class="col-xs-12 uppercase list-header change-list-header">
+											<div class="col-xs-5 list-item-info">제품</div>
+											<div class="col-xs-3 list-item-quantity">수량</div>
+											<div class="col-xs-2 list-item-set-price">옵션</div>
+											<div class="col-xs-1 list-item-price">단가(원)</div>
+											<div class="col-xs-1 list-item-total">소계(원)</div>
+										</div>
+									</li>
+									<li class="product-list-item js-shopping-cart-list-item first-item">
+										<div class="plp-item-label-wrap">
+											<div class="plp-item-label bg-blue">프로모션</div>
+										</div>
+										<div class="col-xs-12 col-md-5 product-details print-col-6">
+											<div class="product-item-element list-item-image">
+												<div>
+													<a href="#">
+														<img src="/_ui/responsive/theme-blue/images/@nu105480.jpg" alt="Soft Cleanser" title="Soft Cleanser">
+													</a>
+												</div>
+											</div>
+											<div class="product-item-element list-item-info">
+												<div class="product-status-value">
+													<span class="ico-bg-sky">신제품</span>
+												</div>
+												<span class="product-name">아티스트리 시그니처 컬러 라잇업 립글로스</span>
+												<div class="product-code">1038 / 120435D</div>
+												<div class="product-pvbv">PV 18,650 / BV 29,100</div>
+												<!-- 2018.05.24 재고현황 추가 -->
+												<div class="product-stock">
+													<div class="proabo-btn">
+														<span class="stock">
+															<span class="product-availability">
+																<span class="green">
+																	<span class="icon icon-check-bold"></span>
+																	<span class="text text-uppercase">재고있음</span>
+																</span>
+																<span class="sto-blue">
+																	<button id="G10300_lp2" type="button" class="bt-akl-white mini">재고현황</button>
+																</span>
+															</span>
+														</span>
+													</div>
+												</div>
+												<!-- //2018.05.24 재고현황 추가 -->
+												<div class="product-stock has-promotion-stock">
+													<div class="promotion">
+														<div class="lightBlue pointer promotion-tip">
+															<button type="button" class="tooltip-btn">프로모션 내용</button>
+														</div>
+														<div class="promotion-tip-alert">
+															<div class="txt-wrap">
+																<p>아티스트리 워터 에센스 선 프로텍트</p>
+																<p>SPF50+ PA++++ 2개 구매 시, 아티스트리 워터</p>
+																<p>에센스 선 프로텍트 미니 1개 증정</p>
+															</div>
+															<div class="txt-btn-detail" id="G10500_lp3"><a href="#"><span>프로모션 상세보기</span></a></div>
+															<div class="tip-close">
+																<button type="button" class="tooltip-closed">창닫기</button>
+															</div>
+														</div>
+													</div>
+													<div class="cartlist-instock">
+														<span class="green">
+															<a href="#">
+																<span class="icon icon-check-bold"></span>
+																<span class="text text-uppercase">적용</span>
+															</a>
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-9 col-md-3 product-item-element list-item-amount print-col-6">
+											<span class="qty-label">수량</span>
+											<span class="value-wrapper amount-wrapper">10</span>
+										</div>
+										<div class="col-xs-9 col-md-2 product-item-element list-item-quantity print-col-6">
+											<span class="total-price-label">옵션</span>
+											<span class="value-wrapper option">
+												<p class="opt-im"><img src="/_ui/responsive/theme-blue/images/@glitz-4.png" alt="color-4"></p>
+												<div class="option-info">
+													<span>19번 코랄 선라이즈</span>
+												</div>
+											</span>
+										</div>
+										<div class="col-xs-9 col-md-1 product-item-element list-item-ibo-price list-item-price print-col-6">
+											<span class="price-label">단가(원)</span>
+											<div class="value-wrapper new-value-wrapper">
+												<span><del>50,000</del></span>
+												<span class="red">30,000</span>
+											</div>
+										</div>
+										<div class="col-xs-9 col-md-1 product-item-element list-item-price js-item-total print-col-6">
+											<span class="total-price-label">소계(원)</span>
+											<div class="value-wrapper new-value-wrapper">
+												<span><del>500,000</del></span>
+												<span class="red">300,000</span>
+											</div>
+										</div>
+									</li>
+
+									<li class="product-list-item js-shopping-cart-list-item first-item">
+										<div class="plp-item-label-wrap">
+											<div class="plp-item-label bg-blue">프로모션 세트</div>
+										</div>
+										<div class="col-xs-12 col-md-5 product-details print-col-6">
+											<div class="product-item-element list-item-image">
+												<div>
+													<a href="#">
+														<img src="/_ui/responsive/theme-blue/images/@nu105480.jpg" alt="Soft Cleanser" title="Soft Cleanser">
+													</a>
+												</div>
+											</div>
+											<div class="product-item-element list-item-info">
+												<span class="product-name">아티스트리 시그니처 컬러 라잇업 립글로스</span>
+												<div class="product-code">1038 / 120435D</div>
+												<div class="product-pvbv">PV 18,650 / BV 29,100</div>
+												<div class="product-stock cartlist-promotions cartlist-view"><a href="#1">프로모션 세트 구성<i class="fas fa-angle-down"></i></a></div>
+												<div class="view-bundle-contents">
+													<div class="col-xs-12">
+														 <div class="row view-setcomp">
+															 <div class="v-subject">[본품] 아티스트리 인텐시브 스킨케어 부스팅 인퓨전</div>
+															 <div class="v-number">
+																<span class="ve-label">수량</span>
+																<span class="ve-conts">2</span>
+															 </div>
+															 <div class="v-option"><span>&nbsp;</span></div>
+														 </div>
+														 <div class="row view-setcomp">
+															 <div class="v-subject">[본품] 인텐시브 스킨케어 어드밴스t드 비타민 C + 히알루론산 트리트먼트</div>
+															 <div class="v-number">
+																<span class="ve-label">수량</span>
+																<span class="ve-conts">2</span>
+															 </div>
+															 <div class="v-option"><span>&nbsp;</span></div>
+														 </div>
+														 <div class="row view-setcomp">
+															 <div class="v-subject">[본품] 유스 익스텐드 인리칭 크림</div>
+															 <div class="v-number">
+																<span class="ve-label">수량</span>
+																<span class="ve-conts">2</span>
+															 </div>
+															 <div class="v-option"><span></span></div>
+														 </div>
+														 <div class="row view-setcomp">
+															 <div class="v-subject">[추가구성품] 아티스트리 글로우 페이셜 오일</div>
+															 <div class="v-number">
+																<span class="ve-label">수량</span>
+																<span class="ve-conts">-</span>
+															 </div>
+															 <div class="v-option"><span>&nbsp;</span></div>
+														 </div>
+														 <div class="row view-setcomp">
+															 <div class="v-subject">[증정품] 유스 익스텐드 리치 클렌징 폼 미니</div>
+															 <div class="v-number">
+																<span class="ve-label">수량</span>
+																<span class="ve-conts">2</span>
+															 </div>
+															 <div class="v-option"><span>&nbsp;</span></div>
+														 </div>
+														 <div class="row view-setcomp">
+															 <div class="v-subject">[증정품] 인텐시브 스킨케어 리뉴잉 필 샘플 카드 (6개입)</div>
+															 <div class="v-number">
+																<span class="ve-label">수량</span>
+																<span class="ve-conts">2</span>
+															 </div>
+															 <div class="v-option"><span>&nbsp;</span></div>
+														 </div>
+														 <div class="row view-setcomp sold-out">
+															 <div class="v-subject">[증정품] 스킨 배리어 프로텍션 리플릿</div>
+															 <div class="v-number">
+																<span class="ve-label">수량</span>
+																<span class="ve-conts">2</span>
+															 </div>
+															 <div class="v-option"><span class="red">일시품절</span></div>
+														 </div>
+														 <div class="row view-setcomp">
+															 <div class="v-subject">[증정품] 라잇업 립글로스 - 핑크누드</div>
+															 <div class="v-number">
+																<span class="ve-label">수량</span>
+																<span class="ve-conts">1</span>
+															 </div>
+															 <div class="v-option"><span>&nbsp;</span></div>
+														 </div>
+														 <div class="row view-setcomp">
+															 <div class="v-subject">[증정품] 라잇업 립글로스 - 스윗멜론</div>
+															 <div class="v-number">
+																<span class="ve-label">수량</span>
+																<span class="ve-conts">2</span>
+															 </div>
+															 <div class="v-option"><span>&nbsp;</span></div>
+														 </div>
+													 </div>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-9 col-md-3 product-item-element list-item-amount print-col-6">
+											<span class="qty-label">수량</span>
+											<span class="value-wrapper amount-wrapper">10</span>
+										</div>
+										<div class="col-xs-9 col-md-2 product-item-element list-item-quantity print-col-6">
+											<span class="total-price-label">옵션</span>
+											<span class="value-wrapper option">
+												<div class="option-info">
+													<span>&nbsp;</span>
+												</div>
+											</span>
+										</div>
+										<div class="col-xs-9 col-md-1 product-item-element list-item-ibo-price list-item-price print-col-6">
+											<span class="price-label">단가(원)</span>
+											<div class="value-wrapper new-value-wrapper">
+												<span>269,000</span>
+											</div>
+										</div>
+										<div class="col-xs-9 col-md-1 product-item-element list-item-price js-item-total print-col-6">
+											<span class="total-price-label">소계(원)</span>
+											<div class="value-wrapper new-value-wrapper">
+												<span>538,000</span>
+											</div>
+										</div>
+									</li>
+
+									<li class="product-list-item js-shopping-cart-list-item first-item">
+										<div class="col-xs-12 col-md-5 product-details print-col-6">
+											<div class="product-item-element list-item-image">
+												<div>
+													<a href="#">
+														<img src="/_ui/responsive/theme-blue/images/@double-X.jpg" alt="더블엑스" title="더블엑스">
+													</a>
+												</div>
+											</div>
+											<div class="product-item-element list-item-info">
+												<span class="product-name">더블엑스</span>
+												<div class="product-code">2074 / 100394K19</div>
+												<div class="product-pvbv">PV 75,455 / BV 117,700</div>
+											</div>
+										</div>
+
+										<div class="col-xs-9 col-md-3 product-item-element list-item-amount print-col-6">
+											<span class="qty-label">수량</span>
+											<span class="value-wrapper amount-wrapper">10</span>
+										</div>
+										<div class="col-xs-9 col-md-2 product-item-element list-item-quantity print-col-6">
+											<span class="total-price-label">옵션</span>
+											<span class="value-wrapper option">
+												<div class="option-info">
+													<span>&nbsp;</span>
+												</div>
+											</span>
+										</div>
+										<div class="col-xs-9 col-md-1 product-item-element list-item-ibo-price list-item-price print-col-6">
+											<span class="price-label">단가(원)</span>
+											<div class="value-wrapper new-value-wrapper">
+												<span><del>83,000</del></span>
+												<span class="red">30,000</span>
+											</div>
+										</div>
+										<div class="col-xs-9 col-md-1 product-item-element list-item-price js-item-total print-col-6">
+											<span class="total-price-label">소계(원)</span>
+											<div class="value-wrapper new-value-wrapper">
+												<span><del>83,000</del></span>
+												<span class="red">30,000</span>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<h2 class="subHeading"><em>.list-content<span>(core)</span></em></h2>
+					<div class="guideCodeWrapper">
+						<div class="business">
+							<div class="list-content business-type01">
+								<div class="list-row-title">
+									<div class="w25">ABO</div>
+									<div class="w20">반품 탑업 실적 적용 월</div>
+									<div class="w16">PV</div>
+									<div class="w16">BV</div>
+									<div class="w15">탑업 타입</div>
+									<div class="w8">마감 월</div>
+								</div>
+								<ul class="content-list">
+									<li class="con-list-item">
+										<div class="w25">
+											<!-- 2018.06.29 <span class="tite-label">ABO</span>  삭제 -->
+											<span class="txte-wrap">암웨이&암순이(7480003)</span>
+										</div>
+										<div class="w20">
+											<span class="tite-label">반품 탑업 실적 적용 월</span>
+											<span class="txte-wrap">2018-04</span>
+										</div>
+										<div class="w16"><!-- 2018.06.05 money-type01 삭제 -->
+											<span class="tite-label">PV</span>
+											<span class="txte-wrap">23,000</span>
+										</div>
+										<div class="w16"><!-- 2018.06.05 money-type01 삭제 -->
+											<span class="tite-label">BV</span>
+											<span class="txte-wrap">23,000</span>
+										</div>
+										<div class="w15">
+											<span class="tite-label">탑업 타입</span>
+											<span class="txte-wrap">QV</span>
+										</div>
+										<div class="w8">
+											<span class="tite-label">마감 월</span>
+											<span class="txte-wrap">2018-04</span>
+										</div>
+									</li>
+									<li class="con-list-item">
+										<div class="w25">
+											<!-- 2018.06.29 <span class="tite-label">ABO</span>  삭제 -->
+											<span class="txte-wrap">홍길동(7480003)</span>
+										</div>
+										<div class="w20">
+											<span class="tite-label">반품 탑업 실적 적용 월</span>
+											<span class="txte-wrap">2018-04</span>
+										</div>
+										<div class="w16"><!-- 2018.06.05 money-type01 삭제 -->
+											<span class="tite-label">PV</span>
+											<span class="txte-wrap">23,000</span>
+										</div>
+										<div class="w16"><!-- 2018.06.05 money-type01 삭제 -->
+											<span class="tite-label">BV</span>
+											<span class="txte-wrap">23,000</span>
+										</div>
+										<div class="w15">
+											<span class="tite-label">탑업 타입</span>
+											<span class="txte-wrap">QV</span>
+										</div>
+										<div class="w8">
+											<span class="tite-label">마감 월</span>
+											<span class="txte-wrap">2018-04</span>
+										</div>
+									</li>
+								</ul>
+
+								<div class="search-no-result line">
+									<p>해당 년/월에는 검색된 결과가 없습니다.</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</li>
+
+				<li>
+					<h2 class="subHeading"><em>.tbl-list-board <span>(akl)</span></em></h2>
+					<div class="guideCodeWrapper ">
+						<div class="business">
+							<div class="request-status">
+
+								<div class="tbl-list-board type-td-show sponsorSwitch-request">
+									<div class="thead mob-hide">
+										<div class="tr">
+											<strong class="mob-hide switch-request-num">요청자 ABO 번호</strong>
+											<strong class="mob-hide switch-request-name">요청자 이름</strong>
+											<strong class="mob-hide switch-request-confirm">후원자 정정 승인 요청 건 처리</strong>
+										</div>
+									</div>
+									<div class="tbody">
+										<div class="tr">
+											<div class="mob-block"><strong class="switch-request-num">요청자 ABO 번호</strong> <p>7480001</p></div>
+											<div class="mob-block"><strong class="switch-request-name">요청자 이름</strong> <p>이철수&이순희</a></p></div>
+											<div class="mob-block"><strong class="switch-request-confirm">후원자 정정 승인 요청 건 처리</strong>
+												<p class="btn-td">
+													<button class="bt-akl-white mini">승인하지 않음</button>
+													<button class="bt-akl-blue mini">승인</button>
+												</p>
+											</div>
+										</div>
+										<div class="tr">
+											<div class="mob-block"><strong class="switch-request-num">요청자 ABO 번호</strong> <p>7480001</p></div>
+											<div class="mob-block"><strong class="switch-request-name">요청자 이름</strong> <p>이철수&이순희</a></p></div>
+											<div class="mob-block"><strong class="switch-request-confirm">후원자 정정 승인 요청 건 처리</strong>
+												<p class="btn-td">
+													<button class="bt-akl-white mini">승인하지 않음</button>
+													<button class="bt-akl-blue mini">승인</button>
+												</p>
+											</div>
+										</div>
+										<div class="tr">
+											<div class="mob-block"><strong class="switch-request-num">요청자 ABO 번호</strong> <p>7480001</p></div>
+											<div class="mob-block"><strong class="switch-request-name">요청자 이름</strong> <p>이철수&이순희</a></p></div>
+											<div class="mob-block"><strong class="switch-request-confirm">후원자 정정 승인 요청 건 처리</strong>
+												<p class="btn-td">
+													<button class="bt-akl-white mini">승인하지 않음</button>
+													<button class="bt-akl-blue mini">승인</button>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- paging-->
+								<div class="paging-wrap">
+									<div class="paging">
+										<a href="#" class="prev">맨 처음 페이지</a>
+										<a href="#" class="before">이전 페이지</a>
+										<ul>
+											<li><a href="#">1</a></li>
+											<li class="on"><a href="#">2</a></li>
+											<li><a href="#">3</a></li>
+											<li><a href="#">4</a></li>
+											<li><a href="#">5</a></li>
+										</ul>
+										<a href="#" class="after">다음페이지</a>
+										<a href="#" class="next">맨 마지막 페이지</a>
+									</div>
+								</div>
+								<!--// paging-->
+
+							</div>
+
+							<br><br>
+							<div class="tbl-list-board type-tbody-th">
+								<div class="thead mob-hide">
+									<div class="tr">
+										<strong class="mob-hide travel-simul-th1">구분</strong>
+										<strong class="mob-hide travel-simul-th2">달성한 여행점수</strong>
+										<strong class="mob-hide travel-simul-th3">월평균 여행점수</strong>
+										<strong class="mob-hide travel-simul-th4">목표점수 대비 달성율</strong>
+										<strong class="mob-hide travel-simul-th5">앞으로 달성해야 할 총 여행점수</strong>
+										<strong class="mob-hide travel-simul-th6">향후 5개월간 매월 달성해야 할 여행점수</strong>
+									</div>
+								</div>
+								<div class="tbody">
+									<div class="tr">
+										<div class="mob-block travel-simul-th1"><strong class="th">구분</strong><p>달성 여행점수</p></div>
+										<div class="mob-block travel-simul-th2"><strong class="th">달성한 여행점수</strong><p>15,484,862</p></div>
+										<div class="mob-block travel-simul-th3"><strong class="th">월평균 여행점수</strong><p>2,212,123</p></div>
+										<div class="mob-block travel-simul-th4"><strong class="th">목표점수 대비 달성율</strong><p>77.40%</p></div>
+										<div class="mob-block travel-simul-th5"><strong class="th">앞으로 달성해야 할 총 여행점수</strong><p>4,515,138</p></div>
+										<div class="mob-block travel-simul-th6"><strong class="th">향후 5개월간 매월 달성해야 할 여행점수</strong><p>903,027</p></div>
+									</div>
+									<div class="tr">
+										<div class="mob-block travel-simul-th1"><strong class="th">구분</strong><p>프로모션 적용 점수</p></div>
+										<div class="mob-block travel-simul-th2"><strong class="th">달성한 여행점수</strong><p>15,484,862</p></div>
+										<div class="mob-block travel-simul-th3"><strong class="th">월평균 여행점수</strong><p>2,212,123</p></div>
+										<div class="mob-block travel-simul-th4"><strong class="th">목표점수 대비 달성율</strong><p>77.40%</p></div>
+										<div class="mob-block travel-simul-th5"><strong class="th">앞으로 달성해야 할 총 여행점수</strong><p>4,515,138</p></div>
+										<div class="mob-block travel-simul-th6"><strong class="th">향후 5개월간 매월 달성해야 할 여행점수</strong><p>903,027</p></div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</li>
+
+				<li>
+					<h2 class="subHeading"><em>.tbl-list-view<span>(akl)</span></em></h2>
+					<div class="guideCodeWrapper">
+
+						<p class="subtit">[약관]&nbsp;&nbsp; .tbl-list-view.terms</p>
+						<div class="tbl-list-view terms">
+							<div class="thead">
+								<div class="tr">
+									<strong style="width:30%">목적</strong>
+									<strong style="width:70%">항목</strong>
+								</div>
+							</div>
+							<div class="tbody">
+								<div class="tr">
+									<strong class="mob-hide">목적</strong>
+									<div class="td mob-tit">대금 결제 서비스</div>
+									<strong>항목</strong>
+									<div class="td">ABO 번호 또는 회원 ID, 이름, 신용카드 정보, 계좌정보, A 포인트 정보(결제 방식에 따른 정보 수집)</div>
+								</div>
+								<div class="tr">
+									<strong class="mob-hide">목적</strong>
+									<div class="td mob-tit">상품 배송</div>
+									<strong>항목</strong>
+									<div class="td">이름, 주소, 휴대폰번호, 전화번호(선택)</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+
+
+
+				<li>
+					<h2 class="subHeading"><em>.table-wrapper:col<span>(akl)</span></em></h2>
+					<div class="guideCodeWrapper">
+						<div class="table-wrapper">
+							<table class="tbl-type1">
+								<caption>테이블 제목 : th 항목 모두 작성</caption>
+								<colgroup>
+									<col span="3">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">목적</th>
+										<th scope="col">항목</th>
+										<th scope="col">이용´보유기간</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>반품 처리</td>
+										<td>계좌정보</td>
+										<td>동의 철회 시 / 회원탈퇴 시</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+
+
+				<li>
+					<h2 class="subHeading"><em>.table-wrapper tbl-pc:line<span>(akl)</span></em></h2>
+					<div class="guideCodeWrapper">
+						<div class="table-wrapper tbl-pc">
+							<table class="tbl-type1 line-st">
+							<caption>품목, 불만족 반품 기간, 재고 반품 기간</caption>
+								<colgroup>
+									<col span="3">
+								</colgroup>
+								<thead>
+								<tr>
+									<th scope="col">품목</th>
+									<th scope="col">불만족 반품 기간</th>
+									<th scope="col">재고 반품 기간</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td class="left">이스프리 정수기</td>
+									<td rowspan="2">구입일로부터 1개월 이내</td>
+									<td rowspan="2">구입일로부터 3개월 이내</td>
+								</tr>
+								<tr>
+									<td class="left">엣모스피어 청정기</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+
+
+				<li>
+					<h2 class="subHeading"><em>.table-wrapper:row<span>(akl)</span></em></h2>
+					<div class="guideCodeWrapper">
+						<div class="table-wrapper">
+							<table class="tbl-type1">
+								<caption>테이블 제목 : th 항목 모두 작성</caption>
+								<tbody>
+									<tr>
+										<th scope="row">목적</th>
+										<td>반품 처리</td>
+									</tr>
+									<tr>
+										<th scope="row">항목</th>
+										<td>계좌정보</td>
+									</tr>
+									<tr>
+										<th scope="row">이용´보유기간</th>
+										<td>동의 철회 시 / 회원탈퇴 시</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+
+
+
+			</ol>
+
+
+
+
+		</div>
+
+	</main>
+</body>
+</html>

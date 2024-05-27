@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Amway</title>
+        <link rel="stylesheet" href="../res/css/reset.css">
+        <link rel="stylesheet" href="../res/css/base.css">
+        <link rel="stylesheet" href="../res/css/layout.css">
+        <link rel="stylesheet" href="../res/css/plugins/swiper.min.css">
+        <script src="../res/js/plugins/jquery-3.6.0.min.js"></script>
+        <script src="../res/js/plugins/swiper.min.js"></script>
+        <script src="../res/js/common.js"></script>
+        <script src="../res/js/scan.js"></script>
+    </head>
+    <body>
+
+        <div id="wrap">
+            <header></header>
+
+            <div class="container">
+
+                <div class="scan-wr">
+                    <div class="scan-left-sec">
+                        <div class="img-scan-info01">
+                            <img src="../res/image/img_scanner.png" />
+                        </div>
+                        <div class="img-scan-info02">
+
+                        </div>
+                    </div>
+
+                    <div class="scan-right-sec">
+                        <p class="scan-member"> 반갑습니다!
+                            <span class="member-name">김*연 회원님</span>
+                            <strong class="member-number">7001234567</strong>
+                        </p>
+
+                        <div class="select-bag">
+                            <p class="bag-noti">
+                                봉투 추가 구매하시겠습니까?</br> 구매하신 봉투는 계산대 옆에서 가져가실 수 있습니다.
+                            </p>
+
+                            <ul class="bag-list">
+                                <li>
+                                    <div>
+                                        <img src="../res/image/img_bag_big.png">
+                                        <p class="bag-type">비닐봉투 <strong>대</strong></p>
+                                        <p class="bag-price">70원</p>
+                                        <div class="count-box">
+                                            <button class="btn-minus" onClick="countDown(this)"></button>
+                                            <input type="number" min="0" class="bag-qt" value="0"/>
+                                            <button class="btn-plus" onClick="countUp(this)"></button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <img src="../res/image/img_bag_small.png">
+                                        <p class="bag-type">비닐봉투 <strong>소</strong></p>
+                                        <p class="bag-price">50원</p>
+                                        <div class="count-box">
+                                            <button class="btn-minus" onClick="countDown(this)"></button>
+                                            <input type="number" min="0" class="bag-qt" value="0"/>
+                                            <button class="btn-plus" onClick="countUp(this)"></button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li onClick="initCount(this)">
+                                    <div>
+                                        <img src="../res/image/img_bag_no.png">
+                                        <p class="bag-type"><strong>선택하지 않음</strong></p>
+                                    </div>
+                                </li>
+
+                            </ul>
+
+                        </div> <!-- select-bag -->
+
+                        <div class="scan-result">
+                            <div class="summary-box">
+                                <ul>
+                                    <li>
+                                        <span>제품수량</span>
+                                        <strong class="sum-qt">10</strong>
+                                    </li>
+                                    <li>
+                                        <span>총 금액</span>
+                                        <strong class="sum-price">350,000</strong>
+                                    </li>
+                                    <li>
+                                        <span>할인 금액</span>
+                                        <strong class="sum-dc">-50,000
+                                            <button class="btn-view-coupon btn-open-pop" onClick="openPopup('coupon01')">보유쿠폰 <span>5</span></button>
+                                        </strong>
+                                    </li>
+                                    <li>
+                                        <span>총 PV/BV</span>
+                                        <strong>70,000 / 60.000</strong>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="total-box">
+                                <div class="total-price">
+                                    <span>결제금액</span>
+                                    <strong>300,000</strong>
+                                </div>
+                                <button class="btn-cm btn-pay">결제하기</button>
+                            </div>
+                        </div>
+
+                    </div> <!-- scan-right-sec -->
+                </div> <!-- scan-wr -->
+
+            </div> <!-- container -->
+        </div> <!-- wrap -->
+
+    </body>
+</html>

@@ -1,0 +1,3285 @@
+<!-- S : [디파이 수정] 210726 장바구니 스마트 오더 주문하기 부분 신규 파일 추가 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>BSOP | Amway Korea</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords">
+	<meta name="description" content="NY Fee Bundle">
+	<meta name="robots" content="index,follow">
+	
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-lib.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/base.css">
+	<!-- 코어제공 -->
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/sprint.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-customer.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-shop.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-sop.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-account.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-business.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-product.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-brand.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common-v2.css"><!-- 말줄임 css수정 : 2019.11.18 추가  -->
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-account.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common-new.css">
+
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-product-renewal.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-product-renewal_v1.css">
+
+	<!-- 운영팀게시물 -->
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/content_res_all.css">
+
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.datepicker.js"></script><!-- datepicker : 2018.03.19 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/owl.carousel.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/isotope.pkgd.js"></script><!-- gnb 플러그인 : 2018.03.23 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/select2.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/new.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.raty.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_contents.js"></script><!-- brand 통합 : 2018.08.24 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_component.js"></script>
+</head>
+<body class="akl new-v2 header-type"> <!-- D: 2020 장바구니 개선 - header-type 클래스 추가 -->
+<!-- skipToContent -->
+<div id="skipToContent">
+	<a href="#contents">콘텐츠 바로가기 </a>
+</div>
+<!-- //skipToContent -->
+
+<main>
+	<!-- S : 2020 장바구니 개선 renewal header type -->
+	<div class="header_type-a">
+		<h1 class="header-logo">
+			<a href="#n">Amway</a>
+		</h1>
+	</div>
+	<!-- E : 2020 장바구니 개선 renewal header type -->
+
+	<div class="container-fluid main-container renewal-fonts renewal_floating-type2"><!-- D : 2020 cart renewal - [renewal-fonts renewal_floating-type2] class add -->
+		<div class="row border cartTitile article_title-type"> <!-- D: 2020 장바구니 개선 article_title-type 클래스 추가 -->
+			<h1 class="product-list-page-title shopping-list-page-title mb25">장바구니</h1>
+			<!-- S: 2020 장바구니 개선 -->
+			<div class="box_breadcrumb-type">
+				<ul class="breadcrumb-list">
+					<li class="active"><span class="num">1</span>장바구니</li>
+					<li><span class="num">2</span>주문결제</li>
+					<li><span class="num">3</span>주문완료</li>
+				</ul>
+			</div>
+			<!-- E: 2020 장바구니 개선 -->
+		</div>
+		<div class="row cart-content-wrapper">
+			<div class="account-section-content new-account-section-content quick_sh-renewal"><!-- D : 2020 cart renewal - [quick_sh-renewal] class add -->
+				<div class="akl-toggle-wrap sort-order">
+					<div class="panel-group accordion-custom" role="tablist" aria-multiselectable="true">
+						<div class="panel">
+							<div class="panel-heading" role="tab" id="quickShop">
+								<a  href="#down1" role="button" data-toggle="collapse" data-parent="#quickShopAccordion" aria-controls="quickShopBody" class="">
+									<div class="panel-title">
+										<img src="/_ui/responsive/theme-blue/images/shopping-cart-icon.png" alt="cart" class="cart-header__cart-icon" />
+										<span class="text-uppercase accordion-header-text">빠른 제품 검색</span>
+										<i class="icon_accordion"></i>
+									</div>
+								</a>
+							</div>
+							<div id="down1" class="panel-collapse applicants-panel collapse in" role="tabpanel" aria-labelledby="headingOne">
+								<!-- 2021-03-25 수정: 장바구니 빠른검색 리뉴얼 -->
+								<div class="panel-body quick_sh-contents cart-renew">
+									<div id="quickShopForm" class="item_quick_sch_area">
+										<div class="item-name-container">
+											<label class="js-sku-input-field-label sku-input-field-label" for="name-vps">제품명 또는 VPS 입력</label>
+											<div class="inp-button">
+												<div class="form-s cancelBtn-box"> <!-- 20231006 검색창 X 버튼 추가 (cancelBtn-box 클래스 추가) -->
+													<input type="text" id="name-vps" name="" value="" class="input-st inp_item_quick_sch">
+													<!-- S : 20231006 검색창 X 버튼 추가 -->
+													<button class="btn btn-link cancelBtn" type="button">
+														<span class="icon-cancel"></span>
+													</button>
+													<!-- E : 20231006 검색창 X 버튼 추가 -->
+													<button type="submit" class="btn_basic-b" id="Cart_Search"><i class="sp_button sp_button-sh"></i>검색</button>
+												</div>
+											</div>
+										</div>
+										<div class="add-item-container os_listNew_btn_reset">
+											<button type="button" class="btn_basic-d" id="quickSearchReset">초기화</button>
+										</div>
+
+										<!--search suggest-->
+										<div class="popover item-suggestion-popover fade bottom in" role="tooltip" id="">
+											<div class="popover-content-akl">
+												<div class="popover-content">
+													<button class="search-results-close">x</button>
+													<div>
+														<ul class="category-wrapper js-category-wrapper suggested-words-wrapper js-suggested-words-wrapper js-search-words-wrapper">
+															<li class="ui-menu-item">
+																<a href="#">
+																	<div class="name">
+																		<span class="js-name"></span>
+																		<span class="js-start-of-name"></span>
+																		<span class="bold js-highlited-part-of-name">테스트</span>
+																	</div>
+																</a>
+															</li>
+															<li class="ui-menu-item">
+																<a href="#">
+																	<div class="name">
+																		<span class="js-name"></span>
+																		<span class="js-start-of-name"></span>
+																		<span class="bold js-highlited-part-of-name">아티스트리</span>
+																		<span class="js-rest-of-name">에센셜</span>
+																	</div>
+																</a>
+															</li>
+															<li class="ui-menu-item">
+																<a href="#">
+																	<div class="name">
+																		<span class="js-name"></span>
+																		<span class="js-start-of-name"></span>
+																		<span class="bold js-highlited-part-of-name">아티스트리</span>
+																		<span class="js-rest-of-name">뉴 쇼핑백</span>
+																	</div>
+																</a>
+															</li>
+															<li class="ui-menu-item">
+																<a href="#">
+																	<div class="name">
+																		<span class="js-name"></span>
+																		<span class="js-start-of-name"></span>
+																		<span class="bold js-highlited-part-of-name">아티스트리</span>
+																		<span class="js-rest-of-name">딥 클렌징 마스크</span>
+																	</div>
+																</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!--search end-->
+									</div>
+									<div class="shoping-cart-search" style="display:block"> <!-- 확인을 위해 강제로 열어둠 -->
+										<!-- S : 검색 결과 없을 경우 -->
+										<!-- <div class="box_not-result">
+											<p class="txt_not-result">“xxxxxxx” 검색결과가 없습니다.</p>
+											<p class="txt_re-search">입력하신 내용을 확인 후 다시 검색해 보세요.</p>
+										</div> -->
+										<!-- E : 검색 결과 없을 경우 -->
+
+										<!-- S : 검색 결과 있을 경우 -->
+										<div class="container-fluid main-container quick-area os_listNew_quick">
+											<div class="result-title">
+												<p class="txt_sh-title">"12" 검색결과 00 건</p>
+												<button type="button" class="btn_basic-d btnClosed">검색 결과 닫기</button>
+											</div>
+											<!-- 2021-03-25 수정: 검색결과가 3개 이상이면 over-3 추가 -->
+											<div class="result-list over-3">
+												<div class="box_product product_list-type">
+													<!-- S : Flag 갯수 3개인 케이스 -->
+													<div class="product_item">
+														<div class="product_col-form">
+															<span class="form_element-checkbox no_label">
+																<input type="checkbox" id="checkbox1">
+																<label for="checkbox1" class="sp_chk focus">선택</label>
+															</span>
+														</div>
+														<div class="product_col-summery">
+															<div class="box_product-summery">
+																<div class="summery_col-thumb"><a href="" class="link_product"><img src="https://media.uat.amway.co.kr/sys-master/images/h28/h48/9277196992542"></a></div>
+																<div class="summery_col-info">
+																	<a href="" class="link_product">
+																		<div class="flag_wrap">
+																			<!-- <span class="flag_item-installment">10개월 무이자</span>
+																			<span class="flag_item-new">신제품</span> -->
+																			<span class="flag_item-install">설치제품</span>
+																		</div>
+																		<div class="product_text-data">
+																			<p class="text_product-title">이스프링 정수기 (퍼싯)</p>
+																			<div class="box_product-info">
+																				<div class="product_sub-data">
+																					<div class="sub_data-title">VPS/SKU</div>
+																					<div class="sub_data-contents">5108/100189K</div>
+																				</div>
+																				<div class="product_sub-data">
+																					<div class="sub_data-title">PV/BV</div>
+																					<div class="sub_data-contents">614,800/1,063,600</div>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="text_product-price">
+																			<div class="price_title">가격</div>
+																			<div class="price_contents"><span class="text_price-data">1,170,000</span>원</div>
+																		</div>
+																	</a>
+																	<div class="box_spinor box_spinor-mobile">
+																		<div class="spinor_area">
+																			<button type="button" class="btn_spinor-minus"><span class="txt_hide">감소</span></button>
+																			<button type="button" class="btn_spinor-plus"><span class="txt_hide">증가</span></button>
+																			<input type="text" class="form_input">
+																		</div>
+																		<button type="button" class="btn_basic-e">담기</button>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="product_col-spinor">
+															<div class="box_buttons">
+																<div class="btn_area">
+																	<span class="btn_col"><button type="button" class="btn_basic-b">담기</button></span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<!-- E : Flag 갯수 3개인 케이스 -->
+													<!-- S : product_item(회원) -->
+													<div class="product_item">
+														<div class="product_col-form">
+															<span class="form_element-checkbox no_label">
+																<input type="checkbox" id="checkbox1">
+																<label for="checkbox1" class="sp_chk focus">선택</label>
+															</span>
+														</div>
+														<div class="product_col-summery">
+															<div class="box_product-summery">
+																<div class="summery_col-thumb"><a href="" class="link_product"><img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png"></a></div>
+																<div class="summery_col-info">
+																	<a href="" class="link_product">
+																		<div class="flag_wrap">
+																			<span class="flag_item-add_component">추가 구성품</span> <!-- 20230918 추가구성품 태그 추가 -->
+																		</div>
+																		<div class="product_text-data">
+																			<p class="text_product-title">하이드라-브이 쉬어 라이트 파운데이션 [SPF15, PA++] - 샤블리 </p>
+																			<div class="box_product-info">
+																				<div class="product_sub-data">
+																					<div class="sub_data-title">VPS / SKU</div>
+																					<div class="sub_data-contents">2002 / 294460L</div>
+																				</div>
+																				<div class="product_sub-data">
+																					<div class="sub_data-title">PV / BV</div>
+																					<div class="sub_data-contents">940,090,000 / 148,100,000</div>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="text_product-price">
+																			<div class="price_title">가격</div>
+																			<div class="price_contents"><span class="text_price-data">10,220,000</span>원</div>
+																		</div>
+																	</a>
+																	<div class="box_spinor box_spinor-mobile">
+																		<div class="spinor_area">
+																			<button type="button" class="btn_spinor-minus"><span class="txt_hide">감소</span></button>
+																			<button type="button" class="btn_spinor-plus"><span class="txt_hide">증가</span></button>
+																			<input type="text" class="form_input">
+																		</div>
+																		<button type="button" class="btn_basic-e">담기</button>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="product_col-spinor">
+															<div class="box_buttons">
+																<div class="btn_area">
+																	<span class="btn_col"><button type="button" class="btn_basic-b">담기</button></span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<!-- E : product_item(회원) -->
+													<!-- S : product_item(SOP) -->
+													<div class="product_item">
+														<div class="product_col-form">
+															<span class="form_element-checkbox no_label">
+																<input type="checkbox" id="checkbox3">
+																<label for="checkbox3" class="sp_chk focus">선택</label>
+															</span>
+														</div>
+														<div class="product_col-summery">
+															<div class="box_product-summery">
+																<div class="summery_col-thumb"><a href="" class="link_product"><img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png"></a></div>
+																<div class="summery_col-info">
+																	<a href="" class="link_product">
+																		<div class="flag_wrap">
+																			<span class="flag_item-smart">스마트오더</span>
+																		</div>
+																		<div class="product_text-data">
+																			<p class="text_product-title">하이드라-브이 쉬어 라이트 파운데이션 [SPF15, PA++] - 샤블리 </p>
+																			<div class="box_product-info">
+																				<div class="product_sub-data">
+																					<div class="sub_data-title">VPS / SKU</div>
+																					<div class="sub_data-contents">2002 / 294460L</div>
+																				</div>
+																				<div class="product_sub-data">
+																					<div class="sub_data-title">PV / BV</div>
+																					<div class="sub_data-contents">940,090,000 / 148,100,000</div>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="text_product-price">
+																			<div class="price_title">가격</div>
+																			<div class="price_contents"><span class="text_price-data">10,220,000</span>원</div>
+																		</div>
+																	</a>
+																	<div class="box_spinor box_spinor-mobile">
+																		<button type="button" class="btn_basic-e">담기</button>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="product_col-spinor">
+															<div class="box_buttons">
+																<div class="btn_area">
+																	<span class="btn_col"><button type="button" class="btn_basic-b">담기</button></span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<!-- E : product_item(SOP) -->
+													<!-- S : product_item(SOP) -->
+													<div class="product_item">
+														<div class="product_col-form">
+															<span class="form_element-checkbox no_label">
+																<input type="checkbox" id="checkbox3">
+																<label for="checkbox3" class="sp_chk focus">선택</label>
+															</span>
+														</div>
+														<div class="product_col-summery">
+															<div class="box_product-summery">
+																<div class="summery_col-thumb"><a href="" class="link_product"><img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png"></a></div>
+																<div class="summery_col-info">
+																	<a href="" class="link_product">
+																		<div class="flag_wrap">
+																			<span class="flag_item-smart">스마트오더</span>
+																		</div>
+																		<div class="product_text-data">
+																			<p class="text_product-title">하이드라-브이 쉬어 라이트 파운데이션 [SPF15, PA++] - 샤블리 </p>
+																			<div class="box_product-info">
+																				<div class="product_sub-data">
+																					<div class="sub_data-title">VPS / SKU</div>
+																					<div class="sub_data-contents">2002 / 294460L</div>
+																				</div>
+																				<div class="product_sub-data">
+																					<div class="sub_data-title">PV / BV</div>
+																					<div class="sub_data-contents">940,090,000 / 148,100,000</div>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="text_product-price">
+																			<div class="price_title">가격</div>
+																			<div class="price_contents"><span class="text_price-data">10,220,000</span>원</div>
+																		</div>
+																	</a>
+																	<div class="box_spinor box_spinor-mobile">
+																		<button type="button" class="btn_basic-e">담기</button>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="product_col-spinor">
+															<div class="box_buttons">
+																<div class="btn_area">
+																	<span class="btn_col"><button type="button" class="btn_basic-b">담기</button></span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<!-- E : product_item(SOP) -->
+													<!-- S : product_item(SOP) -->
+													<div class="product_item">
+														<div class="product_col-form">
+															<span class="form_element-checkbox no_label">
+																<input type="checkbox" id="checkbox3">
+																<label for="checkbox3" class="sp_chk focus">선택</label>
+															</span>
+														</div>
+														<div class="product_col-summery">
+															<div class="box_product-summery">
+																<div class="summery_col-thumb"><a href="" class="link_product"><img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png"></a></div>
+																<div class="summery_col-info">
+																	<a href="" class="link_product">
+																		<div class="flag_wrap">
+																			<span class="flag_item-smart">스마트오더</span>
+																		</div>
+																		<div class="product_text-data">
+																			<p class="text_product-title">하이드라-브이 쉬어 라이트 파운데이션 [SPF15, PA++] - 샤블리 </p>
+																			<div class="box_product-info">
+																				<div class="product_sub-data">
+																					<div class="sub_data-title">VPS / SKU</div>
+																					<div class="sub_data-contents">2002 / 294460L</div>
+																				</div>
+																				<div class="product_sub-data">
+																					<div class="sub_data-title">PV / BV</div>
+																					<div class="sub_data-contents">940,090,000 / 148,100,000</div>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="text_product-price">
+																			<div class="price_title">가격</div>
+																			<div class="price_contents"><span class="text_price-data">10,220,000</span>원</div>
+																		</div>
+																	</a>
+																	<div class="box_spinor box_spinor-mobile">
+																		<button type="button" class="btn_basic-e">담기</button>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="product_col-spinor">
+															<div class="box_buttons">
+																<div class="btn_area">
+																	<span class="btn_col"><button type="button" class="btn_basic-b">담기</button></span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<!-- E : product_item(SOP) -->
+													<!-- S : product_item(SOP) -->
+													<div class="product_item">
+														<div class="product_col-form">
+															<span class="form_element-checkbox no_label">
+																<input type="checkbox" id="checkbox3">
+																<label for="checkbox3" class="sp_chk focus">선택</label>
+															</span>
+														</div>
+														<div class="product_col-summery">
+															<div class="box_product-summery">
+																<div class="summery_col-thumb"><a href="" class="link_product"><img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png"></a></div>
+																<div class="summery_col-info">
+																	<a href="" class="link_product">
+																		<div class="flag_wrap">
+																			<span class="flag_item-smart">스마트오더</span>
+																		</div>
+																		<div class="product_text-data">
+																			<p class="text_product-title">하이드라-브이 쉬어 라이트 파운데이션 [SPF15, PA++] - 샤블리 </p>
+																			<div class="box_product-info">
+																				<div class="product_sub-data">
+																					<div class="sub_data-title">VPS / SKU</div>
+																					<div class="sub_data-contents">2002 / 294460L</div>
+																				</div>
+																				<div class="product_sub-data">
+																					<div class="sub_data-title">PV / BV</div>
+																					<div class="sub_data-contents">940,090,000 / 148,100,000</div>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="text_product-price">
+																			<div class="price_title">가격</div>
+																			<div class="price_contents"><span class="text_price-data">10,220,000</span>원</div>
+																		</div>
+																	</a>
+																	<div class="box_spinor box_spinor-mobile">
+																		<button type="button" class="btn_basic-e">담기</button>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="product_col-spinor">
+															<div class="box_buttons">
+																<div class="btn_area">
+																	<span class="btn_col"><button type="button" class="btn_basic-b">담기</button></span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<!-- E : product_item(SOP) -->
+													<!-- S : product_item(품절) -->
+													<div class="product_item">
+														<div class="product_col-form">
+															<span class="form_element-checkbox no_label">
+																<input type="checkbox" id="checkbox5" disabled>
+																<label for="checkbox5" class="sp_chk focus">선택</label>
+															</span>
+														</div>
+														<div class="product_col-summery">
+															<div class="box_product-summery">
+																<div class="summery_col-thumb"><a href="" class="link_product"><img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png"></a></div>
+																<div class="summery_col-info">
+																	<a href="" class="link_product">
+																		<div class="flag_wrap">
+																			<span class="flag_item-soldout">일시품절</span>
+																		</div>
+																		<div class="product_text-data">
+																			<p class="text_product-title">하이드라-브이 쉬어 라이트 파운데이션 [SPF15, PA++] - 샤블리 </p>
+																			<div class="box_product-info">
+																				<div class="product_sub-data">
+																					<div class="sub_data-title">VPS / SKU</div>
+																					<div class="sub_data-contents">2002 / 294460L</div>
+																				</div>
+																				<div class="product_sub-data">
+																					<div class="sub_data-title">PV / BV</div>
+																					<div class="sub_data-contents">940,090,000 / 148,100,000</div>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="text_product-price">
+																			<div class="price_title">가격</div>
+																			<div class="price_contents"><span class="text_price-data">10,220,000</span>원</div>
+																		</div>
+																	</a>
+																	<div class="box_spinor box_spinor-mobile">
+																		<button type="button" class="btn_basic-e" disabled>담기</button>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="product_col-spinor">
+															<div class="box_buttons">
+																<div class="btn_area">
+																	<span class="btn_col"><button type="button" class="btn_basic-b" disabled>담기</button></span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<!-- E : product_item(품절) -->
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-xs-12 btn-area">
+													<button type="button" class="btn_basic-b">선택담기</button>
+												</div>
+											</div>
+										</div>
+										<!-- E : 검색 결과 있을 경우 -->
+									</div>
+								</div>
+								<!-- // 2021-03-25 수정: 장바구니 빠른검색 리뉴얼 -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- S : 2020 cart renewal -->
+			<!-- S : 2020 장바구니 개선 -->
+			<div class="section_right-info">
+				<div class="box_free-shopping">
+					<div class="box_graph-section">
+						<i class="sp_order"></i>
+						<div class="box_graph-area">
+							<div class="box_state-bar" style="width:10%;"></div>
+						</div>
+					</div>
+					<div class="box_free-info">
+						<button type="button" class="btn_square-c small" data-layer="orderlist-layer">추천제품 추가</button>
+						<p class="txt_price-info">10,000원 추가하면<strong>무료배송</strong></p>
+					</div>
+				</div>
+
+				<!-- S : 20230331 결제화면 배너 추가 -->
+				<div class="bnr_order_promotion">
+					<a href="#" class="bop_link" target="_blank">
+						<!-- S : 20230905 - 테스트(운영과 문구 동일하게 맞춤) -->
+						<div class="bop_title">신용카드혜택</div>
+						<div class="bop_desc">
+							암웨이-현대카드M Edition2<br> 암웨이에서 기간 내 4만원 이상<br> 첫 결제 시 4만원 캐시백
+						</div>
+						<!-- E : 20230905 - 테스트(운영과 문구 동일하게 맞춤) -->
+
+						<!-- <div class="bop_title">암웨이-현대카드M Edition2</div>
+						<div class="bop_desc">최대 <span>10만원 캐시백</span></div> -->
+
+						<!--
+							2줄 테스트
+							<div class="bop_desc">암웨이-현대카드 <br>최대 10만원 캐시백 혜택 </div>
+						-->
+					</a>
+				</div>
+				<!-- E : 20230331 결제화면 배너 추가 -->
+
+				<div class="cart_product-area">
+					<div class="cart_product-list">
+						<div class="cart_top-area">
+							<div class="box_cart-count">
+								<span class="txt_count">선택제품 : <span class="count_data">00</span>개 /</span>
+								<span class="txt_count">전체제품 : <span class="count_data">00</span>개</span>
+							</div>
+							<div class="cart_btn-area">
+								<span class="cart_btn-col check_del"><button type="button" class="btn_basic-a" disabled>선택 삭제</button></span>
+								<span class="cart_btn-col"><button type="button" class="btn_basic-c">위시리스트</button></span>
+							</div>
+						</div>
+
+						<div class="box_product product_list-type">
+							<!-- S : product item title -->
+							<div class="product_item cart-thead">
+								<div class="product_col-form cart_type">
+									<span class="form_element-checkbox no_label">
+										<input type="checkbox" id="checkboxAll">
+										<label for="checkboxAll" class="sp_chk focus">선택</label>
+									</span>
+								</div>
+								<div class="product_col-summery">
+									<p class="txt_cart-thead">제품</p>
+								</div>
+								<div class="product_col-spinor2">
+									<p class="txt_cart-thead">수량</p>
+								</div>
+								<div class="product_col-price box_product-price">
+									<p class="txt_cart-thead">단가(원) / 소계(원)</p>
+								</div>
+								<div class="product_col-del">
+									<p class="txt_cart-thead">삭제</p>
+								</div>
+							</div>
+							<!-- E : product item title -->
+
+							<!-- S : Flag 갯수 3개인 케이스 -->
+							<div class="product_item">
+								<div class="product_col-form cart_type">
+									<span class="form_element-checkbox no_label">
+										<input type="checkbox" id="checkbox3-1">
+										<label for="checkbox3-1" class="sp_chk focus">선택</label>
+									</span>
+								</div>
+								<div class="product_col-summery">
+									<div class="box_product-summery">
+										<div class="summery_col-thumb"><a href="" class="link_product"><img src="https://media.uat.amway.co.kr/sys-master/images/h28/h48/9277196992542"></a></div>
+										<div class="summery_col-info">
+											<a href="" class="link_product">
+												<div class="flag_wrap">
+													<span class="flag_item-installment">10개월 무이자</span>
+													<span class="flag_item-new">신제품</span>
+													<span class="flag_item-install">설치제품</span>
+												</div>
+												<div class="product_text-data">
+													<p class="text_product-title">이스프링 정수기 (퍼싯)</p>
+													<div class="box_product-info">
+														<div class="product_sub-data">
+															<div class="sub_data-title">VPS/SKU</div>
+															<div class="sub_data-contents">5108/100189K</div>
+														</div>
+														<div class="product_sub-data">
+															<div class="sub_data-title">PV/BV</div>
+															<div class="sub_data-contents">614,800 / 1,063,600</div>
+														</div>
+													</div>
+												</div>
+												<div class="box_mobile-price box_product-price">
+													<div class="text_product-price unit">
+														<div class="price_title">단가</div>
+														<div class="price_contents"><span class="text_price-data">1,170,000</span>원</div>
+													</div>
+													<div class="text_product-price">
+														<div class="price_title">소계</div>
+														<div class="price_contents"><span class="text_price-data">1,170,000</span>원</div>
+													</div>
+												</div>
+											</a>
+											<div class="box_spinor box_spinor-mobile">
+												<div class="spinor_area">
+													<button type="button" class="btn_spinor-minus"><span class="txt_hide">감소</span></button>
+													<button type="button" class="btn_spinor-plus"><span class="txt_hide">증가</span></button>
+													<input type="text" class="form_input" value="1">
+												</div>
+												<button type="button" class="btn_mobile-del"><i class="sp_button sp_button-del">삭제</i></button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="product_col-spinor2">
+									<div class="spinor_area">
+										<button type="button" class="btn_spinor-minus"><span class="txt_hide">감소</span></button>
+										<button type="button" class="btn_spinor-plus"><span class="txt_hide">증가</span></button>
+										<input type="text" class="form_input" value="1">
+									</div>
+								</div>
+								<div class="product_col-price box_product-price">
+									<div class="text_product-price unit">
+										<div class="price_title">단가</div>
+										<div class="price_contents"><span class="text_price-data">1,170,000</span>원</div>
+									</div>
+									<div class="text_product-price">
+										<div class="price_title">소계</div>
+										<div class="price_contents"><span class="text_price-data">1,170,000</span>원</div>
+									</div>
+								</div>
+								<div class="product_col-del">
+									<button type="button" class="btn_pc-del">삭제</button>
+								</div>
+							</div>
+							<!-- E : Flag 갯수 3개인 케이스 -->
+
+							<!-- S : 추가구성품 태그 있는 상품 -->
+							<div class="product_item">
+								<div class="product_col-form cart_type">
+									<span class="form_element-checkbox no_label">
+										<input type="checkbox" id="checkbox3-1">
+										<label for="checkbox3-1" class="sp_chk focus">선택</label>
+									</span>
+								</div>
+								<div class="product_col-summery">
+									<div class="box_product-summery">
+										<div class="summery_col-thumb"><a href="" class="link_product"><img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png"></a></div>
+										<div class="summery_col-info">
+											<a href="" class="link_product">
+												<div class="flag_wrap">
+													<span class="flag_item-add_component">추가 구성품</span> <!-- 20230918 추가구성품 태그 추가 -->
+												</div>
+												<div class="product_text-data">
+													<p class="text_product-title">뉴트리라이트 베스트 선물세트</p>
+													<div class="box_product-info">
+														<div class="product_sub-data">
+															<div class="sub_data-title">VPS / SKU</div>
+															<div class="sub_data-contents">2002 / 294460L</div>
+														</div>
+														<div class="product_sub-data">
+															<div class="sub_data-title">PV / BV</div>
+															<div class="sub_data-contents">940,090,000 / 148,100,000</div>
+														</div>
+													</div>
+												</div>
+												<div class="box_mobile-price box_product-price">
+													<div class="text_product-price unit">
+														<div class="price_title">단가</div>
+														<div class="price_contents"><span class="text_price-data">1,220,000</span>원</div>
+													</div>
+													<div class="text_product-price">
+														<div class="price_title">소계</div>
+														<div class="price_contents"><span class="text_price-data">10,220,000</span>원</div>
+													</div>
+												</div>
+											</a>
+											<div class="box_spinor box_spinor-mobile">
+												<div class="spinor_area">
+													<button type="button" class="btn_spinor-minus"><span class="txt_hide">감소</span></button>
+													<button type="button" class="btn_spinor-plus"><span class="txt_hide">증가</span></button>
+													<input type="text" class="form_input" value="1">
+												</div>
+												<button type="button" class="btn_mobile-del"><i class="sp_button sp_button-del">삭제</i></button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="product_col-spinor2">
+									<div class="spinor_area">
+										<button type="button" class="btn_spinor-minus"><span class="txt_hide">감소</span></button>
+										<button type="button" class="btn_spinor-plus"><span class="txt_hide">증가</span></button>
+										<input type="text" class="form_input" value="1">
+									</div>
+								</div>
+								<div class="product_col-price box_product-price">
+									<div class="text_product-price unit">
+										<div class="price_title">단가</div>
+										<div class="price_contents"><span class="text_price-data">1,220,000</span>원</div>
+									</div>
+									<div class="text_product-price">
+										<div class="price_title">소계</div>
+										<div class="price_contents"><span class="text_price-data">10,220,000</span>원</div>
+									</div>
+								</div>
+								<div class="product_col-del">
+									<button type="button" class="btn_pc-del">삭제</button>
+								</div>
+							</div>
+							<div class="product_item">
+								<div class="product_col-form cart_type">
+									<span class="form_element-checkbox no_label">
+										<input type="checkbox" id="checkbox3-1">
+										<label for="checkbox3-1" class="sp_chk focus">선택</label>
+									</span>
+								</div>
+								<div class="product_col-summery">
+									<div class="box_product-summery">
+										<div class="summery_col-thumb"><a href="" class="link_product"><img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png"></a></div>
+										<div class="summery_col-info">
+											<a href="" class="link_product">
+												<div class="flag_wrap">
+													<span class="flag_item-new">신제품</span>
+													<span class="flag_item-add_component">추가 구성품</span> <!-- 20230918 추가구성품 태그 추가 -->
+												</div>
+												<div class="product_text-data">
+													<p class="text_product-title">뉴트리라이트 베스트 선물세트</p>
+													<div class="box_product-info">
+														<div class="product_sub-data">
+															<div class="sub_data-title">VPS / SKU</div>
+															<div class="sub_data-contents">2002 / 294460L</div>
+														</div>
+														<div class="product_sub-data">
+															<div class="sub_data-title">PV / BV</div>
+															<div class="sub_data-contents">940,090,000 / 148,100,000</div>
+														</div>
+													</div>
+												</div>
+												<div class="box_mobile-price box_product-price">
+													<div class="text_product-price unit">
+														<div class="price_title">단가</div>
+														<div class="price_contents"><span class="text_price-data">1,220,000</span>원</div>
+													</div>
+													<div class="text_product-price">
+														<div class="price_title">소계</div>
+														<div class="price_contents"><span class="text_price-data">10,220,000</span>원</div>
+													</div>
+												</div>
+											</a>
+											<div class="box_spinor box_spinor-mobile">
+												<div class="spinor_area">
+													<button type="button" class="btn_spinor-minus"><span class="txt_hide">감소</span></button>
+													<button type="button" class="btn_spinor-plus"><span class="txt_hide">증가</span></button>
+													<input type="text" class="form_input" value="1">
+												</div>
+												<button type="button" class="btn_mobile-del"><i class="sp_button sp_button-del">삭제</i></button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="product_col-spinor2">
+									<div class="spinor_area">
+										<button type="button" class="btn_spinor-minus"><span class="txt_hide">감소</span></button>
+										<button type="button" class="btn_spinor-plus"><span class="txt_hide">증가</span></button>
+										<input type="text" class="form_input" value="1">
+									</div>
+								</div>
+								<div class="product_col-price box_product-price">
+									<div class="text_product-price unit">
+										<div class="price_title">단가</div>
+										<div class="price_contents"><span class="text_price-data">1,220,000</span>원</div>
+									</div>
+									<div class="text_product-price">
+										<div class="price_title">소계</div>
+										<div class="price_contents"><span class="text_price-data">10,220,000</span>원</div>
+									</div>
+								</div>
+								<div class="product_col-del">
+									<button type="button" class="btn_pc-del">삭제</button>
+								</div>
+							</div>
+							<!-- E : 추가구성품 태그 있는 상품 -->
+
+							<!-- S : 20230727 이스프링 퍼싯/필터 교체서비스 동시 결제 기능 -->
+							<div class="product_item">
+								<div class="product_col-form cart_type">
+									<span class="form_element-checkbox no_label">
+										<input type="checkbox" id="checkbox4-1">
+										<label for="checkbox4-1" class="sp_chk focus">선택</label>
+									</span>
+								</div>
+								<div class="product_col-summery">
+									<div class="box_product-summery">
+										<div class="summery_col-thumb"><a href="" class="link_product"><img src="/_ui/responsive/theme-blue/images/espring_img_01.png"></a></div>
+										<div class="summery_col-info">
+											<a href="" class="link_product">
+												<div class="flag_wrap">
+													<span class="flag_item-visitChange">방문교체</span>
+												</div>
+												<div class="product_text-data">
+													<p class="text_product-title">이스프링 정수기 필터 카트리지</p>
+													<div class="box_product-info">
+														<div class="product_sub-data">
+															<div class="sub_data-title">VPS/SKU</div>
+															<div class="sub_data-contents">5109/100186K</div>
+														</div>
+														<div class="product_sub-data">
+															<div class="sub_data-title">PV/BV</div>
+															<div class="sub_data-contents">138,730/240,000</div>
+														</div>
+													</div>
+												</div>
+												<div class="box_mobile-price box_product-price">
+													<div class="text_product-price unit">
+														<div class="price_title">단가</div>
+														<div class="price_contents"><span class="text_price-data">264,000</span>원</div>
+													</div>
+													<div class="text_product-price">
+														<div class="price_title">소계</div>
+														<div class="price_contents"><span class="text_price-data">264,000</span>원</div>
+													</div>
+												</div>
+											</a>
+											<div class="box_spinor box_spinor-mobile">
+												<div class="spinor_area">
+													<button type="button" class="btn_spinor-minus"><span class="txt_hide">감소</span></button>
+													<button type="button" class="btn_spinor-plus"><span class="txt_hide">증가</span></button>
+													<input type="text" class="form_input" value="1">
+												</div>
+												<button type="button" class="btn_mobile-del"><i class="sp_button sp_button-del">삭제</i></button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="product_col-spinor2">
+									<div class="spinor_area">
+										<button type="button" class="btn_spinor-minus"><span class="txt_hide">감소</span></button>
+										<button type="button" class="btn_spinor-plus"><span class="txt_hide">증가</span></button>
+										<input type="text" class="form_input" value="1">
+									</div>
+								</div>
+								<div class="product_col-price box_product-price">
+									<div class="text_product-price unit">
+										<div class="price_title">단가</div>
+										<div class="price_contents"><span class="text_price-data">264,000</span>원</div>
+									</div>
+									<div class="text_product-price">
+										<div class="price_title">소계</div>
+										<div class="price_contents"><span class="text_price-data">264,000</span>원</div>
+									</div>
+								</div>
+								<div class="product_col-del">
+									<button type="button" class="btn_pc-del">삭제</button>
+								</div>
+							</div>
+
+							<div class="product_item">
+								<div class="product_col-form cart_type">
+									<span class="form_element-checkbox no_label">
+										<input type="checkbox" id="checkbox5-1">
+										<label for="checkbox5-1" class="sp_chk focus">선택</label>
+									</span>
+								</div>
+								<div class="product_col-summery">
+									<div class="box_product-summery">
+										<div class="summery_col-thumb"><a href="" class="link_product"><img src="/_ui/responsive/theme-blue/images/espring_img_03.png"></a></div>
+										<div class="summery_col-info summery_col-info_v2"> <!-- 교체서비스의 경우 summery_col-info_v2 클래스 추가 -->
+											<a href="" class="link_product">
+												<!-- <div class="flag_wrap">
+													<span class="flag_item-visitChange">방문교체</span>
+												</div> -->
+												<div class="product_text-data">
+													<p class="text_product-title">필터&퍼싯 교체 서비스</p>
+												</div>
+												<div class="box_mobile-price box_product-price">
+													<!-- <div class="text_product-price unit">
+														<div class="price_title">단가</div>
+														<div class="price_contents"><span class="text_price-data">30,000</span>원</div>
+													</div> -->
+													<div class="text_product-price">
+														<div class="price_title">소계</div>
+														<div class="price_contents"><span class="text_price-data">30,000</span>원</div>
+													</div>
+												</div>
+											</a>
+											<div class="box_spinor box_spinor-mobile">
+												<div class="spinor_area">
+													<button type="button" class="btn_spinor-minus"><span class="txt_hide">감소</span></button>
+													<button type="button" class="btn_spinor-plus"><span class="txt_hide">증가</span></button>
+													<input type="text" class="form_input" value="1">
+												</div>
+												<button type="button" class="btn_mobile-del"><i class="sp_button sp_button-del">삭제</i></button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="product_col-spinor2">
+									<div class="spinor_area">
+										<button type="button" class="btn_spinor-minus"><span class="txt_hide">감소</span></button>
+										<button type="button" class="btn_spinor-plus"><span class="txt_hide">증가</span></button>
+										<input type="text" class="form_input" value="1">
+									</div>
+								</div>
+								<div class="product_col-price box_product-price">
+									<div class="text_product-price unit">
+										<div class="price_title">단가</div>
+										<!-- <div class="price_contents"><span class="text_price-data">30,000</span>원</div> -->
+									</div>
+									<div class="text_product-price">
+										<div class="price_title">소계</div>
+										<div class="price_contents"><span class="text_price-data">30,000</span>원</div>
+									</div>
+								</div>
+								<div class="product_col-del">
+									<button type="button" class="btn_pc-del">삭제</button>
+								</div>
+							</div>
+							<!-- E : 20230727 이스프링 퍼싯/필터 교체서비스 동시 결제 기능 -->
+
+							<!-- S : product_item(옵셥 있음) -->
+							<div class="product_item">
+								<div class="product_col-form cart_type">
+									<span class="form_element-checkbox no_label">
+										<input type="checkbox" id="checkbox1-1">
+										<label for="checkbox1-1" class="sp_chk focus">선택</label>
+									</span>
+								</div>
+								<div class="product_col-summery">
+									<div class="box_product-summery">
+										<div class="summery_col-thumb"><a href="" class="link_product"><img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png"></a></div>
+										<div class="summery_col-info">
+											<a href="" class="link_product">
+												<div class="flag_wrap">
+													<span class="flag_item-new">신제품</span>
+													<span class="flag_item-promotion">프로모션</span>
+												</div>
+												<div class="product_text-data">
+													<p class="text_product-title">하이드라-브이 쉬어 라이트 파운데이션 [SPF15, PA++] - 샤블리 하이드라-브이 쉬어 라이트 파운데이션 [SPF15, PA++] - 샤블리하이드라-브이 쉬어 라이트 파운데이션 [SPF15, PA++] - 샤블리</p>
+													<div class="box_product-info">
+														<div class="product_sub-data">
+															<div class="sub_data-title">VPS / SKU</div>
+															<div class="sub_data-contents">2002 / 294460L</div>
+														</div>
+														<div class="product_sub-data">
+															<div class="sub_data-title">PV / BV</div>
+															<div class="sub_data-contents">940,090,000 / 148,100,000</div>
+														</div>
+													</div>
+												</div>
+												<div class="box_mobile-price box_product-price">
+													<div class="text_product-price unit">
+														<div class="price_title">단가</div>
+														<div class="price_contents"><span class="text_price-data">1,220,000</span>원</div>
+													</div>
+													<div class="text_product-price">
+														<div class="price_title">소계</div>
+														<div class="price_contents"><span class="text_price-data">10,220,000</span>원</div>
+													</div>
+												</div>
+											</a>
+											<div class="box_spinor box_spinor-mobile">
+												<div class="spinor_area">
+													<button type="button" class="btn_spinor-minus"><span class="txt_hide">감소</span></button>
+													<button type="button" class="btn_spinor-plus"><span class="txt_hide">증가</span></button>
+													<input type="text" class="form_input" value="1">
+												</div>
+												<button type="button" class="btn_mobile-del"><i class="sp_button sp_button-del">삭제</i></button>
+											</div>
+											<div class="box_select product_option">
+												<div class="box_select-item">
+													<button type="button" class="select_item select_item-selected">
+														<span class="select_item-wrap option_selected js-data">
+															<span class="select_item-thumb image_round"><img src="//dummyimage.com/16x16/f8e2d8/222" alt=""></span>
+															<span class="select_item-title">샤블리</span>
+														</span>
+														<i class="sp_form sp_dropbox-a"></i>
+													</button>
+													<input type="hidden" value="" title="상품 옵션값">
+													<ul class="select_list list_minishop">
+														<li class="select_list-item selected">
+															<button type="button" class="select_item">
+																<span class="select_item-wrap">
+																	<span class="select_item-thumb image_round"><img src="//dummyimage.com/16x16/f8e2d8/222" alt=""></span>
+																	<span class="select_item-title">샤블리 샤블리 샤블리 샤블리 샤블리 샤블리 샤블리</span>
+																</span>
+															</button>
+														</li>
+														<li class="select_list-item">
+															<button type="button" class="select_item">
+																<span class="select_item-wrap">
+																	<span class="select_item-thumb image_round"><img src="//dummyimage.com/16x16/edd3ba/222" alt=""></span>
+																	<span class="select_item-title">비스크</span>
+																</span>
+															</button>
+														</li>
+														<li class="select_list-item">
+															<button type="button" class="select_item">
+																<span class="select_item-wrap">
+																	<span class="select_item-thumb image_round"><img src="//dummyimage.com/16x16/ebc9ae/222" alt=""></span>
+																	<span class="select_item-title">버프</span>
+																</span>
+															</button>
+														</li>
+														<li class="select_list-item">
+															<button type="button" class="select_item">
+																<span class="select_item-wrap">
+																	<span class="select_item-thumb image_round"><img src="//dummyimage.com/16x16/edd3ba/222" alt=""></span>
+																	<span class="select_item-title">비스크</span>
+																</span>
+															</button>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="product_col-spinor2">
+									<div class="spinor_area">
+										<button type="button" class="btn_spinor-minus"><span class="txt_hide">감소</span></button>
+										<button type="button" class="btn_spinor-plus"><span class="txt_hide">증가</span></button>
+										<input type="text" class="form_input" value="999"> <!-- 20230207 장바구니 구매 수량 3자리 수 입력 시 input 영역 넓이 확인 위해 value 수정-->
+									</div>
+								</div>
+								<div class="product_col-price box_product-price">
+									<div class="text_product-price unit">
+										<div class="price_title">단가</div>
+										<div class="price_contents"><span class="text_price-data">1,220,000</span>원</div>
+									</div>
+									<div class="text_product-price">
+										<div class="price_title">소계</div>
+										<div class="price_contents"><span class="text_price-data">10,220,000</span>원</div>
+									</div>
+								</div>
+								<div class="product_col-del">
+									<button type="button" class="btn_pc-del">삭제</button>
+								</div>
+							</div>
+							<!-- E : product_item(옵셥 있음) -->
+							<!-- S : product_item(품절된 경우) -->
+							<div class="product_item">
+								<div class="product_col-form cart_type">
+									<span class="form_element-checkbox no_label">
+										<input type="checkbox" id="checkbox2">
+										<label for="checkbox2" class="sp_chk focus">선택</label>
+									</span>
+								</div>
+								<div class="product_col-summery">
+									<div class="box_product-summery">
+										<div class="summery_col-thumb"><a href="" class="link_product"><img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png"></a></div>
+										<div class="summery_col-info">
+											<a href="" class="link_product">
+												<div class="flag_wrap">
+													<span class="flag_item-new">신제품</span>
+													<span class="flag_item-soldout">일시품절</span>
+												</div>
+												<div class="product_text-data">
+													<p class="text_product-title">하이드라-브이 쉬어 라이트 파운데이션 [SPF15, PA++] - 샤블리</p>
+													<div class="box_product-info">
+														<div class="product_sub-data">
+															<div class="sub_data-title">VPS / SKU</div>
+															<div class="sub_data-contents">2002 / 294460L</div>
+														</div>
+														<div class="product_sub-data">
+															<div class="sub_data-title">PV / BV</div>
+															<div class="sub_data-contents">940,090,000 / 148,100,000</div>
+														</div>
+													</div>
+												</div>
+												<div class="box_mobile-price box_product-price">
+													<div class="text_product-price unit">
+														<div class="price_title">단가</div>
+														<div class="price_contents"><span class="text_price-data">1,220,000</span>원</div>
+													</div>
+													<div class="text_product-price">
+														<div class="price_title">소계</div>
+														<div class="price_contents"><span class="text_price-data">10,220,000</span>원</div>
+													</div>
+												</div>
+											</a>
+											<div class="box_spinor box_spinor-mobile">
+												<div class="spinor_area">
+													<button type="button" class="btn_spinor-minus" disabled><span class="txt_hide">감소</span></button>
+													<button type="button" class="btn_spinor-plus" disabled><span class="txt_hide">증가</span></button>
+													<input type="text" class="form_input" value="0" disabled>
+												</div>
+												<button type="button" class="btn_mobile-del"><i class="sp_button sp_button-del">삭제</i></button>
+											</div>
+											<div class="box_select product_option">
+												<div class="box_select-item">
+													<button type="button" class="select_item select_item-selected" disabled>
+												<span class="select_item-wrap option_selected js-data">
+													<span class="select_item-thumb image_round"><img src="//dummyimage.com/16x16/f8e2d8/222" alt=""></span>
+													<span class="select_item-title">샤블리</span>
+												</span>
+														<i class="sp_form sp_dropbox-a"></i>
+													</button>
+													<input type="hidden" value="" title="상품 옵션값">
+													<ul class="select_list list_minishop">
+														<li class="select_list-item selected">
+															<button type="button" class="select_item">
+														<span class="select_item-wrap">
+															<span class="select_item-thumb image_round"><img src="//dummyimage.com/16x16/f8e2d8/222" alt=""></span>
+															<span class="select_item-title">샤블리 샤블리 샤블리 샤블리 샤블리 샤블리 샤블리</span>
+														</span>
+															</button>
+														</li>
+														<li class="select_list-item">
+															<button type="button" class="select_item">
+														<span class="select_item-wrap">
+															<span class="select_item-thumb image_round"><img src="//dummyimage.com/16x16/edd3ba/222" alt=""></span>
+															<span class="select_item-title">비스크</span>
+														</span>
+															</button>
+														</li>
+														<li class="select_list-item">
+															<button type="button" class="select_item">
+														<span class="select_item-wrap">
+															<span class="select_item-thumb image_round"><img src="//dummyimage.com/16x16/ebc9ae/222" alt=""></span>
+															<span class="select_item-title">버프</span>
+														</span>
+															</button>
+														</li>
+														<li class="select_list-item">
+															<button type="button" class="select_item">
+														<span class="select_item-wrap">
+															<span class="select_item-thumb image_round"><img src="//dummyimage.com/16x16/edd3ba/222" alt=""></span>
+															<span class="select_item-title">비스크</span>
+														</span>
+															</button>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="product_col-spinor2">
+									<div class="spinor_area">
+										<button type="button" class="btn_spinor-minus" disabled><span class="txt_hide">감소</span></button>
+										<button type="button" class="btn_spinor-plus" disabled><span class="txt_hide">증가</span></button>
+										<input type="text" class="form_input" value="0" disabled>
+									</div>
+								</div>
+								<div class="product_col-price box_product-price">
+									<div class="text_product-price unit">
+										<div class="price_title">단가</div>
+										<div class="price_contents"><span class="text_price-data">1,220,000</span>원</div>
+									</div>
+									<div class="text_product-price">
+										<div class="price_title">소계</div>
+										<div class="price_contents"><span class="text_price-data">10,220,000</span>원</div>
+									</div>
+								</div>
+								<div class="product_col-del">
+									<button type="button" class="btn_pc-del">삭제</button>
+								</div>
+							</div>
+							<!-- E : product_item(품절된 경우) -->
+							<!-- S : product_item(세트구성) -->
+							<div class="product_item">
+								<div class="product_col-form cart_type">
+									<span class="form_element-checkbox no_label">
+										<input type="checkbox" id="checkbox3-1">
+										<label for="checkbox3-1" class="sp_chk focus">선택</label>
+									</span>
+								</div>
+								<div class="product_col-summery">
+									<div class="box_product-summery">
+										<div class="summery_col-thumb"><a href="" class="link_product"><img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png"></a></div>
+										<div class="summery_col-info">
+											<a href="" class="link_product">
+												<!-- S : flag 없을 경우
+												<div class="flag_wrap">
+													<span class="flag_item-new">신제품</span>
+													<span class="flag_item-promotion">프로모션</span>
+												</div>
+												E : flag 없을 경우 -->
+												<div class="product_text-data">
+													<p class="text_product-title">뉴트리라이트 베스트 선물세트</p>
+													<div class="box_product-info">
+														<div class="product_sub-data">
+															<div class="sub_data-title">VPS / SKU</div>
+															<div class="sub_data-contents">2002 / 294460L</div>
+														</div>
+														<div class="product_sub-data">
+															<div class="sub_data-title">PV / BV</div>
+															<div class="sub_data-contents">940,090,000 / 148,100,000</div>
+														</div>
+													</div>
+												</div>
+												<div class="box_mobile-price box_product-price">
+													<div class="text_product-price unit">
+														<div class="price_title">단가</div>
+														<div class="price_contents"><span class="text_price-data">1,220,000</span>원</div>
+													</div>
+													<div class="text_product-price">
+														<div class="price_title">소계</div>
+														<div class="price_contents"><span class="text_price-data">10,220,000</span>원</div>
+													</div>
+												</div>
+											</a>
+											<div class="box_spinor box_spinor-mobile">
+												<div class="spinor_area">
+													<button type="button" class="btn_spinor-minus"><span class="txt_hide">감소</span></button>
+													<button type="button" class="btn_spinor-plus"><span class="txt_hide">증가</span></button>
+													<input type="text" class="form_input" value="1">
+												</div>
+												<button type="button" class="btn_mobile-del"><i class="sp_button sp_button-del">삭제</i></button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="product_col-spinor2">
+									<div class="spinor_area">
+										<button type="button" class="btn_spinor-minus"><span class="txt_hide">감소</span></button>
+										<button type="button" class="btn_spinor-plus"><span class="txt_hide">증가</span></button>
+										<input type="text" class="form_input" value="1">
+									</div>
+								</div>
+								<div class="product_col-price box_product-price">
+									<div class="text_product-price unit">
+										<div class="price_title">단가</div>
+										<div class="price_contents"><span class="text_price-data">1,220,000</span>원</div>
+									</div>
+									<div class="text_product-price">
+										<div class="price_title">소계</div>
+										<div class="price_contents"><span class="text_price-data">10,220,000</span>원</div>
+									</div>
+								</div>
+								<div class="product_col-del">
+									<button type="button" class="btn_pc-del">삭제</button>
+								</div>
+							</div>
+							<!-- E : product_item -->
+							<!-- S : product_item(증정품) -->
+							<!--<div class="product_item">
+								<div class="product_col-form cart_type">
+								</div>
+								<div class="product_col-summery">
+									<div class="box_product-summery">
+										<div class="summery_col-thumb"><a href="" class="link_product"><img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png"></a></div>
+										<div class="summery_col-info">
+											<a href="" class="link_product">
+												<div class="flag_wrap">
+													<span class="flag_item-freebies">증정품</span>
+												</div>
+												<div class="product_text-data">
+													<p class="text_product-title">하이드라-브이 쉬어 라이트 파운데이션 [SPF15, PA++] - 샤블리</p>
+													<div class="box_product-info">
+														<div class="product_sub-data">
+															<div class="sub_data-title">VPS / SKU</div>
+															<div class="sub_data-contents">2002 / 294460L</div>
+														</div>
+														<div class="product_sub-data">
+															<div class="sub_data-title">PV / BV</div>
+															<div class="sub_data-contents">940,090,000 / 148,100,000</div>
+														</div>
+													</div>
+												</div>
+												<div class="box_mobile-price box_product-price">
+													<div class="text_product-price unit">
+														<div class="price_title">단가</div>
+														<div class="price_contents freebies">
+															<span class="text_price-data">1,220,000</span>
+															<span class="text_price-free"><span class="text_price-data">0</span>원</span>
+														</div>
+													</div>
+													<div class="text_product-price">
+														<div class="price_title">소계</div>
+														<div class="price_contents freebies">
+															<span class="text_price-data">10,220,000</span>
+															<span class="text_price-free"><span class="text_price-data">0</span>원</span>
+														</div>
+													</div>
+												</div>
+											</a>
+											<div class="box_spinor box_spinor-mobile">
+												<div class="spinor_area">
+													<button type="button" class="btn_spinor-minus" disabled><span class="txt_hide">감소</span></button>
+													<button type="button" class="btn_spinor-plus" disabled><span class="txt_hide">증가</span></button>
+													<input type="text" class="form_input" value="0" disabled>
+												</div>
+												<button type="button" class="btn_mobile-del"><i class="sp_button sp_button-del">삭제</i></button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="product_col-spinor2">
+									<div class="spinor_area">
+										<button type="button" class="btn_spinor-minus" disabled><span class="txt_hide">감소</span></button>
+										<button type="button" class="btn_spinor-plus" disabled><span class="txt_hide">증가</span></button>
+										<input type="text" class="form_input" value="1" disabled>
+									</div>
+								</div>
+								<div class="product_col-price box_product-price">
+									<div class="text_product-price unit">
+										<div class="price_title">단가</div>
+										<div class="price_contents freebies">
+											<span class="text_price-data">1,200</span>
+											<span class="text_price-free"><span class="text_price-data">0</span>원</span>
+										</div>
+									</div>
+									<div class="text_product-price">
+										<div class="price_title">소계</div>
+										<div class="price_contents freebies">
+											<span class="text_price-data">10,220</span>
+											<span class="text_price-free"><span class="text_price-data">0</span>원</span>
+										</div>
+									</div>
+								</div>
+								<div class="product_col-del">
+									<button type="button" class="btn_pc-del">삭제</button>
+								</div>
+							</div>-->
+							<!-- E : product_item(증정품) -->
+							<!-- S : 상품없음 -->
+							<!--<div class="product_item-not">
+								<p class="text_no-product">장바구니 담긴 제품이 없습니다.</p>
+							</div>-->
+							<!-- E : 상품없음 -->
+						</div>
+						<div class="cart_action-area">
+							<div class="box_action">
+								<div class="box_all-check">
+									<span class="form_element-checkbox">
+										<input type="checkbox" id="Allcheck">
+										<label for="Allcheck" class="sp_chk focus">전체선택(2/2)</label>
+									</span>
+								</div>
+								<div class="cart_btn-area">
+									<span class="cart_btn-col check_del"><button type="button" class="btn_basic-a" disabled>선택 삭제</button></span>
+									<span class="cart_btn-col"><button type="button" class="btn_basic-c">위시리스트</button></span>
+								</div>
+							</div>
+						</div>
+
+						<!-- S : 2020 장바구니 개선 -->
+						<div class="box_bottom-noti">
+							<div class="box_accordion box_noti-wrapper">
+								<p class="accordion_title">장바구니 안내<button type="button" class="btn_accordion"><i class="sp_order sp_accordion-a">open</i></button></p>
+								<ul class="accordion_contents" style="display: none;">
+									<li>* 주문하실 때는 최대 25개 제품만 가능합니다.</li>
+									<li>* 제품 주문 합계액이 60,000원 이상이면 배송비가 무료입니다.</li>
+									<li>* 생산자 직접 배송 제품만 주문하는 경우에는 배송비가 부과되지 않습니다.</li>
+									<li>* 장바구니의 보관기간은 28일입니다.</li>
+									<li>* 세금계산서 발행 시 대표품목은 장바구니에 마지막으로 담은 제품 (최상단 제품) 으로 표기됩니다.</li>
+								</ul>
+							</div>
+							<div class="bottom_action-area btn_full">
+								<a class="btn_basic-d" data-continue-shopping-url="#">쇼핑계속하기</a>
+							</div>
+						</div>
+						<!-- E : 2020 장바구니 개선 -->
+
+						<!-- S : 20231121 추천영역 개선 -->
+						<div class="main-recommend main-cont recommend-renewal recommend-cont7 recommend-subPg">
+							<div class="bg-cont bg-blue01"></div>
+							<div class="tit-cont1">
+								<h2 class="tit">다른 분들은 <span class="color-blue01">이런 제품도 함께 구매</span>하셨어요</h2><!-- 20231211 수정 -->
+							</div>
+							<ul class="owl-carousel product-list-v2">
+								<li class="product-unit-v2 shadow">
+									<div class="img-cont">
+										<a href="#n">
+											<img src="/_ui/responsive/theme-blue/images/img_product01.jpg" alt="굿 슬립 밸런스" title="굿 슬립 밸런스" class="thumb-img">
+										</a>
+										<div class="btn-cont">
+											<button class="i-cart">장바구니</button>
+										</div>
+									</div>
+									<a class="cont" href="#n">
+										<span class="tit">굿 슬립 밸런스</span>
+										<span class="txt0">VPS / SKU : 2990 / 315910K</span>
+										<strong class="price">65,000<small>원</small></strong>
+										<span class="txt1">PV / BV: 34,160 / 59,100</span>
+									</a>
+								</li>
+								<li class="product-unit-v2 shadow">
+									<div class="img-cont">
+										<a href="#n">
+											<img src="/_ui/responsive/theme-blue/images/img_product02.jpg" alt="XS 푸로틴워터 20(24개입)" title="XS 푸로틴워터 20(24개입)" class="thumb-img">
+										</a>
+										<div class="btn-cont">
+											<button class="i-cart">장바구니</button>
+										</div>
+									</div>
+									<a class="cont" href="#n">
+										<span class="tit">XS 푸로틴워터 20(24개입)</span>
+										<span class="txt0">VPS / SKU : 2990 / 315910K</span>
+										<strong class="price">82,800<small>원</small></strong>
+										<span class="txt1">PV / BV: 34,160 / 59,100</span>
+									</a>
+								</li>
+								<li class="product-unit-v2 shadow">
+									<div class="img-cont">
+										<a href="#n">
+											<img src="/_ui/responsive/theme-blue/images/img_product03.jpg" alt="굿 슬립 밸런스" title="굿 슬립 밸런스" class="thumb-img">
+										</a>
+										<div class="btn-cont">
+											<button class="i-cart">장바구니</button>
+										</div>
+									</div>
+									<a class="cont" href="#n">
+										<span class="tit">굿 슬립 밸런스</span>
+										<span class="txt0">VPS / SKU : 2990 / 315910K</span>
+										<strong class="price">37,000<small>원</small></strong>
+										<span class="txt1">PV / BV: 34,160 / 59,100</span>
+									</a>
+								</li>
+								<li class="product-unit-v2 shadow">
+									<div class="img-cont">
+										<a href="#n">
+											<img src="/_ui/responsive/theme-blue/images/img_product04.jpg" alt="마이크로바이옴 4 (90포)" title="마이크로바이옴 4 (90포)" class="thumb-img">
+										</a>
+										<div class="btn-cont">
+											<button class="i-cart">장바구니</button>
+			
+										</div>
+									</div>
+									<a class="cont" href="#n">
+										<span class="tit">마이크로바이옴 4 (90포)</span>
+										<span class="txt0">VPS / SKU : 2990 / 315910K</span>
+										<strong class="price">140,000<small>원</small></strong>
+										<span class="txt1">PV / BV: 34,160 / 59,100</span>
+									</a>
+								</li>
+								<li class="product-unit-v2 shadow">
+									<div class="img-cont">
+										<a href="#n">
+											<img src="/_ui/responsive/theme-blue/images/img_product05.jpg" alt="뉴트리라이트 에센셜 선물세트" title="뉴트리라이트 에센셜 선물세트" class="thumb-img">
+										</a>
+										<div class="btn-cont">
+											<button class="i-cart">장바구니</button>
+										</div>
+									</div>
+									<a class="cont" href="#n">
+										<span class="tit">뉴트리라이트 에센셜 선물세트</span>
+										<span class="txt0">VPS / SKU : 2990 / 315910K</span>
+										<strong class="price">74,000<small>원</small></strong>
+										<span class="txt1">PV / BV: 34,160 / 59,100</span>
+									</a>
+								</li>
+								<li class="product-unit-v2 shadow">
+									<div class="img-cont">
+										<a href="#n">
+											<img src="/_ui/responsive/theme-blue/images/img_product06.jpg" alt="뉴트리키즈 비타민 무기질" title="뉴트리키즈 비타민 무기질" class="thumb-img">
+										</a>
+										<div class="btn-cont">
+											<button class="i-cart">장바구니</button>
+										</div>
+									</div>
+									<a class="cont" href="#n">
+										<span class="tit">뉴트리키즈 비타민 무기질</span>
+										<span class="txt0">VPS / SKU : 2990 / 315910K</span>
+										<strong class="price">46,000<small>원</small></strong>
+										<span class="txt1">PV / BV: 34,160 / 59,100</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+			
+						<script>
+							$(function () {
+								$('.recommend-cont7 .product-list-v2').owlCarousel({
+									loop: false,
+									margin: 8,
+									responsiveClass: true,
+									autoWidth: true,
+									nav: false,
+									dots: false,
+									responsive: {
+										768: {
+											margin: 12,
+											mouseDrag: false,
+											items: 6,
+											autoWidth:false
+										}
+									}
+								});
+							});
+						</script>
+						<!-- E : 20231121 추천영역 개선 -->
+
+						<!--S : 2020-07-07 이런상품 어때요 위치이동 -->
+						<!-- <div class="box_product-recommend">
+							<p class="title-desc">이런 상품 어때요</p>
+							<section class="section_sop-list type-center">
+								<div class="sop-item product_recommend-item">
+									<div class="box_thumb">
+										<img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png">
+									</div>
+									<div class="box_product-info">
+										<a href="" class="link-area">
+											<p class="txt-name">뉴트리라이트 파운데이션 프로틴 뉴트리라이트 파운데이션 프로틴 뉴트리라이트 파운데이션 프로틴 뉴트리라이트 파운데이션 프로틴</p>
+											<p class="txt-price"><span class="price-value">36,780</span>원</p>
+										</a>
+										<div class="box_btn-area"><button type="button" class="btn_circle-a"><i class="sp_button sp_button-cart">카트담기</i></button></div>
+									</div>
+								</div>
+								<div class="sop-item product_recommend-item">
+									<div class="box_thumb">
+										<img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png">
+									</div>
+									<div class="box_product-info">
+										<a href="" class="link-area">
+											<p class="txt-name">뉴트리라이트 파운데이션 프로틴 뉴트리라이트 파운데이션 프로틴 뉴트리라이트 파운데이션 프로틴 뉴트리라이트 파운데이션 프로틴</p>
+											<p class="txt-price"><span class="price-value">36,780</span>원</p>
+										</a>
+										<div class="box_btn-area"><button type="button" class="btn_circle-a"><i class="sp_button sp_button-cart">카트담기</i></button></div>
+									</div>
+								</div>
+								<div class="sop-item product_recommend-item">
+									<div class="box_thumb">
+										<img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png">
+									</div>
+									<div class="box_product-info">
+										<a href="" class="link-area">
+											<p class="txt-name">뉴트리라이트 파운데이션 프로틴 뉴트리라이트 파운데이션 프로틴 뉴트리라이트 파운데이션 프로틴 뉴트리라이트 파운데이션 프로틴</p>
+											<p class="txt-price"><span class="price-value">36,780</span>원</p>
+										</a>
+										<div class="box_btn-area"><button type="button" class="btn_circle-a"><i class="sp_button sp_button-cart">카트담기</i></button></div>
+									</div>
+								</div>
+								<div class="sop-item product_recommend-item">
+									<div class="box_thumb">
+										<img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png">
+									</div>
+									<div class="box_product-info">
+										<a href="" class="link-area">
+											<p class="txt-name">뉴트리라이트 파운데이션 프로틴 뉴트리라이트 파운데이션 프로틴 뉴트리라이트 파운데이션 프로틴 뉴트리라이트 파운데이션 프로틴</p>
+											<p class="txt-price"><span class="price-value">36,780</span>원</p>
+										</a>
+										<div class="box_btn-area"><button type="button" class="btn_circle-a"><i class="sp_button sp_button-cart">카트담기</i></button></div>
+									</div>
+								</div>
+								<div class="sop-item product_recommend-item">
+									<div class="box_thumb">
+										<img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png">
+									</div>
+									<div class="box_product-info">
+										<a href="" class="link-area">
+											<p class="txt-name">뉴트리라이트 파운데이션 프로틴 뉴트리라이트 파운데이션 프로틴 뉴트리라이트 파운데이션 프로틴 뉴트리라이트 파운데이션 프로틴</p>
+											<p class="txt-price"><span class="price-value">36,780</span>원</p>
+										</a>
+										<div class="box_btn-area"><button type="button" class="btn_circle-a"><i class="sp_button sp_button-cart">카트담기</i></button></div>
+									</div>
+								</div>
+								<div class="sop-item product_recommend-item">
+									<div class="box_thumb">
+										<img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png">
+									</div>
+									<div class="box_product-info">
+										<a href="" class="link-area">
+											<p class="txt-name">뉴트리라이트 파운데이션 프로틴 뉴트리라이트 파운데이션 프로틴 뉴트리라이트 파운데이션 프로틴 뉴트리라이트 파운데이션 프로틴</p>
+											<p class="txt-price"><span class="price-value">36,780</span>원</p>
+										</a>
+										<div class="box_btn-area"><button type="button" class="btn_circle-a"><i class="sp_button sp_button-cart">카트담기</i></button></div>
+									</div>
+								</div>
+							</section>
+						</div> -->
+						<!--E : 2020-07-07 이런상품 어때요 위치이동 -->
+					</div>
+					<!-- 오른쪽 -->
+					<div class="cart_product-floating">
+						<div class="box_cart-option">
+							<p class="txt_order-title">보유혜택</p>
+							<div class="box_cart-info">
+								<div class="box_row-info">
+									<p class="txt_total-title txt_point-title">A포인트</p>
+									<p class="txt_total-info">100,248,862P</p>
+									<div class="btn_point">
+										<button type="button" class="btn_square-c small">M포인트 &gt; A포인트 전환</button>
+									</div>
+								</div>
+								<div class="box_row-info">
+									<p class="txt_total-title">쿠폰갯수</p>
+									<p class="txt_total-info">10개</p>
+								</div>
+							</div>
+
+							<p class="txt_order-title">결제예정금액(원)</p>
+							<div class="box_cart-info">
+								<div class="box_row-group">
+									<div class="box_row-info">
+										<p class="txt_total-title">주문금액</p>
+										<p class="txt_total-info">3,300,000</p>
+									</div>
+									<div class="box_row-info">
+										<p class="txt_total-title">배송비</p>
+										<p class="txt_total-info">3,300,000</p>
+									</div>
+								</div>
+								<div class="box_row-info box_price">
+									<!-- S: 2020 renewal 장바구니 개선 -->
+									<p class="txt_total-title tooltip-section">결제예정금액
+										<button type="button" data-tooltip="tooltip" class="btn-tooltip"><i class="sp_order"></i></button>
+									</p>
+									<p class="txt_total-info">3,300,000</p>
+									<div id="tooltip" class="tooltip-layer sp_amway-b">
+										<div class="tooltip-cont">
+											<p class="tooltip-txt">
+												위의 정보는 결제 확정금액이 아닙니다. 정확한 할인, 프로모션, 배송비, 세금 및 기타 수수료는 실제 결제시 산정됩니다.
+											</p>
+										</div>
+									</div>
+									<!-- E: 2020 renewal 장바구니 개선 -->
+								</div>
+								<div class="box_row-info box_total">
+									<p class="txt_total-title">총 PV/BV</p>
+									<p class="txt_total-info">
+										<span class="text_price-pv">100,000,000 /</span>
+										<span class="text_price-bv">100,000,000</span>
+									</p>
+								</div>
+							</div>
+							<!-- S : [디파이 수정] 210720 해당 영역 삭제 -->
+							<!--[S] 20210215 oneClick-voucher 클래스 추가 : 원클릭 체크아웃 디자인 적용-->
+							<!-- <div class="cart-voucher new-cart-voucher oneClick-voucher">
+								<div class="cart-voucher-list">
+									<mark>Promotion</mark>
+									<div class="vocher-totle">[신규 ABO프로모션]</div>
+									<div class="voucher-description">20만원 이상 첫 구매 시 증정<br>글리스터 치약 여행용 사이즈 2개</div>
+								</div>
+								<div class="cart-voucher-list">
+									<mark>Promotion</mark>
+									<div class="vocher-totle">[아티스트리 썸머 프로모션]</div>
+									<div class="voucher-description">아티스트리 제품 10만원 이상 주문 시<br> 주문금액의 10% 할인</div>
+								</div>
+								<div class="cart-voucher-list">
+									<mark>Promotion</mark>
+									<div class="vocher-totle">[암웨이 쇼핑데이 프로모션]</div>
+									<div class="voucher-description">주문금액 20만원 이상 경우 5,000원 <br>장바구니 할인</div>
+								</div>
+							</div> -->
+							<!--//[E] 20210215 oneClick-voucher 클래스 추가 : 원클릭 체크아웃 디자인 적용-->
+							<!-- E : [디파이 수정] 210720 해당 영역 삭제 -->
+
+							<div class="btn_floating-group">
+								<!-- S : 20230906 장바구니 말풍선 팝업 -->
+								<div class="bsop-toolTip">
+									<div class="bsopTipCont-wrapper">
+										<div class="bsopTooltip-content">
+											<img src="/_ui/responsive/theme-blue/images/akl_plp/ico_bsop_tooltip.png" class="img-bsop">
+											<span class="info">장스오로 구매하면 <b>최대 1.5만원 캐시백!</b></span>
+											<button class="btn-close"><span class="hidden">닫기</span></button>
+										</div>
+									</div>
+								</div>
+								<!-- E : 20230906 장바구니 말풍선 팝업 -->
+								<!-- S : [디파이 수정] 210720 장바구니스마트오더 주문하기 영역 추가 -->
+                                <div class="btn_basket-sop-wrapper">
+                                    <button type="button" class="btn_square-c sop-logo"><i class="sp_ico"></i>주문하기</button>
+                                </div>
+								<!-- E : [디파이 수정] 210720 장바구니스마트오더 주문하기 영역 추가 -->
+								<span class="btn_box">
+									<button type="button" class="btn_square-a">주문하기</button>
+								</span>
+								<span class="btn_box">
+									<button type="button" class="btn_square-c gift"><i class="sp_ico"></i>선물하기</button>
+								</span>
+							</div>
+						</div>
+					</div>
+					<!-- //오른쪽 -->
+
+					<!-- floating btn -->
+					<div class="box_mobile-floating">
+						<!-- S : 20231012 모바일 장바구니 화면 하단 가격표시 개선 -->
+						<div class="box_total-floating box_total-floating_new">
+							<div class="box_total-inner">
+								<div class="box_total-inner-box">
+									<dl>
+										<dt>총 PV / BV</dt>
+										<dd>
+											<strong class="point-color">999,000</strong>
+											<i class="ico_slash">/</i>
+											<strong class="point-color">999,000</strong>
+										</dd>
+									</dl>
+									<dl>
+										<!-- Case1. 장바구니 배송비 유료일 경우 -->
+										<!-- <dt class="total_bold">결제예정금액 <span>(+ 배송비3,300원)</span></dt> -->
+
+										<!-- Case2. 장바구니 배송비 무료일 경우 -->
+										<dt class="total_bold">결제예정금액 <span class="price-txt-blue">(무료배송)</span></dt>
+										<dd>
+											<strong class="point-color total_big_price">999,000</strong>원
+										</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+						<!-- E : 20231012 모바일 장바구니 화면 하단 가격표시 개선 -->
+						<div class="btn_floating-group basket-sop">
+							<span class="btn_box">
+								<button type="button" class="btn_square-a">주문하기</button>
+							</span>
+							<span class="btn_box">
+								<button type="button" class="btn_square-c sop-logo"><i class="sp_ico"></i>주문하기</button>
+								<!-- S : 20230906 장바구니 말풍선 팝업 -->
+								<div class="bsop-toolTip">
+									<div class="bsopTipCont-wrapper">
+										<div class="bsopTooltip-content">
+											<img src="/_ui/responsive/theme-blue/images/akl_plp/ico_bsop_tooltip.png" class="img-bsop">
+											<span class="info">장스오로 구매하면 <b>최대 1.5만원 캐시백!</b></span>
+											<button class="btn-close"><span class="hidden">닫기</span></button>
+										</div>
+									</div>
+								</div>
+								<!-- E : 20230906 장바구니 말풍선 팝업 -->
+							</span>
+							<span class="btn_box type2"> <!-- [디파이 수정] 210801 type2 클래스 추가 -->
+								<button type="button" class="btn_square-c gift"><i class="sp_ico"></i>선물</button>
+							</span>
+							<span class="btn_box type2"> <!-- [디파이 수정] 210801 type2 클래스 추가 -->
+								<button type="button" class="btn_square-c kakao"><i class="sp_ico"></i>A Cliks</button>
+							</span>
+						</div>
+					</div>
+					<!-- // floating btn -->
+				</div>
+			</div>
+			<!-- E : 2020 장바구니 개선 -->
+			<!-- E : 2020 cart renewal -->
+		</div>
+
+	</div>
+	<div id="quick"></div>
+	<div id="footer"></div>
+	<div class="box-chatbot">
+		<button type="button" class="btn-chatbot" id="kakakoChatbotButton" data-layer="chatbot-layer" data-chatboturl="http://pf.kakao.com/_gUwyxl/chat">
+			<i class="icon-chatbot"></i>
+				<!-- S : 20220712 챗봇 그만 보기 버튼 추가 -->
+				<button type="button" class="btn-chatbot-hide">챗봇 그만보기</button>
+				<!-- E : 20220712 챗봇 그만 보기 버튼 추가 -->
+		</button>
+	</div>
+</main>
+
+<!-- S: 2020 장바구니 개선 추천제품 팝업 -->
+<div id="orderlist-layer" class="layer_section renewal-fonts">
+	<div class="layer_section-container type-round size-a">
+		<div class="box_scroll-area">
+			<div class="layer-header type-a2">
+				<h1 class="header-title">함께 담아볼 추천 제품</h1>
+				<div class="btn_re-recommend"><button type="button">다시추천</button></div>
+			</div>
+			<div class="layer-content type-b">
+				<div class="box_product product_list-type">
+					<div class="product_item product_recommend-item">
+						<div class="product_col-summery">
+							<div class="box_product-summery">
+								<div class="summery_col-thumb"><a href="" class="link_product"><img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png"></a></div>
+								<div class="summery_col-info">
+									<a href="" class="link_product">
+										<div class="fnon-fixedlag_wrap">
+											<span class="flag_item-smart">스마트오더</span>
+										</div>
+										<div class="product_text-data">
+											<p class="text_product-title">하이드라-브이 쉬어 라이트 파운데이션 [SPF15, PA++] - 샤블리 </p>
+											<div class="box_product-info">
+												<div class="product_sub-data">
+													<div class="sub_data-title">VPS / SKU</div>
+													<div class="sub_data-contents">2002 / 294460L</div>
+												</div>
+												<div class="product_sub-data">
+													<div class="sub_data-title">PV / BV</div>
+													<div class="sub_data-contents">940,090,000 / 148,100,000</div>
+												</div>
+											</div>
+										</div>
+										<div class="text_product-price">
+											<span class="price_contents"><span class="text_price-data">10,220,000</span>원</span>
+											<button type="button" class="btn_circle-a"><i class="sp_button sp_button-cart">카트담기</i></button>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product_item product_recommend-item">
+						<div class="product_col-summery">
+							<div class="box_product-summery">
+								<div class="summery_col-thumb"><a href="" class="link_product"><img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png"></a></div>
+								<div class="summery_col-info">
+									<a href="" class="link_product">
+										<div class="flag_wrap">
+											<span class="flag_item-smart">스마트오더</span>
+										</div>
+										<div class="product_text-data">
+											<p class="text_product-title">하이드라-</p>
+											<div class="box_product-info">
+												<!--<div class="product_sub-data">
+													<div class="sub_data-title">VPS / SKU</div>
+													<div class="sub_data-contents">2002 / 294460L</div>
+												</div>-->
+												<div class="product_sub-data">
+													<div class="sub_data-title">PV / BV</div>
+													<div class="sub_data-contents">940,090,000 / 148,100,000</div>
+												</div>
+											</div>
+										</div>
+										<div class="text_product-price">
+											<span class="price_contents"><span class="text_price-data">10,220,000</span>원</span>
+											<button type="button" class="btn_circle-a"><i class="sp_button sp_button-cart">카트담기</i></button>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product_item product_recommend-item">
+						<div class="product_col-summery">
+							<div class="box_product-summery">
+								<div class="summery_col-thumb"><a href="" class="link_product"><img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png"></a></div>
+								<div class="summery_col-info">
+									<a href="" class="link_product">
+										<div class="flag_wrap">
+											<span class="flag_item-smart">스마트오더</span>
+										</div>
+										<div class="product_text-data">
+											<p class="text_product-title">하이드라-브이 쉬어 라이트 파운데이션 [SPF15, PA++] - 샤블리 </p>
+											<div class="box_product-info">
+												<div class="product_sub-data">
+													<div class="sub_data-title">VPS / SKU</div>
+													<div class="sub_data-contents">2002 / 294460L</div>
+												</div>
+												<div class="product_sub-data">
+													<div class="sub_data-title">PV / BV</div>
+													<div class="sub_data-contents">940,090,000 / 148,100,000</div>
+												</div>
+											</div>
+										</div>
+										<div class="text_product-price">
+											<span class="price_contents"><span class="text_price-data">10,220,000</span>원</span>
+											<button type="button" class="btn_circle-a"><i class="sp_button sp_button-cart">카트담기</i></button>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product_item product_recommend-item">
+						<div class="product_col-summery">
+							<div class="box_product-summery">
+								<div class="summery_col-thumb"><a href="" class="link_product"><img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png"></a></div>
+								<div class="summery_col-info">
+									<a href="" class="link_product">
+										<div class="flag_wrap">
+											<span class="flag_item-smart">스마트오더</span>
+										</div>
+										<div class="product_text-data">
+											<p class="text_product-title">하이드라-브이 쉬어 라이트 파운데이션 [SPF15, PA++] - 샤블리 </p>
+											<div class="box_product-info">
+												<div class="product_sub-data">
+													<div class="sub_data-title">VPS / SKU</div>
+													<div class="sub_data-contents">2002 / 294460L</div>
+												</div>
+												<div class="product_sub-data">
+													<div class="sub_data-title">PV / BV</div>
+													<div class="sub_data-contents">940,090,000 / 148,100,000</div>
+												</div>
+											</div>
+										</div>
+										<div class="text_product-price">
+											<span class="price_contents"><span class="text_price-data">10,220,000</span>원</span>
+											<button type="button" class="btn_circle-a"><i class="sp_button sp_button-cart">카트담기</i></button>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product_item product_recommend-item">
+						<div class="product_col-summery">
+							<div class="box_product-summery">
+								<div class="summery_col-thumb"><a href="" class="link_product"><img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png"></a></div>
+								<div class="summery_col-info">
+									<a href="" class="link_product">
+										<div class="flag_wrap">
+											<span class="flag_item-smart">스마트오더</span>
+										</div>
+										<div class="product_text-data">
+											<p class="text_product-title">하이드라-브이 쉬어 라이트 파운데이션 [SPF15, PA++] - 샤블리 </p>
+											<div class="box_product-info">
+												<div class="product_sub-data">
+													<div class="sub_data-title">VPS / SKU</div>
+													<div class="sub_data-contents">2002 / 294460L</div>
+												</div>
+												<div class="product_sub-data">
+													<div class="sub_data-title">PV / BV</div>
+													<div class="sub_data-contents">940,090,000 / 148,100,000</div>
+												</div>
+											</div>
+										</div>
+										<div class="text_product-price">
+											<span class="price_contents"><span class="text_price-data">10,220,000</span>원</span>
+											<button type="button" class="btn_circle-a"><i class="sp_button sp_button-cart">카트담기</i></button>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<button type="button" class="btn_layer-close type-a">닫기</button>
+	</div>
+</div>
+<!-- E: 2020 장바구니 개선 추천제품 팝업 -->
+
+<!-- NEW PLP 마이팩 담기 팝업 -->
+<div class="layerWrapper plp_lp01_pop">
+	<div class="cbox layerBox popWidL">
+		<div class="cart-popup__dialog">
+			<div class="cart-popup__header">
+					<span class="cart-popup__header-text">마이팩 담기
+						<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close">
+							<img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기">
+						</a>
+					</span>
+			</div>
+			<div class="cart-popup__content">
+				<div class="cart-popup__item-info">
+					<div class="pop-option-area">
+						<div class="pop-option-title">
+
+						</div>
+						<div class="pop-option-body">
+
+						</div>
+					</div>
+				</div>
+				<div class="cart-popup__item-link">
+					<a href="javascript:void(0)" class="btn-blue-white">제품 담기</a>
+					<a class="bt-akl-txt">새 마이팩 담기</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--// NEW PLP 마이팩 담기 팝업 -->
+
+<!-- NEW PLP 위시리스트 팝업 -->
+<div class="layerWrapper plp_lp02_pop">
+	<div class="cbox layerBox popWidL">
+		<div class="cart-popup__dialog">
+			<div class="cart-popup__header">
+					<span class="cart-popup__header-text">위시리스트
+						<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close">
+							<img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기">
+						</a>
+					</span>
+			</div>
+			<div class="cart-popup__content">
+				<div class="cart-popup__item-info">
+					<div class="pop-option-area">
+						<div class="pop-option-title">
+
+						</div>
+						<div class="pop-option-body">
+
+						</div>
+					</div>
+				</div>
+				<div class="cart-popup__item-link">
+					<a href="javascript:void(0)" class="btn-blue-white">보내기</a>
+					<a class="bt-akl-txt">위시리스트 추가</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--// NEW PLP 위시리스트 팝업 -->
+
+<!-- NEW PLP 구매공유 카카오 index 팝업 -->
+<div class="kakao-tutorial" style="display:none">
+	<div class="kakao-cont kakao-layer">
+		<div class="kakao_cont-inner">
+			<div class="kakao-txt">
+				<p class="kakao-tutorial-hd">카카오톡 제품 공유</p>
+				<p class="kakao-tutorial-desc">
+					<span>내 카카오톡 친구에게<br>간편히 전달하는 구매링크!</span>
+					<strong>친구의 구매가 나의 보너스로 쌓입니다!</strong>
+				</p>
+			</div>
+			<button type="button"  class="btn_kakao-close"><i class="sp_ico"></i>확인</button>
+		</div>
+	</div>
+	<span class="ani-arrow">화살표</span>
+	<div class="layer-dim"></div>
+</div>
+<!--// NEW PLP 구매공유 카카오 index 팝업 -->
+
+<!-- NEW PLP 구매공유 카카오 팝업 -->
+<div class="kakao-share kakao-layer renewal-fonts">
+	<h1 class="tit-kakao">소비자에게<br><strong>제품 체험기회</strong>를 전달하세요!</h1>
+	<div class="box_share-cont">
+		<div class="share_list-item">
+			<div class="share_col-thmb">
+				<a href="" class="link_product"><img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png"></a>
+			</div>
+			<div class="share_col-info">
+				<p class="text_product-title">아티스트리 시그니처 셀렉트 아티스트리 시그니처 셀렉트 아티스트리 시그니처 셀렉트</p>
+				<p class="text_product-price"><strong>33,000</strong>원 / <strong>1</strong>개</p>
+			</div>
+		</div>
+		<div class="share_list-item">
+			<div class="share_col-thmb">
+				<a href="" class="link_product"><img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png"></a>
+			</div>
+			<div class="share_col-info">
+				<p class="text_product-title">아티스트리 하이드라-브이 모이스처</p>
+				<p class="text_product-price"><strong>180,000</strong>원 / <strong>1</strong>개</p>
+			</div>
+		</div>
+		<div class="share_list-item">
+			<div class="share_col-thmb">
+				<a href="" class="link_product"><img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png"></a>
+			</div>
+			<div class="share_col-info">
+				<p class="text_product-title">바디키 식사대용 쉐이크 (카페오레)</p>
+				<p class="text_product-price"><strong>27,000</strong>원 / <strong>2</strong>개</p>
+			</div>
+		</div>
+		<div class="share_list-item">
+			<div class="share_col-thmb">
+				<a href="" class="link_product"><img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png"></a>
+			</div>
+			<div class="share_col-info">
+				<p class="text_product-title">아티스트리 시그니처 셀렉트 아티스트리 시그니처 셀렉트 아티스트리 시그니처 셀렉트</p>
+				<p class="text_product-price"><strong>33,000</strong>원 / <strong>1</strong>개</p>
+			</div>
+		</div>
+		<div class="share_list-item">
+			<div class="share_col-thmb">
+				<a href="" class="link_product"><img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png"></a>
+			</div>
+			<div class="share_col-info">
+				<p class="text_product-title">아티스트리 하이드라-브이 모이스처</p>
+				<p class="text_product-price"><strong>180,000</strong>원 / <strong>1</strong>개</p>
+			</div>
+		</div>
+		<div class="share_list-item">
+			<div class="share_col-thmb">
+				<a href="" class="link_product"><img src="/_ui/responsive/theme-blue/images/akl_product/beauty/visual_top_1181.png"></a>
+			</div>
+			<div class="share_col-info">
+				<p class="text_product-title">바디키 식사대용 쉐이크 (카페오레)</p>
+				<p class="text_product-price"><strong>27,000</strong>원 / <strong>2</strong>개</p>
+			</div>
+		</div>
+
+		<div class="share_textbox">
+			<textarea placeholder="마음을 담은 메시지와 제품을 함께 공유해보세요."></textarea>
+		</div>
+	</div>
+	<div class="box_share-footer">
+		<div class="box_total-floating">
+			<div class="box_total-inner">
+				<span class="text_total"><strong>총</strong><strong class="point-color">127,000</strong>원<span class="text_price-option">(+3,500원 배송비)</span></span>
+				<span class="text_total">총 PV/BV:<strong class="point-color">370,000,000</strong></span>
+			</div>
+		</div>
+		<button type="button" class="btn_share-select btn-share"><i class="sp_ico"></i>공유대상 선택</button>
+	</div>
+	<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close">닫기</a>
+</div>
+<!--// NEW PLP 구매공유 카카오 팝업 -->
+
+<!-- 재고현황  팝업 -->
+<div class="layerWrapper G10300_lp2_pop"><!-- div.layerWrapper 추가 -->
+	<div class="cbox G10300_lp2 layerBox popWidM"><!-- .layerBox 추가 -->
+		<div class="cart-popup__dialog">
+			<div class="cart-popup__header">
+				<span class="cart-popup__header-text">재고현황
+					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close">
+						<img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기">
+					</a>
+				</span>
+			</div>
+			<div class="cart-popup__content">
+				<div class="cart-popup__item-info">
+					<div class="product-status-title">
+						<p>재고현황은 실시간 변동으로 인하여 결제 시 달라질 수 있습니다.</p>
+						<p class="right">
+							<span class="in-Stock">재고 있음</span>
+							<span class="no-Stock">재고 없음</span>
+						</p>
+					</div>
+					<div class="product-status-body">
+						<ul class="pro-staus-list"><!-- 2018.02.13 나열순서 변경 -->
+							<li><span class="in-Stock">배달주문</span></li>
+							<li><span class="no-Stock">분당ABC</span></li>
+							<li><span class="in-Stock">강남</span></li>
+							<li><span class="no-Stock">강서</span></li>
+							<li><span class="no-Stock">인천</span></li>
+							<li><span class="in-Stock">대전</span></li>
+							<li><span class="no-Stock">천안</span></li>
+							<li><span class="in-Stock">청주</span></li>
+							<li><span class="no-Stock">해운대</span></li><!-- 2018.05.09 명칭 수정 -->
+							<li><span class="no-Stock">부산</span></li>
+							<li><span class="in-Stock">대구</span></li>
+							<li><span class="no-Stock">창원</span></li>
+							<li><span class="in-Stock">울산</span></li>
+							<li><span class="no-Stock">광주</span></li>
+							<li><span class="in-Stock">전주</span></li>
+							<li><span class="no-Stock">강릉</span></li>
+							<li><span class="no-Stock">제주</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- // 재고현황 팝업  -->
+
+<!-- 위시리스트 추가 팝업 -->
+<div class="layerWrapper wishListAdd_pop"><!-- div.layerWrapper 추가 -->
+	<div class="cbox wishListAdd layerBox popWidM"><!-- .layerBox 추가 -->
+		<div class="cart-popup__dialog">
+			<div class="cart-popup__header">
+				<span class="cart-popup__header-text">위시리스트 추가
+					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close">
+						<img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기">
+					</a>
+				</span>
+			</div>
+			<div class="cart-popup__content wish-list">
+				<div class="cart-popup__item-info">
+					<div class="form-horizontal">
+						<div class="form-group">
+							<label class="col-md-4 account-profile__label" for="wishname">위시리스트 명</label>
+							<div class="col-md-8 account-profile__value">
+								<input type="text" class="form-control" id="wishname">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cart-popup__item-link">
+					<a href="javascript:void(0)" class="btn-blue-white">확인</a>
+					<a class="bt-akl-txt">취소</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- // 위시리스트 추가 팝업 -->
+
+
+<!-- 옵션변경  팝업 -->
+<div class="layerWrapper G10500_lp2_pop"><!-- div.layerWrapper 추가 -->
+	<div class="cbox G10500_lp2 layerBox popWidM"><!-- .layerBox 추가 -->
+		<div class="cart-popup__dialog">
+			<div class="cart-popup__header">
+				<span class="cart-popup__header-text">옵션변경
+					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close">
+						<img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기">
+					</a>
+				</span>
+			</div>
+			<div class="cart-popup__content">
+				<div class="cart-popup__item-info">
+					<div class="product-status-title">
+						<p>현재 제품 : 이티스트리 시그니처 컬러 립스틱 / 19번 – 코랄 선라이즈</p>
+					</div>
+					<div class="option-body">
+						<!-- type1 -->
+						<div class="lip-color-choose">
+							<p class="lip-color-choose-message">옵션 선택</p>
+							<ul class="lip-color-choose__nav">
+								<li><img data-toggle="tab" href="#lips-1" src="/_ui/responsive/theme-blue/images/@glitz-1.png" alt="color-1"></li>
+								<li><img data-toggle="tab" href="#lips-2" src="/_ui/responsive/theme-blue/images/@glitz-2.png" alt="color-2"></li>
+								<li class="active"><img data-toggle="tab" href="#lips-3" src="/_ui/responsive/theme-blue/images/@glitz-3.png" alt="color-3"></li>
+								<li><img data-toggle="tab" href="#lips-4" src="/_ui/responsive/theme-blue/images/@glitz-4.png" alt="color-4"></li>
+								<li><img data-toggle="tab" href="#lips-5" src="/_ui/responsive/theme-blue/images/@glitz-5.png" alt="color-5"></li>
+								<li><img data-toggle="tab" href="#lips-6" src="/_ui/responsive/theme-blue/images/@glitz-6.png" alt="color-6"></li>
+								<li><img data-toggle="tab" href="#lips-7" src="/_ui/responsive/theme-blue/images/@glitz-7.png" alt="color-7"></li>
+								<li><img data-toggle="tab" href="#lips-8" src="/_ui/responsive/theme-blue/images/@glitz-8.png" alt="color-8"></li>
+								<li><img data-toggle="tab" href="#lips-9" src="/_ui/responsive/theme-blue/images/@glitz-9.png" alt="color-9"></li>
+							</ul>
+						</div>
+						<!-- //type1 -->
+						<!-- type2 -->
+						<div class="otpyin-select">
+							<p class="otpyin-message">옵션 선택</p>
+							<ul class="otpyin-list">
+								<li>
+									<div class="amway-theme">
+										<label class="amw-radio-wrap radio-label">
+											<input type="radio" name="radio-1" class="amw-global-radio" title="선택 1">
+											<span class="amw-radio-overlay"></span>
+											<span class="amw-label-radio-text">120정(75.61g)</span>
+										</label>
+									</div>
+								</li>
+								<li>
+									<div class="amway-theme">
+										<label class="amw-radio-wrap radio-label">
+											<input type="radio" name="radio-1" class="amw-global-radio" title="선택 2">
+											<span class="amw-radio-overlay"></span>
+											<span class="amw-label-radio-text">360정(242.32g)</span>
+										</label>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!-- //type2 -->
+						<div class="option-change">
+							<p>변경옵션 : <span>11번 – 프림로즈</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="cart-popup__item-link">
+					<a href="javascript:void(0)" class="btn-blue-white">적용</a>
+					<a class="bt-akl-txt">취소</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //옵션변경 팝업  -->
+
+
+<!-- 퀵오더 팝업 사용안함 -->
+<div class="layerWrapper G10500_lp1_pop"><!-- div.layerWrapper 추가 -->
+	<div class="cbox G10500_lp1 layerBox popWidM"><!-- .layerBox 추가 -->
+		<div class="cart-popup__dialog">
+			<div class="cart-popup__header">
+				<span class="cart-popup__header-text">퀵오더
+					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close">
+						<img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기">
+					</a>
+				</span>
+			</div>
+			<div class="cart-popup__content">
+				<div class="cart-popup__item-info">
+					<div class="product-status-title quik-order">
+						<p>제품을 추가하시려면, 아래 VPS 코드 및 수량을 입력 후 [담기] 버튼을 눌러 주세요.<br>
+							[입력란 추가] 버튼을 누르시면 입력란이 추가됩니다.</p>
+					</div>
+					<div class="quick-order-box">
+						<div class="quick-order-btn">
+							<span class="right"><a class="bt-akl-txt normal">입력란 추가</a></span>
+						</div>
+						<!--  마크업 수정 -->
+						<ul class="shopping-cart-item-list js-shopping-cart-item-list shopping-cart-product-item-list">
+							<li class="visible-md visible-lg">
+								<div class="col-xs-12 list-header">
+									<div class="col-xs-5 list-item-info">
+										<div class="product-item-element list-item-toggle">
+											<label class="checkbox-element-wrapper all-ak-check">
+												<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" data-product-code="" type="checkbox" title="전체선택">
+												<span class="_checkbox-element-global-span"></span>
+											</label>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="quick-order-item">
+								<div class="order-list">
+									<div class="product-order-element">
+										<label class="checkbox-element-wrapper">
+											<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" data-product-code="" type="checkbox" title="선택">
+											<span class="_checkbox-element-global-span"></span>
+										</label>
+									</div>
+									<div class="product-order-info">
+										<div class="quick-vps-qty">
+											<div class="quick-vps">
+												<label for="vps1" class="control-label">VPS</label>
+												<input id="vps1" type="text" class="form-control">
+											</div>
+											<div class="quick-qty">
+												<div class="qty-selector-container">
+													<label class="control-label" for="pdpAddtoCartInput2">수량</label>
+													<div class="opt-quantity mini">
+														<input type="text" maxlength="3" class="form-control js-qty-selector-input inpNum" size="1" value="1" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" id="pdpAddtoCartInput2" />
+														<a href="#" class="btnMinus">수량하나빼기</a>
+														<a href="#" class="btnPlus">수량하나더하기</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="quick-cate">
+											<div class="category-name-txt">[282658K] 행복한아름 물티슈</div>
+										</div>
+										<div class="quick-price-pb">
+											<div class="product-price">
+												<span class="price-txt">금액</span>
+												<span class="price-number">45,000,000</span>
+											</div>
+											<div class="product-pvbv">
+												<span class="pvbv-txt">PV/BV</span>
+												<span class="pvbv-number">325,000 / 321,000</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="quick-order-item">
+								<div class="order-list">
+									<div class="product-order-element">
+										<label class="checkbox-element-wrapper">
+											<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" data-product-code="" type="checkbox" title="선택">
+											<span class="_checkbox-element-global-span"></span>
+										</label>
+									</div>
+									<div class="product-order-info">
+										<div class="quick-vps-qty">
+											<div class="quick-vps">
+												<label for="vps2" class="control-label">VPS</label>
+												<input id="vps2" type="text" class="form-control">
+											</div>
+											<div class="quick-qty">
+												<div class="qty-selector-container">
+													<label class="control-label" for="pdpAddtoCartInput3">수량</label>
+													<div class="opt-quantity mini">
+														<input type="text" maxlength="3" class="form-control js-qty-selector-input inpNum" size="1" value="1" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" id="pdpAddtoCartInput3" />
+														<a href="#" class="btnMinus">수량하나빼기</a>
+														<a href="#" class="btnPlus">수량하나더하기</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="quick-cate">
+											<div class="category-name-txt">[282658K] 행복한아름 물티슈</div>
+										</div>
+										<div class="quick-price-pb">
+											<div class="product-price">
+												<span class="price-txt">금액</span>
+												<span class="price-number">45,000,000</span>
+											</div>
+											<div class="product-pvbv">
+												<span class="pvbv-txt">PV/BV</span>
+												<span class="pvbv-number">325,000 / 321,000</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="quick-order-item">
+								<div class="order-list">
+									<div class="product-order-element">
+										<label class="checkbox-element-wrapper">
+											<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" data-product-code="" type="checkbox" title="선택">
+											<span class="_checkbox-element-global-span"></span>
+										</label>
+									</div>
+									<div class="product-order-info">
+										<div class="quick-vps-qty">
+											<div class="quick-vps">
+												<label for="vps3" class="control-label">VPS</label>
+												<input id="vps3" type="text" class="form-control">
+											</div>
+											<div class="quick-qty">
+												<div class="qty-selector-container">
+													<label class="control-label" for="pdpAddtoCartInput4">수량</label>
+													<div class="opt-quantity mini">
+														<input type="text" maxlength="3" class="form-control js-qty-selector-input inpNum" size="1" value="1" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" id="pdpAddtoCartInput4" />
+														<a href="#" class="btnMinus">수량하나빼기</a>
+														<a href="#" class="btnPlus">수량하나더하기</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="quick-cate">
+											<div class="category-name-txt">[282658K] 행복한아름 물티슈</div>
+										</div>
+										<div class="quick-price-pb">
+											<div class="product-price">
+												<span class="price-txt">금액</span>
+												<span class="price-number">45,000,000</span>
+											</div>
+											<div class="product-pvbv">
+												<span class="pvbv-txt">PV/BV</span>
+												<span class="pvbv-number">325,000 / 321,000</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<!--  //마크업 수정 -->
+
+						<div class="order-total-box">
+							<p>
+								<span class="total-tit">총 금액</span>
+								<span class="total-number">999,191,050,000</span>
+							</p>
+							<p>
+								<span class="total-tit">총 PV/BV</span>
+								<span class="total-number">999,999,611,860 / 999,99.9542,500</span>
+							</p>
+						</div>
+
+						<div class="quick-order-btn">
+							<span class="left"><a class="bt-akl-txt normal">선택한 제품 삭제</a></span>
+							<span class="right"><a class="bt-akl-txt normal">입력란 추가</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cart-popup__item-link">
+				<a href="javascript:void(0)" class="btn-blue-white">확인</a>
+				<a class="bt-akl-txt">취소</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //퀵오더 팝업 -->
+
+<!-- QUICK VIEW 팝업 --><!-- 2018.03.14 팝업 추가  -->
+<div class="layerWrapper QUICK_VIEW_pop"><!-- div.layerWrapper 추가 -->
+	<div class="cbox layerBox popWidM"><!-- .layerBox 추가 -->
+		<div class="cart-popup__dialog">
+			<div class="cart-popup__header">
+				<span class="cart-popup__header-text">Quick View
+					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close" ><!-- a 태그 추가 -->
+						<img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기">
+					</a><!-- a 태그 추가 -->
+				</span>
+			</div>
+			<div class="cart-popup__content">
+
+				<div class="cart-popup__item-info">
+					<!-- 공통 사용, 팝업 html 분리  : 2018.05.14 -->
+					<div style="padding:50px 0 70px;">
+						<p>[공통사용] 퀵뷰 페이지 분리 : 2018.05.14 </p>
+						<a href="QUICK_VIEW_pop.html" target="_blank">QUICK_VIEW_pop.html</a>
+					</div>
+					<!-- //공통 사용, 팝업 html 분리  : 2018.05.14 -->
+				</div>
+
+			</div>
+			<div class="cart-popup__item-link">
+				<div class="cart-popup__item-link-content">
+					<button id="PopupQuickView_DirectPurchase" class="bt-akl-blue" onclick="openDialog();">바로구매</button> <!-- 클래스 변경 --><!-- 2018.03.15 태깅 아이디 추가 -->
+					<button id="PopupQuickView_AddCart" class="bt-akl-white" onclick="openDialog();">장바구니</button><!-- 클래스 변경 --><!-- 2018.03.15 태깅 아이디 추가 -->
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- QUICK VIEW 팝업 -->
+
+
+<!-- 옵션 선택  팝업 2018.05.16 추가 -->
+<div class="layerWrapper G10000_lp9_pop">
+	<div class="cbox layerBox popWidL">
+		<div class="cart-popup__dialog">
+			<div class="cart-popup__header">
+				<span class="cart-popup__header-text">옵션 선택
+					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close">
+						<img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기">
+					</a>
+				</span>
+			</div>
+			<div class="cart-popup__content">
+				<div class="cart-popup__item-info">
+					<div class="pop-option-area">
+						<div class="pop-option-title">
+							<div class="ttit">쿠션 파운데이션 하이드라 터치 출시 프로모션</div>
+							<p class="ttxt">쿠션파운데이션 구매 시  라잇업 립글로스 스윗멜론, 미스티모브, 쥬이스  피치 중 선택가능</p>
+						</div>
+						<div class="pop-option-body">
+							<div class="gift-box-item">
+								<p class="tt-num">선택 가능 수량 : 1/3</p>
+								<div class="giftList">
+									<div class="giftBox">
+										<div class="giftImg"><img src="/_ui/responsive/theme-blue/images/@gift-img-04.png" alt="Soft Cleanser" title="Soft Cleanser"></div>
+										<div class="giftName">
+											<span class="gift-tit"><a href="#">스윗멜론</a></span>
+										</div>
+										<div class="giftCon">
+											<span class="amount-cal gift-total">
+												<a class="icon-del opera" data="-">
+													<i class="far fa-angle-down"></i>
+												</a>
+												<input type="tel" class="pdpAddtoCartInput amount-cal-input" name='pdpAddtoCartInput' id="amount-gift-input" value="1">
+												<a class="icon-add opera" data="+">
+													<i class="far fa-angle-up disabled"></i>
+												</a>
+											</span>
+										</div>
+									</div>
+									<div class="giftBox">
+										<div class="giftImg"><img src="/_ui/responsive/theme-blue/images/@gift-img-04.png" alt="Soft Cleanser" title="Soft Cleanser"></div>
+										<div class="giftName">
+											<span class="gift-tit"><a href="#">미스티모브</a></span>
+										</div>
+										<div class="giftCon">
+											<span class="amount-cal gift-total">
+												<a class="icon-del opera" data="-">
+													<i class="far fa-angle-down"></i>
+												</a>
+												<input type="tel" class="pdpAddtoCartInput amount-cal-input" name='pdpAddtoCartInput' id="amount-gift-input" value="1">
+												<a class="icon-add opera" data="+">
+													<i class="far fa-angle-up"></i>
+												</a>
+											</span>
+										</div>
+									</div>
+									<div class="giftBox disabled">
+										<div class="giftImg"><img src="/_ui/responsive/theme-blue/images/@gift-img-04.png" alt="Soft Cleanser" title="Soft Cleanser"></div>
+										<div class="giftName">
+											<span class="gift-tit"><a href="#">쥬이시 피치</a></span>
+										</div>
+										<div class="giftCon">
+											<span class="amount-cal gift-total">
+												<a class="icon-del opera" data="-">
+													<i class="far fa-angle-down"></i>
+												</a>
+												<input type="tel" class="pdpAddtoCartInput amount-cal-input" name='pdpAddtoCartInput' id="amount-gift-input" value="1" >
+												<a class="icon-add opera" data="+">
+													<i class="far fa-angle-up"></i>
+												</a>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="pop-option-area">
+						<div class="pop-option-title">
+							<div class="ttit">파이토 믹스 & 파이토 스틱 출시 프로모션</div>
+							<p class="ttxt">파이토 믹스 체리 2개 구매 시 파이토 스틱 레몬향, 오렌지향, 체리향 중 1개 증정</p>
+						</div>
+						<div class="pop-option-body">
+							<div class="gift-box-item">
+								<p class="tt-num">선택 가능 수량 : 0/1</p>
+								<div class="giftList">
+									<div class="giftBox">
+										<div class="giftImg"><img src="/_ui/responsive/theme-blue/images/@gift-img-04.png" alt="Soft Cleanser" title="Soft Cleanser"></div>
+										<div class="giftName">
+											<span class="gift-tit"><a href="#">레몬향</a></span>
+										</div>
+										<div class="giftCon">
+											<span class="amount-cal gift-total">
+												<a class="icon-del opera" data="-">
+													<i class="far fa-angle-down"></i>
+												</a>
+												<input type="tel" class="pdpAddtoCartInput amount-cal-input" name='pdpAddtoCartInput' id="amount-gift-input" value="1">
+												<a class="icon-add opera" data="+">
+													<i class="far fa-angle-up disabled"></i>
+												</a>
+											</span>
+										</div>
+									</div>
+									<div class="giftBox">
+										<div class="giftImg"><img src="/_ui/responsive/theme-blue/images/@gift-img-04.png" alt="Soft Cleanser" title="Soft Cleanser"></div>
+										<div class="giftName">
+											<span class="gift-tit"><a href="#">오렌지향</a></span>
+										</div>
+										<div class="giftCon">
+											<span class="amount-cal gift-total">
+												<a class="icon-del opera" data="-">
+													<i class="far fa-angle-down"></i>
+												</a>
+												<input type="tel" class="pdpAddtoCartInput amount-cal-input" name='pdpAddtoCartInput' id="amount-gift-input" value="1">
+												<a class="icon-add opera" data="+">
+													<i class="far fa-angle-up"></i>
+												</a>
+											</span>
+										</div>
+									</div>
+									<div class="giftBox">
+										<div class="giftImg"><img src="/_ui/responsive/theme-blue/images/@gift-img-04.png" alt="Soft Cleanser" title="Soft Cleanser"></div>
+										<div class="giftName">
+											<span class="gift-tit"><a href="#">체리향</a></span>
+										</div>
+										<div class="giftCon">
+											<span class="amount-cal gift-total">
+												<a class="icon-del opera" data="-">
+													<i class="far fa-angle-down"></i>
+												</a>
+												<input type="tel" class="pdpAddtoCartInput amount-cal-input" name='pdpAddtoCartInput' id="amount-gift-input" value="1" >
+												<a class="icon-add opera" data="+">
+													<i class="far fa-angle-up"></i>
+												</a>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cart-popup__item-link">
+					<a href="javascript:void(0)" class="btn-blue-white">적용</a>
+					<a class="bt-akl-txt">취소</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //옵션 선택 팝업  -->
+
+<!-- 제품 선택  팝업 2018.05.16 추가 -->
+<div class="layerWrapper G10000_lp10_pop">
+	<div class="cbox layerBox popWidL">
+		<div class="cart-popup__dialog">
+			<div class="cart-popup__header">
+				<span class="cart-popup__header-text">제품 선택
+					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close">
+						<img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기">
+					</a>
+				</span>
+			</div>
+			<div class="cart-popup__content">
+				<div class="cart-popup__item-info">
+					<div class="pop-option-area">
+						<div class="pop-option-title">
+							<div class="ttit">시그니처 라잇업 립글로스 프로모션 </div>
+							<p class="ttxt">{아티스트리 제품} 5만원 이상 구매 시  시그니처 라잇업 립글로스 본품 5000원에 구매가능</p>
+						</div>
+						<div class="pop-option-body">
+							<div class="gift-box-item">
+								<p class="tt-num">선택 가능 수량 : 0/1</p>
+								<div class="giftList">
+									<div class="giftBox">
+										<div class="giftImg"><img src="/_ui/responsive/theme-blue/images/@gift-img-04.png" alt="Soft Cleanser" title="Soft Cleanser"></div>
+										<div class="giftName">
+											<span class="gift-tit"><a href="#">아티스트리 시그니처 컬러</a></span>
+											<div class="gift-price">5,000원</div>
+										</div>
+										<div class="giftCon">
+											<span class="amount-cal gift-total">
+												<a class="icon-del opera" data="-">
+													<i class="far fa-angle-down"></i>
+												</a>
+												<input type="tel" class="pdpAddtoCartInput amount-cal-input" name='pdpAddtoCartInput' id="amount-gift-input" value="2">
+												<a class="icon-add opera" data="+">
+													<i class="far fa-angle-up disabled"></i>
+												</a>
+											</span>
+										</div>
+									</div>
+									<div class="giftBox">
+										<div class="giftImg"><img src="/_ui/responsive/theme-blue/images/@gift-img-04.png" alt="Soft Cleanser" title="Soft Cleanser"></div>
+										<div class="giftName">
+											<span class="gift-tit"><a href="#">아티스트리 시그니처 컬러 라잇업 립글로스 - 미스티모브</a></span>
+											<div class="gift-price">5,000원</div>
+										</div>
+										<div class="giftCon">
+											<span class="amount-cal gift-total">
+												<a class="icon-del opera" data="-">
+													<i class="far fa-angle-down"></i>
+												</a>
+												<input type="tel" class="pdpAddtoCartInput amount-cal-input" name='pdpAddtoCartInput' id="amount-gift-input" value="1">
+												<a class="icon-add opera" data="+">
+													<i class="far fa-angle-up"></i>
+												</a>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cart-popup__item-link">
+					<a href="javascript:void(0)" class="btn-blue-white">적용</a>
+					<a class="bt-akl-txt">취소</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //제품 선택 팝업  -->
+
+<!-- 프로모션 혜택 변경 알림 2018.05.16 추가 -->
+<div class="layerWrapper G10500_lp3_pop">
+	<div class="cbox layerBox popWidM">
+		<div class="cart-popup__dialog">
+			<div class="cart-popup__header">
+				<span class="cart-popup__header-text">프로모션 혜택 변경 알림
+					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close">
+						<img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기">
+					</a>
+				</span>
+			</div>
+			<div class="cart-popup__content">
+				<div class="cart-popup__item-info">
+					<div class="pop-option-title">
+						<p class="ttxt">프로모션 적용 조건이 충족되지 않아, 다음 제품이 장바구니에서 삭제 되었습니다.</p>
+					</div>
+					<div class="pop-promotion-body">
+						<div class="list-content">
+							<div class="row list-row-title">
+								<div class="promtion-ware">제품</div>
+								<div class="promtion-quantity">수량</div>
+								<div class="promtion-price">총 가격</div>
+							</div>
+							<div class="row content-list">
+								<div class="row con-list-item">
+									<div class="col-ak-10 promtion-ware">
+										<span class="tite-label">제품</span>
+										<span class="txte-wrap">
+											아티스트리 워터 에센스 선 프로텍트 미니
+										</span>
+									</div>
+									<div class="col-ak-10 promtion-quantity">
+										<span class="tite-label">수량</span>
+										<span class="txte-wrap">10</span>
+									</div>
+									<div class="col-ak-10 promtion-price">
+										<span class="tite-label">총 가격</span>
+										<span class="txte-wrap"></span>
+									</div>
+								</div>
+							</div>
+							<div class="row content-list">
+								<div class="row con-list-item">
+									<div class="col-ak-10 promtion-ware">
+										<span class="tite-label">제품</span>
+										<span class="txte-wrap">
+											라잇업 립글로스
+										</span>
+									</div>
+									<div class="col-ak-10 promtion-quantity">
+										<span class="tite-label">수량</span>
+										<span class="txte-wrap">10</span>
+									</div>
+									<div class="col-ak-10 promtion-price">
+										<span class="tite-label">총 가격</span>
+										<span class="txte-wrap"></span>
+									</div>
+								</div>
+							</div>
+							<div class="row content-list">
+								<div class="row con-list-item">
+									<div class="col-ak-10 promtion-ware">
+										<span class="tite-label">제품</span>
+										<span class="txte-wrap">
+											아티스트리 스킨 배리어 프로텍션 프로모션 세트
+										</span>
+									</div>
+									<div class="col-ak-10 promtion-quantity">
+										<span class="tite-label">수량</span>
+										<span class="txte-wrap">1</span>
+									</div>
+									<div class="col-ak-10 promtion-price">
+										<span class="tite-label">총 가격</span>
+										<span class="txte-wrap">134,500</span>
+									</div>
+								</div>
+							</div>
+							<div class="row content-list">
+								<div class="row con-list-item">
+									<div class="col-ak-10 promtion-ware">
+										<span class="tite-label">제품</span>
+										<span class="txte-wrap">
+											더블엑스
+										</span>
+									</div>
+									<div class="col-ak-10 promtion-quantity">
+										<span class="tite-label">수량</span>
+										<span class="txte-wrap">1</span>
+									</div>
+									<div class="col-ak-10 promtion-price">
+										<span class="tite-label">총 가격</span>
+										<span class="txte-wrap">30,000</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cart-popup__item-link">
+					<a href="javascript:void(0)" class="btn-blue-white">확인</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //프로모션 혜택 변경 알림 -->
+
+<!-- 프로모션 안내 2018.05.16 추가 -->
+<div class="layerWrapper G10000_lp8_pop">
+	<div class="cbox layerBox popWidM">
+		<div class="cart-popup__dialog">
+			<div class="cart-popup__header">
+				<span class="cart-popup__header-text">프로모션 안내
+					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close">
+						<img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기">
+					</a>
+				</span>
+			</div>
+			<div class="cart-popup__content">
+				<div class="cart-popup__item-info">
+					<p class="promotion-txt">프로모션 제품번호로 구매하시면 프로모션 혜택이 적용됩니다.</p>
+				</div>
+				<div class="cart-popup__item-link">
+					<a href="javascript:void(0)" class="btn-blue-white">프로모션 확인</a>
+					<a class="bt-akl-txt">취소</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //프로모션 안내 -->
+
+<!-- S: 2020-11-30 주문서 선택 팝업 -->
+<div class="box_alert-layer order_sheet-pop renewal-fonts">
+	<div class="box_sop-pop order_sheet-wrap">
+        <h3 class="tit-sop-header"> 진행 중인 장바구니 스마트 오더가 있습니다.</h3>
+		<div class="tit_sop-desc grayColor">
+			<p>장바구니의 제품을 진행중인 주문서의<br>제품목록에 추가하거나, 모두 교체하실 수 있습니다.</p>
+		</div>
+		<div class="button-area">
+			<button type="button" class="btn_reservation"><i class="sp_ico"></i><em>제품 목록에</em><br>추가</button>
+			<button type="button" class="btn_payment"><i class="sp_ico"></i><em>제품 목록을</em><br>교체</button>
+		</div>
+	</div>
+	<div class="box_btn-group">
+		<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true" class="btn_close-kakao">닫기</a>
+	</div>
+</div>
+<!-- E: 2020-11-30 주문서 선택 팝업 -->
+
+<script>
+	var tollTipLayer = function () {
+		var btnTooltip = document.querySelectorAll('[data-tooltip]');
+		var targetLayer = null;
+		for (var i = 0; i < btnTooltip.length; i++) {
+			btnTooltip[i].addEventListener( 'click', function (e) {
+				e.stopPropagation();
+				var targetId = this.dataset.tooltip;
+				targetLayer = document.querySelector('#' + targetId );
+				targetLayer.classList.toggle( 'is-showing' );
+
+			} );
+		}
+
+		document.body.addEventListener('click', function (evt) {
+			var noRedirect = '.tooltip-layer, .tooltip-cont, .tooltip-txt';
+			if (!evt.target.matches(noRedirect)) {
+				if (targetLayer == null) return;
+				targetLayer.classList.remove( 'is-showing' );
+			}
+		} )
+	};
+
+	document.addEventListener('DOMContentLoaded', function () {
+		tollTipLayer();
+	});
+
+	// 레이어 호출
+	AMWAY.callLayer();
+
+	$(function() {
+		// NEW PLP : 마이팩담기 팝업
+		$('.open-mypack').click(function(event) {
+			event.preventDefault();
+			layerPopOver(this,'.plp_lp01_pop');
+		});
+
+		// NEW PLP : 위시리스트 팝업
+		$('.open-wishlist').click(function(event) {
+			event.preventDefault();
+			layerPopOver(this,'.plp_lp02_pop');
+		});
+
+		// NEW PLP : 구매공유 카카오 팝업
+		$('.btn-share').click(function(event) {
+			event.preventDefault();
+			layerPopOver(this,'.kakao-share');
+		});
+
+		$('.btn_kakao-close').click(function(event) {
+			$('.kakao-tutorial').css('display','none');
+		});
+
+		$(".cart-popup__close,.closeCbox").click(function() {
+			$(".cbox,.overlay").hide();
+		});
+
+		$(".js-order-history-filters").click(function () {
+			$(".js-search-form-wrapper").addClass('hidden-sm hidden-xs');
+			if ($(".js-filter-form-wrapper").hasClass('hidden-sm hidden-xs')) {
+				$(".js-filter-form-wrapper").removeClass('hidden-sm hidden-xs');
+			} else {
+				$(".js-filter-form-wrapper").addClass('hidden-sm hidden-xs');
+			}
+		});
+		$(".js-order-history-search").click(function () {
+			$(".js-filter-form-wrapper").addClass('hidden-sm hidden-xs');
+			if ($(".js-search-form-wrapper").hasClass('hidden-sm hidden-xs')) {
+				$(".js-search-form-wrapper").removeClass('hidden-sm hidden-xs');
+			} else {
+				$(".js-search-form-wrapper").addClass('hidden-sm hidden-xs');
+			}
+		});
+
+		$(".js-expand-order").click(function () {
+			if (!$(this).hasClass("open")) {
+				$(this).addClass("open");
+				$(this).next(".js-order-details-block").addClass("expanded");
+			} else {
+				$(this).removeClass("open");
+				$(this).next(".js-order-details-block").removeClass("expanded");
+			}
+		});
+
+
+		//add to event
+		$(".cart-detail__addto.dropdown-toggle").click(function () {
+			if($(".cart-detail__dropdown-menu.dropdown-menu").css('display')=='none'){
+				$(".cart-detail__dropdown-menu.dropdown-menu").show();
+			}else{
+				$(".cart-detail__dropdown-menu.dropdown-menu").hide();
+			}
+
+		});
+
+		//akl 추가 : 팝업
+		$('#G10300_lp2').click(function(event) {
+			event.preventDefault();
+			layerPopOver(this,'.G10300_lp2_pop');
+		});
+
+		$(".cart-detail__dropdown-menu").on("click",function(e){
+			e.stopPropagation();
+		});
+
+		$('.btn-add-wish').click(function(event) {
+			event.preventDefault();
+			layerPopOver(this,'.wishListAdd_pop');
+		});
+
+		$(".btn-tip-colse").click(function() {
+			$(".opt-quantity-tooltip").hide();
+		});
+
+		$('.quick-view-btn').click(function(event) {
+			event.preventDefault();
+			layerPopOver(this,'.QUICK_VIEW_pop');
+		});
+		$('#productSuggestListTabs').owlCarousel({
+			loop: false,
+			nav: true,
+			dots: false,
+			margin: 0,
+			items: 1,
+			responsiveClass: true,
+			responsive: {
+				480 : {
+					items: 1
+				},
+				768 : {
+					items: 2
+				},
+				960 : {
+					items: 3
+				},
+				1200 : {
+					items: 5
+				}
+			}
+		});
+		$('#Cart_Search').click(function(event){ //ID변경 : 2018.03.15 태깅 아이디 추가
+			event.preventDefault();
+			$(".shoping-cart-search").show();
+		});
+
+		$(".btnClosed").click(function() {
+			$(".shoping-cart-search").hide();
+		});
+
+	    //프로모션 관련 2018.05.16 추가
+		$('.remove-item-btn').click(function(){
+			$(".delete-list-box,.overlay").show();
+		});
+
+		$('.view-cart').click(function(){
+			$(".delete-list-box,.overlay").hide();
+			$('.delete-example,.delete-example-gift').hide();
+		});
+		/*
+		$(".cartlist-view").click(function(){
+			$(this).hasClass("view-open") ? $(this).removeClass("view-open") : $(this).addClass("view-open");
+		}) */
+
+		$('#G10500_lp1').click(function(event) { //사용안함
+			event.preventDefault();
+			layerPopOver(this,'.G10500_lp1_pop');
+		});
+
+		$('#G10500_lp2').click(function(event) {//변경하기 버튼에 링크
+			event.preventDefault();
+			layerPopOver(this,'.G10500_lp2_pop');
+		});
+
+		$('#G10500_lp3').click(function(event) {//삭제 버튼에 링크
+			event.preventDefault();
+			layerPopOver(this,'.G10500_lp3_pop');
+		});
+
+		$('#G10000_lp8').click(function(event) {//수량빼기 버튼에 링크
+			event.preventDefault();
+			layerPopOver(this,'.G10000_lp8_pop');
+		});
+
+		$('#G10000_lp9').click(function(event) {//3번째 변경하기 버튼에 링크
+			event.preventDefault();
+			layerPopOver(this,'.G10000_lp9_pop');
+		});
+
+		$('#G10000_lp10').click(function(event) {//5번째 변경하기 버튼에 링크
+			event.preventDefault();
+			layerPopOver(this,'.G10000_lp10_pop');
+		});
+
+		var owl = $('#recommendedListTabs');
+		owl.owlCarousel({
+			margin: 0,
+			nav: true,
+			dots: false,
+			loop: false,
+			responsive: {
+				0: {
+					items: 1
+				},
+				768: {
+					items: 2
+				},
+				960: {
+					items: 4
+				}
+			}
+
+		});
+
+
+		function countGift() {
+			var inputs = $('.giftList input');
+			var val = 0;
+			inputs.each(function(){
+				val += + this.value;
+			});
+			return val;
+		}
+
+		$('.giftList').delegate('.gift-total .opera', 'click', function(){
+			var count = $(this).attr("data");
+			var inputNum = $(this).parent().children("#amount-gift-input");
+
+			inputNum.val(function(){
+				var value= $(this).val();
+				var parent = $(this).parent();
+				count=="-"?value--:value++;
+				if ( value < 1) {
+					parent.children(".icon-del").removeClass("opera");
+					var value = 0;
+				} else {
+					parent.children(".icon-del").addClass("opera");
+				}
+				var val = countGift();
+				if (val < 99) {
+					$(".gift-total .icon-add").addClass("opera");
+					$('.giftList .gift-total').removeClass('count-limit');
+					return value;
+				} else {
+					$(".gift-total .icon-add").removeClass("opera");
+					$('.giftList .gift-total').addClass('count-limit');
+					return value;
+				}
+			})
+		});
+
+		$('.btn_square-c.sop-logo').click(function(event) {
+			event.preventDefault();
+			layerPopOver(this,'.order_sheet-pop');
+		});
+
+		$('.order_payment-pop .btn_close-kakao').click(function () {
+			$('.order_sheet-pop').css('display','block');
+			$('.html').removeClass('scrollLock');
+		});
+		//2019-06-03 빠른제품검색 최근검색어
+		showItemSuggestion();
+	});
+
+	//2019-06-03 빠른제품검색 최근검색어
+	function showItemSuggestion() {
+		var itemQuickSch = $('.item_quick_sch_area');
+		var inpSchWord = itemQuickSch.find('.inp_item_quick_sch');
+		var layerSchItemList = itemQuickSch.find('.item-suggestion-popover');
+		var btnCloseLayer = layerSchItemList.find('.search-results-close');
+		var setFunc;
+
+		inpSchWord.bind({
+			'focus' : function(e){
+				layerSchItemList.show();
+				/* 2019-06-07 : 아코디언 안에 있을 경우 추가 */
+				if ( $(this).closest('.panel-body.product-detail').length > 0 ) {
+					$(this).closest('.panel-body.product-detail').css('overflow', 'visible');
+				}
+			},
+			'blur' : function(e){
+				layerSchItemList.hide();
+				/* 2019-06-07 : 아코디언 안에 있을 경우 추가 */
+				if ( $(this).closest('.panel-body.product-detail').length > 0 ) {
+					$(this).closest('.panel-body.product-detail').css('overflow', '');
+				}
+			}
+		});
+
+		/* S: 2020-07-15 modify : floating script issue */
+		/*var $FHeight = $('.cart_product-floating').height()+170;
+		var $CHeight = $('.cart_product-list').height()-384;
+		var $InHeight = $FHeight - $CHeight;
+		if ($FHeight > $CHeight) {
+			$('.box_product-recommend').css({'margin-top':($InHeight)+'px'}).addClass('static');
+		} else {
+			$('.box_product-recommend').css({'margin-top':0+'px'}).removeClass('static');
+		}*/
+		/* E: 2020-07-15 modify : floating script issue */
+
+		// cart floating 2020-07-14 modify
+		$('.cart_product-floating').uxePositionFix({
+			'ctrlTop': 20,
+			'offsetValue': 103,
+			'useBottomLimit': true,
+			//'limitSelector' : '.box_product-recommend',
+			//'scondBottomLimitSelector' : '.cart_product-list',
+			'bottomLimitSelector' : '.box_product-recommend'
+		});
+
+		$('.cart_action-area').uxePositionFix({
+			'ctrlTop': 0,
+			'useBottomLimit': true,
+			'bottomLimitSelector' : '#quick'
+		});
+
+    }
+    // 테스트용
+	// window.onload = function () {
+    //     moSearchCtrl();
+    // }
+
+	/* S : 20230331 결제화면 배너 추가 */
+	$(function() {
+		if($('.bnr_order_promotion').length > 0){ // 결제화면 배너가 있을 경우
+			$('.section_right-info .cart_product-floating').addClass('mg_add');
+
+			/* S : 20230905 결제화면 배너 관련 js 추가 */
+			const cart_bnr_h1 = $('.section_right-info .box_free-shopping').height();
+			const cart_bnr_h2 = $('.section_right-info .bnr_order_promotion').height();
+			const cart_bnr_total = cart_bnr_h1 + cart_bnr_h2;
+
+			$('.section_right-info .cart_product-floating.mg_add').css('margin-top', cart_bnr_total + 75);
+			/* E : 20230905 결제화면 배너 관련 js 추가 */
+
+			/* 텍스트 1, 2줄 ... 이상으로 노출시키고 싶을 때, 아래 js 추가 */
+			// const cm = parseInt($('.mg_add').css('margin-top').replace(/[^-\d\.]/g, '')) + 20;
+			// $('.mg_add').css('margin-top', cm);
+		}
+	});
+	/* E : 20230331 결제화면 배너 추가 */
+
+	/* S : 20230906 장바구니 말풍선 팝업 관련 js 추가 */
+	$(function () {
+		setTimeout(function(){
+			pageScroll_BSOP();
+		}, 600);
+
+		$(".box_mobile-floating .bsop-toolTip .btn-close").on("click", function(){
+			$(".bsop-toolTip").css("display", "none");
+		});
+
+		function pageScroll_BSOP(){
+			var bsopToolTip = document.querySelector(".box_mobile-floating .bsop-toolTip");
+			var did_scroll;
+
+			$(window).on("scroll", function(){
+				did_scroll = true;
+			});
+
+			setInterval(function(){
+				if(did_scroll){
+					scrolled();
+					did_scroll = false;
+				}
+			}, 250);
+
+			var last_scrollTop = $(window).scrollTop();
+			var delta = 1;
+
+			function scrolled(){
+				var st = $(window).scrollTop();
+				if(Math.abs(last_scrollTop - st) <= delta)
+					return;
+
+				if(st > last_scrollTop) {
+					$(bsopToolTip).fadeOut("fast");
+				} else {
+					if(st + $(window).height() < $(document).height()){
+						$(bsopToolTip).fadeIn("fast");
+					}
+				}
+				last_scrollTop = st;
+			}
+		}
+	});	
+	/* E : 20230906 장바구니 말풍선 팝업 관련 js 추가 */
+</script>
+
+</body>
+</html>
+<!-- E : [디파이 수정] 210726 장바구니 스마트 오더 주문하기 부분 신규 파일 추가  -->

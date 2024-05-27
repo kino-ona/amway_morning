@@ -1,0 +1,2832 @@
+﻿<header class="js-mainHeader main-header general-header">
+	<div class="amway-theme">
+		<nav class="header-container">
+			<div class="header-wrapper">
+				<h1 class="header-logo">
+					<a href="#n">
+						<!-- pc 로고 -->
+						<img src="/_ui/responsive/theme-blue/images/w_header_logo_home.png" alt="Amway" class="pc-logo">
+						<!-- mo 로고 -->
+						<img src="/_ui/responsive/theme-blue/images/m_logo_new.png" alt="Amway" class="mo-logo">
+					</a>
+				</h1>
+
+				<!-- mobile navigation : btn-->
+				<button class="ham"><span><span class="blind">메뉴열기</span></span></button>
+				<!-- //mobile navigation : btn-->
+
+				<!--개인화 영역 : start-->
+				<div class="mini-dashboard">
+					<!-- 로그인 전 -->
+					<!--<p><a href="#" class="before">로그인/회원가입</a></p>-->
+
+					<!--로그인 후-->
+					<!--191216:맞춤메세지 이동-->
+					<p>
+						<a href="#" class="myAccount js-my-account-menu"><span class="blind">My Menu</span>
+							<!--191213:글자제한-->
+							<span class="user-name">한국암웨이한국암웨이TEST한국암웨이한국암웨이TEST한국암웨이한국암웨이</span>
+							<!--//191213:글자제한-->
+							<em>6</em>
+							님
+						</a>
+						<a href="#" class="myCart"><span class="blind">장바구니</span><em>26</em></a>
+
+						<!-- S : 20230320 SOP 간편 재시작, SOP/장스오 자동갱신 -->
+						<!-- to 개발 | 토스트메세지는 최초 1회만 노출 -->
+						<div class="alarm_msg_box">
+							<span class="alarm_msg_arr"></span>
+
+							<!-- case1. SOP 만기 예정 주문 중 자동갱신 미 진행 주문서만 최초 1회만 노출 -->
+							<div class="alarm_msg alarm_msg_sop">
+								만기예정인 <span>SOP</span> 주문서가 있어요.
+							</div>
+
+							<!-- case2. SOP 최근 종료된 주문에 대해 최초 1회만 노출 -->
+							<div class="alarm_msg alarm_msg_sop">
+								<span>SOP</span>를 간편하게 재시작해 보세요.
+							</div>
+
+							<!-- case3. 장스오 만기 예정 주문 중 자동갱신 미 진행 주문서만 최초 1회만 노출 -->
+							<div class="alarm_msg alarm_msg_bsop">
+								만기 예정인 <span>장스오</span> 주문서가 있어요.
+							</div>
+
+							<!-- case4. 장스오 최근 종료된 주문에 대해 최초 1회만 노출 -->
+							<div class="alarm_msg alarm_msg_bsop">
+								<span>장스오</span>를 간편하게 재시작해 보세요.
+							</div>
+						</div>
+						<!-- E : 20230320 SOP 간편 재시작, SOP/장스오 자동갱신 -->
+					</p>
+					<!--//191216:맞춤메세지 이동-->
+					<!--//로그인 후-->
+				</div>
+
+				<div id="myAccount" class="mDashboard">
+					<div class="inner">
+						<!--191216:닫기버튼 추가-->
+						<div class="btns"><button><span class="blind">닫기</span></button></div>
+						<!--//191216:닫기버튼 추가-->
+						<dl>
+							<dt class="blind">회원정보</dt>
+							<!--191206:회원정보 잠금-->
+							<dd class="memeberInfo unlocked_abo">
+								<!--191223:잠금 해제 시, abo일 경우, unlocked_abo, 일반회원일경우, unlocked_normal-->
+								<!--191216:맞춤메세지 이동-->
+								<p class="msg"><a href="#">맞춤 메시지<em>26</em></a></p>
+								<!--//191216:맞춤메세지 이동-->
+								<p class="no"><span class="blind">회원번호</span><em>7481113</em></p>
+								<p class="level"><span class="blind">Pin레벨</span><em>FoundersCrownAmbassdor 60</em></p>
+
+								<!-- S : 20221031 내 단골 ABC 설정 추가 -->
+								<p class="abc-patron">
+									<span>내 단골 ABC : </span>
+									<!-- 단골ABC가 설정되지 않은 경우 -->
+									<a href="#abc_patron_setup" class="abc-patron-admin" data-layer="abc_patron_setup">설정하기</a>
+									<!-- 단골ABC가 설정된 경우 -->
+									<!-- <a href="#abc_patron_setup" class="abc-patron-admin color-skyblue" data-layer="abc_patron_setup">스타시티</a> -->
+								</p>
+								<!-- E : 20221031 내 단골 ABC 설정 추가 -->
+
+								<!--잠금 해제 전-->
+								<!--div style="display:block;">
+									<p class="lock">해당 정보가 잠금 설정되어 있습니다.<br /><button><span>잠금 해제하기</span></button></p>
+								</div-->
+								<!--//잠금 해제 전-->
+
+								<!-- S : 2020-07-29 A Cliks Money add -->
+								<!--잠금 해제 후-->
+								<div class="my-point-info">
+									<p class="point v2"><a href=""><span>A Cliks Money</span><em>97,687,812</em>원</a>
+									</p>
+									<!-- D : 멤버인 경우 노출-->
+									<p class="point"><a href=""><span>멤버 포인트</span><em>97,687,812</em>P</a></p>
+
+									<!--p class="point"><a href=""><span>A 포인트</span><em>97,687,812</em>P</a></p-->
+									<!-- D : 소비자인 경우 미노출 -->
+									<p class="coupon"><a href=""><span>쿠폰</span><em>300</em>장</a></p>
+								</div>
+								<!--//잠금 해제 후-->
+								<!-- E : 2020-07-29 A Cliks Money add -->
+
+								<!-- S : 2020-10-8 문구 주석처리-->
+								<!--<div class="customer-type">
+									<p class="text-customer">건강한 생활의 시작,<br>Amway에 오신 것을 환영합니다!</p>
+								</div>-->
+								<!-- E : 2020-10-8 문구 주석처리  -->
+								<p class="feed">
+									<!-- 일반회원의 경우
+									<a href="#" class="trans">ABO회원전환</a>
+									-->
+									<a href="#" class="invite">가입초대하기</a>
+								</p>
+								<!-- S : 2020-06-10 add -->
+								<a href="#qr-layer" class="btn-qr" data-layer="qr-layer"><i class="sp_ico sp_qr"></i>나의
+									QR코드<i class="sp_ico sp_qr-blt"></i></a>
+								<!-- E : 2020-06-10 add -->
+							</dd>
+
+							<!-- 20220801 A-Pay 확산 -->
+							<dt class="blind">A Pay 관리/현장 결제</dt>
+							<dd>
+								<ul class="link-custdash unite">
+									<li><a href="" class="link-apay">관리 / 현장 결제</a></li>
+								</ul>
+							</dd>
+
+							<!-- 20201119 비즈니스대시보드 / 소비자관리 추가-->
+							<dt class="blind">소비자관리 / 스마트대시보드</dt>
+							<dd>
+								<ul class="link-custdash">
+									<li><a href="" class="link-dashboard"><i class="sp_ico sp-acliks"></i>스마트 대시보드</a>
+									</li>
+									<li><a href="" class="link-customer"><i class="sp_ico sp-acliks"></i>소비자 관리</a></li>
+								</ul>
+							</dd>
+
+							<!-- 20201119 기존 소비자관리 메뉴 입니다.
+							<dt class="blind">소비자관리</dt>
+							<dd>
+								<a href="" class="link-customer"><i class="sp_ico sp-acliks"></i>소비자 관리</a>
+							</dd>
+							-->
+
+							<!-- S : 20220914 주문현황/구독관리 추가 -->
+							<dt class="orderStatus">
+								주문현황<em> (최근 1개월 기준)</em>
+								<a href="">주문내역</a>								
+							</dt>
+							<dd class="orderStatus">
+								<ul>
+									<li>
+										<a href="">
+											<span class="order-num">999</span>
+											<span class="order-sub">입금대기중</span>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<!-- 상품 갯수가 0인경우, void 클래스 붙임 -->
+											<span class="order-num void">0</span>
+											<span class="order-sub">결제완료</span>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="order-num">10</span>
+											<span class="order-sub">상품준비중</span>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="order-num">9</span>
+											<span class="order-sub">출고완료</span>
+										</a>
+									</li>
+								</ul>
+								<div class="extra">
+									<div class="extra-item">
+										<a href="">
+											<span class="extra-sub">취소</span>
+											<span class="extra-num">999</span>
+										</a>
+									</div>
+									<div class="extra-item">
+										<a href="">
+											<span class="extra-sub">반품</span>
+											<span class="extra-num">10</span>
+										</a>
+									</div>
+									<div class="extra-item">
+										<a href="">
+											<span class="extra-sub">자주 구매 제품</span>
+											<span class="extra-num">3</span>
+										</a>
+									</div>
+								</div>
+							</dd>
+
+							<dt class="subscribeAdmin">
+								SOP&장스오 현황
+								<!-- S : 20221014 구독서비스 개선 수정 -->
+								<a href="#subscription_compare" class="btn-subscribe" data-layer="subscription_compare">구독 서비스 비교</a>
+								<!-- S : 20221014 구독서비스 개선 수정 -->
+							</dt>
+							<dd class="subscribeAdmin">
+								<div class="swiper mySwiper">
+									<div class="swiper-wrapper">
+										<!-- S : 스마트오더 프로그램(ABO) ‘결제완료’ 주문서 -->
+										<div class="swiper-slide subscribe-box sop_program">
+											<a href="">
+												<p class="subscribe-sub">스마트오더<br>프로그램<em>(SOP)</em></p>
+												<span class="subscribe-txt">구독 횟수에 따라<br>늘어나는 혜택</span>
+												<div class="paystatus-box">
+													<div class="status-item paycomplete">
+														결제완료
+														<span class="pay-num">99</span>
+													</div>													
+												</div>
+												<div class="paydate">기준월<span>10<em>월</em></span></div>
+											</a>
+										</div>
+										<!-- E : 스마트오더 프로그램(ABO) ‘결제완료’ 주문서 -->
+
+										<!-- S : 스마트오더 프로그램(ABO) ‘미결제’ 주문서 -->
+										<div class="swiper-slide subscribe-box sop_program">
+											<a href="">
+												<p class="subscribe-sub">스마트오더<br>프로그램<em>(SOP)</em></p>
+												<span class="subscribe-txt">구독 횟수에 따라<br>늘어나는 혜택</span>
+												<div class="paystatus-box">
+													<div class="status-item paycomplete">
+														결제완료
+														<span class="pay-num">99</span>
+													</div>													
+													<div class="status-item payincomplete">
+														미결제
+														<span class="pay-num">35</span>
+													</div>													
+												</div>
+												<div class="paydate">기준월<span>10<em>월</em></span></div>
+											</a>
+										</div>
+										<!-- E : 스마트오더 프로그램(ABO) ‘미결제’ 주문서 -->
+
+										<!-- S : 스마트오더 프로그램(ABO/Member/Customer) '미신청' -->
+										<div class="swiper-slide subscribe-box sop_program">
+											<a href="">
+												<p class="subscribe-sub">스마트오더<br>프로그램<em>(SOP)</em></p>
+												<span class="subscribe-txt">구독 횟수에 따라<br>늘어나는 혜택</span>
+												<div class="paystatus-box">												
+													<div class="status-item more">
+														더 알아보기
+													</div>												
+												</div>
+												<div class="paydate">기준월<span>10<em>월</em></span></div>
+											</a>
+										</div>
+										<!-- E : 스마트오더 프로그램(Member/Customer) '미신청' -->
+
+										<!-- S : 장바구니 스마트오더(ABO/Member/Customer) 결제완료/자동결제일 이전 '결제완료' 주문서(다음달 결제일 출력) -->
+										<div class="swiper-slide subscribe-box basket_sop">
+											<a href="">
+												<p class="subscribe-sub">장바구니<br>스마트오더</p>
+												<span class="subscribe-txt">자유로운 제품선택<br>매달 받는 혜택</span>
+												<div class="paystatus-box">
+													<div class="status-item paycomplete">
+														결제완료
+													</div>													
+												</div>
+												<div class="paydate">결제일<em>10/30</em></div>												
+											</a>
+										</div>	
+										<!-- E : 장바구니 스마트오더(ABO/Member/Customer) 결제완료/자동결제일 이전 '결제완료' 주문서(다음달 결제일 출력) -->
+
+										<!-- S : 장바구니 스마트오더(ABO/Member/Customer) 자동 결제일 이전 ‘미결제’ 주문서 (이번달 결제일 출력) -->
+										<div class="swiper-slide subscribe-box basket_sop">
+											<a href="">
+												<p class="subscribe-sub">장바구니<br>스마트오더</p>
+												<span class="subscribe-txt">자유로운 제품선택<br>매달 받는 혜택</span>
+												<div class="paystatus-box">													
+													<div class="status-item payincomplete">
+														이번달 미결제
+													</div>													
+												</div>												
+												<div class="paydate">결제일<em>10/30</em></div>												
+											</a>
+										</div>	
+										<!-- E : 장바구니 스마트오더(ABO/Member/Customer) 자동 결제일 이전 ‘미결제’ 주문서 (이번달 결제일 출력) -->
+
+										<!-- S : 장바구니 스마트오더(ABO/Member/Customer) 자동 결제일 이전 ‘미결제’ 주문서 (즉시결제일 출력) -->
+										<div class="swiper-slide subscribe-box basket_sop">
+											<a href="">
+												<p class="subscribe-sub">장바구니<br>스마트오더</p>
+												<span class="subscribe-txt">자유로운 제품선택<br>매달 받는 혜택</span>
+												<div class="paystatus-box">													
+													<div class="status-item payincomplete">
+														이번달 미결제
+													</div>													
+												</div>												
+												<div class="paydate overdue">즉시<br>결제기한<em>10/30</em></div>
+											</a>
+										</div>	
+										<!-- E : 장바구니 스마트오더(ABO/Member/Customer) 자동 결제일 이전 ‘미결제’ 주문서 (즉시결제일 출력) -->
+
+										<!-- S : 장바구니 스마트오더(ABO/Member/Customer) 다음 회차 주문서가 없는 경우 (결제일 미노출) -->
+										<div class="swiper-slide subscribe-box basket_sop">
+											<a href="">
+												<p class="subscribe-sub">장바구니<br>스마트오더</p>
+												<span class="subscribe-txt">자유로운 제품선택<br>매달 받는 혜택</span>
+												<div class="paystatus-box">
+													<!-- S : 결제완료 시 노출 -->
+													<div class="status-item paycomplete">
+														결제완료
+													</div>													
+													<div class="status-item payrestart">
+														간편재시작
+													</div>
+												</div>
+											</a>
+										</div>		
+										<!-- E : 장바구니 스마트오더(ABO/Member/Customer) 다음 회차 주문서가 없는 경우 (결제일 미노출) -->
+										
+										<!-- S : 장바구니 스마트오더(ABO/Member/Customer) '미신청' 상태 -->
+										<div class="swiper-slide subscribe-box basket_sop">
+											<a href="">
+												<p class="subscribe-sub">장바구니<br>스마트오더</p>
+												<span class="subscribe-txt">자유로운 제품선택<br>매달 받는 혜택</span>
+												<div class="paystatus-box">
+													<div class="status-item more">
+														더 알아보기
+													</div>
+													<!-- <div class="status-item payrestart">
+														간편재시작
+													</div> -->
+												</div>
+											</a>
+										</div>
+										<!-- E : 장바구니 스마트오더(ABO/Member/Customer) '미신청' 상태 -->																					
+									</div>
+								</div>
+								<!-- <div class="swiper-pagination"></div> -->
+
+								<!-- S : 20230320 SOP 간편 재시작, SOP/장스오 자동갱신 -->
+								<div class="alarm_box">
+									<ul class="alarm_list">
+										<li>
+											<a href="/sop/list-profile" class="alarm_link">
+												<div class="alarm_item">
+													<div class="alarm_tit">자동갱신 가능</div>
+													<div class="alarm_desc">만기 예정인 <span class="blue">SOP 주문서</span>가 있어요.</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="/smart-order/profile" class="alarm_link">
+												<div class="alarm_item">
+													<div class="alarm_tit">자동갱신 가능</div>
+													<div class="alarm_desc">만기 예정인 <span class="orange">장스오 주문서</span>가 있어요.</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="/sop/list-profile" class="alarm_link">
+												<div class="alarm_item">
+													<div class="alarm_tit">간편재시작 가능</div>
+													<div class="alarm_desc"><span class="blue">SOP</span>를 간편하게 재시작 해보세요.</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="/smart-order/profiles" class="alarm_link">
+												<div class="alarm_item">
+													<div class="alarm_tit">간편재시작 가능</div>
+													<div class="alarm_desc"><span class="orange">장스오</span>를 간편하게 재시작 해보세요.</div>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<!-- E : 20230320 SOP 간편 재시작, SOP/장스오 자동갱신 -->
+							</dd>
+							<!-- E : 20220914 주문현황/구독관리 추가 -->
+
+							<!--//191206:회원정보 잠금-->
+							<dt class="myShopping">마이쇼핑정보</dt>
+							<dd class="myShopping">
+								<ul>
+									<li><a href="#" target="_blank">마이쇼핑</a></li>
+									<li><a href="#">반품내역</a></li>
+									<!--li><a href="#">마이팩</a></li-->
+									<!--20201112 마이팩메뉴 삭제-->
+									<li><a href="#">위시리스트</a></li>
+									<li><a href="#">제품구매 예약</a></li>
+									<li><a href="#">중개판매 관리</a></li>
+									<li><a href="#">쿠폰 및 구매권한 양도/양수</a></li>
+									<li><a href="#">정기주문&amp;스마트오더 내역</a></li>
+									<li><a href="#">배송지 및 주문알림 관리</a></li>
+								</ul>
+							</dd>
+							<dt class="myPage"><a href="#">마이페이지<span>전체보기</span></a></dt>
+							<dd class="myPage">
+								<!--191211:아이콘변경-->
+								<ul>
+									<li><a href="#"><span><img
+													src="/_ui/responsive/theme-blue/images/akl_common/header/ico_PImodify.png"
+													alt="" /></span>개인정보<br />수정</a></li>
+									<li><a href="#"><span><img
+													src="/_ui/responsive/theme-blue/images/akl_common/header/ico_facilitystatus.png"
+													alt="" /></span>시설예약<br />현황</a></li>
+									<li><a href="#"><span><img
+													src="/_ui/responsive/theme-blue/images/akl_common/header/ico_experienceStatus.png"
+													alt="" /></span>체험예약<br />현황</a></li>
+									<li><a href="#"><span><img
+													src="/_ui/responsive/theme-blue/images/akl_common/header/ico_account.png"
+													alt="" /></span>계좌관리</a></li>
+								</ul>
+								<!--//191211:아이콘변경-->
+							</dd>
+						</dl>
+						<!--191126 : 개발요청에 의한 코드수정 -->
+
+						<!-- S : 20220801 A-Pay 확산 추가 수정 -->
+						<div class="layer-qr-wrap layer_section qr-renew" id="qr-layer">
+							<div class="layer-qr">
+								<div class="layer-content">
+									<h3 class="layer-title">나의 QR코드</h3>
+									<p class="layer-sub-text">ABC와 A-Station에서 나의 QR코드로 <br>회원 체크인 하세요.</p>
+									<div class="qr_area">
+										<!-- 인증 유효시간 초과 -->
+										<!-- <button class="qr-img qr-img--retry">
+											<img src="/_ui/responsive/theme-blue/images/@qr.png" alt="">
+										</button>
+										<div class="qr-time qr-time--out">인증 유효시간 초과</div> -->
+										<!-- // 인증 유효시간 초과 -->
+										<!-- 기본 -->
+										<div class="qr-img">
+											<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPoAAAD6AQAAAACgl2eQAAACWUlEQVR42u2ZS3LDMAxDpYuI979Fj0JehC4AuZ140unOyMbOr5HfgiOSAJWO4//razzAAzzAA9wL5BizR1RGjpn8LC5ZgeKTj+NoEGut0JIVyFlHY31EB0MGwCU3ULlmz8Q+5RprfgbgRvUYiFN37QCePXsNLBbvx/GezZsBVmhdr/eqvhnQVb0mKxfbFYjyvbvvBTLQuszVzKHyxdvJ2ABkp1mtE/fGvvBnWAHoxjzlA/qBgkHl7lz5gETBBqJC4QZhFcxr4xgAFMtQftSyEBEWcYYVoGxRORYELLhbkrGyAtVRKhW2Tg75ySVIB4DYwEhHB1sI9YOisQL4gjgb+0NDxad6yAucF4Sjma5i8uKPKehWAKaKF26paWDzMzVjGAEs09c5YkRr6ALxmiwLkONXRNfS7YuAGADpaJXUlOrVlJHXID0AB125WfWWDzew5ZOeLjXVgOMG5B+cdeWonD1pbmYgKeOa+RGblJR2bwUOzVgsE74U5LoEaQDUtbJV5ggWP3UasgKpdgWFnuE5CI81r2p/OyDt1NbUNpY4538jwAkj1DmMcu0v0wuwNn4P5nwPncisQG8zpblzlzBr6HhoBWpPnJoqGB5Ohbt1jYBKZp8HNYVLwS7dfT+gRtVJCNxgrvgzxbQCW7806WIZSqIpwwtsEcFwRXNbcvdj14sP4Ehz/k5TREInsbACdWwXoZFBxTjwoG4OL5Dysn0MpIYpaWUHIOc6F69t7hS1TwDSL816GvrMwE+yFOrpKn9m8z5ARRu93Yz+kus65BiA538HD/AAD/AZ4BslhzfQ07bCAwAAAABJRU5ErkJggg=="
+												alt="">
+										</div>
+										<div class="qr-time">남은 시간 <strong class="time">59초</strong></div>
+										<!-- // 기본 -->
+										<p class="person-name">김웨이(232131)님</p>
+									</div>
+								</div>
+								<div class="layer-btn">
+									<button type="button" class="btn_layer-close">닫기</button>
+								</div>
+							</div>
+						</div>
+						<!-- E : 20220801 A-Pay 확산 추가 수정 -->
+
+
+						<p class="util">
+							<a href="#" class="logout">로그아웃</a>
+							<!--앱일 경우-->
+							<button class="setting"><span class="blind">설정</span></button>
+						</p>
+						<!--//191126 : 개발요청에 의한 코드수정 -->
+					</div>
+					<!-- S : 2020-06-10 add -->
+					<script>
+						$(function () {
+							AMWAY.callLayer();
+						})
+					</script>
+					<!-- S : 2020-06-10 add -->
+				</div>
+				<!--//개인화 영역 : end-->
+				<!-- SOP 머지 -->
+				<div id="loginToastPopup">
+					<div class="imageSection">
+						<img src="/_ui/responsive/theme-blue/images/akl_plp/image_member_login.png" alt="로그인 시 토스트 팝업">
+					</div>
+					<div class="bottomSection">
+						<p class="contents">
+							회원번호로 로그인 하시려면 개인정보 수정에서 비밀번호를 설정하세요.
+						</p>
+						<div class="popup-btn-close-area">
+							<a href="#" onclick="todaycloseWin();" alt="오늘 그만 보기">오늘 그만 보기</a>
+							<a href="#" onclick="closeWin();" alt="닫기">닫기</a>
+						</div>
+					</div>
+				</div>
+				<!-- // SOP 머지 -->
+			</div>
+		</nav>
+	</div>
+
+	<!-- S : 2020-05-14 회원가입 유도 팝업 -->
+	<div class="induce-login_wrap" style="display:none">
+		<div class="induce-login_inner">
+			<div class="induce-login_content">
+				<p class="induce-para">
+					<a href="#;" class="induce-link">
+						<strong class="induce-txt01">암웨이와 함께하는 <br>즐거운 쇼핑!</strong>
+						<span class="induce-txt02">회원가입하시고 <br>다양한 혜택을 누려보세요</span>
+					</a>
+				</p>
+			</div>
+			<button type="button" class="btn-induce"><span class="blind">레이어 닫기</span></button>
+		</div>
+	</div>
+	<!-- E : 2020-05-14 회원가입 유도 팝업 -->
+
+	<div class="amway-theme">
+		<nav class="print-hide amw-navigation-menu js-navigation--middle">
+			<div class="navigation-menu-container">
+				<!-- mobile navigation : start-->
+				<div class="mobile-nav-menu">
+					<div class="inner">
+						<button class="close"><span class="blind">닫기</span></button>
+						<p class="personal">
+							<!--로그인 전
+							<a href="#">로그인/회원가입</a>
+							-->
+							<!--로그인 후-->
+							<a href="#"><em>김웨이</em>님</a>
+							<!--//로그인 후-->
+						</p>
+						<dl>
+							<dt class="blind">쇼핑</dt>
+							<dd class="shopping">
+								<!--쇼핑-->
+								<ul>
+									<li class="on"><a href="#">카테고리</a>
+										<!--191211:아이콘변경-->
+										<ul class="category line">
+											<li>
+												<a href="#"><img
+														src="/_ui/responsive/theme-blue/images/akl_common/header/ico_nutrition.png"
+														alt="" />영양건강</a>
+												<ul>
+													<!-- 2021-08-04 메뉴 구조 정리 -->
+													<li><a href="#">전체 보기</a></li>
+													<!-- 2021-08-04 메뉴 구조 정리 -->
+													<li><a href="#">영양건강 홈</a></li>
+													<li><a href="#">기초영양</a></li>
+													<li><a href="#">기능성</a></li>
+													<li><a href="#">어린이</a></li>
+													<li><a href="#">식품/음료</a></li>
+													<li><a href="#">바디키</a></li>
+													<!-- 2021-08-04 메뉴 구조 정리 -->
+													<li><a href="#">n by Nutrilite</a></li>
+													<!-- // 2021-08-04 메뉴 구조 정리 -->
+													<li><a href="#">XS에너지</a></li>
+													<li><a href="#">보조용품</a></li>
+													<li><a href="#">뉴트리라이트 선물세트</a></li>
+													<!-- 2021-08-04 메뉴 구조 정리 -->
+													<li><a href="#">마이팩 by 뉴트리라이트</a></li>
+													<!-- // 2021-08-04 메뉴 구조 정리 -->
+												</ul>
+											</li>
+											<li>
+												<a href="#"><img
+														src="/_ui/responsive/theme-blue/images/akl_common/header/ico_beauty.png"
+														alt="" />뷰티</a>
+												<ul>
+													<!-- 2021-08-04 메뉴 구조 정리 -->
+													<li><a href="#">전체 보기</a></li>
+													<!-- 2021-08-04 메뉴 구조 정리 -->
+													<li><a href="#">뷰티 홈</a></li>
+													<li><a href="#">스킨케어</a></li>
+													<li><a href="#">메이크업</a></li>
+													<li><a href="#">아티스트리 스튜디오</a></li>
+													<li><a href="#">뷰티 선물세트</a></li>
+													<!-- 2021-08-04 메뉴 구조 정리 -->
+													<li><a href="#">바디케어</a></li>
+													<!-- // 2021-08-04 메뉴 구조 정리 -->
+												</ul>
+											</li>
+											<li>
+												<a href="#"><img
+														src="/_ui/responsive/theme-blue/images/akl_common/header/ico_personalCare.png"
+														alt="" />퍼스널 케어</a>
+												<ul>
+													<!-- 2021-08-04 메뉴 구조 정리 -->
+													<li><a href="#">전체 보기</a></li>
+													<!-- 2021-08-04 메뉴 구조 정리 -->
+													<li><a href="#">퍼스널 케어 홈</a></li>
+													<li><a href="#">오랄케어</a></li>
+													<li><a href="#">헤어케어</a></li>
+													<li><a href="#">바디케어</a></li>
+													<li><a href="#">보조용품</a></li>
+													<li><a href="#">퍼스널 케어 선물세트</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#"><img
+														src="/_ui/responsive/theme-blue/images/akl_common/header/ico_homeLiving.png"
+														alt="" />홈리빙</a>
+												<ul>
+													<!-- 2021-08-04 메뉴 구조 정리 -->
+													<li><a href="#">전체 보기</a></li>
+													<!-- 2021-08-04 메뉴 구조 정리 -->
+													<li><a href="#">홈리빙 홈</a></li>
+													<li><a href="#">정수기</a></li>
+													<li><a href="#">공기청정기</a></li>
+													<li><a href="#">주방용품</a></li>
+													<li><a href="#">세제용품</a></li>
+													<li><a href="#">기타</a></li>
+													<li><a href="#">홈리빙 선물세트</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#"><img
+														src="/_ui/responsive/theme-blue/images/akl_common/header/ico_oneForone.png"
+														alt="" />원포원</a>
+												<ul>
+													<!-- 2021-08-04 메뉴 구조 정리 -->
+													<li><a href="#">전체 보기</a></li>
+													<!-- 2021-08-04 메뉴 구조 정리 -->
+													<li><a href="#">원포원 홈</a></li>
+													<li><a href="#">커피/음료/차</a></li>
+													<li><a href="#">식품</a></li>
+													<li><a href="#">제지</a></li>
+													<li><a href="#">여성용품</a></li>
+													<li><a href="#">유아용품</a></li>
+													<li><a href="#">시즌용품 및 기타</a></li>
+													<li><a href="#">홍삼</a></li>
+													<li><a href="#">원포원 선물세트</a></li>
+												</ul>
+											</li>
+											<!-- 2021-08-04 25¢라이드 추가 -->
+											<li>
+												<a href="#"><img
+														src="/_ui/responsive/theme-blue/images/akl_common/header/ico_25cRide.png"
+														alt="" />25¢라이드</a>
+												<ul>
+													<!-- 2021-08-04 메뉴 구조 정리 -->
+													<li><a href="#">전체 보기</a></li>
+													<!-- 2021-08-04 메뉴 구조 정리 -->
+													<li><a href="#">스마트 바이크</a></li>
+													<li><a href="#">보조용품</a></li>
+													<li><a href="#">의류</a></li>
+												</ul>
+											</li>
+											<!-- // 2021-08-04 25¢라이드 추가 -->
+											<li>
+												<a href="#"><img
+														src="/_ui/responsive/theme-blue/images/akl_common/header/ico_plusShopping.png"
+														alt="" />플러스 쇼핑</a>
+												<!-- 2021-08-04 메뉴 구조 정리 -->
+												<ul>
+													<li><a href="#">스마트 오더 프로그램</a></li>
+													<li><a href="#">장바구니 스마트 오더</a></li>
+													<li><a href="#">보조용품</a></li>
+													<li><a href="#">선물세트</a></li>
+													<li><a href="#">무이자 할부 프로모션</a></li>
+													<li><a href="#">온라인 팩스 주문</a></li>
+													<li><a href="#">퀵오더</a></li>
+													<li><a href="#">선물몰</a></li>
+												</ul>
+												<!-- // 2021-08-04 메뉴 구조 정리 -->
+											</li>
+											<!-- 2021-08-04 25¢라이드: 삭제 -->
+											<!-- <li><a href="#"><img src="/_ui/responsive/theme-blue/images/akl_common/header/ico_giftMall.png" alt="" />선물몰</a></li> -->
+											<!-- // 2021-08-04 25¢라이드: 삭제 -->
+											<li><a href="#" class="all"><img
+														src="/_ui/responsive/theme-blue/images/akl_common/header/ico_allGoods.png"
+														alt="" />전체제품</a></li>
+										</ul>
+										<!--//191211:아이콘변경-->
+									</li>
+									<li><a href="#">브랜드</a>
+										<ul class="brand">
+											<li>
+												<a href="/about-amway/nutrilite?icid=ban:nut:top:190411"><img
+														class="_lazyload-mobile-brand" alt="Nutrilite"
+														src="https://media.amway.co.kr/sys-master/images/hd0/h48/8860158066718">
+												</a>
+											</li>
+											<li>
+												<a href="/about-amway/artistry?icid=ban:art:top:190411">
+													<img class="_lazyload-mobile-brand" alt="Artistry"
+														src="https://media.amway.co.kr/sys-master/images/h67/h45/8860158165022"
+														style="">
+												</a>
+											</li>
+											<li>
+												<a href="/about-amway/glister?icid=ban:gli:top:190411">
+													<img class="_lazyload-mobile-brand" alt="glister"
+														src="https://media.amway.co.kr/sys-master/images/ha8/h41/8860158296094"
+														style="">
+												</a>
+											</li>
+											<li>
+												<a href="/about-amway/gnh?icid=ban:gh:top:190411">
+													<img class="_lazyload-mobile-brand" alt="G&amp;H"
+														src="https://media.amway.co.kr/sys-master/images/h27/h4f/8859998584862/8860158263326.jpg"
+														style="">
+												</a>
+											</li>
+											<li>
+												<a href="/about-amway/satinique?icid=ban:sat:top:190411">
+													<img class="_lazyload-mobile-brand" alt="Satinique"
+														src="https://media.amway.co.kr/sys-master/images/h57/h48/8859998388254/8860158328862.jpg"
+														style="">
+												</a>
+											</li>
+											<li>
+												<a href="/about-amway/verganic?icid=ban:ver:top:190524">
+													<img class="_lazyload-mobile-brand" alt="Verganic"
+														src="https://media.amway.co.kr/sys-master/images/h40/h3e/8860158394398"
+														style="">
+												</a>
+											</li>
+											<li>
+												<a href="/about-amway/atmosphere?icid=ban:sky:top:190411">
+													<img class="_lazyload-mobile-brand" alt="Atmosphere Sky"
+														src="https://media.amway.co.kr/sys-master/images/hd8/h3a/8860158492702"
+														style="">
+												</a>
+											</li>
+											<li>
+												<a href="/about-amway/espring?icid=ban:espring:top:190411">
+													<img class="_lazyload-mobile-brand" alt="eSpring"
+														src="https://media.amway.co.kr/sys-master/images/h31/h38/8860158525470"
+														style="">
+												</a>
+											</li>
+											<li>
+												<a href="/about-amway/home?icid=ban:home:top:190411">
+													<img class="_lazyload-mobile-brand" alt="Amway Home"
+														src="https://media.amway.co.kr/sys-master/images/hc9/h34/8860158623774"
+														style="">
+												</a>
+											</li>
+											<li>
+												<a href="/about-amway/queen?icid=ban:queen:top:190411">
+													<img class="_lazyload-mobile-brand" alt="Amway Queen"
+														src="https://media.amway.co.kr/sys-master/images/h72/h34/8860158656542"
+														style="">
+												</a>
+											</li>
+											<li>
+												<a href="/about-amway/xs?icid=ban:xs:top:190411">
+													<img class="_lazyload-mobile-brand" alt="XS Energy"
+														src="https://media.amway.co.kr/sys-master/images/h0a/h31/8860158754846"
+														style="">
+												</a>
+											</li>
+											<li>
+												<a href="/about-amway/oneforone?icid=ban:one:top:190411">
+													<img class="_lazyload-mobile-brand" alt="One For One"
+														src="https://media.amway.co.kr/sys-master/images/hb2/h30/8860158787614"
+														style="">
+												</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+								<!--//쇼핑-->
+							</dd>
+							<!-- 2020-08-19 : 원포원 시즌온 메뉴 추가 -->
+							<dd class="link_o4os">
+								<a href="#"><img src="/_ui/responsive/theme-blue/images/@o4os_link_m.png"
+										alt="프리미엄 가치를 구매하는 원포원 시즌온의 스페셜 제안" /></a>
+							</dd>
+							<!-- 2020-08-19 : 원포원 시즌온 메뉴 추가 //-->
+							<dt class="blind">비즈니스</dt>
+
+							<!--비즈니스 : 로그인 후 ABO & PT-->
+							<dd class="business">
+								<span aria-hidden="true">비즈니스</span>
+								<!--191211:아이콘변경-->
+								<ul class="category">
+									<!--ABO 일 경우, 초기에 collapsed 를 넣어주세요.-->
+									<li><a href="#"><span><img
+													src="/_ui/responsive/theme-blue/images/akl_common/header/ico_business.png"
+													alt="" /></span>비즈니스홈</a></li>
+									<li><a href="#"><span><img
+													src="/_ui/responsive/theme-blue/images/akl_common/header/ico_losMap.png"
+													alt="" /></span>LOS MAP</a></li>
+									<li><a href="#"><span><img
+													src="/_ui/responsive/theme-blue/images/akl_common/header/ico_businessStatus.png"
+													alt="" /></span>사업현황</a>
+										<ul>
+											<li><a href="#">코어+ 인센티브 프로그램</a></li>
+											<li><a href="#">My Biz</a></li>
+											<li><a href="#">여행점수 조회</a></li>
+											<li><a href="#">PT그룹 조회</a></li>
+											<li><a href="#">마감실적조회</a></li>
+											<li><a href="#">Q레그 현황</a></li>
+											<li><a href="#">그룹내 총 반품</a></li>
+											<li><a href="#">나의 탑업</a></li>
+											<li><a href="#">다운라인 반품탑업</a></li>
+											<li><a href="#">사업현황보고서</a></li>
+											<li><a href="#">성취보고서</a></li>
+											<li><a href="#">보너스 현황</a></li>
+											<li><a href="#">ABO TAX</a></li>
+											<!-- <li><a href="#">My Biz</a></li>
+											<li><a href="#">LOS MAP (Global)</a></li>
+											<li><a href="#">액션 레포트</a></li>
+											<li><a href="#">Q레그 현황 (Global)</a></li>
+											<li><a href="#">코어+ 인센티브 프로그램</a></li>
+											<li><a href="#">PT 그룹 조회</a></li>
+											<li><a href="#">마감 실적 조회</a></li>
+											<li><a href="#">Q 레그 현황</a></li>
+											<li><a href="#">그룹 내 총 반품</a></li>
+											<li><a href="#">나의 탑업</a></li>
+											<li><a href="#">다운라인 반품탑업</a></li>
+											<li><a href="#">사업현황보고서</a></li>
+											<li><a href="#">성취보고서</a></li>
+											<li><a href="#">보너스 현황</a></li>
+											<li><a href="#">ABO TAX</a></li> -->
+										</ul>
+									</li>
+									<!-- <li><a href="#"><span><img src="/_ui/responsive/theme-blue/images/akl_common/header/ico_reward.png" alt="" /></span>보상 프로그램</a>
+										<ul>
+											<li><a href="#">사업성장특별보상프로그램</a></li>
+											<li><a href="#">월간 코어 보너스 조회</a></li>
+											<li><a href="#">여행점수 조회</a></li>
+										</ul>
+									</li> -->
+									<li><a href="#"><span><img
+													src="/_ui/responsive/theme-blue/images/akl_common/header/ico_businessSupport.png"
+													alt="" /></span>사업지원</a>
+										<ul>
+											<li><a href="#">암웨이-현대 제휴카드</a></li>
+											<li><a href="#">사랑의 우수리</a></li>
+											<li><a href="#">사업성장지원금</a></li><!-- 2020-09-28 메뉴병 수정-->
+											<li><a href="#">ABO 양식</a></li>
+											<li><a href="#">ABO 수첩</a></li>
+											<li><a href="#">암웨이 용어집</a></li>
+										</ul>
+									</li>
+									<li><a href="#"><span><img
+													src="/_ui/responsive/theme-blue/images/akl_common/header/ico_facility.png"
+													alt="" /></span>시설예약</a>
+										<ul>
+											<li><a href="#">교육장 예약</a></li>
+											<li><a href="#">퀸룸/파티룸 예약</a></li>
+											<li><a href="#">비즈룸 예약</a></li>
+											<li><a href="#">시설 예약 현황 확인</a></li>
+											<li><a href="#">외부 교육장 안내</a></li>
+										</ul>
+									</li>
+									<li><a href="#"><span><img
+													src="/_ui/responsive/theme-blue/images/akl_common/header/ico_experience.png"
+													alt="" /></span>체험예약</a>
+										<ul>
+											<li><a href="#">체성분 측정 예약</a></li>
+											<li><a href="#">피부 측정 예약</a></li>
+											<li><a href="#">브랜드 체험 예약</a></li>
+											<li><a href="#">문화 체험 예약</a></li>
+											<li><a href="#">체험 예약 현황 확인</a></li>
+										</ul>
+									</li>
+									<li><a href="#"><span><img
+													src="/_ui/responsive/theme-blue/images/akl_common/header/ico_businessGuide.png"
+													alt="" /></span>사업가이드</a>
+										<ul>
+											<li><a href="#">비즈니스 가이드</a></li>
+											<li><a href="#">세일즈&마케팅 플랜</a></li>
+											<li><a href="#">GIP&NCA</a></li>
+											<li><a href="#">사업 규정</a></li>
+											<li><a href="#">세무법률</a></li>
+										</ul>
+									</li>
+									<li><a href="#"><span><img
+													src="/_ui/responsive/theme-blue/images/akl_common/header/ico_newPin.png"
+													alt="" /></span>뉴핀 성취자</a></li>
+									<li><a href="#"><span><img
+													src="/_ui/responsive/theme-blue/images/akl_common/header/ico_coreplus.png"
+													alt="" /></span>코어플러스 계산기</a></li>
+									<li><a href="#"><span><img
+													src="/_ui/responsive/theme-blue/images/akl_common/header/ico_aContent.png"
+													alt="" /></span>A Content</a></li>
+									<li><a href="#"><span><img
+													src="/_ui/responsive/theme-blue/images/akl_common/header/ico_aLive.png"
+													alt="" /></span>A Live</a></li>
+									<li><button class="show"><span></span><span class="txt">전체 닫기</span></button></li>
+								</ul>
+								<!--//191211:아이콘변경-->
+							</dd>
+							<!--//비즈니스 : 로그인 후 ABO & PT-->
+							<!-- S : 2020-04-13 Amway app server modify -->
+							<dt class="title_app-server">암웨이 앱 서비스</dt>
+							<dd class="app_server-area">
+								<ul class="list_app-server">
+									<li class="list-item">
+										<a href="" class="link_app-server">
+											<span><img
+													src="/_ui/responsive/theme-blue/images/akl_common/header/ico_app_01.png"
+													alt=""></span>
+											온라인미팅<br>A Meet(zoom)
+										</a>
+									</li>
+									<li class="list-item">
+										<a href="" class="link_app-server">
+											<span><img
+													src="/_ui/responsive/theme-blue/images/akl_common/header/ico_app_02.png"
+													alt=""></span>
+											엣모스피어<br>커넥트
+										</a>
+									</li>
+									<li class="list-item">
+										<a href="" class="link_app-server">
+											<span><img
+													src="/_ui/responsive/theme-blue/images/akl_common/header/ico_app_03.png"
+													alt=""></span>
+											Amway 월렛
+										</a>
+									</li>
+									<li class="list-item">
+										<a href="" class="link_app-server">
+											<span><img
+													src="/_ui/responsive/theme-blue/images/akl_common/header/ico_app_04.png"
+													alt=""></span>
+											암웨이<br>센트럴
+										</a>
+									</li>
+									<li class="list-item">
+										<a href="" class="link_app-server">
+											<span><img
+													src="/_ui/responsive/theme-blue/images/akl_common/header/ico_app_05.png"
+													alt=""></span>
+											스킨<br>애널라이저
+										</a>
+									</li>
+									<li class="list-item">
+										<a href="" class="link_app-server">
+											<span><img
+													src="/_ui/responsive/theme-blue/images/akl_common/header/ico_app_06.png"
+													alt=""></span>
+											아티스트리<br>뷰티
+										</a>
+									</li>
+									<li class="list-item">
+										<a href="" class="link_app-server">
+											<span><img
+													src="/_ui/responsive/theme-blue/images/akl_common/header/ico_app_07.png"
+													alt=""></span>
+											암웨이<br>이벤트
+										</a>
+									</li>
+								</ul>
+							</dd>
+							<!-- E : 2020-04-13 Amway app server modify -->
+							<dt class="blind">암웨이 CS</dt>
+							<dd class="amwayCs">
+								<!--암웨이 cs-->
+								<ul>
+									<li><a href="#">암웨이 소식</a>
+										<ul>
+											<li><a href="#">공지사항</a></li>
+											<li><a href="#">뉴스룸</a></li>
+											<li><a href="#">신제품</a></li>
+											<li><a href="#">프로모션</a></li>
+											<li><a href="#">일시품절/해지/단종</a></li>
+											<li><a href="#">사회공헌 소식</a></li>
+										</ul>
+									</li>
+									<li><a href="#">암웨이 소개</a>
+										<ul>
+											<li><a href="#">한국암웨이</a>
+												<ul>
+													<li><a href="#">한국암웨이 개요</a></li>
+													<li><a href="#">한국암웨이 가치</a></li>
+													<li><a href="#">CEO 인사말</a></li>
+													<li><a href="#">한국암웨이 연혁</a></li>
+													<li><a href="#">부산 아시아 물류 허브센터</a></li>
+													<li><a href="#">프로세스로 보는 암웨이</a></li>
+												</ul>
+											</li>
+											<li><a href="#">글로벌암웨이</a>
+												<ul>
+													<li><a href="#">암웨이 시작</a></li>
+													<li><a href="#">암웨이 비전과 핵심가치</a></li>
+													<li><a href="#">암웨이 창업자 가문</a></li>
+													<li><a href="#">글로벌 CEO</a></li>
+													<li><a href="#">파운더스 카운슬</a></li>
+													<li><a href="#">암웨이 본사 및 계열사</a></li>
+												</ul>
+											</li>
+											<li><a href="#">사회공헌</a></li>
+											<li><a href="#">암웨이 미디어 갤러리</a></li>
+											<li><a href="#">채용정보</a>
+												<ul>
+													<li><a href="#">직무소개</a></li>
+													<li><a href="#">채용절차</a></li>
+													<li><a href="#">일하기 좋은 암웨이</a></li>
+													<li><a href="#">글로벌 인턴쉽</a></li>
+													<li><a href="#">인재채용</a></li>
+												</ul>
+											</li>
+											<li><a href="#">암웨이 비즈니스</a></li>
+											<li><a href="#">품질보증</a>
+												<ul>
+													<li><a href="#">품질보증 소개 및 정책</a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li><a href="https://academy.amway.co.kr/lms/main.do" target="_blank">아카데미</a></li>
+									<!-- 2021-05-03 고객센터 추가 -->
+									<li><a href="#" target="_blank">고객 서비스</a></li>
+									<!-- // 2021-05-03 고객센터 추가 -->
+								</ul>
+								<!--//암웨이 cs-->
+							</dd>
+							<!--191126 : 프로모션 단일 배너이동으로 변경-->
+							<!--비즈니스 : 로그인 전 & MEMBER 일때-->
+							<dd class="business">
+								<a href="https://www.amway.co.kr/about-amway/business">
+									<img class=""
+										src="https://media.amway.co.kr/sys-master/images/hbf/ha5/8952400871454"
+										alt="Helping People Live Better Lives! 암웨이 비즈니스를 소개합니다.">
+								</a>
+							</dd>
+							<!--//비즈니스 : 로그인 전 & MEMBER 일때-->
+							<dt class="blind">프로모션</dt>
+							<dd class="promotion">
+								<a href="#"><img
+										src="/_ui/responsive/theme-blue/images/akl_common/header/img_promotion.png"
+										alt="진행중인 프로모션을 확인해 보세요." /></a>
+							</dd>
+							<!--//191126 : 프로모션 단일 배너이동으로 변경-->
+						</dl>
+					</div>
+				</div>
+				<!--// mobile navigation : end-->
+
+				<!-- desktop navigation -->
+				<div class="desktop-nav-menu clearfix">
+					<!-- Desktop GNB -->
+					<div class="col-sm-12 col-sm-9 top-menu">
+						<!-- 190207_데스크탑 GNB 구조 개편 -->
+						<div class="top-menu-links pull-left desktop-structure-modified">
+							<ul class="menu-nav-list print-hide">
+								<li role="presentation" class="nav-list-item js-remove-overlay-mobile-menu">
+									<div class="overlay-menu-component-desktop-wrapper">
+										<a role="button" data-toggle="collapse" href="http://www.naver.com/"
+											aria-expanded="false" aria-controls="overlay-menu-wrapper"
+											class="overlay-menu-toggle-desktop js-overlay-menu-toggle-desktop collapsed">
+											<span class="button-text">쇼핑</i></span>
+										</a>
+
+										<div id="overlay-menu-wrapper"
+											class="collapse hidden-sm-down overlay-menu-container">
+											<div class="overlay-menu row">
+												<!-- 2depth -->
+												<div class="col-sm-2 overlay-menu-headers">
+													<div class="menu-headers-container">
+														<div>
+															<ul class="tab-header-list">
+																<li class="tab-header-item active">
+																	<div class="arrow"></div>
+																	<a href="#navMenuTab0" class="tab-toggle">
+																		<div class="wrapper">
+																			<span class="tab-image"><img
+																					src="/_ui/responsive/theme-blue/images/nutrition.png"
+																					alt=""></span>
+																			<span class="tab-title">영양건강</span>
+																		</div>
+																	</a>
+																</li>
+																<li class="tab-header-item ">
+																	<div class="arrow"></div>
+																	<a href="#navMenuTab1" class="tab-toggle">
+																		<div class="wrapper">
+																			<span class="tab-image"><img
+																					src="/_ui/responsive/theme-blue/images/beauty.png"
+																					alt=""></span>
+																			<span class="tab-title">뷰티</span>
+																		</div>
+																	</a>
+																</li>
+																<li class="tab-header-item ">
+																	<div class="arrow"></div>
+																	<a href="#navMenuTab2" class="tab-toggle">
+																		<div class="wrapper">
+																			<span class="tab-image"><img
+																					src="/_ui/responsive/theme-blue/images/bath.png"
+																					alt=""></span>
+																			<span class="tab-title">퍼스널 케어</span>
+																		</div>
+																	</a>
+																</li>
+																<li class="tab-header-item">
+																	<div class="arrow"></div>
+																	<a href="#navMenuTab3" class="tab-toggle">
+																		<div class="wrapper">
+																			<span class="tab-image"><img
+																					src="/_ui/responsive/theme-blue/images/home.png"
+																					alt=""></span>
+																			<span class="tab-title">홈리빙</span>
+																		</div>
+																	</a>
+																</li>
+																<li class="tab-header-item">
+																	<div class="arrow"></div>
+																	<a href="#navMenuTab4" class="tab-toggle">
+																		<div class="wrapper">
+																			<span class="tab-image"><img
+																					src="/_ui/responsive/theme-blue/images/one.png"
+																					alt=""></span>
+																			<span class="tab-title">원포원</span>
+																		</div>
+																	</a>
+																</li>
+																<!-- 25¢라이드 추가 -->
+																<li class="tab-header-item">
+																	<div class="arrow"></div>
+																	<a href="#navMenuTab8" class="tab-toggle">
+																		<div class="wrapper">
+																			<span class="tab-image"><img
+																					src="/_ui/responsive/theme-blue/images/25c.png"
+																					alt=""></span>
+																			<span class="tab-title">25¢라이드</span>
+																		</div>
+																	</a>
+																</li>
+																<!-- // 25¢라이드 추가 -->
+																<li class="tab-header-item">
+																	<div class="arrow"></div>
+																	<a href="#navMenuTab5" class="tab-toggle">
+																		<div class="wrapper">
+																			<span class="tab-image"><img
+																					src="/_ui/responsive/theme-blue/images/sec.png"
+																					alt=""></span>
+																			<span class="tab-title">플러스 쇼핑</span>
+																		</div>
+																	</a>
+																</li>
+																<!--191021 : 선물몰 메뉴 추가-->
+																<!-- 2021-08-04 메뉴 구조 정리 -->
+																<li class="tab-header-item">
+																	<div class="arrow"></div>
+																	<a href="#navMenuTab6" class="tab-toggle">
+																		<div class="wrapper">
+																			<span class="tab-image"><img
+																					src="/_ui/responsive/theme-blue/images/allProduct.png"
+																					alt=""></span>
+																			<span class="tab-title">전체제품</span>
+																		</div>
+																	</a>
+																</li>
+																<!-- // 2021-08-04 메뉴 구조 정리 -->
+																<!--//191021 : 선물몰 메뉴 추가-->
+																<!-- 2020-08-19 : 원포원 시즌온 메뉴 추가 -->
+																<!-- 2021-08-04 메뉴 구조 정리 -->
+																<!-- <li class="tab-header-item shop-o4os">
+																	<div class="arrow"></div>
+																	<a href="#navMenuTab7" class="tab-toggle">
+																		<div class="wrapper">
+																			<span class="tab-image"><img src="/_ui/responsive/theme-blue/images/@o4os_nav_ico.png" alt=""></span>
+																			<span class="tab-title">원포원 시즌온</span>
+																		</div>
+																	</a>
+																</li> -->
+																<!-- 2021-08-04 메뉴 구조 정리 -->
+																<!-- 2020-08-19 : 원포원 시즌온 메뉴 추가 //-->
+																<!-- <li class="tab-header-item">
+																	<div class="arrow"></div>
+																	<a href="#navMenuTab6" class="tab-toggle itemBrandShop">
+																		<div class="wrapper">
+																			<span class="tab-image"><img src="https://www.amway.co.kr/_ui/responsive/theme-blue/images/plus2.png" alt=""></span>
+																			<span class="tab-title">브랜드</span>
+																		</div>
+																	</a>
+																</li> -->
+															</ul>
+														</div>
+													</div>
+												</div>
+												<!-- //2depth -->
+
+												<!-- 3depth -->
+												<div class="col-sm-10 tab-content" id="gnbSubDepthBox">
+													<div role="tabpanel" class="tab-pane gnb-nav shop-nutrition active"
+														id="navMenuTab0">
+														<!-- shop-nutrition -->
+														<!-- 2021-08-04 메뉴 구조 정리 -->
+														<h5><a href="#">전체 보기</a></h5>
+														<!-- // 2021-08-04 메뉴 구조 정리 -->
+														<h5><a href="#">영양건강 홈</a></h5>
+														<div class="depth2-links">
+															<ul class="dep2-grid">
+																<li><a href="#">기초영양</a>
+																	<ul class="depth3-links">
+																		<li><a href="#">비타민 무기질</a></li>
+																		<li><a href="#">단백질</a></li>
+																		<li><a href="#">유산균 식이섬유 외</a></li>
+																	</ul>
+																</li>
+																<li><a href="#">기능성</a></li>
+																<li><a href="#">어린이</a></li>
+																<li><a href="#">식품/음료</a></li>
+																<li><a href="#">바디키</a></li>
+																<li><a href="#">n by Nutrilite</a></li>
+																<li><a href="#">XS에너지</a></li>
+																<li><a href="#">보조용품</a></li>
+																<li><a href="#">뉴트리라이트 선물세트</a></li>
+																<!-- 2021-08-04 메뉴 구조 정리 -->
+																<li><a href="#">마이팩 by 뉴트리라이트</a></li>
+																<!-- // 2021-08-04 메뉴 구조 정리 -->
+															</ul>
+														</div>
+													</div>
+													<div role="tabpanel" class="tab-pane gnb-nav shop-beauty"
+														id="navMenuTab1">
+														<!-- shop-beauty -->
+														<!-- 2021-08-04 메뉴 구조 정리 -->
+														<h5><a href="#">전체 보기</a></h5>
+														<h5><a href="#">뷰티 홈</a></h5>
+														<div class="depth2-links">
+															<ul class="dep2-grid">
+																<li><a href="#">스킨케어</a>
+																	<ul class="depth3-links">
+																		<li><a href="#">스킨 뉴트리션</a></li>
+																		<li><a href="#">시그니처 셀렉트</a></li>
+																		<li><a href="#">수프림 엘엑스</a></li>
+																		<li><a href="#">인텐시브</a></li>
+																		<li><a href="#">유스 익스텐드 울트라</a></li>
+																		<li><a href="#">유스 익스텐드</a></li>
+																		<li><a href="#">아이디얼 래디언스</a></li>
+																		<li><a href="#">스페셜 케어</a></li>
+																		<li><a href="#">아티스트리 맨</a></li>
+																		<li><a href="#">스튜디오 스킨</a></li>
+																	</ul>
+																</li>
+																<li><a href="#">메이크업</a>
+																	<ul class="depth3-links">
+																		<li><a href="#">파운데이션</a></li>
+																		<li><a href="#">파우더</a></li>
+																		<li><a href="#">베이스 메이크업</a></li>
+																		<li><a href="#">립</a></li>
+																		<li><a href="#">아이</a></li>
+																		<li><a href="#">도구류</a></li>
+																	</ul>
+																</li>
+																<li><a href="#">아티스트리 스튜디오</a>
+																	<ul class="depth3-links">
+																		<li><a href="#">상하이 에디션</a></li>
+																		<li><a href="#">LA 에디션</a></li>
+																	</ul>
+																</li>
+																<li><a href="#">뷰티 선물세트</a>
+																<li><a href="#">바디케어</a>
+																</li>
+															</ul>
+														</div>
+														<!-- // 2021-08-04 메뉴 구조 정리 -->
+													</div>
+													<div role="tabpanel" class="tab-pane gnb-nav shop-bath-body"
+														id="navMenuTab2">
+														<!-- shop-bath-body -->
+														<!-- 2021-08-04 메뉴 구조 정리 -->
+														<h5><a href="#">전체 보기</a></h5>
+														<h5><a href="#">퍼스널 케어 홈</a></h5>
+														<div class="depth2-links">
+															<ul class="dep2-grid">
+																<li><a href="#">오랄케어</a>
+																	<ul class="depth3-links">
+																		<li><a href="#">치약</a></li>
+																		<li><a href="#">칫솔</a></li>
+																		<li><a href="#">구강 청결제</a></li>
+																	</ul>
+																</li>
+																<li><a href="#">헤어케어</a>
+																	<ul class="depth3-links">
+																		<li><a href="#">샴푸/컨디셔너</a></li>
+																		<li><a href="#">트리트먼트</a></li>
+																		<li><a href="#">스타일링</a></li>
+																		<li><a href="#">탈모케어</a></li>
+																		<li><a href="#">헤어컬러</a></li>
+																		<li><a href="#">디바이스</a></li>
+																	</ul>
+																</li>
+																<li><a href="#">바디케어</a>
+																	<ul class="depth3-links">
+																		<li><a href="#">워시/솝</a></li>
+																		<li><a href="#">모이스처라이저</a></li>
+																		<li><a href="#">선케어</a></li>
+																		<li><a href="#">스틱/오일</a></li>
+																		<li><a href="#">핸드/풋</a></li>
+																		<li><a href="#">립케어</a></li>
+																	</ul>
+																</li>
+																<li><a href="#">보조용품</a>
+																	<ul class="depth3-links">
+																		<li><a href="#">세일즈에이드</a></li>
+																	</ul>
+																</li>
+																<li><a href="#">퍼스널 케어 선물세트</a></li>
+															</ul>
+														</div>
+														<!-- // 2021-08-04 메뉴 구조 정리 -->
+													</div>
+													<div role="tabpanel" class="tab-pane gnb-nav shop-home-living"
+														id="navMenuTab3">
+														<!-- shop-home-living -->
+														<!-- 2021-08-04 메뉴 구조 정리 -->
+														<h5><a href="#">전체 보기</a></h5>
+														<h5><a href="#">홈리빙 홈</a></h5>
+														<div class="depth2-links">
+															<ul class="dep2-grid">
+																<li><a href="#">정수기</a>
+																	<ul class="depth3-links">
+																		<li><a href="#">이스프링</a></li>
+																	</ul>
+																</li>
+																<li><a href="#">공기청정기</a>
+																	<ul class="depth3-links">
+																		<li><a href="#">엣모스피어 스카이</a></li>
+																		<li><a href="#">엣모스피어 드라이브</a></li>
+																		<li><a href="#">엣모스피어</a></li>
+																	</ul>
+																</li>
+																<li><a href="#">주방용품</a>
+																	<ul class="depth3-links">
+																		<li><a href="#">암웨이 퀸</a></li>
+																		<li><a href="#">나이프웨어</a></li>
+																		<li><a href="#">보조용품</a></li>
+																		<li><a href="#">퀸 부속품</a></li>
+																	</ul>
+																</li>
+																<li><a href="#">세제용품</a>
+																	<ul class="depth3-links">
+																		<li><a href="#">세탁용</a></li>
+																		<li><a href="#">표면 세정용</a></li>
+																		<li><a href="#">주방 세정용</a></li>
+																		<li><a href="#">보조용품</a></li>
+																	</ul>
+																</li>
+																<li><a href="#">기타</a>
+																	<ul class="depth3-links">
+																		<li><a href="#">비데</a></li>
+																	</ul>
+																</li>
+																<li><a href="#">홈리빙 선물세트</a>
+																</li>
+															</ul>
+														</div>
+														<!-- // 2021-08-04 메뉴 구조 정리 -->
+													</div>
+													<div role="tabpanel" class="tab-pane gnb-nav shop-oneForOne"
+														id="navMenuTab4">
+														<!-- shop-oneForOne -->
+														<!-- 2021-08-04 메뉴 구조 정리 -->
+														<h5><a href="#">전체 보기</a></h5>
+														<h5><a href="#">원포원 홈</a></h5>
+														<div class="depth2-links">
+															<ul class="dep2-grid">
+																<li><a href="#">커피/음료/차</a>
+																	<ul class="depth3-links">
+																		<li><a href="#">카페드다몬</a></li>
+																		<li><a href="#">라임트리</a></li>
+																	</ul>
+																</li>
+																<li><a href="#">식품</a>
+																	<ul class="depth3-links">
+																		<li><a href="#">정기품</a></li>
+																		<li><a href="#">노브스갈라</a></li>
+																		<li><a href="#">뉴트리라면</a></li>
+																		<li><a href="#">종가집</a></li>
+																		<li><a href="#">사조</a></li>
+																		<li><a href="#">CJ 제일제당</a></li>
+																	</ul>
+																</li>
+																<li><a href="#">제지</a>
+																	<ul class="depth3-links">
+																		<li><a href="#">행복한 아름</a></li>
+																	</ul>
+																</li>
+																<li><a href="#">여성용품</a>
+																	<ul class="depth3-links">
+																		<li><a href="#">후아</a></li>
+																	</ul>
+																</li>
+																<li><a href="#">유아용품</a>
+																	<ul class="depth3-links">
+																		<li><a href="#">웰로스</a></li>
+																		<li><a href="#">파스퇴르</a></li>
+																	</ul>
+																</li>
+																<li><a href="#">시즌용품 및 기타</a>
+																	<ul class="depth3-links">
+																		<li><a href="#">비비안</a></li>
+																		<li><a href="#">기타</a></li>
+																	</ul>
+																</li>
+																<li><a href="#">홍삼</a>
+																	<ul class="depth3-links">
+																		<li><a href="#">본작</a></li>
+																	</ul>
+																</li>
+																<li><a href="#">원포원 선물세트</a></li>
+															</ul>
+														</div>
+														<!-- // 2021-08-04 메뉴 구조 정리 -->
+													</div>
+													<!-- 2021-08-04 25¢라이드 추가 -->
+													<div role="tabpanel" class="tab-pane gnb-nav shop-oneForOne"
+														id="navMenuTab8">
+														<h5><a href="#">전체 보기</a></h5>
+														<div class="depth2-links">
+															<ul class="dep2-grid">
+																<li><a href="#">스마트 바이크</a></li>
+																<li><a href="#">보조용품</a></li>
+																<li><a href="#">의류</a></li>
+															</ul>
+														</div>
+													</div>
+													<!-- // 2021-08-04 25¢라이드 추가 -->
+													<div role="tabpanel" class="tab-pane gnb-nav shop-plusShop"
+														id="navMenuTab5">
+														<!-- 2021-08-04 메뉴 구조 정리 -->
+														<div class="depth2-links">
+															<ul class="dep2-grid">
+																<li><a href="#">스마트 오더 프로그램</a></li>
+																<li><a href="#">장바구니 스마트 오더</a></li>
+																<li><a href="#">보조용품</a></li>
+																<li><a href="#">선물세트</a></li>
+																<li><a href="#">무이자 할부 프로모션</a></li>
+																<li><a href="#">온라인 팩스 주문</a></li>
+																<li><a href="#">퀵오더</a></li>
+																<li><a href="#">선물몰</a></li>
+															</ul>
+														</div>
+														<!-- 2021-08-04 메뉴 구조 정리 -->
+													</div>
+													<!-- 2020-08-19 : 원포원 시즌온 메뉴 추가 -->
+													<!-- <div role="tabpanel" class="tab-pane gnb-nav shop-o4os" id="navMenuTab7">
+														<h5><a href="#">원포원 시즌온 홈</a></h5>
+														<div class="depth2-links">
+															<ul class="dep2-grid">
+																<li><a href="#">신제품</a></li>
+																<li><a href="#">타임딜</a></li>
+																<li><a href="#">공동구매</a></li>
+																<li><a href="#">전체 제품</a></li>
+																<li><a href="#">푸드</a></li>
+																<li><a href="#">라이프</a></li>
+																<li><a href="#">헬스</a></li>
+																<li><a href="#">뷰티</a></li>
+															</ul>
+														</div>
+													</div> -->
+													<!-- 2020-08-19 : 원포원 시즌온 메뉴 추가 //-->
+													<!-- <div role="tabpanel" class="tab-pane brand-shop" id="navMenuTab6">
+														<div class="depth2-links">
+															<strong>영양건강</strong>
+															<ul class="category-brand-shop">
+																<li><a href="#"><img src="/_ui/responsive/theme-blue/images/akl_common/img_brand_m_nutrition01.png" alt="뉴트리라이트"></a></li>
+																<li><a href="#"><img src="/_ui/responsive/theme-blue/images/akl_common/img_brand_m_nutrition02.png" alt="XS에너지"></a></li>
+															</ul>
+															<strong>뷰티</strong>
+															<ul class="category-brand-shop">
+																<li><a href="#"><img src="/_ui/responsive/theme-blue/images/akl_common/img_brand_m_beauty01.png" alt="아티스트리"></a></li>
+																<li><a href="#"><img src="/_ui/responsive/theme-blue/images/akl_common/img_brand_m_beauty02.png" alt="시그니처 셀렉트"></a></li>
+																<li><a href="#"><img src="/_ui/responsive/theme-blue/images/akl_common/img_brand_m_beauty03.png" alt="수프림 엘엑스"></a></li>
+																<li><a href="#"><img src="/_ui/responsive/theme-blue/images/akl_common/img_brand_m_beauty04.png" alt="인텐시브"></a></li>
+																<li><a href="#"><img src="/_ui/responsive/theme-blue/images/akl_common/img_brand_m_beauty05.png" alt="유스 익스텐드 울트라"></a></li>
+																<li><a href="#"><img src="/_ui/responsive/theme-blue/images/akl_common/img_brand_m_beauty06.png" alt="유스익스텐드"></a></li>
+																<li><a href="#"><img src="/_ui/responsive/theme-blue/images/akl_common/img_brand_m_beauty07.png" alt="아이디얼 래디언스"></a></li>
+																<li><a href="#"><img src="/_ui/responsive/theme-blue/images/akl_common/img_brand_m_beauty08.png" alt="하이드라 브이"></a></li>
+																<li><a href="#"><img src="/_ui/responsive/theme-blue/images/akl_common/img_brand_m_beauty09.png" alt="스페셜 케어"></a></li>
+																<li><a href="#"><img src="/_ui/responsive/theme-blue/images/akl_common/img_brand_m_beauty10.png" alt="아티스트리맨"></a></li>
+																<li><a href="#"><img src="/_ui/responsive/theme-blue/images/akl_common/img_brand_m_beauty11.png" alt="에센셜 바이 아티스트리"></a></li>
+															</ul>
+															<strong>퍼스널 케어</strong>
+															<ul class="category-brand-shop">
+																<li><a href="#"><img src="/_ui/responsive/theme-blue/images/akl_common/img_brand_m_bath01.png" alt="G&H"></a></li>
+																<li><a href="#"><img src="/_ui/responsive/theme-blue/images/akl_common/img_brand_m_bath02.png" alt="글리스터"></a></li>
+																<li><a href="#"><img src="/_ui/responsive/theme-blue/images/akl_common/img_brand_m_bath03.png" alt="데이블럭"></a></li>
+																<li><a href="#"><img src="/_ui/responsive/theme-blue/images/akl_common/img_brand_m_bath04.png" alt="데이블럭"></a></li>
+																<li><a href="#"><img src="/_ui/responsive/theme-blue/images/akl_common/img_brand_m_bath05.png" alt="베르가닉"></a></li>
+															</ul>
+															<strong>홈리빙</strong>
+															<ul class="category-brand-shop">
+																<li><a href="#"><img src="/_ui/responsive/theme-blue/images/akl_common/img_brand_m_home01.png" alt="이스프링"></a></li>
+																<li><a href="#"><img src="/_ui/responsive/theme-blue/images/akl_common/img_brand_m_home02.png" alt="엣모스피어"></a></li>
+																<li><a href="#"><img src="/_ui/responsive/theme-blue/images/akl_common/img_brand_m_home03.png" alt="암웨이퀸"></a></li>
+																<li><a href="#"><img src="/_ui/responsive/theme-blue/images/akl_common/img_brand_m_home04.png" alt="암웨이홈"></a></li>
+																<li><a href="#"><img src="/_ui/responsive/theme-blue/images/akl_common/img_brand_m_home05.png" alt="아이쿡 나이프웨어"></a></li>
+															</ul>
+															<strong>원포원</strong>
+															<ul class="category-brand-shop oneforone">
+																<li><a href="#"><img src="/_ui/responsive/theme-blue/images/akl_common/img_brand_m_one03.png" alt="후아"></a></li>
+																<li><a href="#"><img src="/_ui/responsive/theme-blue/images/akl_common/img_brand_m_one13.png" alt="행복한아름"></a></li>
+																<li><a href="#"><img src="/_ui/responsive/theme-blue/images/akl_common/img_brand_m_one11.png" alt="웰로스"></a></li>
+																<li><a href="#"><img src="/_ui/responsive/theme-blue/images/akl_common/img_brand_m_one02.png" alt="까페드다몬"></a></li>
+																<li><a href="#"><img src="/_ui/responsive/theme-blue/images/akl_common/img_brand_m_one04.png" alt="라임트리"></a></li>
+																<li><a href="#"><img src="/_ui/responsive/theme-blue/images/akl_common/img_brand_m_one08.png" alt="정기품"></a></li>
+																<li><a href="#"><img src="/_ui/responsive/theme-blue/images/akl_common/img_brand_m_one06.png" alt="노브스갈라"></a></li>
+																<li><a href="#"><img src="/_ui/responsive/theme-blue/images/akl_common/img_brand_m_one01.png" alt="뉴트리라면"></a></li>
+																<li><a href="#"><img src="/_ui/responsive/theme-blue/images/akl_common/img_brand_m_one07.png" alt="본작"></a></li>
+																<li><a href="#"><img src="/_ui/responsive/theme-blue/images/akl_common/img_brand_m_one05.png" alt="종가집"></a></li>
+																<li><a href="#"><img src="/_ui/responsive/theme-blue/images/akl_common/img_brand_m_one10.png" alt="사조"></a></li>
+																<li><a href="#"><img src="/_ui/responsive/theme-blue/images/akl_common/img_brand_m_one12.png" alt="파스퇴르"></a></li>
+																<li><a href="#"><img src="/_ui/responsive/theme-blue/images/akl_common/img_brand_m_one09.png" alt="비비안"></a></li>
+															</ul>
+														</div>
+													</div> -->
+
+													<!-- 3depth right menu -->
+													<div class="overlay-menu-tab-left js-gnbSide-menu">
+														<!-- <h5>제품소식</h5>
+														<ul>
+															<li><a href="#">신제품</a></li>
+															<li><a href="#">프로모션</a></li>
+															<li><a href="#">일시품절/단종</a></li>
+														</ul> -->
+														<h5>나의 쇼핑정보</h5>
+														<ul>
+															<li><a href="#">마이쇼핑</a></li>
+															<li><a href="#">반품내역</a></li>
+															<!--li><a href="#">마이팩</a></li -->
+															<!--20201112 마아팩메뉴 삭제 -->
+															<li><a href="#">위시리스트</a></li>
+															<li><a href="#">제품구매 예약</a></li>
+															<li><a href="#">중개판매 관리</a></li>
+															<li><a href="#">양도/양수</a></li>
+															<li><a href="#">정기주문&amp;스마트오더 내역</a></li>
+															<li><a href="#">장바구니 스마트 오더 내역</a></li>
+															<li><a href="#">배송지 및 주문알림 관리</a></li>
+														</ul>
+													</div>
+												</div>
+												<!-- //3depth -->
+											</div>
+											<a role="button" data-toggle="collapse" href="#overlay-menu-wrapper"
+												aria-expanded="false" aria-controls="overlay-menu-wrapper"
+												class="search-results-close collapsed">x</a>
+										</div>
+									</div>
+								</li>
+								<!-- //shopping 1depth -->
+
+								<li role="presentation" class=" nav-list-item js-remove-overlay-mobile-menu">
+									<div class="overlay-menu-component-desktop-wrapper">
+										<a role="button" data-toggle="collapse" href="#overlay-menu-wrapper-biz"
+											aria-expanded="false" aria-controls="overlay-menu-wrapper-biz"
+											class="overlay-menu-toggle-desktop js-overlay-menu-toggle-desktop collapsed">
+											<span class="button-text">비즈니스</i></span>
+										</a>
+
+										<div id="overlay-menu-wrapper-biz"
+											class="collapse hidden-sm-down overlay-menu-container">
+											<div class="overlay-menu row">
+												<!-- 2depth -->
+												<div class="col-sm-2 overlay-menu-headers">
+													<div class="menu-headers-container">
+														<div>
+															<ul class="tab-header-list">
+																<li class="tab-header-item active">
+																	<div class="arrow"></div>
+																	<a href="#navMenuTabBiz0" class="tab-toggle">
+																		<div class="wrapper">
+																			<span class="tab-title">사업현황</span>
+																		</div>
+																	</a>
+																</li>
+																<li class="tab-header-item ">
+																	<div class="arrow"></div>
+																	<a href="#navMenuTabBiz1" class="tab-toggle">
+																		<div class="wrapper">
+																			<span class="tab-title">보상 프로그램</span>
+																		</div>
+																	</a>
+																</li>
+																<li class="tab-header-item ">
+																	<div class="arrow"></div>
+																	<a href="#navMenuTabBiz2" class="tab-toggle">
+																		<div class="wrapper">
+																			<span class="tab-title">사업지원</span>
+																		</div>
+																	</a>
+																</li>
+																<li class="tab-header-item ">
+																	<div class="arrow"></div>
+																	<a href="#navMenuTabBiz3" class="tab-toggle">
+																		<div class="wrapper">
+																			<span class="tab-title">시설예약</span>
+																		</div>
+																	</a>
+																</li>
+																<li class="tab-header-item ">
+																	<div class="arrow"></div>
+																	<a href="#navMenuTabBiz4" class="tab-toggle">
+																		<div class="wrapper">
+																			<span class="tab-title">체험예약</span>
+																		</div>
+																	</a>
+																</li>
+																<li class="tab-header-item ">
+																	<div class="arrow"></div>
+																	<a href="#navMenuTabBiz5" class="tab-toggle">
+																		<div class="wrapper">
+																			<span class="tab-title">사업가이드</span>
+																		</div>
+																	</a>
+																</li>
+																<li class="tab-header-item ">
+																	<div class="arrow"></div>
+																	<a href="#" class="tab-toggle">
+																		<div class="wrapper">
+																			<span class="tab-title">뉴 핀 성취자</span>
+																		</div>
+																	</a>
+																</li>
+																<li class="tab-header-item ">
+																	<div class="arrow"></div>
+																	<a href="#" class="tab-toggle">
+																		<div class="wrapper">
+																			<span class="tab-title">교육비 관리</span>
+																		</div>
+																	</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<!-- //2depth -->
+
+												<!-- 3depth -->
+												<div class="col-sm-10 tab-content" id="gnbSubDepthBoxAbout">
+													<div role="tabpanel"
+														class="tab-pane gnb-nav shop-home-living active"
+														id="navMenuTabBiz0">
+														<div class="depth2-links">
+															<ul class="dep2-grid">
+																<li><a href="#">코어+ 인센티브 프로그램</a></li>
+																<li><a href="#">My Biz</a></li>
+																<li><a href="#">여행점수 조회</a></li>
+																<li><a href="#">PT그룹 조회</a></li>
+																<li><a href="#">마감실적조회</a></li>
+																<li><a href="#">Q레그 현황</a></li>
+																<li><a href="#">그룹내 총 반품</a></li>
+																<li><a href="#">나의 탑업</a></li>
+																<li><a href="#">다운라인 반품탑업</a></li>
+																<li><a href="#">사업현황보고서</a></li>
+																<li><a href="#">성취보고서</a></li>
+																<li><a href="#">보너스 현황</a></li>
+																<li><a href="#">ABO TAX</a></li>
+																<!-- <li><a href="#">LOS MAP (Global)</a></li>
+																<li><a href="#">액션 레포트</a></li>
+																<li><a href="#">Q레그 현황 (Global)</a></li>
+																<li><a href="#">코어+ 인센티브 프로그램</a></li>
+																<li><a href="#">PT 그룹 조회</a></li>
+																<li><a href="#">마감실적조회</a></li>
+																<li><a href="#">Q레그 현황</a></li>
+																<li><a href="#">그룹내 총 반품</a></li>
+																<li><a href="#">보너스 연관 반품</a></li>
+																<li><a href="#">나의 탑업</a></li>
+																<li><a href="#">다운라인 반품탑업</a></li>
+																<li><a href="#">사업현황보고서</a></li>
+																<li><a href="#">성취보고서</a></li>
+																<li><a href="#">보너스</a></li>
+																<li><a href="#">ABO TAX</a></li> -->
+															</ul>
+														</div>
+													</div>
+													<div role="tabpanel" class="tab-pane gnb-nav shop-home-living"
+														id="navMenuTabBiz1">
+														<div class="depth2-links">
+															<ul class="dep2-grid">
+																<li><a href="#">사업성장 특별보상 프로그램</a></li>
+																<li><a href="#">월간 코어 보너스 조회</a></li>
+																<li><a href="#">여행점수 조회</a></li>
+															</ul>
+														</div>
+													</div>
+													<div role="tabpanel" class="tab-pane gnb-nav shop-home-living"
+														id="navMenuTabBiz2">
+														<div class="depth2-links">
+															<ul class="dep2-grid">
+																<li><a href="#">암웨이-현대 제휴카드</a></li>
+																<li><a href="#">사랑의 우수리</a></li>
+																<li><a href="#">사업성장지원금</a></li>
+																<!-- 2020-09-28 PC 네비 메뉴 추가 -->
+																<li><a href="#">ABO양식</a></li>
+																<li><a href="#">ABO수첩</a></li>
+																<li><a href="#">암웨이 용어집</a></li>
+															</ul>
+														</div>
+													</div>
+													<div role="tabpanel" class="tab-pane gnb-nav shop-home-living"
+														id="navMenuTabBiz3">
+														<div class="depth2-links">
+															<ul class="dep2-grid">
+																<li><a href="#">교육장예약</a></li>
+																<li><a href="#">퀸룸/파티룸예약</a></li>
+																<li><a href="#">비즈룸예약</a></li>
+																<li><a href="#">OnAir예약</a></li>
+																<li><a href="#">시설예약현황</a></li>
+															</ul>
+														</div>
+													</div>
+													<div role="tabpanel" class="tab-pane gnb-nav shop-home-living"
+														id="navMenuTabBiz4">
+														<div class="depth2-links">
+															<ul class="dep2-grid">
+																<li><a href="#">체성분측정예약</a></li>
+																<li><a href="#">피부&두피측정예약</a></li>
+																<li><a href="#">브랜드체험예약</a></li>
+																<li><a href="#">문화체험예약</a></li>
+																<li><a href="#">체험예약현황</a></li>
+															</ul>
+														</div>
+													</div>
+													<div role="tabpanel" class="tab-pane gnb-nav shop-home-living"
+														id="navMenuTabBiz5">
+														<div class="depth2-links">
+															<ul class="dep2-grid">
+																<li><a href="#">비즈니스 가이드</a></li>
+																<li><a href="#">세일즈&마케팅 플랜</a></li>
+																<li><a href="#">GIP&NCA</a></li>
+																<li><a href="#">사업 규정</a></li>
+																<li><a href="#">세무법률</a></li>
+															</ul>
+														</div>
+													</div>
+
+													<!-- 3depth right menu -->
+													<div class="overlay-menu-tab-left js-gnbSide-menu">
+														<ul>
+															<!-- <li><a href="#">비즈니스 홈</a></li>
+															<li><a href="#">LOS MAP</a></li>
+															<li><a href="#">마감실적조회</a></li>
+															<li><a href="#">보너스</a></li>
+															<li><a href="#">교육장 예약</a></li> -->
+															<li><a href="#">비즈니스 홈</a></li>
+															<li><a href="#">LOS MAP</a></li>
+															<li><a href="#">마감실적조회</a></li>
+															<li><a href="#">보너스 현황</a></li>
+															<li><a href="#">교육장 예약</a></li>
+															<li><a href="#">코어플러스 계산기</a></li>
+															<li><a href="#">A Content</a></li>
+															<li><a href="#">A Live</a></li>
+														</ul>
+													</div>
+												</div>
+												<!-- //3depth -->
+											</div>
+											<a role="button" data-toggle="collapse" href="#overlay-menu-wrapper-biz"
+												aria-expanded="false" aria-controls="overlay-menu-wrapper-biz"
+												class="search-results-close collapsed">x</a>
+										</div>
+									</div>
+								</li>
+								<!-- //business 1depth -->
+
+								<li role="presentation" class=" nav-list-item js-remove-overlay-mobile-menu">
+									<div class="overlay-menu-component-desktop-wrapper">
+										<a role="button" data-toggle="collapse" href="#overlay-menu-wrapper-about"
+											aria-expanded="false" aria-controls="overlay-menu-wrapper-about"
+											class="overlay-menu-toggle-desktop js-overlay-menu-toggle-desktop collapsed">
+											<span class="button-text">암웨이 소개</i></span>
+										</a>
+
+										<div id="overlay-menu-wrapper-about"
+											class="collapse hidden-sm-down overlay-menu-container">
+											<div class="overlay-menu row">
+												<!-- 2depth -->
+												<div class="col-sm-2 overlay-menu-headers">
+													<div class="menu-headers-container">
+														<div>
+															<ul class="tab-header-list">
+																<li class="tab-header-item active">
+																	<div class="arrow"></div>
+																	<a href="#navMenuTabAbout0" class="tab-toggle">
+																		<div class="wrapper">
+																			<span class="tab-title">한국암웨이</span>
+																		</div>
+																	</a>
+																</li>
+																<li class="tab-header-item ">
+																	<div class="arrow"></div>
+																	<a href="#navMenuTabAbout1" class="tab-toggle">
+																		<div class="wrapper">
+																			<span class="tab-title">글로벌 암웨이</span>
+																		</div>
+																	</a>
+																</li>
+																<li class="tab-header-item ">
+																	<div class="arrow"></div>
+																	<a href="/about-amway/csr" class="tab-toggle">
+																		<div class="wrapper">
+																			<span class="tab-title">사회공헌</span>
+																		</div>
+																	</a>
+																</li>
+																<li class="tab-header-item ">
+																	<div class="arrow"></div>
+																	<a href="#" class="tab-toggle">
+																		<div class="wrapper">
+																			<span class="tab-title">암웨이 미디어 갤러리</span>
+																		</div>
+																	</a>
+																</li>
+																<li class="tab-header-item ">
+																	<div class="arrow"></div>
+																	<a href="#navMenuTabAbout2" class="tab-toggle">
+																		<div class="wrapper">
+																			<span class="tab-title">채용정보</span>
+																		</div>
+																	</a>
+																</li>
+																<li class="tab-header-item ">
+																	<div class="arrow"></div>
+																	<a href="#navMenuTabAbout3" class="tab-toggle">
+																		<div class="wrapper">
+																			<span class="tab-title">품질보증</span>
+																		</div>
+																	</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<!-- //2depth -->
+												<!-- 3depth -->
+												<div class="col-sm-10 tab-content" id="gnbSubDepthBoxBiz">
+													<div role="tabpanel"
+														class="tab-pane gnb-nav shop-home-living active"
+														id="navMenuTabAbout0">
+														<div class="depth2-links">
+															<ul class="dep2-grid">
+																<li><a href="#">한국암웨이 개요</a></li>
+																<li><a href="#">한국암웨이 가치</a></li>
+																<li><a href="#">CEO 소개</a></li>
+																<li><a href="#">한국암웨이 연혁</a></li>
+																<li><a href="#">부산 아시아 물류 허브센터</a></li>
+																<li><a href="#">프로세스로 보는 암웨이</a></li>
+															</ul>
+														</div>
+													</div>
+													<div role="tabpanel" class="tab-pane gnb-nav shop-home-living"
+														id="navMenuTabAbout1">
+														<div class="depth2-links">
+															<ul class="dep2-grid">
+																<li><a href="#">암웨이 시작</a></li>
+																<li><a href="#">암웨이 비전과 핵심가치</a></li>
+																<li><a href="#">암웨이 창업자 가문</a></li>
+																<li><a href="#">글로벌 CEO</a></li>
+																<li><a href="#">파운더스 카운슬</a></li>
+																<li><a href="#">암웨이 본사 및 계열사</a></li>
+															</ul>
+														</div>
+													</div>
+													<div role="tabpanel" class="tab-pane gnb-nav shop-home-living"
+														id="navMenuTabAbout2">
+														<div class="depth2-links">
+															<ul class="dep2-grid">
+																<li><a href="#">직무소개</a></li>
+																<li><a href="#">채용 절차</a></li>
+																<li><a href="#">일하기 좋은 암웨이</a></li>
+																<li><a href="#">글로벌 인턴십</a></li>
+																<li><a href="#">인재채용</a></li>
+															</ul>
+														</div>
+													</div>
+
+													<div role="tabpanel" class="tab-pane gnb-nav shop-home-living"
+														id="navMenuTabAbout3">
+														<div class="depth2-links">
+															<ul class="dep2-grid">
+																<li><a href="#">품질보증 소개 및 정책</a></li>
+															</ul>
+														</div>
+													</div>
+
+													<!-- 3depth right menu -->
+													<div class="overlay-menu-tab-left js-gnbSide-menu">
+														<ul>
+															<li><a href="#">암웨이 소개</a></li>
+															<li><a href="#">뉴스룸</a></li>
+															<li><a href="#">사회공헌 소식</a></li>
+															<li><a href="#">암웨이 비즈니스</a></li>
+														</ul>
+													</div>
+												</div>
+												<!-- //3depth -->
+											</div>
+											<a role="button" data-toggle="collapse" href="#overlay-menu-wrapper-about"
+												aria-expanded="false" aria-controls="overlay-menu-wrapper-about"
+												class="search-results-close collapsed">x</a>
+										</div>
+									</div>
+								</li>
+								<!-- //about 1depth -->
+
+								<li role="presentation" class=" nav-list-item js-remove-overlay-mobile-menu">
+									<div class="overlay-menu-component-desktop-wrapper">
+										<a role="button" data-toggle="collapse" href="#overlay-menu-wrapper-brand"
+											aria-expanded="false" aria-controls="overlay-menu-wrapper-brand"
+											class="overlay-menu-toggle-desktop js-overlay-menu-toggle-desktop collapsed">
+											<span class="button-text">암웨이 브랜드</i></span>
+										</a>
+
+										<div id="overlay-menu-wrapper-brand"
+											class="collapse hidden-sm-down overlay-menu-container">
+											<div class="overlay-menu row">
+												<!-- 2depth -->
+												<div class="col-sm-3 overlay-menu-headers hidden">
+													<div class="menu-headers-container">
+														<div>
+															<ul class="tab-header-list">
+																<li class="tab-header-item active">
+																	<div class="arrow"></div>
+																	<a href="#navMenuTabBrand0" class="tab-toggle">
+																		<div class="wrapper">
+																			<span class="tab-title">브랜드</span>
+																		</div>
+																	</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<!-- //2depth -->
+
+												<!-- 3depth -->
+												<div class="col-sm-9 tab-content gnb-brand-content"
+													id="gnbSubDepthBoxBrand">
+													<div role="tabpanel" class="tab-pane gnb-nav gnb-brand-panel active"
+														id="navMenuTabBrand0">
+
+														<!-- 190327_수정 데스크탑 GNB 브랜드 변경 -->
+														<ul class="dep2-brand-grid nav-list-brand-items">
+															<li class="dep2-banner"><a href="#"
+																	class="dep2-banner-link"><img
+																		src="/_ui/responsive/theme-blue/images/navBnr_logo_nutrilite_large.jpg"
+																		alt="Nutrilite"></a></li>
+															<li class="dep2-banner"><a href="#"
+																	class="dep2-banner-link"><img
+																		src="/_ui/responsive/theme-blue/images/navBnr_logo_artistry_large.jpg"
+																		alt="Artistry"></a></li>
+															<li class="dep2-banner"><a href="#"
+																	class="dep2-banner-link"><img
+																		src="/_ui/responsive/theme-blue/images/navBnr_logo_glister_large.jpg"
+																		alt="glister"></a></li>
+															<li class="dep2-banner"><a href="#"
+																	class="dep2-banner-link"><img
+																		src="/_ui/responsive/theme-blue/images/navBnr_logo_GnH_large.jpg"
+																		alt="G&amp;H"></a></li>
+															<li class="dep2-banner"><a href="#"
+																	class="dep2-banner-link"><img
+																		src="/_ui/responsive/theme-blue/images/navBnr_logo_satinique_large.jpg"
+																		alt="Satinique"></a></li>
+															<li class="dep2-banner"><a href="#"
+																	class="dep2-banner-link"><img
+																		src="/_ui/responsive/theme-blue/images/navBnr_logo_verganic_large.jpg"
+																		alt="Verganic"></a></li>
+															<li class="dep2-banner"><a href="#"
+																	class="dep2-banner-link"><img
+																		src="/_ui/responsive/theme-blue/images/navBnr_logo_atmosphere_sky_large.jpg"
+																		alt="Atmosphere Sky"></a></li>
+															<li class="dep2-banner"><a href="#"
+																	class="dep2-banner-link"><img
+																		src="/_ui/responsive/theme-blue/images/navBnr_logo_espring_large.jpg"
+																		alt="eSpring"></a></li>
+															<li class="dep2-banner"><a href="#"
+																	class="dep2-banner-link"><img
+																		src="/_ui/responsive/theme-blue/images/navBnr_logo_amway_home_large.jpg"
+																		alt="Amway Home"></a></li>
+															<li class="dep2-banner"><a href="#"
+																	class="dep2-banner-link"><img
+																		src="/_ui/responsive/theme-blue/images/navBnr_logo_amway_queen_large.jpg"
+																		alt="Amway Queen"></a></li>
+															<li class="dep2-banner"><a href="#"
+																	class="dep2-banner-link"><img
+																		src="/_ui/responsive/theme-blue/images/navBnr_logo_xs_energy_large.jpg"
+																		alt="XS Energy"></a></li>
+															<li class="dep2-banner"><a href="#"
+																	class="dep2-banner-link"><img
+																		src="/_ui/responsive/theme-blue/images/navBnr_logo_oneforone_large.jpg"
+																		alt="One For One"></a></li>
+														</ul>
+														<!-- //190327_수정 데스크탑 GNB 브랜드 변경 -->
+													</div>
+												</div>
+												<!-- //3depth -->
+											</div>
+											<a role="button" data-toggle="collapse" href="#overlay-menu-wrapper-brand"
+												aria-expanded="false" aria-controls="overlay-menu-wrapper-brand"
+												class="search-results-close collapsed">x</a>
+										</div>
+									</div>
+								</li>
+								<!-- //brand 1depth -->
+
+								<li role="presentation" class="nav-list-item js-remove-overlay-mobile-menu"><a href="#"
+										title="About Amway">아카데미</a></li>
+								<li role="presentation"
+									class="nav-list-item js-remove-overlay-mobile-menu online-meeting"><a href="#"
+										title="online meeting"><i class="sp_nav sp_nav-online"></i>A Meet Zoom</a></li>
+								<!-- D : 2020-04-06 [online-meeting] class add -->
+								<!-- //academy link -->
+
+								<!-- 2021-05-03 고객센터 추가 -->
+								<!-- cs 1depth -->
+								<li role="presentation" class=" nav-list-item js-remove-overlay-mobile-menu">
+									<div class="overlay-menu-component-desktop-wrapper">
+										<a role="button" data-toggle="collapse" href="#overlay-menu-wrapper-cs"
+											aria-expanded="false" aria-controls="overlay-menu-wrapper-cs"
+											class="overlay-menu-toggle-desktop js-overlay-menu-toggle-desktop collapsed">
+											<span class="button-text">고객 서비스</span>
+										</a>
+
+										<div id="overlay-menu-wrapper-cs"
+											class="collapse hidden-sm-down overlay-menu-container">
+											<div class="overlay-menu row">
+												<!-- 2depth -->
+												<div class="col-sm-2 overlay-menu-headers">
+													<div class="menu-headers-container">
+														<div>
+															<ul class="tab-header-list">
+																<li class="tab-header-item active">
+																	<div class="arrow"></div>
+																	<a href="#amwayCSheader" class="tab-toggle">
+																		<div class="wrapper">
+																			<span class="tab-title">자주 하는 질문</span>
+																		</div>
+																	</a>
+																</li>
+																<li class="tab-header-item">
+																	<div class="arrow"></div>
+																	<a href="#amwayCSheader3" class="tab-toggle">
+																		<div class="wrapper">
+																			<span class="tab-title">암웨이 비즈니스&브랜드
+																				센터</span>
+																		</div>
+																	</a>
+																</li>
+																<li class="tab-header-item">
+																	<div class="arrow"></div>
+																	<a href="#amwayCSheader1" class="tab-toggle">
+																		<div class="wrapper">
+																			<span class="tab-title">암웨이 서비스 센터</span>
+																		</div>
+																	</a>
+																</li>
+																<li class="tab-header-item">
+																	<div class="arrow"></div>
+																	<a href="#amwayCSheader2" class="tab-toggle">
+																		<div class="wrapper">
+																			<span class="tab-title">암웨이 고객 센터</span>
+																		</div>
+																	</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<!-- //2depth -->
+												<!-- 3depth -->
+												<div class="col-sm-10 tab-content" id="gnbSubDepthBoxCs">
+													<div role="tabpanel" class="tab-pane gnb-nav gnb-nav--cs active"
+														id="amwayCSheader">
+														<div class="depth2-links">
+															<ul class="dep2-grid">
+																<li><a href="#">FAQ Best 10</a></li>
+																<li><a href="#">사이트 이용안내</a></li>
+																<li><a href="#">비즈니스</a></li>
+																<li><a href="#">제품</a></li>
+																<li><a href="#">쇼핑</a></li>
+																<li><a href="#">암웨이 서비스 센터</a></li>
+																<li><a href="#">아카데미</a></li>
+																<li><a href="#">기타</a></li>
+															</ul>
+														</div>
+													</div>
+													<div role="tabpanel" class="tab-pane gnb-nav gnb-nav--cs"
+														id="amwayCSheader1">
+														<div class="depth2-links">
+															<ul class="dep2-grid">
+																<li><a href="#">서비스 안내</a></li>
+																<li><a href="#">출장 서비스 신청 / 조회</a></li>
+															</ul>
+														</div>
+													</div>
+													<div role="tabpanel" class="tab-pane gnb-nav gnb-nav--cs"
+														id="amwayCSheader2">
+														<div class="depth2-links">
+															<ul class="dep2-grid">
+																<li><a href="#">암웨이 챗봇 & 채팅상담</a></li>
+																<li><a href="#">1:1 이메일 문의</a></li>
+															</ul>
+														</div>
+													</div>
+													<div role="tabpanel" class="tab-pane gnb-nav gnb-nav--cs"
+														id="amwayCSheader3">
+													</div>
+												</div>
+												<!-- //3depth -->
+												<div class="overlay-menu-tab-left js-gnbSide-menu">
+													<ul>
+														<li><a href="#">고객 서비스</a></li>
+													</ul>
+												</div>
+											</div>
+											<a role="button" data-toggle="collapse" href="#overlay-menu-wrapper-about"
+												aria-expanded="false" aria-controls="overlay-menu-wrapper-about"
+												class="search-results-close collapsed">x</a>
+										</div>
+									</div>
+								</li>
+								<!-- //cs 1depth -->
+								<!-- // 2021-05-03 고객센터 추가 -->
+							</ul>
+						</div>
+					</div>
+					<!-- //Desktop GNB -->
+				</div>
+				<!--// desktop navigation -->
+			</div>
+
+			<!-- 검색버튼 / 추천검색어 롤링 -->
+			<div class="search-btn-container"> <!-- 20240308 상단 검색창 현행화 (클래스 scan-paygo 삭제)-->
+				<!-- 2019-10-01 스캔페이고 : scan-paygo 클래스 추가 -->
+				<a class="mobile-search-btn">
+					<span class="icon icon-search">검색</span>
+					<span class="search-default-txt">검색어를 입력하세요.</span> <!-- 20240517 추천 검색어 노출 개선 -->
+				</a>
+				<!-- <button class="scan-paygo-btn" onclick="$('.scan-paygo-tutorial').show()">scan pay go</button> --> <!-- 20240308 상단 검색창 현행화 -->
+				<!-- 2019-10-01 스캔페이고 : 버튼 추가 -->
+
+				<!-- S : 20240514 검색결과 추가 개선 -->
+				<!-- to개발 | 검색 페이지 상단 검색창에서만 노출 요청 -->
+				<div class="search-word-box cancelBtn-box">
+					<p class="search-word">비타민</p>
+					<button class="btn btn-link cancelBtn" type="button">
+						<span class="icon-cancel"></span>
+					</button>
+				</div>
+				<!-- E : 20240514 검색결과 추가 개선 -->
+				
+				<!-- S : 20240313 추천검색어 영역 주석 제거, css로 display:none 처리 -->
+				<ul class="suggestion-list">
+					<li>추천검색어 : G&amp;H 리프레쉬+ 바디 수딩 스틱</li>
+					<li>추천검색어 : 아티스트리 스튜디오 방콕 에디션</li>
+					<li>추천검색어 : 엣모스피어 스카이</li>
+					<li>추천검색어 : 밸런스 위드인</li>
+					<li>추천검색어 : Double X</li>
+					<li>추천검색어 : 글리스터 치약</li>
+					<li>추천검색어 : 아세로라C</li>
+					<li>추천검색어 : 오메가 3</li>
+					<li>추천검색어 : 뉴트리라이트 푸로틴</li>
+					<li>추천검색어 : 칼맥</li>
+				</ul>
+				<!-- E : 20240313 추천검색어 영역 주석 제거, css로 display:none 처리 -->
+			</div>
+			<!-- //검색버튼 / 추천검색어 롤링 -->
+
+			<!-- 검색창 -->
+			<div class="new-search-cont renewal search_result_page"> <!-- to개발 | 검색결과 페이지의 경우 search_result_page 클래스 추가 요청 --> <!-- 20240520 수정 --> <!-- 20230919 최근 검색어 개선 (클래스 추가) -->
+				<div class="top-search print-hide">
+					<div class="site-search">
+						<div class="ui-front">
+							<form name="search_form_TopSearchBoxPlaceHolderV2" method="get" action="/search/">
+								<div class="input-group cancelBtn-box"> <!-- 20231017 검색창 X 버튼 추가 (cancelBtn-box 클래스 추가) -->
+									<!-- to개발 | 입력한 검색어, 검색어 삭제(x버튼) 영역 클릭 시 입력한 검색어 유지하며 검색어 입력 창 오픈 요청 -->
+									<input type="text" id="js-site-search-input"
+										class="form-control js-site-search-input ui-autocomplete-input" name="text" value=""
+										maxlength="100" autocomplete="off" title="검색어 입력" placeholder="검색어를 입력하세요">
+										
+									<!-- S : 20231017 검색창 X 버튼 추가 -->
+									<button class="btn btn-link cancelBtn" type="button">
+										<span class="icon-cancel"></span>
+									</button>
+									<!-- E : 20231017 검색창 X 버튼 추가 -->
+									<span class="input-group-btn"><button class="btn btn-link" type="button"><span
+												class="icon-search"></span></button></span>
+								</div>
+								<button class="search-results-close moOnly" onclick="searchNewClose()">취소</button> <!-- 20230919 최근 검색어 개선 -->
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="inbox">
+					<!-- 최근검색어/추천검색어 -->
+					<div class="popoverword" role="tooltip">
+						<div class="popover-content-akl">
+							<p class="tit">최근 검색어</p>
+							<!-- S : 20230919 최근 검색어 개선 -->
+							<div class="popover-btn">
+								<div class="switch_toggle">
+									<input type="checkbox" id="switch_toggle" class="checkbox_toggle" checked> <!-- 20231127 수정 -->
+									<label class="btn_toggle focus" for="switch_toggle">
+										<span>최근검색어 ON</span> <!-- 20231127 수정 -->
+									</label>
+								</div>
+								<!-- <button type="button" class="link-btn">최근검색어 끄기 -->
+									<!--최근검색어 켜기-->
+								<!-- </button> --><!-- 20231030 토글 버튼 추가로 기존 버튼 삭제 -->
+								<button type="button" class="link-btn">전체삭제</button>
+							</div>
+							<ul class="search-results-akl stRound"> <!-- 20230919 최근 검색어 개선 (클래스 추가) -->
+								<li>
+									<a href="#n">우유</a>
+									<button type="button">검색어삭제</button>
+								</li>
+								<li>
+									<a href="#n">세제</a>
+									<button type="button">검색어삭제</button>
+								</li>
+								<li>
+									<a href="#n">퍼스널케어</a>
+									<button type="button">검색어삭제</button>
+								</li>
+								<li>
+									<a href="#n">아티스트리</a>
+									<button type="button">검색어삭제</button>
+								</li>
+								<li>
+									<a href="#n">글리스터</a>
+									<button type="button">검색어삭제</button>
+								</li>
+								<li>
+									<a href="#n">추석선물</a>
+									<button type="button">검색어삭제</button>
+								</li>
+								<li>
+									<a href="#n">비누</a>
+									<button type="button">검색어삭제</button>
+								</li>
+								<li>
+									<a href="#n">엣모스피어</a>
+									<button type="button">검색어삭제</button>
+								</li>
+								<li>
+									<a href="#n">더블엑스</a>
+									<button type="button">검색어삭제</button>
+								</li>
+								<li>
+									<a href="#n">뉴트리</a>
+									<button type="button">검색어삭제</button>
+								</li>
+							</ul>
+							<!--  검색 결과 없을 때 -->
+							<div class="search-no-result" style="display:none;">
+								<!-- <p>최근 검색어를 저장하시려면<br /> 상단의 최근 검색어 켜기를 눌러주세요.</p> -->
+								<p>검색어 저장 기능이 꺼져 있습니다.</p>
+								<p style="display:none;">최근 검색어 내역이 없습니다</p>
+							</div>
+							<!--//  검색 결과 없을 때 -->
+							<p class="tit tit0">더 알아보기</p> <!-- 20240517 추천 검색어 노출 개선 -->
+							<ul class="search-results-akl">
+								<!-- S : 20240517 추천 검색어 노출 개선 -->
+								<!-- to개발 | 최대 5개까지 노출 요청 -->
+								<li><a href="#n">퍼스널케어 선물세트 4종</a></li>
+								<li><a href="#n">아티스트리</a></li>
+								<li><a href="#n">스파이크 디펜스 항균 코팅</a></li>
+								<li><a href="#n">엣모스피어 블루캐시백 프로모션</a></li>
+								<li><a href="#n">아마그램 SUMMER호</a></li>
+								<!-- <li><a href="#n">엣모스피어 블루사전 예약</a></li>
+								<li><a href="#n">글리스터 리후레쉬 레디투유즈 마우스워시액</a></li>
+								<li><a href="#n">글리스터 선물세트</a></li>
+								<li><a href="#n">뉴트리 클로렐라 컵면 구성 변경</a></li>
+								<li><a href="#n">쿡웨어 메이트 논스틱 소형팬 2종 세트</a></li> -->
+								<!-- E : 20240517 추천 검색어 노출 개선 -->
+
+								<!-- <li class="rank"><a href="#n"><span class="num">1.</span> 뉴트리 라이트</a></li>
+								<li class="rank"><a href="#n"><span class="num">2.</span> 이스프링</a></li>
+								<li class="rank"><a href="#n"><span class="num">3.</span> 엣모스피어 스카이</a></li>
+								<li><a href="#n"><span class="num">4.</span> 글리스터 치약</a></li>
+								<li><a href="#n"><span class="num">5.</span> 이니스프리</a></li>
+								<li><a href="#n"><span class="num">6.</span> 정수기</a></li>
+								<li><a href="#n"><span class="num">7.</span> 식기 세정제</a></li>
+								<li><a href="#n"><span class="num">8.</span> 아티스트리</a></li>
+								<li><a href="#n"><span class="num">9.</span> 비타민</a></li>
+								<li><a href="#n"><span class="num">10.</span> 추석 선물세트</a></li> -->
+							</ul>
+							<!-- E : 20230919 최근 검색어 개선 -->
+							<!-- //2019-08-28 메인 : 최근, 추천 검색어 -->
+						</div>
+					</div>
+					<!-- //최근검색어/추천검색어 -->
+					<!-- 검색어 자동완성 -->
+					<div class="popover auto-suggestion-popover fade bottom in" role="tooltip" id="">
+						<div class="popover-content-akl">
+							<div class="popover-content">
+								<!-- 2019-08-28 메인 : 자동완성검색어 -->
+								<!-- <p class="txt0"><span>검색된 제품은 바로 '장바구니'에 담으실 수 있습니다.</span></p> --> <!-- 20240227 삭제 -->
+								<ul>
+									<!-- S : 20240227 자동완성창 바로가기 노출 -->
+									<!-- 브랜드별 로고 이미지 파일명 
+										뉴트리라이트 : ic_logo_nutrilite.png
+										아티스트리 : ic_logo_artistry.png
+										글리스터 : ic_logo_glister.png
+										g&h : ic_logo_g&h.png
+										새티니크 : ic_logo_satinique.png
+										엣모스피어 스카이 : ic_logo_atmospheresky.png
+										25센트 라이드 : ic_logo_25centride.png
+										이스프링 : ic_logo_espring.png
+										암웨이 홈 : ic_logo_amwayhome.png
+										암웨이 퀸Ti : ic_logo_amwayqueen.png
+										XS 에너지 : ic_logo_xsenergy.png
+										원포원 : ic_logo_oneforone.png
+										n by Nutrilite : ic_logo_nbynutrilite.png
+										마이팩 : ic_logo_mypack.png
+										마이랩 : ic_logo_mylab.png
+										A Content : ic_logo_acontent.png
+										A live : ic_logo_alive.png
+										기본 :  ic_logo_default.png -->
+									<!-- S : 20240308 수정 -->
+									<li class="ui-menu-shortcut">
+										<a href="#n">
+											<div class="name">
+												<img src="/_ui/responsive/theme-blue/images/akl_common/logo/ic_logo_nutrilite.png" alt="뉴트리라이트"/>
+												<span>뉴트리라이트</span>
+												<div class="link_go">브랜드관 바로가기</div>
+											</div>
+										</a>
+									</li>
+
+									<li class="ui-menu-shortcut">
+										<a href="#n">
+											<div class="name">
+												<img src="/_ui/responsive/theme-blue/images/akl_common/logo/ic_logo_default.png" alt="시설예약"/>
+												<span>시설예약</span>
+												<div class="link_go">바로가기</div>
+											</div>
+										</a>
+									</li>
+									<!-- E : 20240308 수정 -->
+									<!-- E : 20240227 자동완성창 바로가기 노출 -->
+									<li class="ui-menu-item">
+										<a href="#n">
+											<div class="name">
+												<span class="js-highlited-part-of-name">뉴트리</span> 파잍토 푸로틴
+											</div>
+										</a>
+									</li>
+									<li class="ui-menu-item">
+										<a href="#n">
+											<div class="name">
+												<span class="js-highlited-part-of-name">뉴트리</span> 키즈 비타민 무기질
+											</div>
+										</a>
+									</li>
+									<li class="ui-menu-item shopping-cart">
+										<a href="#n">
+											<div class="name">
+												<span class="js-highlited-part-of-name">뉴트리</span> 라이트
+											</div>
+										</a>
+										<button>장바구니 담기</button>
+									</li>
+									<li class="ui-menu-item shopping-cart">
+										<a href="#n">
+											<div class="name">
+												<span class="js-highlited-part-of-name">뉴트리</span> 키즈 프로모션
+											</div>
+										</a>
+										<button>장바구니 담기</button>
+									</li>
+									<li class="ui-menu-item">
+										<a href="#n">
+											<div class="name">
+												<span class="js-highlited-part-of-name">뉴트리</span> 단백질
+											</div>
+										</a>
+									</li>
+									<li class="ui-menu-item shopping-cart">
+										<a href="#n">
+											<div class="name">
+												<span class="js-highlited-part-of-name">뉴트리</span> 코어
+												<button>장바구니 담기</button>
+											</div>
+										</a>
+									</li>
+									<li class="ui-menu-item">
+										<a href="#n">
+											<div class="name">
+												<span class="js-highlited-part-of-name">뉴트리</span> 키즈 비타민 무기질
+											</div>
+										</a>
+									</li>
+									<li class="ui-menu-item">
+										<a href="#n">
+											<div class="name">
+												<span class="js-highlited-part-of-name">뉴트리</span> 키즈 비타민 무기질
+											</div>
+										</a>
+									</li>
+									<li class="ui-menu-item shopping-cart">
+										<a href="#n">
+											<div class="name">
+												<span class="js-highlited-part-of-name">뉴트리</span> 코어
+												<button>장바구니 담기</button>
+											</div>
+										</a>
+									</li>
+									<li class="ui-menu-item">
+										<a href="#n">
+											<div class="name">
+												<span class="js-highlited-part-of-name">뉴트리</span> 키즈 비타민 무기질
+											</div>
+										</a>
+									</li>
+									<li class="ui-menu-item">
+										<a href="#n">
+											<div class="name">
+												<span class="js-highlited-part-of-name">뉴트리</span> 키즈 비타민 무기질
+											</div>
+										</a>
+									</li>
+									<li class="ui-menu-item shopping-cart">
+										<a href="#n">
+											<div class="name">
+												<span class="js-highlited-part-of-name">뉴트리</span> 코어
+												<button>장바구니 담기</button>
+											</div>
+										</a>
+									</li>
+									<li class="ui-menu-item">
+										<a href="#n">
+											<div class="name">
+												<span class="js-highlited-part-of-name">뉴트리</span> 키즈 비타민 무기질
+											</div>
+										</a>
+									</li>
+									<li class="ui-menu-item">
+										<a href="#n">
+											<div class="name">
+												<span class="js-highlited-part-of-name">뉴트리</span> 키즈 비타민 무기질
+											</div>
+										</a>
+									</li>
+								</ul>
+								<!-- //2019-08-28 메인 : 자동완성검색어 -->
+							</div>
+						</div>
+					</div>
+					<!-- //검색어 자동완성 -->
+					<button class="search-results-close pcOnly" onclick="searchNewClose()">검색 취소</button> <!-- 20230919 최근 검색어 개선 (클래스 추가) -->
+				</div>
+			</div>
+			<!-- //검색창 -->
+		</nav>
+	</div>
+</header>
+
+<div class="layerWrapper U60802_lp1_pop">
+	<div class="cbox layerBox popWidM">
+		<div class="cart-popup__dialog">
+			<div class="cart-popup__header">
+				<span class="cart-popup__header-text">잠금 비밀번호 해제 <a href="#n" data-dismiss="modal" aria-label="Close"
+						aria-hidden="true" class="cart-popup__close">
+						<img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기">
+					</a>
+				</span>
+			</div>
+			<div class="cart-popup__content ShoppingCart">
+				<div class="cart-popup__item-info">
+					<div class="menurlock-pop">
+						<p class="menurlock-tit">
+							해당 메뉴는 <strong>잠금 설정</strong>이 되어 있습니다. 잠금 비밀번호 4자리를 입력하세요.
+						</p>
+						<div class="menurlock-opt">
+							<span class="tite-label">잠금 비밀번호 해제</span>
+							<span class="txte-wrap">
+								<input type="text" class="form-control" title="잠금 비밀 번호 입력">
+								<!-- 2018.10.16 타이틀 추가 -->
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cart-popup__item-link">
+				<button type="button" class="bt-akl-blue">해제</button>
+				<!-- 20190115 추가 -->
+				<div class="lock-btn">
+					<ul class="list-type2">
+						<li>아래 서비스는 잠금 비밀번호가 설정되어 있지 않으면 바로 접속이 가능합니다.</li>
+					</ul>
+					<p>
+						<a class="bt-akl-blue skyblue mini" href="#n">교육비 관리</a>
+						<a class="bt-akl-blue skyblue mini" href="#n">시설예약</a>
+						<a class="bt-akl-blue skyblue mini" href="#n">체험예약</a>
+					</p>
+				</div>
+				<!-- 20190115 추가 -->
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- S : 20220921 구독서비스 비교 팝업 -->
+<div id="subscription_compare" class="layer_section type-wide-a subscription_compare">
+    <div class="layer_section-container shipping_delivery_st02">
+        <div class="layer-header">
+            <h1 class="header-title">구독 서비스 비교</h1>
+        </div>
+
+        <div class="layer-content">
+			<div class="subscription_tbl">           
+				<table class="business_tbData01">
+					<!-- S : 20221014 col width 수정 -->
+					<colgroup>
+						<col width="84px">
+						<col width="auto">
+						<col width="auto">
+					</colgroup>
+					<!-- E : 20221014 col width 수정 -->
+					<thead>
+						<tr>
+							<th></th>
+							<th>장바구니 스마트 오더 (장스오)</th>
+							<th>스마트 오더 프로그램 (SOP)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>서비스<br>
+								한 줄 설명</th>
+							<td>제품은 마음대로, 변경은 언제든지, 지루할 틈 없이 자유롭고 혜택은 계속되는 정기 구독 프로그램</td>
+							<td>엄선된 암웨이 대표 제품 중에서 한가지 제품을 골라 꾸준하고, 간편하고, 알뜰하게 구매하는 가장 스마트한 정기 구독 프로그램</td>
+						</tr>
+						<tr>
+							<th>구독 가능<br>
+								제품</th>
+							<td>모든 제품 (일부 품목 불가*)<br>
+								<span class="sub">*신청 불가 제품: Durable 본품 및 부속품, Durable 필터 류, 디바이스 제품, 보조용품(잡지류, 박스, 뱃지), 기존 SOP 제품(SKU), 프로모션 제품(SKU)</span>
+							</td>
+							<td>뉴트리라이트, 아티스트리 20여개 제품</td>        
+						</tr>
+						<tr>
+							<th>제품 변경</th>
+							<td>매달 가능 (10만원 이상으로 구성)</td>
+							<td>불가 (동일 제품)</td>
+						</tr>
+						<tr>
+							<th>신청 가능한<br>
+								최대 주문서</th>
+							<td>1인 1개</td>
+							<td>제한 없음</td>
+						</tr>
+						<tr>
+							<th>신청 가능<br> 
+								회원</th>
+							<td>ABO, 멤버, A Cliks 소비자</td>
+							<td>ABO</td>
+						</tr>
+						<tr>
+							<th>혜택</th>
+							<td>2회 주문부터 매 회차 A Cliks Money 제공
+								<ul class="sub-list">
+									<li>적립액 : 회차 별 상이 (2~5회차: 5,000원/ 6~11회차: 10,000원/ 12~24회차: 15,000원)</li>
+									<li>적립 시점 : 결제 다음달 1일</li>
+									<li>A Cliks Money란: 제품 구매 시 사용 가능한 포인트</li>
+								</ul>
+							</td>
+							<td>지정 회차 제품 할인/무료 증정 혜택 제공<br>
+								<span class="sub">(ex. 골든 팩: 5회 차 유지 시 6회 차 골든 팩 50% 할인, 11회 차 유지 시 12회 차 골든팩 무료 증정)</span>
+							</td>
+						</tr>
+						<tr>
+							<th>구독 기간</th>
+							<td>24개월</td>
+							<td>12개월/ 24개월 중 선택</td>
+						</tr>
+					</tbody>
+				</table>
+			</div> 
+        </div>
+
+        <div class="align-box size-auto">
+			<!-- S : 20221014 구독서비스 개선 수정 -->
+            <button type="button" class="btn-modal_close btn-subscribe_close">닫기</button>
+			<!-- E : 20221014 구독서비스 개선 수정 -->
+        </div>
+    </div>
+</div>
+
+<script>
+	$(function () {
+		AMWAY.callLayer();
+	})
+</script>
+<!-- E : 20220921 구독서비스 비교 팝업 -->
+
+<!-- S : 20221031 내 단골 ABC 설정 추가 -->
+<div id="abc_patron_setup" class="layer_section type-wide-a">
+	<div class="layer_section-container shipping_delivery_st02">
+		<div class="layer-prd_search_top abc_patron_setup">
+			<div class="pop_head">	
+				<h2 class="tax">단골 ABC 설정</h2>
+			</div>
+
+			<div class="layer-content-cash new-payment gift_order renew">
+				<div class="abc_environment_banner">
+					<div class="banner_tit">
+						<span class="emphasis">지구를 생각하는 마음</span>으로 <span class="emphasis">단골ABC에서<br class="mo"> 직접 픽업</span>해 보는건 어떨까요?
+					</div>
+					<div class="banner-txt">환경 보호를 위한 공존의 실천, 암웨이와 함께해요!</div>
+				</div>
+				<div class="abc_environment_box">
+					<div class="payment-item-a">
+						<div class="payment-title">
+							<p class="payment-item-title">단골 ABC 선택</p>
+						</div>
+						<div class="payment-content">
+							<div class="form-item-a">
+								<div class="form-col-c">
+									<span class="form_select-default">
+										<select class="form_select" title="구분번호를 선택하세요" id="pickupAp" data-default-pickup-ap="daegu" selected="selected">
+											<option value="" data-address="">선택하세요</option>
+											<option value="bundang" data-address="경기도 성남시 분당구구미동 159번지 베어캐슬 1,2층 암웨이 브랜드 체험센터">
+												분당(최근픽업)</option>
+											<option value="gangseo" data-address="서울특별시 강서구등촌동 73-1번지 2층(금부빌딩) 암웨이 비즈니스 센터">
+												강서</option>
+											<option value="songdo" data-address="인천광역시 남동구서창동 668 코아프라자 2층 암웨이 비즈니스 센터">
+												인천</option>
+											<option value="taejon" data-address="대전광역시 유성구하기동 519 롯데마트 노은점 2층&nbsp;암웨이&nbsp;비즈니스&nbsp;센터">
+												대전</option>
+											<option value="cheongju" data-address="충청북도 청주시 흥덕구송절동 112, 113번지 암웨이 비즈니스 센터">
+												청주</option>
+											<option value="busan" data-address="부산광역시 동구초량동 1188-1번지 암웨이 비즈니스 센터">
+												부산</option>
+											<option value="daegu" data-address="대구광역시 북구산격동 1579 암웨이 비즈니스 센터">
+												대구</option>
+											<option value="changwon" data-address="경상남도 창원시 마산 합포구신포1가 42번지 암웨이 비즈니스 센터">
+												창원</option>
+											<option value="ulsan" data-address="울산광역시 남구삼산동 211-4 암웨이 비즈니스 센터">
+												울산</option>
+											<option value="gwangju" data-address="광주광역시 서구매월동 322-15 암웨이 비즈니스 센터">
+												광주</option>
+											<option value="jeonju" data-address="전라북도 전주시 덕진구팔복동 3가400번지 암웨이 비즈니스 센터">
+												전주</option>
+											<option value="gangneung" data-address="강원도 강릉시교2동 133번지 CJ대한통운 빌딩 암웨이 비즈니스 센터">
+												강릉</option>
+											<option value="jeju" data-address="제주특별자치도 제주시용담2동   2635-2 번지 암웨이 비즈니스 센터">
+												제주</option>
+											<option value="" data-address="">
+												스타시티</option>
+										</select>
+									</span>
+								</div>
+							</div>
+							<p class="ads-sm">주소 : 대구광역시 북구산격동 1579 암웨이 비즈니스 센터
+							</p>                                
+							<!-- S : 20221114 장스오 ABC픽업 추가 수정 -->
+							<p class="abc-noti">설정된 ABC는 기본 픽업 수령지로 설정됩니다.</p>                         
+							<!-- E : 20221114 장스오 ABC픽업 추가 수정 -->
+						</div>   
+					</div>
+				</div>
+			</div>              
+		</div>     
+
+		<div class="layer-area_bottom01">
+			<div class="align-box size-auto">
+				<button type="button" class="btn-modal_close v2 abc-patron-close">취소</button>
+				<button type="button" class="btn-modal_apply abc-patron-close">확인</button>
+			</div>
+		</div>
+	</div>
+
+</div>
+<!-- E : 20221031 내 단골 ABC 설정 추가 -->
+
+<script type="text/javascript" src="/_ui/responsive/theme-blue/js/swiper.min.js"></script>
+<script>
+	// S : 20220914 주문현황/구독관리 추가 
+	// var swiper = new Swiper(".mySwiper", {
+	// 		cssWidthAndHeight: true,
+	// 		slidesPerView: 2,
+	// 		visibilityFullFit: true,
+	// 		autoResize: false,
+	// 		loop:true,
+	// 		spaceBetween: 8,
+	// 		breakpoints: {
+	// 			768: {
+	// 				spaceBetween: 12
+	// 			}
+	// 		},
+	// 		centeredSlides: false,
+	// 		observer: true,
+	// 		observeParents: true,
+	// 		grabCursor: true,
+	// 		slideToClickedSlide: true,
+	// 		keyboard: {
+	// 			enabled: true,
+	// 		},
+	// 		pagination: {
+	// 			el:".swiper-pagination"
+	// 		}
+	// 	});
+	// 	swiper();
+		// E : 20220914 주문현황/구독관리 추가 
+</script>
+<script>
+	/*191100 추가 function */
+	mobile_navigation.init();
+	mini_dashboard.init();
+	/*//191100 추가 function */
+
+	//body 클릭 시 열린 레이어 닫기
+	HEADER_stopPropagation();
+
+
+	//쇼핑메뉴 클릭이벤트 (2018.05.14 추가)
+	HEADER_MenuShop();
+
+	//미니 대시보드 (2018.05.23 수정)
+	$('.js-my-account-menu').on('click', function (e) {
+		e.preventDefault();
+		HEADER_miniDashboard();
+	});
+
+	//미니 카트 (2018.05.23 수정)
+	$('.js-mini-cart-link').on('click', function (e) {
+		e.preventDefault();
+		HEADER_miniCart();
+	});
+
+	//추천검색어
+	//HEADER_topSearch_suggestion();
+
+	//최근검색어 : 2018.06.07
+	//HEADER_RecentSearches();
+
+	//MOB 쇼핑메뉴
+	//190131 메뉴 호출 스크립트 수정
+	if ($(window).width() < 768) {
+		$('body').addClass('js-navToggling-enabled');
+		navToggling();
+	}
+
+	$(window).resize(function () {
+		if (!($('body').hasClass('js-navToggling-enabled')) && ($(window).width() < 768)) {
+			$('body').addClass('js-navToggling-enabled');
+			navToggling();
+		}
+	})
+
+	//MOB 검색버튼
+	HEADER_MOB_search();
+	searchNewClose2();
+
+	//GNB 메뉴위치 조정하기 2018.03.23
+	GNB_SubDepth_Control();
+
+	//clickfeedback('header');/*//191211:버튼피드백*/
+	textEllipsis('.mini-dashboard .myAccount .user-name', 9, false);/*//191213:글자제한*/
+
+
+	/* 2020-05-14 회원가입 유도팝업 닫기 */
+	var induceLogin = $('.induce-login_wrap');
+	induceLogin.on('click', '.btn-induce', function () {
+		induceLogin.fadeOut();
+	})
+
+	moSearchCtrl()
+
+	/* 2020-05-14 회원가입 유도팝업 닫기 */
+	var induceLogin = $('.induce-login_wrap');
+	induceLogin.on('click', '.btn-induce', function () {
+		induceLogin.fadeOut();
+	})
+
+	/* 2021-05 로그인 토스트 팝업 닫기 */
+	/* 2021-05-12 메인에서만 노출되는 케이스 && 24시간 닫기 */
+	if ($('.akl').find('.main-v2').length > 0) {
+		cookiedata = document.cookie;
+		if (cookiedata.indexOf("ncookie=done") < 0) {
+			$('#loginToastPopup').attr('style', 'display:block');
+		} else {
+			$('#loginToastPopup').attr('style', 'display:none');
+		}
+
+		function setCookie(name, value, expiredays) {
+			var todayDate = new Date();
+			todayDate.setDate(todayDate.getDate() + expiredays);
+			document.cookie = name + "=" + escape(value) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+		}
+
+		function closeWin() {
+			$('#loginToastPopup').attr('style', 'display:none');
+		}
+
+		function todaycloseWin() {
+			setCookie("ncookie", "done", 1);
+			$('#loginToastPopup').attr('style', 'display:none');
+		}
+		var myAccount = $('a.myAccount');
+		myAccount.on('click', function () {
+			$('#loginToastPopup').hide();
+		})
+
+		var count = 10;
+		var coundown = setInterval(function () {
+			if (count == 0) {
+				$('#loginToastPopup').hide();
+			}
+			count--;
+		}, 1000)
+
+	} else {
+		$('#loginToastPopup').attr('style', 'display:none');
+	}
+	/* 2021-05 로그인 토스트 팝업 닫기 */
+	/* 2021-05-12 메인에서만 노출되는 케이스 && 24시간 닫기 */
+
+	/* S : 20230320 SOP 간편 재시작, SOP/장스오 자동갱신 */
+	// 토스트팝업 영역 선택 시 [미니 대시보드] 열림
+	$('.alarm_msg_box').on('click', function(){
+		$('.alarm_msg_box').fadeOut();
+
+		$('header').addClass('userinfo-open');
+		$('html, body').addClass('scroll-off');
+		$('#myAccount').addClass('on');
+		return false;
+	});
+
+	// 토스트팝업 최초 1회 노출, 노출 시 5초 유지 후 액션 없을 시 사라짐
+	setTimeout(function() {
+		$('.alarm_msg_box').fadeOut();
+    }, 5000);
+
+	// 메세지가 2개 이상일 경우 css 추가
+	if( $('.alarm_msg_box .alarm_msg').length >= 2 ){
+		$('.alarm_msg_box').css('padding','16px 15px 16px 26px');
+	}
+	/* E : 20230320 SOP 간편 재시작, SOP/장스오 자동갱신 */
+</script>
+

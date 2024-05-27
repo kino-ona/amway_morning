@@ -1,0 +1,108 @@
+
+<!-- S : layer-popup -->
+<div id="uploadLayer" class="layer-area plp-v2-st2">
+	<div class="layer-area_container with_pop_head upload-container">
+		<div class="layer-prd_search_top">
+			<div class="pop_head">
+                <button class="btn_close btn-modal_close"><i class="sp_ic">닫기</i></button>
+				<h2>외국인 가입 증빙자료 제출</h2>
+            </div>
+        </div>
+
+        <div class="layer-area_content">
+            <h3 class="upload-title">자료 등록<span class="sub-text">(외국인 등록증 또는 국내거소 신고증)</span></h3>
+
+            <!-- 211209_기존 외국인 비자 등록 팝업 문구 수정 요청의 건 (수정) -->
+            <ul class="register-guide">
+                <li>외국인이 국내에서 ABO로 활동하기 위해서는 외국인이 다단계판매원으로 회원 가입, 활동할 수 있는 출입국 관리법상 적법한 비자를 소지하여야 하며 일정 서류를 한국암웨이㈜에 제출하여야 합니다.</li>
+                <li>출입국 관리법상 적법한 비자를 소지하지 않은 경우 본인이 출입국관리법에 따른 각종 법적 책임을 부담하게 되며, 가입 후 활동 불가 비자가 확인되는 경우에는 더 이상 ABO로서 활동할 수 없으며 탈퇴 조치됩니다.</li>
+            </ul>
+            <!-- //211209_기존 외국인 비자 등록 팝업 문구 수정 요청의 건 (수정) -->
+
+            <div class="upload-wrap">
+                <!-- 업로드 후 -->
+                <div class="upload-item">
+                    <div class="dropzone complete">
+                        <div class="text">업로드 완료</div>
+                    </div>
+
+                    <button type="button" class="upload-button">사본 앞면 등록</button>
+                </div>
+                <!-- // 업로드 후 -->
+
+                <!-- 업로드 중 -->
+                <!-- <div class="upload-item">
+                    <div class="dropzone ing">
+                        <div class="text">업로드 중</div>
+                    </div>
+
+                    <button type="button" class="upload-button">외국인등록증 사본 등록</button>
+                </div> -->
+                <!-- // 업로드 중 -->
+
+                <!-- 업로드 전 -->
+                <div class="upload-item">
+                    <button type="button" class="dropzone">
+                        <div class="text">파일 첨부하기</div>
+                    </button>
+                    <button type="button" class="upload-button">사본 뒷면 등록</button>
+                </div>
+                <!-- // 업로드 전 -->
+            </div>
+
+            <h3 class="upload-title">등록 안내</h3>
+            <div class="register-step">
+                <!-- 2021-04-16 문구 수정 -->
+                <div class="step step01"><i class="icon"></i>가입신청<br>증빙자료 제출</div>
+                <!-- // 2021-04-16 문구 수정 -->
+                <div class="step step02"><i class="icon"></i>한국암웨이<br>증빙자료 검토</div>
+                <div class="step step03"><i class="icon"></i>가입 승인/불가<br>안내</div>
+            </div>
+
+            <ul class="register-guide">
+                <li>증빙자료 제출 후 한국 암웨이의 자료 검토가 완료되기 전까지는 가입 대기 상태입니다.</li>
+                <li>자료 검토는 1-2일 소요되며, 검토 결과는 카카오 알림톡/SMS로 알려드립니다.</li>
+                <!-- 2020-03-30 추가: 툴팁 -->
+                <li>
+                    사본은 적법한 비자 타입 및 6개월 이상 유효기간이 필요합니다.
+                    <!-- 툴팁 -->
+                    <div class="layer-tooltip">
+                        <button type="button" class="btn-tooltip"><span class="hidden">안내</span></button>
+                        <div class="layer-tooltip__panel">
+                            <ul class="register-guide">
+                                <li class="bolder">
+                                    등록 가능한 비자 타입 (비자 유효기간 6개월 이상)
+                                    <p class="normal">F-2(거주자), F-2-1(한국인의배우자), F-2-3(영주자의배우자), F-2-4 (난민인정을받은자), F-2-5(미화50만달러이상고액투자자), F-4(재외동포), F-5(영주자) 종류, F-6(결혼이민), F-6-1(국민의배우자), F-6-2 (국민과의혼인관계에서출생한미성년자녀양육자), F-6-3(국민과의혼인상태에서귀책사유없이혼인해소된자)</p>
+                                </li>
+                                <li class="bolder">
+                                    외국인 등록증 앞/뒷면 예시
+                                    <div class="img">
+                                        <img src="/_ui/responsive/theme-blue/images/exam-foreigner.png" alt="">
+                                    </div>
+                                </li>
+                            </ul>
+                            <i class="tooltip-caret"></i>
+                        </div>
+                    </div>
+                    <!-- //툴팁 -->
+                </li>
+                <!-- 2020-03-30 추가: 툴팁 -->
+            </ul>
+        </div>
+
+        <div class="layer-area_bottom">
+            <div class="btn_floating-group">
+                <span class="btn_box">
+                    <!-- 비활성화시 속성 추가 -->
+                    <!-- <button type="button" class="btn_square-a" disabled>외국인 회원가입 신청</button> -->
+                    <!-- // 비활성화시 속성 추가 -->
+                    <button type="button" class="btn_square-a">외국인 회원가입 신청</button>
+                    <!-- 재등록시 문구변경: 증빙자료 재등록하기 -->
+                    <!-- <button type="button" class="btn_square-a">증빙자료 재등록하기</button> -->
+                    <!-- // 재등록시 문구변경: 증빙자료 재등록하기 -->
+                </span>
+            </div>
+		</div>
+	</div>
+</div>
+<!-- E : layer-popup -->

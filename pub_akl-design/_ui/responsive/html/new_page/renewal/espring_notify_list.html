@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<title>설치/교체 서비스 알림 관리 | Amway Korea</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords">
+	<meta name="description" content="NY Fee Bundle">
+	<meta name="robots" content="index,follow">
+
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-lib.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/sprint.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-customer.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-shop.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-sop.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-account.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-business.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-product.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-brand.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common-v2.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common-new.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-product-renewal.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/swiper-bundle.min.css" />
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-cap2.css">
+
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.datepicker.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/owl.carousel.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/isotope.pkgd.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/select2.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/new.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.raty.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_contents.js"></script>
+
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_component.js"></script>
+</head>
+
+<body class="akl new-v2 ">
+<!-- S : 20230718 이스프링 케어 알림톡 관리 서비스 -->
+	<!-- skipToContent -->
+	<div id="skipToContent">
+		<a href="#contents">콘텐츠 바로가기 </a>
+	</div>
+	<!-- //skipToContent -->
+
+	<main>
+		<div id="header"></div>
+
+		<div class="sub-nav-section">
+			<div class="inner">
+				<ol class="breadcrumb">
+					<li>
+						<a href="/main">홈</a>
+					</li>
+					<li>
+						<a href="/my-account">마이페이지</a>
+					</li>
+					<li>
+						<a href="/my-account/orders/recent">마이쇼핑정보</a>
+					</li>
+					<li class="active">배송지 및 주문알림 관리</li>
+				</ol>
+				<div class="locationBox">
+					<ul id="locationBoxList">
+						<li data-taggingid="마이쇼핑">
+							<a href="/my-account/orders/recent">마이쇼핑</a>
+						</li>
+						<li data-taggingid="반품내역">
+							<a href="/my-shopping/my-return">반품내역</a>
+						</li>
+						<li data-taggingid="위시리스트">
+							<a href="/shopping-lists/all">위시리스트</a>
+						</li>
+						<li data-taggingid="제품구매 예약">
+							<a href="/my-shopping/pre-reservation">제품구매 예약</a>
+						</li>
+						<li data-taggingid="중개판매 관리">
+							<a href="/my-shopping/arrangement-sales-quotation">중개판매 관리</a>
+						</li>
+						<li data-taggingid="양도/양수">
+							<a href="/my-shopping/transfer-money">양도/양수</a>
+						</li>
+						<li data-taggingid="정기주문&amp;스마트오더 내역">
+							<a href="/sop/list-profiles">정기주문&amp;스마트오더 내역</a>
+						</li>
+						<li data-taggingid="장바구니 스마트 오더 내역">
+							<a href="/smart-order/profiles">장바구니 스마트 오더 내역</a>
+						</li>
+						<li data-taggingid="배송지 및 주문알림 관리">
+							<a href="/my-account/address-book">배송지 및 주문알림 관리</a>
+						</li>
+						<li class="active" data-taggingid="이스프링 케어 알림 관리"><!-- 20230807 수정 -->
+							<a href="#">이스프링 케어 알림 관리</a><!-- 20230807 수정 -->
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- container-fluid -->
+		<div class="container-fluid main-container amway-theme">
+			<!-- mp-tblist-container -->
+			<div class="mp-tblist-container">
+				<div class="sort_area">
+					<h1 class="icon-sub-title mySOP-title">이스프링 케어 알림 관리</h1><!-- 20230807 수정 -->
+				</div>
+
+				<!-- S : 20230801 추가 -->
+				<div class="accordion-element new-shopping-list-accordion">
+					<div class="accordion-panel">
+						<div class="accordion-panel-heading" id="creatShoppingList">
+							<div class="accordion-toggle collapsed">
+								<h5 class="accordion-panel-title">
+									<span class="accordion-title-wrapper">
+										<span class="title-element title-text">새 알림톡 추가</span>
+										<span class="title-element accordion-icon-wrapper">
+											<button type="button" class="pull-right icon-minus bg_t" data-layer="pop_espring_notify_manage"></button>
+										</span>
+									</span>
+								</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- E : 20230801 추가 -->
+
+				<div class="shipping-form-wrapper">
+					<p class="shipping-num">알림톡 리스트(<em>59</em>건)</p>
+					<div class="form-s">
+						<input type="text" id="" name="" placeholder="소비자명 검색" value="" class="input-st" title="소비자명 검색">
+						<button type="submit" class="btn btn-primary"><span class="hidden-sm hidden-xs">검색</span></button>
+					</div>
+
+					<div class="box_order-filter box_order-filter_new">
+						<span class="order-filter-title">알림 항목</span>
+						<span class="form_select-default v1">
+							<select class="form_select">
+								<option>전체</option>
+							</select>
+							<i class="sp_form sp_select-default"></i>
+						</span>
+
+						<div class="button-group">
+							<button type="button" class="on">최신순</button>
+							<button type="button">받는분 가나다순</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="shipping-list-wrap">
+					<div class="shipping-list-head col-xs-1">
+						<div class="list-left">
+							<span>
+								<input id="remember" type="checkbox" ng-checked="" title="전체선택">
+								<label for="remember" class="normal inline-label checklabel">전체선택</label> <button type="button" class="sel_del">선택삭제</button>
+							</span>
+						</div>
+						<div class="list-right">
+							<!-- S : 20231023 '알림톡 ON/OFF' 항목 추가 -->
+							<span class="disNone-m col-xs-2">알림톡 ON / OFF</span>
+							<!-- E : 20231023 '알림톡 ON/OFF' 항목 추가 -->
+
+							<span class="disNone-m col-xs-2">소비자명</span>
+							<span class="disNone-m col-xs-2">알림 항목</span>
+							<!-- S : 20230801 '알림받는 번호' 항목 추가 -->
+							<span class="disNone-m col-xs-2">알림받는 번호</span>
+							<!-- E : 20230801 '알림받는 번호' 항목 추가 -->
+							<span class="disNone-m col-xs-2">교체일자</span>
+							<span class="disNone-m col-xs-2">다음 알림 예정일</span>
+						</div>
+					</div>
+					<!-- 리스트 -->
+					<div class="shipping-list">
+						<div class="list-left">
+							<span>
+								<input id="remember2" type="checkbox" ng-checked="" title="홍길동1 필터 교체 2023-12-12 2024-01-01 선택">
+								<label for="remember2" class="normal inline-label checklabel"></label>
+							</span>
+						</div>
+						<div class="list-right">
+							<!-- S : 20231023 '알림톡 ON/OFF' 항목 추가 -->
+							<!-- Case1. 알림톡 ON -->
+							<span class="col-xs-2 pcOnly">
+								<em class="disNone-pc s_tit">알림톡 ON / OFF</em>
+								<button type="button" class="btn_notifyTalk">알림톡 해제</button>
+							</span>
+							<!-- E : 20231023 '알림톡 ON/OFF' 항목 추가 -->
+							<span class="col-xs-2">
+								<em class="disNone-pc s_tit">소비자 명</em>
+								<em>홍길동1</em>
+							</span>
+							<span class="col-xs-2">
+								<em class="disNone-pc s_tit">알림 항목</em>
+								<em>필터 교체</em>
+							</span>
+							<!-- S : 20230801 '알림받는 번호' 항목 추가 -->
+							<span class="col-xs-2">
+								<em class="disNone-pc s_tit">알림받는 번호</em>
+								<em>010-9876-5432<br>010-1234-5678</em>
+							</span>
+							<!-- E : 20230801 '알림받는 번호' 항목 추가 -->
+							<span class="col-xs-2">
+								<em class="disNone-pc s_tit">교체 일자</em>
+								<em>2023-12-12</em>
+							</span>
+							<span class="col-xs-2">
+								<em class="disNone-pc s_tit">다음 알림 예정일</em>
+								<em>2024-01-01</em>
+							 </span>
+							<!-- S : 20231023 '알림톡 ON/OFF' 항목 추가(Mobile) -->
+							<!-- Case1. 알림톡 ON -->
+							<span class="col-xs-2 moOnly">
+								<em class="disNone-pc s_tit">알림톡 ON / OFF</em>
+								<button type="button" class="btn_notifyTalk">알림톡 해제</button>
+							</span>
+							<!-- E : 20231023 '알림톡 ON/OFF' 항목 추가(Mobile) -->
+							<span class="col-xs-3">
+								<span class="order_btn_area">
+									<button type="button" class="bt-akl-blue" data-layer="pop_espring_notify_manage">수정</button>
+									<!-- <button type="button" class="bt-akl-white l_txt">알림톡 해제</button> --> <!-- 20231023 삭제 -->
+								</span>
+							</span>
+						</div>
+					</div>
+					<div class="shipping-list">
+						<div class="list-left">
+							<span>
+								<input id="remember3" type="checkbox" ng-checked="" title="홍길동1 퍼싯 세척/교체 2023-12-12 2024-01-01 선택">
+								<label for="remember3" class="normal inline-label checklabel"></label>
+							</span>
+						</div>
+						<div class="list-right">
+							<!-- S : 20231023 '알림톡 ON/OFF' 항목 추가 -->
+							<!-- Case1. 알림톡 ON -->
+							<span class="col-xs-2 pcOnly">
+								<em class="disNone-pc s_tit">알림톡 ON / OFF</em>
+								<button type="button" class="btn_notifyTalk">알림톡 해제</button>
+							</span>
+							<!-- E : 20231023 '알림톡 ON/OFF' 항목 추가 -->
+							<span class="col-xs-2">
+								<em class="disNone-pc s_tit">소비자 명</em>
+								<em>홍길동1</em>
+							</span>
+							<span class="col-xs-2">
+								<em class="disNone-pc s_tit">알림 항목</em>
+								<em>퍼싯 세척/교체</em>
+							</span>
+							<!-- S : 20230801 '알림받는 번호' 항목 추가 -->
+							<span class="col-xs-2">
+								<em class="disNone-pc s_tit">알림받는 번호</em>
+								<em>010-9876-5432<br>010-1234-5678</em>
+							</span>
+							<!-- E : 20230801 '알림받는 번호' 항목 추가 -->
+							<span class="col-xs-2">
+								<em class="disNone-pc s_tit">교체 일자</em>
+								<em>2023-12-12</em>
+							</span>
+							<span class="col-xs-2">
+								<em class="disNone-pc s_tit">다음 알림 예정일</em>
+								<em>2024-01-01</em>
+							 </span>
+							<!-- S : 20231023 '알림톡 ON/OFF' 항목 추가(Mobile) -->
+							<!-- Case1. 알림톡 ON -->
+							<span class="col-xs-2 moOnly">
+								<em class="disNone-pc s_tit">알림톡 ON / OFF</em>
+								<button type="button" class="btn_notifyTalk">알림톡 해제</button>
+							</span>
+							<!-- E : 20231023 '알림톡 ON/OFF' 항목 추가(Mobile) -->
+							<span class="col-xs-3">
+								<span class="order_btn_area">
+									<button type="button" class="bt-akl-blue" data-layer="pop_espring_notify_manage">수정</button>
+									<!-- <button type="button" class="bt-akl-white l_txt">알림톡 해제</button> --> <!-- 20231023 삭제 -->
+								</span>
+							</span>
+						</div>
+					</div>
+					<div class="shipping-list">
+						<div class="list-left">
+							<span>
+								<input id="remember4" type="checkbox" ng-checked="" title="김아무개 퍼싯 세척/교체 2023-12-12 2024-01-01 선택">
+								<label for="remember4" class="normal inline-label checklabel"></label>
+							</span>
+						</div>
+						<div class="list-right">
+							<!-- S : 20231023 '알림톡 ON/OFF' 항목 추가 -->
+							<!-- Case2. 알림톡 OFF - button에 off 클래스 추가 -->
+							<span class="col-xs-2 pcOnly">
+								<em class="disNone-pc s_tit">알림톡 ON / OFF</em>
+								<button type="button" class="btn_notifyTalk off">알림톡 재발송</button>
+							</span>
+							<!-- E : 20231023 '알림톡 ON/OFF' 항목 추가 -->
+							<span class="col-xs-2">
+								<em class="disNone-pc s_tit">소비자 명</em>
+								<em>김아무개</em>
+							</span>
+							<span class="col-xs-2">
+								<em class="disNone-pc s_tit">알림 항목</em>
+								<em>퍼싯 세척/교체</em>
+							</span>
+							<!-- S : 20230801 '알림받는 번호' 항목 추가 -->
+							<span class="col-xs-2">
+								<em class="disNone-pc s_tit">알림받는 번호</em>
+								<em>010-9876-5432</em>
+							</span>
+							<!-- E : 20230801 '알림받는 번호' 항목 추가 -->
+							<span class="col-xs-2">
+								<em class="disNone-pc s_tit">교체 일자</em>
+								<em>2023-12-12</em>
+							</span>
+							<span class="col-xs-2">
+								<em class="disNone-pc s_tit">다음 알림 예정일</em>
+								<em>2024-01-01</em>
+							 </span>
+							<!-- S : 20231023 '알림톡 ON/OFF' 항목 추가(Mobile) -->
+							<!-- Case2. 알림톡 OFF - button에 off 클래스 추가 -->
+							<span class="col-xs-2 moOnly">
+								<em class="disNone-pc s_tit">알림톡 ON / OFF</em>
+								<button type="button" class="btn_notifyTalk off">알림톡 재발송</button>
+							</span>
+							<!-- E : 20231023 '알림톡 ON/OFF' 항목 추가(Mobile) -->
+							<span class="col-xs-3">
+								<span class="order_btn_area">
+									<button type="button" class="bt-akl-blue" data-layer="pop_espring_notify_manage">수정</button>
+									<!-- <button type="button" class="bt-akl-white l_txt">알림톡 해제</button> --> <!-- 20231023 삭제 -->
+								</span>
+							</span>
+						</div>
+					</div>
+					<div class="shipping-list">
+						<div class="list-left">
+							<span>
+								<input id="remember5" type="checkbox" ng-checked="" title="홍길동1 필터 교체 2023-12-12 2024-01-01 선택">
+								<label for="remember5" class="normal inline-label checklabel"></label>
+							</span>
+						</div>
+						<div class="list-right">
+							<!-- S : 20231023 '알림톡 ON/OFF' 항목 추가 -->
+							<!-- Case2. 알림톡 OFF - button에 off 클래스 추가 -->
+							<span class="col-xs-2 pcOnly">
+								<em class="disNone-pc s_tit">알림톡 ON / OFF</em>
+								<button type="button" class="btn_notifyTalk off">알림톡 재발송</button>
+							</span>
+							<!-- E : 20231023 '알림톡 ON/OFF' 항목 추가 -->
+							<span class="col-xs-2">
+								<em class="disNone-pc s_tit">소비자 명</em>
+								<em>홍길동1</em>
+							</span>
+							<span class="col-xs-2">
+								<em class="disNone-pc s_tit">알림 항목</em>
+								<em>필터 교체</em>
+							</span>
+							<!-- S : 20230801 '알림받는 번호' 항목 추가 -->
+							<span class="col-xs-2">
+								<em class="disNone-pc s_tit">알림받는 번호</em>
+								<em>010-1234-5678</em>
+							</span>
+							<!-- E : 20230801 '알림받는 번호' 항목 추가 -->
+							<span class="col-xs-2">
+								<em class="disNone-pc s_tit">교체 일자</em>
+								<em>2023-12-12</em>
+							</span>
+							<span class="col-xs-2">
+								<em class="disNone-pc s_tit">다음 알림 예정일</em>
+								<em>2024-01-01</em>
+							 </span>
+							<!-- S : 20231023 '알림톡 ON/OFF' 항목 추가(Mobile) -->
+							<!-- Case2. 알림톡 OFF - button에 off 클래스 추가 -->
+							<span class="col-xs-2 moOnly">
+								<em class="disNone-pc s_tit">알림톡 ON / OFF</em>
+								<button type="button" class="btn_notifyTalk off">알림톡 재발송</button>
+							</span>
+							<!-- E : 20231023 '알림톡 ON/OFF' 항목 추가(Mobile) -->
+							<span class="col-xs-3">
+								<span class="order_btn_area">
+									<button type="button" class="bt-akl-blue" data-layer="pop_espring_notify_manage">수정</button>
+									<!-- <button type="button" class="bt-akl-white l_txt">알림톡 해제</button> --> <!-- 20231023 삭제 -->
+								</span>
+							</span>
+						</div>
+					</div>
+					<div class="shipping-list">
+						<div class="list-left">
+							<span>
+								<input id="remember6" type="checkbox" ng-checked="" title="김아무개 퍼싯 세척/교체 2023-12-12 2024-01-01 선택">
+								<label for="remember6" class="normal inline-label checklabel"></label>
+							</span>
+						</div>
+						<div class="list-right">
+							<!-- S : 20231023 '알림톡 ON/OFF' 항목 추가 -->
+							<!-- Case2. 알림톡 OFF - button에 off 클래스 추가 -->
+							<span class="col-xs-2 pcOnly">
+								<em class="disNone-pc s_tit">알림톡 ON / OFF</em>
+								<button type="button" class="btn_notifyTalk off">알림톡 재발송</button>
+							</span>
+							<!-- E : 20231023 '알림톡 ON/OFF' 항목 추가 -->
+							<span class="col-xs-2">
+								<em class="disNone-pc s_tit">소비자 명</em>
+								<em>김아무개</em>
+							</span>
+							<span class="col-xs-2">
+								<em class="disNone-pc s_tit">알림 항목</em>
+								<em>퍼싯 세척/교체</em>
+							</span>
+							<!-- S : 20230801 '알림받는 번호' 항목 추가 -->
+							<span class="col-xs-2">
+								<em class="disNone-pc s_tit">알림받는 번호</em>
+								<em>010-9876-5432</em>
+							</span>
+							<!-- E : 20230801 '알림받는 번호' 항목 추가 -->
+							<span class="col-xs-2">
+								<em class="disNone-pc s_tit">교체 일자</em>
+								<em>2023-12-12</em>
+							</span>
+							<span class="col-xs-2">
+								<em class="disNone-pc s_tit">다음 알림 예정일</em>
+								<em>2024-01-01</em>
+							 </span>
+							<!-- S : 20231023 '알림톡 ON/OFF' 항목 추가(Mobile) -->
+							<!-- Case2. 알림톡 OFF - button에 off 클래스 추가 -->
+							<span class="col-xs-2 moOnly">
+								<em class="disNone-pc s_tit">알림톡 ON / OFF</em>
+								<button type="button" class="btn_notifyTalk off">알림톡 재발송</button>
+							</span>
+							<!-- E : 20231023 '알림톡 ON/OFF' 항목 추가(Mobile) -->
+							<span class="col-xs-3">
+								<span class="order_btn_area">
+									<button type="button" class="bt-akl-blue" data-layer="pop_espring_notify_manage">수정</button>
+									<!-- <button type="button" class="bt-akl-white l_txt">알림톡 해제</button> --> <!-- 20231023 삭제 -->
+								</span>
+							</span>
+						</div>
+					</div>
+					<div class="shipping-list">
+						<div class="list-left">
+							<span>
+								<input id="remember7" type="checkbox" ng-checked="" title="홍길동1 필터 교체 2023-12-12 2024-01-01 선택">
+								<label for="remember7" class="normal inline-label checklabel"></label>
+							</span>
+						</div>
+						<div class="list-right">
+							<!-- S : 20231023 '알림톡 ON/OFF' 항목 추가 -->
+							<!-- Case1. 알림톡 ON -->
+							<span class="col-xs-2 pcOnly">
+								<em class="disNone-pc s_tit">알림톡 ON / OFF</em>
+								<button type="button" class="btn_notifyTalk">알림톡 해제</button>
+							</span>
+							<!-- E : 20231023 '알림톡 ON/OFF' 항목 추가 -->
+							<span class="col-xs-2">
+								<em class="disNone-pc s_tit">소비자 명</em>
+								<em>홍길동1</em>
+							</span>
+							<span class="col-xs-2">
+								<em class="disNone-pc s_tit">알림 항목</em>
+								<em>필터 교체</em>
+							</span>
+							<!-- S : 20230801 '알림받는 번호' 항목 추가 -->
+							<span class="col-xs-2">
+								<em class="disNone-pc s_tit">알림받는 번호</em>
+								<em>010-1234-5678</em>
+							</span>
+							<!-- E : 20230801 '알림받는 번호' 항목 추가 -->
+							<span class="col-xs-2">
+								<em class="disNone-pc s_tit">교체 일자</em>
+								<em>2023-12-12</em>
+							</span>
+							<span class="col-xs-2">
+								<em class="disNone-pc s_tit">다음 알림 예정일</em>
+								<em>2024-01-01</em>
+							 </span>
+							<!-- S : 20231023 '알림톡 ON/OFF' 항목 추가(Mobile) -->
+							<!-- Case1. 알림톡 ON -->
+							<span class="col-xs-2 moOnly">
+								<em class="disNone-pc s_tit">알림톡 ON / OFF</em>
+								<button type="button" class="btn_notifyTalk">알림톡 해제</button>
+							</span>
+							<!-- E : 20231023 '알림톡 ON/OFF' 항목 추가(Mobile) -->
+							<span class="col-xs-3">
+								<span class="order_btn_area">
+									<button type="button" class="bt-akl-blue" data-layer="pop_espring_notify_manage">수정</button>
+									<!-- <button type="button" class="bt-akl-white l_txt">알림톡 해제</button> --> <!-- 20231023 삭제 -->
+								</span>
+							</span>
+						</div>
+					</div>
+					<div class="shipping-list">
+						<div class="list-left">
+							<span>
+								<input id="remember8" type="checkbox" ng-checked="" title="홍길동1 퍼싯 세척/교체 2023-12-12 2024-01-01 선택">
+								<label for="remember8" class="normal inline-label checklabel"></label>
+							</span>
+						</div>
+						<div class="list-right">
+							<!-- S : 20231023 '알림톡 ON/OFF' 항목 추가 -->
+							<!-- Case1. 알림톡 ON -->
+							<span class="col-xs-2 pcOnly">
+								<em class="disNone-pc s_tit">알림톡 ON / OFF</em>
+								<button type="button" class="btn_notifyTalk">알림톡 해제</button>
+							</span>
+							<!-- E : 20231023 '알림톡 ON/OFF' 항목 추가 -->
+							<span class="col-xs-2">
+								<em class="disNone-pc s_tit">소비자 명</em>
+								<em>홍길동1</em>
+							</span>
+							<span class="col-xs-2">
+								<em class="disNone-pc s_tit">알림 항목</em>
+								<em>퍼싯 세척/교체</em>
+							</span>
+							<!-- S : 20230801 '알림받는 번호' 항목 추가 -->
+							<span class="col-xs-2">
+								<em class="disNone-pc s_tit">알림받는 번호</em>
+								<em>010-9876-5432</em>
+							</span>
+							<!-- E : 20230801 '알림받는 번호' 항목 추가 -->
+							<span class="col-xs-2">
+								<em class="disNone-pc s_tit">교체 일자</em>
+								<em>2023-12-12</em>
+							</span>
+							<span class="col-xs-2">
+								<em class="disNone-pc s_tit">다음 알림 예정일</em>
+								<em>2024-01-01</em>
+							 </span>
+							<!-- S : 20231023 '알림톡 ON/OFF' 항목 추가(Mobile) -->
+							<!-- Case1. 알림톡 ON -->
+							<span class="col-xs-2 moOnly">
+								<em class="disNone-pc s_tit">알림톡 ON / OFF</em>
+								<button type="button" class="btn_notifyTalk">알림톡 해제</button>
+							</span>
+							<!-- E : 20231023 '알림톡 ON/OFF' 항목 추가(Mobile) -->
+							<span class="col-xs-3">
+								<span class="order_btn_area">
+									<button type="button" class="bt-akl-blue" data-layer="pop_espring_notify_manage">수정</button>
+									<!-- <button type="button" class="bt-akl-white l_txt">알림톡 해제</button> --> <!-- 20231023 삭제 -->
+								</span>
+							</span>
+						</div>
+					</div>
+					<div class="shipping-list">
+						<div class="list-left">
+							<span>
+								<input id="remember9" type="checkbox" ng-checked="" title="김아무개 퍼싯 세척/교체 2023-12-12 2024-01-01 선택">
+								<label for="remember9" class="normal inline-label checklabel"></label>
+							</span>
+						</div>
+						<div class="list-right">
+							<!-- S : 20231023 '알림톡 ON/OFF' 항목 추가 -->
+							<!-- Case1. 알림톡 ON -->
+							<span class="col-xs-2 pcOnly">
+								<em class="disNone-pc s_tit">알림톡 ON / OFF</em>
+								<button type="button" class="btn_notifyTalk">알림톡 해제</button>
+							</span>
+							<!-- E : 20231023 '알림톡 ON/OFF' 항목 추가 -->
+							<span class="col-xs-2">
+								<em class="disNone-pc s_tit">소비자 명</em>
+								<em>김아무개</em>
+							</span>
+							<span class="col-xs-2">
+								<em class="disNone-pc s_tit">알림 항목</em>
+								<em>퍼싯 세척/교체</em>
+							</span>
+							<!-- S : 20230801 '알림받는 번호' 항목 추가 -->
+							<span class="col-xs-2">
+								<em class="disNone-pc s_tit">알림받는 번호</em>
+								<em>010-1234-5678</em>
+							</span>
+							<!-- E : 20230801 '알림받는 번호' 항목 추가 -->
+							<span class="col-xs-2">
+								<em class="disNone-pc s_tit">교체 일자</em>
+								<em>2023-12-12</em>
+							</span>
+							<span class="col-xs-2">
+								<em class="disNone-pc s_tit">다음 알림 예정일</em>
+								<em>2024-01-01</em>
+							 </span>
+							<!-- S : 20231023 '알림톡 ON/OFF' 항목 추가(Mobile) -->
+							<!-- Case1. 알림톡 ON -->
+							<span class="col-xs-2 moOnly">
+								<em class="disNone-pc s_tit">알림톡 ON / OFF</em>
+								<button type="button" class="btn_notifyTalk">알림톡 해제</button>
+							</span>
+							<!-- E : 20231023 '알림톡 ON/OFF' 항목 추가(Mobile) -->
+							<span class="col-xs-3">
+								<span class="order_btn_area">
+									<button type="button" class="bt-akl-blue" data-layer="pop_espring_notify_manage">수정</button>
+									<!-- <button type="button" class="bt-akl-white l_txt">알림톡 해제</button> --> <!-- 20231023 삭제 -->
+								</span>
+							</span>
+						</div>
+					</div>
+					<div class="shipping-list">
+						<div class="list-left">
+							<span>
+								<input id="remember10" type="checkbox" ng-checked="" title="홍길동1 필터 교체 2023-12-12 2024-01-01 선택">
+								<label for="remember10" class="normal inline-label checklabel"></label>
+							</span>
+						</div>
+						<div class="list-right">
+							<!-- S : 20231023 '알림톡 ON/OFF' 항목 추가 -->
+							<!-- Case2. 알림톡 OFF - button에 off 클래스 추가 -->
+							<span class="col-xs-2 pcOnly">
+								<em class="disNone-pc s_tit">알림톡 ON / OFF</em>
+								<button type="button" class="btn_notifyTalk off">알림톡 재발송</button>
+							</span>
+							<!-- E : 20231023 '알림톡 ON/OFF' 항목 추가 -->
+							<span class="col-xs-2">
+								<em class="disNone-pc s_tit">소비자 명</em>
+								<em>홍길동1</em>
+							</span>
+							<span class="col-xs-2">
+								<em class="disNone-pc s_tit">알림 항목</em>
+								<em>필터 교체</em>
+							</span>
+							<!-- S : 20230801 '알림받는 번호' 항목 추가 -->
+							<span class="col-xs-2">
+								<em class="disNone-pc s_tit">알림받는 번호</em>
+								<em>010-1234-5678</em>
+							</span>
+							<!-- E : 20230801 '알림받는 번호' 항목 추가 -->
+							<span class="col-xs-2">
+								<em class="disNone-pc s_tit">교체 일자</em>
+								<em>2023-12-12</em>
+							</span>
+							<span class="col-xs-2">
+								<em class="disNone-pc s_tit">다음 알림 예정일</em>
+								<em>2024-01-01</em>
+							 </span>
+							<!-- S : 20231023 '알림톡 ON/OFF' 항목 추가(Mobile) -->
+							<!-- Case2. 알림톡 OFF - button에 off 클래스 추가 -->
+							<span class="col-xs-2 moOnly">
+								<em class="disNone-pc s_tit">알림톡 ON / OFF</em>
+								<button type="button" class="btn_notifyTalk off">알림톡 재발송</button>
+							</span>
+							<!-- E : 20231023 '알림톡 ON/OFF' 항목 추가(Mobile) -->
+							<span class="col-xs-3">
+								<span class="order_btn_area">
+									<button type="button" class="bt-akl-blue" data-layer="pop_espring_notify_manage">수정</button>
+									<!-- <button type="button" class="bt-akl-white l_txt">알림톡 해제</button> --> <!-- 20231023 삭제 -->
+								</span>
+							</span>
+						</div>
+					</div>
+					<!--// 리스트 -->
+
+					<!-- S : 20230801 수정 -->
+					<!-- paging-->
+					<div class="paging-wrap">
+						<div class="paging">
+							<a href="#" class="prev">맨 처음 페이지</a>
+							<a href="#" class="before">이전 페이지</a>
+							<ul>
+								<li class="on"><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">5</a></li>
+								<li><a href="#">6</a></li>
+								<li><a href="#">7</a></li>
+								<li><a href="#">8</a></li>
+								<li><a href="#">9</a></li>
+								<li><a href="#">10</a></li>
+							</ul>
+							<a href="#" class="after">다음페이지</a>
+							<a href="#" class="next">맨 마지막 페이지</a>
+						</div>
+					</div>
+					<!--// paging-->
+
+					<div class="btn-group-type02 mb30">
+						<button type="button" class="bt-akl-blue" data-layer="pop_espring_notify_manage">새 알림톡 등록</button>
+					</div>
+					<!-- E : 20230801 수정 -->
+				</div>
+			</div>
+			<!-- //mp-tblist-container -->
+		</div>
+		<!-- //container-fluid -->
+
+		<div id="quick"></div>
+		<div id="footer"></div>
+	</main>
+
+	<div id="loadLayer1"></div>
+
+	<script>
+		$(function () {
+			// 레이어 오픈 함수 호출
+			AMWAY.callLayer();
+		});
+
+		$('#loadLayer1').load( '/_ui/responsive/html/include/pop_espring_notify_manage.html'); // 알림톡 관리 팝업
+	</script>
+<!-- E : 20230718 이스프링 케어 알림톡 관리 서비스 -->
+</body>
+
+</html>

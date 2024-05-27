@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<title>컴플라이언스 센터 | ABN Korea</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords">
+	<meta name="description" content="NY Fee Bundle">
+	<meta name="robots" content="index,follow">
+
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-lib.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/sprint.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-customer.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-shop.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-sop.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-account.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-business.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-product.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-brand.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common-v2.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common-new-v2.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-product-renewal.css">
+
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.datepicker.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/owl.carousel.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/isotope.pkgd.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/select2.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/new.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.raty.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_contents.js"></script>
+
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_component.js"></script>
+</head>
+
+<body class="akl new-v2 page-message-center">
+	<!-- skipToContent -->
+	<div id="skipToContent">
+		<a href="#contents">콘텐츠 바로가기 </a>
+	</div>
+	<!-- //skipToContent -->
+
+	<main>
+		<div id="header"></div>
+		<div class="sub-nav-section">
+			<div class="inner">
+				<ol class="breadcrumb">
+					<li><a href="/main">홈</a></li>
+					<li><a href="/my-account">마이페이지</a></li>
+					<li><a href="/my-account/update-profile">회원정보 관리</a></li>
+					<li class="active">맞춤메시지</li>
+				</ol>
+				<div class="locationBox">
+					<ul id="locationBoxList">
+						<li data-taggingid="개인정보 수정"><a href="/my-account/update-profile">개인정보 수정</a></li>
+						<li class="active" data-taggingid="맞춤메시지"><a href="/message-center">맞춤메시지</a></li>
+						<li data-taggingid="맞춤쪽지"><a href="/external/customLetter"
+								onclick="ACC.common.callAcademyPagePopup(this,'noteSend')     ; return false"
+								target="_blank" rel="noopener noreferrer">맞춤쪽지</a></li>
+						<li data-taggingid="ABO 등록증/수첩 재발송"><a href="/my-account/resend-handbook">ABO 등록증/수첩 재발송</a>
+						</li>
+						<li data-taggingid="메뉴잠금 설정"><a href="/my-account/menulock">메뉴잠금 설정</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- <div class="container-fluid main-container" id="contents">
+			<div class="print-hide breadcrumb-section">
+				<ol class="breadcrumb">
+					<li><a href="#">홈</a></li>
+					<li><a href="my-account.html">마이 페이지</a></li>
+					<li>맞춤메시지</li>
+				</ol>
+			</div>
+		</div> -->
+
+		<!-- container-fluid -->
+		<div class="container-fluid main-container" id="message-centers">
+			<!-- 사용안함
+			<h1 class="page-title">Message Center</h1>
+			<div class="message-title">
+				<div class="notice">15 total messages</div>
+				<div>Type of Messages: <b>All</b><span class="line">|</span>Unread</div>
+			</div> -->
+
+			<div class="row amway-theme message-center-wrapper">
+				<h1 class="icon-sub-title message-title">맞춤메시지 </h1>
+
+				<p class="messages-numb">읽지않음 : <a href="#">3</a>개 / 총 : <a href="#">999</a>개 </p>
+				<!-- 수정 : 2018.04.24 (추가) -->
+				<p class="messages-numb"><span class="color-blue-sky">OOO</span> (으)로 10개의 메시지가 검색되었습니다.</p>
+				<p class="messages-numb"><span class="color-blue-sky">OOO</span> (으)로 검색된 메시지가 없습니다.</p>
+				<!-- //수정 : 2018.04.24 (추가) -->
+
+				<div class="form-s">
+					<input type="text" class="input-st" placeholder="제목, 내용을 입력하세요" value="" title="검색어 입력">
+					<button type="submit" class="btn btn-primary"><span class="hidden-sm hidden-xs">검색</span></button>
+				</div>
+
+				<!-- 사용안함
+				<div class="order-history-search-wrapper row col-md-8 col-sm-12 ">
+					<div class="hidden-md hidden-lg toggle-buttons-container row">
+						<button class="col-sm-6 js-order-history-filters"> <span class="icon-Humburger_list"></span><span>Category</span> </button>
+						<button class="col-sm-6 js-order-history-search"> <span class="icon-search"></span> <span>Search</span> </button>
+					</div>
+					<div class="left-search-filter">
+						<div class="form-wrapper search-form-wrapper  hidden-sm hidden-xs js-search-form-wrapper">
+							<div class="search-label hidden-xs hidden-sm">Search</div>
+							<form id="searchForm" action="" method="POST">
+								<input id="searchData" name="searchData" placeholder="" type="text" value="">
+								<button class="btn-blue-white" type="submit">
+									<span class="hidden-sm hidden-xs"> Search</span>
+									<span class="icon-search hidden-md hidden-lg"></span>
+								</button>
+
+							</form>
+						</div>
+						<div class="form-wrapper  hidden-sm hidden-xs filter-form-wrapper js-filter-form-wrapper">
+							<div class="search-label hidden-xs hidden-sm">Sort By</div>
+							<form id="filterForm" action="" method="POST">
+								<select id="question-select2" name="type" class="form-control no-uppercase-form-control width185" tabindex="-1" aria-hidden="true">
+									<option value="date">Date</option>
+									<option value="Name">Title</option>
+								</select>
+								<button class="btn-blue-white" type="submit"><span>Apply</span></button>
+							</form>
+						</div>
+					</div>
+				</div>
+
+				<div class="row delete-message col-md-4 col-xs-12">
+					<button class="btn-blue-white">Delete Message</button>
+				</div>
+				-->
+			</div>
+
+			<div id="message-center-list" class="amway-theme message-center-list container">
+				<div class="shipping-top">
+					<p><button type="button" class="link-btn">선택 메시지 삭제</button></p>
+				</div>
+
+				<div class="tbl-list-board tbl-customMessage">
+					<div class="thead">
+						<div class="tr">
+							<strong class="cell-label">
+								<label class="amw-checkbox-wrap all-ak-check" for="select_all">
+									<input type="checkbox" id="select_all"
+										class="amw-global-checkbox js-list-selectall-checkbox" title="전체선택">
+									<span class="amw-checkbox-overlay"></span>
+								</label>
+							</strong>
+							<!-- <strong class="mob-hide cell-num">번호</strong> 2018.04.12 제거 -->
+							<strong class="mob-hide cell-confirm">확인</strong>
+							<strong class="mob-hide cell-date">수신일</strong>
+							<strong class="mob-block cell-title">제목</strong>
+						</div>
+					</div>
+					<div class="tbody">
+						<div class="tr no-result">
+							<div class="search-no-result">등록된 맞춤메시지가 없습니다.</div>
+						</div>
+
+						<!-- 2021-03-02 상단 고정 메시지일 경우 -->
+						<div class="tr state-fixed state-notyet">
+							<!-- .state-notyet 미확인 시 -->
+							<div class="cell-label">
+								<span class="fixed-icon">
+									<span class="hidden">고정 메시지</span>
+								</span>
+							</div>
+							<!-- <div class="cell-num mob-hide">3224224</div> 2018.04.12 제거 -->
+							<div class="cell-confirm"><em class="ico-message-not-read">미확인</em></div>
+							<!-- .ico-message-not-read 미확인 시 -->
+							<div class="cell-date">2021-03-02(화)</div>
+							<div class="cell-title mob-block"><a href="#">신규 ABO 후원 장려 캠페인</a></div>
+						</div>
+						<!-- // 2021-03-02 상단 고정 메시지일 경우 .state-fixed 추가 -->
+						<div class="tr ">
+							<!-- .state-notyet 미확인 시 -->
+							<div class="cell-label">
+								<label class="amw-checkbox-wrap" for="select001">
+									<input type="checkbox" id="select001" class="amw-global-checkbox" title="선택">
+									<span class="amw-checkbox-overlay"></span>
+								</label>
+							</div>
+							<!-- <div class="cell-num mob-hide">3224224</div> 2018.04.12 제거 -->
+							<div class="cell-confirm"><em class="ico-message-not-read">미확인</em></div>
+							<!-- .ico-message-not-read 미확인 시 -->
+							<div class="cell-date">2018-01-05(월)</div>
+							<div class="cell-title mob-block"><a href="#">제목 영역입니다제목 영역입니다제목 영역입니다</a></div>
+						</div>
+
+						<!-- 미확인 메시지 -->
+						<div class="tr state-notyet">
+							<!-- .state-notyet 미확인 시 -->
+							<div class="cell-label">
+								<label class="amw-checkbox-wrap" for="select001">
+									<input type="checkbox" id="select001" class="amw-global-checkbox" title="선택">
+									<span class="amw-checkbox-overlay"></span>
+								</label>
+							</div>
+							<!-- <div class="cell-num mob-hide">3224224</div> 2018.04.12 제거 -->
+							<div class="cell-confirm"><em class="ico-message-not-read">미확인</em></div>
+							<!-- .ico-message-not-read 미확인 시 -->
+							<div class="cell-date">2018-01-05(월)</div>
+							<div class="cell-title mob-block"><a href="#">제목 영역입니다제목 영역입니다제목 영역입니다</a></div>
+						</div>
+						<div class="tr state-notyet">
+							<!-- .state-notyet 미확인 시 -->
+							<div class="cell-label">
+								<label class="amw-checkbox-wrap" for="select001">
+									<input type="checkbox" id="select001" class="amw-global-checkbox" title="선택">
+									<span class="amw-checkbox-overlay"></span>
+								</label>
+							</div>
+							<!-- <div class="cell-num mob-hide">3224224</div> 2018.04.12 제거 -->
+							<div class="cell-confirm"><em class="ico-message-not-read">미확인</em></div>
+							<!-- .ico-message-not-read 미확인 시 -->
+							<div class="cell-date">2018-01-05(월)</div>
+							<div class="cell-title mob-block"><a href="#">제목 영역입니다제목 영역입니다제목 영역입니다</a></div>
+						</div>
+
+						<!-- 확인 메시지 -->
+						<div class="tr">
+							<div class="cell-label">
+								<label class="amw-checkbox-wrap" for="select001">
+									<input type="checkbox" id="select001" class="amw-global-checkbox" title="선택">
+									<span class="amw-checkbox-overlay"></span>
+								</label>
+							</div>
+							<!-- <div class="cell-num mob-hide">3224224</div> 2018.04.12 제거 -->
+							<div class="cell-confirm"><em class="ico-message-read">확인</em></div>
+							<!-- .ico-message-read 확인 시 -->
+							<div class="cell-date">2018-01-05(월)</div>
+							<div class="cell-title mob-block"><a href="#">제목 영역입니다 제목 영역입니다제목 영역입니다</a></div>
+						</div>
+					</div>
+				</div>
+
+				<!-- paging-->
+				<div class="paging-wrap">
+					<div class="paging">
+						<a href="#" class="prev">맨 처음 페이지</a>
+						<a href="#" class="before">이전 페이지</a>
+						<ul>
+							<li><a href="#">1</a></li>
+							<li class="on"><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+						</ul>
+						<a href="#" class="after">다음페이지</a>
+						<a href="#" class="next">맨 마지막 페이지</a>
+					</div>
+				</div>
+				<!-- //paging -->
+
+				<ul class="list-type2 tline">
+					<li>수신된 맞춤메시지는 2년간 보관됩니다.</li>
+					<li>더욱 자세한 문의는 한국암웨이 고객센터 <a href="tel:1588-0080" class="type-tel">1588-0080</a> 으로 문의 바랍니다.</li>
+				</ul>
+
+
+				<!-- 사용안함 (구조가 다름)
+				<div class="row message-center-list-title">
+					<div class="col-xs-1">
+						<label class="amw-checkbox-wrap">
+							<input id="selectAllMessage" type="checkbox" class="amw-global-checkbox js-list-selectall-checkbox">
+							<span class="amw-checkbox-overlay"></span>
+						</label>
+					</div>
+					<div class="col-xs-9">
+						Title
+					</div>
+					<div class="col-xs-2 date">
+						Date
+					</div>
+				</div>
+				<div class="row message-center-list-row">
+					<div class="col-xs-1 message-select-box">
+						<label class="amw-checkbox-wrap">
+							<input id="select1" type="checkbox" class="amw-global-checkbox js-list-selectall-checkbox">
+							<span class="amw-checkbox-overlay"></span>
+						</label>
+					</div>
+					<div class="col-xs-9">
+						<a>February End-of-Month Customer Service Hours</a>
+					</div>
+					<div class="col-xs-2 date">
+						21/02/2018 - 12:00pm
+					</div>
+					<div class="pop-style-one"></div>
+				</div>
+				<div class="row message-center-list-row">
+					<div class="col-xs-1 message-select-box">
+						<label class="amw-checkbox-wrap">
+							<input id="select2" type="checkbox" class="amw-global-checkbox js-list-selectall-checkbox">
+							<span class="amw-checkbox-overlay"></span>
+						</label>
+					</div>
+					<div class="col-xs-9">
+						<a>What’s Trending Now?</a>
+					</div>
+					<div class="col-xs-2 date">
+						21/02/2018 - 12:00pm
+					</div>
+					<div class="pop-style-two"></div>
+				</div>
+				<div class="row message-center-list-row">
+					<div class="col-xs-1 message-select-box">
+						<label class="amw-checkbox-wrap">
+							<input id="select3" type="checkbox" class="amw-global-checkbox js-list-selectall-checkbox">
+							<span class="amw-checkbox-overlay"></span>
+						</label>
+					</div>
+					<div class="col-xs-9">
+						<a>Your Credit Card Will Expire in 30 Days</a>
+					</div>
+					<div class="col-xs-2 date">
+						21/02/2018 - 12:00pm
+					</div>
+				</div>
+				<div class="row message-center-list-row">
+					<div class="col-xs-1 message-select-box">
+						<label class="amw-checkbox-wrap">
+							<input id="select4" type="checkbox" class="amw-global-checkbox js-list-selectall-checkbox">
+							<span class="amw-checkbox-overlay"></span>
+						</label>
+					</div>
+					<div class="col-xs-9">
+						<a>Limited Time Offer - Earn Extra PV/BV!</a>
+					</div>
+					<div class="col-xs-2 date">
+						21/02/2018 - 12:00pm
+					</div>
+				</div>
+				<div class="row message-center-list-row">
+					<div class="col-xs-1 message-select-box">
+						<label class="amw-checkbox-wrap">
+							<input id="select5" type="checkbox" class="amw-global-checkbox js-list-selectall-checkbox">
+							<span class="amw-checkbox-overlay"></span>
+						</label>
+					</div>
+					<div class="col-xs-9">
+						<a>Don’t Forget to Sign and Return your Silver Producer Acknowledgment</a>
+					</div>
+					<div class="col-xs-2 date">
+						21/02/2018 - 12:00pm
+					</div>
+				</div>
+				<div class="row message-center-list-row">
+					<div class="col-xs-1 message-select-box">
+						<label class="amw-checkbox-wrap">
+							<input id="select6" type="checkbox" class="amw-global-checkbox js-list-selectall-checkbox">
+							<span class="amw-checkbox-overlay"></span>
+						</label>
+					</div>
+					<div class="col-xs-9">
+						<a>Privacy Warning</a>
+					</div>
+					<div class="col-xs-2 date">
+						21/02/2018 - 12:00pm
+					</div>
+				</div>
+				<div class="row message-center-list-row">
+					<div class="col-xs-1 message-select-box">
+						<label class="amw-checkbox-wrap">
+							<input id="select7" type="checkbox" class="amw-global-checkbox js-list-selectall-checkbox">
+							<span class="amw-checkbox-overlay"></span>
+						</label>
+					</div>
+					<div class="col-xs-9">
+						<a>January End-of-Month Customer Service Hours</a>
+					</div>
+					<div class="col-xs-2 date">
+						21/02/2018 - 12:00pm
+					</div>
+				</div>
+				<div class="row message-center-list-row">
+					<div class="col-xs-1 message-select-box">
+						<label class="amw-checkbox-wrap">
+							<input id="select8" type="checkbox" class="amw-global-checkbox js-list-selectall-checkbox">
+							<span class="amw-checkbox-overlay"></span>
+						</label>
+					</div>
+					<div class="col-xs-9">
+						<a>Get Started Strong with New IBO Training Videos</a>
+					</div>
+					<div class="col-xs-2 date">
+						21/02/2018 - 12:00pm
+					</div>
+				</div>
+				<div class="row message-center-list-row">
+					<div class="col-xs-1 message-select-box">
+						<label class="amw-checkbox-wrap">
+							<input id="select9" type="checkbox" class="amw-global-checkbox js-list-selectall-checkbox">
+							<span class="amw-checkbox-overlay"></span>
+						</label>
+					</div>
+					<div class="col-xs-9">
+						<a>What’s Trending Now?</a>
+					</div>
+					<div class="col-xs-2 date">
+						21/02/2018 - 12:00pm
+					</div>
+				</div>
+				<div class="row message-center-list-row">
+					<div class="col-xs-1 message-select-box">
+						<label class="amw-checkbox-wrap">
+							<input id="select10" type="checkbox" class="amw-global-checkbox js-list-selectall-checkbox">
+							<span class="amw-checkbox-overlay"></span>
+						</label>
+					</div>
+					<div class="col-xs-9">
+					<a> Missing Information Notification</a>
+					</div>
+					<div class="col-xs-2 date">
+						21/02/2018 - 12:00pm
+					</div>
+				</div>
+				<div class="account-orderhistory-pagination">
+				?/////////////////
+
+
+
+
+					<p class="text-center">
+						<button type="button" id="show-more" class="btn btn-link show-more-orders js-show-more-personal"><span>View More Messages</span>
+							<span class="icon icon-arrow-dropdown"></span>
+						</button>
+					</p>
+				</div>
+				-->
+			</div>
+		</div>
+		<!-- //container-fluid -->
+
+		<div id="quick"></div>
+		<div id="footer"></div>
+	</main>
+
+</body>
+
+</html>

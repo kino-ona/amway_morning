@@ -1,0 +1,1038 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Amway BOS Publishing Guide</title>
+<style type="text/css">
+	* {margin:0; padding:0;}
+	html {overflow-y:scroll;}
+	body {padding: 8px; color:#666; font:12px/1.5 Malgun Gothic, Tahoma, Sans-serif; word-break:break-all}
+	a {color:#27e; }
+	a:focus, a:hover, a:active {text-decoration:underline5;}
+	.header {position: fixed; width: 100%; height: 140px; padding: 8px;background: #fff;  border-bottom: 1px solid #ccc;  box-sizing: border-box; top: 0; left: 0; font:12px/1.5 Malgun Gothic, Tahoma, Sans-serif; z-index: 10}
+	.header h1 {height: 40px; line-height: 40px; border: 2px solid #ccc; color:#444; font-size:2em; text-align: center; }
+	.header h1 strong {font-size:70%;}
+	.header .nav {list-style:none; background:#969696; padding:0.5em 0.5em 0.2em; color:#f9f9f9; font-2017-07-24weight:bold; font-size:1.1em;}
+	.header .nav li {display:inline; margin-right:0.5em;}
+	.header .nav li a {color:#f9f9f9;}
+	.header .nav li a.on {color:#fff !important; border-bottom:2px solid #3e3e3e; text-shadow:#7c7c7c 2px 1px 2px; text-decoration:none; font-size:105%;}
+	.header .nav-otherlink {list-style:none; text-align:right; padding:0.5em 0.5em 0.2em; color:#969696; font-size:1em;}
+	.header .nav-otherlink li {display:inline;}
+	.header .nav-otherlink li a {color:#969696; font-weight:bold;}
+	.header .nav-otherlink li a.on {color:#3e3e3e;}
+	.header .nav-otherlink li a.on:before {content:'→'; font-size:0.9em;}
+	.rule {background:#f7f7f7; margin:0 0.8em 2em; padding:0.5em; font-size:95%;}
+	.rule dt {margin-bottom:0.3em; font-weight:bold;}
+	.rule dd {padding-left:0.5em;}
+	.rule dd ul {list-style-type:square; margin-left:1.2em;}
+	.progress {height: 24px; line-height:<!-- 2017.06.21  24px;background: #fafafa; border: 2px solid #eee; border-top: 0 none; }
+	.progress .total{ float: right ; width: 50%; border-left: 1px solid #eee;font-size:11px; font-weight:bold; color:#666; text-align: center; box-sizing: border-box; }
+	.progress .total_D{ float: left; width: 50%;  font-size:11px; font-weight:bold; colro:#666; text-align: center;  }
+	.guide_txt {float: right; margin-top: 33px; font-size:11px; font-weight:bold; color:#666; text-align:right;}
+	.togglebtn{padding:2px 5px; margin:0; background:#000; border:0; border-radius:3px; color:#f2f2f2; font:bold 11px/1.5 Malgun Gothic, Tahoma, Sans-serif; cursor:pointer; text-decoration:none;vertical-align: middle;}
+	.noneHideBtn,
+	.noneHideBtn:hover,
+	.showHideBtn,
+	.showHideBtn:hover {padding:2px 8px; margin:0; background:#ab1111; border:0; border-radius:3px; font:bold 11px/1.5 Malgun Gothic, Tahoma, Sans-serif; cursor:pointer; text-decoration:none; }
+	.noneHideBtn,
+	.showHideBtn { color: #fff; }
+	.noneHideBtn:hover,
+	.showHideBtn:hover { color: #000; }
+	.body {margin-top: 150px; padding-bottom:1em;}
+	.section .title {position: relative;}
+	.section .title:after { content:"▼"; position:absolute; right:20px; top:5px; z-index:10000; color:#fff }
+	.section .title {  margin:0; padding:0.5em; background-color:#6b7178; color:#fff; font-weight:bold; font-size:100%; margin-top:-1px; position:relative; *zoom:1; cursor:pointer;}
+	.section {margin-top:10px; }
+	.section .title_toggle {margin:0; padding:0 0 6px 0;  color:#000; font-weight:bold; font-size:100%; margin-top:-1px; position:relative; *zoom:1;}
+	.section .content { display: none; }
+	.section.open .content { display:block; }
+	.section.open .title{ background: #014286; }
+	.section.open .title:after { content:"▲";  }
+
+	.section table {width:100%; border-collapse:collapse; border-spacing:0; border:0; table-layout:fixed;}
+	.section table caption {display:none;}
+	.section table th {color:#333; background-color:#f1f1f1; font-size:11px; text-align:center;}
+	.section table td {text-align:left;/* text-overflow: ellipsis; overflow: hidden; white-space: norwap; */}
+	.section table th, table td {padding:0.3em; border:1px solid #ddd; }
+	.section table td.tit {color:#333; font-weight:bold;}
+	.section table td.file {color:#aaa;}
+	.section table td.date {text-align:center; font-style:italic; white-space:nowrap;}
+	.section table td.date del {display:block; color:#aaa !important;}
+	.section table td.stat , .section table td.statD{text-align:center; font-family:Gulim;}
+	 .statD{color: #41a919}
+	 .stat {color: #5da9dd}
+	.section table td.desc, .section table td.note, .section table td.history {font-style:italic; color:#777; font-size:11px;}
+	.section table td.author {text-align:center; white-space:nowrap;}
+	.section table td ul {list-style:none; margin:0; padding:0 10px; font-style:italic;}
+	.section table td em {color:#c82026;}
+	.section table td em.blue {color:#69f;}
+	.section table tr.overcoloring {background:#fafafa !important;}
+	.section table tr.today {background:#fcf7bd;}
+	.section table tr.today .date {color:#444;}
+	.section table td.history-jira {font-style:italic; font-size:11px;}
+	.section table td.history-jira a {color:#3b73af; font-weight:bold;}
+	.section table td.history ul li:before, .section table td.history-jira ul li:before {content:'- ';}
+	.section table .taCenter{text-align:center !important}
+	table td span.red {color:red} /* 추가 수정*/
+	.brbottom1 td{border-bottom: 1px solid #bebebe; }
+	.brbottom2 {border-bottom: 2px solid #aaa; }
+	.btn-top { display:block; background:#000; color:#fff; text-align:center; padding:10px; font-weight:bold}
+	td.note p:nth-of-type(odd) { color:#0760a4}
+	td.note p:nth-of-type(even) { color:#8a5bab}
+	td.note p:nth-of-type(odd) b{ color:#5ea519}
+	td.note p:nth-of-type(even) b{ color:#dc8027}
+	.section table td ul.modify-date { padding: 0}
+	.modify-date li:nth-of-type(1){ color:#119f22}
+	.modify-date li:nth-of-type(2){ color:#157ef5}
+	.modify-date li:nth-of-type(3){ color:#c660d5}
+	.modify-date li:nth-of-type(4){ color:#d5a860}
+	.modify-date li:nth-of-type(5n+1){ color:#119f22}
+	.link-btn1 { display:inline-block; padding:0 5px; height:20px; line-height:18px; vertical-align: middle; text-decoration: none; color:#fff; background: #8c429c; border-radius:3px;}
+	.link-btn2 { display:inline-block; padding:0 5px; height:20px; line-height:18px; vertical-align: middle; text-decoration: none; color:#fff; background: #1f85bf; border-radius:3px;}
+	.link-btn3 { display:inline-block; padding:0 10px; height:20px; line-height:18px; vertical-align: middle; text-decoration: none; color:#fff; background: #074f99; border-radius:3px;}
+
+	/* .owner {background:#c5dcf7;} */
+	.owner span{position:relative;display:inline-block;width:43px; padding-left:7px;}
+	.owner span:before {content:'/'; position:absolute; top:0; left:0; color:#eee;}
+	.owner span:first-child:before{content:'';padding-left:0;}
+	th.owner span {width:auto; padding:0 8px;}
+	th.owner span:before {color:#666;}
+	.partPlan{}
+	.partDesign{}
+	.partPub{}
+</style>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript">
+	jQuery.fn.stat = function (options) {
+		var settings = jQuery.extend({
+				total: '.total',
+				toggleBtn: '.togglebtn',
+				title: 'h2.title',
+				content: 'div.content',
+				files: 'tbody tr',
+				stat: 'td.stat',
+				completed: '●',
+				index: 0,
+				openAll: true
+			}, options),
+			all_sections = this;
+		return this.each(function () {
+			var self = this,
+				$self = $(self),
+				title_text = [],
+				completed = 0;
+			self.section_title = $(settings.title, $self);
+			self.content = $(settings.content, $self);
+			self.files = $(settings.files, $self);
+			self.files.each(function () {
+				var stat = $(settings.stat, this);
+				stat.each(function () {
+					var text = $(this).text();
+					if (text && (text === settings.completed)) {
+						completed++;
+					}
+				});
+			});
+			title_text = [self.section_title.text(), ' (퍼블 진행상황: ',completed,'/',self.files.length,' / '];
+			self.section_title.text(title_text.join(''));
+			self.section_title.click(function() {
+				self.content.slideToggle(450);
+
+				//수정: 2018.03.13
+				var findParent = $(this).parent();
+				findParent.siblings().removeClass('open');
+				findParent.addClass('open');
+			});
+			$(settings.toggleBtn).text('전체열기').toggle(function() {
+				$(settings.toggleBtn).text('전체닫기');
+				$(settings.content).show();
+			}, function() {
+				$(settings.toggleBtn).text('전체열기');
+				$(settings.content).hide();
+			});
+
+
+			//total
+			var completedAll = 0;
+			$(settings.stat).each(function () {
+				var text = $(this).text();
+				if (text && (text == settings.completed)) {
+					completedAll++;
+				}
+			});
+			$(settings.total).text('검수 진행률 : '+completedAll+'/'+$(settings.files).length+'pages (전체진행율'+Math.round(completedAll/$(settings.files).length*100)+'%)');
+
+		});
+	};
+
+	jQuery.fn.statD = function (options) {
+		var settings = jQuery.extend({
+				total_D: '.total_D',
+				toggleBtn: '.togglebtn',
+				title: 'h2.title',
+				content: 'div.content',
+				files: 'tbody tr',
+				statD: 'td.statD',
+				completed: '●',
+				index: 0,
+				openAll: true
+			}, options),
+			all_sections = this;
+		return this.each(function () {
+			var self = this,
+				$self = $(self),
+				title_text = [],
+				completed = 0;
+			self.section_title = $(settings.title, $self);
+			self.content = $(settings.content, $self);
+			self.files = $(settings.files, $self);
+			self.files.each(function () {
+				var statD = $(settings.statD, this);
+				statD.each(function () {
+					var text = $(this).text();
+					if (text && (text === settings.completed)) {
+						completed++;
+					}
+				});
+			});
+			title_text = [self.section_title.text(), ' 검수 진행상황: ',completed,'/',self.files.length,')'];
+			self.section_title.text(title_text.join(''));
+
+
+			//total
+			var completedAll_D = 0;
+			$(settings.statD).each(function () {
+				var text = $(this).text();
+				if (text && (text == settings.completed)) {
+					completedAll_D++;
+				}
+			});
+			$(settings.total_D).text('퍼블리싱 진행율 : '+completedAll_D+'/'+$(settings.files).length+'pages (전체진행율'+Math.round(completedAll_D/$(settings.files).length*100)+'%)');
+
+		});
+	};
+
+	$(document).ready(function () {
+		$('div.section').stat();
+		$('div.section').statD();
+
+		//over-coloring
+		$('div.section tbody tr').mouseover(function() {
+			$(this).addClass('overcoloring');
+		}).mouseout(function() {
+			$(this).removeClass('overcoloring');
+		});
+		$('.showHideBtn').hide();
+
+		$('a.noneHideBtn').click(function () {
+			$('.none').hide();
+			$('.showHideBtn').show();
+			$('.noneHideBtn').hide();
+		});
+
+		$('a.showHideBtn').click(function () {
+			$('.none').show();
+			$('.showHideBtn').hide();
+			$('.noneHideBtn').show();
+		});
+
+		/* 수정: 2018.03.13 (self.section_title 이동)
+		$('.section .title').click(function(){
+			var findParent = $(this).parent('.section');
+
+			$(this).parent('.section').addClass('open');
+			$(findParent).siblings().removeClass('open');
+		}); */
+
+		// to top
+		var scrollDiv = document.createElement('div');
+		$(scrollDiv).attr('id', 'toTop').html('<a href="#nohref" class="btn-top"> ↑ 처음으로 이동 </a>').appendTo('body');
+		$(window).scroll(function(){
+			if ($(this).scrollTop() != 0) {
+				$('#toTop').fadeIn();
+			} else {
+				$('#toTop').fadeOut();
+			}
+		});
+		$('#toTop').click(function(){
+			$('body,html').animate({scrollTop: 0}, 'fast');
+			return false;
+		});
+		$('.overlay').click(function(){
+			$('.dNotice').hide(200); $('.overlay').fadeOut();
+		});
+	});
+
+</script>
+</head>
+<body>
+<div class="header">
+	<h1>:: Amway BOS Publishing Guide   ::</h1>
+	<div class="progress">
+		<p class="total_D"></p>
+		<p class="total"></p>
+	</div>
+
+	<p class="guide_txt">△ : 대기 / ○ : 부분완료 /  <span class="statD">● </span>: 퍼블리싱 완료 / <span class="stat">● </span>: 검수 완료&nbsp;&nbsp;
+
+	<div class="section" style="margin-top: 30px;">
+		<div class="title_toggle">
+			<button class="togglebtn" type="button"></button>
+			<a href="publishing_guide_pos.html" class="link-btn3">bos</a>
+		</div>
+
+	</div>
+</div>
+<div class="body">
+<!-- BOS -->
+	<div class="section open">
+		<h2 class="title">BOS</h2>
+		<div class="content">
+			<table border="1">
+				 <colgroup>
+					<col width="8%" /><col width="10%" />
+					<col width="12%" /><col width="12%" /><col width="10%" /><col width="6%" /><col width="5%" /><col width="5%" />
+					<col width="5%" /><col width="9%" /><col width="8%" /><col width="*" />
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="col">1depth</th>
+						<th scope="col">2depth</th>
+						<th scope="col">3depth</th>
+						<th scope="col">화면Lv.1</th>
+						<th scope="col">화면Lv.2</th>
+						<th scope="col">File Name(html)</th>
+						<th scope="col">Chrome</th>
+						<th scope="col" title="△ :대기 / ○ :부분완료 / ● :완료">Publishing tatus</th>
+						<th scope="col">Check Status</th>
+						<th scope="col" class="owner"><div>담당자</div><div><span class="partPlan">기획</span><span class="partDesign">디자인</span><span class="partPub">퍼블</span></div></th>
+						<th scope="col">complete date / modify Date</th>
+						<th scope="col">note</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="tit">로그인</td>
+						<td>로그인</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/U40001.html" target="_blank">U40001.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.04</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit">회원관리</td>
+						<td>회원정보조회</td>
+						<td>조회 유형 선택 화면</td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/U10000.html" target="_blank">U10000.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.04</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td>회원정보조회</td>
+						<td>목록</td>
+						<td></td>
+						<td class="file"><a href="/html/U10001.html" target="_blank">U10001.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.07</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>상세</td>
+						<td></td>
+						<td class="file"><a href="/html/U10002.html" target="_blank">U10002.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.09</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>개인정보등록/수정</td>
+						<td></td>
+						<td class="file"><a href="/html/U10001_lp.html" target="_blank">U10001_lp.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.10</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>부사업자정보 수정</td>
+						<td></td>
+						<td class="file"><a href="/html/U10002a_lp.html" target="_blank">U10002a_lp.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.10</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>부사업자정보 수정(외국인)</td>
+						<td></td>
+						<td class="file"><a href="/html/U10002b_lp.html" target="_blank">U10002b_lp.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.10</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>주소찾기</td>
+						<td></td>
+						<td class="file"><a href="/html/U10003_lp.html" target="_blank">U10003_lp.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.10</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>주사업자등록/수정</td>
+						<td></td>
+						<td class="file"><a href="/html/U10004a_lp.html" target="_blank">U10004a_lp.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.11</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>부사업자등록/수정</td>
+						<td></td>
+						<td class="file"><a href="/html/U10004b_lp.html" target="_blank">U10004b_lp.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.11</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>상속등록/수정</td>
+						<td></td>
+						<td class="file"><a href="/html/U10005_lp.html" target="_blank">U10005_lp.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.11</td>
+						<td class="note"></td>
+					</tr>
+					<!-- <tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>후원자조회및선택</td>
+						<td></td>
+						<td class="file"><a href="/html/U10006_lp.html" target="_blank">U10006_lp.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.00</td>
+						<td class="note"></td>
+					</tr> -->
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>보너스계좌등록/변경</td>
+						<td></td>
+						<td class="file"><a href="/html/U10007_lp.html" target="_blank">U10007_lp.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.11</td>
+						<td class="note"></td>
+					</tr>
+					<!-- <tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>보탈퇴사유 등록</td>
+						<td></td>
+						<td class="file"><a href="/html/U10008_lp.html" target="_blank">U10008_lp.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.00</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>배우자이력조회</td>
+						<td></td>
+						<td class="file"><a href="/html/U10009_lp.html" target="_blank">U10009_lp.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.00</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>배우자(외국인)이력조회</td>
+						<td></td>
+						<td class="file"><a href="/html/U10010_lp.html" target="_blank">U10010_lp.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.00</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>PIN Level변경이력조회</td>
+						<td></td>
+						<td class="file"><a href="/html/U10011_lp.html" target="_blank">U10011_lp.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.00</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>후원자변경이력조회</td>
+						<td></td>
+						<td class="file"><a href="/html/U10012_lp.html" target="_blank">U10012_lp.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.00</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>AP사용이력조회</td>
+						<td></td>
+						<td class="file"><a href="/html/U10013_lp.html" target="_blank">U10013_lp.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.00</td>
+						<td class="note"></td>
+					</tr> -->
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>사업자변경이력조회</td>
+						<td></td>
+						<td class="file"><a href="/html/U10014_lp.html" target="_blank">U10014_lp.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.14</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>A/O AND B/O 제한 등록/해지</td>
+						<td></td>
+						<td class="file"><a href="/html/U10015_lp.html" target="_blank">U10015_lp.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.14</td>
+						<td class="note"></td>
+					</tr>
+					<!-- <tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>은행계좌지불 제한</td>
+						<td></td>
+						<td class="file"><a href="/html/U10016_lp.html" target="_blank">U10016_lp.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.00</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>다이아몬드 센터 변경 제한</td>
+						<td></td>
+						<td class="file"><a href="/html/U10017_lp.html" target="_blank">U10017_lp.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.00</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>그룹 PV/BV 이체 변경 제한</td>
+						<td></td>
+						<td class="file"><a href="/html/U10018_lp.html" target="_blank">U10018_lp.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.00</td>
+						<td class="note"></td>
+					</tr> -->
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>주문 금지 대상자 등록 / 해지</td>
+						<td></td>
+						<td class="file"><a href="/html/U10019_lp.html" target="_blank">U10019_lp.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.14</td>
+						<td class="note"></td>
+					</tr>
+					<!--  <tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>재등록 금지 대상자 등록 / 해지</td>
+						<td></td>
+						<td class="file"><a href="/html/U10020_lp.html" target="_blank">U10020_lp.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.00</td>
+						<td class="note"></td>
+					</tr> -->
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>블랙리스트 대상자 등록 / 해지</td>
+						<td></td>
+						<td class="file"><a href="/html/U10021_lp.html" target="_blank">U10021_lp.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.14</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>이미지등록</td>
+						<td></td>
+						<td class="file"><a href="/html/U10022_lp.html" target="_blank">U10022_lp.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.15</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>공무원/교원 주거지 키워드 등록 / 해지</td>
+						<td></td>
+						<td class="file"><a href="/html/U10023_lp.html" target="_blank">U10023_lp.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.15</td>
+						<td class="note"></td>
+					</tr>
+					
+					<!--
+					<tr>
+						<td class="tit"></td>
+						<td>회원정보관리</td>
+						<td>개인정보동의이력조회</td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/U20001.html" target="_blank">U20001.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.00</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td>회원계좌조회</td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/U20002.html" target="_blank">U20002.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.00</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td>사업자등록증조회</td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/U20003.html" target="_blank">U20003.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.00</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td>ABO변경관리</td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/U20004.html" target="_blank">U20004.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.00</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td>후원자변경관리</td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/U20005.html" target="_blank">U20005.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.00</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td>회원상속관리</td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/U20006.html" target="_blank">U20006.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.00</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td>회원탈퇴관리</td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/U20007.html" target="_blank">U20007.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.00</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td>휴면회원관리</td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/U20008.html" target="_blank">U20008.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.00</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td>회원로그관리</td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/U20009.html" target="_blank">U20009.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.00</td>
+						<td class="note"></td>
+					</tr> -->
+					<tr>
+						<td class="tit"></td>
+						<td>등급/갱신관리</td>
+						<td>회원갱신관리</td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/U30001.html" target="_blank">U30001.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.00</td>
+						<td class="note"></td>
+					</tr>
+					<!-- <tr>
+						<td class="tit"></td>
+						<td></td>
+						<td>블랙리스트 조회</td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/U30002.html" target="_blank">U30002.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.00</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td>주문 금지 대상자 조회</td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/U30003.html" target="_blank">U30003.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.00</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td>재등록 금지 대상자 조회</td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/U30004.html" target="_blank">U30004.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.00</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td>공무원/교원 주거지 키워드 조회</td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/U30005.html" target="_blank">U30005.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.00</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td>보너스 보류/박탈 대상자 조회</td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/U30006.html" target="_blank">U30006.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.00</td>
+						<td class="note"></td>
+					</tr> -->
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td>외국인체류기간만료 대상자 관리</td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/U30007.html" target="_blank">U30007.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.00</td>
+						<td class="note"></td>
+					</tr>
+					<!-- <tr>
+						<td class="tit"></td>
+						<td>관리자 정보조회</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/U60001.html" target="_blank">U60001.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.00</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit">프로모션관리</td>
+						<td>포인트관리</td>
+						<td>포인트 목록</td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/point/U50001.html" target="_blank">U50001.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.00</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td>A포인트발행/사용내역</td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/point/U50002a_lp.html" target="_blank">U50002a_lp.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.00</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td>Member 포인트발행/사용내역</td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/point/U50002b_lp.html" target="_blank">U50002b_lp.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.00</td>
+						<td class="note"></td>
+					</tr>
+					 -->
+					 <tr>
+						<td class="tit">공통</td>
+						<td>Alert</td>
+						<td>버튼타입</td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/alert01.html" target="_blank">alert01.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.04</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td>텍스트타입</td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/alert02.html" target="_blank">alert02.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">김도현</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.05.04</td>
+						<td class="note"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+<!-- //BOS -->
+</div>
+</body>
+</html>

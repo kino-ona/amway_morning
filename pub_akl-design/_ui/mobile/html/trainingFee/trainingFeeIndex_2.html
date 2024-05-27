@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<!-- page common -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- //page common -->
+	<!-- page unique -->
+	<meta name="Description" content="설명들어감">
+	<meta http-equiv="Last-Modified" content="">
+	<!-- //page unique -->
+	<title>Amway Korea | 교육비 메인</title>
+	<!--[if lt IE 9]>
+	<script src="/_ui/mobile/common/js/html5.js"></script>
+	<script src="/_ui/mobile/common/js/ie.print.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="/ruxitagentjs_ICA27SVdefgijmoqrtuvx_10183200114120852.js" data-dtconfig="app=c91546c95c87690f|cuc=9rj8dgfh|featureHash=ICA27SVdefgijmoqrtuvx|dpvc=1|lastModification=1597278472431|vcv=2|dtVersion=10183200114120852|tp=500,50,0,1|rdnt=1|uxrgce=1|uxdcw=1500|vs=2|agentUri=/ruxitagentjs_ICA27SVdefgijmoqrtuvx_10183200114120852.js|reportUrl=/rb_bf49927etb|rid=RID_1139362976|rpid=-500853872|domain=amway.co.kr"></script><link rel="stylesheet" href="/_ui/mobile/common/css/academy_default.css">
+	<link rel="stylesheet" href="/_ui/mobile/common/css/default.css" />
+	<link rel="stylesheet" href="/_ui/mobile/common/css/main.css" />
+
+	<script src="/_ui/mobile/common/js/jquery-1.8.3.min.js"></script>
+	<script src="/_ui/mobile/common/js/pbCommonAcademy.js"></script>
+	<script src="/_ui/mobile/common/js/pbLayerPopup.js"></script>
+	<script src="/_ui/mobile/common/js/pbCommon.js"></script>
+
+	<script type="text/javascript" charset="UTF-8" src="/js/front.js"></script>
+	<script type="text/javascript" charset="UTF-8" src="/js/json2.js"></script>
+	<script type="text/javascript" charset="UTF-8" src="/js/json3.js"></script>
+	<script type="text/javascript" charset="UTF-8" src="/js/jquery.form.js"></script>
+	<script type="text/javascript" charset="UTF-8" src="/js/jquery.number.min.js"></script>
+	<script type="text/javascript" charset="UTF-8" src="/js/jquery.popupWindow.js"></script>
+	<script type="text/javascript" charset="UTF-8" src="/js/date.format.js"></script>
+	<script type="text/javascript" charset="UTF-8" src="/js/jquery.history.js"></script>
+	<script type="text/javascript" charset="UTF-8" src="/js/clipboard.min.js"></script>
+
+	<script src="/_ui/mobile/common/js/owl.carousel.js"></script>
+	<script src="/_ui/mobile/common/js/apps/kakao.link.js"></script>
+	<script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+	<script src="/_ui/mobile/common/js/jquery.event.drag-1.5.min.js"></script>
+	<script src="/_ui/mobile/common/js/jquery.touchSlider.js"></script>
+	<script src="/_ui/mobile/common/js/jquery.touchSlider2.js"></script>
+	<script type="text/javascript">
+		//window.utag_cfg_ovrd = {noview : true};
+	</script>
+</head>
+
+
+<script type="text/javascript">
+	var openLayerPopup = function(options){
+		// 하나로 통일
+		var targetId = "acdemyLayerPop";
+
+		var default_value =  {
+			targetId : "acdemyLayerPop"
+			, width : 850
+			, height : 600
+			, maxHeight : 600
+			, callback : false
+			, params : ""
+			, level : "1"
+		};
+
+		var opts = $.extend({}, default_value, options);
+
+		opts.width = parseFloat(opts.width);
+		opts.height = parseFloat(opts.height);
+		opts.height = opts.height > opts.maxHeight ? opts.maxHeight : opts.height;
+
+		var xindex = "10001";
+
+		// modal
+		var parentDoc = $(document).find('body');
+		parentDoc.append('<div class="layerMask" id="layerMask" style="display:block;"></div>');
+
+		// 기존 Layer 삭제
+		$("#" + targetId).remove();
+		$(document).find("body").append('<div id="' + targetId + '" tabindex="-1"></div>');
+
+		// Layer 레이아웃
+		var obj = $(document).find('#'+ targetId);
+
+		$.ajax({
+			url: opts.url,
+			type:'post',
+			data : opts.params,
+			success: function(data){
+				// 열린 Ifrm ID 설정
+				obj.html(data);
+				$(window).scrollTop();
+				setTimeout(function(){ $("#uiLayerPop_mTFDetail" ).attr("tabindex","0").focus(); }, 500);
+				// 닫기 버튼 이벤트
+				$(".btnPopClose").on("click", function(){
+					$('#layerMask').remove();
+					$('#acdemyLayerPop').remove();
+				});
+			},
+			error: function(xhr,status,error){
+				$('#layerMask').remove();
+				$('#acdemyLayerPop').remove();
+				alert("code:"+xhr.status);
+			}
+		});
+	};
+
+</script>
+<!-- //page unique -->
+<title>Amway Korea | 교육비 관리</title>
+<script type="text/javascript">
+	$(document.body).ready(function(){
+		$("#newWinClose").click(function(){
+			window.close();
+		});
+
+		var userAgent = navigator.userAgent.toLowerCase();
+
+		if (userAgent.search("android") > -1 || userAgent.search("Android") > -1 || userAgent.search("ANDROID") > -1){
+			if(userAgent.search("amway") > -1 || userAgent.search("AMWAY") > -1) {
+				$("#trainingFeeForm > input[name='app']").val("amway_Android");
+			} else {
+				$("#trainingFeeForm > input[name='app']").val("Android");
+			}
+		} else if ((userAgent.search("iphone") > -1) || (userAgent.search("ipod") > -1) || (userAgent.search("ipad") > -1)){
+			$("#trainingFeeForm > input[name='app']").val("Android");
+		}
+
+		$(".rowTr").on("click", function(){
+			$('.selectTr').removeClass('selectTr');
+			$(this).removeClass('rowTr').addClass('selectTr');
+		});
+
+		$("#helfLayerPop").on("click", function(){
+			$('#uiLayerPop_mTFHelp').show();
+			$('html, body').animate( { scrollTop : 0 }, 400 );
+		});
+
+		$(".btnPopCloseEvent").on("click", function(){
+			$('#uiLayerPop_mTFHelp').hide();
+		});
+
+		$(".btnMember").on("click", function(){
+			setTimeout(function(){ abnkorea_resize(); }, 500);
+		});
+
+
+	});
+
+	var pageEvent = {
+		agreePage : function() {
+			$("#trainingFeeForm").attr("action", "/trainingFee/trainingFeeAgreeFull.do")
+			$("#trainingFeeForm").submit();
+		},
+		pfList : function() {
+			$("#trainingFeeForm > input[name='pfyear']").val($("#pfyear option:selected").val());
+			$("#trainingFeeForm").attr("action", "/trainingFee/trainingFeeIndex.do")
+			$("#trainingFeeForm").submit();
+		}
+	}
+
+	var tabEvent = {
+		groupTab : function() {
+			$("#trainingFeeForm > input[name='procType']").val("group");
+			$("#trainingFeeForm").attr("action", "/trainingFee/trainingFeeIndex.do")
+			$("#trainingFeeForm").submit();
+		},
+		personTab : function() {
+			$("#trainingFeeForm > input[name='procType']").val("person");
+			$("#trainingFeeForm").attr("action", "/trainingFee/trainingFeeIndex.do")
+			$("#trainingFeeForm").submit();
+		}
+	};
+
+	var listEvent = {
+		planPage : function(giveyear, givemonth,procType, mode) {
+			$("#trainingFeeForm > input[name='giveyear']").val(giveyear);
+			$("#trainingFeeForm > input[name='givemonth']").val(givemonth);
+			$("#trainingFeeForm > input[name='listDay']").val(givemonth);
+			$("#trainingFeeForm > input[name='procType']").val(procType);
+			$("#trainingFeeForm > input[name='mode']").val(mode);
+			if(mode=="I") $("#trainingFeeForm > input[name='editYn']").val("Y");
+			if(mode=="S") $("#trainingFeeForm > input[name='editYn']").val("N");
+			$("#trainingFeeForm > input[name='okdata']").val($("#okdata").val().substring(1,$("#okdata").val().length));
+			$("#trainingFeeForm").attr("action", "/trainingFee/trainingFeePlan.do")
+			$("#trainingFeeForm").submit();
+		},
+		spendPage : function(giveyear, givemonth,procType, mode) {
+			$("#trainingFeeForm > input[name='giveyear']").val(giveyear);
+			$("#trainingFeeForm > input[name='givemonth']").val(givemonth);
+			$("#trainingFeeForm > input[name='listDay']").val(givemonth);
+			$("#trainingFeeForm > input[name='procType']").val(procType);
+			$("#trainingFeeForm > input[name='mode']").val(mode);
+			if(mode=="I") $("#trainingFeeForm > input[name='editYn']").val("Y");
+			if(mode=="S") $("#trainingFeeForm > input[name='editYn']").val("N");
+			$("#trainingFeeForm > input[name='okdata']").val($("#okdata").val().substring(1,$("#okdata").val().length));
+			$("#trainingFeeForm").attr("action", "/trainingFee/trainingFeeSpend.do")
+			$("#trainingFeeForm").submit();
+		},
+		groupList : function(idno, giveyear, givemonth, groupcode) {
+			$("#groupView"+idno).hide();
+			$("#groupClose"+idno).show();
+			$("."+giveyear+givemonth).show();
+
+		},
+		groupListClose : function(idno, giveyear, givemonth) {
+			$("#groupView"+idno).show();
+			$("#groupClose"+idno).hide();
+			$("."+giveyear+givemonth).hide();
+
+		},
+		uiLayerPop_help01 : function() {
+			var popParam = {
+				url : "/trainingFee/trainingFeeMainInfoLayerPop.do"
+				, width : "600"
+				, height : "800"
+				, params : {}
+			}
+
+			openLayerPopup(popParam);
+		},
+		uiLayerPop_w02 : function(giveyear, givemonth, depaboNo) {
+			var popParam = {
+				url : "/trainingFee/trainingFeeMainLayerPop.do"
+				, width : "450"
+				, height : "400"
+				, params : {giveyear  : giveyear
+					, givemonth : givemonth
+					, depaboNo  : depaboNo}
+			}
+
+			openLayerPopup(popParam);
+		}
+	};
+
+</script>
+</head>
+<body>
+<!-- content area | ### academy IFRAME Start ### -->
+<section id="pbContent" class="bizroom">
+	<div class="pbLayerPopup new">
+		<div class="pbLayerHeader">
+			<strong>교육비 관리</strong>
+		</div>
+		<form id="trainingFeeForm" name="trainingFeeForm" method="post">
+			<input type="hidden" name="fiscalyear"     value="2020"/>
+			<input type="hidden" name="giveyear"       value="2020"/>
+			<input type="hidden" name="givemonth"      value="08" />
+			<input type="hidden" name="curgiveyear"       value="2020"/>
+			<input type="hidden" name="curgivemonth"      value="08" />
+			<input type="hidden" name="depaboNo"       value="7480000" />
+			<input type="hidden" name="groupCode"      value="0" />
+			<input type="hidden" name="giveopen"       value="Y" />
+			<input type="hidden" name="procType"       value="person" />
+			<input type="hidden" name="delegtypecode"  value="1" />
+			<input type="hidden" name="editYn"         value="" />
+			<input type="hidden" name="okdata"         value="" />
+			<input type="hidden" name="mode"           value="" />
+			<input type="hidden" name="authgroup"      value="2" />
+			<input type="hidden" name="authperson"     value="2" />
+			<input type="hidden" name="authmanageflag" value="Y"/>
+			<input type="hidden" name="pfyear"         value="" />
+			<input type="hidden" name="app"            value="" />
+		</form>
+		<!-- 교육비 관리 -->
+		<div class="mTrainingFee">
+			<h2 class="titTop">그룹 교육비
+				<span class="btnTbl-box"><a href="javascript:pageEvent.agreePage();" class="btnTbl">교육비관리 목록</a></span>
+			</h2>
+			<div class="inquiryWrap">
+				<div class="inquiryBox">
+					<div class="inputBox">
+						<p class="selectBox">
+							<select title="조회 기간" id="pfyear" onchange="javascript:pageEvent.pfList();">
+								<option value="2020" >PF 20</option>
+								<option value="2019" >PF 19</option>
+								<option value="2018" >PF 18</option>
+							</select>
+						</p>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+
+		<!-- //교육비 관리 -->
+		<div class="table-scroll-a">
+			<div class="table-wrap">
+				<table class="main-table tbl-list-a">
+					<caption>그룹 교육비 현황</caption>
+					<colgroup>
+						<col style="width:120px">
+						<col style="width:180px">
+						<col style="width:100px" span="12">
+					</colgroup>
+					<thead>
+					<tr>
+						<th scope="col" class="fixed-side">회원번호</th>
+						<th scope="col" class="fixed-side">성명</th>
+						<th scope="col">11월</th>
+						<th scope="col">12월</th>
+						<th scope="col">1월</th>
+						<th scope="col">2월</th>
+						<th scope="col">3월</th>
+						<th scope="col">4월</th>
+						<th scope="col">5월</th>
+						<th scope="col">6월</th>
+						<th scope="col">7월</th>
+						<th scope="col">8월</th>
+						<th scope="col">9월</th>
+						<th scope="col">10월</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td class="fixed-side"><a href="">748****</a></td>
+						<td class="fixed-side"><a href="">한*****</a></td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+					</tr>
+					<tr>
+						<td class="fixed-side"><a href="">7480003</a></td>
+						<td class="fixed-side"><a href="">한국암웨이</a></td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+					</tr>
+					<tr>
+						<td class="fixed-side"><a href="">7001234567</a></td>
+						<td class="fixed-side"><a href="">암웨이&암순이</a></td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+					</tr>
+					<tr>
+						<td class="fixed-side"><a href="">7001234567</a></td>
+						<td class="fixed-side"><a href="">암웨이&암순이</a></td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+					</tr>
+					<tr>
+						<td class="fixed-side"><a href="">7001234567</a></td>
+						<td class="fixed-side"><a href="">암웨이&암순이</a></td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+						<td>100,000,000</td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<script>
+			/*  table clone */
+			function fixedTable_Scroll(){
+				$('.table-scroll-a').each(function(){
+					var _winWidth = $(window).width();
+					var obj_orignal = $(this).find('.main-table');
+
+					var cloneTable = $(this).find('.clone');
+					if( cloneTable.length ){
+						return;
+					} else {
+						obj_orignal.clone(true).appendTo(this).addClass('clone');
+					}
+				});
+			};
+			$(function() {
+				// table clone
+				fixedTable_Scroll();
+			})
+		</script>
+
+		<a href="https://www.amway.co.kr/business-center" class="btnPopClose"><img src="/_ui/mobile/images/common/new_close.png" alt="창 닫기"></a>
+
+
+	</div>
+
+</section>
+
+</body>
+</html>
+
+<script type="text/javascript">
+	var utag_data = {
+		site_type : "mobile", //	desktop / mobile
+		site_country : "kr", //	kr ê³ ì 
+		site_language : "ko", //	ko ê³ ì 
+		site_subGroup : "korea", //	korea ê³ ì 
+		site_subRegion : "korea", //	korea ê³ ì 
+		site_region : "apac", //	apac ê³ ì 
+		site_webProperty : "ecm", //	ecm ê³ ì 
+		site_currencyCode : "krw",  //
+
+		page_section : "비즈니스", //	home
+		page_category : "교육비 관리", //
+		page_subCategory : "교육비 메인", //
+		page_detail : "",
+
+		// ABO ì¸ ê²½ì°
+		visitor_imcID: "18000007480000",
+		visitor_pinNumber: "Founders Platinum", //this can be a descriptive value (e.g., platinum, silver_producer, diamond, etc.)
+		visitor_userProfile: "abo",
+
+		// Member ì¸ ê²½ì°
+		visitor_customerID: "", //if the user is a non-abo customer or client
+		visitor_userProfile: "abo",
+	}
+	var urlaccess = "OPER";
+
+	if (urlaccess == "OPER") {
+		//send tagging information
+		(function(a,b,c,d){
+			a='//tags.tiqcdn.com/utag/amway/kr-hybris/prod/utag.js'; // ê°ë°/QA íê²½ì¸ ê²½ì°
+			b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+			a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+		})();
+	}
+	else{
+		//send tagging information
+		(function(a,b,c,d){
+			a='//tags.tiqcdn.com/utag/amway/kr-hybris/dev/utag.js'; // ê°ë°/QA íê²½ì¸ ê²½ì°
+			b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+			a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+		})();
+	}
+</script>

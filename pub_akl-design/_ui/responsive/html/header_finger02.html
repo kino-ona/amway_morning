@@ -1,0 +1,79 @@
+<header class="js-mainHeader main-header general-header">
+	<div class="amway-theme">
+		<nav class="header-container">
+			<div class="header-wrapper pos-relative">
+				<!-- logged-in -->
+				 <div class="popover bottom extraclass1 no-login" id="login-drop-content" style="display:block;">
+					 <div class="popover-arrow arrow"></div>
+					 <div class="popover-content">
+						 <i class="mobile-popover-close"></i>
+						 <div class="topbar__popover login-form authentication-js">
+							 <div class="fingerprint-wrap">
+							 	<p class="title-h2">지문 등록 요청</p>
+							 	<p>보유하신 휴대폰에 지문 등록이 필요합니다.<br>
+									지문 등록 후 간편하게 로그인 하세요
+							 	</p>
+							 	<dl>
+							 		<dt>지원 단말기</dt>
+							 		<dd>
+							 			삼성전자 : 갤럭시 노트5, 갤럭시 S6 이상<br>
+										애플 : iOS X.0 이상을 탑재한 아이폰<br>
+										LG전자 : V10, G5 이상
+							 		</dd>
+							 		<dt>지원 OS</dt>
+							 		<dd>
+							 			Android, iOS X.0 이상
+							 		</dd>
+							 		<dt>등록 방법</dt>
+							 		<dd>보유하신 휴대폰 “ 설정“ 메뉴에서<br>지문정보 등록이 가능합니다.</dd>
+							 	</dl>
+							 	<p class="txt-italic ex">휴대폰에 따라 메뉴명은 조금씩 상이할 수 있습니다. </p>
+							 	<div class="btn-wrap">
+								 	<input class="finger-btn" type="submit" value="다시 인증하기">
+								 	<input class="finger-btn" type="submit" value="나중에 등록하기">
+							 	</div>
+							 </div>
+						</div>
+					 </div>
+				 </div>
+				 <!--// logged-in -->
+				<div class="">
+					<div class="nav-links-container">
+						<ul class="nav-list clearfix"></ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</div>
+</header>
+
+
+<script>
+$(function(){
+	//body 클릭 시 열린 레이어 닫기
+	HEADER_stopPropagation();
+
+});
+</script>
+
+<script>
+$(function(){
+	$('.U60802_lp1').click(function(event){
+		event.preventDefault();
+		/** -----------------------------
+			<main></main>이 z-index가 낮아서 생기는 문제 해결용.
+			- load html에서 테스트 용으로 띄우는 레이어 이므로,
+			- 마크업 페이지에서만 사용합니다.
+			-----------------------------
+		*/
+		$('main').css('z-index','initial');
+
+
+		setTimeout(function(){
+			layerPopOver(this,'.U60802_lp1_pop');
+		},200);
+	});
+})
+</script>
+
+

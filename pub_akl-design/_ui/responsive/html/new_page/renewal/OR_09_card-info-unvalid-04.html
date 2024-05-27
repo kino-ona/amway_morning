@@ -1,0 +1,184 @@
+<!-- S : [디파이 수정2] 신규 파일 : CAP2 A Pay 주문 결제 카드 등록 -->
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<title>주문/결제 | Amway Korea</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords">
+	<meta name="description" content="NY Fee Bundle">
+	<meta name="robots" content="index,follow">
+
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-lib.css"><!-- 플러그인용 css : 2018.03.14 추가  -->
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/base.css">
+	<!-- 코어제공 -->
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/sprint.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-customer.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-shop.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-sop.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-account.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-business.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-product.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-brand.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-brand-new.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common-new-v2.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common-new-v3.css">
+
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/content_res_all.css">
+	<!-- 코어제공 -->
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common-v2.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-product-renewal.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-product-renewal_v1.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-cap2.css"> <!-- [디파이 수정2] 신규 파일 css 추가 -->
+
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.datepicker.js"></script><!-- datepicker : 2018.03.19 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/owl.carousel.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/isotope.pkgd.js"></script><!-- gnb 플러그인 : 2018.03.23 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/select2.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/new.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.raty.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common_v1.js"></script><!-- 210525 [디파이 수정] 스크립트 추가 -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_contents.js"></script><!-- brand 통합 : 2018.08.24 추가  -->
+
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_component.js"></script>
+</head>
+
+<body class="akl new-v2 header-type"> <!-- D: 2020 장바구니 개선 -header-type 클래스 추가 -->
+<!-- skipToContent -->
+<div id="skipToContent">
+	<a href="#contents">콘텐츠 바로가기</a>
+</div>
+<!-- //skipToContent -->
+
+<!-- main -->
+<main>
+	<button type="button" class="bt-akl-blue next-phase">버튼</button>
+</main>
+<!-- //main -->
+
+<!-- S : [디파이 수정2] A pay 결제 관련 팝업 -->
+<!-- S : 결제 약관 동의 팝업 -->
+<div class="layerWrapper popup_a-pay popup_card-info">
+	<div class="cbox layerBox popWidS">
+		<div class="container">
+			<div class="popup-header">
+                <h1 class="header-title">A-Pay 간편결제 등록</h1>
+                <a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true" class="btn_layer-close btn-modal_close"><span class="hidden">닫기</span></a>
+			</div>
+			<div class="popup-body">
+				<p class="notice_blue">
+                    카드정보를 입력해주세요.
+                </p>
+                
+                <div class="payment-line">
+					<form class="form-group">
+						<label for="card-num" class="form-label">카드번호</label>
+						<div class="input-area">
+							<input name="card-num" id="cardNumber1" type="text" class="input-each card-input" title="첫번째 네자리" maxlength="4" data-label="input" value="1234">
+                            <input name="card-num" id="cardNumber2" type="password" class="input-each card-input" title="두번째 네자리" maxlength="4" data-label="input" autocomplete="new-password" value="5678">
+                            <input name="card-num" id="cardNumber3" type="password" class="input-each card-input" title="세번째 네자리" maxlength="4" data-label="input" autocomplete="new-password" value="9012">
+                            <input name="card-num" id="cardNumber4" type="text" class="input-each card-input" title="네번째 세자리 또는 네자리" data-label="input" maxlength="4" value="3456">
+						</div>
+					</form>
+					<form class="form-group">
+						<label for="valid-period" class="form-label">유효기간</label>
+						<div class="input-area">
+							<input type="text" id="validToMonth" placeholder="MM" class="input-each card-input" data-label="input" maxlength="2" value="12">
+								<div class="payment-forms-back-slash">/</div>
+							<input type="text" id="validToYear" placeholder="YY" class="input-each card-input" data-label="input" maxlength="2" title="년도 입력" value="25">
+						</div>
+					</form>
+					<form class="form-group">
+						<label for="cvc-num" class="form-label">CVC</label>
+						<div class="input-area">
+							<input type="text" id="cvcNumber" placeholder="카드 뒷면 세 자리 입력" class="input-each card-input-full" data-label="input" maxlength="3" value="123">
+						</div>
+					</form>
+					<form class="form-group">
+						<label for="pw-num" class="form-label">비밀번호 앞 2자리</label>
+						<div class="input-area">
+							<input type="password" id="pwFrontNumber" class="input-each card-input-full" data-label="input" maxlength="2" autocomplete="new-password" value="45">
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="popup-footer">
+				<button type="submit" class="bt-akl-blue">다음</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- E : 결제 약관 동의 팝업 -->
+
+<!-- S : 카드 정보 확인 영역 -->
+<div class="layerWrapper popup_type_alert alert"  style="box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.2);">
+	<div class="cbox layerBox">
+		<div class="popup_contents">
+			<p class="txt bold">
+				카드 정보를 다시 확인해주세요.<br>
+                (비밀번호)
+			</p>
+		</div>
+		<div class="popup_footer">
+			<!-- <button type="button" class="btn-cancel">유지</button> -->
+			<button type="button" class="bt-akl-blue next-phase">확인</button>
+		</div>
+	</div>
+</div>
+<!-- E : 카드 정보 확인 영역 -->
+
+<!-- E : [디파이 수정2] A pay 결제 관련 팝업 -->
+
+<script>
+	// S : [디파이 수정2] 210901 A Pay 간편결제 등록 관련 팝업
+    $(function() {
+		// 레이어 오픈 함수 호출
+		AMWAY.callLayer();
+
+		$('.input-each').on('keyup', function() {
+			$submit = $('.bt-akl-blue');
+			console.log($submit);
+			$i = 0;
+			if($(this).val() == '' ) {
+				$('.bt-akl-blue').attr('disabled', true);
+			} else {
+				$('.bt-akl-blue').attr('disabled', false);
+			}
+		});
+
+		$(document).on("submit",function(e){
+			$form = $(this);
+			$i = 0;
+			$("form input").each(function(){
+				if ($(this).val().trim() == ''){
+					$(this).css('border-color', 'red');
+					$i++;
+				} else {
+					$(this).css('border-color', '');    
+				}               
+			})
+			if($i != 0) e.preventDefault();
+		});
+		$('.next-phase').click(function(event) {
+			event.preventDefault();
+			layerPopOver(this,'.popup_card-info');
+		});
+
+		$('button[type="submit"]').click(function(event) {
+			event.preventDefault();
+			layerPopOver(this,'.alert');
+            $('.alert').css('background','rgba(0,0,0,0.2)');
+		});
+		// E : [디파이 수정2] 210901 A Pay 간편결제 등록 관련 팝업
+    });
+</script>
+</body>
+
+</html>
+<!-- E : [디파이 수정2] 신규 파일 : CAP2 A Pay 주문 결제 카드 등록 -->

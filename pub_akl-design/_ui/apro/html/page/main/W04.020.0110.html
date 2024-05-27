@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<!--
+* @ Copyright (c) EiLAB
+* @ 화면명 : 메인 | My스케줄(달력형)
+* @ 파일명 : html/page/main/W04.020.0110.html
+* @ 수정이력
+* =====================================================================================================
+*  날짜               작업자              요청자/상세내용
+* -----------------------------------------------------------------------------------------------------
+*  20200703           윤종규              최초작성
+*  20200715           윤종규              PC반응형화면 페이지수정
+*  20200722           윤종규              장소명추가
+*  20200803           윤종규              더보기버튼추가
+* =====================================================================================================
+-->
+<html lang="ko">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <title>메인 | My스케줄(달력형)</title>
+    <!-- Publish CSS -->
+    <link rel="stylesheet" type="text/css" href="../../../public/css/ui_layout.css" />
+    <link rel="stylesheet" type="text/css" href="../../../public/css/ui_common.css" />
+    <link rel="stylesheet" type="text/css" href="../../../public/css/ui_contents.css" />
+    <link rel="stylesheet" type="text/css" href="../../../public/css/ui_plugin.css" />
+    <link rel="stylesheet" type="text/css" href="../../../public/css/ui_responsive.css" />
+    <!-- Publish JS -->
+    <script type="text/javascript" src="../../../public/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../../../public/js/jquery-ui-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../../../public/js/ui_common_head.js"></script>
+    <script type="text/javascript" src="../../../public/js/ui_plugin.js"></script>
+</head>
+
+<body class="apro">
+    <!-- S : layout -->
+    <div id="layout" class="layout">
+        <!-- S : header -->
+        <div id="header" class="header type_border">
+            <!-- 20200715 .type_border 클래스로 헤더보더라인(제어위치변경) -->
+            <!-- S : header_wrap -->
+            <div class="header_wrap">
+                <!-- s : 20200715 헤더공통영역 -->
+                <div style="line-height: 50px; font-size: 20px; color: tomato">헤더영역(공통 레이아웃)</div>
+                <!-- e : 20200715 헤더공통영역 -->
+            </div>
+            <!-- E : header_wrap -->
+        </div>
+        <!-- E : header -->
+        <!-- S : container  -->
+        <div id="container" class="container bgcolor">
+            <!-- S : 20200715 cover_layer 영역추가 -->
+            <div class="cover_layer">
+            </div>
+            <!-- E : 20200715 cover_layer 영역추가 -->
+            <!-- S : contents_wrap -->
+            <div class="contents_wrap type_myschedule single_view">
+                <!-- 20200717 .single_view PC레아아웃 클래스추가(싱글뷰로변경) && .type_myschedule 클래스추가 BG컨트롤-->
+                <!-- S : contents -->
+                <div class="contents">
+                    <!-- s : 20200715 내비게이션(영역추가) -->
+                    <div class="navigation_pack pc_view">
+                        <div class="navigation_depth">
+                            <div class="btn_pack">
+                                <button type="button" class="btn_sub_text">Home</button>
+                            </div>
+                        </div>
+                        <div class="navigation_depth">
+                            <div class="btn_pack">
+                                <button type="button" class="btn_sub_text">마이스케줄</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- e : 20200715 내비게이션(영역추가) -->
+                    <!-- s : 20200715 뎁스타이틀 추가 -->
+                    <div class="depth_title pc_view">마이스케줄</div>
+                    <!-- e : 20200715 뎁스타이틀 추가 -->
+                    <div class="my_schedule_area">
+                        <div class="tab_pack">
+                            <div class="tab_btn_item type_fixed">
+                                <div class="tab_btn active">
+                                    <button type="button" title="my스케줄 달력형">달력</button>
+                                </div>
+                                <div class="tab_btn">
+                                    <button type="button" title="my스케줄 목록형">목록</button>
+                                </div>
+                                <div class="navi_bar"></div>
+                            </div>
+                            <div class="tab_conts_item">
+                                <div class="tab_conts active">
+                                    <!-- s : my스케줄(달력) -->
+                                    <div class="my_schedule_calendar">
+                                        <div class="calendar_pack type_readonly type_monthpicker">
+                                            <!-- 20200909 .type_monthpicker 기능추가-->
+                                            <!-- S : 20200909 월별선택 기능추가 -->
+                                            <div class="calendar_control">
+                                                <div class="calendar_date">
+                                                    <span class="calendar_year">2020</span>년&nbsp;<span
+                                                        class="calendar_month">06</span>월
+                                                </div>
+                                                <div class="calendar_monthpicker">
+                                                    <div class="monthpicker_head">
+                                                        <div class="btn_pack">
+                                                            <button type="button" class="btn_icon icon_calendar_prev"
+                                                                title="이전해달력">이전해달력</button>
+                                                        </div>
+                                                        <div class="monthpicker_date">
+                                                            <span class="monthpicker_year">2020</span>
+                                                        </div>
+                                                        <div class="btn_pack">
+                                                            <button type="button" class="btn_icon icon_calendar_next"
+                                                                title="다음해달력">다음해달력</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="monthpicker_body">
+                                                        <div class="month">1월</div>
+                                                        <div class="month">2월</div>
+                                                        <div class="month">3월</div>
+                                                        <div class="month">4월</div>
+                                                        <div class="month">5월</div>
+                                                        <div class="month">6월</div>
+                                                        <div class="month">7월</div>
+                                                        <div class="month">8월</div>
+                                                        <div class="month">9월</div>
+                                                        <div class="month">10월</div>
+                                                        <div class="month">11월</div>
+                                                        <div class="month">12월</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- E : 20200909 월별선택 기능추가 -->
+                                            <div class="calendar_table">
+                                                <table>
+                                                    <caption>캘린더</caption>
+                                                    <colgroup>
+                                                        <col style="width: 14%">
+                                                        <col style="width: 13%">
+                                                        <col style="width: 13%">
+                                                        <col style="width: 13%">
+                                                        <col style="width: 13%">
+                                                        <col style="width: 13%">
+                                                        <col style="width: 14%">
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th>일</th>
+                                                            <th>월</th>
+                                                            <th>화</th>
+                                                            <th>수</th>
+                                                            <th>목</th>
+                                                            <th>금</th>
+                                                            <th>토</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="date_unit"></div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="date_unit">1</div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="date_unit">2</div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="date_unit">3</div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="date_unit">4</div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="date_unit">5</div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="date_unit">6</div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="date_unit">7</div>
+                                                            </td>
+                                                            <td class="type_today">
+                                                                <div class="date_unit">8</div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="date_unit">9</div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="date_unit">10</div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="date_unit">11</div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="date_unit">12</div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="date_unit">13</div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="date_unit">14</div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="date_unit">15</div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="date_unit">16</div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="date_unit">17</div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="date_unit type_scheduled">18</div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="date_unit">19</div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="date_unit">20</div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="date_unit">21</div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="date_unit">22</div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="date_unit">23</div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="date_unit">24</div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="date_unit">25</div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="date_unit">26</div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="date_unit">27</div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="date_unit">28</div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="date_unit">29</div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="date_unit">30</div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="date_unit"></div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="date_unit"></div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="date_unit"></div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="date_unit"></div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- e : my스케줄(달력) -->
+                                    <!-- s : my스케줄(목록) -->
+                                    <div class="my_schedule_list">
+                                        <div class="search_util_set type_title">
+                                            <!-- s : 20200715 검색결과 필터추가 -->
+                                            <div class="result_filter">
+                                                <div class="input_group">
+                                                    <div class="input_pack">
+                                                        <label class="label_checkbox"><input type="checkbox"
+                                                                name="checkbox00" title="신청내역"><span
+                                                                class="input_text">신청내역</span></label>
+                                                    </div>
+                                                    <div class="input_pack">
+                                                        <label class="label_checkbox"><input type="checkbox"
+                                                                name="checkbox01" title="개설내역"><span
+                                                                class="input_text">개설내역</span></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- e : 20200715 검색결과 필터추가 -->
+                                        </div>
+                                        <!-- s : 20200819 일정정보 알림추가 -->
+                                        <div class="schedule_list_info">
+                                            <div class="list_volume">일정은 총<span class="list_number">12</span>개 입니다.
+                                            </div>
+                                            <!-- <div class="list_no_volume">일정이 없습니다.</div> -->
+                                        </div>
+                                        <!-- s : 20200819 일정정보 알림추가 -->
+                                        <div class="my_schedule_item" style="_display: none;">
+                                            <!-- s : my스케줄리스트 반복부 -->
+                                            <!-- S : 20201015 내가개설한 서비스 항목 -->
+                                            <div class="schedule_list_form my_class">
+                                                <div class="detail_state">
+                                                    <div class="detail_state_text">내가<br>개설한<br>서비스</div>
+                                                </div>
+                                                <div class="accordion_pack">
+                                                    <div class="accordion_list">
+                                                        <div class="accordion_title">
+                                                            <div class="schedule_head">
+                                                                <div class="schedule_state active">STATUS</div>
+                                                                <div class="schedule_title">[서울] 성능 테스트용 대규모 강의</div>
+                                                                <div class="schedule_info">
+                                                                    <div class="position">POSITION</div>
+                                                                    <div class="room">ROOM</div>
+                                                                    <div class="date">DATE</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="btn_pack">
+                                                            <button type="button"
+                                                                class="btn_icon icon_accordion_small_arrow"
+                                                                title="아코디언버튼"></button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion_conts">
+                                                        <div class="table_set">
+                                                            <div class="table_pack">
+                                                                <table>
+                                                                    <caption>예약확인테이블</caption>
+                                                                    <colgroup>
+                                                                        <col style="width: 80px;">
+                                                                        <col>
+                                                                    </colgroup>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th class="tal">날짜/시간</th>
+                                                                            <td>
+                                                                                <div class="day_time_pack">
+                                                                                    <div class="day">2020-10-30(월)</div>
+                                                                                    <div class="time_group">
+                                                                                        <div class="time">10:00 ~ 10:30
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="day_time_pack">
+                                                                                    <div class="day">2020-10-30(월)</div>
+                                                                                    <div class="time_group">
+                                                                                        <div class="time">10:00 ~ 10:30
+                                                                                        </div>
+                                                                                        <div class="time">10:00 ~ 10:30
+                                                                                        </div>
+                                                                                        <div class="time">10:00 ~ 10:30
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="day_time_pack">
+                                                                                    <div class="day">2020-10-28(월)</div>
+                                                                                    <div class="time_group">
+                                                                                        <div class="time">10:00 ~ 10:30
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="day_time_pack">
+                                                                                    <div class="day">2020-10-29(월)</div>
+                                                                                    <div class="time_group">
+                                                                                        <div class="time">10:00 ~ 10:30
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="day_time_pack">
+                                                                                    <div class="day">2020-10-30(월)</div>
+                                                                                    <div class="time_group">
+                                                                                        <div class="time">10:00 ~ 10:30
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                            </td>
+                                                                        </tr>
+                                                                        <th class="tal">장소</th>
+                                                                        <td>TEXT</td>
+                                                                        </tr>
+                                                                        <!-- s : 20211029 항목추가 -->
+                                                                        <tr>
+                                                                            <th class="tal">예약인원수</th>
+                                                                            <td>TEXT</td>
+                                                                        </tr>
+                                                                        <!-- e : 20211029 항목추가 -->
+                                                                        <tr>
+                                                                            <th class="tal">서비스번호</th>
+                                                                            <td>TEXT</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="after_approval">
+                                                    <div class="btn_pack">
+                                                        <button type="button" class="btn_sub_line"
+                                                            title="신청자관리">신청자관리</button>
+                                                    </div>
+                                                </div>
+                                                <div class="declare_btn">
+                                                    <div class="btn_pack">
+                                                        <button type="button" class="btn_sub_declare"
+                                                            title="신고하기">신고하기</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- E : 20201015 내가개설한 서비스 항목 -->
+                                            <div class="schedule_list_form">
+                                                <div class="accordion_pack">
+                                                    <!-- .active 아코디언상태 정의-->
+                                                    <div class="accordion_list">
+                                                        <div class="accordion_title">
+                                                            <div class="schedule_head">
+                                                                <div class="schedule_state active">승인대기</div>
+                                                                <!-- 20211119 중복예약 가능 > 다자녀 예약 가능으로 문구 변경 -->
+                                                                <div class="member-tag always-show">다자녀 예약 가능</div>
+                                                                <!-- .active 상태스타일 정의-->
+                                                                <div class="schedule_title">[강남] 섬세한 촬영</div>
+                                                                <div class="schedule_info">
+                                                                    <div class="position">분당 ABC센터</div>
+                                                                    <div class="room">퀸A룸</div>
+                                                                    <!-- 20200722 룸넘버 마크업추가 -->
+                                                                    <div class="date">6월 9일 13:00~14:00</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="btn_pack">
+                                                            <button type="button"
+                                                                class="btn_icon icon_accordion_small_arrow"
+                                                                title="아코디언버튼"></button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion_conts">
+                                                        <div class="table_set">
+                                                            <div class="table_pack">
+                                                                <table>
+                                                                    <caption>스케쥴정보테이블</caption>
+                                                                    <colgroup>
+                                                                        <col style="width: 100px;">
+                                                                        <col>
+                                                                    </colgroup>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th class="tal">전문가</th>
+                                                                            <td>김포토</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="tal">날짜</th>
+                                                                            <td class="emphasis">2020년 6월 27일 목</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="tal">시간</th>
+                                                                            <td class="emphasis">11:30 ~ 12:45</td>
+                                                                        </tr>
+                                                                        <!-- s : 20211029 항목추가 -->
+                                                                        <tr>
+                                                                            <th class="tal">예약인원수</th>
+                                                                            <td class="emphasis">5명</td>
+                                                                        </tr>
+                                                                        <!-- e : 20211029 항목추가 -->
+                                                                        <tr>
+                                                                            <th class="tal">장소</th>
+                                                                            <td>경기도 성남시 분당구 탄천상로 151번길 20 베어캐슬 1,2츨 암웨이
+                                                                                브랜드 체험 센터</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="tal">예약번호</th>
+                                                                            <td>120983646</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="before_approval">
+                                                    <div class="btn_group">
+                                                        <div class="btn_pack">
+                                                            <button type="button" class="btn_sub_line"
+                                                                title="일정취소">취소</button>
+                                                        </div>
+                                                        <div class="btn_pack">
+                                                            <button type="button" class="btn_sub_line"
+                                                                title="일정변경">변경</button>
+                                                        </div>
+                                                        <div class="btn_pack">
+                                                            <button type="button" class="btn_sub_line"
+                                                                title="일정추가신청">추가신청</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- s : 신고하기버튼 - 이용완료시 노출 -->
+                                                <div class="declare_btn" style="display: none;">
+                                                    <div class="btn_pack">
+                                                        <button type="button" class="btn_sub_declare"
+                                                            title="신고하기">신고하기</button>
+                                                    </div>
+                                                </div>
+                                                <!-- e : 신고하기버튼 - 이용완료시 노출 -->
+                                            </div>
+                                            <div class="schedule_list_form">
+                                                <div class="accordion_pack active">
+                                                    <!-- .active 아코디언상태 정의-->
+                                                    <div class="accordion_list">
+                                                        <div class="accordion_title">
+                                                            <div class="schedule_head">
+                                                                <div class="schedule_state active">승인대기</div>
+                                                                <!-- 20211119 중복예약 가능 > 다자녀 예약 가능으로 문구 변경 -->
+                                                                <div class="member-tag always-show">다자녀 예약 가능</div>
+                                                                <!-- .active 상태스타일 정의-->
+                                                                <div class="schedule_title">[강남] 섬세한 촬영</div>
+                                                                <div class="schedule_info">
+                                                                    <div class="position">분당 ABC센터</div>
+                                                                    <div class="room">퀸A룸</div>
+                                                                    <!-- 20200722 룸넘버 마크업추가 -->
+                                                                    <div class="date">6월 9일 13:00~14:00</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="btn_pack">
+                                                            <button type="button"
+                                                                class="btn_icon icon_accordion_small_arrow"
+                                                                title="아코디언버튼"></button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion_conts">
+                                                        <div class="table_set">
+                                                            <div class="table_pack">
+                                                                <table>
+                                                                    <caption>스케쥴정보테이블</caption>
+                                                                    <colgroup>
+                                                                        <col style="width: 100px;">
+                                                                        <col>
+                                                                    </colgroup>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th class="tal">전문가</th>
+                                                                            <td>김포토</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="tal">날짜</th>
+                                                                            <td class="emphasis">2020년 6월 27일 목</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="tal">시간</th>
+                                                                            <td class="emphasis">11:30 ~ 12:45</td>
+                                                                        </tr>
+                                                                        <!-- s : 20211029 항목추가 -->
+                                                                        <tr>
+                                                                            <th class="tal">예약인원수</th>
+                                                                            <td class="emphasis">5명</td>
+                                                                        </tr>
+                                                                        <!-- e : 20211029 항목추가 -->
+                                                                        <tr>
+                                                                            <th class="tal">장소</th>
+                                                                            <td>경기도 성남시 분당구 탄천상로 151번길 20 베어캐슬 1,2츨 암웨이
+                                                                                브랜드 체험 센터</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="tal">예약번호</th>
+                                                                            <td>120983646</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="before_approval">
+                                                    <div class="btn_group">
+                                                        <div class="btn_pack">
+                                                            <button type="button" class="btn_sub_line"
+                                                                title="일정취소">취소</button>
+                                                        </div>
+                                                        <div class="btn_pack">
+                                                            <button type="button" class="btn_sub_line"
+                                                                title="일정변경">변경</button>
+                                                        </div>
+                                                        <div class="btn_pack">
+                                                            <button type="button" class="btn_sub_line"
+                                                                title="일정추가신청">추가신청</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- s : 신고하기버튼 - 이용완료시 노출 -->
+                                                <div class="declare_btn" style="display: none;">
+                                                    <div class="btn_pack">
+                                                        <button type="button" class="btn_sub_declare"
+                                                            title="신고하기">신고하기</button>
+                                                    </div>
+                                                </div>
+                                                <!-- e : 신고하기버튼 - 이용완료시 노출 -->
+                                            </div>
+                                            <div class="schedule_list_form">
+                                                <div class="accordion_pack">
+                                                    <div class="accordion_list">
+                                                        <div class="accordion_title">
+                                                            <div class="schedule_head">
+                                                                <div class="schedule_state">예약 취소</div>
+                                                                <!-- .active 상태스타일 정의-->
+                                                                <div class="schedule_title">[강남] 섬세한 촬영</div>
+                                                                <div class="schedule_info">
+                                                                    <div class="position">분당 ABC센터</div>
+                                                                    <div class="room">퀸A룸</div>
+                                                                    <!-- 20200722 룸넘버 마크업추가 -->
+                                                                    <div class="date">6월 9일 13:00~14:00</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="btn_pack">
+                                                            <button type="button"
+                                                                class="btn_icon icon_accordion_small_arrow"
+                                                                title="아코디언버튼"></button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion_conts">
+                                                        <div class="table_set">
+                                                            <div class="table_pack">
+                                                                <table>
+                                                                    <caption>스케쥴정보테이블</caption>
+                                                                    <colgroup>
+                                                                        <col style="width: 100px;">
+                                                                        <col>
+                                                                    </colgroup>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th class="tal">전문가</th>
+                                                                            <td>김포토</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="tal">날짜</th>
+                                                                            <td class="emphasis">2020년 6월 27일 목</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="tal">시간</th>
+                                                                            <td class="emphasis">11:30 ~ 12:45</td>
+                                                                        </tr>
+                                                                        <!-- s : 20211029 항목추가 -->
+                                                                        <tr>
+                                                                            <th class="tal">예약인원수</th>
+                                                                            <td class="emphasis">5명</td>
+                                                                        </tr>
+                                                                        <!-- e : 20211029 항목추가 -->
+                                                                        <tr>
+                                                                            <th class="tal">장소</th>
+                                                                            <td>경기도 성남시 분당구 탄천상로 151번길 20 베어캐슬 1,2츨 암웨이
+                                                                                브랜드 체험 센터</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="tal">예약번호</th>
+                                                                            <td>120983646</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="after_approval">
+                                                    <div class="btn_group">
+                                                        <div class="btn_pack">
+                                                            <button type="button" class="btn_sub_line"
+                                                                title="일정삭제">삭제</button>
+                                                        </div>
+                                                        <div class="btn_pack">
+                                                            <button type="button" class="btn_sub_line"
+                                                                title="일정추가신청">추가신청</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- s : 신고하기버튼 - 이용완료시 노출 -->
+                                                <div class="declare_btn" style="display: none;">
+                                                    <div class="btn_pack">
+                                                        <button type="button" class="btn_sub_declare"
+                                                            title="신고하기">신고하기</button>
+                                                    </div>
+                                                </div>
+                                                <!-- e : 신고하기버튼 - 이용완료시 노출 -->
+                                            </div>
+                                            <div class="schedule_list_form">
+                                                <div class="accordion_pack">
+                                                    <!-- .active 아코디언상태 정의-->
+                                                    <div class="accordion_list">
+                                                        <div class="accordion_title">
+                                                            <div class="schedule_head">
+                                                                <div class="schedule_state active">이용완료</div>
+                                                                <!-- 20211119 중복예약 가능 > 다자녀 예약 가능으로 문구 변경 -->
+                                                                <div class="member-tag always-show">다자녀 예약 가능</div>
+                                                                <!-- .active 상태스타일 정의-->
+                                                                <div class="schedule_title">[강남] 섬세한 촬영</div>
+                                                                <div class="schedule_info">
+                                                                    <div class="position">분당 ABC센터</div>
+                                                                    <div class="room">퀸A룸</div>
+                                                                    <!-- 20200722 룸넘버 마크업추가 -->
+                                                                    <div class="date">6월 9일 13:00~14:00</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="btn_pack">
+                                                            <button type="button"
+                                                                class="btn_icon icon_accordion_small_arrow"
+                                                                title="아코디언버튼"></button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion_conts">
+                                                        <div class="table_set">
+                                                            <div class="table_pack">
+                                                                <table>
+                                                                    <caption>스케쥴정보테이블</caption>
+                                                                    <colgroup>
+                                                                        <col style="width: 100px;">
+                                                                        <col>
+                                                                    </colgroup>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th class="tal">전문가</th>
+                                                                            <td>김포토</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="tal">날짜</th>
+                                                                            <td class="emphasis">2020년 6월 27일 목</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="tal">시간</th>
+                                                                            <td class="emphasis">11:30 ~ 12:45</td>
+                                                                        </tr>
+                                                                        <!-- s : 20211029 항목추가 -->
+                                                                        <tr>
+                                                                            <th class="tal">예약인원수</th>
+                                                                            <td class="emphasis">5명</td>
+                                                                        </tr>
+                                                                        <!-- e : 20211029 항목추가 -->
+                                                                        <tr>
+                                                                            <th class="tal">장소</th>
+                                                                            <td>경기도 성남시 분당구 탄천상로 151번길 20 베어캐슬 1,2츨 암웨이
+                                                                                브랜드 체험 센터</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="tal">예약번호</th>
+                                                                            <td>120983646</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="after_approval">
+                                                    <div class="btn_group">
+                                                        <div class="btn_pack">
+                                                            <button type="button" class="btn_sub_line"
+                                                                title="일정삭제">삭제</button>
+                                                        </div>
+                                                        <div class="btn_pack">
+                                                            <button type="button" class="btn_sub_line"
+                                                                title="일정추가신청">추가신청</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- s : 신고하기버튼 - 이용완료시 노출 -->
+                                                <div class="declare_btn" style="_display: none;">
+                                                    <div class="btn_pack">
+                                                        <button type="button" class="btn_sub_declare"
+                                                            title="신고하기">신고하기</button>
+                                                    </div>
+                                                </div>
+                                                <!-- e : 신고하기버튼 - 이용완료시 노출 -->
+                                            </div>
+                                            <!-- e : my스케줄리스트 반복부 -->
+                                        </div>
+                                        <!-- s : 20200803 - 더보기버튼추가 -->
+                                        <div class="more_view" style="display:none;">
+                                            <div class="btn_pack">
+                                                <button type="button" class="btn_more" title="더보기">더보기<img
+                                                        src="../../../public/image/component/form/btn_more_view.png"
+                                                        alt="카카오톡로고"></button>
+                                            </div>
+                                        </div>
+                                        <!-- e : 20200803 - 더보기버튼추가 -->
+                                    </div>
+                                    <!-- e : my스케줄(목록) -->
+                                </div>
+                                <div class="tab_conts"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- E : contents -->
+            </div>
+            <!-- E : contents_wrap -->
+            <!-- S : container_bottom -->
+            <div class="container_bottom">
+            </div>
+            <!-- E : container_bottom -->
+        </div>
+        <!-- E : container -->
+        <!-- S : footer -->
+        <div id="footer" class="footer">
+            <!-- S : footer_wrap -->
+            <div class="footer_wrap">
+                <!-- s : 20200715 PC용 푸터영역추가 -->
+                <div class="footer_set pc_view">
+                    <!-- s : 20200715 .pc_view PC뷰제어 -->
+                    <div class="footer_link">
+                        <div class="footer_link_item">이용약관</div>
+                        <div class="footer_link_item">전문가 이용동의서</div>
+                        <div class="footer_link_item">개인정보처리방침</div>
+                    </div>
+                    <div class="footer_pack">
+                        <div class="company_info">
+                            한국암웨이㈜ 서울특별시 강남구 영동대로 517 27층<br>
+                            (삼성동, 아셈타워) (대표이사 : 배수정)<br>
+                            사업자 등록번호 : 120-81-03391·통신판매신고번호 : 제 강남-1179호<br>
+                            고객센터/기술지원센터 : 1588-0080 · FAX : 02-557-2566<br>
+                            호스팅제공자 : 한국암웨이㈜ 사업자정보공개페이지
+                        </div>
+                        <div class="company_info">
+                            ALL CONTENTS Copyright<br>
+                            ⓒ 2020 Amway Korea LTD.ALL RIGHTS RESERVED
+                        </div>
+                        <div class="company_logo">
+                            <img src="../../../public/image/content/logo_amway.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- e : 20200715 PC용 푸터영역추가 -->
+            </div>
+            <!-- E : footer_wrap -->
+        </div>
+        <!-- E : footer -->
+    </div>
+    <!-- E : layout -->
+    <!-- Publish JS -->
+    <script type="text/javascript" src="../../../public/js/ui_common_body.js"></script>
+</body>
+
+</html>

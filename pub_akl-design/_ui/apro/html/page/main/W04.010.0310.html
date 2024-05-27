@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<!--
+* @ Copyright (c) EiLAB
+* @ 화면명 : 메인 | 마이 프로필 | 전문가 약관동의
+* @ 파일명 : html/page/main/W04.010.0310.html
+* @ 수정이력
+* =====================================================================================================
+*  날짜               작업자              요청자/상세내용
+* -----------------------------------------------------------------------------------------------------
+*  20200731           윤종규              최초작성
+* =====================================================================================================
+-->
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <title>메인 | 마이 프로필 | 전문가 약관동의</title>
+    <!-- Publish CSS -->
+    <link rel="stylesheet" type="text/css" href="../../../public/css/ui_layout.css" />
+    <link rel="stylesheet" type="text/css" href="../../../public/css/ui_common.css" />
+    <link rel="stylesheet" type="text/css" href="../../../public/css/ui_contents.css" />
+    <link rel="stylesheet" type="text/css" href="../../../public/css/ui_plugin.css" />
+    <link rel="stylesheet" type="text/css" href="../../../public/css/ui_responsive.css" />
+    <!-- Publish JS -->
+    <script type="text/javascript" src="../../../public/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../../../public/js/jquery-ui-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../../../public/js/ui_common_head.js"></script>
+    <script type="text/javascript" src="../../../public/js/ui_plugin.js"></script>
+</head>
+<body class="apro">
+<!-- S : layout -->
+<div id="layout" class="layout">
+    <!-- S : header -->
+    <div id="header" class="header type_border"> <!-- .type_border 클래스로 헤더보더라인제어 -->
+        <!-- S : header_wrap -->
+        <div class="header_wrap">
+            <!-- s : 헤더공통영역 -->
+            <div style="line-height: 50px; font-size: 20px; color: tomato">헤더영역(공통 레이아웃)</div>
+            <!-- e : 헤더공통영역 -->
+        </div>
+        <!-- E : header_wrap -->
+    </div>
+    <!-- E : header -->
+    <!-- S : container  -->
+    <div id="container" class="container">
+        <!-- S : cover_layer 영역추가 -->
+        <div class="cover_layer">
+        </div>
+        <!-- E : cover_layer 영역추가 -->
+        <!-- S : contents_wrap -->
+        <div class="contents_wrap single_view"> <!-- .single_view PC레아아웃 클래스-->
+            <!-- S : contents -->
+            <div class="contents">
+                <!-- s : 내비게이션 -->
+                <div class="navigation_pack pc_view"> 
+                    <div class="navigation_depth">
+                        <div class="btn_pack">
+                            <button type="button" class="btn_sub_text">Depth</button>
+                        </div>
+                    </div>
+                    <div class="navigation_depth">
+                        <div class="btn_pack">
+                            <button type="button" class="btn_sub_text">Depth</button>
+                        </div>
+                    </div>
+                    <div class="navigation_depth">
+                        <div class="btn_pack">
+                            <button type="button" class="btn_sub_text">Depth</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- e : 내비게이션 -->
+                <!-- s : 뎁스타이틀 추가 -->
+                <div class="depth_title pc_view">전문가 약관동의</div>
+                <!-- e : 뎁스타이틀 추가 -->
+                <div class="section_head">
+                    <div class="intro_pack">
+                        <div class="intro_title">
+                            약관 및 개인정보동의
+                        </div>
+                    </div>
+                    <div class="accordion_pack type_clause active">
+                        <div class="accordion_list">
+                            <div class="input_pack">
+                                <label class="label_checkbox"><input type="checkbox" name="" title="전체 동의하기" disabled="disabled"><span class="input_text">전체 동의하기</span></label> <!-- disabled="disabeld" 읽기전용정의 -->
+                            </div>
+                            <div class="btn_pack">
+                                <button type="button" class="btn_icon icon_accordion_arrow" title="아코디언버튼"></button>
+                            </div>
+                        </div>
+                        <div class="accordion_conts">
+                            <!-- s : 약관그룹 -->
+                            <div class="clause_group">
+                                <div class="clause_pack">
+                                    <div class="clause_title">
+                                        <div class="input_pack">
+                                            <label class="label_checkbox"><input type="checkbox" name="" title="[필수]개인정보 제공 동의" disabled="disabled"></label> <!-- disabled="disabeld" 읽기전용정의 -->
+                                            <span class="clause_name" title="약관보기">[필수]개인정보 제공 동의</span>
+                                        </div>
+                                    </div>
+                                    <div class="clause_info">
+                                        약관은 새롭게 받아야 합니다. 이름, ABO번호, 성별, 전화번호, 지원분야, 경력사항, 자격증, 수상경력, 활동가능 지역, 추가 기재
+                                    </div>
+                                    <div class="btn_pack">
+                                        <button type="button" class="btn_icon icon_clause_view" title="약관보기">약관보기</button>
+                                    </div>
+                                </div>
+                                <div class="clause_pack">
+                                    <div class="clause_title">
+                                        <div class="input_pack">
+                                            <label class="label_checkbox"><input type="checkbox" name="" title="[필수]프로필 정보 추가 수집 동의" disabled="disabled"></label> <!-- disabled="disabeld" 읽기전용정의 -->
+                                            <span class="clause_name" title="약관보기">[필수]프로필 정보 추가 수집 동의</span>
+                                        </div>
+                                    </div>
+                                    <div class="clause_info">
+                                        약관은 새롭게 받아야 합니다. 이름, ABO번호, 성별, 전화번호, 지원분야, 경력사항, 자격증, 수상경력, 활동가능 지역, 추가 기재
+                                    </div>
+                                    <div class="btn_pack">
+                                        <button type="button" class="btn_icon icon_clause_view" title="약관보기">약관보기</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- e : 약관그룹 -->
+                        </div>
+                    </div>
+                </div>
+                <div class="section_area">
+                    <div class="intro_pack">
+                        <div class="intro_title">
+                            윤리강령서약서
+                        </div>
+                    </div>
+                    <div class="ethic_promise_box">
+                        <div class="clause_group">
+                            <div class="clause_pack">
+                                <div class="clause_title">
+                                    <div class="input_pack">
+                                        <label class="label_checkbox"><input type="checkbox" name="" title="윤리강령 서약서" disabled="disabled"></label> <!-- disabled="disabeld" 읽기전용정의 -->
+                                        <span class="clause_name" title="약관보기">윤리강령 서약서</span>
+                                    </div>
+                                </div>
+                                <div class="clause_info">
+                                    약관은 새롭게 받아야 합니다. 이름, ABO번호, 성별, 전화번호, 지원분야, 경력사항, 자격증, 수상경력, 활동가능 지역, 추가 기재
+                                </div>
+                                <div class="btn_pack">
+                                    <button type="button" class="btn_icon icon_clause_view" title="약관보기">약관보기</button>
+                                </div>
+                            </div> 
+                            <div class="promise_pack">
+                                <div class="promise_describe">
+                                    나는 윤리강령을 이해하고 인지하였으며<br>
+                                    위반 사례가 발생할 경우 한국암웨이의<br>
+                                    어떠한 조치도 이의없이 수용할 것을 서약합니다.
+                                </div>
+                                <div class="promise_describe type_emphasis">
+                                    &lt;서약합니다&gt;를 입력해주세요.
+                                </div>
+                                <div class="input_pack">
+                                    <input type="text" placeholder="서약합니다" title="서약확인" >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <!-- E : contents -->
+        </div>		
+        <!-- E : contents_wrap -->
+        <!-- S : container_bottom -->
+        <div class="container_bottom"> 
+            <div class="bottom_btn_area">
+                <div class="btn_group">
+                    <div class="btn_pack">
+                        <button type="button" class="btn_main_line" title="취소">취소</button>
+                    </div>
+                    <div class="btn_pack">
+                        <button type="button" class="btn_main" title="동의 후 계속" disabled="disabled">동의 후 계속</button> <!-- disabled="disabled" 비활성화 정의-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- E : container_bottom -->
+    </div>
+    <!-- E : container -->
+    <!-- S : footer -->
+    <div id="footer" class="footer">
+        <!-- S : footer_wrap -->
+        <div class="footer_wrap">
+            <!-- s : PC용 푸터영역 -->
+            <div class="footer_set pc_view"> <!-- s : .pc_view PC뷰제어 -->
+                <div class="footer_link">
+                    <div class="footer_link_item">이용약관</div>
+                    <div class="footer_link_item">전문가 이용동의서</div>
+                    <div class="footer_link_item">개인정보처리방침</div>
+                </div>
+                <div class="footer_pack">
+                    <div class="company_info">
+                        한국암웨이㈜ 서울특별시 강남구 영동대로 517 27층<br>
+                        (삼성동, 아셈타워) (대표이사 : 배수정)<br>
+                        사업자 등록번호 : 120-81-03391·통신판매신고번호 : 제 강남-1179호<br>
+                        고객센터/기술지원센터 : 1588-0080 · FAX : 02-557-2566<br>
+                        호스팅제공자 : 한국암웨이㈜ 사업자정보공개페이지
+                    </div>
+                    <div class="company_info">
+                        ALL CONTENTS Copyright<br>
+                        ⓒ 2020 Amway Korea LTD.ALL RIGHTS RESERVED
+                    </div>
+                    <div class="company_logo">
+                        <img src="../../../public/image/content/logo_amway.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- e : PC용 푸터영역 -->
+        </div>
+        <!-- E : footer_wrap -->
+    </div>
+    <!-- E : footer -->
+</div>
+<!-- E : layout -->
+<!-- Publish JS -->
+<script type="text/javascript" src="../../../public/js/ui_common_body.js"></script>
+</body>
+</html>

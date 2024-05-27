@@ -1,0 +1,82 @@
+<!-- S : 20221012 cash_tax_request div, script만 남김 -->
+<div id="cash_tax_request" class="layer-area plp-v2 plp-v2-st2">
+    <div class="layer-area_container with_pop_head  shipping_delivery_st02">
+        <div class="layer-prd_search_top cash_tax">
+            <div class="pop_head">	
+                <span><button class="btn_back"><i class="sp_ic">이전</i></button></span>
+                <h2 class="tax">현금영수증 신청</h2>
+            </div>
+
+            <div class="layer-content-cash new-payment gift_order renew">
+                <dl class="cash_tax tab_control0 tab-area">
+                    <dt>
+                        <input class="amwa-radio" type="radio" name="paymentCardMode0" id="cash_01" value="" checked="checked">
+                        <label for="cash_01"><span>신청안함</span></label>
+                    </dt>
+                    <dt>
+                        <input class="amwa-radio" type="radio" name="paymentCardMode0" id="cash_02" value="">
+                        <label for="cash_02"><span>현금영수증</span></label>
+                    </dt>
+                    <dd class="tab_control tab-cont-st0" style="display:none;" id="cash_02_cont">
+                        <!-- s: 현금영수증 상세-->
+                        <div class="taxbill">
+                            <div class="tab-area-out">
+                                <div class="tab-area with50">
+                                    <div class="tab-head" role="tab">
+                                        <input class="amwa-radio" type="radio" name="paymentCardMode" id="cash_02_01" value="" checked="checked">
+                                        <label for="cash_02_01" class="focus subtax">개인 소득공제용</span></label>
+                                    </div>
+                                    <div class="tab-head" role="tab">
+                                        <input class="amwa-radio" type="radio" name="paymentCardMode" id="cash_02_02" value="">
+                                        <label for="cash_02_02" class="focus subtax">사업자 지출증빙용</label>																	
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mgt10">
+                            <div class="tab-cont-st2" id="cash_02_01_cont">
+                                <span class="form_select-default">
+                                    <select class="form_select" id="creditCardKind">
+                                        <option value="CPN">휴대폰번호</option>
+                                        <option value="CDN">현금영수증카드번호</option>
+                                    </select>
+                                    <input type="text" placeholder="‘-’없이 입력" id="receiptIssuanceNumber" maxlength="18" class="form-control mgt5 form_input">
+                                </span>
+                                <!-- <div class="mgt10">
+                                    <input id="chksave" type="checkbox" checked="checked"><label for="chksave" class="subtax"><span>입력된 현금영수증 정보 저장</span></label>
+                                </div> -->
+                            </div>
+    
+                            <div class="tab-cont-st2" id="cash_02_02_cont"  style="display:none;">
+                                <span class="form_select-default">
+                                    <select class="form_select" id="creditCardKind">
+                                        <option value="CPN">사업자 등록번호</option>
+                                        <option value="CDN">휴대폰 번호</option>
+                                        <option value="CCN">현금영수증 카드번호</option>
+                                    </select>
+                                    <input type="text" placeholder="‘-’없이 입력" id="receiptIssuanceNumber" maxlength="18" class="form-control mgt5 form_input">
+                                </span>
+                                <!-- <div class="mgt10">
+                                    <input id="price01" type="checkbox" checked="checked"><label for="price01"  class="subtax">입력된 현금영수증 정보 저장</label>
+                                </div> -->
+                            </div>
+                        </div>
+                        <!-- E: 현금영수증 상세-->
+                    </dd>                                
+                </dl>                
+            </div>              
+        </div>     
+
+        <div class="layer-area_bottom01">
+            <div class="align-box size-auto">
+                <button type="button" class="btn-modal_close v2">취소</button>
+                <button type="button" class="btn-modal_apply">선택</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script>
+    apayPayment();
+</script>
+<!-- E : 20221012 cash_tax_request div, script만 남김 -->

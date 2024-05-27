@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>제품 상세정보 - Amway Korea</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="font_kr.css">
+<link rel="stylesheet" type="text/css" href="https://www.amway.co.kr/_ui/responsive/theme-blue/css/main_new.css">
+<link rel="stylesheet" type="text/css" href="https://www.amway.co.kr/wro/blue_responsive.css">    
+<link rel="stylesheet" type="text/css" href="https://www.amway.co.kr/wro/addons_responsive.css">
+<link rel="stylesheet" type="text/css" href="https://www.amway.co.kr/_ui/responsive/theme-blue/css/content_res_all.css">
+<link rel="stylesheet" type="text/css" href="https://www.amway.co.kr/_ui/responsive/theme-blue/css/uiux_res_all.css">
+<script src="https://www.amway.co.kr/_ui/responsive/common/js/jquery-3.2.1.min.js"></script>
+<style>
+  /*신규 페이지 모바일 실제크기 적용*/
+  body{max-width:1400px;margin:0 auto;}
+  #loading{display:none !important}
+  @media screen and (max-width:639px) {
+    body{margin:0 auto;}
+  }
+</style>
+</head>
+<body class="akl">
+  <!-- skipToContent -->
+  <div id="skipToContent">
+    <a href="#contents">콘텐츠 바로가기 </a>
+  </div>
+  <!-- //skipToContent -->
+  <main>
+    <div class="container-fluid main-container">
+      <div class="amway-theme">
+        <div class="accordion-element new-accordion-element" id="productPageAccordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default accordion-panel">
+            <div class="accordion-panel-heading" role="tab" id="ProductIngredientsTabComponent">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#productPageAccordion" href="#ProductIngredientsTabComponentBody">
+                <div class="accordion-panel-title panel-title">
+                  <span class="accordion-title-wrapper">
+                    <span class="title-element accordion-header-icon"></span>   
+                    <span class="title-element title-text">상품 필수정보</span>
+                    <span class="title-element accordion-icon-wrapper"></span>
+                  </span>
+                </div>
+              </a>
+            </div>
+            <div id="ProductIngredientsTabComponentBody" class="accordion-panel-collapse panel-collapse collapse in" role="tabpanel">
+              <div class="panel-body electr">
+                <div class="accordion-collapse-wrapper">
+                  <p class="panel-body_sub-title">전자상거래 등에서의 상품 등의 정보제공에 관한 고시</p>
+
+                  
+                  <!-- INGREDIENTS -->
+                  <div class="truncated-text">
+                    <div class="table-content">
+                      <!-- <p class="panel-body_sub-title mgt10">생활화학제품 및 살생물제의 안전관리에 관한 법률 및 안전확인대상생할화학제품지정 및 안전표시기준에 따른 표시사항</p> -->
+
+                      <!-- <p class="dot-tit">제품명</p> -->
+                      <ul class="ecommerce-lst">
+                        <li>
+                          <div class="th-tit"><!-- 제목 --></div>
+                          <div class="td-txt"><!-- 내용 --></div>
+                        </li>
+                      </ul>
+
+                    </div>
+                  </div>
+                  <!-- //INGREDIENTS -->
+
+
+                </div>
+              </div>
+            </div>            
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+<!-- 소스보기 시작 -->
+<button id="btnViewSource" style="position:fixed;bottom:0;right:0;opacity:0.05;border-radius:2em">[view source]</button>
+<div class="layerWrapper" id="layerSourceView">
+  <div class="cbox layerBox popWidL">
+    <div class="cart-popup__dialog">
+      <div class="cart-popup__header"><span class="cart-popup__header-text">소스보기 <a href="#"
+            data-dismiss="modal" aria-label="Close" aria-hidden="true" class="cart-popup__close"><img
+              src="https://www.amway.co.kr/_ui/_noticeImg/res/close.png" alt="닫기"></a></span></div>
+      <div class="cart-popup__content payment">
+        <div class="cart-popup__item-info amway-theme">
+          <textarea id="placeSourceView" style="height:10em;width:100%;font-family:monospace;"></textarea>
+        </div>
+      </div>
+      <div class="cart-popup__item-link"><a href="" class="bt-akl-blue bt_close" onclick="document.getElementById('placeSourceView').select();document.execCommand('copy');showHideElem();">소스복사</a></div>
+    </div>  
+  </div>
+</div>
+<script>
+//소스보기 스크립트 실행
+initViewSource(
+  "<!-- INGREDIENTS -->", /*시작 주석 문자 입력*/
+  "<!-- //INGREDIENTS -->" /*끝 주석 문자 입력*/
+);
+    
+//소스보기 스크립트
+function initViewSource(e,t){let n=e,o=t;document.querySelector("#btnViewSource").addEventListener("click",function(e){let t=document.body.innerHTML,i,l,c,r,d,p,a,s;var y,h,u,$,g="#placeSourceView";layerPopOver(this,"#layerSourceView"),$=(y=t,h=n,u=o,i=y||document.body.innerHTML,l=i.length,c=u||"&gt;",r=i.split(h||"&lt;")[0].length,d=i.split(c),p=l-d[d.length-1].length-d[d.length-2].length,a=c.length,s=i.substr(r,p-a-r),r!==p&&d.length>2&&s.replace("https://www.amway.co.kr","")),document.querySelector(g).innerHTML=$,setTimeout(()=>{document.getElementById("placeSourceView").select()},500)})}function printCopyDone(){let e=document.createElement("p");e.textContent="복사했습니다",e.id="copyDone",e.style.cssText="position:fixed;bottom:0;right:2em;padding:.1em .3em;border-radius:.2em;box-shadow:0 0 10px #ccc;display:none;opacity:.5",document.body.appendChild(e)}function showHideElem(){printCopyDone(),jQuery("#copyDone").fadeIn(500).delay(200).fadeOut(500)}
+</script>
+<!-- //소스보기 끝 -->
+
+<script src="https://www.amway.co.kr/wro/all_responsive.js"></script>
+<script src="https://www.amway.co.kr/wro/addons_responsive.js"></script>
+</body>
+</html>

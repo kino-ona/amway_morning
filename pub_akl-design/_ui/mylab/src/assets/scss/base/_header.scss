@@ -1,0 +1,191 @@
+// header
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: $header-height;
+  background: $white-color;
+  z-index: $header-index;
+
+  h1 {
+    position: relative;
+  }
+  button {
+    position: absolute;
+    height: 4.5rem;
+    text-align: left;
+    text-indent: -9999px;
+
+    &.btn-prev {
+      top: 0;
+      left: 0.5rem;
+      width: 4.5rem;
+      background: url('/resource/images/common/header_prev.png') no-repeat 50% 50% /0.9rem;
+    }
+    &.btn-home {
+      top: 0;
+      right: 5rem;
+      width: 3.6rem;
+      background: url('/resource/images/common/header_home.png') no-repeat 50% 50% /1.5rem;
+    }
+    &.btn-menu {
+      top: 0;
+      right: 1.4rem;
+      width: 3.6rem;
+      background: url('/resource/images/common/header_menu.png') no-repeat 50% 50% /1.6rem;
+    }
+  }
+  .logo-list {
+    position: absolute;
+    top: 0.3rem;
+    left: 1.2rem;
+
+    &.open {
+      background: $white-color;
+      border-radius: 6px;
+      box-shadow: 0px 2px 10px rgba(122, 141, 175, 0.28);
+
+      li {
+        display: block;
+      }
+      .btn-open {
+        transform: rotate(-270deg);
+        transition: all 0.5s;
+      }
+    }
+    li {
+      display: none;
+
+      &:first-child {
+        display: block;
+      }
+      &.mylab a {
+        background: url('/resource/images/common/logo.png') no-repeat 1.4rem 0.9rem /6.7rem;
+      }
+      &.amway a {
+        background: url('/resource/images/common/logo_amway.svg') no-repeat 50% 50% /6.7rem;
+      }
+      a {
+        display: block;
+        width: 11.5rem;
+        height: 4rem;
+        padding: 0;
+      }
+    }
+    .btn-open {
+      position: absolute;
+      top: 1rem;
+      right: 0.5rem;
+      width: 24px;
+      height: 24px;
+      background: url('/resource/images/common/header_logolist.svg') no-repeat 50% 50% /0.8rem;
+      transform: rotate(-90deg);
+    }
+  }
+  //header type-main
+  &.type-main {
+    box-shadow: 0px 2px 10px rgba(122, 141, 175, 0.3);
+  }
+  //header type-sub
+  &.type-sub {
+    .pc {
+      display: none;
+    }
+    .h1-title {
+      position: absolute;
+      text-indent: -9999px;
+    }
+    .h2-title {
+      display: inline-block;
+      height: 4.5rem;
+      padding-top: 1.3rem;
+      padding-left: 4rem;
+      color: $dark-color;
+      font-size: 1.6rem;
+    }
+    .logo-list {
+      display: none;
+    }
+  }
+}
+
+/* width:768~ */
+@include mq('md') {
+  .header {
+    height: $header-height-pc;
+
+    & ~ .container {
+      padding-top: 70px;
+    }
+    //header type-main
+    &.type-main ~ .container {
+      max-width: none;
+    }
+    .logo-list {
+      top: 3px;
+      left: 0;
+      width: 180px;
+
+      li {
+        &.mylab a {
+          background-image: url('/resource/images/common/logo_pc.png');
+          background-position: 30px 16px;
+          background-size: 95px;
+        }
+        &.amway a {
+          background-position: 30px 15px;
+          background-size: 105px;
+        }
+        a {
+          width: 100%;
+          height: 65px;
+          padding: 0;
+        }
+      }
+      .btn-open {
+        top: 20px;
+        right: 21px;
+        width: 24px;
+        height: 24px;
+        background-size: 12px;
+      }
+    }
+    button {
+      &.btn-menu {
+        top: 15px;
+        right: 22px;
+        width: 40px;
+        height: 40px;
+        background: url('/resource/images/common/header_menu_pc.png') no-repeat 50% 50%;
+      }
+    }
+    //header type-sub
+    &.type-sub {
+      box-shadow: 0px 2px 10px rgba(122, 141, 175, 0.3);
+
+      .mobile {
+        display: none;
+      }
+      .pc {
+        display: block;
+      }
+      .logo-list {
+        display: block;
+      }
+      .btn-prev {
+        display: none;
+      }
+    }
+  }
+}
+
+/* width:1220~ */
+@include mq('xl') {
+  .header {
+    .inner {
+      position: relative;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  }
+}

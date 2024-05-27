@@ -1,0 +1,614 @@
+/************************************************
+Version : AKL Hybris UIUX 1.0
+Date : 2018-07-02
+Editor : HYEWON HWANG
+*************************************************/
+
+/* ### 공통 ###*/
+.brand .colorM {color:#0a70d3 !important;}
+.brand .color-gray{color:#55565a !important;}
+.brand .rela {position:relative;}
+.brand .overh {overflow:hidden;}
+.brand .fl {float:left;}
+.brand .fr {float:right;}
+.brand .txtl {text-align:left;}
+.brand .txtr {text-align:right;}
+.brand .full {width:100%;}
+
+.brand {letter-spacing:-1px;}
+.arr1 {position:relative;display:inline-block;} /* 오른쪽 화살표 > */
+.arr1:after {content:'';position:absolute;top:50%;right:-9px;width:7px;height:7px;transform:rotate(45deg) translatey(-50%);border:2px solid #fff;border-width:2px 2px 0 0;}
+
+.brand img:hover, .brand a:hover{-webkit-transform:none !important;-ms-transform:none !important;transform:none !important;}
+
+[class*=btn-wrap] {clear:both;margin:auto;text-align:center;}
+.btn-wrap50 {margin:50px 0 50px;}
+
+.full-component {position:relative;width:100%;max-width:1400px;margin:0 auto;}
+.full-component img {width:100%;}
+
+
+/* ### 레이아웃 ### */
+/* 전체메뉴 */
+#brandMenu {position:relative;max-width:1400px;margin:0 auto;padding:35px 12px;}
+#brandMenu .breadcrumb-section {padding:0;}
+#brandMenu .jump-to-amway {position:absolute;top:5px;right:15px;margin:0;background:none;}
+
+#brandMenu .breadcrumb {margin:0;padding:0;}
+#brandMenu .breadcrumb li::after {padding:0 5px;content:'/ ';color:#cccccc;}
+#brandMenu .breadcrumb li::before, #brandMenu .breadcrumb li:last-child::after, #brandMenu .breadcrumb li > div > div:last-child::after {content:none;}
+#brandMenu .breadcrumb li > div {display:flex; width:100%;}
+#brandMenu .breadcrumb li > div > div {position:relative;padding-right:20px;min-width:230px;} /* pc */
+#brandMenu .breadcrumb li > div > div::after {position:absolute;top:8px;right:8px;content:'/ ';color:#cccccc;}
+#brandMenu .breadcrumb li > div > div:last-child {padding:0;}
+#brandMenu .form-control {width:100%;}
+#brandMenu .select2-container {width:100% !important;}
+
+/* select2.css
+.select2-container .select2-selection--single {border:1px solid #dadada;border-radius:0;height:40px;overflow:hidden;}
+.select2-container .select2-selection--single:focus {border-color:#002F5F; outline:none;}
+.select2-container .select2-selection--single .select2-selection__rendered {padding:0 30px 0 15px;}
+.select2-container .selection .select2-selection .select2-selection__rendered {text-transform:uppercase;letter-spacing:.2px;font-weight:400;}
+.select2-container--default .select2-selection--single .select2-selection__rendered {line-height:38px;}
+.select2-container .selection .select2-selection .select2-selection__arrow {height:38px;padding:0;background: url(/_ui/responsive/theme-blue/images/selector-arrow.png) right center no-repeat #ffffff;background-size:18px auto;}
+.select2-container--default .select2-selection--single .select2-selection__arrow b {display:none;}
+.select2-dropdown {border-color:#7a9cd3;border-radius:0;}
+.select2-search--dropdown {padding:0;}
+.select2-container--default .select2-results__option[aria-selected=true]{background-color:#002f5f;color:#fff;}
+.select2-container--default .select2-results__option {padding:10px 10px;text-transform:uppercase;line-height:1.5;letter-spacing:.2px;font-weight:100;}
+*/
+
+/* 브랜드 타이틀 */
+.brand .brand-contents {position:relative;}
+.brand .brand-contents .top-title-wrapper {margin:10px 0 40px;}
+.brand .brand-contents .top-title-wrapper > p {margin:10px 0 0;}
+.brand .brand-contents h2{text-align:left;text-transform:none;letter-spacing:-1px;margin-bottom:20px;}
+.brand .brand-contents h2:not(:first-child) {margin-top:40px;}
+.brand .brand-contents h3 {margin-bottom:10px;}
+.brand .brand-contents p {margin:0 0 10px;}
+
+
+/* ### 암웨이소개 ### */
+.brand-contents .accordion-custom .pull-right {position:absolute;display:inline-block;top:50%;right:0;margin-top:-6px;}
+.brand-contents .accordion-custom .pull-right:before {position:absolute;right:0;}
+.brand-contents section .con-title {font-size:20px;letter-spacing:-2px;font-weight:500;}
+.brand-contents .list-type5 > li > strong {display:block;margin:6px 0;}
+
+.brand-contents .col-search-tab {margin-top:40px;}
+.brand-contents .col-search-tab li:last-child a {border-right:1px solid #dadada;}
+.brand-contents .col-search-tab.s1 ul li {flex:1;}
+
+
+/* 암웨이소개 메인 */
+.brand .mob { display:none;}
+.intro .three-tile-component {margin-left:-15px; margin-right:-15px;}
+.intro .masthead {position:relative; width:100%; display:table; margin:0 auto;}
+.intro .masthead img {width:100%;}
+.intro .masthead .mob {display:none;}
+.intro .masthead .banner_wrapper {padding-left:100px; z-index:99; max-width:1400px; margin:0; position:absolute; left:50%; top:50%; -webkit-transform:translate(-50%, -50%); -ms-transform:translate(-50%, -50%); transform:translate(-50%, -50%); width:100%;}
+.intro .masthead .banner_wrapper h1 { font-size:45px; line-height:1.2; text-transform:uppercase; margin-bottom:30px; color:#fff;}
+.intro .masthead .banner_wrapper .text {font-size:20px; display:block; max-width:55%; margin-bottom:20px; color:#fff;}
+
+.intro .experience-brands {margin-bottom:50px;}
+.amway-theme .intro .experience-brands.pullRight .masthead .banner_wrapper {transform:translate(0, -50%); width:auto; max-width:100%; overflow:hidden;}
+.amway-theme .intro .experience-brands .masthead .banner_wrapper .text{color:#002f5f;}
+.amway-theme .intro .experience-brands .masthead .banner_wrapper h1 {color:#002f5f;}
+.amway-theme .intro .experience-brands.hasBorder {border-bottom:1px solid #dadada; padding-bottom:50px;}
+
+#about-amway .about-amway-content {margin-top:50px;}
+#about-amway .content-article-bottom {border-top:none;}
+#about-amway .about-amway-content .block .item-content-wrap {background-color:#002F5F;}
+
+.akl .intro .bt-akl-blue {border:1px solid #fff;}
+
+.intro .banner-button-link .btn{line-height:0.95em; height:40px; padding:10px 25px;}
+.amway-theme .intro .category-success-story .item-content-wrap {max-width:80%; height:auto; max-height:191px; padding-top:22px; padding-bottom:22px;}
+.intro .category-success-story .item-content-wrap .banner-title{font-size:36px; font-weight:bold; font-stretch:condensed; text-transform:uppercase; text-align:center; line-height:1; margin:0;}
+.intro .category-success-story .item-content-wrap .sub-title-wrap {font-size:18px; font-weight:600; line-height:1.11;}
+.intro .category-success-story{margin:0 auto 20px; text-align:center;}
+
+.akl .brand h2.amway-learning__title {margin:55px auto;text-align:center;font-size:32px;letter-spacing:-2px;}
+.akl .brand #recentlyViewedListTab.product-recentlyviewed__imagelist .owl-item a {display:inline-block;width:136px;padding-top:136px;color:#00305e;font-size:16px;font-weight:400;background:url('/_ui/responsive/theme-blue/images/akl_brand/about/brand_icons.png') no-repeat 0 0;}
+.akl .brand #recentlyViewedListTab.product-recentlyviewed__imagelist .owl-item a span{display:block;margin-top:10px;}
+.akl .brand #recentlyViewedListTab.product-recentlyviewed__imagelist .owl-item:nth-child(2) a {background-position:-166px 0;}
+.akl .brand #recentlyViewedListTab.product-recentlyviewed__imagelist .owl-item:nth-child(3) a {background-position:-338px 0;}
+.akl .brand #recentlyViewedListTab.product-recentlyviewed__imagelist .owl-item:nth-child(4) a {background-position:-506px 0;}
+.akl .brand #recentlyViewedListTab.product-recentlyviewed__imagelist .owl-item:nth-child(5) a {background-position:-677px 0;}
+.akl .brand #recentlyViewedListTab.product-recentlyviewed__imagelist .owl-item:nth-child(6) a {background-position:-846px 0;}
+.akl .brand #recentlyViewedListTab.product-recentlyviewed__imagelist .owl-item:nth-child(7) a {background-position:-1006px 0;}
+.akl .brand #recentlyViewedListTab.product-recentlyviewed__imagelist .owl-item:nth-child(8) a {background-position:-1169px 0;}
+.akl .brand #recentlyViewedListTab.product-recentlyviewed__imagelist .owl-item:nth-child(9) a {background-position:-1330px 0;}
+
+/* 한국암웨이 */
+.brand .about article {padding:40px 0;border-top:1px solid #e3e3e3;}
+.brand .about article:first-child {padding-top:0;border-top:0;}
+.brand .about article > div:nth-of-type(2) {margin-top:40px;}
+.brand .about article:last-child {padding-bottom:0;}
+.brand .about article img {width:100%;}
+.brand .about article dl {overflow:hidden;}
+.brand .about article dl dt {float:left;margin-top:10px;color:#002f5f;}
+.brand .about article dl dd {padding-left:150px;margin-top:10px;}
+.brand .about article dl dd .link-btn {margin-left:20px;}
+
+.brand .about .plp-item-label {position:absolute;height:25px;}
+.brand .about .plp-item-label:after {right:-7px;top:0;width:0;height:0;border:1px solid #008fc5;border-width:25px 7px 0 0;}
+.brand .about .plp-item-label.bg-blue:after {border-color:#008fc5 transparent transparent #008fc5;}
+.brand .about .plp-item-label.bg-green:after {border-color:#20893d transparent transparent #20893d;}
+.brand .about .plp-item-label.bg-red:after {border-color:#e11e45 transparent transparent #e11e45;}
+.brand .about .plp-item-label.bg-gray {background:#56565a;}
+.brand .about .plp-item-label.bg-gray:after {border-color:#56565a transparent transparent #56565a;}
+.brand .about article .bt-akl-white {margin-top:10px;}
+
+.akl .nonepointer.bod-customer {padding:0;}
+.akl .nonepointer .thumnail-box .featured-product__thumnail,
+.akl .nonepointer .news-result-item-text {cursor:default;min-height:80px;text-align:center;}
+.akl .nonepointer .news-result-item-text span {display:block;}
+.akl .nonepointer .featured-product__title:hover {color:#002f5f;}
+
+.brand-cont1 {margin-bottom:40px;padding:35px 40px;line-height:1.6;font-size:16px;background:#f4f4f4;}
+.brand .accordion-custom .panel-body {font-size:14px;}
+.brand .accordion-custom .panel-body ul.list-type5 {margin-top:15px;}
+.brand .accordion-custom .panel-body ul.list-type5 li strong {color:#002f5f;}
+
+/* CEO인사말 */
+.brand .ceo section h2{margin-top:40px;}
+
+/* 연혁 */
+.box-bnr-fw01 .txt-wrap strong, .box-bnr-fw01 .txt-wrap p {color:#fff !important;}
+.brand .box-bnr-fw01 .txt-wrap p {font-size:16px !important; font-weight:300 !important;}
+.brand .box-bnr-fw01 .txt-wrap p em {display:block;font-size:18px; color:#fff;font-weight:500;font-style:normal;}
+.history .content-row article .cont-type1 figcaption {padding:20px 20px;text-align:center;}
+.history p.bdbtm {border-bottom:1px solid #e3e3e3;padding-bottom:20px;font-size:16px;margin:-10px 0 0;}
+
+.history-area {display:block;margin-top:30px;}
+.history-area article {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    max-height: 180px;
+}
+.timeline-cont1 {}
+.timeline {
+  display: block;
+  width: 100%;
+  height:700px;
+  overflow: hidden;
+}
+.artistry .timeline {height:800px;}
+
+.timeline .timelineWrap {
+  margin:auto;
+  width: 100%;
+  max-width: 1360px;
+}
+.timeline .slideBox {
+  line-height: 1.2;
+  width: 100%;
+  padding: 0 3.0%;
+  margin: 70px auto 50px;
+  max-width: 1140px;
+}
+.timeline .slideBox > div {display:table;}
+.timeline .slideBox > div + div {padding-top:40px;}
+.timeline .slideBox .slide-text,
+.timeline .slideBox .slide-img {
+  display: table-cell;
+  vertical-align: middle;
+}
+.timeline .slideBox .slide-text {
+  padding: 0 10% 0 0;
+}
+.timeline .slideBox .slide-text .mob {
+  display: none;
+}
+.timeline .slideBox .slide-text h1 {
+  font-size: 45px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #002F5F;
+}
+.timeline .slideBox .slide-text.s1 {display:block;width:100%;padding:0;}
+.timeline .slideBox .slide-text.s1 ul {margin-top:20px;}
+.timeline .slideBox .slide-text.s1 ul li {padding-left:50px;}
+.timeline .slideBox .slide-text p {margin-bottom:20px;font-size:14px;line-height:1.6;}
+.timeline .slideBox .slide-img {width: 40%;}
+
+.timeline .slideBox > div ul>li {position:relative;margin-bottom:10px;padding-left:60px;line-height:1.6;}
+.timeline .slideBox > div ul>li strong {position:absolute;left:0;width:60px;display:inline-block;color:#002f5f;font-weight:700;}
+
+.timeline .owl-controls {
+  margin: 0;
+}
+.timeline .owl-dots {
+  background: url("/_ui/responsive/theme-blue/images/akl_brand/about/company_timeline_bg.png") no-repeat center top;
+  background-size: 1400px auto;
+  width: 1400px;
+  /*padding: 8px 11.3% 20px 11.3%;*/
+  padding: 8px 153px 20px;
+  margin: 0 auto;
+  height: 74px;
+  text-align: left;
+  right:auto;
+  bottom:auto;
+}
+.timeline .owl-dots .owl-dot {
+  opacity: 0;
+  display: inline-block;
+  margin-right:138.5px;
+}
+.timeline.s1 .owl-dots {
+  background: url("/_ui/responsive/theme-blue/images/akl_brand/about/company_timeline_bg2.png") no-repeat center top;
+  background-size: 1400px auto;
+  width: 1400px;
+  padding: 8px 0 20px 296px;
+}
+.timeline.s1 .owl-dots .owl-dot {
+  margin-right:74.0px;
+}
+.timeline .owl-dots .owl-dot span {
+  width: 12px;
+  height: 12px;
+  margin: 0 1.5px 0 2px;
+  display: block;
+  border-radius: 100%;
+  transition-property: opacity;
+  transition-duration: 200ms;
+  transition-timing-function: ease;
+}
+.timeline .owl-dots .active {
+  opacity: 1;
+}
+.timeline .owl-dots .owl-dot.active span {
+  background: #008fc5;
+}
+
+/* 부산 아시아 물류 허브 센터 */
+.hubcenter .ui-snap-big {margin:40px auto;height:400px;}
+.hubcenter .ui-snap-big li {height:100%;}
+.hubcenter .slides .image-gallery {text-align:center;}
+.hubcenter .image-gallery.js-gallery img {display:inline-block;width:auto;}
+.hubcenter .slides .image-gallery img:hover {margin:0;-webkit-transform:none;-ms-transform:none;transform:none;}
+
+.hubcenter #uiPrdViewDetail .owl-item button.ui-snap-btn {margin:0 15px;max-width:100%;max-height:100%;}
+.hubcenter #uiPrdViewDetail .owl-item button.ui-snap-btn img {max-height:100%;}
+
+/* 파운더스 카운슬 */
+.brand .new-social-list {overflow:hidden;margin:-10px;}
+
+/* 뉴스룸 */
+.brand .customer-wrap {padding:0;margin-top:35px;}
+.brand .bod-view-head h2.head-title {margin-bottom:10px;}
+.brand .customer-wrap .bod-view-sns {position:relative;}
+
+
+/* ### 글로벌 암웨이 ### */
+
+
+
+/* ### 브랜드 메인 레이아웃 ### */
+.akl .brand .homepage_banner,
+.akl .brand .homepage_banner .owl-carousel .owl-stage-outer,
+.akl .brand .homepage_banner .wrapper .banner__wrapper,
+.akl .brand .homepage_banner .owl-carousel .owl-item .banner__image-sub {height:727px;}
+
+.akl .brand .homepage_banner .owl-dots {right:0;left:0;bottom:auto;top:50%;width:1367px;margin:auto;}
+.akl .brand .homepage_banner .owl-dots .owl-dot {position:relative;display:block;left:0;right:auto;padding:10px 0 10px 30px !important;text-align:left;color:#fff;font-size:16px;font-weight:100;}
+.akl .brand .homepage_banner .owl-dots .owl-dot.active:before {content:'';display:block;position:absolute;left:0;top:20px;width:20px;height:3px;background:#e11e44;}
+.akl .brand .homepage_banner .owl-dots .owl-dot.active {font-weight:400;font-size:17px;}
+.akl .brand .homepage_banner .owl-dots .owl-dot span {background:none;box-shadow:none;width:auto;height:auto;margin:0;}
+
+.akl .brand .homepage_banner .wrapper {background:#fff;}
+/*.akl .brand .homepage_banner .banner__wrapper {max-width:1376px;}*/
+.akl .brand .homepage_banner .banner__wrapper * {color:#fff !important;}
+.akl .brand .homepage_banner .banner__title {position:absolute;z-index:11;top:40px;right:0;padding:10px 40px 0 0;font-size:14px;}
+.akl .brand .homepage_banner .banner__title:before {content:'';display:block;position:absolute;right:0;top:0px;width:83px;height:3px;background:#e11e44;}
+/* 기본 스타일 */
+.akl .brand .homepage_banner .banner__wrapper .banner__message {position:absolute;top:17%;left:50%;width:40%;height:70%;margin:0;padding:30px;}
+.akl .brand .homepage_banner .banner__message:before {content:'';position:absolute;z-index:-1;right:0;top:0;display:block;width:75%;height:100%;background:#e11e44;}
+.akl .brand .homepage_banner .banner__message--main {font-size:44px;font-weight:500;line-height:1.3;}
+.akl .brand .homepage_banner .banner__message--sub {position:absolute;right:30px;bottom:40px;padding:50px 0 0;width:auto;font-size:16px; line-height:1.5;}
+
+/* 암웨이퀸 두번째 스타일 */
+.akl .brand .homepage_banner .banner__wrapper.s2 {}
+.akl .brand .homepage_banner  .owl-carousel .owl-item .banner__wrapper.s2 .banner__image-sub {position:absolute;z-index:1;float:none;height:auto;width:70%;max-width:708px;margin:0;left:25%;top:10%;}
+.akl .brand .homepage_banner .banner__wrapper.s2 .banner__message {top:72%;left:50%;right:auto;width:700px;height:auto;transform:translate(-50%,-50%);}
+.akl .brand .homepage_banner .banner__wrapper.s2 .banner__message:before,
+.akl .brand .homepage_banner .banner__wrapper.s3 .banner__message:before {content:none;}
+.akl .brand .homepage_banner .banner__wrapper.s2 .banner__message--sub {position:relative;right:auto;bottom:auto;width:100%;padding:0;}
+
+/* 암웨이퀸 세번째 스타일 */
+.akl .brand .homepage_banner .banner__wrapper.s3 .banner__message {top:10%;left:20%;max-width:800px;width:75%;height:auto;}
+.akl .brand .homepage_banner .banner__wrapper.s3 .banner__message--main {font-size:25px;font-weight:400;}
+.akl .brand .homepage_banner .banner__wrapper.s3 .banner__message--sub {position:relative;right:auto;bottom:auto;width:100%;padding-top:24px;margin-top:10px;}
+.akl .brand .homepage_banner .banner__wrapper.s3 .banner__message--sub:before {content:'';display:block;position:absolute;left:0;top:0px;width:33px;height:3px;background:#e11e44;}
+.akl .brand .homepage_banner .banner__wrapper.s3 .banner__message--sub > div {width:48%;float:left;}
+.akl .brand .homepage_banner .banner__wrapper.s3 .banner__message--sub > div:last-child {float:right;}
+.akl .brand .homepage_banner .banner__wrapper.s3 .banner__message--sub > div > p {margin-bottom:40px;font-size:14px;}
+.akl .brand .homepage_banner .banner__wrapper.s3 .banner__message--sub > div > p strong {display:block;font-size:16px;margin-bottom:10px;}
+/**/
+
+.title-component {clear:both;margin:50px 0 50px;text-align:center;}
+.title-component h2 {margin:0;text-transform:none;text-align:center !important;}
+.title-component h2 span {display:block;font-size:24px;font-weight:400;margin-bottom:8px;}
+.title-component > p {margin:10px 0 0;font-size:18px;font-weight:400;line-height:1.4;letter-spacing:-1px;}
+.title-component .title-ul {margin:40px auto;width:80%;display:flex;}
+.title-component .title-ul li{position:relative;padding:75px 0 0;display:inline-block;-webkit-flex:1;flex:1;text-align:center;font-weight:700;}
+.title-component .title-ul li:before {content:'';display:block;position:absolute;top:0;width:100%;height:60px;background:url('../images/akl_brand/queen/queen_icons.png') no-repeat 50% 0;background-size:62px auto;}
+.title-component .title-ul li:nth-of-type(2):before {background-position-y:-96px;}
+.title-component .title-ul li:nth-of-type(3):before {background-position-y:-196px;}
+.title-component .title-ul li:nth-of-type(4):before {background-position-y:-300px;}
+.title-component .title-ul li:nth-of-type(5):before {background-position-y:-395px;}
+.title-component + .content-row {margin-top:0;}
+
+.brand .video-preview {margin:0;height:400px;overflow:hidden;background:url('/_ui/responsive/theme-blue/images/akl_brand/queen/movie_bg.jpg') no-repeat 50% 50%;background-size:1376px auto;}
+.oneforone .video-preview {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/oneforone/movie_bg.jpg');}
+.espring .video-preview {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/espring/movie_bg.jpg');}
+.artistry .video-preview {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/artistry/movie_bg.jpg');}
+
+.content-row {position:relative;clear:both;overflow:hidden;display:flex;flex-wrap:wrap;margin:60px -12px 0;}
+.content-row article {position:relative;width:50%;padding:0 12px 30px;box-sizing:border-box;}
+.content-row.col3 article {width:33.3%;}
+.content-row.col4 article {width:25%;}
+.content-row article img {width:100%;}
+.content-row article [class*="cont-type"] {position:relative;margin:0;height:100%;background:#f4f4f4;}
+.content-row article [class*="cont-type"] figcaption{padding:20px 20px 10px;font-size:16px;font-weight:500;color:#002f5f;}
+.content-row article [class*="cont-type"] figcaption + p {margin:0;padding:0 20px 50px;line-height:1.8;}
+.content-row article [class*="cont-type"] figcaption + p > span {display:block;margin-bottom:10px;}
+.content-row article [class*="cont-type"] a.arr1 {position:absolute;bottom:20px;left:20px;display:inline-block;font-weight:500;}
+.content-row article [class*="cont-type"] a.arr1:after {border-color:#0075a4;}
+.content-row article .cont-type2 figcaption + p {padding-bottom:20px;} /* 하단 상세보기 버튼이 없는 경우 */
+
+.content-row.s1 {display:block;margin:0 0 40px;}
+.content-row.s1 article {flex:none;max-width:100%;padding:40px 0 30px;border-bottom:1px solid #e3e3e3;}
+
+.content-row.s2 {display:block;margin-top:0;}
+.content-row.s2 dl{width:50%;float:left;padding:0 15px;box-sizing:border-box;}
+.content-row.s2 dt {margin-top:40px;font-size:16px;font-weight:500;}
+.content-row.s2 dd {margin-top:10px;border:1px solid #dadada;padding:40px 40px 40px;}
+
+.akl .brand .item-content-wrap h2 {margin:0 0 10px;text-align:center;}
+.akl .brand .category-success-story .success-story__item {-webkit-flex:1;flex:1;max-width:50%;padding:0 15px;}
+.akl .brand .category-success-story .success-story__item + .success-story__item {/*margin-left:30px;padding:0;*/}
+
+.txtbox {position:relative;display:flex;align-items:center;margin:0;width:100%;height:400px;overflow:hidden;background-repeat:no-repeat;background-position:50% 0;background-size:1200px auto;}
+.txtbox div{position:absolute;max-height:100%;max-width:50%;}
+.txtbox img {width:100%;}
+.txtbox .mob-image {display:none;}
+.txtbox h3 {font-size:34px;font-weight:400;line-height:1.2;color:#00305e;}
+.txtbox p {margin-top:10px;font-size:20px;}
+.txtbox div.s1 {left:7%;max-width:50%;}
+.txtbox div.s2 {left:51%;}
+.txtbox div span {display:block;margin-top:10px;}
+.txtbox div a.arr1:after {border-color:#0075a4;}
+.txtbox div strong {color:#00305e;font-weight:700;}
+
+/* 뉴트리라이트 */
+.nutrilite .txtbox.s1 {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/nutrilite/fullimg1.png');}
+.nutrilite .txtbox.s2:before {content:"";position:absolute;z-index:-1;left:0;display:block;width:650px;height:100%;background:url('/_ui/responsive/theme-blue/images/akl_brand/nutrilite/fullimg2.jpg') no-repeat 0 0;}
+.nutrilite .txtbox.s2:after {content:"";position:absolute;z-index:-1;right:0;display:block;width:550px;height:100%;background:url('/_ui/responsive/theme-blue/images/akl_brand/nutrilite/fullimg2.jpg') no-repeat 100% 0;}
+.nutrilite .txtbox div.s2 h3 {color:#20893d;}
+
+/* 배스/바디 */
+.bathbody .txtbox.s1 {height:454px;background-image:url('/_ui/responsive/theme-blue/images/akl_brand/bathbody/fullimg1.jpg');background-position:50% 0;background-size:1376px auto;}
+.bathbody .txtbox.s2 {height:490px;background-image:url('/_ui/responsive/theme-blue/images/akl_brand/bathbody/fullimg2.jpg');background-position:50% 0;background-size:1376px auto;}
+.bathbody .txtbox.s3 {height:464px;background-image:url('/_ui/responsive/theme-blue/images/akl_brand/bathbody/fullimg3.jpg');background-position:50% 0;background-size:1376px auto;}
+.bathbody .txtbox div.s2 {left:60%;max-width:40%;}
+.bathbody .txtbox h3, .bathbody .txtbox p {color:#000;}
+.bathbody .txtbox.s1 div h3, .bathbody .txtbox.s1 div p {color:#fff;}
+.bathbody .txtbox.s1 div a.arr1 {color:#fff;}
+.bathbody .txtbox.s1 div a.arr1:after {border-color:#fff;}
+
+/* 아티스트리 */
+.akl .artistry .homepage_banner .banner__message:before,
+.akl .artistry .homepage_banner .banner__title:before,
+.akl .artistry .homepage_banner .owl-dots .owl-dot.active:before {background-color:#e1b738;}
+.artistry .txtbox.s1 {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/artistry/fullimg1.jpg');background-position:50% 0;background-size:1376px auto;}
+.artistry .txtbox.s2 {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/artistry/fullimg2.jpg');background-position:50% 0;background-size:1376px auto;}
+.artistry .txtbox.s3 {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/artistry/fullimg3.jpg');background-position:50% 0;background-size:1376px auto;}
+.artistry .txtbox.s4 {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/artistry/fullimg4.jpg');background-position:50% 0;background-size:1376px auto;}
+.artistry .txtbox.s1 div, .artistry .txtbox.s2 div {top:50px;max-width:90%;}
+.artistry .txtbox.s4 h3 {color:#000;font-size:40px;}
+.artistry .txtbox.s4 p {color:#000;font-size:16px;font-style:italic;letter-spacing:0;}
+
+/* 이스프링 */
+.espring .txtbox.s1 {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/espring/fullimg1.jpg');background-position:50% 0;background-size:1376px auto;}
+.espring .txtbox.s2 {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/espring/fullimg2.jpg');background-position:50% 0;background-size:1376px auto;}
+.espring .txtbox.s1 div, .espring .txtbox.s2 div {top:50px;max-width:90%;}
+.espring .txtbox.s1 p, .espring .txtbox.s2 p {font-size:16px;}
+.espring .txtbox.s1 p.b {color:#00305e;font-size:20px;font-weight:400;}
+
+/* 이스프링 서브 */
+.espring .title-h3 {padding-top:30px;}
+.espring table tbody tr:nth-of-type(even) {background:none;}
+
+/* 엣모스피어 */
+.atmosphere .txtbox.s1 {height:574px;background-image:url('/_ui/responsive/theme-blue/images/akl_brand/atmosphere/fullimg1.png');background-position:50% 0;background-size:1376px auto;}
+.atmosphere .txtbox.s2 {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/atmosphere/fullimg2.jpg');background-position:55% 0;background-size:1376px auto;}
+.atmosphere .txtbox.s3 {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/atmosphere/fullimg3.jpg');background-position:50% 0;background-size:1376px auto;}
+.atmosphere .title-component.t1 {margin-top:-82px;}
+.atmosphere .txtbox {-webkit-justify-content: center; justify-content:center;}
+.atmosphere .txtbox.s1 div {max-width:100%;top:140px;}
+.atmosphere .txtbox.s2 div {max-width:100%;top:10px;}
+.atmosphere .txtbox.s3 div {left:19%;top:35%;}
+
+/* XS 에너지 */
+.xsenergy_mainlist {width:100%;overflow:hidden;background:#000;}
+.xsenergy_mainlist li {float:left;width:33.33%;position:relative;}
+.xsenergy_mainlist li.wide1 {width:66.65%;}
+.xsenergy_mainlist li.wide2, .xsenergy_mainlist li.wide3{width:66.67%;}
+.xsenergy_mainlist li img {display:block;width:100%;height:auto;}
+.xsenergy_mainlist .txt-wrap {position:absolute;top:25px;left:30px;line-height:1.5;}
+.xsenergy_mainlist .txt-wrap span {display:block;font-size:16px;color:#fff;}
+.xsenergy_mainlist .txt-wrap em {display:block;color:#fff;opacity:0.5;}
+.xsenergy_mainlist li > a {position:absolute;top:0;width:100%;height:100%;display:block;color:#fff;}
+.xsenergy_mainlist li > a:hover {color:#fff;}
+.xsenergy_mainlist .video-btn img {position:absolute;top:50%;left:50%;margin:-20px 0 0 -40px;height:80px;width:80px;}
+.xsenergy_mainlist .sns-link span {position:absolute;bottom:25px;left:30px;}
+@media (max-width: 1024px){
+	.xsenergy_mainlist li {width:50%;}
+	.xsenergy_mainlist li[class*='wide']{width:100%;margin:0 !important;}
+}
+@media (max-width: 768px){
+	.xsenergy_mainlist .video-btn img {width:70px;height:70px;margin:-5% 0 0 -35px;}
+}
+@media (max-width: 630px){
+	.xsenergy_mainlist li {width:100% !important;}
+}
+
+
+@media (max-width: 768px){
+
+	/* ### 레이아웃 ### */
+	#brandMenu .select.form-control {width:100%;}
+	#brandMenu .breadcrumb li > div > div {position:relative;padding-right:10px;flex:1;min-width:33%;}
+	#brandMenu .breadcrumb li > div > div::after {content:none;}
+	#brandMenu .breadcrumb li > div > div .form-control {width:100%;}
+	#brandMenu {padding:10px 0;}
+	#brandMenu .breadcrumb-section {margin-top:60px;padding:15px;}
+	#brandMenu .jump-to-amway {position:relative;right:0;padding:0 0 15px;}
+
+	.select2-container .select2-selection--single {width:100%;}
+	.select2-container .selection .select2-selection .select2-selection__rendered {max-width:100%;}
+
+	.brand .brand-contents .top-title-wrapper {padding-bottom:15px;margin:0 0 50px;}
+	.brand .bod-view-sns {position:absolute;right:15px;}
+	.brand .mob, .intro .masthead .mob, .amway-theme .desktop-image-mob {display:block !important;}
+	.brand .pc, .intro .masthead .pc, .amway-theme .desktop-image {display:none;}
+	.brand .full-component {margin:0 -15px;height:auto;width:auto;}
+	
+	.brand-board {padding:25px 0 0;}
+
+	/* 한국암웨이 */
+	.akl .amway-theme .intro .bt-akl-blue {background:#002F5F;}
+	.brand .about article {padding:30px 0;}
+	.brand .about article > div:nth-of-type(2) {margin-top:25px;}
+	.brand .about article dl dd {padding-left:100px;}
+	.brand-cont1 {margin:0 -15px 40px; padding:25px 15px;font-size:14px;}
+	.brand .value .akl-toggle-wrap .panel-body .title-h6 {font-size:14px !important;line-height:1.3;}
+
+	.akl .nonepointer .news-result-item-text {text-align:left;}
+	.akl .nonepointer .news-result-item-text span {font-size:14px;font-weight:400;}
+
+	.brand .process .title-h5 {font-size:16px !important;}
+	.brand .title-h6 {line-height:1.2;}
+
+	/* 부산 아시아 물류 허브 센터 */
+	.hubcenter .ui-snap-big {height:auto; width:100%; margin:20px auto;}
+	.hubcenter .ui-snap-big li {height:auto !important;}
+	.hubcenter .image-gallery.js-gallery img {width:100%;}
+	.hubcenter .product-recentlyviewed__imagelist {max-width:100%;margin:auto;}
+	.hubcenter #uiPrdViewDetail .owl-item button.ui-snap-btn {margin:0 9px;}
+
+	/* 연혁 */
+	.timeline {
+	  border-bottom: 0;
+	  margin-bottom: 0;
+	  height:auto;
+	}
+	.timeline .timelineWrap {
+	  margin: 0 auto;
+	}
+	.timeline .slideBox {
+	  padding: 0 7%;
+	  margin: 30px auto 0;
+	  text-align: left;
+	}
+	.timeline .slideBox .slide-text,
+	.timeline .slideBox .slide-img {
+	  display: table;
+	  width: 100%;
+	  padding: 0;
+	  font-size: 16px;
+	}
+	.timeline .slideBox .slide-text h1,
+	.timeline .slideBox .slide-img h1 {
+	  font-size: 36px;
+	  font-weight: 600;
+	}
+	.timeline .slideBox .slide-text .mob,
+	.timeline .slideBox .slide-img .mob {
+	  display: block;
+	}
+	.timeline .slideBox .slide-text .pc,
+	.timeline .slideBox .slide-img .pc {
+	  display: none;
+	}
+	.timeline .owl-dots {
+	  height: 0;
+	  margin: 0;
+	  padding: 0;
+	  overflow: hidden;
+	}
+	.timeline .owl-dots .owl-dot {
+	  display: nonel;
+	}
+	.timeline .owl-theme .owl-controls .owl-nav .owl-prev {
+	  left: 0;
+	}
+	.timeline .owl-theme .owl-controls .owl-nav .owl-next {
+	  right: 0;
+	}
+
+	/*.timeline .slideBox > div ul>li {padding-left:0;}
+	.timeline .slideBox > div ul>li strong {position:relative;display:block;}*/
+
+	.history .content-row article .cont-type1 figcaption{text-align:left;}
+	
+	/* ### 브랜드 메인 레이아웃 ### */
+	.akl .brand .homepage_banner,
+	.akl .brand .homepage_banner .owl-carousel .owl-stage-outer,
+	.akl .brand .homepage_banner .wrapper .banner__wrapper,
+	.akl .brand .homepage_banner .owl-carousel .owl-item .banner__image-sub {height:auto;}
+
+	.akl .brand .homepage_banner .owl-dots {top:auto;bottom:20px;width:100%;}
+	.akl .brand .homepage_banner .owl-dots .owl-dot {display:inline-block;padding:0 !important;}
+	.akl .brand .homepage_banner .owl-dots .owl-dot.active:before {content:none;}
+	.akl .brand .homepage_banner .owl-dots .owl-dot span {width:30px;height:10px;background:rgba(0,0,0,0.5);font-size:0;border-radius:0;margin:5px 5px;}
+	.akl .brand .homepage_banner .owl-dots .owl-dot.active span {background:#cb1a3a;}
+
+	.akl .brand .homepage_banner .banner__wrapper .banner__message {width:80%;left:20%;margin:0;padding:30px 20px 20px;}
+	.akl .brand .homepage_banner .banner__message--main {font-size:25px;line-height:1.4;text-align:left;}
+	.akl .brand .homepage_banner .banner__message--sub {position:relative;display:block;right:auto;bottom:auto;font-size:14px;padding:30px 0 0 30%;}
+	.akl .brand .homepage_banner .banner__wrapper .banner__image {display:none;}
+
+	.brand .video-preview {height:320px;background-size:auto 100%;}
+
+	.content-row {display:block;margin:30px 0 0;}
+	.content-row article, .content-row.col3 article {width:100%;margin:0 0 30px;padding:0;}
+	.content-row.col3 + .content-row.col3 {margin-top:30px;}
+	.content-row article:last-child {margin-bottom:0;}
+
+	.akl .brand .category-success-story {display:block;margin:0;}
+	.akl .brand .category-success-story .success-story__item {max-width:100%;margin:30px 0 0;}
+	.akl .brand .category-success-story .success-story__item + .success-story__item {margin-left:0;}
+
+	.title-component .title-ul {display:block;width:60%;}
+	.title-component .title-ul li {display:block;margin-top:30px;padding:0 0 0 73px;text-align:left;}
+	.title-component .title-ul li:before {width:50px;height:50px;left:0;background-size:52px auto;}
+	.title-component .title-ul li:nth-of-type(2):before {background-position-y:-90px;}
+	.title-component .title-ul li:nth-of-type(3):before {background-position-y:-165px;}
+	.title-component .title-ul li:nth-of-type(4):before {background-position-y:-250px;}
+	.title-component .title-ul li:nth-of-type(5):before {background-position-y:-332px;}
+
+	.txtbox .desktop-image {display:none;}
+	.txtbox .mob-image {display:block;}
+	.txtbox h3 {font-size:26px;}
+	.txtbox p {display:none;}
+	.txtbox div.s2 {left:49%;}
+	.txtbox div.s2 span {margin-top:20px;}
+	.txtbox {max-height:400px;}
+
+	/* 암웨이퀸 */
+	.content-row.s1 article {padding:30px 0 20px;margin-bottom:0}
+	.content-row.s2 dl {float:none;width:auto;padding:0;}
+	.content-row.s2 dt {margin-top:25px;}
+	.content-row.s2 dd {padding:20px;}
+
+	/* 아티스트리 */
+	.artistry .txtbox.s1 p, .artistry .txtbox.s2 p {display:block;}
+	/* 이스프링 */
+	.espring .txtbox.s1 p, .espring .txtbox.s2 p {display:block;}
+	/* 엣모스피어 */
+	
+}
