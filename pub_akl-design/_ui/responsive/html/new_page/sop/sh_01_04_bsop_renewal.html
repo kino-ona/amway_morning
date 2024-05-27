@@ -6626,14 +6626,16 @@
         $( '#loadLayer' ).load( '../../include/person_number_default.html' );  // 2020-10-08 주민등록번호 추가 
 	});
 
-		// 202405 것모닝 작업 - 처음 진입시 모바일 화면체크
+	// 202405 것모닝 작업 - 처음 진입시 모바일 화면체크
+	function windowResizeOptionalCategory() {
 		if($('.box_sop-product-helper .optional_category_wrap')) {
-		var windowWidth = $(window).width();
-
-		if(windowWidth <= 768) {
-			$('.optional_category_wrap').show();
-		}else {
-			$('.optional_category_wrap').hide();
+			var windowWidth = $(window).width();
+	
+			if(windowWidth <= 768) {
+				$('.optional_category_wrap').show();
+			}else {
+				$('.optional_category_wrap').hide();
+			}
 		}
 	}
 
@@ -6680,7 +6682,12 @@
 
 		$('.accordion_list--'+ number +' .optional_tab').css('display', data === 'optional_n' ? 'none' :'block');
 		$('.accordion_info_wrap').css('display', data === 'optional_n' ? 'none' :'block');
-		$('.optional_category_wrap').css('display', data === 'optional_n' ? 'none' :'block');
+
+		if(windowWidth <= 768) {
+			$('.optional_category_wrap').css('display', data === 'optional_n' ? 'none' :'block');
+		}else {
+			$('.optional_category_wrap').hide();
+		}
   }
 
 	step1Tab();
@@ -6747,6 +6754,8 @@
 
 		if (ww > 1200) {
 			initSwiper();
+		} else if (ww <= 768) {
+			windowResizeOptionalCategory();
 		}
 	});
 
