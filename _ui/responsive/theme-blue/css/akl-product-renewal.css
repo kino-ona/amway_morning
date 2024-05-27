@@ -16815,6 +16815,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	align-items:flex-end;
 	border-bottom: none;
 	margin-top:105px;
+	border-bottom: 1px solid #D7D7D7 !important;
 }
 .bsop_renew .box_sop-main.sh_bsop_renewal .box_sop-wrap.smart-order-tabs .box_sop-tab .tabs {
 	display:flex;
@@ -16838,7 +16839,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	line-height: 30px;
 	letter-spacing: -0.05em;
 	border: none;
-	border-bottom: 1px solid #D7D7D7;
+	border-bottom: 3px solid transparent;
 	padding:0;
 }
 .bsop_renew .box_sop-main.sh_bsop_renewal .box_sop-wrap.smart-order-tabs .box_sop-tab .tabs.on button {
@@ -17909,6 +17910,9 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	color: #FFF;
 	border-radius: 12px;
 }
+.box_sop-product-helper .accordion_wrap .accordion_body .optional_category_wrap {
+	display: none;
+}
 
 @media (max-width: 1270px) {
 	.promotion_banner_container {
@@ -18466,7 +18470,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		display: block;
 	}
 	.box_sop-product-helper .promotion_float_wrap .my_product_container {
-		max-height: 540px;
+		max-height: 520px;
 		margin-bottom: 8px;
 		padding: 16px;
 		background: #F4F4F4;
@@ -18754,6 +18758,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		width: fit-content;
 		margin: 20px 0 0;
 		border: none;
+		border-bottom: 1px solid #D7D7D7;
 		overflow-x: scroll;
 	}
 	.bsop_renew .box_sop-main.sh_bsop_renewal .box_sop-wrap.smart-order-tabs .box_sop-tab .tabs {
