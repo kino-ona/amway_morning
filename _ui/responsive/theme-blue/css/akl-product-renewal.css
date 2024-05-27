@@ -17178,18 +17178,18 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	line-height: 20px;
 	opacity: 0.5;
 }
-.box_sop-promotion .promotion_button_wrap .button_container:nth-of-type(1) > button {
+.box_sop-promotion .promotion_button_wrap .button_container .gutmorning_change_btn {
 	color: #018C51;
 	background: #FFF;
 }
-.box_sop-promotion .promotion_button_wrap .button_container:nth-of-type(1) > button span {
+.box_sop-promotion .promotion_button_wrap .button_container .gutmorning_change_btn span {
 	color: #000;
 }
-.box_sop-promotion .promotion_button_wrap .button_container:nth-of-type(2) > button {
+.box_sop-promotion .promotion_button_wrap .button_container .gutmorning_start_btn {
 	background: #018C51;
 	color: #fff;
 }
-.box_sop-promotion .promotion_button_wrap .button_container:nth-of-type(2) > button span {
+.box_sop-promotion .promotion_button_wrap .button_container .gutmorning_start_btn span {
 	color: #fff;
 }
 .box_sop-product-helper .product_helper_banner {
@@ -18377,6 +18377,9 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		row-gap: 8px;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_title_wrap p .promotion_message {
+		font-size: 14px !important;
+	}
+	.box_sop-product-helper .accordion_wrap .accordion_list.opened .accordion_title_wrap p .promotion_message {
 		display: none;
 	}
 	.box_sop-product-helper .promotion_float_wrap {
@@ -18463,10 +18466,12 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		display: block;
 	}
 	.box_sop-product-helper .promotion_float_wrap .my_product_container {
+		max-height: 540px;
 		margin-bottom: 8px;
 		padding: 16px;
 		background: #F4F4F4;
 		border-radius: 12px;
+		overflow-y: scroll;
 	}
 	.box_sop-product-helper .promotion_float_wrap .my_product_wrap .my_product_list {
 		display: flex;
@@ -18494,6 +18499,12 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	}
 	.box_sop-product-helper .promotion_float_wrap .my_product_wrap .my_product_list p:last-of-type {
 		margin-bottom: 0;
+	}
+	.box_sop-product-helper .promotion_float_wrap .my_product_wrap .my_product_list p span {
+		max-width: calc(100% - 39px);
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
 	}
 	.box_sop-product-helper .promotion_float_wrap .my_product_wrap .my_product_list p button {
 		font-size: 0;
@@ -18746,6 +18757,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		overflow-x: scroll;
 	}
 	.bsop_renew .box_sop-main.sh_bsop_renewal .box_sop-wrap.smart-order-tabs .box_sop-tab .tabs {
+		flex: unset;
 		width: fit-content;
 		height:auto;
 		background-color:#fff;
