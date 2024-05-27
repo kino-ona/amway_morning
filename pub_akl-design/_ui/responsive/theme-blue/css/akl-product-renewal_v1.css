@@ -74,7 +74,7 @@
 .info_benefit.new-type p.a-ckmoney-title { font-size: 14px; line-height: 1.57; letter-spacing: -0.7px; color: #111; font-weight: normal; margin-bottom: 9px; }
 
 .info_benefit.new-type p span{display:block;position:relative;z-index:20;}
-.info_benefit.new-type span:before{position:absolute;width:100%;height:8px;content:"";bottom:0;left:0;background-color:rgba(156, 229, 123, 0.3);z-index:-2;}
+.info_benefit.new-type span:before{position:absolute;width:100%;height:8px;content:"";bottom:0;left:0;background-color:rgba(156, 229, 123, 0.3);z-index:-2;display: none;}/* 202405 것모닝 작업 - 레이아웃 수정 */ 
 .info_benefit.new-type div:last-child{margin-left:auto;}
 .info_benefit.new-type div:last-child h3{height:44px;background:url('/_ui/responsive/theme-blue/images/akl_plp/sop_visual_txt02.png') no-repeat center;background-size:auto 44px;margin-top:0;margin-bottom:8px;text-indent:-99999em;}
 .info_benefit.new-type div:last-child span{font-size:11px;line-height:17px;color:#666;display:block;text-align:right;margin-top:4px;}
@@ -1271,15 +1271,237 @@
     .order__box{width:100%;margin:0}
 }
 
-/* 20221213 장스오 홈 상단 비주얼 개선 */
-.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type {background: url(../images/akl_plp/bg_bsop_new.png) center center no-repeat; height: 627px; background-size: auto 100%; background-color:#fefbec; position:relative; overflow: hidden;} /* 20240409 수정 */
-.box_sop-visual.box_sop-home.st_type2.v_04 .container{padding:0 12px 0 75px; width: 100%; height: 100%; display: flex; flex-direction: column; max-width: 1400px; margin: 0 auto;}
-.box_sop-visual.box_sop-home.st_type2.v_04 .container .visual_area_wrap {width: 745px ; display: flex; flex-direction: column; align-items: center;}
-.box_sop-visual.box_sop-home.st_type2.v_04 .container .visual_area {width: 745px; height: 360px; position: relative; z-index: 1; margin-top: 34px;} /* 20240409 수정 */
-.box_sop-visual.box_sop-home.st_type2.v_04 .container .visual_area.visual_area_mo {display: none;}
-.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .a-cliks-logo {display:block; width: 488px; height: 129px; background: url(../images/akl_plp/z-sop_visual_txt-pc.png) no-repeat; background-size: 488px auto; margin-top: 84px; z-index:1;} /* 20240409 수정 */ /* 20231201 수정 */
-.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_benefit.new-type{margin-top:0; top:0; right: inherit; padding: 40px 50px; box-shadow: 6px 6px 0 0 #f0941f; border-radius: inherit; flex-direction: column; width: 745px; height: auto;} /* 20240409 수정 */
-.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_benefit.new-type .info_benefit_txt {display: flex; padding-top:0}
+/* 202405 것모닝 작업 - 장스오 홈 상단 비주얼 개선 */
+.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type {
+    background: url(../images/akl_plp/bg_bsop_new_02.png) center center no-repeat;
+    height: 627px;
+    background-size: auto 100%;
+    background-color:#fefbec;
+    position:relative;
+    overflow: hidden;
+}
+.box_sop-visual.box_sop-home.st_type2.v_04 .container{
+    padding:0 12px 0 75px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.box_sop-visual.box_sop-home.st_type2.v_04 .container .visual_area_wrap {
+    width: 745px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.box_sop-visual.box_sop-home.st_type2.v_04 .container .visual_area {
+    position: relative;
+    z-index: 1;
+    margin-top: 24px;
+}
+.box_sop-visual.box_sop-home.st_type2.v_04 .container .visual_area.visual_area_mo {
+    display: none;
+}
+.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .a-cliks-logo {
+    display:block;
+    width: 100%;
+    height: 129px;
+    margin-top: 84px;
+    z-index:1;
+    text-align: left;
+}
+.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .a-cliks-logo {
+    position: relative;
+    height: unset;
+    margin-top: 62px;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 86.88px;
+}
+.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .a-cliks-logo::after {
+    content: "";
+    position: absolute;
+    top: -36px;
+    right: 160px;
+    width: 89px;
+    height: 49px;
+    background: url(../images/akl_plp/ico_big_title.png) center center no-repeat;
+    background-size: cover;
+}
+.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .a-cliks-logo span {
+    position: relative;
+    color: #F67600;
+}
+.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .a-cliks-logo span::before {
+    content: '';
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8px;
+    height: 8px;
+    background: #F67600;
+    border-radius: 50%;
+}
+.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .a-cliks-logo p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26.06px;
+    letter-spacing: -0.02em;
+    margin: 2px 0 0;
+}
+.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_benefit.new-type{
+    position: unset;
+    right: inherit;
+    width: fit-content;
+    height: unset;
+    margin-top:0;
+    margin-left: 0;
+    padding: 28px 32px;
+    border-radius: inherit;
+    flex-direction: column;
+    background: unset;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_benefit.new-type div:last-child {
+    margin: 0;
+    padding: 0;
+}
+.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_benefit.new-type table {
+    margin: 0;
+}
+.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_benefit.new-type .info_benefit_txt div {
+    display: flex;
+    flex-direction: column;
+    padding-top:0;
+    margin: 0;
+}
+.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_benefit.new-type .info_benefit_txt div p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28.8px;
+    text-align: left;
+    color: #000 !important; 
+}
+.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_benefit.new-type .info_benefit_txt div p span {
+    display: inline;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28.8px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #000 !important;
+}
+.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_benefit.new-type .info_benefit_txt .info_detail {
+    display: flex;
+    gap: 12px;
+}
+.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_benefit.new-type .info_benefit_txt .info_detail li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_benefit.new-type .info_benefit_txt .info_detail li > span:nth-of-type(1) {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 8px 0;
+    background-color: #FFA31A;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20.27px;
+    color: #FFF;
+}
+.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_benefit.new-type .info_benefit_txt .info_detail li > span:nth-of-type(2) {
+    width: 100%;
+    margin: 0;
+    padding: 16px 0 4px;
+    font-size: 12px; 
+    font-weight: 400;
+    line-height: 17.38px;
+    background: #FFEFB8;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.4);
+}
+.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_benefit.new-type .info_benefit_txt .info_detail li > p {
+    width: 100%;
+    margin: 0;
+    background: #FFEFB8;
+    padding: 0 0 16px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26.06px;
+    letter-spacing: -0.05em;
+    text-align: center;
+}
+.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_benefit.new-type .info_benefit_txt .info_detail li > p span {
+    padding-right: 4px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42.19px;
+    letter-spacing: -0.05em;
+}
+.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_benefit.new-type .info_benefit_txt .info_link_wrap {
+    margin: 20px -32px 0;
+    padding: 20px 32px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px dotted #7B4F0D4D;
+}
+.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_benefit.new-type .info_benefit_txt .info_link_wrap span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.05em;
+    color: rgba(0, 0, 0, 0.5);
+}
+.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_benefit.new-type .info_benefit_txt .info_link_wrap a {
+    position: relative;
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+    letter-spacing: -0.05em;
+    padding-right: 18px;
+    background: unset;
+}
+.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_benefit.new-type .info_benefit_txt .info_link_wrap a::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 14px;
+    background: url(../images/akl_plp/ico_link_arrow_bk.png) center center no-repeat;
+    background-size: cover;
+}
+.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_notice {
+    text-align: left;
+    margin-top: 16px;
+}
+.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_notice p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 21.6px;
+    letter-spacing: -0.05em;
+    color: #9D8553;
+}
+.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_notice p span {
+    color: #000;
+}
+/* // 202405 것모닝 작업 - 장스오 홈 상단 비주얼 개선 */
+
 .box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_benefit.new-type .info_benefit_txt .center {padding-top:10px !important; text-align: left;}
 .box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_benefit.new-type .info_benefit_txt .center p {font-size: 28px; font-weight: bold; line-height: 1.11; letter-spacing: -1.4px; color: #000; margin-bottom: 13px;}
 .box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_benefit.new-type .info_benefit_txt .center b {font-family: 'Roboto'; font-size: 30px; line-height: 1.03; letter-spacing: normal; font-weight: bold;}
@@ -1303,9 +1525,16 @@
 .v_04 .container .info_benefit.new-type .table_preference li:last-child {letter-spacing: -0.72px;}
 .v_04 .container .info_benefit.new-type .table_preference li:before {content:"*"}
 
+/* 202405 것모닝 작업 - 장스오 홈 상단 비주얼 개선 */
 @media (max-width: 768px) {
-.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type {background: url(../images/akl_plp/z-sop_visual_slogan_mo.png) left -226px top 153px no-repeat; height: auto; background-size: 583px 446px; background-color:#fefbec;}
-.box_sop-visual.box_sop-home.st_type2.v_04 .container::before, .box_sop-visual.box_sop-home.st_type2.v_04 .container::after {display: block; position:absolute;}
+.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type {
+    height: unset;
+    background: url(../images/akl_plp/bg_bsop_new_02_m.png) center center no-repeat;
+    background-size: cover;
+}
+.box_sop-visual.box_sop-home.st_type2.v_04 .container::before, .box_sop-visual.box_sop-home.st_type2.v_04 .container::after {
+    display: none;
+}
 .box_sop-visual.box_sop-home.st_type2.v_04 .container::after {background: url(../images/akl_plp/z-sop_visual_symbol_2_pc.png) no-repeat;width: 114px; height: 138px; background-size: 114px auto; top:-73.3px; right: 8.8px;}
 .box_sop-visual.box_sop-home.st_type2.v_04 .container::before {background: url(../images/akl_plp/z-sop_visual_symbol_1_mo.png) no-repeat; width: 160px; height: 140px; top:190px; left: 26px; background-size: 160px auto;}
 .box_sop-visual.box_sop-home.st_type2.v_04 .container {padding:0;}
@@ -1313,8 +1542,108 @@
 .box_sop-visual.box_sop-home.st_type2.v_04 .container .visual_area {width: 100%; height: auto; margin:0 auto; background: none; padding: 0 20px 0 26px;}
 .box_sop-visual.box_sop-home.st_type2.v_04 .container .visual_area.visual_area_pc {display: none;}
 .box_sop-visual.box_sop-home.st_type2.v_04 .container .visual_area.visual_area_mo {display: block;}
-.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .a-cliks-logo {width: 293px; height: 76px; background-size: 293px auto; margin:63px auto 157px; padding-top: 82px; background-image: url(../images/akl_plp/z-sop_visual_txt-m.png);} /* 20231208 수정 */
-.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_benefit.new-type {display:block; width: calc(100% - 6px); height: inherit; padding: 40.5px 27px 39px 28px; margin: 0 0 20px;}
+
+.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .a-cliks-logo {
+    padding: 0 28px;
+    background-image: unset;
+    font-size: 34px;
+    line-height: 49.23px;
+    margin-bottom: 240px;
+}
+.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .a-cliks-logo p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    max-width: 200px;
+}
+.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .a-cliks-logo::after {
+    display: none;
+}
+.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_benefit.new-type {
+    width: 100%;
+    display:block;
+    padding: 20px 16px;
+    margin: 0 0 12px !important;
+    background: rgba(255, 255, 255, 0.2);;
+}
+.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_benefit.new-type .info_benefit_txt div p {
+    max-width: 240px;
+}
+.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_benefit.new-type .info_benefit_txt .info_detail {
+    flex-direction: column;
+}
+.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_benefit.new-type .info_benefit_txt .info_detail li {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 14px;
+    padding: 13.5px 20px 13.5px 16px;
+    overflow: visible;
+}
+.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_benefit.new-type .info_benefit_txt .info_detail p {
+    background: unset !important;
+}
+.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_benefit.new-type .info_benefit_txt .info_detail p:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2px;
+    padding: 0;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17.38px;
+    color: rgba(0, 0, 0, 0.4) !important;
+}
+.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_benefit.new-type .info_benefit_txt .info_detail p:nth-of-type(1) span {
+    padding: 1px 8px;
+    color: #FFF !important;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20.27px;
+    background: #FFA31A;
+    border-radius: 6px;
+}
+.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_benefit.new-type .info_benefit_txt .info_detail p:nth-of-type(2) {
+    padding: 0;
+    text-align: right;
+    font-size: 14px;
+    line-height: 20.27px;
+}
+.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_benefit.new-type .info_benefit_txt .info_detail p:nth-of-type(2) span {
+    font-size: 28px;
+    line-height: 32.81px;
+}
+.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_benefit.new-type .info_benefit_txt .info_link_wrap {
+    margin-top:0;
+    padding-top: 16px;
+    border: none;
+}
+.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_benefit.new-type .info_benefit_txt .info_link_wrap span {
+    display: none;
+}
+.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_benefit.new-type .info_benefit_txt .info_link_wrap a {
+    font-size: 16px;
+    padding-right: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_benefit.new-type .info_benefit_txt .info_link_wrap a::after {
+    width: 12px;
+    height: 12px;
+    background-size: contain;
+}
+.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_notice {
+    padding-bottom: 47px;
+}
+.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_notice p {
+    font-size: 11px;
+    line-height: 15.95px;
+    word-break: keep-all;
+}
+/* // 202405 것모닝 작업 - 장스오 홈 상단 비주얼 개선 */
 .box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_benefit.new-type div:last-child {margin-left: 0;}
 .box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_benefit.new-type .info_benefit_txt {flex-direction: column !important; margin:0;}
 .box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_benefit.new-type .info_benefit_txt .center {padding-top: 0 !important;}
