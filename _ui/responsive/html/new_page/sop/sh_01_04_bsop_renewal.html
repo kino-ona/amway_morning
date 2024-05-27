@@ -475,8 +475,8 @@
 
 				<!-- 아코디언 영역 -->
 				<div class="accordion_wrap">
-					<div class="accordion_list opened">
-						<div class="accordion_header" onclick="accordionOpen(1)">
+          <div class="accordion_list opened" data-index="1">
+						<div class="accordion_header">
 							<div class="accordion_title_wrap">
 								<p>Step 01. 구성 방법을 고르세요.</p>
 								<button type="button" class="accordion_button">토글버튼</button>
@@ -506,8 +506,8 @@
 					</div>
 
 					<!-- 아코디언 Step01 조건 01 -->
-					<div class="accordion_list accordion_list--first">
-						<div class="accordion_header" onclick="accordionOpen(2)">
+          <div class="accordion_list accordion_list--first" data-index="2">
+						<div class="accordion_header">
 							<div class="accordion_title_wrap">
 								<p>Step 02. 프로틴을 선택하세요.</p>
 								<button type="button" class="accordion_button">토글버튼</button>
@@ -652,8 +652,8 @@
 						</div>
 					</div>
 
-					<div class="accordion_list accordion_list--first">
-						<div class="accordion_header" onclick="accordionOpen(3)">
+          <div class="accordion_list accordion_list--first" data-index="3">
+						<div class="accordion_header">
 							<div class="accordion_title_wrap">
 								<p>Step 03. 프로바이오틱스를 선택하세요.</p>
 								<button type="button" class="accordion_button">토글버튼</button>
@@ -930,8 +930,8 @@
 						</div>
 					</div>
 
-					<div class="accordion_list accordion_list--first last_step">
-						<div class="accordion_header" onclick="accordionOpen(4)">
+          <div class="accordion_list accordion_list--first last_step" data-index=“4”>
+						<div class="accordion_header">
 							<div class="accordion_title_wrap">
 								<p>
 									Step 04. 추가 구성을 선택하세요. (선택)
@@ -1831,7 +1831,7 @@
 
 					<!-- 아코디언 Step01 조건 02 -->
 					<div class="accordion_list accordion_list--second">
-						<div class="accordion_header" onclick="accordionOpen(2)">
+						<div class="accordion_header">
 							<div class="accordion_title_wrap">
 								<p>Step 02. 번들팩을 선택하세요.</p>
 								<button type="button" class="accordion_button">토글버튼</button>
@@ -1990,7 +1990,7 @@
 					</div>
 
 					<div class="accordion_list accordion_list--second last_step">
-						<div class="accordion_header" onclick="accordionOpen(3)">
+						<div class="accordion_header">
 							<div class="accordion_title_wrap">
 								<p>Step 03. 추가 구성을 선택하세요. (선택)
 								<span class="promotion_message">추가 혜택 증정</span>
@@ -6572,13 +6572,15 @@
 
 <script>
 	// 202405 것모닝 작업 - 처음 진입시 모바일 화면체크
-	if($('.box_sop-product-helper .optional_category_wrap')) {
-		var windowWidth = $(window).width();
-
-		if(windowWidth <= 768) {
-			$('.optional_category_wrap').show();
-		}else {
-			$('.optional_category_wrap').hide();
+	function windowResizeOptionalCategory() {
+		if($('.box_sop-product-helper .optional_category_wrap')) {
+			var windowWidth = $(window).width();
+	
+			if(windowWidth <= 768) {
+				$('.optional_category_wrap').show();
+			}else {
+				$('.optional_category_wrap').hide();
+			}
 		}
 	}
 
@@ -6601,10 +6603,49 @@
 		}
   };
 
+	// 202405 것모닝 작업 - 아코디언 열고닫기 function 
+	$('.accordion_header').click(function () {
+		accordionOpen.call(this);  //'this'를 accordionOpen 함수에 전달
+	});
+
+	function accordionOpen(index) {
+		let element = index ? $(`.accordion_list[data-index="${index}"]`) : $(this).closest(".accordion_list");
+
+		if (!element.hasClass("opened")) {
+			element.addClass("opened").siblings().removeClass("opened");
+			element.find(".accordion_body").slideDown(300);
+			element.siblings().find(".accordion_body").slideUp(300);
+		}
+	}
+	// // 202405 것모닝 작업 - 아코디언 열고닫기 function 
+
   function step1ContentAction(data) {
-    $('.accordion_list--first').css('display', data === 'step1_1' ? 'block' :'none');
-    $('.accordion_list--second').css('display', data === 'step1_1' ? 'none' :'block');
-  }
+		// 202405 것모닝 작업 - 아코디언 index 부여
+		let step1 = $('.accordion_list--first');
+		let step2 = $('.accordion_list--second');
+		let targetList = data === 'step1_1' ? step1 : step2;
+		let otherList = data === 'step1_1' ? step2 : step1;
+
+		otherList.removeAttr("data-index");
+		targetList.each(function (index, element) {
+			$(element).attr("data-index", index + 2);
+		});
+		// 202405 것모닝 작업 - 아코디언 index 부여
+		step1.css('display', data === 'step1_1' ? 'block' : 'none');
+		step2.css('display', data === 'step1_1' ? 'none' : 'block');
+	}
+
+	// 202405 것모닝 작업 - 이전, 다음 버튼 
+	$(".accordion_prev_btn, .accordion_next_btn").on("click", function () {
+		let thisAccordionWrap = $(this).closest(".accordion_list");
+		let thisAccordionIndex = thisAccordionWrap.data("index");
+		if ($(event.target).hasClass("accordion_prev_btn")) {
+			accordionOpen(thisAccordionIndex - 1);
+		} else if ($(event.target).hasClass("accordion_next_btn")) {
+			accordionOpen(thisAccordionIndex + 1)
+		}
+	});
+	// // 202405 것모닝 작업 - 이전, 다음 버튼 
 
 	// 202405 것모닝 작업 - Step04 추가 구성 상품 희망
 	function optionalProductOpen () {
@@ -6621,11 +6662,20 @@
 
 	function optionalProductAction(step, data) {
 		var number = 0;
+		var windowWidth = $(window).width();
+
 		step === 'step1_1' ? number = 'first' :  number = 'second';
 
 		$('.accordion_list--'+ number +' .optional_tab').css('display', data === 'optional_n' ? 'none' :'block');
 		$('.accordion_info_wrap').css('display', data === 'optional_n' ? 'none' :'block');
-		$('.optional_category_wrap').css('display', data === 'optional_n' ? 'none' :'block');
+
+
+		if(windowWidth <= 768) {
+			$('.optional_category_wrap').css('display', data === 'optional_n' ? 'none' :'block');
+		}else {
+			$('.optional_category_wrap').hide();
+		}
+
   }
 
 	step1Tab();
@@ -6692,19 +6742,10 @@
 
 		if (ww > 1200) {
 			initSwiper();
+		} else if (ww <= 768) {
+			windowResizeOptionalCategory();
 		}
 	});
-
-
-	// 202405 것모닝 작업 - 아코디언 열고닫기 function
-	function accordionOpen (index) {
-		$('.accordion_list').click(function(event) {
-		$(this).find(".accordion_body").slideDown(300);
-		$(this).addClass('opened').siblings().removeClass('opened');
-		$(this).siblings().find(".accordion_body").slideUp(300);
-		});
-	}
-	accordionOpen();
 
 	//$( '#loadLayer' ).load( '../../include/share_cart_sop_guide.html');  // 2020-08-14 추가
 	//$( '#loadLayer' ).load( '../../include/personal_number_layer.html');  // 2020-10-08 세금신고를 위한 주민등록번호 등록_외국인일 경우 
