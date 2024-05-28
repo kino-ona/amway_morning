@@ -17602,6 +17602,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	width: 100%;
 	margin: 0;
 	padding-right: 140px;
+	word-break: keep-all;
 }
 .box_sop-product-helper .accordion_wrap .accordion_body .accordion_contents.accordion_first .checkbox_wrap:nth-of-type(2) input[type='radio'] + label  {
 	background: url(/_ui/responsive/theme-blue/images/akl_plp/img_nutrilite.png) calc(100% - 32px) center no-repeat #FFF;
@@ -18344,6 +18345,9 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		line-height: 20px;
 		background-position: calc(100% - 16px) center !important;
 		background-size: 80px !important;
+	}
+	.box_sop-product-helper .accordion_wrap .accordion_body .accordion_contents.accordion_first input[type='radio'] + label p {
+		padding-right: 80px;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_body .swiper-wrapper {
 		padding-bottom: 16px;
