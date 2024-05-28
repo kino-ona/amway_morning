@@ -17599,8 +17599,9 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	line-height: 28.6px;
 }
 .box_sop-product-helper .accordion_wrap .accordion_body .accordion_contents.accordion_first input[type='radio'] + label p {
-	max-width: 300px;
+	width: 100%;
 	margin: 0;
+	padding-right: 140px;
 }
 .box_sop-product-helper .accordion_wrap .accordion_body .accordion_contents.accordion_first .checkbox_wrap:nth-of-type(2) input[type='radio'] + label  {
 	background: url(/_ui/responsive/theme-blue/images/akl_plp/img_nutrilite.png) calc(100% - 32px) center no-repeat #FFF;
@@ -17892,17 +17893,21 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 }
 .box_sop-product-helper .promotion_float_wrap {
 	position: fixed;
-	left: 0;
-	bottom: 0;
+	left: 50%;
+	bottom: 40px;
+	transform: translateX(-50%);
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	width: 100%;
+	max-width: 1540px;
 	height: 108px;
 	padding: 28px 80px;
-	border-top: 1px solid #EDEDED;
+	border: 1px solid #018C51;
+	border-radius: 20px;
 	background: #FFF;
 	z-index: 10;
+	box-shadow: 4px 12px 24px 0 rgba(0, 0, 0, 0.1);
 }
 .box_sop-product-helper .promotion_float_wrap.mo {
 	display: none;
@@ -17968,6 +17973,73 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 .box_sop-product-helper .accordion_wrap .accordion_body .optional_category_wrap.pc_hide,
 .box_sop-product-helper .accordion_wrap .accordion_body .optional_category_wrap.option_hide {
 	display: none;
+}
+
+.box_sop-product-helper .promotion_float_wrap.pc {
+	position: fixed;
+	left: 50%;
+	bottom: 40px;
+	transform: translateX(-50%);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 1540px;
+	height: 108px;
+	padding: 28px 8px 28px 40px;
+	border: 1px solid #018C51;
+	border-radius: 20px;
+	background: #FFF;
+	z-index: 10;
+	box-shadow: 4px 12px 24px 0 rgba(0, 0, 0, 0.1);
+}
+
+.box_sop-product-helper .promotion_float_wrap.pc .promotion_total p {
+	display: flex;
+	align-items: center;
+	margin: 0 40px 0 0;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 30px;
+	letter-spacing: -0.05em;
+	color: #999;
+}
+.box_sop-product-helper .promotion_float_wrap.pc .promotion_total p span:nth-of-type(1) {
+	margin-right: 8px;
+	padding: 4px 15px;
+	font-size: 16px;
+	line-height: 26px;
+	letter-spacing: -0.05em;
+	color: #018C51;
+	background: #EBF5F0;
+	border-radius: 99px;
+}
+.box_sop-product-helper .promotion_float_wrap.pc .promotion_total p span:not(:nth-of-type(1)) {
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 51px;
+	color: #000;
+}
+.box_sop-product-helper .promotion_float_wrap.pc .promotion_total p:not(:nth-of-type(2)) span:not(:nth-of-type(1)) {
+	margin-right: 3.5px;
+}
+.box_sop-product-helper .promotion_float_wrap.pc .promotion_total p:nth-of-type(2) span:not(:nth-of-type(1)) {
+	padding: 0;
+}
+.box_sop-product-helper .promotion_float_wrap.pc .promotion_total p:nth-of-type(2) {
+	font-size: 34px;
+	font-weight: 700;
+	color: #000;
+}
+.box_sop-product-helper .promotion_float_wrap.pc .promotion_total p:last-of-type {
+	margin-right: 8px;
+}
+.box_sop-product-helper .promotion_float_wrap.pc .promotion_button_confirm {
+	padding: 33px 41.5px;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 24px;
+	letter-spacing: -0.05em;
 }
 
 @media (max-width: 1270px) {
@@ -18526,7 +18598,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		display: block;
 	}
 	.box_sop-product-helper .promotion_float_wrap .my_product_container {
-		max-height: 520px;
+		max-height: 261px;
 		margin-bottom: 8px;
 		padding: 16px;
 		background: #F4F4F4;
