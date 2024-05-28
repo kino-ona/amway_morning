@@ -1542,6 +1542,7 @@
 .box_sop-visual.box_sop-home.st_type2.v_04 .container .visual_area {width: 100%; height: auto; margin:0 auto; background: none; padding: 0 20px 0 26px;}
 .box_sop-visual.box_sop-home.st_type2.v_04 .container .visual_area.visual_area_pc {display: none;}
 .box_sop-visual.box_sop-home.st_type2.v_04 .container .visual_area.visual_area_mo {display: block;}
+
 .box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .a-cliks-logo {
     padding: 0 28px;
     background-image: unset;
@@ -1642,6 +1643,7 @@
     line-height: 15.95px;
     word-break: keep-all;
 }
+/* // 202405 것모닝 작업 - 장스오 홈 상단 비주얼 개선 */
 .box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_benefit.new-type div:last-child {margin-left: 0;}
 .box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_benefit.new-type .info_benefit_txt {flex-direction: column !important; margin:0;}
 .box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_benefit.new-type .info_benefit_txt .center {padding-top: 0 !important;}

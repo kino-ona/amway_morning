@@ -65,7 +65,7 @@
 				</ol>
 			</div>
 		</div>
-		<div class="container-fluid main-container akl-search">
+		<div class="container-fluid main-container akl-search akl-search-renewal"> <!-- 20240514 검색결과 추가 개선 -->
 			<div class="row renewal_search-result renewal-fonts">
 				<!-- <div class="popular-searches">
 				<dl>
@@ -133,15 +133,15 @@
 						<div class="col-search-tab">
 							<div class="tabWrapper">
 								<ul>
-									<li class="active"><a href="#" data-toggle="tab">전체 <span>(000)</span></a></li>
-									<li><a href="#" data-toggle="tab">제품 <span>(000)</span></a></li>
-									<li><a href="#" data-toggle="tab">바로가기 <span>(000)</span></a></li>
-									<li><a href="#" data-toggle="tab">공지사항 <span>(000)</span></a></li>
-									<li><a href="#" data-toggle="tab">제품소식 <span>(000)</span></a></li>
-									<li><a href="#" data-toggle="tab">아카데미<span>(000)</span></a></li>
-									<li><a href="#" data-toggle="tab">비즈니스 <span>(000)</span></a></li>
-									<li><a href="#" data-toggle="tab">암웨이 고객센터 <span>(000)</span></a></li>
-									<li><a href="#" data-toggle="tab">기타 <span>(000)</span></a></li>
+									<li class="active"><a href="#" data-toggle="tab">전체 <span>(133)</span></a></li>
+									<li><a href="#" data-toggle="tab">제품 <span>(96)</span></a></li>
+									<li><a href="#" data-toggle="tab">바로가기 <span>(5)</span></a></li>
+									<li><a href="#" data-toggle="tab">공지사항 <span>(5)</span></a></li>
+									<li><a href="#" data-toggle="tab">제품소식 <span>(5)</span></a></li>
+									<li><a href="#" data-toggle="tab">아카데미<span>(10)</span></a></li>
+									<li><a href="#" data-toggle="tab">비즈니스 <span>(2)</span></a></li>
+									<li><a href="#" data-toggle="tab">암웨이 고객센터 <span>(0)</span></a></li>
+									<li><a href="#" data-toggle="tab">기타 <span>(17)</span></a></li>
 								</ul>
 							</div>
 						</div>
@@ -218,6 +218,8 @@
 											<div class="search-detail-wrapper">
 												<ul>
 													<li><a href="#">제품<span>(000건)</span></a></li>
+													<!-- S : 20240514 검색결과 추가 개선 -->
+													<!-- 전체 탭에서는 하위 카테고리 비노출, 제품 탭에서는 하위 카테고리 노출 -->
 													<li><a href="#">영양건강<span>(000)</span></a></li>
 													<!-- 190415_추가 메뉴 검색 추가 (없을 때 미노출) -->
 													<li><a href="#">뷰티<span>(000)</span></a></li>
@@ -225,6 +227,7 @@
 													<li><a href="#">홈리빙<span>(000)</span></a></li>
 													<li><a href="#">원포원<span>(000)</span></a></li>
 													<li><a href="#">25¢라이드<span>(000)</span></a></li>
+													<!-- E : 20240514 검색결과 추가 개선 -->
 												</ul>
 											</div>
 											<!-- E : 20220722 검색개선 영역 클래스명 수정 -->
@@ -253,6 +256,11 @@
 											<div class="btn-cont">
 												<button class="i-cart">장바구니</button>
 											</div>
+											<!-- S : 20240516 검색결과 추가 개선_flag 추가 -->
+											<div class="flag_wrap square">
+												<span class="flag_item-new">신제품</span>
+											</div>
+											<!-- E : 20240516 검색결과 추가 개선_flag 추가 -->
 										</div>
 										<a class="cont" href="#n">
 											<span class="tit">아세로라 C (300정)</span>
@@ -264,11 +272,17 @@
 									<li class="product-unit-v2 shadow">
 										<div class="img-cont">
 											<a href="#n">
-												<img src="https://media.amway.co.kr/sys-master/images/h0a/h16/9254528253982/NU_110608K_1_640_R.jpg" alt="칼맥 디 (360정)" title="칼맥 디 (360정)" class="thumb-img">
+												<img src="https://media.amway.co.kr/sys-master/images/h3d/h34/9380516331550/NU_110608K_1_640_R_v3.jpg" alt="칼맥 디 (360정)" title="칼맥 디 (360정)" class="thumb-img"> <!-- 20240514 운영 현행화 -->
 											</a>
 											<div class="btn-cont">
 												<button class="i-cart">장바구니</button>
 											</div>
+											<!-- S : 20240516 검색결과 추가 개선_flag 추가 -->
+											<div class="flag_wrap square">
+												<span class="flag_item-new">신제품</span>
+												<span class="flag_item-promotion">프로모션</span>
+											</div>
+											<!-- E : 20240516 검색결과 추가 개선_flag 추가 -->
 										</div>
 										<a class="cont" href="#n">
 											<span class="tit">칼맥 디 (360정)</span>
@@ -285,6 +299,13 @@
 											<div class="btn-cont">
 												<button class="i-cart">장바구니</button>
 											</div>
+											<!-- S : 20240516 검색결과 추가 개선_flag 추가 -->
+											<div class="flag_wrap square">
+												<span class="flag_item-new">신제품</span>
+												<span class="flag_item-promotion">프로모션</span>
+												<span class="flag_item-limits2">조당 구매제한</span>
+											</div>
+											<!-- E : 20240516 검색결과 추가 개선_flag 추가 -->
 										</div>
 										<a class="cont" href="#n">
 											<span class="tit">비타민 비 플러스(90정)</span>
@@ -313,7 +334,7 @@
 									<li class="product-unit-v2 shadow">
 										<div class="img-cont">
 											<a href="#n">
-												<img src="https://media.amway.co.kr/sys-master/images/h2b/h3d/9297683120158/NU_110607K_1_640_R.jpg" alt="칼맥 디 (120정)" title="칼맥 디 (120정)" class="thumb-img">
+												<img src="https://media.amway.co.kr/sys-master/images/ha4/hf6/9380513316894/NU_110607K_1_640_R_v2.jpg" alt="칼맥 디 (120정)" title="칼맥 디 (120정)" class="thumb-img"> <!-- 20240514 운영 현행화 -->
 											</a>
 											<div class="btn-cont">
 												<button class="i-cart">장바구니</button>
@@ -356,7 +377,7 @@
 										dots: false,
 										responsive: {
 											768: {
-												margin: 33,
+												margin: 36, /* 20240514 검색결과 추가 개선 */
 												mouseDrag: false,
 												items: 6,
 												autoWidth:false
@@ -690,6 +711,11 @@
 											<div class="btn-cont">
 												<button class="i-cart">장바구니</button>
 											</div>
+											<!-- S : 20240516 검색결과 추가 개선_flag 추가 -->
+											<div class="flag_wrap square">
+												<span class="flag_item-new">신제품</span>
+											</div>
+											<!-- E : 20240516 검색결과 추가 개선_flag 추가 -->
 										</div>
 										<a class="cont" href="#n">
 											<span class="tit">아세로라 C (300정)</span>
@@ -701,11 +727,17 @@
 									<li class="product-unit-v2 shadow">
 										<div class="img-cont">
 											<a href="#n">
-												<img src="https://media.amway.co.kr/sys-master/images/h0a/h16/9254528253982/NU_110608K_1_640_R.jpg" alt="칼맥 디 (360정)" title="칼맥 디 (360정)" class="thumb-img">
+												<img src="https://media.amway.co.kr/sys-master/images/h3d/h34/9380516331550/NU_110608K_1_640_R_v3.jpg" alt="칼맥 디 (360정)" title="칼맥 디 (360정)" class="thumb-img"> <!-- 20240514 운영 현행화 -->
 											</a>
 											<div class="btn-cont">
 												<button class="i-cart">장바구니</button>
 											</div>
+											<!-- S : 20240516 검색결과 추가 개선_flag 추가 -->
+											<div class="flag_wrap square">
+												<span class="flag_item-new">신제품</span>
+												<span class="flag_item-promotion">프로모션</span>
+											</div>
+											<!-- E : 20240516 검색결과 추가 개선_flag 추가 -->
 										</div>
 										<a class="cont" href="#n">
 											<span class="tit">칼맥 디 (360정)</span>
@@ -722,6 +754,13 @@
 											<div class="btn-cont">
 												<button class="i-cart">장바구니</button>
 											</div>
+											<!-- S : 20240516 검색결과 추가 개선_flag 추가 -->
+											<div class="flag_wrap square">
+												<span class="flag_item-new">신제품</span>
+												<span class="flag_item-promotion">프로모션</span>
+												<span class="flag_item-limits2">조당 구매제한</span>
+											</div>
+											<!-- E : 20240516 검색결과 추가 개선_flag 추가 -->
 										</div>
 										<a class="cont" href="#n">
 											<span class="tit">비타민 비 플러스(90정)</span>
@@ -750,7 +789,7 @@
 									<li class="product-unit-v2 shadow">
 										<div class="img-cont">
 											<a href="#n">
-												<img src="https://media.amway.co.kr/sys-master/images/h2b/h3d/9297683120158/NU_110607K_1_640_R.jpg" alt="칼맥 디 (120정)" title="칼맥 디 (120정)" class="thumb-img">
+												<img src="https://media.amway.co.kr/sys-master/images/ha4/hf6/9380513316894/NU_110607K_1_640_R_v2.jpg" alt="칼맥 디 (120정)" title="칼맥 디 (120정)" class="thumb-img"> <!-- 20240514 운영 현행화 -->
 											</a>
 											<div class="btn-cont">
 												<button class="i-cart">장바구니</button>
@@ -815,90 +854,6 @@
 						</div>
 						<!-- S : 2020 연계화면 renewal -->
 
-
-						<!-- 공지사항 결과 -->
-						<div class="product__list--wrapper search-list-page-right-result-list-component">
-							<div class="print-hide pagination-bar top">
-								<div class="pagination-toolbar">
-									<div class="helper clearfix hidden-md hidden-lg"></div>
-									<div class="row">
-										<div class="col-xs-12 col-md-6 hidden-xs hidden-sm">
-											<div class="pull-left">
-												<h2 class="pagination-bar-results">
-													<span class="total-wrapper">공지사항<em>(00건)</em></span>
-												</h2>
-											</div>
-										</div>
-										<!-- 2020-11-18 
-									<div class="pull-right sort-wrapper">
-										<a href="#" class="link-btn">전체보기<span class="featured-product__message-icon glyphicon glyphicon-menu-right"></span></a>
-									</div>
-									-->
-										<div class="col-xs-12 col-md-6 hidden-md hidden-lg"></div>
-									</div>
-								</div>
-							</div>
-							<ul class="product__listing product__list row js-query-result basic">
-								<li class="content-list-item col-xs-12">
-									<div class="item-header">
-										<div class="header-text"><a href="#">[판매 종료 예정] <mark
-													class="txt_highlight_keyword">아티스트리</mark> 글로우 페이셜 오일</a></div>
-										<div class="header-date">2018-01-29(월)</div>
-									</div>
-									<div class="item-description">
-										<span>[판매 종료 예정] <mark class="txt_highlight_keyword">아티스트리</mark> 글로우 페이셜 오일 1월
-											23일(화) 오전 10시부터 일반출시 된 <mark
-												class="txt_highlight_keyword">아티스트리</mark> 글로우 페이셜 오일이 물량 소진으로 인하여 1월
-											29일(월) 판매 종료될 예정입니다.
-											<mark class="txt_highlight_keyword">아티스트리</mark> 글로우 페이셜 <mark
-												class="txt_highlight_keyword">아티스트리</mark> 글로우 페이셜 오일 1월 23일(화) 오전 10시부터
-											일반출시 된 <mark class="txt_highlight_keyword">아티스트리</mark> </span>
-									</div>
-								</li>
-								<li class="content-list-item col-xs-12">
-									<div class="item-header">
-										<div class="header-text"><a href="#">[판매 종료 예정] <mark
-													class="txt_highlight_keyword">아티스트리</mark> 글로우 페이셜 오일</a></div>
-										<div class="header-date">2018-01-29(월)</div>
-									</div>
-									<div class="item-description">
-										<span>[판매 종료 예정] <mark class="txt_highlight_keyword">아티스트리</mark> 글로우 페이셜 오일 1월
-											23일(화) 오전 10시부터 일반출시 된 <mark
-												class="txt_highlight_keyword">아티스트리</mark> 글로우 페이셜 오일이 물량 소진으로 인하여 1월
-											29일(월) 판매 종료될 예정입니다.
-											<mark class="txt_highlight_keyword">아티스트리</mark> 글로우 페이셜 <mark
-												class="txt_highlight_keyword">아티스트리</mark> 글로우 페이셜 오일 1월 23일(화) 오전 10시부터
-											일반출시 된 <mark class="txt_highlight_keyword">아티스트리</mark> </span>
-									</div>
-								</li>
-							</ul>
-
-
-							<!-- 2020-11-18 
-						<p class="text-center show-more-products-wrapper">
-							<a type="button" id="show-more" class="btn btn-link">
-								<span class="text-wrap">20개 더보기</span>
-								<span class="icon icon-arrow-dropdown"></span>
-							</a>
-						</p>
-						-->
-
-							<!-- 2020-11-18 수정 -->
-							<p class="text-center show-more-products-wrapper">
-								<a href="#" class="link-btn">더보기<span
-										class="featured-product__message-icon glyphicon glyphicon-menu-right"></span></a>
-							</p>
-
-							<!--  검색 결과 없을 때 -->
-							<div class="search-no-result">
-								<p>"<em> *** </em>"(으)로 검색된 <em>공지사항이</em> 없습니다. </p>
-							</div>
-							<!--//  검색 결과 없을 때 -->
-
-						</div>
-						<!--// 공지사항 결과 -->
-
-
 						<!-- 190415_추가 메뉴 검색 추가 -->
 						<div class="product__list--wrapper search-list-page-right-result-list-component product__list--wrapper_linkGo"><!-- 20231013 클래스 추가(product__list--wrapper_linkGo) -->
 							<div class="print-hide pagination-bar top">
@@ -913,12 +868,14 @@
 											</div>
 										</div>
 
+										<!-- S : 20240514 운영 현행화 -->
 										<!-- 3건 이상일 때 표시 (바로가기 전체 결과로 이동) -->
-										<div class="pull-right sort-wrapper">
+										<!-- <div class="pull-right sort-wrapper">
 											<a href="#" class="link-btn">전체보기<span
 													class="featured-product__message-icon glyphicon glyphicon-menu-right"></span></a>
-										</div>
+										</div> -->
 										<!-- //3건 이상일 때 표시 (바로가기 전체 결과로 이동) -->
+										<!-- E : 20240514 운영 현행화 -->
 
 										<div class="col-xs-12 col-md-6 hidden-md hidden-lg"></div>
 									</div>
@@ -927,7 +884,7 @@
 							<!-- S : 20231013 검색개선 - 특정 검색 결과에 대해 페이지 연결배너 제공 -->
 							<div class="search-word-banner-link">
 								<strong class="sch_word">비타민 종합 영양제</strong>
-								<a href="#" title="연관 카테고리 보러가기" class="link_arr">연관 카테고리 보러가기</a>
+								<a href="#" title="연관된 브랜드관 바로가기" class="link_arr">연관된 브랜드관 바로가기</a> <!-- 20240514 검색결과 추가 개선 -->
 							</div>
 							<!-- E : 20231013 검색개선 - 특정 검색 결과에 대해 페이지 연결배너 제공 -->
 							<div class="search-shortcut-result">
@@ -992,8 +949,116 @@
 									</dd>
 								</dl>
 							</div>
+
+							<!-- S : 20240514 검색결과 추가 개선 -->
+							<p class="text-center show-more-products-wrapper">
+								<a href="#" class="link-btn">더보기<span
+										class="featured-product__message-icon glyphicon glyphicon-menu-right"></span></a>
+							</p>
+							<!-- E : 20240514 검색결과 추가 개선 -->
 						</div>
 						<!-- //190415_추가 메뉴 검색 추가 -->
+
+						<!-- 공지사항 결과 -->
+						<div class="product__list--wrapper search-list-page-right-result-list-component">
+							<div class="print-hide pagination-bar top">
+								<div class="pagination-toolbar">
+									<div class="helper clearfix hidden-md hidden-lg"></div>
+									<div class="row">
+										<div class="col-xs-12 col-md-6 hidden-xs hidden-sm">
+											<div class="pull-left">
+												<h2 class="pagination-bar-results">
+													<span class="total-wrapper">공지사항<em>(00건)</em></span>
+												</h2>
+											</div>
+										</div>
+										<!-- 2020-11-18 
+									<div class="pull-right sort-wrapper">
+										<a href="#" class="link-btn">전체보기<span class="featured-product__message-icon glyphicon glyphicon-menu-right"></span></a>
+									</div>
+									-->
+										<!-- S : 20240514 검색결과 추가 개선 -->
+										<div class="col-xs-12 col-md-6 hidden-md">
+											<div class="box_sort-option sticky-element sort-renew">
+												<div class="sort-options">
+													<div class="sort-select">
+														<span class="form_select-default">
+															<select class="form_select">
+																<option>최신순</option>														
+																<option>정확도순</option>
+															</select>
+															<i class="sp_form sp_select-default"></i>
+														</span>
+													</div>
+												</div>										
+											</div>
+										</div>
+										<!-- E : 20240514 검색결과 추가 개선 -->
+									</div>
+								</div>
+							</div>
+							<ul class="product__listing product__list row js-query-result basic">
+								<li class="content-list-item col-xs-12">
+									<div class="item-header">
+										<div class="header-text"><a href="#">[판매 종료 예정] <mark
+													class="txt_highlight_keyword">아티스트리</mark> 글로우 페이셜 오일</a></div>
+										<div class="header-date">2018-01-29(월)</div>
+									</div>
+									<div class="item-description">
+										<span>[판매 종료 예정] <mark class="txt_highlight_keyword">아티스트리</mark> 글로우 페이셜 오일 1월
+											23일(화) 오전 10시부터 일반출시 된 <mark
+												class="txt_highlight_keyword">아티스트리</mark> 글로우 페이셜 오일이 물량 소진으로 인하여 1월
+											29일(월) 판매 종료될 예정입니다.
+											<mark class="txt_highlight_keyword">아티스트리</mark> 글로우 페이셜 <mark
+												class="txt_highlight_keyword">아티스트리</mark> 글로우 페이셜 오일 1월 23일(화) 오전 10시부터
+											일반출시 된 <mark class="txt_highlight_keyword">아티스트리</mark> </span>
+									</div>
+									<div class="header-date">2018-01-29(월)</div> <!-- 20240514 검색결과 추가 개선 -->
+								</li>
+								<li class="content-list-item col-xs-12">
+									<div class="item-header">
+										<div class="header-text"><a href="#">[판매 종료 예정] <mark
+													class="txt_highlight_keyword">아티스트리</mark> 글로우 페이셜 오일</a></div>
+										<div class="header-date">2018-01-29(월)</div>
+									</div>
+									<div class="item-description">
+										<span>[판매 종료 예정] <mark class="txt_highlight_keyword">아티스트리</mark> 글로우 페이셜 오일 1월
+											23일(화) 오전 10시부터 일반출시 된 <mark
+												class="txt_highlight_keyword">아티스트리</mark> 글로우 페이셜 오일이 물량 소진으로 인하여 1월
+											29일(월) 판매 종료될 예정입니다.
+											<mark class="txt_highlight_keyword">아티스트리</mark> 글로우 페이셜 <mark
+												class="txt_highlight_keyword">아티스트리</mark> 글로우 페이셜 오일 1월 23일(화) 오전 10시부터
+											일반출시 된 <mark class="txt_highlight_keyword">아티스트리</mark> </span>
+									</div>
+									<div class="header-date">2018-01-29(월)</div> <!-- 20240514 검색결과 추가 개선 -->
+								</li>
+							</ul>
+
+
+							<!-- 2020-11-18 
+						<p class="text-center show-more-products-wrapper">
+							<a type="button" id="show-more" class="btn btn-link">
+								<span class="text-wrap">20개 더보기</span>
+								<span class="icon icon-arrow-dropdown"></span>
+							</a>
+						</p>
+						-->
+
+							<!-- 2020-11-18 수정 -->
+							<p class="text-center show-more-products-wrapper">
+								<a href="#" class="link-btn">더보기<span
+										class="featured-product__message-icon glyphicon glyphicon-menu-right"></span></a>
+							</p>
+
+							<!--  검색 결과 없을 때 -->
+							<!-- 20240520 화면 확인용으로 주석 삭제 -->
+							<div class="search-no-result">
+								<p>"<em> *** </em>"(으)로 검색된 <em>공지사항이</em> 없습니다. </p>
+							</div>
+							<!--//  검색 결과 없을 때 -->
+
+						</div>
+						<!--// 공지사항 결과 -->
 
 						<!-- 제품소식 결과  -->
 						<div class="product__list--wrapper search-list-page-right-result-list-component">
@@ -1099,9 +1164,9 @@
 							</p>
 
 							<!--  검색 결과 없을 때 -->
-							<div class="search-no-result">
+							<!-- <div class="search-no-result">
 								<p>"<em> *** </em>"(으)로 검색된 <em>제품소식이</em> 없습니다. </p>
-							</div>
+							</div> -->
 							<!--//  검색 결과 없을 때 -->
 
 						</div>
@@ -1124,7 +1189,23 @@
 									<div class="pull-right sort-wrapper">
 										<a href="#" class="link-btn">전체보기<span class="featured-product__message-icon glyphicon glyphicon-menu-right"></span></a>
 									</div>-->
-										<div class="col-xs-12 col-md-6 hidden-md hidden-lg"></div>
+										<!-- S : 20240514 검색결과 추가 개선 -->
+										<div class="col-xs-12 col-md-6 hidden-md">
+											<div class="box_sort-option sticky-element sort-renew">
+												<div class="sort-options">
+													<div class="sort-select">
+														<span class="form_select-default">
+															<select class="form_select">
+																<option>최신순</option>														
+																<option>정확도순</option>
+															</select>
+															<i class="sp_form sp_select-default"></i>
+														</span>
+													</div>
+												</div>										
+											</div>
+										</div>
+										<!-- E : 20240514 검색결과 추가 개선 -->
 									</div>
 								</div>
 							</div>
@@ -1148,6 +1229,7 @@
 												class="txt_highlight_keyword">아티스트리</mark> 글로우 페이셜 오일 1월 23일(화) 오전 10시부터
 											일반출시 된 <mark class="txt_highlight_keyword">아티스트리</mark> </span>
 									</div>
+									<div class="header-date">2018-01-29(월)</div> <!-- 20240514 검색결과 추가 개선 -->
 								</li>
 								<li class="content-list-item col-xs-12">
 									<div class="item-header">
@@ -1168,6 +1250,7 @@
 												class="txt_highlight_keyword">아티스트리</mark> 글로우 페이셜 오일 1월 23일(화) 오전 10시부터
 											일반출시 된 <mark class="txt_highlight_keyword">아티스트리</mark> </span>
 									</div>
+									<div class="header-date">2018-01-29(월)</div> <!-- 20240514 검색결과 추가 개선 -->
 								</li>
 								<li class="content-list-item col-xs-12">
 									<div class="item-header">
@@ -1187,6 +1270,7 @@
 												class="txt_highlight_keyword">아티스트리</mark> 글로우 페이셜 오일 1월 23일(화) 오전 10시부터
 											일반출시 된 <mark class="txt_highlight_keyword">아티스트리</mark> </span>
 									</div>
+									<div class="header-date">2018-01-29(월)</div> <!-- 20240514 검색결과 추가 개선 -->
 								</li>
 								<li class="content-list-item col-xs-12">
 									<div class="item-header">
@@ -1207,6 +1291,7 @@
 												class="txt_highlight_keyword">아티스트리</mark> 글로우 페이셜 오일 1월 23일(화) 오전 10시부터
 											일반출시 된 <mark class="txt_highlight_keyword">아티스트리</mark> </span>
 									</div>
+									<div class="header-date">2018-01-29(월)</div> <!-- 20240514 검색결과 추가 개선 -->
 								</li>
 								<li class="content-list-item col-xs-12">
 									<div class="item-header">
@@ -1226,6 +1311,7 @@
 												class="txt_highlight_keyword">아티스트리</mark> 글로우 페이셜 오일 1월 23일(화) 오전 10시부터
 											일반출시 된 <mark class="txt_highlight_keyword">아티스트리</mark> </span>
 									</div>
+									<div class="header-date">2018-01-29(월)</div> <!-- 20240514 검색결과 추가 개선 -->
 								</li>
 							</ul>
 
@@ -1244,9 +1330,9 @@
 							</p>
 
 							<!--  검색 결과 없을 때 -->
-							<div class="search-no-result">
+							<!-- <div class="search-no-result">
 								<p>"<em> *** </em>"(으)로 검색된 <em>아카데미</em> 내용이 없습니다. </p>
-							</div>
+							</div> -->
 							<!--//  검색 결과 없을 때 -->
 
 						</div>
@@ -1269,7 +1355,23 @@
 									<div class="pull-right sort-wrapper">
 										<a href="#" class="link-btn">전체보기<span class="featured-product__message-icon glyphicon glyphicon-menu-right"></span></a>
 									</div> -->
-										<div class="col-xs-12 col-md-6 hidden-md hidden-lg"></div>
+										<!-- S : 20240514 검색결과 추가 개선 -->
+										<div class="col-xs-12 col-md-6 hidden-md">
+											<div class="box_sort-option sticky-element sort-renew">
+												<div class="sort-options">
+													<div class="sort-select">
+														<span class="form_select-default">
+															<select class="form_select">
+																<option>최신순</option>														
+																<option>정확도순</option>
+															</select>
+															<i class="sp_form sp_select-default"></i>
+														</span>
+													</div>
+												</div>										
+											</div>
+										</div>
+										<!-- E : 20240514 검색결과 추가 개선 -->
 									</div>
 								</div>
 							</div>
@@ -1288,6 +1390,7 @@
 												class="txt_highlight_keyword">아티스트리</mark> 글로우 페이셜 오일 1월 23일(화) 오전 10시부터
 											일반출시 된 <mark class="txt_highlight_keyword">아티스트리</mark> </span>
 									</div>
+									<div class="header-date">2018-01-29(월)</div> <!-- 20240514 검색결과 추가 개선 -->
 								</li>
 							</ul>
 
@@ -1306,9 +1409,9 @@
 							</p>
 
 							<!--  검색 결과 없을 때 -->
-							<div class="search-no-result">
+							<!-- <div class="search-no-result">
 								<p>"<em> *** </em>"(으)로 검색된 <em>비즈니스</em> 내용이 없습니다. </p>
-							</div>
+							</div> -->
 							<!--//  검색 결과 없을 때 -->
 						</div>
 						<!--// 비즈니스  결과  -->
@@ -1322,7 +1425,7 @@
 										<div class="col-xs-12 col-md-6 hidden-xs hidden-sm">
 											<div class="pull-left">
 												<h2 class="pagination-bar-results">
-													<span class="total-wrapper">온라인 고객센터 (FAQ) <em>(00건)</em></span>
+													<span class="total-wrapper">암웨이 고객센터 FAQ <em>(00건)</em></span> <!-- 20240514 검색결과 추가 개선 -->
 												</h2>
 											</div>
 										</div>
@@ -1440,9 +1543,9 @@
 							</p>
 
 							<!--  검색 결과 없을 때 -->
-							<div class="search-no-result">
+							<!-- <div class="search-no-result">
 								<p>"<em> *** </em>"(으)로 검색된 <em>온라인 고객센터</em> 내용이 없습니다. </p>
-							</div>
+							</div> -->
 							<!--//  검색 결과 없을 때 -->
 
 						</div>
@@ -1461,10 +1564,12 @@
 												</h2>
 											</div>
 										</div>
-										<div class="pull-right sort-wrapper">
+										<!-- S : 20240514 운영 현행화 -->
+										<!-- <div class="pull-right sort-wrapper">
 											<a href="#" class="link-btn">전체보기<span
 													class="featured-product__message-icon glyphicon glyphicon-menu-right"></span></a>
-										</div>
+										</div> -->
+										<!-- E : 20240514 운영 현행화 -->
 										<div class="col-xs-12 col-md-6 hidden-md hidden-lg"></div>
 									</div>
 								</div>
@@ -1474,7 +1579,7 @@
 									<div class="item-header">
 										<div class="header-text"><a href="#">[판매 종료 예정] <mark
 													class="txt_highlight_keyword">아티스트리</mark> 글로우 페이셜 오일</a></div>
-										<div class="header-date">2018-01-29(월)</div>
+										<!-- <div class="header-date">2018-01-29(월)</div> --> <!-- 20240514 운영 현행화 -->
 									</div>
 									<div class="item-description">
 										<span>[판매 종료 예정] <mark class="txt_highlight_keyword">아티스트리</mark> 글로우 페이셜 오일 1월
@@ -1503,9 +1608,9 @@
 							</p>
 
 							<!--  검색 결과 없을 때 -->
-							<div class="search-no-result">
+							<!-- <div class="search-no-result">
 								<p>"<em> *** </em>"(으)로 검색된 <em>기타</em> 내용이 없습니다. </p>
-							</div>
+							</div> -->
 							<!--//  검색 결과 없을 때 -->
 
 						</div>

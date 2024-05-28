@@ -828,6 +828,16 @@
         ]
       },
       {
+        "url": "responsive/html/shop/site_popup_agree.html",
+        "pageId": "site_popup_agree",
+        "pageType": [
+          "POPUP"
+        ],
+        "level": [
+          "(LP) 온라인 판매/재판매자 제품 전달 금지 규정 위반 관련 정책에 대한 동의서"
+        ]
+      },
+      {
         "url": "responsive/html/new_page/renewal/kakao_popup_1_acm.html",
         "pageId": "kakao_popup_1_acm",
         "pageType": [
@@ -1686,6 +1696,28 @@
         "level": [
           "온라인 매거진",
           "상세 페이지(카카오 연동)"
+        ]
+      },
+      {
+        "url": "responsive/html/new_page/renewal/abcExperienceInfo.html",
+        "pageId": "abcExperienceInfo",
+        "pageType": [
+          "ABO",
+          "ETC"
+        ],
+        "level": [
+          "ABC 체험소개 인트로 페이지"
+        ]
+      },
+      {
+        "url": "responsive/html/new_page/renewal/etcPage/hiddenBenefitEvent.html",
+        "pageId": "hiddenBenefitEvent",
+        "pageType": [
+          "ABO",
+          "ETC"
+        ],
+        "level": [
+          "알림톡 페이지"
         ]
       }
     ]
@@ -6449,6 +6481,29 @@
         ],
         "level": [
           "장스오 홈"
+        ]
+      },
+      {
+        "url": "responsive/html/new_page/sop/sh_01_04_bsop_renewal.html",
+        "pageId": "sh_01_04_bsop_renewal",
+        "pageType": [
+          "SHOPPING",
+          "PLUS SHOPPING"
+        ],
+        "level": [
+          "장스오 홈"
+        ]
+      },
+      {
+        "url": "responsive/html/new_page/sop/bsop_manual.html",
+        "pageId": "bsop_manual",
+        "pageType": [
+          "SHOPPING",
+          "PLUS SHOPPING"
+        ],
+        "level": [
+          "장스오 홈",
+          "장스오 메뉴얼"
         ]
       },
       {

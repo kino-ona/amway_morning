@@ -195,6 +195,9 @@
 		<div id="footer"></div>
 	</main>
 
+	<!-- S : 20240514 SNS 공유 팝업 -->
+	<div id="loadLayer"></div>
+	<!-- E : 20240514 SNS 공유 팝업 -->
 	<div id="loadLayer1"></div> <!-- 회원가입/로그인 팝업 -->
 	<div id="loadLayer2"></div> <!-- 메뉴 둘러보기 팝업 -->
 	<div id="loadLayer3"></div> <!-- 제품 확인하기 팝업 -->
@@ -232,13 +235,14 @@
 	<!-- E : 20231106 간편가이드 2차 - 배너 추가 -->
 
     <!-- S : SNS 공유 레이어 팝업 -->
-	<div id="sns-layer" class="layer_section">
+	<!-- S : 20240514 삭제(SNS공유 공통 팝업으로 불러오도록 페이지 내 팝업 삭제) -->
+	<!-- <div id="sns-layer" class="layer_section">
 		<div class="layer_section-container">
 			<div class="layer-header">
 				<h1 class="header-title">SNS 공유</h1>
 			</div>
 			<div class="layer-content">
-				<!-- [Dev] 제품 및 주문 금액 노출의 경우 사용 -->
+				<!#-- [Dev] 제품 및 주문 금액 노출의 경우 사용 -->
 				<!--<div class="layer_check-box">
 					<p class="check-desc">제품 및 주문 금액 노출을 원할 경우 체크해주세요!</p>
 					<div class="check-list">
@@ -251,7 +255,7 @@
 							<label for="chk02" class="sp_chk focus">주문금액</label>
 						</span>
 					</div>
-				</div>-->
+				</div>--#>
 				<ul class="share-list">
 					<li class="share-item check-item">
 						<a href="#;" class="share-link">
@@ -303,13 +307,15 @@
 			</div>
 			<button type="button" class="btn_layer-close"><span class="blind">레이어팝업 닫기</span></button>
 		</div>
-	</div>
+	</div> -->
+	<!-- E : 20240514 삭제(SNS공유 공통 팝업으로 불러오도록 페이지 내 팝업 삭제) -->
 	<!-- E : SNS 공유 레이어 팝업 -->
 
     <script>
 		// 20220331 레이어 오픈 함수 호출
 		AMWAY.callLayer();
 
+		$('#loadLayer').load('/_ui/responsive/html/include/share_sns.html'); //20240514 SNS 공유 팝업
 		$('#loadLayer1').load('/_ui/responsive/html/include/simpleGuide_pop_login.html'); //  회원가입/로그인 팝업
 		$('#loadLayer2').load('/_ui/responsive/html/include/simpleGuide_pop_menu.html'); //  메뉴 둘러보기 팝업
 		$('#loadLayer3').load('/_ui/responsive/html/include/simpleGuide_pop_product.html'); //  제품 확인하기 팝업

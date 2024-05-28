@@ -2123,10 +2123,21 @@
 				<!-- 2019-10-01 스캔페이고 : scan-paygo 클래스 추가 -->
 				<a class="mobile-search-btn">
 					<span class="icon icon-search">검색</span>
+					<span class="search-default-txt">검색어를 입력하세요.</span> <!-- 20240517 추천 검색어 노출 개선 -->
 				</a>
 				<!-- <button class="scan-paygo-btn" onclick="$('.scan-paygo-tutorial').show()">scan pay go</button> --> <!-- 20240308 상단 검색창 현행화 -->
 				<!-- 2019-10-01 스캔페이고 : 버튼 추가 -->
 
+				<!-- S : 20240514 검색결과 추가 개선 -->
+				<!-- to개발 | 검색 페이지 상단 검색창에서만 노출 요청 -->
+				<div class="search-word-box cancelBtn-box">
+					<p class="search-word">비타민</p>
+					<button class="btn btn-link cancelBtn" type="button">
+						<span class="icon-cancel"></span>
+					</button>
+				</div>
+				<!-- E : 20240514 검색결과 추가 개선 -->
+				
 				<!-- S : 20240313 추천검색어 영역 주석 제거, css로 display:none 처리 -->
 				<ul class="suggestion-list">
 					<li>추천검색어 : G&amp;H 리프레쉬+ 바디 수딩 스틱</li>
@@ -2145,12 +2156,13 @@
 			<!-- //검색버튼 / 추천검색어 롤링 -->
 
 			<!-- 검색창 -->
-			<div class="new-search-cont renewal"> <!-- 20230919 최근 검색어 개선 (클래스 추가) -->
+			<div class="new-search-cont renewal search_result_page"> <!-- to개발 | 검색결과 페이지의 경우 search_result_page 클래스 추가 요청 --> <!-- 20240520 수정 --> <!-- 20230919 최근 검색어 개선 (클래스 추가) -->
 				<div class="top-search print-hide">
 					<div class="site-search">
 						<div class="ui-front">
 							<form name="search_form_TopSearchBoxPlaceHolderV2" method="get" action="/search/">
 								<div class="input-group cancelBtn-box"> <!-- 20231017 검색창 X 버튼 추가 (cancelBtn-box 클래스 추가) -->
+									<!-- to개발 | 입력한 검색어, 검색어 삭제(x버튼) 영역 클릭 시 입력한 검색어 유지하며 검색어 입력 창 오픈 요청 -->
 									<input type="text" id="js-site-search-input"
 										class="form-control js-site-search-input ui-autocomplete-input" name="text" value=""
 										maxlength="100" autocomplete="off" title="검색어 입력" placeholder="검색어를 입력하세요">
@@ -2235,18 +2247,22 @@
 								<p style="display:none;">최근 검색어 내역이 없습니다</p>
 							</div>
 							<!--//  검색 결과 없을 때 -->
-							<p class="tit tit0">추천 검색어</p>
+							<p class="tit tit0">더 알아보기</p> <!-- 20240517 추천 검색어 노출 개선 -->
 							<ul class="search-results-akl">
+								<!-- S : 20240517 추천 검색어 노출 개선 -->
+								<!-- to개발 | 최대 5개까지 노출 요청 -->
 								<li><a href="#n">퍼스널케어 선물세트 4종</a></li>
 								<li><a href="#n">아티스트리</a></li>
 								<li><a href="#n">스파이크 디펜스 항균 코팅</a></li>
 								<li><a href="#n">엣모스피어 블루캐시백 프로모션</a></li>
 								<li><a href="#n">아마그램 SUMMER호</a></li>
-								<li><a href="#n">엣모스피어 블루사전 예약</a></li>
+								<!-- <li><a href="#n">엣모스피어 블루사전 예약</a></li>
 								<li><a href="#n">글리스터 리후레쉬 레디투유즈 마우스워시액</a></li>
 								<li><a href="#n">글리스터 선물세트</a></li>
 								<li><a href="#n">뉴트리 클로렐라 컵면 구성 변경</a></li>
-								<li><a href="#n">쿡웨어 메이트 논스틱 소형팬 2종 세트</a></li>
+								<li><a href="#n">쿡웨어 메이트 논스틱 소형팬 2종 세트</a></li> -->
+								<!-- E : 20240517 추천 검색어 노출 개선 -->
+
 								<!-- <li class="rank"><a href="#n"><span class="num">1.</span> 뉴트리 라이트</a></li>
 								<li class="rank"><a href="#n"><span class="num">2.</span> 이스프링</a></li>
 								<li class="rank"><a href="#n"><span class="num">3.</span> 엣모스피어 스카이</a></li>

@@ -103,13 +103,13 @@
 		</div>
 
 		<!-- sop-order-done -->
-		<div class="container-fluid main-container sop-order-done">
+		<div class="container-fluid main-container sop-order-done sop-order-done-renewal"> <!-- 20240418 마이랩 SOP 신청 방법 정정 개발_클래스 추가 -->
 
 			<!-- sopCreate -->
 			<div class="shipping-delivery sopCreate">
 				<div class="container-fluid">
 					<div class="row cartTitile">
-						<h1 class="product-list-page-title mb25">정기주문&amp;스마트 오더 주문서 생성</h1>
+						<h1 class="product-list-page-title mb25">스마트 오더(SOP) 주문서 생성</h1>
 					</div>
 				</div>
 
@@ -120,6 +120,18 @@
 							<p class="confirm-box-message">주문서 생성이 완료되었습니다.</p>
 						</div>
 					</div>
+
+					<!-- S : 20240418 마이랩 SOP 신청 방법 정정 개발 -->
+					<div class="sop-mylab-banner-box">
+						<a href="https://mylab.amway.co.kr" class="pc" target="_blank">
+							<img src="/_ui/responsive/theme-blue/images/mylab_testkit_banner_pc.png" alt="마이랩 사이트에서 테스트 키트를 등록하세요. 분석이 완료되면 정기배송이 자동으로 진행됩니다. 테스트 키트 등록하기 >"/>
+						</a>
+						<a href="https://mylab.amway.co.kr" class="mo" target="_blank">
+							<img src="/_ui/responsive/theme-blue/images/mylab_testkit_banner_mo.png" alt="마이랩 사이트에서 테스트 키트를 등록하세요. 분석이 완료되면 정기배송이 자동으로 진행됩니다. 테스트 키트 등록하기 >"/>
+						</a>
+					</div>
+					<!-- E : 20240418 마이랩 SOP 신청 방법 정정 개발 -->
+
 					<!-- S: 2020-05 주문/결제 추가 TO-BE 타입 -->
 					<ul class="info_list">
 						<li class="info_list-row">
@@ -127,7 +139,7 @@
 							<div class="info_item-item">
 								<!-- S : 20230320 SOP 간편 재시작, SOP/장스오 자동갱신 -->
 								<span class="info_item-txt">
-									<a href="/_ui/responsive/html/new_page/sop/so_02_v2.html" class="color-green">주문서 명이 노출됩니다 주문서 선택 시 주문서 상세 화면으로 이동합니다</a>
+									<a href="/_ui/responsive/html/new_page/sop/so_02_v2.html" class="color-blue04">주문서 명이 노출됩니다 주문서 선택 시 주문서 상세 화면으로 이동합니다</a> <!-- 20240418 마이랩 SOP 신청 방법 정정 개발 -->
 								</span>
 								<!-- E : 20230320 SOP 간편 재시작, SOP/장스오 자동갱신 -->
 							</div>
@@ -153,9 +165,18 @@
 						<li class="info_list-row">
 							<div class="info_item-item">결제일</div>
 							<div class="info_item-item">
-								<span class="info_item-txt">매 달 5일</span>
+								<span class="info_item-txt">매달 5일</span>
 							</div>
 						</li>
+						<!-- S : 20240418 마이랩 SOP 신청 방법 정정 개발 -->
+						<li class="info_list-row">
+							<div class="info_item-item">배송 시작일</div>
+							<div class="info_item-item">
+								<span class="info_item-txt">이번달 부터 배송 시작</span>
+								<span class="info_item-sub-txt color-blue04">이번 달부터 정기 배송이 시작됩니다.</span>
+							</div>
+						</li>
+						<!-- E : 20240418 마이랩 SOP 신청 방법 정정 개발 -->
 					</ul>
 					<!-- E: 2020-05 주문/결제 추가 TO-BE 타입 -->
 				</div>
