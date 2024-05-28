@@ -17356,17 +17356,11 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	background: #F9F9F9;
 	overflow: hidden;
 }
-.box_sop-product-helper .accordion_wrap .accordion_list.accordion_list--second {
-	display: none;
-}
 .box_sop-product-helper .accordion_wrap .accordion_list.accordion_list--first:nth-of-type(4),
 .box_sop-product-helper .accordion_wrap .accordion_list.accordion_list--second:last-of-type {
 	margin-bottom: 0;
 }
-.box_sop-product-helper .accordion_wrap .accordion_list.opened {
-	background: #EBF5F0;
-	height: unset;
-}
+
 .box_sop-product-helper .accordion_wrap .accordion_list:nth-of-type(1) .accordion_contents {
 	padding: 0 40px 20px;
 }
@@ -17376,6 +17370,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	background: #F9F9F9;
 	/* overflow: hidden; */
 	z-index: 3;
+	cursor: pointer;
 }
 .box_sop-product-helper .accordion_wrap .accordion_title_wrap {
 	display: flex;
@@ -17436,6 +17431,11 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	border-radius: 8px;
 	letter-spacing: -0.05em;
 }
+
+.box_sop-product-helper .accordion_wrap .accordion_list.opened {
+	background: #EBF5F0;
+}
+
 .box_sop-product-helper .accordion_wrap .accordion_list.opened .accordion_info_wrap span.my_product {
 	display: none;
 }
@@ -17501,9 +17501,6 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	display: none;
 }
 /* 아코디언 콘텐츠 */
-.box_sop-product-helper .accordion_wrap .accordion_body {
-	display: none;
-}
 .box_sop-product-helper .accordion_wrap .accordion_body .accordion_product_title_wrap {
 	padding: 0 40px;
 	display: flex;
@@ -17552,9 +17549,6 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	height: 16px;
 	background: url(/_ui/responsive/theme-blue/images/akl_plp/ico_reset_button.png) center center no-repeat;
 	background-size: cover;
-}
-.box_sop-product-helper .accordion_wrap .accordion_list:nth-of-type(1) .accordion_body {
-	display: block;
 }
 .box_sop-product-helper .accordion_wrap .accordion_body .accordion_contents {
 	position: relative;
@@ -17862,6 +17856,10 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	letter-spacing: -0.05em;
 	color: #000;
 }
+.box_sop-product-helper .accordion_wrap .accordion_body .optional_category_wrap {
+	display: none;
+}
+
 .box_sop-product-helper .accordion_wrap .accordion_body .optional_select_wrap input[type="radio"] {
 	position: unset;
 	width: 20px;
@@ -17971,10 +17969,10 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	color: #FFF;
 	border-radius: 12px;
 }
-.box_sop-product-helper .accordion_wrap .accordion_body .optional_category_wrap.pc_hide,
+/* .box_sop-product-helper .accordion_wrap .accordion_body .optional_category_wrap.pc_hide,
 .box_sop-product-helper .accordion_wrap .accordion_body .optional_category_wrap.option_hide {
 	display: none;
-}
+} */
 
 .box_sop-product-helper .promotion_float_wrap.pc {
 	position: fixed;
@@ -18678,9 +18676,10 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		background: url(/_ui/responsive/theme-blue/images/akl_plp/ico_reset_button.png) center center no-repeat;
 		background-size: cover;
 	}
+
 	.box_sop-product-helper .accordion_wrap .accordion_body .optional_category_wrap {
-		position: relative;
 		display: block;
+		position: relative;
 		padding: 20px 0 22px 20px;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_body .optional_category_wrap button {

@@ -471,9 +471,10 @@
 					<p>프로모션 혜택과 함께 제품구성을 시작하실 수 있도록 도와 드립니다.<a href="#">제품 수정 바로가기</a></p>
 				</div>
 
-				<!-- 아코디언 영역 -->
-				<div class="accordion_wrap">
-					<div class="accordion_list opened" data-index="1"><!-- 202405 것모닝 작업 - 초기셋팅 추가-->
+			<!-- 아코디언 영역 -->
+			<div class="accordion_wrap">
+				<div class="accordion_container accordion_container--step">
+					<div class="accordion_list">
 						<div class="accordion_header">
 							<div class="accordion_title_wrap">
 								<p>Step 01. 구성 방법을 고르세요.</p>
@@ -502,9 +503,10 @@
 							</div>
 						</div>
 					</div>
-
-					<!-- 아코디언 Step01 조건 01 -->
-					<div class="accordion_list accordion_list--first" data-index="2"><!-- 202405 것모닝 작업 - 초기셋팅 추가-->
+				</div>
+				<!-- 아코디언 Step01 조건 01 -->
+				<div class="accordion_container accordion_container--step1_1">
+					<div class="accordion_list accordion_list--first"><!-- 202405 것모닝 작업 - 초기셋팅 추가-->
 						<div class="accordion_header">
 							<div class="accordion_title_wrap">
 								<p>Step 02. 프로틴을 선택하세요.</p>
@@ -645,12 +647,14 @@
 							
 							<div class="accordion_btn_wrap">
 								<button class="accordion_prev_btn" type="button">이전단계</button>
-								<button class="accordion_next_btn" type="button" disabled>다음단계</button><!-- 비활성화 케이스 -->
+								<!-- 비활성화 케이스 -->
+								<!-- <button class="accordion_next_btn" type="button" disabled>다음단계</button -->
+								<button class="accordion_next_btn" type="button">다음단계</button>
 							</div>
 						</div>
 					</div>
 
-					<div class="accordion_list accordion_list--first" data-index="3"><!-- 202405 것모닝 작업 - 초기셋팅 추가-->
+					<div class="accordion_list accordion_list--first"><!-- 202405 것모닝 작업 - 초기셋팅 추가-->
 						<div class="accordion_header">
 							<div class="accordion_title_wrap">
 								<p>Step 03. 프로바이오틱스를 선택하세요.</p>
@@ -923,7 +927,7 @@
 
 							<div class="accordion_btn_wrap">
 								<button class="accordion_prev_btn" type="button">이전단계</button>
-								<button class="accordion_next_btn" type="button" disabled>다음단계</button>
+								<button class="accordion_next_btn" type="button">다음단계</button>
 							</div>
 						</div>
 					</div>
@@ -960,7 +964,7 @@
 
 							<div class="optional_category_wrap">
 								<ul>
-									<li class="active"><button type="button">전체 (<span>99</span>)</button></li>
+									<li><button type="button">전체 (<span>99</span>)</button></li>
 									<li><button type="button">기초 영양 (<span>36</span>)</button></li>
 									<li><button type="button">기능성 (<span>27</span>)</button></li>
 									<li><button type="button">어린이 (<span>4</span>)</button></li>
@@ -1824,10 +1828,11 @@
 							</div>
 						</div>
 					</div>
-					
-					<!-- // 아코디언 Step01 조건 01 -->
+				</div>
+				<!-- // 아코디언 Step01 조건 01 -->
 
-					<!-- 아코디언 Step01 조건 02 -->
+				<!-- 아코디언 Step01 조건 02 -->
+				<div class="accordion_container accordion_container--step1_2">
 					<div class="accordion_list accordion_list--second">
 						<div class="accordion_header">
 							<div class="accordion_title_wrap">
@@ -1982,7 +1987,7 @@
 
 							<div class="accordion_btn_wrap">
 								<button class="accordion_prev_btn" type="button">이전단계</button>
-								<button class="accordion_next_btn" type="button" disabled>다음단계</button>
+								<button class="accordion_next_btn" type="button">다음단계</button>
 							</div>
 						</div>
 					</div>
@@ -2018,7 +2023,7 @@
 
 							<div class="optional_category_wrap">
 								<ul>
-									<li class="active"><button type="button">전체 (<span>99</span>)</button></li>
+									<li><button type="button">전체 (<span>99</span>)</button></li>
 									<li><button type="button">기초 영양 (<span>36</span>)</button></li>
 									<li><button type="button">기능성 (<span>27</span>)</button></li>
 									<li><button type="button">어린이 (<span>4</span>)</button></li>
@@ -2880,72 +2885,72 @@
 							</div>
 						</div>
 					</div>
-					<!-- // 아코디언 Step01 조건 02 -->
-					
 				</div>
-				<!-- // 아코디언 영역 -->
+				<!-- // 아코디언 Step01 조건 02 -->
+			</div>
+			<!-- // 아코디언 영역 -->
 
-				<!-- 맨밑 플로팅 -->
-				<div class="promotion_float_wrap pc">
-					<div class="promotion_total">
-						<p><span>총 개수</span><span>999</span>개</p>
-						<p><span>총 PV / BV</span><span>99,999,999</span>&nbsp;/&nbsp;<span>99,999,999</span></p>
-						<p><span>결제 예정금액</span><span>99,999,999</span>원</p>
-	
-						<span class="promotion_total_flag">프로모션 미적용</span>
-						<!-- <span class="promotion_totle_flag active">프로모션 적용</span> --> <!-- 202405 것모닝 작업 - 것모닝 작업 - 프로모션 Active인 경우  -->
-					</div>
+			<!-- 맨밑 플로팅 -->
+			<div class="promotion_float_wrap pc">
+				<div class="promotion_total">
+					<p><span>총 개수</span><span>999</span>개</p>
+					<p><span>총 PV / BV</span><span>99,999,999</span>&nbsp;/&nbsp;<span>99,999,999</span></p>
+					<p><span>결제 예정금액</span><span>99,999,999</span>원</p>
 
-					<a href="#" class="promotion_button_confirm">장스오 제품 담기</a>
+					<span class="promotion_total_flag">프로모션 미적용</span>
+					<!-- <span class="promotion_totle_flag active">프로모션 적용</span> --> <!-- 202405 것모닝 작업 - 것모닝 작업 - 프로모션 Active인 경우  -->
 				</div>
-				
-				<div class="promotion_float_wrap mo">
-					<div class="promotion_total">
-						<p>총 개수</p>
-						<p><span>0</span>개</p>
-						<button type="button" class="total_button on">전체 보기 버튼</button> <!-- 202405 것모닝 작업 - 담긴 제품이 없을 땐 비활성화, 담긴 제품이 있을 시 on -->
-					</div>
-					<div class="my_product_wrap">
-						<div class="my_product_container">
-							<div class="my_product_list">
-								<p class="my_product_title">
-									프로틴 (2)
-									<button type="button">초기화</button>
-								</p>
-	
-								<p><span>밸런스 위드인 365 (30포) 밸런스 위드인 365 (30포) 밸런스 위드인 365 (30포)</span><button type="button">리스트 삭제 버튼</button></p>
-								<p><span>밸런스 위드인 365 (30포)</span><button type="button">리스트 삭제 버튼</button></p>
-							</div>
-							<div class="my_product_list">
-								<p class="my_product_title">
-									프로바이오틱스 (3)
-									<button type="button">초기화</button>
-								</p>
-	
-								<p><span>밸런스 위드인 365 (30포)</span><button type="button">리스트 삭제 버튼</button></p>
-								<p><span>밸런스 위드인 365 (30포)</span><button type="button">리스트 삭제 버튼</button></p>
-							</div>
-							<div class="my_product_list">
-								<p class="my_product_title">
-									추가 구성 (1)
-									<button type="button">초기화</button>
-								</p>
-	
-								<p><span>밸런스 위드인 365 (30포)</span><button type="button">리스트 삭제 버튼</button></p>
-							</div>
+
+				<a href="#" class="promotion_button_confirm">장스오 제품 담기</a>
+			</div>
+			
+			<div class="promotion_float_wrap mo">
+				<div class="promotion_total">
+					<p>총 개수</p>
+					<p><span>0</span>개</p>
+					<button type="button" class="total_button on">전체 보기 버튼</button> <!-- 202405 것모닝 작업 - 담긴 제품이 없을 땐 비활성화, 담긴 제품이 있을 시 on -->
+				</div>
+				<div class="my_product_wrap">
+					<div class="my_product_container">
+						<div class="my_product_list">
+							<p class="my_product_title">
+								프로틴 (2)
+								<button type="button">초기화</button>
+							</p>
+
+							<p><span>밸런스 위드인 365 (30포) 밸런스 위드인 365 (30포) 밸런스 위드인 365 (30포)</span><button type="button">리스트 삭제 버튼</button></p>
+							<p><span>밸런스 위드인 365 (30포)</span><button type="button">리스트 삭제 버튼</button></p>
+						</div>
+						<div class="my_product_list">
+							<p class="my_product_title">
+								프로바이오틱스 (3)
+								<button type="button">초기화</button>
+							</p>
+
+							<p><span>밸런스 위드인 365 (30포)</span><button type="button">리스트 삭제 버튼</button></p>
+							<p><span>밸런스 위드인 365 (30포)</span><button type="button">리스트 삭제 버튼</button></p>
+						</div>
+						<div class="my_product_list">
+							<p class="my_product_title">
+								추가 구성 (1)
+								<button type="button">초기화</button>
+							</p>
+
+							<p><span>밸런스 위드인 365 (30포)</span><button type="button">리스트 삭제 버튼</button></p>
 						</div>
 					</div>
-					<div class="promotion_total">
-						<p>총 PV / BV</p>
-						<p><span>0</span>/&nbsp;<span>0</span></p>
-					</div>
-					<div class="promotion_total">
-						<p>결제예정금액<span class="promotion_total_flag">프로모션 미적용</span></p>
-						<p><span>0</span>원</p>
-					</div>
-
-					<a href="#" class="promotion_button_confirm">장스오 제품 담기</a>
 				</div>
+				<div class="promotion_total">
+					<p>총 PV / BV</p>
+					<p><span>0</span>/&nbsp;<span>0</span></p>
+				</div>
+				<div class="promotion_total">
+					<p>결제예정금액<span class="promotion_total_flag">프로모션 미적용</span></p>
+					<p><span>0</span>원</p>
+				</div>
+
+				<a href="#" class="promotion_button_confirm">장스오 제품 담기</a>
+			</div>
 
 				<!-- //맨밑 플로팅 -->
 			</div>
@@ -6594,326 +6599,356 @@
 <!--div id="loadLayer"></!--div--> 
 
 <script>
-	//$( '#loadLayer' ).load( '../../include/share_cart_sop_guide.html');  // 2020-08-14 추가
-	//$( '#loadLayer' ).load( '../../include/personal_number_layer.html');  // 2020-10-08 세금신고를 위한 주민등록번호 등록_외국인일 경우 
-	$( '#loadLayer' ).load( '../../include/personal_number_default.html');  // 2020-10-08 세금신고를 위한 주민등록번호 등록_Default
-	//$( '#loadLayer2' ).load( '../../include/share_sop-plp.html' );
-	$( '#loadLayer2-2' ).load( '../../include/share_sop-plp_ACliksMoney.html' );// 2020-09-23 A Cliks Money 2차 추가
-	// A Cliks : 구매공유, 선물하기 선택 팝업
-	//$('.btn-share').click(function(event) {
-	//	event.preventDefault(); 
-	//	layerPopOver(this,'.acliks_sop-pop');
-	//});
-	
-	//jQuery(function() {
+  //$( '#loadLayer' ).load( '../../include/share_cart_sop_guide.html');  // 2020-08-14 추가
+  //$( '#loadLayer' ).load( '../../include/personal_number_layer.html');  // 2020-10-08 세금신고를 위한 주민등록번호 등록_외국인일 경우 
+  $( '#loadLayer' ).load( '../../include/personal_number_default.html');  // 2020-10-08 세금신고를 위한 주민등록번호 등록_Default
+  //$( '#loadLayer2' ).load( '../../include/share_sop-plp.html' );
+  $( '#loadLayer2-2' ).load( '../../include/share_sop-plp_ACliksMoney.html' );// 2020-09-23 A Cliks Money 2차 추가
+  // A Cliks : 구매공유, 선물하기 선택 팝업
+  //$('.btn-share').click(function(event) {
+  //  event.preventDefault(); 
+  //  layerPopOver(this,'.acliks_sop-pop');
+  //});
+  
+  //jQuery(function() {
     //    $( '#loadLayer' ).load( '../../include/share_cart_sop_guide.html' );  // 2020-08-14 추가
-	//});
+  //});
 
-	// A Cliks : 2차 세금신고를 위한 주민등록번호 등록
-	$('.btn-share').click(function(event) {
-		event.preventDefault();
-		layerPopOver(this,'.acliks_sop-pop');
-	});
-	
-	jQuery(function() {
+  // A Cliks : 2차 세금신고를 위한 주민등록번호 등록
+  $('.btn-share').click(function(event) {
+    event.preventDefault();
+    layerPopOver(this,'.acliks_sop-pop');
+  });
+  
+  jQuery(function() {
         $( '#loadLayer' ).load( '../../include/person_number_layer.html' );  // 2020-10-08 주민등록번호 추가 
-	});
+  });
 
-	jQuery(function() {
+  jQuery(function() {
         $( '#loadLayer' ).load( '../../include/person_number_default.html' );  // 2020-10-08 주민등록번호 추가 
-	});
+  });
 
-	// 202405 것모닝 작업 - 처음 진입시 모바일 화면체크
-	function windowResizeOptionalCategory() {
-		if($('.box_sop-product-helper .optional_category_wrap')) {
-			var windowWidth = $(window).width();
-				
-			if(windowWidth <= 1200) {
-				$('.optional_category_wrap').removeClass('pc_hide');
-			} else {
-				$('.optional_category_wrap').addClass('pc_hide');
-			}	
-		} 
+  // S : 202405 것모닝 작업
+  // 처음 진입시 모바일 화면체크
+  if($('.box_sop-product-helper')) {
+    var windowWidth = $(window).width();
+
+    //tablet, mo
+    if(windowWidth <= 1200) {
+    
+    }else {
+    }
+
+
+    if($('.optional_category_wrap')) optionalCategoryDefaultOption();
+
+    if($('.accordion_list input[name="step1"]')) step1DefaultOption($('input[name="step1"]').val());
+
+		if($('.accordion_list')) accordionDefaultOption();
+    // optionalProductOpen();
+  }
+
+  function optionalCategoryDefaultOption() {
+    optionalCategoryDefaultActive();
+    optionalCategoryAction();
+  }
+
+  function optionalCategoryDefaultActive() {
+    $.each($('.optional_category_wrap'), function(index, item) {
+      $(item).find('li').eq(0).addClass('active');
+    })
+  }
+
+  function optionalCategoryAction() {
+    $('.optional_category_wrap li').click(function() {
+			$(this).addClass('active').siblings().removeClass('active');
+    });
+  }
+  
+	function step1DefaultOption(type) {
+		$('.accordion_container').hide();
+		$(`.accordion_container--step, .accordion_container--${type}`).show();
+
+		step1ContainerAction();
 	}
 
-	windowResizeOptionalCategory();
+  function step1ContainerAction() {
+		$('input[name="step1"]').click(function() {
+			$('.accordion_container:not(:eq(0))').hide();
+			$(`.accordion_container--${$(this).val()}`).show();
+    });
+  }
 
-	// 202405 것모닝 작업 -  모바일 화면 > 추가구성 컨텐츠 tap action
-	function optionalMoCategory() {
-		var optionalCategoryItems = $('.optional_category_wrap ul li');
+  function accordionDefaultOption() {
+		var firstStepList = $('.accordion_container--step .accordion_list');
 
-		optionalCategoryItems.click(function() {
-			optionalCategoryItems.removeClass('active');
-			$(this).addClass('active');
+		resetAccordionClass();
+		accordionAction();
+		accordionDirectionAction();
+
+		firstStepList
+			.addClass('opened')
+			.find('.accordion_body').slideDown(0);
+  }
+
+	function resetAccordionClass() {
+		var totalList = $(".accordion_container .accordion_list");
+		
+		totalList
+			.removeClass('opened')
+			.find(".accordion_body").slideUp(0);
+	}
+
+  function accordionAction(activeTarget) {
+		if(activeTarget !== undefined) {
+			//아코디언 안에서 이전 다음단계 버튼 눌렀을때
+			accordionActionDetail(activeTarget);
+			return false;
+		}
+
+		$('.accordion_header').click(function () {
+			var thisList = $(this).closest('.accordion_list');
+
+			accordionActionDetail(thisList);
+		});
+  }
+
+	function accordionActionDetail(item) {
+		if(!item.hasClass('opened')) resetAccordionClass();
+
+		item
+			.addClass('opened')
+			.find('.accordion_body').slideDown(400, function () {
+				scrollAction(item);
 		});
 	}
 
-	// 202405 것모닝 작업 - Step01 상품 탭
-  function step1Tab () {
-		if($('.box_sop-product-helper input[name="step1"')) {
-			$('input[name="step1"]').click(function() {
-				$(this).val() === 'step1_1' ? step1ContentAction('step1_1') : step1ContentAction('step1_2');
-			});
-		}
-  };
-
-	// 202405 것모닝 작업 - 아코디언 열고닫기 function 
-	$('.accordion_header').click(function () {
-		accordionOpen.call(this);  //'this'를 accordionOpen 함수에 전달
-	});
-
-	function accordionOpen(index) {
-		let element = index ? $(`.accordion_list[data-index="${index}"]`) : $(this).closest(".accordion_list");
-
-		if (!element.hasClass("opened")) {		
-			element.addClass("opened").siblings().removeClass("opened");
-			element.find(".accordion_body").slideDown(300);
-			element.siblings().find(".accordion_body").slideUp(300);
-		}
-
-
-		// console.log(element.find('.accordion_header').offset().top, element.find('.accordion_body').offset().top);
-		// let windowHeight = $(window).height();
-		// console.log(element[0].dataset.index);
-
-		// $('html,body').animate({
-		// 		scrollTop : element.offset().top - (element.height() - $(window).height() / 2) }
-		// 	);
-
-		if(element.hasClass("opened")) {
-			// $('html,body').animate({
-			// 	scrollTop : element.offset().top - (element.height() - $(window).height() / 2) }
-			// );
-		}
-	}
-	// 202405 것모닝 작업 - 아코디언 열고닫기 function 
-
-	// window.addEventListener('scroll', () => {
-	// 	console.log('SCROLL',window.scrollY);
-	// });
-
-  function step1ContentAction(data) {
-		// 202405 것모닝 작업 - 아코디언 index 부여
-		let step1 = $('.accordion_list--first');
-		let step2 = $('.accordion_list--second');
-		let targetList = data === 'step1_1' ? step1 : step2;
-		let otherList = data === 'step1_1' ? step2 : step1;
-
-		otherList.removeAttr("data-index");
-		targetList.each(function (index, element) {
-			$(element).attr("data-index", index + 2);
-		});
-		// 202405 것모닝 작업 - 아코디언 index 부여
-		step1.css('display', data === 'step1_1' ? 'block' : 'none');
-		step2.css('display', data === 'step1_1' ? 'none' : 'block');
-  }
-
-	// 202405 것모닝 작업 - 이전, 다음 버튼 
-	$(".accordion_prev_btn, .accordion_next_btn").on("click", function () {
-		let thisAccordionWrap = $(this).closest(".accordion_list");
-		let thisAccordionIndex = thisAccordionWrap.data("index");
-		if ($(event.target).hasClass("accordion_prev_btn")) {
-			accordionOpen(thisAccordionIndex - 1);
-		} else if ($(event.target).hasClass("accordion_next_btn")) {
-			accordionOpen(thisAccordionIndex + 1)
-		}
-	});
-	// 202405 것모닝 작업 - 이전, 다음 버튼 
-
-	// 202405 것모닝 작업 - Step04 추가 구성 상품 희망
-	function optionalProductOpen () {
-		if($('.box_sop-product-helper input[name="chk_optional_yn1"]') || $('.box_sop-product-helper input[name="chk_optional_yn2"]')) {
-			$('input[name="chk_optional_yn1"]').click(function() {
-				optionalProductAction('step1_1', $(this).val());
-			})
-
-			$('input[name="chk_optional_yn2"]').click(function() {
-				optionalProductAction('step1_2', $(this).val());
-			})
-		}
-	};
-
-	function optionalProductAction(step, data) {
-		var number = 0;
-		var windowWidth = $(window).width();
-
-		step === 'step1_1' ? number = 'first' :  number = 'second';
-
-		$('.accordion_list--'+ number +' .optional_tab').css('display', data === 'optional_n' ? 'none' :'block');
-		$('.last_step .accordion_info_wrap').css('display', data === 'optional_n' ? 'none' :'block');
-
-		
-
-		if ($(windowWidth <= 1200)) {
-			data === 'optional_n' ?
-			$('.optional_category_wrap').addClass('option_hide') :
-			$('.optional_category_wrap').removeClass('option_hide');
-		}
-		
-  }
-
-	step1Tab();
-	optionalMoCategory();
-	optionalProductOpen();
-
-	//resize 될때 추가구성 컨텐츠 tap action 작업 필요
-
-
-	// 202405 것모닝 작업 - 모바일 하단 플로팅 영역에 의한 챗봇과 스크롤 버튼 위치 조정
-	$('.tabs').click(function() {
-		if ($(this)[0] == $('.tabs').eq(2)[0]) {
-			$('.scrollTopWrapper').addClass('floatingUp');
-			$('.box-chatbot').addClass('floatingUp');
-		} else {
-			$('.scrollTopWrapper').removeClass('floatingUp');
-			$('.box-chatbot').removeClass('floatingUp');
-		}
-	});
-
-	$('.promotion_total .total_button, .promotion_total p').click(function() {
-		$(this).toggleClass('active');
-		$('.my_product_wrap').toggleClass('active');
-	});
-
-
-	// 202405 것모닝 작업 - 아코디언 스와이퍼
-	let ww = $(window).width();
-	
-	function initSwiper() {
-		let $slider = $('.accordion_contents');
-		let sliderFlag = false;
-
-		if (ww > 1200) {
-			$slider.find('.accordion_swiper').each(function(i) {
-				$(this).siblings("[class*='swiper-button']").addClass("type"+i);
-
-				const slider = new Swiper($(this), {
-					slidesPerView: 'auto',
-					spaceBetween: 21.6,
-					touchRatio: 0,
-					simulateTouch: false,
-					watchOverflow : true,
-					observer: true,
-					observeParents: true,
-
-					navigation: {
-						nextEl: $slider.find('.swiper-button-next.type' + i),
-						prevEl: $slider.find('.swiper-button-prev.type' + i),
-					},
-				});
-				sliderFlag = true;
-			});
-
-		} else if (ww <= 1200 && sliderFlag === true) {
-			sliderFlag = false;
-			slider.destroy();
-		}
+	function scrollAction(item) {
+		$('html, body').animate({
+			scrollTop : item.offset().top - (item.find('.accordion_header').height() + $('.main-header').height())
+		},300);
 	}
 
-	initSwiper();
+	function accordionDirectionAction() {
+    $('.accordion_prev_btn, .accordion_next_btn').on("click", function () {
+			var isNext = $(this).hasClass('accordion_next_btn');
+			var activeList = $(this).closest('.accordion_list');
+			var activeTarget;
 
-
-	$(window).on('resize', function() {
-		ww = $(window).width();
-		initSwiper();
-		windowResizeOptionalCategory();
-	});
-
-	// 202405 것모닝 작업 - 것모닝 제품 구성 시작하기 버튼
-	$(".gutmorning_start_btn").click(function(event) {
-		$('.tabs').removeClass('on');
-		$('.tabs').eq(2).addClass('on');
-
-		$('.cont').css('display', 'none');
-		$('.cont').eq(2).css('display', 'block');
-	});
-
-
-	// 탭메뉴 sticky 컨트롤
-	$(function() {
-		var stickyMenu = $('.box_product-fixed')
-		var boxTab = $('.box_sop-tab-wrap')
-		if (!stickyMenu.length) return;
-		var onlyClick = false,
-			boxTabOffsetTop =  $('.smart-order-tabs .box_sop-tab-wrap').offset().top,
-			headerHeight = $( '.main-header' ).height();
-
-		$(window).on('scroll load resize', function () {
-			if ( onlyClick === true ) { return }		
-			var winScrollTop = $( this ).scrollTop(),
-				headerHeight = $( '.main-header' ).height();
-			if (winScrollTop >= boxTabOffsetTop - headerHeight) {
-				// console.log(winScrollTop + ',' + stickyOffsetTop + ',' +  headerHeight + ',' +  boxTabOffsetTop )
-				stickyMenu.addClass( 'fixed' );
-				// boxTab.addClass( 'fixed' );
+			if (isNext) {
+					activeTarget = activeList.next('.accordion_list');
 			} else {
-				stickyMenu.removeClass( 'fixed' );
-				// boxTab.removeClass( 'fixed' );
+					activeTarget = activeList.prev('.accordion_list');
+					if (activeTarget.length < 1) {
+							activeTarget = $(`.accordion_container--step .accordion_list`).eq(0);
+					}
 			}
 
-			var h = headerHeight + $('.box_product-fixed_wrap').height();
-			$('.box_product-list button').each(function () {
-				var currLink = $(this);
-				var refElement = $('#'+currLink.attr("data-link"));
-				if ( refElement.offset().top - h <= winScrollTop  && refElement.offset().top + refElement.height() - headerHeight > winScrollTop ) {
-					currLink.addClass("active");
-					currLink.siblings().removeClass("active");
-					currLink.parents('.box_product-fixed_wrap').addClass( 'fixed' );
-				}
-				else{
-					currLink.removeClass("active");
-				}
-			});		
-		})
+			if ($(this).closest('.accordion_container').hasClass('accordion_container--step')) {
+					activeTarget = $(`.accordion_container--${$('.accordion_list input[name="step1"]:checked').val()} .accordion_list`).eq(0);
+			}
 
-		// 탭메뉴 sticky 영역 버튼 클릭시
-		$('.btn-sop-pack').click(function(){
-			onlyClick = true;
-			stickyMenu.addClass( 'fixed' );
-
-			var seq = $(this).attr("data-link"),
-				offset = $("#" + seq).offset(),
-				h = $('.main-header').height() + $('.box_product-fixed_wrap').height() - 1;
-
-			$(this).addClass("active");
-			$(this).siblings().removeClass("active");
-			$('html, body').stop().animate({scrollTop : offset.top - h}, 300, function(){
-				onlyClick = false;
-			});
-		})
+			accordionAction(activeTarget);
 	});
+}
 
-	var link = document.location.href;
-	// 2020-09-01 sop 1차  테스트용 (확인용)
-	/* if ( link.indexOf("elem=1") != -1 ) {
-		setTimeout(function(){
-			moSearchCtrl();
-		}, 1500);
-		window.onload = function () {
-	     moSearchCtrl();
-		}	
-	}   */
 
-	// 2020-10-07sop 2차 테스트용 (확인용)
-	if ( link.indexOf("elem=2") != -1 ) {
-		setTimeout(function(){
-			moSearchCtrl();
-		}, 1500);
-		window.onload = function () {
-	     moSearchCtrl();
-		}	
-		$('.btn_floating-group .btn_box').show();
-		$('.btn_floating-group .btn_box').eq(2).hide();
-	} 	
+// E: 202405 것모닝 작업
 
-	/* window.onload = function () {
-	     moSearchCtrl();
-	} */
+//작업 아래부터 필요
 
-	
 
-		
+  // 202405 것모닝 작업 - Step04 추가 구성 상품 희망
+  function optionalProductOpen () {
+    if($('.box_sop-product-helper input[name="chk_optional_yn1"]') || $('.box_sop-product-helper input[name="chk_optional_yn2"]')) {
+      $('input[name="chk_optional_yn1"]').click(function() {
+        optionalProductAction('step1_1', $(this).val());
+      })
+
+      $('input[name="chk_optional_yn2"]').click(function() {
+        optionalProductAction('step1_2', $(this).val());
+      })
+    }
+  };
+
+  function optionalProductAction(step, data) {
+    var number = 0;
+    var windowWidth = $(window).width();
+
+    step === 'step1_1' ? number = 'first' :  number = 'second';
+
+    $('.accordion_list--'+ number +' .optional_tab').css('display', data === 'optional_n' ? 'none' :'block');
+    $('.last_step .accordion_info_wrap').css('display', data === 'optional_n' ? 'none' :'block');
+
+    
+
+    if ($(windowWidth <= 1200)) {
+      data === 'optional_n' ?
+      $('.optional_category_wrap').addClass('option_hide') :
+      $('.optional_category_wrap').removeClass('option_hide');
+    }
+    
+  }
+
+
+  // 202405 것모닝 작업 - 모바일 하단 플로팅 영역에 의한 챗봇과 스크롤 버튼 위치 조정
+  $('.tabs').click(function() {
+    if ($(this)[0] == $('.tabs').eq(2)[0]) {
+      $('.scrollTopWrapper').addClass('floatingUp');
+      $('.box-chatbot').addClass('floatingUp');
+    } else {
+      $('.scrollTopWrapper').removeClass('floatingUp');
+      $('.box-chatbot').removeClass('floatingUp');
+    }
+  });
+
+  $('.promotion_total .total_button').click(function() {
+    $(this).toggleClass('active');
+    $('.my_product_wrap').toggleClass('active');
+  });
+
+
+  // 202405 것모닝 작업 - 아코디언 스와이퍼
+  let ww = $(window).width();
+  
+  function initSwiper() {
+    let $slider = $('.accordion_contents');
+    let sliderFlag = false;
+
+    if (ww > 1200) {
+      $slider.find('.accordion_swiper').each(function(i) {
+        $(this).siblings("[class*='swiper-button']").addClass("type"+i);
+
+        const slider = new Swiper($(this), {
+          slidesPerView: 'auto',
+          spaceBetween: 21.6,
+          touchRatio: 0,
+          simulateTouch: false,
+          watchOverflow : true,
+          observer: true,
+          observeParents: true,
+
+          navigation: {
+            nextEl: $slider.find('.swiper-button-next.type' + i),
+            prevEl: $slider.find('.swiper-button-prev.type' + i),
+          },
+        });
+        sliderFlag = true;
+      });
+
+    } else if (ww <= 1200 && sliderFlag === true) {
+      sliderFlag = false;
+      slider.destroy();
+    }
+  }
+
+  initSwiper();
+
+
+  $(window).on('resize', function() {
+    ww = $(window).width();
+    initSwiper();
+  });
+
+  // 202405 것모닝 작업 - 것모닝 제품 구성 시작하기 버튼
+  $(".gutmorning_start_btn").click(function(event) {
+    $('.tabs').removeClass('on');
+    $('.tabs').eq(2).addClass('on');
+
+    $('.cont').css('display', 'none');
+    $('.cont').eq(2).css('display', 'block');
+  });
+
+
+
+
+
+  // 탭메뉴 sticky 컨트롤
+  $(function() {
+    var stickyMenu = $('.box_product-fixed')
+    var boxTab = $('.box_sop-tab-wrap')
+    if (!stickyMenu.length) return;
+    var onlyClick = false,
+      boxTabOffsetTop =  $('.smart-order-tabs .box_sop-tab-wrap').offset().top,
+      headerHeight = $( '.main-header' ).height();
+
+    $(window).on('scroll load resize', function () {
+      if ( onlyClick === true ) { return }    
+      var winScrollTop = $( this ).scrollTop(),
+        headerHeight = $( '.main-header' ).height();
+      if (winScrollTop >= boxTabOffsetTop - headerHeight) {
+        // console.log(winScrollTop + ',' + stickyOffsetTop + ',' +  headerHeight + ',' +  boxTabOffsetTop )
+        stickyMenu.addClass( 'fixed' );
+        // boxTab.addClass( 'fixed' );
+      } else {
+        stickyMenu.removeClass( 'fixed' );
+        // boxTab.removeClass( 'fixed' );
+      }
+
+      var h = headerHeight + $('.box_product-fixed_wrap').height();
+      $('.box_product-list button').each(function () {
+        var currLink = $(this);
+        var refElement = $('#'+currLink.attr("data-link"));
+        if ( refElement.offset().top - h <= winScrollTop  && refElement.offset().top + refElement.height() - headerHeight > winScrollTop ) {
+          currLink.addClass("active");
+          currLink.siblings().removeClass("active");
+          currLink.parents('.box_product-fixed_wrap').addClass( 'fixed' );
+        }
+        else{
+          currLink.removeClass("active");
+        }
+      });   
+    })
+
+    // 탭메뉴 sticky 영역 버튼 클릭시
+    $('.btn-sop-pack').click(function(){
+      onlyClick = true;
+      stickyMenu.addClass( 'fixed' );
+
+      var seq = $(this).attr("data-link"),
+        offset = $("#" + seq).offset(),
+        h = $('.main-header').height() + $('.box_product-fixed_wrap').height() - 1;
+
+      $(this).addClass("active");
+      $(this).siblings().removeClass("active");
+      $('html, body').stop().animate({scrollTop : offset.top - h}, 300, function(){
+        onlyClick = false;
+      });
+    })
+  });
+
+  var link = document.location.href;
+  // 2020-09-01 sop 1차  테스트용 (확인용)
+  /* if ( link.indexOf("elem=1") != -1 ) {
+    setTimeout(function(){
+      moSearchCtrl();
+    }, 1500);
+    window.onload = function () {
+       moSearchCtrl();
+    } 
+  }   */
+
+  // 2020-10-07sop 2차 테스트용 (확인용)
+  if ( link.indexOf("elem=2") != -1 ) {
+    setTimeout(function(){
+      moSearchCtrl();
+    }, 1500);
+    window.onload = function () {
+       moSearchCtrl();
+    } 
+    $('.btn_floating-group .btn_box').show();
+    $('.btn_floating-group .btn_box').eq(2).hide();
+  }   
+
+  /* window.onload = function () {
+       moSearchCtrl();
+  } */
+
+  
+
+    
 </script>
+
 </body>
 
 </html>
