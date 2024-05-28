@@ -2886,14 +2886,11 @@
 				<!-- // 아코디언 영역 -->
 
 				<!-- 맨밑 플로팅 -->
-				<div class="promotion_float_wrap">
+				<div class="promotion_float_wrap pc">
 					<div class="promotion_total">
-						<p>합계</p>
-	
-						<p><span>2</span>개</p>
-						<p><span>165,000</span>원</p>
-						<p><span>83,000</span>PV</p>
-						<p><span>145,000</span>BV</p>
+						<p><span>총 개수</span><span>999</span>개</p>
+						<p><span>총 PV / BV</span><span>99,999,999</span>&nbsp;/&nbsp;<span>99,999,999</span></p>
+						<p><span>결제 예정금액</span><span>99,999,999</span>원</p>
 	
 						<span class="promotion_total_flag">프로모션 미적용</span>
 						<!-- <span class="promotion_totle_flag active">프로모션 적용</span> --> <!-- 202405 것모닝 작업 - 것모닝 작업 - 프로모션 Active인 경우  -->
@@ -6773,7 +6770,7 @@
 		}
 	});
 
-	$('.promotion_total .total_button').click(function() {
+	$('.promotion_total .total_button, .promotion_total p').click(function() {
 		$(this).toggleClass('active');
 		$('.my_product_wrap').toggleClass('active');
 	});
