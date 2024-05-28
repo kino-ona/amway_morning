@@ -17737,11 +17737,11 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	color: #544BFF;
 	border-radius: 6px;
 }
-.box_sop-product-helper .accordion_swiper .accordion_product_wrap .product_flag.product_flag--secondary {
+.box_sop-product-helper .accordion_swiper .accordion_product_wrap .product_flag.product_flag--pink {
 	border: 1px solid #E400CD;
 	color: #E400CD;
 }
-.box_sop-product-helper .accordion_swiper .accordion_product_wrap .product_flag.product_flag--tertiary {
+.box_sop-product-helper .accordion_swiper .accordion_product_wrap .product_flag.product_flag--orange {
 	border: 1px solid #F98113;
 	color: #F98113;
 }
@@ -17965,7 +17965,8 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	color: #FFF;
 	border-radius: 12px;
 }
-.box_sop-product-helper .accordion_wrap .accordion_body .optional_category_wrap {
+.box_sop-product-helper .accordion_wrap .accordion_body .optional_category_wrap.pc_hide,
+.box_sop-product-helper .accordion_wrap .accordion_body .optional_category_wrap.option_hide {
 	display: none;
 }
 
@@ -18630,14 +18631,16 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		display: none;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_body .optional_category_wrap ul li {
+		border: 1px solid #D7D7D7;
+		border-radius: 99px;
+		white-space: nowrap;
+	}
+	.box_sop-product-helper .accordion_wrap .accordion_body .optional_category_wrap ul li button {
 		padding: 6px 8px;
 		font-size: 12px;
 		font-weight: 500;
 		line-height: 17.38px;
 		letter-spacing: -0.05em;
-		border: 1px solid #D7D7D7;
-		border-radius: 99px;
-		white-space: nowrap;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_body .optional_category_wrap ul li.active {
 		background: #018C51;
