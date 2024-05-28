@@ -5259,6 +5259,7 @@ body.scroll-off {height:auto;}
 /* E : 라디오 버튼 css */
 
 .hiddenBenefit-txt {font-size: 16px; color: #666; letter-spacing: -.8px; line-height: 1.5; margin-bottom: 30px;}
+.hiddenBenefit-txt.add {color:#111; font-weight:600; margin-top:-10px;} /* 20240510 추가 */
 .hiddenBenefit-img {display: block; margin: 0 auto; width: 460px;}
 .benefit-select-cont {margin-top: 10px;}
 .radio-select-cont {background: #f9f9f9; padding: 20px; border-radius: 2px;}
@@ -5268,7 +5269,7 @@ body.scroll-off {height:auto;}
 .user-info-wrap .user-info-box .user-info {display: flex; justify-content: space-between; align-items: center;}
 .user-info-wrap .user-info-box + .user-info-box {margin-top: 16px;}
 .user-info-wrap .user-info-box .user-info .form_element-radio.v2 {width: 100%; min-width: 150px;}
-.user-info-wrap .user-info-box .user-info .form_element-radio.v2 input[type='radio'] + label {white-space: nowrap; text-overflow: ellipsis; overflow: hidden; margin-bottom: 0;}
+.user-info-wrap .user-info-box .user-info .form_element-radio.v2 input[type='radio'] + label {white-space: nowrap; text-overflow: ellipsis; overflow: hidden; margin-bottom: 0; max-width: 280px;} /* 20240521 수정 */
 .user-info-wrap .user-info-box .user-info .user-phone {font-size: 16px; font-weight: 500; line-height: 1.25; letter-spacing: -.8px; color: #333; margin-left: 26px; min-width: 104px;}
 .user-info-wrap .user-info-box .user-info .btn_basic-d.medium.v2 {margin-left: 18px;}
 .user-info-wrap .user-info-box.null .user-info .user-phone {color: #999; font-family: 'Noto Sans KR', sans-serif;}
@@ -5306,13 +5307,15 @@ body.scroll-off {height:auto;}
 	.phoneNum-modify-box .form_select-default {max-width: 85px;}
 	.phoneNum-modify-box input[type='number'] {max-width: initial; min-width: 100px; width: calc(100% - 93px);}
 	.phoneNum-modify-box .btn_basic-d.medium.v2.save {width: 100%; margin-left: 0;}
+
+    .user-info-wrap .user-info-box .user-info .form_element-radio.v2 input[type='radio'] + label {max-width:100%;} /* 20240521 추가 */
 }
 /* E : 20240208 Hybrid CRM 시스템 개발 */
 
 /* S : 20240227 자동완성창 바로가기 노출 */
 /* S : 화면 확인 용으로 추후 삭제 예정 */
-.new-search-cont.renewal .inbox .popoverword {display: none !important;}
-.new-search-cont.renewal .inbox .auto-suggestion-popover {display: block !important;}
+/* .new-search-cont.renewal .inbox .popoverword {display: none !important;}
+.new-search-cont.renewal .inbox .auto-suggestion-popover {display: block !important;} */
 /* E : 화면 확인 용으로 추후 삭제 예정 */
 
 .new-search-cont.renewal .top-search,
@@ -5342,3 +5345,224 @@ body.scroll-off {height:auto;}
 
 /* 20240313 상단 검색창 추천검색어 영역 숨김 처리 */
 .suggestion-list {display:none !important;}
+
+/* 20240419 모바일 메인 검색창 최근 검색어 우측 영역 위치 틀어짐 수정 (Sprint4, 상시모니터링 No.17) */
+.new-search-cont.renewal .inbox .popover-content-akl {position: relative;}
+
+/* S : 20240514 검색결과 추가 개선 */
+/* 검색결과 페이지 상단 검색창 검색어 영역 */
+.search-word-box {display: none;}
+/* E : 20240514 검색결과 추가 개선 */
+
+/* S : 20240517 추천 검색어 노출 개선 */
+.akl .search-default-txt {display: inline-block; width: calc(100% - 65px); color: #9e9e9e; font-weight: 500; letter-spacing: -.9px; position: absolute; top: 10px; left: 65px; padding: 0 10px 0 15px; font-size: 16px;} /* 20240520 수정 */
+.new-search-cont.renewal {min-height: 560px;}
+
+@media (max-width: 1100px) {
+	.akl .search-default-txt {left: 43px;}
+}
+
+@media (max-width: 768px) {
+    .akl .search-default-txt {top: 4px; left: 26px; padding: 0 0 0 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+}
+/* E : 20240517 추천 검색어 노출 개선 */
+
+/* 20240517 검색어 입력 시 하단 라인 중복 노출 수정 (Sprint5, 상시모니터링 No.18) */
+.new-search-cont.renewal .top-search {margin-bottom: -1px; z-index: 2;}
+
+@media (max-width: 768px) {
+    .new-search-cont.renewal .top-search {margin-bottom: 0; z-index: initial;}
+}
+
+/* S : 20240514 팝업(파란색 상단 네모 박스) css 추가 */
+.layer_popup_renew {position:fixed; left:0; right:0; top:0; bottom:0; background-color:rgba(0, 0, 0, 0.5); z-index:10001;}
+.layer_popup_renew.is-hidden {display:none;}
+.layer_popup_renew .layer_container {position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); width:100%; max-width:600px; margin:auto; background-color:#fff;}
+.layer_popup_renew .layer_zone-header {position:relative; display:table; width:100%; height:50px; padding:0 50px 0 20px; margin-bottom:0; background:#002f5f;}
+.layer_popup_renew .layer_zone-header .tit-layer {display:table-cell; vertical-align:middle; margin:0; font-size:18px; letter-spacing:-.9px; font-weight:500; color:#fff;}
+.layer_popup_renew .layer_zone-header .cboxClose {position:absolute; right:12px; top:10px; width:30px; height:30px; background:none; font-size:0; border:0; padding:0; overflow:hidden;}
+.layer_popup_renew .cboxClose:before,
+.layer_popup_renew .cboxClose:after {content:''; display:block; position:absolute; top:50%; left:6px; width:20px; height:1px; background-color:#fff;}
+.layer_popup_renew .cboxClose:before {transform:rotate(-45deg); -webkit-transform:rotate(-45deg);}
+.layer_popup_renew .cboxClose:after {transform:rotate(45deg); -webkit-transform:rotate(45deg);}
+
+.layer_popup_renew .layer_zone-content {padding:10px 15px; max-height:375px; overflow-y:auto; overflow-x:hidden;}
+.layer_popup_renew .layer_zone-content p {margin:0;}
+.layer_popup_renew .layer_zone-content p + p {margin-top:15px;}
+.layer_popup_renew .layer_zone-content .tit_layer-cont {margin:20px 0 10px; font-weight:500; font-size:16px; color:#002f5f;}
+.layer_popup_renew .layer_zone-content .tit_layer-cont:first-child {margin-top:0;}
+.layer_popup_renew .layer_zone-content .res_table-type {margin:10px 0;}
+.layer_popup_renew .layer_zone-content .box_agree {position:relative; margin-bottom:15px;}
+.layer_popup_renew .layer_zone-content .accordion_renew {margin:15px 0;}
+.layer_popup_renew .layer_zone-content .accordion_renew .accordion_title {color:#111; font-size:14px; font-weight:400; line-height:1.43; letter-spacing:-0.7px; padding:10px 16px;}
+.layer_popup_renew .layer_zone-content .accordion_renew .accordion_title .btn_arrow {padding:0;}
+.layer_popup_renew .layer_zone-content .accordion_renew .accordion_title .btn_arrow::before {right:12px; top:12px; display:block; width:16px; height:16px; background:url(/_ui/responsive/theme-blue/images/new_ico_accordion.png) no-repeat left top / 100% auto; transform:rotate(0);}
+.layer_popup_renew .layer_zone-content .accordion_renew .accordion_title .btn_arrow::after {content:none;}
+.layer_popup_renew .layer_zone-content .accordion_renew .accordion_title.active .btn_arrow::before {transform:rotate(180deg);}
+.layer_popup_renew .layer_zone-content .accordion_renew .accordion_contents {border-top:1px solid #d7d7d7; padding:16px;}
+.layer_popup_renew .layer_zone-content .accordion_renew .accordion_contents .accordion_text {color:#111; font-size:14px; font-weight:500; line-height:1.71; letter-spacing:-0.7px;}
+.layer_popup_renew .layer_zone-content .accordion_renew .accordion_contents .accordion_text + .accordion_text {margin-top:16px;}
+
+.layer_popup_renew .box_bottom-agree {border-top:1px solid #e3e3e3; padding-top:10px;}
+.layer_popup_renew .box_bottom-agree .form_group-element {margin:0 0 10px; padding:10px 20px 5px; text-align:center; border-top:1px solid #e3e3e3; border-bottom:1px solid #e3e3e3; background-color:#f7f7f7;}
+.layer_popup_renew .box_chk-today {position:relative; padding:0 15px 10px;}
+.layer_popup_renew .box_chk-today .btn_basic-a {position:absolute; right:15px; top:0;}
+.layer_popup_renew .form_element-checkbox.v1 {width:calc(100% - 100px); line-height:40px;}
+
+.layer_popup_renew [class^="form_element-"] input[type='radio'] + label {font-size:16px; font-weight:500;}
+.layer_popup_renew .form_group-element [class^="form_element-"] ~ [class^="form_element-"] {margin-left:25px;}
+.layer_popup_renew .form_element-checkbox.v1 label {font-size:13px;}
+
+@media(max-width: 768px) {
+	.layer_popup_renew .layer_container {width:calc(100% - 20px); transform:translate(-50%, -50%); margin:auto;}
+	.layer_popup_renew .layer_zone-header {padding:0 40px 0 15px;}
+	.layer_popup_renew .layer_zone-header .tit-layer {font-size:16px; line-height:1.3;}
+	.layer_popup_renew .layer_zone-header .cboxClose {right:5px;}
+	.layer_popup_renew .layer_zone-content .tit_layer-cont {margin:15px 0 10px;}
+
+	.layer_popup_renew .box_bottom-agree .form_group-element {padding:12px 15px 4px;}
+	.layer_popup_renew .box_chk-today {padding:0 15px 12px;}
+	.layer_popup_renew .box_chk-today .btn_basic-a {right:15px;}
+	.layer_popup_renew .form_element-checkbox.v1 .sp_chk::before {top:2px;}
+	.layer_popup_renew .form_element-checkbox.v1 input[type='checkbox'] + .sp_chk:after,
+	.layer_popup_renew .form_element-checkbox.v1 input[type='checkbox']:checked + .sp_chk:after {top:9px;}
+}
+/* E : 20240514 팝업(파란색 상단 네모 박스) css 추가 */
+
+/* S : 20240520 체크박스/라디오버튼 css */
+.akl .layer_popup_renew [class^="form_element-"],
+.layer_popup_renew [class^="form_element-"] {position:relative;display:inline-block;margin:0;padding:0}
+.layer_popup_renew [class^="form_element-"] input[type='checkbox'],
+.layer_popup_renew [class^="form_element-"] input[type='radio'] {position:absolute;left:0;top:0;margin:0;z-index:1;width:20px;height:20px;vertical-align:middle;opacity:0}
+.layer_popup_renew [class^="form_element-"] input[type='checkbox'] + label,
+.layer_popup_renew [class^="form_element-"] input[type='radio'] + label {position:relative;display:inline-block;padding-left:25px;color:#666;font-size:14px;line-height:20px;min-height:20px;font-weight:normal;vertical-align:middle;cursor:pointer}
+.layer_popup_renew [class^="form_element-"] input:checked + label {color:#333}
+.layer_popup_renew [class^="form_element-"].no_label {width:20px;height:20px}
+.layer_popup_renew [class^="form_element-"].no_label input + label {padding-left:0;font-size:0 !important;line-height:0}
+.layer_popup_renew [class^="form_element-"] label:before,
+.layer_popup_renew [class^="form_element-"] label:after {content:'' !important;position:absolute;left:0;top:0;display:inline-block;width:20px;height:20px;box-sizing:border-box;border:1px solid #999;background-color:#fff}
+.layer_popup_renew .form_group-element [class^="form_element-"] {margin-right:25px}
+.layer_popup_renew .form_group-element [class^="form_element-"]:last-child {margin-right:0}
+.layer_popup_renew [class^="form_element-"] input:disabled + label,
+.layer_popup_renew [class^="form_element-"] input:disabled:checked + label {cursor:not-allowed}
+.layer_popup_renew [class^="form_element-"] input:disabled + label,
+.layer_popup_renew .form_element-checkbox input[type='checkbox']:disabled + label {color:#ececec !important}
+.layer_popup_renew [class^="form_element-"] input:disabled + label:before,
+.akl .layer_popup_renew [class^="form_element-"] input:disabled + label:before {background:#fff !important;border:1px solid #ececec}
+.akl .layer_popup_renew [type="checkbox"]:not(:checked) + label::before {top:0;}
+.akl .layer_popup_renew [type="checkbox"]:not(:checked) + label::before, .akl [type="checkbox"]:checked + label::before {width:20px;height:20px;}
+.akl .layer_popup_renew [class^="form_element-"] input[type='checkbox']:checked + label:after,
+.layer_popup_renew [class^="form_element-"] input[type='checkbox']:checked + .sp_chk:after {background-position:-13px 0}
+
+.akl .layer_popup_renew .sp_form {font-size:0;line-height:0;color:transparent}
+.akl .layer_popup_renew .sp_chk:after,
+.akl .layer_popup_renew .sp_form,
+.akl .layer_popup_renew [class^="form_element-"] [type=checkbox]:not(:checked)+label:after {content:'';display:inline-block;background-color:transparent;background-image:url('/_ui/responsive/theme-blue/images/akl_plp/p_sp-form.png');background-repeat:no-repeat;background-size:400px auto}
+
+@media(max-width: 768px) {
+    /* checkbox & radio */
+	.layer_popup_renew [class^="form_element-"] input[type='checkbox'] + label,
+	.layer_popup_renew [class^="form_element-"] input[type='radio'] + label {font-size:15px}
+	.layer_popup_renew [class^="form_element-"] input[type='checkbox'] + label,
+	.layer_popup_renew [class^="form_element-"].v1 input[type='radio'] + label {font-size:14px;line-height:20px}
+	.layer_popup_renew [class^="form_element-"].no_label input + label {font-size:0}
+	.layer_popup_renew [class^="form_element-"].no_label {width:30px;height:30px}
+
+    /* checkbox */
+	.layer_popup_renew [class^="form_element-"] input[type='checkbox'] {width:30px;height:30px}
+	.layer_popup_renew .form_element-checkbox input[type='checkbox'] + label {padding-left:35px;line-height:30px;min-height:30px}
+	.layer_popup_renew .form_element-checkbox.v1 input[type='checkbox'] + label {padding-left:25px;line-height:22px;min-height:20px}
+	.layer_popup_renew .form_element-checkbox.v2 input[type='checkbox'] + label {padding-left:33px;line-height:28px;min-height:28px}
+	.layer_popup_renew .form_element-checkbox.v2 input[type="checkbox"]:disabled:hover + label:before,
+	.layer_popup_renew .form_element-checkbox.v2 input[type="checkbox"]:hover + label:before {border-color:#d0d0d0}
+	.layer_popup_renew .form_element-checkbox.v2 input[type="checkbox"]:active + label:before {border-color:#dcbb68}
+	.layer_popup_renew .form_element-checkbox.v2 input[type="checkbox"]:checked + label:before {border-color:#dcbb68}
+	.akl .layer_popup_renew .form_element-checkbox input[type='checkbox'] + label:before,
+	.layer_popup_renew .form_element-checkbox input[type='checkbox'] + label:before {width:30px;height:30px}
+	.layer_popup_renew .form_element-checkbox.v1 input[type='checkbox'] + label:before {width:20px;height:20px}
+	.layer_popup_renew .form_element-checkbox.v2 input[type='checkbox'] + label:before {width:28px;height:28px}
+	.layer_popup_renew .form_element-checkbox input[type="checkbox"] + label.sp_chk:after, .sp_chk:after {top:10px;left:8px;width:13px;height:10px}
+	.layer_popup_renew .form_element-checkbox.v1 input[type="checkbox"] + label.sp_chk:after, .sp_chk:after {top:7px;left:5px;width:9px;height:7px}
+
+	.layer_popup_renew .form_element-checkbox.v2 input[type="checkbox"] + label.sp_chk:after,
+	.akl .layer_popup_renew .form_element-checkbox.v2 [type=checkbox]:not(:checked)+label:after {width:13px;height:12px;top:8px}
+	.akl .layer_popup_renew .form_element-checkbox.v2 input[type='checkbox']:checked + label:after,
+	.layer_popup_renew .form_element-checkbox.v2 input[type='checkbox']:checked + .sp_chk:after {background-position:-18px -20px}
+}
+/* E : 20240520 체크박스/라디오버튼 css */
+
+/* S : 20240514 SNS공유 팝업 css 수정 */
+.sns-layer-renew {z-index:10001;}
+.sns-layer-renew .layer_section-container {border:none; border-radius:16px;}
+.sns-layer-renew .layer_section-container .layer-header {padding:16px 20px; border-bottom-color:#d7d7d7;}
+.sns-layer-renew .layer_section-container .layer-header .header-title {color:#111; font-size:24px; font-weight:600; line-height:1.5; letter-spacing:-1.2px;}
+.sns-layer-renew .layer_section-container .layer-content {padding:32px 20px;}
+.sns-layer-renew .layer_section-container .btn_layer-close {right:20px; top:20px; width:28px; height:28px; padding:0; background:url(/_ui/responsive/theme-blue/images/new_popup_close_v3.png) no-repeat left top / 100% auto;}
+.sns-layer-renew .layer_section-container .btn_layer-close::before,
+.sns-layer-renew .layer_section-container .btn_layer-close::after {content:none;}
+
+/* SNS공유 팝업 - SNS 리스트 */
+.sns-layer-renew .share-list {justify-content:center; gap:12px; padding:0;}
+.sns-layer-renew .share-list .share-item {width:80px; margin:0;}
+.sns-layer-renew .share-list .share-item .share-icon {width:60px; height:60px; background-repeat:no-repeat; background-position:left top; background-size:100% auto;}
+.sns-layer-renew .share-list .share-item .share-icon.ico01 {background-image:url(/_ui/responsive/theme-blue/images/btn_ico_sns_k.png);} /* 카카오톡 */
+.sns-layer-renew .share-list .share-item .share-icon.ico02 {background-image:url(/_ui/responsive/theme-blue/images/btn_ico_sns_ks.png);}/* 카카오스토리 */ /* 20240516 추가 */
+.sns-layer-renew .share-list .share-item .share-icon.ico03 {background-image:url(/_ui/responsive/theme-blue/images/btn_ico_sns_f.png);} /* 페이스북 */
+.sns-layer-renew .share-list .share-item .share-icon.ico04 {background-image:url(/_ui/responsive/theme-blue/images/btn_ico_sns_x.png);} /* X(트위터) */
+.sns-layer-renew .share-list .share-item .share-icon.ico05 {background-image:url(/_ui/responsive/theme-blue/images/btn_ico_sns_b.png);} /* 밴드 */
+.sns-layer-renew .share-list .share-item .share-icon.ico06 {background-image:url(/_ui/responsive/theme-blue/images/btn_ico_sns_u.png);} /* URL 복사 */
+.sns-layer-renew .share-list .share-item .share-text {color:#666; font-size:14px; font-weight:500; line-height:1.43; letter-spacing:-0.7px; margin-top:8px;}
+
+/* SNS공유 팝업 - SNS 공유 안내 */
+.sns-layer-renew .accordion_renew {margin-top:32px; border:1px solid #d7d7d7; border-radius:4px;}
+.sns-layer-renew .accordion_renew .accordion_title {color:#111; font-size:14px; font-weight:500; line-height:1.43; letter-spacing:-0.7px; padding:10px 16px;}
+.sns-layer-renew .accordion_renew .accordion_title .btn_arrow {padding:0;}
+.sns-layer-renew .accordion_renew .accordion_title .btn_arrow::before {right:12px; top:12px; display:block; width:16px; height:16px; background:url(/_ui/responsive/theme-blue/images/new_ico_accordion.png) no-repeat left top / 100% auto; transform:rotate(0);}
+.sns-layer-renew .accordion_renew .accordion_title .btn_arrow::after {content:none;}
+.sns-layer-renew .accordion_renew .accordion_title.active .btn_arrow::before {transform:rotate(180deg);}
+.sns-layer-renew .accordion_renew .accordion_contents {border-top:1px solid #d7d7d7; padding:16px;}
+.sns-layer-renew .accordion_renew .accordion_contents .accordion_text {color:#111; font-size:14px; font-weight:500; line-height:1.71; letter-spacing:-0.7px;}
+.sns-layer-renew .accordion_renew .accordion_contents .accordion_text + .accordion_text {margin-top:16px;}
+
+/* SNS공유 팝업 - 주문내역 상세정보 공유하기 팝업 */
+.myorder-sns .kakaotalk-copy .sns-layer-renew.url_pop {top:0;}
+.sns-layer-renew.url_pop {position:fixed; left:0; top:0; display:block; width:100%; height:100%; background-color:rgba(0, 0, 0, .75) !important; transition:.2s; z-index:9001; opacity:0; visibility:hidden;}
+.sns-layer-renew.url_pop.showing {visibility:visible; opacity:1;}
+.sns-layer-renew.url_pop.showing .cart-popup-area {top:50%; opacity:1;}
+.sns-layer-renew.url_pop .cart-popup-area {position:absolute; left:50%; top:65%; width:400px; transform:translate(-50%, -50%); background-color:#fff; border:none; border-radius:16px; transition:.4s; padding:0; opacity:0;}
+.sns-layer-renew.url_pop .cart-popup-area .pop-area-header {padding:16px 20px; border-bottom:1px solid #d7d7d7;}
+.sns-layer-renew.url_pop .cart-popup-area .pop-area-header .header-title {color:#111; font-size:24px; font-weight:600; line-height:1.5; letter-spacing:-1.2px; text-align:left;}
+.sns-layer-renew.url_pop .cart-popup-area .pop-area-header .cart-popup-close {right:20px; top:20px;}
+.sns-layer-renew.url_pop .cart-popup-area .pop-area-header .cart-popup-close img {width:28px; height:auto;}
+.sns-layer-renew.url_pop .cart-popup-area .pop-area-body {max-height:calc(100vh - 100px); padding:20px 20px 32px; margin:0;} /* 20240516 수정 */
+.sns-layer-renew.url_pop .cart-popup-area .pop-area-body::after {content:none;}
+.sns-layer-renew.url_pop .cart-popup-area .pop-area-body .gray-box {padding:20px; margin:0 0 32px; background-color:#f4f4f4; border-radius:8px;}
+.sns-layer-renew.url_pop .cart-popup-area .pop-area-body .gray-box p {color:#111; font-size:14px; font-weight:500; line-height:1.71; letter-spacing:-0.7px; word-break:initial; padding:0; margin:0 0 12px; text-align:left;}
+.sns-layer-renew.url_pop .cart-popup-area .pop-area-body .gray-box .checkbox-wrap {display:flex; gap:78px;}
+.sns-layer-renew.url_pop .cart-popup-area .pop-area-body [type="checkbox"]+label {color:#111; font-size:14px; font-weight:500; line-height:1.43; letter-spacing:-0.7px; margin:0; padding-left:30px;}
+.sns-layer-renew.url_pop .cart-popup-area .pop-area-body [type=checkbox]+label::before {border-radius:4px;}
+.sns-layer-renew.url_pop .cart-popup-area .pop-area-body [type=checkbox]:not(:checked)+label::before {background-color:#fff; border:1px solid #d7d7d7;}
+.sns-layer-renew.url_pop .cart-popup-area .pop-area-body [type=checkbox]:checked+label::before {border-color:#567bf3; background-color:#567bf3;}
+.sns-layer-renew.url_pop .cart-popup-area .pop-area-body [type=checkbox]:checked+label::after {content:""; left:4px; top:6px; display:inline-block; width:12px; height:8px; background:url(/_ui/responsive/theme-blue/images/akl_common/ico_chk_renew.png) no-repeat left top / 100% auto;}
+
+/* SNS공유 팝업 - SNS 리스트 */
+.sns-layer-renew.url_pop .share-sns-btns {padding-top:32px;}
+.sns-layer-renew.url_pop .share-sns-btns .bod-view-sns {display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:32px; grid-row-gap:24px;}
+.sns-layer-renew.url_pop .share-sns-btns .kakaostory {display:none;} /* 20240516 추가 */
+.sns-layer-renew.url_pop .share-sns-btns a {display:flex; flex-wrap:wrap; align-items:center; justify-content:center; width:80px;}
+.sns-layer-renew.url_pop .share-sns-btns a img {width:60px; height:60px;}
+.sns-layer-renew.url_pop .share-sns-btns a .share-text {display:block; width:100%; color:#666; font-size:14px; font-weight:500; line-height:1.43; letter-spacing:-0.7px; margin-top:8px;}
+
+@media(max-width: 768px) {
+	.sns-layer-renew .share-list {gap:20px; grid-row-gap:24px;}
+	#sns-layer.layer_section.sns-layer-renew .layer_section-container {max-width:335px; width:calc(100% - 40px);}
+
+	.sns-layer-renew.url_pop .cart-popup-area {max-width:343px; width:calc(100% - 32px);}
+	.sns-layer-renew.url_pop .cart-popup-area .pop-area-header .header-title {font-size:18px;}
+	.sns-layer-renew.url_pop .cart-popup-area .pop-area-header .cart-popup-close {top:16px;}
+	.sns-layer-renew.url_pop .cart-popup-area .pop-area-header .cart-popup-close img {width:24px;}
+	.sns-layer-renew.url_pop .cart-popup-area .pop-area-body {padding:20px 20px 32px;}
+	.sns-layer-renew.url_pop .share-sns-btns .bod-view-sns {gap:20px;}
+	.sns-layer-renew.url_pop .share-sns-btns .kakaostory {display:inline-block;} /* 20240516 추가 */
+}
+/* E : 20240514 SNS공유 팝업 css 수정 */

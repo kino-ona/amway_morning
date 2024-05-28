@@ -825,7 +825,7 @@
 
 @media (max-width:768px) {
 	.toastPopup button.btn_close { right:18px;top:18px; }
-	.toastPopup { position:fixed;top:unset;bottom:90px;left:0; padding:0 14px; width:100%; z-index:9999; transform: unset; }
+	.toastPopup { position:fixed;top:unset;bottom:90px;left:0; padding:0 14px; width:100%; z-index:10001; transform: unset; } /* 20240514 수정 */
 	.toastPopup .popup_wrap { width:100%; }
 	.toastPopup::after { display:none; }
 }

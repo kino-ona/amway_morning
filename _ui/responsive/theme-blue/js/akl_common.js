@@ -610,19 +610,34 @@ function suggestRolling(ta) {
 //2019-08-28 메인 : 검색 닫기
 function searchNewClose() {
 	$('.new-search-cont').removeClass('open');
-	$('#js-site-search-input').val('');
+	//$('#js-site-search-input').val(''); /* 20240520 삭제 */
 	$('.new-search-cont .popoverword').show();
 	$('.new-search-cont .popover').hide();
 	$(".new-search-cont .cancelBtn-box .cancelBtn").children().css("display", "none"); /* 20231017 추가 */ /* 20231019 수정 */
+
+	/* S : 20240520 추가 */
+	if ($(".new-search-cont").hasClass("search_result_page") !== true) {
+		$('#js-site-search-input').val('');
+	}
+	/* E : 20240520 추가 */
+
+	/* S : 20240522 추가 */
+	if ($(".search-word-box .search-word").text() != '') {
+		$(".search-word-box .cancelBtn").css("display", "block");
+	}
+	/* E : 20240522 추가 */
 };
 //2019-08-28 메인 : 검색
 function searchNewClose2() {
 	$(document).on('click', function (e) {
 		var newSearchCont = $('.new-search-cont');
 		var newSearchBtn = $('.mobile-search-btn');
-		if (!newSearchCont.is(e.target) && newSearchCont.has(e.target).length === 0 && !newSearchBtn.is(e.target) && newSearchBtn.has(e.target).length === 0) {
+		/* S : 20240520 추가, 수정 */
+		var newSearchWordBox = $(".search-word-box");
+		if (!newSearchCont.is(e.target) && newSearchCont.has(e.target).length === 0 && !newSearchBtn.is(e.target) && newSearchBtn.has(e.target).length === 0 && !newSearchWordBox.is(e.target) && newSearchWordBox.has(e.target).length === 0) {
 			searchNewClose();
 		}
+		/* E : 20240520 추가, 수정 */
 	});
 };
 //2019-08-19 메인 : 푸터 사업자정보
@@ -6862,9 +6877,31 @@ $(function () {
 	$(moFloatingBtn).on("click", function(event){
 		event.preventDefault();
 
-		var moFloatingBtnID = $(this).attr("id");
+		/* S : 20240507 추가_class로 변경 */
+		var _this = $(this);
 
-		if (moFloatingBtnID !== undefined) {
+		if (_this.hasClass("layerPopBtn") !== false) {
+			layerPopOver(this, moFloatingDetailBox);
+			$(moFloatingDetailBtnBox).css("display", "none");
+
+			if (_this.hasClass("btn-share")) {
+				$(moFloatingDetailBtnBox).find(".btn-share").parent().css("display", "block");
+			} else if (_this.hasClass("gift")) {
+				$(moFloatingDetailBtnBox).find(".gift").parent().css("display", "block");
+				$(moFloatingDetailBtnBox).find(".btn-basket").parent().css("display", "block");
+			} else if (_this.hasClass("inducePurchasing_btn")) {
+				$(moFloatingDetailBtnBox).find(".inducePurchasing_btn").parent().css("display", "block");
+				$(moFloatingDetailBtnBox).find(".btn-basket").parent().css("display", "block");
+			} else if (_this.hasClass("smartPay_btn")) {
+				$(moFloatingDetailBtnBox).find(".smartPay_btn").parent().css("display", "block");
+			}
+		}
+		/* E : 20240507 추가_class로 변경 */
+
+		/* S : 20240507 삭제 */
+		//var moFloatingBtnID = $(this).attr("id");
+
+		/* if (moFloatingBtnID !== undefined) {
 			layerPopOver(this, moFloatingDetailBox);
 			$(moFloatingDetailBtnBox).css("display", "none");
 
@@ -6877,7 +6914,8 @@ $(function () {
 				$(moFloatingDetailBtnBox).find("#btn_purchase").parent().css("display", "block");
 				$(moFloatingDetailBtnBox).find(".btn-basket").parent().css("display", "block");
 			}
-		}
+		} */
+		/* E : 20240507 삭제 */
 	});
 
 	$(".close_dim").on("click", function(e){
@@ -6897,4 +6935,115 @@ $(function () {
 		};
 	});
 	/* E : 20240315 PDP 시인성 개선 - 모바일 floating 영역 */
+
+	/* S : 20240409 SOP 월별혜택보기 페이지 개선 */
+	// 툴팁 오픈 관련 스크립트
+	$(function(){
+		var toolTipBtn = $(".toolTip-wrapper").find(".btn-tooltip");
+		var tipWrapper = $(".toolTip-wrapper");
+		var tipContent = $(".tooltip-content");
+
+		toolTipBtn.each(function () {
+			toolTipBtn.click(function (e) {
+			e.preventDefault();
+			var tooltipContent = $(this).parent().find(".tooltip-content");
+			var tooltipWrapper = $(this).parents(".toolTip-wrapper");
+			tipContent.toggleClass("open");
+			if (tooltipWrapper.hasClass("open")) {
+				tipWrapper.not(tooltipWrapper).removeClass("open");
+				tipContent.not(tooltipContent).hide();
+			}
+			});
+		});
+	});
+
+	// SOP 수량 변경, 제품 삭제 팝업 내 닫기 버튼 스크립트
+	$(".so-op-pop-renewal .btn-modal_close").on("click", function(){
+		$(this).parents().parent(".active").removeClass("active");
+		$(this).parents().parent(".so-op-pop-renewal").css("display", "none");
+		$("#uiLayerMask").hide().removeClass("on");
+		$("html").removeClass("scrollLock");
+	});
+	/* E : 20240409 SOP 월별혜택보기 페이지 개선 */
+
+	/* S : 20240514 검색결과 페이지 상단 검색창 검색어 영역 */
+	/* S : 20240520 수정 */	
+	/* $(document).on("click", ".search-word-box .cancelBtn", function(e){
+		e.preventDefault();
+		$(this).siblings().empty();
+		$(this).find(".icon-cancel").css("display", "none");
+		$(this).parent(".search-word-box").css("display", "none");
+	}); */
+
+	/* S : 20240522 추가/수정 */
+	$(document).on("click", ".search-word-box .search-word", function(e){
+		e.preventDefault();
+		$(this).parents().next(".new-search-cont.renewal").addClass("open");
+		$(this).siblings(".cancelBtn .icon-cancel").css("display", "block");
+
+		searchWord();
+	});
+
+	$(document).on("click", ".search-word-box .cancelBtn",function(e){
+		e.preventDefault();
+		$(this).find(".icon-cancel").css("display", "block");
+		$(this).parents().next(".new-search-cont.renewal").addClass("open");
+		$('#js-site-search-input').val('').focus();
+	})
+	/* E : 20240522 추가/수정 */
+	$(document).on("click", ".search-btn-container .mobile-search-btn", function(e){
+		e.preventDefault();
+		if ($(".new-search-cont").hasClass("search_result_page") !== true) {
+			$('#js-site-search-input').val('');
+		} else {
+			if ($(this).next(".search-word-box")) {
+				searchWord();
+			}
+		}
+		
+	});
+
+	function searchWord() {
+		var searchWord = $(".search-word").text();
+
+		$('#js-site-search-input').val(searchWord);
+
+		if ($('#js-site-search-input').val() != '') {
+			$(".new-search-cont .cancelBtn-box .cancelBtn").children().css("display", "block");
+		} else {
+			$(".new-search-cont .cancelBtn-box .cancelBtn").children().css("display", "none");
+		}
+
+		$('#js-site-search-input').focus();
+	};
+	/* E : 20240520 수정 */
+	/* E : 20240514 검색결과 페이지 상단 검색창 검색어 영역 */
+
+	/* S : 20240517 상단 탭메뉴 영역 */
+	var tabMenuWidth = 0;
+	$('.tabWrapper .tabs-toggles.tabs-toggles-renew li').each(function(index) {
+		tabMenuWidth += parseInt($(this).width(), 10);
+	});
+
+	if( tabMenuWidth > $('body').width() ){ //탭메뉴가 현재 기기 해상도를 넘으면 클래스 추가
+		$('.outer-border-bottom-renew').addClass('over');
+	} else {
+		$('.outer-border-bottom-renew').removeClass('over');
+	}
+	/* E : 20240517 상단 탭메뉴 영역 */
+
+	/* S : 20240520 PDP 내 마이랩 배너 클릭 시, 팝업 노출 오류 수정 */
+	$(".product-select-list-tit-wrap[data-layer='myLabGuidePopup']").on('click', function(){
+		$("#mylabSopGuidePop").addClass("showing");
+	});
+	/* E : 20240520 PDP 내 마이랩 배너 클릭 시, 팝업 노출 오류 수정 */
+
+	/* S : 20240522 검색 결과 페이지 상단 메뉴 영역 - 해당 페이지일 경우 포커싱 된 버튼 위치 수정 */
+	if($('.akl-search').hasClass('akl-search-renewal')){
+		var schTabMenu = $('.renewal_search-result .tabWrapper').find('ul');
+		var schTabMenu_on = schTabMenu.find('li.active').offset().left;
+		
+		schTabMenu.parent('.tabWrapper').animate({scrollLeft: schTabMenu_on}, 300);
+	}
+	/* E : 20240522 검색 결과 페이지 상단 메뉴 영역 - 해당 페이지일 경우 포커싱 된 버튼 위치 수정 */
 });

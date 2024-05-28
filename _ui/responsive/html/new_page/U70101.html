@@ -114,9 +114,148 @@
 					</div>
 					<div class="myorder-sns">
 						<div class="kakaotalk-copy">
-							<a data-id="shareBtn" href="#none" class="kakaotalk-order-sns bt-akl-blue small">
-								공유하기
-							</a>
+							<a data-id="shareBtn" href="#none" class="kakaotalk-order-sns bt-akl-blue small myorder-btn-share">공유하기</a><!-- 20240514 클래스 추가 -->
+							<!-- S : 20240514 SNS 공유 팝업 수정 -->
+							<div class="kakaotalk-pop url_pop sns-layer-renew"><!-- 20240514 클래스 추가 -->
+								<div class="cart-popup-area">
+									<div class="pop-area-header">
+										<h1 class="header-title">SNS 공유</h1><!-- 20240514 추가 -->
+										<a href="#dfde" class="cart-popup-close close-base">
+											<img src="/_ui/responsive/theme-blue/images/new_popup_close_v3.png" alt="닫기"><!-- 20240514 수정 -->
+										</a>
+									</div>
+									<div class="pop-area-body">
+										<!-- S : 20240514 수정 -->
+										<div class="gray-box">
+											<p>제품 및 주문 금액 노출을 원할 경우 체크해주세요!</p>
+											<div class="checkbox-wrap">
+												<input id="displayProductPrice" type="checkbox" checked="checked">
+												<label for="displayProductPrice" class="normal inline-label checklabel focus">제품 금액</label>
+												<input id="displayOrderPrice" type="checkbox">
+												<label for="displayOrderPrice" class="normal inline-label checklabel focus">주문 금액</label>
+			
+												<input type="hidden" id="orderCode" value="180-924470834">
+												<input type="hidden" id="shareUrlCaseA" data-short-url="https://wj6s6.app.goo.gl/QfSNs3" data-full-url="https://www.amway.co.kr/my-account/orders/share/?orderCode=khCpjUsd4XJHQF8KO5Jhhg%3D%3D&amp;p=uVi5ZnZiZjYQQmM7Ifd4KA%3D%3D">
+												<input type="hidden" id="shareUrlCaseB" data-short-url="https://wj6s6.app.goo.gl/kuyZPn" data-full-url="https://www.amway.co.kr/my-account/orders/share/?orderCode=khCpjUsd4XJHQF8KO5Jhhg%3D%3D&amp;p=La7LRC5etss17r1HnFgu4A%3D%3D">
+												<input type="hidden" id="shareUrlCaseC" data-short-url="https://wj6s6.app.goo.gl/RyjHNB" data-full-url="https://www.amway.co.kr/my-account/orders/share/?orderCode=khCpjUsd4XJHQF8KO5Jhhg%3D%3D&amp;p=ZQefclfbhJjbqJEl6x8AAw%3D%3D">
+												<input type="hidden" id="shareUrlCaseD" data-short-url="https://wj6s6.app.goo.gl/vC4tkc" data-full-url="https://www.amway.co.kr/my-account/orders/share/?orderCode=khCpjUsd4XJHQF8KO5Jhhg%3D%3D&amp;p=Geau3JWm8OgTsAqGz5FrpA%3D%3D">
+											</div>
+										</div>
+										<!-- E : 20240514 수정 -->
+
+										<div class="form-group share-sns-btns">
+											<div data-id="shareSns" class="yCmsComponent bod-view-sns">
+												<script type="application/javascript">
+													$(function(){
+														$.appendActionScript("ShareOnSocialNetworkAction");
+														
+													});
+												</script>
+												<!-- S : 20240514 수정 -->
+												<div class="kakaotalk">
+													<a data-id="shareKakaoTalk" href="#none" data-tagging-id="kakaotalk">
+														<img src="/_ui/responsive/theme-blue/images/btn_ico_sns_k.png" alt="KakaoTalk">
+														<span class="share-text">카카오톡</span>
+													</a>
+												</div>
+												<!-- S : 20240516 추가 -->
+												<div class="kakaostory">
+													<a data-id="shareKakaoStory" href="#none" data-tagging-id="kakaostory">
+														<img src="/_ui/responsive/theme-blue/images/btn_ico_sns_ks.png" alt="Kakaostory">
+														<span class="share-text">카카오스토리</span>
+													</a>
+												</div>
+												<!-- E : 20240516 추가 -->
+												<div>
+													<a data-id="shareFacebook" href="#none" data-tagging-id="facebook">
+														<img src="/_ui/responsive/theme-blue/images/btn_ico_sns_f.png" alt="Facebook">
+														<span class="share-text">페이스북</span>
+													</a>
+												</div>
+												<div>
+													<a data-id="shareTwitter" href="#none" data-tagging-id="twitter">
+														<img src="/_ui/responsive/theme-blue/images/btn_ico_sns_x.png" alt="Twitter">
+														<span class="share-text">X</span>
+													</a>
+												</div>
+												<div>
+													<a data-id="shareBand" href="#none" data-tagging-id="band">
+														<img src="/_ui/responsive/theme-blue/images/btn_ico_sns_b.png" alt="NaverBand">
+														<span class="share-text">밴드</span>
+													</a>
+												</div>
+												<div class="url-copy">
+													<!-- to 개발 | URL 복사 버튼 클릭하면 상품 상세페이지에서 SNS 공유 팝업 > URL복사 버튼 클릭 시, 노출되는 팝업과 동일한 팝업 노출 요청 -->
+													<!-- <a data-id="shareCopy_Url" href="#none" data-url-text="https://www.amway.co.kr/my-account/orders/180-924470834?orderDatePeriod=0&amp;page=0&amp;searchType=&amp;searchValue=&amp;orderDateFrom=&amp;orderDateTo=&amp;salesChannels=Web&amp;salesChannels=WebMobile&amp;salesChannels=pos&amp;salesChannels=SelfCheckout&amp;salesChannels=CallCenter&amp;salesChannels=ARS&amp;salesChannels=OnlineFax&amp;salesChannels=ASC&amp;salesChannels=LOGME&amp;deliveryModes=install&amp;deliveryModes=pickup&amp;deliveryModes=delivery&amp;orderTypes=NORMAL_ORDER&amp;orderTypes=GIFT&amp;orderTypes=FACILITIES_RESERVATION&amp;orderTypes=TAX&amp;orderTypes=RECURRING_ORDER&amp;orderTypes=REPLACEMENT&amp;orderTypes=NO_CHARGE&amp;orderTypes=GROUP_COMBINED_ORDER&amp;orderTypes=SCAN_PAY_GO&amp;orderTypes=STANDING_ORDER&amp;orderTypes=SMARTPAY_ORDER&amp;orderTypes=SUBSCRIPTION_ORDER&amp;orderTypes=LOGME&amp;orderTypes=SOCIAL&amp;orderTypes=MPN&amp;orderTypes=CLICK_AND_COLLECT&amp;orderTypes=MY_LAB_KIT&amp;statuses=CANCELLED&amp;statuses=PAYMENT_NOT_CAPTURED&amp;statuses=READY&amp;statuses=PICKUP_COMPLETED&amp;statuses=DROP&amp;statuses=PICKUP_READY&amp;statuses=INSTALL_READY&amp;statuses=READY_PART&amp;statuses=COMPLETED&amp;statuses=RETURNED&amp;statuses=DROP_PART&amp;salesChannelAll=true&amp;deliveryModeAll=true&amp;orderTypeAll=true&amp;statusAll=true" data-url-init="true" data-tagging-id="url_link" data-init="true"> -->
+													<a data-id="shareCopy_Url" href="#none" data-url-text="" data-url-init="" data-tagging-id="copylink" class="share-link" data-init="true"><!-- 20240514 수정 -->
+														<img src="/_ui/responsive/theme-blue/images/btn_ico_sns_u.png" alt="ie_URL">
+														<span class="share-text">URL 복사</span>
+													</a>
+													<!-- S : 20240514 삭제 -->
+													<!-- <div class="url_pop">
+														<div class="cart-popup-area">
+															<div class="pop-area-header">
+																<a href="#dfde" class="cart-popup-close">
+																	<img src="/_ui/responsive/theme-blue/images/akl_common/ico_url_closed.png" alt="닫기">
+																</a>
+															</div>
+															<div class="pop-area-body">
+																<p>주소가 복사되었습니다.<br>
+																원하는 곳에 붙여넣기(Ctrl+V) 해주세요.</p>
+																<div class="form-group url">
+																	<span class="form-control" data-id="showShortUrl" aria-label="https://wj6s6.app.goo.gl/vC4tkc" contenteditable="true">https://wj6s6.app.goo.gl/vC4tkc</span>
+																	<button type="button" class="copyAgainBtn bt-akl-blue small">다시 복사하기</button>
+																</div>
+															</div>
+														</div>
+													</div> -->
+													<!-- E : 20240514 삭제 -->
+												</div>
+												<div class="print">
+													<a data-id="sharePrint" href="#none" data-tagging-id="print">
+														<img src="/_ui/responsive/theme-blue/images/btn_ico_sns_p.png" alt="Print">
+														<span class="share-text">프린트</span>
+													</a>
+												</div>
+												<!-- S : 20240514 삭제 -->
+												<!-- <div>
+													<a data-id="shareKakaoStory" href="#none" data-tagging-id="kakaostory">
+														<img src="/_ui/responsive/theme-blue/images/new-Kakaostory.png" alt="Kakaostory">
+													</a>
+												</div> -->
+												<!-- E : 20240514 삭제 -->
+												<!-- E : 20240514 수정 -->
+													
+												<script id="snsLayerPopup" type="text/x-jquery-tmpl">
+													<div class="layerWrapper sns_pop">
+														<div class="cbox layerBox popWidS">
+															<div class="cart-popup__dialog bg-white">
+																<div class="cart-popup__header-text2">SNS 공유 알림
+																	<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close">
+																		<img src="/_ui/responsive/theme-blue/images/akl_common/ico_closed.png" alt="닫기">
+																	</a>
+																</div>
+																<div class="cart-popup__content">
+																	<div class="cart-popup__item-info">
+																		<p>한국암웨이의 amway.co.kr에서 서비스 되는 일체의 콘텐츠에 대한 지적 재산권은 한국암웨이㈜에 있으며, 임의로 자료를 수정/변경하여 사용하거나, 기타 개인의 영리 목적으로 사용할 경우에는 지적 재산권 침해에 해당하는 사안으로, 그 모든 법적 책임은 콘텐츠를 불법으로 남용한 개인 또는 단체에 있습니다.</p>
+																		<p>모든 자료는 원저작자의 요청이나 한국암웨이의 사정에 따라 예고 없이 삭제될 수 있습니다.</p>
+																	</div>
+																</div>
+																<div class="cart-popup__item-link commpete">
+																	<button type="button" class="bt-akl-blue">확인</button>
+																</div>
+															</div>
+														</div>
+													</div>
+												</script>
+												<input type="hidden" data-id="kakaoAppKey" value="7adbb84230a96137456561faa21acc43">
+												<input type="hidden" class="sns-param-data" data-exclude-button="" data-url="https://www.amway.co.kr/my-account/orders/180-924470834?orderDatePeriod=0&amp;page=0&amp;searchType=&amp;searchValue=&amp;orderDateFrom=&amp;orderDateTo=&amp;salesChannels=Web&amp;salesChannels=WebMobile&amp;salesChannels=pos&amp;salesChannels=SelfCheckout&amp;salesChannels=CallCenter&amp;salesChannels=ARS&amp;salesChannels=OnlineFax&amp;salesChannels=ASC&amp;salesChannels=LOGME&amp;deliveryModes=install&amp;deliveryModes=pickup&amp;deliveryModes=delivery&amp;orderTypes=NORMAL_ORDER&amp;orderTypes=GIFT&amp;orderTypes=FACILITIES_RESERVATION&amp;orderTypes=TAX&amp;orderTypes=RECURRING_ORDER&amp;orderTypes=REPLACEMENT&amp;orderTypes=NO_CHARGE&amp;orderTypes=GROUP_COMBINED_ORDER&amp;orderTypes=SCAN_PAY_GO&amp;orderTypes=STANDING_ORDER&amp;orderTypes=SMARTPAY_ORDER&amp;orderTypes=SUBSCRIPTION_ORDER&amp;orderTypes=LOGME&amp;orderTypes=SOCIAL&amp;orderTypes=MPN&amp;orderTypes=CLICK_AND_COLLECT&amp;orderTypes=MY_LAB_KIT&amp;statuses=CANCELLED&amp;statuses=PAYMENT_NOT_CAPTURED&amp;statuses=READY&amp;statuses=PICKUP_COMPLETED&amp;statuses=DROP&amp;statuses=PICKUP_READY&amp;statuses=INSTALL_READY&amp;statuses=READY_PART&amp;statuses=COMPLETED&amp;statuses=RETURNED&amp;statuses=DROP_PART&amp;salesChannelAll=true&amp;deliveryModeAll=true&amp;orderTypeAll=true&amp;statusAll=true" data-title="" data-description="" data-type="" data-image="" data-image-width="" data-image-height="" data-button-name="">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- E : 20240514 SNS 공유 팝업 수정 -->
 						</div>
 					</div>
 				</div>
@@ -3024,6 +3163,33 @@
 				layerPopOver(this, '.G10500_lp3_pop');
 			});
 
+			/* S : 20240514 우측 상단 공유하기 팝업 js(운영과 다름, 화면 확인용) */
+			var $shareTooltipCloseButton = $('.kakaotalk-order-sns').parents('.kakaotalk-copy').find('.close-base');
+			$shareTooltipCloseButton.on('click', function() {
+				$('.kakaotalk-order-sns').next('.kakaotalk-pop').hide();
+			});
+
+			$('.kakaotalk-order-sns').on('click', function(){
+				var $shareTooltipArea = $('.kakaotalk-order-sns').next('.kakaotalk-pop');
+				if ($shareTooltipArea.is(':hidden')) {
+					$shareTooltipArea.show();
+				} else if ($shareTooltipArea.is(':visible')){
+					$shareTooltipArea.hide();
+				}
+			});
+			/* E : 20240514 우측 상단 공유하기 팝업 js(운영과 다름, 화면 확인용) */
+
+			/* S : 20240514 우측 상단 공유하기 팝업 js */
+			$('.myorder-btn-share').on("click", function(){
+				$('.sns-layer-renew').css('display','');
+				$('.sns-layer-renew').addClass('showing');
+			});
+
+			$('.myorder-btn-share').next('.sns-layer-renew').find('.cart-popup-close').on('click', function(){
+				$('.sns-layer-renew').css('display','');
+                $('.sns-layer-renew').removeClass('showing');
+            });
+			/* E : 20240514 우측 상단 공유하기 팝업 js */
 		});
 
 	</script>

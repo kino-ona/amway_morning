@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-	<title>여행점수 조회 | ABN Korea</title>
+	<title>리더십 세미나 | ABN Korea</title><!-- 20240517 수정 -->
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta charset="utf-8">
@@ -60,7 +60,67 @@
 
 	<main>
 		<div id="header"></div>
-		<div class="container-fluid main-container" id="contents">
+		<!-- S : 20240418 운영 현행화 -->
+		<div class="sub-nav-section">
+			<div class="inner">
+				<ol class="breadcrumb">
+					<li>
+						<a href="/main">홈</a>
+					</li>
+					<li>
+						<a href="/business-center">비즈니스</a>
+					</li>
+					<li>
+						<a href="/business/record/qleg/qleg-status">사업현황</a>
+					</li>
+					<li class="active">리더십 세미나</li><!-- 20240517 수정 -->
+				</ol>
+				<div class="locationBox">
+					<ul id="locationBoxList">
+						<li data-taggingid="코어+&nbsp;인센티브&nbsp;프로그램">
+							<a href="/sso/coreplusAutoLogin">코어+&nbsp;인센티브&nbsp;프로그램</a>
+						</li>
+						<li data-taggingid="MyBiz">
+							<a href="/sso/mybizAutoLogin">MyBiz</a>
+						</li>
+						<li class="active" data-taggingid="리더십 세미나"><!-- 20240517 수정 -->
+							<a href="/business/reward/travelpoint-inquiry/3">리더십 세미나</a><!-- 20240517 수정 -->
+						</li>
+						<li data-taggingid="PT 그룹 조회">
+							<a href="/business/losmap/pt-group">PT 그룹 조회</a>
+						</li>
+						<li data-taggingid="마감실적조회">
+							<a href="/external/closingperformance" onclick="ACC.common.callAbnPageOptionPopup(this,'closing',925,750) ; return false" target="_blank" rel="noopener noreferrer">마감실적조회</a>
+						</li>
+						<li data-taggingid="Q레그 현황">
+							<a href="/business/record/qleg/qleg-status">Q레그 현황</a>
+						</li>
+						<li data-taggingid="그룹내 총 반품">
+							<a href="/business/record/return/abototal">그룹내 총 반품</a>
+						</li>
+						<li data-taggingid="나의 탑업">
+							<a href="/business/record/topup/my-topup">나의 탑업</a>
+						</li>
+						<li data-taggingid="다운라인 반품탑업">
+							<a href="/business/record/topup/downlines-return-topup">다운라인 반품탑업</a>
+						</li>
+						<li data-taggingid="사업현황보고서">
+							<a href="/business/record/report/business-status">사업현황보고서</a>
+						</li>
+						<li data-taggingid="성취보고서">
+							<a href="/business/record/report/business-achieve">성취보고서</a>
+						</li>
+						<li data-taggingid="보너스 현황">
+							<a href="/business-center/my-businessincome">보너스 현황</a>
+						</li>
+						<li data-taggingid="ABO TAX">
+							<a href="/business/abotax/form">ABO TAX</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- <div class="container-fluid main-container" id="contents">
 			<div class="print-hide breadcrumb-section">
 				<ol class="breadcrumb">
 					<li><a href="homepage-logged-in.html">홈</a></li>
@@ -160,16 +220,20 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="container amway-theme business">
-			<h1 class="title-h2">여행점수 조회</h1>
+		</div> -->
+		<!-- E : 20240418 운영 현행화 -->
+
+		<div class="container amway-theme business business-renew business-travel-point"><!-- 20240426 클래스 추가 -->
+			<h1 class="title-h2">리더십 세미나</h1><!-- 20240517 수정 -->
 
 			<div class="rewards-program-wrapper">
-				<div class="outer-border-bottom">
-					<ul class="tabs-toggles">
-						<li class="tab-toggle-wrap"><a class="tab-toggle" href="#"><span class="toggle-text">리더십 세미나</span></a> </li>
-						<li class="tab-toggle-wrap"><a class="tab-toggle" href="#"><span class="toggle-text">여행점수 프로모션 </span></a></li>
-						<li class="tab-toggle-wrap active"><a class="tab-toggle" href="#"><span class="toggle-text">여행점수 확인</span></a></li>
+				<div class="outer-border-bottom outer-border-bottom-renew">
+					<ul class="tabs-toggles tabs-toggles-renew">
+						<!-- S : 20240517 메뉴명 수정 -->
+						<li class="tab-toggle-wrap"><a class="tab-toggle" href="/_ui/responsive/html/business/G20361.html"><span class="toggle-text">리더십 세미나</span></a> </li>
+						<li class="tab-toggle-wrap"><a class="tab-toggle" href="/_ui/responsive/html/business/G20371_2.html"><span class="toggle-text">2025 회계연도 조회</span></a></li>
+						<li class="tab-toggle-wrap active"><a class="tab-toggle" href="/_ui/responsive/html/business/G20371.html"><span class="toggle-text">2024 회계연도 조회</span></a></li>
+						<!-- E : 20240517 메뉴명 수정 -->
 					</ul>
 				</div>
 
@@ -177,24 +241,28 @@
 				<div class="tab-content type-travel-point">
 					<div class="box-conts-summary">
 						<h2>현재 여행점수</h2>
-						<p class="status-travel-point"><em>홍길동</em>님은 <em>18</em>회 리더십 세미나에 참가하셨으며 <strong class="txt-ty-month">2018년 03월</strong>까지 달성하신 여행점수는 아래와 같습니다.</p>
+						<p class="status-travel-point"><em>한국암웨이</em>님은 8회 리더십 세미나에 참가하셨으며 2024년 03월까지 달성하신 여행점수는 아래와 같습니다.</p><!-- 20240517 수정 -->
 
 						<div class="box-goal-point">
 							<ul>
 								<li><strong>목표점수</strong><span>20,000,000</span></li>
-								<li><strong>현재점수</strong><span>15,484,862</span></li>
-								<li><strong>목표점수 달성률</strong><span>77.40%</span></li>
+								<li><strong>현재점수</strong><span>5,020,993</span></li>
+								<li class="last"><strong>목표점수 달성률</strong><span>25.10%</span></li>
 							</ul>
 						</div>
+
+						<!-- S : 20240426 삭제 -->
 						<!-- 2019.10.08 수정 -->
-						<ul class="list-type2 currentGuide">
+						<!-- <ul class="list-type2 currentGuide">
 							<li>여행차수 4차 이상(3회 이상 참가)에 도전하시는 리더님은 “너랑 나랑 나트랑 여행 프로모션 2”를 통해서도 참석이 가능합니다.<br>
 							자세한 사항은 ‘www.amway.co.kr 비즈니스 &gt; 여행점수 조회 &gt; 여행점수 프로모션’ 페이지에서 확인하실 수 있습니다</li>
-						</ul>
+						</ul> -->
 						<!-- //2019.10.08 수정 -->
+						<!-- E : 20240426 삭제 -->
 					</div>
 
-					<div class="box-conts-group">
+					<!-- S : 20240426 삭제 -->
+					<!-- <div class="box-conts-group">
 						<h2>전년도 여행점수</h2>
 						<p class="status-travel-point">
 							<span class="mob-inline"><em>홍길동</em>님은 <em>18</em>회 리더십 세미나에 참가하셨으며</span>
@@ -202,7 +270,7 @@
 						</p>
 					</div>
 
-					<!-- 2018.09.10 추가 -->
+					<!#-- 2018.09.10 추가 --#>
 					<div class="box-conts-group">
 						<h2>여행점수 상세</h2>
 						<div class="table-scroll">
@@ -286,12 +354,12 @@
 							</ul>
 						</div>
 					</div>
-					<!--// 2018.09.10 추가 -->
+					<!#--// 2018.09.10 추가 --#>
 
 					<div class="box-conts-group">
 						<h2>여행점수 시뮬레이션 하기</h2>
 
-						<!-- 입력 -->
+						<!#-- 입력 --#>
 						<div class="box-simulation">
 							<p class="status-travel-point">
 								<span class="mob-inline"><strong>개인그룹 총 PV 와 리더십보너스 금액</strong>을 입력하시면, 향후 달성 가능한 여행 점수를 시뮬레이션 하실 수 있습니다.</span>
@@ -299,7 +367,7 @@
 							</p>
 							<ul class="form-list">
 								<li class="form-group">
-									<label class="col-md-4 col-xs-12 control-label" for="monthTotal_pv">1개월 개인그룹 총 PV <span class="mob-inline">(21% 그룹 제외)</span></label><!-- 수정 : .mob-inline 안으로 text 이동 -->
+									<label class="col-md-4 col-xs-12 control-label" for="monthTotal_pv">1개월 개인그룹 총 PV <span class="mob-inline">(21% 그룹 제외)</span></label><!#-- 수정 : .mob-inline 안으로 text 이동 --#>
 									<div class="col-md-8 col-xs-12"><p class="input-border"><input type="text" id="monthTotal_pv"> <em>PV</em></p></div>
 								</li>
 								<li class="form-group">
@@ -318,7 +386,7 @@
 
 							<div class="calc-travel-point">
 								<h3>1개월 여행점수 계산법</h3>
-								<!-- 2019.10.08 수정 -->
+								<!#-- 2019.10.08 수정 --#>
 								<div class="box-diagram">
 									<p class="txt-math">
 										<span class="math-left"><em class="hidden">1개월의 개인그룹 총 PV (21% 그룹제외) X 보너스 % X 0.25</em></span>
@@ -326,7 +394,7 @@
 										<span class="math-right type1"><em class="hidden">({리더십보너스+(대리후원 리더십 보너스*1.5)}*0.468(참조))</em></span>
 									</p>
 								</div>
-								<!-- //2019.10.08 수정 -->
+								<!#-- //2019.10.08 수정 --#>
 							</div>
 							<ul class="list-type2">
 								<li class="bg-none color-red"><p class="txt-required"><span class="etc-required"><em>0.468(참조)는</em></span> PV : BV 비율에 따라 가변적임</p></li>
@@ -336,9 +404,9 @@
 								<button type="button" class="bt-akl-blue">여행점수 시뮬레이션하기</button>
 							</div>
 						</div>
-						<!-- //입력 -->
+						<!#-- //입력 --#>
 
-						<!-- 결과 -->
+						<!#-- 결과 --#>
 						<div class="box-simulation outcome">
 							<p class="status-travel-point">
 								<span class="mob-inline"><em>홍길동</em>님의 한달 여행점수 시뮬레이션 결과는 <em>12점</em> 입니다.</span>
@@ -350,12 +418,12 @@
 									<span class="colorBar">PF18 여행목표점수</span><strong>30,000,000 점</strong>
 								</p>
 
-								<!-- 차트 -->
+								<!#-- 차트 --#>
 								<div class="barChartBox">
 									<div class="axisHorizontal">
-										<div class="yAxisMaximum"><span>30,000,000</span></div><!-- 목표점수 -->
-										<div class="yAxisHalf"><span>15,000,000</span></div><!-- 목표점수*1/2 -->
-										<div class="yAxisMinimum"><span>0</span></div><!-- 시작 -->
+										<div class="yAxisMaximum"><span>30,000,000</span></div><!#-- 목표점수 --#>
+										<div class="yAxisHalf"><span>15,000,000</span></div><!#-- 목표점수*1/2 --#>
+										<div class="yAxisMinimum"><span>0</span></div><!#-- 시작 --#>
 									</div>
 									<ul>
 										<li>
@@ -378,7 +446,7 @@
 										</li>
 									</ul>
 								</div>
-								<!-- //차트 -->
+								<!#-- //차트 --#>
 							</div>
 
 							<div class="tbl-list-board type-tbody-th">
@@ -420,15 +488,16 @@
 								<button type="button" class="bt-akl-blue">여행점수 시뮬레이션 다시하기</button>
 							</div>
 						</div>
-						<!-- //결과 -->
+						<!#-- //결과 --#>
 
-						<!-- 조회결과 없음 -->
+						<!#-- 조회결과 없음 --#>
 						<div class="box-simulation outcome">
 							<div class="search-no-result">여행점수가 존재하지 않습니다.</div>
 						</div>
-						<!-- //조회결과 없음 -->
+						<!#-- //조회결과 없음 --#>
 
-					</div>
+					</div> -->
+					<!-- E : 20240426 삭제 -->
 				</div>
 				<!-- //여행점수 확인  -->
 			</div>
@@ -436,6 +505,5 @@
 		<div id="quick"></div>
 		<div id="footer"></div>
 	</main>
-
 </body>
 </html>
