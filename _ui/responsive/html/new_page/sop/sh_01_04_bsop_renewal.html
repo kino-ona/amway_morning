@@ -6758,13 +6758,12 @@
 
   function optionalProductDefaultOption () {
 		optionalProductDefaultActive();
-		optionalProductAction();
   };
 
 	function optionalProductDefaultActive() {
     $('.last_step').each(function() {
         var checkedValue = $(this).find('input[name*="chk_optional_yn"]:checked').val();
-        optionalProductAction(this, checkedValue === 'optional_y');
+        optionalProductAction($(this), checkedValue === 'optional_y');
     });
 	}
 
@@ -6773,7 +6772,10 @@
 			$item.find('.optional_tab').css('display', value ? 'block' : 'none');
 
 			$item.find('input[name*="chk_optional_yn"]').click(function() {
-			$item.find('.accordion_info_wrap').css('display', $(this).val() === 'optional_y' ? 'flex' : 'none');
+				var checkType = $(this).val() === 'optional_y';
+
+				$item.find('.accordion_info_wrap').css('display', checkType ? 'flex' : 'none');
+				$item.find('.optional_tab').css('display', checkType ? 'block' : 'none');
 		});
 	}
 
