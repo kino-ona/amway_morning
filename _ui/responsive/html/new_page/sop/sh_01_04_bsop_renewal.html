@@ -6631,13 +6631,6 @@
   if($('.box_sop-product-helper')) {
     var windowWidth = $(window).width();
 
-    //tablet, mo
-    if(windowWidth <= 1200) {
-			
-    }else {
-
-    }
-
 		if($('.accordion_list')) accordionDefaultOption();
 
     if($('.accordion_list .optional_category_wrap')) optionalCategoryDefaultOption();
@@ -6653,6 +6646,10 @@
     if($('.gutmorning_start_btn')) moveToHelperContent();
 
 		if($('.accordion_swiper')) initSwiper();
+
+		$(window).on('resize', function() {
+    	initSwiper();
+  	});
   }
 
   function optionalCategoryDefaultOption() {
