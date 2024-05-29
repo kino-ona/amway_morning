@@ -182,18 +182,18 @@
 		<div class="box_sop-wrap smart-order-tabs">  <!-- 2020-07 ACliks SOP : [box_sop-wrap] div tag add -->
 			<div class="box_sop-tab-wrap">
 				<ul class="box_sop-tab">
-					<li class="tabs on">
+					<li class="tabs on" data-content="info">
 							<button>장스오 혜택안내</button><!-- 20240409 장스오 홈 개선 -->
 					</li>
 					<!-- 202405 것모닝 작업 - 것모닝 탭 추가 -->
-					<li class="tabs">
+					<li class="tabs" data-content="promotion">
 						<button>것모닝 프로모션</button>
 					</li>
-					<li class="tabs">
+					<li class="tabs" data-content="helper">
 						<button>것모닝 제품 구성 도우미</button>
 					</li>
 					<!-- // 202405 것모닝 작업 - 것모닝 탭 추가 -->
-					<li class="tabs">
+					<li class="tabs" data-content="recommend">
 						<button>장스오 Best 제품 (3월)</button><!-- 20240328 운영 현행화 -->
 					</li>
 				</ul>
@@ -525,11 +525,9 @@
 								<p>프로틴 (<span>6</span>)</p>
 								<button type="button">초기화</button>
 							</div>
-
 							<div class="accordion_contents accordion_protein">
 								<div class="accordion_swiper accordion_protein_swiper swiper">
 									<div class="swiper-wrapper">
-
 										<div class="swiper-slide">
 											<div class="accordion_product_wrap">
 												<input id="chk_first_product01_1" type="checkbox">
@@ -932,7 +930,7 @@
 						</div>
 					</div>
 
-					<div class="accordion_list accordion_list--first last_step" data-index="4"><!-- 202405 것모닝 작업 - 초기셋팅 추가-->
+					<div class="accordion_list accordion_list--first last_step"><!-- 202405 것모닝 작업 - 초기셋팅 추가-->
 						<div class="accordion_header">
 							<div class="accordion_title_wrap">
 								<p>
@@ -2013,10 +2011,10 @@
 								<p>뉴트리라이트 제품을 추가로 구성하시면 10% PV / UP 함께 받으실 수 있습니다.</p>
 
 								<div class="optional_select_wrap">
-									<input type="radio" name="chk_optional_yn2" id="chk_optional02_1" value="optional_y" checked>
+									<input type="radio" name="chk_optional_yn2" id="chk_optional02_1" value="optional_y">
 									<label for="chk_optional02_1">추가 구성을 희망합니다.</label>
 
-									<input type="radio" name="chk_optional_yn2" id="chk_optional02_2" value=optional_n>
+									<input type="radio" name="chk_optional_yn2" id="chk_optional02_2" value="optional_n" checked>
 									<label for="chk_optional02_2">추가 구성을 희망하지 않습니다.</label>
 								</div>
 							</div>
@@ -6635,17 +6633,26 @@
 
     //tablet, mo
     if(windowWidth <= 1200) {
-    
+			
     }else {
+
     }
 
+		if($('.accordion_list')) accordionDefaultOption();
 
-    if($('.optional_category_wrap')) optionalCategoryDefaultOption();
+    if($('.accordion_list .optional_category_wrap')) optionalCategoryDefaultOption();
 
     if($('.accordion_list input[name="step1"]')) step1DefaultOption($('input[name="step1"]').val());
 
-		if($('.accordion_list')) accordionDefaultOption();
-    // optionalProductOpen();
+		if($('.accordion_list input[name*="chk_optional_yn"]')) optionalProductDefaultOption();
+
+		if($('.box_sop-tab')) checkHelperContent();
+
+		if($('.promotion_float_wrap.mo .total_button')) floatingContentArrowAction();
+
+    if($('.gutmorning_start_btn')) moveToHelperContent();
+
+		if($('.accordion_swiper')) initSwiper();
   }
 
   function optionalCategoryDefaultOption() {
@@ -6752,68 +6759,56 @@
 	});
 }
 
-
-// E: 202405 것모닝 작업
-
-//작업 아래부터 필요
-
-
-  // 202405 것모닝 작업 - Step04 추가 구성 상품 희망
-  function optionalProductOpen () {
-    if($('.box_sop-product-helper input[name="chk_optional_yn1"]') || $('.box_sop-product-helper input[name="chk_optional_yn2"]')) {
-      $('input[name="chk_optional_yn1"]').click(function() {
-        optionalProductAction('step1_1', $(this).val());
-      })
-
-      $('input[name="chk_optional_yn2"]').click(function() {
-        optionalProductAction('step1_2', $(this).val());
-      })
-    }
+  function optionalProductDefaultOption () {
+		optionalProductDefaultActive();
+		optionalProductAction();
   };
 
-  function optionalProductAction(step, data) {
-    var number = 0;
-    var windowWidth = $(window).width();
+	function optionalProductDefaultActive() {
+    $('.last_step').each(function() {
+        var checkedValue = $(this).find('input[name*="chk_optional_yn"]:checked').val();
+        optionalProductAction(this, checkedValue === 'optional_y');
+    });
+	}
 
-    step === 'step1_1' ? number = 'first' :  number = 'second';
+	function optionalProductAction(item, value) {
+		var $item = $(item);
+			$item.find('.optional_tab').css('display', value ? 'block' : 'none');
 
-    $('.accordion_list--'+ number +' .optional_tab').css('display', data === 'optional_n' ? 'none' :'block');
-    $('.last_step .accordion_info_wrap').css('display', data === 'optional_n' ? 'none' :'block');
+			$item.find('input[name*="chk_optional_yn"]').click(function() {
+			$item.find('.accordion_info_wrap').css('display', $(this).val() === 'optional_y' ? 'flex' : 'none');
+		});
+	}
 
-    
+	function checkHelperContent() {
+    $('.tabs').click(function() {
+        var isHelper = $(this).data('content') === 'helper';
+        $('.scrollTopWrapper, .box-chatbot').toggleClass('floatingUp', isHelper);
+    });
+	}
 
-    if ($(windowWidth <= 1200)) {
-      data === 'optional_n' ?
-      $('.optional_category_wrap').addClass('option_hide') :
-      $('.optional_category_wrap').removeClass('option_hide');
-    }
-    
-  }
+	function floatingContentArrowAction() {
+		$('.promotion_total .total_button').click(function() {
+			$(this).toggleClass('active');
+			$('.my_product_wrap').toggleClass('active');
+		});
+	}
 
+	function moveToHelperContent() {
+    $(".gutmorning_start_btn").click(function() {
+			$('.box_sop-tab .tabs').removeClass('on')
+					.filter('[data-content="helper"]').addClass('on');
 
-  // 202405 것모닝 작업 - 모바일 하단 플로팅 영역에 의한 챗봇과 스크롤 버튼 위치 조정
-  $('.tabs').click(function() {
-    if ($(this)[0] == $('.tabs').eq(2)[0]) {
-      $('.scrollTopWrapper').addClass('floatingUp');
-      $('.box-chatbot').addClass('floatingUp');
-    } else {
-      $('.scrollTopWrapper').removeClass('floatingUp');
-      $('.box-chatbot').removeClass('floatingUp');
-    }
-  });
+			$('.cont').hide();
+			$('.box_sop-product-helper').show();
+    });
+	}
 
-  $('.promotion_total .total_button').click(function() {
-    $(this).toggleClass('active');
-    $('.my_product_wrap').toggleClass('active');
-  });
-
-
-  // 202405 것모닝 작업 - 아코디언 스와이퍼
-  let ww = $(window).width();
-  
   function initSwiper() {
     let $slider = $('.accordion_contents');
     let sliderFlag = false;
+
+		let ww = $(window).width();
 
     if (ww > 1200) {
       $slider.find('.accordion_swiper').each(function(i) {
@@ -6842,24 +6837,7 @@
     }
   }
 
-  initSwiper();
-
-
-  $(window).on('resize', function() {
-    ww = $(window).width();
-    initSwiper();
-  });
-
-  // 202405 것모닝 작업 - 것모닝 제품 구성 시작하기 버튼
-  $(".gutmorning_start_btn").click(function(event) {
-    $('.tabs').removeClass('on');
-    $('.tabs').eq(2).addClass('on');
-
-    $('.cont').css('display', 'none');
-    $('.cont').eq(2).css('display', 'block');
-  });
-
-
+	// E: 202405 것모닝 작업
 
 
 
