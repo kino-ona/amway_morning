@@ -17798,9 +17798,11 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	padding: 10px 0;
 }
 .box_sop-product-helper .swiper-scrollbar {
-	width: 100%;
+	display: none;
+	width: calc(100% - 20px);
 	height: 5px;
 	background: #D9D9D9;
+	left: -8px;
 }
 .box_sop-product-helper .swiper-scrollbar-drag {
 	background: #0B6837;
@@ -18312,7 +18314,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		padding: 20px;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_list:nth-of-type(1) .accordion_contents {
-		padding: 20px 20px 16px 20px;
+		padding: 20px 0 16px 20px;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_header .accordion_title_wrap p {
 		font-size: 14px;
@@ -18415,7 +18417,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_body .accordion_contents {
 		flex-direction: column;
-		padding: 8px 20px  16px;
+		padding: 8px 0 16px 20px;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_list {
 		border-radius: 12px;	
@@ -18739,6 +18741,9 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	}
 	.box-chatbot.hide {
 		display: none !important;
+	}
+	.box_sop-product-helper .swiper-scrollbar {
+		display: block;
 	}
 }
 /* // 202405 것모닝 작업 - 것모닝 프로모션 */

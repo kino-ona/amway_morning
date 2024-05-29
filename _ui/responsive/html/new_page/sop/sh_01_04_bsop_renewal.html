@@ -6663,6 +6663,10 @@
     if($('.gutmorning_start_btn')) moveToHelperContent();
 
 		if($('.accordion_swiper')) initSwiper();
+
+		$(window).on('resize', function() {
+			initSwiper();
+		});
   }
 
   function optionalCategoryDefaultOption() {
@@ -6828,6 +6832,7 @@
 
 					scrollbar: {
 						el: $(this).siblings('.swiper-scrollbar'),
+						draggable: true,
 					},
 
 					breakpoints: {
