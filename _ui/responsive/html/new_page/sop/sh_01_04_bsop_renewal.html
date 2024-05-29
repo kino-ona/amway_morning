@@ -32,7 +32,7 @@
 	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-product-renewal_v1.css">
 
 	<!-- 202405 것모닝 작업 - 스와이퍼 Import -->
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="/_ui/responsive/theme-blue/css/swiper-bundle.min.css" />
 
 	<!-- 202405 것모닝 작업 스와이퍼 Import -->
 	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/swiper.min.js"></script>
@@ -639,6 +639,7 @@
 									</div>
 								</div>
 										
+								<div class="swiper-scrollbar"></div>
 								<div class="swiper-button-prev"></div>
 								<div class="swiper-button-next"></div>
 							</div>
@@ -919,6 +920,7 @@
 									</div>
 								</div>
 										
+								<div class="swiper-scrollbar"></div>
 								<div class="swiper-button-prev"></div>
 								<div class="swiper-button-next"></div>
 							</div>
@@ -1096,6 +1098,7 @@
 										</div>
 									</div>
 											
+									<div class="swiper-scrollbar"></div>
 									<div class="swiper-button-prev"></div>
 									<div class="swiper-button-next"></div>
 								</div>
@@ -1223,6 +1226,7 @@
 										</div>
 									</div>
 											
+									<div class="swiper-scrollbar"></div>
 									<div class="swiper-button-prev"></div>
 									<div class="swiper-button-next"></div>
 								</div>
@@ -1302,6 +1306,7 @@
 										</div>
 									</div>
 											
+									<div class="swiper-scrollbar"></div>
 									<div class="swiper-button-prev"></div>
 									<div class="swiper-button-next"></div>
 								</div>
@@ -1429,6 +1434,7 @@
 										</div>
 									</div>
 											
+									<div class="swiper-scrollbar"></div>
 									<div class="swiper-button-prev"></div>
 									<div class="swiper-button-next"></div>
 								</div>
@@ -1556,6 +1562,7 @@
 										</div>
 									</div>
 											
+									<div class="swiper-scrollbar"></div>
 									<div class="swiper-button-prev"></div>
 									<div class="swiper-button-next"></div>
 								</div>
@@ -1683,6 +1690,7 @@
 										</div>
 									</div>
 											
+									<div class="swiper-scrollbar"></div>
 									<div class="swiper-button-prev"></div>
 									<div class="swiper-button-next"></div>
 								</div>
@@ -1815,6 +1823,7 @@
 										</div>
 									</div>
 											
+									<div class="swiper-scrollbar"></div>
 									<div class="swiper-button-prev"></div>
 									<div class="swiper-button-next"></div>
 								</div>
@@ -1979,6 +1988,7 @@
 									</div>
 								</div>
 										
+								<div class="swiper-scrollbar"></div>
 								<div class="swiper-button-prev"></div>
 								<div class="swiper-button-next"></div>
 							</div>
@@ -2153,6 +2163,7 @@
 										</div>
 									</div>
 											
+									<div class="swiper-scrollbar"></div>
 									<div class="swiper-button-prev"></div>
 									<div class="swiper-button-next"></div>
 								</div>
@@ -2280,6 +2291,7 @@
 										</div>
 									</div>
 											
+									<div class="swiper-scrollbar"></div>
 									<div class="swiper-button-prev"></div>
 									<div class="swiper-button-next"></div>
 								</div>
@@ -2359,6 +2371,7 @@
 										</div>
 									</div>
 											
+									<div class="swiper-scrollbar"></div>
 									<div class="swiper-button-prev"></div>
 									<div class="swiper-button-next"></div>
 								</div>
@@ -2486,6 +2499,7 @@
 										</div>
 									</div>
 											
+									<div class="swiper-scrollbar"></div>
 									<div class="swiper-button-prev"></div>
 									<div class="swiper-button-next"></div>
 								</div>
@@ -2613,6 +2627,7 @@
 										</div>
 									</div>
 											
+									<div class="swiper-scrollbar"></div>
 									<div class="swiper-button-prev"></div>
 									<div class="swiper-button-next"></div>
 								</div>
@@ -2740,6 +2755,7 @@
 										</div>
 									</div>
 											
+									<div class="swiper-scrollbar"></div>
 									<div class="swiper-button-prev"></div>
 									<div class="swiper-button-next"></div>
 								</div>
@@ -2872,6 +2888,7 @@
 										</div>
 									</div>
 											
+									<div class="swiper-scrollbar"></div>
 									<div class="swiper-button-prev"></div>
 									<div class="swiper-button-next"></div>
 								</div>
@@ -6646,10 +6663,6 @@
     if($('.gutmorning_start_btn')) moveToHelperContent();
 
 		if($('.accordion_swiper')) initSwiper();
-
-		$(window).on('resize', function() {
-    	initSwiper();
-  	});
   }
 
   function optionalCategoryDefaultOption() {
@@ -6804,36 +6817,37 @@
 	}
 
   function initSwiper() {
-    let $slider = $('.accordion_contents');
-    let sliderFlag = false;
+    var $slider = $('.accordion_contents');
 
-		let ww = $(window).width();
-
-    if (ww > 1200) {
       $slider.find('.accordion_swiper').each(function(i) {
-        $(this).siblings("[class*='swiper-button']").addClass("type"+i);
-
         const slider = new Swiper($(this), {
-          slidesPerView: 'auto',
-          spaceBetween: 21.6,
-          touchRatio: 0,
-          simulateTouch: false,
-          watchOverflow : true,
-          observer: true,
-          observeParents: true,
+					slidesPerView: 'auto',
+					freeMode: true,
+					observer: true,
+					observeParents: true,
 
-          navigation: {
-            nextEl: $slider.find('.swiper-button-next.type' + i),
-            prevEl: $slider.find('.swiper-button-prev.type' + i),
-          },
+					scrollbar: {
+						el: $(this).siblings('.swiper-scrollbar'),
+					},
+
+					breakpoints: {
+						1200: {
+						spaceBetween: 21.6,
+						touchRatio: 0,
+						simulateTouch: false,
+						watchOverflow : true,
+						observer: true,
+						observeParents: true,
+
+						navigation: {
+							prevEl: $(this).siblings('.swiper-button-prev'),
+							nextEl: $(this).siblings('.swiper-button-next'),
+						},
+					},
+				},
         });
         sliderFlag = true;
       });
-
-    } else if (ww <= 1200 && sliderFlag === true) {
-      sliderFlag = false;
-      slider.destroy();
-    }
   }
 
 	// E: 202405 것모닝 작업
