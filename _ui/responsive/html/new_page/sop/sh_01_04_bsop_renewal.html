@@ -7124,25 +7124,29 @@
 						el: $(this).siblings('.swiper-scrollbar'),
 						draggable: true,
 					},
+					
+					navigation: {
+						prevEl: $(this).siblings('.swiper-button-prev'),
+						nextEl: $(this).siblings('.swiper-button-next'),
+					},
 
 					breakpoints: {
 						1200: {
 						slidesPerView: 6,
 						spaceBetween: 21.6,
 						touchRatio: 0,
+						freeMode: false,
 						watchOverflow : true,
-						// observer: true,
-						// observeParents: true,
+						observer: true,
+						observeParents: true,
 
-						navigation: {
-							prevEl: $(this).siblings('.swiper-button-prev'),
-							nextEl: $(this).siblings('.swiper-button-next'),
+						scrollbar: {
+							enabled: true
 						},
 					},
 				},
-        });
-        sliderFlag = true;
-      });
+			});
+		});
   }
 
 	// E: 202405 것모닝 작업

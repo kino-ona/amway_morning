@@ -17719,6 +17719,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 }
 
 .box_sop-product-helper .accordion_swiper .accordion_product_wrap a {
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	height: inherit;
@@ -18149,6 +18150,9 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		margin-bottom: 20px;
 		font-size: 14px;
 	}
+	.box_sop-promotion .promotion_button_wrap {
+		padding: 0 16px;
+	}
 }
 
 @media (max-width: 1024px) {
@@ -18392,6 +18396,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	.box_sop-product-helper .accordion_wrap .accordion_info_wrap {
 		position: unset;
 		flex-direction: row;
+		flex-wrap: wrap;
 		align-items: center;
 		justify-content: space-between;
 		transform: unset;
@@ -18446,6 +18451,9 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		padding: 12px;
 		justify-content: space-between;
 	}
+	.box_sop-product-helper .accordion_swiper .accordion_product_wrap img {
+		width: 100% !important;
+	}
 	.box_sop-product-helper .accordion_swiper .swiper-slide {
 		width: 139px;
 		height: auto;
@@ -18490,6 +18498,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		font-size: 12px;
 	}
 	.box_sop-product-helper .accordion_swiper .accordion_product_wrap .product_name {
+		max-width: 100%;
 		margin: 4px 0 6px;
 		font-size: 14px;
 		line-height: 20px;
