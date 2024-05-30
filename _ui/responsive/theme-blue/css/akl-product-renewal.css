@@ -17870,10 +17870,6 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	letter-spacing: -0.05em;
 	color: #000;
 }
-.box_sop-product-helper .accordion_wrap .accordion_body .optional_category_wrap {
-	display: none;
-}
-
 .box_sop-product-helper .accordion_wrap .accordion_body .optional_select_wrap input[type="radio"] {
 	position: unset;
 	width: 20px;
@@ -18674,7 +18670,6 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	}
 
 	.box_sop-product-helper .accordion_wrap .accordion_body .optional_category_wrap {
-		display: block;
 		position: relative;
 		padding: 20px 0 22px 20px;
 	}
