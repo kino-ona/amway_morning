@@ -6664,11 +6664,18 @@
 
 		if($('.accordion_swiper')) initSwiper();
 
-		$(window).on('resize', function() {
-			windowWidth = $(window).width();
+		var timer = null;
 
-			initSwiper();
+		$(window).on('resize', function() {
 			optionalProductCheck(windowWidth);
+			
+			windowWidth = $(window).width();
+			
+			clearTimeout(timer);
+			
+			timer = setTimeout(function() {
+				initSwiper();
+			}, 300);
 		});
   }
 
@@ -6806,6 +6813,8 @@
 	}
 
 	function checkMobileView(item, checkType, windowWidth) {
+		console.log(windowWidth);
+
 		if(windowWidth > 1200) {
 			item.find('.optional_category_wrap, .accordion_info_wrap').hide();
 			return false;
@@ -6843,8 +6852,11 @@
 
       $slider.find('.accordion_swiper').each(function(i) {
         const slider = new Swiper($(this), {
-					slidesPerView: 'auto',
+					slidesPerView: 2.2,
+					spaceBetween: 8,
+					touchRatio: 1,
 					freeMode: true,
+					simulateTouch: false,
 					observer: true,
 					observeParents: true,
 
@@ -6855,9 +6867,9 @@
 
 					breakpoints: {
 						1200: {
+						slidesPerView: 6,
 						spaceBetween: 21.6,
 						touchRatio: 0,
-						simulateTouch: false,
 						watchOverflow : true,
 						observer: true,
 						observeParents: true,
