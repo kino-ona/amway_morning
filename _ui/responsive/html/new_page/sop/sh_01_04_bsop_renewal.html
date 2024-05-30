@@ -6644,7 +6644,6 @@
   });
 
   // S : 202405 것모닝 작업
-  // 처음 진입시 모바일 화면체크
   if($('.box_sop-product-helper')) {
     var windowWidth = $(window).width();
 
@@ -6665,17 +6664,13 @@
 		if($('.accordion_swiper')) initSwiper();
 
 		var timer = null;
-
 		$(window).on('resize', function() {
-			optionalProductCheck(windowWidth);
-			
 			windowWidth = $(window).width();
-			
+
 			clearTimeout(timer);
-			
-			timer = setTimeout(function() {
-				initSwiper();
-			}, 300);
+			timer = setTimeout(function(){	
+				optionalProductCheck(windowWidth);
+			},300)
 		});
   }
 
@@ -6790,14 +6785,16 @@
 				optionalProductClickAction($(this), checkedValue === 'optional_y');
 				checkMobileView($(this), checkedValue === 'optional_y', windowWidth);
     });
-  };
+  };	
 
 	function optionalProductCheck(windowWidth) {
-    $('.last_step').each(function() {
-        var checkedValue = $(this).find('input[name*="chk_optional_yn"]:checked').val();
+		if($('.last_step').hasClass('opened')) {
+			$('.last_step').each(function() {
+				var checkedValue = $(this).find('input[name*="chk_optional_yn"]:checked').val();
 
 				checkMobileView($(this), checkedValue === 'optional_y', windowWidth);
-    });
+			});
+		}
 	}
 
 	function optionalProductClickAction(item, value) {
@@ -6813,8 +6810,6 @@
 	}
 
 	function checkMobileView(item, checkType, windowWidth) {
-		console.log(windowWidth);
-
 		if(windowWidth > 1200) {
 			item.find('.optional_category_wrap, .accordion_info_wrap').hide();
 			return false;
@@ -6871,8 +6866,8 @@
 						spaceBetween: 21.6,
 						touchRatio: 0,
 						watchOverflow : true,
-						observer: true,
-						observeParents: true,
+						// observer: true,
+						// observeParents: true,
 
 						navigation: {
 							prevEl: $(this).siblings('.swiper-button-prev'),
