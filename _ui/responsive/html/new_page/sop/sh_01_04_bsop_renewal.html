@@ -6665,7 +6665,10 @@
 		if($('.accordion_swiper')) initSwiper();
 
 		$(window).on('resize', function() {
+			windowWidth = $(window).width();
+
 			initSwiper();
+			optionalProductCheck(windowWidth);
 		});
   }
 
@@ -6774,26 +6777,41 @@
 }
 
   function optionalProductDefaultOption () {
-		optionalProductDefaultActive();
+		$('.last_step').each(function() {
+        var checkedValue = $(this).find('input[name*="chk_optional_yn"]:checked').val();
+
+				optionalProductClickAction($(this), checkedValue === 'optional_y');
+				checkMobileView($(this), checkedValue === 'optional_y', windowWidth);
+    });
   };
 
-	function optionalProductDefaultActive() {
+	function optionalProductCheck(windowWidth) {
     $('.last_step').each(function() {
         var checkedValue = $(this).find('input[name*="chk_optional_yn"]:checked').val();
-        optionalProductAction($(this), checkedValue === 'optional_y');
+
+				checkMobileView($(this), checkedValue === 'optional_y', windowWidth);
     });
 	}
 
-	function optionalProductAction(item, value) {
+	function optionalProductClickAction(item, value) {
 		var $item = $(item);
-			$item.find('.optional_tab').css('display', value ? 'block' : 'none');
+		$item.find('.optional_tab').css('display', value ? 'block' : 'none');
 
-			$item.find('input[name*="chk_optional_yn"]').click(function() {
-				var checkType = $(this).val() === 'optional_y';
+		$item.find('input[name*="chk_optional_yn"]').click(function() {
+			var checkType = $(this).val() === 'optional_y';
 
-				$item.find('.accordion_info_wrap').css('display', checkType ? 'flex' : 'none');
-				$item.find('.optional_tab').css('display', checkType ? 'block' : 'none');
+			$item.find('.optional_tab').css('display', checkType ? 'block' : 'none');
+			checkMobileView($item, checkType, windowWidth);
 		});
+	}
+
+	function checkMobileView(item, checkType, windowWidth) {
+		if(windowWidth > 1200) {
+			item.find('.optional_category_wrap, .accordion_info_wrap').hide();
+			return false;
+		} 
+		item.find('.optional_category_wrap').css('display', checkType ? 'block' : 'none');
+		item.find('.accordion_info_wrap').css('display', checkType ? 'flex' : 'none');
 	}
 
 	function checkHelperContent() {
