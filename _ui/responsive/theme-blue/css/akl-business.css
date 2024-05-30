@@ -3346,3 +3346,29 @@ background-repeat:no-repeat;}
 	.akl .amway-theme .tblList,
 	.akl .amway-theme .tblList tbody{display:block;}
 }
+
+/* S : 202406 비전보너스 신규 추가 */
+.visionbonus.container.business {margin-top: 60px;}
+.visionbonus.container.business .visionbonus-content .title-h2{color: #111; line-height: 1.2;}
+.visionbonus.container.business .visionbonus-content .title-h3{color: #111; line-height: 1.2; font-size: 20px; font-weight: 700;}
+.visionbonus.container .tabs-toggles .tab-toggle-wrap{}
+.visionbonus.container .tabs-toggles .tab-toggle-wrap .tab-toggle {}
+.visionbonus.container .tabs-toggles .tab-toggle-wrap .tab-toggle .toggle-text{font-size: 16px; font-weight:500; line-height:24px;}
+
+.visionbonus .title-h3 + div,
+.visionbonus .title-h3 + p {margin-top:16px}
+.visionbonus .title-wrap + .border-box,
+.visionbonus .title-wrap + .table-wrap{margin-top:24px}
+.visionbonus .border-box + .table-wrap, 
+.visionbonus .table-wrap + .border-box  {margin-top:16px}
+.visionbonus .box-group{margin-top: 50px;}
+.visionbonus .box-group.twins{display: flex; gap:24px;}
+.visionbonus .border-box{height:100px; background: #F9F9F9; border-radius: 16px;  display: flex; align-items: center; justify-content: center;}
+.visionbonus .toolTip-wrapper.tooltipNew .tooltip-content{top:27px}
+.visionbonus .toolTip-wrapper.tooltipNew .tooltip-content.left {left: 0;}
+
+@media(max-width:768px){
+	.visionbonus .toolTip-wrapper.type-mob-full .tipCont-wrapper .tooltip-content{width:calc(100vw - 30px)}
+  }
+/* E : 202406 비전보너스 신규 추가 */
+
