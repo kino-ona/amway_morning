@@ -16865,6 +16865,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	display:flex;
 	flex-wrap:wrap;
 	align-items:flex-end;
+	width: 100% !important;
 	border-bottom: none;
 	margin-top:105px;
 	border-bottom: 1px solid #D7D7D7 !important;
@@ -18940,7 +18941,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	}
 	.bsop_renew .box_sop-main.sh_bsop_renewal .box_sop-wrap.smart-order-tabs .box_sop-tab {
 		flex-wrap: nowrap;
-		width: fit-content;
+		width: fit-content !important;
 		margin: 20px 0 0;
 		border: none;
 		border-bottom: 1px solid #D7D7D7;
