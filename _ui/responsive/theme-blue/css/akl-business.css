@@ -3348,6 +3348,7 @@ background-repeat:no-repeat;}
 }
 
 /* S : 202406 비전보너스 신규 추가 */
+.visionbonus .mobile-only{display: none;}
 .visionbonus.container.business *{letter-spacing: 0;}
 .visionbonus.container.business {margin-top: 60px;}
 .visionbonus.container.business .title-h2{color: #111; line-height: 1.2;}
@@ -3360,62 +3361,123 @@ background-repeat:no-repeat;}
 .visionbonus.container .tabs-toggles .tab-toggle-wrap .tab-toggle .toggle-text{font-size: 16px; font-weight:500; line-height:1; color: #666;}
 .visionbonus.container .tabs-toggles .tab-toggle-wrap .tab-toggle:hover .toggle-text{color:#666;}
 .visionbonus.container .tabs-toggles .tab-toggle-wrap.active .tab-toggle .toggle-text{color: #567BF3;}
+.visionbonus p{margin-bottom: 0; line-height:26px;}
 .visionbonus .title-h3 + div,
-.visionbonus .title-h3 + p {margin-top:16px}
+.visionbonus .title-h3 + p {margin-top:16px; }
 .visionbonus .title-wrap + .border-box,
 .visionbonus .title-wrap + .table-wrap,
-.visionbonus .title-wrap + .table-scroll{margin-top:24px}
+.visionbonus .title-wrap + .table-scroll,
+.visionbonus .title-wrap + .info-box,
+.visionbonus .info-box + .table-wrap,
+.visionbonus .info-box + .table-scroll{margin-top:24px}
 .visionbonus .border-box + .table-wrap, 
 .visionbonus .table-wrap + .border-box  {margin-top:16px}
+.visionbonus .price-box + .info-box{margin-top: 60px;}
 .visionbonus .box-group{margin-top: 50px;}
 .visionbonus .box-group.twins{display: flex; gap:24px;}
 .visionbonus .box-group.twins > div {flex-grow: 1;}
 .visionbonus .border-box{height:100px; background: #F9F9F9; border-radius: 16px;  display: flex; align-items: center; justify-content: center;}
 .visionbonus .btn-box{text-align: center; margin-top: 40px;}
 
+.visionbonus .dot-list{margin-top: 16px;}
+.visionbonus .dot-list > li {padding-left: 11px; position: relative; font-size: 14px; line-height: 24px;}
+.visionbonus .dot-list > li::after{content: ''; display: block; width: 3px; height: 3px; background: #aaa; border-radius:50%; position: absolute; left: 0; top: 9px;}
+.visionbonus .price-box{text-align: center; margin-top: 28px;}
+.visionbonus .price-box .title{padding:16px; background: #F4F4F4; border-radius: 16px 16px 0 0; font-weight: 700;}
+.visionbonus .price-box .price-list {display: flex; border-radius:0 0 16px 16px; background:#FAFAFA; padding: 24px 0; justify-content: space-between; flex-wrap: wrap;}
+.visionbonus .price-box .price-list > li{display: flex; flex-direction: column; justify-content: center; padding: 0 24px; flex: 1 1 33.3%; min-height: 122px;}
+.visionbonus .price-box .price-list > li span{font-size: 16px; font-weight: 400; color: #111;}
+.visionbonus .price-box .price-list > li strong{font-size: 32px; color: #111; font-weight: 700; margin-top: 5px;}
+.visionbonus .price-box .price-list > li + li {border-left: 1px solid #D7D7D7;}
+
 .visionbonus .toolTip-wrapper.tooltipNew .tooltip-content{top:27px}
 .visionbonus .toolTip-wrapper.tooltipNew .tooltip-content.left {left: 0;}
 
-.visionbonus.container.business .tbl-list thead th{font-size: 14px; font-weight: 700; color: #666; background: #F4F4F4;}
-.visionbonus.container.business .tbl-list tbody th{background:#F9F9F9; text-align: center;}
-.visionbonus.container.business .tbl-list td{font-size:14px; color:#111; font-weight:400;}
+.visionbonus .basic-scroll{overflow-x: auto; overflow: hidden;}
+.visionbonus.container.business .tbl-list thead th{height: auto; line-height: 1.2; padding:16px 10px; font-size: 14px; font-weight: 700; color: #666; background: #F4F4F4;}
+.visionbonus.container.business .tbl-list tbody th{padding:16px 10px; background:#F9F9F9; text-align: center; font-weight:400; font-size: 14px; white-space:normal; word-break: break-all; color:#111;}
+.visionbonus.container.business .tbl-list td{font-size:14px; color:#111; font-weight:400; font-size: 14px; padding:16px 10px;}
+.visionbonus.container.business .tbl-list tfoot th,
+.visionbonus.container.business .tbl-list tfoot td{background: #F0F5FD;}
+.visionbonus.container.business .tbl-list tfoot th > strong {display: block; font-weight: 700; font-size: 14px;}
 .visionbonus .tbl-list td strong{display:block; font-weight: 700; font-size: 14px;}
 .visionbonus .tbl-list td p {margin:0}
 .visionbonus .tbl-list td > strong + p,
 .visionbonus .tbl-list td > strong + div,
 .visionbonus .tbl-list td > p + p,
 .visionbonus .tbl-list td > div + p{margin-top:4px;}
-
 .visionbonus .tbl-list td.border-left{border-left:1px solid #e3e3e3 !important;}
 .visionbonus .tbl-list td.border-right{border-right:1px solid #e3e3e3 !important;}
+.visionbonus.container.business .form-type .tbl-list tbody td{padding:8px 32px;}
+.visionbonus table.clone{z-index:10;}
+
+.checkbox-twin-wrap{width: calc(100% - 46px); display: flex;}
+.checkbox-twin-wrap > div {flex-grow: 1; text-align: left;}
+
+.visionbonus .tbl-list td .total-sum{font-size: 20px;}
 .visionbonus .number_text{display: flex; gap:16px; align-items: center; justify-content: center;}
 .visionbonus .info-box.twins{display: flex; justify-content: space-between;}
 
 .visionbonus [class^="point_"]{font-weight: 500;}
 .visionbonus .btn{border-radius: 8px;}
-.visionbonus .point_green{color:#00A656;}
-.visionbonus .point_yellow{color:#E6A30C;}
-.visionbonus .circle_num {display: inline-block; margin-right:4px; width: 16px; height: 16px; line-height:16px; background:#EBEBEB; border-radius:8px; font-size:12px; font-weight: 500;}
-.visionbonus .exclamation_txt > span{padding-left: 24px; line-height: 20px; color:#d7d7d7; font-size: 12px; background: url(/_ui/responsive/theme-blue/images/akl_common/business/ico_exclamation.png) no-repeat; background-size: 15px 15px; background-position: left center;}
+.visionbonus .btn.bt-akl-blue:hover{color: #fff; background-color: #002F5F; border-color: #002F5F; transition:none}
+.visionbonus .point-blue{color:#567BF3;}
+.visionbonus .point-green{color:#00A656;} 
+.visionbonus .point-yellow{color:#E6A30C;}
+.visionbonus .circle-num {display: inline-block; text-align: center; margin-right:4px; width: 16px; height: 16px; line-height:16px; background:#EBEBEB; border-radius:8px; font-size:12px; font-weight: 500;}
+.visionbonus .exclamation-txt > span{padding-left: 24px; line-height: 20px; color:#d7d7d7; font-size: 12px; background: url(/_ui/responsive/theme-blue/images/akl_common/business/ico_exclamation.png) no-repeat; background-size: 15px 15px; background-position: left center;}
 .visionbonus .bullet{display: inline-block; height: 28px; line-height: 28px; margin-right:8px; padding: 0 5px; font-size: 14px; font-weight:500; color:#999; border: 1px solid #ccc; border-radius:6px;}
-.visionbonus .bullet.blue{margin:0; border-color:#F0F5FD; background: #F0F5FD;}
-.visionbonus .bullet.gray{margin:0; border-color:#F9F9F9; background:#F9F9F9;}
+.visionbonus .bullet.blue{margin:0; padding: 0 12px; border-color:#F0F5FD; background: #F0F5FD;}
+.visionbonus .bullet.gray{margin:0; padding: 0 12px; border-color:#F9F9F9; background:#F9F9F9;}
 .visionbonus .bullet + .bullet{margin-left:8px;}
-.visionbonus .track-on{padding:0 12px 0 32px; color: #567BF3; background: url(/_ui/responsive/theme-blue/images/akl_common/business/ico_track_on.png) no-repeat; background-size: 16px 16px; background-position: 12px center;}
-.visionbonus .track-off{padding:0 12px 0 32px; color: #999; background: url(/_ui/responsive/theme-blue/images/akl_common/business/ico_track_off.png) no-repeat; background-size: 16px 16px; background-position: 12px center;}
+.visionbonus .track-on{display: inline-block; line-height:20px; text-align: left; padding-left:20px; color: #567BF3; background: url(/_ui/responsive/theme-blue/images/akl_common/business/ico_track_on.png) no-repeat; background-size: 16px 16px; background-position: left 1px;}
+.visionbonus .track-off{display: inline-block; line-height:20px; text-align: left; padding-left:20px; color: #999; background: url(/_ui/responsive/theme-blue/images/akl_common/business/ico_track_off.png) no-repeat; background-size: 16px 16px; background-position: left 1px;}
+.visionbonus .sub-info{display: block; font-size: 14px; color:#999; font-weight: 400;}
+.visionbonus .form_element-selectbox {width: 100%;}
+.visionbonus .form_element-selectbox .form-control{width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding:0 44px 0 16px; line-height:42px; border-radius: 10px; border-color: #D7D7D7; font-size: 16px; color: #181818; background: url(/_ui/responsive/theme-blue/images/akl_common/business/ico_visionbonus_select_arrow.png) no-repeat; background-size: 20px 20px; background-position:right 16px center ;}
+.visionbonus .form_element-selectbox .form-control[disabled]{color:#aaa; background: url(/_ui/responsive/theme-blue/images/akl_common/business/ico_visionbonus_select_arrow.png) no-repeat !important; background-size: 20px 20px !important; background-position:right 16px center !important;}
+.visionbonus .form_element-checkbox [type="checkbox"]:not(:checked) + label::before,
+.visionbonus .form_element-checkbox [type="checkbox"]:checked + label::before{border:1px solid #999; border-radius:50%;}
+.visionbonus .form_element-checkbox [type="checkbox"]:not(:checked) + label::before{background:#fff;}
+.visionbonus .form_element-checkbox [type="checkbox"]:checked + label::before{background:#567BF3; border-color:#567BF3;}
+.visionbonus .form_element-checkbox [type="checkbox"]:disabled + label::before{background:#D7D7D7 !important; border-color:#D7D7D7;}
+.visionbonus .form_element-checkbox [type="checkbox"]:disabled + label::after{opacity: 1;}
 
+.visionbonus.container.business  .form_element-checkbox [type="checkbox"] + label,
+.visionbonus.container.business  .form_element-checkbox [type="checkbox"]:checked + label,
+.visionbonus.container.business  .form_element-checkbox [type="checkbox"]:disabled + label{color:#111 !important}
+.visionbonus.container.business  .form_element-checkbox [type="checkbox"]:not(:checked) + label::after,
+.visionbonus.container.business  .form_element-checkbox [type="checkbox"]:checked + label::after{width:20px; height:20px; top:0; left:0; background-image: url(/_ui/responsive/theme-blue/images/akl_common/business/ico_visionbonus_check.png); background-size: 9px 6px; background-position: center center;}
+
+.visionbonus .form_element-textbox {width: 100%;}
+.visionbonus .form_element-textbox [type="text"]{width: 100%; color: #111; border-radius:10px; border-color: #D7D7D7; line-height: 42px; text-align: right;}
+.visionbonus .form_element-textbox [type="text"]:read-only{color:#ccc;}
 
 @media(max-width:768px){
+	/* 테이블 width */
+	.visionbonus .table-wrap.table-04 .tbl-list colgroup col{width:auto;}
+	.visionbonus .mobile-only{display: block;}
+	.visionbonus .table-scroll.basic-scroll .tbl-list th,
+	.visionbonus .table-scroll.basic-scroll .tbl-list td{min-width: 150px;}
 	.visionbonus .toolTip-wrapper.type-mob-full .tipCont-wrapper .tooltip-content{width:calc(100vw - 30px)}
 	.visionbonus.container .tabWrapper{margin:0 -15px}
 	.visionbonus.container .tabs-toggles .tab-toggle-wrap .tab-toggle .toggle-text{display: inline-block;}
 	.visionbonus.container .tabs-toggles .tab-toggle-wrap{background: none;}
 	.visionbonus.container .tabs-toggles .tab-toggle-wrap.active{border-top:none; border-color:#567BF3;}
 	.visionbonus.container .tabs-toggles .tab-toggle-wrap.active::after{content: none;}
+	.visionbonus.container .btn.bt-akl-blue{background-color: #002F5F; border-color: #002F5F;}
 
-	.visionbonus .table-scroll .tbl-list.clone tbody tr > th.fixed-side{
-        border-right: 1px solid #bbb;
-    }
+	.visionbonus .table-scroll .tbl-list.clone tr > th.fixed-side{border-right: 1px solid #bbb;}
+
+	.visionbonus.container.business .tbl-list thead th{padding:16px 5px}
+	.visionbonus.container.business  .form_element-checkbox [type="checkbox"]{width:20px; height: 20px;}
+	.visionbonus.container.business  .form_element-checkbox [type="checkbox"] + label{padding-left:25px; line-height:20px; min-height: initial;}
+	.visionbonus.container.business  .form_element-checkbox [type="checkbox"] + label::before,
+	.visionbonus.container.business  .form_element-checkbox [type="checkbox"]:checked + label::before,
+	.visionbonus.container.business  .form_element-checkbox [type="checkbox"]:disabled + label::before{width: 20px; height: 20px;}
+	.visionbonus.container.business  .form_element-checkbox [type="checkbox"] + label::after,
+	.visionbonus.container.business  .form_element-checkbox [type="checkbox"]:checked + label::after,
+	.visionbonus.container.business  .form_element-checkbox [type="checkbox"]:disabled + label::after{width:20px; height: 20px; top:0; left: 0;}
 
 	.visionbonus .tbl-list.grid-type {width: auto; flex: 1;	display: grid;	grid-template-columns:33.3% auto;}	  
 	.visionbonus .tbl-list.grid-type thead,
@@ -3444,10 +3506,14 @@ background-repeat:no-repeat;}
 	.visionbonus .info-box.twins .box-right{display: flex; gap: 8px;}
 	.visionbonus .info-box.twins .box-right > div { flex-basis: 50%; text-align: center;}
 	.visionbonus .info-box.twins .box-right > div + div{margin: 0;}
+	.visionbonus .info-box > .bullet{margin-left: 0; width: 100%;}
+	.visionbonus .info-box > .bullet + .bullet{margin-top: 8px;}
 	
 	.visionbonus .number_text{display: block;}
-	.visionbonus .circle_num{text-align: center;}
-	
+	.visionbonus .circle_num{text-align: center;}	
+	.visionbonus .table-scroll{min-width: 100px;}
+	.visionbonus .price-box .price-list{flex-direction: column; padding:0 32px}
+	.visionbonus .price-box .price-list > li + li {border-left: none; border-top: 1px solid #D7D7D7;}
 	
 	/* .visionbonus .tbl-list.grid-type tr.rowspan-type:nth-child(2){}
 	.visionbonus .tbl-list.grid-type tr.rowspan-type:nth-child(2) td:nth-child(1){grid-column: 1 / 2; grid-row: 3 / 5;}
