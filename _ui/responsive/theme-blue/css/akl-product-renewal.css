@@ -1226,7 +1226,52 @@ a[class^="btn_default-"].small {line-height:24px}
 
 
 /* 2020-10-08 주문서 cart 추가 */
-.cart_product-area.st_type02 .cart_product-floating {display: none;}
+/* 202405 것모닝 작업 - 말풍선 추가 */
+.cart_product-area.st_type02 .cart_product-floating {
+	position: relative;
+	display: none;
+}
+
+.cart_product-area.st_type02 .cart_product-floating .cart_product_message {
+	position: absolute;
+	top: -40px;
+	left: -64px;
+	padding: 8px 12px;
+	background: #FFF;
+	border-radius: 8px;
+	box-shadow: 6px 4px 16px 0 rgba(0, 0, 0, 0.2);
+	z-index: 3;
+	text-align: center;
+	font-size: 12px;
+	margin: 0;
+	font-weight: 500;
+	color: #000;
+	line-height: 20px;
+}
+.cart_product-area.st_type02 .cart_product-floating .cart_product_message span {
+	color: #018C51;	
+}
+.cart_product-area.st_type02 .cart_product-floating .cart_product_message::after {
+	content: '';
+	position: absolute;
+	left: 50%;
+	bottom: -6px;
+	transform: translateX(-50%);
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: url(/_ui/responsive/theme-blue/images/akl_plp/ico_tooltip_arrow_wt.png) center center no-repeat;
+	background-size: cover;
+	z-index: -1;
+}
+
+@media (max-width: 768px) {
+	.cart_product-area.st_type02 .cart_product-floating .cart_product_message {
+		display: none;
+	}
+}
+/* // 202405 것모닝 작업 - 말풍선 추가 */
+
 .akl.new-v2 main.with_foot_total .footer.footer_renewal .footer-cont1 .txt-cont {padding-bottom: 70px;}
 .cart_product-area.st_type02 .cart_action-area .cart_btn-area .cart_btn-col ~ .cart_btn-col{margin-left: 8px;}
 .cart_product-area.st_type02 .cart_action-area .cart_btn-col.product_add{display: none;} 
@@ -1240,9 +1285,53 @@ a[class^="btn_default-"].small {line-height:24px}
 .cart_product-area.st_type02.st_type02-2 .cart_product-list{border-top: 1px solid #d7d7d7;}
 .cart_product-area.st_type02.st_type02-2 .product_item {border-bottom: 1px solid #d7d7d7;border-bottom-color:#d7d7d7 !important;border-top: none !important;}
 .cart_product-area.st_type02.st_type02-2 .box_product.product_list-type {border-bottom: 9px solid #f9f9f9;}
-.cart_product-area.st_type02.st_type02-2 .box_total-floating {border-top: 1px solid #dedede;}
+.cart_product-area.st_type02.st_type02-2 .box_total-floating {position: relative; border-top: 1px solid #dedede;}
 .cart_product-area.st_type02.st_type02-2 .box_product.product_list-type .box_product-price .text_product-price.unit .price_contents .text_price-data ,
 .cart_product-area.st_type02.st_type02-2 .text_price-data{color: #002f5f;}
+
+/* 202405 것모닝 작업 - 말풍선 추가 */
+.cart_product-area.st_type02.st_type02-2 .box_total-floating .cart_product_message {
+	display: none;
+	position: absolute;
+	top: -28px;
+	left: 50%;
+	transform: translateX(-50%);
+	margin: 0;
+	padding: 4px 8px;
+	background: #FFF;
+	border-radius: 8px;
+	box-shadow: 6px 4px 16px 0 rgba(0, 0, 0, 0.2);
+	z-index: 3;
+	text-align: center;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 20px;
+	color: #000;
+	white-space: nowrap;
+	width: fit-content;
+}
+.cart_product-area.st_type02.st_type02-2 .box_total-floating .cart_product_message span {
+	color: #018C51;	
+}
+.cart_product-area.st_type02.st_type02-2 .box_total-floating .cart_product_message::after {
+	content: '';
+	position: absolute;
+	left: 50%;
+	bottom: -8px;
+	transform: translateX(-50%);
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: url(/_ui/responsive/theme-blue/images/akl_plp/ico_tooltip_arrow_wt.png) center center no-repeat;
+	background-size: cover;
+	z-index: -1;
+}
+@media (max-width: 768px) {
+	.cart_product-area.st_type02.st_type02-2 .box_total-floating .cart_product_message {
+		display: block;
+	}
+}
+/* // 202405 것모닝 작업 - 말풍선 추가 */
 
 @media (min-width: 769px){
 	.cart_product-area.st_type02.st_type02-2 .cart_product-list{border-top: none}
@@ -3058,6 +3147,61 @@ i.state-fail:before {transform:rotate(-45deg);-webkit-transform:rotate(-45deg)}
 .box_acliks-benefit .benefit-item ~ .benefit-item {margin-top:8px}
 .box_acliks-benefit .benefit-item .benefit-title {font-size:14px;line-height:20px;color:#999;font-weight:600}
 .box_acliks-benefit .benefit-item .benefit-data {position:relative;font-size:13px;line-height:20px;color:#002f5f;font-weight:600}
+
+/* 202405 것모닝 작업 - 말풍선 추가 */
+.box_acliks-benefit .benefit-item .benefit-data .cart_product_message {
+	position: absolute;
+	top: 50%;
+	left: -190px;
+	transform: translateY(-50%);
+	padding: 8px 12px;
+	background: #FFF;
+	border-radius: 8px;
+	box-shadow: 6px 4px 16px 0 rgba(0, 0, 0, 0.2);
+	z-index: 3;
+	text-align: center;
+	font-size: 12px;
+	margin: 0;
+	font-weight: 500;
+	color: #000;
+	line-height: 20px;
+}
+.box_acliks-benefit .benefit-item .benefit-data .cart_product_message span {
+	color: #018C51;	
+}
+.box_acliks-benefit .benefit-item .benefit-data .cart_product_message::after {
+	content: '';
+	position: absolute;
+	top: 53%;
+	right: -8px;
+	transform: translateY(-50%) rotate(-90deg);
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: url(/_ui/responsive/theme-blue/images/akl_plp/ico_tooltip_arrow_wt.png) center center no-repeat;
+	background-size: cover;
+	z-index: -1;
+}
+
+@media (max-width: 768px) {
+	.box_acliks-benefit .benefit-item .benefit-data .cart_product_message {
+		padding: 4px 8px;
+		width: fit-content;
+		top: unset;
+		left: 50%;
+		bottom: -35px;
+		transform: translate(-50%, 0);
+		white-space: nowrap;
+	}
+	.box_acliks-benefit .benefit-item .benefit-data .cart_product_message::after {
+		top: -8px;
+		left: 50%;
+		right: unset;
+		transform: translate(-50%, 0) rotate(-180deg);
+	}
+}
+/* // 202405 것모닝 작업 - 말풍선 추가 */
+
 .box_acliks-benefit .benefit-item .benefit-data .benefit-value {font-size:14px}
 .box_acliks-benefit .benefit-item .benefit-data .sp_order.sp-acliks {vertical-align:top;position:relative;top:-6px;margin-right:10px}
 .box_acliks-benefit .benefit-item .benefit-data .acliks-money {font-size:14px;color:#999}
@@ -3074,6 +3218,58 @@ i.state-fail:before {transform:rotate(-45deg);-webkit-transform:rotate(-45deg)}
 .akl .sop_title-area-b .btns .btn_default-link {position: relative;top: 5px;}
 .akl .btn_default-link {font-size:13px;color:#999;letter-spacing:-.6px;line-height:18px;background-color: #fff;padding-left: 0;padding-right: 0;}
 .akl .btn_default-link i {position:relative;top:-1px;margin-left:4px;vertical-align:middle}
+
+/* 202405 것모닝 작업 - 장바구니 스마트 오더 내역 페이지에 배너 추가 */
+.gutmorning_promotion_banner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 36px;
+	padding: 28px 0;
+	background: #F9F9F9;
+}
+.gutmorning_promotion_banner img {
+	width: 100px;
+	object-fit: cover;	
+}
+.gutmorning_promotion_banner p {
+	margin: 12px 0 8px;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 36px;
+	letter-spacing: -0.05em;
+	color: #0D8351;
+}
+.gutmorning_promotion_banner span {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 26px;
+	letter-spacing: -0.05em;
+	color: #000;
+	text-align: center;
+	white-space: pre-line;
+}
+
+@media (max-width: 768px) {
+	.gutmorning_promotion_banner {
+		padding: 28px 32px;
+	}
+	.gutmorning_promotion_banner img {
+		width: 80px;
+	}
+	.gutmorning_promotion_banner p {
+		font-size: 24px;
+	}
+	.gutmorning_promotion_banner span {
+		display: inline-block;
+		white-space: unset;
+		font-size: 14px;
+		line-height: 22px;
+		word-break: keep-all;
+	}
+}
+/* // 202405 것모닝 작업 - 장바구니 스마트 오더 내역 페이지에 배너 추가 */
 
 /* SOP 제품 목록  2020-12-07 수정 */ 
 .box_sop-cont .box_gift-article:before,
@@ -3092,11 +3288,11 @@ i.state-fail:before {transform:rotate(-45deg);-webkit-transform:rotate(-45deg)}
 	font-weight: 500;
 	border-radius: 6px;
 }
-.product_item--gutmorning .product_text-data .text_product-flag--secondary {
+.product_item--gutmorning .product_text-data .text_product-flag--pink {
 	border-color: #E400CD;
 	color: #E400CD;
 }
-.product_item--gutmorning .product_text-data .text_product-flag--tertiary {
+.product_item--gutmorning .product_text-data .text_product-flag--orange {
 	border-color: #F98113;
 	color: #F98113;
 }
@@ -17213,7 +17409,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 }
 .box_sop-promotion .promotion_button_wrap .button_container {
 	position: relative;
-	width: 50%;
+	width: 100%;
 }
 .box_sop-promotion .promotion_button_wrap  .button_container > button {
 	display: flex;
@@ -17351,13 +17547,16 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	width: 100%;
 	margin-bottom: 105px;
 }
+.box_sop-product-helper .accordion_wrap.sticky {
+	margin-bottom: 228px;
+}
 .box_sop-product-helper .accordion_wrap .accordion_list {
 	margin-bottom: 12px;
 	border-radius: 20px;
 	background: #F9F9F9;
 	overflow: hidden;
 }
-.box_sop-product-helper .accordion_wrap .accordion_list.accordion_list--first:nth-of-type(4),
+.box_sop-product-helper .accordion_wrap .accordion_list.accordion_list--first:nth-of-type(3),
 .box_sop-product-helper .accordion_wrap .accordion_list.accordion_list--second:last-of-type {
 	margin-bottom: 0;
 }
@@ -17664,6 +17863,13 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 .box_sop-product-helper .accordion_wrap .accordion_list.opened .accordion_header .accordion_btn_wrap {
 	display: flex;
 	margin-top: 20px;
+}
+.box_sop-product-helper .accordion_wrap .product_notice {
+	margin: 12px 0 0;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	color: #999;
 }
 .box_sop-product-helper .accordion_swiper {
 	width: 100%;
@@ -17990,7 +18196,16 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	z-index: 10;
 	box-shadow: 4px 12px 24px 0 rgba(0, 0, 0, 0.1);
 }
-
+.box_sop-product-helper .promotion_float_wrap.pc.sticky {
+	position: absolute;
+	bottom: -148px;
+	width: calc(100% + 140px);
+}
+@media (max-width: 1560px) {
+	.box_sop-product-helper .promotion_float_wrap.pc.sticky {
+		width: 100%;
+	}
+}
 .box_sop-product-helper .promotion_float_wrap.pc .promotion_total p {
 	display: flex;
 	align-items: center;
@@ -18421,7 +18636,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		padding-top: 0;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_info_wrap span {
-		font-size: 12px !important;
+		font-size: 14px !important;
 		line-height: 17.38px;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_info_wrap span.chk_product_num {
@@ -18557,6 +18772,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		flex-direction: column;
 		height: unset;
 		padding: 12px 0 0;
+		border: none;
 		border-top: 1px solid #EEE;
 		bottom: 0;
 		border-radius: 0;
