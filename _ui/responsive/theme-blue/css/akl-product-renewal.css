@@ -3349,9 +3349,17 @@ i.state-fail:before {transform:rotate(-45deg);-webkit-transform:rotate(-45deg)}
 		letter-spacing: -0.05em;
 	}
 	.product_item--gutmorning .product_text-data .text_product-up {
+		margin: 0;
 		font-size: 12px;
 		line-height: 17.38px;
 		letter-spacing: -0.05em;
+	}
+}
+@media (max-width: 319px) {
+	.product_item--gutmorning .product_text-data .text_product-up {
+		display: block;
+		width: fit-content;
+		margin-top: 6px;
 	}
 }
 /* // 202405 것모닝 작업 - 텍스트 옆 PV UP, 말풍선 */
