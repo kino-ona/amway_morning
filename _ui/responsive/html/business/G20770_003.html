@@ -413,14 +413,17 @@
     </main>
     <script>
         $(function () {
-            /*툴팁 클릭 후 다른 툴팁 클릭 시 다른 툴팁 닫힘*/
-            $('.visionbonus .btn-tooltip').click(function (e) {
-                let $currentToolTipWrapper = $(this).closest('.toolTip-wrapper');
-                let $otherOpenToolTips = $('.toolTip-wrapper').not($currentToolTipWrapper);
-                if ($otherOpenToolTips.hasClass('open')) {
-                    $otherOpenToolTips.removeClass('open').find('.tooltip-content').hide();
-                }
-            });
+            // 툴팁 클릭 시 다른 툴팁 닫기
+            let $btnTooltip = $('.visionbonus .btn-tooltip');
+            if ($btnTooltip.length) {
+                $btnTooltip.click(function () {
+                    let $currentToolTipWrapper = $(this).closest('.toolTip-wrapper');
+                    let $otherOpenToolTips = $('.toolTip-wrapper').not($currentToolTipWrapper);
+                    if ($otherOpenToolTips.hasClass('open')) {
+                        $otherOpenToolTips.removeClass('open').find('.tooltip-content').hide();
+                    }
+                });
+            }
         });
     </script>
 </body>
