@@ -3350,7 +3350,6 @@ background-repeat:no-repeat;}
 /* S : 202406 비전보너스 신규 추가 */
 .visionbonus .mobile-only{display: none;}
 .visionbonus .visionbonus-content{padding-bottom:80px;}
-/* .visionbonus.container.business *{letter-spacing: 0;} */
 .visionbonus.container.business {margin-top: 60px;}
 .visionbonus.container.business .title-h2{color: #111; line-height: 1.2;}
 .visionbonus.container.business .visionbonus-content .title-h3{color: #111; line-height: 1.2; font-size: 20px; font-weight: 700;}
@@ -3426,7 +3425,8 @@ background-repeat:no-repeat;}
 .visionbonus .tbl-list td .total-sum{font-size: 20px;}
 .visionbonus.container.business .tbl-list tr.point-gray th,
 .visionbonus.container.business .tbl-list tr.point-gray td{background:#F4F4F4;}
-.visionbonus.container.business .table09 .tbl-list tbody td{padding:8px 32px;}
+.visionbonus.container.business .table10 table tbody th,
+.visionbonus.container.business .table10 table tbody td {padding:8px 32px;}
 .visionbonus table.clone{z-index:10;}
 
 .visionbonus [class^="point_"]{font-weight: 500;}
@@ -3477,10 +3477,6 @@ background-repeat:no-repeat;}
 .visionbonus .simplify-price > span  + .price-unit,
 .visionbonus .simplify-price > .price-unit + span{margin-left:4px}
 
-/* 계산기 테이블 */
-.visionbonus.container.business .table-scroll.table09 table colgroup col:nth-child(1){width:12.5%;}
-.visionbonus.container.business .table-scroll.table09 table colgroup col:nth-child(2){width:12.5%;}
-
 @media (min-width: 768px) and (max-width: 1060px){
 	.visionbonus .checkbox-wrap.twin{width:100%;}
 	.visionbonus .mobile-only{display: block;}
@@ -3488,15 +3484,19 @@ background-repeat:no-repeat;}
 	/* 비전보너스 설명 - 수혜조건 테이블 */
 	.visionbonus .table01 .tbl-list tbody tr + tr td .number_text{display: block;}
 
+	/* 비전보너스 설명 - 보너스 계산 예시 */
+	.visionbonus.container.business .table05 table colgroup col:nth-child(1){width:15%;}
+	.visionbonus.container.business .table05 table colgroup col:nth-child(2){width:15%;}
+
 	/* 비전보너스 조회 - 조회 테이블 */
-	.visionbonus.container.business .table08 table colgroup col:nth-child(1){width:135px;}
-	.visionbonus.container.business .table08 table colgroup col:nth-child(2){width:78px;}
+	.visionbonus.container.business .table09 table colgroup col:nth-child(1){width:135px;}
+	.visionbonus.container.business .table09 table colgroup col:nth-child(2){width:78px;}
 
 	/* 비전보너스 계산 - 계산기 테이블 */
-	.visionbonus.container.business .table-scroll.table09 table colgroup col:nth-child(1){width:135px;}
-	.visionbonus.container.business .table-scroll.table09 table colgroup col:nth-child(2){width:80px;}
-	.visionbonus.container.business .table-scroll.table09 table tbody th,
-	.visionbonus.container.business .table-scroll.table09 table tbody td {padding:8px 15px;}
+	.visionbonus.container.business .table10 table colgroup col:nth-child(1){width:135px;}
+	.visionbonus.container.business .table10 table colgroup col:nth-child(2){width:80px;}
+	.visionbonus.container.business .table10 table tbody th,
+	.visionbonus.container.business .table10 table tbody td {padding:8px 15px;}
 }
 	
 
@@ -3565,30 +3565,41 @@ background-repeat:no-repeat;}
 	.visionbonus .info-tooltip{width:100%;}
 
 	/* 비전보너스 조회 - 대상자 테이블 */
-	.visionbonus .table05 .tbl-list colgroup col:nth-child(1){width:35%;}
-	.visionbonus .table05 .tbl-list colgroup col:nth-child(2){width:45%;}
-	.visionbonus .table05 .tbl-list colgroup col:nth-child(3){width:20%;}
-
-	/* 비전보너스 조회 - 수혜 조건 테이블 */
 	.visionbonus .table06 .tbl-list colgroup col:nth-child(1){width:35%;}
 	.visionbonus .table06 .tbl-list colgroup col:nth-child(2){width:45%;}
 	.visionbonus .table06 .tbl-list colgroup col:nth-child(3){width:20%;}
 
+	/* 비전보너스 조회 - 수혜 조건 테이블 */
+	.visionbonus .table07 .tbl-list colgroup col:nth-child(1){width:35%;}
+	.visionbonus .table07 .tbl-list colgroup col:nth-child(2){width:45%;}
+	.visionbonus .table07 .tbl-list colgroup col:nth-child(3){width:20%;}
+
+	/* 비전보너스 설명 - 보너스 계산 예시 */
+	.visionbonus.container.business .table05 table {table-layout: fixed;}
+	.visionbonus.container.business .table05 table colgroup col:nth-child(1){width:90px;}
+	.visionbonus.container.business .table05 table colgroup col:nth-child(2){width:90px;}
+	.visionbonus.container.business .table05 table colgroup col:nth-child(3){width:160px;}
+	.visionbonus.container.business .table05 table colgroup col:nth-child(4),
+	.visionbonus.container.business .table05 table colgroup col:nth-child(5),
+	.visionbonus.container.business .table05 table colgroup col:nth-child(6),
+	.visionbonus.container.business .table05 table colgroup col:nth-child(7){width:80px;}
+	.visionbonus.container.business .table05 table colgroup col:nth-child(8){width: 200px;}
+
 	/* 비전보너스 조회 - 조회 테이블 */
-	.visionbonus.container.business .table08 table{table-layout: fixed;}
-	.visionbonus.container.business .table08 table colgroup col:nth-child(1){width:135px;}
-	.visionbonus.container.business .table08 table colgroup col:nth-child(2){width:78px;}
-	.visionbonus.container.business .table-scroll.table08 table colgroup col:nth-child(3),
-	.visionbonus.container.business .table-scroll.table08 table colgroup col:nth-child(4),
-	.visionbonus.container.business .table-scroll.table08 table colgroup col:nth-child(5){min-width:180px; width: 180px}
+	.visionbonus.container.business .table09 table{table-layout: fixed;}
+	.visionbonus.container.business .table09 table colgroup col:nth-child(1){width:135px;}
+	.visionbonus.container.business .table09 table colgroup col:nth-child(2){width:78px;}
+	.visionbonus.container.business .table09 table colgroup col:nth-child(3),
+	.visionbonus.container.business .table09 table colgroup col:nth-child(4),
+	.visionbonus.container.business .table09 table colgroup col:nth-child(5){min-width:180px; width: 180px}
 	
 	/* 비전보너스 계산 - 계산기 테이블 */
-	.visionbonus.container.business .table-scroll.table09 table {table-layout: fixed;}
-	.visionbonus.container.business .table-scroll.table09 table colgroup col:nth-child(1){width:135px;}
-	.visionbonus.container.business .table-scroll.table09 table colgroup col:nth-child(2){width:78px;}
-	.visionbonus.container.business .table-scroll.table09 table colgroup col:nth-child(3),
-	.visionbonus.container.business .table-scroll.table09 table colgroup col:nth-child(4),
-	.visionbonus.container.business .table-scroll.table09 table colgroup col:nth-child(5){min-width:250px; width: 250px}	
+	.visionbonus.container.business .table10 table {table-layout: fixed;}
+	.visionbonus.container.business .table10 table colgroup col:nth-child(1){width:135px;}
+	.visionbonus.container.business .table10 table colgroup col:nth-child(2){width:78px;}
+	.visionbonus.container.business .table10 table colgroup col:nth-child(3),
+	.visionbonus.container.business .table10 table colgroup col:nth-child(4),
+	.visionbonus.container.business .table10 table colgroup col:nth-child(5){min-width:250px; width: 250px}	
   }
 /* E : 202406 비전보너스 신규 추가 */
 
