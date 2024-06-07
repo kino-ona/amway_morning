@@ -3652,6 +3652,8 @@ background-repeat:no-repeat;}
 	.visionbonus .title-wrap.btn-type .btn-box{position: static; margin-top:16px; text-align: left;}
 	.visionbonus .info-tooltip{width:100%;}
 
+	.visionbonus .btn-sum.fixed{position: fixed; bottom: 0; left:0; width:100%; z-index: 300;}
+
 	/* 비전보너스 조회 - 대상자 테이블 */
 	.visionbonus .table06 .tbl-list colgroup col:nth-child(1){width:35%;}
 	.visionbonus .table06 .tbl-list colgroup col:nth-child(2){width:45%;}

@@ -96,6 +96,35 @@
                 </div>
                 <div class="tab-content">
                     <section class="visionbonus-content">
+                        <!-- mobile ui 변경 예정... check box -->
+                        <div class="test-area">
+                            <div class="checkbox-wrap test" style="background: none;">
+                                <div class="form_element-checkbox">
+                                    <input type="checkbox" id="chk-test-1">
+                                    <label for="chk-test-1" class="sp_chk focus">2025년도</label>
+                                </div>
+                                <div class="form_element-checkbox">
+                                    <input type="checkbox" id="chk-test-2">
+                                    <label for="chk-test-2" class="sp_chk focus">2026년도</label>
+                                </div>
+                                <div class="form_element-checkbox">
+                                    <input type="checkbox" id="chk-test-3">
+                                    <label for="chk-test-3" class="sp_chk focus">2027년도</label>
+                                </div>
+                            </div>
+                            <div class="table-area test">
+                                <div class="table-group" style="height: 300px; background: red;">
+                                    1 번 박스
+                                </div>
+                                <div class="table-group" style="height: 300px; background: blue; display: none;">
+                                    2 번 박스
+                                </div>
+                                <div class="table-group" style="height: 300px; background: yellow; display: none;">
+                                    3번 박스
+                                </div>
+                            </div>
+                        </div>
+
                         <!-- 비전보너스 계산 -->
                         <article class="box-group">
                             <div class="title-wrap btn-type">
@@ -400,8 +429,8 @@
                                     </table>
                                 </div>
                             </div>
-                            <div class="btn-box">
-                                <button class="btn bt-akl-blue"><span>비전보너스 계산 하기</span></button>
+                            <div class="btn-box btn-sum-area">
+                                <button class="btn bt-akl-blue btn-sum"><span>비전보너스 계산 하기</span></button>
                             </div>
                         </article>
                     </section>
@@ -413,6 +442,78 @@
     </main>
     <script>
         $(function () {
+            function Mobile() {
+                var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+                var isMobileWidth = $(window).width() <= 768;
+                return isMobile && isMobileWidth;
+            }
+
+            // mobile btn 플로팅  - 작업 중....
+            function mobileBtnfloating() {
+                if (Mobile()) {
+                    let $btnSum = $('.visionbonus .btn-sum');
+                    let btnAreaOffset = $('.visionbonus .btn-sum-area').offset().top;
+                    let hasFixedClass = true;
+                    let scrollTop = $(window).scrollTop();
+                    let windowHeight = $(window).height();
+                    let btnSumOffset = $btnSum.offset().top;
+
+                    // load setting
+                    if (scrollTop + windowHeight >= btnAreaOffset && hasFixedClass) {
+                        $btnSum.removeClass("fixed");
+                        hasFixedClass = false;
+                    } else if (scrollTop + windowHeight < btnAreaOffset) {
+                        $btnSum.addClass("fixed");
+                        hasFixedClass = true;
+                    }
+                    // start : 확정버전 아님..
+                    // load setting - checkbox
+                    $('.checkbox-wrap.test input[type="checkbox"]').eq(0).prop('checked', true);
+                    $('.table-area.test .table-group').eq(0).css('display', 'block');
+                    btnAreaOffset = $('.visionbonus .btn-sum-area').offset().top;
+
+                    // check box event
+                    $('.checkbox-wrap.test input[type="checkbox"]').on('change', function () {
+                        let checkedBoxes = $('.checkbox-wrap.test input[type="checkbox"]:checked');
+                        if (checkedBoxes.length === 0) {
+                            alert('최소 하나의 체크박스를 선택해야 합니다.');
+                            $(this).prop('checked', true);
+                            return;
+                        } else {
+                            $('.table-group').css('display', 'none');
+                            checkedBoxes.each(function () {
+                                let index = $(this).closest('.form_element-checkbox').index();
+                                $('.table-group').eq(index).css('display', 'block');
+                            });
+                        }
+                        // btn 영역 offset() 다시 설정
+                        btnAreaOffset = $('.visionbonus .btn-sum-area').offset().top;
+                    });
+                    // end : 확정버전 아님..
+
+                    // scroll event
+                    $(window).on("scroll", function () {
+                        scrollTop = $(window).scrollTop();
+                        windowHeight = $(window).height();
+                        btnSumOffset = $btnSum.offset().top;
+
+                        if (scrollTop + windowHeight >= btnAreaOffset && hasFixedClass) {
+                            $btnSum.removeClass("fixed");
+                            hasFixedClass = false;
+                        } else if (scrollTop + windowHeight < btnAreaOffset && !hasFixedClass) {
+                            $btnSum.addClass("fixed");
+                            hasFixedClass = true;
+                        }
+                    });
+                }
+            }
+
+            mobileBtnfloating();
+
+            $(window).on("resize", function () {
+                mobileBtnfloating();
+            });
+
             // 툴팁 클릭 시 다른 툴팁 닫기
             let $btnTooltip = $('.visionbonus .btn-tooltip');
             if ($btnTooltip.length) {
