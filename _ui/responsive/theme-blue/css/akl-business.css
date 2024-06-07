@@ -3477,19 +3477,66 @@ background-repeat:no-repeat;}
 .visionbonus .simplify-price > span  + .price-unit,
 .visionbonus .simplify-price > .price-unit + span{margin-left:4px}
 
-.visionbonus .diagram_inner{display: flex; padding:40px 0; justify-content: center;}
-.visionbonus .diagram_inner > div {display:flex; flex-direction: column; justify-content: center; text-align: center; width:40%; max-width:160px; border-radius:50%; aspect-ratio:1;}
-.visionbonus .diagram_inner .modify{padding:0 20px; width:auto; max-width: none; aspect-ratio:initial}
-.visionbonus .diagram_inner.fq .bouns{border: 1px solid #00A656; color:#00A656; background:#fff;}
-.visionbonus .diagram_inner.fq .ratio{color:#fff; background:#01D67C; border:15px solid #34de96;}
-.visionbonus .diagram_inner.qc .bouns{border: 1px solid #FF9F2E; color:#FF9F2E;  background:#fff;}
-.visionbonus .diagram_inner.qc .ratio{color:#fff; background:#FF9F2E; border:15px solid #ffb258;}
+.visionbonus .border-box .multiplication{padding:0 20px; position: relative; width:32px; height:32px; box-sizing: content-box;}
+.visionbonus .border-box .multiplication > p{position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0;}
+.visionbonus .border-box .multiplication::before,
+.visionbonus .border-box .multiplication::after{content:''; display: block; width:18px; height:2px; background-color:#999; position: absolute; border-radius:1px; transform-origin: center;}
+.visionbonus .border-box .multiplication::before{transform: rotate(45deg); top: 50%; left:38%;}
+.visionbonus .border-box .multiplication::after{transform: rotate(-45deg); top: 50%; left:38%;}
+
+.visionbonus .border-box .equal{position: relative; width:32px; height:32px; padding:0 20px; box-sizing: content-box;}
+.visionbonus .border-box .equal > p{position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0;}
+.visionbonus .border-box .equal::before,
+.visionbonus .border-box .equal::after{content: ''; display: block; position: absolute; left:50%; transform: translateX(-50%); width: 12px; height: 2px; border-radius:2px; background:#999;}
+.visionbonus .border-box .equal::before{top:13px}
+.visionbonus .border-box .equal::after{top:19px}
+
+.visionbonus .result-box {width:25%; max-width:242px; aspect-ratio: 1;  box-sizing: content-box; background:url(/_ui/responsive/theme-blue/images/akl_common/business/bg_visionbonus.png) no-repeat; background-size: contain; background-position: center;}
+.visionbonus .result-box > p{position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0;}
+
+.visionbonus .amount-inner{display: flex; padding:40px 0; justify-content: center; align-items: center;}
+.visionbonus .amount-inner > div {display:flex; flex-direction: column; justify-content: center; text-align: center; width:40%; max-width:160px; border-radius:50%; aspect-ratio:1;}
+.visionbonus .amount-inner.fq .bouns{border: 1px solid #00A656; color:#00A656; background:#fff;}
+.visionbonus .amount-inner.fq .ratio{color:#fff; background:#01D67C; border:15px solid #34de96;}
+.visionbonus .amount-inner.qc .bouns{border: 1px solid #FF9F2E; color:#FF9F2E;  background:#fff;}
+.visionbonus .amount-inner.qc .ratio{color:#fff; background:#FF9F2E; border:15px solid #ffb258;}
+
+.visionbonus .subjects-inner{padding:60px 0;}
+.visionbonus .category-box {position: relative; max-width:736px; margin:0 auto; display: flex; gap: 20px; justify-content: center; align-items: center; border-radius:999px;}
+.visionbonus .category-box.growth {padding:48px 32px; border:1px solid #567BF3;}
+.visionbonus .category-box.benefit{ padding:16px; border: 1px dashed #01D67C;}
+.visionbonus .category-box .title{display:inline-block; height:40px; line-height:42px; position: absolute; top:-20px; left:50%; transform: translateX(-50%); color:#fff; border-radius:999px; text-align: center; }
+.visionbonus .category-box .title.blue{width:328px;background:#567BF3; font-size: 18px; font-weight: 700;}
+.visionbonus .category-box .title.green{width:100px; background:#01D67C; top: initial; bottom: -20px; font-size: 14px; font-weight: 500;} 
+
+.visionbonus .circle-box {display: flex; flex-direction: column;  justify-content: center; align-items: center; width:200px; max-width:200px; aspect-ratio:1; border-radius:50%; color: #fff;}
+.visionbonus .circle-box > strong{font-size: 36px; line-height:40px; font-weight:700;}
+.visionbonus .circle-box > span {font-size:24px; line-height: 24px; font-weight: 500;}
+.visionbonus .circle-box.blue{background:#567BF3; border:15px solid #7895f5;}
+.visionbonus .circle-box.green{background:#01D67C;}
+.visionbonus .circle-box.white{background:#fff; border: 2px dashed #567BF380}
+.visionbonus .circle-box.white > strong {color:#567BF3; font-size:40px;}
+.visionbonus .circle-box.white > span {color:#999; font-size:16px; font-weight:500; text-align: center;}
+
+.visionbonus .bonus-inner {display: flex; justify-content: center; align-items: center; padding:60px 0;}
+.visionbonus .bonus-inner .category-box{max-width:min-content; margin:0; padding:16px; background:#F0F5FD; border:1px solid #567BF3;}
+.visionbonus .bonus-inner .category-box .title{width:124px;}
+.visionbonus .bonus-inner .circle-box.blue > span{font-size: 24px;}
+.visionbonus .txt-or{font-size:14px; font-weight:400; color:#567BF3;}
 
 
-@media (min-width: 768px) and (max-width: 1060px){
+@media (min-width: 768px) and (max-width: 1100px){
 	.visionbonus .checkbox-wrap.twin{width:100%;}
 	.visionbonus .mobile-only{display: block;}
+	.visionbonus .border-box .multiplication{padding:0 10px;}
+	.visionbonus .border-box .multiplication::before,
+	.visionbonus .border-box .multiplication::after{left:32%;}
+	.visionbonus .border-box .equal{padding:0 10px;}
 
+	.visionbonus .bonus-inner .circle-box{max-width:150px;}
+	.visionbonus .bonus-inner .result-box{max-width:150px; background-size: contain;}
+	.visionbonus .bonus-inner .category-box{width:50%;}
+	
 	/* 비전보너스 설명 - 수혜조건 테이블 */
 	.visionbonus .table01 .tbl-list tbody tr + tr td .number_text{display: block;}
 
@@ -3509,7 +3556,39 @@ background-repeat:no-repeat;}
 }
 	
 
-@media(max-width:768px){	
+@media(max-width:768px){
+	.visionbonus .subjects-inner{padding:41px 20px 20px;}
+	.visionbonus .category-box .circle-container{width:100%;}
+	.visionbonus .category-box.growth{flex-direction: column; padding:20px; border-radius:76px; gap:20px;}
+	.visionbonus .category-box.benefit{gap:8px;}
+	.visionbonus .category-box .title{height:26px; line-height: 28px; top:-13px}
+	.visionbonus .category-box .title.blue{width:114px; font-size:14px; font-weight:500;}
+	.visionbonus .category-box .title.green{bottom:initial; width:76px; font-size:14px; font-weight:500; top:-13px}
+	.visionbonus .circle-box{max-width:110px;}
+	.visionbonus .circle-box > strong{font-size: 24px; line-height:28px;}
+	.visionbonus .circle-box > span {font-size:13px; line-height: 19px;}
+	.visionbonus .circle-box.blue{border-width:10px; width: 40%; margin: 0 auto;}
+	.visionbonus .circle-box.green{width: 44.35%;}
+
+	.visionbonus .border-box .multiplication{padding:0 8px; width:24px; height: 24px;}
+	.visionbonus .border-box .multiplication::before,
+	.visionbonus .border-box .multiplication::after{left:30%}
+
+	.visionbonus .amount-inner > div{max-width:124px;}
+	.visionbonus .amount-inner.fq .ratio,
+	.visionbonus .amount-inner.qc .ratio{border-width: 10px;}
+
+	.visionbonus .bonus-inner{flex-direction: column; padding:28px 13px;}
+	.visionbonus .bonus-inner .category-box{width:100%; padding:10px; gap:0; margin-top:14px;}
+	.visionbonus .bonus-inner .category-box .circle-box {max-width:124px;}
+	.visionbonus .bonus-inner .circle-box.blue{max-width:124px; width:100%;}
+	.visionbonus .bonus-inner .circle-box.blue > span{font-size:18px;}
+	.visionbonus .bonus-inner .circle-box.white > strong {font-size: 24px;}
+	.visionbonus .bonus-inner .circle-box.white > span {font-size: 13px;}
+	.visionbonus .bonus-inner .result-box{width:124px;}	
+	.visionbonus .txt-or{padding:0 5px; font-size:12px;}
+	
+
 	.visionbonus .toolTip-wrapper.type-mob-full .tipCont-wrapper .tooltip-content{top:initial}
 	.visionbonus .mobile-only{display: block;}
 	.visionbonus .table-scroll.basic-scroll .tbl-list th,
