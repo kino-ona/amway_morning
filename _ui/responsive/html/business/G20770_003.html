@@ -124,6 +124,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- //mobile ui 변경 예정... check box -->
 
                         <!-- 비전보너스 계산 -->
                         <article class="box-group">
@@ -445,7 +446,7 @@
             function Mobile() {
                 var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
                 var isMobileWidth = $(window).width() <= 768;
-                return isMobile && isMobileWidth;
+                return isMobile || isMobileWidth;
             }
 
             // mobile btn 플로팅  - 작업 중....
