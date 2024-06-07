@@ -1495,13 +1495,13 @@
 .box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_notice p {
     margin: 0;
     font-size: 12px;
-    font-weight: 500;
     line-height: 21.6px;
     letter-spacing: -0.05em;
-    color: #4E4021;
+    color: #7C6229;
 }
 .box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_notice p span {
     color: #4E4021;
+    font-weight: 500;
 }
 /* // 202405 것모닝 작업 - 장스오 홈 상단 비주얼 개선 */
 
@@ -1547,6 +1547,7 @@
 .box_sop-visual.box_sop-home.st_type2.v_04 .container .visual_area.visual_area_mo {display: block;}
 
 .box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .a-cliks-logo {
+    margin-top: 40px;
     padding: 0 28px;
     background-image: unset;
     font-size: 34px;

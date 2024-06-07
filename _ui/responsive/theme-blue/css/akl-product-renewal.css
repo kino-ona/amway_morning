@@ -1683,7 +1683,7 @@ a[class^="btn_default-"].small {line-height:24px}
 	background-size: cover;
 }
 .box_sop-cont .promotion_banner_top .promotion_banner_title h2 span {
-	color: #F9DB13;
+	color: #FFF226;
 }
 .box_sop-cont .promotion_banner_top .promotion_desc {
 	margin: 12px 0 8px;
@@ -17391,7 +17391,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	background-size: cover;
 }
 .box_sop-promotion .promotion_banner_container .promotion_banner_top .promotion_banner_title h2 span {
-	color: #F9DB13;
+	color: #FFF226;
 }
 .box_sop-promotion .promotion_banner_container .promotion_banner_top .promotion_desc {
 	margin: 12px 0 0;
@@ -17399,7 +17399,6 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 26px;
-	letter-spacing: -0.05em;
 	white-space: pre-line;
 }
 .box_sop-promotion .promotion_banner_container .promotion_banner_top .promotion_date {
@@ -17990,8 +17989,8 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	height: 100%;
 	padding: 73px 32px 72px 76px;
 	cursor: pointer;
-	background: url(/_ui/responsive/theme-blue/images/akl_plp/img_protein.png) calc(100% - 32px) center no-repeat #FFF;
-	background-size: 140px;
+	background: url(/_ui/responsive/theme-blue/images/akl_plp/img_step01_1.png) calc(100% - 32px) center no-repeat #FFF;
+	background-size: 200px;
 	border-radius: 20px;
 	border: 2px solid transparent;
 	font-size: 22px;
@@ -18002,12 +18001,12 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 .box_sop-product-helper .accordion_wrap .accordion_body .accordion_contents.accordion_first input[type='radio'] + label p {
 	width: 100%;
 	margin: 0;
-	padding-right: 140px;
+	padding-right: 200px;
 	word-break: keep-all;
 }
 .box_sop-product-helper .accordion_wrap .accordion_body .accordion_contents.accordion_first .checkbox_wrap:nth-of-type(2) input[type='radio'] + label  {
-	background: url(/_ui/responsive/theme-blue/images/akl_plp/img_nutrilite.png) calc(100% - 32px) center no-repeat #FFF;
-	background-size: 140px;
+	background: url(/_ui/responsive/theme-blue/images/akl_plp/img_step01_2.png) calc(100% - 32px) center no-repeat #FFF;
+	background-size: 200px;
 }
 .box_sop-product-helper .accordion_wrap .accordion_body .accordion_contents.accordion_first input[type='radio']:checked + label {
 	border-color: #018C51;
@@ -18322,7 +18321,6 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 .box_sop-product-helper .promotion_float_wrap {
 	position: fixed;
 	left: 50%;
-	bottom: 0;
 	transform: translateX(-50%);
 	display: flex;
 	align-items: center;
@@ -18395,7 +18393,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	max-width: 1540px;
 	height: 108px;
 	padding: 28px 8px 28px 40px;
-	transition: all 0.2s ease-in-out;
+	transition: unset;
 	border: 1px solid #018C51;
 	border-radius: 20px;
 	background: #FFF;
@@ -18591,7 +18589,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		margin-bottom: 24px;
 	}
 	.box_sop-promotion .promotion_banner_container .promotion_banner_top {
-		padding: 32px 32px 89.4% 20px;
+		padding: 32px 32px 80.7% 20px;
 		background: url(/_ui/responsive/theme-blue/images/akl_plp/bg_gutmorning_promotion_m.png) center bottom no-repeat #00BE59;
 		background-size: contain;
 	}
@@ -18599,7 +18597,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		padding: 0;
 		font-size: 28px;
 		line-height: 38px;
-		letter-spacing: -0.05em;
+		letter-spacing: normal;
 		max-width: 220px;
 		white-space: normal;
 	}
@@ -18617,7 +18615,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	}
 	.box_sop-promotion .promotion_banner_container .promotion_banner_top .promotion_banner_title::after {
 		top: 39px;
-		right: 90px;
+		right: 83px;
 		width: 10px;
 		height: 36px;
 		margin-left: 2px;
@@ -18627,7 +18625,8 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		margin-top: 4px;
 		padding: 0 20px 0 12px;
 		font-size: 14px;
-		line-height: 20px;
+		line-height: 22px;
+		letter-spacing: normal;
 		word-break: keep-all;
 	}
 	.box_sop-promotion .promotion_banner_container .promotion_banner_top .promotion_date {
@@ -18691,7 +18690,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	}
 	.box_sop-product-helper .product_helper_banner {
 		margin-bottom: 40px;
-		padding: 24px 24px 55.5% 24px;
+		padding: 24px 24px 54.3% 24px;
 		background: url(/_ui/responsive/theme-blue/images/akl_plp/bg_gutmorning_helper_m.png) bottom center no-repeat #00BE59;
 		background-size: contain;
 	}
@@ -18745,6 +18744,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		padding: 0 20px;
 		font-size: 12px;
 		line-height: 17.38px;
+		letter-spacing: -0.05em;
 		z-index: 2;
 	}
 	.box_sop-product-helper .product_helper_title p:nth-of-type(2) {
@@ -18784,6 +18784,8 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		padding: 20px 16px;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_header .accordion_title_wrap p {
+		margin-bottom: 4px;
+		padding-right: 40px;
 		font-size: 14px;
 		line-height: 20px;
 	}
@@ -18841,10 +18843,10 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	.box_sop-product-helper .accordion_wrap .accordion_info_wrap {
 		position: unset;
 		flex-direction: row;
-		flex-wrap: wrap;
 		align-items: center;
 		justify-content: space-between;
 		transform: unset;
+		gap: 6px;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_list.opened .accordion_info_wrap {
 		padding-top: 20px;
@@ -18873,6 +18875,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_info_wrap span.chk_product_name {
 		max-width: 188px;
+		flex: 1;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_list.opened .accordion_info_wrap span.chk_product_num {
 		padding-left: 0;
