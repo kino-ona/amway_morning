@@ -38,7 +38,7 @@ gulp.task('serv', () => {
 	browser.init({
         server: {
             baseDir: './',
-			index: './_ui/publishing_guide.html'
+			index: './_ui/publishing_guide_2024.html'
         },
 		ghostMode: false,
 		open: "external"
