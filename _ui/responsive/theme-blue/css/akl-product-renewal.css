@@ -17749,10 +17749,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 }
 .box_sop-product-helper .accordion_wrap {
 	width: 100%;
-	margin-bottom: 105px;
-}
-.box_sop-product-helper .accordion_wrap.sticky {
-	margin-bottom: 228px;
+	padding-bottom: 228px;
 }
 .box_sop-product-helper .accordion_wrap .accordion_list {
 	margin-bottom: 12px;
@@ -18102,10 +18099,13 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	left: 0;
 }
 .box_sop-product-helper .accordion_swiper .accordion_product_wrap input[type="checkbox"] + label {
-	position: absolute;
+	/* position: absolute;
 	top: 16px;
-	left: 16px;
+	left: 16px; */
+	display: flex;
+	flex-direction: column;
 	margin: 0;
+	padding: 0;
 }
 .box_sop-product-helper .accordion_swiper .accordion_product_wrap input[type="checkbox"] + label::before,
 .box_sop-product-helper .accordion_swiper .accordion_product_wrap input[type="checkbox"] + label::after {
@@ -18198,7 +18198,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	border-radius: 4px;
 }
 .box_sop-product-helper .accordion_swiper .accordion_product_wrap .product_btn button {
-	padding: 20px;
+	padding: 0 20px;
 	background: url(/_ui/responsive/theme-blue/images/akl_plp/ico_button_minus.png) center center no-repeat;
 	background-size: 12px;
 	font-size: 0;
@@ -18213,6 +18213,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 }
 .box_sop-product-helper .accordion_swiper .accordion_product_wrap .product_btn span {
 	flex: 1;
+	text-align: center;
 	padding: 10px 0;
 }
 .box_sop-product-helper .swiper-scrollbar {
@@ -18382,14 +18383,14 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 }
 
 .box_sop-product-helper .promotion_float_wrap.pc {
-	position: fixed;
+	position: absolute;
 	left: 50%;
-	bottom: 40px;
+	bottom: 80px;
 	transform: translateX(-50%);
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	width: calc(100% - 20px);
+	width: calc(100% + 140px);
 	max-width: 1540px;
 	height: 108px;
 	padding: 28px 8px 28px 40px;
@@ -18401,13 +18402,14 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	box-shadow: 4px 12px 24px 0 rgba(0, 0, 0, 0.1);
 }
 .box_sop-product-helper .promotion_float_wrap.pc.sticky {
-	position: absolute;
-	bottom: -148px;
+	position: fixed;
+	bottom: 40px;
 	width: calc(100% + 140px);
 	transition: unset;
+	margin-bottom: 0;
 }
 @media (max-width: 1560px) {
-	.box_sop-product-helper .promotion_float_wrap.pc.sticky {
+	.box_sop-product-helper .promotion_float_wrap.pc {
 		width: 100%;
 	}
 }
@@ -18968,15 +18970,10 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		padding: 6px 0;
 	}
 	.box_sop-product-helper .accordion_swiper .accordion_product_wrap .product_btn button {
-		padding:15px;
-	}
-	.box_sop-product-helper .accordion_swiper .accordion_product_wrap input[type="checkbox"] + label {
-		top: 12px;
-		left: 12px;
+		padding:0 15px;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_body .accordion_product_title {
 		display: none;
-		/* WAIT */
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_body .accordion_contents.accordion_optional {
 		display: none;
@@ -18996,8 +18993,8 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	.box_sop-product-helper .accordion_wrap .accordion_list.opened .accordion_title_wrap p .promotion_message {
 		display: none;
 	}
-	.box_sop-product-helper .promotion_float_wrap {
-		display: none;
+	.box_sop-product-helper .promotion_float_wrap.pc {
+		display: none !important;
 	}
 	.box_sop-product-helper .promotion_float_wrap.mo {
 		display: flex;
