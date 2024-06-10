@@ -3045,11 +3045,11 @@
 				<a href="#" class="promotion_button_confirm">장스오 제품 담기</a>
 			</div>
 			
-			<div class="promotion_float_wrap mo">
+			<div class="promotion_float_wrap mo disabled">
 				<div class="promotion_total">
 					<p>총 개수</p>
 					<p><span>0</span>개</p>
-					<button type="button" class="total_button on">전체 보기 버튼</button> <!-- 202405 것모닝 작업 - 담긴 제품이 없을 땐 비활성화, 담긴 제품이 있을 시 on -->
+					<button type="button" class="total_button">전체 보기 버튼</button> <!-- 202405 것모닝 작업 - 담긴 제품이 없을 땐 비활성화, 담긴 제품이 있을 시 on -->
 				</div>
 				<div class="my_product_wrap">
 					<div class="my_product_container">
@@ -6794,7 +6794,7 @@
 
 		if($('.box_sop-tab')) checkHelperContent();
 
-		if($('.promotion_float_wrap.mo .total_button')) floatingContentArrowAction();
+		// if($('.promotion_float_wrap.mo .total_button')) floatingContentArrowAction();
 
     if($('.gutmorning_start_btn')) moveToHelperContent();
 
@@ -6809,6 +6809,8 @@
 		if($('.product_btn')) productCount();
 
 		if($('.accordion_product_wrap')) productCheckNum();
+
+		if($('.my_product_list').length > 0) resetItemButton();
 
 		if($('.my_product_list').length > 0) deleteItem();
 
@@ -7217,24 +7219,24 @@
 		const productCheckbox = $('.accordion_product_wrap input[type="checkbox"]');
 
 		var productWrapFlag = false;
-    
+
     productCheckbox.click(function() {
 			var accordionListName = $(this).next('label').find('.product_name').text();
 			var accordionListIndex = $(this).closest('.accordion_list').data('index');
-			var accordionListTitle = $(this).closest('.accordion_list').data('name')
+			var accordionListTitle = $(this).closest('.accordion_list').data('name');
 
 			var checkedCount = 0;
 
-			$(this)
+						$(this)
 				.closest('.accordion_list')
 				.find('.accordion_product_wrap input[type="checkbox"]')
 				.each(function() {
 					if ($(this).is(':checked')) {
 						checkedCount++;
 					}
-			});
-
-			
+				});
+				
+		
 			if (checkedCount === 1 && $(this).is(':checked')) {
 				$('.my_product_container').append(
 					`<div class="my_product_list" data-index="${accordionListIndex}"><p class="my_product_title"><span></span><button type="button" class="product_reset_mo">초기화</button></p></div>`
@@ -7260,19 +7262,21 @@
 			}
 		});
 
+	function resetItemButton() {
 		$('.product_reset_mo').click(function() {
 			var productListIndex = $(this).closest('.my_product_list').data('index')
-
+	
 			$('.accordion_list').filter((v, i) => {
 				if ($(i).data('index') === productListIndex) {
 					$(i).find('input[type="checkbox"]').prop('checked', false);
 				}
 			});
-		
+			
 			$(this)
 				.closest('.my_product_list')
 				.remove();
-		});
+			});
+		}
 	}
 
 
