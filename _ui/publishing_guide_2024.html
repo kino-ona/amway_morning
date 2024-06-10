@@ -1,258 +1,591 @@
 <!doctype html>
-<html><head>
-<meta http-equiv="content-type" content="text/html; charset=utf-8">
-<link rel="shortcut icon" type="image/x-icon" media="all" href="https://www.amway.co.kr/_ui/responsive/theme-blue/images/favicon.ico" />
-<title>Amway Publishing Guide </title>
-<style type="text/css">
-	* {margin:0; padding:0;}
-	html {overflow-y:scroll;}
-	body {padding: 8px; color:#666; font:12px/1.5 Malgun Gothic, Tahoma, Sans-serif; word-break:break-all}
-	a {color:#27e; }
-	a:focus, a:hover, a:active {text-decoration:underline;}
-	.header {position: fixed; width: 100%; height: 60px; padding: 8px;background: #fff;  border-bottom: 1px solid #ccc;  box-sizing: border-box; top: 0; left: 0; font:12px/1.5 Malgun Gothic, Tahoma, Sans-serif; z-index: 10}
-	.header h1 {height: 40px; line-height: 40px; border: 2px solid #ccc; color:#444; font-size:2em; text-align: center; }
-	.header h1 strong {font-size:70%;}
-	.header .nav li {display:inline; margin-right:0.5em;}
-	.header .nav li a {color:#f9f9f9;}
-	.header .nav li a.on {color:#fff !important; border-bottom:2px solid #3e3e3e; text-shadow:#7c7c7c 2px 1px 2px; text-decoration:none; font-size:105%;}
-	.header .nav-otherlink li {display:inline;}
-	.header .nav-otherlink li a {color:#969696; font-weight:bold;}
-	.header .nav-otherlink li a.on {color:#3e3e3e;}
-	.header .nav-otherlink li a.on:before {content:'→'; font-size:0.9em;}
-	.rule dt {margin-bottom:0.3em; font-weight:bold;}
-	.rule dd {padding-left:0.5em;}
-	.rule dd ul {list-style-type:square; margin-left:1.2em;}
-	.body {margin-top: 60px; padding-bottom:1em;}
-	.section .title {position: relative;}
-	.section .title {  margin:0; padding:0.5em; background-color:#002f5f; color:#fff; font-weight:bold; font-size:100%; margin-top:-1px; position:relative;}
-	.section {margin-top:10px; }
-	.section .title_toggle {margin:0; padding:0 0 6px 0;  color:#000; font-weight:bold; font-size:100%; margin-top:-1px; position:relative;}
-	.section .content { display: none; }
-	.section.open .content { display:block; }
-	.section.open .title{ background: #014286; }
-	.section.open .title:after { content:"▲";  }
+<html>
 
-	.section table {width:100%; border-collapse:collapse; border-spacing:0; border:0; table-layout:fixed;}
-	.section table caption {display:none;}
-	.section table th {color:#333; background-color:#f1f1f1; font-size:11px; text-align:center;}
-	.section table td {text-align:left;/* text-overflow: ellipsis; overflow: hidden; white-space: norwap; */}
-	.section table th, table td {padding:0.3em; border:1px solid #ddd; }
-	.section table td.tit {color:#333; font-weight:bold;}
-	.section table td.file {color:#aaa;}
-	.section table td.date {text-align:center; font-style:italic; white-space:nowrap;}
-	.section table td.date del {display:block; color:#aaa !important;}
-	.section table td.stat , .section table td.statD{text-align:center; font-family:Gulim;}
-	.section table td.desc, .section table td.note, .section table td.history {font-style:italic; color:#777; font-size:11px;}
-	.section table td.author {text-align:center; white-space:nowrap;}
-	.section table td ul {list-style:none; margin:0; padding:0 10px; font-style:italic;}
-	.section table td em {color:#c82026;}
-	.section table td em.blue {color:#69f;}
-	.section table tr.overcoloring {background:#fafafa !important;}
-	.section table tr.today {background:#fcf7bd;}
-	.section table tr.today .date {color:#444;}
-	.section table td.history-jira {font-style:italic; font-size:11px;}
-	.section table td.history-jira a {color:#3b73af; font-weight:bold;}
-	.section table td.history ul li:before, .section table td.history-jira ul li:before {content:'- ';}
-	.section table .taCenter{text-align:center !important}
-	table td span.red {color:red} /* 추가 수정*/
-	.brbottom1 td{border-bottom: 1px solid #bebebe; }
-	.btn-top { display:block; background:#000; color:#fff; text-align:center; padding:10px; font-weight:bold}
-	td.note p:nth-of-type(odd) { color:#0760a4}
-	td.note p:nth-of-type(even) { color:#8a5bab}
-	td.note p:nth-of-type(odd) b{ color:#5ea519}
-	td.note p:nth-of-type(even) b{ color:#dc8027}
-	.section table td ul.modify-date { padding: 0}
-	.modify-date li:nth-of-type(1){ color:#119f22}
-	.modify-date li:nth-of-type(2){ color:#157ef5}
-	.modify-date li:nth-of-type(3){ color:#c660d5}
-	.modify-date li:nth-of-type(4){ color:#d5a860}
-	.modify-date li:nth-of-type(5n+1){ color:#119f22}
-	.delete:hover td { background-color: #ddd}
-	.delete td { text-decoration:line-through; }
-	.delete td.note{ text-decoration:none; font-weight: bold;}
-	.owner span{position:relative;display:inline-block;width:40px;padding-left:5px;}
-	.owner span:before {content:'/'; position:absolute; top:0; left:0; color:#eee;}
-	.owner span:first-child:before{content:'';padding-left:0;}
-	th.owner span {width:auto; padding:0 8px;}
-	th.owner span:before {color:#666;}
-</style>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<link rel="shortcut icon" type="image/x-icon" media="all" href="https://www.amway.co.kr/_ui/responsive/theme-blue/images/favicon.ico" />
+	<title>Amway Publishing Guide </title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		html {
+			overflow-y: scroll;
+		}
+
+		body {
+			padding: 8px;
+			color: #666;
+			font: 12px/1.5 Malgun Gothic, Tahoma, Sans-serif;
+			word-break: break-all
+		}
+
+		a {
+			color: #27e;
+		}
+
+		a:focus,
+		a:hover,
+		a:active {
+			text-decoration: underline;
+		}
+
+		.header {
+			position: fixed;
+			width: 100%;
+			height: 60px;
+			padding: 8px;
+			background: #fff;
+			border-bottom: 1px solid #ccc;
+			box-sizing: border-box;
+			top: 0;
+			left: 0;
+			font: 12px/1.5 Malgun Gothic, Tahoma, Sans-serif;
+			z-index: 10
+		}
+
+		.header h1 {
+			height: 40px;
+			line-height: 40px;
+			border: 2px solid #ccc;
+			color: #444;
+			font-size: 2em;
+			text-align: center;
+		}
+
+		.header h1 strong {
+			font-size: 70%;
+		}
+
+		.header .nav li {
+			display: inline;
+			margin-right: 0.5em;
+		}
+
+		.header .nav li a {
+			color: #f9f9f9;
+		}
+
+		.header .nav li a.on {
+			color: #fff !important;
+			border-bottom: 2px solid #3e3e3e;
+			text-shadow: #7c7c7c 2px 1px 2px;
+			text-decoration: none;
+			font-size: 105%;
+		}
+
+		.header .nav-otherlink li {
+			display: inline;
+		}
+
+		.header .nav-otherlink li a {
+			color: #969696;
+			font-weight: bold;
+		}
+
+		.header .nav-otherlink li a.on {
+			color: #3e3e3e;
+		}
+
+		.header .nav-otherlink li a.on:before {
+			content: '→';
+			font-size: 0.9em;
+		}
+
+		.rule dt {
+			margin-bottom: 0.3em;
+			font-weight: bold;
+		}
+
+		.rule dd {
+			padding-left: 0.5em;
+		}
+
+		.rule dd ul {
+			list-style-type: square;
+			margin-left: 1.2em;
+		}
+
+		.body {
+			margin-top: 60px;
+			padding-bottom: 1em;
+		}
+
+		.section .title {
+			position: relative;
+		}
+
+		.section .title {
+			margin: 0;
+			padding: 0.5em;
+			background-color: #002f5f;
+			color: #fff;
+			font-weight: bold;
+			font-size: 100%;
+			margin-top: -1px;
+			position: relative;
+		}
+
+		.section {
+			margin-top: 10px;
+		}
+
+		.section .title_toggle {
+			margin: 0;
+			padding: 0 0 6px 0;
+			color: #000;
+			font-weight: bold;
+			font-size: 100%;
+			margin-top: -1px;
+			position: relative;
+		}
+
+		.section .content {
+			display: none;
+		}
+
+		.section.open .content {
+			display: block;
+		}
+
+		.section.open .title {
+			background: #014286;
+		}
+
+		.section.open .title:after {
+			content: "▲";
+		}
+
+		.section table {
+			width: 100%;
+			border-collapse: collapse;
+			border-spacing: 0;
+			border: 0;
+			table-layout: fixed;
+		}
+
+		.section table caption {
+			display: none;
+		}
+
+		.section table th {
+			color: #333;
+			background-color: #f1f1f1;
+			font-size: 11px;
+			text-align: center;
+		}
+
+		.section table td {
+			text-align: left;
+			/* text-overflow: ellipsis; overflow: hidden; white-space: norwap; */
+		}
+
+		.section table th,
+		table td {
+			padding: 0.3em;
+			border: 1px solid #ddd;
+		}
+
+		.section table td.tit {
+			color: #333;
+			font-weight: bold;
+		}
+
+		.section table td.file {
+			color: #aaa;
+		}
+
+		.section table td.date {
+			text-align: center;
+			font-style: italic;
+			white-space: nowrap;
+		}
+
+		.section table td.date del {
+			display: block;
+			color: #aaa !important;
+		}
+
+		.section table td.stat,
+		.section table td.statD {
+			text-align: center;
+			font-family: Gulim;
+		}
+
+		.section table td.desc,
+		.section table td.note,
+		.section table td.history {
+			font-style: italic;
+			color: #777;
+			font-size: 11px;
+		}
+
+		.section table td.author {
+			text-align: center;
+			white-space: nowrap;
+		}
+
+		.section table td ul {
+			list-style: none;
+			margin: 0;
+			padding: 0 10px;
+			font-style: italic;
+		}
+
+		.section table td em {
+			color: #c82026;
+		}
+
+		.section table td em.blue {
+			color: #69f;
+		}
+
+		.section table tr.overcoloring {
+			background: #fafafa !important;
+		}
+
+		.section table tr.today {
+			background: #fcf7bd;
+		}
+
+		.section table tr.today .date {
+			color: #444;
+		}
+
+		.section table td.history-jira {
+			font-style: italic;
+			font-size: 11px;
+		}
+
+		.section table td.history-jira a {
+			color: #3b73af;
+			font-weight: bold;
+		}
+
+		.section table td.history ul li:before,
+		.section table td.history-jira ul li:before {
+			content: '- ';
+		}
+
+		.section table .taCenter {
+			text-align: center !important
+		}
+
+		table td span.red {
+			color: red
+		}
+
+		/* 추가 수정*/
+		.brbottom1 td {
+			border-bottom: 1px solid #bebebe;
+		}
+
+		.btn-top {
+			display: block;
+			background: #000;
+			color: #fff;
+			text-align: center;
+			padding: 10px;
+			font-weight: bold
+		}
+
+		td.note p:nth-of-type(odd) {
+			color: #0760a4
+		}
+
+		td.note p:nth-of-type(even) {
+			color: #8a5bab
+		}
+
+		td.note p:nth-of-type(odd) b {
+			color: #5ea519
+		}
+
+		td.note p:nth-of-type(even) b {
+			color: #dc8027
+		}
+
+		.section table td ul.modify-date {
+			padding: 0
+		}
+
+		.modify-date li:nth-of-type(1) {
+			color: #119f22
+		}
+
+		.modify-date li:nth-of-type(2) {
+			color: #157ef5
+		}
+
+		.modify-date li:nth-of-type(3) {
+			color: #c660d5
+		}
+
+		.modify-date li:nth-of-type(4) {
+			color: #d5a860
+		}
+
+		.modify-date li:nth-of-type(5n+1) {
+			color: #119f22
+		}
+
+		.delete:hover td {
+			background-color: #ddd
+		}
+
+		.delete td {
+			text-decoration: line-through;
+		}
+
+		.delete td.note {
+			text-decoration: none;
+			font-weight: bold;
+		}
+
+		.owner span {
+			position: relative;
+			display: inline-block;
+			width: 40px;
+			padding-left: 5px;
+		}
+
+		.owner span:before {
+			content: '/';
+			position: absolute;
+			top: 0;
+			left: 0;
+			color: #eee;
+		}
+
+		.owner span:first-child:before {
+			content: '';
+			padding-left: 0;
+		}
+
+		th.owner span {
+			width: auto;
+			padding: 0 8px;
+		}
+
+		th.owner span:before {
+			color: #666;
+		}
+	</style>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
 </head>
+
 <body>
-<div class="header">
-	<h1>:: Amway Publishing Guide 장스오(2024)  ::</h1>
-</div>
-<div class="body">
+	<div class="header">
+		<h1>:: Amway Publishing Guide 장스오(2024) ::</h1>
+	</div>
+	<div class="body">
 
-	<!-- ##  수정페이지  -->
-	<div class="section">
-		<div class="content" style="display: block;">
-			<h2 class="title">장바구니 스마트 오더</h2>
-			<table border="1">
-				<colgroup>
-					<col width="8%"><col width="8%"><col width="9%"><col width="9%"><col width="25%"><col width="10%"><col width="*">
-				</colgroup>
-				<thead>
-					<tr>
-						<th scope="col">1depth</th>
-						<th scope="col">2depth</th>
-						<th scope="col">3depth</th>
-						<th scope="col"></th>
-						<th scope="col">File Name(html)</th>
-						<th scope="col">complete date / <br>modify Date</th>	
-						<th scope="col">note</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td class="tit">쇼핑</td>
-						<td>플러스쇼핑</td>
-						<td>장바구니 스마트 오더</td>
-						<td></td>
-						<td class="file"><a href="_ui/responsive/html/new_page/sop/sh_01_04_bsop_renewal.html" target="_blank">_ui/responsive/html/new_page/sop/sh_01_04_bsop_renewal.html</a></td>
-						<td></td>
-						<td class="note">주문서 제품 수정/추가 팝업 포함</td>
-					</tr>
-					<tr>
-						<td class="tit">쇼핑</td>
-						<td>플러스쇼핑</td>
-						<td>장바구니 스마트 오더 교체</td>
-						<td></td>
-						<td class="file"><a href="_ui/responsive/html/new_page/sop/SH_05_sop_apply_exchange.html" target="_blank">_ui/responsive/html/new_page/sop/SH_05_sop_apply_exchange.html</a></td>
-						<td></td>
-						<td class="note"></td>
-					</tr>
-					<tr>
-						<td class="tit">쇼핑</td>
-						<td>플러스쇼핑</td>
-						<td>장바구니 스마트 오더 추가</td>
-						<td></td>
-						<td class="file"><a href="_ui/responsive/html/new_page/sop/SH_05_sop_apply_added.html" target="_blank">_ui/responsive/html/new_page/sop/SH_05_sop_apply_added.html</a></td>
-						<td></td>
-						<td class="note"></td>
-					</tr>
-					<tr>
-						<td class="tit">쇼핑</td>
-						<td>플러스쇼핑</td>
-						<td>장바구니 스마트 오더 신청</td>
-						<td></td>
-						<td class="file"><a href="_ui/responsive/html/new_page/sop/SH_05_sop_apply.html" target="_blank">_ui/responsive/html/new_page/sop/SH_05_sop_apply.html</a></td>
-						<td></td>
-						<td class="note"></td>
-					</tr>
-					<tr>
-						<td class="tit">쇼핑</td>
-						<td>플러스쇼핑</td>
-						<td>장바구니 스마트 오더 신청</td>
-						<td></td>
-						<td class="file"><a href="_ui/responsive/html/new_page/sop/SH_05_sop_apply.html" target="_blank">_ui/responsive/html/new_page/sop/SH_05_sop_apply.html</a></td>
-						<td></td>
-						<td class="note"></td>
-					</tr>
-					<tr>
-						<td class="tit">쇼핑</td>
-						<td>플러스쇼핑</td>
-						<td>장바구니 스마트 오더 - 오더 내역</td>
-						<td></td>
-						<td class="file"><a href="_ui/responsive/html/new_page/sop/so_02_v2.html" target="_blank">_ui/responsive/html/new_page/sop/so_02_v2.html</a></td>
-						<td></td>
-						<td class="note"></td>
-					</tr>
-					<tr>
-						<td class="tit">쇼핑</td>
-						<td>플러스쇼핑</td>
-						<td>장바구니 스마트 오더</td>
-						<td>제품수정 - POPUP</td>
-						<td class="file"><a href="_ui/responsive/html/include/share_sop_product_edit.html" target="_blank">_ui/responsive/html/include/share_sop_product_edit.html</a></td>
-						<td></td>
-						<td class="note"></td>
-					</tr>
-					<tr>
-						<td class="tit">쇼핑</td>
-						<td>플러스쇼핑</td>
-						<td>장바구니 스마트 오더</td>
-						<td>제품추가 - POPUP</td>
-						<td class="file"><a href="_ui/responsive/html/include/share_sop_product_add.html" target="_blank">_ui/responsive/html/include/share_sop_product_add.html</a></td>
-						<td></td>
-						<td class="note"></td>
-					</tr>
-				</tbody>
-			</table>
-			<br>
+		<!-- ##  수정페이지  -->
+		<div class="section">
+			<div class="content" style="display: block;">
+				<h2 class="title">장바구니 스마트 오더</h2>
+				<table border="1">
+					<colgroup>
+						<col width="8%">
+						<col width="8%">
+						<col width="9%">
+						<col width="9%">
+						<col width="25%">
+						<col width="10%">
+						<col width="*">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">1depth</th>
+							<th scope="col">2depth</th>
+							<th scope="col">3depth</th>
+							<th scope="col"></th>
+							<th scope="col">File Name(html)</th>
+							<th scope="col">complete date / <br>modify Date</th>
+							<th scope="col">note</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="tit">쇼핑</td>
+							<td>플러스쇼핑</td>
+							<td>장바구니 스마트 오더</td>
+							<td></td>
+							<td class="file"><a href="_ui/responsive/html/new_page/sop/sh_01_04_bsop_renewal.html" target="_blank">_ui/responsive/html/new_page/sop/sh_01_04_bsop_renewal.html</a></td>
+							<td></td>
+							<td class="note">주문서 제품 수정/추가 팝업 포함</td>
+						</tr>
+						<tr>
+							<td class="tit">쇼핑</td>
+							<td>플러스쇼핑</td>
+							<td>장바구니 스마트 오더 교체</td>
+							<td></td>
+							<td class="file"><a href="_ui/responsive/html/new_page/sop/SH_05_sop_apply_exchange.html" target="_blank">_ui/responsive/html/new_page/sop/SH_05_sop_apply_exchange.html</a></td>
+							<td></td>
+							<td class="note"></td>
+						</tr>
+						<tr>
+							<td class="tit">쇼핑</td>
+							<td>플러스쇼핑</td>
+							<td>장바구니 스마트 오더 추가</td>
+							<td></td>
+							<td class="file"><a href="_ui/responsive/html/new_page/sop/SH_05_sop_apply_added.html" target="_blank">_ui/responsive/html/new_page/sop/SH_05_sop_apply_added.html</a></td>
+							<td></td>
+							<td class="note"></td>
+						</tr>
+						<tr>
+							<td class="tit">쇼핑</td>
+							<td>플러스쇼핑</td>
+							<td>장바구니 스마트 오더 신청</td>
+							<td></td>
+							<td class="file"><a href="_ui/responsive/html/new_page/sop/SH_05_sop_apply.html" target="_blank">_ui/responsive/html/new_page/sop/SH_05_sop_apply.html</a></td>
+							<td></td>
+							<td class="note"></td>
+						</tr>
+						<tr>
+							<td class="tit">쇼핑</td>
+							<td>플러스쇼핑</td>
+							<td>장바구니 스마트 오더 신청</td>
+							<td></td>
+							<td class="file"><a href="_ui/responsive/html/new_page/sop/SH_05_sop_apply.html" target="_blank">_ui/responsive/html/new_page/sop/SH_05_sop_apply.html</a></td>
+							<td></td>
+							<td class="note"></td>
+						</tr>
+						<tr>
+							<td class="tit">쇼핑</td>
+							<td>플러스쇼핑</td>
+							<td>장바구니 스마트 오더 - 오더 내역</td>
+							<td></td>
+							<td class="file"><a href="_ui/responsive/html/new_page/sop/so_02_v2.html" target="_blank">_ui/responsive/html/new_page/sop/so_02_v2.html</a></td>
+							<td></td>
+							<td class="note"></td>
+						</tr>
+						<tr>
+							<td class="tit">쇼핑</td>
+							<td>플러스쇼핑</td>
+							<td>장바구니 스마트 오더</td>
+							<td>제품수정 - POPUP</td>
+							<td class="file"><a href="_ui/responsive/html/include/share_sop_product_edit.html" target="_blank">_ui/responsive/html/include/share_sop_product_edit.html</a></td>
+							<td></td>
+							<td class="note"></td>
+						</tr>
+						<tr>
+							<td class="tit">쇼핑</td>
+							<td>플러스쇼핑</td>
+							<td>장바구니 스마트 오더</td>
+							<td>제품추가 - POPUP</td>
+							<td class="file"><a href="_ui/responsive/html/include/share_sop_product_add.html" target="_blank">_ui/responsive/html/include/share_sop_product_add.html</a></td>
+							<td></td>
+							<td class="note"></td>
+						</tr>
+					</tbody>
+				</table>
+				<br>
 
-			<h2 class="title">비전보너스</h2>
-			<table border="1">
-				<colgroup>
-					<col width="8%"><col width="8%"><col width="9%"><col width="9%"><col width="25%"><col width="10%"><col width="*">
-				</colgroup>
-				<thead>
-					<tr>
-						<th scope="col">1depth</th>
-						<th scope="col">2depth</th>
-						<th scope="col">3depth</th>
-						<th scope="col"></th>
-						<th scope="col">File Name(html)</th>
-						<th scope="col">complete date / <br>modify Date</th>	
-						<th scope="col">note</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td class="tit">비지니스</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td class="file"><a href="" target="_blank"></a></td>
-						<td></td>
-						<td class="note"></td>
-					</tr>
-					<tr>
-						<td class="tit">비지니스</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td class="file"><a href="" target="_blank"></a></td>
-						<td></td>
-						<td class="note"></td>
-					</tr>
-				</tbody>
-			</table>
+				<h2 class="title">비전보너스</h2>
+				<table border="1">
+					<colgroup>
+						<col width="8%">
+						<col width="8%">
+						<col width="9%">
+						<col width="9%">
+						<col width="25%">
+						<col width="10%">
+						<col width="*">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">1depth</th>
+							<th scope="col">2depth</th>
+							<th scope="col">3depth</th>
+							<th scope="col"></th>
+							<th scope="col">File Name(html)</th>
+							<th scope="col">complete date / <br>modify Date</th>
+							<th scope="col">note</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="tit">비지니스</td>
+							<td>사업현황</td>
+							<td>비전보너스 설명</td>
+							<td></td>
+							<td class="file"><a href="_ui/responsive/html/business/G20770_001.html" target="_blank">_ui/responsive/html/business/G20770_001.html</a></td>
+							<td></td>
+							<td class="note">
+								track 상태값 디자인 변경 예정
+							</td>
+						</tr>
+						<tr>
+							<td class="tit">비지니스</td>
+							<td>사업현황</td>
+							<td>비전보너스 조회</td>
+							<td></td>
+							<td class="file"><a href="_ui/responsive/html/business/G20770_002.html" target="_blank">_ui/responsive/html/business/G20770_002.html</a></td>
+							<td></td>
+							<td class="note">
+								track 상태값 디자인 변경 예정
+							</td>
+						</tr>
+						<tr>
+							<td class="tit">비지니스</td>
+							<td>사업현황</td>
+							<td>비전보너스 계산</td>
+							<td></td>
+							<td class="file"><a href="_ui/responsive/html/business/G20770_003.html" target="_blank">_ui/responsive/html/business/G20770_003.html</a></td>
+							<td></td>
+							<td class="note">
+								mobile ui 변경으로 디자인 작업중 이며 pc / mo 두벌 구조<br>
+								form 요소 로직 적용은 개발 진행으로 확인 받음
+							</td>
+						</tr>
+					</tbody>
+				</table>
 
-			<br><br><br>
+				<br><br><br>
 
 
-			<h2 class="title">장스오 대시보드</h2>
-			<table border="1">
-				<colgroup>
-					<col width="8%"><col width="8%"><col width="9%"><col width="9%"><col width="25%"><col width="10%"><col width="*">
-				</colgroup>
-				<thead>
-					<tr>
-						<th scope="col">1depth</th>
-						<th scope="col">2depth</th>
-						<th scope="col">3depth</th>
-						<th scope="col"></th>
-						<th scope="col">File Name(html)</th>
-						<th scope="col">complete date / <br>modify Date</th>	
-						<th scope="col">note</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td class="tit"></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td class="file"></td>
-						<td></td>
-						<td class="note"></td>
-					</tr>
-				</tbody>
-			</table>
+				<h2 class="title">장스오 대시보드</h2>
+				<table border="1">
+					<colgroup>
+						<col width="8%">
+						<col width="8%">
+						<col width="9%">
+						<col width="9%">
+						<col width="25%">
+						<col width="10%">
+						<col width="*">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">1depth</th>
+							<th scope="col">2depth</th>
+							<th scope="col">3depth</th>
+							<th scope="col"></th>
+							<th scope="col">File Name(html)</th>
+							<th scope="col">complete date / <br>modify Date</th>
+							<th scope="col">note</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="tit"></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td class="file"></td>
+							<td></td>
+							<td class="note"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 		</div>
+
 	</div>
 
-</div>
-
 </body>
+
 </html>
