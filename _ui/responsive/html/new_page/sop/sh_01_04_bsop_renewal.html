@@ -6810,6 +6810,8 @@
 
 		if($('.accordion_product_wrap')) productCheckNum();
 
+		if($('.my_product_list').length > 0) deleteItem();
+
 			
 
 		var timer = null;
@@ -7241,7 +7243,6 @@
 			if (checkedCount === 0) {
 				$('.my_product_container').find(`.my_product_list:nth-of-type(${accordionListIndex})`).remove()
 			}
-
 			if(checkedCount > 0 ) {
 				if ($(this).is(':checked')) {
 					$(`.my_product_list:nth-of-type(${accordionListIndex})`).append(
@@ -7257,48 +7258,54 @@
 					})
 				}
 			}
-
-			$('.product_reset_mo').click(function() {
-				var productListIndex = $(this).closest('.my_product_list').data('index')
-
-				$('.accordion_list').filter((v, i) => {
-					if ($(i).data('index') === productListIndex) {
-						$(i).find('input[type="checkbox"]').prop('checked', false);
-					}
-				});
-			
-				$(this)
-					.closest('.my_product_list')
-					.remove();
-			});
-
-			$('.product_delete').click(function(e, i) {
-				var productListIndex = $(this).closest('.my_product_list').data('index');
-				var productListName = $(this).prev('.my_product_content span').html();
-
-				$('.accordion_list').each(function(index, element) {
-					// productListIndex
-
-					// console.log($(element).data('index'));
-
-					if (productListIndex === $(element).data('index')) {
-						$(element).each(function(idx, elem) {
-							
-							console.log('idx', idx);
-
-							// console.log('FIRST',$(elem).find('.product_name'));
-
-							if ($(elem).find('.product_name') === productListName) {
-								$(elem).find('input[type="checkbox"]').prop('checked', false);
-							}
-						})
-					}
-				})
-				
-			});
 		});
 
+		$('.product_reset_mo').click(function() {
+			var productListIndex = $(this).closest('.my_product_list').data('index')
+
+			$('.accordion_list').filter((v, i) => {
+				if ($(i).data('index') === productListIndex) {
+					$(i).find('input[type="checkbox"]').prop('checked', false);
+				}
+			});
 		
+			$(this)
+				.closest('.my_product_list')
+				.remove();
+		});
+	}
+
+
+	function deleteItem() {
+		$('.product_delete').click(function(e, i) {
+			var productListIndex = $(this).closest('.my_product_list').data('index');
+			var productListName = $(this).prev('.my_product_content span').html();
+
+
+			console.log(productListIndex)
+			console.log(productListName)
+
+
+				// $('.accordion_list').each(function(index, element) {
+				// 	// productListIndex
+
+				// 	// console.log($(element).data('index'));
+
+				// 	if (productListIndex === $(element).data('index')) {
+				// 		$(element).each(function(idx, elem) {
+							
+				// 			console.log('idx', idx);
+
+				// 			// console.log('FIRST',$(elem).find('.product_name'));
+
+				// 			if ($(elem).find('.product_name') === productListName) {
+				// 				$(elem).find('input[type="checkbox"]').prop('checked', false);
+				// 			}
+				// 		})
+				// 	}
+				// })
+				
+		});
 	}
 
 	// E: 202405 것모닝 작업
