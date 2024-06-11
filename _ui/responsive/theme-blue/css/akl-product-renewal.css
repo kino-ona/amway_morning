@@ -18879,6 +18879,9 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	.box_sop-product-helper .accordion_wrap .accordion_list.opened .accordion_header {
 		padding-bottom: 8px;
 	}
+	.box_sop-product-helper .accordion_wrap .accordion_container_step .accordion_list.opened .accordion_header {
+		padding-bottom: 0;
+	}
 	.box_sop-product-helper .accordion_wrap .accordion_info_wrap {
 		position: unset;
 		flex-direction: row;
@@ -18890,8 +18893,8 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	.box_sop-product-helper .accordion_wrap .accordion_list.opened .accordion_info_wrap {
 		padding-top: 20px;
 	}
-	.box_sop-product-helper .accordion_wrap .accordion_list:first-of-type.opened .accordion_info_wrap {
-		/* padding-top: 0; */
+	.box_sop-product-helper .accordion_wrap .accordion_container_step .accordion_list:first-of-type.opened .accordion_info_wrap {
+		padding-top: 0;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_list.last_step.opened {
 		overflow: visible;
