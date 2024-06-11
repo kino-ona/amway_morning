@@ -6811,7 +6811,7 @@
 
 		if($('.accordion_product_wrap')) productCheckNum();
 
-		// if($('.my_product_content').length > 0) deleteItem();
+		if($('.gutmorning_start_btn')) buttonActionTop();
 
 			
 
@@ -7369,6 +7369,12 @@
 		$('.promotion_total button').attr('disabled', true);
 		$('.promotion_total button').removeClass('active');
 		$('.my_product_wrap').removeClass('active');
+	}
+
+	function buttonActionTop() {
+		$('.gutmorning_start_btn').on('click', function() {
+			
+		});
 	}
 	// E: 202405 것모닝 작업
 
