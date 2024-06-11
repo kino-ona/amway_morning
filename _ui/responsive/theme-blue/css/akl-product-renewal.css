@@ -18232,7 +18232,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	left: -8px;
 }
 .box_sop-product-helper .swiper-scrollbar-drag {
-	background: #0B6837;
+	background: #018C51;
 }
 .box_sop-product-helper .swiper-button-prev {
 	width: 48px;
@@ -18323,7 +18323,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	background-size: 140px;
 }
 .box_sop-product-helper .accordion_wrap .accordion_body .optional_select_wrap input[type='radio']:checked {
-	border: 5px solid #0AA854;
+	border: 4px solid #0AA854;
 	color: #000;
 	font-weight: 700;
 }
@@ -18723,6 +18723,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		padding: 0;
 		font-size: 24px;
 		line-height: 36px;
+		letter-spacing: unset;
 	}
 	.box_sop-product-helper .product_helper_banner button {
 		padding: 8px 16px;
@@ -18732,8 +18733,10 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	.box_sop-product-helper .product_helper_banner p:nth-of-type(1) {
 		margin-bottom: 8px;
 		font-size: 14px;
-		font-weight: 400;
+		font-weight: 500;
 		line-height: 20px;
+		word-break: keep-all;
+		letter-spacing: unset;
 	}
 	.box_sop-product-helper .product_helper_banner .promotion_notice {
 		margin-bottom: 16px;
@@ -18763,8 +18766,10 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		border-radius: 12px;
 	}
 	.box_sop-product-helper .product_helper_title p:nth-of-type(1) {
+		margin-bottom: 2px;
 		font-size: 20px;
 		line-height: 30px;
+		letter-spacing: unset;
 	}
 	.box_sop-product-helper .product_helper_title p:nth-of-type(1) span {
 		position: absolute;
@@ -18780,6 +18785,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		margin-bottom: 0;
 		font-size: 14px;
 		line-height: 20px;
+		letter-spacing: unset;
 	}
 	.box_sop-product-helper .product_helper_title p:nth-of-type(2) a {
 		position: absolute;
@@ -18798,8 +18804,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_list:nth-of-type(1) .accordion_contents {
 		flex-direction: column;
-		row-gap: 8px;
-		padding: 0 0 16px 20px;
+		padding: 0 0 20px 20px;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_body .accordion_contents .checkbox_wrap {
 		width: 100%;
@@ -18814,6 +18819,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		padding-right: 40px;
 		font-size: 14px;
 		line-height: 20px;
+		letter-spacing: unset;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_title_wrap .accordion_button {
 		width: 24px;
@@ -18835,6 +18841,10 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_body .accordion_contents.accordion_first input[type='radio'] + label p {
 		padding-right: 80px;
+		font-weight: 500;
+	}
+	.box_sop-product-helper .accordion_wrap .accordion_body .accordion_contents.accordion_first input[type='radio']:checked + label p {
+		font-weight: 700;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_body .swiper-wrapper {
 		padding-bottom: 16px;
@@ -18861,7 +18871,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		padding: 10px 0;
 		font-size: 14px;
 		line-height: 24px;
-		border-radius: 12px;
+		border-radius: 8px;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_list.opened .accordion_header {
 		padding-bottom: 8px;
@@ -18888,7 +18898,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_list.last_step.opened .accordion_info_wrap {
 		position: absolute;
-		top: 256px;
+		top: 272px;
 		left: 20px;
 		padding-top: 0;
 	}
@@ -18898,6 +18908,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_info_wrap span.chk_product_num {
 		padding: 2px 8px;
+		letter-spacing: unset !important;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_info_wrap span.chk_product_name {
 		max-width: 188px;
@@ -18917,6 +18928,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		padding: 0 0 16px 20px;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_list {
+		margin-bottom: 8px;
 		border-radius: 12px;	
 	}
 	.box_sop-product-helper .accordion_swiper .accordion_product_wrap {
@@ -18943,10 +18955,12 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		padding: 0 20px 20px;	
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_body .optional_info_wrap p {
-		max-width: 220px;
+		max-width: 200px;
 		margin-bottom: 16px;
 		font-size: 14px;
 		line-height: 22.4px;
+		color: #111;
+		letter-spacing: unset;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_body .optional_select_wrap {
 		flex-wrap: wrap;
@@ -18963,6 +18977,13 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_body .optional_select_wrap input[type="radio"] + label:nth-of-type(1) {
 		margin-right: 0;
+	}
+	.box_sop-product-helper .accordion_wrap .product_notice {
+		margin: 8px 0 0;
+		font-size: 12px;
+		line-height: 17.38px;
+		letter-spacing: unset;
+		word-break: keep-all;
 	}
 	.box_sop-product-helper .accordion_swiper {
 		padding-right: 20px;
@@ -18988,6 +19009,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		margin-bottom: 12px;
 		font-size: 18px;
 		line-height: 27px;
+		gap: 2px;
 	}
 	.box_sop-product-helper .accordion_swiper .accordion_product_wrap .product_price span {
 		max-width: 100%;
@@ -19192,7 +19214,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 
 	.box_sop-product-helper .accordion_wrap .accordion_body .optional_category_wrap {
 		position: relative;
-		padding: 20px 0 22px 20px;
+		padding: 20px 0 24px 20px;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_body .optional_category_wrap button {
 		width: 100%;
@@ -19220,6 +19242,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_body .optional_category_wrap ul li {
 		border: 1px solid #D7D7D7;
+		background: #FFF;
 		border-radius: 99px;
 		white-space: nowrap;
 	}
