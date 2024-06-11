@@ -7244,7 +7244,7 @@
 					}
 				});
 
-			resetItemButton(checkedCount);
+
 			deleteItem(accordionListTitle, checkedCount);
 			
 			if (checkedCount === 1 && $(this).is(':checked')) {
@@ -7252,8 +7252,11 @@
 			}
 
 			if (checkedCount > 0) {
+				$('.my_product_wrap').addClass('active');
 				$('.promotion_float_wrap.mo').removeClass('disabled');
 				$('.promotion_total button').attr('disabled', false);
+
+				resetItemButton(checkedCount);
 
 				if ($(this).is(':checked')) {
 					productListAppend(checkedCount, accordionListIndex, checkedListData, accordionListName, accordionListTitle);
