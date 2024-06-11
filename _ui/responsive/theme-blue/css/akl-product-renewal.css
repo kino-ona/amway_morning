@@ -17577,7 +17577,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	color: #666;
 }
 .box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap::after {
-	left: 33.33%;
+	left: 33%;
 	background: url(/_ui/responsive/theme-blue/images/akl_plp/ico_circle_or.png) center center no-repeat;
 	background-size: cover;
 }
@@ -19055,22 +19055,24 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		right: 16px;
 		width: 24px;
 		height: 24px;
-		background: url(/_ui/responsive/theme-blue/images/akl_plp/ico_accordion_arrow_down.png) center center no-repeat;
-		background-size: 12px;
+		background: url(/_ui/responsive/theme-blue/images/akl_plp/ico_accordion_arrow_down.png) center center no-repeat !important;
+		background-size: 12px !important;
 		transform: translateY(-50%);
 		font-size: 0;
-		opacity: 0.4;
-	}
-	.box_sop-product-helper .promotion_float_wrap.mo .promotion_total button.on {
 		opacity: 1;
 	}
 	.box_sop-product-helper .promotion_float_wrap.mo .promotion_total button.active {
-		background: url(/_ui/responsive/theme-blue/images/akl_plp/ico_accordion_arrow_up.png) center center no-repeat;
-		background-size: 12px;
+		background: url(/_ui/responsive/theme-blue/images/akl_plp/ico_accordion_arrow_up.png) center center no-repeat !important;
+		background-size: 12px !important;
 	}
 	.box_sop-product-helper .promotion_float_wrap.mo.disabled .promotion_button_confirm {
 		background: #D7D7D7;
 		user-select: none;
+	}
+	.box_sop-product-helper .promotion_float_wrap.mo.disabled .promotion_total button {
+		opacity: 0.4;
+		background: url(/_ui/responsive/theme-blue/images/akl_plp/ico_accordion_arrow_down.png) center center no-repeat !important;
+		background-size: 12px !important;
 	}
 	.box_sop-product-helper .promotion_float_wrap .promotion_total:last-of-type p:nth-of-type(1) {
 		column-gap: 8px;
@@ -19163,7 +19165,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 
 	.box_sop-product-helper .accordion_wrap .accordion_body .optional_category_wrap {
 		position: relative;
-		padding: 20px 0 22px 20px;
+		padding: 20px 20px 22px 20px;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_body .optional_category_wrap button {
 		width: 100%;

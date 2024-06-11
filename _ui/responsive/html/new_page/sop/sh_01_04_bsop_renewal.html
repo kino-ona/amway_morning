@@ -398,7 +398,7 @@
 									<strong>10% 추가 PV UP</strong>
 									<p>뉴트리라이트 혜택 대상 제품 전체</p>
 									<img src="/_ui/responsive/theme-blue/images/akl_plp/img_promotion_01.png" alt="것모닝 제품 구성 혜택에 대한 이미지">
-									<span>* 혜택제외제품은 구성화면에서 확인 가능</span>
+									<span>* 혜택 제외 제품은 구성화면에서 확인 가능</span>
 								</div>
 
 								<div class="detail_desc_content">
@@ -3049,7 +3049,7 @@
 				<div class="promotion_total">
 					<p>총 개수</p>
 					<p><span>0</span>개</p>
-					<button type="button" class="total_button">전체 보기 버튼</button> <!-- 202405 것모닝 작업 - 담긴 제품이 없을 땐 비활성화, 담긴 제품이 있을 시 on -->
+					<button type="button" class="total_button" disabled>전체 보기 버튼</button> <!-- 202405 것모닝 작업 - 담긴 제품이 없을 땐 비활성화, 담긴 제품이 있을 시 on -->
 				</div>
 				<div class="my_product_wrap">
 					<div class="my_product_container">
@@ -6794,7 +6794,7 @@
 
 		if($('.box_sop-tab')) checkHelperContent();
 
-		// if($('.promotion_float_wrap.mo .total_button')) floatingContentArrowAction();
+		if($('.promotion_float_wrap.mo .total_button')) floatingContentArrowAction();
 
     if($('.gutmorning_start_btn')) moveToHelperContent();
 
@@ -7070,6 +7070,8 @@
 
 	function floatingContentArrowAction() {
 		$('.promotion_total .total_button').click(function() {
+			console.log($(this).attr('disabled'));
+
 			$(this).toggleClass('active');
 			$('.my_product_wrap').toggleClass('active');
 		});
@@ -7227,7 +7229,7 @@
 
 			var checkedCount = 0;
 
-						$(this)
+			$(this)
 				.closest('.accordion_list')
 				.find('.accordion_product_wrap input[type="checkbox"]')
 				.each(function() {
@@ -7242,10 +7244,11 @@
 					`<div class="my_product_list" data-index="${accordionListIndex}"><p class="my_product_title"><span></span><button type="button" class="product_reset_mo">초기화</button></p></div>`
 				)
 			}
-			if (checkedCount === 0) {
-				$('.my_product_container').find(`.my_product_list:nth-of-type(${accordionListIndex})`).remove()
-			}
+
 			if(checkedCount > 0 ) {
+				$('.promotion_float_wrap.mo').removeClass('disabled');
+				$('.promotion_total button').attr('disabled', false);
+
 				if ($(this).is(':checked')) {
 					$(`.my_product_list:nth-of-type(${accordionListIndex})`).append(
 						`<p class="my_product_content"><span>${accordionListName}</span><button type="button" class="product_delete">리스트 삭제 버튼</button></p>`
@@ -7259,6 +7262,16 @@
 						}
 					})
 				}
+			}
+
+			if (checkedCount === 0) {
+				$('.my_product_container').find(`.my_product_list:nth-of-type(${accordionListIndex})`).remove()
+
+				$('.promotion_float_wrap.mo').addClass('disabled');
+				$('.promotion_total button').attr('disabled', true);
+
+				$('.promotion_total button').removeClass('active');
+				$('.my_product_wrap').removeClass('active');
 			}
 		});
 
