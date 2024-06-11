@@ -7231,9 +7231,9 @@
 			var accordionListName = $(this).next('label').find('.product_name').text();
 			var accordionListIndex = $(this).closest('.accordion_list').data('index');
 			var accordionListTitle = $(this).closest('.accordion_list').data('name');
-			var checkedCount = 0;
-
 			var checkedListData = String($(this).attr('id'));
+			
+			var checkedCount = 0;
 
 			$(this)
 				.closest('.accordion_list')
@@ -7253,6 +7253,8 @@
 
 			if (checkedCount > 0) {
 				$('.my_product_wrap').addClass('active');
+				$('.promotion_total button').addClass('active');
+
 				$('.promotion_float_wrap.mo').removeClass('disabled');
 				$('.promotion_total button').attr('disabled', false);
 
@@ -7261,7 +7263,7 @@
 				if ($(this).is(':checked')) {
 					productListAppend(checkedCount, accordionListIndex, checkedListData, accordionListName, accordionListTitle);
 				} else {
-					productListAppendCheck(checkedCount, accordionListIndex, accordionListName, accordionListTitle)
+					productListAppendCheck(checkedCount, accordionListIndex, accordionListName, accordionListTitle, checkedListData)
 				}
 			}
 			
@@ -7290,9 +7292,9 @@
 
 	}
 
-	function productListAppendCheck(checkedCount, accordionListIndex, accordionListName, accordionListTitle) {
+	function productListAppendCheck(checkedCount, accordionListIndex, accordionListName, accordionListTitle, checkedListData) {
 		$(`.my_product_list[data-index="${accordionListIndex}"] .my_product_content span`).filter(function(_, i) {
-			if (accordionListName === $(this).html()) {
+			if (checkedListData === $(this).closest('.my_product_content').data('item')) {
 				$(this).closest('.my_product_content').remove();
 			}
 			
