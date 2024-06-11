@@ -7224,7 +7224,6 @@
     const productCheckbox = $('.accordion_product_wrap input[type="checkbox"]');
 
 		moProductCheckClick(productCheckbox)
-		deleteItem();
 	}
 
 	function moProductCheckClick(productCheckbox) {
@@ -7246,6 +7245,7 @@
 				});
 
 			resetItemButton(checkedCount);
+			deleteItem(accordionListTitle, checkedCount);
 			
 			if (checkedCount === 1 && $(this).is(':checked')) {
 				productContainerAppend(checkedCount, accordionListIndex);
@@ -7287,7 +7287,7 @@
 
 	}
 
-	function productListAppendCheck() {
+	function productListAppendCheck(checkedCount, accordionListIndex, accordionListName, accordionListTitle) {
 		$(`.my_product_list[data-index="${accordionListIndex}"] .my_product_content span`).filter(function(_, i) {
 			if (accordionListName === $(this).html()) {
 				$(this).closest('.my_product_content').remove();
@@ -7323,7 +7323,7 @@
 		});
 	}
 
-	function deleteItem() {
+	function deleteItem(accordionListTitle, checkedCount) {
     $('.my_product_container').on('click', '.product_delete', function() {
 			var productListData = $(this).closest('.my_product_content').data('item');
 			var productListIndex = $(this).closest('.my_product_list').data('index');
@@ -7334,7 +7334,11 @@
 				$(this).closest('.my_product_list').remove();
 			}
 
+			var productDiscounting = $(this).closest('.my_product_content').siblings('.my_product_content').length
+
+			$(this).closest('.my_product_list').find('.my_product_title span').text(`${accordionListTitle}(${productDiscounting})`);
 			$(this).closest('.my_product_content').remove();
+
 
 			if ($(this).closest('.my_product_content').length === 0) {
 				$(this).closest('.my_product_list').remove();
@@ -7373,7 +7377,10 @@
 
 	function buttonActionTop() {
 		$('.gutmorning_start_btn').on('click', function() {
-			
+
+			var visualHeight = $('.box_sop-visual').height() + $('.main-header').height();
+
+			$('html, body').animate({ scrollTop: visualHeight });
 		});
 	}
 	// E: 202405 것모닝 작업

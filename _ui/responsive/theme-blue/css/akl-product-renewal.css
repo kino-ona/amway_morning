@@ -18809,6 +18809,9 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	.box_sop-product-helper .accordion_wrap .accordion_body .accordion_contents .checkbox_wrap {
 		width: 100%;
 	}
+	.box_sop-product-helper .accordion_wrap .accordion_body .accordion_contents .checkbox_wrap:nth-of-type(1) {
+		margin-bottom: 8px;
+	}
 	.box_sop-product-helper .accordion_wrap .accordion_header {
 		padding: 20px;
 	}
