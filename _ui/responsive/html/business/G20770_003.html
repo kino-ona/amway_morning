@@ -906,7 +906,7 @@
                     function CheckboxChange() {
                         const checkedBoxes = $mobileTableArea.find('.mobile-year-checkbox-wrap input[type="checkbox"]:checked');
                         if (checkedBoxes.length === 0) {
-                            alert('최소 하나의 체크박스를 선택해야 합니다.');
+                            alert('최소 하나의 체크박스를 선택해야 합니다.');//와이어 프레임에 없지만 임의 적용
                             $(this).prop('checked', true);
                             return;
                         }
@@ -936,7 +936,7 @@
                     // checkbox event
                     $mobileTableArea.find('.mobile-year-checkbox-wrap input[type="checkbox"]').on('change', CheckboxChange);
 
-                    // 계산하기 버튼 클릭시 첫번째 total 값에 스크롤 이동
+                    // btn event
                     $('.btn-sum').on("click", btnSumFocus);
                 }
             }
