@@ -1570,6 +1570,15 @@
     margin: 0 0 12px !important;
     background: rgba(255, 255, 255, 0.2);;
 }
+
+.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_benefit.new-type .info_benefit_txt div > p {
+    font-size: 14px;
+}
+.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_benefit.new-type .info_benefit_txt div > p span {
+    display: block;
+    margin: 0;
+    font-size: 20px;
+}
 .box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_benefit.new-type .info_benefit_txt div p {
     max-width: 240px;
 }
@@ -1602,6 +1611,8 @@
     color: rgba(0, 0, 0, 0.8) !important;
 }
 .box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_benefit.new-type .info_benefit_txt .info_detail p:nth-of-type(1) span {
+    margin-top: 0px;
+    margin-bottom: 2px;
     padding: 1px 8px;
     color: #FFF !important;
     font-size: 14px;
@@ -1610,6 +1621,10 @@
     line-height: 24px;
     background: #00506C;
     border-radius: 6px;
+}
+.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_benefit.new-type .info_benefit_txt .info_detail p:nth-of-type(1) em {
+    padding-left: 8px;
+    opacity: 0.8;
 }
 .box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_benefit.new-type .info_benefit_txt .info_detail p:nth-of-type(2) {
     padding: 0;
@@ -1632,9 +1647,10 @@
 }
 .box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_benefit.new-type .info_benefit_txt .info_link_wrap a {
     padding-right: 14px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     line-height: 20px;
+    letter-spacing: unset;
 }
 .box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .container .info_benefit.new-type .info_benefit_txt .info_link_wrap a::after {
     width: 12px;

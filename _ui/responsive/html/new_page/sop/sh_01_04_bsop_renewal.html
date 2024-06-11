@@ -142,15 +142,15 @@
 
 									<ul class="info_detail">
 										<li>
-											<p><span>2~5회차 주문 시</span>A Cliks Money</p>
+											<p><span>2~5회차 주문 시</span><em>A Cliks Money</em></p>
 											<p><span>5,000</span>원</p>
 										</li>
 										<li>
-											<p><span>6~11회차 주문 시</span>A Cliks Money</p>
+											<p><span>6~11회차 주문 시</span><em>A Cliks Money</em></p>
 											<p><span>10,000</span>원</p>
 										</li>
 										<li>
-											<p><span>12~24회차 주문 시</span>A Cliks Money</p>
+											<p><span>12~24회차 주문 시</span><em>A Cliks Money</em></p>
 											<p><span>15,000</span>원</p>
 										</li>
 									</ul>
@@ -375,7 +375,8 @@
 				<div class="promotion_banner_container">
 					<div class="promotion_banner_top">
 						<div class="promotion_banner_title">
-							<h2><span>것스오</span><br><span>것</span>모닝 장바구니 <span>스</span>마트 <span>오</span>더</h2>
+							<h2>
+								<span>것스오</span><br><span>것</span>모닝 장바구니 <span>스</span>마트 <span>오</span>더</h2>
 						</div>
 
 						<p class="promotion_desc">생활습관 성형의 시작 GUT Morning!
@@ -7246,9 +7247,8 @@
 
 			resetItemButton(checkedCount);
 			
-			
 			if (checkedCount === 1 && $(this).is(':checked')) {
-				productContainerAppend(checkedCount, accordionListIndex)
+				productContainerAppend(checkedCount, accordionListIndex);
 			}
 
 			if (checkedCount > 0) {
@@ -7256,11 +7256,11 @@
 				$('.promotion_total button').attr('disabled', false);
 
 				if ($(this).is(':checked')) {
-				productListAppend(checkedCount, accordionListIndex, checkedListData, accordionListName, accordionListTitle);
-			} else {
-				productListAppendCheck(checkedCount, accordionListIndex, accordionListName, accordionListTitle)
+					productListAppend(checkedCount, accordionListIndex, checkedListData, accordionListName, accordionListTitle);
+				} else {
+					productListAppendCheck(checkedCount, accordionListIndex, accordionListName, accordionListTitle)
+				}
 			}
-		}
 			
 			if (checkedCount === 0) {
 					$('.my_product_container').find(`.my_product_list[data-index="${accordionListIndex}"]`).remove();
