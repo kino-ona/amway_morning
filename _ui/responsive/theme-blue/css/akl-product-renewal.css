@@ -18075,6 +18075,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	font-weight: 400;
 	line-height: 20px;
 	color: #999;
+	opacity: 0.8;
 }
 .box_sop-product-helper .accordion_swiper {
 	width: 100%;
@@ -18417,7 +18418,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 }
 @media (max-width: 1560px) {
 	.box_sop-product-helper .promotion_float_wrap.pc {
-		width: 100%;
+		width: calc(100% - 20px) !important;
 	}
 }
 .box_sop-product-helper .promotion_float_wrap.pc .promotion_total p {
@@ -18780,6 +18781,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	.box_sop-product-helper .accordion_wrap .accordion_list:nth-of-type(1) .accordion_contents {
 		flex-direction: column;
 		row-gap: 8px;
+		padding: 0 0 16px 20px;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_body .accordion_contents .checkbox_wrap {
 		width: 100%;
@@ -18787,14 +18789,10 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	.box_sop-product-helper .accordion_wrap .accordion_header {
 		padding: 20px;
 	}
-	.box_sop-product-helper .accordion_wrap .accordion_list:nth-of-type(1) .accordion_contents {
-		padding: 20px 0 16px 20px;
-	}
 	.box_sop-product-helper .accordion_wrap .accordion_list .accordion_contents.accordion_first {
 		padding: 20px 16px;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_header .accordion_title_wrap p {
-		margin-bottom: 4px;
 		padding-right: 40px;
 		font-size: 14px;
 		line-height: 20px;
@@ -18862,7 +18860,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		padding-top: 20px;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_list:first-of-type.opened .accordion_info_wrap {
-		padding-top: 0;
+		/* padding-top: 0; */
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_list.last_step.opened {
 		overflow: visible;
@@ -18898,7 +18896,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_body .accordion_contents {
 		flex-direction: column;
-		padding: 8px 0 16px 20px;
+		padding: 0 0 16px 20px;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_list {
 		border-radius: 12px;	

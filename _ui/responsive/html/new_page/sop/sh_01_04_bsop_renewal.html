@@ -474,7 +474,7 @@
 
 			<!-- 아코디언 영역 -->
 			<div class="accordion_wrap">
-				<div class="accordion_container accordion_container--step">
+				<div class="accordion_container accordion_container_step">
 					<div class="accordion_list">
 						<div class="accordion_header" onclick="accordionHeaderAction(1)"> <!-- 202405 것모닝 작업 - 아코디언 오픈 호출 시 파라미터 -->
 							<div class="accordion_title_wrap">
@@ -506,7 +506,7 @@
 					</div>
 				</div>
 				<!-- 아코디언 Step01 조건 01 -->
-				<div class="accordion_container accordion_container--step1_1">
+				<div class="accordion_container accordion_container_step1_1">
 					<div class="accordion_list accordion_list--first" data-index="1" data-name="푸로틴"><!-- 202405 것모닝 작업 - 초기셋팅 추가-->
 						<div class="accordion_header" onclick="accordionHeaderAction(2)"> <!-- 202405 것모닝 작업 - 아코디언 오픈 호출 시 파라미터 -->
 							<div class="accordion_title_wrap">
@@ -1907,7 +1907,7 @@
 				<!-- // 아코디언 Step01 조건 01 -->
 
 				<!-- 아코디언 Step01 조건 02 -->
-				<div class="accordion_container accordion_container--step1_2">
+				<div class="accordion_container accordion_container_step1_2">
 					<div class="accordion_list accordion_list--second" data-index="4" data-name="푸로틴 + 유산균">
 						<!-- 20240531 해결해야할 부분 -->
 						<div class="accordion_header" onclick="accordionHeaderAction(5)"> <!-- 202405 것모닝 작업 - 아코디언 오픈 호출 시 파라미터 -->
@@ -1919,7 +1919,7 @@
 							<div class="accordion_info_wrap">
 								<span class="info_message">1개 이상의 제품을 선택해야 합니다.</span><!-- 202405 것모닝 작업 - 열렸을때 info message 케이스 -->
 								<!-- <span class="error_message">제품이 선택되지 않았어요. 제품을 선택해주세요.</span> --><!-- 202405 것모닝 작업 - 에러 케이스 -->
-								<span class="chk_product_num"><span>0</span>개 제품 선택됨</span><!-- 202405 것모닝 작업 - 선택된 제품 개수 케이스 -->
+								<!-- <span class="chk_product_num"><span>0</span>개 제품 선택됨</span>--><!-- 202405 것모닝 작업 - 선택된 제품 개수 케이스 -->
 								<!--<span class="chk_product_name">뉴트리 파이토 푸로틴 450g x 1, 뉴트리 파이토 푸로틴 900g x 1</span>--><!-- 202405 것모닝 작업 - 선택된 제품 이름 케이스 -->
 							</div>
 						</div>
@@ -6924,7 +6924,7 @@
   
 	function step1DefaultOption(type) {
 		$('.accordion_container').hide();
-		$(`.accordion_container--step, .accordion_container--${type}`).show();
+		$(`.accordion_container_step, .accordion_container_${type}`).show();
 
 		step1ContainerAction();
 	}
@@ -6932,12 +6932,12 @@
   function step1ContainerAction() {
 		$('input[name="step1"]').click(function() {
 			$('.accordion_container:not(:eq(0))').hide();
-			$(`.accordion_container--${$(this).val()}`).show();
+			$(`.accordion_container_${$(this).val()}`).show();
     });
   }
 
   function accordionDefaultOption() {
-		var firstStepList = $('.accordion_container--step .accordion_list');
+		var firstStepList = $('.accordion_container_step .accordion_list');
 
 		resetAccordionClass();
 
@@ -6966,11 +6966,11 @@
 		var firstStepValue = $('input[name=step1]:checked').val();
 
 		if (idx === 1 && firstStepValue === 'step1_2' || idx > 4) {
-			$('.accordion_container--step1_1').hide();
-			$('.accordion_container--step1_2').show();
+			$('.accordion_container_step1_1').hide();
+			$('.accordion_container_step1_2').show();
 		} else if (idx === 1 && firstStepValue === 'step1_1' || idx <= 4) {
-			$('.accordion_container--step1_1').show();
-			$('.accordion_container--step1_2').hide();
+			$('.accordion_container_step1_1').show();
+			$('.accordion_container_step1_2').hide();
 		}
 
 		var thisList = $('.accordion_header').eq(idx - 1).closest('.accordion_list');
@@ -7008,12 +7008,12 @@
 			activeTarget = activeList.prev('.accordion_list');
 			
 			if (activeTarget.length < 1) {
-					activeTarget = $(`.accordion_container--step .accordion_list`).eq(0);
+					activeTarget = $(`.accordion_container_step .accordion_list`).eq(0);
 			}
 		}
 
-		if ($(target).closest('.accordion_container').hasClass('accordion_container--step')) {
-				activeTarget = $(`.accordion_container--${$('.accordion_list input[name="step1"]:checked').val()} .accordion_list`).eq(0);
+		if ($(target).closest('.accordion_container').hasClass('accordion_container_step')) {
+				activeTarget = $(`.accordion_container_${$('.accordion_list input[name="step1"]:checked').val()} .accordion_list`).eq(0);
 		}
 
 		accordionAction(activeTarget);
@@ -7178,154 +7178,198 @@
 	function productCheckNum() {
     const productCheckbox = $('.accordion_product_wrap input[type="checkbox"]');
     
-    productCheckbox.click(function() {
-        var checkedCount = 0;
+		pcProductCheckboxClick(productCheckbox);
+		pcProductResetClick(productCheckbox);
+	}
 
-        $(this)
-					.closest('.accordion_list')
-					.find('.accordion_product_wrap input[type="checkbox"]')
-					.each(function() {
-            if ($(this).is(':checked')) {
-                checkedCount++;
-            }
-        });
+	function pcProductCheckboxClick(productCheckbox) {
+		productCheckbox.click(function() {
+			var checkedCount = 0;
 
-        $(this)
-					.closest('.accordion_list')
-					.find('.chk_product_num span')
-					.text(checkedCount);
-
-				
-			$('.product_reset_pc').click(function() {
-				$(this)
-					.closest('.accordion_product_title_wrap')
-					.next('.accordion_contents')
-					.find('input')
-					.prop("checked",false);
-					
-				checkedCount = 0;
-
-				$(this)
-					.closest('.accordion_list')
-					.find('.chk_product_num span')
-					.text(checkedCount);
+			$(this)
+				.closest('.accordion_list')
+				.find('.accordion_product_wrap input[type="checkbox"]')
+				.each(function() {
+					if ($(this).is(':checked')) {
+							checkedCount++;
+					}
 			});
-    });
+
+			$(this)
+				.closest('.accordion_list')
+				.find('.chk_product_num span')
+				.text(checkedCount);
+		});
+	}
+
+	function pcProductResetClick(productCheckbox) {
+		$('.product_reset_pc').click(function() {
+			$(this)
+				.closest('.accordion_product_title_wrap')
+				.next('.accordion_contents')
+				.find('input')
+				.prop("checked",false);
+				
+			checkedCount = 0;
+
+			$(this)
+				.closest('.accordion_list')
+				.find('.chk_product_num span')
+				.text(checkedCount);
+		});
 	}
 
 	function moProductCheck() {
     const productCheckbox = $('.accordion_product_wrap input[type="checkbox"]');
 
-    var productWrapFlag = false;
-
-    productCheckbox.click(function() {
-        var accordionListName = $(this).next('label').find('.product_name').text();
-        var accordionListIndex = $(this).closest('.accordion_list').data('index');
-        var accordionListTitle = $(this).closest('.accordion_list').data('name');
-        var checkedCount = 0;
-
-        var checkedListData = String($(this).attr('id'));
-
-        $(this)
-            .closest('.accordion_list')
-            .find('.accordion_product_wrap input[type="checkbox"]')
-            .each(function() {
-                if ($(this).is(':checked')) {
-                    checkedCount++;
-                }
-            });
-
-        resetItemButton(checkedCount);
-
-        if (checkedCount === 1 && $(this).is(':checked')) {
-            $('.my_product_container').append(
-                `<div class="my_product_list" data-index="${accordionListIndex}"><p class="my_product_title"><span></span><button type="button" class="product_reset_mo">초기화</button></p></div>`
-            );
-        }
-
-        if (checkedCount > 0) {
-            $('.promotion_float_wrap.mo').removeClass('disabled');
-            $('.promotion_total button').attr('disabled', false);
-
-            if ($(this).is(':checked')) {
-                $(`.my_product_list:nth-of-type(${accordionListIndex})`).append(
-                    `<p class="my_product_content" data-item="${checkedListData}"><span>${accordionListName}</span><button type="button" class="product_delete">리스트 삭제 버튼</button></p>`
-                );
-
-                $(`.my_product_list:nth-of-type(${accordionListIndex}) .my_product_title span`).text(`${accordionListTitle}(${checkedCount})`);
-            } else {
-                $('.my_product_list .my_product_content span').filter(function(_, i) {
-                    if (accordionListName === $(this).html()) {
-                        $(this).closest('.my_product_content').remove();
-                    }
-                });
-            }
-        }
-
-        if (checkedCount === 0) {
-            $('.my_product_container').find(`.my_product_list:nth-of-type(${accordionListIndex})`).remove();
-
-            $('.promotion_float_wrap.mo').addClass('disabled');
-            $('.promotion_total button').attr('disabled', true);
-
-            $('.promotion_total button').removeClass('active');
-            $('.my_product_wrap').removeClass('active');
-        }
-    });
-
+		moProductCheckClick(productCheckbox)
 		deleteItem();
-}
+	}
 
-	function resetItemButton(checkedCount) {
-			$('.product_reset_mo').on('click', function () {
-				var productListIndex = $(this).closest('.my_product_list').data('index')
-		
-				$('.accordion_list').filter((v, i) => {
-					if ($(i).data('index') === productListIndex) {
-						$(i).find('input[type="checkbox"]').prop('checked', false);
+	function moProductCheckClick(productCheckbox) {
+		productCheckbox.click(function() {
+			var accordionListName = $(this).next('label').find('.product_name').text();
+			var accordionListIndex = $(this).closest('.accordion_list').data('index');
+			var accordionListTitle = $(this).closest('.accordion_list').data('name');
+			var checkedCount = 0;
 
-						$(i).find('.chk_product_num span').text('0');
+			var checkedListData = String($(this).attr('id'));
+
+			$(this)
+				.closest('.accordion_list')
+				.find('.accordion_product_wrap input[type="checkbox"]')
+				.each(function() {
+					if ($(this).is(':checked')) {
+						checkedCount++;
 					}
 				});
 
-				checkedCount = 0;
-				
-				$(this)
-					.closest('.my_product_list')
-					.remove();
-				
-				if ($('.my_product_list').length === 0) {
-					$('.promotion_float_wrap.mo').addClass('disabled');
-					$('.promotion_total button').attr('disabled', true);
+			resetItemButton(checkedCount);
+			
+			
+			if (checkedCount === 1 && $(this).is(':checked')) {
+				productContainerAppend(checkedCount, accordionListIndex)
+			}
 
-					$('.promotion_total button').removeClass('active');
-					$('.my_product_wrap').removeClass('active');
-				}
-			});
+			if (checkedCount > 0) {
+				$('.promotion_float_wrap.mo').removeClass('disabled');
+				$('.promotion_total button').attr('disabled', false);
+
+				if ($(this).is(':checked')) {
+				productListAppend(checkedCount, accordionListIndex, checkedListData, accordionListName, accordionListTitle);
+			} else {
+				productListAppendCheck(checkedCount, accordionListIndex, accordionListName, accordionListTitle)
+			}
 		}
+			
+			if (checkedCount === 0) {
+					$('.my_product_container').find(`.my_product_list[data-index="${accordionListIndex}"]`).remove();
+			}
+
+			if ($('.my_product_container').children().length === 0) {
+				resetProductClass();
+			}
+		});
+	}
+
+	function productContainerAppend(checkedCount, accordionListIndex) {
+		$('.my_product_container').append(
+				`<div class="my_product_list" data-index="${accordionListIndex}"><p class="my_product_title"><span></span><button type="button" class="product_reset_mo">초기화</button></p></div>`
+		);
+	}
+
+	function productListAppend(checkedCount, accordionListIndex, checkedListData, accordionListName, accordionListTitle) {
+		$(`.my_product_list[data-index="${accordionListIndex}"]`).append(
+				`<p class="my_product_content" data-item="${checkedListData}"><span>${accordionListName}</span><button type="button" class="product_delete">리스트 삭제 버튼</button></p>`
+		);
+
+		$(`.my_product_list[data-index="${accordionListIndex}"] .my_product_title span`).text(`${accordionListTitle}(${checkedCount})`);
+
+	}
+
+	function productListAppendCheck() {
+		$(`.my_product_list[data-index="${accordionListIndex}"] .my_product_content span`).filter(function(_, i) {
+			if (accordionListName === $(this).html()) {
+				$(this).closest('.my_product_content').remove();
+			}
+			
+			$(`.my_product_list[data-index="${accordionListIndex}"] .my_product_title span`).text(`${accordionListTitle}(${checkedCount})`);
+		});
+	}
+
+	function resetItemButton(checkedCount) {
+		$('.product_reset_mo').on('click', function () {
+			var productListIndex = $(this).closest('.my_product_list').data('index')
+	
+			resetItemFilter(productListIndex)
+
+			checkedCount = 0;
+			
+			$(this).closest('.my_product_list').remove();
+			
+			if ($('.my_product_list').length === 0) {
+				resetProductClass();
+			}
+		});
+	}
+
+	function resetItemFilter(productListIndex) {
+		$('.accordion_list').filter((v, i) => {
+			if ($(i).data('index') === productListIndex) {
+				$(i).find('input[type="checkbox"]').prop('checked', false);
+
+				$(i).find('.chk_product_num span').text('0');
+			}
+		});
+	}
 
 	function deleteItem() {
     $('.my_product_container').on('click', '.product_delete', function() {
-        var productListData = $(this).closest('.my_product_content').data('item');
-        var productListIndex = $(this).closest('.my_product_list').data('index');
+			var productListData = $(this).closest('.my_product_content').data('item');
+			var productListIndex = $(this).closest('.my_product_list').data('index');
 
-        $('.accordion_list').filter(function() {
-            if ($(this).data('index') === productListIndex) {
-              //   console.log($(this).find('.accordion_product_wrap input').attr('id'));
-							// console.log(productListData);
+			deleteItemFilter(productListIndex, productListData);
 
-							if ($(this).find('.accordion_product_wrap input').attr('id') === productListData) {
-								console.log($(this).find('.accordion_product_wrap input'));
-								$(this).prop('checked', false);
-							}
-            }
-        });
+			if ($(this).closest('.my_product_content').siblings('.my_product_content').length === 0) {
+				$(this).closest('.my_product_list').remove();
+			}
 
-        // $(this).closest('.my_product_content').remove();
+			$(this).closest('.my_product_content').remove();
+
+			if ($(this).closest('.my_product_content').length === 0) {
+				$(this).closest('.my_product_list').remove();
+			}
+
+			if ($('.my_product_list').length === 0) {
+
+				resetProductClass()
+			}
     });
-}
+	}
 
+	function deleteItemFilter(productListIndex, productListData) {
+		$('.accordion_list').filter(function(idx, element) {
+			if ($(element).data('index') === productListIndex) {
+				$(element).find('.accordion_product_wrap input').filter(function(v, i) {
+					if ($(i).is(':checked')) {
+						if ($(this).attr('id') === productListData) {
+							$(this).prop('checked', false);
+						}
+					}
+				});
 
+				var number = $(element).find('.chk_product_num span').text();
+				$(element).find('.chk_product_num span').text(--number);
+			}
+		});
+	}
+
+	function resetProductClass() {
+		$('.promotion_float_wrap.mo').addClass('disabled');
+		$('.promotion_total button').attr('disabled', true);
+		$('.promotion_total button').removeClass('active');
+		$('.my_product_wrap').removeClass('active');
+	}
 	// E: 202405 것모닝 작업
 
 
