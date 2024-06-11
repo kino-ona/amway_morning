@@ -18525,6 +18525,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	}
 	.box_sop-promotion .promotion_detail_container .promotion_detail_contents .detail_desc_wrap .detail_desc_content span:nth-of-type(1) {
 		padding: 2px 8px 0;
+		font-size: 12px;
 	}
 	.box_sop-promotion .promotion_detail_container .promotion_detail_contents .detail_desc_wrap .detail_desc_content strong {
 		margin-top: 8px !important;

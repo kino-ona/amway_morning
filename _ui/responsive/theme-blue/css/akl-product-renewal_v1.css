@@ -1323,7 +1323,7 @@
 .box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_04.new-type .a-cliks-logo::after {
     content: "";
     position: absolute;
-    top: -36px;
+    top: -40px;
     right: 160px;
     width: 89px;
     height: 49px;
@@ -1606,7 +1606,8 @@
     color: #FFF !important;
     font-size: 14px;
     font-weight: 400;
-    line-height: 20.27px;
+    height: 23px;
+    line-height: 24px;
     background: #00506C;
     border-radius: 6px;
 }
