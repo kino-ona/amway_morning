@@ -18958,12 +18958,12 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		padding: 0 20px 20px;	
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_body .optional_info_wrap p {
-		max-width: 200px;
 		margin-bottom: 16px;
 		font-size: 14px;
 		line-height: 22.4px;
 		color: #111;
 		letter-spacing: unset;
+		word-break: keep-all;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_body .optional_select_wrap {
 		flex-wrap: wrap;
@@ -19153,10 +19153,8 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	}
 	.box_sop-product-helper .promotion_float_wrap .my_product_wrap .my_product_list:not(:first-of-type) {
 		margin-top: 12px;
-	}
-	.box_sop-product-helper .promotion_float_wrap .my_product_wrap .my_product_list:not(:last-of-type) {
-		border-bottom: 1px solid #D9D9D9;
-		padding-bottom: 12px;
+		padding-top: 12px;
+		border-top: 1px solid #D9D9D9;
 	}
 	.box_sop-product-helper .promotion_float_wrap .my_product_wrap .my_product_list p {
 		margin: 0 0 12px;

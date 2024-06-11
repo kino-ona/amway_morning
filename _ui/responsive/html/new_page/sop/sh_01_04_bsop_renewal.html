@@ -7047,8 +7047,31 @@
 			var checkType = $(this).val() === 'optional_y';
 
 			$item.find('.optional_tab').css('display', checkType ? 'block' : 'none');
+			
+			optionalProductCheckedProduct($item, checkType);
 			checkMobileView($item, checkType, windowWidth);
 		});
+	}
+
+	function optionalProductCheckedProduct(item, checkType) {
+		var itemDataIndex = item.data('index');
+		var myProductListIndex = $('.my_product_list').data('index');
+
+		if (checkType === false) {
+			$('.my_product_list').filter(function(idx, elem) {
+				
+				if (itemDataIndex === $(elem).data('index')) {
+					$(this).hide();
+				}
+			})
+		} else {
+			$('.my_product_list').filter(function(idx, elem) {
+				
+				if (itemDataIndex === $(elem).data('index')) {
+					$(this).show();
+				}
+			})
+		}
 	}
 
 	function checkMobileView(item, checkType, windowWidth) {
