@@ -18360,12 +18360,18 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	letter-spacing: -0.05em;
 	color: #999;
 }
+.box_sop-product-helper .promotion_float_wrap .promotion_total p:last-of-type {
+	color: #000;
+}
 .box_sop-product-helper .promotion_float_wrap .promotion_total p span {
 	padding-right: 4px;
 	font-size: 34px;
 	font-weight: 700;
 	line-height: 57.8px;
 	color: #000;
+}
+.box_sop-product-helper .promotion_float_wrap .promotion_total p:last-of-type span {
+	padding-right: 3px;
 }
 .box_sop-product-helper .promotion_float_wrap .promotion_total .promotion_total_flag {
 	padding: 4px 6px;
