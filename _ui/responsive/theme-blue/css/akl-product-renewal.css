@@ -4,6 +4,10 @@
 @font-face {font-family:'Roboto';font-style:normal;font-weight:700;src:url(/_ui/responsive/theme-blue/fonts/Roboto-Bold.woff2) format('woff2'), url(/_ui/responsive/theme-blue/fonts/Roboto-Bold.woff) format('woff'), url(/_ui/responsive/theme-blue/fonts/Roboto-Bold.otf) format('opentype')}
 @font-face {font-family:'Noto Sans KR'; font-style:normal; font-weight:900; src:url(/_ui/responsive/theme-blue/fonts/NotoSansKR-Black.woff2) format('woff2'), url(/_ui/responsive/theme-blue/fonts/NotoSansKR-Black.woff) format('woff') ;} /* 20240510 추가 */
 
+div, p, span {
+	font-family: 'noto sans kr', 'Roboto', sans-serif !important;
+}
+
 [type=checkbox]:not(:checked){position:absolute;left:-9999px;}
 [type=checkbox]:not(:checked)+label{position:relative;padding-left:1.95em;font-size:15px;font-weight:100;cursor:pointer;text-align:left;color:#55565a;}
 [type=checkbox]:not(:checked)+label::before{position:absolute;top:0;left:0;width:1.25em;height:1.25em;content:'';border:1px solid #dadada;background:#ffffff;}
@@ -17674,7 +17678,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 }
 .box_sop-product-helper .product_helper_banner .promotion_date:nth-of-type(2) {
 	margin-bottom: 32px;
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 500;
 	line-height: 26px;
 }
@@ -18169,7 +18173,10 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	letter-spacing: -0.05em;
 	color: #000;
 	text-align: left;
-	max-width: 100%;
+}
+.box_sop-product-helper .accordion_swiper .accordion_product_wrap .product_name a {
+	display: block;
+	color: #000;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
@@ -18392,7 +18399,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	justify-content: space-between;
 	width: calc(100% + 140px);
 	max-width: 1540px;
-	height: 108px;
+	height: 106px;
 	padding: 28px 8px 28px 40px;
 	transition: unset;
 	border: 1px solid #018C51;
@@ -18944,14 +18951,16 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		padding-right: 20px;
 	}
 	.box_sop-product-helper .accordion_swiper .accordion_product_wrap .product_flag {
-		padding: 2px 5px;
+		padding: 2px 5px 0;
 		font-size: 12px;
 	}
 	.box_sop-product-helper .accordion_swiper .accordion_product_wrap .product_name {
-		max-width: 100%;
 		margin: 4px 0 6px;
 		font-size: 14px;
 		line-height: 20px;
+	}
+	.box_sop-product-helper .accordion_swiper .accordion_product_wrap .product_name a {
+		max-width: 100%;
 		display: -webkit-box;
 		-webkit-line-clamp: 2;
 		-webkit-box-orient: vertical;
@@ -19165,7 +19174,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 
 	.box_sop-product-helper .accordion_wrap .accordion_body .optional_category_wrap {
 		position: relative;
-		padding: 20px 20px 22px 20px;
+		padding: 20px 0 22px 20px;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_body .optional_category_wrap button {
 		width: 100%;
@@ -19186,6 +19195,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		display: flex;
 		column-gap: 8px;
 		overflow-x: scroll;
+		padding-right: 20px;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_body .optional_category_wrap ul::-webkit-scrollbar {
 		display: none;
