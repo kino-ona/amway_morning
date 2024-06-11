@@ -906,7 +906,7 @@
                     function CheckboxChange() {
                         const checkedBoxes = $mobileTableArea.find('.mobile-year-checkbox-wrap input[type="checkbox"]:checked');
                         if (checkedBoxes.length === 0) {
-                            alert('최소 하나의 체크박스를 선택해야 합니다.');
+                            alert('최소 하나의 체크박스를 선택해야 합니다.');//와이어 프레임에 없지만 임의 적용
                             $(this).prop('checked', true);
                             return;
                         }
