@@ -18901,9 +18901,20 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_list.last_step.opened .accordion_info_wrap {
 		position: absolute;
-		top: 272px;
+		top: 237px;
 		left: 20px;
+		width: 100%;
 		padding-top: 0;
+	}
+	@media(max-width: 481px) {
+		.box_sop-product-helper .accordion_wrap .accordion_list.last_step.opened .accordion_info_wrap {
+			top: 258px;
+		}
+	}
+	@media(max-width: 374px) {
+		.box_sop-product-helper .accordion_wrap .accordion_list.last_step.opened .accordion_info_wrap {
+			top: 272px;
+		}
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_info_wrap span {
 		font-size: 14px !important;
