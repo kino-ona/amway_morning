@@ -3593,7 +3593,9 @@ background-repeat:no-repeat;}
 @media(max-width:768px){
 	.visionbonus .pc-only{display: none;}
 	.visionbonus .box-group{margin-top:40px;}
-	.visionbonus .title-h3 + div, .visionbonus .title-h3 + p{margin-top:12px; font-size:14px; line-height: 24px;}
+	.visionbonus .title-h3 + div, .visionbonus .title-h3 + p {margin-top:12px; font-size:14px; line-height: 24px;}
+	.visionbonus .title-wrap .txt-in-tooltip,
+	.visionbonus .title-wrap p{font-size: 14px;}
 	.visionbonus .title-wrap + .border-box{margin-top:20px;}
 	.visionbonus .subjects-inner{padding:41px 20px 20px;}
 	.visionbonus .category-box .circle-container{width:100%;}
