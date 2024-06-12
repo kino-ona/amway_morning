@@ -1692,7 +1692,7 @@ a[class^="btn_default-"].small {line-height:24px}
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 26px;
-	letter-spacing: -0.05em;
+	letter-spacing: -0.03em;
 	white-space: pre-line;
 }
 .box_sop-cont .promotion_banner_top .promotion_notice {
@@ -1701,7 +1701,7 @@ a[class^="btn_default-"].small {line-height:24px}
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 20px;
-	letter-spacing: -0.05em;
+	letter-spacing: -0.03em;
 	word-break: keep-all;
 	opacity: 0.8;
 }
@@ -3420,14 +3420,14 @@ i.state-fail:before {transform:rotate(-45deg);-webkit-transform:rotate(-45deg)}
 	font-size: 24px;
 	font-weight: 700;
 	line-height: 36px;
-	letter-spacing: -0.05em;
+	letter-spacing: -0.03em;
 	color: #0D8351;
 }
 .gutmorning_promotion_banner span {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 26px;
-	letter-spacing: -0.05em;
+	letter-spacing: -0.03em;
 	color: #000;
 	text-align: center;
 	white-space: pre-line;
@@ -3529,13 +3529,13 @@ i.state-fail:before {transform:rotate(-45deg);-webkit-transform:rotate(-45deg)}
 		padding: 2px 5px;
 		font-size: 12px;
 		line-height: 17.38px;
-		letter-spacing: -0.05em;
+		letter-spacing: -0.03em;
 	}
 	.product_item--gutmorning .product_text-data .text_product-up {
 		margin: 0;
 		font-size: 12px;
 		line-height: 17.38px;
-		letter-spacing: -0.05em;
+		letter-spacing: -0.03em;
 	}
 }
 @media (max-width: 319px) {
@@ -17277,7 +17277,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	font-size: 20px;
 	font-weight:500;
 	line-height: 30px;
-	letter-spacing: -0.05em;
+	letter-spacing: -0.03em;
 	border: none;
 	border-bottom: 3px solid transparent;
 	padding:0;
@@ -17386,10 +17386,11 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 .box_sop-promotion .promotion_banner_container .promotion_banner_top .promotion_banner_title h2 {
 	position: relative;
 	margin: 0;
-	font-weight: 900;
+	font-weight: 700;
 	font-size: 54px;
 	line-height: 64.8px;
 	padding-left: 20px;
+	letter-spacing: -0.03em;
 }
 .box_sop-promotion .promotion_banner_container .promotion_banner_top .promotion_banner_title h2::before {
 	content: '';
@@ -17468,7 +17469,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	font-size: 28px;
 	font-weight: 700;
 	line-height: 40px;
-	letter-spacing: -0.05em;
+	letter-spacing: -0.03em;
 	color: #000;
 	word-break: keep-all;
 }
@@ -17477,7 +17478,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	color: #666;
 	font-size: 16px;
 	line-height: 26px;
-	letter-spacing: -0.05em;
+	letter-spacing: -0.03em;
 	word-break: keep-all;
 }
 .box_sop-promotion .promotion_detail_container .promotion_detail_contents .detail_text_wrap span {
@@ -17485,6 +17486,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	font-weight: 400;
 	line-height: 20px;
 	color: #999;
+	letter-spacing: -0.03em;
 	opacity: 0.8;
 }
 .box_sop-promotion .promotion_detail_container .promotion_detail_contents .detail_desc_wrap {
@@ -17518,7 +17520,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 .box_sop-promotion .promotion_detail_container .promotion_detail_contents .detail_desc_wrap .detail_desc_content span:nth-of-type(1) {
 	padding: 4px 40px 2px;
 	font-size: 14px;
-	font-weight: 500;
+	font-weight: 400;
 	line-height: 20px;
 	color: #FFF;
 	border-radius: 999px;
@@ -17527,9 +17529,9 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 .box_sop-promotion .promotion_detail_container .promotion_detail_contents .detail_desc_wrap .detail_desc_content strong {
 	margin-top: 8px;
 	font-size: 24px;
-	font-weight: 700;
+	font-weight: 500;
 	line-height: 36px;
-	letter-spacing: -0.05em;
+	letter-spacing: -0.03em;
 	color: #000;
 }
 .box_sop-promotion .promotion_detail_container .promotion_detail_contents .detail_desc_wrap .detail_desc_content p {
@@ -17544,10 +17546,11 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	max-width: 280px;
 }
 .box_sop-promotion .promotion_detail_container .promotion_detail_contents .detail_desc_wrap .detail_desc_content span:nth-of-type(2) {
-	font-size: 12px;
-	font-weight: 500;
+	font-size: 14px;
+	font-weight: 400;
 	line-height: 20px;
 	color: #999;
+	letter-spacing: -0.03em;
 	opacity: 0.8;
 }
 .box_sop-promotion .promotion_detail_container .promotion_detail_contents .detail_desc_wrap .detail_desc_content:nth-of-type(2) span:nth-of-type(1) {
@@ -17595,7 +17598,9 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	background: #81BC47;
 }
 .box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content strong {
-	margin: 12px 0 2px;
+	margin: 12px 0 0;
+	font-size: 18px;
+	line-height: 24px;
 	word-break: keep-all;
 }
 .box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content p {
@@ -17611,7 +17616,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 20px;
-	letter-spacing: -0.05em;
+	letter-spacing: -0.03em;
 	color: #999;
 	opacity: 0.8;
 }
@@ -17625,7 +17630,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	position: relative;
 	width: 100%;
 }
-.box_sop-promotion .promotion_button_wrap  .button_container > button {
+.box_sop-promotion .promotion_button_wrap .button_container > button {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -17634,15 +17639,16 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	width: 100%;
 	padding: 20px 0;
 	font-size: 22px;
-	font-weight: 500;
+	font-weight: 700;
 	line-height: 24px;
 	border: 1px solid #018C51;
 	border-radius: 16px;
 }
-.box_sop-promotion .promotion_button_wrap  .button_container > button span {
+.box_sop-promotion .promotion_button_wrap .button_container > button span {
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 20px;
+	letter-spacing: -0.03em;
 	opacity: 0.5;
 }
 .box_sop-promotion .promotion_button_wrap .button_container .gutmorning_edit_btn {
@@ -17675,34 +17681,34 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	font-size: 32px;
 	font-weight: 700;
 	line-height: 46px;
-	letter-spacing: -0.05em;
+	letter-spacing: -0.03em;
 }
 .box_sop-product-helper .product_helper_banner p:nth-of-type(1) {
 	margin-bottom: 2px;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 26px;
-	letter-spacing: -0.05em;
+	letter-spacing: -0.03em;
 }
 .box_sop-product-helper .product_helper_banner .promotion_notice {
 	display: block;
 	margin-bottom: 12px;
-	font-size: 12px;
-	font-weight: 500;
+	font-size: 14px;
+	font-weight: 400;
 	line-height: 20px;
 	opacity: 0.8;
 	color: #FFF;
 }
 .box_sop-product-helper .product_helper_banner .promotion_date {
 	width: fit-content;
-	padding: 6px 12px;
+	padding: 4px 12px;
 	background: #009D4A;
 	border-radius: 6px;
 }
 .box_sop-product-helper .product_helper_banner .promotion_date:nth-of-type(2) {
 	margin-bottom: 32px;
 	font-size: 14px;
-	font-weight: 500;
+	font-weight: 400;
 	line-height: 26px;
 }
 .box_sop-product-helper .product_helper_banner .promotion_date:nth-of-type(2) span {
@@ -17721,11 +17727,11 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	opacity: 0.5;
 }
 .box_sop-product-helper .product_helper_banner button {
-	padding: 10px 20px;
+	padding: 10px 20px 8px 20px;
 	background: transparent;
 	font-size: 14px;
 	font-weight: 500;
-	letter-spacing: -0.05em;
+	letter-spacing: -0.03em;
 	color: #fff;
 	border: 1px solid #fff;
 	border-radius: 4px;
@@ -17737,8 +17743,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	margin-bottom: 4px;
-	letter-spacing: -0.05em;
+	letter-spacing: -0.03em;
 }
 .box_sop-product-helper .product_helper_title p:nth-of-type(1) {
 	font-size: 24px;
@@ -17809,9 +17814,9 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 .box_sop-product-helper .accordion_wrap .accordion_title_wrap p {
 	margin: 0;
 	font-size: 18px;
-	font-weight: 500;
+	font-weight: 400;
 	line-height: 28px;
-	letter-spacing: -0.05em;
+	letter-spacing: -0.03em;
 	color: #000;
 }
 .box_sop-product-helper .accordion_wrap .last_step .accordion_title_wrap p {
@@ -17823,7 +17828,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 26px;
-	letter-spacing: -0.05em;
+	letter-spacing: -0.03em;
 	color: #018C51;
 }
 .box_sop-product-helper .accordion_wrap .accordion_list.opened .accordion_title_wrap p .promotion_message {
@@ -17844,11 +17849,13 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
-	row-gap: 4px;
-	position: absolute;
+	row-gap: 8px;
+	flex: 1;
+	margin-right: 20px;
+	/* position: absolute;
 	top: 50%;
 	right: 96px;
-	transform: translateY(-50%);
+	transform: translateY(-50%); */
 }
 .box_sop-product-helper .accordion_wrap .accordion_info_wrap span.my_product {
 	padding: 4px 12px;
@@ -17857,7 +17864,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	font-size: 16px;
 	font-weight: 500;
 	border-radius: 8px;
-	letter-spacing: -0.05em;
+	letter-spacing: -0.03em;
 }
 
 .box_sop-product-helper .accordion_wrap .accordion_list.opened {
@@ -17871,7 +17878,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	display: none;
 	font-size: 16px;
 	font-weight: 400;
-	letter-spacing: -0.05em;
+	letter-spacing: -0.03em;
 	color: #000;
 }
 .box_sop-product-helper .accordion_wrap .accordion_info_wrap span.error_message {
@@ -17879,7 +17886,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	display: none;
 	font-size: 16px;
 	font-weight: 400;
-	letter-spacing: -0.05em;
+	letter-spacing: -0.03em;
 	color: #ED174C;
 }
 .box_sop-product-helper .accordion_wrap .accordion_info_wrap span.error_message::before {
@@ -17900,12 +17907,12 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	font-size: 16px;
 	font-weight: 500;
 	border-radius: 8px;
-	letter-spacing: -0.05em;
+	letter-spacing: -0.03em;
 }
 .box_sop-product-helper .accordion_wrap .accordion_list.opened .accordion_info_wrap span.chk_product_num {
 	font-size: 18px;
 	font-weight: 400;
-	letter-spacing: -0.05em;
+	letter-spacing: -0.03em;
 	background: unset;
 	color: #000;
 }
@@ -17920,7 +17927,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	max-width: 900px;
 	font-size: 16px;
 	font-weight: 400;
-	letter-spacing: -0.05em;
+	letter-spacing: -0.03em;
 	color: #999;
 	white-space: nowrap;
 	overflow: hidden;
@@ -17966,7 +17973,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	background: unset;
 	font-size: 16px;
 	line-height: 26px;
-	letter-spacing: -0.05em;
+	letter-spacing: -0.03em;
 	color: #000;
 }
 .box_sop-product-helper .accordion_wrap .accordion_body .accordion_product_title_wrap button::before {
@@ -18062,7 +18069,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	color: #018C51;
 	font-size: 14px;
 	font-weight: 500;
-	letter-spacing: -0.05em;
+	letter-spacing: -0.03em;
 	border: 1px solid #018C51;
 	border-radius: 8px;
 }
@@ -18073,7 +18080,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	color: #FFF;
 	font-size: 14px;
 	font-weight: 500;
-	letter-spacing: -0.05em;
+	letter-spacing: -0.03em;
 	border: 1px solid #018C51;
 	border-radius: 8px;
 }
@@ -18086,7 +18093,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	padding-bottom: 24px;
 }
 .box_sop-product-helper .accordion_wrap .accordion_list.opened .accordion_header .accordion_title_wrap p {
-	font-weight: 700;
+	font-weight: 500;
 }
 .box_sop-product-helper .accordion_wrap .accordion_list.opened .accordion_header .accordion_btn_wrap {
 	display: flex;
@@ -18194,7 +18201,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	margin: 4px 0 12px;
 	font-size: 16px;
 	line-height: 22px;
-	letter-spacing: -0.05em;
+	letter-spacing: -0.03em;
 	color: #000;
 	text-align: left;
 }
@@ -18211,7 +18218,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	align-items: flex-end;
 	margin-bottom: 16px;
 	font-size: 22px;
-	font-weight: 700;
+	font-weight: 500;
 	line-height: 22px;
 	color: #000;
 }
@@ -18326,7 +18333,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 26px;
-	letter-spacing: -0.05em;
+	letter-spacing: -0.03em;
 	color: #000;
 }
 .box_sop-product-helper .accordion_wrap .accordion_body .optional_select_wrap input[type="radio"] {
@@ -18346,7 +18353,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	color: #000;
 	font-size: 16px;
 	font-weight: 500;
-	letter-spacing: -0.05em;
+	letter-spacing: -0.03em;
 }
 .box_sop-product-helper .accordion_wrap .accordion_body .optional_select_wrap input[type="radio"] + label:nth-of-type(1) {
 	margin-right: 24px;
@@ -18389,7 +18396,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	font-size: 20px;
 	font-weight: 500;
 	line-height: 30px;
-	letter-spacing: -0.05em;
+	letter-spacing: -0.03em;
 	color: #999;
 }
 .box_sop-product-helper .promotion_float_wrap .promotion_total p:last-of-type {
@@ -18398,7 +18405,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 .box_sop-product-helper .promotion_float_wrap .promotion_total p span {
 	padding-right: 4px;
 	font-size: 34px;
-	font-weight: 700;
+	font-weight: 500;
 	line-height: 57.8px;
 	color: #000;
 }
@@ -18406,6 +18413,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	padding-right: 3px;
 }
 .box_sop-product-helper .promotion_float_wrap .promotion_total .promotion_total_flag {
+	margin-bottom: 3px;
 	padding: 4px 6px;
 	font-size: 14px;
 	font-weight: 500;
@@ -18422,7 +18430,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	padding: 14px 48px;
 	font-size: 16px;
 	font-weight: 500;
-	letter-spacing: -0.05em;
+	letter-spacing: -0.03em;
 	background: #018C51;
 	color: #FFF;
 	border-radius: 12px;
@@ -18464,9 +18472,9 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	align-items: center;
 	margin: 0 40px 0 0;
 	font-size: 20px;
-	font-weight: 500;
+	font-weight: 400;
 	line-height: 30px;
-	letter-spacing: -0.05em;
+	letter-spacing: -0.03em;
 	color: #999;
 }
 .box_sop-product-helper .promotion_float_wrap.pc .promotion_total p span:nth-of-type(1) {
@@ -18474,7 +18482,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	padding: 4px 15px;
 	font-size: 16px;
 	line-height: 26px;
-	letter-spacing: -0.05em;
+	letter-spacing: -0.03em;
 	color: #018C51;
 	background: #EBF5F0;
 	border-radius: 99px;
@@ -18497,14 +18505,14 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	color: #000;
 }
 .box_sop-product-helper .promotion_float_wrap.pc .promotion_total p:last-of-type {
-	margin-right: 8px;
+	margin-right: 12px;
 }
 .box_sop-product-helper .promotion_float_wrap.pc .promotion_button_confirm {
 	padding: 33px 41.5px;
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 24px;
-	letter-spacing: -0.05em;
+	letter-spacing: -0.03em;
 }
 
 @media (max-width: 1370px) {
@@ -18527,7 +18535,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	.box_sop-promotion .promotion_detail_container .promotion_detail_contents {
 		display: flex;
 		flex-direction: column;
-		padding: 20px !important;
+		padding: 24px 20px !important;
 	}
 	.box_sop-promotion .promotion_button_wrap {
 		padding: 0 16px;
@@ -18542,7 +18550,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		margin-bottom: 24px;
 	}
 	.box_sop-promotion .promotion_detail_container .promotion_detail_contents .detail_text_wrap h3 {
-		font-size: 20px;
+		font-size: 22px;
 		font-weight: 700;
 		line-height: 30px;
 		letter-spacing: unset;
@@ -18551,7 +18559,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		margin-bottom: 2px;
 		font-size: 14px;
 		line-height: 22px;
-		letter-spacing: -0.05em;
+		letter-spacing: unset;
 	}
 	.box_sop-promotion .promotion_detail_container .promotion_detail_contents .detail_desc_wrap img {
 		display: none;
@@ -18564,13 +18572,13 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		aspect-ratio: unset;
 	}
 	.box_sop-promotion .promotion_detail_container .promotion_detail_contents .detail_desc_wrap .detail_desc_content span:nth-of-type(1) {
-		padding: 2px 8px 0;
+		padding: 4px 8px 2px;
 		font-size: 12px;
 		line-height: 17.38px;
 	}
 	.box_sop-promotion .promotion_detail_container .promotion_detail_contents .detail_desc_wrap .detail_desc_content strong {
 		margin-top: 8px !important;
-		font-size: 16px;
+		font-size: 20px;
 		line-height: 24px;
 		letter-spacing: unset;
 	}
@@ -18627,7 +18635,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		left: 50%;
 	}
 	.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content span:nth-of-type(1) {
-		padding: 2px 8px 0;
+		padding: 4px 8px 2px;
 		font-size: 12px;
 		line-height: 17.38px;
 	}
@@ -18651,15 +18659,15 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	}
 	.box_sop-promotion .promotion_banner_container .promotion_banner_top .promotion_banner_title h2 {
 		padding: 0 0 0 12px;
-		font-size: 34px;
+		font-size: 38px;
 		line-height: 44.2px;
 		letter-spacing: normal;
-		max-width: 250px;
+		max-width: 270px;
 		white-space: normal;
 	}
 	.box_sop-promotion .promotion_banner_container .promotion_banner_top .promotion_banner_title::after {
 		top: -3px;
-		left: 113px;
+		left: 123px;
 		width: 44px;
 		height: 37px;
 	}
@@ -18688,8 +18696,8 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	}
 	.box_sop-promotion .promotion_banner_container .promotion_banner_top .promotion_date {
 		margin: 16px 0 0 12px;
-		padding: 4px 8px;
-		font-size: 12px;
+		padding: 6px 8px 4px;
+		font-size: 14px;
 		line-height: 17.38px;
 	}
 	.box_sop-promotion .promotion_banner_container .promotion_banner_top .promotion_date span {
@@ -18706,11 +18714,12 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		width: 100%;
 	}
 	.box_sop-promotion .promotion_button_wrap .button_container > button {
-		gap: 2px;
 		padding: 14px 0;
-		font-size: 16px;
+		font-size: 18px;
 		line-height: 24px;
 		border-radius: 8px;
+		letter-spacing: -0.03em;
+		gap: 2px;
 	}
 	.box_sop-promotion .promotion_button_wrap .button_container > button span {
 		font-size: 12px;
@@ -18766,7 +18775,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	.box_sop-product-helper .product_helper_banner p:nth-of-type(1) {
 		margin-bottom: 8px;
 		font-size: 14px;
-		font-weight: 500;
+		font-weight: 400;
 		line-height: 20px;
 		word-break: keep-all;
 		letter-spacing: unset;
@@ -18811,7 +18820,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		padding: 0 20px;
 		font-size: 12px;
 		line-height: 17.38px;
-		letter-spacing: -0.05em;
+		letter-spacing: -0.03em;
 		z-index: 2;
 	}
 	.box_sop-product-helper .product_helper_title p:nth-of-type(2) {
@@ -18852,12 +18861,20 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		padding: 20px 16px;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_header .accordion_title_wrap p {
-		padding-right: 40px;
-		font-size: 14px;
+		margin-bottom: 6px;
+		padding-right: 10px;
+		font-size: 16px;
 		line-height: 20px;
 		letter-spacing: unset;
+		font-weight: 500;
+	}
+	.box_sop-product-helper .accordion_wrap .accordion_title_wrap {
+		flex-direction: column;
+		align-items: flex-start;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_title_wrap .accordion_button {
+		position: absolute;
+		right: 20px;
 		width: 24px;
 		height: 24px;
 		background-size: 12px !important;
@@ -18870,7 +18887,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	.box_sop-product-helper .accordion_wrap .accordion_body .accordion_contents.accordion_first input[type='radio'] + label {
 		margin-bottom: 0;
 		padding: 32px 16px 32px 42px;
-		font-size: 14px;
+		font-size: 16px;
 		line-height: 20px;
 		background-position: calc(100% - 16px) center !important;
 		background-size: 80px !important;
@@ -18900,10 +18917,12 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_btn_wrap {
 		padding: 0 20px 20px;
+		gap: 8px;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_btn_wrap .accordion_prev_btn,
 	.box_sop-product-helper .accordion_wrap .accordion_btn_wrap .accordion_next_btn {
 		width: 100%;
+		margin: 0;
 		padding: 10px 0;
 		font-size: 14px;
 		line-height: 24px;
@@ -18916,12 +18935,14 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		padding-bottom: 0;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_info_wrap {
+		width: 100%;
 		position: unset;
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-between;
 		transform: unset;
-		gap: 6px;
+		gap: 8px;
+		/* margin-top: 6px; */
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_list.opened .accordion_info_wrap {
 		padding-top: 20px;
@@ -18957,12 +18978,14 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		line-height: 17.38px;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_info_wrap span.chk_product_num {
-		padding: 2px 8px;
+		padding: 4px 10px 2px;
 		letter-spacing: unset !important;
+		font-weight: 400;
+		border-radius: 6px;
+		white-space: nowrap;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_info_wrap span.chk_product_name {
-		max-width: 188px;
-		flex: 1;
+		max-width: unset;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_list.opened .accordion_info_wrap span.chk_product_num {
 		padding-left: 0;
@@ -19065,9 +19088,12 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		max-width: 100%;
 	}
 	.box_sop-product-helper .accordion_swiper .accordion_product_wrap .product_btn span {
-		padding: 6px 0;
 		font-size: 14px;
 	}
+	.box_sop-product-helper .accordion_swiper .accordion_product_wrap .product_btn span input {
+		padding: 6px 0;
+	}
+	
 	.box_sop-product-helper .accordion_swiper .accordion_product_wrap .product_btn button {
 		padding:0 15px;
 	}
@@ -19147,6 +19173,8 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		font-weight: 500;
 		line-height: 17.38px;
 		border-radius: 6px;
+		max-width: unset;
+		overflow: visible;
 	}
 	.box_sop-product-helper .promotion_float_wrap.mo .promotion_total button {
 		position: absolute;
@@ -19212,7 +19240,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		color: #000;
 		font-size: 14px;
 		line-height: 20px;
-		letter-spacing: -0.05em;
+		letter-spacing: -0.03em;
 	}
 	.box_sop-product-helper .promotion_float_wrap .my_product_wrap .my_product_list p:last-of-type {
 		margin-bottom: 0;
@@ -19235,7 +19263,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		font-size: 14px;
 		font-weight: 700;
 		line-height: 20px;
-		letter-spacing: -0.05em;
+		letter-spacing: -0.03em;
 		color: #018C51;
 	}
 	.box_sop-product-helper .promotion_float_wrap .my_product_wrap .my_product_list .my_product_title button {
@@ -19299,7 +19327,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		font-size: 12px;
 		font-weight: 500;
 		line-height: 17.38px;
-		letter-spacing: -0.05em;
+		letter-spacing: -0.03em;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_body .optional_category_wrap ul li.active {
 		background: #018C51;
@@ -19335,7 +19363,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	}
 }
 
-@media (max-width: 334px) {
+@media (max-width: 384px) {
 	.box_sop-promotion .promotion_banner_container .promotion_banner_top .promotion_date,
 	.box_sop-product-helper .product_helper_banner .promotion_date:nth-of-type(2) {
 		display: flex;

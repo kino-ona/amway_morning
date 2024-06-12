@@ -439,17 +439,23 @@
 							<p class="detail_notice">* 푸로틴, 유산균, 기타 뉴트리라이트 제품을 최대 100만원 까지 담을 수 있습니다.</p>
 						</div>
 					</div>
-				<div class="promotion_button_wrap">
-					<div class="button_container">
-						<button type="button" class="gutmorning_edit_btn" data-layer="layer-editProduct">주문서 제품 수정 바로가기<span>담겨있던 제품들을 보면서 수정하세요.</span></button>
+					<!-- 202405 것모닝 작업 - '주문서 제품 수정 바로가기' 버튼과 '것스오 변경하기' 버튼은 두개가 다 보이는 경우입니다. -->
+					<div class="promotion_button_wrap">
+						<div class="button_container">
+							<button type="button" class="gutmorning_edit_btn" data-layer="layer-editProduct">주문서 제품 수정 바로가기<span>담겨있던 제품들을 보면서 수정하세요.</span></button>
+						</div>
+						<div class="button_container">
+							<button type="button" class="gutmorning_change_btn">것스오 변경하기<span>것스오 도우미가 제품 구성을 도와드려요.</span></button>
+						</div>
+						<!-- 202405 것모닝 작업 - '주문서 제품 수정 바로가기' 버튼과 '것스오 변경하기' 버튼은 두개가 다 보이는 경우입니다. -->
 					</div>
-					<div class="button_container">
-						<button type="button" class="gutmorning_change_btn">것스오 변경하기<span>것스오 도우미가 제품 구성을 도와드려요.</span></button>
+					<!-- 202405 것모닝 작업 - 이 버튼은 하나만 있는 경우입니다. -->
+					<div class="promotion_button_wrap">
+						<div class="button_container">
+							<button type="button" class="gutmorning_start_btn">것스오 시작하기<span>것스오 도우미가 제품 구성을 도와드려요.</span></button>
+						</div>
+						<!-- 202405 것모닝 작업 - 이 버튼은 하나만 있는 경우입니다. -->
 					</div>
-					<!-- <div class="button_container">
-						<button type="button" class="gutmorning_start_btn">것스오 시작하기<span>것스오 도우미가 제품 구성을 도와드려요.</span></button>
-					</div> --><!-- 202405 것모닝 작업 - 이 버튼은 하나만 있는 경우입니다. -->
-				</div>
 				</div>
 			</div>
 			<!-- // 202405 것모닝 작업 - 것모닝 프로모션 -->
@@ -483,11 +489,10 @@
 						<div class="accordion_header" onclick="accordionHeaderAction(1)"> <!-- 202405 것모닝 작업 - 아코디언 오픈 호출 시 파라미터 -->
 							<div class="accordion_title_wrap">
 								<p>Step 01. 두 개의 구성 방법 중 하나를 선택하세요.</p>
+								<div class="accordion_info_wrap">
+									<span class="my_product">푸로틴 + 유산균 제품 조합</span>
+								</div>
 								<button type="button" class="accordion_button">토글버튼</button>
-							</div>
-
-							<div class="accordion_info_wrap">
-								<span class="my_product">푸로틴 + 유산균 제품 조합</span>
 							</div>
 						</div>
 						<div class="accordion_body">
@@ -515,15 +520,15 @@
 						<div class="accordion_header" onclick="accordionHeaderAction(2)"> <!-- 202405 것모닝 작업 - 아코디언 오픈 호출 시 파라미터 -->
 							<div class="accordion_title_wrap">
 								<p>Step 02. 푸로틴을 선택하세요.</p>
+								<div class="accordion_info_wrap">
+									<!-- <span class="info_message">1개 이상의 제품을 선택해야 합니다.</span> --><!-- 202405 것모닝 작업 - 열렸을때 info message 케이스 -->
+									<!--<span class="error_message">제품을 선택해주세요.</span>--><!-- 202405 것모닝 작업 - 에러 케이스 -->
+									<span class="chk_product_num"><span>0</span>개 제품 선택됨</span><!-- 202405 것모닝 작업 - 선택된 제품 개수 케이스 -->
+									<span class="chk_product_name">뉴트리 파이토 푸로틴 450g x 1, 뉴트리 파이토 푸로틴 900g x 1</span><!-- 202405 것모닝 작업 - 선택된 제품 이름 케이스 -->
+								</div>
 								<button type="button" class="accordion_button">토글버튼</button>
 							</div>
-							
-							<div class="accordion_info_wrap">
-								<!-- <span class="info_message">1개 이상의 제품을 선택해야 합니다.</span> --><!-- 202405 것모닝 작업 - 열렸을때 info message 케이스 -->
-								<!--<span class="error_message">제품을 선택해주세요.</span>--><!-- 202405 것모닝 작업 - 에러 케이스 -->
-								<span class="chk_product_num"><span>0</span>개 제품 선택됨</span><!-- 202405 것모닝 작업 - 선택된 제품 개수 케이스 -->
-								<span class="chk_product_name">뉴트리 파이토 푸로틴 450g x 1, 뉴트리 파이토 푸로틴 900g x 1</span><!-- 202405 것모닝 작업 - 선택된 제품 이름 케이스 -->
-							</div>
+						
 						</div>
 						<div class="accordion_body">
 							<div class="accordion_product_title_wrap">
@@ -668,14 +673,13 @@
 						<div class="accordion_header" onclick="accordionHeaderAction(3)"> <!-- 202405 것모닝 작업 - 아코디언 오픈 호출 시 파라미터 -->
 							<div class="accordion_title_wrap">
 								<p>Step 03. 유산균을 선택하세요.</p>
+								<div class="accordion_info_wrap">
+									<!-- <span class="info_message">1개 이상의 제품을 선택해야 합니다.</span> --><!-- 202405 것모닝 작업 - 열렸을때 info message 케이스 -->
+									<!-- <span class="error_message">제품을 선택해주세요.</span> --><!-- 202405 것모닝 작업 - 에러 케이스 -->
+									<span class="chk_product_num"><span>0</span>개 제품 선택됨</span><!-- 202405 것모닝 작업 - 선택된 제품 개수 케이스 -->
+									<!--<span class="chk_product_name">뉴트리 파이토 푸로틴 450g x 1, 뉴트리 파이토 푸로틴 900g x 1</span>--><!-- 202405 것모닝 작업 - 선택된 제품 이름 케이스 -->
+								</div>
 								<button type="button" class="accordion_button">토글버튼</button>
-							</div>
-
-							<div class="accordion_info_wrap">
-								<!-- <span class="info_message">1개 이상의 제품을 선택해야 합니다.</span> --><!-- 202405 것모닝 작업 - 열렸을때 info message 케이스 -->
-								<!-- <span class="error_message">제품을 선택해주세요.</span> --><!-- 202405 것모닝 작업 - 에러 케이스 -->
-								<span class="chk_product_num"><span>0</span>개 제품 선택됨</span><!-- 202405 것모닝 작업 - 선택된 제품 개수 케이스 -->
-								<!--<span class="chk_product_name">뉴트리 파이토 푸로틴 450g x 1, 뉴트리 파이토 푸로틴 900g x 1</span>--><!-- 202405 것모닝 작업 - 선택된 제품 이름 케이스 -->
 							</div>
 						</div>
 						<div class="accordion_body">
@@ -964,14 +968,13 @@
 									Step 04. 추가 구성을 선택하세요. (선택)
 								<span class="promotion_message">추가 혜택 증정</span>
 								</p>
+								<div class="accordion_info_wrap">
+									<!-- <span class="info_message">1개 이상의 제품을 선택해야 합니다.</span> --><!-- 202405 것모닝 작업 - 열렸을때 info message 케이스 -->
+									<!-- <span class="error_message">제품을 선택해주세요.</span> --><!-- 202405 것모닝 작업 - 에러 케이스 -->
+									<span class="chk_product_num"><span>0</span>개 제품 선택됨</span><!-- 202405 것모닝 작업 - 선택된 제품 개수 케이스 -->
+									<span class="chk_product_name">뉴트리 파이토 푸로틴 450g x 1, 뉴트리 파이토 푸로틴 900g x 1</span><!-- 202405 것모닝 작업 - 선택된 제품 이름 케이스 -->
+								</div>
 								<button type="button" class="accordion_button">토글버튼</button>
-							</div>
-
-							<div class="accordion_info_wrap">
-								<!-- <span class="info_message">1개 이상의 제품을 선택해야 합니다.</span> --><!-- 202405 것모닝 작업 - 열렸을때 info message 케이스 -->
-								<!-- <span class="error_message">제품을 선택해주세요.</span> --><!-- 202405 것모닝 작업 - 에러 케이스 -->
-								<span class="chk_product_num"><span>0</span>개 제품 선택됨</span><!-- 202405 것모닝 작업 - 선택된 제품 개수 케이스 -->
-								<span class="chk_product_name">뉴트리 파이토 푸로틴 450g x 1, 뉴트리 파이토 푸로틴 900g x 1</span><!-- 202405 것모닝 작업 - 선택된 제품 이름 케이스 -->
 							</div>
 						</div>
 						<div class="accordion_body">							
@@ -1916,14 +1919,13 @@
 						<div class="accordion_header" onclick="accordionHeaderAction(5)"> <!-- 202405 것모닝 작업 - 아코디언 오픈 호출 시 파라미터 -->
 							<div class="accordion_title_wrap">
 								<p>Step 02. 푸로틴 + 유산균이 포함된 세트를 선택하세요.</p>
+								<div class="accordion_info_wrap">
+									<!-- <span class="info_message">1개 이상의 제품을 선택해야 합니다.</span> --><!-- 202405 것모닝 작업 - 열렸을때 info message 케이스 -->
+									<!-- <span class="error_message">제품을 선택해주세요.</span> --><!-- 202405 것모닝 작업 - 에러 케이스 -->
+									<span class="chk_product_num"><span>0</span>개 제품 선택됨</span><!-- 202405 것모닝 작업 - 선택된 제품 개수 케이스 -->
+									<!--<span class="chk_product_name">뉴트리 파이토 푸로틴 450g x 1, 뉴트리 파이토 푸로틴 900g x 1</span>--><!-- 202405 것모닝 작업 - 선택된 제품 이름 케이스 -->
+								</div>
 								<button type="button" class="accordion_button">토글버튼</button>
-							</div>
-
-							<div class="accordion_info_wrap">
-								<span class="info_message">1개 이상의 제품을 선택해야 합니다.</span><!-- 202405 것모닝 작업 - 열렸을때 info message 케이스 -->
-								<!-- <span class="error_message">제품을 선택해주세요.</span> --><!-- 202405 것모닝 작업 - 에러 케이스 -->
-								<!-- <span class="chk_product_num"><span>0</span>개 제품 선택됨</span>--><!-- 202405 것모닝 작업 - 선택된 제품 개수 케이스 -->
-								<!--<span class="chk_product_name">뉴트리 파이토 푸로틴 450g x 1, 뉴트리 파이토 푸로틴 900g x 1</span>--><!-- 202405 것모닝 작업 - 선택된 제품 이름 케이스 -->
 							</div>
 						</div>
 						<div class="accordion_body">
@@ -2085,14 +2087,13 @@
 								<p>Step 03. 추가 구성을 선택하세요. (선택)
 								<span class="promotion_message">추가 혜택 증정</span>
 								</p>
+								<div class="accordion_info_wrap">
+									<!-- <span class="info_message">1개 이상의 제품을 선택해야 합니다.</span> --><!-- 202405 것모닝 작업 - 열렸을때 info message 케이스 -->
+									<!-- <span class="error_message">제품을 선택해주세요.</span> --><!-- 202405 것모닝 작업 - 에러 케이스 -->
+									<span class="chk_product_num"><span>0</span>개 제품 선택됨</span><!-- 202405 것모닝 작업 - 선택된 제품 개수 케이스 -->
+									<span class="chk_product_name">뉴트리 파이토 푸로틴 450g x 1, 뉴트리 파이토 푸로틴 900g x 1</span><!-- 202405 것모닝 작업 - 선택된 제품 이름 케이스 -->
+								</div>
 								<button type="button" class="accordion_button">토글버튼</button>
-							</div>
-
-							<div class="accordion_info_wrap">
-								<!-- <span class="info_message">1개 이상의 제품을 선택해야 합니다.</span> --><!-- 202405 것모닝 작업 - 열렸을때 info message 케이스 -->
-								<!-- <span class="error_message">제품을 선택해주세요.</span> --><!-- 202405 것모닝 작업 - 에러 케이스 -->
-								<span class="chk_product_num"><span>0</span>개 제품 선택됨</span><!-- 202405 것모닝 작업 - 선택된 제품 개수 케이스 -->
-								<span class="chk_product_name">뉴트리 파이토 푸로틴 450g x 1, 뉴트리 파이토 푸로틴 900g x 1</span><!-- 202405 것모닝 작업 - 선택된 제품 이름 케이스 -->
 							</div>
 						</div>
 						<div class="accordion_body">
