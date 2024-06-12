@@ -18243,17 +18243,17 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 .box_sop-product-helper .accordion_swiper .accordion_product_wrap .product_btn span {
 	flex: 1;
 	text-align: center;
-	padding: 10px 0;
 }
-/* .box_sop-product-helper .accordion_swiper .accordion_product_wrap .product_btn span input {
+.box_sop-product-helper .accordion_swiper .accordion_product_wrap .product_btn span input {
 	width: 100%;
 	height: 100%;
+	padding: 10px 0;
 	border: none;
 	text-align: center;
 }
 .box_sop-product-helper .accordion_swiper .accordion_product_wrap .product_btn span input:focus {
 	outline: none;
-} */
+}
 .box_sop-product-helper .swiper-scrollbar {
 	display: none;
 	width: calc(100% - 20px);
