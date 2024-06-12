@@ -3374,8 +3374,9 @@ background-repeat:no-repeat;}
 .visionbonus .title-wrap + .table-scroll,
 .visionbonus .title-wrap + .info-box,
 .visionbonus .info-box + .table-wrap,
-.visionbonus .info-box + .table-scroll{margin-top:24px}
-.visionbonus .table-scroll + .title-wrap{margin-top:40px;}
+.visionbonus .info-box + .table-scroll {margin-top:24px}
+.visionbonus .table-scroll + .title-wrap,
+.visionbonus .table-scroll + .info-box{margin-top:40px;}
 .visionbonus .border-box + .table-wrap, 
 .visionbonus .table-wrap + .border-box  {margin-top:16px}
 .visionbonus .price-box + .info-box{margin-top: 60px;}
@@ -3420,6 +3421,7 @@ background-repeat:no-repeat;}
 .visionbonus.container.business .tbl-list tfoot th,
 .visionbonus.container.business .tbl-list tfoot td{background: #F0F5FD;}
 .visionbonus.container.business .tbl-list tfoot th > strong {display: block; font-weight: 700; font-size: 14px;}
+.visionbonus.container.business .tbl-list.inquiry-type tr td {color:#999; font-weight:500;}
 .visionbonus .tbl-list td strong{display:block; font-weight: 700; font-size: 14px;}
 .visionbonus .tbl-list td p {margin:0}
 .visionbonus .tbl-list td > strong + p,
@@ -3430,6 +3432,7 @@ background-repeat:no-repeat;}
 .visionbonus .tbl-list td.border-left{border-left:1px solid #e3e3e3 !important;}
 .visionbonus .tbl-list td.border-right{border-right:1px solid #e3e3e3 !important;}
 .visionbonus .tbl-list td .total-sum{font-size: 20px;}
+.visionbonus .tbl-list td .total-sum .price-unit{margin-left:4px;}
 .visionbonus.container.business .tbl-list tr.point-gray th,
 .visionbonus.container.business .tbl-list tr.point-gray td{background:#F4F4F4;}
 .visionbonus.container.business .table10{margin-top:40px;}
@@ -3448,7 +3451,7 @@ background-repeat:no-repeat;}
 .visionbonus .point-yellow{color:#E6A30C;}
 .visionbonus .circle-num {display: inline-block; text-align: center; margin-right:4px; width: 16px; height: 16px; line-height:17px; background:#EBEBEB; border-radius:8px; font-size:12px; font-weight: 500;}
 .visionbonus .exclamation-txt{line-height: 1;}
-.visionbonus .exclamation-txt > span{display: inline-block; padding-left: 23px; line-height: 20px; color:#999; font-size: 12px; background: url(/_ui/responsive/theme-blue/images/akl_common/business/ico_visionbonus_exclamation.png) no-repeat; background-size: 15px 15px; background-position: left center;}
+.visionbonus .exclamation-txt > span{display: inline-block; padding-left: 21px; line-height: 20px; color:#999; font-size: 12px; background: url(/_ui/responsive/theme-blue/images/akl_common/business/ico_visionbonus_exclamation.png) no-repeat; background-size: 15px 15px; background-position: left 1px;}
 .visionbonus .bullet{display: inline-block; height: 28px; line-height: 28px; margin-right:8px; padding: 0 5px; font-size: 14px; font-weight:500; color:#999; border: 1px solid #ccc; border-radius:6px;}
 .visionbonus .bullet.blue{margin:0; padding: 0 12px; border-color:#F0F5FD; background: #F0F5FD;}
 .visionbonus .bullet.gray{margin:0; padding: 0 12px; border-color:#F9F9F9; background:#F9F9F9;}
@@ -3494,7 +3497,9 @@ background-repeat:no-repeat;}
 .visionbonus .checkbox-wrap.twin > div {flex-grow: 1; text-align: left;}
 .visionbonus .number_text{display: flex; gap:16px; align-items: center; justify-content: center;}
 .visionbonus .number_text p{line-height:20px;}
+.visionbonus .info-box{margin-bottom: -12px;}
 .visionbonus .info-box.twins{display: flex; justify-content: space-between; align-items: center;}
+.visionbonus .info-box.twins > p {color: #000; font-weight: 500; line-height:20px;}
 .visionbonus .toolTip-wrapper.tooltipNew .btn-tooltip{height:28px !important; padding:0; background: url(/_ui/responsive/theme-blue/images/akl_common/business/ico_visionbonus_question.png) no-repeat 50% 50% / 20px;}
 .visionbonus .simplify-price{padding-right:3px; text-align: right; font-size: 14px; font-weight:400; line-height:16px; color:#999;}
 .visionbonus .simplify-price > span{display:inline-block;}
@@ -3549,7 +3554,7 @@ background-repeat:no-repeat;}
 .visionbonus .bonus-inner .category-box{max-width:min-content; margin:0; padding:16px; background:#F0F5FD; border:1px solid #567BF3;}
 .visionbonus .bonus-inner .category-box .title{width:124px; font-weight:500;}
 .visionbonus .bonus-inner .circle-box.blue > span{font-size: 24px;}
-.visionbonus .txt-or{font-size:14px; font-weight:400; color:#567BF3;}
+.visionbonus .txt-or{font-size:14px; font-weight:400; color:#567BF3; opacity: 0.6;}
 
 
 @media (min-width: 768px) and (max-width: 1100px){
@@ -3622,15 +3627,24 @@ background-repeat:no-repeat;}
 	.visionbonus .bonus-inner .result-box{width:124px;}	
 	.visionbonus .txt-or{padding:0 5px; font-size:12px;}
 
-	.visionbonus .info-box + .table-wrap{margin-top: 8px;}
+	.visionbonus.container .track{padding-left: 20px;}
+	.visionbonus .track::before,
+	.visionbonus .track::after{width:16px; height: 16px;}
+
+	.visionbonus .title-wrap + .info-box.twins {margin-top: 12px;}
+	.visionbonus .title-wrap + .info-box.twins.reverse {margin-top: 20px;}
+	.visionbonus .info-box + .table-wrap,
+	.visionbonus .info-box + .table-scroll{margin-top: 8px;}
+	.visionbonus .price-box + .info-box{margin-top: 26px;}
 	.visionbonus .toolTip-wrapper.type-mob-full .tipCont-wrapper .tooltip-content{top:initial}
+	.visionbonus .toolTip-wrapper.type-mob-full .tipCont-wrapper .tooltip-content{max-width:none; width:calc(100vw - 30px)}
+	.visionbonus .toolTip-wrapper.tooltipNew .dot-list > li{font-size: 12px;}
 	.visionbonus .mobile-only{display: block;}
 	.visionbonus .table-scroll.basic-scroll .tbl-list th,
 	.visionbonus .table-scroll.basic-scroll .tbl-list td{min-width: 150px;}
-	.visionbonus .toolTip-wrapper.type-mob-full .tipCont-wrapper .tooltip-content{max-width:none; width:calc(100vw - 30px)}
 	.visionbonus.container .outer-border-bottom:before{display: none;}
+	.visionbonus.container .tabWrapper {border-bottom: 1px solid #EDEDED;}
 	.visionbonus.container .tabs-toggles .tab-toggle-wrap.active .tab-toggle{padding: 0 16px;}
-	.visionbonus.container .tabs-toggles {border-bottom: 1px solid #EDEDED;}
 	.visionbonus.container .tabs-toggles .tab-toggle-wrap{background: none;}
 	.visionbonus.container .tabs-toggles .tab-toggle-wrap.active{border:none;}
 	.visionbonus.container .tabs-toggles .tab-toggle-wrap.active::after{top:initial; bottom:0; left:0; border-radius:2px; width:100%;}
@@ -3678,15 +3692,16 @@ background-repeat:no-repeat;}
 	.visionbonus .price-box .title{font-size:14px;}
 	.visionbonus .price-box .price-list > li{padding:0 20px;}
 
-	.visionbonus .info-box.twins {flex-direction: column; gap:20px; align-items: flex-start; margin-bottom:-16px;}
+	.visionbonus .info-box{margin-bottom: 0;}
+	.visionbonus .info-box.twins {flex-direction: column; gap:20px; align-items: flex-start;}
 	.visionbonus .info-box.twins .box-right{display: flex; gap: 8px;}
 	.visionbonus .info-box.twins .box-right > div { flex-basis: 50%; text-align: center;}
 	.visionbonus .info-box.twins .box-right > div + div{margin: 0;}
+	.visionbonus .info-box.twins.reverse{flex-direction: column-reverse; gap: 10px;}
 	.visionbonus .info-box > .bullet{margin-left: 0; width: 100%;}
 	.visionbonus .info-box > .bullet + .bullet{margin-top: 8px;}
 	.visionbonus .state-list{text-align: left;}
-	.visionbonus .state-list > li + li {padding-left:0;}
-	.visionbonus .state-list > li + li::after{display: none;}
+	.visionbonus .state-list > li + li {padding-left:8px; margin-left: 8px;}
 	.visionbonus .number_text{display: block;}
 	.visionbonus .circle_num{text-align: center;}	
 	.visionbonus .table-scroll{min-width: 100px;}
