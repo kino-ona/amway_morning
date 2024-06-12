@@ -441,11 +441,14 @@
 					</div>
 				<div class="promotion_button_wrap">
 					<div class="button_container">
-						<button type="button" class="gutmorning_change_btn" data-layer="layer-editProduct">주문서 제품 수정 바로가기<span>담겨있던 제품들을 보면서 수정하세요.</span></button>
+						<button type="button" class="gutmorning_edit_btn" data-layer="layer-editProduct">주문서 제품 수정 바로가기<span>담겨있던 제품들을 보면서 수정하세요.</span></button>
 					</div>
 					<div class="button_container">
-						<button type="button" class="gutmorning_start_btn">것스오 시작하기<span>것스오 도우미가 제품 구성을 도와드려요.</span></button>
+						<button type="button" class="gutmorning_change_btn">것스오 변경하기<span>것스오 도우미가 제품 구성을 도와드려요.</span></button>
 					</div>
+					<!-- <div class="button_container">
+						<button type="button" class="gutmorning_start_btn">것스오 시작하기<span>것스오 도우미가 제품 구성을 도와드려요.</span></button>
+					</div> --><!-- 202405 것모닝 작업 - 이 버튼은 하나만 있는 경우입니다. -->
 				</div>
 				</div>
 			</div>
@@ -7102,7 +7105,7 @@
 	}
 
 	function moveToHelperContent() {
-    $(".gutmorning_start_btn").click(function() {
+    $(".gutmorning_start_btn, .gutmorning_change_btn").on('click', function() {
 			$('.box_sop-tab .tabs').removeClass('on')
 					.filter('[data-content="helper"]').addClass('on');
 
@@ -7420,7 +7423,7 @@ function productCount(type) {
 	}
 
 	function buttonActionTop() {
-		$('.gutmorning_start_btn').on('click', function() {
+		$('.gutmorning_start_btn, .gutmorning_change_btn').on('click', function() {
 
 			var visualHeight = $('.box_sop-visual').height() + $('.main-header').height();
 

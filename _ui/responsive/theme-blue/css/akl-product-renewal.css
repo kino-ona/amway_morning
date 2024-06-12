@@ -17645,17 +17645,19 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	line-height: 20px;
 	opacity: 0.5;
 }
-.box_sop-promotion .promotion_button_wrap .button_container .gutmorning_change_btn {
+.box_sop-promotion .promotion_button_wrap .button_container .gutmorning_edit_btn {
 	color: #018C51;
 	background: #FFF;
 }
-.box_sop-promotion .promotion_button_wrap .button_container .gutmorning_change_btn span {
+.box_sop-promotion .promotion_button_wrap .button_container .gutmorning_edit_btn span {
 	color: #000;
 }
+.box_sop-promotion .promotion_button_wrap .button_container .gutmorning_change_btn,
 .box_sop-promotion .promotion_button_wrap .button_container .gutmorning_start_btn {
 	background: #018C51;
 	color: #fff;
 }
+.box_sop-promotion .promotion_button_wrap .button_container .gutmorning_change_btn span,
 .box_sop-promotion .promotion_button_wrap .button_container .gutmorning_start_btn span {
 	color: #fff;
 }
