@@ -3396,11 +3396,11 @@ background-repeat:no-repeat;}
 .visionbonus .info-tooltip .btn-close > span{width: 1px; height: 1px; padding: 0; margin: -1px;overflow: hidden;clip: rect(0, 0, 0, 0); border: 0; display: block;}
 
 .visionbonus .dot-list{margin-top: 16px;}
-.visionbonus .dot-list > li {padding-left: 11px; position: relative; font-size: 14px; line-height: 24px;}
+.visionbonus .dot-list > li {padding-left: 11px; position: relative; font-size: 14px; line-height: 24px; color: #999;}
 .visionbonus .dot-list > li::after{content: ''; display: block; width: 3px; height: 3px; background: #aaa; border-radius:50%; position: absolute; left: 0; top: 9px;}
 .visionbonus .dot-list > li + li {margin-top:8px;}
 .visionbonus .price-box{text-align: center; margin-top: 28px;}
-.visionbonus .price-box .title{padding:16px; background: #F4F4F4; border-radius: 16px 16px 0 0; font-weight: 700; color: #666;}
+.visionbonus .price-box .title{padding:16px; background: #F4F4F4; border-radius: 16px 16px 0 0; font-weight: 500; color: #666;}
 .visionbonus .price-box .price-list {display: flex; border-radius:0 0 16px 16px; background:#FAFAFA; padding: 24px 0; justify-content: space-between; flex-wrap: wrap;}
 .visionbonus .price-box .price-list > li{display: flex; flex-direction: column; justify-content: center; padding: 0 24px; flex: 1 1 33.3%; min-height: 122px;}
 .visionbonus .price-box .price-list > li p{font-size: 16px; font-weight: 400; color: #111; line-height: 24px;}
@@ -3416,13 +3416,14 @@ background-repeat:no-repeat;}
 .visionbonus .toolTip-wrapper.tooltipNew .dot-list > li {line-height: 22px; font-size:14px; font-weight:400;}
 
 .visionbonus .basic-scroll{overflow-x: auto; overflow: hidden;}
-.visionbonus.container.business .tbl-list thead th{height: auto; line-height: 20px; padding:16px 10px; font-size: 14px; font-weight: 700; color: #666; background: #F4F4F4;}
+.visionbonus.container.business .tbl-list thead th{height: auto; line-height: 20px; padding:16px 10px; font-size: 14px; font-weight: 500; color: #666; background: #F4F4F4;}
 .visionbonus.container.business .tbl-list tbody th{padding:16px 10px; background:#F9F9F9; text-align: center; font-weight:400; font-size: 14px; white-space:normal; word-break: break-all; color:#111;}
 .visionbonus.container.business .tbl-list td{color:#111; font-weight:400; font-size: 14px; padding:16px 10px; line-height:20px;}
 .visionbonus.container.business .tbl-list tfoot th,
 .visionbonus.container.business .tbl-list tfoot td{background: #F0F5FD;}
 .visionbonus.container.business .tbl-list tfoot th > strong {display: block; font-weight: 700; font-size: 14px;}
-.visionbonus.container.business .tbl-list.inquiry-type tr td {color:#999; font-weight:500;}
+.visionbonus.container.business .tbl-list.inquiry-type tr td {color:#999; font-weight:400;}
+.visionbonus.container.business .tbl-list.inquiry-type tr td span.point-blue{font-weight: 500;}
 .visionbonus .tbl-list td strong{display:block; font-weight: 700; font-size: 14px;}
 .visionbonus .tbl-list td p {margin:0}
 .visionbonus .tbl-list td > strong + p,
@@ -3536,20 +3537,20 @@ background-repeat:no-repeat;}
 
 .visionbonus .subjects-inner{padding:60px 0;}
 .visionbonus .category-box {position: relative; max-width:736px; margin:0 auto; display: flex; gap: 12px; justify-content: center; align-items: center; border-radius:999px;}
-.visionbonus .category-box.growth {padding:48px 32px; border:1px solid #567BF3;}
+.visionbonus .category-box.growth {padding:32px; border:1px solid #567BF3; background:#fff;}
 .visionbonus .category-box.benefit{ padding:16px; border: 1px dashed #01D67C; gap:20px;}
 .visionbonus .category-box .title{display:inline-block; height:40px; line-height:42px; position: absolute; top:-20px; left:50%; transform: translateX(-50%); color:#fff; border-radius:999px; text-align: center; }
-.visionbonus .category-box .title.blue{width:328px;background:#567BF3; font-size: 18px; font-weight: 700;}
-.visionbonus .category-box .title.green{width:100px; background:#01D67C; top: initial; bottom: -15px; font-size: 14px; font-weight: 500; height: 30px; line-height:32px;} 
+.visionbonus .category-box .title.blue{width:328px;background:#567BF3; font-size: 18px; font-weight: 500;}
+.visionbonus .category-box .title.green{width:100px; background:#01D67C; top: initial; bottom: -15px; font-size: 14px; font-weight: 400; height: 30px; line-height:32px;} 
 
 .visionbonus .circle-box {display: flex; flex-direction: column;  justify-content: center; align-items: center; width:200px; max-width:200px; aspect-ratio:1; border-radius:50%; color: #fff;}
 .visionbonus .circle-box > strong{font-size: 36px; line-height:40px; font-weight:700; font-family:'Roboto';}
-.visionbonus .circle-box > span {font-size:16px; line-height: 24px; font-weight: 500;}
+.visionbonus .circle-box > span {font-size:16px; line-height: 24px; font-weight: 400;}
 .visionbonus .circle-box.blue{background:#567BF3; border:15px solid #7895f5;}
 .visionbonus .circle-box.green{background:#01D67C;}
 .visionbonus .circle-box.white{background:#fff; border: 2px dashed #567BF380}
 .visionbonus .circle-box.white > strong {color:#567BF3; font-size:40px;}
-.visionbonus .circle-box.white > span {color:#999; font-size:16px; font-weight:500; text-align: center;}
+.visionbonus .circle-box.white > span {color:#999; font-size:16px; font-weight:400; text-align: center;}
 
 .visionbonus .bonus-inner {display: flex; justify-content: center; align-items: center; padding:60px 0;}
 .visionbonus .bonus-inner .category-box{max-width:min-content; margin:0; padding:16px; background:#F0F5FD; border:1px solid #567BF3;}
@@ -3663,6 +3664,7 @@ background-repeat:no-repeat;}
 	.visionbonus.container.business  .form_element-checkbox [type="checkbox"] + label::after,
 	.visionbonus.container.business  .form_element-checkbox [type="checkbox"]:checked + label::after,
 	.visionbonus.container.business  .form_element-checkbox [type="checkbox"]:disabled + label::after{width:20px; height: 20px; top:0; left: 0;}
+	.visionbonus.container.business .tbl-list thead th{font-weight: 700;}
 
 	.visionbonus .tbl-list.grid-type {width: auto; flex: 1;	display: grid;	grid-template-columns:33.3% auto;}	  
 	.visionbonus .tbl-list.grid-type thead,
@@ -3690,7 +3692,7 @@ background-repeat:no-repeat;}
 	.visionbonus .dot-list > li{font-size:12px; line-height:20px;}
 	.visionbonus .dot-list > li::after{top:7px}
 
-	.visionbonus .price-box .title{font-size:14px;}
+	.visionbonus .price-box .title{font-size:14px; font-weight: 700;}
 	.visionbonus .price-box .price-list > li{padding:0 20px;}
 
 	.visionbonus .info-box{margin-bottom: 0;}
@@ -3752,7 +3754,7 @@ background-repeat:no-repeat;}
 	/* 비전보너스 조회 - 조회 테이블 */
 	.visionbonus.container.business .table09 table{table-layout: fixed;}
 	.visionbonus.container.business .table09 table colgroup col:nth-child(1){width:135px;}
-	.visionbonus.container.business .table09 table colgroup col:nth-child(2){width:78px;}
+	.visionbonus.container.business .table09 table colgroup col:nth-child(2){width:88px;}
 	.visionbonus.container.business .table09 table colgroup col:nth-child(3),
 	.visionbonus.container.business .table09 table colgroup col:nth-child(4),
 	.visionbonus.container.business .table09 table colgroup col:nth-child(5){min-width:180px; width: 180px}
@@ -3783,7 +3785,7 @@ background-repeat:no-repeat;}
 	.visionbonus .mobile-table-area > .title-wrap *{flex: 1;}
 	.visionbonus .mobile-table-area > .title-wrap span{text-align: right; font-size: 12px; color:#999; font-weight:400;}
 	.visionbonus .mobile-table-contents .border-box{padding:20px;}
-	.visionbonus .mobile-table-contents .border-box > .title{display: block; font-size: 20px; color: #567BF3;}
+	.visionbonus .mobile-table-contents .border-box > .title{display: block; font-size: 20px; color: #567BF3; font-weight: 700;}
 	.visionbonus .mobile-table-group{display: none;}
 	.visionbonus .mobile-table-group.active{display: block;}
 	.visionbonus .mobile-table-group + .mobile-table-group{margin-top:24px;}
@@ -3798,7 +3800,7 @@ background-repeat:no-repeat;}
 	.visionbonus .mobile-table-group .totla-wrap .sub-info{color:#999; font-size:12px; font-weight:400; line-height:18px;}
 	.visionbonus .mobile-table-group .totla-wrap .total-sum span{font-size:28px; font-weight:700; color:#000;}
 	.visionbonus .mobile-table-group .totla-wrap .total-sum .price-unit{font-size:16px; font-weight:500;}
-	.visionbonus .mobile-table-group .totla-wrap .bullet{padding:0 6px; color: #fff; font-size:12px; font-weight:500; height:20px; line-height: 20px;}
+	.visionbonus .mobile-table-group .totla-wrap .bullet{padding:0 8px; color: #fff; font-size:12px; font-weight:400; height:24px; line-height: 24px;}
 	.visionbonus .mobile-table-group .totla-wrap .bullet.gray{background: #898989;}
 	.visionbonus .mobile-table-group .totla-wrap .bullet.blue{background: #567BF3;}
 	.visionbonus .mobile-table-group .totla-wrap .box-twin{display: flex; justify-content: space-between; align-items: center;}
