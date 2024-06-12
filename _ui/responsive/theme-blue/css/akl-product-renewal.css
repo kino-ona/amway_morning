@@ -1297,7 +1297,7 @@ a[class^="btn_default-"].small {line-height:24px}
 .cart_product-area.st_type02.st_type02-2 .box_total-floating .cart_product_message {
 	display: none;
 	position: absolute;
-	top: -28px;
+	top: -54px;
 	left: 50%;
 	transform: translateX(-50%);
 	margin: 0;
