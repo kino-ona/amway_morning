@@ -842,11 +842,11 @@
             // mobile 계산기 UI
             function mobileCalculatorUi() {
                 if (Mobile()) {
-                    const $btnSum = $('.visionbonus .btn-sum');
-                    const $btnSumArea = $('.visionbonus .btn-sum-area');
-                    const $mobileTableArea = $('.visionbonus .mobile-table-area');
+                    var $btnSum = $('.visionbonus .btn-sum');
+                    var $btnSumArea = $('.visionbonus .btn-sum-area');
+                    var $mobileTableArea = $('.visionbonus .mobile-table-area');
 
-                    let hasFixedClass = false;
+                    var hasFixedClass = false;
 
                     function updateBtnAreaOffset() {
                         return $btnSumArea.offset().top;
@@ -858,9 +858,9 @@
                     }
 
                     function scrollBtn() {
-                        const scrollTop = $(window).scrollTop();
-                        const windowHeight = $(window).height();
-                        const btnAreaOffset = updateBtnAreaOffset();
+                        var scrollTop = $(window).scrollTop();
+                        var windowHeight = $(window).height();
+                        var btnAreaOffset = updateBtnAreaOffset();
 
                         if (scrollTop + windowHeight >= btnAreaOffset && hasFixedClass) {
                             $btnSum.removeClass("fixed");
@@ -872,7 +872,7 @@
                     }
 
                     function CheckboxChange() {
-                        const checkedBoxes = $mobileTableArea.find('.mobile-year-checkbox-wrap input[type="checkbox"]:checked');
+                        var checkedBoxes = $mobileTableArea.find('.mobile-year-checkbox-wrap input[type="checkbox"]:checked');
                         if (checkedBoxes.length === 0) {
                             alert('최소 하나의 체크박스를 선택해야 합니다.');//와이어 프레임에 없지만 임의 적용
                             $(this).prop('checked', true);
@@ -881,7 +881,7 @@
 
                         $mobileTableArea.find('.mobile-table-group').removeClass('active');
                         checkedBoxes.each(function () {
-                            const index = $(this).closest('.form_element-checkbox').index();
+                            var index = $(this).closest('.form_element-checkbox').index();
                             $mobileTableArea.find('.mobile-table-group').eq(index).addClass('active');
                         });
 
@@ -889,8 +889,8 @@
                     }
 
                     function btnSumFocus() {
-                        let headerHeight = $('.general-header').height();
-                        let pos = $('.mobile-table-group.active').first().find('.totla-wrap').offset().top;
+                        var headerHeight = $('.general-header').height();
+                        var pos = $('.mobile-table-group.active').first().find('.totla-wrap').offset().top;
                         $(window).scrollTop(pos - headerHeight);
                     }
 
@@ -916,11 +916,11 @@
             });
 
             // 툴팁 클릭 시 다른 툴팁 닫기
-            let $btnTooltip = $('.visionbonus .btn-tooltip');
+            var $btnTooltip = $('.visionbonus .btn-tooltip');
             if ($btnTooltip.length) {
                 $btnTooltip.click(function () {
-                    let $currentToolTipWrapper = $(this).closest('.toolTip-wrapper');
-                    let $otherOpenToolTips = $('.toolTip-wrapper').not($currentToolTipWrapper);
+                    var $currentToolTipWrapper = $(this).closest('.toolTip-wrapper');
+                    var $otherOpenToolTips = $('.toolTip-wrapper').not($currentToolTipWrapper);
                     if ($otherOpenToolTips.hasClass('open')) {
                         $otherOpenToolTips.removeClass('open').find('.tooltip-content').hide();
                     }
@@ -930,9 +930,9 @@
             // select event (UI 임시적용)
             if ($('.visionbonus select').length) {
                 $('.visionbonus select').on("change", function () {
-                    let selectedValue = $(this).val();
-                    let selectedId = $(this).attr('id');
-                    let machingOption = $('.visionbonus').find(`.track[data-select-matching="${selectedId}"]`);
+                    var selectedValue = $(this).val();
+                    var selectedId = $(this).attr('id');
+                    var machingOption = $('.visionbonus').find(`.track[data-select-matching="${selectedId}"]`);
 
                     if (selectedValue > 2 && machingOption.hasClass('off')) {
                         machingOption.removeClass('off').addClass('on');

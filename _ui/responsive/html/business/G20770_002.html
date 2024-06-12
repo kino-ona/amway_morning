@@ -470,11 +470,11 @@
     <script>
         $(function () {
             // 툴팁 클릭 시 다른 툴팁 닫기
-            let $btnTooltip = $('.visionbonus .btn-tooltip');
+            var $btnTooltip = $('.visionbonus .btn-tooltip');
             if ($btnTooltip.length) {
                 $btnTooltip.click(function () {
-                    let $currentToolTipWrapper = $(this).closest('.toolTip-wrapper');
-                    let $otherOpenToolTips = $('.toolTip-wrapper').not($currentToolTipWrapper);
+                    var $currentToolTipWrapper = $(this).closest('.toolTip-wrapper');
+                    var $otherOpenToolTips = $('.toolTip-wrapper').not($currentToolTipWrapper);
                     if ($otherOpenToolTips.hasClass('open')) {
                         $otherOpenToolTips.removeClass('open').find('.tooltip-content').hide();
                     }
@@ -482,7 +482,7 @@
             }
 
             // 하단 버튼 안내 1회성 툴팁
-            let $infoTooltip = $('.visionbonus .info-tooltip');
+            var $infoTooltip = $('.visionbonus .info-tooltip');
             if ($infoTooltip.length) {
                 $infoTooltip.find('.btn-close').on('click', function () {
                     $(this).closest('.info-tooltip').removeClass('active');
