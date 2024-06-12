@@ -542,9 +542,9 @@
 													<strong class="product_price"><span>99,999,999</span>원</strong>
 	
 													<div class="product_btn">
-														<button>빼기 버튼</button>
+														<button class="minus">빼기 버튼</button>
 														<span>100</span><!-- 202405 것모닝 작업 - Max Number 999 -->
-														<button>더하기 버튼</button>
+														<button class="plus">더하기 버튼</button>
 													</div>
 												</label>
 											</div>
@@ -7194,7 +7194,7 @@
 		});
 		plusButton.click(function() {
 			var number = $(this).siblings('span').text();
-
+		
 			$(this).siblings('span').text(++number);
 		});
 	}
@@ -7275,11 +7275,7 @@
 			}
 
 			if (checkedCount > 0) {
-				$('.my_product_wrap').addClass('active');
-				$('.promotion_total button').addClass('active');
-
-				$('.promotion_float_wrap.mo').removeClass('disabled');
-				$('.promotion_total button').attr('disabled', false);
+				addProductClass();
 
 				resetItemButton(checkedCount);
 
@@ -7362,9 +7358,10 @@
 				$(this).closest('.my_product_list').remove();
 			}
 
-			var productDiscounting = $(this).closest('.my_product_content').siblings('.my_product_content').length
+			var productDiscounting = $(this).closest('.my_product_content').siblings('.my_product_content').length;
+			var currentListTitle = $(this).closest('.my_product_list').find('.my_product_title span').text().split(' (')[0];
 
-			$(this).closest('.my_product_list').find('.my_product_title span').text(`${accordionListTitle} (${productDiscounting})`);
+			$(this).closest('.my_product_list').find('.my_product_title span').text(`${currentListTitle} (${productDiscounting})`);
 			$(this).closest('.my_product_content').remove();
 
 
@@ -7373,8 +7370,7 @@
 			}
 
 			if ($('.my_product_list').length === 0) {
-
-				resetProductClass()
+				resetProductClass();
 			}
     });
 	}
@@ -7392,6 +7388,14 @@
 				$(element).find('.chk_product_num span').text(--number);
 			}
 		});
+	}
+
+	function addProductClass() {
+	$('.my_product_wrap').addClass('active');
+	$('.promotion_total button').addClass('active');
+
+	$('.promotion_float_wrap.mo').removeClass('disabled');
+	$('.promotion_total button').attr('disabled', false);
 	}
 
 	function resetProductClass() {
