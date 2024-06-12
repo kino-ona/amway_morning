@@ -3791,7 +3791,7 @@ background-repeat:no-repeat;}
 	.visionbonus .mobile-table-contents .border-box > .title{display: block; font-size: 20px; color: #567BF3; font-weight: 700;}
 	.visionbonus .mobile-table-group{display: none;}
 	.visionbonus .mobile-table-group.active{display: block;}
-	.visionbonus .mobile-table-group + .mobile-table-group{margin-top:24px;}
+	.visionbonus .mobile-table-group{margin-top:24px;}
 	.visionbonus .title + .item-wrap{margin-top:12px;}
 	.visionbonus .item-wrap + .item-wrap{margin-top:36px;}
 	.visionbonus .item-wrap .sub-title{}
@@ -3835,9 +3835,8 @@ background-repeat:no-repeat;}
 
 
 	.visionbonus .form_element-selectbox .form-control{height: 48px; line-height:50px; color: #111;}
-	.visionbonus .mobile-year-checkbox-wrap{display: flex; gap: 6px; margin-top:6px;}
+	.visionbonus .mobile-year-checkbox-wrap{display: flex; gap: 6px; margin-top:6px; margin-bottom: -12px;}
 	.visionbonus .mobile-year-checkbox-wrap .form_element-checkbox{flex: 1; box-sizing: border-box;}
-	.visionbonus .mobile-year-checkbox-wrap + .mobile-table-contents{margin-top:12px;}
 	.visionbonus .mobile-table-contents .toolTip-wrapper.tooltipNew.type-mob-full .tipCont-wrapper{left:-20px}	
   } 
 /* E : 202406 비전보너스 신규 추가 */
