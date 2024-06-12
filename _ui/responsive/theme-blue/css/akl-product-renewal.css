@@ -18514,6 +18514,10 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	line-height: 24px;
 	letter-spacing: -0.03em;
 }
+.box_sop-product-helper .accordion_wrap .accordion_body .optional_category_wrap {
+	height: 0;
+	opacity: 0;
+}
 
 @media (max-width: 1370px) {
 	.box_sop-product-helper .promotion_float_wrap.pc .promotion_total p span:not(:nth-of-type(1)),
@@ -19290,7 +19294,9 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 
 	.box_sop-product-helper .accordion_wrap .accordion_body .optional_category_wrap {
 		position: relative;
+		height: unset;
 		padding: 20px 0 24px 20px;
+		opacity: 1;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_body .optional_category_wrap button {
 		width: 100%;
