@@ -17600,6 +17600,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 }
 .box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content strong {
 	margin: 12px 0 2px;
+	word-break: keep-all;
 }
 .box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content p {
 	color: #666;
@@ -19327,6 +19328,21 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	}
 }
 
+@media (max-width: 334px) {
+	.box_sop-promotion .promotion_banner_container .promotion_banner_top .promotion_date,
+	.box_sop-product-helper .product_helper_banner .promotion_date:nth-of-type(2) {
+		display: flex;
+		flex-direction: column;
+	}
+	.box_sop-promotion .promotion_banner_container .promotion_banner_top .promotion_date span,
+	.box_sop-product-helper .product_helper_banner .promotion_date:nth-of-type(2) span {
+		padding-left: 0;
+	}
+	.box_sop-promotion .promotion_banner_container .promotion_banner_top .promotion_date span::after,
+	.box_sop-product-helper .product_helper_banner .promotion_date:nth-of-type(2) span::before {
+		display: none;
+	}
+}
 /* // 202405 것모닝 작업 - 것모닝 프로모션 */
 
 .box_sop-main.sh_bsop_renewal .bsop_case1 {background:#fefbec url(/_ui/responsive/theme-blue/images/akl_plp/bg_bsop_semicircle2.png) no-repeat right calc(100% + 80px) / 552px auto;}
