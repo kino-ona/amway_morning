@@ -6939,6 +6939,12 @@
 		$('input[name="step1"]').click(function() {
 			$('.accordion_container:not(:eq(0))').hide();
 			$(`.accordion_container_${$(this).val()}`).show();
+
+			if ($(this).val() === 'step1_2') {
+				$('.my_product').text('푸로틴 + 유산균이 포함된 세트');
+			} else {
+				$('.my_product').text('푸로틴 + 유산균 제품 조합');
+			}
     });
   }
 
@@ -6974,13 +6980,9 @@
 		if (idx === 1 && firstStepValue === 'step1_2' || idx > 4) {
 			$('.accordion_container_step1_1').hide();
 			$('.accordion_container_step1_2').show();
-
-			$('.my_product').text('푸로틴 + 유산균이 포함된 세트');
 		} else if (idx === 1 && firstStepValue === 'step1_1' || idx <= 4) {
 			$('.accordion_container_step1_1').show();
 			$('.accordion_container_step1_2').hide();
-
-			$('.my_product').text('푸로틴 + 유산균 제품 조합');
 		}
 
 		var thisList = $('.accordion_header').eq(idx - 1).closest('.accordion_list');
