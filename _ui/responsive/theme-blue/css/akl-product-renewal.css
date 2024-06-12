@@ -1646,7 +1646,7 @@ a[class^="btn_default-"].small {line-height:24px}
   content: '';
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 3px;
   display: inline-block;
   width: 16px;
   height: 62px;
@@ -1658,7 +1658,7 @@ a[class^="btn_default-"].small {line-height:24px}
   content: '';
   position: absolute;
   right: -20px;
-  bottom: 0;
+  bottom: 3px;
   display: inline-block;
   width: 16px;
   height: 62px;
@@ -1668,7 +1668,7 @@ a[class^="btn_default-"].small {line-height:24px}
 .box_sop-cont .promotion_banner_top .promotion_banner_title h2 {
   position: relative;
   margin: 0;
-  font-weight: 900;
+  font-weight: 700;
   font-size: 54px;
   line-height: 64.8px;
   padding-left: 20px;
@@ -1739,28 +1739,28 @@ a[class^="btn_default-"].small {line-height:24px}
 	}
 	.box_sop-cont .promotion_banner_top .promotion_banner_title h2 {
     padding: 0 0 0 12px;
-    font-size: 34px;
-    line-height: 44.2px;
-    letter-spacing: normal;
-    max-width: 250px;
-    white-space: normal;
+		font-size: 38px;
+		line-height: 44.2px;
+		letter-spacing: normal;
+		max-width: 270px;
+		white-space: normal;
 	}
 	.box_sop-cont .promotion_banner_top .promotion_banner_title::after {
 		top: -3px;
-    left: 113px;
-    width: 44px;
-    height: 37px;
+		left: 123px;
+		width: 44px;
+		height: 37px;
 	}
 	.box_sop-cont .promotion_banner_top .promotion_banner_title h2::before {
-    top: 50%;
+    top: 49%;
     transform: translateY(-50%);
     width: 10px;
     height: 36px;
     margin-right: 2px;
 	}
 	.box_sop-cont .promotion_banner_top .promotion_banner_title h2::after {
-    right: 58px;
-    bottom: 3px;
+    right: 61px;
+    bottom: 6px;
     width: 10px;
     height: 36px;
     margin-left: 2px;
@@ -1770,9 +1770,9 @@ a[class^="btn_default-"].small {line-height:24px}
 		margin-top: 4px;
 		padding: 0 20px 0 12px;
 		font-size: 14px;
-		line-height: 20px;
+		line-height: 22px;
+		letter-spacing: normal;
 		word-break: keep-all;
-		letter-spacing: unset;
 	}
 	.box_sop-cont .promotion_banner_top .promotion_notice {
 		padding-right: 20px;
@@ -17396,7 +17396,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	content: '';
 	position: absolute;
 	left: 0;
-	bottom: 0;
+	bottom: 4px;
 	display: inline-block;
 	width: 16px;
 	height: 62px;
@@ -17408,7 +17408,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	content: '';
 	position: absolute;
 	right: -20px;
-	bottom: 0;
+	bottom: 4px;
 	display: inline-block;
 	width: 16px;
 	height: 62px;
@@ -18676,15 +18676,15 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		height: 37px;
 	}
 	.box_sop-promotion .promotion_banner_container .promotion_banner_top .promotion_banner_title h2::before {
-		top: 50%;
+		top: 49%;
 		transform: translateY(-50%);
 		width: 10px;
 		height: 36px;
 		margin-right: 2px;
 	}
 	.box_sop-promotion .promotion_banner_container .promotion_banner_top .promotion_banner_title h2::after {
-		right: 58px;
-		bottom: 3px;
+		right: 61px;
+		bottom: 6px;
 		width: 10px;
 		height: 36px;
 		margin-left: 2px;
@@ -18866,7 +18866,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_header .accordion_title_wrap p {
 		margin-bottom: 6px;
-		padding-right: 10px;
+		padding-right: 24px;
 		font-size: 16px;
 		line-height: 20px;
 		letter-spacing: unset;
@@ -18972,7 +18972,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 			top: 258px;
 		}
 	}
-	@media(max-width: 374px) {
+	@media(max-width: 363px) {
 		.box_sop-product-helper .accordion_wrap .accordion_list.last_step.opened .accordion_info_wrap {
 			top: 272px;
 		}
