@@ -3348,6 +3348,7 @@ background-repeat:no-repeat;}
 }
 
 /* S : 202406 비전보너스 신규 추가 */
+.visionbonus.container.business  * {letter-spacing: -0.02em;}
 .visionbonus .pc-only{display: block;}
 .visionbonus .mobile-only{display: none;}
 .visionbonus .visionbonus-content{padding-bottom:80px;}
