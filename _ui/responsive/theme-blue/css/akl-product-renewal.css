@@ -1646,45 +1646,46 @@ a[class^="btn_default-"].small {line-height:24px}
 	display: flex;
 	align-items: center;
 }
-.box_sop-cont .promotion_banner_top .promotion_banner_title::before {
-	content: '';
-	position: relative;
-	top: 35px;
-	display: inline-block;
-	width: 16px;
-	height: 62px;
-	margin-right: 4px;
-	background: url(/_ui/responsive/theme-blue/images/akl_plp/ico_bracket_left.png) center center no-repeat;
-	background-size: cover;
-}
-.box_sop-cont .promotion_banner_top .promotion_banner_title::after {
-	content: '';
-	position: relative;
-	top: 35px;
-	display: inline-block;
-	width: 16px;
-	height: 62px;
-	margin-left: 4px;
-	background: url(/_ui/responsive/theme-blue/images/akl_plp/ico_bracket_right.png) center center no-repeat;
-	background-size: cover;
-}
-.box_sop-cont .promotion_banner_top .promotion_banner_title h2 {
-	position: relative;
-	margin: 0;
-	font-weight: 900;
-	font-size: 54px;
-	line-height: 64.8px;
-	white-space: pre;
+.box_sop-cont .promotion_banner_top .promotion_banner_title h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: inline-block;
+  width: 16px;
+  height: 62px;
+  margin-right: 4px;
+  background: url(/_ui/responsive/theme-blue/images/akl_plp/ico_bracket_left.png) center center no-repeat;
+  background-size: cover;
 }
 .box_sop-cont .promotion_banner_top .promotion_banner_title h2::after {
-	content: '';
-	position: absolute;
-	top: -10px;
-	right: 410px;
-	width: 49px;
-	height: 49px;
-	background: url(/_ui/responsive/theme-blue/images/akl_plp/ico_gutmorning_title.png) center center no-repeat;
-	background-size: cover;
+  content: '';
+  position: absolute;
+  right: -20px;
+  bottom: 0;
+  display: inline-block;
+  width: 16px;
+  height: 62px;
+  background: url(/_ui/responsive/theme-blue/images/akl_plp/ico_bracket_right.png) center center no-repeat;
+  background-size: cover;
+}
+.box_sop-cont .promotion_banner_top .promotion_banner_title h2 {
+  position: relative;
+  margin: 0;
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 64.8px;
+  padding-left: 20px;
+}
+.box_sop-cont .promotion_banner_top .promotion_banner_title::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 180px;
+  width: 65px;
+  height: 55px;
+  background: url(/_ui/responsive/theme-blue/images/akl_plp/ico_gutmorning_title.png) center center no-repeat;
+  background-size: cover;
 }
 .box_sop-cont .promotion_banner_top .promotion_banner_title h2 span {
 	color: #FFF226;
@@ -1741,31 +1742,32 @@ a[class^="btn_default-"].small {line-height:24px}
 		background-size: contain;
 	}
 	.box_sop-cont .promotion_banner_top .promotion_banner_title h2 {
-		padding: 0;
-		font-size: 28px;
-		line-height: 38px;
-		letter-spacing: -0.05em;
-		max-width: 220px;
-		white-space: normal;
-	}
-	.box_sop-cont .promotion_banner_top .promotion_banner_title h2::after {
-		top: -10px;
-		right: 97px;
-		width: 44px;
-		height: 44px;
-	}
-	.box_sop-cont .promotion_banner_top .promotion_banner_title::before {
-		top: 0;
-		width: 10px;
-		height: 36px;
-		margin-right: 2px;
+    padding: 0 0 0 12px;
+    font-size: 34px;
+    line-height: 44.2px;
+    letter-spacing: normal;
+    max-width: 250px;
+    white-space: normal;
 	}
 	.box_sop-cont .promotion_banner_top .promotion_banner_title::after {
-		top: 39px;
-		right: 90px;
-		width: 10px;
-		height: 36px;
-		margin-left: 2px;
+		top: -3px;
+    left: 113px;
+    width: 44px;
+    height: 37px;
+	}
+	.box_sop-cont .promotion_banner_top .promotion_banner_title h2::before {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 36px;
+    margin-right: 2px;
+	}
+	.box_sop-cont .promotion_banner_top .promotion_banner_title h2::after {
+    right: 58px;
+    bottom: 3px;
+    width: 10px;
+    height: 36px;
+    margin-left: 2px;
 	}
 	.box_sop-cont .promotion_banner_top .promotion_desc {
 		max-width: unset;
@@ -1774,22 +1776,41 @@ a[class^="btn_default-"].small {line-height:24px}
 		font-size: 14px;
 		line-height: 20px;
 		word-break: keep-all;
+		letter-spacing: unset;
 	}
 	.box_sop-cont .promotion_banner_top .promotion_notice {
-		padding-right: 30px;
+		padding-right: 20px;
 		padding-left: 12px;
 		font-size: 12px;
 		font-weight: 400;
 		line-height: 17.38px;
+		letter-spacing: unset;
 	}
 	.box_sop-cont .promotion_banner_top .promotion_date {
 		margin: 16px 0 0 12px;
-		padding: 4px 8px;
+		padding: 4px 8px 2px;
 		font-size: 12px;
 		line-height: 17.38px;
 	}
 	.box_sop-cont .promotion_banner_top .promotion_date span {
 		padding-left: 17px; 
+	}
+}
+@media (max-width: 344px) {
+	.box_sop-cont .promotion_banner_top .promotion_date {
+		display: flex;
+		flex-direction: column;
+	}
+	.box_sop-cont .promotion_banner_top .promotion_date span {
+		padding-left: 0;
+	}
+	.box_sop-cont .promotion_banner_top .promotion_date span::after {
+		display: none;
+	}
+}
+@media (max-width: 320px) {
+	.box_sop-cont .promotion_banner_top .promotion_banner_title::after  {
+		right: 85px;
 	}
 }
 /* // 202405 것모닝 작업 - 장바구니 스마트 오더 교체, 신청, 추가 페이지 배너 추가 */
@@ -3479,7 +3500,7 @@ i.state-fail:before {transform:rotate(-45deg);-webkit-transform:rotate(-45deg)}
 	bottom: 100%;
 	left: 50%;
 	transform: translate(-50%);
-	min-width: 240px;
+	max-width: 300px;
 	padding: 8px 12px;
 	font-size: 12px;
 	font-weight: 500;
@@ -3489,6 +3510,7 @@ i.state-fail:before {transform:rotate(-45deg);-webkit-transform:rotate(-45deg)}
 	border-radius: 8px;
 	box-shadow: 6px 4px 16px 0 rgba(0, 0, 0, 0.2);
 	text-align: center;
+	white-space: nowrap;
 }
 .box_mobile-floating .gutmorning_tooltip::after {
 	content: '';
@@ -17355,26 +17377,14 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	display: flex;
 	align-items: center;
 }
-.box_sop-promotion .promotion_banner_container .promotion_banner_top .promotion_banner_title::before {
-	content: '';
-	position: relative;
-	top: 35px;
-	display: inline-block;
-	width: 16px;
-	height: 62px;
-	margin-right: 4px;
-	background: url(/_ui/responsive/theme-blue/images/akl_plp/ico_bracket_left.png) center center no-repeat;
-	background-size: cover;
-}
 .box_sop-promotion .promotion_banner_container .promotion_banner_top .promotion_banner_title::after {
 	content: '';
-	position: relative;
-	top: 35px;
-	display: inline-block;
-	width: 16px;
-	height: 62px;
-	margin-left: 4px;
-	background: url(/_ui/responsive/theme-blue/images/akl_plp/ico_bracket_right.png) center center no-repeat;
+	position: absolute;
+	top: 0;
+	left: 180px;
+	width: 65px;
+	height: 55px;
+	background: url(/_ui/responsive/theme-blue/images/akl_plp/ico_gutmorning_title.png) center center no-repeat;
 	background-size: cover;
 }
 .box_sop-promotion .promotion_banner_container .promotion_banner_top .promotion_banner_title h2 {
@@ -17383,15 +17393,29 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	font-weight: 900;
 	font-size: 54px;
 	line-height: 64.8px;
+	padding-left: 20px;
+}
+.box_sop-promotion .promotion_banner_container .promotion_banner_top .promotion_banner_title h2::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	display: inline-block;
+	width: 16px;
+	height: 62px;
+	margin-right: 4px;
+	background: url(/_ui/responsive/theme-blue/images/akl_plp/ico_bracket_left.png) center center no-repeat;
+	background-size: cover;
 }
 .box_sop-promotion .promotion_banner_container .promotion_banner_top .promotion_banner_title h2::after {
 	content: '';
 	position: absolute;
-	top: -10px;
-	right: 410px;
-	width: 49px;
-	height: 49px;
-	background: url(/_ui/responsive/theme-blue/images/akl_plp/ico_gutmorning_title.png) center center no-repeat;
+	right: -20px;
+	bottom: 0;
+	display: inline-block;
+	width: 16px;
+	height: 62px;
+	background: url(/_ui/responsive/theme-blue/images/akl_plp/ico_bracket_right.png) center center no-repeat;
 	background-size: cover;
 }
 .box_sop-promotion .promotion_banner_container .promotion_banner_top .promotion_banner_title h2 span {
@@ -18618,28 +18642,29 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		background-size: contain;
 	}
 	.box_sop-promotion .promotion_banner_container .promotion_banner_top .promotion_banner_title h2 {
-		padding: 0;
+		padding: 0 0 0 12px;
 		font-size: 34px;
 		line-height: 44.2px;
 		letter-spacing: normal;
 		max-width: 250px;
 		white-space: normal;
 	}
-	.box_sop-promotion .promotion_banner_container .promotion_banner_top .promotion_banner_title h2::after {
-		top: -10px;
-		right: 105px;
+	.box_sop-promotion .promotion_banner_container .promotion_banner_top .promotion_banner_title::after {
+		top: -3px;
+		left: 113px;
 		width: 44px;
-		height: 44px;
+		height: 37px;
 	}
-	.box_sop-promotion .promotion_banner_container .promotion_banner_top .promotion_banner_title::before {
-		top: 0.5px;
+	.box_sop-promotion .promotion_banner_container .promotion_banner_top .promotion_banner_title h2::before {
+		top: 50%;
+		transform: translateY(-50%);
 		width: 10px;
 		height: 36px;
 		margin-right: 2px;
 	}
-	.box_sop-promotion .promotion_banner_container .promotion_banner_top .promotion_banner_title::after {
-		top: 45.5px;
-		right: 83px;
+	.box_sop-promotion .promotion_banner_container .promotion_banner_top .promotion_banner_title h2::after {
+		right: 58px;
+		bottom: 3px;
 		width: 10px;
 		height: 36px;
 		margin-left: 2px;
@@ -19301,6 +19326,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		display: block;
 	}
 }
+
 /* // 202405 것모닝 작업 - 것모닝 프로모션 */
 
 .box_sop-main.sh_bsop_renewal .bsop_case1 {background:#fefbec url(/_ui/responsive/theme-blue/images/akl_plp/bg_bsop_semicircle2.png) no-repeat right calc(100% + 80px) / 552px auto;}
