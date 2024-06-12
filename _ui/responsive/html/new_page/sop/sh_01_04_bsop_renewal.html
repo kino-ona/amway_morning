@@ -6798,6 +6798,8 @@
 
 		if($('.promotion_float_wrap.mo .total_button')) floatingContentArrowAction();
 
+    if($('.gutmorning_start_btn')) moveToHelperContent();
+
 		if($('.accordion_swiper')) initSwiper();
 
 		if($('.tabs')) tabClickCenterScroll();
@@ -6810,7 +6812,7 @@
 
 		if($('.accordion_product_wrap')) productCheckNum();
 
-		if($('.promotion_button_wrap')) buttonActionTop();
+		if($('.gutmorning_start_btn')) buttonActionTop();
 
 		if($('.product_btn span input')) inputCheck();
 
@@ -7424,8 +7426,6 @@ function productCount(type) {
 		$('.gutmorning_start_btn, .gutmorning_change_btn').on('click', function() {
 
 			var visualHeight = $('.box_sop-visual').height() + $('.main-header').height();
-
-			moveToHelperContent()
 
 			$('html, body').animate({ scrollTop: visualHeight });
 		});
