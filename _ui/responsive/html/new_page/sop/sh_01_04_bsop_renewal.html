@@ -7088,8 +7088,10 @@
 	function checkMobileView(item, checkType, windowWidth) {
 		if(windowWidth > 1200) {
 			item.find('.optional_category_wrap').hide();
-			return false;
-		} 
+			// return false;
+		}  else {
+			item.find('.optional_category_wrap').show();
+		}
 		item.find('.optional_category_wrap').css('display', checkType ? 'block' : 'none');
 	}
 
