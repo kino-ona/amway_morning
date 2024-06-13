@@ -6763,29 +6763,29 @@
 		if($('.accordion_list input[name*="chk_optional_yn"]')) optionalProductDefaultOption();
 
 		if($('.box_sop-tab')) checkHelperContent();
-
-		if($('.promotion_float_wrap.mo .total_button')) floatingContentArrowAction();
-
-    if($('.gutmorning_start_btn')) moveToHelperContent();
-
+				
 		if($('.accordion_swiper')) initSwiper();
 
 		if($('.tabs')) tabClickCenterScroll();
-
-		if($('.accordion_product_wrap')) moProductCheck();
-
-		if($('.promotion_float_wrap.pc')) pcFloatingBarSticky();
 		
-		if($('.product_btn')) productCount();
+		if($('.promotion_float_wrap.pc')) pcFloatingBarSticky();
 
-		if($('.accordion_product_wrap')) productCheckNum();
+		if($('.promotion_float_wrap.mo')) floatingContentArrowAction();
 
-		if($('.gutmorning_start_btn')) buttonActionTop();
+		if($('.promotion_float_wrap.mo .product_btn')) productCount();
 
-		if($('.product_btn span input')) inputCheck();
+    if($('.gutmorning_start_btn')) {
+			moveToHelperContent();
+			buttonActionTop();
+		}
 
-		if($('.product_btn span input')) onInputNumber();
-			
+		if($('.accordion_product_wrap')) {
+			moProductCheck();
+			inputCheck();
+			onInputNumber();
+			productCheckNum();
+		}
+
 
 		var timer = null;
 	
@@ -6860,14 +6860,14 @@
 
 				var activeTabWidth = 0;
 
-				if($(element).hasClass('on'))
-
 				for (var i=0; i<index; i++) targetLeft += boxItem.eq(i).outerWidth();
 			
 				var selectTargetPos = (targetLeft + $(element).outerWidth()/2);
+				
 				if (selectTargetPos <= boxHarf) {
 					pos = 0;
-				} else if (listWidth - selectTargetPos <= boxHarf) {
+				}
+				if (listWidth - selectTargetPos <= boxHarf) {
 					pos = selectTargetPos - boxHarf;
 				}
 
@@ -6947,7 +6947,9 @@
 		if (idx === 1 && firstStepValue === 'step1_2' || idx > 4) {
 			$('.accordion_container_step1_1').hide();
 			$('.accordion_container_step1_2').show();
-		} else if (idx === 1 && firstStepValue === 'step1_1' || idx <= 4) {
+		}
+		
+		if (idx === 1 && firstStepValue === 'step1_1' || idx <= 4) {
 			$('.accordion_container_step1_1').show();
 			$('.accordion_container_step1_2').hide();
 		}
@@ -7158,24 +7160,6 @@
 		});
 	}
 
-
-function productCount(type) {
-    var buttons = $('.product_btn button');
-
-    buttons.on('click', function() {
-        var currentInputValue = $(this).closest('.product_btn').find('input').val();
-        var newValue;
-
-				$(this).hasClass('plus') ? newValue = Number(currentInputValue) + 1 : newValue = Number(currentInputValue) - 1;
-
-				newValue > 999 ? newValue = 999
-					: (newValue < 0) ? newValue = 0
-					: '';
-
-        $(this).closest('.product_btn').find('input').val(newValue);
-    });
-}
-
 	function productCheckNum() {
     var productCheckbox = $('.accordion_product_wrap input[type="checkbox"]');
     
@@ -7201,7 +7185,7 @@ function productCount(type) {
 		});
 	}
 
-	function pcProductResetClick(productCheckbox) {
+	function pcProductResetClick() {
 		$('.product_reset_pc').click(function() {
 			$(this)
 				.closest('.accordion_product_title_wrap')
@@ -7209,12 +7193,10 @@ function productCount(type) {
 				.find('input')
 				.prop("checked",false);
 				
-			checkedCount = 0;
-
 			$(this)
 				.closest('.accordion_list')
 				.find('.chk_product_num span')
-				.text(checkedCount);
+				.text(0);
 		});
 	}
 
@@ -7241,7 +7223,7 @@ function productCount(type) {
 				});
 
 
-			deleteItem(accordionListTitle, checkedCount);
+			deleteItem(accordionListTitle);
 			
 			checkedCount === 1 && $(this).is(':checked') ? productContainerAppend(accordionListIndex) : '';
 
@@ -7306,7 +7288,7 @@ function productCount(type) {
 		});
 	}
 
-	function deleteItem(accordionListTitle, checkedCount) {
+	function deleteItem(accordionListTitle) {
     $('.my_product_container').on('click', '.product_delete', function() {
 			var productListData = $(this).closest('.my_product_content').data('item');
 			var productListIndex = $(this).closest('.my_product_list').data('index');
@@ -7343,16 +7325,20 @@ function productCount(type) {
 	}
 
 	function addProductClass() {
-	$('.my_product_wrap').addClass('active');
-	$('.promotion_total button').addClass('active');
-	$('.promotion_float_wrap.mo').removeClass('disabled');
-	$('.promotion_total button').attr('disabled', false);
+		var promotionTotalButton = $('.promotion_total button');
+
+		promotionTotalButton.attr('disabled', false);
+		promotionTotalButton.addClass('active');
+		$('.my_product_wrap').addClass('active');
+		$('.promotion_float_wrap.mo').removeClass('disabled');
 	}
 
 	function resetProductClass() {
+		var promotionTotalButton = $('.promotion_total button');
+
+		promotionTotalButton.attr('disabled', true);
+		promotionTotalButton.removeClass('active');
 		$('.promotion_float_wrap.mo').addClass('disabled');
-		$('.promotion_total button').attr('disabled', true);
-		$('.promotion_total button').removeClass('active');
 		$('.my_product_wrap').removeClass('active');
 	}
 
@@ -7364,25 +7350,50 @@ function productCount(type) {
 			$('html, body').animate({ scrollTop: visualHeight });
 		});
 	}
-	
-	function inputCheck() {
-		$('input[type=number][maxlength]').on('input', function(ev) {
-			var $this = $(this);
-			var maxlength = $this.attr('maxlength');
-			var value = $this.val();
 
-			if (value && value.length >= maxlength) {
+	function inputCheck() {
+    $('input[type=number][maxlength]').on('propertychange change keyup paste input', function() {
+        var $this = $(this);
+        var maxlength = $this.attr('maxlength');
+        var value = $this.val();
+
+        if (value && value.length >= maxlength) {
 					$this.val(value.substr(0, maxlength));
-			}
-		});
+					$this.attr('value', value.substr(0, maxlength));
+        }
+    });
 	}
 
 	function onInputNumber() {
-		$('input[type=number][maxlength]').keyup(function() {
-			var replaceText = $(this).val().replace(/[^-0-9]/g, '');
-			$(this).val(replaceText);
+    $('input[type=number][maxlength]').on('propertychange change keyup paste input', function () {
+        var replaceText = $(this).val().replace(/[^-0-9]/g, '');
+
+				$(this).val(replaceText);
+				$(this).attr('value', replaceText);
+    });
+	}
+
+	
+	function productCount(type) {
+		var buttons = $('.product_btn button');
+
+		buttons.on('click', function() {
+			var currentInput = $(this).closest('.product_btn').find('input');
+			var currentInputValue = currentInput.val();
+			var newValue;
+
+			$(this).hasClass('plus') ? newValue = Number(currentInputValue) + 1 : newValue = Number(currentInputValue) - 1;
+
+			newValue > 999 ? newValue = 999
+				: (newValue < 0) ? newValue = 0
+				: '';
+
+				
+				currentInput.val(newValue);
+				currentInput.attr('value', newValue);
 		});
 	}
+
 	// E: 202405 것모닝 작업
 
 
