@@ -7191,9 +7191,7 @@ function productCount(type) {
 				.closest('.accordion_list')
 				.find('.accordion_product_wrap input[type="checkbox"]')
 				.each(function() {
-					if ($(this).is(':checked')) {
-							checkedCount++;
-					}
+					$(this).is(':checked') ? checkedCount++ : '';
 			});
 
 			$(this)
