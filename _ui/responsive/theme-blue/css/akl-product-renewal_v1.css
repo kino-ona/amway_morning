@@ -1372,11 +1372,21 @@
 
 /* 202405 것모닝 작업 - 장스오 홈 상단 비주얼 개선 */
 .v_05 .info_benefit.new-type span:before{position:absolute;width:100%;height:8px;content:"";bottom:0;left:0;background-color:rgba(156, 229, 123, 0.3);z-index:-2;display: none}/* 202405 것모닝 작업 - 레이아웃 수정 */ 
+
+.box_sop-visual.box_sop-home.st_type2.v_03{
+    background-image: none !important;
+}
+.box_sop-visual.box_sop-home.st_type2{
+    background-image: none !important;
+}
+.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_03.new-type{
+    background: none !important;
+}
 .box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_05.new-type {
-    background: url(../images/akl_plp/bg_bsop_new_02.png) center center no-repeat;
+    background: url(../images/akl_plp/bg_bsop_new_02.png) center center no-repeat !important;
     height: 627px;
-    background-size: auto 100%;
-    background-color:#fefbec;
+    background-size: auto 100% !important;
+    background-color:#fefbec !important;
     position:relative;
     overflow: hidden;
 }
@@ -1609,8 +1619,8 @@
 @media (max-width: 768px) {
     .box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_05.new-type {
         height: unset;
-        background: url(../images/akl_plp/bg_bsop_new_02_m.png) center center no-repeat;
-        background-size: cover;
+        background: url(../images/akl_plp/bg_bsop_new_02_m.png) center center no-repeat !important;
+        background-size: cover !important;
     }
     .box_sop-visual.box_sop-home.st_type2.v_05 .container::before, .box_sop-visual.box_sop-home.st_type2.v_05 .container::after {
         display: none;
