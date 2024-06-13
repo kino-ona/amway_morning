@@ -3454,7 +3454,7 @@ background-repeat:no-repeat;}
 .visionbonus .point-yellow{color:#E6A30C;}
 .visionbonus .circle-num {display: inline-block; text-align: center; margin-right:4px; width: 16px; height: 16px; line-height:17px; background:#EBEBEB; border-radius:8px; font-size:12px; font-weight: 500;}
 .visionbonus .exclamation-txt{line-height: 1;}
-.visionbonus .exclamation-txt > span{display: inline-block; padding-left: 21px; line-height: 20px; color:#999; font-size: 12px; background: url(/_ui/responsive/theme-blue/images/akl_common/business/ico_visionbonus_exclamation.png) no-repeat; background-size: 17px 17px; background-position: left 1px;}
+.visionbonus .exclamation-txt > span{display: inline-block; padding-left: 21px; line-height: 20px; color:#999; font-size: 12px; background: url(/_ui/responsive/theme-blue/images/akl_common/business/ico_visionbonus_exclamation.png) no-repeat; background-size: 20px 20px; background-position: left center;}
 .visionbonus .bullet{display: inline-block; height: 28px; line-height: 28px; margin-right:8px; padding: 0 5px; font-size: 14px; font-weight:500; color:#999; border: 1px solid #ccc; border-radius:6px;}
 .visionbonus .bullet.blue{margin:0; padding: 0 12px; border-color:#F0F5FD; background: #F0F5FD;}
 .visionbonus .bullet.gray{margin:0; padding: 0 12px; border-color:#F9F9F9; background:#F9F9F9;}
