@@ -6792,12 +6792,14 @@
 		$(window).on('resize', function() {
 			windowWidth = $(window).width();
 
-			tabResizeCenterScroll();
-	
+			clearTimeout(timer);
+			
 			timer = setTimeout(function() {
+				tabResizeCenterScroll();
 				optionalProductCheck(windowWidth);
 			}, 100);
 		});
+
   }
 
 	function tabClickCenterScroll() {
