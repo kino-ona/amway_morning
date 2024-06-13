@@ -3444,7 +3444,7 @@ background-repeat:no-repeat;}
 .visionbonus table.clone{z-index:10;}
 
 .visionbonus [class^="point_"]{font-weight: 500;}
-.visionbonus .btn{border-radius: 8px;}
+.visionbonus .btn{border-radius: 4px;}
 .visionbonus .btn[disabled]{background: #d7d7d7 !important; border-color: #d7d7d7 !important;}
 .visionbonus .btn.bt-akl-blue{font-size: 16px; font-weight: 500; width:220px; height: 52px; line-height: 52px;  padding: 0;}
 .visionbonus .btn.bt-akl-blue:hover{color: #fff; background-color: #002F5F; border-color: #002F5F; transition:none}
@@ -3454,7 +3454,7 @@ background-repeat:no-repeat;}
 .visionbonus .point-yellow{color:#E6A30C;}
 .visionbonus .circle-num {display: inline-block; text-align: center; margin-right:4px; width: 16px; height: 16px; line-height:17px; background:#EBEBEB; border-radius:8px; font-size:12px; font-weight: 500;}
 .visionbonus .exclamation-txt{line-height: 1;}
-.visionbonus .exclamation-txt > span{display: inline-block; padding-left: 21px; line-height: 20px; color:#999; font-size: 12px; background: url(/_ui/responsive/theme-blue/images/akl_common/business/ico_visionbonus_exclamation.png) no-repeat; background-size: 15px 15px; background-position: left 1px;}
+.visionbonus .exclamation-txt > span{display: inline-block; padding-left: 21px; line-height: 20px; color:#999; font-size: 12px; background: url(/_ui/responsive/theme-blue/images/akl_common/business/ico_visionbonus_exclamation.png) no-repeat; background-size: 17px 17px; background-position: left 1px;}
 .visionbonus .bullet{display: inline-block; height: 28px; line-height: 28px; margin-right:8px; padding: 0 5px; font-size: 14px; font-weight:500; color:#999; border: 1px solid #ccc; border-radius:6px;}
 .visionbonus .bullet.blue{margin:0; padding: 0 12px; border-color:#F0F5FD; background: #F0F5FD;}
 .visionbonus .bullet.gray{margin:0; padding: 0 12px; border-color:#F9F9F9; background:#F9F9F9;}
@@ -3559,6 +3559,8 @@ background-repeat:no-repeat;}
 .visionbonus .bonus-inner .circle-box.blue > span{font-size: 24px;}
 .visionbonus .txt-or{font-size:14px; font-weight:400; color:#567BF3; opacity: 0.6;}
 
+.visionbonus.container.business .table03 .tbl-list tbody td{line-height: 73px;}
+
 
 @media (min-width: 768px) and (max-width: 1100px){
 	.visionbonus .checkbox-wrap.twin{width:100%;}
@@ -3593,6 +3595,7 @@ background-repeat:no-repeat;}
 
 @media(max-width:768px){
 	.visionbonus .pc-only{display: none;}
+	.visionbonus.container.business{padding: 0 20px;}
 	.visionbonus .box-group{margin-top:40px;}
 	.visionbonus .title-h3 + div, .visionbonus .title-h3 + p {margin-top:12px; font-size:14px; line-height: 24px;}
 	.visionbonus .title-wrap .txt-in-tooltip,
@@ -3600,8 +3603,8 @@ background-repeat:no-repeat;}
 	.visionbonus .title-wrap + .border-box{margin-top:20px;}
 	.visionbonus .subjects-inner{padding:41px 20px 20px;}
 	.visionbonus .category-box .circle-container{width:100%;}
-	.visionbonus .category-box.growth{flex-direction: column; padding:20px; border-radius:76px; gap:20px;}
-	.visionbonus .category-box.benefit{gap:8px;}
+	.visionbonus .category-box.growth{width: fit-content; flex-direction: column; padding:20px 16px 16px 16px; border-radius:76px; gap:20px;}
+	.visionbonus .category-box.benefit{padding:10px; gap:8px; }
 	.visionbonus .category-box .title{height:26px; line-height: 28px; top:-13px}
 	.visionbonus .category-box .title.blue{width:114px; font-size:14px; font-weight:500;}
 	.visionbonus .bonus-inner .category-box .title.blue{width: 90px; height: 28px; line-height: 30px;}
@@ -3609,8 +3612,8 @@ background-repeat:no-repeat;}
 	.visionbonus .circle-box{max-width:110px;}
 	.visionbonus .circle-box > strong{font-size: 24px; line-height:28px;}
 	.visionbonus .circle-box > span {font-size:13px; line-height: 19px;}
-	.visionbonus .circle-box.blue{border-width:10px; width: 40%; margin: 0 auto;}
-	.visionbonus .circle-box.green{width: 44.35%;}
+	.visionbonus .circle-box.blue{border-width:10px; width: 110px; margin: 0 auto;}
+	.visionbonus .circle-box.green{width: 110px;}
 	.visionbonus .amount-inner.fq p, 
 	.visionbonus .amount-inner.qc p{font-size:16px; line-height:24px;}
 
@@ -3647,6 +3650,10 @@ background-repeat:no-repeat;}
 	.visionbonus .mobile-only{display: block;}
 	.visionbonus .table-scroll.basic-scroll .tbl-list th,
 	.visionbonus .table-scroll.basic-scroll .tbl-list td{min-width: 150px;}
+
+	.visionbonus .table-scroll .table-wrap{padding-right:15px;}
+	.visionbonus .table-scroll .main-table {border-top:none;}
+	.visionbonus .table-scroll .main-table thead th {border-top: 1px solid #e3e3e3}
 	.visionbonus.container .outer-border-bottom:before{display: none;}
 	.visionbonus.container .tabWrapper {border-bottom: 1px solid #EDEDED;}
 	.visionbonus.container .tabs-toggles .tab-toggle-wrap.active .tab-toggle{padding: 0 16px;}
@@ -3690,7 +3697,7 @@ background-repeat:no-repeat;}
 	.visionbonus .tbl-list.grid-type tbody > tr.rowspan-type + tr.rowspan-type > td:nth-child(3){grid-column: 2 / 3; grid-row: 5 / 6;}
 
 	.visionbonus .box-group.twins{display: block;}
-	.visionbonus .box-group.twins >  div + div {margin-top: 50px;}
+	.visionbonus .box-group.twins >  div + div {margin-top: 24px;}
 	.visionbonus .dot-list{margin-top:12px;}
 	.visionbonus .dot-list > li{font-size:12px; line-height:20px;}
 	.visionbonus .dot-list > li::after{top:7px}
@@ -3720,10 +3727,9 @@ background-repeat:no-repeat;}
 	.visionbonus .btn-sum.fixed {position: fixed; left: 50%; bottom: -1px;	transform: translate(-50%, 0);	width: 100%;	margin: 0;	z-index: 1000;	transition: all ease .3s; border-radius:0;}
 	.visionbonus .btn-sum{position: absolute;bottom: 0;	transform: translate(-50%, 0);	width: 100%;	border-radius: 8px;	overflow: hidden;	z-index: 300;}
 	
-	.visionbonus.container.business .tbl-list td{
-		padding: 16px 8px;
-	}
+	.visionbonus.container.business .tbl-list td{padding: 16px 8px;}
 	/* 비전보너스 설명 - FQ 테이블 */
+	.visionbonus.container.business .table03 .tbl-list tbody td{line-height: 20px;}
 	.visionbonus .table03 .tbl-list colgroup col:nth-child(1){width:40%;}
 	.visionbonus .table03 .tbl-list colgroup col:nth-child(2){width:30%;}
 	.visionbonus .table03 .tbl-list colgroup col:nth-child(3){width:30%;}
@@ -3756,8 +3762,8 @@ background-repeat:no-repeat;}
 
 	/* 비전보너스 조회 - 조회 테이블 */
 	.visionbonus.container.business .table09 table{table-layout: fixed;}
-	.visionbonus.container.business .table09 table colgroup col:nth-child(1){width:135px;}
-	.visionbonus.container.business .table09 table colgroup col:nth-child(2){width:88px;}
+	.visionbonus.container.business .table09 table colgroup col:nth-child(1){width:150px;}
+	.visionbonus.container.business .table09 table colgroup col:nth-child(2){width:90px;}
 	.visionbonus.container.business .table09 table colgroup col:nth-child(3),
 	.visionbonus.container.business .table09 table colgroup col:nth-child(4),
 	.visionbonus.container.business .table09 table colgroup col:nth-child(5){min-width:180px; width: 180px}
@@ -3787,7 +3793,7 @@ background-repeat:no-repeat;}
 	.visionbonus .mobile-table-area > .title-wrap{display: flex; align-items: center;}
 	.visionbonus .mobile-table-area > .title-wrap *{flex: 1;}
 	.visionbonus .mobile-table-area > .title-wrap span{text-align: right; font-size: 12px; color:#999; font-weight:400;}
-	.visionbonus .mobile-table-contents .border-box{padding:20px;}
+	.visionbonus .mobile-table-contents .border-box{padding:20px; border-radius: 12px;}
 	.visionbonus .mobile-table-contents .border-box > .title{display: block; font-size: 20px; color: #567BF3; font-weight: 700;}
 	.visionbonus .mobile-table-group{display: none;}
 	.visionbonus .mobile-table-group.active{display: block;}
