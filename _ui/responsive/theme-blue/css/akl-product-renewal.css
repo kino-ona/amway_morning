@@ -17599,6 +17599,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	background-size: 317px;
 }
 .box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content:nth-of-type(2) {
+	position: relative;
 	background: url(/_ui/responsive/theme-blue/images/akl_plp/img_promotion_desc_02.png) calc(100% - 24px) calc(100% - 24px) no-repeat #FFF;
 	background-size: 317px;
 }
@@ -17628,7 +17629,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	color: #666;
 }
 .box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap::after {
-	left: 33%;
+	left: 33.3%;
 	background: url(/_ui/responsive/theme-blue/images/akl_plp/ico_circle_or.png) center center no-repeat;
 	background-size: cover;
 }
@@ -18634,7 +18635,39 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	.box_sop-promotion .promotion_detail_container .promotion_detail_contents .detail_desc_wrap::after {
 		width: 40px;
 		height: 40px;
-		top: 48%;
+	}
+	.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(1) .detail_desc_wrap::after {
+		display: none;
+	}
+
+	.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(1) .detail_desc_wrap .detail_desc_content:nth-of-type(2) {
+		position: relative;
+	}
+	.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(1) .detail_desc_wrap .detail_desc_content:nth-of-type(2)::before {
+		content: '';
+		position: absolute;
+		top: -26px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 40px;
+		height: 40px;
+		background: url(/_ui/responsive/theme-blue/images/akl_plp/ico_circle_plus.png) center center no-repeat;
+		background-size: cover;
+		border-radius: 50%;
+		box-shadow: 2px 4px 12px 0 rgba(0, 0, 0, 0.1);
+	}
+	.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content:nth-of-type(2)::after {
+		content: '';
+		position: absolute;
+		top: -26px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 40px;
+		height: 40px;
+		background: url(/_ui/responsive/theme-blue/images/akl_plp/ico_circle_or.png) center center no-repeat;
+		background-size: cover;
+		box-shadow: 2px 4px 12px 0 rgba(0, 0, 0, 0.1);
+		border-radius: 50%;
 	}
 	.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_text_wrap p {
 		margin-bottom: 24px;
@@ -18658,6 +18691,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap::after {
 		top: 33%;
 		left: 50%;
+		display: none;
 	}
 	.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content span:nth-of-type(1) {
 		padding: 4px 8px 2px;
