@@ -17246,9 +17246,16 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 .bsop_renew .box_sop-main.sh_bsop_renewal .bsop_manual .bsop_manual_txt {color:#828282; font-size:14px; font-weight:500; line-height:1.4; letter-spacing:-0.44px; margin:0 0 5px;}
 .bsop_renew .box_sop-main.sh_bsop_renewal .bsop_manual .bsop_manual_link {position:initial; width:212px; display:flex; align-items:center; justify-content:center; height:auto; line-height:initial; color:#fff; font-size:14px; font-weight:500; background-color:#000; border-radius:8px; text-align:center; padding:7px 0 8px; margin:0;}
 .bsop_renew .box_sop-main.sh_bsop_renewal .bsop_manual .bsop_manual_link .ico_arr {display:inline-block; width:21px; height:21px; background:url(/_ui/responsive/theme-blue/images/akl_plp/ico_arr_bsop.png) no-repeat center center / 6px auto; margin-left:7px;}
+.bsop_renew .box_sop-main.sh_bsop_renewal .box_sop-wrap.smart-order-tabs .box_sop-tab-wrap.on {position:fixed; top:30px; width:100%; max-width:1400px; background-color:#fff; padding-top:10px; z-index:100;}
+.bsop_renew .box_sop-main.sh_bsop_renewal .box_sop-wrap.smart-order-tabs .box_sop-tab {display:flex; flex-wrap:wrap; align-items:flex-end; gap:10.5px; border-bottom:2px solid #9870d7; margin-top:105px;}
+.bsop_renew .box_sop-main.sh_bsop_renewal .box_sop-wrap.smart-order-tabs .box_sop-tab .tabs {display:flex; justify-content:center; align-items:center; min-width:202px; height:60px; text-align:center; background-color:#f1eefe; border:1px solid #eee2ff; border-width:1px 1px 0; border-radius:25px 25px 0 0; box-shadow:0 -2px 4px 0 rgba(0, 0, 0, 0.1); margin:0; overflow:hidden; padding:0 10px;}
+.bsop_renew .box_sop-main.sh_bsop_renewal .box_sop-wrap.smart-order-tabs .box_sop-tab .tabs.on {min-width:230px; height:70px; background-color:#9870d7; border-color:#9870d7; box-shadow:0 -8px 8px 0 rgba(0, 0, 0, 0.05);}
+.bsop_renew .box_sop-main.sh_bsop_renewal .box_sop-wrap.smart-order-tabs .box_sop-tab .tabs button {display:flex; align-items:center; justify-content:center; width:100%; height:100%; color:#9870d7; font-size:18px; font-weight:500; line-height:normal; letter-spacing:-0.36px; border:none; padding:0;}
+.bsop_renew .box_sop-main.sh_bsop_renewal .box_sop-wrap.smart-order-tabs .box_sop-tab .tabs.on button {color:#fff; font-size:23px; font-weight:600; letter-spacing:-0.46px;}
+/* .bsop_renew .box_product-fixed.fixed {top:217px;} */
 
 /* 202405 것모닝 작업 - 탭 리뉴얼 */
-.bsop_renew .box_sop-main.sh_bsop_renewal .box_sop-wrap.smart-order-tabs .box_sop-tab {
+.bsop_renew .box_sop-main.sh_bsop_renewal .box_sop-wrap.smart-order-tabs-renewal .box_sop-tab {
 	display:flex;
 	flex-wrap:wrap;
 	align-items:flex-end;
@@ -17256,18 +17263,25 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	border-bottom: none;
 	margin-top:105px;
 	border-bottom: 1px solid #D7D7D7 !important;
+	gap: unset;
 }
-.bsop_renew .box_sop-main.sh_bsop_renewal .box_sop-wrap.smart-order-tabs .box_sop-tab .tabs {
+.bsop_renew .box_sop-main.sh_bsop_renewal .box_sop-wrap.smart-order-tabs-renewal .box_sop-tab .tabs {
 	display:flex;
 	justify-content:center;
 	align-items:center;
 	width: calc(100% / 4);
+	border-radius: unset;
+	background: unset;
+	min-width: unset !important;
 	height:66px;
 	text-align:center;
 	margin:0;
 	overflow:hidden;
+	padding: 0;
+	border: none;
+	box-shadow: unset;
 }
-.bsop_renew .box_sop-main.sh_bsop_renewal .box_sop-wrap.smart-order-tabs .box_sop-tab .tabs button {
+.bsop_renew .box_sop-main.sh_bsop_renewal .box_sop-wrap.smart-order-tabs-renewal .box_sop-tab .tabs button {
 	display:flex;
 	align-items:center;
 	justify-content:center;
@@ -17282,11 +17296,18 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	border-bottom: 3px solid transparent;
 	padding:0;
 }
-.bsop_renew .box_sop-main.sh_bsop_renewal .box_sop-wrap.smart-order-tabs .box_sop-tab .tabs.on button {
+.bsop_renew .box_sop-main.sh_bsop_renewal .box_sop-wrap.smart-order-tabs-renewal .box_sop-tab .tabs.on {
+	background-color: unset;
+	box-shadow: unset;
+	height: 66px;
+}
+.bsop_renew .box_sop-main.sh_bsop_renewal .box_sop-wrap.smart-order-tabs-renewal .box_sop-tab .tabs.on button {
 	color:#018C51;
-	background: unset;
+	background: unset !important;
 	border: none;
+	font-weight: 700;
 	border-bottom: 3px solid #018C51;
+	font-size: 20px;
 }
 /* // 202405 것모닝 작업 - 탭 리뉴얼 */
 
@@ -19531,49 +19552,15 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	.bsop_renew .box_sop-main.sh_bsop_renewal .bsop_manual {position:initial; text-align:center; margin-top:36px;}
 	.bsop_renew .box_sop-main.sh_bsop_renewal .bsop_manual .bsop_manual_txt {color:#5a5a5a; letter-spacing:-0.42px;}
 	.bsop_renew .box_sop-main.sh_bsop_renewal .bsop_manual .bsop_manual_link {width:100%; border-radius:4px;}
-	
-	/* 202405 것모닝 작업 - 모바일 탭 라뉴얼 */
-	.bsop_renew .box_sop-main.sh_bsop_renewal .box_sop-wrap.smart-order-tabs .box_sop-tab-wrap {
-		overflow-x: scroll;
-	}
-	.bsop_renew .box_sop-main.sh_bsop_renewal .box_sop-wrap.smart-order-tabs .box_sop-tab-wrap::-webkit-scrollbar {
-		display: none;
-	}
-	.bsop_renew .box_sop-main.sh_bsop_renewal .box_sop-wrap.smart-order-tabs .box_sop-tab {
-		flex-wrap: nowrap;
-		width: 100% !important;
-		margin: 20px 0 0;
-		border: none;
-		border-bottom: 1px solid #D7D7D7;
-		overflow-x: scroll;
-	}
-	.bsop_renew .box_sop-main.sh_bsop_renewal .box_sop-wrap.smart-order-tabs .box_sop-tab .tabs {
-		flex: unset;
-		width: calc(100% / 4);
-		height:auto;
-		background-color:#fff;
-		border-radius:0;
-		border:none;
-		box-shadow:none;
-		white-space: nowrap;
-	}
-	.bsop_renew .box_sop-main.sh_bsop_renewal .box_sop-wrap.smart-order-tabs .box_sop-tab .tabs button {
-		padding: 8px 20px;
-		font-size:16px;
-	}
-	.bsop_renew .box_sop-main.sh_bsop_renewal .box_sop-wrap.smart-order-tabs .box_sop-tab .tabs.on button {
-		font-weight: 700;
-	}
-
-	@media (max-width: 600px) {
-		.bsop_renew .box_sop-main.sh_bsop_renewal .box_sop-wrap.smart-order-tabs .box_sop-tab {
-			width: fit-content !important;
-		}
-		.bsop_renew .box_sop-main.sh_bsop_renewal .box_sop-wrap.smart-order-tabs .box_sop-tab .tabs {
-			width: fit-content;
-		}
-	}
-	/* // 202405 것모닝 작업 - 모바일 탭 라뉴얼 */
+	.bsop_renew .box_sop-main.sh_bsop_renewal .box_sop-wrap.smart-order-tabs .box_sop-tab-wrap.on {top:54px;}
+	.bsop_renew .box_sop-main.sh_bsop_renewal .box_sop-wrap.smart-order-tabs {margin-top:-10px;}
+	.bsop_renew .box_sop-main.sh_bsop_renewal .box_sop-wrap.smart-order-tabs .box_sop-tab {margin:0; gap:0; border:1px solid #ccc; border-bottom:2px solid #9870d7; border-radius:15px 15px 0 0; overflow:hidden;}
+	.bsop_renew .box_sop-main.sh_bsop_renewal .box_sop-wrap.smart-order-tabs .box_sop-tab .tabs {width:50%; min-width:auto; height:auto; background-color:#fff; border-radius:0; border:none; box-shadow:none; padding:0;}
+	.bsop_renew .box_sop-main.sh_bsop_renewal .box_sop-wrap.smart-order-tabs .box_sop-tab .tabs.on {width:auto; min-width:auto; height:auto; border-radius:15px 15px 0 0; box-shadow:none;}
+	/* S : 20240424 수정 */
+	.bsop_renew .box_sop-main.sh_bsop_renewal .box_sop-wrap.smart-order-tabs .box_sop-tab .tabs button {color:#999; font-size:14px; font-weight:600; letter-spacing:-0.28px; padding:18px 0; margin-top:-1px; border-radius:0; webkit-text-size-adjust:none; -webkit-text-fill-color:#999;}
+	.bsop_renew .box_sop-main.sh_bsop_renewal .box_sop-wrap.smart-order-tabs .box_sop-tab .tabs.on button {color:#fff; font-size:14px; webkit-text-size-adjust:none; -webkit-text-fill-color:#fff;}
+	/* E : 20240424 수정 */
 
 	.bsop_manual .bsop_manual_detail .tabWrapper.on {top:90px; width:100%;}
 	.bsop_manual.up .bsop_manual_detail .tabWrapper.on {top:54px;}
@@ -19601,11 +19588,6 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	.bsop_benefit_title h2 {font-size:22px; letter-spacing:-0.66px;}
 	.bsop_benefit_title h2 span {font-size:27px; letter-spacing:-0.81px;}
 	.bsop_benefit_title h2 span::before {height:1px;}
-		
-	/* 202405 것모닝 작업 - 영역 틀어짐 수정 */
-	@media (max-width: 360px) {
-		.bsop_benefit_title h2 span::before {bottom: 2px}
-	}
 	.bsop_benefit_cont {max-width:initial; padding:90px 24px 100px; margin:0 -24px;}
 	.bsop_benefit_cont::before {content:""; position:absolute; left:0; top:-120px; display:block; width:100%; height:120px; background:url(/_ui/responsive/theme-blue/images/akl_plp/p_bg_bsop_semicircle.png) no-repeat left top / 100% auto;}
 	.bsop_benefit_cont > h2 {top:-39px; gap:6px; font-size:27px; letter-spacing:-0.81px; margin:0 0 30px;}
@@ -19737,7 +19719,58 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	.box_sop-main.sh_bsop_renewal .bsop_start.on {width:calc(100% - 48px);} /* 20240507 수정 */
 	.bsop_benefit_wrap.bsop_case2::after,
 	.bsop_benefit_wrap.bsop_case3::after {height:100px;} /* 20240507 수정 */
+
+	/* 202405 것모닝 작업 - 모바일 탭 라뉴얼 */
+	.bsop_renew .box_sop-main.sh_bsop_renewal .box_sop-wrap.smart-order-tabs-renewal .box_sop-tab-wrap {
+		overflow-x: scroll;
+	}
+	.bsop_renew .box_sop-main.sh_bsop_renewal .box_sop-wrap.smart-order-tabs-renewal .box_sop-tab-wrap::-webkit-scrollbar {
+		display: none;
+	}
+	.bsop_renew .box_sop-main.sh_bsop_renewal .box_sop-wrap.smart-order-tabs-renewal .box_sop-tab {
+		flex-wrap: nowrap;
+		width: 100% !important;
+		margin: 20px 0 0;
+		border: none;
+		border-bottom: 1px solid #D7D7D7;
+		overflow-x: scroll;
+	}
+	.bsop_renew .box_sop-main.sh_bsop_renewal .box_sop-wrap.smart-order-tabs-renewal .box_sop-tab .tabs {
+		flex: unset;
+		width: calc(100% / 4);
+		height:auto;
+		background-color:#fff;
+		border-radius:0;
+		border:none;
+		box-shadow:none;
+		white-space: nowrap;
+	}
+	.bsop_renew .box_sop-main.sh_bsop_renewal .box_sop-wrap.smart-order-tabs-renewal .box_sop-tab .tabs button {
+		padding: 8px 20px;
+		font-size:16px;
+		font-weight: 500;
+	}
+	.bsop_renew .box_sop-main.sh_bsop_renewal .box_sop-wrap.smart-order-tabs-renewal .box_sop-tab .tabs.on button {
+		font-weight: 700;
+		-webkit-text-fill-color: unset;
+		color: #018C51;
+		font-size: 16px;
+	}
 }
+
+@media (max-width: 600px) {
+	.bsop_renew .box_sop-main.sh_bsop_renewal .box_sop-wrap.smart-order-tabs-renewal .box_sop-tab {
+		width: fit-content !important;
+	}
+	.bsop_renew .box_sop-main.sh_bsop_renewal .box_sop-wrap.smart-order-tabs-renewal .box_sop-tab .tabs {
+		width: fit-content;
+	}
+}
+
+@media (max-width: 360px) {
+	.bsop_benefit_title h2 span::before {bottom: 2px}
+}
+/* // 202405 것모닝 작업 - 모바일 탭 라뉴얼 */
 
 @media (max-width: 500px) {
 	.bsop_benefit_title {margin-bottom:113px;}
