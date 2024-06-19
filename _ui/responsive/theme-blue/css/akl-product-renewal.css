@@ -17589,7 +17589,8 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 .box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap {
 	column-gap: 12px;
 }
-.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content {
+/* 202406 것모닝 추가 수정 - 것스오 혜택안내 탭 레이아웃 수정 */
+/* .box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content {
 	align-items: flex-start;
 	width: 100%;
 	padding: 24px 24px 208px;
@@ -17632,7 +17633,23 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	left: 33.3%;
 	background: url(/_ui/responsive/theme-blue/images/akl_plp/ico_circle_or.png) center center no-repeat;
 	background-size: cover;
-}
+} */
+
+.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content {align-items: center;padding: 24px;border-radius: 20px;aspect-ratio: unset;background: #fff;}
+.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content:nth-of-type(1) {flex-direction: row;width: 66.6%;}
+.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content .desc_content_seperate {display: flex; flex-direction: column;align-items: center;width: 100%;}
+.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content .desc_content_seperate:nth-of-type(1) {border-right:1px solid #EDEDED;}
+.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content:nth-of-type(2) {position: relative;width: 33.3%;}
+.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content:nth-of-type(2)::after {content: '';position: absolute;left: -7%; top: 50%; transform: translateY(-50%); width: 48px;height: 48px;background: url(/_ui/responsive/theme-blue/images/akl_plp/ico_circle_plus.png) center center no-repeat;background-size: cover;    box-shadow: 2px 4px 12px 0 rgba(0, 0, 0, 0.1);border-radius: 50%;}
+.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content span:nth-of-type(1) {padding: 4px 12px 2px;}
+.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content .desc_content_seperate:nth-of-type(1) > span:nth-of-type(1) {background: #567BF3;}
+.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content .desc_content_seperate:nth-of-type(2) > span:nth-of-type(1) {background: #E400CD;}
+.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content:nth-of-type(2) > span:nth-of-type(1) {background: #81BC47;}
+.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content strong {margin: 8px 0 2px;font-size: 20px;line-height: 30px;text-align: center; word-break: keep-all;}
+.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content p {text-align: center; color: #999;}
+.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content img {width: 180px;margin-top: 16px;object-fit: cover;aspect-ratio: 1 / 1;}
+.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap::after {display: none;}
+/* // 202406 것모닝 추가 수정 - 것스오 혜택안내 탭 레이아웃 수정 */
 .box_sop-promotion .promotion_detail_container .promotion_detail_contents .detail_notice {
 	margin: 12px 0 0;
 	font-size: 14px;
@@ -18554,7 +18571,8 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	}
 }
 
-@media (max-width: 1270px) {
+/* 202406 것모닝 추가 수정 - max-width 1200으로 변경 */
+@media (max-width: 1200px) {
 	.promotion_banner_container {
 		padding: 0 16px;
 	}
@@ -18598,14 +18616,14 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		aspect-ratio: unset;
 	}
 	.box_sop-promotion .promotion_detail_container .promotion_detail_contents .detail_desc_wrap .detail_desc_content span:nth-of-type(1) {
-		padding: 4px 8px 2px;
+		padding: 2px 8px 0; /* 202406 것모닝 추가 수정 - Padding 수정 */
 		font-size: 12px;
 		line-height: 17.38px;
 	}
 	.box_sop-promotion .promotion_detail_container .promotion_detail_contents .detail_desc_wrap .detail_desc_content strong {
 		margin-top: 8px !important;
-		font-size: 20px;
-		line-height: 24px;
+		font-size: 18px; /* 202406 것모닝 추가 수정 - Font Size 수정 */
+		line-height: 27px; /* 202406 것모닝 추가 수정 - Line Height 수정 */
 		letter-spacing: unset;
 	}
 	.box_sop-promotion .promotion_detail_container .promotion_detail_contents .detail_desc_wrap .detail_desc_content p {
@@ -18656,7 +18674,8 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		border-radius: 50%;
 		box-shadow: 2px 4px 12px 0 rgba(0, 0, 0, 0.1);
 	}
-	.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content:nth-of-type(2)::after {
+	/* 202406 것모닝 추가 작업 - 것스오 혜택안내 탭 레이아웃 수정 */
+	/* .box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content:nth-of-type(2)::after {
 		content: '';
 		position: absolute;
 		top: -26px;
@@ -18692,17 +18711,31 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		top: 33%;
 		left: 50%;
 		display: none;
-	}
-	.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content span:nth-of-type(1) {
-		padding: 4px 8px 2px;
-		font-size: 12px;
-		line-height: 17.38px;
-	}
+	} */
+	.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content {padding: 20px;}
+	.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content strong {font-size: 18px;line-height: 27px;}
+	.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content p {margin: 0;padding: 0;}
+	.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content img {display: block;width: 140px;margin-top: 20px;}
+	.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content:nth-of-type(1) {flex-direction: column;width: 100%;}
+	.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content:nth-of-type(2) {width: 100%;}
+	.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap::after {display: none;}
+	.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content .desc_content_seperate:nth-of-type(1) {padding-bottom: 20px;margin-bottom: 20px;border-right: none; border-bottom: 1px solid #EDEDED;}
+	.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content:nth-of-type(2)::after {top: -27px; left: 50%; transform: translateX(-50%); width: 40px; height: 40px;}
+	.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content span:nth-of-type(1) {padding: 2px 8px 0;font-size: 12px;line-height: 17.38px;}
+	/* // 202406 것모닝 추가 작업 - 것스오 혜택안내 탭 레이아웃 수정 */
+
 	.box_sop-promotion .promotion_detail_container .promotion_detail_contents .detail_notice {
 		padding-right: 30px;
 		word-break: keep-all;
 		font-size: 12px;
 		line-height: 17.38px;	
+	}
+}
+
+/* 202406 것모닝 추가 수정 - 문구 줄내림에 대한 미디어 쿼리 추가  */
+@media (max-width: 400px) {
+	.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content:nth-of-type(2) p em {
+		display: block;
 	}
 }
 
