@@ -1235,7 +1235,7 @@ a[class^="btn_default-"].small {line-height:24px}
 .cart_product-area.st_type02 .cart_product-floating .cart_product_message {
 	position: absolute;
 	top: -40px;
-	left: -120px;
+	left: -20%; /* 202406 것모닝 추가 수정 - Left 값 수정 */
 	padding: 8px 12px;
 	background: #FFF;
 	border-radius: 8px;
@@ -1293,8 +1293,10 @@ a[class^="btn_default-"].small {line-height:24px}
 .cart_product-area.st_type02.st_type02-2 .box_total-floating .cart_product_message {
 	display: none;
 	position: absolute;
-	top: -54px;
+	/* 202406 것모닝 추가 수정 - Top값 unset, Bottom값 추가 */
+	top: unset;
 	left: 50%;
+	bottom: 50px;
 	transform: translateX(-50%);
 	margin: 0;
 	padding: 4px 8px;
@@ -1629,8 +1631,9 @@ a[class^="btn_default-"].small {line-height:24px}
 .coupon-own strong {display:inline-block;margin-right:4px;font-weight:600;font-size:28px;letter-spacing:-.8px}
 /* // A cliks */
 
+/* 202406 것모닝 추가 수정 - 장바구니 스마트 오더 교체, 신청, 추가 페이지 배너 수정 */
 /* 202405 것모닝 작업 - 장바구니 스마트 오더 교체, 신청, 추가 페이지 배너 추가 */
-.box_sop-cont .promotion_banner_top {
+/* .box_sop-cont .promotion_banner_top {
 	margin: 40px 0 0;
 	padding: 52px 90px;
 	background: url(/_ui/responsive/theme-blue/images/akl_plp/bg_gutmorning_promotion.png) right center no-repeat #00BE59;
@@ -1808,8 +1811,122 @@ a[class^="btn_default-"].small {line-height:24px}
 	.box_sop-cont .promotion_banner_top .promotion_banner_title::after  {
 		right: 85px;
 	}
-}
+} */
 /* // 202405 것모닝 작업 - 장바구니 스마트 오더 교체, 신청, 추가 페이지 배너 추가 */
+.box_sop-cont .product_helper_banner {
+	width: 100%;
+	margin: 40px 0;
+	padding: 40px 90px;
+	background: url(/_ui/responsive/theme-blue/images/akl_plp/bg_gutmorning_helper.png) right center no-repeat #00BE59;
+	background-size: contain;
+	color: #fff;
+}
+.box_sop-cont .product_helper_banner h2 {
+	margin: 0 0 2px;
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 46px;
+	letter-spacing: -0.03em;
+}
+.box_sop-cont .product_helper_banner h2 span {
+	color: #FFF226;
+}
+.box_sop-cont .product_helper_banner p:nth-of-type(1) {
+	margin-bottom: 2px;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 26px;
+	letter-spacing: -0.03em;
+}
+.box_sop-cont .product_helper_banner .promotion_notice {
+	display: block;
+	margin-bottom: 12px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	opacity: 0.8;
+	color: #FFF;
+}
+.box_sop-cont .product_helper_banner .promotion_date {
+	width: fit-content;
+	padding: 4px 12px;
+	background: #009D4A;
+	border-radius: 6px;
+}
+.box_sop-cont .product_helper_banner .promotion_date:nth-of-type(2) {
+	margin-bottom: 32px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 26px;
+}
+.box_sop-cont .product_helper_banner .promotion_date:nth-of-type(2) span {
+	position: relative;
+	padding-left: 18px;
+}
+.box_sop-cont .product_helper_banner .promotion_date:nth-of-type(2) span::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 8px;
+	transform: translateY(-50%);
+	width: 2px;
+	height: 14px;
+	background: #fff;
+	opacity: 0.5;
+}
+.box_sop-cont .product_helper_banner button {
+	padding: 10px 20px 8px 20px;
+	background: transparent;
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: -0.03em;
+	color: #fff;
+	border: 1px solid #fff;
+	border-radius: 4px;
+}
+
+@media (max-width: 1200px) {
+	.box_sop-cont .product_helper_banner {
+		width: calc(100% - 32px);
+		margin: 32px auto;
+		padding: 24px 24px 44.6% 24px;
+		background: url(/_ui/responsive/theme-blue/images/akl_plp/bg_gutmorning_helper_m.png) bottom center no-repeat #00BE59;
+		background-size: contain;
+	}
+	.box_sop-cont .product_helper_banner h2 {
+		margin-bottom: 4px;
+		padding: 0;
+		font-size: 24px;
+		line-height: 36px;
+		letter-spacing: unset;
+	}
+	.box_sop-cont .product_helper_banner button {
+		padding: 8px 16px;
+		border-radius: 8px;
+	}
+
+	.box_sop-cont .product_helper_banner p:nth-of-type(1) {
+		margin-bottom: 8px;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 20px;
+		word-break: keep-all;
+		letter-spacing: unset;
+	}
+	.box_sop-cont .product_helper_banner .promotion_notice {
+		margin-bottom: 16px;
+	}
+	.box_sop-cont .product_helper_banner .promotion_date {
+		padding: 4px 8px;
+	}
+	.box_sop-cont .product_helper_banner .promotion_date:nth-of-type(2) {
+		margin-bottom: 28px;
+		font-size: 12px;
+		font-weight: 500;
+		line-height: 20px;
+	}
+}
+/* // 202406 것모닝 추가 수정 - 장바구니 스마트 오더 교체, 신청, 추가 페이지 배너 수정 */
 
 /* 선물하기 제품공유 목록 */
 .box_gift-article {position:relative;margin:40px 0 0;padding:16px;height:auto;background-color:#ffd400}
@@ -3334,7 +3451,7 @@ i.state-fail:before {transform:rotate(-45deg);-webkit-transform:rotate(-45deg)}
 .box_acliks-benefit .benefit-item .benefit-data .cart_product_message {
 	position: absolute;
 	top: 50%;
-	left: -190px;
+	left: -220px; /* 202406 것모닝 추가 수정 - Left 수정 */
 	transform: translateY(-50%);
 	padding: 8px 12px;
 	background: #FFF;
@@ -3421,7 +3538,8 @@ i.state-fail:before {transform:rotate(-45deg);-webkit-transform:rotate(-45deg)}
 	font-weight: 700;
 	line-height: 36px;
 	letter-spacing: -0.03em;
-	color: #0D8351;
+	color: #D08A22; /* 202406 것모닝 추가 수정 - Color 수정 */
+	white-space: nowrap; /* 202406 것모닝 추가 수정 - White Space 수정 */
 }
 .gutmorning_promotion_banner span {
 	font-size: 16px;
@@ -3449,6 +3567,13 @@ i.state-fail:before {transform:rotate(-45deg);-webkit-transform:rotate(-45deg)}
 		font-size: 14px;
 		line-height: 22px;
 		word-break: keep-all;
+	}
+}
+
+/* 202406 것모닝 추가 수정 - 분기 추가 */
+@media (max-width: 359px) {
+	.gutmorning_promotion_banner p {
+		white-space: unset;
 	}
 }
 /* // 202405 것모닝 작업 - 장바구니 스마트 오더 내역 페이지에 배너 추가 */
@@ -4341,6 +4466,18 @@ i.state-fail:before {transform:rotate(-45deg);-webkit-transform:rotate(-45deg)}
 .box_cart-option {position:relative}
 .box_cart-info .tooltip-layer {width:343px;margin:8px 0 0 0;left:-140px}
 .box_cart-info .tooltip-layer::before {right:86px}
+
+/* 202406 것모닝 추가 수정 - 텍스트 옆 플래그 추가 */
+.txt_total-title .pv_flag {
+	margin-left: 6px;
+	padding: 4px 12px 2px;
+	font-size: 14px;
+	font-weight: 500;
+	color: #018C51;
+	border-radius: 99px;
+	background: #EBF5F0;
+}
+/* // 202406 것모닝 추가 수정 - 텍스트 옆 플래그 추가 */
 
 /* 2020-07-07 이런상품 어떄요 위치변경 */
 .section_right-info .cart_product-area {padding-bottom:410px;position:relative}
@@ -17722,6 +17859,9 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	line-height: 46px;
 	letter-spacing: -0.03em;
 }
+.box_sop-product-helper .product_helper_banner h2 span {
+	color: #FFF226;
+}
 .box_sop-product-helper .product_helper_banner p:nth-of-type(1) {
 	margin-bottom: 2px;
 	font-size: 16px;
@@ -18674,7 +18814,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		border-radius: 50%;
 		box-shadow: 2px 4px 12px 0 rgba(0, 0, 0, 0.1);
 	}
-	/* 202406 것모닝 추가 작업 - 것스오 혜택안내 탭 레이아웃 수정 */
+	/* 202406 것모닝 추가 수정 - 것스오 혜택안내 탭 레이아웃 수정 */
 	/* .box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content:nth-of-type(2)::after {
 		content: '';
 		position: absolute;
@@ -18722,7 +18862,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content .desc_content_seperate:nth-of-type(1) {padding-bottom: 20px;margin-bottom: 20px;border-right: none; border-bottom: 1px solid #EDEDED;}
 	.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content:nth-of-type(2)::after {top: -27px; left: 50%; transform: translateX(-50%); width: 40px; height: 40px;}
 	.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content span:nth-of-type(1) {padding: 2px 8px 0;font-size: 12px;line-height: 17.38px;}
-	/* // 202406 것모닝 추가 작업 - 것스오 혜택안내 탭 레이아웃 수정 */
+	/* // 202406 것모닝 추가 수정 - 것스오 혜택안내 탭 레이아웃 수정 */
 
 	.box_sop-promotion .promotion_detail_container .promotion_detail_contents .detail_notice {
 		padding-right: 30px;
@@ -18848,7 +18988,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	}
 	.box_sop-product-helper .product_helper_banner {
 		margin-bottom: 40px;
-		padding: 24px 24px 54.3% 24px;
+		padding: 24px 24px 44.6% 24px;
 		background: url(/_ui/responsive/theme-blue/images/akl_plp/bg_gutmorning_helper_m.png) bottom center no-repeat #00BE59;
 		background-size: contain;
 	}
