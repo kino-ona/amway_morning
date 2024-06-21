@@ -1383,16 +1383,14 @@
     background: none !important;
 }
 .box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_05.new-type {
-    background: url(../images/akl_plp/bg_bsop_new_02.png) center center no-repeat !important;
+    background: #FFDE6C url(../images/akl_plp/bg_bsop_new_02.png) center center / auto 100% no-repeat !important;/* 202406 것모닝 추가 수정 - Background 값 수정 */
     height: 627px;
-    background-size: auto 100% !important;
-    background-color:#fefbec !important;
     position:relative;
     overflow: hidden;
 }
 .box_sop-visual.box_sop-home.st_type2.v_05 .container{
-    padding:0 12px 0 75px;
-    width: 100%;
+    padding: 0; /* 202406 것모닝 추가 수정 - Padding 값 수정 */
+    width: 1400px; /* 202406 것모닝 추가 수정 - Width 값 수정 */
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -1429,6 +1427,11 @@
     color: #000;
     background: none;
 }
+/* 202406 것모닝 추가 수정 - 모바일 용 배너 속성 추가 */
+.box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_05.new-type .banner_mo {
+    display: none;
+}
+/* // 202406 것모닝 추가 수정 - 모바일 용 배너 속성 추가 */
 .box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_05.new-type .a-cliks-logo::after {
     content: "";
     position: absolute;
@@ -1619,7 +1622,7 @@
 @media (max-width: 768px) {
     .box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_05.new-type {
         height: unset;
-        background: url(../images/akl_plp/bg_bsop_new_02_m.png) center center no-repeat !important;
+        background: #FFDE6C !important; /* 202406 것모닝 추가 수정 - Background 값 수정 */ 
         background-size: cover !important;
     }
     .box_sop-visual.box_sop-home.st_type2.v_05 .container::before, .box_sop-visual.box_sop-home.st_type2.v_05 .container::after {
@@ -1627,7 +1630,7 @@
     }
     .box_sop-visual.box_sop-home.st_type2.v_05 .container::after {background: url(../images/akl_plp/z-sop_visual_symbol_2_pc.png) no-repeat;width: 114px; height: 138px; background-size: 114px auto; top:-73.3px; right: 8.8px;}
     .box_sop-visual.box_sop-home.st_type2.v_05 .container::before {background: url(../images/akl_plp/z-sop_visual_symbol_1_mo.png) no-repeat; width: 160px; height: 140px; top:190px; left: 26px; background-size: 160px auto;}
-    .box_sop-visual.box_sop-home.st_type2.v_05 .container {padding:0;}
+    .box_sop-visual.box_sop-home.st_type2.v_05 .container {width: 100%;padding:0;}/* 202406 것모닝 추가 수정 - Width 값 추가 */
     .box_sop-visual.box_sop-home.st_type2.v_05 .container .visual_area_wrap {width: 100%;}
     .box_sop-visual.box_sop-home.st_type2.v_05 .container .visual_area {width: 100%; height: auto; margin:0 auto; background: none; padding: 0 20px 0 26px;}
     .box_sop-visual.box_sop-home.st_type2.v_05 .container .visual_area.visual_area_pc {display: none;}
@@ -1636,12 +1639,12 @@
     .box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_05.new-type .a-cliks-logo {
         width: unset;
         height: unset;
-        margin: 40px 0 0;
+        margin: 40px 0 12px 0; /* 202406 것모닝 추가 수정 - Margin Bottom 값 여기로 수정 */
         padding: 0 28px;
         background-image: unset;
         font-size: 34px;
         line-height: 49.23px;
-        margin-bottom: 240px;
+        /* 202406 것모닝 추가 수정 - Margin Bottom 값 삭제 */
     }
     .box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_05.new-type .a-cliks-logo p {
         font-size: 14px;
@@ -1649,6 +1652,13 @@
         font-weight: 400;
         max-width: 160px;
     }
+    /* 202406 것모닝 추가 수정 - 모바일용 배너 속성 추가 */
+    .box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_05.new-type .banner_mo {
+        display: block;
+        width: 100%;
+        margin-bottom: 8px;
+    }
+    /* // 202406 것모닝 추가 수정 - 모바일용 배너 속성 추가 */
     .box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_05.new-type .a-cliks-logo::after {
         display: none;
     }
@@ -1673,6 +1683,7 @@
     }
     .box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_05.new-type .container .info_benefit.new-type .info_benefit_txt .info_detail {
         flex-direction: column;
+        gap: 4px; /* 202406 것모닝 추가 수정 - Gap 값 수정 */
     }
     .box_sop-main.sh_bsop .box_sop-visual.box_sop-home.st_type2.v_05.new-type .container .info_benefit.new-type .info_benefit_txt .info_detail li {
         width: 100%;
