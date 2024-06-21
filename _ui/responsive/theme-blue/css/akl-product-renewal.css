@@ -1909,8 +1909,9 @@ a[class^="btn_default-"].small {line-height:24px}
 	left: 50%;
 	transform: translateX(-50%);
 	width: 20px;
-	height: 20px;
-	background: url(/_ui/responsive/theme-blue/images/akl_plp/ico_tooltip_arrow_wt.png) center center no-repeat;
+	height: 10px; /* 202406 것모닝 추가 수정 - Height 값 수정 */
+	/* 202406 것모닝 추가 수정 - Background Position: center center => center bottom 조정 */
+	background: url(/_ui/responsive/theme-blue/images/akl_plp/ico_tooltip_arrow_wt.png) center bottom no-repeat;
 	background-size: cover;
 }
 #layer-addProduct .layer-area_container .layer-area_bottom .layer-toast {
@@ -3361,7 +3362,7 @@ i.state-fail:before {transform:rotate(-45deg);-webkit-transform:rotate(-45deg)}
 	bottom: 100%;
 	left: 50%;
 	transform: translate(-50%);
-	max-width: 300px;
+	max-width: 330px; /* 202406 것모닝 추가 수정 - Max Width 값 수정 */ 
 	padding: 8px 12px;
 	font-size: 12px;
 	font-weight: 500;
@@ -3402,6 +3403,11 @@ i.state-fail:before {transform:rotate(-45deg);-webkit-transform:rotate(-45deg)}
 		line-height: 17.38px;
 		letter-spacing: -0.03em;
 	}
+	/* 202406 것모닝 추가 수정 - 툴팁 패딩값 조정 */
+	.box_mobile-floating .gutmorning_tooltip {
+		padding: 4px 8px;
+	}
+	/* // 202406 것모닝 추가 수정 - 툴팁 패딩값 조정 */
 }
 @media (max-width: 319px) {
 	.product_item--gutmorning .product_text-data .text_product-up {
@@ -18715,6 +18721,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	}
 	#layer-editProduct .layer-area_container .layer-area_bottom .layer-toast {
 		margin: 0 auto 9px;
+		padding: 4px 8px; /* 202406 것모닝 추가 수정 - Padding 값 조정 */
 	}
 }
 
