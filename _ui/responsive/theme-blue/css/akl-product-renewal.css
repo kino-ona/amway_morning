@@ -17334,7 +17334,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 26px;
-	white-space: pre-line;
+	/* 202406 것모닝 추가 수정 - White Space 속성 삭제 */
 }
 .box_sop-promotion .promotion_banner_container .promotion_banner_top .promotion_date {
 	width: fit-content;
