@@ -17122,6 +17122,8 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 .bsop_renew,
 .bsop_manual {overflow-y:hidden;}
 
+.bsop_renew {touch-action: none;} /* 202406 것모닝 추가 수정 - Touch Action 속성 추가 */
+
 /* .bsop_renew #footer {padding-bottom:80px !important;} */ /* 20240423 삭제 */
 .bsop_renew .footerShotcut {z-index:initial;}
 .bsop_renew .quick-links {margin-top:0;}
@@ -17656,7 +17658,9 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	background: #fff;
 	opacity: 0.5;
 }
-.box_sop-product-helper .product_helper_banner button {
+/* 202406 것모닝 추가 수정 - button -> a 태그로 변경 */
+.box_sop-product-helper .product_helper_banner a {
+	display: inline-block; /* 202406 것모닝 추가 수정 - Display 속성 추가 */
 	padding: 10px 20px 8px 20px;
 	background: transparent;
 	font-size: 14px;
@@ -17666,6 +17670,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	border: 1px solid #fff;
 	border-radius: 4px;
 }
+/* // 202406 것모닝 추가 수정 - button -> a 태그로 변경 */
 .box_sop-product-helper .product_helper_title {
 	margin-bottom: 20px;
 }
@@ -18758,11 +18763,12 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		line-height: 36px;
 		letter-spacing: -0.01em; /* 202406 것모닝 추가 수정 - Letter Spacing 값 수정 */
 	}
-	.box_sop-product-helper .product_helper_banner button {
+	/* 202406 것모닝 추가 수정 - button -> a 태그로 변경 */
+	.box_sop-product-helper .product_helper_banner a {
 		padding: 8px 16px;
 		border-radius: 8px;
 	}
-
+	/* // 202406 것모닝 추가 수정 - button -> a 태그로 변경 */
 	.box_sop-product-helper .product_helper_banner p:nth-of-type(1) {
 		margin-bottom: 8px;
 		font-size: 14px;
