@@ -1657,7 +1657,7 @@ a[class^="btn_default-"].small {line-height:24px}
 	.box_sop-cont .promotion_banner_top .promotion_desc {display: none;}
 	.box_sop-cont .promotion_banner_top .promotion_notice {display: block; margin-bottom: 16px;font-size: 14px;font-weight: 400;line-height: 20px;opacity: 0.8;color: #FFF;}
 	.box_sop-cont .promotion_banner_top .promotion_desc.mo {display: block;margin: 4px 0 8px; padding: 0;font-size: 14px; line-height: 20px; letter-spacing: unset; word-break: keep-all;}
-	.box_sop-cont .promotion_banner_top .promotion_date {margin: 0 0 28px;padding: 4px 8px; font-size: 14px;font-weight: 500;line-height: 20px;}
+	.box_sop-cont .promotion_banner_top .promotion_date {margin: 0 0 28px;padding: 4px 8px; font-size: 14px;font-weight: 500;line-height: 20px;}/* 202406 것모닝 추가 수정 - Font Size 값 수정 */
 	.box_sop-cont .promotion_banner_top button {display: block;padding: 8px 16px;background: transparent;font-size: 14px;font-weight: 500;letter-spacing: -0.03em;color: #fff;border: 1px solid #fff;border-radius: 8px;}
 }
 /* 202406 것모닝 추가 수정 - 384 분기 수정 */
@@ -18368,7 +18368,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	letter-spacing: -0.03em;
 	background: #018C51;
 	color: #FFF;
-	border-radius: 20px; /* 202406 것모닝 추가 수정 - Border Radius 값 수정 */
+	border-radius: 15px; /* 202406 것모닝 추가 수정 - Border Radius 값 수정 */
 }
 
 .box_sop-product-helper .promotion_float_wrap.pc {
@@ -18833,6 +18833,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	.box_sop-product-helper .accordion_wrap {
 		padding: 0 16px;
 		margin-bottom: 40px !important;
+		touch-action: none; /* 202406 것모닝 추가 수정 - Touch Action 속성 추가 */
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_list:nth-of-type(1) .accordion_contents {
 		flex-direction: column;
