@@ -100,24 +100,29 @@
                         <article class="box-group">
                             <div class="title-wrap btn-type">
                                 <h3 class="title-h3">비전보너스 계산</h3>
-                                <p>다이아몬드 이상 : 비전보너스 베이스 X (2년 연속 100% 또는 3년 연속 200%)</p>
-                                <div class="txt-in-tooltip">
-                                    더블 다이아몬드 이상 : 비전보너스 베이스
-                                    <div class="toolTip-wrapper tooltipNew">
-                                        <button type="button" class="btn-tooltip">
-                                            <span class="hidden">안내</span>
-                                        </button>
-                                        <div class="tipCont-wrapper">
-                                            <div class="tooltip-content">
-                                                <ul class="dot-list">
-                                                    <li>비전보너스 베이스란...?</li>
-                                                </ul>
-                                            </div>
+                                <div class="inner">
+                                    <div class="left-box">
+                                        <p>다이아몬드 이상 : 비전보너스 베이스 X (2년 연속 100% 또는 3년 연속 200%)</p>
+                                        <div class="txt-in-tooltip">
+                                            더블 다이아몬드 이상 : 비전보너스 베이스
+                                            <div class="toolTip-wrapper tooltipNew">
+                                                <button type="button" class="btn-tooltip">
+                                                    <span class="hidden">안내</span>
+                                                </button>
+                                                <div class="tipCont-wrapper">
+                                                    <div class="tooltip-content">
+                                                        <ul class="dot-list">
+                                                            <li>비전보너스 베이스란...?</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>X (2년 연속 100% 또는 3년 연속 200%)
                                         </div>
-                                    </div>X (2년 연속 100% 또는 3년 연속 200%)
-                                </div>
-                                <div class="btn-box">
-                                    <button class="btn bt-akl-line">내 데이터 가져오기</button>
+                                    </div>
+                                    <div class="btn-box">
+                                        <button class="btn bt-akl-line">데이터 초기화</button>
+                                        <button class="btn bt-akl-line">내 데이터 가져오기</button>
+                                    </div>
                                 </div>
                             </div>
                             <!-- pc 계산기 -->
@@ -126,11 +131,11 @@
                                     <table class="main-table tbl-list">
                                         <caption>비전보너스 조회에 대한 구분, 2025 회계년도, 2026 회계년도, 2027 회계연도 정보 테이블</caption>
                                         <colgroup>
-                                            <col>
-                                            <col>
-                                            <col>
-                                            <col>
-                                            <col>
+                                            <col width="140px">
+                                            <col width="140px">
+                                            <col width="auto">
+                                            <col width="auto">
+                                            <col width="auto">
                                         </colgroup>
                                         <thead>
                                             <tr>
@@ -147,7 +152,7 @@
                                                     <span class="sub-info">Q12 레그<br>3개 이상 보유한<br>다이아몬드 이상</span>
                                                 </th>
                                                 <th class="fixed-side">마감 핀</th>
-                                                <td>
+                                                <td class="fit">
                                                     <div class="form_element-selectbox">
                                                         <select class="form-control" id="finishingPin01">
                                                             <option value="0">파운더스 에메랄드 이하</option>
@@ -160,7 +165,7 @@
                                                         </select>
                                                     </div>
                                                 </td>
-                                                <td>
+                                                <td class="fit">
                                                     <div class="form_element-selectbox">
                                                         <select class="form-control" id="finishingPin02">
                                                             <option value="0">파운더스 에메랄드 이하</option>
@@ -173,7 +178,7 @@
                                                         </select>
                                                     </div>
                                                 </td>
-                                                <td>
+                                                <td class="fit">
                                                     <div class="form_element-selectbox">
                                                         <select class="form-control" id="finishingPin03">
                                                             <option value="0">파운더스 에메랄드 이하</option>
@@ -206,103 +211,21 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <th rowspan="2">
-                                                    <p>수혜조건</p>
-                                                    <span class="sub-info">FQ 3개 이상 성장<br>또는 QC 1.0점<br>이상 성장</span>
-                                                </th>
-                                                <th class="fixed-side">FQ 성장</th>
-                                                <td>
-                                                    <div class="checkbox-wrap twin">
-                                                        <div class="form_element-checkbox">
-                                                            <input type="checkbox" id="chk01-2" checked>
-                                                            <label for="chk01-2" class="sp_chk focus">+3개</label>
-                                                        </div>
-                                                        <div class="form_element-checkbox">
-                                                            <input type="checkbox" id="chk01-3">
-                                                            <label for="chk01-3" class="sp_chk focus">+6개</label>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="checkbox-wrap twin">
-                                                        <div class="form_element-checkbox">
-                                                            <input type="checkbox" id="chk02-2" checked>
-                                                            <label for="chk02-2" class="sp_chk focus">+3개</label>
-                                                        </div>
-                                                        <div class="form_element-checkbox">
-                                                            <input type="checkbox" id="chk02-3">
-                                                            <label for="chk02-3" class="sp_chk focus">+6개</label>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="checkbox-wrap twin">
-                                                        <div class="form_element-checkbox">
-                                                            <input type="checkbox" id="chk03-2" disabled>
-                                                            <label for="chk03-2" class="sp_chk focus">+3개</label>
-                                                        </div>
-                                                        <div class="form_element-checkbox">
-                                                            <input type="checkbox" id="chk03-3" disabled>
-                                                            <label for="chk03-3" class="sp_chk focus">+6개</label>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th class="fixed-side">QC 성장</th>
-                                                <td>
-                                                    <div class="checkbox-wrap twin">
-                                                        <div class="form_element-checkbox">
-                                                            <input type="checkbox" id="chk01-4" checked>
-                                                            <label for="chk01-4" class="sp_chk focus">+1.0점</label>
-                                                        </div>
-                                                        <div class="form_element-checkbox">
-                                                            <input type="checkbox" id="chk01-5">
-                                                            <label for="chk01-5" class="sp_chk focus">+3.0점</label>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="checkbox-wrap twin">
-                                                        <div class="form_element-checkbox">
-                                                            <input type="checkbox" id="chk02-4" checked>
-                                                            <label for="chk02-4" class="sp_chk focus">+1.0점</label>
-                                                        </div>
-                                                        <div class="form_element-checkbox">
-                                                            <input type="checkbox" id="chk02-5">
-                                                            <label for="chk02-5" class="sp_chk focus">+3.0점</label>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="checkbox-wrap twin">
-                                                        <div class="form_element-checkbox">
-                                                            <input type="checkbox" id="chk03-4" disabled>
-                                                            <label for="chk03-4" class="sp_chk focus">+1.0점</label>
-                                                        </div>
-                                                        <div class="form_element-checkbox">
-                                                            <input type="checkbox" id="chk03-5" disabled>
-                                                            <label for="chk03-5" class="sp_chk focus">+3.0점</label>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
                                                 <th rowspan="4">월간 코어보너스</th>
                                                 <th class="fixed-side">후원수당</th>
-                                                <td>
+                                                <td class="fit">
                                                     <div class="form_element-textbox">
                                                         <input class="form-control" name="score01-1" id="score01-1" type="text" value="0" readonly>
                                                     </div>
                                                     <p class="simplify-price"><span>3,000</span><span class="price-unit">만원</span></p>
                                                 </td>
-                                                <td>
+                                                <td class="fit">
                                                     <div class="form_element-textbox">
                                                         <input class="form-control" name="score02-1" id="score02-1" type="text" value="0">
                                                     </div>
                                                     <p class="simplify-price"><span>20</span><span class="price-unit">만원</span></p>
                                                 </td>
-                                                <td>
+                                                <td class="fit">
                                                     <div class="form_element-textbox">
                                                         <input class="form-control" name="score03-1" id="score03-1" type="text" value="0" readonly>
                                                     </div>
@@ -311,19 +234,19 @@
                                             </tr>
                                             <tr>
                                                 <th class="fixed-side">루비</th>
-                                                <td>
+                                                <td class="fit">
                                                     <div class="form_element-textbox">
                                                         <input class="form-control" name="score01-2" id="score01-2" type="text" value="0" readonly>
                                                     </div>
                                                     <p class="simplify-price"><span>0</span><span class="price-unit">만원</span></p>
                                                 </td>
-                                                <td>
+                                                <td class="fit">
                                                     <div class="form_element-textbox">
                                                         <input class="form-control" name="score02-2" id="score02-2" type="text" value="0">
                                                     </div>
                                                     <p class="simplify-price"><span>0</span><span class="price-unit">만원</span></p>
                                                 </td>
-                                                <td>
+                                                <td class="fit">
                                                     <div class="form_element-textbox">
                                                         <input class="form-control" name="score03-2" id="score03-2" type="text" value="0" readonly>
                                                     </div>
@@ -332,19 +255,19 @@
                                             </tr>
                                             <tr>
                                                 <th class="fixed-side">리더십</th>
-                                                <td>
+                                                <td class="fit">
                                                     <div class="form_element-textbox">
                                                         <input class="form-control" name="score01-3" id="score01-3" type="text" value="0">
                                                     </div>
                                                     <p class="simplify-price"><span>0</span> <span class="price-unit">만원</span></p>
                                                 </td>
-                                                <td>
+                                                <td class="fit">
                                                     <div class="form_element-textbox">
                                                         <input class="form-control" name="score02-3" id="score02-3" type="text" value="0">
                                                     </div>
                                                     <p class="simplify-price"><span>0</span> <span class="price-unit">만원</span></p>
                                                 </td>
-                                                <td>
+                                                <td class="fit">
                                                     <div class="form_element-textbox">
                                                         <input class="form-control" name="score03-3" id="score03-3" type="text" value="0" readonly>
                                                     </div>
@@ -353,52 +276,139 @@
                                             </tr>
                                             <tr>
                                                 <th class="fixed-side">MD</th>
-                                                <td>
+                                                <td class="fit">
                                                     <div class="form_element-textbox">
                                                         <input class="form-control" name="score01-4" id="score01-4" type="text" value="0">
                                                     </div>
                                                     <p class="simplify-price"><span>0</span> <span class="price-unit">만원</span></p>
                                                 </td>
-                                                <td>
+                                                <td class="fit">
                                                     <div class="form_element-textbox">
                                                         <input class="form-control" name="score02-4" id="score02-4" type="text" value="0">
                                                     </div>
                                                     <p class="simplify-price"><span>0</span> <span class="price-unit">만원</span></p>
                                                 </td>
-                                                <td>
+                                                <td class="fit">
                                                     <div class="form_element-textbox">
                                                         <input class="form-control" name="score03-4" id="score03-4" type="text" value="0" readonly>
                                                     </div>
                                                     <p class="simplify-price"><span>0</span> <span class="price-unit">만원</span></p>
                                                 </td>
                                             </tr>
-                                            <tr class="point-gray">
-                                                <th colspan="2" class="fixed-side">
-                                                    <p>베이스 금액</p>
-                                                    <span class="sub-info">FQ 성장 비전보너스 베이스 또는<br>QC 성장 비전보너스 베이스</span>
+                                            <tr>
+                                                <th rowspan="2">
+                                                    <p>수혜조건</p>
+                                                    <span class="sub-info">FQ 3개 이상 성장<br>또는 QC 1.0점<br>이상 성장</span>
                                                 </th>
-                                                <td>200 만원</td>
-                                                <td>1,400 만원</td>
+                                                <th class="fixed-side">FQ 성장</th>
+                                                <td>
+                                                    <div class="radio-wrap">
+                                                        <div class="form_element-radio">
+                                                            <input type="radio" id="radio01-1" name="fq_pack_01" checked>
+                                                            <label for="radio01-1" class="focus">+3개</label>
+                                                        </div>
+                                                        <div class="form_element-radio">
+                                                            <input type="radio" id="radio01-2" name="fq_pack_01" disabled>
+                                                            <label for="radio01-2" class="focus">+6개</label>
+                                                        </div>
+                                                        <div class="form_element-radio">
+                                                            <input type="radio" id="radio01-3" name="fq_pack_01">
+                                                            <label for="radio01-3" class="focus">+12개</label>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="radio-wrap">
+                                                        <div class="form_element-radio">
+                                                            <input type="radio" id="radio02-1" name="fq_pack_02" checked>
+                                                            <label for="radio02-1" class="focus">+3개</label>
+                                                        </div>
+                                                        <div class="form_element-radio">
+                                                            <input type="radio" id="radio02-2" name="fq_pack_02" disabled>
+                                                            <label for="radio02-2" class="focus">+6개</label>
+                                                        </div>
+                                                        <div class="form_element-radio">
+                                                            <input type="radio" id="radio02-3" name="fq_pack_02">
+                                                            <label for="radio02-3" class="focus">+12개</label>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="radio-wrap">
+                                                        <div class="form_element-radio">
+                                                            <input type="radio" id="radio03-1" name="fq_pack_03" checked>
+                                                            <label for="radio03-1" class="focus">+3개</label>
+                                                        </div>
+                                                        <div class="form_element-radio">
+                                                            <input type="radio" id="radio03-2" name="fq_pack_03" disabled>
+                                                            <label for="radio03-2" class="focus">+6개</label>
+                                                        </div>
+                                                        <div class="form_element-radio">
+                                                            <input type="radio" id="radio03-3" name="fq_pack_03">
+                                                            <label for="radio03-3" class="focus">+12개</label>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="fixed-side">QC 성장</th>
+                                                <td>
+                                                    <div class="radio-wrap">
+                                                        <div class="form_element-radio">
+                                                            <input type="radio" id="radio01-4" name="qc_pack_01" checked>
+                                                            <label for="radio01-4" class="focus">+3개</label>
+                                                        </div>
+                                                        <div class="form_element-radio">
+                                                            <input type="radio" id="radio01-5" name="qc_pack_01" disabled>
+                                                            <label for="radio01-5" class="focus">+6개</label>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="radio-wrap">
+                                                        <div class="form_element-radio">
+                                                            <input type="radio" id="radio02-4" name="qc_pack_02" checked>
+                                                            <label for="radio02-4" class="focus">+3개</label>
+                                                        </div>
+                                                        <div class="form_element-radio">
+                                                            <input type="radio" id="radio02-5" name="qc_pack_02" disabled>
+                                                            <label for="radio02-5" class="focus">+6개</label>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="radio-wrap">
+                                                        <div class="form_element-radio">
+                                                            <input type="radio" id="radio03-4" name="qc_pack_03" checked>
+                                                            <label for="radio03-4" class="focus">+3개</label>
+                                                        </div>
+                                                        <div class="form_element-radio">
+                                                            <input type="radio" id="radio03-5" name="qc_pack_03" disabled>
+                                                            <label for="radio03-5" class="focus">+6개</label>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th rowspan="3">비전 보너스 계산</th>
+                                                <th>기준 금액</th>
+                                                <td><span>100,000</span> <span class="price-unit">원</span></td>
+                                                <td><span>1,000</span> <span class="price-unit">원</span></td>
+                                                <td><span>1,000</span> <span class="price-unit">원</span></td>
+                                            </tr>
+                                            <tr>
+                                                <th>지급 비율</th>
                                                 <td>-</td>
+                                                <td>2년 연속 성장 100%</td>
+                                                <td>3년 연속 성장 200%</td>
+                                            </tr>
+                                            <tr>
+                                                <th>비전 보너스 금액</th>
+                                                <td>-</td>
+                                                <td><span>1,000</span> <span class="price-unit">원</span></td>
+                                                <td><span>1,000</span> <span class="price-unit">원</span></td>
                                             </tr>
                                         </tbody>
-                                        <tfoot>
-                                            <tr>
-                                                <th colspan="2" class="fixed-side">
-                                                    <strong>비전보너스 계산</strong>
-                                                    <span class="sub-info">베이스 금액 X <br class="mobile-only">(2년 연속 100% 또는 3년 연속 200%)</span>
-                                                </th>
-                                                <td>-</td>
-                                                <td>
-                                                    <p>1년 연속 <span class="point-blue">100%</span></p>
-                                                    <strong class="total-sum">1,400 만원</strong>
-                                                </td>
-                                                <td>
-                                                    <p>2년 연속 <span class="point-blue">100%</span></p>
-                                                    <strong class="total-sum">1,400 만원</strong>
-                                                </td>
-                                            </tr>
-                                        </tfoot>
                                     </table>
                                 </div>
                             </div>
@@ -464,14 +474,28 @@
                                                     <li>
                                                         <p class="item-name">FQ 성장</p>
                                                         <div class="checkbox-wrap twin">
-                                                            <div class="form_element-checkbox">
+                                                            <!-- <div class="form_element-checkbox">
                                                                 <input type="checkbox" id="chk-mobile-01-2" checked="">
                                                                 <label for="chk-mobile-01-2" class="sp_chk focus">+3개</label>
                                                             </div>
                                                             <div class="form_element-checkbox">
                                                                 <input type="checkbox" id="chk-mobile-01-3">
                                                                 <label for="chk-mobile-01-3" class="sp_chk focus">+6개</label>
+                                                            </div> -->
+                                                            <!-- 라디오 버튼으로 수정 -->
+                                                            <div class="form_element-radio">
+                                                                <input type="radio" id="radio-mobile-01-1" name="fq_pack_mo_01" checked>
+                                                                <label for="radio-mobile-01-1" class="focus">+3개</label>
                                                             </div>
+                                                            <div class="form_element-radio">
+                                                                <input type="radio" id="radio-mobile-01-2" name="fq_pack_mo_01" disabled>
+                                                                <label for="radio-mobile-01-2" class="focus">+6개</label>
+                                                            </div>
+                                                            <div class="form_element-radio">
+                                                                <input type="radio" id="radio-mobile-01-3" name="fq_pack_mo_01">
+                                                                <label for="radio-mobile-01-3" class="focus">+6개</label>
+                                                            </div>
+                                                            <!-- //라디오 버튼으로 수정 -->
                                                         </div>
                                                     </li>
                                                     <li>

@@ -3355,6 +3355,7 @@ background-repeat:no-repeat;}
 .visionbonus.container.business {margin-top: 60px;}
 .visionbonus.container.business .title-h2{color: #111; line-height: 1.2;}
 .visionbonus.container.business .visionbonus-content .title-h3{color: #111; line-height: 30px; font-size: 20px; font-weight: 700; letter-spacing: -0.02em;}
+.visionbonus.container.business .visionbonus-content .title-h3 > span{font-size: 14px; font-weight: 400; color: #999;}
 .visionbonus.container .tabs-toggles .tab-toggle-wrap{height: auto; background:#F4F4F4;}
 .visionbonus.container .tabs-toggles .tab-toggle-wrap.active{border-top:1px solid #dadada; position: relative;}
 .visionbonus.container .tabs-toggles .tab-toggle-wrap.active::after{content: ''; display: block; width: calc(100% + 2px); height: 4px; position: absolute; top: -1px; left: -1px; background: #567BF3;}
@@ -3386,8 +3387,10 @@ background-repeat:no-repeat;}
 .visionbonus .box-group.twins > div {flex: 1; box-sizing:border-box;}
 .visionbonus .border-box{background: #F9F9F9; border-radius: 16px;}
 .visionbonus .btn-box{position: relative; text-align: center; margin-top: 40px;}
-.visionbonus .title-wrap.btn-type{position: relative; padding-right:150px;}
+.visionbonus .title-wrap.btn-type{position: relative; padding-right:290px;}
 .visionbonus .title-wrap.btn-type .btn-box{position: absolute; right: 0; bottom: 0; margin-top:0;}
+.visionbonus .title-wrap.btn-type .btn-box .btn{width: 140px; letter-spacing: -0.06em; padding: 0 18px;}
+.visionbonus .title-wrap.btn-type .btn-box .btn + .btn{margin-left: 4px;}
 
 .visionbonus .info-tooltip{display:none; position: absolute; bottom: 63px; left:50%; z-index: 20; transform: translateX(-50%); padding:8px 36px 8px 12px; background:#fff; border-radius:8px; box-shadow: 6px 4px 16px 0px #00000033;}
 .visionbonus .info-tooltip.active{display: block;}
@@ -3396,12 +3399,13 @@ background-repeat:no-repeat;}
 .visionbonus .info-tooltip .btn-close{position: absolute; top:0; right:0; display: inline-block; width: 36px; height: 36px; border-radius:0 8px 8px 0; background: #fff url(/_ui/responsive/theme-blue/images/akl_common/business/ico_visionbonus_close.png) no-repeat; background-size:16px 16px; background-position: center center;}
 .visionbonus .info-tooltip .btn-close > span{width: 1px; height: 1px; padding: 0; margin: -1px;overflow: hidden;clip: rect(0, 0, 0, 0); border: 0; display: block;}
 
-.visionbonus .dot-list{margin-top: 16px;}
-.visionbonus .dot-list > li {padding-left: 11px; position: relative; font-size: 14px; line-height: 24px; color: #999;}
-.visionbonus .dot-list > li::after{content: ''; display: block; width: 3px; height: 3px; background: #aaa; border-radius:50%; position: absolute; left: 0; top: 9px;}
-.visionbonus .dot-list > li + li {margin-top:8px;}
+.visionbonus.container.business .dot-list{margin-top: 16px;}
+.visionbonus.container.business .dot-list > li {padding-left: 11px; position: relative; font-size: 14px; line-height: 24px; color: #999; letter-spacing: -0.07em;}
+.visionbonus.container.business .dot-list > li::after{content: ''; display: block; width: 3px; height: 3px; background: #aaa; border-radius:50%; position: absolute; left: 0; top: 9px;}
+.visionbonus.container.business .dot-list > li.star::after{display: inline-block; content: "*"; background-color: initial; line-height: 1;}
 .visionbonus .price-box{text-align: center; margin-top: 28px;}
 .visionbonus .price-box .title{padding:16px; background: #F4F4F4; border-radius: 16px 16px 0 0; font-weight: 500; color: #666;}
+.visionbonus .price-box .title > span{display: block; margin-top: 2px; font-size: 14px; color: #999; font-weight: 400; line-height:20px;}
 .visionbonus .price-box .price-list {display: flex; border-radius:0 0 16px 16px; background:#FAFAFA; padding: 24px 0; justify-content: space-between; flex-wrap: wrap;}
 .visionbonus .price-box .price-list > li{display: flex; flex-direction: column; justify-content: center; padding: 0 24px; flex: 1 1 33.3%; min-height: 122px;}
 .visionbonus .price-box .price-list > li p{font-size: 16px; font-weight: 400; color: #111; line-height: 24px;}
@@ -3419,7 +3423,7 @@ background-repeat:no-repeat;}
 .visionbonus .basic-scroll{overflow-x: auto; overflow: hidden;}
 .visionbonus.container.business .tbl-list thead th{height: auto; line-height: 20px; padding:16px 10px; font-size: 14px; font-weight: 500; color: #666; background: #F4F4F4;}
 .visionbonus.container.business .tbl-list tbody th{padding:16px 10px; background:#F9F9F9; text-align: center; font-weight:400; font-size: 14px; white-space:normal; word-break: break-all; color:#111;}
-.visionbonus.container.business .tbl-list td{color:#111; font-weight:400; font-size: 14px; padding:16px 10px; line-height:20px;}
+.visionbonus.container.business .tbl-list td{color:#111; font-weight:400; font-size: 14px; padding:16px 10px 15px; line-height:20px;}
 .visionbonus.container.business .tbl-list tfoot th,
 .visionbonus.container.business .tbl-list tfoot td{background: #F0F5FD;}
 .visionbonus.container.business .tbl-list tfoot th > strong {display: block; font-weight: 700; font-size: 14px;}
@@ -3438,9 +3442,9 @@ background-repeat:no-repeat;}
 .visionbonus .tbl-list td .total-sum .price-unit{margin-left:4px;}
 .visionbonus.container.business .tbl-list tr.point-gray th,
 .visionbonus.container.business .tbl-list tr.point-gray td{background:#F4F4F4;}
-.visionbonus.container.business .table10{margin-top:40px;}
-.visionbonus.container.business .table10 table tbody th,
-.visionbonus.container.business .table10 table tbody td {padding:8px 32px;}
+.visionbonus.container.business .table10{margin-top:24px;}
+.visionbonus.container.business .table10 table tbody td {padding:16px 32px;}
+.visionbonus.container.business .table10 table tbody td.fit {padding:8px 32px;}
 .visionbonus table.clone{z-index:10;}
 
 .visionbonus [class^="point_"]{font-weight: 500;}
@@ -3495,12 +3499,33 @@ background-repeat:no-repeat;}
 .visionbonus.container .form_element-checkbox [type="checkbox"]:not(:checked) + label::after,
 .visionbonus.container .form_element-checkbox [type="checkbox"]:checked + label::after{width:20px; height:20px; top:0; left:0; background-image: url(/_ui/responsive/theme-blue/images/akl_common/business/ico_visionbonus_check.png); background-size: 9px 6px; background-position: center center;}
 
-.visionbonus .checkbox-wrap{text-align: left;}
-.visionbonus .checkbox-wrap.twin{width: calc(100% - 46px); display: flex;}
-.visionbonus .checkbox-wrap.twin > div {flex-grow: 1; text-align: left;}
-.visionbonus .number_text{display: flex; gap:16px; align-items: center; justify-content: center;}
-.visionbonus .number_text p{line-height:20px;}
+.visionbonus.container .form_element-radio [type="radio"]:not(:checked) + label::before,
+.visionbonus.container .form_element-radio [type="radio"]:checked + label::before{border:1px solid #999; border-radius:50%;}
+.visionbonus.container .form_element-radio [type="radio"]:not(:checked) + label::before{background:#fff;}
+.visionbonus.container .form_element-radio [type="radio"]:checked + label::before{background:#567BF3; border-color:#567BF3;}
+.visionbonus.container .form_element-radio [type="radio"]:disabled + label::before{background:#D7D7D7 !important; border-color:#D7D7D7;}
+.visionbonus.container .form_element-radio [type="radio"]:disabled + label::after{opacity: 1;}
+.visionbonus.container .form_element-radio [type="radio"] + label,
+.visionbonus.container .form_element-radio [type="radio"]:checked + label,
+.visionbonus.container .form_element-radio [type="radio"]:disabled + label{color:#111 !important; margin: 0;}
+.visionbonus.container .form_element-radio [type="radio"]:not(:checked) + label::after,
+.visionbonus.container .form_element-radio [type="radio"]:checked + label::after{width:20px; height:20px; top:0; left:0; background-color: initial; background-image: url(/_ui/responsive/theme-blue/images/akl_common/business/ico_visionbonus_check.png); background-size: 9px 6px; background-position: center center; background-repeat: no-repeat;}
+
+.visionbonus .radio-wrap{text-align: left; display: flex;}
+.visionbonus .radio-wrap > div{width: calc(100% / 3);}
+.visionbonus .number_text{margin-top: 12px; display: flex; gap:6px; align-items: flex-start; justify-content: center; flex-direction: column;}
+.visionbonus .number_text p{line-height:20px; font-size: 14px; font-weight: 500;}
+.visionbonus .sub-detail-info{display: inline-block; margin-top: 6px; background:#F4F4F4; padding: 10px 16px; border-radius: 8px;}
+.visionbonus .sub-detail-info::after{content: ''; display: block; clear: both;}
+.visionbonus .sub-detail-info > li{float: left; font-size: 14px; line-height: 20px; color: #666;}
+.visionbonus .sub-detail-info > li strong {display: block;  font-weight: 700;  }
+.visionbonus .sub-detail-info > li span{display: block; margin-top: 4px; font-weight: 400;}
+.visionbonus .sub-detail-info > li + li { position: relative; margin-left:16px; padding-left: 17px;}
+.visionbonus .sub-detail-info > li + li::after{content: ''; display: block; width: 1px; height:40px; background: #D7D7D7; position: absolute; left: 0; top: 50%; transform: translateY(-50%);} 
 .visionbonus .info-box{margin-bottom: -12px;}
+.visionbonus .info-box > h4{position: relative; padding-left: 7px; color:#111; font-size: 16px; line-height: 26px;}
+.visionbonus .info-box > h4::after{content: ''; display: block; width:3px; height:16px; background:#111; position: absolute; left: 0; top: 50%; transform: translateY(-50%);}
+.visionbonus .info-box > h4 + p {margin-top: 16px;}
 .visionbonus .info-box.twins{display: flex; justify-content: space-between; align-items: center;}
 .visionbonus .info-box.twins > p {color: #000; font-weight: 500; line-height:20px;}
 .visionbonus .toolTip-wrapper.tooltipNew .btn-tooltip{ top:-2px; left:-2px; height:28px !important; padding:0; background: url(/_ui/responsive/theme-blue/images/akl_common/business/ico_visionbonus_question.png) no-repeat 50% 50% / 20px;}
@@ -3509,6 +3534,10 @@ background-repeat:no-repeat;}
 .visionbonus .simplify-price > span  + .price-unit,
 .visionbonus .simplify-price > .price-unit + span{margin-left:4px}
 .visionbonus .track-wrap{text-align: left;}
+.visionbonus .commentary{position: relative; display: inline-block;}
+.visionbonus .commentary::after{content: ''; display: block; width: 5px; height: 5px; border-radius:50%; position: absolute; right: -8px; top: -2px;}
+.visionbonus .commentary.blue::after{background: #567BF3;}
+.visionbonus .commentary.star::after{content: "*"; color: #999;}
 
 .visionbonus .border-box .multiplication{padding:0 20px; position: relative; width:32px; height:32px; box-sizing: content-box;}
 .visionbonus .border-box .multiplication > p{position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0;}
@@ -3559,7 +3588,10 @@ background-repeat:no-repeat;}
 .visionbonus .bonus-inner .circle-box.blue > span{font-size: 24px;}
 .visionbonus .txt-or{font-size:14px; font-weight:400; color:#567BF3; opacity: 0.6;}
 
-.visionbonus.container.business .table03 .tbl-list tbody td{line-height: 73px;}
+.visionbonus.container.business .table03 .tbl-list tbody td{line-height: 98px;}
+.visionbonus .bullet-title{display: flex; align-items: center;}
+.visionbonus .bullet-title .bullet {width: 56px;}
+.visionbonus .bullet-title > p{flex: 1;}
 
 
 @media (min-width: 768px) and (max-width: 1100px){
@@ -3587,9 +3619,12 @@ background-repeat:no-repeat;}
 
 	/* 비전보너스 계산 - 계산기 테이블 */
 	.visionbonus.container.business .table10 table colgroup col:nth-child(1){width:135px;}
-	.visionbonus.container.business .table10 table colgroup col:nth-child(2){width:80px;}
+	.visionbonus.container.business .table10 table colgroup col:nth-child(2){width:100px;}
 	.visionbonus.container.business .table10 table tbody th,
 	.visionbonus.container.business .table10 table tbody td {padding:8px 15px;}
+
+	.visionbonus .title-wrap.btn-type{position: relative; padding-right:0; }
+	.visionbonus .title-wrap.btn-type .btn-box{position: initial; text-align: left; margin-top: 24px;}
 }
 	
 
@@ -3674,6 +3709,16 @@ background-repeat:no-repeat;}
 	.visionbonus.container.business  .form_element-checkbox [type="checkbox"] + label::after,
 	.visionbonus.container.business  .form_element-checkbox [type="checkbox"]:checked + label::after,
 	.visionbonus.container.business  .form_element-checkbox [type="checkbox"]:disabled + label::after{width:20px; height: 20px; top:0; left: 0;}
+	
+	.visionbonus.container.business  .form_element-radio [type="radio"]{width:20px; height: 20px;}
+	.visionbonus.container.business  .form_element-radio [type="radio"] + label{padding-left:25px; line-height:20px; min-height: initial;}
+	.visionbonus.container.business  .form_element-radio [type="radio"] + label::before,
+	.visionbonus.container.business  .form_element-radio [type="radio"]:checked + label::before,
+	.visionbonus.container.business  .form_element-radio [type="radio"]:disabled + label::before{width: 20px; height: 20px;}
+	.visionbonus.container.business  .form_element-radio [type="radio"]:checked + label::before{background: #567BF3;  border-color: #567BF3;}
+	.visionbonus.container.business  .form_element-radio [type="radio"] + label::after,
+	.visionbonus.container.business  .form_element-radio [type="radio"]:checked + label::after,
+	.visionbonus.container.business  .form_element-radio [type="radio"]:disabled + label::after{width:20px; height: 20px; top:0; left: 0;}
 	.visionbonus.container.business .tbl-list thead th{font-weight: 700;}
 
 	.visionbonus .tbl-list.grid-type {width: auto; flex: 1;	display: grid;	grid-template-columns:33.3% auto;}	  
@@ -3698,9 +3743,12 @@ background-repeat:no-repeat;}
 
 	.visionbonus .box-group.twins{display: block;}
 	.visionbonus .box-group.twins >  div + div {margin-top: 24px;}
-	.visionbonus .dot-list{margin-top:12px;}
-	.visionbonus .dot-list > li{font-size:12px; line-height:20px;}
-	.visionbonus .dot-list > li::after{top:7px}
+	.visionbonus.container.business .dot-list{margin-top:12px;}
+	.visionbonus.container.business  .dot-list > li{font-size:12px; line-height:20px;}
+	.visionbonus.container.business  .dot-list > li::after{top:7px}
+
+	.visionbonus .bullet-title{display: flex; align-items: flex-start;}
+
 
 	.visionbonus .price-box .title{font-size:14px; font-weight: 700;}
 	.visionbonus .price-box .price-list > li{padding:0 20px;}
@@ -3712,7 +3760,7 @@ background-repeat:no-repeat;}
 	.visionbonus .info-box.twins .box-right > div + div{margin: 0;}
 	.visionbonus .info-box.twins.reverse{flex-direction: column-reverse; gap: 10px;}
 	.visionbonus .info-box > .bullet{margin-left: 0; width: 100%;}
-	.visionbonus .info-box > .bullet + .bullet{margin-top: 8px;}
+	.visionbonus .info-box > .bullet + .bullet{margin-top: 8px;}	
 	.visionbonus .state-list{text-align: left;}
 	.visionbonus .state-list > li + li {padding-left:8px; margin-left: 8px;}
 	.visionbonus .number_text{display: block;}
@@ -3727,12 +3775,11 @@ background-repeat:no-repeat;}
 	.visionbonus .btn-sum.fixed {position: fixed; left: 50%; bottom: -1px;	transform: translate(-50%, 0);	width: 100%;	margin: 0;	z-index: 1000;	transition: all ease .3s; border-radius:0;}
 	.visionbonus .btn-sum{position: absolute;bottom: 0;	transform: translate(-50%, 0);	width: 100%;	border-radius: 8px;	overflow: hidden;	z-index: 300;}
 	
+	.visionbonus .exclamation-txt > span {background: none; padding: 0;  margin-top: 4px;}
+
 	.visionbonus.container.business .tbl-list td{padding: 16px 8px;}
 	/* 비전보너스 설명 - FQ 테이블 */
 	.visionbonus.container.business .table03 .tbl-list tbody td{line-height: 20px;}
-	.visionbonus .table03 .tbl-list colgroup col:nth-child(1){width:40%;}
-	.visionbonus .table03 .tbl-list colgroup col:nth-child(2){width:30%;}
-	.visionbonus .table03 .tbl-list colgroup col:nth-child(3){width:30%;}
 
 	/* 비전보너스 설명 - QC 테이블 */
 	.visionbonus .table04 .tbl-list colgroup col:nth-child(1){width:40%;}
@@ -3753,12 +3800,10 @@ background-repeat:no-repeat;}
 	.visionbonus.container.business .table05 table {table-layout: fixed;}
 	.visionbonus.container.business .table05 table colgroup col:nth-child(1){width:90px;}
 	.visionbonus.container.business .table05 table colgroup col:nth-child(2){width:90px;}
-	.visionbonus.container.business .table05 table colgroup col:nth-child(3){width:160px;}
+	.visionbonus.container.business .table05 table colgroup col:nth-child(3),
 	.visionbonus.container.business .table05 table colgroup col:nth-child(4),
 	.visionbonus.container.business .table05 table colgroup col:nth-child(5),
-	.visionbonus.container.business .table05 table colgroup col:nth-child(6),
-	.visionbonus.container.business .table05 table colgroup col:nth-child(7){width:80px;}
-	.visionbonus.container.business .table05 table colgroup col:nth-child(8){width: 200px;}
+	.visionbonus.container.business .table05 table colgroup col:nth-child(6){width:180px;}
 
 	/* 비전보너스 조회 - 조회 테이블 */
 	.visionbonus.container.business .table09 table{table-layout: fixed;}
@@ -3839,11 +3884,14 @@ background-repeat:no-repeat;}
 	.visionbonus .form-list .track.on::after{background: url(/_ui/responsive/theme-blue/images/akl_common/business/ico_visionbonus_check_blue.png) no-repeat; background-size: 10px 7px; background-position: center center;}
 	.visionbonus .form-list .track.off::after{background: url(/_ui/responsive/theme-blue/images/akl_common/business/ico_visionbonus_check_gray.png) no-repeat; background-size: 10px 7px; background-position: center center;}
 
-
 	.visionbonus .form_element-selectbox .form-control{height: 48px; line-height:50px; color: #111;}
 	.visionbonus .mobile-year-checkbox-wrap{display: flex; gap: 6px; margin-top:6px; margin-bottom: -12px;}
 	.visionbonus .mobile-year-checkbox-wrap .form_element-checkbox{flex: 1; box-sizing: border-box;}
 	.visionbonus .mobile-table-contents .toolTip-wrapper.tooltipNew.type-mob-full .tipCont-wrapper{left:-20px}	
+
+	.visionbonus .title-wrap.btn-type .btn-box{position: initial; display: flex; flex:1; gap:10px;}
+	.visionbonus .title-wrap.btn-type .btn-box .btn{width: 100%;}
+	.visionbonus .title-wrap.btn-type .btn-box .btn + .btn{margin: 0;}
   } 
 /* E : 202406 비전보너스 신규 추가 */
 
