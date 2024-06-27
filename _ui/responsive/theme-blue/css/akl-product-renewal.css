@@ -1235,7 +1235,7 @@ a[class^="btn_default-"].small {line-height:24px}
 .cart_product-area.st_type02 .cart_product-floating .cart_product_message {
 	position: absolute;
 	top: -40px;
-	left: -20%; /* 202406 것모닝 추가 수정 - Left 값 수정 */
+	left: -120px;
 	padding: 8px 12px;
 	background: #FFF;
 	border-radius: 8px;
@@ -1293,11 +1293,8 @@ a[class^="btn_default-"].small {line-height:24px}
 .cart_product-area.st_type02.st_type02-2 .box_total-floating .cart_product_message {
 	display: none;
 	position: absolute;
-	/* 202406 것모닝 추가 수정 - Top값 unset, Bottom값 추가 */
-	top: unset;
+	top: -54px;
 	left: 50%;
-	bottom: 50px;
-	/* // 202406 것모닝 추가 수정 - Top값 unset, Bottom값 추가 */
 	transform: translateX(-50%);
 	margin: 0;
 	padding: 4px 8px;
@@ -1632,45 +1629,187 @@ a[class^="btn_default-"].small {line-height:24px}
 .coupon-own strong {display:inline-block;margin-right:4px;font-weight:600;font-size:28px;letter-spacing:-.8px}
 /* // A cliks */
 
-/* 202406 것모닝 추가 수정 - 장바구니 스마트 오더 교체, 신청, 추가 페이지 배너 수정 */
-.box_sop-cont .promotion_banner_top {margin: 40px 0 0;padding: 52px 90px;background: url(/_ui/responsive/theme-blue/images/akl_plp/bg_gutmorning_promotion.png) right center no-repeat #00BE59;background-size: contain;color: #fff;}
-.box_sop-cont .promotion_banner_top .promotion_banner_title {position: relative;display: flex;align-items: center;}
-.box_sop-cont .promotion_banner_top .promotion_banner_title h2::before {content: '';position: absolute;left: 0;bottom: 3px;display: inline-block;width: 16px;height: 62px;margin-right: 4px;background: url(/_ui/responsive/theme-blue/images/akl_plp/ico_bracket_left.png) center center no-repeat;background-size: cover;}
-.box_sop-cont .promotion_banner_top .promotion_banner_title h2::after {content: '';position: absolute;right: -20px;bottom: 3px;display: inline-block;width: 16px;height: 62px;background: url(/_ui/responsive/theme-blue/images/akl_plp/ico_bracket_right.png) center center no-repeat;background-size: cover;}
-.box_sop-cont .promotion_banner_top .promotion_banner_title h2 {position: relative;margin: 0;font-weight: 700;font-size: 54px;line-height: 64.8px;padding-left: 20px;}
-.box_sop-cont .promotion_banner_top .promotion_banner_title::after {content: '';position: absolute;top: 0;left: 180px;width: 65px;height: 55px;background: url(/_ui/responsive/theme-blue/images/akl_plp/ico_gutmorning_title.png) center center no-repeat;background-size: cover;}
-.box_sop-cont .promotion_banner_top .promotion_banner_title h2 span {color: #FFF226;}
-.box_sop-cont .promotion_banner_top .promotion_banner_title h2 span:nth-of-type(1) {display: block;}
-.box_sop-cont .promotion_banner_top .promotion_desc {margin: 12px 0 8px;padding-left: 20px;font-weight: 400;font-size: 16px;line-height: 26px;letter-spacing: -0.03em;white-space: pre-line;}
-.box_sop-cont .promotion_banner_top .promotion_desc.mo {display: none;}
-.box_sop-cont .promotion_banner_top .promotion_notice {display: none;}
-.box_sop-cont .promotion_banner_top .promotion_date {width: fit-content;padding: 6px 12px;background: #009D4A;margin: 24px 0 0 20px;font-size: 16px;line-height: 22px;border-radius: 6px;}
-.box_sop-cont .promotion_banner_top .promotion_date span {position: relative;padding-left: 18px;}
-.box_sop-cont .promotion_banner_top .promotion_date span::after {content: '';position: absolute;top: 50%;left: 8px;transform: translateY(-50%);width: 2px;height: 14px;background: #fff;opacity: 0.5;}
-.box_sop-cont .promotion_banner_top button {display: none;}
-
-@media (max-width: 1200px) {
-	.box_sop-cont .promotion_banner_top {margin: 40px 16px; padding: 24px 24px 44.6% 24px;background: url(/_ui/responsive/theme-blue/images/akl_plp/bg_gutmorning_helper_m.png) bottom center no-repeat #00BE59;background-size: contain;}
-	.box_sop-cont .promotion_banner_top .promotion_banner_title h2 {padding: 0;font-size: 24px; line-height: 36px; letter-spacing: -0.01em;}
-	.box_sop-cont .promotion_banner_top .promotion_banner_title h2 span:nth-of-type(1) {display: none;}
-	.box_sop-cont .promotion_banner_top .promotion_banner_title::after, .box_sop-cont .promotion_banner_top .promotion_banner_title h2::before, .box_sop-cont .promotion_banner_top .promotion_banner_title h2::after {display: none;}
-	.box_sop-cont .promotion_banner_top .promotion_desc {display: none;}
-	.box_sop-cont .promotion_banner_top .promotion_notice {display: block; margin-bottom: 16px;font-size: 14px;font-weight: 400;line-height: 20px;opacity: 0.8;color: #FFF;}
-	.box_sop-cont .promotion_banner_top .promotion_desc.mo {display: block;margin: 4px 0 8px; padding: 0;font-size: 14px; line-height: 20px; letter-spacing: unset; word-break: keep-all;}
-	.box_sop-cont .promotion_banner_top .promotion_date {margin: 0 0 28px;padding: 4px 8px; font-size: 14px;font-weight: 500;line-height: 20px;}/* 202406 것모닝 추가 수정 - Font Size 값 수정 */
-	.box_sop-cont .promotion_banner_top button {display: block;padding: 8px 16px;background: transparent;font-size: 14px;font-weight: 500;letter-spacing: -0.03em;color: #fff;border: 1px solid #fff;border-radius: 8px;}
+/* 202405 것모닝 작업 - 장바구니 스마트 오더 교체, 신청, 추가 페이지 배너 추가 */
+.box_sop-cont .promotion_banner_top {
+	margin: 40px 0 0;
+	padding: 52px 90px;
+	background: url(/_ui/responsive/theme-blue/images/akl_plp/bg_gutmorning_promotion.png) right center no-repeat #00BE59;
+	background-size: contain;
+	color: #fff;
 }
-/* 202406 것모닝 추가 수정 - 384 분기 수정 */
-@media (max-width: 384px) {
-	/* .box_sop-cont .promotion_banner_top .promotion_date {display: flex;flex-direction: column;}
-	.box_sop-cont .promotion_banner_top .promotion_date span {padding: 0}
-	.box_sop-cont .promotion_banner_top .promotion_date span::after {display: none} */
+.box_sop-cont .promotion_banner_top .promotion_banner_title {
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+.box_sop-cont .promotion_banner_top .promotion_banner_title h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  display: inline-block;
+  width: 16px;
+  height: 62px;
+  margin-right: 4px;
+  background: url(/_ui/responsive/theme-blue/images/akl_plp/ico_bracket_left.png) center center no-repeat;
+  background-size: cover;
+}
+.box_sop-cont .promotion_banner_top .promotion_banner_title h2::after {
+  content: '';
+  position: absolute;
+  right: -20px;
+  bottom: 3px;
+  display: inline-block;
+  width: 16px;
+  height: 62px;
+  background: url(/_ui/responsive/theme-blue/images/akl_plp/ico_bracket_right.png) center center no-repeat;
+  background-size: cover;
+}
+.box_sop-cont .promotion_banner_top .promotion_banner_title h2 {
+  position: relative;
+  margin: 0;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 64.8px;
+  padding-left: 20px;
+}
+.box_sop-cont .promotion_banner_top .promotion_banner_title::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 180px;
+  width: 65px;
+  height: 55px;
+  background: url(/_ui/responsive/theme-blue/images/akl_plp/ico_gutmorning_title.png) center center no-repeat;
+  background-size: cover;
+}
+.box_sop-cont .promotion_banner_top .promotion_banner_title h2 span {
+	color: #FFF226;
+}
+.box_sop-cont .promotion_banner_top .promotion_desc {
+	margin: 12px 0 8px;
+	padding-left: 20px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 26px;
+	letter-spacing: -0.03em;
+	white-space: pre-line;
+}
+.box_sop-cont .promotion_banner_top .promotion_notice {
+	display: block;
+	padding-left: 20px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	letter-spacing: -0.03em;
+	word-break: keep-all;
+	opacity: 0.8;
+}
+.box_sop-cont .promotion_banner_top .promotion_date {
+	width: fit-content;
+	padding: 6px 12px;
+	background: #009D4A;
+	margin: 24px 0 0 20px;
+	font-size: 16px;
+	line-height: 22px;
+	border-radius: 6px;
+}
+.box_sop-cont .promotion_banner_top .promotion_date span {
+	position: relative;
+	padding-left: 18px;
+}
+.box_sop-cont .promotion_banner_top .promotion_date span::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 8px;
+	transform: translateY(-50%);
+	width: 2px;
+	height: 14px;
+	background: #fff;
+	opacity: 0.5;
+}
+
+@media (max-width: 1024px) {
+	.box_sop-cont .promotion_banner_top {
+		margin: 32px 16px 28px;
+		padding: 32px 32px 73.3% 20px;
+		background: url(/_ui/responsive/theme-blue/images/akl_plp/bg_gutmorning_promotion_m.png) center bottom no-repeat #00BE59;
+		background-size: contain;
+	}
+	.box_sop-cont .promotion_banner_top .promotion_banner_title h2 {
+    padding: 0 0 0 12px;
+		font-size: 38px;
+		line-height: 44.2px;
+		letter-spacing: normal;
+		max-width: 270px;
+		white-space: normal;
+	}
+	.box_sop-cont .promotion_banner_top .promotion_banner_title::after {
+		top: -3px;
+		left: 123px;
+		width: 44px;
+		height: 37px;
+	}
+	.box_sop-cont .promotion_banner_top .promotion_banner_title h2::before {
+    top: 49%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 36px;
+    margin-right: 2px;
+	}
+	.box_sop-cont .promotion_banner_top .promotion_banner_title h2::after {
+    right: 61px;
+    bottom: 6px;
+    width: 10px;
+    height: 36px;
+    margin-left: 2px;
+	}
+	.box_sop-cont .promotion_banner_top .promotion_desc {
+		max-width: unset;
+		margin-top: 4px;
+		padding: 0 20px 0 12px;
+		font-size: 14px;
+		line-height: 22px;
+		letter-spacing: normal;
+		word-break: keep-all;
+	}
+	.box_sop-cont .promotion_banner_top .promotion_notice {
+		padding-right: 20px;
+		padding-left: 12px;
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 17.38px;
+		letter-spacing: unset;
+	}
 	.box_sop-cont .promotion_banner_top .promotion_date {
-		letter-spacing: -0.03em;
+		margin: 16px 0 0 12px;
+		padding: 4px 8px 2px;
+		font-size: 12px;
+		line-height: 17.38px;
+	}
+	.box_sop-cont .promotion_banner_top .promotion_date span {
+		padding-left: 17px; 
 	}
 }
-/* // 202406 것모닝 추가 수정 - 384 분기 수정 */
-/* // 202406 것모닝 추가 수정 - 장바구니 스마트 오더 교체, 신청, 추가 페이지 배너 수정 */
+@media (max-width: 344px) {
+	.box_sop-cont .promotion_banner_top .promotion_date {
+		display: flex;
+		flex-direction: column;
+	}
+	.box_sop-cont .promotion_banner_top .promotion_date span {
+		padding-left: 0;
+	}
+	.box_sop-cont .promotion_banner_top .promotion_date span::after {
+		display: none;
+	}
+}
+@media (max-width: 320px) {
+	.box_sop-cont .promotion_banner_top .promotion_banner_title::after  {
+		right: 85px;
+	}
+}
+/* // 202405 것모닝 작업 - 장바구니 스마트 오더 교체, 신청, 추가 페이지 배너 추가 */
 
 /* 선물하기 제품공유 목록 */
 .box_gift-article {position:relative;margin:40px 0 0;padding:16px;height:auto;background-color:#ffd400}
@@ -1893,6 +2032,7 @@ a[class^="btn_default-"].small {line-height:24px}
 #layer-editProduct .layer-area_container .layer-area_bottom .layer-toast {
 	position: relative;
 	width: fit-content;
+	max-width: 370px;
 	margin: 0 auto -4px;
 	padding: 8px 12px;
 	background: #FFF;
@@ -1903,7 +2043,7 @@ a[class^="btn_default-"].small {line-height:24px}
 	text-align: center;
 	word-break: keep-all;
 }
-#layer-editProduct .layer-area_container .layer-area_bottom .layer-toast .highlight {
+#layer-editProduct .layer-area_container .layer-area_bottom .layer-toast span {
 	color: #018C51;
 }
 #layer-editProduct .layer-area_container .layer-area_bottom .layer-toast::after {
@@ -1913,9 +2053,8 @@ a[class^="btn_default-"].small {line-height:24px}
 	left: 50%;
 	transform: translateX(-50%);
 	width: 20px;
-	height: 10px; /* 202406 것모닝 추가 수정 - Height 값 수정 */
-	/* 202406 것모닝 추가 수정 - Background Position: center center => center bottom 조정 */
-	background: url(/_ui/responsive/theme-blue/images/akl_plp/ico_tooltip_arrow_wt.png) center bottom no-repeat;
+	height: 20px;
+	background: url(/_ui/responsive/theme-blue/images/akl_plp/ico_tooltip_arrow_wt.png) center center no-repeat;
 	background-size: cover;
 }
 #layer-addProduct .layer-area_container .layer-area_bottom .layer-toast {
@@ -1924,6 +2063,7 @@ a[class^="btn_default-"].small {line-height:24px}
 	transform: translateX(-50%);
 	bottom: 89%;
 	width: fit-content;
+	min-width: 250px;
 	margin: 0 auto -4px;
 	padding: 8px 12px;
 	background: #FFF;
@@ -1934,9 +2074,8 @@ a[class^="btn_default-"].small {line-height:24px}
 	text-align: center;
 	word-break: keep-all;
 	z-index: 2;
-	white-space: nowrap; /* 202406 것모닝 추가 수정 - White Space 값 추가 */ 
 }
-#layer-addProduct .layer-area_container .layer-area_bottom .layer-toast .highlight {
+#layer-addProduct .layer-area_container .layer-area_bottom .layer-toast span {
 	color: #018C51;
 }
 #layer-addProduct .layer-area_container .layer-area_bottom .layer-toast::after {
@@ -3195,7 +3334,7 @@ i.state-fail:before {transform:rotate(-45deg);-webkit-transform:rotate(-45deg)}
 .box_acliks-benefit .benefit-item .benefit-data .cart_product_message {
 	position: absolute;
 	top: 50%;
-	left: -220px; /* 202406 것모닝 추가 수정 - Left 수정 */
+	left: -190px;
 	transform: translateY(-50%);
 	padding: 8px 12px;
 	background: #FFF;
@@ -3282,8 +3421,7 @@ i.state-fail:before {transform:rotate(-45deg);-webkit-transform:rotate(-45deg)}
 	font-weight: 700;
 	line-height: 36px;
 	letter-spacing: -0.03em;
-	color: #D08A22; /* 202406 것모닝 추가 수정 - Color 수정 */
-	white-space: nowrap; /* 202406 것모닝 추가 수정 - White Space 수정 */
+	color: #0D8351;
 }
 .gutmorning_promotion_banner span {
 	font-size: 16px;
@@ -3313,14 +3451,6 @@ i.state-fail:before {transform:rotate(-45deg);-webkit-transform:rotate(-45deg)}
 		word-break: keep-all;
 	}
 }
-
-/* 202406 것모닝 추가 수정 - 분기 추가 */
-@media (max-width: 359px) {
-	.gutmorning_promotion_banner p {
-		white-space: unset;
-	}
-}
-/* // 202406 것모닝 추가 수정 - 분기 추가 */
 /* // 202405 것모닝 작업 - 장바구니 스마트 오더 내역 페이지에 배너 추가 */
 
 /* SOP 제품 목록  2020-12-07 수정 */ 
@@ -3366,7 +3496,7 @@ i.state-fail:before {transform:rotate(-45deg);-webkit-transform:rotate(-45deg)}
 	bottom: 100%;
 	left: 50%;
 	transform: translate(-50%);
-	/* 202406 것모닝 추가 수정 - Max Width 값 삭제 */ 
+	max-width: 300px;
 	padding: 8px 12px;
 	font-size: 12px;
 	font-weight: 500;
@@ -3390,7 +3520,7 @@ i.state-fail:before {transform:rotate(-45deg);-webkit-transform:rotate(-45deg)}
 	background-size: contain;
 	z-index: -1;
 }
-.box_mobile-floating .gutmorning_tooltip .highlight {
+.box_mobile-floating .gutmorning_tooltip span {
 	color: #018C51;
 }
 @media (max-width: 768px) {
@@ -3407,11 +3537,6 @@ i.state-fail:before {transform:rotate(-45deg);-webkit-transform:rotate(-45deg)}
 		line-height: 17.38px;
 		letter-spacing: -0.03em;
 	}
-	/* 202406 것모닝 추가 수정 - 툴팁 패딩값 조정 */
-	.box_mobile-floating .gutmorning_tooltip {
-		padding: 4px 8px;
-	}
-	/* // 202406 것모닝 추가 수정 - 툴팁 패딩값 조정 */
 }
 @media (max-width: 319px) {
 	.product_item--gutmorning .product_text-data .text_product-up {
@@ -4216,18 +4341,6 @@ i.state-fail:before {transform:rotate(-45deg);-webkit-transform:rotate(-45deg)}
 .box_cart-option {position:relative}
 .box_cart-info .tooltip-layer {width:343px;margin:8px 0 0 0;left:-140px}
 .box_cart-info .tooltip-layer::before {right:86px}
-
-/* 202406 것모닝 추가 수정 - 텍스트 옆 플래그 추가 */
-.txt_total-title .pv_flag {
-	margin-left: 6px;
-	padding: 4px 12px 2px;
-	font-size: 14px;
-	font-weight: 500;
-	color: #018C51;
-	border-radius: 99px;
-	background: #EBF5F0;
-}
-/* // 202406 것모닝 추가 수정 - 텍스트 옆 플래그 추가 */
 
 /* 2020-07-07 이런상품 어떄요 위치변경 */
 .section_right-info .cart_product-area {padding-bottom:410px;position:relative}
@@ -17122,8 +17235,6 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 .bsop_renew,
 .bsop_manual {overflow-y:hidden;}
 
-.bsop_renew {touch-action: pan-y;} /* 202406 것모닝 추가 수정 - Touch Action 속성 추가 */
-
 /* .bsop_renew #footer {padding-bottom:80px !important;} */ /* 20240423 삭제 */
 .bsop_renew .footerShotcut {z-index:initial;}
 .bsop_renew .quick-links {margin-top:0;}
@@ -17334,7 +17445,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 26px;
-	/* 202406 것모닝 추가 수정 - White Space 속성 삭제 */
+	white-space: pre-line;
 }
 .box_sop-promotion .promotion_banner_container .promotion_banner_top .promotion_date {
 	width: fit-content;
@@ -17361,7 +17472,6 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	opacity: 0.5;
 }
 /* HERE */
-.mo_only {display: none;} /* 202406 것모닝 추가 수정 - mo_only 클래스 추가 */
 .box_sop-promotion .promotion_detail_container {
 	position: relative;
 	margin-bottom: 40px;
@@ -17469,7 +17579,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 }
 .box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) {
 	display: block;
-	margin-top: 16px; /* 202406 것모닝 추가 수정 - Margin 값 수정 */
+	margin-top: 12px;
 	padding: 40px;
 	background: #F4F4F4;
 }
@@ -17479,8 +17589,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 .box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap {
 	column-gap: 12px;
 }
-/* 202406 것모닝 추가 수정 - 것스오 혜택안내 탭 레이아웃 수정 */
-/* .box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content {
+.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content {
 	align-items: flex-start;
 	width: 100%;
 	padding: 24px 24px 208px;
@@ -17523,23 +17632,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	left: 33.3%;
 	background: url(/_ui/responsive/theme-blue/images/akl_plp/ico_circle_or.png) center center no-repeat;
 	background-size: cover;
-} */
-
-.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content {align-items: center;padding: 24px;border-radius: 20px;aspect-ratio: unset;background: #fff;}
-.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content:nth-of-type(1) {flex-direction: row;width: 66.6%;}
-.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content .desc_content_seperate {display: flex; flex-direction: column;align-items: center;width: 100%;}
-.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content .desc_content_seperate:nth-of-type(1) {border-right:1px solid #EDEDED;}
-.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content:nth-of-type(2) {position: relative;width: 33.3%;}
-.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content:nth-of-type(2)::after {content: '';position: absolute;left: -7%; top: 50%; transform: translateY(-50%); width: 48px;height: 48px;background: url(/_ui/responsive/theme-blue/images/akl_plp/ico_circle_plus.png) center center no-repeat;background-size: cover;    box-shadow: 2px 4px 12px 0 rgba(0, 0, 0, 0.1);border-radius: 50%;}
-.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content span:nth-of-type(1) {padding: 4px 12px 2px;}
-.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content .desc_content_seperate:nth-of-type(1) > span:nth-of-type(1) {background: #567BF3;}
-.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content .desc_content_seperate:nth-of-type(2) > span:nth-of-type(1) {background: #E400CD;}
-.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content:nth-of-type(2) > span:nth-of-type(1) {background: #81BC47;}
-.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content strong {margin: 8px 0 2px;font-size: 20px;line-height: 30px;text-align: center; word-break: keep-all;}
-.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content p {text-align: center; color: #999;}
-.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content img {width: 180px;margin-top: 16px;object-fit: cover;aspect-ratio: 1 / 1;}
-.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap::after {display: none;}
-/* // 202406 것모닝 추가 수정 - 것스오 혜택안내 탭 레이아웃 수정 */
+}
 .box_sop-promotion .promotion_detail_container .promotion_detail_contents .detail_notice {
 	margin: 12px 0 0;
 	font-size: 14px;
@@ -17612,9 +17705,6 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	line-height: 46px;
 	letter-spacing: -0.03em;
 }
-.box_sop-product-helper .product_helper_banner h2 span {
-	color: #FFF226; /* 202406 것모닝 추가 수정 - 도우미 배너 컬러 조정  */ 
-}
 .box_sop-product-helper .product_helper_banner p:nth-of-type(1) {
 	margin-bottom: 2px;
 	font-size: 16px;
@@ -17658,9 +17748,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	background: #fff;
 	opacity: 0.5;
 }
-/* 202406 것모닝 추가 수정 - button -> a 태그로 변경 */
-.box_sop-product-helper .product_helper_banner a {
-	display: inline-block; /* 202406 것모닝 추가 수정 - Display 속성 추가 */
+.box_sop-product-helper .product_helper_banner button {
 	padding: 10px 20px 8px 20px;
 	background: transparent;
 	font-size: 14px;
@@ -17670,7 +17758,6 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	border: 1px solid #fff;
 	border-radius: 4px;
 }
-/* // 202406 것모닝 추가 수정 - button -> a 태그로 변경 */
 .box_sop-product-helper .product_helper_title {
 	margin-bottom: 20px;
 }
@@ -17698,17 +17785,15 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	line-height: 26px;
 	color: #000;
 }
-/* 202406 것모닝 추가 수정 - a -> button 태그로 변경 */
-.box_sop-product-helper .product_helper_title p:nth-of-type(2) button {
+.box_sop-product-helper .product_helper_title p:nth-of-type(2) a {
 	display: flex;
 	align-items: center;
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 22px;
 	color: #018C51;
-	background: transparent;
 }
-.box_sop-product-helper .product_helper_title p:nth-of-type(2) button::after {
+.box_sop-product-helper .product_helper_title p:nth-of-type(2) a::after {
 	content: '';
 	display: inline-block;
 	width: 16px;
@@ -17716,7 +17801,6 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	background: url(/_ui/responsive/theme-blue/images/akl_plp/ico_link_arrow.png) center center no-repeat;
 	background-size: cover;
 }
-/* // 202406 것모닝 추가 수정 - a -> button 태그로 변경 */
 .box_sop-product-helper .accordion_wrap {
 	width: 100%;
 	padding-bottom: 228px;
@@ -17751,7 +17835,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 }
 .box_sop-product-helper .accordion_wrap .accordion_title_wrap p {
 	margin: 0;
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: 400;
 	line-height: 28px;
 	letter-spacing: -0.03em;
@@ -18049,11 +18133,6 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	width: 100%;
 	/* padding: 0 40px; */
 }
-/* 202406 것모닝 추가 수정 - Touch Action 값 추가 */
-.box_sop-product-helper .accordion_swiper .swiper-wrapper {
-	touch-action: none;
-}
-/* // 202406 것모닝 추가 수정 - Touch Action 값 추가 */
 .box_sop-product-helper .accordion_swiper .swiper-slide {
 	/* width: 202px; */
 	flex-direction: column;
@@ -18305,7 +18384,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	background-size: 140px;
 }
 .box_sop-product-helper .accordion_wrap .accordion_body .optional_select_wrap input[type='radio']:checked {
-	border: 5px solid #0AA854; /* 202406 것모닝 추가 수정 - border 값 수정 */
+	border: 4px solid #0AA854;
 	color: #000;
 	font-weight: 700;
 }
@@ -18356,6 +18435,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	padding-right: 3px;
 }
 .box_sop-product-helper .promotion_float_wrap .promotion_total .promotion_total_flag {
+	margin-bottom: 3px;
 	padding: 4px 6px;
 	font-size: 14px;
 	font-weight: 500;
@@ -18375,7 +18455,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	letter-spacing: -0.03em;
 	background: #018C51;
 	color: #FFF;
-	border-radius: 15px; /* 202406 것모닝 추가 수정 - Border Radius 값 수정 */
+	border-radius: 12px;
 }
 
 .box_sop-product-helper .promotion_float_wrap.pc {
@@ -18456,13 +18536,6 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	line-height: 24px;
 	letter-spacing: -0.03em;
 }
-
-/* 202406 것모닝 추가 수정 - disabled 경우 추가 */
-.box_sop-product-helper .promotion_float_wrap.pc .promotion_button_confirm:disabled {
-	background: #D7D7D7;
-}
-/* // 202406 것모닝 추가 수정 - disabled 경우 추가 */
-
 .box_sop-product-helper .accordion_wrap .accordion_body .optional_category_wrap {
 	height: 0;
 	opacity: 0;
@@ -18481,9 +18554,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	}
 }
 
-/* 202406 것모닝 추가 수정 - max-width 1200으로 변경 */
-@media (max-width: 1200px) {
-	.mo_only {display: block;} /* 202406 것모닝 추가 수정 - mo_only 클래스 추가 */
+@media (max-width: 1270px) {
 	.promotion_banner_container {
 		padding: 0 16px;
 	}
@@ -18527,14 +18598,14 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		aspect-ratio: unset;
 	}
 	.box_sop-promotion .promotion_detail_container .promotion_detail_contents .detail_desc_wrap .detail_desc_content span:nth-of-type(1) {
-		padding: 2px 8px 0; /* 202406 것모닝 추가 수정 - Padding 수정 */
+		padding: 4px 8px 2px;
 		font-size: 12px;
 		line-height: 17.38px;
 	}
 	.box_sop-promotion .promotion_detail_container .promotion_detail_contents .detail_desc_wrap .detail_desc_content strong {
 		margin-top: 8px !important;
-		font-size: 18px; /* 202406 것모닝 추가 수정 - Font Size 수정 */
-		line-height: 27px; /* 202406 것모닝 추가 수정 - Line Height 수정 */
+		font-size: 20px;
+		line-height: 24px;
 		letter-spacing: unset;
 	}
 	.box_sop-promotion .promotion_detail_container .promotion_detail_contents .detail_desc_wrap .detail_desc_content p {
@@ -18585,8 +18656,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		border-radius: 50%;
 		box-shadow: 2px 4px 12px 0 rgba(0, 0, 0, 0.1);
 	}
-	/* 202406 것모닝 추가 수정 - 것스오 혜택안내 탭 레이아웃 수정 */
-	/* .box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content:nth-of-type(2)::after {
+	.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content:nth-of-type(2)::after {
 		content: '';
 		position: absolute;
 		top: -26px;
@@ -18622,19 +18692,12 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		top: 33%;
 		left: 50%;
 		display: none;
-	} */
-	.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content {padding: 20px 20px 32px;}
-	.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content strong {font-size: 18px;line-height: 27px;}
-	.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content p {margin: 0;padding: 0;}
-	.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content img {display: block;width: 140px;margin-top: 20px;}
-	.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content:nth-of-type(1) {flex-direction: column;width: 100%;}
-	.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content:nth-of-type(2) {width: 100%; padding: 32px 20px 20px;}
-	.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap::after {display: none;}
-	.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content .desc_content_seperate:nth-of-type(1) {padding-bottom: 20px;margin-bottom: 20px;border-right: none; border-bottom: 1px solid #EDEDED;}
-	.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content:nth-of-type(2)::after {top: -27px; left: 50%; transform: translateX(-50%); width: 40px; height: 40px;}
-	.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content span:nth-of-type(1) {padding: 2px 8px 0;font-size: 12px;line-height: 17.38px;}
-	/* // 202406 것모닝 추가 수정 - 것스오 혜택안내 탭 레이아웃 수정 */
-
+	}
+	.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content span:nth-of-type(1) {
+		padding: 4px 8px 2px;
+		font-size: 12px;
+		line-height: 17.38px;
+	}
 	.box_sop-promotion .promotion_detail_container .promotion_detail_contents .detail_notice {
 		padding-right: 30px;
 		word-break: keep-all;
@@ -18642,14 +18705,6 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		line-height: 17.38px;	
 	}
 }
-
-/* 202406 것모닝 추가 수정 - 문구 줄내림에 대한 미디어 쿼리 추가  */
-@media (max-width: 400px) {
-	.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content:nth-of-type(2) p em {
-		display: block;
-	}
-}
-/* // 202406 것모닝 추가 수정 - 문구 줄내림에 대한 미디어 쿼리 추가  */
 
 @media (max-width: 1024px) {
 	.box_sop-promotion .promotion_detail_container {
@@ -18746,7 +18801,6 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	}
 	#layer-editProduct .layer-area_container .layer-area_bottom .layer-toast {
 		margin: 0 auto 9px;
-		padding: 4px 8px; /* 202406 것모닝 추가 수정 - Padding 값 조정 */
 	}
 }
 
@@ -18761,7 +18815,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	}
 	.box_sop-product-helper .product_helper_banner {
 		margin-bottom: 40px;
-		padding: 24px 24px 44.6% 24px; /* 202406 것모닝 추가 수정 - Padding 값 수정 */
+		padding: 24px 24px 54.3% 24px;
 		background: url(/_ui/responsive/theme-blue/images/akl_plp/bg_gutmorning_helper_m.png) bottom center no-repeat #00BE59;
 		background-size: contain;
 	}
@@ -18770,14 +18824,13 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		padding: 0;
 		font-size: 24px;
 		line-height: 36px;
-		letter-spacing: -0.01em; /* 202406 것모닝 추가 수정 - Letter Spacing 값 수정 */
+		letter-spacing: unset;
 	}
-	/* 202406 것모닝 추가 수정 - button -> a 태그로 변경 */
-	.box_sop-product-helper .product_helper_banner a {
+	.box_sop-product-helper .product_helper_banner button {
 		padding: 8px 16px;
 		border-radius: 8px;
 	}
-	/* // 202406 것모닝 추가 수정 - button -> a 태그로 변경 */
+
 	.box_sop-product-helper .product_helper_banner p:nth-of-type(1) {
 		margin-bottom: 8px;
 		font-size: 14px;
@@ -18794,7 +18847,8 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	}
 	.box_sop-product-helper .product_helper_banner .promotion_date:nth-of-type(2) {
 		margin-bottom: 28px;
-		font-size: 14px; /* 202406 것모닝 추가 수정 - Font Weight 값 삭제, Font Size 값 수정 */
+		font-size: 12px;
+		font-weight: 500;
 		line-height: 20px;
 	}
 	.box_sop-product-helper .product_helper_title {
@@ -18834,8 +18888,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		line-height: 20px;
 		letter-spacing: unset;
 	}
-	/* 202406 것모닝 추가 수정 - a -> button 태그로 변경 */
-	.box_sop-product-helper .product_helper_title p:nth-of-type(2) button {
+	.box_sop-product-helper .product_helper_title p:nth-of-type(2) a {
 		position: absolute;
 		bottom: 12px;
 		padding-left: 20px;
@@ -18843,14 +18896,12 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		font-size: 14px;
 		line-height: 20px;
 	}
-	/* // 202406 것모닝 추가 수정 - a -> button 태그로 변경 */
 	.box_sop-product-helper .accordion_wrap .accordion_body .accordion_product_title_wrap {
 		display: none;
 	}
 	.box_sop-product-helper .accordion_wrap {
 		padding: 0 16px;
 		margin-bottom: 40px !important;
-		touch-action: none; /* 202406 것모닝 추가 수정 - Touch Action 속성 추가 */
 	}
 	.box_sop-product-helper .accordion_wrap .accordion_list:nth-of-type(1) .accordion_contents {
 		flex-direction: column;
@@ -19017,14 +19068,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		height: 100%;
 		padding: 12px;
 		justify-content: space-between;
-		border-radius: 12px; /* 202406 것모닝 추가 수정 - Border Radius 값 수정 */
 	}
-	/* 202406 것모닝 추가 수정 - label 속성 추가 */
-	.box_sop-product-helper .accordion_swiper .accordion_product_wrap label {
-		height: 100%;
-		justify-content: space-between;
-	}
-	/* // 202406 것모닝 추가 수정 - label 속성 추가 */
 	.box_sop-product-helper .accordion_swiper .accordion_product_wrap img {
 		width: 100% !important;
 	}
@@ -19058,11 +19102,6 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		width: 16px;
 		height: 16px;
 	}
-	/* 202406 것모닝 추가 수정 - border-width 값 추가 */
-	.box_sop-product-helper .accordion_wrap .accordion_body .optional_select_wrap input[type="radio"]:checked {
-		border-width: 4px;
-	}
-	/* // 202406 것모닝 추가 수정 - border-width 값 추가 */
 	.box_sop-product-helper .accordion_wrap .accordion_body .optional_select_wrap input[type="radio"] + label {
 		width: calc(100% - 40px);
 		font-size: 14px;
@@ -19086,7 +19125,6 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		font-size: 12px;
 	}
 	.box_sop-product-helper .accordion_swiper .accordion_product_wrap .product_name {
-		min-height: 40px; /* 202406 것모닝 추가 수정 - Min Height 값 추가 */
 		margin: 4px 0 6px;
 		font-size: 14px;
 		line-height: 20px;
@@ -19357,18 +19395,37 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 		border-color: #018C51;
 		color: #FFF;
 	}
-	.new-smart-order .scrollTopWrapper.floatingUp { bottom: 270px; }
-	.new-smart-order .scrollTopWrapper:nth-of-type(3), .akl .scrollTopWrapper:nth-of-type(4) { display: none !important; }
-	.new-smart-order .box-chatbot.floatingUp { bottom: 190px; }
-	.new-smart-order .box_sop-product-helper .promotion_float_wrap .promotion_button_confirm { width: 100%; font-size: 16px; line-height: 25.6px; background: #018C51; text-align: center; border-radius: 0; }
-	.new-smart-order .akl .scrollTopWrapper.hide { display: none !important; }
-	.new-smart-order .box-chatbot.hide { display: none !important; }
-	.new-smart-order .box_sop-product-helper .swiper-scrollbar { display: block; }
+	.akl .scrollTopWrapper.floatingUp {
+		bottom: 270px;
+	}
+	.akl .scrollTopWrapper:nth-of-type(3),
+	.akl .scrollTopWrapper:nth-of-type(4) {
+		display: none !important;
+	}
+	.box-chatbot.floatingUp {
+		bottom: 190px;
+	}
+	.box_sop-product-helper .promotion_float_wrap .promotion_button_confirm {
+		width: 100%;
+		font-size: 16px;
+		line-height: 25.6px;
+		background: #018C51;
+		text-align: center;
+		border-radius: 0;
+	}
+	.akl .scrollTopWrapper.hide {
+		display: none !important;
+	}
+	.box-chatbot.hide {
+		display: none !important;
+	}
+	.box_sop-product-helper .swiper-scrollbar {
+		display: block;
+	}
 }
 
-/* 202406 것모닝 추가 수정 - 384 분기처리 수정 */
 @media (max-width: 384px) {
-	/* .box_sop-promotion .promotion_banner_container .promotion_banner_top .promotion_date,
+	.box_sop-promotion .promotion_banner_container .promotion_banner_top .promotion_date,
 	.box_sop-product-helper .product_helper_banner .promotion_date:nth-of-type(2) {
 		display: flex;
 		flex-direction: column;
@@ -19380,20 +19437,8 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	.box_sop-promotion .promotion_banner_container .promotion_banner_top .promotion_date span::after,
 	.box_sop-product-helper .product_helper_banner .promotion_date:nth-of-type(2) span::before {
 		display: none;
-	} */
-
-	.box_sop-promotion .promotion_banner_container .promotion_banner_top {
-		padding: 32px 10px 80.7% 12px;
-	}
-	.box_sop-promotion .promotion_banner_container .promotion_banner_top .promotion_date {
-		letter-spacing: -0.03em;
-	}
-	.box_sop-product-helper .product_helper_banner .promotion_date:nth-of-type(2) {
-		letter-spacing: -0.03em;
 	}
 }
-/* // 202406 것모닝 추가 수정 - 384 분기처리 수정 */
-
 /* // 202405 것모닝 작업 - 것모닝 프로모션 */
 
 .box_sop-main.sh_bsop_renewal .bsop_case1 {background:#fefbec url(/_ui/responsive/theme-blue/images/akl_plp/bg_bsop_semicircle2.png) no-repeat right calc(100% + 80px) / 552px auto;}
