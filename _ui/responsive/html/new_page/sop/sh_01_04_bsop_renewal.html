@@ -63,7 +63,7 @@
 <!-- //skipToContent -->
 
 <!-- main -->
-<main class="renewal_floating-type2 bsop_renew"><!-- 20240409 장스오 홈 개선 --> <!-- 2020-09-17 : 공통 스크립트에서 넣어주는 클래스이나 div 구조가 상이하여 적용되지 않아 renewal_floating-type2 클래스 소스상에 넣어주세요 -->
+<main class="renewal_floating-type2 bsop_renew new-smart-order"><!-- 20240409 장스오 홈 개선 --> <!-- 2020-09-17 : 공통 스크립트에서 넣어주는 클래스이나 div 구조가 상이하여 적용되지 않아 renewal_floating-type2 클래스 소스상에 넣어주세요 --><!-- 202406 것모닝 - new-smart-order 클래스 추가, footer영역 위치 때문에 넣음 -->
 	<div id="header"></div>
 	<div class="sub-nav-section">
 		<div class="container">
@@ -94,6 +94,7 @@
 
 						<p>장바구니에 필요한 것만 쏙! 원하는 날짜에 알아서 착!</p>
 					</div>
+					<img class="banner_mo" src="/_ui/responsive/theme-blue/images/akl_plp/bg_bsop_new_02_m.png" alt="모바일 배너 이미지"><!-- 202406 것모닝 추가 수정 - 모바일용 배너 이미지 추가 -->
 					<div class="visual_area visual_area_pc">
 						<div class="info_benefit new-type">
 							
@@ -181,7 +182,7 @@
 					</li>
 					<!-- 202405 것모닝 작업 - 것모닝 탭 추가 -->
 					<li class="tabs" data-content="promotion">
-						<button>것모닝 프로모션</button>
+						<button>것스오 안내</button><!-- 202406 것모닝 추가 수정 - 것모닝 탭 문구 변경 -->
 					</li>
 					<li class="tabs" data-content="helper">
 						<button>것스오 도우미</button>
@@ -375,21 +376,22 @@
 				<div class="promotion_banner_container">
 					<div class="promotion_banner_top">
 						<div class="promotion_banner_title">
-							<h2>
-								<span>것스오</span><br><span>것</span>모닝 장바구니 <span>스</span>마트 <span>오</span>더</h2>
+							<h2><span>것스오</span><br><span>것</span>모닝 장바구니 <span>스</span>마트 <span>오</span>더</h2><!-- 202406 것모닝 추가 수정 - 들여쓰기 수정 -->
 						</div>
 
-						<p class="promotion_desc">생활습관 성형의 시작 GUT Morning!
-						더블 혜택과 함께 장바구니 스마트 오더로 시작해 보세요!</p>
+						<p class="promotion_desc">
+							생활습관 성형의 시작 GUT Morning!<br>
+							더블 혜택과 함께 장바구니 스마트 오더로 시작해 보세요!
+						</p>
 
-						<p class=promotion_date>것스오 혜택 기간<span>2024.09.01 ~ 2024.11.31</span></p>
+						<p class=promotion_date>것스오 혜택 기간<span>2024.09.01 ~ 2024.11.30</span></p><!-- 202406 것모닝 추가 수정 - 날짜 11.30으로 변경 -->
 					</div>
 
 					<div class="promotion_detail_container">
 						<div class="promotion_detail_contents">
 							<div class="detail_text_wrap">
 								<h3>것스오 론칭 기념 더블 혜택!</h3>
-								<p>혜택 조건에 맞는 것모닝 제품 구성으로 장스오를 구매하시면 파격적인 더블 혜택을 드립니다.</p>
+								<p>것모닝 제품과 혜택 대상인 선택 제품을 구성하여 장스오로 구매하시면 파격적인 더블 혜택을 드립니다.</p><!-- 202406 것모닝 추가 수정 - 문구 수정 -->
 								<span>* 중복 혜택 적용 가능</span>
 							</div>
 
@@ -399,15 +401,15 @@
 									<strong>10% 추가 PV UP</strong>
 									<p>뉴트리라이트 혜택 대상 제품 전체</p>
 									<img src="/_ui/responsive/theme-blue/images/akl_plp/img_promotion_01.png" alt="것모닝 제품 구성 혜택에 대한 이미지">
-									<span>* 혜택 제외 제품은 구성화면에서 확인 가능</span>
+									<span>* 혜택 대상 제품은 구성화면에서 확인 가능</span>
 								</div>
 
 								<div class="detail_desc_content">
 									<span>혜택 02</span>
-									<strong>A Cliks Money 5천원</strong>
-									<p>기간 내 첫 구매시 습관성형 결단 축하금 1회 제공</p>
+									<strong>습관성형 결단 축하금 5천원</strong><!-- 202406 것모닝 추가 수정 - 문구 수정 -->
+									<p>기간 내 첫 구매시 1회 한정 제공</p><!-- 202406 것모닝 추가 수정 - 문구 수정 -->
 									<img src="/_ui/responsive/theme-blue/images/akl_plp/img_promotion_02.png" alt="것모닝 제품 구성 혜택에 대한 이미지">
-									<span>* 1회차 진행 다음달 1일 지급</span>
+									<span>* A Cliks Money로 다음달 1일 지급</span><!-- 202406 것모닝 추가 수정 - 문구 수정 -->
 								</div>
 							</div>
 						</div>
@@ -415,25 +417,36 @@
 						<div class="promotion_detail_contents">
 							<div class="detail_text_wrap">
 								<h3>것스오 구성 방법</h3>
-								<p>구성방법 1, 2중 하나를 선택하고 내 건강에 필요한 뉴트리라이트 제품도 추가하세요.</p>
+								<p>푸로틴과 유산균 제품을 선택하고 내 건강에 필요한 뉴트리라이트 제품도 추가해 보세요.</p><!-- 202406 것모닝 추가 수정 - 문구 수정 -->
 							</div>
 
 							<div class="detail_desc_wrap">
+								<!-- 202406 것모닝 추가 수정 - 레이아웃 수정 -->
 								<div class="detail_desc_content">
-									<span>구성 방법 01</span>
-									<strong>푸로틴 + 유산균 제품 조합</strong>
-									<p>내게 맞는 푸로틴과 유산균 제품 직접 골라담기</p>
+									<div class="desc_content_seperate">
+										<span>필수 구성 01</span>
+										<strong>푸로틴 제품 선택하기</strong>
+										<p>내게 맞는 푸로틴 제품 골라담기</p>
+
+										<img src="/_ui/responsive/theme-blue/images/akl_plp/img_promotion_desc_01.png" alt="필수 구성 01 푸로틴 제품 이미지">
+									</div>
+
+									<div class="desc_content_seperate">
+										<span>필수 구성 02</span>
+										<strong>유산균 제품 선택하기</strong>
+										<p>내게 맞는 유산균 제품 골라 담기</p>
+
+										<img src="/_ui/responsive/theme-blue/images/akl_plp/img_promotion_desc_02.png" alt="필수 구성 02 유산균 제품 이미지">
+									</div>
 								</div>
 								<div class="detail_desc_content">
-									<span>구성 방법 02</span>
-									<strong>푸로틴 + 유산균이 포함된 세트 선택</strong>
-									<p>바디키 이센셜, 액티브 세트, 뉴트리라이트 키즈 플러스 세트 등</p>
-								</div>
-								<div class="detail_desc_content">
-									<span>제품추가 (선택)</span>
+									<span>선택 구성</span>
 									<strong>뉴트리라이트 제품 추가하기</strong>
-									<p>내 건강에 필요한 뉴트리라이트 제품 더 담기</p>
+									<p>내 건강에 필요한 <em>뉴트리라이트 제품 더 담기</em></p>
+
+									<img src="/_ui/responsive/theme-blue/images/akl_plp/img_promotion_desc_03.png" alt="선택 구성 뉴트리라이트 제품 이미지">
 								</div>
+								<!-- // 202406 것모닝 추가 수정 - 레이아웃 수정 -->
 							</div>
 
 							<p class="detail_notice">* 푸로틴, 유산균, 기타 뉴트리라이트 제품을 최대 100만원 까지 담을 수 있습니다.</p>
@@ -442,17 +455,17 @@
 					<!-- 202405 것모닝 작업 - '주문서 제품 수정 바로가기' 버튼과 '것스오 변경하기' 버튼은 두개가 다 보이는 경우입니다. -->
 					<div class="promotion_button_wrap">
 						<div class="button_container">
-							<button type="button" class="gutmorning_edit_btn" data-layer="layer-editProduct">주문서 제품 수정 바로가기<span>담겨있던 제품들을 보면서 수정하세요.</span></button>
+							<button type="button" class="gutmorning_edit_btn" data-layer="layer-editProduct">주문서 제품 수정 바로가기<span>담겨있던 제품들을 보면서 바로 수정하세요.</span></button><!-- 202406 것모닝 추가 수정 - gutmorning_edit_btn 버튼 문구 수정 -->
 						</div>
 						<div class="button_container">
-							<button type="button" class="gutmorning_change_btn">것스오 변경하기<span>것스오 도우미가 제품 구성을 도와드려요.</span></button>
+							<button type="button" class="gutmorning_change_btn">것스오 변경하기<span>것스오 도우미가 제품 변경을 도와드려요.</span></button><!-- 202406 것모닝 추가 수정 - gutmorning_change_btn 버튼 문구 수정 -->
 						</div>
 						<!-- 202405 것모닝 작업 - '주문서 제품 수정 바로가기' 버튼과 '것스오 변경하기' 버튼은 두개가 다 보이는 경우입니다. -->
 					</div>
 					<!-- 202405 것모닝 작업 - 이 버튼은 하나만 있는 경우입니다. -->
 					<div class="promotion_button_wrap">
 						<div class="button_container">
-							<button type="button" class="gutmorning_start_btn">것스오 시작하기<span>것스오 도우미가 제품 구성을 도와드려요.</span></button>
+							<button type="button" class="gutmorning_start_btn">것스오 시작하기<span>것스오 도우미가 제품 구성을 도와드려요.</span></button><!-- 202406 것모닝 추가 수정 - 버튼 문구 수정 -->
 						</div>
 						<!-- 202405 것모닝 작업 - 이 버튼은 하나만 있는 경우입니다. -->
 					</div>
@@ -464,1464 +477,1464 @@
 			<div class="cont box_sop-product-helper" style="display: none;">
 				<div class="product_banner_container">
 					<div class="product_helper_banner">
-						<h2>것모닝 장바구니 스마트오더</h2>
+						<h2><span>것</span>모닝 장바구니 <span>스</span>마트 <span>오</span>더</h2><!-- 202406 것모닝 추가 수정 - 문구 구조 변경 -->
 	
 						<p>혜택 조건에 맞는 것모닝 제품 구성으로 장스오를 구매하시면, 파격적인 더블 혜택을 드립니다.</p>
 
 						<span class="promotion_notice">* 중복 혜택 적용 가능</span>
 						
-						<p class="promotion_date">것스오 혜택 기간<span>2024.09.01 ~ 2024.11.31</span></p>
+						<p class="promotion_date">것스오 혜택 기간<span>2024.09.01 ~ 2024.11.30</span></p><!-- 202406 것모닝 추가 수정 - 날짜 11.30으로 변경 -->
 	
-						<button type="button">자세히보기</button>
+						<a href="#">자세히보기</a><!-- 202406 것모닝 추가 수정 - button -> a 태그로 변경 -->
 					</div>
 				</div>
 
 				<div class="product_helper_title">
 					<p>것스오 도우미<span>장스오에 이미 것모닝 제품을 구성하신 상태라면 주문서 내에서 제품변경이 가능합니다.</span></p>
-
-					<p>것모닝 제품 구성 및 혜택 여부를 확인하실 수 있습니다.<a href="#">제품 수정 바로가기</a></p>
+					<p>것모닝 제품 구성 및 혜택 여부를 확인하실 수 있습니다.<button type="button" data-layer="layer-editProduct">제품 수정 바로가기</button></p><!-- 202406 것모닝 추가 수정 - 핍업 연결 -->
 				</div>
 
-			<!-- 아코디언 영역 -->
-			<div class="accordion_wrap">
-				<div class="accordion_container">
-					<div class="accordion_list accordion_list_first" data-index="1" data-name="푸로틴"><!-- 202405 것모닝 작업 - 초기셋팅 추가-->
-						<div class="accordion_header" onclick="accordionHeaderAction(1)"> <!-- 202405 것모닝 작업 - 아코디언 오픈 호출 시 파라미터 -->
-							<div class="accordion_title_wrap">
-								<p>Step 01. 푸로틴을 선택하세요.</p>
-								<div class="accordion_info_wrap">
-									<!-- <span class="info_message">1개 이상의 제품을 선택해야 합니다.</span> --><!-- 202405 것모닝 작업 - 열렸을때 info message 케이스 -->
-									<!--<span class="error_message">제품을 선택해주세요.</span>--><!-- 202405 것모닝 작업 - 에러 케이스 -->
-									<span class="chk_product_num"><span>0</span>개 제품 선택됨</span><!-- 202405 것모닝 작업 - 선택된 제품 개수 케이스 -->
-									<span class="chk_product_name">뉴트리 파이토 푸로틴 450g x 1, 뉴트리 파이토 푸로틴 900g x 1</span><!-- 202405 것모닝 작업 - 선택된 제품 이름 케이스 -->
-								</div>
-								<button type="button" class="accordion_button">토글버튼</button>
-							</div>
-						
-						</div>
-						<div class="accordion_body">
-							<div class="accordion_product_title_wrap">
-								<p>푸로틴 (<span>6</span>)</p>
-								<button type="button" class="product_reset_pc">초기화</button>
-							</div>
-							<div class="accordion_contents accordion_protein">
-								<div class="accordion_swiper accordion_protein_swiper swiper">
-									<div class="swiper-wrapper">
-										<div class="swiper-slide">
-											<div class="accordion_product_wrap">
-												<input id="chk_first_product01_1" name="step02" type="checkbox">
-												<label for="chk_first_product01_1">
-													<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="프로틴 제품 썸네일">
-													
-													<span class="product_flag">것모닝 푸로틴</span>
-													
-													<p class="product_name"><a href="#">뉴트리 파이토 푸로틴 하이드라 액티브</a></p>
-													<strong class="product_price"><span>99,999,999</span>원</strong>
-	
-													<div class="product_btn">
-														<button class="minus">빼기 버튼</button>
-														<span><input type="number" value="0" maxLength="3"></span>
-														<button class="plus">더하기 버튼</button>
-													</div>
-												</label>
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class="accordion_product_wrap">
-												<input id="chk_first_product01_2" name="step02" type="checkbox">
-												<label for="chk_first_product01_2">
-													<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="프로틴 제품 썸네일">
-	
-													<span class="product_flag">것모닝 푸로틴</span>
-	
-													<p class="product_name"><a href="#">밸런스위드인365 (30포) 222222</a></p>
-													<strong class="product_price"><span>15,500</span>원</strong>
-	
-													<div class="product_btn">
-														<button class="minus">빼기 버튼</button>
-														<span><input type="number" value="0" maxLength="3"></span>
-														<button class="plus">더하기 버튼</button>
-													</div>
-												</label>
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class="accordion_product_wrap">
-												<input id="chk_first_product01_3" type="checkbox">
-												<label for="chk_first_product01_3">
-													<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="프로틴 제품 썸네일">
-												
-													<span class="product_flag">것모닝 푸로틴</span>	
-	
-													<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-													<strong class="product_price"><span>15,500</span>원</strong>
-		
-													<div class="product_btn">
-														<button class="minus">빼기 버튼</button>
-														<span><input type="number" value="0" maxLength="3"></span>
-														<button class="plus">더하기 버튼</button>
-													</div>
-												</label>
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class="accordion_product_wrap">
-												<input id="chk_first_product01_4" type="checkbox">
-												<label for="chk_first_product01_4">
-													<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="프로틴 제품 썸네일">
-	
-													<span class="product_flag">것모닝 푸로틴</span>
-	
-													<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-													<strong class="product_price"><span>15,500</span>원</strong>
-	
-													<div class="product_btn">
-														<button class="minus">빼기 버튼</button>
-														<span><input type="number" value="0" maxLength="3"></span>
-														<button class="plus">더하기 버튼</button>
-													</div>
-												</label>
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class="accordion_product_wrap">
-												<input id="chk_first_product01_5" type="checkbox">
-												<label for="chk_first_product01_5">
-													<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="프로틴 제품 썸네일">
-	
-													<span class="product_flag">것모닝 푸로틴</span>
-	
-													<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-													<strong class="product_price"><span>15,500</span>원</strong>
-	
-													<div class="product_btn">
-														<button class="minus">빼기 버튼</button>
-														<span><input type="number" value="0" maxLength="3"></span>
-														<button class="plus">더하기 버튼</button>
-													</div>
-												</label>
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class="accordion_product_wrap">
-												<input id="chk_first_product01_6" type="checkbox">
-												<label for="chk_first_product01_6">
-													<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="프로틴 제품 썸네일">
-	
-													<span class="product_flag">것모닝 푸로틴</span>
-	
-													<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-													<strong class="product_price"><span>15,500</span>원</strong>
-		
-													<div class="product_btn">
-														<button class="minus">빼기 버튼</button>
-														<span><input type="number" value="0" maxLength="3"></span>
-														<button class="plus">더하기 버튼</button>
-													</div>
-												</label>
-											</div>
-										</div>
+				<!-- 202406 것모닝 추가 수정 - 들여쓰기 수정 -->
+				<!-- 아코디언 영역 -->
+				<div class="accordion_wrap">
+					<div class="accordion_container">
+						<div class="accordion_list accordion_list_first" data-index="1" data-name="푸로틴"><!-- 202406 것모닝 추가 수정 - 초기셋팅 추가-->
+							<div class="accordion_header" onclick="accordionHeaderAction(1)"> <!-- 202406 것모닝 추가 수정 - 아코디언 오픈 호출 시 파라미터 -->
+								<div class="accordion_title_wrap">
+									<p>Step 01. 푸로틴을 선택하세요.</p><!-- 202406 것모닝 추가 수정 - Step 01로 변경 -->
+									<div class="accordion_info_wrap">
+										<!-- <span class="info_message">1개 이상의 제품을 선택해야 합니다.</span> --><!-- 202405 것모닝 작업 - 열렸을때 info message 케이스 -->
+										<!--<span class="error_message">제품을 선택해주세요.</span>--><!-- 202405 것모닝 작업 - 에러 케이스 -->
+										<span class="chk_product_num"><span>0</span>개 제품 선택됨</span><!-- 202405 것모닝 작업 - 선택된 제품 개수 케이스 -->
+										<span class="chk_product_name">뉴트리 파이토 푸로틴 450g x 1, 뉴트리 파이토 푸로틴 900g x 1</span><!-- 202405 것모닝 작업 - 선택된 제품 이름 케이스 -->
 									</div>
-								</div>
-										
-								<div class="swiper-scrollbar"></div>
-								<div class="swiper-button-prev"></div>
-								<div class="swiper-button-next"></div>
+									<button type="button" class="accordion_button">토글버튼</button>
+								</div> <!-- 202406 것모닝 추가 수정 - 들여쓰기 수정 -->
 							</div>
-							
-							<div class="accordion_btn_wrap">
-								<!-- 비활성화 케이스 -->
-								<!-- <button class="accordion_next_btn" type="button" disabled>다음 단계</button -->
-								<button onclick="accordionDirectionAction($(this))" class="accordion_next_btn" type="button">다음 단계</button>
-							</div>
-						</div>
-					</div>
-
-					<div class="accordion_list" data-index="2" data-name="유산균"><!-- 202405 것모닝 작업 - 초기셋팅 추가-->
-						<div class="accordion_header" onclick="accordionHeaderAction(2)"> <!-- 202405 것모닝 작업 - 아코디언 오픈 호출 시 파라미터 -->
-							<div class="accordion_title_wrap">
-								<p>Step 02. 유산균을 선택하세요.</p>
-								<div class="accordion_info_wrap">
-									<!-- <span class="info_message">1개 이상의 제품을 선택해야 합니다.</span> --><!-- 202405 것모닝 작업 - 열렸을때 info message 케이스 -->
-									<!-- <span class="error_message">제품을 선택해주세요.</span> --><!-- 202405 것모닝 작업 - 에러 케이스 -->
-									<span class="chk_product_num"><span>0</span>개 제품 선택됨</span><!-- 202405 것모닝 작업 - 선택된 제품 개수 케이스 -->
-									<!--<span class="chk_product_name">뉴트리 파이토 푸로틴 450g x 1, 뉴트리 파이토 푸로틴 900g x 1</span>--><!-- 202405 것모닝 작업 - 선택된 제품 이름 케이스 -->
-								</div>
-								<button type="button" class="accordion_button">토글버튼</button>
-							</div>
-						</div>
-						<div class="accordion_body">
-							<div class="accordion_product_title_wrap">
-								<p>유산균 (<span>6</span>)</p>
-								<button type="button" class="product_reset_pc">초기화</button>
-							</div>
-
-							<div class="accordion_contents accordion_probiotics">
-								<div class="accordion_swiper accordion_probiotics_swiper swiper">
-									<div class="swiper-wrapper">
-
-										<div class="swiper-slide">
-											<div class="accordion_product_wrap">
-												<input id="chk_first_product02_1" type="checkbox">
-												<label for="chk_first_product02_1">
-													<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="프로바이오틱스 제품 썸네일">
-	
-													<span class="product_flag product_flag--pink">것모닝 유산균</span>
-	
-													<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-													<strong class="product_price"><span>15,500</span>원</strong>
-	
-													<div class="product_btn">
-														<button class="minus">빼기 버튼</button>
-														<span><input type="number" value="0" maxLength="3"></span>
-														<button class="plus">더하기 버튼</button>
-													</div>
-												</label>
-											</div>
-
-											<div class="accordion_product_wrap">
-												<input id="chk_first_product02_2" type="checkbox">
-												<label for="chk_first_product02_2">
-													<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="프로바이오틱스 제품 썸네일">
-	
-													<span class="product_flag product_flag--pink">것모닝 유산균</span>
-	
-													<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-													<strong class="product_price"><span>15,500</span>원</strong>
-	
-													<div class="product_btn">
-														<button class="minus">빼기 버튼</button>
-														<span><input type="number" value="0" maxLength="3"></span>
-														<button class="plus">더하기 버튼</button>
-													</div>
-												</label>
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class="accordion_product_wrap">
-												<input id="chk_first_product02_3" type="checkbox">
-												<label for="chk_first_product02_3">
-													<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="프로바이오틱스 제품 썸네일">
-	
-													<span class="product_flag product_flag--pink">것모닝 유산균</span>
-	
-													<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-													<strong class="product_price"><span>15,500</span>원</strong>
-	
-													<div class="product_btn">
-														<button class="minus">빼기 버튼</button>
-														<span><input type="number" value="0" maxLength="3"></span>
-														<button class="plus">더하기 버튼</button>
-													</div>
-												</label>
-											</div>
-
-											<div class="accordion_product_wrap">
-												<input id="chk_first_product02_4" type="checkbox">
-												<label for="chk_first_product02_4">
-													<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="프로바이오틱스 제품 썸네일">
-	
-													<span class="product_flag product_flag--pink">것모닝 유산균</span>
-	
-													<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-													<strong class="product_price"><span>15,500</span>원</strong>
-	
-													<div class="product_btn">
-														<button class="minus">빼기 버튼</button>
-														<span><input type="number" value="0" maxLength="3"></span>
-														<button class="plus">더하기 버튼</button>
-													</div>
-												</label>
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class="accordion_product_wrap">
-												<input id="chk_first_product02_5" type="checkbox">
-												<label for="chk_first_product02_5">
-													<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="프로바이오틱스 제품 썸네일">
-	
-													<span class="product_flag product_flag--pink">것모닝 유산균</span>
-	
-													<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-													<strong class="product_price"><span>15,500</span>원</strong>
-		
-													<div class="product_btn">
-														<button class="minus">빼기 버튼</button>
-														<span><input type="number" value="0" maxLength="3"></span>
-														<button class="plus">더하기 버튼</button>
-													</div>
-												</label>
-											</div>
-											<div class="accordion_product_wrap">
-												<input id="chk_first_product02_6" type="checkbox">
-												<label for="chk_first_product02_6">
-													<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="프로바이오틱스 제품 썸네일">
-	
-													<span class="product_flag product_flag--pink">것모닝 유산균</span>
-	
-													<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-													<strong class="product_price"><span>15,500</span>원</strong>
-		
-													<div class="product_btn">
-														<button class="minus">빼기 버튼</button>
-														<span><input type="number" value="0" maxLength="3"></span>
-														<button class="plus">더하기 버튼</button>
-													</div>
-												</label>
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class="accordion_product_wrap">
-												<input id="chk_first_product02_7" type="checkbox">
-												<label for="chk_first_product02_7">
-													<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="프로바이오틱스 제품 썸네일">
-	
-													<span class="product_flag product_flag--pink">것모닝 유산균</span>
-	
-													<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-													<strong class="product_price"><span>15,500</span>원</strong>
-		
-													<div class="product_btn">
-														<button class="minus">빼기 버튼</button>
-														<span><input type="number" value="0" maxLength="3"></span>
-														<button class="plus">더하기 버튼</button>
-													</div>
-												</label>
-											</div>
-											<div class="accordion_product_wrap">
-												<input id="chk_first_product02_8" type="checkbox">
-												<label for="chk_first_product02_8">
-													<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="프로바이오틱스 제품 썸네일">
-	
-													<span class="product_flag product_flag--pink">것모닝 유산균</span>
-	
-													<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-													<strong class="product_price"><span>15,500</span>원</strong>
-		
-													<div class="product_btn">
-														<button class="minus">빼기 버튼</button>
-														<span><input type="number" value="0" maxLength="3"></span>
-														<button class="plus">더하기 버튼</button>
-													</div>
-												</label>
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class="accordion_product_wrap">
-												<input id="chk_first_product02_9" type="checkbox">
-												<label for="chk_first_product02_9">
-													<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="프로바이오틱스 제품 썸네일">
-	
-													<span class="product_flag product_flag--pink">것모닝 유산균</span>
-	
-													<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-													<strong class="product_price"><span>15,500</span>원</strong>
-		
-													<div class="product_btn">
-														<button class="minus">빼기 버튼</button>
-														<span><input type="number" value="0" maxLength="3"></span>
-														<button class="plus">더하기 버튼</button>
-													</div>
-												</label>
-											</div>
-											<div class="accordion_product_wrap">
-												<input id="chk_first_product02_10" type="checkbox">
-												<label for="chk_first_product02_10">
-													<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="프로바이오틱스 제품 썸네일">
-	
-													<span class="product_flag product_flag--pink">것모닝 유산균</span>
-	
-													<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-													<strong class="product_price"><span>15,500</span>원</strong>
-		
-													<div class="product_btn">
-														<button class="minus">빼기 버튼</button>
-														<span><input type="number" value="0" maxLength="3"></span>
-														<button class="plus">더하기 버튼</button>
-													</div>
-												</label>
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class="accordion_product_wrap">
-												<input id="chk_first_product02_11" type="checkbox">
-												<label for="chk_first_product02_11">
-													<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="프로바이오틱스 제품 썸네일">
-	
-													<span class="product_flag product_flag--pink">것모닝 유산균</span>
-	
-													<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-													<strong class="product_price"><span>15,500</span>원</strong>
-		
-													<div class="product_btn">
-														<button class="minus">빼기 버튼</button>
-														<span><input type="number" value="0" maxLength="3"></span>
-														<button class="plus">더하기 버튼</button>
-													</div>
-												</label>
-											</div>
-											<div class="accordion_product_wrap">
-												<input id="chk_first_product02_12" type="checkbox">
-												<label for="chk_first_product02_12">
-													<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="프로바이오틱스 제품 썸네일">
-	
-													<span class="product_flag product_flag--pink">것모닝 유산균</span>
-	
-													<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-													<strong class="product_price"><span>15,500</span>원</strong>
-		
-													<div class="product_btn">
-														<button class="minus">빼기 버튼</button>
-														<span><input type="number" value="0" maxLength="3"></span>
-														<button class="plus">더하기 버튼</button>
-													</div>
-												</label>
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class="accordion_product_wrap">
-												<input id="chk_first_product02_13" type="checkbox">
-												<label for="chk_first_product02_13">
-													<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="프로바이오틱스 제품 썸네일">
-
-													<span class="product_flag product_flag--pink">것모닝 유산균</span>
-
-													<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-												<strong class="product_price"><span>15,500</span>원</strong>
-	
-												<div class="product_btn">
-													<button class="minus">빼기 버튼</button>
-													<span><input type="number" value="0" maxLength="3"></span>
-													<button class="plus">더하기 버튼</button>
-												</div>
-												</label>
-											</div>
-											<div class="accordion_product_wrap">
-												<input id="chk_first_product02_14" type="checkbox">
-												<label for="chk_first_product02_14">
-													<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="프로바이오틱스 제품 썸네일">
-	
-													<span class="product_flag product_flag--pink">것모닝 유산균</span>
-	
-													<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-													<strong class="product_price"><span>15,500</span>원</strong>
-		
-													<div class="product_btn">
-														<button class="minus">빼기 버튼</button>
-														<span><input type="number" value="0" maxLength="3"></span>
-														<button class="plus">더하기 버튼</button>
-													</div>
-												</label>
-											</div>
-										</div>
-									</div>
-								</div>
-										
-								<div class="swiper-scrollbar"></div>
-								<div class="swiper-button-prev"></div>
-								<div class="swiper-button-next"></div>
-							</div>
-
-							<div class="accordion_btn_wrap">
-								<button onclick="accordionDirectionAction($(this))" class="accordion_prev_btn" type="button">이전 단계</button>
-								<button onclick="accordionDirectionAction($(this))" class="accordion_next_btn" type="button">다음 단계</button>
-							</div>
-						</div>
-					</div>
-
-					<div class="accordion_list last_step" data-index="3" data-name="추가 구성"><!-- 202405 것모닝 작업 - 초기셋팅 추가-->
-						<div class="accordion_header" onclick="accordionHeaderAction(3)"> <!-- 202405 것모닝 작업 - 아코디언 오픈 호출 시 파라미터 -->
-							<div class="accordion_title_wrap">
-								<p>
-									Step 03. 추가 구성을 선택하세요. (선택)
-								<span class="promotion_message">추가 혜택 증정</span>
-								</p>
-								<div class="accordion_info_wrap">
-									<!-- <span class="info_message">1개 이상의 제품을 선택해야 합니다.</span> --><!-- 202405 것모닝 작업 - 열렸을때 info message 케이스 -->
-									<!-- <span class="error_message">제품을 선택해주세요.</span> --><!-- 202405 것모닝 작업 - 에러 케이스 -->
-									<span class="chk_product_num"><span>0</span>개 제품 선택됨</span><!-- 202405 것모닝 작업 - 선택된 제품 개수 케이스 -->
-									<span class="chk_product_name">뉴트리 파이토 푸로틴 450g x 1, 뉴트리 파이토 푸로틴 900g x 1</span><!-- 202405 것모닝 작업 - 선택된 제품 이름 케이스 -->
-								</div>
-								<button type="button" class="accordion_button">토글버튼</button>
-							</div>
-						</div>
-						<div class="accordion_body">							
-							<div class="optional_info_wrap">
-								<p>뉴트리라이트 제품을 추가하시고, 10% PV UP 혜택을 함께 받아 보세요.</p>
-
-								<div class="optional_select_wrap">
-									<input type="radio" name="chk_optional_yn1" id="chk_optional01_1" value="optional_y" checked>
-									<label for="chk_optional01_1">추가 구성을 희망합니다.</label>
-
-									<input type="radio" name="chk_optional_yn1" id="chk_optional01_2" value=optional_n>
-									<label for="chk_optional01_2">추가 구성을 희망하지 않습니다.</label>
-								</div>
-							</div>
-
-							<div class="optional_category_wrap">
-								<ul>
-									<li><button type="button">전체 (<span>99</span>)</button></li>
-									<li><button type="button">기초 영양 (<span>36</span>)</button></li>
-									<li><button type="button">기능성 (<span>27</span>)</button></li>
-									<li><button type="button">어린이 (<span>4</span>)</button></li>
-									<li><button type="button">식품/음료 (<span>8</span>)</button></li>
-									<li><button type="button">바디키 (<span>8</span>)</button></li>
-									<li><button type="button">뉴트리라이트 선물세트 (<span>9</span>)</button></li>
-								</ul>
-							</div>
-
-							<div class="optional_tab">
+							<div class="accordion_body">
 								<div class="accordion_product_title_wrap">
-									<p>기초 영양 (<span>36</span>)</p>
+									<p>푸로틴 (<span>6</span>)</p>
 									<button type="button" class="product_reset_pc">초기화</button>
 								</div>
-								<div class="accordion_contents accordion_optional accordion_optional1_1">
-									<div class="accordion_swiper accordion_optional_swiper1_1 swiper">
+								<div class="accordion_contents accordion_protein">
+									<div class="accordion_swiper accordion_protein_swiper swiper">
 										<div class="swiper-wrapper">
-	
 											<div class="swiper-slide">
 												<div class="accordion_product_wrap">
-													<input id="chk_first_product03_1" type="checkbox">
-													<label for="chk_first_product03_1">
-														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+													<input id="chk_first_product01_1" name="step02" type="checkbox">
+													<label for="chk_first_product01_1">
+														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="프로틴 제품 썸네일">
 														
-														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-														<strong class="product_price"><span>15,500</span>원</strong>
+														<span class="product_flag">것모닝 푸로틴</span>
+														
+														<p class="product_name"><a href="#">뉴트리 파이토 푸로틴 하이드라 액티브</a></p>
+														<strong class="product_price"><span>99,999,999</span>원</strong>
 		
 														<div class="product_btn">
-															<button class="minus">빼기 버튼</button>
-															<span><input type="number" value="0" maxLength="3"></span>
-															<button class="plus">더하기 버튼</button>
+															<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+															<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+															<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
 														</div>
 													</label>
 												</div>
 											</div>
 											<div class="swiper-slide">
 												<div class="accordion_product_wrap">
-													<input id="chk_first_product03_2" type="checkbox">
-													<label for="chk_first_product03_2">
-														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
-														
-														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+													<input id="chk_first_product01_2" name="step02" type="checkbox">
+													<label for="chk_first_product01_2">
+														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="프로틴 제품 썸네일">
+		
+														<span class="product_flag">것모닝 푸로틴</span>
+		
+														<p class="product_name"><a href="#">밸런스위드인365 (30포) 222222</a></p>
 														<strong class="product_price"><span>15,500</span>원</strong>
 		
 														<div class="product_btn">
-															<button class="minus">빼기 버튼</button>
-															<span><input type="number" value="0" maxLength="3"></span>
-															<button class="plus">더하기 버튼</button>
+															<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+															<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+															<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
 														</div>
 													</label>
 												</div>
 											</div>
 											<div class="swiper-slide">
 												<div class="accordion_product_wrap">
-													<input id="chk_first_product03_3" type="checkbox">
-													<label for="chk_first_product03_3">
-														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+													<input id="chk_first_product01_3" type="checkbox">
+													<label for="chk_first_product01_3">
+														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="프로틴 제품 썸네일">
+													
+														<span class="product_flag">것모닝 푸로틴</span>	
+		
+														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+														<strong class="product_price"><span>15,500</span>원</strong>
+			
+														<div class="product_btn">
+															<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+															<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+															<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+														</div>
+													</label>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="accordion_product_wrap">
+													<input id="chk_first_product01_4" type="checkbox">
+													<label for="chk_first_product01_4">
+														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="프로틴 제품 썸네일">
+		
+														<span class="product_flag">것모닝 푸로틴</span>
+		
+														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+														<strong class="product_price"><span>15,500</span>원</strong>
+		
+														<div class="product_btn">
+															<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+															<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+															<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+														</div>
+													</label>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="accordion_product_wrap">
+													<input id="chk_first_product01_5" type="checkbox">
+													<label for="chk_first_product01_5">
+														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="프로틴 제품 썸네일">
+		
+														<span class="product_flag">것모닝 푸로틴</span>
+		
+														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+														<strong class="product_price"><span>15,500</span>원</strong>
+		
+														<div class="product_btn">
+															<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+															<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+															<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+														</div>
+													</label>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="accordion_product_wrap">
+													<input id="chk_first_product01_6" type="checkbox">
+													<label for="chk_first_product01_6">
+														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="프로틴 제품 썸네일">
+		
+														<span class="product_flag">것모닝 푸로틴</span>
+		
+														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+														<strong class="product_price"><span>15,500</span>원</strong>
+			
+														<div class="product_btn">
+															<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+															<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+															<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+														</div>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+											
+									<div class="swiper-scrollbar"></div>
+									<div class="swiper-button-prev"></div>
+									<div class="swiper-button-next"></div>
+								</div>
+								
+								<div class="accordion_btn_wrap">
+									<!-- 비활성화 케이스 -->
+									<!-- <button class="accordion_next_btn" type="button" disabled>다음 단계</button -->
+									<button onclick="accordionDirectionAction($(this))" class="accordion_next_btn" type="button">다음 단계</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="accordion_list" data-index="2" data-name="유산균"><!-- 202406 것모닝 추가 수정 - 초기셋팅 추가-->
+							<div class="accordion_header" onclick="accordionHeaderAction(2)"> <!-- 202406 것모닝 추가 수정 - 아코디언 오픈 호출 시 파라미터 -->
+								<div class="accordion_title_wrap">
+									<p>Step 02. 유산균을 선택하세요.</p><!-- 202406 것모닝 추가 수정 - Step 02로 변경 -->
+									<div class="accordion_info_wrap">
+										<!-- <span class="info_message">1개 이상의 제품을 선택해야 합니다.</span> --><!-- 202405 것모닝 작업 - 열렸을때 info message 케이스 -->
+										<!-- <span class="error_message">제품을 선택해주세요.</span> --><!-- 202405 것모닝 작업 - 에러 케이스 -->
+										<span class="chk_product_num"><span>0</span>개 제품 선택됨</span><!-- 202405 것모닝 작업 - 선택된 제품 개수 케이스 -->
+										<!--<span class="chk_product_name">뉴트리 파이토 푸로틴 450g x 1, 뉴트리 파이토 푸로틴 900g x 1</span>--><!-- 202405 것모닝 작업 - 선택된 제품 이름 케이스 -->
+									</div>
+									<button type="button" class="accordion_button">토글버튼</button>
+								</div>
+							</div>
+							<div class="accordion_body">
+								<div class="accordion_product_title_wrap">
+									<p>유산균 (<span>6</span>)</p>
+									<button type="button" class="product_reset_pc">초기화</button>
+								</div>
+
+								<div class="accordion_contents accordion_probiotics">
+									<div class="accordion_swiper accordion_probiotics_swiper swiper">
+										<div class="swiper-wrapper">
+
+											<div class="swiper-slide">
+												<div class="accordion_product_wrap">
+													<input id="chk_first_product02_1" type="checkbox">
+													<label for="chk_first_product02_1">
+														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="프로바이오틱스 제품 썸네일">
+		
+														<span class="product_flag product_flag--pink">것모닝 유산균</span>
+		
+														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+														<strong class="product_price"><span>15,500</span>원</strong>
+		
+														<div class="product_btn">
+															<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+															<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+															<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+														</div>
+													</label>
+												</div>
+
+												<div class="accordion_product_wrap">
+													<input id="chk_first_product02_2" type="checkbox">
+													<label for="chk_first_product02_2">
+														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="프로바이오틱스 제품 썸네일">
+		
+														<span class="product_flag product_flag--pink">것모닝 유산균</span>
+		
+														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+														<strong class="product_price"><span>15,500</span>원</strong>
+		
+														<div class="product_btn">
+															<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+															<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+															<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+														</div>
+													</label>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="accordion_product_wrap">
+													<input id="chk_first_product02_3" type="checkbox">
+													<label for="chk_first_product02_3">
+														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="프로바이오틱스 제품 썸네일">
+		
+														<span class="product_flag product_flag--pink">것모닝 유산균</span>
+		
+														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+														<strong class="product_price"><span>15,500</span>원</strong>
+		
+														<div class="product_btn">
+															<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+															<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+															<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+														</div>
+													</label>
+												</div>
+
+												<div class="accordion_product_wrap">
+													<input id="chk_first_product02_4" type="checkbox">
+													<label for="chk_first_product02_4">
+														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="프로바이오틱스 제품 썸네일">
+		
+														<span class="product_flag product_flag--pink">것모닝 유산균</span>
+		
+														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+														<strong class="product_price"><span>15,500</span>원</strong>
+		
+														<div class="product_btn">
+															<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+															<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+															<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+														</div>
+													</label>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="accordion_product_wrap">
+													<input id="chk_first_product02_5" type="checkbox">
+													<label for="chk_first_product02_5">
+														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="프로바이오틱스 제품 썸네일">
+		
+														<span class="product_flag product_flag--pink">것모닝 유산균</span>
+		
+														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+														<strong class="product_price"><span>15,500</span>원</strong>
+			
+														<div class="product_btn">
+															<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+															<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+															<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+														</div>
+													</label>
+												</div>
+												<div class="accordion_product_wrap">
+													<input id="chk_first_product02_6" type="checkbox">
+													<label for="chk_first_product02_6">
+														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="프로바이오틱스 제품 썸네일">
+		
+														<span class="product_flag product_flag--pink">것모닝 유산균</span>
+		
+														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+														<strong class="product_price"><span>15,500</span>원</strong>
+			
+														<div class="product_btn">
+															<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+															<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+															<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+														</div>
+													</label>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="accordion_product_wrap">
+													<input id="chk_first_product02_7" type="checkbox">
+													<label for="chk_first_product02_7">
+														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="프로바이오틱스 제품 썸네일">
+		
+														<span class="product_flag product_flag--pink">것모닝 유산균</span>
+		
+														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+														<strong class="product_price"><span>15,500</span>원</strong>
+			
+														<div class="product_btn">
+															<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+															<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+															<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+														</div>
+													</label>
+												</div>
+												<div class="accordion_product_wrap">
+													<input id="chk_first_product02_8" type="checkbox">
+													<label for="chk_first_product02_8">
+														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="프로바이오틱스 제품 썸네일">
+		
+														<span class="product_flag product_flag--pink">것모닝 유산균</span>
+		
+														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+														<strong class="product_price"><span>15,500</span>원</strong>
+			
+														<div class="product_btn">
+															<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+															<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+															<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+														</div>
+													</label>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="accordion_product_wrap">
+													<input id="chk_first_product02_9" type="checkbox">
+													<label for="chk_first_product02_9">
+														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="프로바이오틱스 제품 썸네일">
+		
+														<span class="product_flag product_flag--pink">것모닝 유산균</span>
+		
+														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+														<strong class="product_price"><span>15,500</span>원</strong>
+			
+														<div class="product_btn">
+															<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+															<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+															<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+														</div>
+													</label>
+												</div>
+												<div class="accordion_product_wrap">
+													<input id="chk_first_product02_10" type="checkbox">
+													<label for="chk_first_product02_10">
+														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="프로바이오틱스 제품 썸네일">
+		
+														<span class="product_flag product_flag--pink">것모닝 유산균</span>
+		
+														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+														<strong class="product_price"><span>15,500</span>원</strong>
+			
+														<div class="product_btn">
+															<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+															<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+															<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+														</div>
+													</label>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="accordion_product_wrap">
+													<input id="chk_first_product02_11" type="checkbox">
+													<label for="chk_first_product02_11">
+														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="프로바이오틱스 제품 썸네일">
+		
+														<span class="product_flag product_flag--pink">것모닝 유산균</span>
+		
+														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+														<strong class="product_price"><span>15,500</span>원</strong>
+			
+														<div class="product_btn">
+															<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+															<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+															<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+														</div>
+													</label>
+												</div>
+												<div class="accordion_product_wrap">
+													<input id="chk_first_product02_12" type="checkbox">
+													<label for="chk_first_product02_12">
+														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="프로바이오틱스 제품 썸네일">
+		
+														<span class="product_flag product_flag--pink">것모닝 유산균</span>
+		
+														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+														<strong class="product_price"><span>15,500</span>원</strong>
+			
+														<div class="product_btn">
+															<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+															<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+															<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+														</div>
+													</label>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="accordion_product_wrap">
+													<input id="chk_first_product02_13" type="checkbox">
+													<label for="chk_first_product02_13">
+														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="프로바이오틱스 제품 썸네일">
+
+														<span class="product_flag product_flag--pink">것모닝 유산균</span>
+
+														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+													<strong class="product_price"><span>15,500</span>원</strong>
+		
+													<div class="product_btn">
+														<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+														<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+														<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+													</div>
+													</label>
+												</div>
+												<div class="accordion_product_wrap">
+													<input id="chk_first_product02_14" type="checkbox">
+													<label for="chk_first_product02_14">
+														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="프로바이오틱스 제품 썸네일">
+		
+														<span class="product_flag product_flag--pink">것모닝 유산균</span>
+		
+														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+														<strong class="product_price"><span>15,500</span>원</strong>
+			
+														<div class="product_btn">
+															<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+															<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+															<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+														</div>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+											
+									<div class="swiper-scrollbar"></div>
+									<div class="swiper-button-prev"></div>
+									<div class="swiper-button-next"></div>
+								</div>
+
+								<div class="accordion_btn_wrap">
+									<button onclick="accordionDirectionAction($(this))" class="accordion_prev_btn" type="button">이전 단계</button>
+									<button onclick="accordionDirectionAction($(this))" class="accordion_next_btn" type="button">다음 단계</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="accordion_list last_step" data-index="3" data-name="추가 구성"><!-- 202406 것모닝 추가 수정 - 초기셋팅 추가-->
+							<div class="accordion_header" onclick="accordionHeaderAction(3)"> <!-- 202406 것모닝 추가 수정 - 아코디언 오픈 호출 시 파라미터 -->
+								<div class="accordion_title_wrap">
+									<p>
+										Step 03. 추가 구성을 선택하세요. (선택)
+									<span class="promotion_message">추가 혜택 증정</span>
+									</p><!-- 202406 것모닝 추가 수정 - Step 03으로 변경 -->
+									<div class="accordion_info_wrap">
+										<!-- <span class="info_message">1개 이상의 제품을 선택해야 합니다.</span> --><!-- 202405 것모닝 작업 - 열렸을때 info message 케이스 -->
+										<!-- <span class="error_message">제품을 선택해주세요.</span> --><!-- 202405 것모닝 작업 - 에러 케이스 -->
+										<span class="chk_product_num"><span>0</span>개 제품 선택됨</span><!-- 202405 것모닝 작업 - 선택된 제품 개수 케이스 -->
+										<span class="chk_product_name">뉴트리 파이토 푸로틴 450g x 1, 뉴트리 파이토 푸로틴 900g x 1</span><!-- 202405 것모닝 작업 - 선택된 제품 이름 케이스 -->
+									</div>
+									<button type="button" class="accordion_button">토글버튼</button>
+								</div>
+							</div>
+							<div class="accordion_body">							
+								<div class="optional_info_wrap">
+									<p>뉴트리라이트 제품을 추가하시고, 10% PV UP 혜택을 함께 받아 보세요.</p>
+
+									<div class="optional_select_wrap">
+										<input type="radio" name="chk_optional_yn1" id="chk_optional01_1" value="optional_y" checked>
+										<label for="chk_optional01_1">추가 구성을 희망합니다.</label>
+
+										<input type="radio" name="chk_optional_yn1" id="chk_optional01_2" value=optional_n>
+										<label for="chk_optional01_2">추가 구성을 희망하지 않습니다.</label>
+									</div>
+								</div>
+
+								<div class="optional_category_wrap">
+									<ul>
+										<li><button type="button">전체 (<span>99</span>)</button></li>
+										<li><button type="button">기초 영양 (<span>36</span>)</button></li>
+										<li><button type="button">기능성 (<span>27</span>)</button></li>
+										<li><button type="button">어린이 (<span>4</span>)</button></li>
+										<li><button type="button">식품/음료 (<span>8</span>)</button></li>
+										<li><button type="button">바디키 (<span>8</span>)</button></li>
+										<li><button type="button">뉴트리라이트 선물세트 (<span>9</span>)</button></li>
+									</ul>
+								</div>
+
+								<div class="optional_tab">
+									<div class="accordion_product_title_wrap">
+										<p>기초 영양 (<span>36</span>)</p>
+										<button type="button" class="product_reset_pc">초기화</button>
+									</div>
+									<div class="accordion_contents accordion_optional accordion_optional1_1">
+										<div class="accordion_swiper accordion_optional_swiper1_1 swiper">
+											<div class="swiper-wrapper">
+		
+												<div class="swiper-slide">
+													<div class="accordion_product_wrap">
+														<input id="chk_first_product03_1" type="checkbox">
+														<label for="chk_first_product03_1">
+															<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
 															
 															<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-														<strong class="product_price"><span>15,500</span>원</strong>
+															<strong class="product_price"><span>15,500</span>원</strong>
 			
-														<div class="product_btn">
-															<button class="minus">빼기 버튼</button>
-															<span><input type="number" value="0" maxLength="3"></span>
-															<button class="plus">더하기 버튼</button>
-														</div>
-													</label>
+															<div class="product_btn">
+																<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+																<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+																<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+															</div>
+														</label>
+													</div>
 												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="accordion_product_wrap">
-													<input id="chk_first_product03_4" type="checkbox">
-													<label for="chk_first_product03_4">
-														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
-	
-														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-														<strong class="product_price"><span>15,500</span>원</strong>
+												<div class="swiper-slide">
+													<div class="accordion_product_wrap">
+														<input id="chk_first_product03_2" type="checkbox">
+														<label for="chk_first_product03_2">
+															<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+															
+															<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+															<strong class="product_price"><span>15,500</span>원</strong>
+			
+															<div class="product_btn">
+																<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+																<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+																<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+															</div>
+														</label>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="accordion_product_wrap">
+														<input id="chk_first_product03_3" type="checkbox">
+														<label for="chk_first_product03_3">
+															<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+																
+																<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+															<strong class="product_price"><span>15,500</span>원</strong>
+				
+															<div class="product_btn">
+																<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+																<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+																<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+															</div>
+														</label>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="accordion_product_wrap">
+														<input id="chk_first_product03_4" type="checkbox">
+														<label for="chk_first_product03_4">
+															<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
 		
-														<div class="product_btn">
-															<button class="minus">빼기 버튼</button>
-															<span><input type="number" value="0" maxLength="3"></span>
-															<button class="plus">더하기 버튼</button>
-														</div>
-													</label>
+															<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+															<strong class="product_price"><span>15,500</span>원</strong>
+			
+															<div class="product_btn">
+																<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+																<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+																<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+															</div>
+														</label>
+													</div>
 												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="accordion_product_wrap">
-													<input id="chk_first_product03_5" type="checkbox">
-													<label for="chk_first_product03_5">
-														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
-	
-														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-														<strong class="product_price"><span>15,500</span>원</strong>
+												<div class="swiper-slide">
+													<div class="accordion_product_wrap">
+														<input id="chk_first_product03_5" type="checkbox">
+														<label for="chk_first_product03_5">
+															<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
 		
-														<div class="product_btn">
-															<button class="minus">빼기 버튼</button>
-															<span><input type="number" value="0" maxLength="3"></span>
-															<button class="plus">더하기 버튼</button>
-														</div>
-													</label>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="accordion_product_wrap">
-													<input id="chk_first_product03_6" type="checkbox">
-													<label for="chk_first_product03_6">
-														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
-														
-														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-														<strong class="product_price"><span>15,500</span>원</strong>
+															<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+															<strong class="product_price"><span>15,500</span>원</strong>
 			
-														<div class="product_btn">
-															<button class="minus">빼기 버튼</button>
-															<span><input type="number" value="0" maxLength="3"></span>
-															<button class="plus">더하기 버튼</button>
-														</div>
-													</label>
+															<div class="product_btn">
+																<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+																<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+																<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+															</div>
+														</label>
+													</div>
 												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="accordion_product_wrap">
-													<input id="chk_first_product03_7" type="checkbox">
-													<label for="chk_first_product03_7">
-														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
-														
-														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-														<strong class="product_price"><span>15,500</span>원</strong>
-			
-														<div class="product_btn">
-															<button class="minus">빼기 버튼</button>
-															<span><input type="number" value="0" maxLength="3"></span>
-															<button class="plus">더하기 버튼</button>
-														</div>
-													</label>
+												<div class="swiper-slide">
+													<div class="accordion_product_wrap">
+														<input id="chk_first_product03_6" type="checkbox">
+														<label for="chk_first_product03_6">
+															<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+															
+															<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+															<strong class="product_price"><span>15,500</span>원</strong>
+				
+															<div class="product_btn">
+																<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+																<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+																<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+															</div>
+														</label>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="accordion_product_wrap">
+														<input id="chk_first_product03_7" type="checkbox">
+														<label for="chk_first_product03_7">
+															<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+															
+															<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+															<strong class="product_price"><span>15,500</span>원</strong>
+				
+															<div class="product_btn">
+																<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+																<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+																<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+															</div>
+														</label>
+													</div>
 												</div>
 											</div>
 										</div>
+												
+										<div class="swiper-scrollbar"></div>
+										<div class="swiper-button-prev"></div>
+										<div class="swiper-button-next"></div>
 									</div>
-											
-									<div class="swiper-scrollbar"></div>
-									<div class="swiper-button-prev"></div>
-									<div class="swiper-button-next"></div>
-								</div>
-	
-								<div class="accordion_product_title_wrap">
-									<p>기능성 (<span>27</span>)</p>
-									<button type="button" class="product_reset_pc">초기화</button>
-								</div>
-								<div class="accordion_contents accordion_optional accordion_optional1_2">
-									<div class="accordion_swiper accordion_optional_swiper1_2 swiper">
-										<div class="swiper-wrapper">
-	
-											<div class="swiper-slide">
-												<div class="accordion_product_wrap">
-													<input id="chk_first_product04_1" type="checkbox">
-													<label for="chk_first_product04_1">
-														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
-														
-														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-														<strong class="product_price"><span>15,500</span>원</strong>
 		
-														<div class="product_btn">
-															<button class="minus">빼기 버튼</button>
-															<span><input type="number" value="0" maxLength="3"></span>
-															<button class="plus">더하기 버튼</button>
-														</div>
-													</label>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="accordion_product_wrap">
-													<input id="chk_first_product04_2" type="checkbox">
-													<label for="chk_first_product04_2">
-														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
-														
-														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-														<strong class="product_price"><span>15,500</span>원</strong>
+									<div class="accordion_product_title_wrap">
+										<p>기능성 (<span>27</span>)</p>
+										<button type="button" class="product_reset_pc">초기화</button>
+									</div>
+									<div class="accordion_contents accordion_optional accordion_optional1_2">
+										<div class="accordion_swiper accordion_optional_swiper1_2 swiper">
+											<div class="swiper-wrapper">
 		
-														<div class="product_btn">
-															<button class="minus">빼기 버튼</button>
-															<span><input type="number" value="0" maxLength="3"></span>
-															<button class="plus">더하기 버튼</button>
-														</div>
-													</label>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="accordion_product_wrap">
-													<input id="chk_first_product04_3" type="checkbox">
-													<label for="chk_first_product04_3">
-														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
-														
-														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-														<strong class="product_price"><span>15,500</span>원</strong>
+												<div class="swiper-slide">
+													<div class="accordion_product_wrap">
+														<input id="chk_first_product04_1" type="checkbox">
+														<label for="chk_first_product04_1">
+															<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+															
+															<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+															<strong class="product_price"><span>15,500</span>원</strong>
 			
-														<div class="product_btn">
-															<button class="minus">빼기 버튼</button>
-															<span><input type="number" value="0" maxLength="3"></span>
-															<button class="plus">더하기 버튼</button>
-														</div>
-													</label>
+															<div class="product_btn">
+																<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+																<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+																<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+															</div>
+														</label>
+													</div>
 												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="accordion_product_wrap">
-													<input id="chk_first_product04_4" type="checkbox">
-													<label for="chk_first_product04_4">
-														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
-														
-														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-														<strong class="product_price"><span>15,500</span>원</strong>
-		
-														<div class="product_btn">
-															<button class="minus">빼기 버튼</button>
-															<span><input type="number" value="0" maxLength="3"></span>
-															<button class="plus">더하기 버튼</button>
-														</div>
-													</label>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="accordion_product_wrap">
-													<input id="chk_first_product04_5" type="checkbox">
-													<label for="chk_first_product04_5">
-														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
-														
-														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-														<strong class="product_price"><span>15,500</span>원</strong>
-		
-														<div class="product_btn">
-															<button class="minus">빼기 버튼</button>
-															<span><input type="number" value="0" maxLength="3"></span>
-															<button class="plus">더하기 버튼</button>
-														</div>
-													</label>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="accordion_product_wrap">
-													<input id="chk_first_product04_6" type="checkbox">
-													<label for="chk_first_product04_6">
-														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
-		
-														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-														<strong class="product_price"><span>15,500</span>원</strong>
+												<div class="swiper-slide">
+													<div class="accordion_product_wrap">
+														<input id="chk_first_product04_2" type="checkbox">
+														<label for="chk_first_product04_2">
+															<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+															
+															<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+															<strong class="product_price"><span>15,500</span>원</strong>
 			
-														<div class="product_btn">
-															<button class="minus">빼기 버튼</button>
-															<span><input type="number" value="0" maxLength="3"></span>
-															<button class="plus">더하기 버튼</button>
-														</div>
-													</label>
+															<div class="product_btn">
+																<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+																<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+																<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+															</div>
+														</label>
+													</div>
 												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="accordion_product_wrap">
-													<input id="chk_first_product04_7" type="checkbox">
-													<label for="chk_first_product04_7">
-														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
-														
-														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-														<strong class="product_price"><span>15,500</span>원</strong>
+												<div class="swiper-slide">
+													<div class="accordion_product_wrap">
+														<input id="chk_first_product04_3" type="checkbox">
+														<label for="chk_first_product04_3">
+															<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+															
+															<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+															<strong class="product_price"><span>15,500</span>원</strong>
+				
+															<div class="product_btn">
+																<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+																<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+																<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+															</div>
+														</label>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="accordion_product_wrap">
+														<input id="chk_first_product04_4" type="checkbox">
+														<label for="chk_first_product04_4">
+															<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+															
+															<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+															<strong class="product_price"><span>15,500</span>원</strong>
 			
-														<div class="product_btn">
-															<button class="minus">빼기 버튼</button>
-															<span><input type="number" value="0" maxLength="3"></span>
-															<button class="plus">더하기 버튼</button>
-														</div>
-													</label>
+															<div class="product_btn">
+																<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+																<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+																<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+															</div>
+														</label>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="accordion_product_wrap">
+														<input id="chk_first_product04_5" type="checkbox">
+														<label for="chk_first_product04_5">
+															<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+															
+															<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+															<strong class="product_price"><span>15,500</span>원</strong>
+			
+															<div class="product_btn">
+																<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+																<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+																<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+															</div>
+														</label>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="accordion_product_wrap">
+														<input id="chk_first_product04_6" type="checkbox">
+														<label for="chk_first_product04_6">
+															<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+			
+															<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+															<strong class="product_price"><span>15,500</span>원</strong>
+				
+															<div class="product_btn">
+																<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+																<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+																<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+															</div>
+														</label>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="accordion_product_wrap">
+														<input id="chk_first_product04_7" type="checkbox">
+														<label for="chk_first_product04_7">
+															<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+															
+															<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+															<strong class="product_price"><span>15,500</span>원</strong>
+				
+															<div class="product_btn">
+																<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+																<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+																<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+															</div>
+														</label>
+													</div>
 												</div>
 											</div>
 										</div>
+												
+										<div class="swiper-scrollbar"></div>
+										<div class="swiper-button-prev"></div>
+										<div class="swiper-button-next"></div>
 									</div>
-											
-									<div class="swiper-scrollbar"></div>
-									<div class="swiper-button-prev"></div>
-									<div class="swiper-button-next"></div>
-								</div>
-	
-								<div class="accordion_product_title_wrap">
-									<p>어린이 (<span>4</span>)</p>
-									<button type="button" class="product_reset_pc">초기화</button>
-								</div>
-								<div class="accordion_contents accordion_optional accordion_optional1_3">
-									<div class="accordion_swiper accordion_optional_swiper1_3 swiper">
-										<div class="swiper-wrapper">
-	
-											<div class="swiper-slide">
-												<div class="accordion_product_wrap">
-													<input id="chk_first_product05_1" type="checkbox">
-													<label for="chk_first_product05_1">
-														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
-														
-														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-														<strong class="product_price"><span>15,500</span>원</strong>
-			
-														<div class="product_btn">
-															<button class="minus">빼기 버튼</button>
-															<span><input type="number" value="0" maxLength="3"></span>
-															<button class="plus">더하기 버튼</button>
-														</div>
-													</label>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="accordion_product_wrap">
-													<input id="chk_first_product05_2" type="checkbox">
-													<label for="chk_first_product05_2">
-														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
-														
-														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-														<strong class="product_price"><span>15,500</span>원</strong>
 		
-														<div class="product_btn">
-															<button class="minus">빼기 버튼</button>
-															<span><input type="number" value="0" maxLength="3"></span>
-															<button class="plus">더하기 버튼</button>
-														</div>
-													</label>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="accordion_product_wrap">
-													<input id="chk_first_product05_3" type="checkbox">
-													<label for="chk_first_product05_3">
-														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
-														
-														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-														<strong class="product_price"><span>15,500</span>원</strong>
-			
-														<div class="product_btn">
-															<button class="minus">빼기 버튼</button>
-															<span><input type="number" value="0" maxLength="3"></span>
-															<button class="plus">더하기 버튼</button>
-														</div>
-													</label>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="accordion_product_wrap">
-													<input id="chk_first_product05_4" type="checkbox">
-													<label for="chk_first_product05_4">
-														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
-														
-														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-														<strong class="product_price"><span>15,500</span>원</strong>
+									<div class="accordion_product_title_wrap">
+										<p>어린이 (<span>4</span>)</p>
+										<button type="button" class="product_reset_pc">초기화</button>
+									</div>
+									<div class="accordion_contents accordion_optional accordion_optional1_3">
+										<div class="accordion_swiper accordion_optional_swiper1_3 swiper">
+											<div class="swiper-wrapper">
 		
-														<div class="product_btn">
-															<button class="minus">빼기 버튼</button>
-															<span><input type="number" value="0" maxLength="3"></span>
-															<button class="plus">더하기 버튼</button>
-														</div>
-													</label>
+												<div class="swiper-slide">
+													<div class="accordion_product_wrap">
+														<input id="chk_first_product05_1" type="checkbox">
+														<label for="chk_first_product05_1">
+															<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+															
+															<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+															<strong class="product_price"><span>15,500</span>원</strong>
+				
+															<div class="product_btn">
+																<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+																<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+																<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+															</div>
+														</label>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="accordion_product_wrap">
+														<input id="chk_first_product05_2" type="checkbox">
+														<label for="chk_first_product05_2">
+															<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+															
+															<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+															<strong class="product_price"><span>15,500</span>원</strong>
+			
+															<div class="product_btn">
+																<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+																<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+																<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+															</div>
+														</label>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="accordion_product_wrap">
+														<input id="chk_first_product05_3" type="checkbox">
+														<label for="chk_first_product05_3">
+															<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+															
+															<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+															<strong class="product_price"><span>15,500</span>원</strong>
+				
+															<div class="product_btn">
+																<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+																<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+																<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+															</div>
+														</label>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="accordion_product_wrap">
+														<input id="chk_first_product05_4" type="checkbox">
+														<label for="chk_first_product05_4">
+															<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+															
+															<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+															<strong class="product_price"><span>15,500</span>원</strong>
+			
+															<div class="product_btn">
+																<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+																<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+																<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+															</div>
+														</label>
+													</div>
 												</div>
 											</div>
 										</div>
+												
+										<div class="swiper-scrollbar"></div>
+										<div class="swiper-button-prev"></div>
+										<div class="swiper-button-next"></div>
 									</div>
-											
-									<div class="swiper-scrollbar"></div>
-									<div class="swiper-button-prev"></div>
-									<div class="swiper-button-next"></div>
-								</div>
-								
-								<div class="accordion_product_title_wrap">
-									<p>식품/음료 (<span>8</span>)</p>
-									<button type="button" class="product_reset_pc">초기화</button>
-								</div>
-								<div class="accordion_contents accordion_optional accordion_optional1_4">
-									<div class="accordion_swiper accordion_optional_swiper1_4 swiper">
-										<div class="swiper-wrapper">
-	
-											<div class="swiper-slide">
-												<div class="accordion_product_wrap">
-													<input id="chk_first_product06_1" type="checkbox">
-													<label for="chk_first_product06_1">
-														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
-														
-														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-														<strong class="product_price"><span>15,500</span>원</strong>
+									
+									<div class="accordion_product_title_wrap">
+										<p>식품/음료 (<span>8</span>)</p>
+										<button type="button" class="product_reset_pc">초기화</button>
+									</div>
+									<div class="accordion_contents accordion_optional accordion_optional1_4">
+										<div class="accordion_swiper accordion_optional_swiper1_4 swiper">
+											<div class="swiper-wrapper">
 		
-														<div class="product_btn">
-															<button class="minus">빼기 버튼</button>
-															<span><input type="number" value="0" maxLength="3"></span>
-															<button class="plus">더하기 버튼</button>
-														</div>
-													</label>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="accordion_product_wrap">
-													<input id="chk_first_product06_2" type="checkbox">
-													<label for="chk_first_product06_2">
-														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
-														
-														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-														<strong class="product_price"><span>15,500</span>원</strong>
-		
-														<div class="product_btn">
-															<button class="minus">빼기 버튼</button>
-															<span><input type="number" value="0" maxLength="3"></span>
-															<button class="plus">더하기 버튼</button>
-														</div>
-													</label>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="accordion_product_wrap">
-													<input id="chk_first_product06_3" type="checkbox">
-													<label for="chk_first_product06_3">
-														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
-														
-														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-														<strong class="product_price"><span>15,500</span>원</strong>
+												<div class="swiper-slide">
+													<div class="accordion_product_wrap">
+														<input id="chk_first_product06_1" type="checkbox">
+														<label for="chk_first_product06_1">
+															<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+															
+															<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+															<strong class="product_price"><span>15,500</span>원</strong>
 			
-														<div class="product_btn">
-															<button class="minus">빼기 버튼</button>
-															<span><input type="number" value="0" maxLength="3"></span>
-															<button class="plus">더하기 버튼</button>
-														</div>
-													</label>
+															<div class="product_btn">
+																<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+																<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+																<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+															</div>
+														</label>
+													</div>
 												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="accordion_product_wrap">
-													<input id="chk_first_product06_4" type="checkbox">
-													<label for="chk_first_product06_4">
-														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
-														
-														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-														<strong class="product_price"><span>15,500</span>원</strong>
-		
-														<div class="product_btn">
-															<button class="minus">빼기 버튼</button>
-															<span><input type="number" value="0" maxLength="3"></span>
-															<button class="plus">더하기 버튼</button>
-														</div>
-													</label>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="accordion_product_wrap">
-													<input id="chk_first_product06_5" type="checkbox">
-													<label for="chk_first_product06_5">
-														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
-														
-														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-														<strong class="product_price"><span>15,500</span>원</strong>
-		
-														<div class="product_btn">
-															<button class="minus">빼기 버튼</button>
-															<span><input type="number" value="0" maxLength="3"></span>
-															<button class="plus">더하기 버튼</button>
-														</div>
-													</label>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="accordion_product_wrap">
-													<input id="chk_first_product06_6" type="checkbox">
-													<label for="chk_first_product06_6">
-														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
-														
-														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-														<strong class="product_price"><span>15,500</span>원</strong>
+												<div class="swiper-slide">
+													<div class="accordion_product_wrap">
+														<input id="chk_first_product06_2" type="checkbox">
+														<label for="chk_first_product06_2">
+															<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+															
+															<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+															<strong class="product_price"><span>15,500</span>원</strong>
 			
-														<div class="product_btn">
-															<button class="minus">빼기 버튼</button>
-															<span><input type="number" value="0" maxLength="3"></span>
-															<button class="plus">더하기 버튼</button>
-														</div>
-													</label>
+															<div class="product_btn">
+																<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+																<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+																<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+															</div>
+														</label>
+													</div>
 												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="accordion_product_wrap">
-													<input id="chk_first_product06_7" type="checkbox">
-													<label for="chk_first_product06_7">
-														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
-														
-														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-														<strong class="product_price"><span>15,500</span>원</strong>
+												<div class="swiper-slide">
+													<div class="accordion_product_wrap">
+														<input id="chk_first_product06_3" type="checkbox">
+														<label for="chk_first_product06_3">
+															<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+															
+															<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+															<strong class="product_price"><span>15,500</span>원</strong>
+				
+															<div class="product_btn">
+																<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+																<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+																<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+															</div>
+														</label>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="accordion_product_wrap">
+														<input id="chk_first_product06_4" type="checkbox">
+														<label for="chk_first_product06_4">
+															<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+															
+															<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+															<strong class="product_price"><span>15,500</span>원</strong>
 			
-														<div class="product_btn">
-															<button class="minus">빼기 버튼</button>
-															<span><input type="number" value="0" maxLength="3"></span>
-															<button class="plus">더하기 버튼</button>
-														</div>
-													</label>
+															<div class="product_btn">
+																<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+																<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+																<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+															</div>
+														</label>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="accordion_product_wrap">
+														<input id="chk_first_product06_5" type="checkbox">
+														<label for="chk_first_product06_5">
+															<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+															
+															<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+															<strong class="product_price"><span>15,500</span>원</strong>
+			
+															<div class="product_btn">
+																<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+																<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+																<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+															</div>
+														</label>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="accordion_product_wrap">
+														<input id="chk_first_product06_6" type="checkbox">
+														<label for="chk_first_product06_6">
+															<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+															
+															<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+															<strong class="product_price"><span>15,500</span>원</strong>
+				
+															<div class="product_btn">
+																<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+																<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+																<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+															</div>
+														</label>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="accordion_product_wrap">
+														<input id="chk_first_product06_7" type="checkbox">
+														<label for="chk_first_product06_7">
+															<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+															
+															<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+															<strong class="product_price"><span>15,500</span>원</strong>
+				
+															<div class="product_btn">
+																<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+																<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+																<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+															</div>
+														</label>
+													</div>
 												</div>
 											</div>
 										</div>
+												
+										<div class="swiper-scrollbar"></div>
+										<div class="swiper-button-prev"></div>
+										<div class="swiper-button-next"></div>
 									</div>
-											
-									<div class="swiper-scrollbar"></div>
-									<div class="swiper-button-prev"></div>
-									<div class="swiper-button-next"></div>
-								</div>
-								
-								<div class="accordion_product_title_wrap">
-									<p>바디키 (<span>8</span>)</p>
-									<button type="button" class="product_reset_pc">초기화</button>
-								</div>
-								<div class="accordion_contents accordion_optional accordion_optional1_5">
-									<div class="accordion_swiper accordion_optional_swiper1_5 swiper">
-										<div class="swiper-wrapper">
-	
-											<div class="swiper-slide">
-												<div class="accordion_product_wrap">
-													<input id="chk_first_product07_1" type="checkbox">
-													<label for="chk_first_product07_1">
-														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
-														
-														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-														<strong class="product_price"><span>15,500</span>원</strong>
+									
+									<div class="accordion_product_title_wrap">
+										<p>바디키 (<span>8</span>)</p>
+										<button type="button" class="product_reset_pc">초기화</button>
+									</div>
+									<div class="accordion_contents accordion_optional accordion_optional1_5">
+										<div class="accordion_swiper accordion_optional_swiper1_5 swiper">
+											<div class="swiper-wrapper">
 		
-														<div class="product_btn">
-															<button class="minus">빼기 버튼</button>
-															<span><input type="number" value="0" maxLength="3"></span>
-															<button class="plus">더하기 버튼</button>
-														</div>
-													</label>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="accordion_product_wrap">
-													<input id="chk_first_product07_2" type="checkbox">
-													<label for="chk_first_product07_2">
-														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
-														
-														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-														<strong class="product_price"><span>15,500</span>원</strong>
-		
-														<div class="product_btn">
-															<button class="minus">빼기 버튼</button>
-															<span><input type="number" value="0" maxLength="3"></span>
-															<button class="plus">더하기 버튼</button>
-														</div>
-													</label>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="accordion_product_wrap">
-													<input id="chk_first_product07_3" type="checkbox">
-													<label for="chk_first_product07_3">
-														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
-														
-														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-														<strong class="product_price"><span>15,500</span>원</strong>
+												<div class="swiper-slide">
+													<div class="accordion_product_wrap">
+														<input id="chk_first_product07_1" type="checkbox">
+														<label for="chk_first_product07_1">
+															<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+															
+															<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+															<strong class="product_price"><span>15,500</span>원</strong>
 			
-														<div class="product_btn">
-															<button class="minus">빼기 버튼</button>
-															<span><input type="number" value="0" maxLength="3"></span>
-															<button class="plus">더하기 버튼</button>
-														</div>
-													</label>
+															<div class="product_btn">
+																<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+																<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+																<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+															</div>
+														</label>
+													</div>
 												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="accordion_product_wrap">
-													<input id="chk_first_product07_4" type="checkbox">
-													<label for="chk_first_product07_4">
-														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
-														
-														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-														<strong class="product_price"><span>15,500</span>원</strong>
-		
-														<div class="product_btn">
-															<button class="minus">빼기 버튼</button>
-															<span><input type="number" value="0" maxLength="3"></span>
-															<button class="plus">더하기 버튼</button>
-														</div>
-													</label>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="accordion_product_wrap">
-													<input id="chk_first_product07_5" type="checkbox">
-													<label for="chk_first_product07_5">
-														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
-	
-														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-														<strong class="product_price"><span>15,500</span>원</strong>
-		
-														<div class="product_btn">
-															<button class="minus">빼기 버튼</button>
-															<span><input type="number" value="0" maxLength="3"></span>
-															<button class="plus">더하기 버튼</button>
-														</div>
-													</label>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="accordion_product_wrap">
-													<input id="chk_first_product07_6" type="checkbox">
-													<label for="chk_first_product07_6">
-														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
-														
-														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-														<strong class="product_price"><span>15,500</span>원</strong>
+												<div class="swiper-slide">
+													<div class="accordion_product_wrap">
+														<input id="chk_first_product07_2" type="checkbox">
+														<label for="chk_first_product07_2">
+															<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+															
+															<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+															<strong class="product_price"><span>15,500</span>원</strong>
 			
-														<div class="product_btn">
-															<button class="minus">빼기 버튼</button>
-															<span><input type="number" value="0" maxLength="3"></span>
-															<button class="plus">더하기 버튼</button>
-														</div>
-													</label>
+															<div class="product_btn">
+																<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+																<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+																<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+															</div>
+														</label>
+													</div>
 												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="accordion_product_wrap">
-													<input id="chk_first_product07_7" type="checkbox">
-													<label for="chk_first_product07_7">
-														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
-														
-														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-														<strong class="product_price"><span>15,500</span>원</strong>
+												<div class="swiper-slide">
+													<div class="accordion_product_wrap">
+														<input id="chk_first_product07_3" type="checkbox">
+														<label for="chk_first_product07_3">
+															<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+															
+															<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+															<strong class="product_price"><span>15,500</span>원</strong>
+				
+															<div class="product_btn">
+																<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+																<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+																<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+															</div>
+														</label>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="accordion_product_wrap">
+														<input id="chk_first_product07_4" type="checkbox">
+														<label for="chk_first_product07_4">
+															<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+															
+															<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+															<strong class="product_price"><span>15,500</span>원</strong>
 			
-														<div class="product_btn">
-															<button class="minus">빼기 버튼</button>
-															<span><input type="number" value="0" maxLength="3"></span>
-															<button class="plus">더하기 버튼</button>
-														</div>
-													</label>
+															<div class="product_btn">
+																<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+																<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+																<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+															</div>
+														</label>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="accordion_product_wrap">
+														<input id="chk_first_product07_5" type="checkbox">
+														<label for="chk_first_product07_5">
+															<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+		
+															<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+															<strong class="product_price"><span>15,500</span>원</strong>
+			
+															<div class="product_btn">
+																<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+																<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+																<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+															</div>
+														</label>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="accordion_product_wrap">
+														<input id="chk_first_product07_6" type="checkbox">
+														<label for="chk_first_product07_6">
+															<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+															
+															<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+															<strong class="product_price"><span>15,500</span>원</strong>
+				
+															<div class="product_btn">
+																<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+																<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+																<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+															</div>
+														</label>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="accordion_product_wrap">
+														<input id="chk_first_product07_7" type="checkbox">
+														<label for="chk_first_product07_7">
+															<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+															
+															<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+															<strong class="product_price"><span>15,500</span>원</strong>
+				
+															<div class="product_btn">
+																<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+																<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+																<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+															</div>
+														</label>
+													</div>
 												</div>
 											</div>
 										</div>
+												
+										<div class="swiper-scrollbar"></div>
+										<div class="swiper-button-prev"></div>
+										<div class="swiper-button-next"></div>
 									</div>
-											
-									<div class="swiper-scrollbar"></div>
-									<div class="swiper-button-prev"></div>
-									<div class="swiper-button-next"></div>
-								</div>
-								
-								<div class="accordion_product_title_wrap">
-									<p>뉴트리라이트 선물세트 (<span>9</span>)</p>
-									<button type="button" class="product_reset_pc">초기화</button>
-								</div>
-								<div class="accordion_contents accordion_optional accordion_optional1_6">
-									<div class="accordion_swiper accordion_optional_swiper1_6 swiper">
-										<div class="swiper-wrapper">
-	
-											<div class="swiper-slide">
-												<div class="accordion_product_wrap">
-													<input id="chk_first_product08_1" type="checkbox">
-													<label for="chk_first_product08_1">
-														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
-														
-														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-														<strong class="product_price"><span>15,500</span>원</strong>
+									
+									<div class="accordion_product_title_wrap">
+										<p>뉴트리라이트 선물세트 (<span>9</span>)</p>
+										<button type="button" class="product_reset_pc">초기화</button>
+									</div>
+									<div class="accordion_contents accordion_optional accordion_optional1_6">
+										<div class="accordion_swiper accordion_optional_swiper1_6 swiper">
+											<div class="swiper-wrapper">
 		
-														<div class="product_btn">
-															<button class="minus">빼기 버튼</button>
-															<span><input type="number" value="0" maxLength="3"></span>
-															<button class="plus">더하기 버튼</button>
-														</div>
-													</label>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="accordion_product_wrap">
-													<input id="chk_first_product08_2" type="checkbox">
-													<label for="chk_first_product08_2">
-														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
-														
-														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-														<strong class="product_price"><span>15,500</span>원</strong>
-		
-														<div class="product_btn">
-															<button class="minus">빼기 버튼</button>
-															<span><input type="number" value="0" maxLength="3"></span>
-															<button class="plus">더하기 버튼</button>
-														</div>
-													</label>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="accordion_product_wrap">
-													<input id="chk_first_product08_3" type="checkbox">
-													<label for="chk_first_product08_3">
-														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
-														
-														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-														<strong class="product_price"><span>15,500</span>원</strong>
+												<div class="swiper-slide">
+													<div class="accordion_product_wrap">
+														<input id="chk_first_product08_1" type="checkbox">
+														<label for="chk_first_product08_1">
+															<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+															
+															<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+															<strong class="product_price"><span>15,500</span>원</strong>
 			
-														<div class="product_btn">
-															<button class="minus">빼기 버튼</button>
-															<span><input type="number" value="0" maxLength="3"></span>
-															<button class="plus">더하기 버튼</button>
-														</div>
-													</label>
+															<div class="product_btn">
+																<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+																<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+																<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+															</div>
+														</label>
+													</div>
 												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="accordion_product_wrap">
-													<input id="chk_first_product08_4" type="checkbox">
-													<label for="chk_first_product08_4">
-														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
-														
-														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-														<strong class="product_price"><span>15,500</span>원</strong>
-		
-														<div class="product_btn">
-															<button class="minus">빼기 버튼</button>
-															<span><input type="number" value="0" maxLength="3"></span>
-															<button class="plus">더하기 버튼</button>
-														</div>
-													</label>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="accordion_product_wrap">
-													<input id="chk_first_product08_5" type="checkbox">
-													<label for="chk_first_product08_5">
-														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
-	
-														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-														<strong class="product_price"><span>15,500</span>원</strong>
-		
-														<div class="product_btn">
-															<button class="minus">빼기 버튼</button>
-															<span><input type="number" value="0" maxLength="3"></span>
-															<button class="plus">더하기 버튼</button>
-														</div>
-													</label>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="accordion_product_wrap">
-													<input id="chk_first_product08_6" type="checkbox">
-													<label for="chk_first_product08_6">
-														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
-														
-														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-														<strong class="product_price"><span>15,500</span>원</strong>
+												<div class="swiper-slide">
+													<div class="accordion_product_wrap">
+														<input id="chk_first_product08_2" type="checkbox">
+														<label for="chk_first_product08_2">
+															<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+															
+															<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+															<strong class="product_price"><span>15,500</span>원</strong>
 			
-														<div class="product_btn">
-															<button class="minus">빼기 버튼</button>
-															<span><input type="number" value="0" maxLength="3"></span>
-															<button class="plus">더하기 버튼</button>
-														</div>
-													</label>
+															<div class="product_btn">
+																<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+																<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+																<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+															</div>
+														</label>
+													</div>
 												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="accordion_product_wrap">
-													<input id="chk_first_product08_7" type="checkbox">
-													<label for="chk_first_product08_7">
-														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
-														
-														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-														<strong class="product_price"><span>15,500</span>원</strong>
+												<div class="swiper-slide">
+													<div class="accordion_product_wrap">
+														<input id="chk_first_product08_3" type="checkbox">
+														<label for="chk_first_product08_3">
+															<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+															
+															<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+															<strong class="product_price"><span>15,500</span>원</strong>
+				
+															<div class="product_btn">
+																<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+																<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+																<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+															</div>
+														</label>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="accordion_product_wrap">
+														<input id="chk_first_product08_4" type="checkbox">
+														<label for="chk_first_product08_4">
+															<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+															
+															<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+															<strong class="product_price"><span>15,500</span>원</strong>
 			
-														<div class="product_btn">
-															<button class="minus">빼기 버튼</button>
-															<span><input type="number" value="0" maxLength="3"></span>
-															<button class="plus">더하기 버튼</button>
-														</div>
-													</label>
+															<div class="product_btn">
+																<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+																<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+																<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+															</div>
+														</label>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="accordion_product_wrap">
+														<input id="chk_first_product08_5" type="checkbox">
+														<label for="chk_first_product08_5">
+															<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+		
+															<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+															<strong class="product_price"><span>15,500</span>원</strong>
+			
+															<div class="product_btn">
+																<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+																<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+																<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+															</div>
+														</label>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="accordion_product_wrap">
+														<input id="chk_first_product08_6" type="checkbox">
+														<label for="chk_first_product08_6">
+															<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+															
+															<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+															<strong class="product_price"><span>15,500</span>원</strong>
+				
+															<div class="product_btn">
+																<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+																<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+																<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+															</div>
+														</label>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="accordion_product_wrap">
+														<input id="chk_first_product08_7" type="checkbox">
+														<label for="chk_first_product08_7">
+															<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+															
+															<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+															<strong class="product_price"><span>15,500</span>원</strong>
+				
+															<div class="product_btn">
+																<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+																<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+																<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+															</div>
+														</label>
+													</div>
 												</div>
 											</div>
 										</div>
+												
+										<div class="swiper-scrollbar"></div>
+										<div class="swiper-button-prev"></div>
+										<div class="swiper-button-next"></div>
 									</div>
-											
-									<div class="swiper-scrollbar"></div>
-									<div class="swiper-button-prev"></div>
-									<div class="swiper-button-next"></div>
+
+									<!-- 아코디언 마지막 Step 모바일 용 sorting -->
+									<div class="accordion_contents accordion_optional mo">
+										<div class="accordion_swiper swiper">
+											<div class="swiper-wrapper">
+		
+												<div class="swiper-slide">
+													<div class="accordion_product_wrap">
+														<input id="chk_mobile_product01_1" type="checkbox">
+														<label for="chk_mobile_product01_1">
+															<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+															
+															<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+															<strong class="product_price"><span>15,500</span>원</strong>
+			
+															<div class="product_btn">
+																<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+																<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+																<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+															</div>
+														</label>
+													</div>
+													<div class="accordion_product_wrap">
+														<input id="chk_mobile_product01_2" type="checkbox">
+														<label for="chk_mobile_product01_2">
+															<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+															
+															<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+															<strong class="product_price"><span>15,500</span>원</strong>
+			
+															<div class="product_btn">
+																<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+																<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+																<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+															</div>
+														</label>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="accordion_product_wrap">
+														<input id="chk_mobile_product01_3" type="checkbox">
+														<label for="chk_mobile_product01_3">
+															<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+															
+															<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+															<strong class="product_price"><span>15,500</span>원</strong>
+			
+															<div class="product_btn">
+																<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+																<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+																<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+															</div>
+														</label>
+													</div>
+													<div class="accordion_product_wrap">
+														<input id="chk_mobile_product01_4" type="checkbox">
+														<label for="chk_mobile_product01_4">
+															<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+															
+															<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+															<strong class="product_price"><span>15,500</span>원</strong>
+			
+															<div class="product_btn">
+																<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+																<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+																<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+															</div>
+														</label>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="accordion_product_wrap">
+														<input id="chk_mobile_product01_5" type="checkbox">
+														<label for="chk_mobile_product01_5">
+															<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+															
+															<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+															<strong class="product_price"><span>15,500</span>원</strong>
+				
+															<div class="product_btn">
+																<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+																<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+																<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+															</div>
+														</label>
+													</div>
+													<div class="accordion_product_wrap">
+														<input id="chk_mobile_product01_6" type="checkbox">
+														<label for="chk_mobile_product01_6">
+															<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+															
+															<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+															<strong class="product_price"><span>15,500</span>원</strong>
+				
+															<div class="product_btn">
+																<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+																<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+																<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+															</div>
+														</label>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="accordion_product_wrap">
+														<input id="chk_mobile_product01_7" type="checkbox">
+														<label for="chk_mobile_product01_7">
+															<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+															
+															<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+															<strong class="product_price"><span>15,500</span>원</strong>
+			
+															<div class="product_btn">
+																<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+																<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+																<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+															</div>
+														</label>
+													</div>
+													<div class="accordion_product_wrap">
+														<input id="chk_mobile_product01_8" type="checkbox">
+														<label for="chk_mobile_product01_8">
+															<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
+															
+															<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
+															<strong class="product_price"><span>15,500</span>원</strong>
+			
+															<div class="product_btn">
+																<button type="button" class="minus">빼기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가 -->
+																<span><input type="number" value="0" maxLength="1"></span><!-- 202406 것모닝 추가 수정 - input Max Length 1로 수정  -->
+																<button type="button" class="plus">더하기 버튼</button><!-- 202406 것모닝 추가 수정 - button type 추가  -->
+															</div>
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+												
+										<div class="swiper-scrollbar"></div>
+										<div class="swiper-button-prev"></div>
+										<div class="swiper-button-next"></div>
+									</div>
+									<!-- // 아코디언 마지막 Step 모바일 용 sorting -->
 								</div>
 
-								<!-- 아코디언 마지막 Step 모바일 용 sorting -->
-								<div class="accordion_contents accordion_optional mo">
-									<div class="accordion_swiper swiper">
-										<div class="swiper-wrapper">
-	
-											<div class="swiper-slide">
-												<div class="accordion_product_wrap">
-													<input id="chk_mobile_product01_1" type="checkbox">
-													<label for="chk_mobile_product01_1">
-														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
-														
-														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-														<strong class="product_price"><span>15,500</span>원</strong>
-		
-														<div class="product_btn">
-															<button class="minus">빼기 버튼</button>
-															<span><input type="number" value="0" maxLength="3"></span>
-															<button class="plus">더하기 버튼</button>
-														</div>
-													</label>
-												</div>
-												<div class="accordion_product_wrap">
-													<input id="chk_mobile_product01_2" type="checkbox">
-													<label for="chk_mobile_product01_2">
-														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
-														
-														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-														<strong class="product_price"><span>15,500</span>원</strong>
-		
-														<div class="product_btn">
-															<button class="minus">빼기 버튼</button>
-															<span><input type="number" value="0" maxLength="3"></span>
-															<button class="plus">더하기 버튼</button>
-														</div>
-													</label>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="accordion_product_wrap">
-													<input id="chk_mobile_product01_3" type="checkbox">
-													<label for="chk_mobile_product01_3">
-														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
-														
-														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-														<strong class="product_price"><span>15,500</span>원</strong>
-		
-														<div class="product_btn">
-															<button class="minus">빼기 버튼</button>
-															<span><input type="number" value="0" maxLength="3"></span>
-															<button class="plus">더하기 버튼</button>
-														</div>
-													</label>
-												</div>
-												<div class="accordion_product_wrap">
-													<input id="chk_mobile_product01_4" type="checkbox">
-													<label for="chk_mobile_product01_4">
-														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
-														
-														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-														<strong class="product_price"><span>15,500</span>원</strong>
-		
-														<div class="product_btn">
-															<button class="minus">빼기 버튼</button>
-															<span><input type="number" value="0" maxLength="3"></span>
-															<button class="plus">더하기 버튼</button>
-														</div>
-													</label>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="accordion_product_wrap">
-													<input id="chk_mobile_product01_5" type="checkbox">
-													<label for="chk_mobile_product01_5">
-														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
-														
-														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-														<strong class="product_price"><span>15,500</span>원</strong>
-			
-														<div class="product_btn">
-															<button class="minus">빼기 버튼</button>
-															<span><input type="number" value="0" maxLength="3"></span>
-															<button class="plus">더하기 버튼</button>
-														</div>
-													</label>
-												</div>
-												<div class="accordion_product_wrap">
-													<input id="chk_mobile_product01_6" type="checkbox">
-													<label for="chk_mobile_product01_6">
-														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
-														
-														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-														<strong class="product_price"><span>15,500</span>원</strong>
-			
-														<div class="product_btn">
-															<button class="minus">빼기 버튼</button>
-															<span><input type="number" value="0" maxLength="3"></span>
-															<button class="plus">더하기 버튼</button>
-														</div>
-													</label>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="accordion_product_wrap">
-													<input id="chk_mobile_product01_7" type="checkbox">
-													<label for="chk_mobile_product01_7">
-														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
-														
-														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-														<strong class="product_price"><span>15,500</span>원</strong>
-		
-														<div class="product_btn">
-															<button class="minus">빼기 버튼</button>
-															<span><input type="number" value="0" maxLength="3"></span>
-															<button class="plus">더하기 버튼</button>
-														</div>
-													</label>
-												</div>
-												<div class="accordion_product_wrap">
-													<input id="chk_mobile_product01_8" type="checkbox">
-													<label for="chk_mobile_product01_8">
-														<img src="/_ui/responsive/theme-blue/images/akl_plp/img_product_sample_01.png" alt="추가 구성 제품 썸네일">
-														
-														<p class="product_name"><a href="#">밸런스위드인365 (30포)</a></p>
-														<strong class="product_price"><span>15,500</span>원</strong>
-		
-														<div class="product_btn">
-															<button class="minus">빼기 버튼</button>
-															<span><input type="number" value="0" maxLength="3"></span>
-															<button class="plus">더하기 버튼</button>
-														</div>
-													</label>
-												</div>
-											</div>
-										</div>
-									</div>
-											
-									<div class="swiper-scrollbar"></div>
-									<div class="swiper-button-prev"></div>
-									<div class="swiper-button-next"></div>
+								<div class="accordion_btn_wrap">
+									<button onclick="accordionDirectionAction($(this))" class="accordion_prev_btn" type="button">이전 단계</button>
 								</div>
-								<!-- // 아코디언 마지막 Step 모바일 용 sorting -->
-							</div>
-
-							<div class="accordion_btn_wrap">
-								<button onclick="accordionDirectionAction($(this))" class="accordion_prev_btn" type="button">이전 단계</button>
 							</div>
 						</div>
 					</div>
-				</div>
 
-				<p class="product_notice">* 푸로틴, 유산균, 기타 뉴트리라이트 제품을 최대 100만원 까지 담을 수 있습니다.</p>
-			</div>
-			<!-- // 아코디언 영역 -->
+					<!-- 202406 것모닝 추가 수정 - 조건 02 컨테이너 삭제 -->
+					<!-- // 202406 것모닝 추가 수정 - 조건 02 컨테이너 삭제 -->
+					<p class="product_notice">* 푸로틴, 유산균, 기타 뉴트리라이트 제품을 최대 100만원 까지 담을 수 있습니다.</p>
+				</div>
+				<!-- // 아코디언 영역 -->
 
-			<!-- 맨밑 플로팅 -->
-			<!-- 202406 수정 - total_num 클래스 추가 -->
-			<div class="promotion_float_wrap pc">
-				<div class="promotion_total">
-					<p class="total_num"><span>총 개수</span><span>0</span>개</p>
-					<p><span>총 PV / BV</span><span>99,999,999</span>&nbsp;/&nbsp;<span>99,999,999</span></p>
-					<p><span>결제 예정금액</span><span>99,999,999</span>원</p>
+				<!-- 맨밑 플로팅 -->
+				<div class="promotion_float_wrap pc">
+					<div class="promotion_total">
+						<p><span>총 개수</span><span class="total_num">0</span>개</p><!-- 202406 것모닝 추가 수정 - total_num 클래스 추가 -->
+						<p><span>총 PV / BV</span><span>99,999,999</span>&nbsp;/&nbsp;<span>99,999,999</span></p>
+						<p><span>결제 예정금액</span><span>99,999,999</span>원</p>
 
-					<span class="promotion_total_flag">것스오 조건 미충족</span>
-					<!-- <span class="promotion_total_flag active">것스오 조건 충족</span> --> <!-- 202405 것모닝 작업 - 것모닝 작업 - 프로모션 Active인 경우  -->
+						<span class="promotion_total_flag">것스오 조건 충족</span>
+						<!-- <span class="promotion_total_flag active">것스오 조건 충족</span> --> <!-- 202405 것모닝 작업 - 것모닝 작업 - 프로모션 Active인 경우  -->
+					</div>
+					<button type="button" class="promotion_button_confirm">장스오 제품 담기</button><!-- 202406 것모닝 추가 수정 - disabled 추가시 비활성화 -->
 				</div>
+				
+				<div class="promotion_float_wrap mo disabled">
+					<div class="promotion_total">
+						<p>총 개수</p>
+						<p><span class="total_num">0</span>개</p><!-- 202406 것모닝 추가 수정 - total_num 클래스 추가 -->
+						<button type="button" class="total_button" disabled>전체 보기 버튼</button> <!-- 202405 것모닝 작업 - 담긴 제품이 없을 땐 비활성화, 담긴 제품이 있을 시 on -->
+					</div>
+					<div class="my_product_wrap">
+						<div class="my_product_container"></div>
+					</div>
+					<div class="promotion_total">
+						<p>총 PV / BV</p>
+						<p><span>0</span>/&nbsp;<span>0</span></p>
+					</div>
+					<div class="promotion_total">
+						<p>결제예정금액<span class="promotion_total_flag">것스오 조건 미충족</span></p>
+						<!-- <p>결제예정금액<span class="promotion_total_flag active">것스오 조건 충족</span></p> -->
+						<p><span>0</span>원</p>
+					</div>
 
-				<a href="#" class="promotion_button_confirm">장스오 제품 담기</a>
-			</div>
-			
-			<div class="promotion_float_wrap mo disabled">
-				<div class="promotion_total">
-					<p>총 개수</p>
-					<p><span>0</span>개</p>
-					<button type="button" class="total_button" disabled>전체 보기 버튼</button> <!-- 202405 것모닝 작업 - 담긴 제품이 없을 땐 비활성화, 담긴 제품이 있을 시 on -->
+					<button type="button" class="promotion_button_confirm">장스오 제품 담기</button>
 				</div>
-				<div class="my_product_wrap">
-					<div class="my_product_container"></div>
-				</div>
-				<div class="promotion_total">
-					<p>총 PV / BV</p>
-					<p><span>0</span>/&nbsp;<span>0</span></p>
-				</div>
-				<div class="promotion_total">
-					<p>결제예정금액<span class="promotion_total_flag">것스오 조건 미충족</span></p>
-					<!-- <p>결제예정금액<span class="promotion_total_flag active">것스오 조건 충족</span></p> -->
-					<p><span>0</span>원</p>
-				</div>
-
-				<a href="#" class="promotion_button_confirm">장스오 제품 담기</a>
-			</div>
 
 				<!-- //맨밑 플로팅 -->
+				<!-- 202406 것모닝 추가 수정 - 들여쓰기 수정 -->
 			</div>
 			<!-- // 202405 것모닝 작업 - 것모닝 제품 구성 도우미 -->
 			<div class="cont box_sop-basket" style="display: none;">
@@ -5624,13 +5637,20 @@
 			buttonActionTop();
 		}
 
+		// 202406 것모닝 추가 수정 - 도우미 탭에 자세히보기 버튼 클릭 이벤트 추가
+		if($('.product_helper_banner a')) {
+			moveToPromotionContent();
+			buttonActionTop();
+		}
+		// // 202406 것모닝 추가 수정 - 도우미 탭에 자세히보기 버튼 클릭 이벤트 추가
+
 		if($('.accordion_product_wrap')) {
-			moProductCheck();
 			inputCheck();
 			onInputNumber();
 			productCheckNum();
 		}
 
+		var totalProductNum = 0;
 
 		var timer = null;
 	
@@ -5652,7 +5672,7 @@
     var scrIWidth = 0;
 
     for (var i=0; i<$scrItem.length; i++) {
-        scrIWidth += $scrItem.eq(i).outerWidth();
+			scrIWidth += $scrItem.eq(i).outerWidth(); // 202406 것모닝 추가 수정 - 들여쓰기 수정
     }
 
     $('.box_sop-tab').css('width',scrIWidth);
@@ -5743,7 +5763,7 @@
   }
   
   function accordionDefaultOption() {
-		// 202406 것모닝 추가 수정사항 작업
+		// 202406 것모닝 추가 수정 - 첫번째 아코디언 수정
 		var firstStepList = $('.accordion_list.accordion_list_first');
 
 		resetAccordionClass();
@@ -5774,8 +5794,6 @@
 		
 		accordionActionDetail(thisList);
 	}
-
-	// accordionHeaderAction(3) // 아코디언 열기 테스트용
 	
 	function accordionActionDetail(item) {
 		if (item) {
@@ -5810,10 +5828,12 @@
 
   function optionalProductDefaultOption () {
 		$('.last_step').each(function() {
-        var checkedValue = $(this).find('input[name*="chk_optional_yn"]:checked').val();
-
-				optionalProductClickAction($(this), checkedValue === 'optional_y');
-				checkMobileView($(this), checkedValue === 'optional_y', windowWidth);
+			// 202406 것모닝 추가 수정 - 들여쓰기 수정
+			var checkedValue = $(this).find('input[name*="chk_optional_yn"]:checked').val();
+			
+			optionalProductClickAction($(this), checkedValue === 'optional_y');
+			checkMobileView($(this), checkedValue === 'optional_y', windowWidth);
+			// // 202406 것모닝 추가 수정 - 들여쓰기 수정
     });
   };	
 
@@ -5835,6 +5855,7 @@
 			var checkType = $(this).val() === 'optional_y';
 
 			$item.find('.optional_tab').css('display', checkType ? 'block' : 'none');
+			$item.find('.accordion_info_wrap').css('display', checkType ? 'flex' : 'none'); // 202406 것모닝 추가 수정 - .accordion_info_wrap 사항 추가
 			
 			optionalProductCheckedProduct($item, checkType);
 			checkMobileView($item, checkType, windowWidth);
@@ -5864,19 +5885,21 @@
 
 	function checkMobileView(item, checkType, windowWidth) {
 		if(windowWidth > 1200) {
-			item.find('.optional_category_wrap, .accordion_info_wrap').hide();
+			item.find('.optional_category_wrap').hide(); // 202406 것모닝 추가 수정 - .accordion_info_wrap 삭제
 			return false;
 		}  else {
 			item.find('.optional_category_wrap').show();
 		}
 		item.find('.optional_category_wrap').css('display', checkType ? 'block' : 'none');
-		item.find('.accordion_info_wrap').css('display', checkType ? 'flex' : 'none');
+		// 202406 것모닝 추가 수정 - .accordion_info_wrap 항목 삭제
 	}
 
 	function checkHelperContent() {
     $('.tabs').click(function() {
-        var isHelper = $(this).data('content') === 'helper';
-        $('.scrollTopWrapper, .box-chatbot').toggleClass('floatingUp', isHelper);
+			// 202406 것모닝 추가 수정 - 들여쓰기 수정
+			var isHelper = $(this).data('content') === 'helper';
+			$('.scrollTopWrapper, .box-chatbot').toggleClass('floatingUp', isHelper);
+			// // 202406 것모닝 추가 수정 - 들여쓰기 수정
     });
 	}
 
@@ -5890,12 +5913,24 @@
 	function moveToHelperContent() {
     $(".gutmorning_start_btn, .gutmorning_change_btn").on('click', function() {
 			$('.box_sop-tab .tabs').removeClass('on')
-					.filter('[data-content="helper"]').addClass('on');
+				.filter('[data-content="helper"]').addClass('on'); // 202406 것모닝 추가 수정 - 들여쓰기 수정
 
 			$('.cont').hide();
 			$('.box_sop-product-helper').show();
     });
 	}
+
+	// 202406 것모닝 추가 수정 - 도우미 탭에 자세히보기 버튼 클릭 이벤트 추가
+	function moveToPromotionContent() {
+		$('.product_helper_banner a').on('click', function() {
+			$('.box_sop-tab .tabs').removeClass('on')
+				.filter('[data-content="promotion"]').addClass('on');
+
+			$('.cont').hide();
+			$('.box_sop-promotion').show();
+		});
+	}
+	// // 202406 것모닝 추가 수정 - 도우미 탭에 자세히보기 버튼 클릭 이벤트 추가
 
   function initSwiper() {
     var $slider = $('.accordion_contents');
@@ -5973,10 +6008,13 @@
     
 		pcProductCheckboxClick(productCheckbox);
 		pcProductResetClick(productCheckbox);
+
+		moProductCheckClick(productCheckbox); // 202406 것모닝 추가 수정 - moProductCheckClick 함수 이동
 	}
 
 	function pcProductCheckboxClick(productCheckbox) {
 		productCheckbox.click(function() {
+			var currentCount = $('.promotion_total .total_num').text(); // 202406 것모닝 추가 수정 - 초기 키운트 추가
 			var checkedCount = 0;
 
 			$(this)
@@ -6014,90 +6052,20 @@
 			.find('.product_btn span input')
 			.val(0);
 
+			
 			// 202406 것모닝 추가 수정 - PC에서 초기화 시 모바일에 Append된 요소도 함께 지우기
 			moProductList.filter((v, i) => {
 				$(i).data('index') === moProductListData ? $(i).remove() : '';
 			});
 
 			$('.my_product_list').length === 0 ? resetProductClass() : '';
-			// //202406 것모닝 추가 수정 - PC에서 초기화 시 모바일에 Append된 요소도 함께 지우기
+			// // 202406 것모닝 추가 수정 - PC에서 초기화 시 모바일에 Append된 요소도 함께 지우기
 		});
 	}
 
-	
-	function onInputNumber() {
-    $('input[type=number][maxlength]').on('propertychange change keyup paste input', function () {
-        var replaceText = $(this).val().replace(/[^-0-9]/g, '');
-
-				$(this).val(replaceText);
-				$(this).attr('value', replaceText);
-
-				if (replaceText > 0) {
-					$(this)
-						.closest('.accordion_product_wrap')
-						.find('input[type="checkbox"]')
-						.prop("checked", true);
-
-						
-				} else {
-					$(this)
-						.closest('.accordion_product_wrap')
-						.find('input[type="checkbox"]')
-						.prop("checked", false);
-				}
-    });
-	}
-		
-	function productCount(type) {
-    var buttons = $('.product_btn button');
-    
-    buttons.on('click', function() {
-			var thisInput = $(this).closest('.accordion_product_wrap').find('input[type="checkbox"]');
-        var currentInput = $(this).closest('.product_btn').find('input');
-        var currentInputValue = parseInt(currentInput.val());
-        var newValue;
-
-        if ($(this).hasClass('plus')) {
-					newValue = currentInputValue + 1;
-        } else {
-					newValue = currentInputValue - 1;
-        }
-
-        newValue = Math.max(0, Math.min(999, newValue));
-        
-        currentInput.val(newValue);
-        currentInput.attr('value', newValue);
-
-        if (newValue > 0) {
-					thisInput.prop("checked", true);
-        } else {
-					thisInput.prop("checked", false);
-        }
-
-				// thisInput.is(':checked') ? productContainerAppend(accordionListIndex) : '';
-
-        // if ($(this).hasClass('plus') && newValue === 1 && thisInput.is(':checked')) {
-				// 	addProductClass();
-				// 	productListAppend(checkedCount, accordionListIndex, checkedListData, accordionListName, accordionListTitle);
-				// } 
-				
-				// if($(this).hasClass('minus') && newValue < 1) {
-				// 	productListAppendCheck(checkedCount, accordionListIndex, accordionListTitle, checkedListData);
-        // }
-
-    });
-}
-
-
-
-	function moProductCheck() {
-    var productCheckbox = $('.accordion_product_wrap input[type="checkbox"]');
-
-		moProductCheckClick(productCheckbox)
-	}
-
+	// 202406 것모닝 추가 수정 - moProductCheckClick 함수 수정
 	function moProductCheckClick(productCheckbox) {
-		productCheckbox.change(function() {
+		productCheckbox.click(function() {
 			var accordionListName = $(this).next('label').find('.product_name').text();
 			var accordionListIndex = $(this).closest('.accordion_list').data('index');
 			var accordionListTitle = $(this).closest('.accordion_list').data('name');
@@ -6114,10 +6082,14 @@
 					$(this).is(':checked') ? checkedCount++ : '';
 				});
 
-
 			deleteItem(accordionListTitle);
 			
-			checkedCount === 1 && $(this).is(':checked') ? productContainerAppend(accordionListIndex) : $(this).closest('.accordion_product_wrap').find('.product_btn span input').val(0);
+			if (checkedCount === 1 && $(this).is(':checked')) {
+				productContainerAppend(accordionListIndex);
+				
+			} else {
+				$(this).closest('.accordion_product_wrap').find('.product_btn span input').val(0);
+			}
 
 			if (checkedCount > 0) {
 				addProductClass();
@@ -6130,14 +6102,11 @@
 					.closest('.accordion_product_wrap')
 					.find('.product_btn span input')
 					.val(++currentNum);
-
 				} else {
 					productListAppendCheck(checkedCount, accordionListIndex, accordionListTitle, checkedListData);
-
-
 				}
 			}
-
+			
 			if (checkedCount === 0) {
 				$('.my_product_container').find(`.my_product_list[data-index="${accordionListIndex}"]`).remove();
 			}
@@ -6145,17 +6114,17 @@
 			$('.my_product_container').children().length === 0 ? resetProductClass() : '';
 		});
 	}
-
+	// // 202406 것모닝 추가 수정 - moProductCheckClick 함수 수정
 
 	function productContainerAppend(accordionListIndex) {
 		$('.my_product_container').append(
-				`<div class="my_product_list" data-index="${accordionListIndex}"><p class="my_product_title"><span></span><button type="button" class="product_reset_mo">초기화</button></p></div>`
+			`<div class="my_product_list" data-index="${accordionListIndex}"><p class="my_product_title"><span></span><button type="button" class="product_reset_mo">초기화</button></p></div>` // 202406 것모닝 추가 수정 - 들여쓰기 수정
 		);
 	}
 
 	function productListAppend(checkedCount, accordionListIndex, checkedListData, accordionListName, accordionListTitle) {
 		$(`.my_product_list[data-index="${accordionListIndex}"]`).append(
-				`<p class="my_product_content" data-item="${checkedListData}"><span>${accordionListName}</span><button type="button" class="product_delete">리스트 삭제 버튼</button></p>`
+			`<p class="my_product_content" data-item="${checkedListData}"><span>${accordionListName}</span><button type="button" class="product_delete">리스트 삭제 버튼</button></p>` // 202406 것모닝 추가 수정 - 들여쓰기 수정
 		);
 
 		$(`.my_product_list[data-index="${accordionListIndex}"] .my_product_title span`).text(`${accordionListTitle} (${checkedCount})`);
@@ -6174,8 +6143,7 @@
 		$('.product_reset_mo').on('click', function () {
 			var productListIndex = $(this).closest('.my_product_list').data('index')
 	
-			resetItemFilter(productListIndex)
-
+			resetItemFilter(productListIndex); // 202406 것모닝 추가 수정 - 들여쓰기 수정
 			
 			$(this).closest('.my_product_list').remove();
 			
@@ -6190,8 +6158,7 @@
 
 				$(i).closest('.accordion_list').find('.product_btn span input').val(0);
 				
-
-				$(i).find('.chk_product_num span').text('0');
+				$(i).find('.chk_product_num span').text('0'); // 202406 것모닝 추가 수정 - 들여쓰기 수정
 			}
 		});
 	}
@@ -6253,28 +6220,132 @@
 		$('.my_product_wrap').removeClass('active');
 	}
 
+	// 202406 것모닝 추가 수정 - buttonActionTop 함수 수정
 	function buttonActionTop() {
-		$('.gutmorning_start_btn, .gutmorning_change_btn').on('click', function() {
-
-			var visualHeight = $('.box_sop-visual').height() + $('.main-header').height();
+		$('.gutmorning_start_btn, .gutmorning_change_btn, .product_helper_banner a').on('click', function() {
+			var visualHeight = $('.box_sop-visual').height() + $('.main-header').height(); // 202406 것모닝 추가 수정 - 들여쓰기 수정
 
 			$('html, body').animate({ scrollTop: visualHeight });
 		});
 	}
+	// // 202406 것모닝 추가 수정 - buttonActionTop 함수 수정
 
+	// 202406 것모닝 추가 수정 - inputCheck 함수 수정
 	function inputCheck() {
     $('input[type=number][maxlength]').on('propertychange change keyup paste input', function() {
-        var $this = $(this);
-        var maxlength = $this.attr('maxlength');
-        var value = $this.val();
+			// 202406 것모닝 추가 수정 - 들여쓰기 수정
+			var maxlength = $(this).attr('maxlength');
+			var value = $(this).val();
 
-        if (value && value.length >= maxlength) {
-					$this.val(value.substr(0, maxlength));
-					$this.attr('value', value.substr(0, maxlength));
-        }
+			if (value && value.length >= maxlength) {
+				$(this).val(value.substr(0, maxlength));
+				$(this).attr('value', value.substr(0, maxlength));
+			}
+			// // 202406 것모닝 추가 수정 - 들여쓰기 수정
+		});
+
+		$('input[type=number][maxlength]').on('focus', function() {
+			if ($(this).val() >= 0) {
+				$(this).val('');
+				$(this).attr('value', '');
+			}
+		});
+		$('input[type=number][maxlength]').on('focusout', function() {
+			if ($(this).val() === '') {
+				$(this).val('0');
+				$(this).attr('value', 0);
+
+				$(this).closest('.accordion_product_wrap').find('input[type="checkbox"]').prop('checked', false);
+			}
+		});
+	}
+	// // 202406 것모닝 추가 수정 - inputCheck 함수 수정
+
+	// 202406 것모닝 추가 수정 - onInputNumber 함수 수정
+	function onInputNumber() {
+		$('input[type=number][maxlength]').on('propertychange change keyup paste input', function () {
+			var replaceText = $(this).val().replace(/[^-0-9]/g, ''); // 202406 것모닝 추가 수정 - 들여쓰기 수정
+			
+			replaceText = Math.max(0, Math.min(5, replaceText));
+
+			$(this).val(replaceText);
+			$(this).attr('value', replaceText);
+			
+			// 202406 것모닝 추가 수정 - 들여쓰기 수정
+			if (replaceText > 0) {
+				$(this)
+					.closest('.accordion_product_wrap')
+					.find('input[type="checkbox"]')
+					.prop("checked", true);
+			} else if (replaceText > 5) {
+				$(this).val(5);
+				$(this).attr('value', 5);
+			} else {
+				$(this).val(0);
+				$(this).attr('value', 0);
+
+				$(this)
+					.closest('.accordion_product_wrap')
+					.find('input[type="checkbox"]')
+					.prop("checked", false);
+			}
+			// // 202406 것모닝 추가 수정 - 들여쓰기 수정
+
+			var totalProductNum = 0;
+			
+			$('input[type=number][maxlength]').each(function() {
+					totalProductNum += parseInt($(this).val());
+			});
+
+			totalProductCount(totalProductNum);
     });
 	}
+	// // 202406 것모닝 추가 수정 - onInputNumber 함수 수정
 
+	// 202406 것모닝 추가 수정 - productCount 함수 수정
+	function productCount() {
+    var buttons = $('.product_btn button');
+		var inputs = $('.accordion_product_wrap input[type="checkbox"]');
+		
+    buttons.on('click', function() {
+			var thisInput = $(this).closest('.accordion_product_wrap').find('input[type="checkbox"]');
+			var currentInput = $(this).closest('.product_btn').find('input');
+			var currentInputValue = parseInt(currentInput.val());
+			var newValue;
+
+			if ($(this).hasClass('plus')) {
+				newValue = currentInputValue + 1; // 202406 것모닝 추가 수정 - 들여쓰기 수정
+			} else {
+				newValue = currentInputValue - 1; // 202406 것모닝 추가 수정 - 들여쓰기 수정
+			}
+
+			newValue = Math.max(0, Math.min(5, newValue));
+			
+			currentInput.val(newValue);
+			currentInput.attr('value', newValue);
+
+			if (newValue > 0) {
+				thisInput.prop("checked", true); // 202406 것모닝 추가 수정 - 들여쓰기 수정
+			} else {
+				thisInput.prop("checked", false); // 202406 것모닝 추가 수정 - 들여쓰기 수정
+			}
+
+			var totalProductNum = 0;
+
+			inputs.each(function() {
+				totalProductNum += parseInt($(this).closest('.accordion_product_wrap').find('input[type="number"]').val()); // 202406 것모닝 추가 수정 - 들여쓰기 수정
+			});
+
+			totalProductCount(totalProductNum);
+		});
+	}
+	// // 202406 것모닝 추가 수정 - productCount 함수 수정
+
+	// 202406 것모닝 추가 수정 - totalProductCount 함수 추가
+	function totalProductCount(totalProductNum) {
+		$('.promotion_total .total_num').text(totalProductNum);
+	}
+	// // 202406 것모닝 추가 수정 - totalProductCount 함수 추가
 	// E: 202405 것모닝 작업
 
 
