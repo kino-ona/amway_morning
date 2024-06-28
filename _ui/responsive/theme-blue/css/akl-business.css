@@ -3350,6 +3350,7 @@ background-repeat:no-repeat;}
 /* S : 202406 비전보너스 신규 추가 */
 .visionbonus.container.business  * {letter-spacing: -0.02em;}
 .visionbonus .pc-only{display: block;}
+.visionbonus .only-tablet{display: none;}
 .visionbonus .mobile-only{display: none;}
 .visionbonus .visionbonus-content{padding-bottom:80px;}
 .visionbonus.container.business {margin-top: 60px;}
@@ -3591,12 +3592,13 @@ background-repeat:no-repeat;}
 .visionbonus.container.business .table03 .tbl-list tbody td{line-height: 98px;}
 .visionbonus .bullet-title{display: flex; align-items: center;}
 .visionbonus .bullet-title .bullet {width: 56px;}
-.visionbonus .bullet-title > p{flex: 1;}
+.visionbonus .bullet-title > p{flex: 1; color: #111;}
 
 
 @media (min-width: 768px) and (max-width: 1100px){
 	.visionbonus .checkbox-wrap.twin{width:100%;}
 	.visionbonus .mobile-only{display: none;}
+	.visionbonus .only-tablet{display: block;}
 	.visionbonus .border-box .multiplication{padding:0 10px;}
 	.visionbonus .border-box .multiplication::before,
 	.visionbonus .border-box .multiplication::after{left:32%;}
@@ -3618,10 +3620,11 @@ background-repeat:no-repeat;}
 	.visionbonus.container.business .table09 table colgroup col:nth-child(2){width:78px;}
 
 	/* 비전보너스 계산 - 계산기 테이블 */
-	.visionbonus.container.business .table10 table colgroup col:nth-child(1){width:135px;}
-	.visionbonus.container.business .table10 table colgroup col:nth-child(2){width:100px;}
+	.visionbonus.container.business .table10 table colgroup col:nth-child(1){width:120px;}
+	.visionbonus.container.business .table10 table colgroup col:nth-child(2){width:90px;}
 	.visionbonus.container.business .table10 table tbody th,
-	.visionbonus.container.business .table10 table tbody td {padding:8px 15px;}
+	.visionbonus.container.business .table10 table tbody td {padding:16px 5px;}
+	.visionbonus.container.business .table10 table tbody td.fit{padding: 8px 5px;}
 
 	.visionbonus .title-wrap.btn-type{position: relative; padding-right:0; }
 	.visionbonus .title-wrap.btn-type .btn-box{position: initial; text-align: left; margin-top: 24px;}
@@ -3630,12 +3633,14 @@ background-repeat:no-repeat;}
 
 @media(max-width:768px){
 	.visionbonus .pc-only{display: none;}
+	.visionbonus .only-tablet{display: none;}
 	.visionbonus.container.business{padding: 0 20px;}
 	.visionbonus .box-group{margin-top:40px;}
 	.visionbonus .title-h3 + div, .visionbonus .title-h3 + p {margin-top:12px; font-size:14px; line-height: 24px;}
 	.visionbonus .title-wrap .txt-in-tooltip,
 	.visionbonus .title-wrap p{font-size: 14px;}
 	.visionbonus .title-wrap + .border-box{margin-top:20px;}
+	.visionbonus .title-wrap .number_text{margin-bottom: -4px;}
 	.visionbonus .subjects-inner{padding:41px 20px 20px;}
 	.visionbonus .category-box .circle-container{width:100%;}
 	.visionbonus .category-box.growth{width: fit-content; flex-direction: column; padding:20px 16px 16px 16px; border-radius:76px; gap:20px;}
@@ -3678,6 +3683,7 @@ background-repeat:no-repeat;}
 	.visionbonus .title-wrap + .info-box.twins.reverse {margin-top: 20px;}
 	.visionbonus .info-box + .table-wrap,
 	.visionbonus .info-box + .table-scroll{margin-top: 8px;}
+	.visionbonus .info-box + .table-scroll.table05 {margin-top: 20px;}
 	.visionbonus .price-box + .info-box{margin-top: 26px;}
 	.visionbonus .toolTip-wrapper.type-mob-full .tipCont-wrapper .tooltip-content{top:initial}
 	.visionbonus .toolTip-wrapper.type-mob-full .tipCont-wrapper .tooltip-content{max-width:none; width:calc(100vw - 30px)}
@@ -3759,6 +3765,8 @@ background-repeat:no-repeat;}
 	.visionbonus .info-box.twins .box-right > div { flex-basis: 50%; text-align: center;}
 	.visionbonus .info-box.twins .box-right > div + div{margin: 0;}
 	.visionbonus .info-box.twins.reverse{flex-direction: column-reverse; gap: 10px;}
+	.visionbonus .info-box  .bullet-title{margin-top: -4px;}
+	.visionbonus .table-scroll + .info-box  .bullet-title{margin-top: 0;}
 	.visionbonus .info-box > .bullet{margin-left: 0; width: 100%;}
 	.visionbonus .info-box > .bullet + .bullet{margin-top: 8px;}	
 	.visionbonus .state-list{text-align: left;}
@@ -3780,6 +3788,11 @@ background-repeat:no-repeat;}
 	.visionbonus.container.business .tbl-list td{padding: 16px 8px;}
 	/* 비전보너스 설명 - FQ 테이블 */
 	.visionbonus.container.business .table03 .tbl-list tbody td{line-height: 20px;}
+	.visionbonus .table03 .tbl-list colgroup col:nth-child(1){width:34%;}
+	.visionbonus .table03 .tbl-list colgroup col:nth-child(2){width:22%;}
+	.visionbonus .table03 .tbl-list colgroup col:nth-child(3){width:22%;}
+	.visionbonus .table03 .tbl-list colgroup col:nth-child(4){width:22%;}
+	
 
 	/* 비전보너스 설명 - QC 테이블 */
 	.visionbonus .table04 .tbl-list colgroup col:nth-child(1){width:40%;}
@@ -3787,14 +3800,14 @@ background-repeat:no-repeat;}
 	.visionbonus .table04 .tbl-list colgroup col:nth-child(3){width:30%;}
 
 	/* 비전보너스 조회 - 대상자 테이블 */
-	.visionbonus .table06 .tbl-list colgroup col:nth-child(1){width:35%;}
+	.visionbonus .table06 .tbl-list colgroup col:nth-child(1){width:30%;}
 	.visionbonus .table06 .tbl-list colgroup col:nth-child(2){width:45%;}
-	.visionbonus .table06 .tbl-list colgroup col:nth-child(3){width:20%;}
+	.visionbonus .table06 .tbl-list colgroup col:nth-child(3){width:25%;}
 
 	/* 비전보너스 조회 - 수혜 조건 테이블 */
-	.visionbonus .table07 .tbl-list colgroup col:nth-child(1){width:39%;}
-	.visionbonus .table07 .tbl-list colgroup col:nth-child(2){width:36%;}
-	.visionbonus .table07 .tbl-list colgroup col:nth-child(3){width:26%;}
+	.visionbonus .table07 .tbl-list colgroup col:nth-child(1),
+	.visionbonus .table07 .tbl-list colgroup col:nth-child(2),
+	.visionbonus .table07 .tbl-list colgroup col:nth-child(3){width:calc(100%/3)}
 
 	/* 비전보너스 설명 - 보너스 계산 예시 */
 	.visionbonus.container.business .table05 table {table-layout: fixed;}
@@ -3807,7 +3820,7 @@ background-repeat:no-repeat;}
 
 	/* 비전보너스 조회 - 조회 테이블 */
 	.visionbonus.container.business .table09 table{table-layout: fixed;}
-	.visionbonus.container.business .table09 table colgroup col:nth-child(1){width:150px;}
+	.visionbonus.container.business .table09 table colgroup col:nth-child(1){width:100px;}
 	.visionbonus.container.business .table09 table colgroup col:nth-child(2){width:90px;}
 	.visionbonus.container.business .table09 table colgroup col:nth-child(3),
 	.visionbonus.container.business .table09 table colgroup col:nth-child(4),
@@ -3892,6 +3905,16 @@ background-repeat:no-repeat;}
 	.visionbonus .title-wrap.btn-type .btn-box{position: initial; display: flex; flex:1; gap:10px;}
 	.visionbonus .title-wrap.btn-type .btn-box .btn{width: 100%;}
 	.visionbonus .title-wrap.btn-type .btn-box .btn + .btn{margin: 0;}
+	.visionbonus .sub-detail-info{display: block; margin-top:8px; padding: 12px;}
+	.visionbonus .sub-detail-info > li{ float: none;}
+	.visionbonus .sub-detail-info > li+ li{margin-left:0; padding-left:0; margin-top:8px; padding-top: 9px; border-top: 1px solid #D7D7D7;}
+	.visionbonus .sub-detail-info > li+ li::after{display: none;}
+	.visionbonus .sub-detail-info > li strong{font-size: 12px; line-height: 18px;}
+	.visionbonus .sub-detail-info > li span{font-size: 12px; line-height: 18px;}
+	.visionbonus .price-box .title > span{font-size: 12px; line-height: 18px;}
+
+	.visionbonus .radio-wrap{margin-top: 12px;}
+
   } 
 /* E : 202406 비전보너스 신규 추가 */
 
