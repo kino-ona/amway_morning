@@ -389,12 +389,12 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr>
+                                            <tr class="total-bonus">
                                                 <th rowspan="3">비전보너스<br class="only-tablet"> 계산</th>
                                                 <th>기준 금액</th>
-                                                <td><span>100,000</span> <span class="price-unit">원</span></td>
-                                                <td><span>1,000</span> <span class="price-unit">원</span></td>
-                                                <td><span>1,000</span> <span class="price-unit">원</span></td>
+                                                <td><span>1,000</span> <span class="price-unit">만원</span></td>
+                                                <td><span>1,000</span> <span class="price-unit">만원</span></td>
+                                                <td><span>1,000</span> <span class="price-unit">만원</span></td>
                                             </tr>
                                             <tr>
                                                 <th>지급 비율</th>
@@ -404,9 +404,9 @@
                                             </tr>
                                             <tr>
                                                 <th>비전보너스<br class="only-tablet"> 금액</th>
-                                                <td>-</td>
-                                                <td><span>1,000</span> <span class="price-unit">원</span></td>
-                                                <td><span>1,000</span> <span class="price-unit">원</span></td>
+                                                <td class="bg-point-blue">-</td>
+                                                <td class="bg-point-blue"><span>7,000</span> <span class="price-unit">만원</span></td>
+                                                <td class="bg-point-blue"><span>9,000</span> <span class="price-unit">만원</span></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -554,20 +554,21 @@
                                                 <ul class="total-list">
                                                     <li>
                                                         <div class="box-twin">
-                                                            <span class="bullet gray">베이스 금액</span>
-                                                            <strong class="total-sum"><span>1,400</span> <span class="price-unit">만원</span></strong>
+                                                            <span class="bullet gray">기준 금액</span>
+                                                            <strong class="total-sum"><span>7,000</span> <span class="price-unit">만원</span></strong>
                                                         </div>
-                                                        <p class="sub-info">FQ 성장 비전보너스 베이스 또는 QC 성장 비전보너스 베이스</p>
+                                                        <div class="box-twin">
+                                                            <span class="bullet gray">지급 비율</span>
+                                                            <strong class="total-sum"><span class="price-unit">2년 연속 성장 100%</span></strong>
+                                                        </div>
                                                     </li>
                                                     <li>
                                                         <div class="box-twin">
                                                             <div class="left-box">
-                                                                <span class="bullet blue">비전보너스 계산</span>
-                                                                <span class="point-blue">2년 연속 100%</span>
+                                                                <span class="bullet blue">비전보너스 금액</span>
                                                             </div>
-                                                            <strong class="total-sum"><span>1,400</span> <span class="price-unit">만원</span></strong>
+                                                            <strong class="total-sum"><span>12,000</span> <span class="price-unit">만원</span></strong>
                                                         </div>
-                                                        <p class="sub-info">베이스 금액 X (2년 연속 100% 또는 3년 연속 200%)</p>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -612,28 +613,36 @@
                                                 <ul class="form-list">
                                                     <li>
                                                         <p class="item-name">FQ 성장</p>
-                                                        <div class="checkbox-wrap twin">
-                                                            <div class="form_element-checkbox">
-                                                                <input type="checkbox" id="chk-mobile-02-2" checked="">
-                                                                <label for="chk-mobile-02-2" class="sp_chk focus">+3개</label>
+                                                        <div class="radio-wrap">
+                                                            <!-- 라디오 버튼으로 수정 -->
+                                                            <div class="form_element-radio">
+                                                                <input type="radio" id="radio-mobile-02-1" name="fq_pack_mo_02" checked>
+                                                                <label for="radio-mobile-02-1" class="focus">+3개</label>
                                                             </div>
-                                                            <div class="form_element-checkbox">
-                                                                <input type="checkbox" id="chk-mobile-02-3">
-                                                                <label for="chk-mobile-02-3" class="sp_chk focus">+6개</label>
+                                                            <div class="form_element-radio">
+                                                                <input type="radio" id="radio-mobile-02-2" name="fq_pack_mo_02" disabled>
+                                                                <label for="radio-mobile-02-2" class="focus">+6개</label>
                                                             </div>
+                                                            <div class="form_element-radio">
+                                                                <input type="radio" id="radio-mobile-02-3" name="fq_pack_mo_02">
+                                                                <label for="radio-mobile-02-3" class="focus">+6개</label>
+                                                            </div>
+                                                            <!-- //라디오 버튼으로 수정 -->
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <p class="item-name">QC 성장</p>
-                                                        <div class="checkbox-wrap twin">
-                                                            <div class="form_element-checkbox">
-                                                                <input type="checkbox" id="chk-mobile-02-4" checked="">
-                                                                <label for="chk-mobile-02-4" class="sp_chk focus">+1.0점</label>
+                                                        <div class="radio-wrap">
+                                                            <!-- 라디오 버튼으로 수정 -->
+                                                            <div class="form_element-radio">
+                                                                <input type="radio" id="radio-mobile-02-4" name="qc_pack_mo_02" checked>
+                                                                <label for="radio-mobile-02-4" class="focus">+3개</label>
                                                             </div>
-                                                            <div class="form_element-checkbox">
-                                                                <input type="checkbox" id="chk-mobile-02-5">
-                                                                <label for="chk-mobile-02-5" class="sp_chk focus">+3.0점</label>
+                                                            <div class="form_element-radio">
+                                                                <input type="radio" id="radio-mobile-02-5" name="qc_pack_mo_02" disabled>
+                                                                <label for="radio-mobile-02-5" class="focus">+6개</label>
                                                             </div>
+                                                            <!-- //라디오 버튼으로 수정 -->
                                                         </div>
                                                     </li>
                                                 </ul>
@@ -685,20 +694,21 @@
                                                 <ul class="total-list">
                                                     <li>
                                                         <div class="box-twin">
-                                                            <span class="bullet gray">베이스 금액</span>
-                                                            <strong class="total-sum"><span>1,400</span> <span class="price-unit">만원</span></strong>
+                                                            <span class="bullet gray">기준 금액</span>
+                                                            <strong class="total-sum"><span>-</span> <span class="price-unit">만원</span></strong>
                                                         </div>
-                                                        <p class="sub-info">FQ 성장 비전보너스 베이스 또는 QC 성장 비전보너스 베이스</p>
+                                                        <div class="box-twin">
+                                                            <span class="bullet gray">지급 비율</span>
+                                                            <strong class="total-sum"><span class="price-unit">-</span></strong>
+                                                        </div>
                                                     </li>
                                                     <li>
                                                         <div class="box-twin">
                                                             <div class="left-box">
-                                                                <span class="bullet blue">비전보너스 계산</span>
-                                                                <span class="point-blue">2년 연속 100%</span>
+                                                                <span class="bullet blue">비전보너스 금액</span>
                                                             </div>
-                                                            <strong class="total-sum"><span>1,400</span> <span class="price-unit">만원</span></strong>
+                                                            <strong class="total-sum"><span></span> <span class="price-unit">만원</span></strong>
                                                         </div>
-                                                        <p class="sub-info">베이스 금액 X (2년 연속 100% 또는 3년 연속 200%)</p>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -743,28 +753,36 @@
                                                 <ul class="form-list">
                                                     <li>
                                                         <p class="item-name">FQ 성장</p>
-                                                        <div class="checkbox-wrap twin">
-                                                            <div class="form_element-checkbox">
-                                                                <input type="checkbox" id="chk-mobile-03-2" checked="">
-                                                                <label for="chk-mobile-03-2" class="sp_chk focus">+3개</label>
+                                                        <div class="radio-wrap">
+                                                            <!-- 라디오 버튼으로 수정 -->
+                                                            <div class="form_element-radio">
+                                                                <input type="radio" id="radio-mobile-03-1" name="fq_pack_mo_03" checked>
+                                                                <label for="radio-mobile-03-1" class="focus">+3개</label>
                                                             </div>
-                                                            <div class="form_element-checkbox">
-                                                                <input type="checkbox" id="chk-mobile-03-3">
-                                                                <label for="chk-mobile-03-3" class="sp_chk focus">+6개</label>
+                                                            <div class="form_element-radio">
+                                                                <input type="radio" id="radio-mobile-03-2" name="fq_pack_mo_03" disabled>
+                                                                <label for="radio-mobile-03-2" class="focus">+6개</label>
                                                             </div>
+                                                            <div class="form_element-radio">
+                                                                <input type="radio" id="radio-mobile-03-3" name="fq_pack_mo_03">
+                                                                <label for="radio-mobile-03-3" class="focus">+6개</label>
+                                                            </div>
+                                                            <!-- //라디오 버튼으로 수정 -->
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <p class="item-name">QC 성장</p>
-                                                        <div class="checkbox-wrap twin">
-                                                            <div class="form_element-checkbox">
-                                                                <input type="checkbox" id="chk-mobile-03-4" checked="">
-                                                                <label for="chk-mobile-03-4" class="sp_chk focus">+1.0점</label>
+                                                        <div class="radio-wrap">
+                                                            <!-- 라디오 버튼으로 수정 -->
+                                                            <div class="form_element-radio">
+                                                                <input type="radio" id="radio-mobile-03-4" name="qc_pack_mo_03" checked>
+                                                                <label for="radio-mobile-03-4" class="focus">+3개</label>
                                                             </div>
-                                                            <div class="form_element-checkbox">
-                                                                <input type="checkbox" id="chk-mobile-03-5">
-                                                                <label for="chk-mobile-03-5" class="sp_chk focus">+3.0점</label>
+                                                            <div class="form_element-radio">
+                                                                <input type="radio" id="radio-mobile-03-5" name="qc_pack_mo_03" disabled>
+                                                                <label for="radio-mobile-03-5" class="focus">+6개</label>
                                                             </div>
+                                                            <!-- //라디오 버튼으로 수정 -->
                                                         </div>
                                                     </li>
                                                 </ul>
@@ -816,20 +834,21 @@
                                                 <ul class="total-list">
                                                     <li>
                                                         <div class="box-twin">
-                                                            <span class="bullet gray">베이스 금액</span>
-                                                            <strong class="total-sum"><span>1,400</span> <span class="price-unit">만원</span></strong>
+                                                            <span class="bullet gray">기준 금액</span>
+                                                            <strong class="total-sum"><span>7,000</span> <span class="price-unit">만원</span></strong>
                                                         </div>
-                                                        <p class="sub-info">FQ 성장 비전보너스 베이스 또는 QC 성장 비전보너스 베이스</p>
+                                                        <div class="box-twin">
+                                                            <span class="bullet gray">지급 비율</span>
+                                                            <strong class="total-sum"><span class="price-unit">3년 연속 성장 200%</span></strong>
+                                                        </div>
                                                     </li>
                                                     <li>
                                                         <div class="box-twin">
                                                             <div class="left-box">
-                                                                <span class="bullet blue">비전보너스 계산</span>
-                                                                <span class="point-blue">2년 연속 100%</span>
+                                                                <span class="bullet blue">비전보너스 금액</span>
                                                             </div>
-                                                            <strong class="total-sum"><span>1,400</span> <span class="price-unit">만원</span></strong>
+                                                            <strong class="total-sum"><span>22,000</span> <span class="price-unit">만원</span></strong>
                                                         </div>
-                                                        <p class="sub-info">베이스 금액 X (2년 연속 100% 또는 3년 연속 200%)</p>
                                                     </li>
                                                 </ul>
                                             </div>

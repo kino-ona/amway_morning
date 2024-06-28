@@ -3441,8 +3441,9 @@ background-repeat:no-repeat;}
 .visionbonus .tbl-list td.border-right{border-right:1px solid #e3e3e3 !important;}
 .visionbonus .tbl-list td .total-sum{font-size: 20px;}
 .visionbonus .tbl-list td .total-sum .price-unit{margin-left:4px;}
-.visionbonus.container.business .tbl-list tr.point-gray th,
-.visionbonus.container.business .tbl-list tr.point-gray td{background:#F4F4F4;}
+.visionbonus .tbl-list tr.total-bonus th,
+.visionbonus .tbl-list tr.total-bonus td{border-top:4px solid #dbdbdb} 
+.visionbonus.container.business .tbl-list td.bg-point-blue{padding: 20px 32px; background: #F0F5FD; line-height: 30px; font-size: 20px; font-weight: 700;}
 .visionbonus.container.business .table10{margin-top:24px;}
 .visionbonus.container.business .table10 table tbody td {padding:16px 32px;}
 .visionbonus.container.business .table10 table tbody td.fit {padding:8px 32px;}
@@ -3595,6 +3596,7 @@ background-repeat:no-repeat;}
 .visionbonus .bullet-title > p{flex: 1; color: #111;}
 
 
+
 @media (min-width: 768px) and (max-width: 1100px){
 	.visionbonus .checkbox-wrap.twin{width:100%;}
 	.visionbonus .mobile-only{display: none;}
@@ -3628,6 +3630,11 @@ background-repeat:no-repeat;}
 
 	.visionbonus .title-wrap.btn-type{position: relative; padding-right:0; }
 	.visionbonus .title-wrap.btn-type .btn-box{position: initial; text-align: left; margin-top: 24px;}
+
+	.visionbonus .sub-detail-info{display: block;}
+	.visionbonus .sub-detail-info > li {float: none;}
+	.visionbonus .sub-detail-info > li + li{margin:10px 0 0 0; padding: 10px 0 0 0 ; border-top: 1px solid #D7D7D7;}
+	.visionbonus .sub-detail-info > li + li::after{display: none;}
 }
 	
 
@@ -3862,10 +3869,10 @@ background-repeat:no-repeat;}
 	.visionbonus .item-wrap .sub-title .tit{position: relative; font-size:16px; font-weight:700; padding-left:6px; color:#000; line-height:24px;}
 	.visionbonus .item-wrap .sub-title .tit::after{content: ''; display: block; width: 2px; height:12px; background:#000; position: absolute; left:0; top:5px;}
 	.visionbonus .item-wrap .sub-title .info{font-size:14px; color: #999; font-weight: 400;}
-	.visionbonus .mobile-table-group .totla-wrap{position: relative; margin-top:32px; padding:40px 0 0 0;}
+	.visionbonus .mobile-table-group .totla-wrap{position: relative; margin-top:32px; padding:32px 0 0 0;}
 	.visionbonus .mobile-table-group .totla-wrap::after{content: ''; display: block; width:calc(100% + 40px); height: 8px; background:#eee; position:absolute; top:0; left: -20px;}
 	.visionbonus .mobile-table-group .totla-wrap .sub-info{color:#999; font-size:12px; font-weight:400; line-height:18px;}
-	.visionbonus .mobile-table-group .totla-wrap .total-sum span{font-size:28px; font-weight:700; color:#000;}
+	.visionbonus .mobile-table-group .totla-wrap .total-sum span{font-size:26px; font-weight:700; color:#000; line-height: 30px;}
 	.visionbonus .mobile-table-group .totla-wrap .total-sum .price-unit{font-size:16px; font-weight:500;}
 	.visionbonus .mobile-table-group .totla-wrap .bullet{padding:0 8px; color: #fff; font-size:12px; font-weight:400; height:24px; line-height: 24px;}
 	.visionbonus .mobile-table-group .totla-wrap .bullet.gray{background: #898989;}
@@ -3874,7 +3881,9 @@ background-repeat:no-repeat;}
 	.visionbonus .mobile-table-group .totla-wrap .box-twin .left-box{display: flex; flex-direction: column;}
 	.visionbonus .mobile-table-group .totla-wrap .box-twin .left-box .point-blue{margin-top:2px; font-size:12px; line-height:18px;}
 	.visionbonus .mobile-table-group .totla-wrap .box-twin + .sub-info{margin-top:7px;}
-	.visionbonus .mobile-table-group .total-list > li + li{border-top:1px solid #DFDFDF; margin-top:24px; padding-top:24px;}
+	.visionbonus .mobile-table-group .total-list > li:first-child .total-sum span{font-size: 16px; font-weight: 500;}
+	.visionbonus .mobile-table-group .total-list > li + li{border-top:1px solid #DFDFDF; margin-top:16px; padding-top:16px;}
+	.visionbonus .mobile-table-group .total-list > li .box-twin + .box-twin{margin-top: 6px;}
 	.visionbonus .form-list {margin-top:16px;}
 	.visionbonus .form-list > li + li {margin-top:20px;}
 	.visionbonus .form-list .item-name{font-size:14px; color:#111; line-height:20px; font-weight:500;}
