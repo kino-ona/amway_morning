@@ -17261,7 +17261,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	.box_sop-product-helper .accordion_swiper .accordion_product_wrap img { width: 100% !important; }
 	.box_sop-product-helper .accordion_swiper .accordion_product_wrap label {height: 100%;justify-content: space-between;}
 	.box_sop-product-helper .accordion_swiper .swiper-slide {justify-content: flex-start;  width: 139px; height: auto; margin-right: 8px !important; } /* 202407 것모닝 추가 수정 - justify content 값 추가 */
-	.swiper-button-next, .swiper-button-prev { display: none !important; }
+	.box_sop-product-helper .swiper-button-next, .box_sop-product-helper .swiper-button-prev { display: none !important; } /* 202407 것모닝 추가 수정 */
 	.box_sop-product-helper .accordion_probiotics_swiper .accordion_product_wrap { margin-bottom: 8px; height: calc(50% - 8px);} /* 202407 것모닝 추가 수정 - 이 라인 추가  */
 	.box_sop-product-helper .accordion_probiotics_swiper .accordion_product_wrap:nth-of-type(1) { margin-bottom: 8px; }
 	.box_sop-product-helper .accordion_wrap .accordion_body .optional_info_wrap { padding: 0 20px 20px; }
