@@ -642,9 +642,8 @@
 								</div>
 								
 								<div class="accordion_btn_wrap">
-									<!-- 비활성화 케이스 -->
-									<!-- <button class="accordion_next_btn" type="button" disabled>다음 단계</button -->
-									<button onclick="accordionDirectionAction($(this))" class="accordion_next_btn" type="button">다음 단계</button>
+									<button onclick="accordionDirectionAction($(this))" class="accordion_next_btn disabled" type="button">다음 단계</button> <!-- 202407 것모닝 추가 수정 - 비활성화 케이스 수정 -->
+									<!-- <button onclick="accordionDirectionAction($(this))" class="accordion_next_btn" type="button">다음 단계</button> -->
 								</div>
 							</div>
 						</div>
@@ -5814,16 +5813,18 @@
 
 	function accordionDirectionAction(target) {
 		var isNext = target.hasClass('accordion_next_btn');
+		var disabledCheck = target.hasClass('disabled'); // 202407 것모닝 추가 수정 - disabled 체크하는 변수 추가
 		var activeList = target.closest('.accordion_list');
 		var activeTarget;
+
 
 		if (isNext) {
 			activeTarget = activeList.next('.accordion_list');
 		} else {
 			activeTarget = activeList.prev('.accordion_list');
 		}
-
-		accordionAction(activeTarget);
+		
+		disabledCheck ? '' : accordionAction(activeTarget); // 202407 것모닝 추가 수정 - disabled 체크해서 다음 이전 작동
 	}
 
   function optionalProductDefaultOption () {
