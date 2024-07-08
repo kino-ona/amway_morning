@@ -17057,6 +17057,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 .box_sop-product-helper .accordion_wrap .accordion_title_wrap .accordion_button { font-size: 0; width: 32px; height: 32px; background: url(/_ui/responsive/theme-blue/images/akl_plp/ico_accordion_arrow_down.png) center center no-repeat; background-size: 16px; }
 .box_sop-product-helper .accordion_wrap .accordion_list.opened .accordion_title_wrap .accordion_button { background: url(/_ui/responsive/theme-blue/images/akl_plp/ico_accordion_arrow_up.png) center center no-repeat; background-size: 16px; }
 .box_sop-product-helper .accordion_wrap .accordion_info_wrap { display: flex; flex-direction: column; align-items: flex-end; row-gap: 8px; flex: 1; margin-right: 20px; }
+.box_sop-product-helper .accordion_wrap .accordion_info_wrap.mo {display: none !important;} /* 202407 것모닝 추가 수정 - 모바일용 info wrap PC에서 display none에 important 추가 수정 */
 .box_sop-product-helper .accordion_wrap .accordion_info_wrap span.my_product { padding: 4px 12px; background: #DDF1E7; color: #018C51; font-size: 16px; font-weight: 500; border-radius: 8px; letter-spacing: -0.03em; }
 .box_sop-product-helper .accordion_wrap .accordion_list.opened { background: #EBF5F0; }
 
@@ -17089,7 +17090,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 .box_sop-product-helper .accordion_wrap .accordion_body .accordion_contents.accordion_first input[type='radio']:checked + label { border-color: #018C51; color: #000; font-weight: 700; }
 .box_sop-product-helper .accordion_wrap .accordion_body .accordion_contents img { position: absolute; top: 50%; right: 32px; transform: translateY(-50%); width: 140px; height: 140px; object-fit: cover; }
 .box_sop-product-helper .accordion_wrap .accordion_btn_wrap { display: flex; justify-content: flex-end; padding: 0 40px 24px; }
-.box_sop-product-helper .accordion_wrap .accordion_btn_wrap button:disabled, .box_sop-product-helper .accordion_wrap .accordion_btn_wrap button.disabled { background: #D7D7D7 !important; border-color: #D7D7D7 !important; color: #fff !important; cursor: default;} /* 202407 것모닝 추가 수정 - 선택자 button:disabled 옆에 button.disabled 추가, cursor 속성 추가 */
+.box_sop-product-helper .accordion_wrap .accordion_btn_wrap button.disabled { background: #D7D7D7 !important; border-color: #D7D7D7 !important; color: #fff !important; cursor: default;} /* 202407 것모닝 추가 수정 - 선택자 button:disabled => button.disabled 변경, cursor 속성 추가 */
 .box_sop-product-helper .accordion_wrap .accordion_btn_wrap .accordion_prev_btn { padding: 10px 35px; background: #FFF; color: #018C51; font-size: 14px; font-weight: 500; letter-spacing: -0.03em; border: 1px solid #018C51; border-radius: 8px; }
 .box_sop-product-helper .accordion_wrap .accordion_btn_wrap .accordion_next_btn { margin-left: 8px; padding: 10px 35px; background: #018C51; color: #FFF; font-size: 14px; font-weight: 500; letter-spacing: -0.03em; border: 1px solid #018C51; border-radius: 8px; }
 .box_sop-product-helper .accordion_wrap .accordion_list.opened .accordion_header { border-radius: 20px 20px 0 0; padding-bottom: 32px; background: #EBF5F0; }
@@ -17246,7 +17247,8 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	.box_sop-product-helper .accordion_wrap .accordion_container_step .accordion_list:first-of-type.opened .accordion_info_wrap { padding-top: 0; }
 	.box_sop-product-helper .accordion_wrap .accordion_list.last_step.opened { overflow: visible; }
 	.box_sop-product-helper .accordion_wrap .accordion_list.last_step.opened .accordion_header { padding-bottom: 20px; }
-	.box_sop-product-helper .accordion_wrap .accordion_list.last_step.opened .accordion_info_wrap { position: absolute; top: 237px; left: 20px; width: 100%; padding-top: 0; }
+	.box_sop-product-helper .accordion_wrap .accordion_list.last_step.opened .accordion_info_wrap:not(.mo) { display: none !important;} /* 202407 것모닝 추가 수정 - 마지막 스텝 PC용 info wrap display none */
+	.box_sop-product-helper .accordion_wrap .accordion_list.last_step.opened .accordion_info_wrap.mo { display: flex !important; margin: 0; padding: 0 0 0 24px;} /* 202407 것모닝 추가 수정 - 마지막 스텝 모바일용 info wrap 라인 추가 */
 	.box_sop-product-helper .accordion_wrap .accordion_info_wrap span { font-size: 14px !important; line-height: 17.38px; }
 	.box_sop-product-helper .accordion_wrap .accordion_info_wrap span.chk_product_num { padding: 4px 10px 2px; letter-spacing: unset !important; font-weight: 400; border-radius: 6px; white-space: nowrap; }
 	.box_sop-product-helper .accordion_wrap .accordion_info_wrap span.chk_product_name { max-width: unset; }
@@ -17281,8 +17283,8 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	.box_sop-product-helper .accordion_swiper .accordion_product_wrap .product_btn button { padding:0 15px; }
 	.box_sop-product-helper .accordion_wrap .accordion_body .accordion_product_title { display: none; }
 	.box_sop-product-helper .accordion_wrap .accordion_body .accordion_contents.accordion_optional { display: none; padding: 20px 0 20px 20px; }
-	.box_sop-product-helper .accordion_wrap .accordion_body .accordion_contents.accordion_optional.mo { display: block; }
 	.box_sop-product-helper .accordion_wrap .accordion_body .accordion_contents.accordion_optional .accordion_product_wrap { margin-bottom: 8px; height: calc(50% - 8px);} /* 202407 것모닝 추가 수정 - 이 라인 추가  */
+	.box_sop-product-helper .accordion_wrap .accordion_body .accordion_contents.accordion_optional.mo { display: block; padding-top: 8px; } /* 202407 것모닝 추가 수정 - padding top 값 추가 */
 	.box_sop-product-helper .accordion_wrap .accordion_body .accordion_contents.accordion_optional.mo .swiper-slide { display: flex; flex-direction: column;} /* 202407 것모닝 추가 수정 - row gap 속성 삭제 */
 	.box_sop-product-helper .accordion_wrap .accordion_title_wrap p .promotion_message { font-size: 14px !important; }
 	.box_sop-product-helper .accordion_wrap .accordion_list.opened .accordion_title_wrap p .promotion_message { display: none; }
@@ -17312,7 +17314,7 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 	.box_sop-product-helper .promotion_float_wrap .my_product_wrap .my_product_list .my_product_title { margin: 0 0 8px; font-size: 14px; font-weight: 700; line-height: 20px; letter-spacing: -0.03em; color: #018C51; }
 	.box_sop-product-helper .promotion_float_wrap .my_product_wrap .my_product_list .my_product_title button { display: flex; align-items: center; gap: 4px; width: unset; height: unset; padding-right: 0; font-size: 12px; line-height: 20px; font-weight: 500; background: none; color: #000; }
 	.box_sop-product-helper .promotion_float_wrap .my_product_wrap .my_product_list .my_product_title button::after { content: ''; display: inline-block; width: 14px; height: 14px; background: url(/_ui/responsive/theme-blue/images/akl_plp/ico_reset_button.png) center center no-repeat; background-size: cover; }
-	.box_sop-product-helper .accordion_wrap .accordion_body .optional_category_wrap { position: relative; height: unset; padding: 20px 0 24px 20px; opacity: 1; }
+	.box_sop-product-helper .accordion_wrap .accordion_body .optional_category_wrap { position: relative; height: unset; padding: 20px 0 16px 20px; opacity: 1; } /* 202407 것모닝 추가 수정 - padding 값 변경 */
 	.box_sop-product-helper .accordion_wrap .accordion_body .optional_category_wrap button { width: 100%; height: 100%; background: none; }
 	.box_sop-product-helper .accordion_wrap .accordion_body .optional_category_wrap::before { content: ''; width: calc(100% - 40px); height: 1px; background: #D0D7EF; position: absolute; top: 0; left: 50%; transform: translateX(-50%); }
 	.box_sop-product-helper .accordion_wrap .accordion_body .optional_category_wrap ul { display: flex; column-gap: 8px; overflow-x: scroll; padding-right: 20px; }
