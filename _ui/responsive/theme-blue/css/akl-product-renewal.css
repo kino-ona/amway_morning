@@ -17353,9 +17353,9 @@ span.manySend_reference {font-size: 11px; color: #ed174c; display: inline-block;
 }
 
 @media(max-width: 768px) {
-	.box_sop-product-helper .accordion_wrap .accordion_list.last_step.opened .accordion_info_wrap {top: 272px;}
+	/* .box_sop-product-helper .accordion_wrap .accordion_list.last_step.opened .accordion_info_wrap {top: 272px;} 202407 것모닝 추가 수정 - 내용삭제 */
 	.box_sop-product-helper .product_helper_banner .promotion_date:nth-of-type(2) {letter-spacing: -0.03em;}
-	.box_sop-product-helper .accordion_wrap .accordion_list.last_step.opened .accordion_info_wrap {top: 258px;}
+	/* .box_sop-product-helper .accordion_wrap .accordion_list.last_step.opened .accordion_info_wrap {top: 258px;} 202407 것모닝 추가 수정 - 내용삭제 */
 	.box_sop-promotion .promotion_detail_container .promotion_detail_contents:nth-of-type(2) .detail_desc_wrap .detail_desc_content:nth-of-type(2) p em {display: block;}
 	.box_sop-promotion .promotion_banner_container .promotion_banner_top {padding: 32px 10px 80.7% 12px;}
 	.box_sop-promotion .promotion_banner_container .promotion_banner_top .promotion_date {letter-spacing: -0.03em;}
