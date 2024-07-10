@@ -312,20 +312,55 @@
 				</div> -->
 				
 			</div>
-			<div class="prd_search_area">
+
+			<!-- 202407 것모닝 추가 수정 - 기존 내용 주석 처리 -->
+			<!-- <div class="prd_search_area"> -->
 				<!-- 검색 정보 -->		
 				<!-- 20220127 전체제품으로 기본 검색 설정 변경 -->
-				<span class="result result_1">전체제품(460)</span>	
+				<!-- <span class="result result_1">전체제품(460)</span>	 -->
 				<!-- 검색 결과 -->	
-				<span class="result result_2"><button class="btn_back"><i class="sp_ic">이전</i></button> 검색결과 49건</span>	
+				<!-- <span class="result result_2"><button class="btn_back"><i class="sp_ic">이전</i></button> 검색결과 49건</span>	 -->
 				<!-- <span class="result result_2"><button class="btn_back"><i class="sp_ic">이전</i></button> "프로모션" 검색결과 100건</span> --><!-- 2020-11-12 add btn -->		
-				<span class="result result_3"><button class="btn_back"><i class="sp_ic">이전</i></button> "프로모션" 검색결과 0건</span><!-- 2020-11-12 add btn -->		
+				<!-- <span class="result result_3"><button class="btn_back"><i class="sp_ic">이전</i></button> "프로모션" 검색결과 0건</span>2020-11-12 add btn		 -->
 				<!-- 검색 옵션 -->		
-				<div class="list_view-option">
+				<!-- <div class="list_view-option"> -->
 					<!--<button type="button" class="btn_prd_search"><i class="sp_ic sp_ic_search">검색</i></button>--> <!-- 20231227 삭제 -->	
+					<!-- <button type="button" class="btn_prd_filter"><i class="sp_ic sp_ic_filter">필터</i></button> -->
+				<!-- </div> -->
+			<!-- </div> -->
+			<!-- // 202407 것모닝 추가 수정 - 기존 내용 주석 처리 -->
+
+			<!-- 202407 것모닝 추가 수정 - 것모닝용 필터 메뉴 추가 -->
+			<div class="prd_search_area">
+				<!-- 검색 정보 -->
+				<button type="button" class="result result_1" style="display: none;">것모닝(25)</button> <!-- 전체일때 -->
+				
+				<button type="button" class="result result_1" style="display: none;">것모닝 푸로틴(5)</button> <!-- 것모닝 푸로틴일때 -->
+				
+				<button type="button" class="result result_1" style="display: none;">것모닝 유산균(5)</button> <!-- 것모닝 유산균일때 -->
+				
+				<!-- 검색 결과 -->	
+				<span class="result result_2"><button class="btn_back"><i class="sp_ic">이전</i></button> 검색결과 49건</span>
+				<span class="result result_3"><button class="btn_back"><i class="sp_ic">이전</i></button> "프로모션" 검색결과 0건</span><!-- 2020-11-12 add btn -->
+
+				<!-- 추가구성일때 -->
+				<div class="result result_4">
+					<div class="swiper-wrapper">
+						<button type="button" class="swiper-slide is-selected">기초영양(5)</button>
+						<button type="button" class="swiper-slide">기능성(5)</button>
+						<button type="button" class="swiper-slide">어린이(5)</button>
+						<button type="button" class="swiper-slide">식품/음료(5)</button>
+						<button type="button" class="swiper-slide">바디키(5)</button>
+						<button type="button" class="swiper-slide">뉴트리라이트 선물세트(5)</button>
+					</div>
+				</div>
+				<!-- // 추가구성일 때 -->
+				<!-- 검색 옵션 -->
+				<div class="list_view-option">
 					<button type="button" class="btn_prd_filter"><i class="sp_ic sp_ic_filter">필터</i></button>
-				</div>						
-			</div>	
+				</div>
+			</div>
+			<!-- 202407 것모닝 추가 수정 - 것모닝용 필터 메뉴 추가 -->
 			
 			<!-- S : 20231227 장스오 제품수정 UX개선 -->
             <!-- 제품 검색 결과 -->
@@ -880,6 +915,32 @@
 <script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>
 
 <script>    
+	// 202407 것모닝 추가 수정 - result4번 용 Swiper
+	function resultSwiperInit() {
+		const resultSwiper = new Swiper('.prd_search_area .result_4', {
+			slidesPerView: 'auto',
+			observer: true,
+			observeParents: true,
+		});
+
+		if ($('.prd_search_area .result_4 button').length < 5) {
+			resultSwiper.destroy();
+		}
+	}
+	
+	resultSwiperInit();
+
+	// function updateSwiper() {
+	// 	resultSwiper.update();
+
+	// 	console.log("HERE");
+	// }
+	
+	// window.addEventListener('resize', updateSwiper);
+	// // 202407 것모닝 추가 수정 - result4번 용 Swiper
+
+	
+
     // 2020-09-29 테스트확인용 (2차범위 : 제품추가)	
 	var link = document.location.href;
 	// 주문서 상세에서 호출시
