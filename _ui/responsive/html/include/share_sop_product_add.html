@@ -917,29 +917,41 @@
 <script>    
 	// 202407 것모닝 추가 수정 - result4번 용 Swiper
 	function resultSwiperInit() {
-		const resultSwiper = new Swiper('.prd_search_area .result_4', {
-			slidesPerView: 'auto',
-			observer: true,
-			observeParents: true,
-		});
+    let resultSwiper = null;
 
-		if ($('.prd_search_area .result_4 button').length < 5) {
-			resultSwiper.destroy();
-		}
-	}
-	
+    function initSwiper() {
+			resultSwiper = new Swiper('.prd_search_area .result_4', {
+					slidesPerView: "auto",
+					grabCursor: 'true',
+			});
+    }
+
+    function destroySwiper() {
+			if (resultSwiper !== null && resultSwiper.destroy) {
+				resultSwiper.destroy();
+				resultSwiper = null;
+			}
+    }
+
+    function checkAndInitSwiper() {
+			if ($('.prd_search_area .result_4 button').length < 5) {
+				destroySwiper();
+			} else {
+				initSwiper();
+			}
+    }
+
+    // 초기화 함수 호출
+    checkAndInitSwiper();
+
+    // resize 이벤트 처리
+    window.addEventListener('resize', function() {
+        checkAndInitSwiper();
+    });
+}
+
 	resultSwiperInit();
-
-	// function updateSwiper() {
-	// 	resultSwiper.update();
-
-	// 	console.log("HERE");
-	// }
-	
-	// window.addEventListener('resize', updateSwiper);
-	// // 202407 것모닝 추가 수정 - result4번 용 Swiper
-
-	
+	// //202407 것모닝 추가 수정 - result4번 용 Swiper
 
     // 2020-09-29 테스트확인용 (2차범위 : 제품추가)	
 	var link = document.location.href;
