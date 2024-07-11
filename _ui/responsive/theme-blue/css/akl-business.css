@@ -3442,8 +3442,10 @@ background-repeat:no-repeat;}
 .visionbonus .tbl-list td .total-sum{font-size: 20px;}
 .visionbonus .tbl-list td .total-sum .price-unit{margin-left:4px;}
 .visionbonus .tbl-list tr.total-bonus th,
-.visionbonus .tbl-list tr.total-bonus td{border-top:4px solid #dbdbdb} 
-.visionbonus.container.business .tbl-list td.bg-point-blue{padding: 20px 32px; background: #F0F5FD; line-height: 30px; font-size: 20px; font-weight: 700;}
+.visionbonus .tbl-list tr.total-bonus td{border-top:4px solid #E8ECF0} /* 071124 수정 */
+.visionbonus.container.business .tbl-list td.bg-point-blue{background: #F0F5FD;}/* 071124 수정 */
+.visionbonus.container.business .tbl-list th.bg-point-gray, .visionbonus.container.business .tbl-list td.bg-point-gray{background: #E8ECF0;} /* 071124 추가 */
+.visionbonus.container.business .tbl-list .sum-point td.bg-point-blue{padding: 20px 32px; background: #F0F5FD; line-height: 30px; font-size: 20px; font-weight: 700;}/* 071124 추가 */
 .visionbonus.container.business .table10{margin-top:24px;}
 .visionbonus.container.business .table10 table tbody td {padding:16px 32px;}
 .visionbonus.container.business .table10 table tbody td.fit {padding:8px 32px;}
@@ -3517,13 +3519,20 @@ background-repeat:no-repeat;}
 .visionbonus .radio-wrap > div{width: calc(100% / 3);}
 .visionbonus .number_text{margin-top: 12px; display: flex; gap:6px; align-items: flex-start; justify-content: center; flex-direction: column;}
 .visionbonus .number_text p{line-height:20px; font-size: 14px; font-weight: 500;}
+/* 071124 수정 */
 .visionbonus .sub-detail-info{display: inline-block; margin-top: 6px; background:#F4F4F4; padding: 10px 16px; border-radius: 8px;}
 .visionbonus .sub-detail-info::after{content: ''; display: block; clear: both;}
 .visionbonus .sub-detail-info > li{float: left; font-size: 14px; line-height: 20px; color: #666;}
-.visionbonus .sub-detail-info > li strong {display: block;  font-weight: 700;  }
-.visionbonus .sub-detail-info > li span{display: block; margin-top: 4px; font-weight: 400;}
+.visionbonus .sub-detail-info > li > strong {display: block;  font-weight: 700;  }
+.visionbonus .sub-detail-info > li > span{display: block; margin-top: 4px; font-weight: 400;}
 .visionbonus .sub-detail-info > li + li { position: relative; margin-left:16px; padding-left: 17px;}
 .visionbonus .sub-detail-info > li + li::after{content: ''; display: block; width: 1px; height:40px; background: #D7D7D7; position: absolute; left: 0; top: 50%; transform: translateY(-50%);} 
+.visionbonus .sub-detail-info .sub-txt{display: inline-block; margin-left:5px; font-size: 12px; color:#999; font-weight:500;}
+.visionbonus .sub-detail-info .number_text{display:block; margin-top: 4px;}
+.visionbonus .sub-detail-info .number_text > p{display: inline-block; font-weight:400;}
+.visionbonus .sub-detail-info .number_text > p + p {margin-left:10px; }
+/* 071124 수정 */
+
 .visionbonus .info-box{margin-bottom: -12px;}
 .visionbonus .info-box > h4{position: relative; padding-left: 7px; color:#111; font-size: 16px; line-height: 26px;}
 .visionbonus .info-box > h4::after{content: ''; display: block; width:3px; height:16px; background:#111; position: absolute; left: 0; top: 50%; transform: translateY(-50%);}
@@ -3920,6 +3929,12 @@ background-repeat:no-repeat;}
 	.visionbonus .sub-detail-info > li+ li::after{display: none;}
 	.visionbonus .sub-detail-info > li strong{font-size: 12px; line-height: 18px;}
 	.visionbonus .sub-detail-info > li span{font-size: 12px; line-height: 18px;}
+	/* 071124 추가 */
+	.visionbonus .sub-detail-info .sub-txt{display: block; margin-left:0; font-weight:400;}
+	.visionbonus .sub-detail-info .number_text{display:block; margin-top: 4px;}
+	.visionbonus .sub-detail-info .number_text > p{display: block; font-size:12px;}
+	.visionbonus .sub-detail-info .number_text > p + p {margin-left:0; }
+	/* 071124 추가 */
 	.visionbonus .price-box .title > span{font-size: 12px; line-height: 18px;}
 
 	.visionbonus .radio-wrap{margin-top: 12px;}

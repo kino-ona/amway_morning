@@ -90,8 +90,8 @@
                 <div class="outer-border-bottom">
                     <ul class="tabs-toggles">
                         <li class="tab-toggle-wrap"><a class="tab-toggle" href="/_ui/responsive/html/business/G20770_001.html"><span class="toggle-text">비전보너스 설명</span></a> </li>
-                        <li class="tab-toggle-wrap active"><a class="tab-toggle" href="#"><span class="toggle-text">비전보너스 조회</span></a></li>
-                        <li class="tab-toggle-wrap"><a class="tab-toggle" href="/_ui/responsive/html/business/G20770_003.html"><span class="toggle-text">비전보너스 계산</span></a></li>
+                        <li class="tab-toggle-wrap active"><a class="tab-toggle" href="#"><span class="toggle-text">나의 비전보너스 조회</span></a></li><!-- 071124 문구 수정 -->
+                        <li class="tab-toggle-wrap"><a class="tab-toggle" href="/_ui/responsive/html/business/G20770_003.html"><span class="toggle-text">비전보너스 계산기</span></a></li><!-- 071124 문구 수정 -->
                     </ul>
                 </div>
                 <div class="tab-content">
@@ -178,7 +178,7 @@
                                 </table>
                             </div>
                             <ul class="dot-list">
-                                <li>예상 마감 핀은 예상 FQ수와 월별 Q레그 수로 가정 / 예상 Q12 레그 수는 전년도 값으로 가정</li>
+                                <li>예상 마감 핀은 예상 FQ 수와 월별 Q레그 수로 가정한 핀 레벨 / 예상 Q12레그 수는 누적으로 매월 Q를 달성한 모든 레그로 가정한 수</li><!-- 071124 문구수정 -->
                             </ul>
                         </article>
 
@@ -194,12 +194,17 @@
                                 <ul class="sub-detail-info">
                                     <li>
                                         <strong>수혜연도 마감 다이아몬드 ~ 파운더스 수석 다이아몬드</strong>
-                                        <span>FQ조건 : 전년 대비 QC 1.0점 이상 성장</span>
+                                        <span>FQ조건 : 전년 대비 FQ 3개 이상 성장</span>
                                     </li>
+                                    <!-- 071124 구조 변경, 문구 추가 -->
                                     <li>
-                                        <strong>수혜연도 마감 더블 다이아몬드 이상</strong>
-                                        <span>FQ조건 : 전년 대비 FQ 3개 이상 성장 또는<br class="mobile-only"> QC조건 : 전년 대비 QC 1.0점 이상 성장</span>
+                                        <strong>수혜연도 마감 더블 다이아몬드 이상 <span class="sub-txt">아래 두가지 조건 중 한 개 이상 만족</span></strong>
+                                        <div class="number_text">
+                                            <p><span class="circle-num">1</span>FQ 조건: 전년 대비 FQ 3개 이상 성장</p>
+                                            <p><span class="circle-num">2</span>QC 조건: 전년 대비 QC 1.0점 이상 성장</p>
+                                        </div>
                                     </li>
+                                    <!-- 071124 구조 변경, 문구 추가 -->
                                 </ul>
                             </div>
                             <div class="info-box reverse">
@@ -246,9 +251,7 @@
                                 </table>
                             </div>
                             <ul class="dot-list">
-                                <li>
-                                    예상 FQ수는 바로 직전 월의 달성한 FQ 수만큼 남은 월도 모두 달성한다는 가정
-                                </li>
+                                <li>예상 FQ 수는 이전 월까지 달성한 누적 FQ 수와 Q레그가 남은 월을 모두 달성한다는 가정의 수치를 합산한 수</li><!-- 071124 문구수정 -->
                             </ul>
                             <div class="price-box" role="table" aria-labelledby="price-box-title-1">
                                 <div class="title" id="price-box-title-1">
@@ -320,9 +323,7 @@
                                 </table>
                             </div>
                             <ul class="dot-list">
-                                <li>
-                                    예상 마감 값은 남은 월 모두 달성한다는 가정
-                                </li>
+                                <li>예상 마감 핀은 예상 FQ 수와 월별 Q레그 수로 가정한 핀 레벨 / 예상 QC 점수는 레그별 예상 마감 핀을 적용해서 계산한 점수</li><!-- 071124 문구수정 -->
                             </ul>
                             <div class="price-box" role="table" aria-labelledby="price-box-title-2">
                                 <div class="title" id="price-box-title-2">
@@ -349,7 +350,8 @@
                         <!-- 비전보너스 조회-->
                         <article class="box-group">
                             <div class="title-wrap">
-                                <h3 class="title-h3">계산 방법 <span>비전보너스 = 기준금액 X 지급비율</span></h3>
+                                <h3 class="title-h3">계산 방법</h3><!-- 071124 문구 삭제 -->
+                                <p>해당 금액은 예상 금액으로 지급이 보장된 소득이 아닙니다. <br class="mobile-only"> 실제 지급되는 보너스 금액과 다를 수 있음 주의하시기 바랍니다.</p><!-- 071124 문구추가 -->
                             </div>
 
                             <div class="table-scroll table09">
@@ -423,20 +425,20 @@
                                                 <td>10 만원</td>
                                             </tr>
                                             <tr>
-                                                <th rowspan="3">비전보너스<br class="mobile-only"> 계산</th>
-                                                <th class="fixed-side">기준 금액</th>
+                                                <th rowspan="3" class="bg-point-gray">비전보너스<br class="mobile-only"> 계산</th><!-- 071124 클래스 추가 -->
+                                                <th class="fixed-side bg-point-gray">기준 금액</th><!-- 071124 클래스 추가 -->
                                                 <td>10 만원</td>
                                                 <td>10 만원</td>
                                                 <td>10 만원</td>
                                             </tr>
                                             <tr>
-                                                <th class="fixed-side">지급 비율</th>
+                                                <th class="fixed-side bg-point-gray">지급 비율</th><!-- 071124 클래스 추가 -->
                                                 <td>-</td>
                                                 <td>2년 연속 성장 100%</td>
                                                 <td>3년 연속 성장 200%</td>
                                             </tr>
                                             <tr>
-                                                <th class="fixed-side">비전보너스<br class="mobile-only"> 금액</th>
+                                                <th class="fixed-side bg-point-gray">비전보너스<br class="mobile-only"> 금액</th><!-- 071124 클래스 추가 -->
                                                 <td>-</td>
                                                 <td>10 만원</td>
                                                 <td>20 만원</td>
@@ -445,6 +447,14 @@
                                     </table>
                                 </div>
                             </div>
+                            <!-- 071124 문구 추가 -->
+                            <ul class="dot-list">
+                                <li>FQ성장금액과 QC성장금액은 매 해 기준금액을 산정하기 위함</li>
+                                <li>기준 금액: 수혜연도 마감 핀에 따라서 매 년 FQ 성장 금액 또는 QC 성장 금액을 기준 금액으로 책정</li>
+                                <li>지급 비율: 수혜조건을 2년 연속 만족 시 100%, 3년 연속 만족 시 200%로 책정</li>
+                                <li>비전보너스 금액: 성장한 해 동안의 기준금액 평균에 지급비율을 곱해서 산정</li>
+                            </ul>
+                            <!-- //071124 문구 추가 -->
 
                             <div class="btn-box">
                                 <div class="info-tooltip active"><!-- 보여야 하는 경우  active-->
